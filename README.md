@@ -6,8 +6,8 @@ Public game content for [Arkpedia](https://github.com/arkpedia). The website's i
 
 - `source/data/` — readable operator records, skills, banners, schedules, skins, stages, enemies, and supporting game tables.
 - `source/public/` — source catalogues used by the data compiler.
-- `release/pages/` — prepared page data, indexed by route in the manifest.
-- `release/public/` — records fetched on demand by the stage browser, enemy handbook, planner, and games.
+- `release/pages/` — prepared page data named after its route: `recruitment.json`, `operators/Deepcolor.json`, and `index.json` for the homepage.
+- `release/public/` — records fetched on demand by the stage browser, enemy handbook, planner, and games. Stage Guesser uses `stage-guesser/catalogue.json` and `stage-guesser/layouts/1-7.json`.
 - `release/manifest.json` — source/output checksums, schema version, and matching asset revisions.
 - `scripts/` — validation only; the private compiler is not published here.
 
