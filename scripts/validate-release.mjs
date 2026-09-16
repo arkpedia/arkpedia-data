@@ -22,7 +22,7 @@ check(m.assets && Object.keys(m.assets).length === 8, 'Expected eight media/pale
 for (const [repo, revision] of Object.entries(m.assets)) check(/^arkpedia-(image-assets|skin-assets|color-palette|voice-(english|japanese|korean|mandarin|regional))$/.test(repo) && gitSha.test(revision), `Invalid asset: ${repo}`);
 const expected = new Set(['manifest.json']);
 for (const [route, file] of Object.entries(m.pages)) {
-  check(file.path === pageFilePath(route) || file.path === `pages/${sha(route)}.json`, `Invalid page: ${route}`);
+  check(file.path === pageFilePath(route), `Invalid page: ${route}`);
 }
 for (const [name, file] of Object.entries(m.files)) check(safe(name) && file.path === `public/${name}`, `Invalid public file: ${name}`);
 for (const file of [...Object.values(m.pages), ...Object.values(m.files)]) {
