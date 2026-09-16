@@ -12,9 +12,8 @@
   "subRegion": null,
   "position": "Melee",
   "tags": [
-    "To",
-    "be",
-    "added"
+    "DPS",
+    "Crowd-Control"
   ],
   "trait": "Attacks deal 50% ATK as AOE Physical damage to enemies around the target.",
   "howToObtain": {
@@ -64,42 +63,42 @@
   },
   "talents": [
     {
-      "name": "Unbridled Fury",
+      "name": "Roiling Rage",
       "rows": [
         {
           "stage": "Elite 1",
           "potential": null,
-          "description": "AOE damage dealt by trait is increased by +24% and each Ranged tiles hit by the AOE damage will deal Physical damage equal to 24% of Zima's ATK to all enemies in adjacent tiles."
+          "description": "Physical damage caused by Trait splash effect increases by 24%; any high ground tile touched by the splash deals 24% ATK as Physical damage to all ground enemies in the four adjacent tiles"
         },
         {
           "stage": "Elite 1",
           "potential": "Potential 5",
-          "description": "AOE damage dealt by trait is increased by +24% and each Ranged tiles hit by the AOE damage will deal Physical damage equal to 27% of Zima's ATK to all enemies in adjacent tiles."
+          "description": "Physical damage caused by Trait splash effect increases by 24%; any high ground tile touched by the splash deals 27%(+3%) ATK as Physical damage to all ground enemies in the four adjacent tiles"
         },
         {
           "stage": "Elite 2",
           "potential": null,
-          "description": "AOE damage dealt by trait is increased by +24% and each Ranged tiles hit by the AOE damage will deal Physical damage equal to 24% of Zima's ATK to all enemies in adjacent tiles and inflicts Slow for 0.5 second."
+          "description": "Physical damage caused by Trait splash effect increases by 24%; any high ground tile touched by the splash deals 24% ATK as Physical damage and inflicts a 0.5s Slow to all ground enemies in the four adjacent tiles"
         },
         {
           "stage": "Elite 2",
           "potential": "Potential 5",
-          "description": "AOE damage dealt by trait is increased by +24% and each Ranged tiles hit by the AOE damage will deal Physical damage equal to 27% of Zima's ATK to all enemies in adjacent tiles and inflicts Slow for 0.5 second."
+          "description": "Physical damage caused by Trait splash effect increases by 24%; any high ground tile touched by the splash deals 27%(+3%) ATK as Physical damage and inflicts a 0.5s Slow to all ground enemies in the four adjacent tiles"
         }
       ]
     },
     {
-      "name": "Wave of Masses",
+      "name": "Human Tide",
       "rows": [
         {
           "stage": "Elite 2",
           "potential": null,
-          "description": "During skill duration, All friendly Operators in the field will have their ATK and DEF increased by +14% . Effectiveness doubled for operators from Ursus Student Self-Governing Group faction."
+          "description": "When skill is active, all Operators gain +14% ATK and DEF; [Ursus Student Self-Government Group] Operators receive double the effect"
         },
         {
           "stage": "Elite 2",
           "potential": "Potential 3",
-          "description": "During skill duration, All friendly Operators in the field will have their ATK and DEF increased by +18% . Effectiveness doubled for operators from Ursus Student Self-Governing Group faction."
+          "description": "When skill is active, all Operators gain +18% (+4%) ATK and DEF; [Ursus Student Self-Government Group] Operators receive double the effect"
         }
       ]
     }
@@ -108,11 +107,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Improves The Masses Tide"
+        "benefit": "Improves Second Talent"
       },
       {
         "level": 4,
@@ -120,11 +119,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Unbridled Fury"
+        "benefit": "Improves First Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -196,7 +195,7 @@
   "skills": {
     "skillList": [
       {
-        "name": "I Will Not Yield",
+        "name": "Never Bow",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
         "duration": "30 seconds",
@@ -204,7 +203,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "ATK +25% and ASPD +30",
+            "description": "ATK +25%; ASPD +30",
             "initialSp": 0,
             "spCost": 40,
             "duration": 30
@@ -212,7 +211,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "ATK +27% and ASPD +30",
+            "description": "ATK +27%; ASPD +30",
             "initialSp": 0,
             "spCost": 39,
             "duration": 30
@@ -220,7 +219,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "ATK +29% and ASPD +30",
+            "description": "ATK +29%; ASPD +30",
             "initialSp": 0,
             "spCost": 38,
             "duration": 30
@@ -228,7 +227,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "ATK +32% and ASPD +35",
+            "description": "ATK +32%; ASPD +35",
             "initialSp": 5,
             "spCost": 37,
             "duration": 30
@@ -236,7 +235,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "ATK +34% and ASPD +35",
+            "description": "ATK +34%; ASPD +35",
             "initialSp": 5,
             "spCost": 36,
             "duration": 30
@@ -244,7 +243,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "ATK +36% and ASPD +35",
+            "description": "ATK +36%; ASPD +35",
             "initialSp": 5,
             "spCost": 35,
             "duration": 30
@@ -252,7 +251,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "ATK +39% and ASPD +40",
+            "description": "ATK +39%; ASPD +40",
             "initialSp": 10,
             "spCost": 34,
             "duration": 30
@@ -260,7 +259,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "ATK +42% and ASPD +45",
+            "description": "ATK +42%; ASPD +45",
             "initialSp": 15,
             "spCost": 33,
             "duration": 30
@@ -268,7 +267,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "ATK +45% and ASPD +45",
+            "description": "ATK +45%; ASPD +45",
             "initialSp": 18,
             "spCost": 32,
             "duration": 30
@@ -276,7 +275,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "ATK +50% and ASPD +50",
+            "description": "ATK +50%; ASPD +50",
             "initialSp": 20,
             "spCost": 30,
             "duration": 30
@@ -336,7 +335,7 @@
         "techniques": []
       },
       {
-        "name": "I Will Not Relent",
+        "name": "Never Surrender",
         "recoveryType": "Auto Recovery",
         "activationType": "Auto",
         "duration": "16 seconds",
@@ -344,7 +343,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "Passive: Obtains 1 Skill Point each time Talent 1 is triggered. Active: Attack range expands . ATK +45% and DEF +30% . Upon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are twice the base amount",
+            "description": "Passive Effect: Whenever a high ground tile triggers Talent 1's effect, gains 1 SP\nAutomatic Effect: Attack Range increases, ATK +45%, and DEF +30%\nUpon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are double the base amount",
             "initialSp": 16,
             "spCost": 60,
             "duration": 16
@@ -352,7 +351,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "Passive: Obtains 1 Skill Point each time Talent 1 is triggered. Active: Attack range expands . ATK +50% and DEF +30% . Upon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are twice the base amount",
+            "description": "Passive Effect: Whenever a high ground tile triggers Talent 1's effect, gains 1 SP\nAutomatic Effect: Attack Range increases, ATK +50%, and DEF +30%\nUpon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are double the base amount",
             "initialSp": 16,
             "spCost": 59,
             "duration": 16
@@ -360,15 +359,15 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "Passive: Obtains 1 Skill Point each time Talent 1 is triggered. Active: Attack range expands . ATK +55% and DEF +30% . Upon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are twice the base amount",
-            "initialSp": 20,
-            "spCost": 16,
+            "description": "Passive Effect: Whenever a high ground tile triggers Talent 1's effect, gains 1 SP\nAutomatic Effect: Attack Range increases, ATK +55%, and DEF +30%\nUpon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are double the base amount",
+            "initialSp": 16,
+            "spCost": 58,
             "duration": 16
           },
           {
             "level": 4,
             "mastery": null,
-            "description": "Passive: Obtains 1 Skill Point each time Talent 1 is triggered. Active: Attack range expands . ATK +60% and DEF +40% . Upon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are twice the base amount",
+            "description": "Passive Effect: Whenever a high ground tile triggers Talent 1's effect, gains 1 SP\nAutomatic Effect: Attack Range increases, ATK +60%, and DEF +40%\nUpon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are double the base amount",
             "initialSp": 20,
             "spCost": 57,
             "duration": 16
@@ -376,7 +375,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "Passive: Obtains 1 Skill Point each time Talent 1 is triggered. Active: Attack range expands . ATK +65% and DEF +40% . Upon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are twice the base amount",
+            "description": "Passive Effect: Whenever a high ground tile triggers Talent 1's effect, gains 1 SP\nAutomatic Effect: Attack Range increases, ATK +65%, and DEF +40%\nUpon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are double the base amount",
             "initialSp": 20,
             "spCost": 56,
             "duration": 16
@@ -384,7 +383,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "Passive: Obtains 1 Skill Point each time Talent 1 is triggered. Active: Attack range expands . ATK +70% and DEF +40% . Upon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are twice the base amount",
+            "description": "Passive Effect: Whenever a high ground tile triggers Talent 1's effect, gains 1 SP\nAutomatic Effect: Attack Range increases, ATK +70%, and DEF +40%\nUpon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are double the base amount",
             "initialSp": 20,
             "spCost": 55,
             "duration": 16
@@ -392,7 +391,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "Passive: Obtains 1 Skill Point each time Talent 1 is triggered. Active: Attack range expands . ATK +75% and DEF +50% . Upon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are twice the base amount",
+            "description": "Passive Effect: Whenever a high ground tile triggers Talent 1's effect, gains 1 SP\nAutomatic Effect: Attack Range increases, ATK +75%, and DEF +50%\nUpon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are double the base amount",
             "initialSp": 24,
             "spCost": 53,
             "duration": 16
@@ -400,7 +399,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "Passive: Obtains 1 Skill Point each time Talent 1 is triggered. Active: Attack range expands . ATK +80% and DEF +50% . Upon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are twice the base amount",
+            "description": "Passive Effect: Whenever a high ground tile triggers Talent 1's effect, gains 1 SP\nAutomatic Effect: Attack Range increases, ATK +80%, and DEF +50%\nUpon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are double the base amount",
             "initialSp": 28,
             "spCost": 52,
             "duration": 16
@@ -408,7 +407,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "Passive: Obtains 1 Skill Point each time Talent 1 is triggered. Active: Attack range expands . ATK +85% and DEF +60% . Upon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are twice the base amount",
+            "description": "Passive Effect: Whenever a high ground tile triggers Talent 1's effect, gains 1 SP\nAutomatic Effect: Attack Range increases, ATK +85%, and DEF +60%\nUpon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are double the base amount",
             "initialSp": 32,
             "spCost": 51,
             "duration": 16
@@ -416,7 +415,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "Passive: Obtains 1 Skill Point each time Talent 1 is triggered. Active: Attack range expands . ATK +90% and DEF +60% . Upon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are twice the base amount",
+            "description": "Passive Effect: Whenever a high ground tile triggers Talent 1's effect, gains 1 SP\nAutomatic Effect: Attack Range increases, ATK +90%, and DEF +60%\nUpon the second activation of this skill and afterwards, this skill has unlimited duration, and its bonuses are double the base amount",
             "initialSp": 36,
             "spCost": 50,
             "duration": 16
@@ -476,7 +475,7 @@
         "techniques": []
       },
       {
-        "name": "I Will Not Stop",
+        "name": "Unstoppable",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
         "duration": null,
@@ -484,82 +483,82 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "ATK +50% . Unleash five consecutive hammer slams with expanded AOE range on the front tile with each slam dealing 170% of ATK as Physical damage while increases Zima's ATK further by +30% . During the skill duration, Talent's 1 effect will spread to other surrounding Ranged tiles with each slam expanding its range further and increasing its damage by 3.5x times the original and inflicts Bind for 1 second.",
+            "description": "ATK +50%, and deals a chain of five hammer blows with increased splash area to the tile ahead, each blow dealing 170% ATK as Physical damage and granting an additional +30% ATK; high ground tiles that trigger Talent 1 will spread its effect to adjacent high ground tiles (amount of spread increases with each attack), damage effect increases to 3.5x, and control effect becomes a 1s Bind",
             "initialSp": 10,
             "spCost": 36,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 2,
             "mastery": null,
-            "description": "ATK +55% . Unleash five consecutive hammer slams with expanded AOE range on the front tile with each slam dealing 175% of ATK as Physical damage while increases Zima's ATK further by +30% . During the skill duration, Talent's 1 effect will spread to other surrounding Ranged tiles with each slam expanding its range further and increasing its damage by 3.5x times the original and inflicts Bind for 1 second.",
+            "description": "ATK +55%, and deals a chain of five hammer blows with increased splash area to the tile ahead, each blow dealing 175% ATK as Physical damage and granting an additional +30% ATK; high ground tiles that trigger Talent 1 will spread its effect to adjacent high ground tiles (amount of spread increases with each attack), damage effect increases to 3.5x, and control effect becomes a 1s Bind",
             "initialSp": 10,
             "spCost": 36,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 3,
             "mastery": null,
-            "description": "ATK +60% . Unleash five consecutive hammer slams with expanded AOE range on the front tile with each slam dealing 180% of ATK as Physical damage while increases Zima's ATK further by +30% . During the skill duration, Talent's 1 effect will spread to other surrounding Ranged tiles with each slam expanding its range further and increasing its damage by 3.5x times the original and inflicts Bind for 1 second.",
+            "description": "ATK +60%, and deals a chain of five hammer blows with increased splash area to the tile ahead, each blow dealing 180% ATK as Physical damage and granting an additional +30% ATK; high ground tiles that trigger Talent 1 will spread its effect to adjacent high ground tiles (amount of spread increases with each attack), damage effect increases to 3.5x, and control effect becomes a 1s Bind",
             "initialSp": 10,
             "spCost": 36,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 4,
             "mastery": null,
-            "description": "ATK +65% . Unleash five consecutive hammer slams with expanded AOE range on the front tile with each slam dealing 190% of ATK as Physical damage while increases Zima's ATK further by +30% . During the skill duration, Talent's 1 effect will spread to other surrounding Ranged tiles with each slam expanding its range further and increasing its damage by 3.5x times the original and inflicts Bind for 1 second.",
+            "description": "ATK +65%, and deals a chain of five hammer blows with increased splash area to the tile ahead, each blow dealing 190% ATK as Physical damage and granting an additional +30% ATK; high ground tiles that trigger Talent 1 will spread its effect to adjacent high ground tiles (amount of spread increases with each attack), damage effect increases to 3.5x, and control effect becomes a 1s Bind",
             "initialSp": 12,
             "spCost": 34,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 5,
             "mastery": null,
-            "description": "ATK +70% . Unleash five consecutive hammer slams with expanded AOE range on the front tile with each slam dealing 195% of ATK as Physical damage while increases Zima's ATK further by +30% . During the skill duration, Talent's 1 effect will spread to other surrounding Ranged tiles with each slam expanding its range further and increasing its damage by 3.5x times the original and inflicts Bind for 1 second.",
+            "description": "ATK +70%, and deals a chain of five hammer blows with increased splash area to the tile ahead, each blow dealing 195% ATK as Physical damage and granting an additional +30% ATK; high ground tiles that trigger Talent 1 will spread its effect to adjacent high ground tiles (amount of spread increases with each attack), damage effect increases to 3.5x, and control effect becomes a 1s Bind",
             "initialSp": 12,
             "spCost": 34,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 6,
             "mastery": null,
-            "description": "ATK +75% . Unleash five consecutive hammer slams with expanded AOE range on the front tile with each slam dealing 200% of ATK as Physical damage while increases Zima's ATK further by +30% . During the skill duration, Talent's 1 effect will spread to other surrounding Ranged tiles with each slam expanding its range further and increasing its damage by 3.5x times the original and inflicts Bind for 1 second.",
+            "description": "ATK +75%, and deals a chain of five hammer blows with increased splash area to the tile ahead, each blow dealing 200% ATK as Physical damage and granting an additional +30% ATK; high ground tiles that trigger Talent 1 will spread its effect to adjacent high ground tiles (amount of spread increases with each attack), damage effect increases to 3.5x, and control effect becomes a 1s Bind",
             "initialSp": 12,
             "spCost": 34,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 7,
             "mastery": null,
-            "description": "ATK +80% . Unleash five consecutive hammer slams with expanded AOE range on the front tile with each slam dealing 210% of ATK as Physical damage while increases Zima's ATK further by +30% . During the skill duration, Talent's 1 effect will spread to other surrounding Ranged tiles with each slam expanding its range further and increasing its damage by 3.5x times the original and inflicts Bind for 1.5 seconds.",
+            "description": "ATK +80%, and deals a chain of five hammer blows with increased splash area to the tile ahead, each blow dealing 210% ATK as Physical damage and granting an additional +30% ATK; high ground tiles that trigger Talent 1 will spread its effect to adjacent high ground tiles (amount of spread increases with each attack), damage effect increases to 3.5x, and control effect becomes a 1.5s Bind",
             "initialSp": 15,
             "spCost": 32,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 1,
-            "description": "ATK +90% . Unleash five consecutive hammer slams with expanded AOE range on the front tile with each slam dealing 220% of ATK as Physical damage while increases Zima's ATK further by +30% . During the skill duration, Talent's 1 effect will spread to other surrounding Ranged tiles with each slam expanding its range further and increasing its damage by 3.5x times the original and inflicts Bind for 1.5 seconds.",
+            "description": "ATK +90%, and deals a chain of five hammer blows with increased splash area to the tile ahead, each blow dealing 220% ATK as Physical damage and granting an additional +30% ATK; high ground tiles that trigger Talent 1 will spread its effect to adjacent high ground tiles (amount of spread increases with each attack), damage effect increases to 3.5x, and control effect becomes a 1.5s Bind",
             "initialSp": 18,
             "spCost": 30,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 2,
-            "description": "ATK +95% . Unleash five consecutive hammer slams with expanded AOE range on the front tile with each slam dealing 230% of ATK as Physical damage while increases Zima's ATK further by +30% . During the skill duration, Talent's 1 effect will spread to other surrounding Ranged tiles with each slam expanding its range further and increasing its damage by 3.5x times the original and inflicts Bind for 1.5 seconds.",
+            "description": "ATK +95%, and deals a chain of five hammer blows with increased splash area to the tile ahead, each blow dealing 230% ATK as Physical damage and granting an additional +30% ATK; high ground tiles that trigger Talent 1 will spread its effect to adjacent high ground tiles (amount of spread increases with each attack), damage effect increases to 3.5x, and control effect becomes a 1.5s Bind",
             "initialSp": 18,
             "spCost": 28,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 3,
-            "description": "ATK +100% . Unleash five consecutive hammer slams with expanded AOE range on the front tile with each slam dealing 240% of ATK as Physical damage while increases Zima's ATK further by +30% . During the skill duration, Talent's 1 effect will spread to other surrounding Ranged tiles with each slam expanding its range further and increasing its damage by 3.5x times the original and inflicts Bind for 2 seconds.",
+            "description": "ATK +100%, and deals a chain of five hammer blows with increased splash area to the tile ahead, each blow dealing 240% ATK as Physical damage and granting an additional +30% ATK; high ground tiles that trigger Talent 1 will spread its effect to adjacent high ground tiles (amount of spread increases with each attack), damage effect increases to 3.5x, and control effect becomes a 2s Bind",
             "initialSp": 20,
             "spCost": 27,
-            "duration": "–"
+            "duration": null
           }
         ],
         "recommendation": [
@@ -608,7 +607,7 @@
             },
             {
               "name": "Cyclicene Prefab",
-              "quantity": 1
+              "quantity": 5
             }
           ]
         },
@@ -643,7 +642,7 @@
           "quantity": 8
         },
         {
-          "name": "Sugar Pack",
+          "name": "Sugar",
           "quantity": 5
         }
       ],
@@ -687,7 +686,26 @@
       ]
     }
   },
-  "baseSkills": [],
+  "baseSkills": [
+    {
+      "name": "Fighter-in-Chief",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, Battle Record formula related productivity +30%"
+    },
+    {
+      "name": "Friends Forever",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, Battle Record formula productivity +30%; when an Ursus Student Self-Government Group Operator is assigned to the same Factory, grants an additional +10% to Battle Record formula productivity"
+    },
+    {
+      "name": "'Got It, Boss!'",
+      "facility": "Control Center",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Control Center, self Morale loss per hour +0.5; for each Ursus Student Self-Government Group Operator assigned to the Reception Room, clue collection speed +10%"
+    }
+  ],
   "modules": [
     {
       "type": "Original",
@@ -698,8 +716,8 @@
       "type": "Upgrade",
       "name": "HAM-X: Unissued Medal",
       "mission": {
-        "requirement1": "Deal a total of 120,000 damage with a non- Support Zima the Raging Tide",
-        "requirement2": "Clear Main Theme 16-6 with a 3-star rating. You must deploy your own Zima the Raging Tide and cannot include other Guard or Defender operators."
+        "requirement1": "Deal a total of 120,000 damage with your own Zima the Raging Tide",
+        "requirement2": "Clear Main Theme 16-6 Standard Combat with a 3-star rating; You must deploy your own Zima the Raging Tide, and cannot include any other Guard or Defender Operators as members"
       },
       "stages": [
         {
@@ -887,32 +905,32 @@
     {
       "section": "Clinical Analysis",
       "unlock": "Unlocked at 25 trust",
-      "description": "造影检测结果显示，该干员体内脏器轮廓清晰，未见异常阴影，循环系统内源石颗粒检测未见异常，无矿石病感染迹象，现阶段可确认为非矿石病感染者。\n\n【体细胞与源石融合率】0%\n干员凛冬没有被源石感染的迹象。\n\n【血液源石结晶密度】0.13u/L\n干员凛冬甚少接触源石，但需加强在源石富集环境中行动的防护意识。"
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this Operator is believed to be non-infected.\n\n[Cell-Originium Fusion Rate] 0% \nOperator Zima shows no signs of infection at this time.\n\n[Blood Crystal Density] 0.13u/L \nOperator Zima rarely comes into contact with Originium, but needs to improve her awareness of protective measures when operating in high-Originium environments."
     },
     {
       "section": "Archive File 1",
       "unlock": "Unlocked at 50 trust",
-      "description": "在1101年的那个夏天，索尼娅·米哈伊里芙娜和乌萨斯学生自治团的其他成员一起在离舰校验清单末尾签上自己的名字时，她绝对没有想到，这趟旅程将会比她预计的更加曲折。\n前往乌萨斯的道路并不如运载车舱室内的温度一样明确而恒定。行程图上的第一站很快便到了，乌萨斯学生自治团的确踏上了白雪覆盖的土地，但那是谢拉格。\n根据凛冬的回忆，烈夏刚把一大摞贴着姓名条的行李甩在车站，便立马带着其他人奔赴雪山景点，她们一路上大呼小叫，惊扰了不少正在享受阳光的共享驮兽，坚雷教官无数次劝告她们离悬崖边远一些，但都没起到什么作用，最后她只好将所有人的安全绳同时系在了自己身上。但对凛冬来说，最令她印象深刻的是启程离开时的一幕，车站工作人员拿来行李寄存逾期的账单，烈夏则潇洒地在那张数额惊人的账单上签下了“佩尔罗契”这个姓氏，并补充了一句“礼物，帮我分发”。列车发动后，烈夏指着站台上那个面色复杂的高大身影笑得直不起腰来，笑了好一阵，她才告诉凛冬，刚才丢下的那堆“礼物”好像不只是她一开始就想扔的“破烂”，还有后面旅程要用到的保暖服和所有零食。\n因此，当乌萨斯学生自治团抵达圣骏堡后，她们所做的第一件事并非递交大学入学申请，而是补添衣物。在顺利进入圣骏堡内的大学就读后，凛冬也没有忘记罗德岛交给自己的任务。那时圣骏堡的社会氛围刚开始表现出一种先兆性的焦虑与兴奋，他国的巨变成了各种理论观念有力的论据，所有人都想要发出自己的声音，为乌萨斯指明前路。在凛冬看来，圣骏堡内的舆论环境过于复杂，距离真实生活中的问题又太远，于是，在坚雷教官的陪同下，凛冬开始利用假期前往周边的移动城市和定居点，考察那里人们的生活，记录他们遇到的问题，收集他们的主张，并试图搞清楚那些主张有多少是舶来的，又有多少是土生土长的。\n但凛冬的考察被迫提前结束了，远北发生的事情改变了一切。帝国的舆论迅速收紧，集团军的战舰频繁调动，整个乌萨斯都开始下雪......凛冬带着那段时间的所思所悟独自返回圣骏堡。但她没想到，在未来等着她的，不仅仅是一场“学生联合大会”。"
+      "description": "Sonya Mikhailivna could hardly have expected the twists and turns their journey would take when she and the rest of the Ursus Student Self-Government Group signed their off-boarding checklists in the summer of 1101.\nThe road to Ursus was not nearly as smooth and steady as the temperature in the car. It did not take long for them to reach their first stop: the snow-covered land of Kjerag.\nZima recalls that Leto wasted little time in dropping off their tagged luggage at the station before taking the group on a tour of Kjerag's favorite tourist spots, disturbing numerous communal burdenbeasts basking in the sun with their rowdy shouting. Instructor Dur-nar had tried to warn them to stay away from the cliff to no avail. In the end, she had to tie them to her with safety ropes. For Zima, however, it was the departure that left the deepest impression. When the station staff came bearing the bill for luggage storage, Leto simply signed the name 'Paleroche' and said, 'Hand out the presents for me.' As the train departed the station, Leto laughed her ass off at the tall figure standing on the platform with chagrin on his face. When she finally stopped laughing, she told Zima that the 'presents' were not just the junk she had intended to throw away from the start, but also the warm clothing and snacks intended for the journey.\nAs such, when the USSG arrived in Grypherburg, the first thing they did was not submit their university applications, but purchase clothing. Zima never forgot her mission for Rhodes Island, even as she began her studies at a Grypherburg university. A prognostic sense of anxiety and excitement had come over Grypherburg society. Changes in foreign countries had become evidence for various ideologies, and everyone wanted to have a voice in Ursus's future. She felt that public opinion in Grypherburg was too complex and too far removed from the realities of everyday life. Accompanied by Instructor Dur-nar, she began to travel to nearby nomadic cities and settlements whenever school was not in session, investigating how the people there lived, what problems they faced, how they saw things, and whether their opinions were homegrown or had come from abroad.\nBut Zima's investigation was cut short by the incident in the Far North. The empire quickly cracked down on public opinion, the Armies' battleships were on the move, and snow had begun to fall across Ursus... Zima brought her thoughts and insights from that period back to Grypherburg. Little did she imagine that it would be far more than the Student's Assembly awaiting her."
     },
     {
       "section": "Archive File 2",
       "unlock": "Unlocked at 100 trust",
-      "description": "“卡托加事件”结束后，弥漫在圣骏堡空气中的紧张情绪并未得到缓解，甚至颇有加剧的态势。\n对于圣骏堡市民们来说，有些变化是肉眼可见的：供电时间不仅没有延长，频率也更加不稳定；卡托加区仍牢牢锁在圣骏堡的动力层上，但有几根烟囱开始冒出白色水蒸气；倒塌的伊戈尔大帝雕像就那样摆在那里，和残损的城墙一样，没人去修，没人去涂鸦，甚至没人敢在路过时多看一眼。\n而另外一些变化却鲜为人知：以凛冬为首的“乌萨斯学生自治团”并未被判定任何罪责，这件事似乎在一些刻意的运作下不了了之了，而她们最终也未能和弑君者一起前往古米父母所在的区域——阿米娅曾专门与凛冬和古米通讯，向她们解释其中的原因，博士则亲自在人事文件上签字，任命凛冬为罗德岛在圣骏堡建设办事处的统筹负责人。\n\n【语音记录】\n“我明白罗德岛如今的处境。罗德岛在乌萨斯扎眼得就像是雪地里的一滴血，没办法大摇大摆地架设起通讯线路，或者运送一大票人到圣骏堡来。正因如此，我们的工作才格外重要。建设圣骏堡办事处需要的不仅是场地——是的，谢谢你辛苦打扫这几间排练室，古米——我们还需要资金，需要人脉，需要确保那些贵族不会三天两头来找我们的麻烦，我们还需要明面上可以运转的生意，需要专门负责接待沟通的人员，这些全都需要我们自己搞定。听着很难，对吧？好在我们对付这类事情还算有些经验，也各自有擅长的东西......什么？你想做前台接待？不行，乌克西克，谁都可以，但不能是你，否则我们不出一周就得倒闭——咦，话说回来，谁允许你来旁听的？这可是闭门会议！想溜走？晚了！既然已经听到了我们的机密，你最好赶紧在这张入职申请表上签字。真理，我这么做不算违规吧？那就好。”\n\n我已经忙到焦头烂额了，所以这次汇报简讯就随便写写吧，我没那么多时间。\n你们绝对想不到在圣骏堡登记运营一家医药公司的办事处有多麻烦！就比如今天，我接到一张通知单，预定的消防检验改期了，因为我们违反了安全标准中的某一条，我们为此查了整整一天，你们猜结果是因为什么？\n因为我那柄又重又大的锤斧，它太“吓人”了，所以不安全——这都是什么逻辑？\n你们更想象不到我们最后是怎么解决的。我们找来一个玻璃罩子，将那柄锤斧罩住，说，它是一件文物展品。\n就......好了。\n说实话，我要是早知道这些事情这么麻烦，我还不如跑去■■■■抡起锤斧痛痛快快地打上几架！\n——干员凛冬的“汇报简讯”"
+      "description": "The conclusion of the Katorga Incident did little to mitigate the tension in Grypherburg. If anything, it has intensified.\nFor the people of Grypherburg, some of the changes were visible. The power supply had become even more inconsistent, Katorga Raion was still firmly attached to Grypherburg's power deck—though white smoke had begun to rise from a few chimneys—and the fallen statue of Igor Velikiy lay untouched, just like the broken walls. No one repaired it, no one scrawled graffiti on it, and no one even dared glance at it as they passed.\nMeanwhile, other changes happened beneath the surface. Zima and the Ursus Student Self-Government Group were not charged with any offenses—their actions seemingly covered up by certain parties—and they were unable to travel with Crownslayer to where Gummy's parents were located. Amiya spoke directly to Zima and Gummy to explain, while the Doctor personally signed the documents appointing Zima as director of Rhodes Island's Grypherburg office.\n\n[Audio Log]\n'I understand Rhodes Island's current circumstances. The company stands out in Ursus like a drop of blood on the snow, and is in no position to openly establish a communications network or send large numbers to Grypherburg. That's what makes our work even more important. The Grypherburg office needs more than a location—but yes, thanks for cleaning the rehearsal rooms, Gummy—we need funding and connections. We need something to keep the nobles from coming after us. We need a front business, as well as reception and communication staff, and we need to do all of this ourselves. Sounds tough, doesn't it? Thankfully, we have some experience in these matters, and we all have our own strengths... Wait, you want to be the receptionist? <i>No</i>, Ukusik, anyone but you! We wouldn't last a week if—say, who let you in anyway? This meeting was supposed to be private! Oh no you don't, you're not getting away when you've already heard our secret. You better sign this application form here and now... Uh, we're not breaking any rules, are we, Istina? Good.'\n\nLook, I'm busy enough as it is—I'm just going to mail in this brief report, because I don't have the time.\nYou have no idea how much trouble it is to register and operate a pharmaceutical company branch in Grypherburg! Just today, we got a notice that the fire safety inspection had been rescheduled because of a violation. We spent the whole day trying to find it. Guess what it was?\nThat big hamaxe of mine, which was apparently 'too frightening' and therefore unsafe—what kind of nonsense is that?\nYou'd never guess how we dealt with it either. We found a glass case, put it over it, and called it an exhibit.\nAnd guess what? It was approved. Somehow.\nHonestly, if I'd known this would be such a pain in the ass, I'd have taken my hamaxe to ■■■■ and picked a few fights instead!\n—Operator Zima's 'brief report'"
     },
     {
       "section": "Archive File 3",
       "unlock": "Unlocked at 150 trust",
-      "description": "凛冬和真理曾有过一次谈话。\n事后，她们分别向罗德岛医疗部主动汇报了这次谈话，以作为心理健康医疗程序的记录资料。\n\n我一直以来并不是一个擅长言辞的人。甚至在我开口说话的那一刻，我都没想好具体要说些什么。\n所以我和真理从卡托加区聊起，我跟她说了我在里面遇到了些什么，她也告诉我她在外面经历了些什么。\n我和她讲了列昂尼德的遭遇，讲了法杰伊一开始是多么反对我们去营救自己的同学，讲了在那个时刻我是多么愤怒，我有多想将那个家伙揍倒在地上，然后去做自己该做的事。但我当时没有那么做。在那个瞬间，我开始想，如果站在这里的是真理，她会怎么做？我不知道，也许，真理她这时候已经列出了四五条理由让那些反对的蠢货闭嘴了。但她不在这里。\n我忍住了挥动拳头，或是扇出一个巴掌的冲动，我强迫自己冷静下来，像真理那样解决问题，我说不出那么漂亮犀利的话，我就慢慢地讲，讲出我所坚信的道理。只要我坚信那些道理是正确的，那么它们应该也能说服别人。是的，我那么做了，事后看来，我应该是做对了。\n应该是吧？我这么问了真理，我还说，我其实有点懊恼当时没扇法杰伊一巴掌。\n但是她说，索尼娅，我很高兴，高兴的不是你做了什么，而是你现在懊恼了，你的内心仍在坚持自己。\n我搞不懂她说这句话是什么意思，听着有点像讽刺，但我似乎又有点同意她这句话。欸，真奇怪，现在想想当时和真理聊这些的场景，居然还有些感动。\n——干员凛冬的访谈记录\n\n“感动”？一点也不。如果不是索尼娅贪嘴，非要拉着我去偷拿坚雷教官还没烤好的纸杯蛋糕，我也不会被索尼娅笨手笨脚地反锁在厨房操作间里。等待坚雷教官听见警报来打开门解救我们两个小偷是我近期经历过的最尴尬的事情。\n至于她说的那些......的确是这样，但那并不是讽刺。其实我在卡托加区外做那些事时，也常常逼迫自己代入索尼娅的角色，我也问过自己，如果是索尼娅，她会怎么做？同样地，我也有遗憾，遗憾不代表自己做错了什么，只是在确认一种对自我的坚持。\n当然，索尼娅完全可以扇出那个巴掌，我也完全可以不把自己逼到那个份上。结果？谁会知道那些没发生的事算好还是算坏呢？至少，现在我们在扪心自问，这就够了。\n对了，当时坚雷教官赶到后，索尼娅立马就溜走了，我有一句话没来得及跟她讲清楚，你也知道，一旦脱离了特定的环境，有些话就不那么容易说出口了。所以，我干脆在这里说好了——\n索尼娅，很高兴我们在当下这一刻都坚持了自己，我觉得，这就是我们能够永远信任彼此的原因。\n——干员真理的访谈记录\n\n我进去的时候，那批纸杯蛋糕已经快被她们吃光了，呵呵......没关系，这就是我喜欢做烘焙的原因呀。\n——干员坚雷"
+      "description": "A particular conversation occurred between Zima and Istina.\nThey both independently reported it to Medical, for their respective psychological health records.\n\nI was never good with words. I wasn't sure what I was going to say, even as I opened my mouth.\nSo I told Istina about Katorga, about what I went through in there, and she told me what she went through on the outside.\nI told her about what happened to Leonid, about how Faddey opposed the rescue of our fellow students, about how angry I was and how I wanted to punch him and go do my own thing. But I didn't. At the time, I thought, 'what would Istina do if she were here?' I didn't know. Maybe she would've already come up with four or five reasons to shut those <i>mudak</i> up, but she wasn't there.\nI resisted the urge to swing my fist or slap him. I forced myself to calm down and solve the problem like Istina would. I couldn't spin my words like she could, so I spoke slowly and talked about my most resolute beliefs, trusting that they would convince the others as well. Looking back, I think I did the right thing.\nBut did I? That's what I asked Istina. I said I kind of regretted not slapping Faddey.\nShe said she was glad, but not because of what I did. Because I regretted it. She said that proved that deep in my heart, I was still determined to be myself.\nI didn't know what she meant. It sounded like she was mocking me, but part of me agreed with her. For whatever reason, I even feel a little touched when I think back to that conversation with her.\n—Interview with Operator Zima\n\n'Touched'? No, not at all. I wouldn't have even been locked in the kitchen prep room with Sonya if she hadn't felt the need to steal the cupcakes Instructor Dur-nar was baking. It was the most embarrassed I'd felt in a long while, having the instructor come free the two of us 'thieves' when she heard the alarm.\nAs for what she said... I did say that, but I was not mocking her. When I did what I did outside Katorga, I often forced myself to step into Sonya's shoes, and asked myself what she would do if she were there. And just like her, I have regrets. But regret doesn't mean we did anything wrong, it's simply a reaffirmation of our self-identity.\nSonya could have let loose her slap, of course, and I didn't have to force myself to do those things. But who can say whether the things we didn't do would have been better or worse? At least we're asking ourselves the question. That's good enough.\nThere was something else I didn't get to say to Sonya, who left as soon as the instructor arrived. I'm sure you're aware that some things are hard to say once the moment has left us, so I thought I might as well say it here:\nI'm glad we both chose to affirm who we are, Sonya. I think that's why we trust each other.\n—Interview with Operator Istina\n\nThey'd gone through almost the entire batch of cupcakes by the time I arrived. It's all good, though. This is why I like baking.\n—Operator Dur-nar"
     },
     {
       "section": "Archive File 4",
       "unlock": "Unlocked at 200 trust",
-      "description": "我们战胜了那群混蛋，我们终于自由了。接下来要做的，是募集更多人手，号召一切愿意加入我们的人！我们会占据整座圣骏堡，证明谁才是这里的主人！\n——纸页上的文字\n\n我看见了痛苦呻吟的人们，我看见了遍布疮痍的大地。这片土地已经再也压榨不出一滴乳汁了，可那些贪婪的贵族和可恨的官僚依然像吸血虫一样在折磨它，折磨我们的祖国。我必须反抗。我将举起刀剑！我知道，我绝不是唯一这么想的人。\n——纸页上的文字\n\n我们砍下了警长的脑袋。我们还会去砍更多人的脑袋！这个腐烂的国家撑不了多久了！我们会胜利的！尼卡，索尼娅......我为你们而战。\n——纸页上的文字\n\n凛冬和古米在打扫那家作为乌萨斯学生自治团临时活动场地的废弃剧院时，偶然从地下室里找到了一大摞文件，以及许多写满字的纸页。\n起初，她以为那是某种剧本，写着稀里糊涂的台词。但苦艾查阅一些市政规划文件后发现，这个地下室在剧院建成之前就存在了，以前，很久以前，早在两三百年以前，这里就已经是监狱的一部分，主要是用来存放、销毁从死囚犯身上扒下的物件的。\n于是凛冬开始重新审视那些纸张。能够写下这样的文字的死囚犯，大概都犯下了叛国谋逆的大罪，最终被乌萨斯的军警镇压、逮捕。仔细看去，每一张纸的材质和颜色都有所不同，上面的笔迹也出自不同人之手。\n这意味着，数百年间，曾有许多次大大小小的反抗活动，或是为了反抗严苛的税赋，或是为了向贪官酷吏复仇。留下这些文字的人，或是农夫，或是诗人，或是军人，或是疯子......他们生活的年代相隔甚远，有的人在源石外燃机驱动的工厂里写下文字，有的人则刚听说新发明出来的“源石外燃机”。但最终，他们的绝笔还是被堆在了同一个阴暗的角落。\n凛冬曾试图确认留下这些文字的人的身份，但毫不意外，无论是那些轰轰烈烈的“叛乱”，还是举起反抗旗帜的人，都没能在乌萨斯浩瀚的历史中留下名字。\n\n我在想的事，说来有些幼稚，我在想这几百年来，乌萨斯有过多少个索尼娅？多少个安娜、罗莎琳、拉达、娜塔莉娅、卓娅......又有多少个彼得和伊万？\n看到那张纸上写着“索尼娅”时，我忍不住打了个寒战。为什么这些东西会被我找到，是命运，还是偶然？\n我当时放下了手里的纸张，看向那间装满尘封历史的地下室，我想的是：这一次，应该会不一样。\n我会让它的结果不一样。\n——干员凛冬"
+      "description": "We brought down those <i>mudak</i>. We are free. Now we must gather people, everyone who would join us, and show Grypherburg who its true master is!\n—Words on a page\n\nI saw the people whimpering in pain. I saw the scarred soil. Not another drop of milk could be squeezed from it, yet the greedy nobles and vile bureaucrats continue to torment it like leeches, torment our motherland. I must resist. I must take up the sword! I am not the only one who thinks this.\n—Words on a page\n\nWe cut off the commissioner's head! We will cut off more! This rotten nation will fall! Victory shall be ours! Nika, Sonya... I fight for you.\n—Words on a page\n\nZima and Gummy found a large pile of papers in the basement of the abandoned theater that served as the Ursus Student Self-Government Group's temporary base of operations.\nAt first, she thought it was the script of a particularly incoherent play, but Absinthe's examination of municipal archives revealed that the basement had existed from before the theater was even built. It had been part of the prison system centuries ago, used to store and destroy the possessions of executed inmates.\nZima began to examine the papers again. The inmates who wrote them had likely been put on death row for treason, suppressed and arrested by the enforcers of Ursus. Each sheet was subtly different from the others in texture or color, and each was written by a different hand.\nThey mark the countless acts of resistance over the centuries, big and small. By farmers, poets, soldiers, and madmen. Their dates are often many years apart. Some wrote in factories driven by Originium External Combustion Engine, while others had only recently heard about that new invention. Ultimately, however, all their final letters ended up in the same dark corner.\nZima tried to identify the writers, but unsurprisingly neither these 'rebellions' nor those who carried the flag of resistance had left their names upon the vast history of Ursus.\n\nThe first thought I had might seem childish. I was thinking about how many Sonyas there have been over the centuries, how many Annas, Rosalinds, Natalyas, and Zoyas... how many Peters and Ivans.\nI felt a chill when I saw the name 'Sonya' on that piece of paper. Was it fate or coincidence that I came across it?\nI put down the papers and looked over the dust-covered basement, filled with history. This time, I thought, it would be different.\nI'd make sure it was different.\n—Operator Zima"
     },
     {
       "section": "Promotion Record",
       "unlock": "Unlocked at E2",
-      "description": "【权限记录】\n根据凛冬干员等人事后递交的复盘报告，她们在策划“营救学生拉列亚”的整个行动中，其实遇上了不少意外情况，比如秘密会议时窗外一闪而过的人影，从上锁的储藏间里离奇失踪的日程表......甚至在实际行动当天，部分负责运输后勤物资的学生也被摘掉肩章的警察拦在巷道里仔细盘问。似乎她们的计划足以骗过听证会现场的那些贵族，却没法瞒过某些高处的目光。\n但凛冬干员在复盘报告里重点强调的部分在于——所有的意外最后都不了了之，甚至连敲上钢印的通缉令都被悄无声息地撤销了。据凛冬干员所说，她当时以为这是罗德岛从中斡旋运作的结果，还颇为惊讶罗德岛能轻松替她们摆平这些事端，却难以运送来远距通讯装置。\n事实上，自远北事件以来，罗德岛在乌萨斯境内的一切活动都面临着无比巨大的阻力，就仿佛在圣骏堡的顶端有一双无形的眼睛时刻警惕着我们的一举一动。\n我们无从判定乌萨斯当权者们的意图，目前也并非尝试建立直接沟通的最佳时机。尤其是在■■■■事件之后，我们必须重新审视乌萨斯这个古老的国家和它庞大复杂的运转体系。"
+      "description": "[Classified Log]\nOperator Zima's after-action report from their rescue of the student Rania mentioned various accidents in the course of the operation, such as a shadowy figure that flashed by the window at a secret meeting, or a schedule that went mysteriously missing from a locked cabinet. Even on the day of the operation, some students in charge of logistics were interrogated in the alleys by police with their epaulettes removed, as though there were eyes from up high seeing through all their plans, even if they had managed to pull wool over the eyes of the nobles at the hearing.\nZima emphasized, however, that all these accidents seemed to amount to nothing. Even the stamped warrant for their arrest seemed to have quietly disappeared. She initially thought it was the result of Rhodes Island's lobbying, expressing surprise at how we were able to take care of such matters, while still being unable to deliver long-range communications equipment.\nAs a matter of fact, Rhodes Island's activities in Ursus have encountered tremendous resistance ever since the Far North Incident, as though there were a pair of invisible eyes constantly watching our every move from atop Grypherburg.\nThe intentions of Ursus's regime remain unknown at this time, and establishing direct communications would be premature. In the wake of the ■■■■ Incident, we must reassess this ancient nation and its sprawling, convoluted organization."
     }
   ]
 }
