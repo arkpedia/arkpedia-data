@@ -1,0 +1,1559 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act28sre",
+    "label": "CV",
+    "name": "Come Catastrophes or Wakes of Vultures",
+    "release_date": "2024-03-19"
+  },
+  "enemies": [
+    {
+      "slug": "radioactive_originium_slug_enemy_1352_eslime_2",
+      "id": "enemy_1352_eslime_2",
+      "name": "Radioactive Originium Slug α",
+      "index": "B12",
+      "rank": "Normal",
+      "sort": 681,
+      "hidden": false,
+      "icon": "/enemies-icons/Radioactive Originium Slug α.webp",
+      "flavour_text": "A wild Infected creature that accidentally consumed too much industrial waste, causing it to leak Arts energy upon death. More dangerous than ordinary radioactive Originium slugs, these low-intelligence creatures are easily manipulated by enemy casters to launch swarming attacks on manmade facilities.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "When defeated, deals heavy Arts damage in an area and causes all enemies on the field to gain 1 Energy.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3500,
+            "atk": 150,
+            "def": 50,
+            "res": 15.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "E",
+            "def": "E",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Boom",
+              "parameters": {
+                "add_count": 1.0,
+                "atk_scale": 4.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "paramilitary_gangster",
+      "id": "enemy_1353_esabr",
+      "name": "Paramilitary Gangster",
+      "index": "EG1",
+      "rank": "Normal",
+      "sort": 682,
+      "hidden": false,
+      "icon": "/enemies-icons/Paramilitary Gangster.webp",
+      "flavour_text": "A gangster hired to sow chaos, often picking fights. Their employer has provided them with an experimental thermal amplification device.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Energy Capacity: 10; Gains [Overload] upon reaching max Energy.",
+          "format": "normal"
+        },
+        {
+          "text": "[Overload] Greatly increases ASPD, DEF, and RES for a period of time.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4500,
+            "atk": 250,
+            "def": 100,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "D",
+            "def": "D",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "blacksteel_energy",
+              "parameters": {
+                "max_stack_cnt": 10.0
+              }
+            },
+            {
+              "key": "over_energy",
+              "parameters": {
+                "attack_speed": 120.0,
+                "def": 2.0,
+                "duration": 10.0,
+                "magic_resistance": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "paramilitary_gangster_leader",
+      "id": "enemy_1353_esabr_2",
+      "name": "Paramilitary Gangster Leader",
+      "index": "EG2",
+      "rank": "Normal",
+      "sort": 683,
+      "hidden": false,
+      "icon": "/enemies-icons/Paramilitary Gangster Leader.webp",
+      "flavour_text": "A gangster hired to sow chaos, well-accustomed to brawls. Their employer has provided them with an experimental thermal amplification device.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Energy Capacity: 10; Gains [Overload] upon reaching max Energy.",
+          "format": "normal"
+        },
+        {
+          "text": "[Overload] Greatly increases ASPD, DEF, and RES for a period of time.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 300,
+            "def": 150,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "D",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "blacksteel_energy",
+              "parameters": {
+                "max_stack_cnt": 10.0
+              }
+            },
+            {
+              "key": "over_energy",
+              "parameters": {
+                "attack_speed": 120.0,
+                "def": 2.0,
+                "duration": 10.0,
+                "magic_resistance": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "paramilitary_thief",
+      "id": "enemy_1354_eghost",
+      "name": "Paramilitary Thief",
+      "index": "EG3",
+      "rank": "Normal",
+      "sort": 684,
+      "hidden": false,
+      "icon": "/enemies-icons/Paramilitary Thief.webp",
+      "flavour_text": "A gangster hired to sow chaos, more interested in stealing property than injuring others. The thermal amplification devices they are equipped with have not actually been tested for safety.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Unblockable. Energy Capacity: 5; gains [Overload] upon reaching max Energy",
+          "format": "normal"
+        },
+        {
+          "text": "[Overload] Greatly increases ASPD, DEF, and RES for a period of time.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 100,
+            "def": 120,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.2,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "E",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "blacksteel_energy",
+              "parameters": {
+                "max_stack_cnt": 5.0
+              }
+            },
+            {
+              "key": "over_energy",
+              "parameters": {
+                "attack_speed": 120.0,
+                "def": 2.0,
+                "duration": 10.0,
+                "magic_resistance": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "paramilitary_thief_leader",
+      "id": "enemy_1354_eghost_2",
+      "name": "Paramilitary Thief Leader",
+      "index": "EG4",
+      "rank": "Normal",
+      "sort": 685,
+      "hidden": false,
+      "icon": "/enemies-icons/Paramilitary Thief Leader.webp",
+      "flavour_text": "A gangster hired to sow chaos, adept at evading capture and acting quickly. The thermal amplification devices they are equipped with have not actually been tested for safety.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Unblockable. Energy Capacity: 5; gains [Overload] upon reaching max Energy",
+          "format": "normal"
+        },
+        {
+          "text": "[Overload] Greatly increases ASPD, DEF, and RES for a period of time.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7000,
+            "atk": 100,
+            "def": 180,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.2,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "E",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "blacksteel_energy",
+              "parameters": {
+                "max_stack_cnt": 5.0
+              }
+            },
+            {
+              "key": "over_energy",
+              "parameters": {
+                "attack_speed": 120.0,
+                "def": 2.0,
+                "duration": 10.0,
+                "magic_resistance": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "blocker",
+      "id": "enemy_1355_mrfly",
+      "name": "Blocker",
+      "index": "D11",
+      "rank": "Normal",
+      "sort": 686,
+      "hidden": false,
+      "icon": "/enemies-icons/Blocker.webp",
+      "flavour_text": "An unmanned drone controlled by enemy forces, capable of interfering with Originium Arts. They mostly play a supportive role and lack direct offensive capabilities.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Increases the RES of surrounding enemy units.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 0,
+            "def": 80,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.2,
+            "range": 2.5,
+            "weight": null,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "E",
+            "def": "E",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "magdef_add",
+              "parameters": {
+                "magic_resistance": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "paramilitary_sniper_leader",
+      "id": "enemy_1356_egun_2",
+      "name": "Paramilitary Sniper Leader",
+      "index": "EG6",
+      "rank": "Elite",
+      "sort": 689,
+      "hidden": false,
+      "icon": "/enemies-icons/Paramilitary Sniper Leader.webp",
+      "flavour_text": "An outlaw hired to sow chaos, well-accustomed to using thermal energy blasters and eager to just start blasting.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Energy Capacity: 20; Gains [Overload] upon reaching max Energy.",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically stops moving and continuously provides Energy to all enemies within attack range.",
+          "format": "normal"
+        },
+        {
+          "text": "[Overload] Greatly increases ASPD, DEF, and RES for a longer period of time.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12000,
+            "atk": 250,
+            "def": 120,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.2,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "D",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "AddEnergy",
+              "sp_cost": 0,
+              "cooldown": 28.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "add_count": 1.0,
+                "duration": 5.0,
+                "interval": 1.0,
+                "range_radius": 2.2
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "blacksteel_energy",
+              "parameters": {
+                "max_stack_cnt": 20.0
+              }
+            },
+            {
+              "key": "over_energy",
+              "parameters": {
+                "attack_speed": 120.0,
+                "def": 2.0,
+                "duration": 20.0,
+                "magic_resistance": 30.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "paramilitary_axeman_leader",
+      "id": "enemy_1357_erob_2",
+      "name": "Paramilitary Axeman Leader",
+      "index": "EG8",
+      "rank": "Elite",
+      "sort": 691,
+      "hidden": false,
+      "icon": "/enemies-icons/Paramilitary Axeman Leader.webp",
+      "flavour_text": "An outlaw hired to sow chaos, equipped with a thermal energy axe that consumes too much power. They will find a way to use their associates' energy supplies.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Energy Capacity: 20; Gains [Overload] upon reaching max Energy.",
+          "format": "normal"
+        },
+        {
+          "text": "Continuously drains 1 Energy from all nearby ground enemies.",
+          "format": "normal"
+        },
+        {
+          "text": "[Overload] Greatly increases ASPD, DEF, and RES for a longer period of time.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 600,
+            "def": 350,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "blacksteel_energy",
+              "parameters": {
+                "max_stack_cnt": 20.0
+              }
+            },
+            {
+              "key": "over_energy",
+              "parameters": {
+                "attack_speed": 120.0,
+                "def": 2.0,
+                "duration": 20.0,
+                "magic_resistance": 30.0
+              }
+            },
+            {
+              "key": "steal_energy",
+              "parameters": {
+                "interval": 2.0,
+                "range_radius": 2.2,
+                "steal_count": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "paramilitary_defender",
+      "id": "enemy_1358_esheld",
+      "name": "Paramilitary Defender",
+      "index": "EG9",
+      "rank": "Elite",
+      "sort": 692,
+      "hidden": false,
+      "icon": "/enemies-icons/Paramilitary Defender.webp",
+      "flavour_text": "A mercenary hired to sow chaos, equipped with a heavy protective suit that is charged in advance to preempt any energy leakage issues. Due to their relatively high education level, part of the job description is to provide handwritten thermal energy amplifier reports to their employer.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Energy Capacity: 20; Gains [Overload] upon reaching max Energy.",
+          "format": "normal"
+        },
+        {
+          "text": "Starts with an additional 15 Energy, but loses 1 Energy per 10 seconds.",
+          "format": "normal"
+        },
+        {
+          "text": "[Overload] Greatly increases ASPD, DEF, and RES for a longer period of time.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12000,
+            "atk": 300,
+            "def": 600,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "B",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "blacksteel_energy",
+              "parameters": {
+                "init_stack_cnt": 15.0,
+                "max_stack_cnt": 20.0
+              }
+            },
+            {
+              "key": "dec_energy",
+              "parameters": {
+                "dec_count": -1.0,
+                "interval": 10.0
+              }
+            },
+            {
+              "key": "over_energy",
+              "parameters": {
+                "attack_speed": 120.0,
+                "def": 2.0,
+                "duration": 20.0,
+                "magic_resistance": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "paramilitary_defender_leader",
+      "id": "enemy_1358_esheld_2",
+      "name": "Paramilitary Defender Leader",
+      "index": "EG10",
+      "rank": "Elite",
+      "sort": 693,
+      "hidden": false,
+      "icon": "/enemies-icons/Paramilitary Defender Leader.webp",
+      "flavour_text": "A mercenary hired to sow chaos, equipped with a heavy protective suit that is charged in advance to preempt any energy leakage issues. In addition to causing damage, they are also responsible for compiling and submitting the team's test results.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Energy Capacity: 20; Gains [Overload] upon reaching max Energy.",
+          "format": "normal"
+        },
+        {
+          "text": "Starts with an additional 15 Energy, but loses 1 Energy per 10 seconds.",
+          "format": "normal"
+        },
+        {
+          "text": "[Overload] Greatly increases ASPD, DEF, and RES for a longer period of time.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 400,
+            "def": 700,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "B",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "blacksteel_energy",
+              "parameters": {
+                "init_stack_cnt": 15.0,
+                "max_stack_cnt": 20.0
+              }
+            },
+            {
+              "key": "dec_energy",
+              "parameters": {
+                "dec_count": -1.0,
+                "interval": 10.0
+              }
+            },
+            {
+              "key": "over_energy",
+              "parameters": {
+                "attack_speed": 120.0,
+                "def": 2.0,
+                "duration": 20.0,
+                "magic_resistance": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "paramilitary_bombardier",
+      "id": "enemy_1359_ekulsr",
+      "name": "Paramilitary Bombardier",
+      "index": "EG11",
+      "rank": "Elite",
+      "sort": 694,
+      "hidden": false,
+      "icon": "/enemies-icons/Paramilitary Bombardier.webp",
+      "flavour_text": "A mercenary hired to sow chaos, equipped with a compressed-air grenade launcher. In complete disregard to safety regulations, the gas cylinder is pre-heated to increase weapon efficiency.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Energy Capacity: 30; Gains [Overload] upon reaching max Energy.",
+          "format": "normal"
+        },
+        {
+          "text": "Starts with an additional 25 Energy, but loses 1 Energy per 5 seconds.",
+          "format": "normal"
+        },
+        {
+          "text": "While not blocked, launches grenades that deal damage to the target and surrounding units.",
+          "format": "normal"
+        },
+        {
+          "text": "[Overload] Greatly increases ASPD, DEF, and RES for a longer period of time.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 400,
+            "def": 200,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 2.6,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "blacksteel_energy",
+              "parameters": {
+                "init_stack_cnt": 25.0,
+                "max_stack_cnt": 30.0
+              }
+            },
+            {
+              "key": "dec_energy",
+              "parameters": {
+                "dec_count": -1.0,
+                "interval": 5.0
+              }
+            },
+            {
+              "key": "over_energy",
+              "parameters": {
+                "attack_speed": 120.0,
+                "def": 2.0,
+                "duration": 20.0,
+                "magic_resistance": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "paramilitary_bombardier_leader",
+      "id": "enemy_1359_ekulsr_2",
+      "name": "Paramilitary Bombardier Leader",
+      "index": "EG12",
+      "rank": "Elite",
+      "sort": 695,
+      "hidden": false,
+      "icon": "/enemies-icons/Paramilitary Bombardier Leader.webp",
+      "flavour_text": "A mercenary hired to sow chaos, equipped with a compressed-air grenade launcher. The gas cylinder has been heated to such a degree that their colleagues are afraid to get close.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Energy Capacity: 30; Gains [Overload] upon reaching max Energy.",
+          "format": "normal"
+        },
+        {
+          "text": "Starts with an additional 25 Energy, but loses 1 Energy per 5 seconds.",
+          "format": "normal"
+        },
+        {
+          "text": "While not blocked, launches grenades that deal damage to the target and surrounding units.",
+          "format": "normal"
+        },
+        {
+          "text": "[Overload] Greatly increases ASPD, DEF, and RES for a longer period of time.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 550,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 2.6,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "blacksteel_energy",
+              "parameters": {
+                "init_stack_cnt": 25.0,
+                "max_stack_cnt": 30.0
+              }
+            },
+            {
+              "key": "dec_energy",
+              "parameters": {
+                "dec_count": -1.0,
+                "interval": 5.0
+              }
+            },
+            {
+              "key": "over_energy",
+              "parameters": {
+                "attack_speed": 120.0,
+                "def": 2.0,
+                "duration": 20.0,
+                "magic_resistance": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "clip_cliff",
+      "id": "enemy_1546_cliff",
+      "name": "'Clip' Cliff",
+      "index": "BSC",
+      "rank": "Boss",
+      "sort": 1343,
+      "hidden": false,
+      "icon": "/enemies-icons/'Clip' Cliff.webp",
+      "flavour_text": "Legendary mercenary and founder of Blacksteel Worldwide. War once destroyed him, then forged him anew.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks reduce the target's DEF for a few seconds; this effect can stack.",
+          "format": "normal"
+        },
+        {
+          "text": "ATK and DEF are greatly reduced upon taking damage from a Waste Heat Vent.",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Quickdraw] Stuns the target and adjacent units, then attacks 3 times consecutively.",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "Upon entering second form, gains the ability to immediately clear the SP of all Waste Heat Vents on the field.",
+          "format": "normal"
+        },
+        {
+          "text": "ATK and DEF increased, ASPD greatly increased.",
+          "format": "normal"
+        },
+        {
+          "text": "[Stroke of Thunder] Stuns the target and adjacent units, then attacks 6 times consecutively. If the target retreats or is defeated, the attacks will penetrate a certain distance and this skill will be refreshed.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 45000,
+            "atk": 1100,
+            "def": 2500,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.45,
+            "range": 2.2,
+            "weight": 6,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "S",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "MarkStunAttack_S1",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "def": -150.0,
+                "duration": 6.0,
+                "stun": 6.0
+              }
+            },
+            {
+              "key": "MarkStunAttack_S2",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "def": -150.0,
+                "dist": 1.5,
+                "duration": 6.0,
+                "stun": 6.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "reborn",
+              "parameters": {
+                "atk": 0.2,
+                "attack_speed": 100.0,
+                "ban_attack_time": 1.0,
+                "def": 1000.0,
+                "duration": 20.0,
+                "invincible_time": 10.0,
+                "rest_duration": 18.0
+              }
+            },
+            {
+              "key": "reduce_def",
+              "parameters": {
+                "def": -150.0,
+                "duration": 6.0
+              }
+            },
+            {
+              "key": "trap_debuff",
+              "parameters": {
+                "atk": -0.7,
+                "debuff_time": 1.0,
+                "def": -0.7
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 65000,
+            "atk": 1300,
+            "def": 3000,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.45,
+            "range": 2.2,
+            "weight": 6,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "S+",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "MarkStunAttack_S1",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "def": -150.0,
+                "duration": 6.0,
+                "stun": 6.0
+              }
+            },
+            {
+              "key": "MarkStunAttack_S2",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "def": -150.0,
+                "dist": 1.5,
+                "duration": 6.0,
+                "stun": 6.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "reborn",
+              "parameters": {
+                "atk": 0.2,
+                "attack_speed": 100.0,
+                "ban_attack_time": 1.0,
+                "def": 1000.0,
+                "duration": 20.0,
+                "invincible_time": 10.0,
+                "rest_duration": 18.0
+              }
+            },
+            {
+              "key": "reduce_def",
+              "parameters": {
+                "def": -150.0,
+                "duration": 6.0
+              }
+            },
+            {
+              "key": "trap_debuff",
+              "parameters": {
+                "atk": -0.7,
+                "debuff_time": 1.0,
+                "def": -0.7
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "blocker_p",
+      "id": "enemy_1355_mrfly_2",
+      "name": "Blocker–P",
+      "index": "D12",
+      "rank": "Normal",
+      "sort": 687,
+      "hidden": false,
+      "icon": "/enemies-icons/Blocker–P.webp",
+      "flavour_text": "An unmanned drone controlled by enemy forces, capable of interfering with Originium Arts. More effective than regular models, they mostly play a supportive role and lack direct offensive capabilities.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Increases the RES of surrounding enemy units.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 0,
+            "def": 80,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.2,
+            "range": 2.5,
+            "weight": null,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "E",
+            "def": "E",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "magdef_add",
+              "parameters": {
+                "magic_resistance": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "radioactive_originium_slug_enemy_1352_eslime",
+      "id": "enemy_1352_eslime",
+      "name": "Radioactive Originium Slug",
+      "index": "B11",
+      "rank": "Normal",
+      "sort": 680,
+      "hidden": false,
+      "icon": "/enemies-icons/Radioactive Originium Slug.webp",
+      "flavour_text": "A wild Infected creature that accidentally consumed too much industrial waste, causing it to leak Arts energy upon death. These low-intelligence creatures are easily manipulated by enemy casters to launch swarming attacks on manmade facilities.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "When defeated, deals heavy Arts damage in an area and causes all enemies on the field to gain 1 Energy.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 2000,
+            "atk": 90,
+            "def": 50,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "E",
+            "def": "E",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Boom",
+              "parameters": {
+                "add_count": 1.0,
+                "atk_scale": 4.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "paramilitary_sniper",
+      "id": "enemy_1356_egun",
+      "name": "Paramilitary Sniper",
+      "index": "EG5",
+      "rank": "Elite",
+      "sort": 688,
+      "hidden": false,
+      "icon": "/enemies-icons/Paramilitary Sniper.webp",
+      "flavour_text": "An outlaw hired to sow chaos, equipped with a thermal energy blaster with its output cranked up too high. However, as a result of this, they are able to charge the equipment of other gangsters.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Energy Capacity: 20; Gains [Overload] upon reaching max Energy.",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically stops moving and continuously provides Energy to all enemies within attack range.",
+          "format": "normal"
+        },
+        {
+          "text": "[Overload] Greatly increases ASPD, DEF, and RES for a longer period of time.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 9000,
+            "atk": 200,
+            "def": 80,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.2,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "D",
+            "def": "E",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "AddEnergy",
+              "sp_cost": 0,
+              "cooldown": 28.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "add_count": 1.0,
+                "duration": 5.0,
+                "interval": 1.0,
+                "range_radius": 2.2
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "blacksteel_energy",
+              "parameters": {
+                "max_stack_cnt": 20.0
+              }
+            },
+            {
+              "key": "over_energy",
+              "parameters": {
+                "attack_speed": 120.0,
+                "def": 2.0,
+                "duration": 20.0,
+                "magic_resistance": 30.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "paramilitary_axeman",
+      "id": "enemy_1357_erob",
+      "name": "Paramilitary Axeman",
+      "index": "EG7",
+      "rank": "Elite",
+      "sort": 690,
+      "hidden": false,
+      "icon": "/enemies-icons/Paramilitary Axeman.webp",
+      "flavour_text": "An outlaw hired to sow chaos, equipped with a thermal energy axe that consumes too much power. The energy supply isn't quite sufficient to start it up.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Energy Capacity: 20; Gains [Overload] upon reaching max Energy.",
+          "format": "normal"
+        },
+        {
+          "text": "Continuously drains 1 Energy from all nearby ground enemies.",
+          "format": "normal"
+        },
+        {
+          "text": "[Overload] Greatly increases ASPD, DEF, and RES for a longer period of time.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 16000,
+            "atk": 500,
+            "def": 250,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "blacksteel_energy",
+              "parameters": {
+                "max_stack_cnt": 20.0
+              }
+            },
+            {
+              "key": "over_energy",
+              "parameters": {
+                "attack_speed": 120.0,
+                "def": 2.0,
+                "duration": 20.0,
+                "magic_resistance": 30.0
+              }
+            },
+            {
+              "key": "steal_energy",
+              "parameters": {
+                "interval": 2.0,
+                "range_radius": 2.2,
+                "steal_count": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

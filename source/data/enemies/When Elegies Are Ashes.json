@@ -1,0 +1,1415 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act41side",
+    "label": "EA",
+    "name": "When Elegies Are Ashes",
+    "release_date": "2025-08-28"
+  },
+  "enemies": [
+    {
+      "slug": "patrolling_foliage",
+      "id": "enemy_10064_ftyzss",
+      "name": "Patrolling Foliage",
+      "index": "EA1",
+      "rank": "Normal",
+      "sort": 953,
+      "hidden": false,
+      "icon": "/enemies-icons/Patrolling Foliage.webp",
+      "flavour_text": "Withered stump possessed by a fae spirit. Not yet able to protect others, it roams only to protect its own dwelling. Reveals its true form when approached.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Their true nature is revealed when inside the attack range of your units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6500,
+            "atk": 500,
+            "def": 150,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.4,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 2.0,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B",
+            "def": "D",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "cnt": 3.0,
+                "delay": 0.7,
+                "enemy_key": "enemy_10065_ftzlc",
+                "offset_bound": 0.4
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "patrolling_witherbush",
+      "id": "enemy_10064_ftyzss_2",
+      "name": "Patrolling Witherbush",
+      "index": "EA2",
+      "rank": "Normal",
+      "sort": 954,
+      "hidden": false,
+      "icon": "/enemies-icons/Patrolling Witherbush.webp",
+      "flavour_text": "Withered stump that has merged with a fae spirit. Serving as a guard for the Dark Woods, it is armed and always vigilant. Reveals its true form when approached.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Their true nature is revealed when inside the attack range of your units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 9000,
+            "atk": 680,
+            "def": 150,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.4,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 2.0,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "D",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "cnt": 3.0,
+                "delay": 0.7,
+                "enemy_key": "enemy_10065_ftzlc_2",
+                "offset_bound": 0.4
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "cabbage_seedling",
+      "id": "enemy_10065_ftzlc",
+      "name": "Cabbage Seedling",
+      "index": "EA3",
+      "rank": "Normal",
+      "sort": 955,
+      "hidden": false,
+      "icon": "/enemies-icons/Cabbage Seedling.webp",
+      "flavour_text": "A small, common fae, the original form of Patrolling Foliage. Completely harmless if separated from fire.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can be ignited by <Burning Vine> or <Burning Wick>",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated while ignited, deals a large amount of Arts damage to surrounding units",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3800,
+            "atk": 240,
+            "def": 0,
+            "res": 5.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "D",
+            "def": "E",
+            "res": "D",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "onfire",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "boom",
+              "parameters": {
+                "atk_scale": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "cabbage_weed",
+      "id": "enemy_10065_ftzlc_2",
+      "name": "Cabbage Weed",
+      "index": "EA4",
+      "rank": "Normal",
+      "sort": 956,
+      "hidden": false,
+      "icon": "/enemies-icons/Cabbage Weed.webp",
+      "flavour_text": "A small, seemingly harmless fae. They would have inhabited vegetable gardens, were they not so easily ignited.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can be ignited by <Burning Vine> or <Burning Wick>",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated while ignited, deals a large amount of Arts damage to surrounding units",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 380,
+            "def": 0,
+            "res": 5.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "E",
+            "res": "D",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "onfire",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "boom",
+              "parameters": {
+                "atk_scale": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "nest",
+      "id": "enemy_10066_ftxjl",
+      "name": "'Nest'",
+      "index": "EA5",
+      "rank": "Normal",
+      "sort": 957,
+      "hidden": false,
+      "icon": "/enemies-icons/'Nest'.webp",
+      "flavour_text": "Fae disguising itself as a fowlbeast nest. When the fowlbeasts flew away, the spirits in the darkness took it over while it was still warm.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Grows when outside your units' Attack Range, increasing its ATK and Max HP",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 9000,
+            "atk": 320,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "C",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "growth",
+              "parameters": {
+                "add_atk_ratio": 0.8,
+                "add_max_hp_ratio": 4.0,
+                "time": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "cradle",
+      "id": "enemy_10066_ftxjl_2",
+      "name": "'Cradle'",
+      "index": "EA6",
+      "rank": "Normal",
+      "sort": 958,
+      "hidden": false,
+      "icon": "/enemies-icons/'Cradle'.webp",
+      "flavour_text": "Fae disguising itself as a fowlbeast nest. A cradle, just the right temperature... and 'hatchlings' breaking from their shells?",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Grows when outside your units' Attack Range, increasing its ATK and Max HP",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 11000,
+            "atk": 450,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "C",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "growth",
+              "parameters": {
+                "add_atk_ratio": 0.8,
+                "add_max_hp_ratio": 4.0,
+                "time": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "burning_vine",
+      "id": "enemy_10067_ftsjc",
+      "name": "Burning Vine",
+      "index": "EA7",
+      "rank": "Elite",
+      "sort": 959,
+      "hidden": false,
+      "icon": "/enemies-icons/Burning Vine.webp",
+      "flavour_text": "Passionate fae, the fire in its heart like a torch under a strange arch. The flowers and vines wrapping around it are merely decorative.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict additional Burn",
+          "format": "normal"
+        },
+        {
+          "text": "ATK continuously increases before its first attack, and the first attack deals a large amount of Arts damage and Burn to the target and surrounding units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 13000,
+            "atk": 800,
+            "def": 250,
+            "res": 65.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.85,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "pow",
+              "parameters": {
+                "add_max_atk": 2.0,
+                "ep_damage_ratio": 0.25,
+                "ep_damage_ratio_normal": 0.2,
+                "range_id": "x-4",
+                "time": 50.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "burning_wick",
+      "id": "enemy_10067_ftsjc_2",
+      "name": "Burning Wick",
+      "index": "EA8",
+      "rank": "Elite",
+      "sort": 960,
+      "hidden": false,
+      "icon": "/enemies-icons/Burning Wick.webp",
+      "flavour_text": "Very passionate fae, burning with a even greater desire to consume all uninvited visitors, or consume itself until the last spark becomes a dim ember.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict additional Burn",
+          "format": "normal"
+        },
+        {
+          "text": "ATK continuously increases before its first attack, and the first attack deals a large amount of Arts damage and Burn to the target and surrounding units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15500,
+            "atk": 1000,
+            "def": 350,
+            "res": 65.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.85,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "pow",
+              "parameters": {
+                "add_max_atk": 2.0,
+                "ep_damage_ratio": 0.25,
+                "ep_damage_ratio_normal": 0.2,
+                "range_id": "x-4",
+                "time": 50.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "guiding_sprout",
+      "id": "enemy_10068_ftxsr",
+      "name": "Guiding Sprout",
+      "index": "EA9",
+      "rank": "Normal",
+      "sort": 961,
+      "hidden": false,
+      "icon": "/enemies-icons/Guiding Sprout.webp",
+      "flavour_text": "Mischievous fae that leads travelers astray. Not that they do it out of any particular malice—going the wrong way happens all the time outside the Dark Woods too.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Takes root and becomes <Thicket> when on a <Meadow>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5500,
+            "atk": 320,
+            "def": 200,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": 2.0,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "guiding_shrub",
+      "id": "enemy_10068_ftxsr_2",
+      "name": "Guiding Shrub",
+      "index": "EA10",
+      "rank": "Normal",
+      "sort": 962,
+      "hidden": false,
+      "icon": "/enemies-icons/Guiding Shrub.webp",
+      "flavour_text": "Bored fae that leads travelers on a path without end. This job has become so familiar to them that it has become mundane.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Takes root and becomes <Thicket> when on a <Meadow>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7200,
+            "atk": 420,
+            "def": 200,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": 2.0,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "tree_shield",
+      "id": "enemy_10069_ftlsj",
+      "name": "Tree Shield",
+      "index": "EA11",
+      "rank": "Elite",
+      "sort": 963,
+      "hidden": false,
+      "icon": "/enemies-icons/Tree Shield.webp",
+      "flavour_text": "Stubborn fae that took root, gazing upon the days and nights of travelers straying into the Dark Woods with no way of escape.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Appears when your Operators are deployed in the 4 adjacent tiles around <Shield and Wall>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 35000,
+            "atk": 1050,
+            "def": 550,
+            "res": 15.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "tree_wall",
+      "id": "enemy_10069_ftlsj_2",
+      "name": "Tree Wall",
+      "index": "EA12",
+      "rank": "Elite",
+      "sort": 964,
+      "hidden": false,
+      "icon": "/enemies-icons/Tree Wall.webp",
+      "flavour_text": "A silent fae. The path of life is closed. The path of death is closed. All paths are closed.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Appears when your Operators are deployed in the 4 adjacent tiles around <Shield and Wall>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 45000,
+            "atk": 1250,
+            "def": 680,
+            "res": 15.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "ash_creation",
+      "id": "enemy_10070_ftkbtt",
+      "name": "Ash Creation",
+      "index": "EA13",
+      "rank": "Elite",
+      "sort": 965,
+      "hidden": false,
+      "icon": "/enemies-icons/Ash Creation.webp",
+      "flavour_text": "Ember awakened by the Dark Woods. Born in a gust of wind and given a terrible visage by the fae murmurs, it uses its appearance to protect this forest that has accepted it.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked, and attacks 2 enemies simultaneously",
+          "format": "normal"
+        },
+        {
+          "text": "Their true nature is revealed when inside the attack range of your units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 650,
+            "def": 250,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.5,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "ash_artwork",
+      "id": "enemy_10070_ftkbtt_2",
+      "name": "Ash Artwork",
+      "index": "EA14",
+      "rank": "Elite",
+      "sort": 966,
+      "hidden": false,
+      "icon": "/enemies-icons/Ash Artwork.webp",
+      "flavour_text": "Ember awakened by the Dark Woods. Born in a great fire and shaped by the fae, it has taken many forms—big or small, strong or feeble. Yet its malleability comes only from nature, never nurture.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked, and attacks 2 enemies simultaneously",
+          "format": "normal"
+        },
+        {
+          "text": "Their true nature is revealed when inside the attack range of your units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12000,
+            "atk": 780,
+            "def": 350,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.5,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "end_point",
+      "id": "enemy_10071_ftprg",
+      "name": "'End Point'",
+      "index": "EA15",
+      "rank": "Elite",
+      "sort": 967,
+      "hidden": false,
+      "icon": "/enemies-icons/'End Point'.webp",
+      "flavour_text": "A fae still learning how to trick people. It disguises itself as the end of the path, or the shape of a cunning tuskbeast. However, it usually misses some crucial detail.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Camouflages itself as an <Incursion Point> when outside your units' Attack Range",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8500,
+            "atk": 680,
+            "def": 300,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.65,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "born",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "middle_point",
+      "id": "enemy_10071_ftprg_2",
+      "name": "'Middle Point'",
+      "index": "EA16",
+      "rank": "Elite",
+      "sort": 968,
+      "hidden": false,
+      "icon": "/enemies-icons/'Middle Point'.webp",
+      "flavour_text": "A fae adept at tricking people. It appears in the middle of the road or a wrong turn, coaxing people onto the wrong path. The lack of certain details does not compromise the deception.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Camouflages itself as an <Incursion Point> when outside your units' Attack Range",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 800,
+            "def": 400,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.65,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B+",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "born",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "all_flames_returned",
+      "id": "enemy_1563_fthlgj",
+      "name": "'All Flames Returned'",
+      "index": "DR",
+      "rank": "Boss",
+      "sort": 1359,
+      "hidden": false,
+      "icon": "/enemies-icons/'All Flames Returned'.webp",
+      "flavour_text": "The ancestral Red Dragon that never left the wilderness—or perhaps it just yearns for the place where the fire is returned, like many others. New fire is added to old. Everything comes to an end, and everything is reborn anew.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Inflicts [Burning Heart] on tiles, causing your units within to take Arts damage and Burn every second",
+          "format": "normal"
+        },
+        {
+          "text": "[Desire] ASPD increases when outside your units' Attack Range.",
+          "format": "normal"
+        },
+        {
+          "text": "[Return] Takes greatly reduced Physical and Arts damage when inside [Burning Heart]",
+          "format": "normal"
+        },
+        {
+          "text": "Spin",
+          "format": "title"
+        },
+        {
+          "text": "[Gift of Fire] After performing several attacks, the next attack deals Arts damage and Burn to the target and all your surrounding units, and inflicts [Burning Heart] on affected tiles, prioritizing your units that are not in [Burning Heart]",
+          "format": "normal"
+        },
+        {
+          "text": "[Firelight] Stuns and blinds the Operator with highest ATK on the field, and summons <Fires of Days Past> in the 8 surrounding tiles",
+          "format": "normal"
+        },
+        {
+          "text": "Enters Rest form when HP reaches 0",
+          "format": "normal"
+        },
+        {
+          "text": "Rest",
+          "format": "title"
+        },
+        {
+          "text": "Summons <Fires of Days Past> around itself and recovers HP; When HP reaches max, if there are no <Fires of Days Past> on the battlefield, enters Last Dance form, otherwise destroys all <Fires of Days Past> and returns to Spin form",
+          "format": "normal"
+        },
+        {
+          "text": "Last Dance",
+          "format": "title"
+        },
+        {
+          "text": "Aerial, ATK increased",
+          "format": "normal"
+        },
+        {
+          "text": "[Burn Bright] Periodically takes flight, locking onto up to two of your Operators in [Burning Heart] and dealing Arts damage and Burn to all your units in the three nearest rows around them, as well as inflicting [Burning Heart] on all affected tiles",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 65000,
+            "atk": 700,
+            "def": 450,
+            "res": 45.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 3.0,
+            "weight": 7,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "burn_tile",
+              "sp_cost": 10,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.2,
+                "burn_time": 20.0,
+                "ep_damage_ratio": 0.5
+              }
+            },
+            {
+              "key": "bone_born",
+              "sp_cost": 0,
+              "cooldown": 55.0,
+              "initial_cooldown": 30.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 1.0,
+                "hide_duration": 5.0,
+                "stun": 5.0
+              }
+            },
+            {
+              "key": "burn_tile_phase_2",
+              "sp_cost": 5,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.2,
+                "burn_time": 20.0,
+                "ep_damage_ratio": 0.5
+              }
+            },
+            {
+              "key": "bone_born_phase_2",
+              "sp_cost": 0,
+              "cooldown": 55.0,
+              "initial_cooldown": 40.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 1.0,
+                "hide_duration": 5.0,
+                "stun": 5.0
+              }
+            },
+            {
+              "key": "roar",
+              "sp_cost": 0,
+              "cooldown": 70.0,
+              "initial_cooldown": 30.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 1.0,
+                "burn_time": 20.0,
+                "ep_damage_ratio": 0.25
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "attack_speed_up",
+              "parameters": {
+                "attack_speed": 30.0
+              }
+            },
+            {
+              "key": "attack_speed_up_phase_2",
+              "parameters": {
+                "attack_speed": 30.0
+              }
+            },
+            {
+              "key": "basic",
+              "parameters": {
+                "atk": 0.2,
+                "bgm": "bat_bonesstage2",
+                "invi_duration": 10.0
+              }
+            },
+            {
+              "key": "damage_resistance",
+              "parameters": {
+                "damage_resistance": 0.6
+              }
+            },
+            {
+              "key": "damage_resistance_phase_2",
+              "parameters": {
+                "damage_resistance": 0.6
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "duration": 30.0,
+                "max_cnt": 5.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 10,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 78000,
+            "atk": 780,
+            "def": 550,
+            "res": 45.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 3.0,
+            "weight": 7,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "burn_tile",
+              "sp_cost": 10,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.2,
+                "burn_time": 20.0,
+                "ep_damage_ratio": 0.5
+              }
+            },
+            {
+              "key": "bone_born",
+              "sp_cost": 0,
+              "cooldown": 55.0,
+              "initial_cooldown": 30.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 1.0,
+                "hide_duration": 5.0,
+                "stun": 5.0
+              }
+            },
+            {
+              "key": "burn_tile_phase_2",
+              "sp_cost": 5,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.2,
+                "burn_time": 20.0,
+                "ep_damage_ratio": 0.5
+              }
+            },
+            {
+              "key": "bone_born_phase_2",
+              "sp_cost": 0,
+              "cooldown": 55.0,
+              "initial_cooldown": 40.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 1.0,
+                "hide_duration": 5.0,
+                "stun": 5.0
+              }
+            },
+            {
+              "key": "roar",
+              "sp_cost": 0,
+              "cooldown": 70.0,
+              "initial_cooldown": 30.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 1.0,
+                "burn_time": 20.0,
+                "ep_damage_ratio": 0.25
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "attack_speed_up",
+              "parameters": {
+                "attack_speed": 30.0
+              }
+            },
+            {
+              "key": "attack_speed_up_phase_2",
+              "parameters": {
+                "attack_speed": 30.0
+              }
+            },
+            {
+              "key": "basic",
+              "parameters": {
+                "atk": 0.2,
+                "bgm": "bat_bonesstage2",
+                "invi_duration": 10.0
+              }
+            },
+            {
+              "key": "damage_resistance",
+              "parameters": {
+                "damage_resistance": 0.6
+              }
+            },
+            {
+              "key": "damage_resistance_phase_2",
+              "parameters": {
+                "damage_resistance": 0.6
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "duration": 30.0,
+                "max_cnt": 5.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 10,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1016 @@
+{
+  "name": "Exusiai",
+  "rarity": 6,
+  "class": "Sniper",
+  "branch": "Marksman",
+  "faction": "Penguin Logistics",
+  "umbrellaFactions": [
+    "Yan-Lungmen"
+  ],
+  "connectedFactions": [
+    "Laterano"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS"
+  ],
+  "trait": "Attacks aerial enemies first",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": "Exusiai the New Covenant",
+  "skins": [
+    "City Rider",
+    "Wild Operation",
+    "Midnight Delivery"
+  ],
+  "ep": {
+    "Main": "Speed of Light",
+    "Co-star": null
+  },
+  "internalName": "char_103_angel",
+  "otherLanguages": {
+    "Chinese": "能天使",
+    "Japanese": "エクシア",
+    "Korean": "엑시아"
+  },
+  "characterInfo": {
+    "File no.": "PL03",
+    "Operator Records": "Incoming Mail Constants Within Changes",
+    "Paradox Simulation": "Laterano Style",
+    "Illustrator": "幻象黑兔 尾鱼 ( Midnight Delivery )",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Manaka Iwami",
+    "Chinese": "Shujin Cai (in-game) Muyaruilin (Prelude to Dawn)",
+    "English": "Shannon Tarbet (from 2025/08/28) Leonora Haig (until 2025/08/28)",
+    "Korean": "Lee Ji-hyun"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "2 years",
+    "Place of Birth": "Laterano",
+    "Date of Birth": "December 24th",
+    "Race": "Sankta",
+    "Height": "159 cm",
+    "Infection Status": "Non-infected as confirmed by medical report."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Excellent",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Fast Cartridge",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "ASPD +6"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 3",
+          "description": "ASPD +9 (+3)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "ASPD +12"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 3",
+          "description": "ASPD +15 (+3)"
+        }
+      ]
+    },
+    {
+      "name": "Angel's Blessings",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "ATK +6%; Max HP +10%; The same buff is given to a random ally when Exusiai is deployed"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 6",
+          "description": "ATK +8% (+2%) ; Max HP +13% (+3%) ; The same buff is given to a random ally when Exusiai is deployed"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Improves Fast Cartridge"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +27"
+      },
+      {
+        "level": 5,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 6,
+        "benefit": "Improves Angel's Blessings"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Exusiai's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Fast Cartridge .",
+        "New skill: Shooting Mode .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Exusiai to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Sniper Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 12
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Angel's Blessings .",
+        "New skill: Overloading Mode .",
+        "Fast Cartridge improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Exusiai to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Sniper Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Polymerization Preparation",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar Lump",
+          "quantity": 5
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Charging Mode",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Shoots 3 times in a row in the next attack, dealing 105% of ATK damage with every shot",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Shoots 3 times in a row in the next attack, dealing 107% of ATK damage with every shot",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Shoots 3 times in a row in the next attack, dealing 109% of ATK damage with every shot",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Shoots 3 times in a row in the next attack, dealing 113% of ATK damage with every shot",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Shoots 3 times in a row in the next attack, dealing 115% of ATK damage with every shot",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Shoots 3 times in a row in the next attack, dealing 117% of ATK damage with every shot",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Shoots 3 times in a row in the next attack, dealing 121% of ATK damage with every shot",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Shoots 3 times in a row in the next attack, dealing 129% of ATK damage with every shot",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Shoots 3 times in a row in the next attack, dealing 137% of ATK damage with every shot",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Shoots 3 times in a row in the next attack, dealing 145% of ATK damage with every shot",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Shooting Mode",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Shoots 4 times in a row, dealing 100% of ATK damage with every shot",
+            "initialSp": 15,
+            "spCost": 45,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Shoots 4 times in a row, dealing 100% of ATK damage with every shot",
+            "initialSp": 15,
+            "spCost": 44,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Shoots 4 times in a row, dealing 100% of ATK damage with every shot",
+            "initialSp": 15,
+            "spCost": 43,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Shoots 4 times in a row, dealing 105% of ATK damage with every shot",
+            "initialSp": 15,
+            "spCost": 42,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Shoots 4 times in a row, dealing 105% of ATK damage with every shot",
+            "initialSp": 15,
+            "spCost": 41,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Shoots 4 times in a row, dealing 105% of ATK damage with every shot",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Shoots 4 times in a row, dealing 110% of ATK damage with every shot",
+            "initialSp": 18,
+            "spCost": 39,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Shoots 4 times in a row, dealing 115% of ATK damage with every shot",
+            "initialSp": 20,
+            "spCost": 38,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Shoots 4 times in a row, dealing 120% of ATK damage with every shot",
+            "initialSp": 22,
+            "spCost": 37,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Shoots 4 times in a row, dealing 125% of ATK damage with every shot",
+            "initialSp": 25,
+            "spCost": 35,
+            "duration": 15
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 4
+            },
+            {
+              "name": "Aketon",
+              "quantity": 8
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 7
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Overloading Mode",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": "15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Shoots 5 times in a row Automatically activated",
+            "initialSp": 20,
+            "spCost": 50,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Shoots 5 times in a row Automatically activated",
+            "initialSp": 20,
+            "spCost": 48,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Shoots 5 times in a row Automatically activated",
+            "initialSp": 20,
+            "spCost": 46,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Shoots 5 times in a row; Very minor Attack Interval reduction Automatically activated",
+            "initialSp": 20,
+            "spCost": 44,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Shoots 5 times in a row; Very minor Attack Interval reduction Automatically activated",
+            "initialSp": 20,
+            "spCost": 42,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Shoots 5 times in a row; Very minor Attack Interval reduction Automatically activated",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Shoots 5 times in a row; Minor Attack Interval reduction Automatically activated",
+            "initialSp": 20,
+            "spCost": 38,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Shoots 5 times in a row; Minor Attack Interval reduction; ATK increases to 103% Automatically activated",
+            "initialSp": 20,
+            "spCost": 36,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Shoots 5 times in a row; Minor Attack Interval reduction; ATK increases to 107% Automatically activated",
+            "initialSp": 20,
+            "spCost": 34,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Shoots 5 times in a row; Slight Attack Interval reduction; ATK increases to 110% Automatically activated",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": 15
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "This is still Exusiai's best skill after many years of Arknights. If the damage output isn't doing good, remember to buff Exusiai's ATK."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Orirock",
+          "quantity": 6
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyester",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 6
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Aketon",
+          "quantity": 3
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 6
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Penguin Logistics α",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +20%"
+    },
+    {
+      "name": "Logistics ExpertReplacesPenguin Logistics α",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +35%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Exusiai's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "MAR-X: Exusiai's Surprise",
+      "mission": {
+        "requirement1": "Deal a total of 100,000 damage with Exusiai (excluding Support Units)",
+        "requirement2": "Clear Main Theme 4-10 with a 3-star rating; You must deploy your own Exusiai, and have Exusiai defeat FrostNova"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +110 , ATK +27",
+          "effectLabel": "New trait",
+          "effectText": "Increases ATK to 110% when attacking aerial targets",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +160 , ATK +35",
+          "effectLabel": "Angel's Blessings improved",
+          "effectText": "ATK +6%; Max HP +10%; The same buff is given to two random allies when Exusiai is deployed",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +190 , ATK +41",
+          "effectLabel": "Angel's Blessings improved",
+          "effectText": "ATK +8%; Max HP +14%; The same buff is given to two random allies when Exusiai is deployed",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "MAR-Y: Welcome to Penguin Logistics",
+      "mission": {
+        "requirement1": "Complete a total of 3 [ note 1 ] battles; You must deploy your own Exusiai, and unleash Overloading Mode at least 2 times in each battle",
+        "requirement2": "Clear Main Theme 2-8 with a 3-star rating; You must deploy your own Exusiai, and have her defeat at least 10 enemies"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +26 , DEF +26",
+          "effectLabel": "New trait",
+          "effectText": "When there are ground enemies within range, ASPD +8",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +37 , DEF +37",
+          "effectLabel": "Fast Cartridge improved",
+          "effectText": "ASPD +12; continuous attacks gradually ignore increasing amounts of the target's DEF, up to a maximum of 150 DEF (each attack increases the DEF ignored by 6); this bonus is lost when no attacks have been made within 5 seconds",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +43 , DEF +43",
+          "effectLabel": "Fast Cartridge improved",
+          "effectText": "ASPD +12; continuous attacks gradually ignore increasing amounts of the target's DEF, up to a maximum of 250 DEF (each attack increases the DEF ignored by 10); this bonus is lost when no attacks have been made within 5 seconds",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Exusiai is a citizen of\nLaterano\nand as such, is entitled to the privileges listed in Clauses 1-13 of the Laterano Constitution. She is an employee of\nPenguin Logistics\nwho specializes in covert communication, armed escort, and other undercover activities. We suspect she is a Messenger. While contracted with Penguin Logistics, she serves as a liaison to\nRhodes Island\n, assisting us with our operations.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "D1B9h7NLBOk",
+      "creator": "Dokutah Shikikan"
+    },
+    {
+      "videoId": "WG2xfOoQ_o8",
+      "creator": "25thNight"
+    },
+    {
+      "videoId": "7eME8ApMYFc",
+      "creator": "FrostByte262"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 711,
+          "atk": 183,
+          "def": 57,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1016,
+          "atk": 305,
+          "def": 95,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1016,
+          "atk": 305,
+          "def": 95,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1338,
+          "atk": 437,
+          "def": 136,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1338,
+          "atk": 437,
+          "def": 136,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1673,
+          "atk": 540,
+          "def": 161,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "3-3"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 90,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this Operator is believed to be non-infected. \n\n[Cell-Originium Assimilation] 0% \nOperator Exusiai showed no symptoms of Oripathy. \n\n[Blood Originium-Crystal Density] 0.12u/L \nOperator Exusiai sometimes delivers packages with Originium content, but it has not caused infection to date."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "She is different from most Laterano in that she is an unabashed optimist. \nProficient in various means of entertainment, she's the member of the team who always manages to keep herself upbeat, no matter the situation.\nHer generosity ends up being the primary reason why she's broke all the time."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "The gun is a unique mid and long-range weapon rumored to be discovered by Laterano, thereby becoming one of its symbols. \nIts killing power isn't exceptional, but it's better suited to the average Laterano citizen's temperament than cold steel, thus becoming the weapon of choice in Laterano. Everyone now carries at least one for personal protection. \nExusiai may seem laid-back, but her marksmanship ranks among the top at Rhodes Island. On one hand, she lacks the attention span for things other than maintaining and operating her gun. On the other hand, her innate marksmanship talents, including visual tracking and timing, are the envy of all sharpshooters."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "While Exusiai goes against what anyone might expect of a Laterano, what's even more unbelievable is that she never endured a difficult childhood thanks to a peculiar hobby, nor did she decide to rebel due to some unfortunate circumstance. \nShe loves only happy things and grew up a happy person, simple as that. \nJudging from her background, maybe the Laterano aren't as closed-minded as popularly portrayed..."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Even with a halo and wings, people often forget Exusiai is a Laterano. Only when the topic swirls around religion does she react with the piety so characteristic of the Laterano. \nFew places outside Laterano hold such primordial, pristine faith, and because of that, very few notice Exusiai's piety. \nBut those who do will realize the same person holds such progressive values and at the same time retains reverence for her faith, without any apparent contradictions. \nAlso, only by observing Exusiai from this perspective could one realize that behind her wicked smirk lies a pure soul."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Exusiai is my polar opposite. She seems to get along fine with anyone, but lets very few people close to her. \n—Texas"
+    }
+  ]
+}

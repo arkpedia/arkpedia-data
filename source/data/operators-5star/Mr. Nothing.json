@@ -1,0 +1,753 @@
+{
+  "name": "Mr. Nothing",
+  "rarity": 5,
+  "class": "Specialist",
+  "branch": "Merchant",
+  "faction": "Yan",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Fast-Redeploy",
+    "DPS"
+  ],
+  "trait": "Has reduced Redeployment Time, but DP Cost is not refunded upon retreating; While deployed, 3 DP are consumed every 3 seconds (automatically retreats without sufficient DP )",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Pale Rising Moon"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_455_nothin",
+  "otherLanguages": {
+    "Simplified Chinese": "乌有",
+    "Traditional Chinese": "烏有",
+    "Japanese": "ウユウ",
+    "Korean": "우요우"
+  },
+  "characterInfo": {
+    "File no.": "YD11",
+    "Operator Record": "Drowning",
+    "Paradox Simulation": "Way of Life",
+    "Illustrator": "Skade",
+    "Release Date": "2021/07/30",
+    "Kernel Addition Date": "2024/12/17"
+  },
+  "characterVoices": {
+    "Japanese": "Junichi Suwabe",
+    "Mandarin & Nankinese": "Liu Fei (credited as \"Flynn Liu\" in the Global server)",
+    "English": "David Cui Cui",
+    "Korean": "Lim Chae-heon"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "7 years",
+    "Place of Birth": "Yan",
+    "Date of Birth": "January 13th",
+    "Race": "Liberi",
+    "Height": "187 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Unexpected Strike",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "After not attacking for 4 seconds, increase the ATK of the next attack to 125% and Stun the target for 3 seconds"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "After not attacking for 4 seconds, increase the ATK of the next attack to 130% (+5%) and Stun the target for 3 seconds"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "After not attacking for 4 seconds, increase the ATK of the next attack to 150% and Stun the target for 4 seconds"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "After not attacking for 4 seconds, increase the ATK of the next attack to 155% (+5%) and Stun the target for 4 seconds"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -3"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +25"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Unexpected Strike"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Mr. Nothing's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Unexpected Strike .",
+        "New skill: Wax and Wane ."
+      ],
+      "prerequisite": "Raise Mr. Nothing to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Specialist Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Unexpected Strike improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Mr. Nothing to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Specialist Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Optimized Device",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Cautious Retreat",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": "5 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Active Effect: When HP is lower than 20% , stops attacking and blocking enemies; Becomes less likely to be targeted by enemies and restores 6% of Max HP every second Passive Effect: Block +1",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": 5
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Active Effect: When HP is lower than 20% , stops attacking and blocking enemies; Becomes less likely to be targeted by enemies and restores 7% of Max HP every second Passive Effect: Block +1",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": 5
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Active Effect: When HP is lower than 20% , stops attacking and blocking enemies; Becomes less likely to be targeted by enemies and restores 8% of Max HP every second Passive Effect: Block +1",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": 5
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Active Effect: When HP is lower than 20% , stops attacking and blocking enemies; Becomes less likely to be targeted by enemies and restores 9% of Max HP every second Passive Effect: Block +1",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": 5
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Active Effect: When HP is lower than 20% , stops attacking and blocking enemies; Becomes less likely to be targeted by enemies and restores 10% of Max HP every second Passive Effect: Block +1",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": 5
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Active Effect: When HP is lower than 20% , stops attacking and blocking enemies; Becomes less likely to be targeted by enemies and restores 11% of Max HP every second Passive Effect: Block +1",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": 5
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Active Effect: When HP is lower than 20% , stops attacking and blocking enemies; Becomes less likely to be targeted by enemies and restores 12% of Max HP every second Passive Effect: Block +1",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": 5
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Active Effect: When HP is lower than 20% , stops attacking and blocking enemies; Becomes less likely to be targeted by enemies and restores 13% of Max HP every second Passive Effect: Block +1",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": 5
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Active Effect: When HP is lower than 20% , stops attacking and blocking enemies; Becomes less likely to be targeted by enemies and restores 14% of Max HP every second Passive Effect: Block +1",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": 5
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Active Effect: When HP is lower than 20% , stops attacking and blocking enemies; Becomes less likely to be targeted by enemies and restores 15% of Max HP every second Passive Effect: Block +1",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": 5
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Wax and Wane",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "Toggled",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "When skill is activated, ATK +20% and gain one of the following effects at random: Every attack reduces the target's ASPD by -20 (Lasts for 5 seconds and does not stack); ASPD +15 ; Gain 30% Physical Dodge and Block +1 Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "∞"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "When skill is activated, ATK +23% and gain one of the following effects at random: Every attack reduces the target's ASPD by -20 (Lasts for 5 seconds and does not stack); ASPD +15 ; Gain 30% Physical Dodge and Block +1 Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "∞"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "When skill is activated, ATK +26% and gain one of the following effects at random: Every attack reduces the target's ASPD by -20 (Lasts for 5 seconds and does not stack); ASPD +15 ; Gain 30% Physical Dodge and Block +1 Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "∞"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "When skill is activated, ATK +30% and gain one of the following effects at random: Every attack reduces the target's ASPD by -25 (Lasts for 5 seconds and does not stack); ASPD +20 ; Gain 35% Physical Dodge and Block +1 Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "∞"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "When skill is activated, ATK +33% and gain one of the following effects at random: Every attack reduces the target's ASPD by -25 (Lasts for 5 seconds and does not stack); ASPD +20 ; Gain 35% Physical Dodge and Block +1 Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "∞"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "When skill is activated, ATK +36% and gain one of the following effects at random: Every attack reduces the target's ASPD by -25 (Lasts for 5 seconds and does not stack); ASPD +20 ; Gain 35% Physical Dodge and Block +1 Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "∞"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "When skill is activated, ATK +40% and gain one of the following effects at random: Every attack reduces the target's ASPD by -30 (Lasts for 5 seconds and does not stack); ASPD +25 ; Gain 40% Physical Dodge and Block +1 Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "When skill is activated, ATK +50% and gain one of the following effects at random: Every attack reduces the target's ASPD by -30 (Lasts for 5 seconds and does not stack); ASPD +25 ; Gain 45% Physical Dodge and Block +1 Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "When skill is activated, ATK +55% and gain one of the following effects at random: Every attack reduces the target's ASPD by -30 (Lasts for 5 seconds and does not stack); ASPD +28 ; Gain 45% Physical Dodge and Block +1 Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "When skill is activated, ATK +60% and gain one of the following effects at random: Every attack reduces the target's ASPD by -35 (Lasts for 5 seconds and does not stack); ASPD +28 ; Gain 50% Physical Dodge and Block +1 Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "∞"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock",
+          "quantity": 10
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 3
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Nosy",
+      "facility": "Office",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the HR Office, increases HR contacting speed by +35% , and increases Clue collection speed in the Reception Room by +5% for each additional Recruitment slot (does not count default slots)."
+    },
+    {
+      "name": "\"Obvious Deception\"",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, each Operator in the Dormitory grants Worldly Plight +1 , and for every 1 point Worldly Plight , grant +1% order acquisition efficiency"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Mr. Nothing's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "MER-X: \"Shelter from the Rain\"",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Mr. Nothing at least 2 times, and have Mr. Nothing defeat at least 4 enemies",
+        "requirement2": "Clear Main Theme 3-7 with a 3-star rating; You must deploy your own Mr. Nothing, and have Mr. Nothing defeat at least 2 Artillerymen [ sic ]"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +150 , ATK +45",
+          "effectLabel": "Trait improved",
+          "effectText": "Has reduced Redeployment Time, but DP Cost is not refunded upon retreating; While deployed, 2 DP are consumed every 3 seconds (automatically retreats without sufficient DP )",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +200 , ATK +55",
+          "effectLabel": "Unexpected Strike improved",
+          "effectText": "After not attacking for 4 seconds, increase the ATK of the next attack to 165% and Stun the target for 5 seconds",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +240 , ATK +65",
+          "effectLabel": "Unexpected Strike improved",
+          "effectText": "After not attacking for 3 seconds, increase the ATK of the next attack to 175% and Stun the target for 5 seconds",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Mr. Nothing, a man of\nKou-wu\nCity,\nYan\n. Learned martial arts from a young age. Became quite skilled, but was forced into exile after offending local powers. Came across\nRhodes Island\nOperator\nLava\n, and upon reaching a mutual understanding, he sought a post at Rhodes Island.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1165,
+          "atk": 346,
+          "def": 204,
+          "res": 0,
+          "redeploy": 25,
+          "dp": 6,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1534,
+          "atk": 474,
+          "def": 262,
+          "res": 0,
+          "redeploy": 25,
+          "dp": 6,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1534,
+          "atk": 474,
+          "def": 262,
+          "res": 0,
+          "redeploy": 25,
+          "dp": 8,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1894,
+          "atk": 601,
+          "def": 336,
+          "res": 0,
+          "redeploy": 25,
+          "dp": 8,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1894,
+          "atk": 601,
+          "def": 336,
+          "res": 0,
+          "redeploy": 25,
+          "dp": 8,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 2398,
+          "atk": 725,
+          "def": 396,
+          "res": 0,
+          "redeploy": 25,
+          "dp": 8,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 40,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Mr. Nothing shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.12u/L\nOperator Mr. Nothing very rarely comes into contact with Originium."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "An unfocused man from Yan with a penchant for angling, and a side business helping operators out with uniquely Yan amateur services. They include but are not limited to 'Reference-Only Palm Divination,' 'Dormitory Feng Shui,' 'Martial Arts Exercise Courses Even Originium Slugs Can Burn Off Fat With: Beginners' Edition' and 'Traditional Liberi Tui Na Massage,' etc. He makes and calligraphs Yan folding fans himself, which became a trend amongst some Yan culture enthusiasts for a time.\nWhich led to Mr. Nothing being lectured by Miss Closure for over three hours... and becoming one of her able assistants in business aboard the landship.\n'It's weird. How's this guy so clued in about stuff? What kind of life did he even lead in Kou-wu City?'"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Mr. Nothing was born in an ordinary town in Yan, his father and mother ordinary peasants. Thanks to some fateful coincidences, Mr. Nothing had the fortune to be picked out by a woman from Kou-wu City, surname Lien. He was brought to the city to learn martial arts, and there he settled down.\nSome cities in Yan have traditions of martial arts establishments, ever since ancient times. However, following the expansion in scope of nomadic cities, and the formation of communication links between city-states and even whole countries, the feel of these 'martial arts of the people' underwent much change. A great deal of youths nowadays practice them, many to keep themselves fit, with self-defense as an aim. Martial arts tournaments held by establishments all over, with grand stages, come to make business activities a primary concern. Still, a tiny proportion hold to the attitude that 'martial arts should halt a war,' and silently pass on those genuine teachings. Certainly, Mr. Nothing's school was one of those.\n'My only issue was learning it wouldn't earn me much. Times of peace, eh.' —Mr. Nothing"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Mr. Nothing is not an Infected. It was only 'to find a good job and duck out of my enemy's sights' that he came to Rhodes Island under Miss Lava's referral. Obviously, he doesn't avoid bringing up his so-called 'enemy' at all.\nGoing by a simple investigation, and inquiries with Mr. Nothing himself, the dispute at Lien's can be seen as a deliberate conspiracy—they set things up for an unidentifiable 'boxer' to die in a contest at Mr. Nothing's hands. This gave all the local powers an excuse to pressure the Liens. Come the end, his master bled dry, and he was forced to go incognito, fleeing far from his homeland.\nAccording to Mr. Nothing, his master was old. Not only that, but her disciples numbered few, with no real money or power to their names, nor any show they could make of ability. The Liens was situated in Kou-wu City, yet not lively enough to match even next door's gymnasium. Why all sorts from all corners would come to target this tiny little school, and why people are still out for Mr. Nothing's life while he poses no threat so far away from home, those are the mystifying points.\nQuestioned directly, Mr. Nothing gave a bitter chuckle, and then a rather evasively phrased reply: such is martial arts.\nAfterwards, Mr. Nothing began expounding knowhow on growing rice in the paddies, diverting from the topic."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Mr. Nothing's approach to combat is 'if you can run, then run.' Realistically, it seems all operators, Lava and Kroos excepted, treat Mr. Nothing as a brazen rascal of a man. Besides his actual job, it's like he can do anything. We don't know why, but Lava and Kroos both have a certain degree of trust in Mr. Nothing's abilities.\nReports say it was while personally tasked by Miss Nian that Miss Lava came across Mr. Nothing. Concerning archives of that mission, we will not give details. However, we trust Miss Lava and Miss Kroos, and so we will... continue to survey Mr. Nothing's conduct, and supplement records accordingly.\n[Report Addendum]\nReport addendum, uh, I just saw Mr. Nothing use his fan somehow knock down that drunk Sarkaz. What kind of Arts is that?\n[Report Addendum 2]\nReport addendum, I asked Mr. Nothing myself if he was hiding some talent, and he volunteered to be the bait, and then the bandits nabbed him into their stronghold, and then get this, he came running out all by himself! And he only had light injuries!\n[Report Addendum 3]\nReport addendum... the bounty hunters are already rounded up. When we got here, it was just a mess of guys all knocked out on the floor... d-did Mr. Nothing do this all by himself? They were armed, right? And they had Casters?\n[Report Addendum 4]\nMr. Nothing said he just got caught, then luckily he noticed the bandits' boss had an opening, then luckily his ropes came undone, and then luckily he knocked 'em all out... also, he said because no layman ever sees fans and umbrellas as weapons, that was the only reason he had any chance, and, uh, 'it's scarcely imagined that even chopsticks can kill.' Jeez. I'm scared of him.\n[Report Addendum 5]\nI was starting to believe Mr. Nothing was the real deal, but then I went to go consult him today, and he just tossed me this crumpled-up exercise dieting manual whatever, and he even asked me if I wanted to become a member. I didn't wanna lose weight!"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Nothing, Nothing. Nonexistent and Nothing. He must have thought fast to come up with that alias. And he seems plenty proud of it. See, he used 'Nothing' directly as his operator codename.\nI know what he went through was kind of rough, but it's not exactly a rare case, either. The path he chose was the path of beast-eat-beast, a cheat for a cheat. Right now, though, I have no clue if any of his quote-unquote 'fellow' disciples could have anything wicked against him.\nBut he doesn't bow to people like that. Keeps his head held pretty high, which, yeah, good on him. He might've broken the rules, but 'broken' is a... well, those rules didn't look that good to me anyway.\nYou think he doesn't seem like the guy I'm talking about? Huh. Figure it out yourself, then.\n—Anonymous Yan operator"
+    }
+  ]
+}

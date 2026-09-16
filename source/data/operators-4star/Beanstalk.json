@@ -1,0 +1,744 @@
+{
+  "name": "Beanstalk",
+  "rarity": 4,
+  "class": "Vanguard",
+  "branch": "Tactician",
+  "faction": "Columbia",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DP-Recovery",
+    "Summon"
+  ],
+  "trait": "This unit can designate one Tactical Point within attack range to call Reinforcements ; ATK is increased to 150% when attacking enemies blocked by Reinforcements",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Gift Uncompleted",
+    "Ribbons of Promise"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_452_bstalk",
+  "otherLanguages": {
+    "Chinese": "豆苗",
+    "Japanese": "ビーンストーク",
+    "Korean": "빈스토크"
+  },
+  "characterInfo": {
+    "File no.": "CB16",
+    "Operator Record": "The Wilds Do They Call",
+    "Paradox Simulation": "Together We Thrive",
+    "Illustrator": "一千",
+    "Release Date": "2021/07/06",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Ayasa Itou",
+    "Chinese": "Niunai-kun (credited as \"Miruku\" in EN)",
+    "English": "Roshni Edwards",
+    "Korean": "Jang Ye-na"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Columbia",
+    "Date of Birth": "March 10th",
+    "Race": "Reproba",
+    "Height": "155 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Standard",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Professional Breeder",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "Can summon Metal Crabs to assist in combat from a Tactical Point; Metal Crabs will automatically respawn 20s after being defeated"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Can summon Metal Crabs to assist in combat from a Tactical Point; Metal Crabs will automatically respawn 17s after being defeated"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Can summon Metal Crabs to assist in combat from a Tactical Point; Metal Crabs will automatically respawn 15s after being defeated"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ASPD +8"
+      },
+      {
+        "level": 5,
+        "benefit": "Redeployment time -6 seconds"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Beanstalk's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: \"Everyone Together!\" .",
+        "Professional Breeder improved.",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Beanstalk to Level 45.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 15000
+        },
+        {
+          "name": "Vanguard Chip",
+          "quantity": 3
+        },
+        {
+          "name": "Oriron",
+          "quantity": 1
+        },
+        {
+          "name": "Sugar",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Professional Breeder improved."
+      ],
+      "prerequisite": "Raise Beanstalk to Elite 1 Level 60.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 60000
+        },
+        {
+          "name": "Vanguard Chip Pack",
+          "quantity": 5
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 13
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Sentinel Command",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Immediately generates 8 DP , and refreshes all Reinforcements (Restores all Reinforcements to max HP if they are already deployed)",
+            "initialSp": 9,
+            "spCost": 40,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Immediately generates 8 DP, and refreshes all Reinforcements (Restores all Reinforcements to max HP if they are already deployed)",
+            "initialSp": 9,
+            "spCost": 39,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Immediately generates 8 DP, and refreshes all Reinforcements (Restores all Reinforcements to max HP if they are already deployed)",
+            "initialSp": 9,
+            "spCost": 38,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Immediately generates 8 DP, and refreshes all Reinforcements (Restores all Reinforcements to max HP if they are already deployed)",
+            "initialSp": 10,
+            "spCost": 37,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Immediately generates 8 DP, and refreshes all Reinforcements (Restores all Reinforcements to max HP if they are already deployed)",
+            "initialSp": 10,
+            "spCost": 36,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Immediately generates 8 DP, and refreshes all Reinforcements (Restores all Reinforcements to max HP if they are already deployed)",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Immediately generates 8 DP, and refreshes all Reinforcements (Restores all Reinforcements to max HP if they are already deployed)",
+            "initialSp": 11,
+            "spCost": 34,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Immediately generates 8 DP, and refreshes all Reinforcements (Restores all Reinforcements to max HP if they are already deployed)",
+            "initialSp": 12,
+            "spCost": 33,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Immediately generates 8 DP, and refreshes all Reinforcements (Restores all Reinforcements to max HP if they are already deployed)",
+            "initialSp": 13,
+            "spCost": 32,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Immediately generates 8 DP, and refreshes all Reinforcements (Restores all Reinforcements to max HP if they are already deployed)",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 1
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 2
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "\"Everyone Together!\"",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Immediately summons Metal Crabs in the four tiles adjacent to the Tactical Point (excluding the tile occupied by the Tactical Point); While this skill is active, generates a total of 12 DP , and increases the DEF of all summoned Metal Crabs by +20%",
+            "initialSp": 13,
+            "spCost": 50,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Immediately summons Metal Crabs in the four tiles adjacent to the Tactical Point (excluding the tile occupied by the Tactical Point); While this skill is active, generates a total of 12 DP, and increases the DEF of all summoned Metal Crabs by +25%",
+            "initialSp": 13,
+            "spCost": 49,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Immediately summons Metal Crabs in the four tiles adjacent to the Tactical Point (excluding the tile occupied by the Tactical Point); While this skill is active, generates a total of 12 DP, and increases the DEF of all summoned Metal Crabs by +30%",
+            "initialSp": 13,
+            "spCost": 48,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Immediately summons Metal Crabs in the four tiles adjacent to the Tactical Point (excluding the tile occupied by the Tactical Point); While this skill is active, generates a total of 12 DP, and increases the DEF of all summoned Metal Crabs by +35%",
+            "initialSp": 14,
+            "spCost": 47,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Immediately summons Metal Crabs in the four tiles adjacent to the Tactical Point (excluding the tile occupied by the Tactical Point); While this skill is active, generates a total of 12 DP, and increases the DEF of all summoned Metal Crabs by +40%",
+            "initialSp": 14,
+            "spCost": 46,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Immediately summons Metal Crabs in the four tiles adjacent to the Tactical Point (excluding the tile occupied by the Tactical Point); While this skill is active, generates a total of 12 DP, and increases the DEF of all summoned Metal Crabs by +45%",
+            "initialSp": 14,
+            "spCost": 45,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Immediately summons Metal Crabs in the four tiles adjacent to the Tactical Point (excluding the tile occupied by the Tactical Point); While this skill is active, generates a total of 12 DP, and increases the DEF of all summoned Metal Crabs by +50%",
+            "initialSp": 15,
+            "spCost": 44,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Immediately summons Metal Crabs in the four tiles adjacent to the Tactical Point (excluding the tile occupied by the Tactical Point); While this skill is active, generates a total of 12 DP, and increases the DEF of all summoned Metal Crabs by +55%",
+            "initialSp": 16,
+            "spCost": 43,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Immediately summons Metal Crabs in the four tiles adjacent to the Tactical Point (excluding the tile occupied by the Tactical Point); While this skill is active, generates a total of 12 DP, and increases the DEF of all summoned Metal Crabs by +60%",
+            "initialSp": 17,
+            "spCost": 42,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Immediately summons Metal Crabs in the four tiles adjacent to the Tactical Point (excluding the tile occupied by the Tactical Point); While this skill is active, generates a total of 12 DP, and increases the DEF of all summoned Metal Crabs by +70%",
+            "initialSp": 18,
+            "spCost": 40,
+            "duration": 15
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 1
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 2
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 2
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        },
+        {
+          "name": "Ester",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Oriron",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 2
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 4
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Metal Crab - Peacake",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, productivity +15%"
+    },
+    {
+      "name": "Metal Crab - Trey",
+      "facility": "Factory",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to a Factory, capacity limit +8 and Morale consumed per hour -0.25"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Beanstalk's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "TAC-Y: All-You-Crabs-Eat",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must include your own Beanstalk in your squad, and Beanstalk must be the first Operator deployed",
+        "requirement2": "Clear Main Theme S3-7 with a 3-star rating; You must deploy your own Beanstalk, and use \"Everyone Together!\" at least once"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +100 , ATK +15",
+          "effectLabel": "Trait improved",
+          "effectText": "This unit can designate one Tactical Point within attack range to call Reinforcements ; Enemies blocked by reinforcements are more likely to be attacked, and this unit's ATK is increased to 165% when attacking enemies blocked by Reinforcements",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Sugar Pack",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 20000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +125 , ATK +20",
+          "effectLabel": "Professional Breeder improved",
+          "effectText": "Can summon Metal Crabs to assist in combat from a Tactical Point; Metal Crabs have DEF +10% when blocking and automatically respawns 15 seconds after being defeated.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 15
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 25000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +140 , ATK +25",
+          "effectLabel": "Professional Breeder improved",
+          "effectText": "Can summon Metal Crabs to assist in combat from a Tactical Point; Metal Crabs have DEF +15% when blocking and automatically respawns 15 seconds after being defeated.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 5
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 6
+            },
+            {
+              "name": "LMD",
+              "quantity": 30000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Professional Metal Crab breeder Beanstalk was born into a family of\nColumbian\nfarmers. Although she has sent a variety of proposals to large corporations and business platforms, her attempts at courting their financial support have proven largely unfruitful, and she was advised to seek employment at\nRhodes Island\n.\nHaving passed our examinations, she has been granted official operator status, and is now providing Rhodes Island with logistics and reconnaissance services.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 45,
+        "base": {
+          "hp": 702,
+          "atk": 171,
+          "def": 43,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 11,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1003,
+          "atk": 252,
+          "def": 73,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 11,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 60,
+        "base": {
+          "hp": 1003,
+          "atk": 252,
+          "def": 73,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 13,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1286,
+          "atk": 332,
+          "def": 105,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 13,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1286,
+          "atk": 332,
+          "def": 105,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 13,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1569,
+          "atk": 405,
+          "def": 125,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 13,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "3-3"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 50,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Beanstalk shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.12u/L\nOperator Beanstalk rarely comes into contact with Originium. She is exceptionally healthy, as are her Metal Crabs.\n\nEveryone passed their health examinations. We'll now hand out badges in commemoration of your success. Please step forward when you hear your name. That includes all Metal Crabs in attendance as well...\n—Ptilopsis"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Beanstalk made quite a scene on the day she reported to duty.\nIt was a blazing sunny day, and a Reproba girl drove a large truck right into the garage. She got off, opened the trunk on the back, and whistled. Then, her retinue of cheliped buddies all joyfully hopped off the truck one by one.\nBeanstalk claims to be a professional breeder, and both the certificate she provided and this unforgettable sight have more than proven she is exactly who she says she is."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Each and every one of the Metal Crabs Beanstalk brought with her has its own name. Although only the breeder can truly tell them apart, as the Metal Crabs have become an inseparable part of our Logistics network, many of our operators made it a personal challenge to learn how to tell these little critters apart.\nBeanstalk treats every one of her Metal Crabs as though they are family. Their names are Trey, Twista, B.I.G., Hammer, Ice Cube... and the youngest of the crabs, Peacake, who she keeps in a case she always carries around with her. As their breeder, not only is she able to tell them apart, she also knows the crabs' personalities and preferences. Every day, Beanstalk spends a large amount of time in their pen, preparing their nutritious fodder by hand as well as teaching them new tricks.\nHaving been tamed and domesticated, the Metal Crabs have become much gentler and more alert. The difference between them and their wild counterparts is night and day."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "According to Beanstalk herself, even before she came to Rhodes Island, she had already been raising her Metal Crabs to handle logistical work.\nThis decision has to do with the unique characteristics of Metal Crabs. Their shells are hard, they have considerable strength, and the weight they can carry is substantial. At the same time, their body density is low, making them much lighter than they seem and allowing them to complete most of their tasks with relative haste.\nWith such qualities, Beanstalk thought the Metal Crabs would be well-suited to tasks such as mining, transportation, and certain special rescue or prospecting tasks. Her hunch wasn't far off, either. Rhodes Island conducted several tests specifically formulated for the crabs and subsequently issued a detailed evaluation report. Aside from the advantages their breeder previously postulated, the report also pointed out that the animals have potential in areas such as reconnaissance and frontline combat.\nAfter reading the report, the astute breeder immediately went to work and started writing away. Then, after just a week, she had a new proposal for the Doctor about their future collaboration waiting on the desk. In the proposal, the Metal Crab breeder got straight to the point and simply emphasized her one condition: She would go on vanguard missions with her crabs, she would be the only one allowed to give them orders, and she would have the authority to order them to retreat if she deemed the situation too dangerous.\nShe was unwilling to compromise on this demand, and funding was of no concern to her as long as this was met."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Thanks to her cheerful, lively, and outgoing personality yet never-overboard enthusiasm, the Columbian farm girl became fast friends with much of Rhodes Island's personnel, including operators such as Vanilla, who came to her for breeding advice. Meeting a fellow breeder is no doubt exciting, especially in such a niche field, and this has both helped Beanstalk become more confident in her career and inspired new business ideas. Supposedly, she has started planning a new product called 'Beanstalk's Fine Pet Food...' I wish her good luck from the bottom of my heart.\nAs a farmland owner, Beanstalk's father is actually not very supportive of his daughter's entrepreneurial endeavors, or more specifically, he does not support his daughter's choice of breeding animal, Metal Crabs, as they are seen as peculiar and incapable of producing anything valuable to the older generation. This weighs rather heavily on Beanstalk. She has no qualms with taking over the family business, but she insists that breeding Metal Crabs is a worthwhile undertaking that will bear fruit.\nShe insists as such not just because she was once rescued by a small cast of wild Metal Crabs when she found herself in an accident out in the wilderness, but also because she saw a huge potential in these little critters. She truly believes that her hard work now will earn her everyone's respect in the future. Beanstalk had an argument with her family over this belief and chose to leave home, hoping to one day make a name for herself and be acknowledged by her family.\nAlthough life has been difficult ever since, Beanstalk has never found herself dismayed by the difficulties she faced. On the contrary, it has only ever fueled her passion and enthusiasm."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Beanstalk never felt very apprehensive about having to interact with the Infected. When she first arrived, she didn't hesitate for long before she came to terms with Rhodes Island's sizable Infected population and signed her employee contract.\nAs the youngest country in Terra, Columbia is rapidly expanding and full of ambition. Each year, with nothing but their dreams, droves of young men come to its cities in seek of fame and fortune. At the same time, charmed by its slogans of equality and freedom, a great number of Infected gather at its doorsteps in hopes of reaping the rewards of the plentiful work available to them as explorers; earning a suitable amount of living space; and earning the equal treatment, perhaps even a tiny bit of respect, from the general populace.\nBeanstalk was one such young woman born in Columbia, hungry for opportunity, so she was by no means unfamiliar with the Infected. She wasn't very bothered by the work environment here either, daunting as it may be. She understands that it isn't easy to chase after your dreams, and in a place like Columbia, there are just as many passionate dream chasers who pour into its cities as there are unsuccessful washouts who leave the cities behind. The Metal Crab breeder thought she had both what it takes and the dedication to make it, but her failures have forced her to admit that all successes also need that tiny bit of luck.\nNow that Rhodes Island has finally given her a chance, the young lady has come to realize that, just perhaps, her luck has finally arrived."
+    }
+  ]
+}

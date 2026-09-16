@@ -1,0 +1,752 @@
+{
+  "name": "Hung",
+  "rarity": 5,
+  "class": "Defender",
+  "branch": "Guardian",
+  "faction": "Lee's Detective Agency",
+  "umbrellaFactions": [
+    "Yan-Lungmen"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Defense",
+    "Healing"
+  ],
+  "trait": "Can heal allies by using the skill",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Just a Driver"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_226_hmau",
+  "otherLanguages": {
+    "Chinese": "吽",
+    "Japanese": "ウン",
+    "Korean": "훔"
+  },
+  "characterInfo": {
+    "File no.": "LM19",
+    "Operator Records": "South Wall Conspiracy",
+    "Paradox Simulation": "Lump of Gold",
+    "Illustrator": "KuroBlood",
+    "Release Date": "2020/07/29",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Satoshi Hino",
+    "Mandarin": "Lü Shujun",
+    "Cantonese": "Lu Bin (credited as \"Lost\" in EN)",
+    "English": "Greg Chun",
+    "Korean": "Choi Nak-yoon"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "3 years",
+    "Place of Birth": "Lungmen",
+    "Date of Birth": "July 1st",
+    "Race": "Perro",
+    "Height": "183 cm",
+    "Infection Status": "Confirmed uninfected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Gatekeeper",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "DEF +6%"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "DEF +8% (+2%)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "DEF +6%, if the tile behind this unit is an elevated tile, the unit deployed on the elevated tile receives +75% healing [ note 1 ]"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "DEF +8% (+2%) , if the tile behind this unit is an elevated tile, the unit deployed on the elevated tile receives +85% (+10%) healing [ note 1 ]"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DEF +25"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Gatekeeper"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Hung's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Block +1 .",
+        "New talent: Gatekeeper .",
+        "New skill: Medical Mode Countermeasure ."
+      ],
+      "prerequisite": "Raise Hung to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Gatekeeper improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Hung to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Incandescent Alloy Block",
+          "quantity": 7
+        },
+        {
+          "name": "Aketon",
+          "quantity": 15
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Treatment Countermeasure",
+        "recoveryType": "Defensive Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack instead heals an allied unit within range equal to 100% of ATK",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack instead heals an allied unit within range equal to 105% of ATK",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack instead heals an allied unit within range equal to 110% of ATK",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack instead heals an allied unit within range equal to 120% of ATK",
+            "initialSp": 1,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack instead heals an allied unit within range equal to 125% of ATK",
+            "initialSp": 1,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack instead heals an allied unit within range equal to 130% of ATK",
+            "initialSp": 1,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack instead heals an allied unit within range equal to 140% of ATK",
+            "initialSp": 2,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack instead heals an allied unit within range equal to 150% of ATK",
+            "initialSp": 3,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack instead heals an allied unit within range equal to 160% of ATK",
+            "initialSp": 4,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack instead heals an allied unit within range equal to 170% of ATK",
+            "initialSp": 4,
+            "spCost": 4,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Medical Mode Countermeasure",
+        "recoveryType": "Defensive Recovery",
+        "activationType": "Manual",
+        "duration": "20–30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK and DEF +30% , stops attacking to focus on healing allied units within range, and restores 1 skill point to each healed target.",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK and DEF +35% , stops attacking to focus on healing allied units within range, and restores 1 skill point to each healed target.",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK and DEF +40% , stops attacking to focus on healing allied units within range, and restores 1 skill point to each healed target.",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK and DEF +45% , stops attacking to focus on healing allied units within range, and restores 1 skill point to each healed target.",
+            "initialSp": 11,
+            "spCost": 24,
+            "duration": 22
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK and DEF +50% , stops attacking to focus on healing allied units within range, and restores 1 skill point to each healed target.",
+            "initialSp": 11,
+            "spCost": 24,
+            "duration": 22
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK and DEF +55% , stops attacking to focus on healing allied units within range, and restores 1 skill point to each healed target.",
+            "initialSp": 11,
+            "spCost": 24,
+            "duration": 22
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK and DEF +60% , stops attacking to focus on healing allied units within range, and restores 1 skill point to each healed target.",
+            "initialSp": 12,
+            "spCost": 23,
+            "duration": 24
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK and DEF +65% , stops attacking to focus on healing allied units within range, and restores 1 skill point to each healed target.",
+            "initialSp": 14,
+            "spCost": 22,
+            "duration": 26
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK and DEF +70% , stops attacking to focus on healing allied units within range, and restores 1 skill point to each healed target.",
+            "initialSp": 16,
+            "spCost": 21,
+            "duration": 28
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK and DEF +80% , stops attacking to focus on healing allied units within range, and restores 1 skill point to each healed target.",
+            "initialSp": 18,
+            "spCost": 20,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-12",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 3
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Skillful Craftsman",
+      "facility": "Workshop",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Workshop to process any material , the production rate of byproduct increases by 50%"
+    },
+    {
+      "name": "Adamantly Easygoing",
+      "facility": "Control Center",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Control Center, each Operator from Lee's Detective Agency restores extra Morale and increases the Morale of all Operators in the Control Center by +0.2 per hour."
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Hung's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "GUA-Y: Popular Sitcom Tapes",
+      "mission": {
+        "requirement1": "During battles, have Hung use Medical Mode Countermeasure a total of 5 times (excluding Support Units)",
+        "requirement2": "Clear Main Theme S2-4 with a 3-star rating using a squad of at most 3 units (including Support Units); a non-Support Hung must be in the squad and deployed, and only Caster Operators are allowed for the remaining units"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +180 , DEF +30",
+          "effectLabel": "New trait",
+          "effectText": "Reduces damage taken by 15%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +260 , DEF +38",
+          "effectLabel": "Gatekeeper improved",
+          "effectText": "DEF +10%, if the tile behind this unit is a high ground tile, the unit deployed on the elevated tile receives +75% healing [ note 1 ]",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +330 , DEF +45",
+          "effectLabel": "Gatekeeper improved",
+          "effectText": "DEF +13%, if the tile behind this unit is a high ground tile, the unit deployed on the elevated tile receives +75% healing [ note 1 ]",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Hung is a heavy defender from\nLee's Detective Agency\nrecommended to\nRhodes Island\nby\nMr. Lee\n.\nHe provides reliable front-line protection for other\nOperators\nwith his massive physique and extreme strength.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1172,
+          "atk": 182,
+          "def": 244,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1584,
+          "atk": 261,
+          "def": 359,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1584,
+          "atk": 261,
+          "def": 359,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2032,
+          "atk": 353,
+          "def": 479,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2032,
+          "atk": 353,
+          "def": 479,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2823,
+          "atk": 442,
+          "def": 585,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 0,
+      "def": 60
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there are no other signs of infection. At this time, this operator can be confirmed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Hung shows no signs of Oripathy infection.\n\n[Blood Originium-Crystal Density] 0.10u/L\nHas prior arrangement to receive regular inspections and medical treatment from Operator Aak. Though his methods may be crude, Operator Hung is undeniably quite healthy."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "This easygoing Perro is a large man.\nTo be honest, others can tell from a glance that he is a kind-hearted person despite his massive size. He is always considerate of others, and gets along very well with just about anybody."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Though Hung is quite humble, his superb cooking speaks for itself.\nAnyone who has seen his culinary arts has showered him with praise.\nAs a native of Lungmen, he specializes in the area's local cuisine. In addition to being able to elevate ordinary home cooking to delicious heights, he also can concoct haute cuisine that otherwise only appears in five-star restaurants.\nSurprisingly, according to his own accounts, his cooking is entirely inherited from Mr. Lee, which really makes one wonder... Just what kind of culinary monstrosity is Mr. Lee?"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "According to his own recollection, Hung first worked as a guard for a certain company, but his easygoing personality made him prone to bullying, eventually getting him kicked from the company. He was then invited to the agency by Mr. Lee when he was suffering from hunger and never again can he leave the business. (Note: This description was from Hung himself)\nRegarding Mr. Lee and Lee's Detective Agency, while it is not suitable to describe the scope of business in detail, here is a brief summary: Lee's Detective Agency only takes investigative cases as a front, while actually accepting just about any type of work. They are known as the 'House of Everything' within Lungmen's gray zone.\nAccording to his description of Mr. Lee, we can conclude that Lee concealed a darker secret from Hung. Though it is obvious that Hung is kind-hearted, he is no pedantic old man. He knows very well that you can't talk things through with everyone, and not every story can have a happy ending."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Hung rescued Aak from the aftermath of a gang war, at which point the two assumed their codenames. According to Mr. Lee, he chose the names on a whim at that time.\nHung treats Aak and Waai Fu as his younger brother and sister. In fact, Hung doubles as the liaison between Lee's Detective Agency and Rhodes Island, or in other words, serves as the guardian for the other two operators.\nOf course, that title is also nominal in nature, since Waai Fu and Aak are both sufficiently autonomous. That being the case, unless Hung himself makes a request, Rhodes Island will not deliberately arrange them to live together or to work together.\nNevertheless, Hung's worries about his younger brother are evident through his conversations with the Doctor. He wanted Aak to see the kindness in the world, but did not know how to do so himself, and so he chose to stay with him.\nEven though he hasn't realized it yet, despite Aak's somewhat nasty personality, Aak has fundamentally been influenced by Hung."
+    }
+  ]
+}

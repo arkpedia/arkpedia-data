@@ -1,0 +1,752 @@
+{
+  "name": "Franka",
+  "rarity": 5,
+  "class": "Guard",
+  "branch": "Dreadnought",
+  "faction": "Blacksteel",
+  "umbrellaFactions": [
+    "Columbia"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS",
+    "Survival"
+  ],
+  "trait": "Blocks 1 enemy",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Rainforest, Me, Rainbow"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_106_franka",
+  "otherLanguages": {
+    "Simplified Chinese": "芙兰卡",
+    "Traditional Chinese": "芙蘭卡",
+    "Japanese": "フランカ",
+    "Korean": "프란카"
+  },
+  "characterInfo": {
+    "File no.": "BS01",
+    "Operator Records": "Symbols of the Past To a Standstill",
+    "Paradox Simulation": "Hot Knife Through Butter",
+    "Illustrator": "TOKI 臼 ( Rainforest, Me, Rainbow )",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Ai Kakuma",
+    "Chinese": "Vila",
+    "English": "Maya Aoki Tuttle",
+    "Korean": "Park Ko-woon (until 14 April 2026) TBA"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "3 years",
+    "Place of Birth": "Columbia",
+    "Date of Birth": "October 30th",
+    "Race": "Vulpo",
+    "Height": "163 cm",
+    "Infection Status": "Showed physical signs of Originium , infection confirmed by medical report."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Thermite Blade",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Has a 10% chance to ignore the target's Defense when attacking"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Has a 20% chance to ignore the target's Defense when attacking"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +30"
+      },
+      {
+        "level": 5,
+        "benefit": "Redeployment time -6 seconds"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Franka's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Thermite Blade .",
+        "New skill: Vorpal Edge ."
+      ],
+      "prerequisite": "Raise Franka to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Thermite Blade improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Franka to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Guard Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Oriron Block",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar Pack",
+          "quantity": 18
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Swift Strike γ",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "35 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +20% ; ASPD +20",
+            "initialSp": 0,
+            "spCost": 45,
+            "duration": 35
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +22% ; ASPD +20",
+            "initialSp": 0,
+            "spCost": 44,
+            "duration": 35
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +24% ; ASPD +20",
+            "initialSp": 0,
+            "spCost": 43,
+            "duration": 35
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +27% ; ASPD +25",
+            "initialSp": 5,
+            "spCost": 42,
+            "duration": 35
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +29% ; ASPD +25",
+            "initialSp": 5,
+            "spCost": 41,
+            "duration": 35
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +31% ; ASPD +25",
+            "initialSp": 5,
+            "spCost": 40,
+            "duration": 35
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +34% ; ASPD +35",
+            "initialSp": 10,
+            "spCost": 39,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +37% ; ASPD +35",
+            "initialSp": 10,
+            "spCost": 38,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +40% ; ASPD +35",
+            "initialSp": 10,
+            "spCost": 37,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +45% ; ASPD +45",
+            "initialSp": 15,
+            "spCost": 35,
+            "duration": 35
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Vorpal Edge",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20–30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "DEF reduces to 0 ; ATK +50% ; The chance of Talent ignoring the target's DEF is increased to 2.5 times",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "DEF reduces to 0 ; ATK +53% ; The chance of Talent ignoring the target's DEF is increased to 2.5 times",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "DEF reduces to 0 ; ATK +56% ; The chance of Talent ignoring the target's DEF is increased to 2.5 times",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "DEF reduces to 0 ; ATK +60% ; The chance of Talent ignoring the target's DEF is increased to 2.5 times",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": 23
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "DEF reduces to 0 ; ATK +63% ; The chance of Talent ignoring the target's DEF is increased to 2.5 times",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": 23
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "DEF reduces to 0 ; ATK +66% ; The chance of Talent ignoring the target's DEF is increased to 2.5 times",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": 23
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "DEF reduces to 0 ; ATK +70% ; The chance of Talent ignoring the target's DEF is increased to 2.5 times",
+            "initialSp": 5,
+            "spCost": 20,
+            "duration": 26
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "DEF reduces to 0 ; ATK +80% ; The chance of Talent ignoring the target's DEF is increased to 2.5 times",
+            "initialSp": 5,
+            "spCost": 20,
+            "duration": 27
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "DEF reduces to 0 ; ATK +90% ; The chance of Talent ignoring the target's DEF is increased to 2.5 times",
+            "initialSp": 5,
+            "spCost": 20,
+            "duration": 28
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "DEF reduces to 0 ; ATK +100% ; The chance of Talent ignoring the target's DEF is increased to 2.5 times",
+            "initialSp": 10,
+            "spCost": 20,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 2
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Guard Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room , Guard Operators' Specialization training speed +30%"
+    },
+    {
+      "name": "Guard Expert βReplacesGuard Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Guard Operators' Specialization training speed +50%"
+    },
+    {
+      "name": "Clue Search α",
+      "facility": "Reception Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Reception Room , Clue search speed increases by 10%"
+    },
+    {
+      "name": "B.P.R.S.ReplacesClue Search α",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by 10% and it's easier to obtain the clues of Blacksteel Worldwide"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Franka's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "DRE-X: Cutting-edge Thermite Unit",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Franka, and have Franka deal at least 18,000 damage",
+        "requirement2": "Clear Main Theme 9-3 with a 3-star rating; You must deploy your own Franka, and have Franka defeat at least 1 Dublinn Heavy Defender"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +150 , ATK +60",
+          "effectLabel": "New trait",
+          "effectText": "Increases ATK to 115% when attacking blocked enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +190 , ATK +80",
+          "effectLabel": "Thermite Blade improved",
+          "effectText": "Attacks have a 25% chance to ignore the target's DEF",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +220 , ATK +95",
+          "effectLabel": "Thermite Blade improved",
+          "effectText": "Attacks have a 28% chance to ignore the target's DEF",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Franka, biohazard protection and response specialist for\nBlacksteel Worldwide\n, is very experienced and proficient in protection, raids, and combat support operations.\nShe is currently undergoing treatment for\nOripathy\nat\nRhodes Island\nand providing professional security as a Blacksteel\nOperator\n.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1443,
+          "atk": 416,
+          "def": 105,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 1.5
+        },
+        "max": {
+          "hp": 2062,
+          "atk": 613,
+          "def": 150,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 1.5
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 2062,
+          "atk": 613,
+          "def": 150,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 1.5
+        },
+        "max": {
+          "hp": 2826,
+          "atk": 776,
+          "def": 195,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 1.5
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2826,
+          "atk": 776,
+          "def": 195,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 1.5
+        },
+        "max": {
+          "hp": 3768,
+          "atk": 936,
+          "def": 235,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 1.5
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 75,
+      "def": 25
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging test for this Operator showed blurry outline of internal organs with visible unusual dark spots. Unusually high concentration of Originium particles were present in her circulation, indicating signs of infection and confirming her as infected at this stage. \n\n[Cell-Originium Assimilation] 9% \nOperator Franka showed conspicuous symptoms of Oripathy. \n\n[Blood Originium-Crystal Density] 0.34u/L \nInfection approaching mid-stage but currently not spreading, condition stable."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Blacksteel, aka. Blacksteel Worldwide, is a contractor whose core service is providing private security services. Headquartered in Columbia, Blacksteel is now riding a crest thanks to the growing business influence of Columbia. \nTo combat the Originium infection crisis, Blacksteel set up a special unit known as the 'Biochemical Protection Response Staff' (BPRS). Operator Franka is a member of this unit tasked with guaranteeing the safety of all Bio Department operations. \nUnlike most Blacksteel specialists who are always serious to the point of being dour, Franka seems more light-hearted, progressive, and is even a bit of a prankster--her victims including both enemies and her own colleagues. \nNo matter the situation she faces, Franka is able to keep calm and persuade others to trust in her calculated words. \nFor a professional Operator, Franka submitted a relatively truthful personal profile and resume, as well as a standard cooperation agreement, voluntary treatment waiver, and other binding contracts. Based on that, Franka may be accorded the appropriate level of trust."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Franka's combat style is often considered enigmatic and unpredictable, as befitting her peculiar personality. Rather than dealing the most damage, she focuses on making herself come off as 'harmless.' \nFranka's weapon of choice are a rapier and a dagger. She favors a rapier forged from Originium that, when combined with her own Originium Arts, absorbs a huge amount of heat (while still retaining its shape). It is especially effective against targets in heavy metal armor. It is very easy to overlook her light gear and weapons, leading to a gross underestimation of her combat prowess. \nOn the other hand, the close-up melee style she prefers also can put her in peril. While she may be good enough to end the enemy before her life is threatened, to alleviate concerns, the head of the BPRS project teamed the smart but radical Franka with the level-headed Liskarm, making them a complementary duo in combat."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "As shown in the limited files provided by Blacksteel, Operator Franka contracted Oripathy during an escort mission for the BPRS Department (project designation and actual operation are both classified). Blacksteel used newly acquired intel to contact the little-known Rhodes Island Pharmaceuticals and arranged on-site treatment for Franka, also seizing the opportunity to reach several agreements with the company.\nFranka's arrival filled a gap in experienced Operators for Rhodes Island, and she shows great interest in her new surroundings in return. Her professionalism helped her integrate in no time, making her an essential part of combat missions. The mood on the island, in turn, has felt the impact of Franka's presence. \nFor example, during her tenure as the swordfighting instructor for reserve Operators, she 'initiated' every newbie in 'Columbian style training', i.e., hazing. At the same time, she held almost nothing back in passing on her knowledge and experience to the rookies. \nTo those on the island, their biggest impression of Franka, besides her professional combat instruction and unique combat style, is her regular clashing with her partner Liskarm."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "The bond between Franka and Rhodes Island hinges solely on the agreements between Blacksteel and the company. She seems more and more like a Rhodes Island Operator each day now, though, and she is quite proud of that. \nOripathy has not bothered Franka in any way so far. She still goes about life in her own unique way, busy with work and combat, while continuing to look for fun and excitement on the job."
+    }
+  ]
+}

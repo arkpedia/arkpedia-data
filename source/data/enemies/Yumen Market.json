@@ -1,0 +1,178 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "sss",
+    "id": "tower_n_16",
+    "label": null,
+    "name": "Yumen Market",
+    "release_date": "2025-03-16"
+  },
+  "enemies": [
+    {
+      "slug": "ye_wuqing_rooftop_runner",
+      "id": "enemy_6027_bqthie",
+      "name": "Ye Wuqing, Rooftop Runner",
+      "index": "DL27",
+      "rank": "Boss",
+      "sort": 1487,
+      "hidden": false,
+      "icon": "/enemies-icons/Ye Wuqing, Rooftop Runner.webp",
+      "flavour_text": "A Qinggong master renowned for her agility and grace on the rooftops of Yumen. Though her motivations remain unknown, her actions reveal an honorable nature. Her steps are light, her gaze piercing. Yet, it is a pity that her role seems as insignificant as a leaf in the wind.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Normally stationary; moves to a different High Ground with her claw hook after some time has elapsed, or if a certain amount of HP is lost. This unit is Aerial while moving.",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically hides 'Indisputable Evidence' in your Preparation Area, and reduces DP Cost.",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically destroys 1 Indisputable Evidence and performs a powerful attack.",
+          "format": "normal"
+        },
+        {
+          "text": "For each Indisputable Evidence, increases ATK while gaining Physical and Arts dodge.",
+          "format": "normal"
+        },
+        {
+          "text": "ASPD significantly increases when unblocked.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 60000,
+            "atk": 600,
+            "def": 600,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 1.5,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "HideMoney",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 10,
+              "parameters": {
+                "cost": -3.0
+              }
+            },
+            {
+              "key": "DisposeMoney",
+              "sp_cost": 0,
+              "cooldown": 35.0,
+              "initial_cooldown": 20.0,
+              "priority": 10,
+              "parameters": {
+                "atk_scale_dispose": 5.0
+              }
+            },
+            {
+              "key": "HideMoney2",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 10.0,
+              "priority": 10,
+              "parameters": {
+                "cost": -15.0
+              }
+            },
+            {
+              "key": "MoveEnd",
+              "sp_cost": 0,
+              "cooldown": 100000000.0,
+              "initial_cooldown": 100000000.0,
+              "priority": 100,
+              "parameters": {}
+            },
+            {
+              "key": "MoveSkill",
+              "sp_cost": 0,
+              "cooldown": 100000000.0,
+              "initial_cooldown": 100000000.0,
+              "priority": 100,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Flying",
+              "parameters": {
+                "fly_interval_cnt": 35.0,
+                "hp_ratio": 0.25,
+                "interval": 0.5
+              }
+            },
+            {
+              "key": "MoveUp",
+              "parameters": {
+                "interval": 0.5,
+                "max_stack_cnt": 3.0,
+                "move_speed": 2.0,
+                "trig_cnt": 8.0
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 15.0,
+                "trig_cnt": 5.0
+              }
+            },
+            {
+              "key": "Sneak",
+              "parameters": {
+                "attack_speed": 50.0
+              }
+            },
+            {
+              "key": "Steal",
+              "parameters": {
+                "atk": 0.1,
+                "prob": 0.1,
+                "stack_cnt_eff": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear"
+          ],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

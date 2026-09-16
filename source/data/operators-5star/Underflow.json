@@ -1,0 +1,760 @@
+{
+  "name": "Underflow",
+  "rarity": 5,
+  "class": "Defender",
+  "branch": "Sentry Protector",
+  "faction": "Aegir",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Defense",
+    "DPS",
+    "Slow"
+  ],
+  "trait": "Blocks 3 enemies and attacks from long range.",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Path of Life"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Laminar Flow"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4137_udflow",
+  "otherLanguages": {
+    "Chinese": "深巡",
+    "Japanese": "アンダーフロー"
+  },
+  "characterInfo": {
+    "File no.": "AE03",
+    "Illustrator": "〇亻",
+    "Release Date": "2024/12/03",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Kayo Ishida",
+    "Chinese": "Jing Liu",
+    "English": "Kelsey Jaffer",
+    "Korean": "Lee Mi-na"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "8 years",
+    "Place of Birth": "Ægir",
+    "Date of Birth": "August 1st",
+    "Race": "Ægir",
+    "Height": "170 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Flawed"
+  },
+  "talents": [
+    {
+      "name": "Cell Activity Suppressant",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Deals 40 Arts damage per second to targets on attacking, lasting 3 seconds (Damage is doubled against [Sea Monster] enemies)"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Deals 50 (+10) Arts damage per second to targets on attacking, lasting 3 seconds (Damage is doubled against [Sea Monster] enemies)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Deals 80 Arts damage per second to targets on attacking, lasting 3 seconds (Damage is doubled against [Sea Monster] enemies)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Deals 90 (+10) Arts damage per second to targets on attacking, lasting 3 seconds (Damage is doubled against [Sea Monster] enemies)"
+        }
+      ],
+      "technique": [
+        {
+          "name": "Damage Over Time",
+          "description": "Enemies incur a damage per second for a certain duration"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Cell Activity Suppressant"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Underflow's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Pinning Maneuver .",
+        "New talent: Cell Activity Suppressant ."
+      ],
+      "prerequisite": "Raise Underflow to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Cell Activity Suppressant improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Underflow to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Incandescent Alloy Block",
+          "quantity": 8
+        },
+        {
+          "name": "Fuscous Fiber",
+          "quantity": 9
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Invasion Response",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +25% , DEF +25%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +27% , DEF +27%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +29% , DEF +29%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +32% , DEF +32%",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +34% , DEF +34%",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +36% , DEF +36%",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +39% , DEF +39%",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +42% , DEF +42%",
+            "initialSp": 10,
+            "spCost": 34,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +45% , DEF +45%",
+            "initialSp": 10,
+            "spCost": 33,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +50% , DEF +50%",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Polyester Pack",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Pinning Maneuver",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +20% , ASPD +20 . Attacks become toxic finspines that fire directly ahead, piercing through up to 3 enemies and inflicting Slow for 1 second",
+            "initialSp": 20,
+            "spCost": 42,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +23% , ASPD +20 . Attacks become toxic finspines that fire directly ahead, piercing through up to 3 enemies and inflicting Slow for 1 second",
+            "initialSp": 20,
+            "spCost": 41,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +26% , ASPD +20 . Attacks become toxic finspines that fire directly ahead, piercing through up to 3 enemies and inflicting Slow for 1 second",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +30% , ASPD +25 . Attacks become toxic finspines that fire directly ahead, piercing through up to 3 enemies and inflicting Slow for 1 second",
+            "initialSp": 21,
+            "spCost": 39,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +33% , ASPD +25 . Attacks become toxic finspines that fire directly ahead, piercing through up to 3 enemies and inflicting Slow for 1 second",
+            "initialSp": 21,
+            "spCost": 38,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +36% , ASPD +25 . Attacks become toxic finspines that fire directly ahead, piercing through up to 3 enemies and inflicting Slow for 1 second",
+            "initialSp": 21,
+            "spCost": 37,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +40% , ASPD +30 . Attacks become toxic finspines that fire directly ahead, piercing through up to 3 enemies and inflicting Slow for 1 second",
+            "initialSp": 22,
+            "spCost": 36,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Range increases , ATK +43% , ASPD +36 . Attacks become toxic finspines that fire directly ahead, piercing through up to 3 enemies and inflicting Slow for 1 second",
+            "initialSp": 23,
+            "spCost": 35,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Range increases , ATK +46% , ASPD +43 . Attacks become toxic finspines that fire directly ahead, piercing through up to 3 enemies and inflicting Slow for 1 second",
+            "initialSp": 24,
+            "spCost": 34,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Range increases , ATK +50% , ASPD +50 . Attacks become toxic finspines that fire directly ahead, piercing through up to 4 enemies and inflicting Slow for 1 second",
+            "initialSp": 25,
+            "spCost": 32,
+            "duration": 15
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "Semi-Synthetic Solvent",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 4
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Diketon",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 8
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Compound Cutting Fluid",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Envoy To Land α",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +25% ; When Ulpianus is in the Base (excluding Assistants and Activity Room users), increase order acquisition efficiency by an additional +5%"
+    },
+    {
+      "name": "Envoy To Land βReplacesEnvoy To Land α",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +30% ; When Ulpianus is in the Base (excluding Assistants and Activity Room users), increase order acquisition efficiency by an additional +10%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Underflow's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "SPT-X: A Neural Stimulant Based on \"Coffee\"",
+      "mission": {
+        "requirement1": "During battle, have Underflow use Pinning Maneuver a total of 8 times (excluding Support Units)",
+        "requirement2": "Clear Intermezzi SN-5 with a 3-star rating; You must deploy your own Underflow, and can only include 4 other Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +38 , DEF +30",
+          "effectLabel": "New trait",
+          "effectText": "Reveals Invisible enemies within range",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +47 , DEF +38",
+          "effectLabel": "Cell Activity Suppressant improved",
+          "effectText": "Deals 90 Arts damage per second to targets on attacking, lasting 3 seconds (Damage is doubled against [Sea Monster] enemies)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +52 , DEF +43",
+          "effectLabel": "Cell Activity Suppressant improved",
+          "effectText": "Deals 100 Arts damage per second to targets on attacking, lasting 3 seconds (Damage is doubled against [Sea Monster] enemies)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Secunda, former\nAbyssal Hunter\nproject researcher, now serving in\nÆgir\n's legions as a Praefecta of the Sea Patrol. After Ægir sent out their invitation for collaboration to their fellow nations, she has reached a cooperation agreement with\nRhodes Island\nto act as Ægir's envoy to land.\nShe is now registered as one of Rhodes Island's collaborating operators under the codename Underflow.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1312,
+          "atk": 226,
+          "def": 251,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1750,
+          "atk": 291,
+          "def": 375,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "2-2"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1750,
+          "atk": 291,
+          "def": 375,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2334,
+          "atk": 364,
+          "def": 508,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "2-2"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2334,
+          "atk": 364,
+          "def": 508,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 24,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 3253,
+          "atk": 439,
+          "def": 696,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 24,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "2-2"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 45,
+      "def": 45
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Underflow shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.005u/L\nAlright, after having checked a few Abyssal Hunters, I'm no longer surprised when an Ægir breaks a record for low BOCD. But the more Ægir I check, the less I understand...\nLike, say, since water on land contains trace amounts of Originium, that Originium should enter the ocean as part of the water cycle... so why is there hardly any in the sea? And when we look at water and finbeast samples from the deep sea, provided by our Ægir friends, they have zero Originium content. Zero. So why do the Ægir themselves have tiny amounts of Originium in their bodies?\nUnderflow definitely noticed me dancing around the subject during her medical exam. She told me 'your questions could stand to be more direct,' then answered everything I asked her one by one. From the ocean to the land, from the Seaborn to humanity... Either I missed out on some important textbooks during my schooling, or the facts she could rattle off are already way beyond what we know.\nTruth be told, when she was speaking halfway through, my curiosity turned to fear. When Rhodes was in touch with the Hunters in the past, they'd always be rather vague when it came to the ocean. So why are the Ægir dumping all this knowledge on us now, out of the blue?\n—A certain Medical Operator"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Right now, a noble officer is beginning to doubt his life.\nHis lineage tells him that prior to discussing official business with distinguished guests, he should first meet them in an unofficial setting, present them with fine foods and liquors, and establish a rapport with them with his conversational skills.\nBut none of it seems to be helping. Ever since meeting this Ægir, and despite her prompt responses to every topic he ventures, the urging looks she gives him seemed quite irritable. She did come all this way from the bottom of the sea, so there was no need to question her sincerity... It must be the questions he's been asking. Maybe advanced civilizations have even stricter etiquette. Maybe the topics he picked are boring her out of her mind. Maybe what he considered a proud bearing seemed riddled with holes to her... No, he is determined to give Victorian etiquette one more chance. He'll use the topic he's most familiar with to feel out the envoy once more.\nAnd so, with the most precise, graceful turn of the neck in his impeccably-starched collar, he looks out the window at the dark clouds above the city, the slightest tinge of sullenness in his gaze, before leisurely mentioning the weather. The moment he speaks, the Ægir deftly answers, as she had before. Oceanic currents, precipitation on land, every form of climatological factor, the emotional undertones of every type of weather... Even when discussing something so banal, she was confident and eloquent enough to make even the most blue-blooded lord feel inferior. Once finished, she glances at him once more with that stomach-churning, urging look.\nRight now, a noble officer is beginning to feel despair.\nHe finally realizes that his guest from an advanced society truly does have higher standards of etiquette. Sure, she has allowed him to save face by engaging with his questions in all seriousness, but he can see how his crudeness and jitters must disgust her. He does not remember how he escaped the dining hall later that day.\n\n[Audio Log: Underflow and Irene]\n'Wait. Let me write down the conversation from that day for you to look at.'\n'I'm surprised you can remember every word you said.'\n'Just a skill any praefecta should have. Done. Could I trouble you to check if anything went against the land's ethics or common sense?'\n'Uhh... I don't see anything strange.'\n'Thank you, Irene, for confirming that the knowledge I had on hand was accurate. But then... why did the officer flee in such a panic? I took everything he brought up dead seriously. Though I admit I didn't quite understand why he turned to topics like that.'\n'My maestro once told me that before the Profound Silence, Iberians loved to get together to eat, dance, and chat about pointless things. Maybe the custom lives on in other nations?'\n'You mean chatting was itself the purpose of the gathering? If that's the case, perhaps I was at fault for the meeting's failure. I'm not the best at small talk, and I was trying to hint that we could get down to business. But why would a Victorian envoy offer to chat with me in the first place?'\n'Maybe he just wanted to smooth over any cultural differences beforehand, make things easier for future meetings. I guess he didn't consider that talking isn't always the best way of breaking down barriers. For me, it wasn't until I saw the Hunters dancing that I began to understand your culture.'\n'Is that why you're inviting me to that dance party?'\n'Not entirely, but... also not wrong.'\n'I see. Then I accept your invitation.'"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "[Engineering Department Audio Log]\n'You guys need to know when to stop! If you keep poking around in other people's equipment for research willy-nilly, our workshop's going to have as bad a rep as Dr. Warfarin's lab!'\n'She agreed to it, though! Underflow said her weapon's not standard issue for Ægir, so it was okay to have a look.'\n'Really? She doesn't seem like the flighty sort.'\n'...As long as we can put it back together when we're done.'\n'Well? Can you?'\n'...'\n'...Fine.'\n\n[Engineering Department Classified Log]\nIt's the same with most of Underflow's gear. This 'toxic finspine launcher' is her own work. Compared to the liquid metal shooter or ion blaster standard arms she describes... this 'own work' of hers is still something I can comprehend. Though I'm still unsure how it operates underwater, or how it can rapidly change ammo types, I can see that it mainly uses the toxins in its ammunition.\nShe told me the effects and use-cases for nearly every type of poison. I tried my best to keep up, but when she talks about something she's familiar with, it's like she's a whole other person. Hard to imagine someone usually so reticent being able to talk so much and so quickly. I almost suspect her brain cells transmit information faster than us. In short, there are many types of poison, effective on many different creatures... Oh, there's one detail that I did remember. She mentioned a type of concentrated toxin that can 'shut down neuronavigation processes in people', but specifically avoided talking about a use-case. It's pretty obvious when she's trying to hide something. I don't remember anything other than that one useless detail.\nAs for putting the dismantled weapon back together? She said as long as I managed to get the right main points out of her explanation, I'd be able to reassemble it, easy as pie... I think she's expecting too much out of the average person.\nShe's a nice lady, but a terrible teacher, turns out."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "[Medical Department Audio Log]\n'Engineering's pulled ahead, so we can't fall behind. Don't worry, this won't turn out the way it did with Skadi. Since we've formally established a cooperative relationship with the government of Ægir, the person they sent over will definitely be suitable for our tests.'\n'Setting aside whether Dr. Kal'tist would see through that bluff, we have to at least consider the image of the department, right? We can't let people think we're all mad scientists obsessed with experiments here.'\n'It's called a thirst for knowledge! Surely the Ægir can get behind that!'\n'But Underflow's not an Abyssal Hunter. What's there to research with her?'\n'The experiment this time is real simple. You've seen her use her sketchpad before, yeah? Of course you have, she uses it every day. What I'm wondering is if she'll retain normal cognitive function if we take it away.'\n'Eh?'\n'Yes, I suspect she has an issue with her brain. The sketchpad is used to help keep her thoughts in line. Only through drawing can she think properly.'\n'...Eh?'\n'Just try it! There's only so much medicine can do for brain damage, so if there's a way to work around it with an assistive device...'\n\n[Addendum]\nDon't listen to Dr. Warfarin. There are no issues with Underflow's brain. Her shorthand is not a cognitive assistance method, but rather a way to surpass the speed of thought. Her pen is like a needle guiding the central thread of her mind through complex pathways. I am unsure as to what requires such a fast thinking, though.\nI dare say she really does think more than the vast majority of people, and much faster, though I cannot say for sure <i>what</i> she thinks of. Normally, she only says what is absolutely necessary, and it's rare to hear her talk about what she thinks or feels. As for the drawings and lines on her sketchpad, they are even more incomprehensible.\nHowever, she is not completely incapable of expressing her thoughts. Have you seen her trying things out in the kitchen for ten hours straight? That's how she spends her free time. She makes unusual dishes, and insists on sampling them in sequence. She carefully mulls over the sensations of tasting, chewing, and swallowing them, allowing all the flavors soak into her tongue... It's times like these when you can see a variety of emotions from her. At first, you may think it's some form of 'bizarre cooking,' but eat it enough and you'll find that carefully sipping on powder smelling of benthic plants really does have relaxing properties, while chewing tough, sour, and spicy dried meat tinged with a light bitterness can bring tears to your eyes... And then there's the poems and drawings she places next to the meal. More immersive than watching a play. I believe this is her unique way of expressing herself.\nIt's a pity she seems unaware she has fans like me. She never tells anyone when she's done cooking. She just places it wherever in the cafeteria's storage cabinets. Most of the time, her masterpieces have been snatched away by Kay, even if we rush over.\nNot much we can do about it. Just another habit of hers she brought from Ægir. Apparently, they only need to upload whatever new creation they think up, and anyone in the nation can print it out from some sort of terminal. How very sophisticated."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Ulpianus is certain the regen gel before him was not so brightly-colored yesterday.\n'This is your doing, Secunda.'\n'Yes, Magister. As I said yesterday, if you alter the experimental conditions, you must also alter the composition of the regen gel.'\n'Your concern is valid, but as I explained yesterday, maintaining the gel composition is not a safety risk.'\n'This is true, but under new conditions, maintaining it is like introducing a new variable. If there is a data error, it will be very difficult to determine the cause. I have already blended a new formula suited for the new conditions. It's there in front of you. In addition, I gave this hibernation pod the ability to change the gel's composition at any time. If you believe we should return to the original formula, you may do so easily.'\n'...Have you completed the survey project I assigned you yesterday?'\n'Completed as scheduled. I've given the report to Advisor Blandus.'\n'Did you sleep yesterday?'\n'I did, in that hibernation pod. If you're worried, you can check the logs. Four instances, for a total of eight hours, consistent with my daily schedule. I used those eight hours to test the new gel formulation, with no adverse effects.'\n'So you are saying you used your free time for all this.'\n'Not all of it, Magister.'\n'You could have used that time to do something more productive, instead of expending the effort on improving an experiment that did not need improvement.'\n'I am aware of what I should prioritize, Magister. We are not yet free of the Seaborn crisis, so the Abyssal Hunter project is now top priority.'\nUlpianus silently operates the pod. Before he lays down in it, he turns and asks:\n'...Secunda, will you see what you believe in done, no matter what?'\n'I will ensure I will not interfere with anyone else's plans, nor delay the advancement of the project, Magister. With these stipulations in mind, I will create the conditions needed to achieve what I believe must be achieved.'\nAs he sinks into slumber, Ulpianus feels both gratification and apprehension."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "'So, you still decided to deny Secunda's application, Ulpianus.'\n'Do not say it like you hadn't thought of it too, Blandus.'\n'I'm merely wondering if we're going against Ægir's principles once again. Whether in capability or character, you know very well she has the qualifications to be an Abyssal Hunter. If an applicant is able and willing, we have no reason to refuse her. In fact, we shouldn't.'\n'Her desire itself is in error.'\n'You're right. There shouldn't be any Ægir willing to undergo a transformation of the body, to become a Hunter... But we've come this far. Does refusing an applicant really make sense?'\n'You misunderstand me. There is no fault in wishing to become an Abyssal Hunter, but that is not her only wish. She wants to become me. A frightening thought.'\n'She's been in dispute with you more often as of late. You know what this means. She's becoming more dependent on you.'\n'And so I must stop her. Ægir should not harbor such a desire. The Institute of Development Planning has files on near a millennium worth of personnel. None have ever expressed the desire to become someone else. It would mean abandoning the self, and if people were to abandon the uncovering of their own unique potential, to emulate their idol set in stone... the nation would be soon to fall.'\n'Very well. What is she to do then, continue her research? I can take her into my lab.'\n'Let her decide for herself. She must deny her desire, and find her own way forward. She must understand that to devote oneself to civilization does not mean sacrificing the self. These are dark times, and the situation is dire. Innocent creation and expression are the sparks that will keep civilization alight.'\n'So you're saying we still have the opportunity to see her walk her own path, Ulpianus?'\n'It would be best if we were no longer around when that day comes.'"
+    }
+  ]
+}

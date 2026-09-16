@@ -1,0 +1,753 @@
+{
+  "name": "Whisperain",
+  "rarity": 5,
+  "class": "Medic",
+  "branch": "Therapist",
+  "faction": "Iberia",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing"
+  ],
+  "trait": "Has a large healing range, but the healing amount on farther targets is reduced to 80%",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Tremble Cold",
+    "Priory of Abyss"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_436_whispr",
+  "otherLanguages": {
+    "Chinese": "絮雨",
+    "Japanese": "ウィスパーレイン",
+    "Korean": "위스퍼레인"
+  },
+  "characterInfo": {
+    "File no.": "R163",
+    "Operator Record": "Before the Rain",
+    "Paradox Simulation": "Soothing Headaches",
+    "Illustrator": "Chuzenji",
+    "Release Date": "2021/04/30",
+    "Kernel Addition Date": "2024/12/17"
+  },
+  "characterVoices": {
+    "Japanese": "Saori Goto",
+    "Chinese": "Liu Shisi (credited as \"Jingxia Liu\" in EN)",
+    "English": "Sam Slade",
+    "Korean": "Lee Ji-young"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Iberia",
+    "Date of Birth": "March 6th",
+    "Race": "Aegir",
+    "Height": "169 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Flawed",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Tower of Life",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Allied units with status resistance within this unit's Attack Range will restore HP per second equal to 3% of Whisperain's ATK (Unaffected by this unit's Trait)"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Allied units with status resistance within this unit's Attack Range will restore HP per second equal to 4% (+1%) of Whisperain's ATK (Unaffected by this unit's Trait)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Allied units with status resistance within this unit's Attack Range will restore HP per second equal to 6% of Whisperain's ATK (Unaffected by this unit's Trait)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Allied units with status resistance within this unit's Attack Range will restore HP per second equal to 7% (+1%) of Whisperain's ATK (Unaffected by this unit's Trait)"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +23"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Tower of Life"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Whisperain's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Tower of Life .",
+        "New skill: Pain Suppression .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Whisperain to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Tower of Life improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Whisperain to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Medic Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Concentration",
+          "quantity": 9
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 13
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Oriented Diagnosis",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next heal is increased to 105% of ATK, and an additional target will be healed (prioritizes units under abnormal status) and granted status resistance for 1 seconds",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next heal is increased to 105% of ATK, and an additional target will be healed (prioritizes units under abnormal status) and granted status resistance for 2 seconds",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next heal is increased to 110% of ATK, and an additional target will be healed (prioritizes units under abnormal status) and granted status resistance for 2 seconds",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next heal is increased to 110% of ATK, and an additional target will be healed (prioritizes units under abnormal status) and granted status resistance for 3 seconds",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next heal is increased to 115% of ATK, and an additional target will be healed (prioritizes units under abnormal status) and granted status resistance for 3 seconds",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next heal is increased to 115% of ATK, and an additional target will be healed (prioritizes units under abnormal status) and granted status resistance for 4 seconds",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next heal is increased to 120% of ATK, and an additional target will be healed (prioritizes units under abnormal status) and granted status resistance for 4 seconds",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next heal is increased to 120% of ATK, and an additional target will be healed (prioritizes units under abnormal status) and granted status resistance for 5 seconds",
+            "initialSp": 0,
+            "spCost": 2,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next heal is increased to 125% of ATK, and an additional target will be healed (prioritizes units under abnormal status) and granted status resistance for 5 seconds",
+            "initialSp": 0,
+            "spCost": 2,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next heal is increased to 130% of ATK, and an additional target will be healed (prioritizes units under abnormal status) and granted status resistance for 5 seconds",
+            "initialSp": 0,
+            "spCost": 2,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Pain Suppression",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": "Unlimited",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Interval reduced . The healing effect of this unit's Talent increases to 110% , and each target healed by this unit is granted status resistance for 1 second(s) Unlimited duration",
+            "initialSp": 0,
+            "spCost": 65,
+            "duration": "∞"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Interval reduced . The healing effect of this unit's Talent increases to 120% , and each target healed by this unit is granted status resistance for 1 second(s) Unlimited duration",
+            "initialSp": 0,
+            "spCost": 64,
+            "duration": "∞"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Interval reduced . The healing effect of this unit's Talent increases to 130% , and each target healed by this unit is granted status resistance for 1 second(s) Unlimited duration",
+            "initialSp": 0,
+            "spCost": 63,
+            "duration": "∞"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Interval reduced . The healing effect of this unit's Talent increases to 140% , and each target healed by this unit is granted status resistance for 2 second(s) Unlimited duration",
+            "initialSp": 0,
+            "spCost": 62,
+            "duration": "∞"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Interval reduced . The healing effect of this unit's Talent increases to 150% , and each target healed by this unit is granted status resistance for 2 second(s) Unlimited duration",
+            "initialSp": 0,
+            "spCost": 61,
+            "duration": "∞"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Interval reduced . The healing effect of this unit's Talent increases to 160% , and each target healed by this unit is granted status resistance for 2 second(s) Unlimited duration",
+            "initialSp": 0,
+            "spCost": 60,
+            "duration": "∞"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Interval reduced . The healing effect of this unit's Talent increases to 170% , and each target healed by this unit is granted status resistance for 3 second(s) Unlimited duration",
+            "initialSp": 0,
+            "spCost": 59,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Interval reduced . The healing effect of this unit's Talent increases to 180% , and each target healed by this unit is granted status resistance for 3 second(s) Unlimited duration",
+            "initialSp": 0,
+            "spCost": 58,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Interval reduced . The healing effect of this unit's Talent increases to 190% , and each target healed by this unit is granted status resistance for 3 second(s) Unlimited duration",
+            "initialSp": 0,
+            "spCost": 57,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Interval reduced . The healing effect of this unit's Talent increases to 200% , and each target healed by this unit is granted status resistance for 4 second(s) Unlimited duration",
+            "initialSp": 0,
+            "spCost": 55,
+            "duration": "∞"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Aketon",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 2
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Itinerant",
+      "facility": "Office",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the HR Office, HR contacting speed +20% . Additionally, for every Recruit slot (Default slots do not count), Memory Fragments +10"
+    },
+    {
+      "name": "Memory Seeker",
+      "facility": "Office",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the HR Office, every 1 Memory Fragment is converted into 1 Perception Information . When Morale is fully consumed, remove all Memory Fragments and accumulated Perception Information"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Whisperain's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "WAH-X: A Quaint First-Aid Kit",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Whisperain, and unleash Pain Suppression at least 1 time in each battle",
+        "requirement2": "Clear Main Theme 2-5 with a 3-star rating; The only Medic Operator that can be deployed is your own Whisperain"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +100 , ATK +25",
+          "effectLabel": "New trait",
+          "effectText": "Gain status resistance and become less likely to be attacked",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +120 , ATK +35",
+          "effectLabel": "Tower of Life improved",
+          "effectText": "Allied units with status resistance within this unit's Attack Range will restore HP per second equal to 8% of Whisperain's ATK (Unaffected by this unit's Trait)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +140 , ATK +40",
+          "effectLabel": "Tower of Life improved",
+          "effectText": "Allied units with status resistance within this unit's Attack Range will restore HP per second equal to 9% of Whisperain's ATK (Unaffected by this unit's Trait)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "The\nIberia\n-born roving doctor, Whisperain, never stays in one place for too long. Records of her work in the area remain all throughout\nKazimierz\n,\nSami\nand the like. Her patients appear to have received treatment from her while she passed by, and in her seemingly aimless wandering, she's rescued more than a few from the brink.\nSince she administered treatment to a mid-mission team of Operators met by chance, she is now an ad hoc member of the Medical Department as an accompanying doctor, journeying together with\nRhodes Island\nfor the short-term.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 785,
+          "atk": 172,
+          "def": 52,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1034,
+          "atk": 282,
+          "def": 76,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1034,
+          "atk": 282,
+          "def": 76,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1231,
+          "atk": 393,
+          "def": 95,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-4"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1231,
+          "atk": 393,
+          "def": 95,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1432,
+          "atk": 492,
+          "def": 119,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-4"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 40,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected. \n\n[Cell-Originium Assimilation] 0%\nOperator Whisperain shows no signs of Originium infection. \n\n[Blood Originium-Crystal Density] 0.10u/L\nOperator Whisperain is exceptionally attentive—even rigorous—in defending herself, and rarely comes into contact with Originium or related products. \n\nWhat's going on here? How could her body become so frail...? Never mind Oripathy, even a bad fever could cost her her life! Ugh, with her constitution, she had no business running amok outside all this time.   \n—Warfarin"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Just like Miss Whisperain said, she's a traveler who happened across Rhodes Island by chance. After aiding a few Rhodes Island operators, her dune buggy malfunctioned and left her stranded in the middle of the barrens. The Rhodes Island landship picked up on the distress signal, and so went to rescue her.  \nAs a traveling doctor, Miss Whisperain had no set destination at all. There was no doubt she fulfilled high standards as a Medic, with her expertise above all else being first aid in various emergency situations. Once we considered Miss Whisperain's circumstances, we sent her an invitation. Rhodes Island wouldn't restrict her staying or going, but if her own interests aligned, she could act as a provisional Medic Operator in joint with Rhodes Island's operations before she left.   \nAfter several days of hesitation, Miss Whisperain accepted our proposal."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "The Medical Department's routine health inspections have made it clear that Miss Whisperain is not in good condition. In summary, she is in no way suited to activity as a traveling doctor. \nThis verdict is completely objective. Her exam numbers show that every index of Miss Whisperain's health falls below average compared to any healthy person. Her immune system requires particular attention, having reached a dangerous state. Oripathy has not infected her frail body, despite its rampant spread across this world and all its people. Yet, frail is still the only word that appropriately describes Miss Whisperain's constitution.   \nWe're not sure why Miss Whisperain doesn't choose to settle down in a city suited to her, but rather continues to walk the world's four corners, never calling a single place home for long. Regardless, while Miss Whisperain lodges for the time being at Rhodes Island, the Medical Department has suggested she be a medical worker onboard the ship, minimizing unnecessary field missions and avoiding further burden on her body."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Miss Whisperain is hardly ever seen or heard of in social settings. This is not purely due to her reserved, shy nature— rather, she actively takes deliberate pains to avoid contact with others.  \nIn response to contact from gregarious operators, Miss Whisperain is typically evasive. From the faint sorrow and vexation in the little talk she makes, and the struggle and expectation seen behind her glasslike eyes, you can tell Miss Whisperain isn't distant by nature. There's just some innate reason she has, and so she chooses to be apart from the crowd, to close herself off from others.  \nHowever, there seem to be signs of a turn for the better, in the time since she joined Rhodes Island. Though the roving doctor still avoided any involvement with others at all costs, Rhodes Island's cast of operators isn't short of warmth, and life aboard the ship always seemed to hide all kinds of 'accidents' to tie her up in... and after enough 'accidents,' we can say that our present Miss Whisperain lets much more of a rich array of moods show than the one that first joined us. And by her side, little by little, more familiar faces have started showing up.  \nThough it perplexes her and she's helpless in the face of them, one can see that Miss Whisperain doesn't sincerely reject the bubbling, lively little mishaps that happen around her."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Outside of medical work, Miss Whisperain spends most of her free time at the library or AV cabin. Among those quiet indoor amusements, moving pictures are her most beloved. Her expertise in film appreciation is nigh unparalleled.  \nHer angle is nothing like a critic's, fussing and picking and passing judgment. Miss Whisperain throws herself whole into the film, learning a work's characters' emotions by firsthand experience. The sentimental roving doctor's natural heart is fine-woven and sensitive, highly empathetic towards others, and this becomes even more apparent when she's picture-watching. Miss Whisperain can often be influenced by strong emotions, writing out vivid, piercing impressions of what she watches, and these reviews have been well-received across the ship, esteemed by many movie-loving Operators as a viewer's guidebook.   \nFor each film she's seen at a regular screening, as a memoir, Miss Whisperain will hold onto the cinema ticket's stub. To the roving doctor, this act seems to hold a special kind of sense, each ticket stub representing some memory she doesn't want to forget.  \n\n[Classified Log]\nSetting aside her innate frailty, by her own disclosure, we've ascertained that Miss Whisperain falls under a very rare branch of the Ægir, possessing an extraordinary constitution. Under the effect of the race's characteristics, this type of Ægirian is exceptionally frail. When the body is incapable of enduring its environment or has been gravely wounded, it will relapse to a young stage, losing its prior memories and maturing anew.  \nAfter several examinations, the Medical Department arrived at a conclusion, and this rather strange conclusion seemed to fit with Miss Whisperain's own confessions. Her mentions of 'rejuvenation' during conversation were not truly in the sense of longevity, but referred to a biological differentiation, transformation and regression. \nIt was precisely because memory loss accompanied each of her 'deaths' that Miss Whisperain began to dread forming connections with people, scared that her own deaths and their oblivions would come to harm the people around her. For the keenly sensitive Miss Whisperain, it's hard to bear."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "To want to flee for fear of harm is a very normal thing. \nOur biological instincts bind us to innately fear pain. Perhaps there are people with the willpower to overcome these fears, or perhaps there are people long numbed to them through all their torment, but we must recognize—fear is a normal thing, escaping is a normal thing, and these cannot be criticized. \nThe question is, where does blind escape lead you, and who can truly flee from their pain? \nLuckily, there are people on Rhodes Island who will reach their hand out to her, and people who can make her want to try stepping out of her own world. \nPerhaps, what she lacked right now was only a bit of courage."
+    }
+  ]
+}

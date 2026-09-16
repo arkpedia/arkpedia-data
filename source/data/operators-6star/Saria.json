@@ -1,0 +1,1035 @@
+{
+  "name": "Saria",
+  "rarity": 6,
+  "class": "Defender",
+  "branch": "Guardian",
+  "faction": "Rhine Lab",
+  "umbrellaFactions": [
+    "Columbia"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Defense",
+    "Healing",
+    "Support"
+  ],
+  "trait": "Can heal allies by using the skill",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Stronghold",
+    "The Law",
+    "Unstained Unshaken"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_202_demkni",
+  "otherLanguages": {
+    "Simplified Chinese": "塞雷娅",
+    "Traditional Chinese": "塞雷婭",
+    "Japanese": "サリア",
+    "Korean": "사리아"
+  },
+  "characterInfo": {
+    "File no.": "RL02",
+    "Operator Record": "Fertile Soil",
+    "Paradox Simulation": "Dead End",
+    "Illustrator": "NoriZC 九日九号 ( Unstained, Unshaken )",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Yuka Iguchi",
+    "Chinese": "Chen Yanyi (credited as \"Yee Chen\" in EN)",
+    "English": "Norma Butikofer",
+    "Korean": "Esther Won"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "5 years",
+    "Place of Birth": "Columbia",
+    "Date of Birth": "April 23rd",
+    "Race": "Vouivre",
+    "Height": "174 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Normal",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Outstanding"
+  },
+  "talents": [
+    {
+      "name": "Rhine Charged Suit",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "For every 20 seconds Saria is deployed, ATK +2% and DEF +2%, stacking up to 5 times"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "For every 20 seconds Saria is deployed, ATK +3% (+1%) and DEF +3% (+1%) , stacking up to 5 times"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "For every 20 seconds Saria is deployed, ATK +5% and DEF +4%, stacking up to 5 times"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "For every 20 seconds Saria is deployed, ATK +6% (+1%) and DEF +5% (+1%) , stacking up to 5 times"
+        }
+      ]
+    },
+    {
+      "name": "Refreshment",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When Saria restores an ally's HP, she also restores 1 extra Skill Point to them"
+        }
+      ],
+      "technique": [
+        {
+          "name": "SP Recovery Booster",
+          "description": "Able to supply additional SP to specific units"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DEF +27"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Rhine Charged Suit"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Saria's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Block +1 .",
+        "New talent: Rhine Charged Suit .",
+        "New skill: Medicine Dispensing ."
+      ],
+      "prerequisite": "Raise Saria to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Sugar",
+          "quantity": 8
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Refreshment .",
+        "New skill: Calcification .",
+        "Rhine Charged Suit improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Saria to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Bipolar Nanoflake",
+          "quantity": 4
+        },
+        {
+          "name": "Manganese Trihydrate",
+          "quantity": 5
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "First Aid",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Restores the HP of a nearby ally with less than 50% HP by 110% of Saria's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Restores the HP of a nearby ally with less than 50% HP by 115% of Saria's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Restores the HP of a nearby ally with less than 50% HP by 120% of Saria's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Restores the HP of a nearby ally with less than 50% HP by 130% of Saria's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Restores the HP of a nearby ally with less than 50% HP by 135% of Saria's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Restores the HP of a nearby ally with less than 50% HP by 140% of Saria's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Restores the HP of a nearby ally with less than 50% HP by 150% of Saria's ATK in the next attack Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Restores the HP of a nearby ally with less than 50% HP by 160% of Saria's ATK in the next attack Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Restores the HP of a nearby ally with less than 50% HP by 170% of Saria's ATK in the next attack Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Restores the HP of a nearby ally with less than 50% HP by 180% of Saria's ATK in the next attack Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m1",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "M1 gives an extra charge that can help to give more burst healing when needed. Big upgrade for cheap."
+          },
+          {
+            "mastery": "m3",
+            "order": "2nd",
+            "priority": "main",
+            "explanation": "Master this skill first if you find single-target healing important, whether for Saria when she tanks or for a different frontline unit."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 8
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Medicine Dispensing",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Restores the HP of all allies within a certain range by 80% of Saria's ATK",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Restores the HP of all allies within a certain range by 85% of Saria's ATK",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Restores the HP of all allies within a certain range by 90% of Saria's ATK",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Restores the HP of all allies within a certain range by 95% of Saria's ATK",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Restores the HP of all allies within a certain range by 100% of Saria's ATK",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Restores the HP of all allies within a certain range by 105% of Saria's ATK",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Restores the HP of all allies within a certain range by 110% of Saria's ATK",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Restores the HP of all allies within a certain range by 120% of Saria's ATK",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Restores the HP of all allies within a certain range by 130% of Saria's ATK",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Restores the HP of all allies within a certain range by 140% of Saria's ATK",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "2nd",
+            "priority": "main",
+            "explanation": "Master this skill first if you want mass healing. Note that Saria has no limits to the number of healing targets within her range, making this skill exceptional."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "Sugar Pack",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 4
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Calcification",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "10–30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Restores the HP of all nearby allies per second by 10% of Saria's ATK The Arts damage taken by nearby enemies +20% and their Movement Speed -60%",
+            "initialSp": 45,
+            "spCost": 80,
+            "duration": 10
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Restores the HP of all nearby allies per second by 10% of Saria's ATK The Arts damage taken by nearby enemies +20% and their Movement Speed -60%",
+            "initialSp": 45,
+            "spCost": 80,
+            "duration": 12
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Restores the HP of all nearby allies per second by 10% of Saria's ATK The Arts damage taken by nearby enemies +20% and their Movement Speed -60%",
+            "initialSp": 45,
+            "spCost": 80,
+            "duration": 14
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Restores the HP of all nearby allies per second by 15% of Saria's ATK The Arts damage taken by nearby enemies +30% and their Movement Speed -60%",
+            "initialSp": 50,
+            "spCost": 80,
+            "duration": 16
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Restores the HP of all nearby allies per second by 15% of Saria's ATK The Arts damage taken by nearby enemies +30% and their Movement Speed -60%",
+            "initialSp": 50,
+            "spCost": 80,
+            "duration": 18
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Restores the HP of all nearby allies per second by 15% of Saria's ATK The Arts damage taken by nearby enemies +30% and their Movement Speed -60%",
+            "initialSp": 50,
+            "spCost": 80,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Restores the HP of all nearby allies per second by 20% of Saria's ATK The Arts damage taken by nearby enemies +40% and their Movement Speed -60%",
+            "initialSp": 55,
+            "spCost": 80,
+            "duration": 22
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Restores the HP of all nearby allies per second by 25% of Saria's ATK The Arts damage taken by nearby enemies +45% and their Movement Speed -60%",
+            "initialSp": 60,
+            "spCost": 80,
+            "duration": 24
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Restores the HP of all nearby allies per second by 30% of Saria's ATK The Arts damage taken by nearby enemies +50% and their Movement Speed -60%",
+            "initialSp": 65,
+            "spCost": 80,
+            "duration": 27
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Restores the HP of all nearby allies per second by 35% of Saria's ATK The Arts damage taken by nearby enemies +55% and their Movement Speed -60%",
+            "initialSp": 70,
+            "spCost": 80,
+            "duration": 30
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "3rd",
+            "priority": "main",
+            "explanation": "This skill has a big range to add more arts damage onto enemies inside it, slow them down, or provide mass healing to your squad. Fantastic for arts-centric team."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            },
+            {
+              "name": "Polyester Pack",
+              "quantity": 6
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 8
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar Pack",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 5
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Clue Search α",
+      "facility": "Reception Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Reception Room , Clue search speed increases by 10%"
+    },
+    {
+      "name": "WatchmanReplacesClue Search α",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by 10% and it's easier to obtain the clues of Rhine Lab (rate is influenced by length of worktime)"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Saria's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "GUA-X: Unused Boxing Gloves",
+      "mission": {
+        "requirement1": "During battle, have Saria use Calcification a total of 5 times (excluding Support Units)",
+        "requirement2": "Clear Side Story MB-3 with a 3-star rating; You must deploy your own Saria, and allow no Operators to be defeated"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +150 , ATK +50",
+          "effectLabel": "New trait",
+          "effectText": "When healing allied units with less than 50% HP, increases heal amount by 15%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +250 , ATK +60",
+          "effectLabel": "Refreshment improved",
+          "effectText": "When Saria restores an ally's HP, she also restores 2 extra SP to them",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +350 , ATK +70",
+          "effectLabel": "Refreshment improved",
+          "effectText": "When Saria restores an ally's HP, she also restores 2 extra SP to them; [Rhine Lab] Operators gain 3 SP instead",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "GUA-Y: Technology Rising Star Award",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Saria, and unleash Medicine Dispensing at least 3 times in each battle",
+        "requirement2": "Clear Main Theme 4-6 with a 3-star rating; You must deploy your own Saria, and cannot include any Medic Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +160 , ATK +35 , DEF +35",
+          "effectLabel": "New trait",
+          "effectText": "Reduces damage taken by 15%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +210 , ATK +43 , DEF +43",
+          "effectLabel": "Rhine Charged Suit improved",
+          "effectText": "For every 18 seconds Saria is deployed, ATK +6% and DEF +5%, stacking up to 5 times",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +270 , ATK +50 , DEF +50",
+          "effectLabel": "Rhine Charged Suit improved",
+          "effectText": "For every 18 seconds Saria is deployed, ATK +7% and DEF +6%, stacking up to 5 times",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Saria was once the director of the\nRhine Lab\nDefense Division. She has made contributions to the fields of life science, microbiology, and\nOriginium Arts\n. At the same time, she has also proven herself formidable when it comes to demolition, protection, and anomaly containment missions.\nCurrently, she is working with\nRhodes Island\nin various scientific fields and is negotiating a more in-depth cooperation plan with them.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "qV4K0EcaLWA",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "Tx9GM8towAE",
+      "creator": "kukkikaze"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1309,
+          "atk": 200,
+          "def": 248,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1769,
+          "atk": 287,
+          "def": 365,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1769,
+          "atk": 287,
+          "def": 365,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2268,
+          "atk": 388,
+          "def": 487,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 2268,
+          "atk": 388,
+          "def": 487,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 3150,
+          "atk": 485,
+          "def": 595,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 50,
+      "def": 60
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this Operator is believed to be non-infected.\n\n[Cell-Originium Fusion Rate] 0%\nOperator shows no sign of infection.\n\n[Blood Crystal Density] 0.11u/L \nOperator suspects there is a way to protect oneself from infection. Though this Operator has frequently come into contact with Originium in the course of her work, her indicators remain very low. \n\nSaria was my coworker at Rhine Lab. She is authoritative in the field of medical treatment, but did not become a Medic Operator. My guess is this is due to her lack of bedside manner.\nJust kidding.\n- Medic Operator Ptilopsis"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "[Originium Arts Assessment]\nLady Saria has explained in detail the theory behind her Originium Arts to Caster and Medic Operators. The specifics of the theory are cryptic and complicated, but in a nutshell, aside from normal Originium Arts, Lady Saria is also capable of freely manipulating the calcium and chemical compounds in a circular area around her. Combining her erudite medical knowledge and capabilities, she is quite able to meet what's required of her, whether it's using her Originium Arts to block and weaken the enemy, or using her weapon to protect her teammates.\nAs Lady Saria herself says, the strength of Originium Arts lies not in how you use them, but the purpose you use them for."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Lady Saria was once the leader of Rhine Lab's Defense Division.\nLady Saria's shield also functions as her staff. In most cases, she finds enemies not worth using Originium Arts on.\nAs a few Rhodes Island Operators have said, Lady Saria is one of our few strategic Operators.\nOn the one hand, she uses her medical knowledge and equipment to heal her teammates on the battlefield.\nOn the other hand, with her extraordinary fighting skills, Lady Saria can easily use her shield to break apart her enemies, causing them to lose their will to fight and even destroying their equipment.\nMore importantly, Lady Saria is equally accomplished when it comes to commanding the battlefield. Although the plans her team implements are heavily biased towards defense, one can be sure that when Lady Saria is involved, the team will suffer very few casualties.\n'When Lady Saria raises her shield, she is not only protecting the Operators standing behind her, she is protecting the whole team.'\nOf course, many Operators feel that if Lady Saria abandoned her shield and syringe and used both her fists to fight, she would be stronger than she is now, or at the very least more destructive.\nYou don't want to know what kinds of demonstrations she used to train the team."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "The relationship between Lady Saria and Rhine Lab is very complicated.\nThough all Rhine Lab Operators who work with Rhodes Island show some amount of respect for Lady Saria, Rhine Lab's Medic Operator, Silence, shows nothing but hatred for her.\nAt the same time, Lady Saria appears unsurprised by Silence's feelings toward her.\nWhenever Lady Saria attempts to talk with Caster Operator Ifrit, Silence gets in the way.\nAccording to available information, the animosity between Saria and Silence stems from an experiment at Rhine Lab led by Silence.\nThe experiment was an unfortunate failure. Lady Saria acted alone in suppressing the experimental materials that had gone out of control. Similarly, because of this experiment's mishaps, Lady Saria left Rhine Lab.\nIt is not known why she chose to cooperate with Rhodes Island after leaving Rhine Lab."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Classified Log]\nI have already spoken with her about her reasons for working with Rhodes Island. She had no reservations about speaking bluntly, as if on the offensive.\nSaria is worried about Ifrit's continued growth and development. She candidly said that if the situation is not properly controlled, the results will not only destroy Rhodes Island, but will also set off other catastrophes. She said that the upper echelon of Rhine Lab is covering up the truth and that Silence is completely in the dark about all this.\nI expressed to her that we will continue monitoring Ifrit's infection and that we invite Saria to strengthen her cooperation with Rhodes Island on the condition that she sever all her political relationships.\nRhodes Island still needs to draw upon Saria's power to solve some problems, namely problems with some other Rhine Lab Operators. Also, we need to get ready to confront some Operators behind the scenes. Saria and I both agree on this.\nWe must be careful when dealing with the Rhine Lab issue. Amiya should be wary of some of the involved players' political inclinations.\n\n- Kal'tsit"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Rhodes Island admits that Lady Saria is personally quite strong. However, she has not let this strength get the better of her. She is doing her duty and stalwartly defending her teammates with her shield and her Originium Arts.\nHowever, many Operators have raised a question: if Lady Saria is so powerful, why does she insist on using her shield and auxiliary Originium Arts to assist the team rather than releasing her own power and launching devastating attacks on the enemy directly?\nLady Saria has not yet answered this question. On the contrary, she will chide and discipline other Operators. Strength is not the essence of combat. Strength should not be used hastily.\nIn the midst of the tempest, only those on guard stay standing."
+    }
+  ]
+}

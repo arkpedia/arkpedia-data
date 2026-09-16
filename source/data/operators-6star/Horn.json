@@ -1,0 +1,1052 @@
+{
+  "name": "Horn",
+  "rarity": 6,
+  "class": "Defender",
+  "branch": "Fortress",
+  "faction": "Victoria",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS",
+    "Defense"
+  ],
+  "trait": "When not blocking enemies, prioritizes dealing ranged AoE Physical damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "To Effloresce Whitely"
+  ],
+  "ep": {
+    "Main": "March On!",
+    "Co-star": null
+  },
+  "internalName": "char_4039_horn",
+  "otherLanguages": {
+    "Simplified Chinese": "号角",
+    "Traditional Chinese": "號角",
+    "Japanese": "ホルン",
+    "Korean": "혼"
+  },
+  "characterInfo": {
+    "File no.": "VC16",
+    "Operator Record": "Solo",
+    "Paradox Simulation": "Soundeth the Clarion",
+    "Illustrator": "m9nokuro",
+    "Release Date": "2022/10/19",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Megumi Toyoguchi",
+    "Chinese": "Yuan Weng",
+    "English": "Anna Burnett",
+    "Korean": "Sung Hye-won"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "9 years",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "November 1st",
+    "Race": "Lupo",
+    "Height": "168 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Standard",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Military Fortress",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When this unit is on the field, Defender Operators gain +10% ATK"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 3",
+          "description": "When this unit is on the field, Defender Operators gain +13% (+3%) ATK"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When this unit is on the field, Defender Operators gain +20% ATK"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 3",
+          "description": "When this unit is on the field, Defender Operators gain +23% (+3%) ATK"
+        }
+      ]
+    },
+    {
+      "name": "Bloodbath",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Instead of retreating when defeated, recover HP to the max and gain -50% Max HP, +18 ASPD, and +18% DEF (triggers once per deployment)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Instead of retreating when defeated, recover HP to the max and gain -50% Max HP, +21 (+3) ASPD, and +21% (+3%) DEF (triggers once per deployment)"
+        }
+      ],
+      "technique": [
+        {
+          "name": "Revival",
+          "description": "Allows this unit to not retreat and have a 'second life' in the stage"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Improves Military Fortress"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +30"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Bloodbath"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Horn's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Block +1 .",
+        "New talent: Military Fortress .",
+        "New skill: Tempest Command ."
+      ],
+      "prerequisite": "Raise Horn to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 12
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Bloodbath .",
+        "New skill: Ultimate Line of Defense .",
+        "Military Fortress improved.",
+        "Range extended.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Horn to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "D32 Steel",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Block",
+          "quantity": 7
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Flare Grenade",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack deals 160% ATK as Physical damage. If it is a ranged attack, splash area is increased , and an illuminated zone is created for 5 seconds, disabling enemy Invisibility Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack deals 170% ATK as Physical damage. If it is a ranged attack, splash area is increased , and an illuminated zone is created for 5 seconds, disabling enemy Invisibility Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack deals 180% ATK as Physical damage. If it is a ranged attack, splash area is increased , and an illuminated zone is created for 5 seconds, disabling enemy Invisibility Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack deals 190% ATK as Physical damage. If it is a ranged attack, splash area is increased , and an illuminated zone is created for 6 seconds, disabling enemy Invisibility Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack deals 200% ATK as Physical damage. If it is a ranged attack, splash area is increased , and an illuminated zone is created for 6 seconds, disabling enemy Invisibility Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack deals 210% ATK as Physical damage. If it is a ranged attack, splash area is increased , and an illuminated zone is created for 6 seconds, disabling enemy Invisibility Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack deals 220% ATK as Physical damage. If it is a ranged attack, splash area is increased , and an illuminated zone is created for 7 seconds, disabling enemy Invisibility Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack deals 240% ATK as Physical damage. If it is a ranged attack, splash area is increased , and an illuminated zone is created for 7 seconds, disabling enemy Invisibility Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack deals 260% ATK as Physical damage. If it is a ranged attack, splash area is increased , and an illuminated zone is created for 7 seconds, disabling enemy Invisibility Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack deals 280% ATK as Physical damage. If it is a ranged attack, splash area is increased , and an illuminated zone is created for 8 seconds, disabling enemy Invisibility Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "Powerful AFK skill with not just big damage, but also a great invisibility reveal utility. Very satisfying to use."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Reveal Invisibility",
+            "description": "Reveals hidden enemies when in range"
+          }
+        ]
+      },
+      {
+        "name": "Tempest Command",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "Toggled",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Each attack deals 130% ATK as Physical splash damage Overload : Each attack deals 30% ATK as extra splash Arts damage. If cancelled manually, fire all remaining bullets, and lose 60% of Max HP Skill has 10 ammo and can be manually deactivated",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Each attack deals 140% ATK as Physical splash damage Overload : Each attack deals 30% ATK as extra splash Arts damage. If cancelled manually, fire all remaining bullets, and lose 60% of Max HP Skill has 10 ammo and can be manually deactivated",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Each attack deals 150% ATK as Physical splash damage Overload : Each attack deals 30% ATK as extra splash Arts damage. If cancelled manually, fire all remaining bullets, and lose 60% of Max HP Skill has 10 ammo and can be manually deactivated",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Each attack deals 160% ATK as Physical splash damage Overload : Each attack deals 35% ATK as extra splash Arts damage. If cancelled manually, fire all remaining bullets, and lose 60% of Max HP Skill has 10 ammo and can be manually deactivated",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Each attack deals 170% ATK as Physical splash damage Overload : Each attack deals 35% ATK as extra splash Arts damage. If cancelled manually, fire all remaining bullets, and lose 60% of Max HP Skill has 10 ammo and can be manually deactivated",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Each attack deals 180% ATK as Physical splash damage Overload : Each attack deals 35% ATK as extra splash Arts damage. If cancelled manually, fire all remaining bullets, and lose 60% of Max HP Skill has 10 ammo and can be manually deactivated",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Each attack deals 190% ATK as Physical splash damage Overload : Each attack deals 40% ATK as extra splash Arts damage. If cancelled manually, fire all remaining bullets, and lose 60% of Max HP Skill has 10 ammo and can be manually deactivated",
+            "initialSp": 15,
+            "spCost": 28,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Each attack deals 200% ATK as Physical splash damage Overload : Each attack deals 50% ATK as extra splash Arts damage. If cancelled manually, fire all remaining bullets, and lose 60% of Max HP Skill has 10 ammo and can be manually deactivated",
+            "initialSp": 18,
+            "spCost": 27,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Each attack deals 220% ATK as Physical splash damage Overload : Each attack deals 50% ATK as extra splash Arts damage. If cancelled manually, fire all remaining bullets, and lose 60% of Max HP Skill has 10 ammo and can be manually deactivated",
+            "initialSp": 18,
+            "spCost": 26,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Each attack deals 240% ATK as Physical splash damage Overload : Each attack deals 60% ATK as extra splash Arts damage. If cancelled manually, fire all remaining bullets, and lose 60% of Max HP Skill has 10 ammo and can be manually deactivated",
+            "initialSp": 18,
+            "spCost": 25,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "2nd",
+            "priority": "sub",
+            "explanation": "This luxury mastery could allow you to have a controlled version of Horn that could barrage all her ammo onto targeted enemies potentially one-shotting them. Not a must, but an okay skill to consider masteries for."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "AOE Nuke",
+            "description": "Group enemies closely together and disable skill to pour big damage"
+          }
+        ]
+      },
+      {
+        "name": "Ultimate Line of Defense",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "24 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +10% , Attack Interval slightly reduced Overload : ATK instead +20% , gradually lose HP (12% Max HP/sec after 12 seconds); Skill can be manually deactivated",
+            "initialSp": 15,
+            "spCost": 50,
+            "duration": 24
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +15% , Attack Interval slightly reduced Overload : ATK instead +30% , gradually lose HP (12% Max HP/sec after 12 seconds); Skill can be manually deactivated",
+            "initialSp": 15,
+            "spCost": 50,
+            "duration": 24
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +20% , Attack Interval slightly reduced Overload : ATK instead +40% , gradually lose HP (12% Max HP/sec after 12 seconds); Skill can be manually deactivated",
+            "initialSp": 15,
+            "spCost": 50,
+            "duration": 24
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +25% , Attack Interval reduced Overload : ATK instead +50% , gradually lose HP (12% Max HP/sec after 12 seconds); Skill can be manually deactivated",
+            "initialSp": 15,
+            "spCost": 50,
+            "duration": 24
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +30% , Attack Interval reduced Overload : ATK instead +60% , gradually lose HP (12% Max HP/sec after 12 seconds); Skill can be manually deactivated",
+            "initialSp": 20,
+            "spCost": 45,
+            "duration": 24
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +35% , Attack Interval reduced Overload : ATK instead +70% , gradually lose HP (12% Max HP/sec after 12 seconds); Skill can be manually deactivated",
+            "initialSp": 20,
+            "spCost": 45,
+            "duration": 24
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +40% , Attack Interval greatly reduced Overload : ATK instead +80% , gradually lose HP (12% Max HP/sec after 12 seconds); Skill can be manually deactivated",
+            "initialSp": 25,
+            "spCost": 40,
+            "duration": 24
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +50% , Attack Interval greatly reduced Overload : ATK instead +100% , gradually lose HP (12% Max HP/sec after 12 seconds); Skill can be manually deactivated",
+            "initialSp": 25,
+            "spCost": 38,
+            "duration": 24
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +60% , Attack Interval greatly reduced Overload : ATK instead +120% , gradually lose HP (12% Max HP/sec after 12 seconds); Skill can be manually deactivated",
+            "initialSp": 25,
+            "spCost": 36,
+            "duration": 24
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +70% , Attack Interval greatly reduced Overload : ATK instead +140% , gradually lose HP (12% Max HP/sec after 12 seconds); Skill can be manually deactivated",
+            "initialSp": 25,
+            "spCost": 35,
+            "duration": 24
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "The strongest skill of Horn that barrages damage after damage onto enemies at a distance. Excels against most enemy types, making it a good mastery to give."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 5
+        },
+        {
+          "name": "Diketon",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 6
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 3
+        },
+        {
+          "name": "Compound Cutting Fluid",
+          "quantity": 5
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Military Engineering",
+      "facility": "Workshop",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Workshop to process Elite materials , reduces the Morale consumed by all corresponding formulas that cost 4 Morale by -1"
+    },
+    {
+      "name": "DIY Incandescent Alloy",
+      "facility": "Workshop",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Workshop to process Incandescent Alloy Block material, the production rate of byproduct increases by 100%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Horn's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "FOR-X: Exemplars",
+      "mission": {
+        "requirement1": "During battle, have Horn use Ultimate Line of Defense a total of 10 times (excluding Support Units)",
+        "requirement2": "Clear Main Theme 7-15 with a 3-star rating; You must deploy your own Horn, and have Horn defeat at least 10 enemies"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +65 , DEF +52",
+          "effectLabel": "New trait",
+          "effectText": "Increases ATK to 110% when attacking blocked enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +85 , DEF +62",
+          "effectLabel": "Military Fortress improved",
+          "effectText": "When this unit is on the field, Defender Operators gain +25% ATK",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +100 , DEF +70",
+          "effectLabel": "Military Fortress improved",
+          "effectText": "When this unit is on the field, Defender Operators gain +28% ATK",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "FOR-Y: Old Clothes, New Days",
+      "mission": {
+        "requirement1": "Deal a total of 100000 damage with your own Horn",
+        "requirement2": "Clear Main Theme 9-5 with a 3-star rating under Standard Environment; You must deploy your own Horn, and can only include 4 other Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +225 , ATK +92",
+          "effectLabel": "Trait improved",
+          "effectText": "When not blocking enemies, prioritizes dealing ranged AOE Physical damage and ASPD +10",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +300 , ATK +108",
+          "effectLabel": "Bloodbath improved",
+          "effectText": "ASPD +5, DEF+5%; Instead of retreating when defeated, recovers HP to max and gains -50% Max HP; ASPD buff increases to +20, and DEF buff increases to +20% (triggers once per deployment)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +350 , ATK +120",
+          "effectLabel": "Bloodbath improved",
+          "effectText": "ASPD +8, DEF+8%; Instead of retreating when defeated, recovers HP to max and gains -50% Max HP; ASPD buff increases to +22, and DEF buff increases to +22% (triggers once per deployment)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Horn, graduate of the Royal Guard Academy of\nVictoria\n, presently commander of Victoria's 2nd\nTempest Platoon\n. Fought in coordination with\nRhodes Island\nduring the\nLondinium\nincident. Ratified a cooperative strategic contract with Rhodes Island following referral by\nElite Operator\nMisery\n.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "ZXG5D-FshHY",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "dI8XAjXeExU",
+      "creator": "Tsalthsu"
+    },
+    {
+      "videoId": "E0xL6k1rxOs",
+      "creator": "kukkikaze"
+    },
+    {
+      "videoId": "hbhdSABpEK8",
+      "creator": "Yii"
+    },
+    {
+      "videoId": "QOoxXGUo-X4",
+      "creator": "SharkyFerret"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1237,
+          "atk": 483,
+          "def": 223,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 24,
+          "block": 2,
+          "interval": 2.8
+        },
+        "max": {
+          "hp": 1650,
+          "atk": 620,
+          "def": 334,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 24,
+          "block": 2,
+          "interval": 2.8
+        },
+        "rangeId": "4-5"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1650,
+          "atk": 620,
+          "def": 334,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 26,
+          "block": 3,
+          "interval": 2.8
+        },
+        "max": {
+          "hp": 2200,
+          "atk": 776,
+          "def": 452,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 26,
+          "block": 3,
+          "interval": 2.8
+        },
+        "rangeId": "4-5"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 2200,
+          "atk": 776,
+          "def": 452,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 28,
+          "block": 3,
+          "interval": 2.8
+        },
+        "max": {
+          "hp": 3067,
+          "atk": 936,
+          "def": 620,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 28,
+          "block": 3,
+          "interval": 2.8
+        },
+        "rangeId": "4-6"
+      }
+    ],
+    "trust": {
+      "hp": 300,
+      "atk": 70,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected. \n\n[Cell-Originium Assimilation] 0%\nOperator Horn shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.13u/L\nOperator Horn rarely comes into contact with Originium.\n\nYou know, it was fairly dangerous having to sneak about Sudean back in Londinium... Good thing we brought a batch of protective meds. Let us hand out a share to all the other Victorian soldiers as well as Miss Horn.\n—Londinium Spec-Ops Medic Operator"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "As a professional officer, there is no question that Horn possesses excellent combat skill and tactical accomplishment. Her customary weapon is a specialized shield, with an arming mechanism able to burst up to ten rounds in an extremely short time.\nJust as with Bagpipe's piledriver spear, Horn's shield displays the terrifying might of Victoria's standard ordnance. Londinium is currently in a unique phase, and being in cooperation, we've performed repairs on the weapons borne by Horn and the Victorian soldiers she leads. In the initial stages of work, even the mechanical structure of her shield eluded us.\n'Jeez, no wonder Victoria's got the most advanced mechanical engineering on all of Terra. I can't even picture how I'd develop these weapons any further,' were Closure's words, demonstrating even her awe.\nFortunately, Horn assisted us in disassembling the most difficult parts. Her past military exercises had given her a considerably professional grasp on mechanical technology. With her knowledge, she and the city defense force soldiers fashioned their crossbows and grenades by themselves during a period when supplies were extremely scarce. It's no exaggeration to say that Horn has once again made us find how outstanding the professionalism of Victorian soldiers is.\n'Are you SURE the Royal Guard Academy teaches mechanical engineering? Then what about all the control terminals Bagpipe's wrecked on the ship?!' Addition of this remark has been strongly requested by Closure following perusal of the above paragraph.\nAlso, while this should probably go in the armament evaluation logs, I'll add these battlefield observation records below too, considering we have a shortage of hands on deck for Londinium operations.\nHorn's performance on the battlefield is extremely professional. On top of an all-round, comprehensive combat capacity, she has rich experience in squad command. This completely matches our first impressions, and is a strong fit to Bagpipe's descriptions.\nBut in a few, extremely challenging battles, I and a few other operators witnessed a shift. I might not have been exact under such tense circumstances, so it could be that any change in eye and hair color was my misconception. But it was difficult to ignore her sudden rise in speed, and how vastly different her destructive fighting techniques were to her former restrained and controlled combat style.\nOut of curiosity, I asked the other Victorian soldiers if they knew anything, and heard a few rumors about the White Wolf who was active in the Victorian Army. A white Lupo went mad in Sargon on a moonlit night and tore an entire army to death for an Aslan pasha however many thousand years ago, the White Wolf Count ripped a Vampire prince to shreds with his bare hands however many hundred years ago, and so on... I mean, they just sound like stories that get spread through the streets.\nBut a Medical Department colleague got back to me, and in their view, that kind of combat style would still put a heavy strain on the body, regardless of if she used some unique Originium Arts or activated some hereditary ability in the moment. We're fully aware of how far Horn can go to protect her soldiers and Victoria's civilians, but we hope she won't go that far so lightly."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "The Tempest Platoon of Victoria is a special forces unit established by the Victorian Parliament. Formerly known as the Exemplars of Victoria, its main duty is to carry out special missions assigned directly by Parliament, with traces of its activity covering all of Victoria, including her enclaves everywhere.\nStructurally, the current Tempest Platoon is still attached to the Victorian Army, and is deployed to the frontline for assault duties in times of war, but is in reality relatively independent. The Platoon is divided into six sections, each section incorporating two operational groups, each operational group typically consisting of five members. The Platoon's members are typically selected for excellence from either other special forces units or the Royal Police, and undergo extremely harsh training. By and large, they possess all-encompassing combat abilities and exceptional intelligence analysis capacity, and are outfitted with the technological cutting edge of Victoria's equipment.\nDue to the Members who first founded the Exemplars themselves being Royal Guard Academy alumni, the Tempest Platoon has always had inextricable ties with this prestigious military school, from the day of its founding to present times. Every so often, some of the most outstanding graduates will receive recommendation letters from their instructors, which serve as the door to training and evaluation. Nobody on the outside is able to find out anything regarding the ratio of people who pass. Given the standards of the two Tempest Platoon soldiers we've already come into contact with, we imagine that even should one have graduated from the RGA, becoming a formal member of the Tempest Platoon must be considerably challenging.\nAs for Horn herself, anyone who's met her will know that she represents the Tempest Platoon of Victoria's ideal essence. Bravery, loyalty, tenacity, wiping out all that blocks the way as a tempest does. She will fight with her life on the line, for Victoria, for every innocent life of Her people, until the last blood is shed. You know, it's obvious she's of noble birth, isn't it? The child of a prestigious family must've had her pick of options, even if she didn't happen to be the favorite child. She could've served as the trusted aide of a Londinium VIP, or had a cushier time as a commander high up in the Army. Wouldn't anything have been better than joining the Tempest Platoon, doing nothing but the most wearisome and dangerous work?\nThe White Wolf Count... If she's the 'White Wolf,' so to speak, then maybe I can guess. Since the upheaval two decades or so ago, nobility loyal to the Royal Family, especially those in the military, went through harder times. Count Skamandros had been nestling in the border city of Caladon for years by that point. The 'White Wolf's' prowess in the military still remained, and many a Duke feared crossing him, but any of the slightest indication from him could wipe out his whole family then and there. I hear Horn hasn't been back to see her father in years, too. If her choice to join the Tempest Platoon right after graduating is any indication, she likely doesn't approve of her father receding away in self-protection.\nVictoria's future certainly isn't held in the hands of the old nobility entering their elder years, unable to uphold even their past splendor. Whether Victoria becomes the next Gaul will ultimately be seen in the choices made by the young, those like Horn and Bagpipe.\n\n—Personal log of Rhodes Island intelligence personnel stationed in Victoria"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Londinium's in a hell of a mess. Yeah, the situation's more grim than we were assuming.\nTheresis is taking measures on every front. The Nachzehrer's leading the Royal Court's army out of Londinium right now. Between him and the dukes' forces, they're keeping each other gagged.\nAs for the power which killed Outcast, Dublinn, you guessed right. They were cozy with a couple of nobles after all.\nSeems now they're trying to get a message to Theresis. Maybe they want to wrangle a partnership.\nGoing by the intel we picked up, odds are rock-bottom that Theresis allies with Dublinn at this stage. He's not going to trust any promises from a mysterious organization who wasn't there yesterday, and he's not going to be arrogant enough to set sights on any city beyond Londinium.\nBut we have to consider worst-case.\nVictoria might just be torn to pieces. The dukes could be provoked into action by Theresis, Dublinn, maybe some other schemer from out of nowhere, and the whole nation would fall into civil strife.\nObviously, Theresis had everything planned, from the moment he got the one Duke's invitation to enter Londinium and put down the rebellion. He had under ten thousand Sarkaz with him when he left Kazdel, but now? Londinium's military factories are producing arms for Theresis day and night. The Nachzehrer's got whatever secret channels he's found, and they're funneling Sarkaz soldiers in from every surrounding nation, straight to Theresis.\nWe still don't know what exactly Theresis is planning, but if this enters all-out warfare, what percent of those soldiers convened there do you figure are leaving Londinium alive?\nAnd after the war's over, even if Victoria can't help itself, it's not like the Sarkaz'll get anything good out of it either. You've seen the way Theresis retaliated against Victoria. Will Kazdel once again become the target of every nation in the centrum? Will we bring a new disaster?\nI don't know, Kal'tsit. You and Blaze always tell me I think too much, but there's only so much I can do. So it's always been.\nAs for Theresis and the Military Commission's plans. I believe Logos and Ascalon are more impatient than I am. All I can do for now is keep going with this Dublinn unit, figure out just what they intend on. If any intel of worth shows up, I'll send it back immediately. I know you've brought up the Draco before, Outcast's rescuee from County Hillock. Once she's ready, she'll give us more info, even help us figure out the truth of Dublinn. In which case, I hope the intel I get will help her make the decision to, ASAP.\nRight. One more thing—I discovered a young Victorian officer in the Dublinn unit's camp. Dead ringer for Bagpipe's 'Leader.' Her commander she described.\nI've been keeping visuals on her for a time, out of caution. You know and I know that there's no looking at how Theresis went uncontested into Londinium without seeing the support from the Londinium army's top echelons. I trust how Bagpipe feels strongly about her leader, but just the same, I firmly believe a cruel war can reshape anyone's sense of wisdom.\nShe wasn't looked after kindly by Dublinn. County Hillock—Mandragora and her subordinates—they insulted her, mocked her, constantly. They didn't put her through excessive physical torture. Maybe they still saw worth in her as a bargaining chip. Actually, no. Let me state this right. For an officer in the prime of her youth, there is no punishment more cruel than having to watch on helplessly while your comrades-in-arms are slaughtered, while you fall into enemy hands with no way to resist.\nI've seen a lot of POWs before. Most lose the will to fight. Life with an interminably long sentence does that to you. Maybe they let hate swallow all their reason.\nI didn't expect her to still be sane. But she was.\nMultiple times, I saw her fall asleep reading out her deceased comrades' names, then bolt awake shouting those same names, but I never saw tears in her eyes. There was still fire in them. The longing to survive and change it all. It was a fire that burned away her sorrow, led her to triumph over despair.\nI even doubt myself, owing to that. Am I too pessimistic? Maybe enough to forget I can lift my head, and behind Londinium's dark clouds, there are still a million morning stars waiting.\nI'm convinced, tomorrow, or this evening, she'll attempt to make her break.\nKal'tsit. It's my belief I should help her. \n\n—Misery"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "'Tactics sharpen the mind,\nDiscipline strengthens the will.\nBravery shall overcome evil,\nBenevolence shall save lives.'\nWe've found out, from Horn personally, that these are the Tempest Platoon of Victoria's maxims.\nAny Operators who've fought side by side with Bagpipe are sure to be intimately familiar with those phrases. After having learned of Bagpipe's experiences over the past several months, Horn fell into a prolonged silence.\n'I knew she'd follow orders and press on the whole way, but I didn't... think it'd force her to retire from duty.'\nHorn said little more regarding Bagpipe's choice, or Victoria's situation, or the emergence of traitors in the Army.\nShe still throws herself into battle after battle, but in the intervals between combat, we often see her laughing as she chats with her fellow soldiers. Horn has a unique sense of humor, always able to find something to say that makes others crack a smile, no matter how grave the situation. This has quickly closed the distance between her and everyone else.\nAll soldiers, regardless of their birthplace, whether city defense or ordinary workers, or even Rhodes Island operators from other nations' lands, find it easy as could be to relax around Horn.\nThis isn't solely due to her combat and command ability that inspire confidence, nor her admirable uprightness and strength, but moreso her uncanny ability to see through her soldiers' worries and fears at a blink, and use appropriate methods to help adjust everyone's moods.\nHowever, we've gradually begun to worry for her. Who'll be there to ease her mind?\nShe's transformed herself into the shield she bears, firm, steady, and seemingly forever to be the last one standing.\nBut there's only so much time any armament has.\nWhen a human's forced herself to the extreme, and been stressed for too long, what will happen to her the instant the pressure on her disappears?\nIf possible, we'd like it for Horn not just to bring joy to everyone, but to be able to share any pain with us too, as her fellow operators do.\nPerhaps, after reading this file, it'll be in you to reach out to her. To not just bring her to stand side by side with you on the battlefield, but to invite her with you, to truly enjoy even the briefest moments of respite."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "A letter's just arrived at Rhodes Island, with a photo the only thing inside.\nIn it, there's an elegant and lively noble girl, wearing a light dress skirt, red shoes, lying about on a deep green lawn.\nTowering maples shelter her from the sunlight, and a sword is left by her side, along with two books strewn about—a copy of Military History of the Empire, and a fashion catalog for the season. The catalog appears clearly brand new, used to rest her feet on, while Military History of the Empire has been read to the point its spine is half-cracked.\nThough quite a ways from her current dress style, I can still tell at a glance that this girl with her eyes half-shut is our very Horn.\nJust who was it that sent this letter?\n'To my darling Rita'—a single line written on the reverse, in resplendent but unfamiliar handwriting.\nWho learned of Horn's partnership with Rhodes Island so quickly? Our Messengers were just dispatched, and Bagpipe might not even know her leader's still alive, let alone that we've been active in Londinium.\nWhoever it is, I anticipate them to have known Horn well, and kept a watch on her all this time, as well as Rhodes Island.\nI'll take this letter as means to launch an investigation. I can only hope its sender has no overbearing ill will or more troubling motive.\nBut no matter the case... when I saw this photograph, I couldn't help but think, deep down, about how such a lovable aspect existed to the ever-stern, proper Horn."
+    }
+  ]
+}

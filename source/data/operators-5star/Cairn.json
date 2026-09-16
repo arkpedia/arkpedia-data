@@ -1,0 +1,759 @@
+{
+  "name": "Cairn",
+  "rarity": 5,
+  "class": "Defender",
+  "branch": "Primal Protector",
+  "faction": "Columbia",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Defense",
+    "Elemental"
+  ],
+  "trait": "Blocks 3 enemies, and can inflict Elemental Injury",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4214_cairn",
+  "otherLanguages": {
+    "Chinese": "响石",
+    "Japanese": "ケルン",
+    "Korean": "케언"
+  },
+  "characterInfo": {
+    "File no.": "CB31",
+    "Illustrator": "kirine",
+    "Release Date": "2026/05/21",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Minori Ozawa",
+    "Chinese": "Shi Conghao",
+    "English": "Adrienne Crawford",
+    "Korean": "Jo Hyun-jung"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "5 years",
+    "Place of Birth": "Columbia",
+    "Date of Birth": "July 24th",
+    "Race": "Feline",
+    "Height": "165 cm",
+    "Infection Status": "Confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Average",
+    "Mobility": "Excellent",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Average",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Explanation Saturation",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Deals 4% ATK as Nervous Impairment every second to enemies blocked by herself"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Deals 5% (+1%) ATK as Nervous Impairment every second to enemies blocked by herself"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Deals 9% ATK as Nervous Impairment every second to enemies blocked by herself"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Deals 10% (+1%) ATK as Nervous Impairment every second to enemies blocked by herself"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +25"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Explanation Saturation"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Cairn's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Explanation Saturation .",
+        "New skill: Stunning Directives ."
+      ],
+      "prerequisite": "Raise Cairn to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Explanation Saturation improved."
+      ],
+      "prerequisite": "Raise Cairn to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Concentration",
+          "quantity": 9
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 11
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Covered Consolidation",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "+40% Max HP",
+            "initialSp": 5,
+            "spCost": 45,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "+50% Max HP",
+            "initialSp": 7,
+            "spCost": 43,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "+60% Max HP",
+            "initialSp": 9,
+            "spCost": 42,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "+70% Max HP",
+            "initialSp": 11,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "+80% Max HP",
+            "initialSp": 13,
+            "spCost": 38,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "+90% Max HP",
+            "initialSp": 15,
+            "spCost": 36,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "+100% Max HP",
+            "initialSp": 16,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "+110% Max HP",
+            "initialSp": 17,
+            "spCost": 33,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "+120% Max HP",
+            "initialSp": 18,
+            "spCost": 31,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "+130% Max HP",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 3
+            },
+            {
+              "name": "Coagulative Nodule",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 4
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Stunning Directives",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Gains a Barrier equal to 30% of Max HP (Barrier lasts 10 seconds, cannot exceed 30% of Max HP), and deals 20% ATK as Arts damage and 5% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
+            "initialSp": 5,
+            "spCost": 30,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Gains a Barrier equal to 40% of Max HP (Barrier lasts 10 seconds, cannot exceed 40% of Max HP), and deals 30% ATK as Arts damage and 5% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
+            "initialSp": 5,
+            "spCost": 29,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Gains a Barrier equal to 50% of Max HP (Barrier lasts 10 seconds, cannot exceed 50% of Max HP), and deals 30% ATK as Arts damage and 5% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
+            "initialSp": 5,
+            "spCost": 28,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Gains a Barrier equal to 60% of Max HP (Barrier lasts 10 seconds, cannot exceed 60% of Max HP), and deals 40% ATK as Arts damage and 7% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
+            "initialSp": 7,
+            "spCost": 27,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Gains a Barrier equal to 70% of Max HP (Barrier lasts 10 seconds, cannot exceed 70% of Max HP), and deals 50% ATK as Arts damage and 7% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
+            "initialSp": 7,
+            "spCost": 26,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Gains a Barrier equal to 80% of Max HP (Barrier lasts 10 seconds, cannot exceed 80% of Max HP), and deals 50% ATK as Arts damage and 7% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
+            "initialSp": 9,
+            "spCost": 25,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Gains a Barrier equal to 90% of Max HP (Barrier lasts 10 seconds, cannot exceed 90% of Max HP), and deals 60% ATK as Arts damage and 10% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
+            "initialSp": 10,
+            "spCost": 24,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Gains a Barrier equal to 90% of Max HP (Barrier lasts 10 seconds, cannot exceed 90% of Max HP), and deals 60% ATK as Arts damage and 10% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
+            "initialSp": 12,
+            "spCost": 23,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Gains a Barrier equal to 90% of Max HP (Barrier lasts 10 seconds, cannot exceed 90% of Max HP), and deals 70% ATK as Arts damage and 10% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
+            "initialSp": 13,
+            "spCost": 23,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Gains a Barrier equal to 90% of Max HP (Barrier lasts 10 seconds, cannot exceed 90% of Max HP), and deals 80% ATK as Arts damage and 10% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
+            "initialSp": 14,
+            "spCost": 22,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 3
+            },
+            {
+              "name": "Compound Cutting Fluid",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 3
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Damage Over Time",
+            "description": "Enemies incur a damage per second for a certain duration"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 3
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Bedtime Stories",
+      "facility": "Dormitory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Dormitory , restores +0.15 Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
+    },
+    {
+      "name": "Bucket ListReplacesBedtime Stories",
+      "facility": "Dormitory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Dormitory , restores +0.15 Morale per hour to all Operators assigned to that Dormitory, and every level of that Dormitory increases restoration by another +0.02 (Only the strongest stacked effect of this type takes place)"
+    },
+    {
+      "name": "Special Methods Consultant",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Reception Room , if in Clue Exchange, increases Clue search speed by 30%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Cairn's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "PRP-X: \"Parachute\"",
+      "mission": {
+        "requirement1": "Trigger a total of 3 Nervous Impairment Bursts with your own Cairn",
+        "requirement2": "Clear Twilight of Wolumonde TW-7 with a 3-star rating; You must deploy your own Cairn, and use Stunning Directives at least 1 time"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +200 , DEF +40",
+          "effectLabel": "Trait improved",
+          "effectText": "Deals 15% more Elemental Injury when blocking enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +270 , DEF +55",
+          "effectLabel": "Explanation Saturation improved",
+          "effectText": "Deals 10% ATK as Nervous Impairment every second to enemies blocked by self",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +350 , DEF +70",
+          "effectLabel": "Explanation Saturation improved",
+          "effectText": "Deals 11% ATK as Nervous Impairment every second to enemies blocked by self",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Ferne Barn, born in\nColumbia\n, owner of an independent travel agency that claims there is no place they won't go. She is also the sole employee of said agency other than the late Martin Barn, honorary director.\nAs she receives treatment at\nRhodes Island\n, she also reached an agreement with us to perform guide functions on field missions under the code name \"Cairn\".",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1391,
+          "atk": 228,
+          "def": 225,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1880,
+          "atk": 327,
+          "def": 331,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1880,
+          "atk": 327,
+          "def": 331,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 2507,
+          "atk": 436,
+          "def": 448,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2507,
+          "atk": 436,
+          "def": 448,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 25,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 3483,
+          "atk": 546,
+          "def": 560,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 25,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      }
+    ],
+    "trust": {
+      "hp": 150,
+      "atk": 60,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 4%\nCurrently, no Originium crystals are visible on the surface of the body.\n\n[Blood Originium-Crystal Density] 0.23u/L\nOperator Cairn occasionally visits hazardous high-Originium environments, increasing the risk of her condition deteriorating.\n\n'The Doctor will find a way!'\n—Cairn"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "[Industry Commentary: Braving the Forbidden—Reform or Rehash?]\nThere seems to be little point in talking about 'forbidden' areas in a land that is 90% uninhabited.\nOn this land tilled by Catastrophe for thousands of years, even wilderness level enough for nomadic cities to traverse is rare, much less fertile soil suited for farming. For city-dwellers who think fowlbeast meat is grown in supermarkets directly in their packages, ready to be cooked, the nomadic cities and the wilderness visible from their routes are the entirety of Terra. They do not think of other places as 'distant' or 'dangerous', because they do not think of those places at all.\nAs such, 'travel' in the traditional sense is more like a vacation. Caravan International Travel Agency can take you to Sami, but all you will see is a well-furnished Sami-style resort village. It will feel no different from a Columbian nomadic city, at least once you spend a few days acclimating to the cold.\nIn recent years, however, Columbian tourism has become fascinated with the forbidden. News reports of the wealthy hiring guides to take them into forbidden areas are a regular occurrence, and travel agencies have started marketing these 'forbidden tours'. Naturally, the authorities responded by stepping up their control of such areas. Last year, the Bureau of Alcohol, Tobacco, Arts Units, and Originium, the Columbian Park Police, and the army's Mobile Cavalry came to an accord regarding management division of the Bleached Wasteland, drafting a patrol route that fully covers the region.\nAs for the reason...\n\n'It's true that enforcement has gotten stricter, but that has nothing to do with those so-called 'forbidden tours'. Two tour guides dressed up in military uniforms pretend to check your papers, then you take a few photos in a place that looks empty enough—that's all that 'forbidden tour' crap is about.\n'If you want to see caverns with naturally occurring liquefied Originium, or Feranmut carcasses lying in the desert—the stuff you'd have to risk your hide to see...\n'Then look for Ferne Barn.\n'Me? Forget it, I'm not taking anyone with me, no way.\n'Ferne's the only one with the skills AND the willingness to bring people along. You wanna go, find her.'\n—Operator Asbestos, when asked about 'forbidden tours'"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Ferne Barn, citizen of Columbia.\nInvestigation reveals that she has registered more than twenty accounts with seven banks in fifteen different Columbian nomadic cities, using different identities.\nAfter tracking the cashflow of these accounts, we found Ferne's spending patterns to be extremely suspicious. Virtually all expenses are for medical bills, medicine, luxury items, antiques, as well as fines and bails paid to law enforcement authorities. There are no signs of spending on any ordinary items, be it food, clothing, housing, or any basic daily necessities.\nTherefore, we believe that this 'Ferne Barn' does not actually exist: she is simply a persona created by criminal organizations to facilitate their illicit activities...\n—Internal Revenue Department Investigative Report\n\nWhen I first saw the operator who was to serve as my guide on the mission, she was crawling on top of her dorm room's closet. She tossed me a package before I asked.\n'Here! Your onboarding equipment!' She said.\nIt was a bunch of junk. Broken telephone wires, tattered tarp pieces, safety ropes that had lost their buckles—and looked like they might have already taken a few lives—and plastic ties that looked straight out of a scrap heap.\n'What's the matter? I gave you the best stuff!' She looked downright proud.\nI pointed at the tattered tarp, then at myself, and shot her a doubtful look.\n'...Ah! I forgot to give you scissors! One moment.'\nSuddenly, I understood. She was wearing the same equipment she gave me: a telephone wire as a hair tie, a piece of tarp as her skirt, a safety rope as her belt, and used plastic ties to fasten her protective gear and communicator. This junk was her agency's 'equipment'.\nAs I took out my wallet, I saw her smile disappear.\n'Please put that away. This agency does not require its employees to foot the bill.'\nBut she didn't even have the money for proper equipment!\n'It's called smart spending! You gotta build connections with doctors and medicine dealers in case a customer gets sick or gets hurt, and you wanna be in the good graces of the ATAO, Rangers, and Mobile Cavalry officials so they don't arrest or 'accidentally' shoot your clients! That's where the money goes. As for equipment... what's the problem? Is the hair tie inconvenient? Is the belt not solid enough?'\n—Rhodes Island Field Operator Report"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "After a long and drawn-out process, the Trimounts City Administration finally announced that they were closing the investigation into the recent incidents.\nWith reluctance written all over his face, a city spokesman admitted that the 'savage' (who was smashing walnuts with a briefcase as the spokesman emphasized the word), two meters tall and with indecipherable symbols painted all over his face with solidified Originium crystal, and who answered any questions with manglerbeast-like growling, was indeed a senior accountant of United Donuts Group whose papers were all in order.\nThe Administration had to admit another failure in just two weeks: they failed in stopping this 'senior accountant' from riding into the wilderness atop of a box truck containing one thousand two hundred hard-shelled briefcases. Fifty kilometers north of the end of the Trimounts route, in a forest that exists in a strange state of symbiosis with active Originium, the lives of one thousand two hundred natives unknown to Columbia were about to change dramatically. With these one thousand two hundred hard-shelled briefcases, they would be able to easily crack open the mutated Originium slugs indigenous to the area, which were their main source of nutrition. The one who brought such a wonderful tool back to the tribe would become a hero. He would be able to have the first pick of the freshest Originium slugs, and his tribe would build a statue of him with solidified Originium crystal.\nThe man himself, however, seemed to have different ideas.\nSoon, the two meter-tall 'senior accountant' was once again spotted on the streets of Trimounts. Quickly encircled by a swarm of excited reporters and the sulking city spokesman who kept cursing at the sight of this grand comeback, the man took out, with a proud look on his face, two calculators and began to play an unfathomable beat on the buttons. Apparently, he enjoyed creating chaos in this unfamiliar city far more than accepting his tribesmen's tribute of Originium slugflesh.\nCity Administration officials submitted multiple requests to authorize a warrant, but all of those reports to their normally swift and decisive superior went unanswered. After one week, they finally lost patience and kicked down the door to their boss's office, only to find it empty. Seventy kilometers east of the end of the Trimouts route, in a Durin-occupied ruin deep under a metal megastructure, their boss was muttering drunkenly with a cup of strong mushroom wine in his hand.\n\nFew know that a guide by the name of Ferne Barn was behind all this, from the flawless paperwork of the 'senior accountant', to the silent disappearance of a City Administration official. For her part, Ferne seemed uninterested in this farce of her own making. Was it a prank, a social experiment, a marketing ploy, or a show? Ferne never said a thing, even when speculation was at its peak.\nThe reporters might be fascinated by the presence of a savage on the streets of the city of progress, and the officials might be devastated that their superior had been reduced to a drunkard living in ruins with the Durin, but Ferne simply found it utterly natural that anyone might want to be anywhere and lead any kind of life.\n\n'Is it strange for me to think that way? ...I guess it might be. But the job of a guide is to fulfill those dreams, isn't it?'"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Our living room was always filled with children listening to Dad's stories when I came back from school.\nNone of the children came to Dad's funeral, but there was an uninvited guest who interrupted the ritual with blaring sirens. A potbellied cop poked his head out of the patrol car, saying he had received complaints from parents about someone by the name of Martin Barn, who deceived children with tales of gold-scaled sandbeasts and the like—\nThe cop stopped mid-sentence, took a look at us, then at the name on the coffin, and left without another word.\nSheriff Jones of Trenton—I nailed the name to the wall when I founded the travel agency, hoping to prove to him one day that Dad wasn't a scammer, and gold-scaled sandbeasts were real.\nIn the last few years, I proved a lot of things to a lot of people. Some didn't believe there were nomadic cities outside of Columbia, some believed the Pioneers' treasure was hidden in the Bleached Wasteland... I let them see the truth with their own eyes, but was never able to prove the existence of gold-scaled sandbeasts.\nI had theories. The steppe-dwelling sandbeasts usually have multiple layers of backfins in order to blend into their surroundings, which could easily be mistaken for scales at a distance. Maybe sandbeasts that dwell in golden steppes rich in Originium really do look like they have golden scales. Another theory was that the people of Rim Billiton had tamed small sandbeasts for use in the mines—the capillaries in their backfins can help with determining air conditions in the tunnels, and people sometimes would paste golden foil on their backfins for easier identification. Was that what Dad saw?\nIt makes sense, doesn't it? But there's no proof. It helps people understand how these stories could come about, but it doesn't stop them from thinking Dad was lying.\nBesides, Sheriff Jones passed away two years ago.\n—Ferne Barn, on a rare occasion when she spoke about her father\n\nSandbeasts are small, fluffy animals, while gold-scaled sandbeasts exist only as drawings in picture books, or as curiosities in tabloid columns. And for many years, Martin Barn was the sole supplier of such columns for the Columbian tabloid industry.\nColumbian archives consider such tabloids to be beneath them, and Ferne never saw those columns again after Martin passed away. That is, until she came to Rhodes Island.\nThe column on the page was accompanied by a shoddy illustration of a gold-scaled sandbeast, which looked like someone had copied and pasted the texture of a pineapple. The newspaper had become creased with age, but someone had carefully flattened the creases before pasting the cutting in a notebook. The Cautus with bangs like a pinwheel cookie gazed intently into Ferne's eyes.\n'You want me to help you find this creature?'\nThe Cautus nodded fervently.\n'You believe it exists?'\nThe Cautus cocked her head in confusion. She said she did not know whether she believed in it or not. It wasn't a question she had even thought about.\nShe had simply heard a story and wanted to see it for herself.\nThe Cautus asked if whether she believed in it or not was important. Should she?\n'No, it's not important. Let's go find it!'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Rusthammer 'Fiends Gang' camp, forty-three kilometers east of Lake Sulligan. Two people were tied up and hung upside-down from an arch made of bones.\n'Are you REALLY sure about this, Ferne? This ain't a movie where the cavalry come riding to the rescue in the nick of time! You saw that blind devil yourself! He could break my neck with his fingers! Are you SURE you made the arrangements? Are you REALLY sure those people are coming? Say something already! We're gonna die!'\n'Hm... I never realized that this is how the land looks upside-down.'\n'?'\n'Say, don't those houses look like boats when they're upside down?'\n'We've only got a few more minutes left to live, and this is what you wanna talk about?'\n'It's precisely because we've only got a few more minutes that I wanna take a good long look.'\nTwo minutes later, an armored ambulance with the words 'Mandrake International Wilderness Rescue' charged through the west-side fence, and the crew pointed three ballistae at the executioner who was polishing his blade. Meanwhile, on the east side of the camp, a man wearing a metal bucket on his head leisurely got off his burdenbeast and waved at the crew of the ambulance, gesturing that there was still room for negotiation.\n'You know, upside-down trees look kinda like toilet brushes.'"
+    }
+  ]
+}

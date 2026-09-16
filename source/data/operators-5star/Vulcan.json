@@ -1,0 +1,750 @@
+{
+  "name": "Vulcan",
+  "rarity": 5,
+  "class": "Defender",
+  "branch": "Juggernaut",
+  "faction": "Minos",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Survival",
+    "Defense",
+    "DPS"
+  ],
+  "trait": "Cannot be healed by allies",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Ignis"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_163_hpsts",
+  "otherLanguages": {
+    "Chinese": "火神",
+    "Japanese": "ヴァルカン",
+    "Korean": "벌컨"
+  },
+  "characterInfo": {
+    "File no.": "MN02",
+    "Operator Record": "Forging",
+    "Paradox Simulation": "Hold",
+    "Illustrator": "neco",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Rina Satō",
+    "Chinese": "Xiao Mi (credited as \"Mimia\" in EN)",
+    "English": "Katelyn Gault",
+    "Korean": "Jang Kyung-hee (credited as \"Chang Kyung-hee\" in EN)"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "2 years",
+    "Place of Birth": "Minos",
+    "Date of Birth": "April 30th",
+    "Race": "Forte",
+    "Height": "170 cm",
+    "Infection Status": "Shows physical signs of Oripathy , infection confirmed by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Standard",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Self-Defense",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Restores HP by 4% of Max HP per second when the skill is activated"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Restores HP by 5% (+1%) of Max HP per second when the skill is activated"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Restores HP by 4% of Max HP per second and obtains 25% Physical Melee Dodge when the skill is activated"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Restores HP by 5% (+1%) of Max HP per second and obtains 30% (+5%) Physical Melee Dodge when the skill is activated"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "Max HP +250"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Self-Defense"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Vulcan's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Block +1 .",
+        "New talent: Self-Defense .",
+        "New skill: Combat Mode ."
+      ],
+      "prerequisite": "Raise Vulcan to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Self-Defense improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Vulcan to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Concentration",
+          "quantity": 8
+        },
+        {
+          "name": "Aketon",
+          "quantity": 15
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Guardian Mode",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20–30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Block +1 ; DEF +60% ; Restores HP by 2% of Max HP per second in addition",
+            "initialSp": 20,
+            "spCost": 50,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Block +1 ; DEF +65% ; Restores HP by 2% of Max HP per second in addition",
+            "initialSp": 21,
+            "spCost": 50,
+            "duration": 21
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Block +1 ; DEF +70% ; Restores HP by 2% of Max HP per second in addition",
+            "initialSp": 22,
+            "spCost": 50,
+            "duration": 22
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Block +1 ; DEF +75% ; Restores HP by 3% of Max HP per second in addition",
+            "initialSp": 25,
+            "spCost": 50,
+            "duration": 23
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Block +1 ; DEF +80% ; Restores HP by 3% of Max HP per second in addition",
+            "initialSp": 26,
+            "spCost": 50,
+            "duration": 24
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Block +1 ; DEF +85% ; Restores HP by 3% of Max HP per second in addition",
+            "initialSp": 27,
+            "spCost": 50,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Block +1 ; DEF +90% ; Restores HP by 4% of Max HP per second in addition",
+            "initialSp": 30,
+            "spCost": 50,
+            "duration": 26
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Block +1 ; DEF +100% ; Restores HP by 4% of Max HP per second in addition",
+            "initialSp": 33,
+            "spCost": 50,
+            "duration": 27
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Block +1 ; DEF +110% ; Restores HP by 4% of Max HP per second in addition",
+            "initialSp": 37,
+            "spCost": 50,
+            "duration": 28
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Block +1 ; DEF +120% ; Restores HP by 5% of Max HP per second in addition",
+            "initialSp": 40,
+            "spCost": 50,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 3
+            },
+            {
+              "name": "Aketon",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Combat Mode",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20–30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Block -1 ; Attack Interval slightly increases ; ATK +65% ; Restores HP by 5% of Max HP when attacking and attacks all blocked enemies",
+            "initialSp": 20,
+            "spCost": 50,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Block -1 ; Attack Interval slightly increases ; ATK +70% ; Restores HP by 5% of Max HP when attacking and attacks all blocked enemies",
+            "initialSp": 21,
+            "spCost": 50,
+            "duration": 21
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Block -1 ; Attack Interval slightly increases ; ATK +75% ; Restores HP by 5% of Max HP when attacking and attacks all blocked enemies",
+            "initialSp": 22,
+            "spCost": 50,
+            "duration": 22
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Block -1 ; Attack Interval slightly increases ; ATK +85% ; Restores HP by 6% of Max HP when attacking and attacks all blocked enemies",
+            "initialSp": 25,
+            "spCost": 50,
+            "duration": 23
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Block -1 ; Attack Interval slightly increases ; ATK +90% ; Restores HP by 6% of Max HP when attacking and attacks all blocked enemies",
+            "initialSp": 26,
+            "spCost": 50,
+            "duration": 24
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Block -1 ; Attack Interval slightly increases ; ATK +95% ; Restores HP by 6% of Max HP when attacking and attacks all blocked enemies",
+            "initialSp": 27,
+            "spCost": 50,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Block -1 ; Attack Interval slightly increases ; ATK +105% ; Restores HP by 7% of Max HP when attacking and attacks all blocked enemies",
+            "initialSp": 30,
+            "spCost": 50,
+            "duration": 26
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Block -1 ; Attack Interval slightly increases ; ATK +120% ; Restores HP by 8% of Max HP when attacking and attacks all blocked enemies",
+            "initialSp": 33,
+            "spCost": 50,
+            "duration": 27
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Block -1 ; Attack Interval slightly increases ; ATK +135% ; Restores HP by 9% of Max HP when attacking and attacks all blocked enemies",
+            "initialSp": 37,
+            "spCost": 50,
+            "duration": 28
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Block -1 ; Attack Interval slightly increases ; ATK +150% ; Restores HP by 10% of Max HP when attacking and attacks all blocked enemies",
+            "initialSp": 40,
+            "spCost": 50,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Aketon",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 2
+        },
+        {
+          "name": "Sugar Pack",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Craftsmanship Spirit α",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, productivity -5% , capacity limit +16 , and Morale consumed per hour -0.15"
+    },
+    {
+      "name": "Craftsmanship Spirit βReplacesCraftsmanship Spirit α",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, productivity -5% , capacity limit +19 , and Morale consumed per hour -0.25"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Vulcan's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "UNY-X: The Shaper",
+      "mission": {
+        "requirement1": "Defeat a total of 30 enemies with Vulcan (excluding Support Units)",
+        "requirement2": "Clear Main Theme S4-4 with a 3-star rating; You must deploy your own Vulcan, and have Vulcan defeat at least 6 enemies"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +210 , DEF +35",
+          "effectLabel": "New trait",
+          "effectText": "Takes 15% less damage from enemies blocked by this unit",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +300 , DEF +53",
+          "effectLabel": "Self-Defense improved",
+          "effectText": "When skill is activated, immediately recovers 30% Max HP. Afterward, restores 4% Max HP per second and gains 25% Physical Melee Dodge while skill is active",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +385 , DEF +68",
+          "effectLabel": "Self-Defense improved",
+          "effectText": "When skill is activated, immediately recovers 60% Max HP. Afterward, restores 4% Max HP per second and gains 25% Physical Melee Dodge while skill is active",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Vulcan is a blacksmith from\nMinos\nwho sought treatment at\nRhodes Island\nafter contracting\nOripathy\n, ultimately reaching an agreement to become a part of the team.\nIn charge of smithing and maintaining weapons for other\nOperators\n, Vulcan also goes on missions when necessary.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1574,
+          "atk": 344,
+          "def": 222,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 31,
+          "block": 2,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 2072,
+          "atk": 479,
+          "def": 337,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 31,
+          "block": 2,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 2072,
+          "atk": 479,
+          "def": 337,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 33,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 2692,
+          "atk": 639,
+          "def": 450,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 33,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2692,
+          "atk": 639,
+          "def": 450,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 35,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 3688,
+          "atk": 820,
+          "def": 585,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 35,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      }
+    ],
+    "trust": {
+      "hp": 400,
+      "atk": 50,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging test for this Operator showed blurry outline of internal organs with visible unusual dark spots. Unusually high concentration of Originium particles were present in her circulation, indicating signs of infection and confirming her as infected at this stage. \n\n[Cell-Originium Assimilation] 18% \nHigh level of infection, obvious signs of Originium episodes on face and neck. \n\n[Blood Originium-Crystal Density] 0.38u/L \nInfection entering mid-stage, but currently unable to diagnose effects on the Operator."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Vulcan has an unwelcoming attitude for a lady blacksmith. \nShe is not even remotely interested in anything not related to weaponry, and when it comes to armaments she's only a bit more talkative than usual. \nShe made the smithy Rhodes Island provided her into her own bedroom, which she almost never leaves unless she's got a mission."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "No one fights quite like Vulcan does. She relies on her dependable equipment and powerful prosthetics in combat. As such, she is constantly repairing her equipment. Gear gets damaged in battle, that's normal, but Vulcan has mastered the art of quick repair even under fire. Keeping equipment functional is essential to her battle tactics. \nIn contrast, most Medic Operators don't have a clue about blacksmithing."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Vulcan always says those who can't keep up with the times are doomed to obsolescence. \nThe march of time has changed the smithing trade from the sweaty man hitting an anvil to an advanced automation engineer creating weapons at maximum efficiency. \nIn Vulcan's workshop, for instance, are several of the most advanced machines on the planet that are regularly improved. It is also in this secluded corner that all weapons at Rhodes Island are refined and upgraded."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Still, the most eye-catching thing in Vulcan's smithy is not any of the advanced robotic machines, but the enormous anvil and furnace. Yes, the very 'obsolescence' she spoke of. \nAnd yet, Vulcan still fires up the forge to hammer a piece of steel on the anvil, just like blacksmiths of old. \nOf course, that has nothing to do with making or maintaining our weaponry, and is more like a ritual, though she has never explained its meaning. \nPerhaps to her, those who can't keep up with times should become obsolete, but those who completely forsake tradition should not be called blacksmiths."
+    }
+  ]
+}

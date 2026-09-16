@@ -1,0 +1,746 @@
+{
+  "name": "Aciddrop",
+  "rarity": 4,
+  "class": "Sniper",
+  "branch": "Heavyshooter",
+  "faction": "Columbia",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS"
+  ],
+  "trait": "High accuracy point-blank shot",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "\"Afternoon Teatime\"",
+    "Holiday HD75"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_366_acdrop",
+  "otherLanguages": {
+    "Chinese": "酸糖",
+    "Japanese": "アシッドドロップ",
+    "Korean": "애시드드롭"
+  },
+  "characterInfo": {
+    "File no.": "R139",
+    "Operator Record": "The Face of a Wall",
+    "Paradox Simulation": "Marksmanship Mentoring",
+    "Illustrator": "Lanzi",
+    "Release Date": "2021/02/25",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Yui Nakajima",
+    "Chinese": "Pixiugang (credited as \"Hayami\" in EN)",
+    "English": "Sydney Miede",
+    "Korean": "Park Seon-young"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "1 year",
+    "Place of Birth": "Columbia",
+    "Date of Birth": "August 13th",
+    "Race": "Liberi",
+    "Height": "150 cm",
+    "Infection Status": "Confirmed infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Excellent",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Slideshot Style",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Each attack deals at least 20% of this unit's ATK damage (increases to 30% of ATK when the enemy is in the two frontal tiles)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Each attack deals at least 25% of this unit's ATK damage (increases to 40% of ATK when the enemy is in the two frontal tiles)"
+        }
+      ],
+      "technique": [
+        {
+          "name": "Minimum Damage",
+          "description": "Has a minimum amount of damage that must be dealt no matter the enemy stats"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +30"
+      },
+      {
+        "level": 5,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Aciddrop's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Slideshot Style .",
+        "New skill: Trigger Time .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Aciddrop to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 15000
+        },
+        {
+          "name": "Sniper Chip",
+          "quantity": 3
+        },
+        {
+          "name": "Device",
+          "quantity": 1
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Slideshot Style improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Aciddrop to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 60000
+        },
+        {
+          "name": "Sniper Chip Pack",
+          "quantity": 5
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 10
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 8
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Fancy Shot",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ASPD +20",
+            "initialSp": 0,
+            "spCost": 50,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ASPD +25",
+            "initialSp": 0,
+            "spCost": 50,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ASPD +30",
+            "initialSp": 0,
+            "spCost": 50,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ASPD +35",
+            "initialSp": 10,
+            "spCost": 45,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ASPD +40",
+            "initialSp": 10,
+            "spCost": 45,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ASPD +45",
+            "initialSp": 10,
+            "spCost": 45,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ASPD +50",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ASPD +56",
+            "initialSp": 15,
+            "spCost": 39,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ASPD +62",
+            "initialSp": 15,
+            "spCost": 37,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ASPD +70",
+            "initialSp": 20,
+            "spCost": 35,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 1
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 2
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 2
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 2
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Trigger Time",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +20% , attacks 2 times consecutively",
+            "initialSp": 10,
+            "spCost": 70,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +22% , attacks 2 times consecutively",
+            "initialSp": 10,
+            "spCost": 68,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +24% , attacks 2 times consecutively",
+            "initialSp": 10,
+            "spCost": 66,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +26% , attacks 2 times consecutively",
+            "initialSp": 15,
+            "spCost": 64,
+            "duration": 25
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +28% , attacks 2 times consecutively",
+            "initialSp": 15,
+            "spCost": 62,
+            "duration": 25
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +30% , attacks 2 times consecutively",
+            "initialSp": 15,
+            "spCost": 60,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +32% , attacks 2 times consecutively",
+            "initialSp": 20,
+            "spCost": 58,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +34% , attacks 2 times consecutively",
+            "initialSp": 25,
+            "spCost": 56,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +37% , attacks 2 times consecutively",
+            "initialSp": 30,
+            "spCost": 53,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +40% , attacks 2 times consecutively",
+            "initialSp": 35,
+            "spCost": 50,
+            "duration": 25
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 1
+            },
+            {
+              "name": "Aketon",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 2
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 2
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        },
+        {
+          "name": "Orirock",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Sugar",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Aketon",
+          "quantity": 2
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 4
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "B-girl",
+      "facility": "Office",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the HR Office, HR contacting speed +40%"
+    },
+    {
+      "name": "Give me five",
+      "facility": "Dormitory",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to a Dormitory, restores +0.35 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour +0.35"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Aciddrop's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "ARC-X: \"Freedom, Onion Rings, and Me\"",
+      "mission": {
+        "requirement1": "Defeat a total of 50 enemies with Aciddrop (excluding Support Units)",
+        "requirement2": "Clear Main Theme 2-8 with a 3-star rating; You must deploy your own Aciddrop, and have Aciddrop defeat at least 1 Metal Crab"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "DEF +30 , Rdp. -25 sec. , ASPD +3",
+          "effectLabel": "New trait",
+          "effectText": "Redeployment Time reduced",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Compound Cutting Fluid",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 20000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "DEF +40 , Rdp. -25 sec. , ASPD +4",
+          "effectLabel": "Slideshot Style improved",
+          "effectText": "Each attack deals at least 30% of this unit's ATK damage (increases to 45% of ATK when the enemy is in the two frontal tiles)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 15
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 25000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "DEF +50 , Rdp. -25 sec. , ASPD +5",
+          "effectLabel": "Slideshot Style improved",
+          "effectText": "Each attack deals at least 35% of this unit's ATK damage (increases to 50% of ATK when the enemy is in the two frontal tiles)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 5
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 6
+            },
+            {
+              "name": "LMD",
+              "quantity": 30000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "A street girl of\nColumbia\n, born to a normal working-class family. Her parents are both truck drivers and often work through the night, pushing Aciddrop out to the streets at a young age. From practicing skateboarding in her spare time after school to becoming a champion at local skateboarding tournaments, Aciddrop has become a renowned street icon throughout the city, and her success has drawn countless haters in the process. During a deliberate fight, Aciddrop was infected with\nOriginium\ndust, later coming to\nRhodes Island\nto seek treatment.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 45,
+        "base": {
+          "hp": 671,
+          "atk": 313,
+          "def": 79,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 933,
+          "atk": 429,
+          "def": 114,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "2-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 60,
+        "base": {
+          "hp": 933,
+          "atk": 429,
+          "def": 114,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1197,
+          "atk": 565,
+          "def": 152,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-6"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1197,
+          "atk": 565,
+          "def": 152,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1576,
+          "atk": 735,
+          "def": 209,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-6"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 80,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests have shown the outlines of her internal organs to be indistinct due to abnormal shadows. Originium granules have been detected in her circulatory system, confirming her to be infected with Oripathy. \n\n[Cell-Originium Assimilation] 4%\nOperator Aciddrop's Oripathy is currently still mild, and no Originium crystals have been found on the surface of the body. \n\n[Blood Originium-Crystal Density] 0.15u/L\nAciddrop was infected as the product of manmade accident. Fortunately, the amount of Originium dust she inhaled was minute and the infection is being handled appropriately. No trend of deterioration present."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Miss Aciddrop is an extremely 'hip' girl. This is not solely due to her interest in skateboarding, graffiti, and rap, but also due to her strong temperament. This is reflected through her open-minded attitude towards all things in life— even when undergoing a series of examinations for her Oripathy, Miss Aciddrop would only lament that she had to postpone her cycling trip, as if her free-spirited travels were of greater importance than her condition. \nBy the way, Miss Aciddrop is not 'interested' in street culture. According to her own account, she was actually quite famous in her hometown prior to becoming infected: she had won many local skating competitions, children all wanted to learn how to skate from her, and she shared sibling-like bonds with some of the street artists there. —Though I first thought this was simply the boasting of a street girl, we discovered that a certain line of a famous, trendy sports brand really had plans to feature her as a model. This certainly surprised us."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "During her operator assessment exam, Miss Aciddrop demonstrated an unexpected talent for sniping— strictly speaking, a very flashy talent. Though the mobility granted from being able to shoot while on a skateboard is of dubious value in actual combat, this Liberi's agility caught many operators off guard. 'It's like she's performing for a crowd,' one operator from the HR Department remarked. \nHowever, let this not overshadow the fact that Miss Aciddrop's proficiency with a hand crossbow is not inferior to her skill on the skateboard. It is said that she learned these skills from an old local policeman. As a student, Aciddrop was report to the police for 'excessive graffiti,' and was chased around three blocks by an old, seemingly-weak policeman. Afterwards, she was subjected to a scolding that was dozens of minutes long. After such incidents 'accidentally occurred several more times,' scolding soon turned into chatter, and the kindhearted old policeman seemed to take pity upon Aciddrop, for her parents were almost never home, leaving her to fend for herself. Intentionally or otherwise, the old policeman let his daughter become friends with Aciddrop, since the two of them were the same age. It is this daughter who first taught Aciddrop how to skate. \n'Of course, the pupil surpassed the teacher, eh?' Miss Aciddrop would happily proclaim."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Aciddrop's hometown is located in a rather remote location in Columbia. The vast land and undeveloped economy there were rich breeding grounds for the gray market to flourish. The Siracusan Mafia, local gangs, and large merchants frequently made their way in and out, and though this shady area was kept relatively orderly, the general public security is far from ideal. In order to give the young and energetic children a means to protect themselves, after hesitating again and again, the old policeman taught Aciddrop the basic techniques to operate a hand crossbow, and also made a simple weapon for her— after all, he believed that Aciddrop has a strong sense of justice and was not the kind of child who would do bad things with a weapon. \nUnfortunately, there were some issues with Aciddrop's loose definition of justice. During an unexpected auto accident, the brave Aciddrop unintentionally destroyed a gang's illegal Originium trading plan, triggering retaliation from the affected gang members. During a brawl that was disguised as a case of school bullying, gang members who were even younger than Aciddrop sprinkled Originium dust onto her."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "However, Aciddrop is not one to dwell on the past, demonstrating the perseverance and strength that her youth affords her. This perseverance has supported her to face the painful aspects of life, or in other words, allowed her to take her mind off from the pain. Perhaps one day, after Miss Aciddrop's Originium is effectively suppressed, she will choose to return home. Even if she can no longer take off her identity as an Infected, she feels as if she must complete the journey she failed to finish. \n'A toast to freedom, a toast to onion rings, and a toast to myself.' —Excerpt from a speech made by Miss Aciddrop on her first day at the dorms, when she threw a cocktail party using carbonated drinks rather than liquor."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Recently... There have been some bizarre rumors aboard Rhodes Island. As we are fairly tolerant of various cultures, pop culture among the youth is, of course, rather interesting. However, due to invisible individuals playing super loud hip-hop, graffiti appearing out of thin air, and a skateboarding trend that has spread like wildfire across younger operators and patients alike... If possible, shouldn't we try to dial things down a bit? What do you all think? —The 'suggestion' of a highly-respected logistics operator to young operators such as Ethan, Aciddrop, and Vigna\n\nHowever, after refugees were rescued from the ruins of a Catastrophe area, you all tagged 'Never say die' on the walls of the ruins. I can't say I'm not a fan. —A subsequent word of appreciation added by the respected logistics operator"
+    }
+  ]
+}

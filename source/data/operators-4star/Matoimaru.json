@@ -1,0 +1,731 @@
+{
+  "name": "Matoimaru",
+  "rarity": 4,
+  "class": "Guard",
+  "branch": "Dreadnought",
+  "faction": "Higashi",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Survival",
+    "DPS"
+  ],
+  "trait": "Blocks 1 enemy",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Frosted Steps"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_289_gyuki",
+  "otherLanguages": {
+    "Simplified Chinese": "缠丸",
+    "Traditional Chinese": "纏丸",
+    "Japanese": "マトイマル",
+    "Korean": "마토이마루"
+  },
+  "characterInfo": {
+    "File no.": "HK01",
+    "Illustrator": "竜崎いち",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Airi Ōtsu",
+    "Chinese": "Qiwen (credited as \"Ellen Wang\" in EN)",
+    "English": "Maddie Matsumoto",
+    "Korean": "Chae Min-ji"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "3 years",
+    "Place of Birth": "Higashi",
+    "Date of Birth": "January 3rd",
+    "Race": "Oni",
+    "Height": "172 cm",
+    "Infection Status": "Non-infected as confirmed by medical report."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Standard",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Demonic Physique",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "DEF -20%; Max HP +20%"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "DEF -20%; Max HP +23% (+3%)"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "Max HP +180"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Demonic Physique"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Matoimaru's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Demonic Power ."
+      ],
+      "prerequisite": "Raise Matoimaru to Level 45.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 15000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 1
+        },
+        {
+          "name": "Device",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Demonic Physique .",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Matoimaru to Elite 1 Level 60.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 60000
+        },
+        {
+          "name": "Guard Chip Pack",
+          "quantity": 5
+        },
+        {
+          "name": "Aketon",
+          "quantity": 16
+        },
+        {
+          "name": "Sugar Pack",
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Regeneration β",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Restores HP by 20% of Max HP",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Restores HP by 23% of Max HP",
+            "initialSp": 0,
+            "spCost": 29,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Restores HP by 26% of Max HP",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Restores HP by 30% of Max HP",
+            "initialSp": 3,
+            "spCost": 27,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Restores HP by 33% of Max HP",
+            "initialSp": 3,
+            "spCost": 26,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Restores HP by 36% of Max HP",
+            "initialSp": 3,
+            "spCost": 25,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Restores HP by 40% of Max HP",
+            "initialSp": 7,
+            "spCost": 24,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Restores HP by 43% of Max HP",
+            "initialSp": 8,
+            "spCost": 23,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Restores HP by 46% of Max HP",
+            "initialSp": 9,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Restores HP by 50% of Max HP",
+            "initialSp": 10,
+            "spCost": 20,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 1
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 2
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 2
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 2
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Demonic Power",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "10–15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "DEF reduces to 0 ; ATK +75%",
+            "initialSp": 0,
+            "spCost": 35,
+            "duration": 10
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "DEF reduces to 0 ; ATK +80%",
+            "initialSp": 0,
+            "spCost": 35,
+            "duration": 10
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "DEF reduces to 0 ; ATK +85%",
+            "initialSp": 0,
+            "spCost": 35,
+            "duration": 10
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "DEF reduces to 0 ; ATK +90%",
+            "initialSp": 0,
+            "spCost": 32,
+            "duration": 11
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "DEF reduces to 0 ; ATK +95%",
+            "initialSp": 0,
+            "spCost": 32,
+            "duration": 11
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "DEF reduces to 0 ; ATK +100%",
+            "initialSp": 0,
+            "spCost": 32,
+            "duration": 11
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "DEF reduces to 0 ; ATK +105%",
+            "initialSp": 5,
+            "spCost": 29,
+            "duration": 12
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "DEF reduces to 0 ; ATK +120%",
+            "initialSp": 6,
+            "spCost": 28,
+            "duration": 13
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "DEF reduces to 0 ; ATK +135%",
+            "initialSp": 7,
+            "spCost": 27,
+            "duration": 14
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "DEF reduces to 0 ; ATK +150%",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 15
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 1
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        },
+        {
+          "name": "Orirock",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Sugar",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 2
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 4
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Tech Theory",
+      "facility": "Workshop",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Workshop to process Skill Summaries , the production rate of byproduct increases by 70%"
+    },
+    {
+      "name": "Order Distribution β",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +30%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Matoimaru's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "DRE-Y: Bamboo Ikebana",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Matoimaru, and have Matoimaru deal at least 15,000 damage",
+        "requirement2": "Clear Main Theme S2-10 with a 3-star rating; You must deploy your own Matoimaru, and have Matoimaru defeat at least 2 Senior Casters"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +270 , ATK +35",
+          "effectLabel": "New trait",
+          "effectText": "When defeated, does not retreat and recovers HP instead. However, Max HP -60% and ASPD +30 (Can only activate once every deployment)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 20000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +340 , ATK +45",
+          "effectLabel": "Demonic Physique improved",
+          "effectText": "DEF -20%; Max HP +30%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 15
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 25000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +390 , ATK +55",
+          "effectLabel": "Demonic Physique improved",
+          "effectText": "DEF -20%; Max HP +35%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 5
+            },
+            {
+              "name": "Sugar Pack",
+              "quantity": 6
+            },
+            {
+              "name": "LMD",
+              "quantity": 30000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "This nomadic warrior from the\nFar East\njoined\nRhodes Island\nby sheer chance.\nWhat Matoimaru lacks in strategic acumen, she makes up with a mean giant sickle swing.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 45,
+        "base": {
+          "hp": 1514,
+          "atk": 396,
+          "def": 70,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 15,
+          "block": 1,
+          "interval": 1.5
+        },
+        "max": {
+          "hp": 2019,
+          "atk": 592,
+          "def": 100,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 15,
+          "block": 1,
+          "interval": 1.5
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 60,
+        "base": {
+          "hp": 2019,
+          "atk": 592,
+          "def": 100,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 1.5
+        },
+        "max": {
+          "hp": 2693,
+          "atk": 760,
+          "def": 131,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 1.5
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 2693,
+          "atk": 760,
+          "def": 131,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 1.5
+        },
+        "max": {
+          "hp": 3640,
+          "atk": 916,
+          "def": 156,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 1.5
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 450,
+      "atk": 0,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests on this Operator show clear outlines of internal organs, with no abnormal dark spots or shadows. No unusual traces of Originium particles present in the circulatory system, no signs of infection, confirming this operator as uninfected. \n\n[Cell-Originium Assimilation] 0% \nOperator Matoimaru showed no symptoms of Oripathy. \n\n[Blood Originium-Crystal Density] 0.12u/L \nOperator Matoimaru rarely comes into contact with Originium."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Matoimaru is a magnificent warrior from the Far East.\nShe is simpleminded and prone to deception. She does catch on, but a new trick will fool her again.\nHer hobbies, at which she excels, are sparring, soccer, and floral arrangement. She has been known to organize events around these subjects, though her idea of organization is typically dragging people kicking and screaming into it."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "The Oni are still a mystery to most people. Aside from living in the Far East, there seems to be little in common among the race. \nHowever, Matoimaru is yet even more different from other Oni: Her bloodlust makes her performance on the battlefield strikingly unique, though it seems she's not aware of this fact."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Many Operators think Matoimaru is crude and unrefined, but they are mistaken.\nThey just need to check out her floral arrangements, on display every Saturday at 3pm. \nThe beauty she can create is positively astonishing."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Matoimaru is obviously self-conscious about her flaws: She is not good at controlling her strength or at critical thinking. \nShe took up floral arrangement to refine herself and to show the others they don't need to fear her. \nDespite this, she's remains quite gullible. At least she has learned to question the idea that she must be a great thinker in order to survive. \nAs far as she is concerned, her ideal companion would be someone who won't deceive or betray her, and will stay with her and guide her. How wonderful that would be..."
+    }
+  ]
+}

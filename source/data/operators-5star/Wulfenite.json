@@ -1,0 +1,765 @@
+{
+  "name": "Wulfenite",
+  "rarity": 5,
+  "class": "Specialist",
+  "branch": "Trapmaster",
+  "faction": "Sargon",
+  "umbrellaFactions": [],
+  "connectedFactions": [
+    "Columbia"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Summon",
+    "Debuff"
+  ],
+  "trait": "Can use traps to assist in combat, but traps cannot be placed on tiles already occupied by an enemy",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Bouncing Rhythm"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4171_wulfen",
+  "otherLanguages": {
+    "Chinese": "钼铅",
+    "Japanese": "ウルフェナイト",
+    "Korean": "울페나이트"
+  },
+  "characterInfo": {
+    "File no.": "SG27",
+    "Operator Record": "The Final Adventure",
+    "Paradox Simulation": "Make a Path",
+    "Illustrator": "臼",
+    "Release Date": "2025/08/28",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Mai Gotō",
+    "Chinese": "Xu Chen",
+    "English": "Chloe Eves",
+    "Korean": "Sung Ye-won"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Sargon",
+    "Date of Birth": "December 1st",
+    "Race": "Phidia",
+    "Height": "159 cm",
+    "Infection Status": "Originium crystals distributed across surface of body, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Standard",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Explorer's Stash",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "Can use 1 Ore \"Killer\" (can store up to 2); once an Ore \"Killer\" is deployed, can be manually detonated after an arming period"
+        },
+        {
+          "stage": "Base",
+          "potential": "Potential 5",
+          "description": "Can use 2 (+1) Ore \"Killers\" (can store up to 2); once an Ore \"Killer\" is deployed, can be manually detonated after an arming period"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Can use 2 Ore \"Killers\" (can store up to 3); once an Ore \"Killer\" is deployed, can be manually detonated after an arming period"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Can use 3 (+1) Ore \"Killers\" (can store up to 3); once an Ore \"Killer\" is deployed, can be manually detonated after an arming period"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Can use 3 Ore \"Killers\" (can store up to 4); once an Ore \"Killer\" is deployed, can be manually detonated after an arming period"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Can use 4 (+1) Ore \"Killers\" (can store up to 4); once an Ore \"Killer\" is deployed, can be manually detonated after an arming period"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +23"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Explorer's Stash"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Wulfenite's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: \"For Stubborn Rocks\" .",
+        "Explorer's Stash improved.",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Wulfenite to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Specialist Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Explorer's Stash improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Wulfenite to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Specialist Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Polymerized Gel",
+          "quantity": 9
+        },
+        {
+          "name": "Fuscous Fiber",
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "\"For Scaring Beasts\"",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Passive Effect: Each Ore \"Killer\" can be manually detonated once armed, which deals 180% of ATK as Physical damage to all enemies within range and Stuns them for 2 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 29,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Passive Effect: Each Ore \"Killer\" can be manually detonated once armed, which deals 185% of ATK as Physical damage to all enemies within range and Stuns them for 2 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Passive Effect: Each Ore \"Killer\" can be manually detonated once armed, which deals 190% of ATK as Physical damage to all enemies within range and Stuns them for 2 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 27,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Passive Effect: Each Ore \"Killer\" can be manually detonated once armed, which deals 195% of ATK as Physical damage to all enemies within range and Stuns them for 2 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 26,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Passive Effect: Each Ore \"Killer\" can be manually detonated once armed, which deals 200% of ATK as Physical damage to all enemies within range and Stuns them for 2 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Passive Effect: Each Ore \"Killer\" can be manually detonated once armed, which deals 210% of ATK as Physical damage to all enemies within range and Stuns them for 2 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 24,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Passive Effect: Each Ore \"Killer\" can be manually detonated once armed, which deals 210% of ATK as Physical damage to all enemies within range and Stuns them for 2.5 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 23,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Passive Effect: Each Ore \"Killer\" can be manually detonated once armed, which deals 220% of ATK as Physical damage to all enemies within range and Stuns them for 2.5 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Passive Effect: Each Ore \"Killer\" can be manually detonated once armed, which deals 230% of ATK as Physical damage to all enemies within range and Stuns them for 2.5 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Passive Effect: Each Ore \"Killer\" can be manually detonated once armed, which deals 250% of ATK as Physical damage to all enemies within range and Stuns them for 3 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 3
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 3
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "\"For Stubborn Rocks\"",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Passive Effect: Ore \"Killer\" Attack Range expands, and detonating one detonates all armed Ore \"Killers\" simultaneously; all enemies in range take 150% of ATK as Physical damage twice , and have DEF -15% (does not stack) for 5 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Passive Effect: Ore \"Killer\" Attack Range expands, and detonating one detonates all armed Ore \"Killers\" simultaneously; all enemies in range take 160% of ATK as Physical damage twice , and have DEF -15% (does not stack) for 5 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Passive Effect: Ore \"Killer\" Attack Range expands, and detonating one detonates all armed Ore \"Killers\" simultaneously; all enemies in range take 170% of ATK as Physical damage twice , and have DEF -15% (does not stack) for 5 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 24,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Passive Effect: Ore \"Killer\" Attack Range expands, and detonating one detonates all armed Ore \"Killers\" simultaneously; all enemies in range take 180% of ATK as Physical damage twice , and have DEF -15% (does not stack) for 5 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 24,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Passive Effect: Ore \"Killer\" Attack Range expands, and detonating one detonates all armed Ore \"Killers\" simultaneously; all enemies in range take 190% of ATK as Physical damage twice , and have DEF -20% (does not stack) for 5 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 23,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Passive Effect: Ore \"Killer\" Attack Range expands, and detonating one detonates all armed Ore \"Killers\" simultaneously; all enemies in range take 200% of ATK as Physical damage twice , and have DEF -20% (does not stack) for 5 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 23,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Passive Effect: Ore \"Killer\" Attack Range expands, and detonating one detonates all armed Ore \"Killers\" simultaneously; all enemies in range take 220% of ATK as Physical damage twice , and have DEF -25% (does not stack) for 5 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Passive Effect: Ore \"Killer\" Attack Range expands, and detonating one detonates all armed Ore \"Killers\" simultaneously; all enemies in range take 230% of ATK as Physical damage twice , and have DEF -25% (does not stack) for 5 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Passive Effect: Ore \"Killer\" Attack Range expands, and detonating one detonates all armed Ore \"Killers\" simultaneously; all enemies in range take 240% of ATK as Physical damage twice , and have DEF -25% (does not stack) for 5 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Passive Effect: Ore \"Killer\" Attack Range expands, and detonating one detonates all armed Ore \"Killers\" simultaneously; all enemies in range take 250% of ATK as Physical damage twice , and have DEF -25% (does not stack) for 5 seconds Active Effect: Obtain an \"Ore Killer\" immediately",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 3
+            },
+            {
+              "name": "Compound Cutting Fluid",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Diketon",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 8
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Compound Cutting Fluid",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Go-Getter",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, Productivity +20% and capacity limit -8"
+    },
+    {
+      "name": "Storage Guru",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, capacity limit +16 and Morale consumed per hour -0.25"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Wulfenite's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "TRP-Y: Mineral Display Cabinet",
+      "mission": {
+        "requirement1": "During battle, have your own Wulfenite deploy a total of 30 Ore \"Killers\"",
+        "requirement2": "Clear Main Theme 9-6 with a 3-star rating under Standard Environment; You must deploy your own Wulfenite and have her defeat at least 1 Dublinn Heavy Defender"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +30 , DEF +25",
+          "effectLabel": "New trait",
+          "effectText": "Has 20% chance to deploy a trap that deals double damage",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +40 , DEF +25",
+          "effectLabel": "New talent: Explorer's Ease",
+          "effectText": "If there are 2 or more enemies within range of an Ore \"Killer\" detonation, damage dealt increases by 8%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +50 , DEF +25",
+          "effectLabel": "Explorer's Ease improved",
+          "effectText": "If there are 2 or more enemies within range of an Ore \"Killer\" detonation, damage dealt increases by 12%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Explorer, ore collector, and also a famous content creator on the video side of Columbia's intercity net. Contracted Oripathy due to inattentiveness on a geological excursion, and came to Rhodes Island seeking treatment. After some negotiation, she joined Rhodes Island as a specialist operator, using her ample geological knowledge and survival experience to support our teams on their many outdoor exploration missions.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 678,
+          "atk": 235,
+          "def": 66,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 9,
+          "block": 1,
+          "interval": 0.85
+        },
+        "max": {
+          "hp": 904,
+          "atk": 323,
+          "def": 100,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 9,
+          "block": 1,
+          "interval": 0.85
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 904,
+          "atk": 323,
+          "def": 100,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 11,
+          "block": 1,
+          "interval": 0.85
+        },
+        "max": {
+          "hp": 1145,
+          "atk": 426,
+          "def": 132,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 11,
+          "block": 1,
+          "interval": 0.85
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1145,
+          "atk": 426,
+          "def": 132,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 11,
+          "block": 1,
+          "interval": 0.85
+        },
+        "max": {
+          "hp": 1450,
+          "atk": 520,
+          "def": 160,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 11,
+          "block": 1,
+          "interval": 0.85
+        },
+        "rangeId": "3-3"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 40,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 5%\nThanks to noticing the symptoms early and receiving timely treatment, Operator Wulfenite's condition is relatively under control.\n\n[Blood Originium-Crystal Density] 0.15u/L\nDue to the nature of her work, Operator Wulfenite must frequently enter areas with high concentrations of Originium. Even with her knowledge of protective measures, there is always the possibility her condition will worsen, and she will require close attention.\nHopefully understands her limits going forward."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Operators involved in the field of geology such as Earthspirit, Eyjafjalla, and several of our other scholarly types occasionally come together for a seminar to share their research. Once Wulfenite found out about this, she applied to take part in it.\nAt first, the others assumed she wished to learn from them. She called herself an ore collector, after all, and many collectors were in touch with and worked alongside geologists—an arrangement all present were familiar with.\nBut they quickly realized that she was no ordinary collector.\nShe was an incredible font of geological knowledge. While she would awkwardly twiddle her thumbs when the researchers spoke about theory, whenever a piece of ore she was familiar with was put on the table, she would happily go on and on about all its properties. The ore that inspired her codename, wulfenite, is a topic she is especially well-versed in. She knows everything about it, having even visited every single source of the ore within Columbia's borders. It was then that the other operators realized she did actually have a solid grounding in theory. She simply wasn't systematically deriving and discussing it like an academic would.\nShe also turned out to have some extremely obscure knowledge. Some of it was related to questions the researchers had always wondered about but never had the time to look into, while other parts involved things they had heard of but wouldn't know how to begin researching. To their surprise, Wulfenite took the time to go through that list of topics and verify them one by one.\nHowever, the greatest change her participation caused in these seminars was that, at her urging, some of the quieter operators who only really talked about research also started sharing amusing anecdotes from their surveys. Several seminars even had to be extended for an hour due to this.\nAfterwards, the participating operators would say they originally considered these incidents to irrelevant, but Wulfenite showed them that these trifles, or rather, personal experiences, were also worth sharing.\n'Not only is she a new friend, she also pushed us to get to know each other better. She's one hell of a girl, I tell you.'"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Wulfenite isn't shy about sharing her videos from when she first started recording her adventures.\nRather than records of her exploits, they would be more accurately described as recordings of her rambling to herself. A girl out in the wilds holding up a camera, recounting to the lens what happened to her that day.\nThey are very different from the videos she uploads onto the intercity net, in that they are much more personal, but through them, we catch a glimpse of the start of her recorded life of derring-do.\n'At first, I recorded myself so I wouldn't get too... you know, lonely. I know there's not much you can do about it when you're searching for ore, but sometimes, the loneliness really gets to you.\n'A friend once told me I didn't have the right personality for solo exploring. And I don't. I usually look for stuff in the middle of nowhere, and nobody wanted to be my survey partner. But I didn't want to give up because of that, so I came up with this instead.\n'At first, I was just talking to myself, but soon, I started imagining my parents or my friends behind the lens. That they were right there with me, and I'd chat with them.\n'Frankly, I wouldn't have even thought to upload my first video if a tech-savvy friend of mine hadn't done it for me. Who knew so many people would be into that stuff? But with her encouragement, I made my own account and started doing this sort of stuff with a bit more purpose.\n'Right, that's the video. I'd been combing the wilds for days with nothing to show for it. I wasn't in the best mood, and was really homesick, so I recorded it. Man, all that crying I did to the camera was a real long time ago, now that I think about it.'"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Rhodes Island is no stranger to sociable people who like participating in or organizing group activities, but Wulfenite has managed to make a name for herself even in that crowded space.\nShe's had her share of memorable moments, but the one that left the deepest impression on others is the ore exhibition and exchange she held soon after she joined Rhodes Island.\nGenerally, so long as a sensible plan is provided in writing, Rhodes Island is always willing to provide its operators space to hold events for whatever activities they are passionate about, as well as some support.\nHowever, when Wulfenite submitted her proposal to Logistics, the operator who received it felt a twinge of doubt. The proposal itself was extremely comprehensive, and she did indeed have enough samples to stock the exhibit, but the amount of space she requested was simply ridiculous.\nAt first, the logistics operator simply assumed she was unaware of the scale she was asking for, but she repeatedly claimed to know what she was doing, and that she had proof: many patients and operators alike had already expressed through various means their desire to participate.\nAfter tallying up the responses, Logistics accepted her application, and after asking Amiya for further instructions, the exhibition finally got the green light.\nIt was then that something happened, something that shocked all of Logistics. A week before the event, a padishah suddenly paid a visit to Rhodes Island. At the same time, a truck transporting a massive chunk of wulfenite ore, escorted by the padishah's men-at-arms, stopped a safe distance away from the landship.\nWulfenite's proposal <i>did</i> mention that she would be displaying something related to her codename, which also happened to be what got her into ore collecting in the first place: a giant hunk of wulfenite ore. But everyone had assumed she would simply break off a piece of her special rock to display.\nInstead, the ore was going to be exhibited in its entirety. Not only that, but the padishah was greatly looking forward to perusing the exhibition, just like everyone else.\n'Hmm? No, my granddad used to be one of the royal guards, sure, but that's all. He wasn't anyone special to the padishah.\n'It was only after I went back to the city and helped the padishah find some ore that we became friends.'\nAfter her rather understated explanation, she turned back to the crowd and started managing the exhibition.\nAs an ordinary person who could call a padishah friend and make so many more in such a short time aboard Rhodes Island, Wulfenite's social skills are apparent at a glance."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "There is one thing Wulfenite's fans often talk about: she was a real pioneer in registering her account and uploading videos, and her videos are very high quality, but there are extreme gaps between her uploads, often months at a time. Due to her upload schedule, she was never very popular.\nHowever, that all changed one day when she suddenly started uploading videos en masse, with even better content and presentation than ever before. This was usually a sure sign of a content creator going commercial, but she never showed any indication of going down that path, nor of wanting to chase more popularity. The fans were unsure what to make of the situation.\nThe answer was simple, and only requires a glance at her medical history: it was around that time when she contracted Oripathy. Her fans, and even the people she worked with, had no idea about her illness.\n'Only after catching Oripathy did I realize that so many people on the intercity net were also fellow sufferers. We became friends, and I learned something: to people like us... the net's a place where we can have our former lives back, even if just for a little bit.'\nExploring the wilds, hauling your finds back to town, sharing your results... Once, she would have done the sharing on classroom podiums or even TV studios, but now, she chooses to record videos and use social media for communication. Most assume she's a net addict, unwilling to live in reality, but they never expect to hear that she simply has no other choice.\nWulfenite has many public social media accounts she actively uses to record and share her life. Observant fans have noticed that whenever these accounts begin to make a stir, it means she's back from a trip.\nHer posts are just as passionate as her videos, which makes those watching her believe that she acts exactly the same way whether on the net or in real life. What they don't know is that behind the facade is someone racked with worry day in and day out. She had no choice but to bear the pressure of keeping her Oripathy hidden.\nWhen she was out exploring, she lived in her videos. When she returned to the city, she lived on social media. Compared to most other net celebrities who were only aiming to boost their popularity, Wulfenite appeared to be a completely virtual being. For a while, her fans were obsessed with finding out where she lived in real life, but over time, they gradually stopped caring.\nFrom the moment she arrived on Rhodes Island, her voracious desire for social interaction was apparent. One can even say her life and her personality were at complete odds.\nHowever, despite it all, she has managed to stay optimistic and tenacious throughout.\n'It's true that I didn't have a choice at first, but when I started to take the net seriously, I found that it's actually a real interesting place. It's no big deal if you're Infected online—nobody cares.'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Wulfenite carries a lot of specialized survey equipment with her: a compass, a scratch kit, a pickaxe, miniature explosives, even a portable rock crusher.\nHaving learned from dealing with other exploration-inclined operators, Engineering is always ready to help repair equipment whenever they return from a trip. However, with Wulfenite they noticed her tools were always near-pristine, with barely a mark on them, yet she clearly wasn't coming back empty-handed.\nHow does she do it? With this question eating away at them, a certain Engineering operator volunteered to come along on her next sojourn.\nThe operator was unsure whether to laugh or cry when the truth became clear.\nIt was not that Wulfenite did not want to use her tools. She simply had no need to.\nHer tail was able to wind around strategic spots on rock faces to help her climb.\nIt could also easily crush solid rock into powder.\nIt could smash through cliff faces, allowing her to bypass difficult terrain.\nYes, it is her impressive tail that lets her solve most of the issues she runs into.\nThe fact of the matter is, at least according to that operator's observations, Wulfenite would have a much easier time if she simply stopped lugging around all that equipment. She herself is skeptical, though.\nAs long as she has her tools, she can feel at ease. If she ever lost them, she would become anxious, and her exploration would go much less smoothly.\nIf her tools had souls, and knew that their only purpose was to provide emotional support, they wouldn't know whether to laugh or to cry either.\nBetter to be prepared than unprepared, though. Perhaps they will actually come in handy one day."
+    }
+  ]
+}

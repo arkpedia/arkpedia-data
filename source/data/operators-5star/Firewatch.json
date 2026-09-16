@@ -1,0 +1,761 @@
+{
+  "name": "Firewatch",
+  "rarity": 5,
+  "class": "Sniper",
+  "branch": "Deadeye",
+  "faction": "Rhodes Island",
+  "umbrellaFactions": [],
+  "connectedFactions": [
+    "Kazimierz"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS",
+    "Nuker"
+  ],
+  "trait": "Prioritizes attacking the enemy with lowest DEF within range first",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Wilted Cypress",
+    "Snowywatch"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_158_milu",
+  "otherLanguages": {
+    "Chinese": "守林人",
+    "Japanese": "ファイヤーウォッチ",
+    "Korean": "파이어워치"
+  },
+  "characterInfo": {
+    "File no.": "ST01",
+    "Operator Record": "On My Way",
+    "Paradox Simulation": "Optimal Field of View",
+    "Illustrator": "aZLing4",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Ru Thing",
+    "Chinese": "Liu Shisi (credited as \"Jingxia Liu\" in EN)",
+    "English": "Jemma Moore",
+    "Korean": "Jang Mi"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "5 years",
+    "Place of Birth": "Unknown",
+    "Date of Birth": "Unknown",
+    "Race": "Elafia",
+    "Height": "158 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Standard",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Assassin",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "ATK increases to 120% when attacking ranged enemies"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "ATK increases to 125% (+5%) when attacking ranged enemies"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "ATK increases to 140% when attacking ranged enemies"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "ATK increases to 145% (+5%) when attacking ranged enemies"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +35"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Assassin"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Firewatch's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Assassin .",
+        "New skill: Tactical Transceiver .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Firewatch to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Sniper Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Assassin improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Firewatch to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Sniper Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester Lump",
+          "quantity": 7
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 15
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Camouflage",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25–50 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +24% and gain Invisibility",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +26% and gain Invisibility",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 26
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +28% and gain Invisibility",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 27
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +32% and gain Invisibility",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +34% and gain Invisibility",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": 31
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +36% and gain Invisibility",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": 32
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +40% and gain Invisibility",
+            "initialSp": 0,
+            "spCost": 26,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +50% and gain Invisibility",
+            "initialSp": 0,
+            "spCost": 24,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +60% and gain Invisibility",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": 45
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +70% and gain Invisibility",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": 50
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Invisibility",
+            "description": "Has a time period of not receiving any attacks except environmental damage"
+          }
+        ]
+      },
+      {
+        "name": "Tactical Transceiver",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Randomly drops 2 bombs within range (especially to enemy's position); Every bomb deals 180% of ATK Physical damage to all nearby enemies",
+            "initialSp": 10,
+            "spCost": 50,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Randomly drops 2 bombs within range (especially to enemy's position); Every bomb deals 190% of ATK Physical damage to all nearby enemies",
+            "initialSp": 10,
+            "spCost": 50,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Randomly drops 2 bombs within range (especially to enemy's position); Every bomb deals 200% of ATK Physical damage to all nearby enemies",
+            "initialSp": 10,
+            "spCost": 50,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Randomly drops 2 bombs within range (especially to enemy's position); Every bomb deals 210% of ATK Physical damage to all nearby enemies",
+            "initialSp": 15,
+            "spCost": 50,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Randomly drops 2 bombs within range (especially to enemy's position); Every bomb deals 220% of ATK Physical damage to all nearby enemies",
+            "initialSp": 15,
+            "spCost": 50,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Randomly drops 2 bombs within range (especially to enemy's position); Every bomb deals 230% of ATK Physical damage to all nearby enemies",
+            "initialSp": 15,
+            "spCost": 50,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Randomly drops 2 bombs within range (especially to enemy's position); Every bomb deals 240% of ATK Physical damage to all nearby enemies",
+            "initialSp": 20,
+            "spCost": 50,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Randomly drops 3 bombs within range (especially to enemy's position); Every bomb deals 260% of ATK Physical damage to all nearby enemies",
+            "initialSp": 20,
+            "spCost": 50,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Randomly drops 3 bombs within range (especially to enemy's position); Every bomb deals 280% of ATK Physical damage to all nearby enemies",
+            "initialSp": 20,
+            "spCost": 50,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Randomly drops 3 bombs within range (especially to enemy's position); Every bomb deals 300% of ATK Physical damage to all nearby enemies",
+            "initialSp": 30,
+            "spCost": 50,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "AOE Nuke",
+            "description": "Group enemies closely together to deal maximum big damage"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 2
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Clue Search α",
+      "facility": "Reception Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Reception Room , Clue search speed increases by 10%"
+    },
+    {
+      "name": "Clue Search βReplacesClue Search α",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by 20%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Firewatch's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "DEA-Y: Field Sniper Equipment",
+      "mission": {
+        "requirement1": "Defeat a total of 25 enemy ranged units with Firewatch (Firewatch cannot be a Support Unit)",
+        "requirement2": "Clear Main Theme 2-10 with a 3-star rating; a non-Support Firewatch must be deployed during the operation, and Firewatch must defeat Skullshatterer"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +80 , ATK +60",
+          "effectLabel": "New trait",
+          "effectText": "If the attacked enemy remains alive, gain 1 additional SP",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +110 , ATK +75",
+          "effectLabel": "Assassin improved",
+          "effectText": "ATK increases to 145% when attacking ranged enemies and enemies that do not attack",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +130 , ATK +87",
+          "effectLabel": "Assassin improved",
+          "effectText": "ATK increases to 150% when attacking ranged enemies and enemies that do not attack",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Firewatch comes from unknown origins. She fought for many years on the border between\nKazimierz\nand\nUrsus\n. It is suspected that she was a guerrilla during this time. She shows deep experience in asymmetric operations like ambushes, sniping, unconventional tactics, and mobile tactics.\nShe currently works as part of the\nRhodes Island\nsniper\ngroup to provide protection services.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 714,
+          "atk": 486,
+          "def": 63,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 2.7
+        },
+        "max": {
+          "hp": 928,
+          "atk": 675,
+          "def": 85,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 2.7
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 928,
+          "atk": 675,
+          "def": 85,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 2.7
+        },
+        "max": {
+          "hp": 1160,
+          "atk": 889,
+          "def": 107,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 2.7
+        },
+        "rangeId": "3-9"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1160,
+          "atk": 889,
+          "def": 107,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 2.7
+        },
+        "max": {
+          "hp": 1450,
+          "atk": 1085,
+          "def": 131,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 2.7
+        },
+        "rangeId": "3-9"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 90,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this Operator is believed to be non-infected.\n\n[Cell-Originium Fusion Rate] 0% \nOperator shows no signs of infection at this time.\n\n[Blood Crystal Density] 0.08u/L \nThis Operator has rarely come into contact with Originium."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Firewatch is everything a normal person would expect a sniper to be: steady, focused, cool-headed, and exceedingly firm. On the other hand, however, Firewatch is not a cold-blooded killer. It's just that very few people get the opportunity to see her show an emotion other than 'vengeance.' \nFirewatch regards any display of emotion as weakness. And in order to get her revenge, she can never allow herself to become weak."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "People who have come face-to-face with Firewatch have felt as though they were coming face-to-face with a forest. \nThe bowstring shakes and the arrow whistles through the air. This is Firewatch's wordless language, like the leaves and the branches rubbing together as the wind blows through the forest. \nFirewatch is tight-lipped when it comes to her past. I have not had an opportunity to learn more about her through her stories. \nBut voices do not make mistakes. Something many people have missed - everyone's got their own unique voice. Some voices come from the throat; others come from the heart. \nThe voice in Firewatch's heart comes from the forest. Moreover, it comes from the deepest depths of the forest. \nOnly in the deepest part of the forest can you hear the quiet and yet deafening silence. \nFirewatch once said that the people of her race and her friends are all buried there. \nJust what has she been through?"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "The favorite musical instrument of the Elafian people is the harmonica. Most of them are born in the frigid region of Sami. Some live in Ursus and the northern region of Kazimierz. Therefore, they enjoy small and medium-sized instruments. Aside from the harmonica, they also enjoy the flute, the fiddle, and the guitar.\nPlaying these instruments does not require using much energy. Given that the Elafian people spend all year long in autumnal and wintry climates, this makes these instruments suitable for their way of life. Moreover, it only takes one musician to send the whole room into an emotional state of joy or sorrow.\nSometimes, Firewatch will sit alone upon a bridge and play her harmonica. Each time she does this, she sits facing the north.\nWhenever I hear that harmonica and its mellifluous yet sad voice upon the wind, my heart follows as well and drifts towards the mountains and forests of the north."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Classified Log]\nMeteorite, the mercenary, is now Meteorite, Rhodes Island Operator. The first time this bowgun-wielding Sarkaz met Firewatch, the two said nary a word to one another. Now that they are on two separate squads, they never make an effort to communicate.\nThe two once fought side-by-side, but after the annihilation of Firewatch's hometown, they parted ways. Meeting by chance again at Rhodes Island, they once more fought with one purpose in mind. Whether the events of the past will play out once again is unknown.\nFor Rhodes Island, no matter what happens in the future, one thing must be avoided at all costs - dangers from within.\nHowever, Rhodes Island does not turn away those who have overcome great difficulty to come here just because of their complicated pasts.\nIf you've read this far, I'd like to implore you to heed a request I have concerning Firewatch.\nPlease guide her. Free her of her tethers. Lead her out of the gloomy forest of her past.\nLet her heavy desire for vengeance be buried amidst the dead leaves of the autumn."
+    }
+  ]
+}

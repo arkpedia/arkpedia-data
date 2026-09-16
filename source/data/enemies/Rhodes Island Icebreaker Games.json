@@ -1,0 +1,3762 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act2vmulti",
+    "label": "IG",
+    "name": "Rhodes Island Icebreaker Games",
+    "release_date": "2024-11-14"
+  },
+  "enemies": [
+    {
+      "slug": "supply_wagon",
+      "id": "enemy_4004_muvltr",
+      "name": "Supply Wagon",
+      "index": "IB1",
+      "rank": "Normal",
+      "sort": 1225,
+      "hidden": false,
+      "icon": "/enemies-icons/Supply Wagon.webp",
+      "flavour_text": "Logistics would soon realize that Engineering's latest supply wagon is a little too... eccentric to transport soda bottles. It has been repurposed to toss exploding soda bottles on the racecourse.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Throws exploding soda bottles, dealing True damage around itself (including to itself).",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 800,
+            "def": 600,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.5,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 1.5,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.8,
+                "projectile_life_time": 2.5,
+                "projectile_range": 1.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 600,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.5,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 1.5,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.8,
+                "projectile_life_time": 2.5,
+                "projectile_range": 1.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "soda_pop_supply_wagon",
+      "id": "enemy_4004_muvltr_2",
+      "name": "'Soda POP!' Supply Wagon",
+      "index": "IB2",
+      "rank": "Normal",
+      "sort": 1226,
+      "hidden": false,
+      "icon": "/enemies-icons/'Soda POP!' Supply Wagon.webp",
+      "flavour_text": "Logistics has realized that Engineering's latest supply wagon is a little too... eccentric to transport soda bottles. It has been repurposed to toss exploding soda bottles on the racecourse, an explosive race the likes of which has never been seen.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Throws exploding soda bottles, dealing True damage around itself (including to itself).",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 1000,
+            "def": 600,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 3.0,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 1.5,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.8,
+                "projectile_life_time": 2.5,
+                "projectile_range": 1.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 600,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 3.0,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 1.5,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.8,
+                "projectile_life_time": 2.5,
+                "projectile_range": 1.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "musbeast_supplier",
+      "id": "enemy_4005_musqrl",
+      "name": "Musbeast Supplier",
+      "index": "IB3",
+      "rank": "Normal",
+      "sort": 1227,
+      "hidden": false,
+      "icon": "/enemies-icons/Musbeast Supplier.webp",
+      "flavour_text": "The Musbeast Supplier likes to carry an oversized supply box on one paw as it scurries around the racecourse. It does so because it thinks it's super strong, and because it can do this, it believes it's super strong.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Chance to drop its supply box when taking damage.",
+          "format": "normal"
+        },
+        {
+          "text": "HP depletes over time when it loses its supply box.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 1000,
+            "def": 1000,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 0.8,
+            "attack_speed": 100.0,
+            "move_speed": 1.3,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "A",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "S",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "drop",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_key": "enemy_4011_musqhd"
+              }
+            },
+            {
+              "key": "pickup",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "drop",
+              "parameters": {
+                "enemy_key": "enemy_4011_musqhd",
+                "prob": 0.05
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 5000.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 1000,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 0.8,
+            "attack_speed": 100.0,
+            "move_speed": 1.3,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "A",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "S",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "drop",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_key": "enemy_4011_musqhd"
+              }
+            },
+            {
+              "key": "pickup",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "drop",
+              "parameters": {
+                "enemy_key": "enemy_4011_musqhd",
+                "prob": 0.05
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 5000.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "big_brawn_musbeast_supplier",
+      "id": "enemy_4005_musqrl_2",
+      "name": "'Big Brawn' Musbeast Supplier",
+      "index": "IB4",
+      "rank": "Normal",
+      "sort": 1228,
+      "hidden": false,
+      "icon": "/enemies-icons/'Big Brawn' Musbeast Supplier.webp",
+      "flavour_text": "The Musbeast Supplier likes to carry an oversized supply box on one paw and flex its biceps as it scurries around the racecourse. It does so because it thinks it's super strong, and because it can do this, it believes it's super strong.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Chance to drop its supply box when taking damage.",
+          "format": "normal"
+        },
+        {
+          "text": "HP depletes over time when it loses its supply box.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 1200,
+            "def": 800,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 0.8,
+            "attack_speed": 100.0,
+            "move_speed": 1.3,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "S",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "drop",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_key": "enemy_4011_musqhd"
+              }
+            },
+            {
+              "key": "pickup",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "drop",
+              "parameters": {
+                "enemy_key": "enemy_4011_musqhd",
+                "prob": 0.05
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 5000.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 800,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 0.8,
+            "attack_speed": 100.0,
+            "move_speed": 1.3,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "S",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "drop",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_key": "enemy_4011_musqhd"
+              }
+            },
+            {
+              "key": "pickup",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "drop",
+              "parameters": {
+                "enemy_key": "enemy_4011_musqhd",
+                "prob": 0.05
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 5000.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "sandbeast_supplier",
+      "id": "enemy_4006_mumole",
+      "name": "Sandbeast Supplier",
+      "index": "IB5",
+      "rank": "Normal",
+      "sort": 1229,
+      "hidden": false,
+      "icon": "/enemies-icons/Sandbeast Supplier.webp",
+      "flavour_text": "Logistics belatedly realized that sighting one sandbeast often means the presence of a dozen. They have been trained to serve as suppliers now, but there is always the risk of tripping over the supplies they scatter all over the place.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Restores a large amount of HP to all nearby enemies but itself when it takes a certain amount of damage.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 3.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "projectile_life_time": 3.0,
+                "projectile_range": 0.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Heal",
+              "parameters": {
+                "trigger_value": 5000.0,
+                "value": 2500.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 3.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "projectile_life_time": 3.0,
+                "projectile_range": 0.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Heal",
+              "parameters": {
+                "trigger_value": 5000.0,
+                "value": 2500.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "faircare_sandbeast_supplier",
+      "id": "enemy_4006_mumole_2",
+      "name": "'Faircare' Sandbeast Supplier",
+      "index": "IB6",
+      "rank": "Normal",
+      "sort": 1230,
+      "hidden": false,
+      "icon": "/enemies-icons/'Faircare' Sandbeast Supplier.webp",
+      "flavour_text": "Logistics belatedly realized that sighting one sandbeast often means the presence of a dozen. They have been trained to serve as suppliers now, but the medical room is filled with competitors who tripped over the supplies they scattered all over the place.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Restores a large amount of HP to all nearby enemies but itself when it takes a certain amount of damage.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 3.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "projectile_life_time": 3.0,
+                "projectile_range": 0.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Heal",
+              "parameters": {
+                "trigger_value": 5000.0,
+                "value": 2500.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 3.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "projectile_life_time": 3.0,
+                "projectile_range": 0.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Heal",
+              "parameters": {
+                "trigger_value": 5000.0,
+                "value": 2500.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "burdenbeast_supplier",
+      "id": "enemy_4007_murino",
+      "name": "Burdenbeast Supplier",
+      "index": "IB7",
+      "rank": "Normal",
+      "sort": 1231,
+      "hidden": false,
+      "icon": "/enemies-icons/Burdenbeast Supplier.webp",
+      "flavour_text": "No one understands the danger of the Rhodes Island arena better than a Burdenbeast Supplier. When it saw a ball hit by an Operator's claymore smash through the arena's wall, it couldn't help but cry out, 'Moo, moo!'",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Damage from the front is greatly reduced.",
+          "format": "normal"
+        },
+        {
+          "text": "Always faces the side where you have more units.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 45000,
+            "atk": 1800,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Weakness",
+              "parameters": {
+                "damage_resistance": 0.85
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Weakness",
+              "parameters": {
+                "damage_resistance": 0.85
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "timidthy_burdenbeast_supplier",
+      "id": "enemy_4007_murino_2",
+      "name": "'Timidthy' Burdenbeast Supplier",
+      "index": "IB8",
+      "rank": "Normal",
+      "sort": 1232,
+      "hidden": false,
+      "icon": "/enemies-icons/'Timidthy' Burdenbeast Supplier.webp",
+      "flavour_text": "No one understands the danger of the Rhodes Island arena better than a Burdenbeast Supplier. When it saw a ball hit by an Operator's claymore smash through the arena's wall, it's urgent moos must have meant, 'Please save me, God of Burdenbeasts!'",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Damage from the front is greatly reduced.",
+          "format": "normal"
+        },
+        {
+          "text": "Always faces the side where you have more units.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 70000,
+            "atk": 1800,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Weakness",
+              "parameters": {
+                "damage_resistance": 0.95
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Weakness",
+              "parameters": {
+                "damage_resistance": 0.95
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "hammer_supplier",
+      "id": "enemy_4008_mucat",
+      "name": "Hammer Supplier",
+      "index": "IB9",
+      "rank": "Normal",
+      "sort": 1233,
+      "hidden": false,
+      "icon": "/enemies-icons/Hammer Supplier.webp",
+      "flavour_text": "It is unusual, but not unheard of, to be injured when an arena cleaning cart runs over your toes. Things become somewhat surreal when there's an adorable beast on the cart eager to whoop you with a squeaky hammer.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Performs 5 heavy blows with greatly increased ATK. An attack that defeats a unit does not use up a count.",
+          "format": "normal"
+        },
+        {
+          "text": "When out of attack counts, cannot attack and takes significantly more damage for some time.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 480,
+            "def": 2000,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 1.4,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "C",
+            "def": "S",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 3.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "projectile_life_time": 3.0,
+                "projectile_range": 0.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "enforce",
+              "parameters": {
+                "atk_scale": 6.0,
+                "damage_scale": 10.0,
+                "duration": 5.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 2000,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 1.4,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "S",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 3.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "projectile_life_time": 3.0,
+                "projectile_range": 0.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "enforce",
+              "parameters": {
+                "atk_scale": 6.0,
+                "damage_scale": 10.0,
+                "duration": 5.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "rampage_hammer_supplier",
+      "id": "enemy_4008_mucat_2",
+      "name": "'Rampage' Hammer Supplier",
+      "index": "IB10",
+      "rank": "Normal",
+      "sort": 1234,
+      "hidden": false,
+      "icon": "/enemies-icons/'Rampage' Hammer Supplier.webp",
+      "flavour_text": "It is unusual, but not unheard of, to be injured when an arena cleaning cart runs over your toes. Things become somewhat scary when there's an adorable beast on the cart trying to whoop you for no reason with a squeaky hammer.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Performs 5 heavy blows with greatly increased ATK. An attack that defeats a unit does not use up a count.",
+          "format": "normal"
+        },
+        {
+          "text": "When out of attack counts, cannot attack and takes significantly more damage for some time.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 550,
+            "def": 2000,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 1.4,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "S",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 3.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "projectile_life_time": 3.0,
+                "projectile_range": 0.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "enforce",
+              "parameters": {
+                "atk_scale": 6.0,
+                "damage_scale": 10.0,
+                "duration": 5.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 2000,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 1.4,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "S",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 3.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "projectile_life_time": 3.0,
+                "projectile_range": 0.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "enforce",
+              "parameters": {
+                "atk_scale": 6.0,
+                "damage_scale": 10.0,
+                "duration": 5.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ironhead_forward",
+      "id": "enemy_4009_murgby",
+      "name": "Ironhead Forward",
+      "index": "IB11",
+      "rank": "Normal",
+      "sort": 1235,
+      "hidden": false,
+      "icon": "/enemies-icons/Ironhead Forward.webp",
+      "flavour_text": "The Ironhead Forward is known for his headdown tackles, headlong rushes, and headstrong nature.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Deals more damage to [Foldable Bastion].",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 1600,
+            "def": 200,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "C",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 3.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "projectile_life_time": 3.0,
+                "projectile_range": 0.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "enhance",
+              "parameters": {
+                "atk_scale": 1.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "charger_ironhead_forward",
+      "id": "enemy_4009_murgby_2",
+      "name": "'Charger' Ironhead Forward",
+      "index": "IB12",
+      "rank": "Normal",
+      "sort": 1236,
+      "hidden": false,
+      "icon": "/enemies-icons/'Charger' Ironhead Forward.webp",
+      "flavour_text": "The Ironhead Forward has his own motto: Find a heading, and head there headfirst.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Deals more damage to [Foldable Bastion].",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 1750,
+            "def": 200,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "C",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 3.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "projectile_life_time": 3.0,
+                "projectile_range": 0.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "enhance",
+              "parameters": {
+                "atk_scale": 1.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "long_armed_pitcher",
+      "id": "enemy_4010_mubsbl",
+      "name": "Long-Armed Pitcher",
+      "index": "IB13",
+      "rank": "Normal",
+      "sort": 1237,
+      "hidden": false,
+      "icon": "/enemies-icons/Long-Armed Pitcher.webp",
+      "flavour_text": "A once-in-a-generation pitcher who was born to throw. Ordinary ballgames have lost their appeal; he prefers the thrill of throwing at people.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Deals more damage to [Foldable Bastion].",
+          "format": "normal"
+        },
+        {
+          "text": "Prioritizes attacking units on [Foldable Bastions].",
+          "format": "normal"
+        },
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 700,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 3.5,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 3.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "projectile_life_time": 3.0,
+                "projectile_range": 0.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "enhance",
+              "parameters": {
+                "atk_scale": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "true_shot_long_armed_pitcher",
+      "id": "enemy_4010_mubsbl_2",
+      "name": "'True Shot' Long-Armed Pitcher",
+      "index": "IB14",
+      "rank": "Normal",
+      "sort": 1238,
+      "hidden": false,
+      "icon": "/enemies-icons/'True Shot' Long-Armed Pitcher.webp",
+      "flavour_text": "A once-in-a-generation pitcher who was born to throw. His grandfather once served in Gaul's grenadier battalion, so it's no wonder that he enjoys throwing at people.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Deals more damage to [Foldable Bastion].",
+          "format": "normal"
+        },
+        {
+          "text": "Prioritizes attacking units on [Foldable Bastions].",
+          "format": "normal"
+        },
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 26000,
+            "atk": 800,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 3.5,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "boomb",
+              "sp_cost": 0,
+              "cooldown": 3.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "projectile_life_time": 3.0,
+                "projectile_range": 0.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "enhance",
+              "parameters": {
+                "atk_scale": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "field_shooter",
+      "id": "enemy_4012_mumssi",
+      "name": "Field Shooter",
+      "index": "IB17",
+      "rank": "Normal",
+      "sort": 1239,
+      "hidden": false,
+      "icon": "/enemies-icons/Field Shooter.webp",
+      "flavour_text": "This musbeast was recruited as shooter under the reasoning that if it can leap high, it can kick a ball very, very far away.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes attacking the football towards your goal.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 1100,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "S"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.2,
+                "slapshot_force": 1.5
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "S"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.2,
+                "slapshot_force": 1.5
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "longshot_field_shooter",
+      "id": "enemy_4012_mumssi_2",
+      "name": "'Longshot' Field Shooter",
+      "index": "IB18",
+      "rank": "Normal",
+      "sort": 1240,
+      "hidden": false,
+      "icon": "/enemies-icons/'Longshot' Field Shooter.webp",
+      "flavour_text": "This musbeast was recruited as shooter under the reasoning that if it can leap high, it can kick a ball very, very far away. I mean really far away.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes attacking the football towards your goal.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 1350,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.2,
+                "slapshot_force": 1.8
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 3.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.2,
+                "slapshot_force": 1.8
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 3.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "field_goalie",
+      "id": "enemy_4013_mubufn",
+      "name": "Field Goalie",
+      "index": "IB19",
+      "rank": "Normal",
+      "sort": 1241,
+      "hidden": false,
+      "icon": "/enemies-icons/Field Goalie.webp",
+      "flavour_text": "This burdenbeast was recruited as goalkeeper under the reasoning that its head is so big that it can block the goal just by standing there.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes attacking the football towards your goal.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 35000,
+            "atk": 2000,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.5,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.5,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "brain_barrier_field_goalie",
+      "id": "enemy_4013_mubufn_2",
+      "name": "'Brain Barrier' Field Goalie",
+      "index": "IB20",
+      "rank": "Normal",
+      "sort": 1242,
+      "hidden": false,
+      "icon": "/enemies-icons/'Brain Barrier' Field Goalie.webp",
+      "flavour_text": "This burdenbeast was recruited as goalkeeper under the reasoning that its head is so big that it can block the goal just by standing there. There is even the off-chance that it catches the ball between its horns.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes attacking the football towards your goal.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 45000,
+            "atk": 2350,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.3,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.7,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.3,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.7,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "field_bludgeoner",
+      "id": "enemy_4014_mugnfu",
+      "name": "Field Bludgeoner",
+      "index": "IB21",
+      "rank": "Normal",
+      "sort": 1243,
+      "hidden": false,
+      "icon": "/enemies-icons/Field Bludgeoner.webp",
+      "flavour_text": "Can't lose if the opponent has no players left. If one swing doesn't do it, swing again.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes attacking your Operators.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 1500,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 0.0
+              }
+            },
+            {
+              "key": "searchtarget",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 0.0
+              }
+            },
+            {
+              "key": "searchtarget",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "basher_field_bludgeoner",
+      "id": "enemy_4014_mugnfu_2",
+      "name": "'Basher' Field Bludgeoner",
+      "index": "IB22",
+      "rank": "Normal",
+      "sort": 1244,
+      "hidden": false,
+      "icon": "/enemies-icons/'Basher' Field Bludgeoner.webp",
+      "flavour_text": "Can't lose if the opponent has no players left. If one swing doesn't... Nah, one swing always does it.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes attacking your Operators.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 60000,
+            "atk": 2000,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 330.0
+              }
+            },
+            {
+              "key": "searchtarget",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 330.0
+              }
+            },
+            {
+              "key": "searchtarget",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "rma70_spikeball",
+      "id": "enemy_4015_musucr",
+      "name": "RMA70 Spikeball",
+      "index": "IB23",
+      "rank": "Normal",
+      "sort": 1245,
+      "hidden": false,
+      "icon": "/enemies-icons/RMA70 Spikeball.webp",
+      "flavour_text": "A football that imitates RMA70 minerals to enrich the match experience. Its spikes are surprisingly benign. Players who have tried it say that kicking it is a highly interactive experience.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "A standard football.",
+          "format": "normal"
+        },
+        {
+          "text": "Can only be blocked by a Goalkeeper or unit with Block Count of 3 or higher.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000,
+            "atk": 10000,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "SS",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 450.0,
+                "friction_factor": 0.7,
+                "restitution_factor": 0.75,
+                "value": 2300.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 450.0,
+                "friction_factor": 0.7,
+                "restitution_factor": 0.75,
+                "value": 2300.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "fluffy_pink_balloon",
+      "id": "enemy_4016_mubuln",
+      "name": "Fluffy Pink Balloon",
+      "index": "IB24",
+      "rank": "Normal",
+      "sort": 1246,
+      "hidden": false,
+      "icon": "/enemies-icons/Fluffy Pink Balloon.webp",
+      "flavour_text": "A football that imitates a furry critter to enrich the match experience... Hey, where did it go? Okay, it's actually a real furry critter that's drifting through the air right now.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "A very light football that can be easily moved.",
+          "format": "normal"
+        },
+        {
+          "text": "Can only be blocked by a Goalkeeper or unit with Block Count of 3 or higher.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000,
+            "atk": 2500,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 395.0,
+                "friction_factor": 1.7,
+                "restitution_factor": 0.3,
+                "value": 500.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 395.0,
+                "friction_factor": 1.7,
+                "restitution_factor": 0.3,
+                "value": 500.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "compressed_ball",
+      "id": "enemy_4017_muinbl",
+      "name": "Compressed Ball",
+      "index": "IB25",
+      "rank": "Normal",
+      "sort": 1247,
+      "hidden": false,
+      "icon": "/enemies-icons/Compressed Ball.webp",
+      "flavour_text": "A football made from compressed building materials to enrich the match experience. 'Heavy' doesn't begin to describe it. Do your foot a favor and don't bother kicking it.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "A heavy football that is hard to move.",
+          "format": "normal"
+        },
+        {
+          "text": "Can only be blocked by a Goalkeeper or unit with Block Count of 3 or higher.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000,
+            "atk": 12000,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 2,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "SS",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 260.0,
+                "friction_factor": 0.19,
+                "restitution_factor": 1.0,
+                "value": 5500.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 2,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 260.0,
+                "friction_factor": 0.19,
+                "restitution_factor": 1.0,
+                "value": 5500.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "infused_originium_ball",
+      "id": "enemy_4018_muboom",
+      "name": "Infused Originium Ball",
+      "index": "IB26",
+      "rank": "Normal",
+      "sort": 1248,
+      "hidden": false,
+      "icon": "/enemies-icons/Infused Originium Ball.webp",
+      "flavour_text": "A football that imitates infused... Hey, why is it moving? Okay, it's actually a genuine infused Originium slug. Genuinely explosive, too!",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Chance to explode when kicked, stunning and damaging nearby units.",
+          "format": "normal"
+        },
+        {
+          "text": "Can only be blocked by a Goalkeeper or unit with Block Count of 3 or higher.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000,
+            "atk": 20000,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "SS",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "boom",
+              "parameters": {
+                "add_value_max": -2.0,
+                "add_value_min": -6.0,
+                "damage": 1500.0,
+                "duration": 1.5,
+                "max_value": 10.0,
+                "range_radius": 1.5,
+                "stun": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 390.0,
+                "friction_factor": 0.65,
+                "restitution_factor": 0.3,
+                "value": 3000.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "boom",
+              "parameters": {
+                "add_value_max": -2.0,
+                "add_value_min": -6.0,
+                "damage": 1500.0,
+                "duration": 1.5,
+                "max_value": 10.0,
+                "range_radius": 1.5,
+                "stun": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 390.0,
+                "friction_factor": 0.65,
+                "restitution_factor": 0.3,
+                "value": 3000.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "originite_prime_ball",
+      "id": "enemy_4019_mugold",
+      "name": "Originite Prime Ball",
+      "index": "IB27",
+      "rank": "Normal",
+      "sort": 1249,
+      "hidden": false,
+      "icon": "/enemies-icons/Originite Prime Ball.webp",
+      "flavour_text": "A football that looks like Originite Prime to enrich the match experience. Not actual Originium, so it is perfectly safe and does not explode.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Gives 3x score.",
+          "format": "normal"
+        },
+        {
+          "text": "Can only be blocked by a Goalkeeper or unit with Block Count of 3 or higher.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000,
+            "atk": 20000,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 2,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "SS",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 310.0,
+                "friction_factor": 0.48,
+                "restitution_factor": 0.5,
+                "value": 4500.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 2,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 310.0,
+                "friction_factor": 0.48,
+                "restitution_factor": 0.5,
+                "value": 4500.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "perpetual_rebounder",
+      "id": "enemy_4020_muboun",
+      "name": "Perpetual Rebounder",
+      "index": "IB28",
+      "rank": "Normal",
+      "sort": 1250,
+      "hidden": false,
+      "icon": "/enemies-icons/Perpetual Rebounder.webp",
+      "flavour_text": "A football inspired by an extremely unstable entity to enrich the match experience. It is as unpredictable as its inspiration, and has already been bouncing all over the field for half an hour... Somebody stop it, please!",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "A very bouncy football.",
+          "format": "normal"
+        },
+        {
+          "text": "Can only be blocked by a Goalkeeper or unit with Block Count of 3 or higher.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000,
+            "atk": 8000,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "SS",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 400.0,
+                "friction_factor": 0.12,
+                "restitution_factor": 1.0,
+                "value": 4500.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 400.0,
+                "friction_factor": 0.12,
+                "restitution_factor": 1.0,
+                "value": 4500.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

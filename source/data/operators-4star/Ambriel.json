@@ -1,0 +1,739 @@
+{
+  "name": "Ambriel",
+  "rarity": 4,
+  "class": "Sniper",
+  "branch": "Deadeye",
+  "faction": "Laterano",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS",
+    "Slow"
+  ],
+  "trait": "Prioritizes attacking the enemy with lowest DEF within range first",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Holiday HD29"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_302_glaze",
+  "otherLanguages": {
+    "Simplified Chinese": "安比尔",
+    "Traditional Chinese": "安比爾",
+    "Japanese": "アンブリエル",
+    "Korean": "엠브리엘"
+  },
+  "characterInfo": {
+    "File no.": "LT02",
+    "Operator Record": "Evening in the Holy City",
+    "Paradox Simulation": "Regional Silence",
+    "Illustrator": "m9nokuro 水滴鱼 ( Holiday HD29 )",
+    "Release Date": "2020/06/30",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Nozomi Nishida",
+    "Chinese": "Liu Zhixiao",
+    "English": "Melody Peng",
+    "Korean": "Son Seon-young"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "1 year",
+    "Place of Birth": "Laterano",
+    "Date of Birth": "January 13th",
+    "Race": "Sankta",
+    "Height": "160 cm",
+    "Infection Status": "Confirmed uninfected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Standard",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Precise Strike",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Has a 25% chance to Stun target for 2 seconds when attacking an enemy outside this unit's normal Attack Range"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Has a 28% (+3%) chance to Stun target for 2 seconds when attacking an enemy outside this unit's normal Attack Range"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ASPD +6"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Precise Strike"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Ambriel's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Radar Sweep .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Ambriel to Level 45.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 15000
+        },
+        {
+          "name": "Sniper Chip",
+          "quantity": 3
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 1
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Precise Strike .",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Ambriel to Elite 1 Level 60.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 60000
+        },
+        {
+          "name": "Sniper Chip Pack",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 16
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 6
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Snaring Shell",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "26–36 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range +1 tiles , and attacks Slow the target for 0.6 seconds",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 26
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Range +1 tiles , and attacks Slow the target for 0.6 seconds",
+            "initialSp": 10,
+            "spCost": 34,
+            "duration": 26
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Range +1 tiles , and attacks Slow the target for 0.6 seconds",
+            "initialSp": 10,
+            "spCost": 33,
+            "duration": 26
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Range +1 tiles , and attacks Slow the target for 0.7 seconds",
+            "initialSp": 10,
+            "spCost": 32,
+            "duration": 28
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Range +1 tiles , and attacks Slow the target for 0.7 seconds",
+            "initialSp": 10,
+            "spCost": 31,
+            "duration": 28
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Range +1 tiles , and attacks Slow the target for 0.7 seconds",
+            "initialSp": 10,
+            "spCost": 30,
+            "duration": 28
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Range +1 tiles , and attacks Slow the target for 0.8 seconds",
+            "initialSp": 10,
+            "spCost": 29,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Range +1 tiles , and attacks Slow the target for 0.8 seconds",
+            "initialSp": 10,
+            "spCost": 28,
+            "duration": 32
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Range +1 tiles , and attacks Slow the target for 1 seconds",
+            "initialSp": 10,
+            "spCost": 27,
+            "duration": 34
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Range +1 tiles , and attacks Slow the target for 1.2 seconds",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 36
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 1
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 2
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 2
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Radar Sweep",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "26–40 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +40% , Attack Range becomes global , but Attack Interval increases a bit , and attack wind-up takes longer when attacking an enemy outside of this unit's original range.",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 26
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +40% , Attack Range becomes global , but Attack Interval increases a bit , and attack wind-up takes longer when attacking an enemy outside of this unit's original range.",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 27
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +40% , Attack Range becomes global , but Attack Interval increases a bit , and attack wind-up takes longer when attacking an enemy outside of this unit's original range.",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 28
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +50% , Attack Range becomes global , but Attack Interval increases a bit , and attack wind-up takes longer when attacking an enemy outside of this unit's original range.",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +50% , Attack Range becomes global , but Attack Interval increases a bit , and attack wind-up takes longer when attacking an enemy outside of this unit's original range.",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 31
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +50% , Attack Range becomes global , but Attack Interval increases a bit , and attack wind-up takes longer when attacking an enemy outside of this unit's original range.",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 32
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +60% , Attack Range becomes global , but Attack Interval increases a bit , and attack wind-up takes longer when attacking an enemy outside of this unit's original range.",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 34
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +70% , Attack Range becomes global , but Attack Interval increases a bit , and attack wind-up takes longer when attacking an enemy outside of this unit's original range.",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 36
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +80% , Attack Range becomes global , but Attack Interval increases a bit , and attack wind-up takes longer when attacking an enemy outside of this unit's original range.",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 38
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +100% , Attack Range becomes global , but Attack Interval increases a bit , and attack wind-up takes longer when attacking an enemy outside of this unit's original range.",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 40
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 1
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 2
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Global Range",
+            "description": "Attack non-camouflauged enemies no matter where they are"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 2
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 4
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Laziness",
+      "facility": "Dormitory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Dormitory, self Morale recovered per hour -0.1 , but restores +0.2 Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
+    },
+    {
+      "name": "Order Distribution β",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +30%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Ambriel's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "DEA-X: Portable Radar Equipment",
+      "mission": {
+        "requirement1": "Defeat a total of 30 enemies with Ambriel's Radar Sweep (Ambriel cannot be a Support Unit)",
+        "requirement2": "Clear Main Theme 4-7 with a 3-star rating; a non-Support Ambriel must be deployed during the operation, and Ambriel must defeat at least 6 Infused Originium Slugs"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +65 , ATK +55",
+          "effectLabel": "New trait",
+          "effectText": "The further away the enemy, the higher the damage dealt (up to an increase of 15% )",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Polyester Pack",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 20000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +80 , ATK +68",
+          "effectLabel": "Precise Strike improved",
+          "effectText": "Has a 33% chance to Stun for 2.5 seconds when attacking an enemy outside this unit's normal Attack Range",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 15
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 25000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +95 , ATK +81",
+          "effectLabel": "Precise Strike improved",
+          "effectText": "Has a 33% chance to Stun for 3 seconds when attacking an enemy outside this unit's normal Attack Range",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 5
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 6
+            },
+            {
+              "name": "LMD",
+              "quantity": 30000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Ambriel is a citizen of\nLaterano\n. After many tests, she was allowed to join\nRhodes Island\n, where her skills in ambushing and long-range sniping helped her perform well in asymmetric operations.\nShe now serves in the Rhodes Island sniper team, providing long-range support.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 45,
+        "base": {
+          "hp": 785,
+          "atk": 437,
+          "def": 60,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.7
+        },
+        "max": {
+          "hp": 1020,
+          "atk": 608,
+          "def": 80,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.7
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 60,
+        "base": {
+          "hp": 1020,
+          "atk": 608,
+          "def": 80,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.7
+        },
+        "max": {
+          "hp": 1276,
+          "atk": 801,
+          "def": 100,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.7
+        },
+        "rangeId": "3-9"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1276,
+          "atk": 801,
+          "def": 100,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.7
+        },
+        "max": {
+          "hp": 1595,
+          "atk": 977,
+          "def": 122,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.7
+        },
+        "rangeId": "3-9"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 75,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there are no other signs of infection. At this time, this operator can be confirmed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Ambriel shows no signs of Oripathy infection.\n\n[Blood Originium-Crystal Density] 0.13u/L\nOperator Ambriel rarely comes in contact with Originium."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Ambriel was born in Laterano. In accordance with the tactical philosophy of the Sankta, Ambriel uses only a gun as her combat weapon of choice. However, unlike most of the other Sankta warriors who pursued modern gun kata techniques, Ambriel chose an outdated but classic rifle. After a simple modification and the installation of additional parts, this long gun quickly proved its worth in subsequent battles. \nIn Ambriel's words, the only reason she chose this gun was to avoid trouble - she has no desire to engage in close combat with a shorter-ranged gun, nor did she want to lug around the unwieldy components of a modern sniper rifle. \nEven though she uses a weapon that is considered anachronistic for the modern battlefield, because of her low-key nature and relatively inconspicuous position, she basically gets her work done, and therefore the top brass has no reason to find any fault with her."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Despite being a Sankta, Ambriel doesn't seem much different from the ordinary person. She is easygoing and not too striking, not seeming out of place to others wherever she might appear. If not for the long gun she carries in her hands, she doesn't seem much different from a student who just left school.\nAfter taking a post in Rhodes Island, Ambriel did not exhibit any unique hobbies. She enjoys snacks and desserts, and likes watching simple TV shows and movies with themes that don't require much thought. On her off days, she sometimes meets and chats with other Sankta operators.\nWhen people did notice her, it was mostly about the gun in her hands. Since Operators thoroughly unfamiliar with gun kata would often proselytize its power and benefits, these conversations often escalated into controversy.\nIn this regard, Ambriel would quietly sit down and listen to these discussions, thinking silently to herself: 'Good. Now fight.'"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "An answer that you'll often get from Ambriel is: 'I want something a bit more practical.' However, even she doesn't have a good idea of what that 'practicality' looks like.\nGenerally speaking, 'practical' refers to a satisfactory salary, stable relationships, trendy products that are novel and interesting, intoxicating luxury goods, and glamorous decorations... \nIn summation, isn't that just materialism?"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Operator Ambriel's personality is rather elusive, and even she has no idea what her personality is supposed to be. Perhaps she is simply accustomed to a life of stasis, and has not had an opportunity that really allows her to see herself clearly.\nAn opportunity like this is also a chance for a massive change.\nDoes Ambriel possess the will to change? Everything depends on the choice she makes."
+    }
+  ]
+}

@@ -1,0 +1,756 @@
+{
+  "name": "Brigid",
+  "rarity": 5,
+  "class": "Sniper",
+  "branch": "Loopshooter",
+  "faction": "Tara",
+  "umbrellaFactions": [
+    "Victoria"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS"
+  ],
+  "trait": "Can only attack while holding a boomerang projectile (projectile takes time to return)",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "When Elegies Are Ashes"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Bedtime Story"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4177_brigid",
+  "otherLanguages": {
+    "Chinese": "水灯心",
+    "Japanese": "ブリギッド",
+    "Korean": "브리지드"
+  },
+  "characterInfo": {
+    "File no.": "DB04",
+    "Operator Record": "Day of Departure",
+    "Illustrator": "Yukuso",
+    "Release Date": "2025/08/28",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Arisa Sakuraba",
+    "Chinese": "Chen Yang",
+    "English": "Aoife Dunne",
+    "Korean": "Kim Yi-an"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "3 years",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "February 1st",
+    "Race": "Perro",
+    "Height": "170 cm",
+    "Infection Status": "Originium crystals distributed across surface of body, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Excellent",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Practiced Knot-Tier",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "After dealing damage 20 times, gains 15% Physical Dodge"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "After dealing damage 20 times, gains 18% (+3%) Physical Dodge"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "After dealing damage 20 times, gains 35% Physical Dodge"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "After dealing damage 20 times, gains 38% (+3%) Physical Dodge"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Practiced Knot-Tier"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Brigid's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Practiced Knot-Tier .",
+        "New skill: Bring to Heel .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Brigid to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Sniper Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Practiced Knot-Tier improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Brigid to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Sniper Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Solidified Fiber Board",
+          "quantity": 8
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 12
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Familiarity",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack deals 105% of ATK as Physical damage, and the boomerang projectile repeatedly bounces between enemies (max 2 times)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack deals 105% of ATK as Physical damage, and the boomerang projectile repeatedly bounces between enemies (max 2 times)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack deals 110% of ATK as Physical damage, and the boomerang projectile repeatedly bounces between enemies (max 2 times)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack deals 110% of ATK as Physical damage, and the boomerang projectile repeatedly bounces between enemies (max 2 times)",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack deals 110% of ATK as Physical damage, and the boomerang projectile repeatedly bounces between enemies (max 3 times)",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack deals 115% of ATK as Physical damage, and the boomerang projectile repeatedly bounces between enemies (max 3 times)",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack deals 115% of ATK as Physical damage, and the boomerang projectile repeatedly bounces between enemies (max 3 times)",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack deals 120% of ATK as Physical damage, and the boomerang projectile repeatedly bounces between enemies (max 3 times)",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack deals 125% of ATK as Physical damage, and the boomerang projectile repeatedly bounces between enemies (max 3 times)",
+            "initialSp": 0,
+            "spCost": 2,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack deals 130% of ATK as Physical damage, and the boomerang projectile repeatedly bounces between enemies (max 3 times)",
+            "initialSp": 0,
+            "spCost": 2,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "Crystalline Component",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 4
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Bring to Heel",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Manual",
+        "duration": "25 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +5% , and projectiles will latch onto enemies they hit, slowing them for 1 second and slashing them 4 extra times",
+            "initialSp": 5,
+            "spCost": 34,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +10% , and projectiles will latch onto enemies they hit, slowing them for 1 second and slashing them 4 extra times",
+            "initialSp": 5,
+            "spCost": 33,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +15% , and projectiles will latch onto enemies they hit, slowing them for 1 second and slashing them 4 extra times",
+            "initialSp": 5,
+            "spCost": 32,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +20% , and projectiles will latch onto enemies they hit, slowing them for 1 second and slashing them 4 extra times",
+            "initialSp": 10,
+            "spCost": 31,
+            "duration": 25
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +25% , and projectiles will latch onto enemies they hit, slowing them for 1 second and slashing them 4 extra times",
+            "initialSp": 10,
+            "spCost": 30,
+            "duration": 25
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +30% , and projectiles will latch onto enemies they hit, slowing them for 1 second and slashing them 4 extra times",
+            "initialSp": 10,
+            "spCost": 29,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +35% , and projectiles will latch onto enemies they hit, slowing them for 1 second and slashing them 4 extra times",
+            "initialSp": 15,
+            "spCost": 28,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +40% , and projectiles will latch onto enemies they hit, slowing them for 1 second and slashing them 4 extra times",
+            "initialSp": 15,
+            "spCost": 27,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +45% , and projectiles will latch onto enemies they hit, slowing them for 1 second and slashing them 4 extra times",
+            "initialSp": 15,
+            "spCost": 26,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +50% , and projectiles will latch onto enemies they hit, slowing them for 1 second and slashing them 4 extra times",
+            "initialSp": 15,
+            "spCost": 25,
+            "duration": 25
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 3
+            },
+            {
+              "name": "Aketon",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Transmuted Salt",
+          "quantity": 3
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Restless Rover α",
+      "facility": "Office",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the HR Office, HR contacting speed +30% and Morale consumed per hour +1"
+    },
+    {
+      "name": "Restless Rover βReplacesRestless Rover α",
+      "facility": "Office",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the HR Office, HR contacting speed +45% and Morale consumed per hour +1"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Brigid's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "LPS-X: Color of The Wind",
+      "mission": {
+        "requirement1": "Defeat a total of 20 enemies with your own Brigid",
+        "requirement2": "Clear Main Theme 4-6 with a 3-star rating; You must deploy your own Brigid, and use Bring to Heel at least 2 times"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +150 , ATK +18",
+          "effectLabel": "Trait improved",
+          "effectText": "Increases ATK to 110% when attacking enemies within the 8 surrounding tiles",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +180 , ATK +30",
+          "effectLabel": "Practiced Knot-Tier improved",
+          "effectText": "After dealing damage 18 times, gains +6% ATK, +40% Physical Dodge",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +210 , ATK +40",
+          "effectLabel": "Practiced Knot-Tier improved",
+          "effectText": "After dealing damage 16 times, gains +10% ATK, +45% Physical Dodge",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Compound Cutting Fluid",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Brigid, a nomad. Said to be from one of Tara's ancient wandering tribes, who have lived on the plains and hills since time immemorial. They also serve as traditional couriers for Catastrophe warnings, mail, and other related tasks. At Operator\nReed\n's recommendation, she has started working with Rhodes Island, receiving Oripathy treatment while taking part in battle as a sniper operator.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 999,
+          "atk": 217,
+          "def": 58,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 15,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1428,
+          "atk": 362,
+          "def": 98,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 15,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1428,
+          "atk": 362,
+          "def": 98,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 17,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1880,
+          "atk": 518,
+          "def": 140,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 17,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "y-7"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1880,
+          "atk": 518,
+          "def": 140,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 17,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 2350,
+          "atk": 640,
+          "def": 165,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 17,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "y-7"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 75,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 3%\nA few small Originium crystals can be seen on the back of Operator Brigid's waist.\n\n[Blood Originium-Crystal Density] 0.14u/L\n'She's certainly very healthy. Even if she hadn't turned around, lifted up her shirt, and pointed out the crystals to me on her own, based on her blood test results, she's in better condition than most Catastrophe Messengers I've checked over before. Maybe those Taran nomadic tribes have some sort of special method to protect themselves? ...What's that? She just follows along whenever the burdenbeasts migrate? That works?'"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Operator Brigid was born in the plains of southern Victoria. As a member of one of the few nomadic tribes there, she knows many legends and stories that modern Taran city-dwellers are unfamiliar with. Once she became an adult, she split from her tribe and became a solitary drifter until a series of localized conflicts broke out between Tara and its neighbors. During this period of unrest, she continued her nomadic lifestyle, taking on work that involved warning people about Catastrophes and delivering messages, relying on her plentiful experience with wilderness survival and long-distance travel to do so.\nWe are unsure how she balances all this traveling for work with her personal life. Maybe it's as she says: her life is an 'endless road'. This does match the first impression she usually gives: cheerful, uncomplicated, and hyperactive.\n\n[Addendum]\nAs per protocol, we were required to sit down with her for a serious conversation, and to our surprise we learned another side of the Na Saoirsí incident, as seen through her eyes. When we asked for her personal understanding of the matter, she had this to say:\n'Those who can see the flames in others' hearts can also share some of their own soul's fire.'\nWe had no idea what to make of this, especially as a response to our question, until she explained further.\nAccording to her, in the tribes' distant past, this ability protected their people from the dangers of the wilds and the darkness, but such flames also burn away at their wielder's life. As such, those who disregard the cost and freely give away their flame often run into hardships, and never have happy endings of their own. Even so, the people still choose to place great expectations on those with this extraordinary ability, and hold them in the highest esteem. The authority and prestige held by the Red Dragon stem from this respect.\nThis clearly does not match our understanding of how political power takes shape in modern society, and we can only surmise that it is a folk tale passed down orally among Tara's nomadic tribes. However, if we consider that ability a form of Originium Arts, and compare it to a tradition from another obscure Taran community Brigid once mentioned—the 'wakemen' and their 'fire-returning ceremony'—it is not difficult to see the similarities. Because of this, we lean towards considering the legend an attempted explanation of the wakemen's Arts, rather than historical evidence of any kind of Victorian regime change.\n\nThat might be where it comes from, but it's not how the legend goes! The Red Dragon gave away her fire, and if she don't get it back, she'll die. Simple as.\n—A recording Operator Brigid made at HR"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "According to our background checks, Brigid left the city and returned to the plains following the Na Saoirsí incident. While she is currently a Rhodes Island operator, she is often away on field work, and never stays on the landship for long. Thus, we recommend inquiring into her whereabouts when necessary, but there is no need to actively track her.\n\n[Excerpt from a Rhodes Island Clubs bulletin board announcement]\n'Topology Lovers Research Group third official roundtable and reception will be held at the mid-level activity room—specific details can be found on your personal terminal. At this roundtable, we are fortunate to welcome an expert in topology's more pragmatic side, here to demonstrate some special knot-tying techniques. Modern topological research grew out of Knot theory, and knots themselves possess a long history and cultural significance...'\n\n'Notice of Suspension of Racing Club activities: the planned Saturday afternoon race in the living area corridors and the planned weekly Friday evening back-and-forth sprint on the deck have been canceled. We ask club members who see this notice to pass along the news. We are currently waiting on rescheduled dates to be decided.'\n\n'Disciplinary Notice: several days ago, two members of the Racing Club, Brigid and Grani, held impromptu sprinting competitions in the mid-level corridors. As they did not give any advance notice or clear the corridors of personnel, they caused many passing operators to imitate them, creating a deleterious effect on pedestrian flow and safety in the corridors on that level. Similar activities are now suspended, and the involved operators have been fined.'\n\n[Racing Club message board]\nis brigid back yet\nalso how come she left in the first place\nim gonna ask the radiant knight when we can start racing again\n—Grani\n1) No.\n2) Don't know.\n3) Don't bother her.\n—Tequila\nis brigid back yet\n—Windflit\nNO!!\n—Wild Mane"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "The Catastrophe Messengers Rhodes Island often works with have never met a 'colleague' quite like Brigid before.\nFirst of all, it must be noted that, contrary to what you might think, Catastrophe Messengers generally do not engage in the routine letter and parcel deliveries that standard Messengers do. They are mainly dedicated to delivering Catastrophe warnings, and use unique methods of intel sharing and transmitting among themselves in order to be ready to handle any unexpected occurrences. In that sense, it is difficult to see Brigid working by herself in Tara as anything more than an ordinary Messenger handling mail or war orders.\nIt took a follow-up investigation for us to understand more. Traditional methods for forecasting Catastrophes have been passed down in Brigid's tribe for generations. When she set out on her own, it was these techniques that allowed her to aid isolated nomadic cities that actual Catastrophe Messengers were unable to help find shelter.\nAccording to her, it was a friend's suggestion that prompted her to call herself a 'Catastrophe Messenger' when she registered with us. She does not seem too clear on what precisely that entails.\n\nWhat's the big difference between helping deliver letters and warning people about Catastrophes? They're both just passing on info.\nMore importantly, what kinda arsehole would I have to be to see the signs of a Catastrophe and not go tell the people in the way?\nRight, since I'm usually following the burdenbeasts to keep an eye on the Catastrophe, sometimes I'll have to make a run for the city to warn them in time, even if the beasts haven't made it to safety yet. But even if I run, I still don't always make it in time... That's why I try to run faster than ever, little by little, so I can make it more often.\n—HR audio log\n\n[Addendum]\nAfter hearing about this, several experienced Catastrophe Messengers expressed a desire to introduce Brigid to modern Catastrophe warning systems so she could perform her duties better than ever. They were quick to put their ideas into practice. Aside from sharing information with her, they decided to use their own wages to put together a set of basic Catastrophe forecasting equipment, giving it to her in Rhodes Island's name.\nAlthough Brigid did ultimately refuse it, saying she'd find a way to pay for it herself, she was happy to accept their gift of a comms terminal of the same model commonly used by Catastrophe Messengers, becoming a part of their everyday group chat."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Operator: Brigid\nTime: three months ago\nBooks borrowed: <i>Local Maps of Tara</i> (1098 edition)\n\nWanted to borrow a map, seeing how I lost the one I drew.\nWhat map? Y'know, a map, just point 'em out and I'll go find it myself.\nErr... All these look real different from what I remember. Why's that?\nThe map I wanted... Lemme sketch for you it real quick—Oh, I want a 'map of Tara'? Let's have a look then...\nAye, that's the one! But we usually just call 'em maps, no Tara.\n—Excerpt from a reader's inquiry at the library's information desk\n\nOperator: Brigid\nTime: recent\nBooks borrowed:\n<i>Atlas of Victoria</i> (3rd edition, 1072) (Recommended classification: Transport & Travel)\n<i>Traveler's Maps of Leithanien</i> (Hardcover edition)\n<i>Maps of Ursus</i> (Bilingual boxset edition)\n<i>A Grand Overview of the Lands of Yan</i> (Recommended classification: Historical fiction)\n......\n<i>Origins of the Taran Script</i> (writing workbook included)\n\nDue to often missing return deadlines, Operator Brigid will have to undergo a more detailed registration process whenever borrowing books or applying for extensions. Additionally, considering she borrows for a specific purpose and mostly only borrows from a single category of materials, and how some of these maps are the only surviving copies, we strongly suggest she use the photocopier in the future.\n\nThe photocopier's so slow! I'll return 'em next time I'm back! Brigid\n—A line of shaky handwriting written on the library loan record, reconstructed with difficulty after being noticed by an operator familiar with her writing style"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "[Secondary Security Screening record]\n1. A straw burdenbeast, 20cm x 16cm x 7cm, handmade. No suspicious liquids detected, shiny surface is due to burdenbeast oil.\n2. A small piece of cheese, appears moldy. Testing confirms it is not moldy. The spots on its surface are where this type of cheese gets its characteristic flavor from.\n3. A bone knife, clear traces of hand-polishing. Dull, can barely cut fruit.\n4. Two medals, appear to be promotion medals issued by Rhodes Island HR. After further investigation, owner is already in our records as Brigid.\n5. A glass bottle, height approx. 7cm, mouth diameter 3cm, filled with a clear liquid, labeled 'Dossoles'. Testing shows the liquid in the bottle is 100% artificial seawater, with some special method used to keep it clear with 0 precipitation or sediment.\n......\n11. A collection of anonymous Taran poems with a note attached. Note says: 'The grass here is different from other lands, while the sky here's bluer than yesterday's. All belongs to tomorrow, and tomorrow's always a brand new day, a day unlike any other.'\n\n...Aside from a couple things, most of this stuff has to be taken out of your bags for the security inspection, then a second one if you want any of it to reach the Doctor's desk. You really not worried about all that hassle?\n—Closure\n\nHuh? No one ever told me to open my bag. I just jumped in over that little gate over there, even made sure to say hi to the lady minding the door!\n—Brigid\n\n?\n—Closure"
+    }
+  ]
+}

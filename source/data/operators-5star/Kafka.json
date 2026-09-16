@@ -1,0 +1,763 @@
+{
+  "name": "Kafka",
+  "rarity": 5,
+  "class": "Specialist",
+  "branch": "Executor",
+  "faction": "Columbia",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Fast-Redeploy",
+    "Crowd-Control"
+  ],
+  "trait": "Significantly reduced Redeployment Time",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Cardboard Fairy"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_214_kafka",
+  "otherLanguages": {
+    "Chinese": "卡夫卡",
+    "Japanese": "カフカ",
+    "Korean": "카프카"
+  },
+  "characterInfo": {
+    "File no.": "CB06",
+    "Operator Record": "Let's Keep That a Secret",
+    "Paradox Simulation": "Something Wicked This Way Comes",
+    "Illustrator": "NoriZC",
+    "Release Date": "2021/06/22",
+    "Kernel Addition Date": "2024/12/17"
+  },
+  "characterVoices": {
+    "Japanese": "Miyu Tomita",
+    "Chinese": "Xiao Sibai (credited as \"Shi Haku\" in EN)",
+    "English": "Abby Trott",
+    "Korean": "Woo Jeong-shin"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Columbia",
+    "Date of Birth": "December 1st",
+    "Race": "Liberi",
+    "Height": "149 cm",
+    "Infection Status": "Originium crystals distributed across surface of body, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Excellent",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Misdirection",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "When skill is active, Block becomes 0 and gain Camouflage"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When skill is active, ATK +8%, Block becomes 0 and Kafka gains Camouflage"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When skill is active, ATK +11% (+3%) , Block becomes 0 and Kafka gains Camouflage"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When skill is active, ATK +15%, Block becomes 0 and Kafka gains Camouflage"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When skill is active, ATK +18% (+3%) , Block becomes 0 and Kafka gains Camouflage"
+        }
+      ],
+      "technique": [
+        {
+          "name": "Camouflage",
+          "description": "Has a time period of not receiving any attacks except AOE and environmental damage"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Max HP +150"
+      },
+      {
+        "level": 4,
+        "benefit": "Redeployment time -2 seconds"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Misdirection"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Kafka's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Shears of Surrealism .",
+        "Misdirection improved."
+      ],
+      "prerequisite": "Raise Kafka to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Specialist Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Misdirection improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Kafka to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Specialist Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Polymerized Gel",
+          "quantity": 8
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 15
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Cube of Absurdism",
+        "recoveryType": "Passive",
+        "activationType": null,
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "After deployment, stops attacking for 5 seconds, and at the same time puts all surrounding ground enemies to Sleep . When the skill ends, deals 250% ATK as Arts damage to all surrounding ground enemies",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "After deployment, stops attacking for 5 seconds, and at the same time puts all surrounding ground enemies to Sleep . When the skill ends, deals 260% ATK as Arts damage to all surrounding ground enemies",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "After deployment, stops attacking for 5 seconds, and at the same time puts all surrounding ground enemies to Sleep . When the skill ends, deals 270% ATK as Arts damage to all surrounding ground enemies",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "After deployment, stops attacking for 5 seconds, and at the same time puts all surrounding ground enemies to Sleep . When the skill ends, deals 300% ATK as Arts damage to all surrounding ground enemies",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "After deployment, stops attacking for 5 seconds, and at the same time puts all surrounding ground enemies to Sleep . When the skill ends, deals 310% ATK as Arts damage to all surrounding ground enemies",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "After deployment, stops attacking for 5 seconds, and at the same time puts all surrounding ground enemies to Sleep . When the skill ends, deals 320% ATK as Arts damage to all surrounding ground enemies",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "After deployment, stops attacking for 5 seconds, and at the same time puts all surrounding ground enemies to Sleep . When the skill ends, deals 350% ATK as Arts damage to all surrounding ground enemies",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "After deployment, stops attacking for 5 seconds, and at the same time puts all surrounding ground enemies to Sleep . When the skill ends, deals 380% ATK as Arts damage to all surrounding ground enemies",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "After deployment, stops attacking for 5 seconds, and at the same time puts all surrounding ground enemies to Sleep . When the skill ends, deals 410% ATK as Arts damage to all surrounding ground enemies",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "After deployment, stops attacking for 5 seconds, and at the same time puts all surrounding ground enemies to Sleep . When the skill ends, deals 450% ATK as Arts damage to all surrounding ground enemies",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Shears of Surrealism",
+        "recoveryType": "Passive",
+        "activationType": null,
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "After deployment, immediately deals 200% ATK as Arts damage to all enemies in within the frontal target tile ; For the next 10 seconds, continuously attacks ground units in that target tile with Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "After deployment, immediately deals 210% ATK as Arts damage to all enemies in within the frontal target tile ; For the next 10 seconds, continuously attacks ground units in that target tile with Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "After deployment, immediately deals 220% ATK as Arts damage to all enemies in within the frontal target tile ; For the next 10 seconds, continuously attacks ground units in that target tile with Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "After deployment, immediately deals 250% ATK as Arts damage to all enemies in within the frontal target tile ; For the next 11 seconds, continuously attacks ground units in that target tile with Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "After deployment, immediately deals 260% ATK as Arts damage to all enemies in within the frontal target tile ; For the next 11 seconds, continuously attacks ground units in that target tile with Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "After deployment, immediately deals 270% ATK as Arts damage to all enemies in within the frontal target tile ; For the next 11 seconds, continuously attacks ground units in that target tile with Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "After deployment, immediately deals 300% ATK as Arts damage to all enemies in within the frontal target tile ; For the next 12 seconds, continuously attacks ground units in that target tile with Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "After deployment, immediately deals 330% ATK as Arts damage to all enemies in within the frontal target tile ; For the next 13 seconds, continuously attacks ground units in that target tile with Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "After deployment, immediately deals 360% ATK as Arts damage to all enemies in within the frontal target tile ; For the next 14 seconds, continuously attacks ground units in that target tile with Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "After deployment, immediately deals 400% ATK as Arts damage to all enemies in within the frontal target tile ; For the next 15 seconds, continuously attacks ground units in that target tile with Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 6
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 3
+        },
+        {
+          "name": "Aketon",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Handicrafts α",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, the chance of getting higher-yield Precious Metal orders is increased slightly (rate is influenced by length of work time), and Morale consumed per hour is reduced by -0.25"
+    },
+    {
+      "name": "Handicrafts βReplacesHandicrafts α",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, the chance of getting higher-yield Precious Metal orders is increased (rate is influenced by length of work time), and Morale consumed per hour is reduced by -0.25"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Kafka's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "EXE-Y: Rubik's Cube Pendant",
+      "mission": {
+        "requirement1": "Defeat a total of 50 enemies with Kafka's skills (Kafka cannot be a Support Unit)",
+        "requirement2": "Clear Main Theme 2-7 with a 3-star rating; You must deploy your own Kafka, and have Kafka's skills defeat at least 10 enemies"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +80 , ATK +45",
+          "effectLabel": "New trait",
+          "effectText": "When there are no allied units in the four adjacent tiles, ATK +10%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +100 , ATK +54",
+          "effectLabel": "Misdirection improved",
+          "effectText": "When skill is active, ATK +22%, Block becomes 0 and gain Camouflage",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +120 , ATK +60",
+          "effectLabel": "Misdirection improved",
+          "effectText": "When skill is active, ATK +25%, Block becomes 0 and gain Camouflage",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Former gardener from a\nColumbian\ncity, joined\nRhodes Island\non\nSilence's\nreferral.\nRobustly talented, keen-witted, and ever lively no matter the secret mission she's on.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 783,
+          "atk": 202,
+          "def": 140,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 7,
+          "block": 1,
+          "interval": 0.93
+        },
+        "max": {
+          "hp": 1044,
+          "atk": 298,
+          "def": 200,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 7,
+          "block": 1,
+          "interval": 0.93
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1044,
+          "atk": 298,
+          "def": 200,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 9,
+          "block": 1,
+          "interval": 0.93
+        },
+        "max": {
+          "hp": 1306,
+          "atk": 409,
+          "def": 261,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 9,
+          "block": 1,
+          "interval": 0.93
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1306,
+          "atk": 409,
+          "def": 261,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 9,
+          "block": 1,
+          "interval": 0.93
+        },
+        "max": {
+          "hp": 1675,
+          "atk": 525,
+          "def": 311,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 9,
+          "block": 1,
+          "interval": 0.93
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 350,
+      "atk": 0,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests have shown the outlines of her internal organs to be indistinct due to abnormal shadows. Originium granules have been detected in her circulatory system, confirming her to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 5%\nSmall amounts of crystals distributed across surface of Operator's body.\n\n[Blood Originium-Crystal Density] 0.19u/L\nPer the Operator's description, we can determine her Oripathy fundamentally took gradual shape over the course of her frequent, varied contact with strangers. Owing to her healthy lifestyle, nevertheless, her condition hasn't notably worsened, and she will be receiving further treatment."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "A short Liberi girl with a grin permanently plastered on her face.\nHer conduct and manners are packed with deliberate good-kid acts that anyone can see through at a glance. Moreover, it's clear that she's fully aware of it herself, and she still does it on purpose with not the slightest intent of correcting the behavior; this is to the extent that Operators don't rumor her too well, though she doesn't seem concerned.\nHowever, she hates being taken as a small child due to her height; this will quickly wipe away her facade to reveal the boiling anger beneath."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "From Kafka's own perspective, she had no initial plans to join Rhodes Island.\nFollowing the onboarding of Mountain and Robin, as well as Lotus, she intended to leave, but was deposited here by Silence.\nThe cause was her insistence upon keeping her Oripathy hidden from Silence, which was exposed at the time of her physical examination aboard Rhodes Island. Resulting dialogue within the Medical Department that day follows:\n'Kafka, the entire time, I never realized you contracted Oripathy! Why did you not tell me!?'\n'Tch. Busted, huh... I didn't wanna 'cause I KNEW you'd chew me out me like this...'\n'Regardless, you're coming with me to the Medical Department for a checkup!'\n'Wha? No, heck off! I'm going back to Columbia!'\n'That's not happening.'\n'Waaagh, stop pullin' me! I don't got the cash to get treated in a place like this!'\n'I'll cover your costs. You have no cause to worry.'\n'That ain't the problem here... aw, forget it, whatever...'\nTo sum up, once Kafka's exam results came out, under Silence's very firm demand, she ultimately agreed to stay at Rhodes Island, and in the end became an Operator."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "After you realize Kafka's true identity, her good-kid act becomes a lot easier to explain.\nIn truth, beneath her guise as a gardener, she's wandered amongst the petty gangs of the city's underclass—as a gang member herself.\nOne could say, as an orphan, she grew up moving from place to place. One could say, as someone with gang dealings far and wide from childhood, she caught onto a survival philosophy of her own. That philosophy's embodiment—playing the good kid.\nShe absolutely does not care if people hate her for this mask of hers; really, it might make her happy. She doesn't want to be adored by very many, nor is she planning on adoring very many herself. This painstaking pretense is, as she sees it, the optimal tool for maintaining her sense of distance from others.\nIt's clear this approach stems from the day-to-day affairs of the gray zone—betrayal, deceit, bloodshed. In such surroundings, putting yourself first is the best approach."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "UNUSED"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "When she received her second promotion, it caught us off guard that from Kafka's show of emotion, we could feel some kind of genuine sincerity.\nIt's understandable, though. All those who have paid a little attention to her can tell—when she'd just come to Rhodes Island, she was an artful dodger, unwilling to assume any responsibility. The present Kafka may well look the same as back then, but inside, she's long since changed.\nShe'll bring young children nice little surprises on the sly, and she'll aid those who need it without batting an eye; in off time between missions, she'll commonly show up in Perfumer's garden, and the two get along very well these days.\nIt's clear as day, she's found a place for herself in Rhodes Island now.\nJust as we'd determined at the start, though life in the Columbian gray zone made her unwilling by nature to bare her soul to others, that nature itself was kind all along. It leads us to suppose, even, that she only took on such a nature to keep herself alive, disguising herself—cheating herself."
+    }
+  ]
+}

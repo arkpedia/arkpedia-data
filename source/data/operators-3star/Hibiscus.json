@@ -1,0 +1,328 @@
+{
+  "name": "Hibiscus",
+  "rarity": 3,
+  "class": "Medic",
+  "branch": "Medic",
+  "faction": "Op Reserve A1",
+  "umbrellaFactions": [
+    "Rhodes Island"
+  ],
+  "connectedFactions": [
+    "Victoria"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing"
+  ],
+  "trait": "Restores the HP of allies",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": "Hibiscus the Purifier",
+  "skins": [
+    "Night Watcher"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_120_hibisc",
+  "otherLanguages": {
+    "Chinese": "芙蓉",
+    "Japanese": "ハイビスカス",
+    "Korean": "히비스커스"
+  },
+  "characterInfo": {
+    "File no.": "PA13",
+    "Operator Record": "The Best Cure",
+    "Paradox Simulation": "\"Continued Attention\"",
+    "Illustrator": "下野宏铭",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Yuka Iguchi",
+    "Chinese": "Gui Niang (credited as \"D. QQ\" in EN)",
+    "English": "Yuuki Luna",
+    "Korean": "Bang Yeon-jee"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "1 year",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "June 21st",
+    "Race": "Sarkaz",
+    "Height": "153 cm",
+    "Infection Status": "Infection confirmed by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Healing Up",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "ATK +4%"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "ATK +8%"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +18"
+      },
+      {
+        "level": 5,
+        "benefit": "Redeployment time -6 seconds"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Hibiscus's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Healing Up .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Hibiscus to Level 40.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 10000
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Healing Up α",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +10%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +15%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +20%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +30%",
+            "initialSp": 0,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +35%",
+            "initialSp": 0,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +40%",
+            "initialSp": 0,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +50%",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": null,
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": null
+  },
+  "baseSkills": [
+    {
+      "name": "Thoughtfulness",
+      "facility": "Dormitory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Dormitory, restores +0.55 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place)"
+    },
+    {
+      "name": "Nutriology",
+      "facility": "Workshop",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to the Workshop to process elite material , the production rate of byproduct increases by 70%"
+    }
+  ],
+  "modules": [],
+  "review": {
+    "official": "Born in\nLondinium\nin\nVictoria\n, Hibiscus is the older twin sister of her fellow\nOperator\n,\nLava\n. After contracting\nOripathy\n, she came to\nRhodes Island\nfor treatment. While undergoing that treatment, she began to dream of helping others. Her passion for caring for others, as well as her hard work, have led Hibiscus to become a Rhodes Island Medic.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 40,
+        "base": {
+          "hp": 682,
+          "atk": 153,
+          "def": 61,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 15,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 975,
+          "atk": 248,
+          "def": 82,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 15,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 55,
+        "base": {
+          "hp": 975,
+          "atk": 248,
+          "def": 82,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1220,
+          "atk": 345,
+          "def": 110,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-3"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 45,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests have shown the outlines of her internal organs to be indistinct due to abnormal shadows. Originium granules have been detected in her circulatory system, confirming her to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 7.4%\nShe presents no obvious external symptoms of Oripathy.\n\n[Blood Originium-Crystal Density] 0.2 u/L\nDegree of infection is minor and physical symptoms are not yet present."
+    },
+    {
+      "section": "Originium Arts Rating",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Though she possess basic Originium Arts, Hibiscus prefers not to utilize her Originium power. Instead she would rather use her medical skills to care for and treat the wounds of her allies. Given her talents in medicine, Hibiscus has become an outstanding Rhodes Island Medic Operator."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Born in Londinium, Hibiscus was popular among her neighbors as a child, and for good reason - she is considerate, hardworking, courteous, modest, and is good at taking care of people. Though it appears to outsiders that Lava does not like to deal with Hibiscus and that the two sisters don't share a strong relationship, Hibiscus knows the truth - that Lava just isn't very good at expressing those kinds of feelings."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 150 trust",
+      "description": "After the two sisters were infected with Oripathy, Hibiscus took Lava and left their parents to come to Rhodes Island. The determined Hibiscus decided to work hard for Rhodes Island, for her sister, herself, her parents back home, and all the other infected."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Because of Lava's obstinance, Hibiscus has cultivated a tough attitude from the time they were little. 'This food is good for you. You need to eat it every day!' 'I threw all your snacks away because they're bad for you!' 'It's 10:30. You need to go to bed!' From a bystanders' perspective, Lava seems to have a rough time dealing with her older sister."
+    }
+  ]
+}

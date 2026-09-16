@@ -1,0 +1,113 @@
+name: Content release
+on:
+  push:
+    branches: [main, refresh/content]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      revision:
+        description: 'Approved main-branch commit to publish or roll back to (blank = current main)'
+        required: false
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: content-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - name: Select an approved rollback when requested
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          REVISION: ${{ inputs.revision }}
+        run: |
+          set -euo pipefail
+          if [ -n "$REVISION" ]; then
+            [[ "$REVISION" =~ ^[a-f0-9]{40}$ ]]
+            git merge-base --is-ancestor "$REVISION" origin/main
+            git checkout --detach "$REVISION"
+          fi
+      - run: node scripts/validate-release.mjs
+  propose:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/refresh/content'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v7
+      - name: Open the reviewed content update
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cat > /tmp/body.md <<'BODY'
+          Updates the public game records and their generated page data together.
+
+          Review the changes under `source/`; `release/` is generated from those records. Validation checks source and output checksums before publication. Merging publishes this content version without rebuilding the Arkpedia website. This workflow never approves or merges the PR.
+          BODY
+          if gh pr view refresh/content --json state --jq .state | grep -qx OPEN; then
+            gh pr edit refresh/content --body-file /tmp/body.md
+          else
+            gh pr create --base main --head refresh/content --title 'Update game content' --body-file /tmp/body.md
+          fi
+  publish:
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - name: Publish one pointer to the validated immutable commit
+        env:
+          REVISION: ${{ inputs.revision }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          revision="${REVISION:-$GITHUB_SHA}"
+          [[ "$revision" =~ ^[a-f0-9]{40}$ ]]
+          git merge-base --is-ancestor "$revision" origin/main
+          git checkout --detach "$revision"
+          node scripts/validate-release.mjs
+          node --input-type=module - "$revision" > /tmp/current.json <<'JS'
+          import fs from 'node:fs';
+          import { createHash } from 'node:crypto';
+          const bytes = fs.readFileSync('release/manifest.json');
+          const manifest = JSON.parse(bytes);
+          console.log(JSON.stringify({ schema: manifest.schema, release: manifest.release, revision: process.argv[2], manifestSha256: createHash('sha256').update(bytes).digest('hex') }, null, 2));
+          JS
+          # The live branch contains only the pointer. Large snapshots stay in
+          # main's normal Git history instead of multiplying release folders.
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git show-ref --verify --quiet refs/remotes/origin/live; then
+            git worktree add /tmp/content-live -B live origin/live
+          else
+            git worktree add --detach /tmp/content-live
+            git -C /tmp/content-live switch --orphan live
+            git -C /tmp/content-live rm -rf --ignore-unmatch .
+          fi
+          cp /tmp/current.json /tmp/content-live/current.json
+          git -C /tmp/content-live add current.json
+          if git -C /tmp/content-live diff --cached --quiet; then exit 0; fi
+          git -C /tmp/content-live commit -m "Publish content from $revision"
+          git -C /tmp/content-live push origin HEAD:live

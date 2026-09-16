@@ -1,0 +1,1516 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act37sre",
+    "label": "GO",
+    "name": "Ending a Grand Overture",
+    "release_date": "2025-04-08"
+  },
+  "enemies": [
+    {
+      "slug": "freight_car",
+      "id": "enemy_10021_vtcar",
+      "name": "Freight Car",
+      "index": "LUD15",
+      "rank": "Normal",
+      "sort": 878,
+      "hidden": false,
+      "icon": "/enemies-icons/Freight Car.webp",
+      "flavour_text": "The pride of Victoria's industrial automation, vastly improving transport efficiency between factories. Its designers traded defense for speed, trusting in Londinium's peace and stability.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Unblockable; can be attacked by enemies",
+          "format": "normal"
+        },
+        {
+          "text": "Drops gear in the surrounding area when defeated and stuns all nearby units; resumes movement after a period of time",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3500,
+            "atk": 0,
+            "def": 150,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 10.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.45,
+            "range": null,
+            "weight": 0,
+            "taunt": 1,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "E",
+            "def": "D",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "reborn",
+              "parameters": {
+                "duration": 10.0
+              }
+            },
+            {
+              "key": "stunAttack",
+              "parameters": {
+                "range_id": "x-5",
+                "stun": 5.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "novice_junkman",
+      "id": "enemy_10022_vtskny",
+      "name": "Novice Junkman",
+      "index": "LUD16",
+      "rank": "Normal",
+      "sort": 879,
+      "hidden": false,
+      "icon": "/enemies-icons/Novice Junkman.webp",
+      "flavour_text": "Citizens who only head into the ruins when no one is around out of a strange sense of honor. They hope to find things in the garbage dumps to tide them over through tough times.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can equip gear, max 1",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4500,
+            "atk": 185,
+            "def": 150,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "E",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "equip",
+              "parameters": {
+                "front": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "seasoned_junkman",
+      "id": "enemy_10022_vtskny_2",
+      "name": "Seasoned Junkman",
+      "index": "LUD17",
+      "rank": "Normal",
+      "sort": 880,
+      "hidden": false,
+      "icon": "/enemies-icons/Seasoned Junkman.webp",
+      "flavour_text": "Citizens familiar with the art of barter, often found scavenging the ruins. They hope to find things in the garbage dumps to tide them over through tough times.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can equip gear, max 1",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5200,
+            "atk": 210,
+            "def": 150,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "D",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "equip",
+              "parameters": {
+                "front": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "goggles_gang_thief",
+      "id": "enemy_10023_vtsnky",
+      "name": "'Goggles' Gang Thief",
+      "index": "LUD18",
+      "rank": "Normal",
+      "sort": 881,
+      "hidden": false,
+      "icon": "/enemies-icons/'Goggles' Gang Thief.webp",
+      "flavour_text": "With factories shutting down and nowhere else to go, young workers started forming gangs. Everyone wears the same goggles needed for work, pretending not to know one another or the people they rob.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can equip gear, max 1",
+          "format": "normal"
+        },
+        {
+          "text": "After several attacks, charges up before attacking, increasing ATK and stealing gear equipped by Operators",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4000,
+            "atk": 320,
+            "def": 180,
+            "res": 15.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.6,
+            "attack_speed": 100.0,
+            "move_speed": 0.85,
+            "range": 2.0,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "steal",
+              "sp_cost": 3,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "equip",
+              "parameters": {
+                "front": 0.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 3,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "goggles_gang_thug",
+      "id": "enemy_10023_vtsnky_2",
+      "name": "'Goggles' Gang Thug",
+      "index": "LUD19",
+      "rank": "Normal",
+      "sort": 882,
+      "hidden": false,
+      "icon": "/enemies-icons/'Goggles' Gang Thug.webp",
+      "flavour_text": "With factories shutting down and nowhere else to go, young workers started forming gangs. The improvised weapons they use seem somewhat familiar. Maybe from the anti-Sarkaz resistance?",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can equip gear, max 1",
+          "format": "normal"
+        },
+        {
+          "text": "After several attacks, charges up before attacking, increasing ATK and stealing gear equipped by Operators",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4800,
+            "atk": 410,
+            "def": 220,
+            "res": 15.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.6,
+            "attack_speed": 100.0,
+            "move_speed": 0.85,
+            "range": 2.0,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "steal",
+              "sp_cost": 3,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "equip",
+              "parameters": {
+                "front": 0.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 3,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "neighborhood_watch_member",
+      "id": "enemy_10024_vtstrn",
+      "name": "'Neighborhood Watch' Member",
+      "index": "LUD20",
+      "rank": "Normal",
+      "sort": 883,
+      "hidden": false,
+      "icon": "/enemies-icons/'Neighborhood Watch' Member.webp",
+      "flavour_text": "A member of an illegal organization formed by citizens to defend their neighborhood by any means. They often wear fake mustaches to appear seasoned and scare off perps without violence.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can equip gear, max 1",
+          "format": "normal"
+        },
+        {
+          "text": "When equipped with gear, DEF increases",
+          "format": "normal"
+        },
+        {
+          "text": "After several attacks, charges up for a splash damage attack",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12000,
+            "atk": 900,
+            "def": 1100,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "A",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "splash",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "range_radius": 0.8
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "equip",
+              "parameters": {
+                "front": 1.0
+              }
+            },
+            {
+              "key": "haveEquip",
+              "parameters": {
+                "def": 0.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "neighborhood_watch_leader",
+      "id": "enemy_10024_vtstrn_2",
+      "name": "'Neighborhood Watch' Leader",
+      "index": "LUD21",
+      "rank": "Normal",
+      "sort": 884,
+      "hidden": false,
+      "icon": "/enemies-icons/'Neighborhood Watch' Leader.webp",
+      "flavour_text": "The leader of an illegal organization formed by citizens to defend their neighborhood by any means. Can often be found apologizing at their opponents' homes after a tussle.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can equip gear, max 1",
+          "format": "normal"
+        },
+        {
+          "text": "When equipped with gear, DEF increases",
+          "format": "normal"
+        },
+        {
+          "text": "After several attacks, charges up for a splash damage attack",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 18000,
+            "atk": 1100,
+            "def": 1350,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "A+",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "splash",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "range_radius": 0.8
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "equip",
+              "parameters": {
+                "front": 1.0
+              }
+            },
+            {
+              "key": "haveEquip",
+              "parameters": {
+                "def": 0.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "millscar_mercenary",
+      "id": "enemy_10025_vtmstr",
+      "name": "'Millscar' Mercenary",
+      "index": "LUD22",
+      "rank": "Elite",
+      "sort": 885,
+      "hidden": false,
+      "icon": "/enemies-icons/'Millscar' Mercenary.webp",
+      "flavour_text": "A member of one of Londinium's underground insurgent forces and a ruthless mercenary, happy to snatch anything from debtors. No one knows what turned them this way.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can equip gear, max 3 different types",
+          "format": "normal"
+        },
+        {
+          "text": "When approaching other enemies equipped with gear, collects that gear if its type is not already being equipped, up to a max of 3 different types",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 1060,
+            "def": 400,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "getEquip",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "direct",
+              "parameters": {
+                "front": 0.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "millscar_elite_mercenary",
+      "id": "enemy_10025_vtmstr_2",
+      "name": "'Millscar' Elite Mercenary",
+      "index": "LUD23",
+      "rank": "Elite",
+      "sort": 886,
+      "hidden": false,
+      "icon": "/enemies-icons/'Millscar' Elite Mercenary.webp",
+      "flavour_text": "A member of one of Londinium's underground insurgent forces and a seasoned mercenary, happy to snatch anything from debtors. No one who asked what turned them this way has lived to get an answer.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can equip gear, max 3 different types",
+          "format": "normal"
+        },
+        {
+          "text": "When approaching other enemies equipped with gear, collects that gear if its type is not already being equipped, up to a max of 3 different types",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 19500,
+            "atk": 1420,
+            "def": 640,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "getEquip",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "direct",
+              "parameters": {
+                "front": 0.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "transport_vessel",
+      "id": "enemy_10026_vtzepl",
+      "name": "Transport Vessel",
+      "index": "LUD24",
+      "rank": "Elite",
+      "sort": 887,
+      "hidden": false,
+      "icon": "/enemies-icons/Transport Vessel.webp",
+      "flavour_text": "A general-use aircraft designed by the Industry Development Association for transporting goods. Some members suggest that having a pilot atop might deter ruffians from shooting it down, fearing the risk of murder.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks hit 3 times",
+          "format": "normal"
+        },
+        {
+          "text": "Deals a large amount of Physical damage to all units in a fixed range when defeated and drops random gear",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 36000,
+            "atk": 800,
+            "def": 150,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.2,
+            "range": 2.5,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "D",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "E"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "boom",
+              "parameters": {
+                "atk_scale": 2.0,
+                "projectile_range": 1.4
+              }
+            },
+            {
+              "key": "equip",
+              "parameters": {
+                "range_id": "x-5"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "heavy_transport_vessel",
+      "id": "enemy_10026_vtzepl_2",
+      "name": "Heavy Transport Vessel",
+      "index": "LUD25",
+      "rank": "Elite",
+      "sort": 888,
+      "hidden": false,
+      "icon": "/enemies-icons/Heavy Transport Vessel.webp",
+      "flavour_text": "An experimental aircraft designed by the Industry Development Association for transporting goods. Other members wish their colleagues wouldn't entrust their dreams of flying to a cargo craft.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks hit 3 times",
+          "format": "normal"
+        },
+        {
+          "text": "Deals a large amount of Physical damage to all units in a fixed range when defeated and drops random gear",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 44000,
+            "atk": 950,
+            "def": 150,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.2,
+            "range": 2.5,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "D",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "E"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "boom",
+              "parameters": {
+                "atk_scale": 2.0,
+                "projectile_range": 1.4
+              }
+            },
+            {
+              "key": "equip",
+              "parameters": {
+                "range_id": "x-5"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "armor_of_the_empire",
+      "id": "enemy_10027_vtsk",
+      "name": "'Armor of the Empire'",
+      "index": "VSK1",
+      "rank": "Elite",
+      "sort": 889,
+      "hidden": false,
+      "icon": "/enemies-icons/'Armor of the Empire'.webp",
+      "flavour_text": "Royal Guards who swore an oath of eternal loyalty to Victoria. In the King's memories, their steel bodies lined up to form mountains, and white steam covered the sky above.",
+      "race": "Machina",
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Locks onto an allied unit with the current highest HP, dealing Physical damage multiple times to it and the nearby unit with the current highest HP",
+          "format": "normal"
+        },
+        {
+          "text": "Can perform long-ranged attacks",
+          "format": "normal"
+        },
+        {
+          "text": "After several attacks, charges up for an attack that deals heavy damage 3 times",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 1020,
+            "def": 1800,
+            "res": 5.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 1.5,
+            "weight": 6,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "A+",
+            "res": "D",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Appear",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "times": 8.0
+              }
+            },
+            {
+              "key": "MultiCombat",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "times": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "range",
+              "parameters": {
+                "atk_scale_range": 0.8
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "unequipped_blade",
+      "id": "enemy_10028_vtswd",
+      "name": "Unequipped Blade",
+      "index": "LUD26",
+      "rank": "Normal",
+      "sort": 890,
+      "hidden": false,
+      "icon": "/enemies-icons/Unequipped Blade.webp",
+      "flavour_text": "Standard-issue weapon components produced by Londinium's factories, not yet sent to the assembly line. Unsafe to hold before assembly, but still more threatening than empty hands.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "When equipped by allied Operators",
+          "format": "title"
+        },
+        {
+          "text": "Operators equipped with this gain increased ATK",
+          "format": "normal"
+        },
+        {
+          "text": "When equipped by enemies",
+          "format": "title"
+        },
+        {
+          "text": "Units equipped with this gain increased ATK",
+          "format": "normal"
+        },
+        {
+          "text": "Obtains a Barrier",
+          "format": "normal"
+        },
+        {
+          "text": "Gear is lost when Barrier is broken",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 100,
+            "atk": 100,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 10.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "E"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "atk": 0.75,
+                "damage_scale": 1.2,
+                "dynamic": 2000.0
+              }
+            },
+            {
+              "key": "2",
+              "parameters": {
+                "atk": 0.3,
+                "vtswd.atk": 0.75,
+                "vtswd.damage_scale": 1.2,
+                "vtswd.dynamic": 2000.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "protective_vest",
+      "id": "enemy_10029_vtshld",
+      "name": "Protective Vest",
+      "index": "LUD27",
+      "rank": "Normal",
+      "sort": 891,
+      "hidden": false,
+      "icon": "/enemies-icons/Protective Vest.webp",
+      "flavour_text": "Standard-issue protective gear components produced by Londinium's factories, only large enough to protect one side of the body. Everyone hopes to nab a piece or two and sew them together before they suffer a serious blow.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "When equipped by allied Operators",
+          "format": "title"
+        },
+        {
+          "text": "Operators equipped with this gain increased DEF",
+          "format": "normal"
+        },
+        {
+          "text": "When equipped by enemies",
+          "format": "title"
+        },
+        {
+          "text": "Units equipped with this take reduced damage from the designated direction",
+          "format": "normal"
+        },
+        {
+          "text": "Obtains a Barrier",
+          "format": "normal"
+        },
+        {
+          "text": "Gear is lost when Barrier is broken",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 100,
+            "atk": 100,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 10.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "E"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "damage_resistance": 0.8,
+                "damage_scale": 1.2,
+                "dynamic": 5000.0
+              }
+            },
+            {
+              "key": "2",
+              "parameters": {
+                "def": 0.3,
+                "vtshld.damage_resistance": 0.8,
+                "vtshld.damage_scale": 1.2,
+                "vtshld.dynamic": 5000.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "assault_arts_unit",
+      "id": "enemy_10030_vtwand",
+      "name": "Assault Arts Unit",
+      "index": "LUD28",
+      "rank": "Normal",
+      "sort": 892,
+      "hidden": false,
+      "icon": "/enemies-icons/Assault Arts Unit.webp",
+      "flavour_text": "Standard-issue staff components produced by Londinium's factories, not yet sent to the assembly line. Often malfunctions, but better than letting an Infected cast Arts with their bare hands.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "When equipped by allied Operators",
+          "format": "title"
+        },
+        {
+          "text": "For a short time after activating their skills, Operators equipped with this deal additional Arts damage and inflict Frighten for a fixed duration when dealing damage",
+          "format": "normal"
+        },
+        {
+          "text": "When equipped by enemies",
+          "format": "title"
+        },
+        {
+          "text": "Attacks by units equipped with this deal Arts damage; the first attack after pickup prevents the target from attacking or healing for a period of time",
+          "format": "normal"
+        },
+        {
+          "text": "Obtains a Barrier",
+          "format": "normal"
+        },
+        {
+          "text": "Gear is lost when Barrier is broken",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 100,
+            "atk": 100,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 10.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "E"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "damage_scale": 1.2,
+                "disarmed_duration": 3.0,
+                "dynamic": 2000.0
+              }
+            },
+            {
+              "key": "2",
+              "parameters": {
+                "not_combat": 10.0,
+                "value": 800.0,
+                "vtwand.damage_scale": 1.2,
+                "vtwand.disarmed_duration": 3.0,
+                "vtwand.dynamic": 2000.0,
+                "work_time": 0.1
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "alistair_final_flame_of_the_empire",
+      "id": "enemy_1559_vtlionk",
+      "name": "Alistair, Final Flame of the Empire",
+      "index": "ALS",
+      "rank": "Boss",
+      "sort": 1355,
+      "hidden": false,
+      "icon": "/enemies-icons/Alistair, Final Flame of the Empire.webp",
+      "flavour_text": "The final flame of the empire, a specter adorned with a rusted crown. Refute him. Refute Victoria's supreme glory and authority. He will examine the evidence. He may yet forgive.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When HP drops below half, DEF and RES increase, and [Imperial Domain] activates two pieces of gear",
+          "format": "normal"
+        },
+        {
+          "text": "[Expulsion] After some time has passed, deals Arts splash damage to all your units, and drains all Life Points",
+          "format": "normal"
+        },
+        {
+          "text": "[Royal Decree] Locks onto an allied unit and their surrounding 4 tiles, dealing heavy Physical damage to targets within that range once and generating random gear on tiles within that range",
+          "format": "normal"
+        },
+        {
+          "text": "[Imperial Domain] Activates a piece of gear on the field; different types of gear will result in different effects",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 81000,
+            "atk": 920,
+            "def": 1030,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 8.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.0,
+            "range": 3.4,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 15
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "A",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "equip",
+              "sp_cost": 25,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 2.0,
+                "projectile_range": "x-5"
+              }
+            },
+            {
+              "key": "store",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 2.0,
+                "damage_resistance": 0.8,
+                "dynamic": 5000.0
+              }
+            },
+            {
+              "key": "storeA",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 2.0,
+                "damage_resistance": 0.8,
+                "dynamic": 5000.0,
+                "max_target": 2.0
+              }
+            },
+            {
+              "key": "equipA",
+              "sp_cost": 25,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 2.0,
+                "max_target": 1.0,
+                "projectile_range": "x-5"
+              }
+            },
+            {
+              "key": "Suicide",
+              "sp_cost": 0,
+              "cooldown": 350.0,
+              "initial_cooldown": 350.0,
+              "priority": 5,
+              "parameters": {
+                "atk_scale": 1.0,
+                "value": -100.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "advance",
+              "parameters": {
+                "def": 1.0,
+                "hp_ratio": 0.5,
+                "magic_resistance": 45.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 25,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 92000,
+            "atk": 1080,
+            "def": 1030,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 8.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.0,
+            "range": 3.4,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 15
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "A",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "equip",
+              "sp_cost": 25,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 2.0,
+                "projectile_range": "x-5"
+              }
+            },
+            {
+              "key": "store",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 2.0,
+                "damage_resistance": 0.8,
+                "dynamic": 5000.0
+              }
+            },
+            {
+              "key": "storeA",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 2.0,
+                "damage_resistance": 0.8,
+                "dynamic": 5000.0,
+                "max_target": 2.0
+              }
+            },
+            {
+              "key": "equipA",
+              "sp_cost": 25,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 2.0,
+                "max_target": 1.0,
+                "projectile_range": "x-5"
+              }
+            },
+            {
+              "key": "Suicide",
+              "sp_cost": 0,
+              "cooldown": 350.0,
+              "initial_cooldown": 350.0,
+              "priority": 5,
+              "parameters": {
+                "atk_scale": 1.0,
+                "value": -100.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "advance",
+              "parameters": {
+                "def": 1.0,
+                "hp_ratio": 0.5,
+                "magic_resistance": 45.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 25,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

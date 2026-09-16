@@ -1,0 +1,950 @@
+{
+  "name": "SilverAsh",
+  "rarity": 6,
+  "class": "Guard",
+  "branch": "Lord",
+  "faction": "Karlan Trade",
+  "umbrellaFactions": [
+    "Kjerag"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS",
+    "Support"
+  ],
+  "trait": "Can launch Ranged Attacks that deal 80% of normal ATK",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": "SilverAsh the Reignfrost",
+  "skins": [
+    "York's Bise",
+    "Seeker SKm01",
+    "Never-melting Ice"
+  ],
+  "ep": {
+    "Main": "Silver Lining",
+    "Co-star": null
+  },
+  "internalName": "char_172_svrash",
+  "otherLanguages": {
+    "Simplified Chinese": "银灰",
+    "Traditional Chinese": "銀灰",
+    "Japanese": "シルバーアッシュ",
+    "Korean": "실버애쉬"
+  },
+  "characterInfo": {
+    "File no.": "JC01",
+    "Operator Records": "Unpredictable Unbreakable Ice",
+    "Paradox Simulation": "A Look of Disdain",
+    "Illustrator": "竜崎いち",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Katsuyuki Konishi",
+    "Chinese": "Wu Lei (credited as \"Michael R.\" in EN)",
+    "English": "James Day",
+    "Korean": "Nam Doh-hyeong"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "4 years",
+    "Place of Birth": "Kjerag",
+    "Date of Birth": "February 15th",
+    "Race": "Feline",
+    "Height": "192 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Outstanding",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Leader",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "ATK +5%; All allies' Redeployment Time -5% when this unit is in the squad."
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "ATK +7% (+2%) ; All allies' Redeployment Time -7% (+2%) when this unit is in the squad."
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "ATK +10%; All allies' Redeployment Time -10% when this unit is in the squad."
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "ATK +12% (+2%) ; All allies' Redeployment Time -12% (+2%) when this unit is in the squad."
+        }
+      ]
+    },
+    {
+      "name": "Eagle Eyes",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Reveals Invisible enemies within range"
+        }
+      ],
+      "technique": [
+        {
+          "name": "Reveal Invisibility",
+          "description": "Reveals hidden enemies when in range"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +26"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Leader"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "SilverAsh's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum atributes increased.",
+        "DP cost +2 .",
+        "New talent: Leader .",
+        "New skill: Rules of Survival .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise SilverAsh to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Polyester",
+          "quantity": 8
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum atributes increased.",
+        "New talent: Eagle Eyes .",
+        "New skill: Truesilver Slash .",
+        "Leader improved."
+      ],
+      "prerequisite": "Raise SilverAsh to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Guard Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "D32 Steel",
+          "quantity": 4
+        },
+        {
+          "name": "White Horse Kohl",
+          "quantity": 6
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Power Strike γ",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Increases the ATK of next attack to 190%",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Increases the ATK of next attack to 195%",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Increases the ATK of next attack to 200%",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Increases the ATK of next attack to 205%",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Increases the ATK of next attack to 210%",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Increases the ATK of next attack to 215%",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Increases the ATK of next attack to 225%",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Increases the ATK of next attack to 245%",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Increases the ATK of next attack to 265%",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Increases the ATK of next attack to 290%",
+            "initialSp": 0,
+            "spCost": 2,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "Sugar Pack",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 4
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 7
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Rules of Survival",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Can switch between the original state and the following state: Range reduces ; DEF +35% ; Restores HP by 3% of Max HP per second",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Can switch between the original state and the following state: Range reduces ; DEF +40% ; Restores HP by 3% of Max HP per second",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Can switch between the original state and the following state: Range reduces ; DEF +45% ; Restores HP by 3% of Max HP per second",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Can switch between the original state and the following state: Range reduces ; DEF +50% ; Restores HP by 3.5% of Max HP per second",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Can switch between the original state and the following state: Range reduces ; DEF +55% ; Restores HP by 3.5% of Max HP per second",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Can switch between the original state and the following state: Range reduces ; DEF +60% ; Restores HP by 3.5% of Max HP per second",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Can switch between the original state and the following state: Range reduces ; DEF +65% ; Restores HP by 4% of Max HP per second",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Can switch between the original state and the following state: Range reduces ; DEF +75% ; Restores HP by 4.5% of Max HP per second",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Can switch between the original state and the following state: Range reduces ; DEF +85% ; Restores HP by 5% of Max HP per second",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Can switch between the original state and the following state: Range reduces ; DEF +100% ; Restores HP by 6% of Max HP per second",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            },
+            {
+              "name": "Polyester Pack",
+              "quantity": 6
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Truesilver Slash",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20–30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "DEF -70% ; ATK +110% ; Range expands ; Attacks at most 3 targets simultaneously (regarded as Melee Attack)",
+            "initialSp": 50,
+            "spCost": 90,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "DEF -70% ; ATK +115% ; Range expands ; Attacks at most 3 targets simultaneously (regarded as Melee Attack)",
+            "initialSp": 50,
+            "spCost": 90,
+            "duration": 21
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "DEF -70% ; ATK +120% ; Range expands ; Attacks at most 3 targets simultaneously (regarded as Melee Attack)",
+            "initialSp": 50,
+            "spCost": 90,
+            "duration": 22
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "DEF -70% ; ATK +125% ; Range expands ; Attacks at most 4 targets simultaneously (regarded as Melee Attack)",
+            "initialSp": 55,
+            "spCost": 90,
+            "duration": 23
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "DEF -70% ; ATK +130% ; Range expands ; Attacks at most 4 targets simultaneously (regarded as Melee Attack)",
+            "initialSp": 55,
+            "spCost": 90,
+            "duration": 24
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "DEF -70% ; ATK +135% ; Range expands ; Attacks at most 4 targets simultaneously (regarded as Melee Attack)",
+            "initialSp": 55,
+            "spCost": 90,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "DEF -70% ; ATK +140% ; Range expands ; Attacks at most 5 targets simultaneously (regarded as Melee Attack)",
+            "initialSp": 60,
+            "spCost": 90,
+            "duration": 26
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "DEF -70% ; ATK +160% ; Range expands ; Attacks at most 5 targets simultaneously (regarded as Melee Attack)",
+            "initialSp": 65,
+            "spCost": 90,
+            "duration": 27
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "DEF -70% ; ATK +180% ; Range expands ; Attacks at most 5 targets simultaneously (regarded as Melee Attack)",
+            "initialSp": 70,
+            "spCost": 90,
+            "duration": 28
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "DEF -70% ; ATK +200% ; Range expands ; Attacks at most 6 targets simultaneously (regarded as Melee Attack)",
+            "initialSp": 75,
+            "spCost": 90,
+            "duration": 30
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "This is Silverash's main skill that dishes out the most damage."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Ester",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar Pack",
+          "quantity": 7
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 4
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 5
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Karlan Trade α",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +15% and the order limit +2"
+    },
+    {
+      "name": "Lord of KarlanReplacesKarlan Trade α",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +20% and the order limit +4"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "SilverAsh's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "LOR-X: Snow Realm Fowlcare Kit",
+      "mission": {
+        "requirement1": "During battle, have your own SilverAsh use Truesilver Slash a total of 10 times",
+        "requirement2": "Clear Side Story BI-7 with a 3-star rating; You must deploy your own SilverAsh, and have SilverAsh defeat at least 1 Tschäggättä"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +190 , ATK +45",
+          "effectLabel": "New trait",
+          "effectText": "Attacks deal an additional 10% ATK as Arts damage.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +270 , ATK +60",
+          "effectLabel": "Leader improved",
+          "effectText": "ATK +20%, and further increased to 110% when attacking elite and leader enemies ; all allied units' Redeployment Time -10% when this unit is in the squad.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +330 , ATK +70",
+          "effectLabel": "Leader improved",
+          "effectText": "ATK +25%, and further increased to 115% when attacking elite and leader enemies; all allied units' Redeployment Time -10% when this unit is in the squad. SilverAsh and other allies in the 8 surrounding tiles gain an additional -10% Redeployment Time.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "SilverAsh is a\nKjerag\nwarlord, chairman of the\nKarlan Trade Co.\n, and is current Chief of the Silverash Family. He has unique views on economics, trade, international politics, diplomacy, and strategic planning.\nHe provides strategic support for some\nRhodes Island\noperations.\nIn view of the fact that his true purposes are unknown and he doesn't have the most cooperative attitude, it is advised that we maintain a conservative attitude in order to minimize risks when working with him.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [
+    {
+      "type": "branch",
+      "values": [
+        "Executor"
+      ],
+      "description": "Lowers their redeployment time"
+    },
+    {
+      "type": "faction",
+      "values": [
+        "Kjerag",
+        "Karlan Trade"
+      ],
+      "description": "Kjerag-based Team led by Silverash the Reignfrost"
+    }
+  ],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "-lIfT6jE9Vc",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "f-BS9sYWb5Q",
+      "creator": "ItsMeKevin"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1075,
+          "atk": 297,
+          "def": 189,
+          "res": 5,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 1536,
+          "atk": 444,
+          "def": 259,
+          "res": 5,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.3
+        },
+        "rangeId": "2-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1536,
+          "atk": 444,
+          "def": 259,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 2,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 2022,
+          "atk": 577,
+          "def": 329,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 2,
+          "interval": 1.3
+        },
+        "rangeId": "3-12"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 2022,
+          "atk": 577,
+          "def": 329,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 2,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 2560,
+          "atk": 713,
+          "def": 397,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 2,
+          "interval": 1.3
+        },
+        "rangeId": "3-12"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 50,
+      "def": 50
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this Operator can be confirmed to be uninfected.\n\n[Cell-Originium Fusion Rate] 0% \nOperator shows no signs of infection at this time.\n\n[Blood Crystal Density] 0.12u/L\nSubject's values are normal and there is no need for further investigation.\n\nHuh? Kjerag's nobles like to come to Rhodes Island for medical examinations, too? Next time, please inform him: 'If you have no pending procedures, please do not disturb the medical staff. If you have, then please wait at reception for the Doctor to receive you.'\nI'm simply not prepared to deal with someone so calm and collected.\n- Medic Operator Warfarin"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "The Karlan Trade CO.,LTD. is a state-owned enterprise engaged in foreign trade. It is located in the religious country of Kjerag, also known as the 'Snow Realm.' \nBecause of its terrain, Kjerag rarely suffers natural Catastrophes or invasions. This has meant that the people of Kjerag have not needed to rely on nomadic cities to live and work. Of course, the steep terrain has also slowed Kjerag's development considerably. \nThe name of the Karlan Trade Company is probably derived from the name of the holy mountain the believers of Kjerag worship. \nThe trade company, run by SilverAsh, is the only window to the outside world for the insular and conservative nation of Kjerag. At the same time, this company has unavoidably changed the country. \nIt would be wise for Rhodes Island to research SilverAsh's record, given this level of power and vision."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "As a lover of literature and art, a committed hunter and collector, and an expert in traditional Kjerag swordsmanship, SilverAsh has traces of a traditional noble upbringing. \nThat said, SilverAsh's thinking and conduct run counter to tradition, and are full of the progressive complexity and the intensity of modern education.\nAs such, SilverAsh, Chairman of the Karlan Trade Co. LTD, is a controversial figure at Rhodes Island. \nWhatever the case, the other Operators have come to a consensus: SilverAsh is not an Operator who can be easily dispatched or controlled. \nSilverAsh and his employees work very closely with Rhodes Island, but there is no hierarchical relationship between them. \nWhether it is strategic planning or tactical command, many Operators find SilverAsh's prowess convincing. However, the more skeptical Operators familiar with political conspiracy and such machinations are wary of SilverAsh's intentions. \nAlthough SilverAsh truly cares about his younger sister, Cliffheart, who is being treated at Rhodes Island, he trusts Rhodes Island no more than Rhodes Island trusts him. \nPerhaps as the rumor says, what is really of interest to SilverAsh is the value of Rhodes Island Pharmaceuticals itself, as well as the Doctor he regards as a competent rival... \n Dr. Kal'tsit is opposed to trying to make any further contact with SilverAsh. Though the Doctor may have other ideas."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "According to rumor, SilverAsh's parents died in a so-called accident when he was a child. Despite the ruling, evidence at the scene pointed to foul play by political enemies of the Silverash clan. \nPerhaps because of the rapid decline of the Silverash Family, this matter was left unsettled. \nNaturally, the incident had a huge effect on young SilverAsh's life. But as SilverAsh was the scion of a wealthy family and not a weakling by any means, he never sank into despair, and even kept raising his two younger sisters until they were old enough to take care of themselves. \nThereafter, SilverAsh left Kjerag and headed to Victoria to receive a modern education, and let the Silverash family's political enemies divide up their legacy amongst themselves. The Tri-Clan Council was three houses in name only. \nThis state of affairs lasted until SilverAsh returned back to Kjerag. Upon his homecoming, the young master took upon himself the weighty responsibility of rebuilding his clan. \nNow according to Cliffheart's testimony, the SilverAsh who had returned was no longer the gentle and precocious youngster he used to be, who would grit his teeth and bear all that the world threw at him. \nThereafter, the Karlan Trade Company quickly rose to seize a monopoly in a large number of modern industries that had previously been banned in Kjerag. He exported goods and raw materials to other countries and imported modern industrial products. In doing so, he accumulated a vast amount of wealth in a very short time, and the success of his company restored the Silverash Family name to its position in the council. \nIn what may have been a series of plays by rival clans, SilverAsh's two younger sisters each suffered a turn of fortune that would have a huge impact on the Silverash family: Pramanix was christened a Karlan Saintess in a religious ritual, and Cliffheart was infected with Oripathy. \nRhodes Island tends to believe that these were acts of political opposition, but Cliffheart thinks that these events merely once again catalyzed SilverAsh's resolve. \nNow, no one knows what SilverAsh will do, just as no one knows the purpose behind his collaboration with Rhodes Island."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Classified Log]\nI am opposed to the dealings between Rhodes Island and the Karlan Trade Company.\nNo, I have not found any hints of anything sinister, nor do I have any proof of anything untoward.\nI just want everyone to think this through carefully.\nWhat is it that Kjerag needs right now?\nThe Three House Parliament of Kjerag is in a political crisis. The conflict between the Kjerag conservative faction and the reformist party have gotten more and more intense.\nOn the surface, the Karlan Trade Company is only concerned with foreign trade. However, its true owner is none other than Enciodes Silverash, head of the Silverash Family and opponent of the two conservative houses in the country's parliament.\nYou may also know him as SilverAsh, brother of Rhodes Island Operator Cliffheart.\nI am convinced that the Karlan Trade Company doesn't pay a cent to the government of Kjerag. It isn't a state-owned enterprise! Its operations and business are controlled entirely by SilverAsh himself!\nModern military equipment has passed from Raythean's hands, through the Karlan Trade Company's channels, and into Kjerag. The conservative faction doesn't even have any means of tracing the whereabouts of the goods.\nThe trade route has already been moved to the foot of the holy mountain, Karlan. The Vine-Bead Court has already used SilverAsh's sister, Saint Pramanix, as leverage to try to get the Silverash family to leave the Three House Parliament and hand over control of the valley and mining sites.\nThe troops the Karlan Trade Company sent to the training camps have already returned from Ascarat County in Victoria. Where are they now? The conservative Kjerag guards don't have any idea.\nSo what does Kjerag need most right now? We are reaching a boiling point here. What do they need?\n\nPressure from outside.\nJust a little bit of pressure from the outside. Just the tiniest little push...\nThe avalanche will bury all of Kjerag, including all of its conspiracies and all of the matters of the past.\n\nI admit that perhaps the Karlan Trade Company isn't hiding anything dangerous.\nEven so, should we really put ourselves in danger just because Cliffheart received a secret letter?\nAt the very least, Rhodes Island as a whole should not assume this magnitude of risk.\n\n--Dobermann, at the meeting 12 days before the incident at the mountain."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "[Promotion Materials]\nI don't think the stories everyone's heard are so terrible. Everyone's life has a trajectory that wobbles as the world turns. It's normal.\nTherefore, I don't want anyone to think of Mr. SilverAsh as a threat.\nTo survive in this land, you need to have trust and cooperation. Since Mr. SilverAsh now regards the Doctor and Rhodes Island as partners, even if Rhodes Island doesn't want to rely too much on the Karlan Trade Company's help because it is skeptical of Mr. SilverAsh, we should not regard him as an enemy.\nIf you regard someone as an enemy, then subconsciously you will treat them like one. The two sides will drift apart, and even if they could have become friends, they will become enemies.\nI know what Dr. Kal'tsit said about hidden enemies...\nI just feel that whether or not SilverAsh will really become our enemy depends on the relationship between the Doctor and Mr. SilverAsh, and not on the abilities, strength, or behavior of Mr. SilverAsh alone.\nLet the Doctor take care of it, as Mr. SilverAsh's designated handler.\nAnd that's that. The Doctor will handle this situation.\n\n- Amiya"
+    }
+  ]
+}

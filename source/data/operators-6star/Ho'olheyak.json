@@ -1,0 +1,1039 @@
+{
+  "name": "Ho'olheyak",
+  "rarity": 6,
+  "class": "Caster",
+  "branch": "Core Caster",
+  "faction": "Columbia",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS",
+    "Crowd-Control"
+  ],
+  "trait": "Deals Arts damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Carriage of the Winds of Time",
+    "Ritual of Immortality"
+  ],
+  "ep": {
+    "Main": "Dormant Craving",
+    "Co-star": null
+  },
+  "internalName": "char_4027_heyak",
+  "otherLanguages": {
+    "Simplified Chinese": "霍尔海雅",
+    "Traditional Chinese": "霍爾海雅",
+    "Japanese": "ホルハイヤ",
+    "Korean": "오올헤약"
+  },
+  "characterInfo": {
+    "File no.": "CB88",
+    "Illustrator": "LM7",
+    "Release Date": "2023/11/07",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Miyuki Sawashiro",
+    "Chinese": "Hong Haitian",
+    "English": "Anne Yatco",
+    "Korean": "Jang Mi"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Secretarial Experience": "6 years",
+    "Place of Birth": "Columbia",
+    "Date of Birth": "July 12th",
+    "Race": "Undisclosed",
+    "Height": "171 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Excellent",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Outstanding",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Inherited End",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When attacking aerial targets, increases ATK to 110%, and silences targets for 1 second"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When attacking aerial targets, increases ATK to 113% (+3%) and silences targets for 1 second"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When attacking aerial targets, increases ATK to 120% and silences targets for 3 seconds"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When attacking aerial targets, increases ATK to 123% (+3%) and silences targets for 3 seconds"
+        }
+      ]
+    },
+    {
+      "name": "Bygone Wings",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Applies Weightless to enemies with 80% or more HP within Attack Range"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +27"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Inherited End"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Ho'olheyak's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Inherited End .",
+        "New skill: Meandering Stars .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Ho'olheyak to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Polyester",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Bygone Wings .",
+        "New skill: Well-Read Ravings .",
+        "Inherited End improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Ho'olheyak to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "D32 Steel",
+          "quantity": 4
+        },
+        {
+          "name": "Transmuted Salt Agglomerate",
+          "quantity": 7
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "In Search of Reason",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack hits 1 additional target and deals 160% ATK as Arts damage; if only 1 enemy is attacked, applies Levitate to the target for 2 seconds Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack hits 1 additional target and deals 170% ATK as Arts damage; if only 1 enemy is attacked, applies Levitate to the target for 2 seconds Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack hits 1 additional target and deals 180% ATK as Arts damage; if only 1 enemy is attacked, applies Levitate to the target for 2 seconds Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack hits 1 additional target and deals 200% ATK as Arts damage; if only 1 enemy is attacked, applies Levitate to the target for 2.5 seconds Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack hits 1 additional target and deals 210% ATK as Arts damage; if only 1 enemy is attacked, applies Levitate to the target for 2.5 seconds Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack hits 1 additional target and deals 220% ATK as Arts damage; if only 1 enemy is attacked, applies Levitate to the target for 2.5 seconds Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack hits 1 additional target and deals 240% ATK as Arts damage; if only 1 enemy is attacked, applies Levitate to the target for 3 seconds Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack hits 1 additional target and deals 260% ATK as Arts damage; if only 1 enemy is attacked, applies Levitate to the target for 3.5 seconds Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack hits 1 additional target and deals 280% ATK as Arts damage; if only 1 enemy is attacked, applies Levitate to the target for 3.5 seconds Can store 3 charges",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack hits 1 additional target and deals 300% ATK as Arts damage; if only 1 enemy is attacked, applies Levitate to the target for 4 seconds Can store 3 charges",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "RMA70-12",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Meandering Stars",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "16 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attacks change to 9 hits, each dealing 20% of ATK as damage to random enemies within attack range; each hit has a 8% chance to Levitate the target for 1 seconds",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 16
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attacks change to 9 hits, each dealing 22% of ATK as damage to random enemies within attack range; each hit has a 8% chance to Levitate the target for 1 seconds",
+            "initialSp": 20,
+            "spCost": 39,
+            "duration": 16
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attacks change to 9 hits, each dealing 24% of ATK as damage to random enemies within attack range; each hit has a 8% chance to Levitate the target for 1 seconds",
+            "initialSp": 20,
+            "spCost": 38,
+            "duration": 16
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attacks change to 9 hits, each dealing 27% of ATK as damage to random enemies within attack range; each hit has a 10% chance to Levitate the target for 1 seconds",
+            "initialSp": 21,
+            "spCost": 36,
+            "duration": 16
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attacks change to 9 hits, each dealing 29% of ATK as damage to random enemies within attack range; each hit has a 10% chance to Levitate the target for 1 seconds",
+            "initialSp": 21,
+            "spCost": 35,
+            "duration": 16
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attacks change to 9 hits, each dealing 31% of ATK as damage to random enemies within attack range; each hit has a 10% chance to Levitate the target for 1 seconds",
+            "initialSp": 21,
+            "spCost": 34,
+            "duration": 16
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attacks change to 9 hits, each dealing 35% of ATK as damage to random enemies within attack range; each hit has a 12% chance to Levitate the target for 1 seconds",
+            "initialSp": 22,
+            "spCost": 32,
+            "duration": 16
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attacks change to 9 hits, each dealing 38% of ATK as damage to random enemies within attack range; each hit has a 13% chance to Levitate the target for 1 seconds",
+            "initialSp": 23,
+            "spCost": 31,
+            "duration": 16
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attacks change to 9 hits, each dealing 41% of ATK as damage to random enemies within attack range; each hit has a 14% chance to Levitate the target for 1 seconds",
+            "initialSp": 24,
+            "spCost": 31,
+            "duration": 16
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attacks change to 9 hits, each dealing 45% of ATK as damage to random enemies within attack range; each hit has a 15% chance to Levitate the target for 1 seconds",
+            "initialSp": 25,
+            "spCost": 30,
+            "duration": 16
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 4
+            },
+            {
+              "name": "Transmuted Salt",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 4
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Well-Read Ravings",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "45 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack range expands , Attack Interval increases , attacks change to whirlwinds travelling forward, dealing damage proportional to distance traveled (damage increase caps at 3 tiles); whirlwinds hit the closest target and Levitate it for 1.6 seconds, dealing 213% to 320% ATK as Arts damage [ note 1 ]",
+            "initialSp": 40,
+            "spCost": 70,
+            "duration": 45
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack range expands , Attack Interval increases , attacks change to whirlwinds travelling forward, dealing damage proportional to distance traveled (damage increase caps at 3 tiles); whirlwinds hit the closest target and Levitate it for 1.6 seconds, dealing 220% to 330% ATK as Arts damage [ note 1 ]",
+            "initialSp": 40,
+            "spCost": 69,
+            "duration": 45
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack range expands , Attack Interval increases , attacks change to whirlwinds travelling forward, dealing damage proportional to distance traveled (damage increase caps at 3 tiles); whirlwinds hit the closest target and Levitate it for 1.6 seconds, dealing 227% to 340% ATK as Arts damage [ note 1 ]",
+            "initialSp": 40,
+            "spCost": 68,
+            "duration": 45
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack range expands , Attack Interval increases , attacks change to whirlwinds travelling forward, dealing damage proportional to distance traveled (damage increase caps at 3 tiles); whirlwinds hit the closest target and Levitate it for 1.8 seconds, dealing 233% to 350% ATK as Arts damage [ note 1 ]",
+            "initialSp": 41,
+            "spCost": 67,
+            "duration": 45
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack range expands , Attack Interval increases , attacks change to whirlwinds travelling forward, dealing damage proportional to distance traveled (damage increase caps at 3 tiles); whirlwinds hit the closest target and Levitate it for 1.8 seconds, dealing 240% to 360% ATK as Arts damage [ note 1 ]",
+            "initialSp": 41,
+            "spCost": 66,
+            "duration": 45
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack range expands , Attack Interval increases , attacks change to whirlwinds travelling forward, dealing damage proportional to distance traveled (damage increase caps at 3 tiles); whirlwinds hit the closest target and Levitate it for 1.8 seconds, dealing 247% to 370% ATK as Arts damage [ note 1 ]",
+            "initialSp": 41,
+            "spCost": 65,
+            "duration": 45
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack range expands , Attack Interval increases , attacks change to whirlwinds travelling forward, dealing damage proportional to distance traveled (damage increase caps at 3 tiles); whirlwinds hit the closest target and Levitate it for 2 seconds, dealing 253% to 380% ATK as Arts damage [ note 1 ]",
+            "initialSp": 42,
+            "spCost": 64,
+            "duration": 45
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack range expands , Attack Interval increases , attacks change to whirlwinds travelling forward, dealing damage proportional to distance traveled (damage increase caps at 3 tiles); whirlwinds hit the closest target and Levitate it for 2 seconds, dealing 267% to 400% ATK as Arts damage [ note 1 ]",
+            "initialSp": 43,
+            "spCost": 63,
+            "duration": 45
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack range expands , Attack Interval increases , attacks change to whirlwinds travelling forward, dealing damage proportional to distance traveled (damage increase caps at 3 tiles); whirlwinds hit the closest target and Levitate it for 2 seconds, dealing 273% to 410% ATK as Arts damage [ note 1 ]",
+            "initialSp": 44,
+            "spCost": 62,
+            "duration": 45
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack range expands , Attack Interval increases , attacks change to whirlwinds travelling forward, dealing damage proportional to distance traveled (damage increase caps at 3 tiles); whirlwinds hit the closest target and Levitate it for 2.2 seconds, dealing 280% to 420% ATK as Arts damage [ note 1 ]",
+            "initialSp": 45,
+            "spCost": 60,
+            "duration": 45
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "sub",
+            "explanation": "Ho'olheyak's go-to skill which is difficult to look good. The tornadoes are single-target and not very fast or hard-hitting while also not exactly doing perma-levitation or silence. The skill could be used for a bit of the utility given or if not the damage, but it would be seen as a luxury mastery today."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 6
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 6
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "\"Professional Ethics\" α",
+      "facility": "Reception Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Reception Room, if no other Operators are working in the Reception Room, increases Clue search speed by 15% , and Morale consumed per hour +1"
+    },
+    {
+      "name": "\"Professional Ethics\" βReplaces\"Professional Ethics\" α",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Reception Room, if no other Operators are working in the Reception Room, increases Clue search speed by 35% , and Morale consumed per hour +1"
+    },
+    {
+      "name": "Bibliography Consultant",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Reception Room, if only this Operator is working in the Reception Room, for every 16 consecutive Morale spent, a Rhine Lab clue is guaranteed next"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Ho'olheyak's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "CCR-X: \"Bibliotheca\"",
+      "mission": {
+        "requirement1": "Deal a total of 120,000 damage with Ho'olheyak (excluding Support Units)",
+        "requirement2": "Clear Side Story OF-7 with a 3-star rating; You must deploy your own Ho'olheyak, and use Well-Read Ravings at least 2 times"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +120 , ATK +40",
+          "effectLabel": "New trait",
+          "effectText": "Ignore 10 of target's RES",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +150 , ATK +55",
+          "effectLabel": "Inherited End improved",
+          "effectText": "When attacking aerial targets, increases ATK to 130%, and silences targets for 4 seconds",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +175 , ATK +65",
+          "effectLabel": "Inherited End improved",
+          "effectText": "When attacking aerial targets, increases ATK to 135%, and silences targets for 5 seconds",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "CCR-Y: Time Gallery of K'uk'ulkan",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Ho'olheyak, and unleash Well-Read Ravings at least once in each battle",
+        "requirement2": "Clear Main Theme 4-3 with a 3-star rating; You must deploy your own Ho'olheyak, and have Ho'olheyak defeat at least 10 enemies"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +105 , ATK +32 , DEF +15",
+          "effectLabel": "New trait",
+          "effectText": "Gain 1 SP when normal attacks hit an elite or leader enemy .",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +125 , ATK +40 , DEF +20",
+          "effectLabel": "Bygone Wings improved",
+          "effectText": "Applies Weightless to enemies with 60% or more HP within Attack Range, and inflicts 10% Arts Fragility on enemies with less than 50% HP.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +140 , ATK +45 , DEF +25",
+          "effectLabel": "Bygone Wings improved",
+          "effectText": "Applies Weightless to enemies with 50% or more HP within Attack Range, and inflicts 20% Arts Fragility on enemies with less than 50% HP.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "ISW-α: Ho'olheyak's Specialized Badge",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +100 , ATK +55",
+          "effectLabel": "New trait",
+          "effectText": "In Integrated Strategies , ignores 10 RES and recovers 30% SP the first time each enemy reaches the Objective Point tile",
+          "cost": []
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +120 , ATK +70",
+          "effectLabel": "Inherited End improved",
+          "effectText": "When attacking aerial units, ATK increases to 140% and silences them for 4 seconds; In Integrated Strategies , gains 1 Temporary Life Point on first deployment, and the first time an enemy steps into the Objective tile, Levitates all enemies for 15 seconds",
+          "cost": []
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +130 , ATK +80",
+          "effectLabel": "Inherited End improved",
+          "effectText": "When attacking aerial units, ATK increases to 145% and silences them for 5 seconds; In Integrated Strategies , gains 1 Temporary Life Point on first deployment, and the first time an enemy steps into the Objective tile, Levitates all enemies for 15 seconds; skills will simultaneously Levitate and deal damage to enemies and surrounding targets",
+          "cost": []
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "A former\nMaylander Foundation\nagent, she joined\nRhodes Island\non the recommendations of Dr.\nKal'tsit\nand the\nDoctor\n.\nHer proficiency in fighting solo and adapting to all kinds of extreme environments has proven invaluable to our myriad covert operations.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "RBBCBTbTP_c",
+      "creator": "SharkyFerret"
+    },
+    {
+      "videoId": "GhDrDamOcrI",
+      "creator": "FABknight"
+    },
+    {
+      "videoId": "spppFN3uKUc",
+      "creator": "Tsalthsu"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 743,
+          "atk": 287,
+          "def": 49,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1062,
+          "atk": 399,
+          "def": 84,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-6"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1062,
+          "atk": 399,
+          "def": 84,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1380,
+          "atk": 525,
+          "def": 116,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1380,
+          "atk": 525,
+          "def": 116,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1770,
+          "atk": 633,
+          "def": 130,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 90,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Ho'olheyak shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.11u/L\nOperator Ho'olheyak has a great understanding of Originium's properties as well as how to protect herself from them, and we recommend that other operators follow her example.\n\nIn short, she's very healthy. But as for her lifespan, the Medical Department will produce a special report elaborating on the topic later.\n——Warfarin"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "My colleagues and I have been left quite perplexed by Ho'olheyak's arrival on Rhodes Island.\nAt this point, we're just lying to ourselves when we talk up Rhodes Island's apolitical stance. We have many contacts with close ties to government bodies from multiple countries, and some even visit the landship from time to time. She even used to be one of the Maylander Foundation's top agents, too, manipulating Columbia's gigantic shadow from within...\nEven though she has technically left the organization and we've somewhat restricted her access, her background alone lets her know of their existence, and she may have already obtained some intel. This is evident from her rather contemplative expression as she flips through a list of our operators.\nFurthermore, she usually applies to operate solo on most of her missions. Perhaps this is a habit from her secret agent days, but it is quite worrisome that she does not seem willing to mingle with the others, or even to adjust to life on Rhodes Island.\nOf course, this could also be how she expresses her goodwill. She understands what sort of apprehensions her identity brings us, and has decided to flaunt it rather than downplay it, letting us decide how to treat her.\nTo be honest, she has already demonstrated her expertise in espionage despite having only joined us recently. Our intel work will definitely increase in efficiency and quality if we are to trust her. In fact, she has already shared with us a little on how the Maylander Foundation operates, which has definitely helped us somewhat, but has also left us even more confused.\nOperators over at HR have formed some divisive opinions on her, and it seems like this will remain the trend for some time.\n——Weekly report by HR operator D.E\n\nKal'tsit and I have both put much thought into the matter. Her position is much more complicated than you can imagine, but she will do fine in terms of work.\nAs for her relationship with Rhodes Island... we'll leave that to the Doctor.\n-——A note by ■■■"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Oh? I had been wondering how to handle my interviewer while in the locker room earlier, but I didn't expect that it would be you, Doctor.\nSo it worries you to have someone else interview me?\nAre you worried about them, or about me? Hmm?\n...Hehe, forget it. Our current relationship should be enough to let us skip the more trivial questions, no?\nHm? You're asking why someone as smart as me would be seeking information on the mythical K'uk'ulkan?\nDid you also try this line on our cute Elf, Doctor?\nHehe... In terms of social status in today's society, surely the resources and position I held at the Maylander Foundation were far more powerful than the 'K'uk'ulkans' who exist today only in name, yes?\nLet's say we disregard authority and just focus on raw strength instead. Could a 'K'uk'ulkan' in its prime handle a few Columbian army divisions? How many seconds could we last against a laser from S.H.A.F.T.?\nMe, my parents, and each and every one of my ancestors residing in my memories. How can we pretend that the very same civilization we have all lived in doesn't exist?\nThe fact that I can talk about this subject is proof enough that there is no actual 'curse' forcing me to act this way.\nIn other words, I could abandon this whenever I want, and so could my ancestors.\nThen why, why oh why, did we not do so? Why did we continue the chase?\n——That would be a perfectly normal response, from a bystander's point of view.\nBut for me? I have had this obsession lingering in my mind ever since I was born. My first word was neither Mama nor Papa, but 'K'uk'ulkan.'\nSo naturally, all of my childhood education was ultimately directed towards pursuing the 'K'uk'ulkan.'\nThis mission is always on my mind, and the most I can do is ignore it for a short while.\nDo you accept it, or ignore it?\nAnd if you do choose to accept... Can you understand how it feels to spend your oh-so-short life chasing after something, only to end up with nothing, Doctor?\nWould you be willing to let it all be forgotten? Or would you pass on your mission to the next generation, and have them inherit your pain, your anger, your pursuit?\nHonestly, it's more like a curse that we've put upon ourselves.\n...Well, it seems like you managed to wrap your head around my words. Well, aren't you clever?\nYes, even then we should be able to ignore our mission, if we really didn't want to continue the chase.\nIndeed, the main reason why 'become a K'uk'ulkan' has remained a desire until now is because of my choice to do so. Our choice.\nHistory, to us, is a mandatory class. We have always been looking for our answer within it, and when we see through the dense fog and realize that we have been performing to no one on an imaginary stage, that modern history is surrounded by towering walls, we lose all interest in the present.\nThe more glorious a civilization becomes as it advances with its technology, the more enthralling our legends become to us. To soar in the skies in our majestic forms with the wind and thunder.\nTo us, the word 'K'uk'ulkan' means both the force of our might, and the truth of our history.\nCall it superstition, habit, or just plain ignorance. I'll allow you the thought, Doctor, because I sometimes think the same.\nAs we continue our pursuit of 'K'uk'ulkan,' we also look for an alternative to free ourselves from our fate, but we always end up where we began.\nUntil Kristen said those words to me.\nLet's call it a day here, Doctor. The rest... is a secret that you'll have to work hard for.\n——Recording of a conversation between the Doctor and Ho'olheyak (1)"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "The K'uk'ulkans used to be one of the most powerful Elder races in Sargon. They could soar in the skies and harness the power of wind and thunder, and to this day still exist in the myths of some Sargonian tribes.\nAnd as someone who bears such a myth on her back, her current physical condition and Originium Arts assimilation are simply stronger than most, but that's about it.\nFor someone like me who grew up in an environment full of lineages and glory and all that jazz, I can't say I don't understand her at all.\nBut those kinds of Arts are simply too much for me.\nManipulating such delicate things as memory, emotion, perception, and whatnot is no easy feat. As far as I know, only some of the oldest Sarkaz Royal Court records mention similar Arts, and they're all difficult to work with and come with some kind of absurd price to pay.\nThe Arts of the K'uk'ulkan are completely unrelated to those of the Sarkaz Royal Court, but rather a twisted product of some clue they found somewhere in the annals of their history.\nIn fact, their Elder lifespans are still longer than most people, even halved. But their lives will be forever incomplete. Did Ho'olheyak have a childhood? Will she be able to enjoy retirement?\nIn conclusion, it's neither a curse nor the damage to her physical body that cut half her lifespan away, but the structure of her brain has been permanently altered.\nImagine this: you're a newborn baby with a still-developing body, and someone takes the opportunity to pour a load of information into your brain so it can be passed down to the next generation, unforgotten.\nTo put it bluntly, it's less about the Arts themselves than the extremely inhumane brain surgery carried out with said Arts.\nThe one who invented this procedure was undoubtedly talented.\nEthics aside, one can probably only cast that kind of thing on an infant. There's no way to simulate it to test my theory, but I think once an infant becomes self-aware, this crude method of importing information might not only shatter their mind, but also their very being.\nSuch a procedure is practically unheard of, based on what I know of modern science and Originium technology.\nAnd according to Ho'olheyak, her inherited history began more than four centuries ago. So achieving such a fantastical feat was something you could only dream of in an era when medical science wasn't a thing yet.\nYou'd also have to be a damned lunatic to even try it though.\nThe chances of a procedure like that succeeding aren't very high, and I dare not even ask how many other siblings she had. Even if there were other successes, the damage done to the infant's brain is irreversible. That's the main cause of their shortened lifespan, when as Elders should rightfully be living longer than ordinary races.\nTheir so-called 'legacy,' 'past glory,' and 'absolute power,' have turned their Arts into a curse on their own bloodline.\n——Warfarin"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Ah, good evening, Doctor. Lovingly attached to your work as usual, I see.\n...Hm? No, it's nothing, I only— you shared with me how it feels to have amnesia, yes?\nI thought it was time we continued our previous conversation.\n...Eh? Have you forgotten? If you have, I won't mind wrapping my tail around your neck to jog your memory.\nOh, yes. We stopped at 'Until Kristen.'\nWe believe the past holds the truth, and that truth would reveal our true future. She scoffed at our belief, stubbornly asserting that the past is worthless, but the present will lead to the future.\nShe pulled me into her plan, and as it was nearing completion she brought it up so casually... A life pod, I believe was its name? Anyway, she basically gave me all the data from the sarcophagi and told me, now, you can choose to lie in this sarcophagus and turn back into a 'K'uk'ulkan.' But she also asked me:\n'Will it really be worth it, to sacrifice all of your people's lives just to return to the past?'\nThis question has come up in our history too many times to count, but it has never caused a sense of... self-doubt as it did then.\nAnd Kristen... she only came to this conclusion after learning everything. So I had to acknowledge it.\nI'm sure you know the rest, Doctor.\nI escaped from the Tin Man and rushed into that underground space, witnessed the fall of 'God,' and brought whatever remained to you people.\nI obtained nothing from that death that had nothing to do with me. Questions, answers, the past, the future, nothing at all.\nDoctor, I've been on Rhodes Island for a while now, and I now believe that you and Kal'tsit know just as much as Kristen does.\nWhat did you see down there underground? What did you hear, feel?\n...Don't get the wrong idea now. I didn't look for you and Rhodes Island to find an answer.\nThe answers from the past became meaningless when I stopped pursuing the 'K'uk'ulkan.' Kristen cruelly opened the doors of truth, leaving everyone behind, and my sole stroke of luck was to find the two of you standing in front of it.\nRight now I find myself inexplicably smug, but on a lone boat in the middle of a vast ocean. And you, as the only lighthouse that can guide my way.\nSo now, I'll give you a piece of good news and bad news.\nThe good news is that my lifespan will have me dying before you do.\nAs for the bad news, your existence will be passed down through my bloodline, and you won't be able to escape.\n——Recording of a conversation between the Doctor and Ho'olheyak (2)"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Ho'olheyak's experience is the complete opposite of mine.\nI won't say I understand her. I'm probably the least able to.\nI just... if I had my kin whispering in my ears every single day, and could easily see just when my life would end, I think I wouldn't fare any better than her.\nAll I can say is, she has what I don't, and vice versa.\nBut that's not the point I'm trying to make here, Doctor.\nLet's take you out of the equation, and say that she's dealing with Kal'tsit. She still acts all cold and callous as if she cares for nothing, doesn't she?\nOn one hand, it's true she doesn't care for most things, but on the other, she has very carefully hidden away parts of herself.\nIt can't go on like this, companions should be honest with each other, right?\nSo, I'll let you in on an exclusive scoop.\nYou might have heard that she can usually be found in the intel processing room when not on missions, and she really does like to hang out there. So much so that a corner of the room has practically turned into her exclusive spot.\nTry sneaking in there in the middle of the night sometimes. If you're careful, you might even catch a view of her sleeping face.\n——A note that randomly appeared on your desk with handwriting you recognize as Muelsyse's"
+    }
+  ]
+}

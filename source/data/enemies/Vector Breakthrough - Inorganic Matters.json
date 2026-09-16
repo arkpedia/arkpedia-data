@@ -1,0 +1,1398 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act1break",
+    "label": "VEC",
+    "name": "Vector Breakthrough - Inorganic Matters",
+    "release_date": "2025-10-30"
+  },
+  "enemies": [
+    {
+      "slug": "mechanist_mechanical_mind_enemy_8010_mcnist",
+      "id": "enemy_8010_mcnist",
+      "name": "Mechanist, Mechanical Mind",
+      "index": "SFR06",
+      "rank": "Boss",
+      "sort": 1529,
+      "hidden": true,
+      "icon": "/enemies-icons/Mechanist, Mechanical Mind.webp",
+      "flavour_text": "A Breakthrough Trainer simulating Mechanist at the peak of his combat prowess.\nThe engineer famous for his memory and scientific rigor can also write words as romantic as 'Love is like the second law of thermodynamics: the more one longs for eternity, the further one goes down the path of decline,' when he is drunk enough.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical",
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "[Self-Defense Arts] Periodically gains a shield that protects against Physical and Arts damage, which is broken after taking a certain number of attacks",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "When HP is reduced to 0, if <Structural Principle> is alive on the field, summons drones to restore HP and revives when HP is at max",
+          "format": "normal"
+        },
+        {
+          "text": "[Organically Linked Formula] Fights in concert with <Structural Principle>. When shield is broken or HP is reduced to 0, <Structural Principle> is stunned, and [Reactive Defense Module] is temporarily disabled.",
+          "format": "normal"
+        },
+        {
+          "text": "[Concentration Algorithm] Locks onto a target and bombards it, dealing Physical damage to it and units in the 8 surrounding tiles several times",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 60000,
+            "atk": 800,
+            "def": 1500,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 2.5,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "A+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "get_shield",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 1.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "MultiAttack",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 15.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 0.8,
+                "interval": 0.1,
+                "projectile_delay_time": 0.8,
+                "projectile_range": "x-4"
+              }
+            },
+            {
+              "key": "fake_revive",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "hp_recover",
+              "parameters": {
+                "enemy_mcnist_heal.duration": 20.0,
+                "enemy_mcnist_heal.hp_ratio": 0.05,
+                "enemy_mcnist_heal.interval": 1.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "duration": 0.1,
+                "hp_ratio": 0.02
+              }
+            },
+            {
+              "key": "reborn_real",
+              "parameters": {
+                "duration_loop": 0.0,
+                "max_respawn_cnt": 0.0
+              }
+            },
+            {
+              "key": "shield",
+              "parameters": {
+                "cooldown": 20.0,
+                "times": 50.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "mechanist_mechanical_mind_enemy_8010_mcnist_2",
+      "id": "enemy_8010_mcnist_2",
+      "name": "Mechanist, Mechanical Mind",
+      "index": "SFR06",
+      "rank": "Boss",
+      "sort": 1530,
+      "hidden": true,
+      "icon": "/enemies-icons/Mechanist, Mechanical Mind.webp",
+      "flavour_text": "A Breakthrough Trainer simulating Mechanist at the peak of his combat prowess.\nThe engineer famous for his memory and scientific rigor can also write words as romantic as 'Love is like the second law of thermodynamics: the more one longs for eternity, the further one goes down the path of decline,' when he is drunk enough.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical",
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "[Self-Defense Arts] Periodically gains a shield that protects against Physical and Arts damage, which is broken after taking a certain number of attacks",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "When HP is reduced to 0, if <Structural Principle> is alive on the field, summons drones to restore HP and revives when HP is at max",
+          "format": "normal"
+        },
+        {
+          "text": "[Organically Linked Formula] Fights in concert with <Structural Principle>. When shield is broken or HP is reduced to 0, <Structural Principle> is stunned, and [Reactive Defense Module] is temporarily disabled.",
+          "format": "normal"
+        },
+        {
+          "text": "[Concentration Algorithm] Locks onto a target and bombards it, dealing Physical damage to it and units in the 8 surrounding tiles several times",
+          "format": "normal"
+        },
+        {
+          "text": "When <Mechanist, Mechanical Mind> and <Structural Principle> are both waiting to be revived, activates [Nirvana Program]: Locks onto the target with the highest Block every few seconds and attacks them, reduces their Max Block, each attack dealing Arts damage to all your units on the same row or column with the target. Enters second form when program is terminated",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "[Engineering Meteor Shower] Attacks the blocker continuously when <Structural Principle> is blocked, dealing Arts damage to all your units on the same row or column with the blocker, and temporarily reducing their Max Block",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 70000,
+            "atk": 1100,
+            "def": 1500,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 2.5,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "A+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "get_shield",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 1.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "MultiAttack",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 15.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 0.8,
+                "interval": 0.1,
+                "projectile_delay_time": 0.8,
+                "projectile_range": "x-4"
+              }
+            },
+            {
+              "key": "fake_revive",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {}
+            },
+            {
+              "key": "shield_advance",
+              "sp_cost": 0,
+              "cooldown": 3.0,
+              "initial_cooldown": 1.0,
+              "priority": 1,
+              "parameters": {
+                "cooldown": 15.0,
+                "times": 50.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "attribute",
+              "parameters": {
+                "atk": 2.0,
+                "def": 0.8,
+                "magic_resistance": 20.0
+              }
+            },
+            {
+              "key": "block_attack",
+              "parameters": {
+                "multi.atk_scale": 0.4,
+                "multi.block_cnt": -1.0,
+                "multi.block_down": 8.0
+              }
+            },
+            {
+              "key": "clear_abnormal",
+              "parameters": {
+                "hp_ratio": 0.0
+              }
+            },
+            {
+              "key": "hp_recover",
+              "parameters": {
+                "enemy_mcnist_heal.duration": 20.0,
+                "enemy_mcnist_heal.hp_ratio": 0.05,
+                "enemy_mcnist_heal.interval": 1.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "duration": 0.1,
+                "hp_ratio": 0.02
+              }
+            },
+            {
+              "key": "reborn_real",
+              "parameters": {
+                "atk_scale": 1.7,
+                "block_cnt": -1.0,
+                "duration": 30.933001,
+                "duration_loop": 30.0,
+                "hit_interval": 5.0,
+                "times": 6.0
+              }
+            },
+            {
+              "key": "shield",
+              "parameters": {
+                "cooldown": 20.0,
+                "times": 50.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "mechanist_mechanical_mind",
+      "id": "enemy_8010_mcnist_3",
+      "name": "Mechanist, Mechanical Mind",
+      "index": "SFR06",
+      "rank": "Boss",
+      "sort": 1531,
+      "hidden": false,
+      "icon": "/enemies-icons/Mechanist, Mechanical Mind.webp",
+      "flavour_text": "A Breakthrough Trainer simulating Mechanist at the peak of his combat prowess.\nThe engineer famous for his memory and scientific rigor can also write words as romantic as 'Love is like the second law of thermodynamics: the more one longs for eternity, the further one goes down the path of decline,' when he is drunk enough.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical",
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "[Self-Defense Arts] Periodically gains a shield that protects against Physical and Arts damage, which is broken after taking a certain number of attacks",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "When HP is reduced to 0, if <Structural Principle> is alive on the field, summons drones to restore HP and revives when HP is at max",
+          "format": "normal"
+        },
+        {
+          "text": "[Organically Linked Formula] Fights in concert with <Structural Principle>. When shield is broken or HP is reduced to 0, <Structural Principle> is stunned, and [Reactive Defense Module] is temporarily disabled.",
+          "format": "normal"
+        },
+        {
+          "text": "[Concentration Algorithm] Locks onto a target and bombards it, dealing Physical damage to it and units in the 8 surrounding tiles several times",
+          "format": "normal"
+        },
+        {
+          "text": "When <Mechanist, Mechanical Mind> and <Structural Principle> are both waiting to be revived, activates [Nirvana Program]: Locks onto the target with the highest Block every few seconds and attacks them, reduces their Max Block, each attack dealing Arts damage to all your units on the same row or column with the target. Enters second form when program is terminated",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "[Engineering Meteor Shower] Attacks the blocker continuously when <Structural Principle> is blocked, dealing Arts damage to all your units on the same row or column with the blocker, and temporarily reducing their Max Block",
+          "format": "normal"
+        },
+        {
+          "text": "Activates [Nirvana Program] again when HP drops below 50% for the first time",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 80000,
+            "atk": 1200,
+            "def": 1500,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 2.5,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "A+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "get_shield",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 1.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "MultiAttack",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 15.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 0.8,
+                "interval": 0.1,
+                "projectile_delay_time": 0.8,
+                "projectile_range": "x-4"
+              }
+            },
+            {
+              "key": "fake_revive",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {}
+            },
+            {
+              "key": "shield_advance",
+              "sp_cost": 0,
+              "cooldown": 3.0,
+              "initial_cooldown": 1.0,
+              "priority": 1,
+              "parameters": {
+                "cooldown": 15.0,
+                "times": 50.0
+              }
+            },
+            {
+              "key": "reborn_like",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 2,
+              "parameters": {
+                "atk_scale": 0.6,
+                "block_cnt": -1.0,
+                "duration": 30.0,
+                "hit_interval": 5.0,
+                "max_hp_ratio": 0.5,
+                "times": 6.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "attribute",
+              "parameters": {
+                "atk": 2.0,
+                "def": 0.8,
+                "magic_resistance": 20.0
+              }
+            },
+            {
+              "key": "block_attack",
+              "parameters": {
+                "multi.atk_scale": 0.4,
+                "multi.block_cnt": -1.0,
+                "multi.block_down": 8.0
+              }
+            },
+            {
+              "key": "clear_abnormal",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            },
+            {
+              "key": "hp_recover",
+              "parameters": {
+                "enemy_mcnist_heal.duration": 20.0,
+                "enemy_mcnist_heal.hp_ratio": 0.05,
+                "enemy_mcnist_heal.interval": 1.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "duration": 0.1,
+                "hp_ratio": 0.02
+              }
+            },
+            {
+              "key": "reborn_real",
+              "parameters": {
+                "atk_scale": 1.7,
+                "block_cnt": -1.0,
+                "duration": 30.933001,
+                "duration_loop": 30.0,
+                "hit_interval": 5.0,
+                "times": 6.0
+              }
+            },
+            {
+              "key": "shield",
+              "parameters": {
+                "cooldown": 20.0,
+                "times": 50.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "structural_principle_enemy_8011_mcndog",
+      "id": "enemy_8011_mcndog",
+      "name": "Structural Principle",
+      "index": "SFR07",
+      "rank": "Boss",
+      "sort": 1532,
+      "hidden": true,
+      "icon": "/enemies-icons/Structural Principle.webp",
+      "flavour_text": "A risk assessment machine built by Mechanist. His best friend.\nHe set twenty defensive programs to prevent Closure from meddling with it.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When HP is reduced to 0, if <Mechanist, Mechanical Mind> is alive on the field, summons drones to restore HP and revives when HP is at max",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Reactive Defense Module] Gains increased DEF and RES when damage is taken; buff quickly degrades several seconds after the last damage is taken",
+          "format": "normal"
+        },
+        {
+          "text": "[Focus Module] Attacks inflict additional Corrosion and continuously gains ASPD when attacking the same target (capped); resets when switching targets or not attacking for a few seconds",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 800,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "fake_revive",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {}
+            },
+            {
+              "key": "fake_revive_stun",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {}
+            },
+            {
+              "key": "fake_revive_advance",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "focus",
+              "parameters": {
+                "attack_speed": 30.0,
+                "duration": 6.0,
+                "max_stack_cnt": 5.0
+              }
+            },
+            {
+              "key": "hp_recover",
+              "parameters": {
+                "enemy_mcndog_heal.duration": 20.0,
+                "enemy_mcndog_heal.hp_ratio": 0.05,
+                "enemy_mcndog_heal.interval": 1.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "duration": 0.1,
+                "hp_ratio": 0.02
+              }
+            },
+            {
+              "key": "reborn_real",
+              "parameters": {
+                "duration": 0.0,
+                "max_respawn_cnt": 0.0
+              }
+            },
+            {
+              "key": "takeDamage",
+              "parameters": {
+                "cooldown": 1.0,
+                "def": 400.0,
+                "magic_resistance": 8.0,
+                "max_stack_cnt": 10.0
+              }
+            },
+            {
+              "key": "takeDamageChecker",
+              "parameters": {
+                "interval": 1.0
+              }
+            },
+            {
+              "key": "water",
+              "parameters": {
+                "ep_damage_ratio": 0.4
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "structural_principle_enemy_8011_mcndog_2",
+      "id": "enemy_8011_mcndog_2",
+      "name": "Structural Principle",
+      "index": "SFR07",
+      "rank": "Boss",
+      "sort": 1533,
+      "hidden": true,
+      "icon": "/enemies-icons/Structural Principle.webp",
+      "flavour_text": "A risk assessment machine built by Mechanist. His best friend.\nHe set twenty defensive programs to prevent Closure from meddling with it.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When HP is reduced to 0, if <Mechanist, Mechanical Mind> is alive on the field, summons drones to restore HP and revives when HP is at max",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Reactive Defense Module] Gains increased DEF and RES when damage is taken; buff quickly degrades several seconds after the last damage is taken",
+          "format": "normal"
+        },
+        {
+          "text": "[Focus Module] Attacks inflict additional Corrosion and continuously gains ASPD when attacking the same target (capped); resets when switching targets or not attacking for a few seconds",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "[Acceleration Module] Gradually accelerates when moving, and deals additional damage on the first attack after being blocked based upon Movement Speed",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 60000,
+            "atk": 800,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "fake_revive",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {}
+            },
+            {
+              "key": "fake_revive_stun",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {}
+            },
+            {
+              "key": "fake_revive_advance",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "attribute",
+              "parameters": {
+                "atk": 0.25,
+                "base_attack_time": 2.0,
+                "def": 0.0,
+                "magic_resistance": 0.0,
+                "max_hp": 1.0,
+                "move_speed": 0.6
+              }
+            },
+            {
+              "key": "firstAttack",
+              "parameters": {
+                "atk_scale": 1000.0
+              }
+            },
+            {
+              "key": "focus",
+              "parameters": {
+                "attack_speed": 30.0,
+                "duration": 6.0,
+                "max_stack_cnt": 5.0
+              }
+            },
+            {
+              "key": "hp_recover",
+              "parameters": {
+                "enemy_mcndog_heal.duration": 20.0,
+                "enemy_mcndog_heal.hp_ratio": 0.05,
+                "enemy_mcndog_heal.interval": 1.0
+              }
+            },
+            {
+              "key": "hp_recover_advance",
+              "parameters": {
+                "duration": 20.0,
+                "hp_ratio": 0.05,
+                "interval": 1.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "duration": 0.1,
+                "hp_ratio": 0.02
+              }
+            },
+            {
+              "key": "reborn_advance",
+              "parameters": {
+                "duration": 0.1,
+                "hp_ratio": 0.02
+              }
+            },
+            {
+              "key": "reborn_real",
+              "parameters": {
+                "duration": 30.0
+              }
+            },
+            {
+              "key": "rush",
+              "parameters": {
+                "mcndog_t[trigger].interval": 0.333,
+                "mcndog_t[trigger].move_speed": 0.5,
+                "mcndog_t[trigger].trig_cnt": 30.0,
+                "mcndog_t_predelay.predelay": 3.0
+              }
+            },
+            {
+              "key": "takeDamage",
+              "parameters": {
+                "cooldown": 1.0,
+                "def": 400.0,
+                "magic_resistance": 8.0,
+                "max_stack_cnt": 10.0
+              }
+            },
+            {
+              "key": "takeDamageChecker",
+              "parameters": {
+                "interval": 1.0
+              }
+            },
+            {
+              "key": "water",
+              "parameters": {
+                "ep_damage_ratio": 0.4
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "structural_principle",
+      "id": "enemy_8011_mcndog_3",
+      "name": "Structural Principle",
+      "index": "SFR07",
+      "rank": "Boss",
+      "sort": 1534,
+      "hidden": false,
+      "icon": "/enemies-icons/Structural Principle.webp",
+      "flavour_text": "A risk assessment machine built by Mechanist. His best friend.\nHe set twenty defensive programs to prevent Closure from meddling with it.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When HP is reduced to 0, if <Mechanist, Mechanical Mind> is alive on the field, summons drones to restore HP and revives when HP is at max",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Reactive Defense Module] Gains increased DEF and RES when damage is taken; buff quickly degrades several seconds after the last damage is taken",
+          "format": "normal"
+        },
+        {
+          "text": "[Focus Module] Attacks inflict additional Corrosion and continuously gains ASPD when attacking the same target (capped); resets when switching targets or not attacking for a few seconds",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "[Acceleration Module] Gradually accelerates when moving, and deals additional damage on the first attack after being blocked based upon Movement Speed",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 80000,
+            "atk": 800,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "fake_revive",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {}
+            },
+            {
+              "key": "fake_revive_stun",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {}
+            },
+            {
+              "key": "fake_revive_advance",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "attribute",
+              "parameters": {
+                "atk": 0.25,
+                "base_attack_time": 2.0,
+                "def": 0.0,
+                "magic_resistance": 0.0,
+                "max_hp": 1.0,
+                "move_speed": 0.6
+              }
+            },
+            {
+              "key": "firstAttack",
+              "parameters": {
+                "atk_scale": 1000.0
+              }
+            },
+            {
+              "key": "focus",
+              "parameters": {
+                "attack_speed": 30.0,
+                "duration": 6.0,
+                "max_stack_cnt": 5.0
+              }
+            },
+            {
+              "key": "hp_recover",
+              "parameters": {
+                "enemy_mcndog_heal.duration": 20.0,
+                "enemy_mcndog_heal.hp_ratio": 0.05,
+                "enemy_mcndog_heal.interval": 1.0
+              }
+            },
+            {
+              "key": "hp_recover_advance",
+              "parameters": {
+                "duration": 20.0,
+                "hp_ratio": 0.05,
+                "interval": 1.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "duration": 0.1,
+                "hp_ratio": 0.02
+              }
+            },
+            {
+              "key": "reborn_advance",
+              "parameters": {
+                "duration": 0.1,
+                "hp_ratio": 0.02
+              }
+            },
+            {
+              "key": "reborn_real",
+              "parameters": {
+                "duration": 30.0
+              }
+            },
+            {
+              "key": "rush",
+              "parameters": {
+                "mcndog_t[trigger].interval": 0.333,
+                "mcndog_t[trigger].move_speed": 0.5,
+                "mcndog_t[trigger].trig_cnt": 30.0,
+                "mcndog_t_predelay.predelay": 3.0
+              }
+            },
+            {
+              "key": "takeDamage",
+              "parameters": {
+                "cooldown": 1.0,
+                "def": 400.0,
+                "magic_resistance": 8.0,
+                "max_stack_cnt": 10.0
+              }
+            },
+            {
+              "key": "takeDamageChecker",
+              "parameters": {
+                "interval": 1.0
+              }
+            },
+            {
+              "key": "water",
+              "parameters": {
+                "ep_damage_ratio": 0.4
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "document",
+      "id": "enemy_8012_mcnd",
+      "name": "Document",
+      "index": "SFR08",
+      "rank": "Elite",
+      "sort": 1518,
+      "hidden": false,
+      "icon": "/enemies-icons/Document.webp",
+      "flavour_text": "Pith's student. Rational and good at math, with outstanding Originium Arts Assimilation. Chose to take to the battlefield as a defender operator to maintain an active mind.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Takes greatly reduced Arts and Physical damage when force field is active; force field breaks when a large amount of damage is taken in a single instance",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 60000,
+            "atk": 1400,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "shield",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 2.0,
+              "priority": 0,
+              "parameters": {
+                "damage_resistance": 0.8,
+                "shield_break": 700.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "leafcarpet",
+      "id": "enemy_8013_mcnrsh",
+      "name": "Leafcarpet",
+      "index": "SFR09",
+      "rank": "Elite",
+      "sort": 1519,
+      "hidden": false,
+      "icon": "/enemies-icons/Leafcarpet.webp",
+      "flavour_text": "An orphan that Sharp brought to Rhodes Island. When in peak condition, she is fast enough to give Sharp a run for his money, and was thus recruited into his squad. Not happy with how Sharp often goes solo.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Unblockable",
+          "format": "normal"
+        },
+        {
+          "text": "Accelerates when moving, stuns units along her path for a few seconds, and deals Physical damage based on her current Movement Speed",
+          "format": "normal"
+        },
+        {
+          "text": "Temporarily gains a large Fragile effect if movement is interrupted",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 100000,
+            "atk": 600,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": 0.3,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "B",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "crash",
+              "parameters": {
+                "atk_scale": 600.0,
+                "stun": 4.0
+              }
+            },
+            {
+              "key": "rush",
+              "parameters": {
+                "damage_scale": 2.0,
+                "mcnrsh_t[trigger].interval": 0.333,
+                "mcnrsh_t[trigger].move_speed": 0.5,
+                "mcnrsh_t[trigger].trig_cnt": 30.0,
+                "mcnrsh_t_predelay.predelay": 5.0,
+                "weak[limit]": 6.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "stopwatch",
+      "id": "enemy_8014_mcnelp",
+      "name": "Stopwatch",
+      "index": "SFR10",
+      "rank": "Elite",
+      "sort": 1520,
+      "hidden": false,
+      "icon": "/enemies-icons/Stopwatch.webp",
+      "flavour_text": "Touch's translator and a former Sami crook who decided to go straight and join Rhodes Island after being rescued by Touch. Claims to understand all the words that Touch leaves unsaid, which Touch neither affirms nor denies.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Periodically increases the ASPD and Movement Speed of all enemies on the field when not blocked",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 70000,
+            "atk": 2500,
+            "def": 1000,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "A",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "courage",
+              "sp_cost": 0,
+              "cooldown": 3.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "attack_speed": 80.0,
+                "duration": 4.0,
+                "max_stack_cnt": 1.0,
+                "move_speed": 1.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "uproar",
+      "id": "enemy_8015_mcnrhd",
+      "name": "Uproar",
+      "index": "SFR11",
+      "rank": "Elite",
+      "sort": 1521,
+      "hidden": false,
+      "icon": "/enemies-icons/Uproar.webp",
+      "flavour_text": "Stormeye's drinking buddy who met him when he was still a wanderer, and later joined Rhodes Island together. She taught Stormeye how to hold his drink.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Takes greatly reduced Physical and Arts damage when unblocked, then fires a rain of arrows, dealing splash damage to units around the damage source and greatly reducing their ASPD",
+          "format": "normal"
+        },
+        {
+          "text": "Rebirth",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 1500,
+            "def": 1200,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 1.3,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "A+",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "multiAttack",
+              "sp_cost": 0,
+              "cooldown": 4.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.2,
+                "attack_speed": -50.0,
+                "duration": 10.0,
+                "projectile_range": 1.5
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "reborn",
+              "parameters": {
+                "duration": 5.667,
+                "duration_rest": 5.0
+              }
+            },
+            {
+              "key": "special",
+              "parameters": {
+                "damage_resistance": 0.8
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

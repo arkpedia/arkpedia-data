@@ -1,0 +1,2237 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act29sre",
+    "label": "ZT",
+    "name": "Zwillingstürme im Herbst",
+    "release_date": "2024-04-30"
+  },
+  "enemies": [
+    {
+      "slug": "remnant_orchestra_flautist",
+      "id": "enemy_1371_ltnflu",
+      "name": "Remnant Orchestra Flautist",
+      "index": "OCS1",
+      "rank": "Normal",
+      "sort": 712,
+      "hidden": false,
+      "icon": "/enemies-icons/Remnant Orchestra Flautist.webp",
+      "flavour_text": "Flautist who wants to join their king's orchestra. This nobody has never seen the spectacle, and is all the more fanatical for it.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "After 2 attacks, the next attack has increased ATK",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4000,
+            "atk": 280,
+            "def": 150,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "D",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "boostAtk",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.3
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "buff",
+              "parameters": {
+                "enemy_act29side[buff_depressed_lite].atk": 0.2,
+                "enemy_act29side[buff_depressed_lite].attack_speed": -50.0,
+                "enemy_act29side[buff_depressed_lite].def": 0.0,
+                "enemy_act29side[buff_depressed_lite].move_speed": 0.5,
+                "enemy_act29side[buff_enthu_lite].atk": 0.0,
+                "enemy_act29side[buff_enthu_lite].attack_speed": 50.0,
+                "enemy_act29side[buff_enthu_lite].def": -0.5,
+                "enemy_act29side[buff_enthu_lite].move_speed": 2.0,
+                "sp_ratio": 1.0,
+                "type": "enthusiastic"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "witch_kings_orchestra_flautist",
+      "id": "enemy_1371_ltnflu_2",
+      "name": "Witch King's Orchestra Flautist",
+      "index": "OCS2",
+      "rank": "Normal",
+      "sort": 713,
+      "hidden": false,
+      "icon": "/enemies-icons/Witch King's Orchestra Flautist.webp",
+      "flavour_text": "Flautist who once played in their king's orchestra. This nobody has unfortunately seen the spectacle, and is all the more fanatical for it.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "After 2 attacks, the next attack has increased ATK",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 320,
+            "def": 150,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "boostAtk",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.3
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "buff",
+              "parameters": {
+                "enemy_act29side[buff_depressed_lite].atk": 0.2,
+                "enemy_act29side[buff_depressed_lite].attack_speed": -50.0,
+                "enemy_act29side[buff_depressed_lite].def": 0.0,
+                "enemy_act29side[buff_depressed_lite].move_speed": 0.5,
+                "enemy_act29side[buff_enthu_lite].atk": 0.0,
+                "enemy_act29side[buff_enthu_lite].attack_speed": 50.0,
+                "enemy_act29side[buff_enthu_lite].def": -0.5,
+                "enemy_act29side[buff_enthu_lite].move_speed": 2.0,
+                "sp_ratio": 1.0,
+                "type": "enthusiastic"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "remnant_orchestra_trumpeter",
+      "id": "enemy_1372_ltntpt",
+      "name": "Remnant Orchestra Trumpeter",
+      "index": "OCS3",
+      "rank": "Normal",
+      "sort": 714,
+      "hidden": false,
+      "icon": "/enemies-icons/Remnant Orchestra Trumpeter.webp",
+      "flavour_text": "Trumpeter who wants to sound their king's triumph. His music is sharp and bright, and he believes himself to be the herald of victory.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "After 2 attacks, the next attack deals splash damage in a cross",
+          "format": "silence"
+        },
+        {
+          "text": "Attacks deal Arts damage when passionate variation is active",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 200,
+            "def": 200,
+            "res": 15.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "D",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "splitAtk",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0
+              }
+            },
+            {
+              "key": "splitAtk_Enthusiastic",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "switchMode",
+              "parameters": {
+                "enemy_act29side[buff_depressed].atk": 0.2,
+                "enemy_act29side[buff_depressed].attack_speed": -50.0,
+                "enemy_act29side[buff_depressed].def": 0.0,
+                "enemy_act29side[buff_depressed].move_speed": 0.5,
+                "enemy_act29side[buff_enthu].atk": 0.0,
+                "enemy_act29side[buff_enthu].attack_speed": 50.0,
+                "enemy_act29side[buff_enthu].def": -0.5,
+                "enemy_act29side[buff_enthu].move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "witch_kings_orchestra_trumpeter",
+      "id": "enemy_1372_ltntpt_2",
+      "name": "Witch King's Orchestra Trumpeter",
+      "index": "OCS4",
+      "rank": "Normal",
+      "sort": 715,
+      "hidden": false,
+      "icon": "/enemies-icons/Witch King's Orchestra Trumpeter.webp",
+      "flavour_text": "Trumpeter who once sounded their king's triumph. His music is sharper and brighter, and he has heralded many victories.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "After 2 attacks, the next attack deals splash damage in a cross",
+          "format": "silence"
+        },
+        {
+          "text": "Attacks deal Arts damage when passionate variation is active",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7000,
+            "atk": 250,
+            "def": 250,
+            "res": 15.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "D",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "splitAtk",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0
+              }
+            },
+            {
+              "key": "splitAtk_Enthusiastic",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "switchMode",
+              "parameters": {
+                "enemy_act29side[buff_depressed].atk": 0.2,
+                "enemy_act29side[buff_depressed].attack_speed": -50.0,
+                "enemy_act29side[buff_depressed].def": 0.0,
+                "enemy_act29side[buff_depressed].move_speed": 0.5,
+                "enemy_act29side[buff_enthu].atk": 0.0,
+                "enemy_act29side[buff_enthu].attack_speed": 50.0,
+                "enemy_act29side[buff_enthu].def": -0.5,
+                "enemy_act29side[buff_enthu].move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "remnant_orchestra_hornist",
+      "id": "enemy_1373_ltnhor",
+      "name": "Remnant Orchestra Hornist",
+      "index": "OCS5",
+      "rank": "Normal",
+      "sort": 716,
+      "hidden": false,
+      "icon": "/enemies-icons/Remnant Orchestra Hornist.webp",
+      "flavour_text": "Hornist who wants to display his skills under their king. He has never had a chance to show off his talents, and waits for an opportunity to awe the world.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "After 2 attacks, the next attack hits an additional target",
+          "format": "silence"
+        },
+        {
+          "text": "Attacks deal Arts damage when passionate variation is active",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 150,
+            "def": 200,
+            "res": 15.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 1.5,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "E",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "attackTwoTarget",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "attackTwoTarget_enthu",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "switchMode",
+              "parameters": {
+                "enemy_act29side[buff_depressed].atk": 0.2,
+                "enemy_act29side[buff_depressed].attack_speed": -50.0,
+                "enemy_act29side[buff_depressed].def": 0.0,
+                "enemy_act29side[buff_depressed].move_speed": 0.5,
+                "enemy_act29side[buff_enthu].atk": 0.0,
+                "enemy_act29side[buff_enthu].attack_speed": 50.0,
+                "enemy_act29side[buff_enthu].def": -0.5,
+                "enemy_act29side[buff_enthu].move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "Over time",
+            "increment": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "witch_kings_orchestra_hornist",
+      "id": "enemy_1373_ltnhor_2",
+      "name": "Witch King's Orchestra Hornist",
+      "index": "OCS6",
+      "rank": "Normal",
+      "sort": 717,
+      "hidden": false,
+      "icon": "/enemies-icons/Witch King's Orchestra Hornist.webp",
+      "flavour_text": "Hornist who once displayed his skills under their king. He never truly had a chance to show off his talents, and waits for more opportunities to awe the world.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "After 2 attacks, the next attack hits an additional target",
+          "format": "silence"
+        },
+        {
+          "text": "Attacks deal Arts damage when passionate variation is active",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 9000,
+            "atk": 200,
+            "def": 250,
+            "res": 15.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 1.5,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "D",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "attackTwoTarget",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "attackTwoTarget_enthu",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "switchMode",
+              "parameters": {
+                "enemy_act29side[buff_depressed].atk": 0.2,
+                "enemy_act29side[buff_depressed].attack_speed": -50.0,
+                "enemy_act29side[buff_depressed].def": 0.0,
+                "enemy_act29side[buff_depressed].move_speed": 0.5,
+                "enemy_act29side[buff_enthu].atk": 0.0,
+                "enemy_act29side[buff_enthu].attack_speed": 50.0,
+                "enemy_act29side[buff_enthu].def": -0.5,
+                "enemy_act29side[buff_enthu].move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "Over time",
+            "increment": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "remnant_orchestra_chorister",
+      "id": "enemy_1374_ltnhap",
+      "name": "Remnant Orchestra Chorister",
+      "index": "OCS7",
+      "rank": "Normal",
+      "sort": 718,
+      "hidden": false,
+      "icon": "/enemies-icons/Remnant Orchestra Chorister.webp",
+      "flavour_text": "Chorister who wants to sing their king's praise. He tries to write his ode, but every word he pens is as malevolent as any curse.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "After 1 attack, the next attack restores HP based on ATK",
+          "format": "silence"
+        },
+        {
+          "text": "Instead restores the HP of this unit and all enemies within attack range when passionate variation is active",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 13000,
+            "atk": 250,
+            "def": 250,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.0,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "D",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "atkWithHeal",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "heal_scale": 2.0
+              }
+            },
+            {
+              "key": "atkWithHeal_enthu",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "heal_scale": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "groupHeal",
+              "parameters": {
+                "heal_scale": 1.0
+              }
+            },
+            {
+              "key": "switchMode",
+              "parameters": {
+                "enemy_act29side[buff_depressed].atk": 0.2,
+                "enemy_act29side[buff_depressed].attack_speed": -50.0,
+                "enemy_act29side[buff_depressed].def": 0.0,
+                "enemy_act29side[buff_depressed].move_speed": 0.5,
+                "enemy_act29side[buff_enthu].atk": 0.0,
+                "enemy_act29side[buff_enthu].attack_speed": 50.0,
+                "enemy_act29side[buff_enthu].def": -0.5,
+                "enemy_act29side[buff_enthu].move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 2.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "witch_kings_orchestra_chorister",
+      "id": "enemy_1374_ltnhap_2",
+      "name": "Witch King's Orchestra Chorister",
+      "index": "OCS8",
+      "rank": "Normal",
+      "sort": 719,
+      "hidden": false,
+      "icon": "/enemies-icons/Witch King's Orchestra Chorister.webp",
+      "flavour_text": "Chorister who once sang their king's praise. He has written many odes, but every word he pens is more malevolent than any curse.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "After 1 attack, the next attack restores HP based on ATK",
+          "format": "silence"
+        },
+        {
+          "text": "Instead restores the HP of this unit and all enemies within attack range when passionate variation is active",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 300,
+            "def": 300,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.0,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "atkWithHeal",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "heal_scale": 2.0
+              }
+            },
+            {
+              "key": "atkWithHeal_enthu",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "heal_scale": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "groupHeal",
+              "parameters": {
+                "heal_scale": 1.0
+              }
+            },
+            {
+              "key": "switchMode",
+              "parameters": {
+                "enemy_act29side[buff_depressed].atk": 0.2,
+                "enemy_act29side[buff_depressed].attack_speed": -50.0,
+                "enemy_act29side[buff_depressed].def": 0.0,
+                "enemy_act29side[buff_depressed].move_speed": 0.5,
+                "enemy_act29side[buff_enthu].atk": 0.0,
+                "enemy_act29side[buff_enthu].attack_speed": 50.0,
+                "enemy_act29side[buff_enthu].def": -0.5,
+                "enemy_act29side[buff_enthu].move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 2.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "remnant_orchestra_wind_player",
+      "id": "enemy_1375_ltnclr",
+      "name": "Remnant Orchestra Wind Player",
+      "index": "OCS9",
+      "rank": "Normal",
+      "sort": 720,
+      "hidden": false,
+      "icon": "/enemies-icons/Remnant Orchestra Wind Player.webp",
+      "flavour_text": "Wind player who wants to become the concertmaster of their king's orchestra. He worked hard to climb the ladder, but the orchestra is long gone, for which he is very resentful.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "ATK continuously increases when unblocked. ATK is reset after the next attack.",
+          "format": "normal"
+        },
+        {
+          "text": "When melancholic variation is active, ATK is greatly increased, and attacks Stun the target",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 13000,
+            "atk": 500,
+            "def": 700,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "B",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "atkboostCore",
+              "parameters": {
+                "atk": 30.0,
+                "max_stack_count": 30.0,
+                "stun_duration": 10.0
+              }
+            },
+            {
+              "key": "switchMode",
+              "parameters": {
+                "enemy_act29side[buff_depressed].atk": 1.5,
+                "enemy_act29side[buff_depressed].attack_speed": -25.0,
+                "enemy_act29side[buff_depressed].def": 0.0,
+                "enemy_act29side[buff_depressed].move_speed": 0.7,
+                "enemy_act29side[buff_enthu].atk": 0.0,
+                "enemy_act29side[buff_enthu].attack_speed": 25.0,
+                "enemy_act29side[buff_enthu].def": -0.5,
+                "enemy_act29side[buff_enthu].move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "witch_kings_orchestra_wind_player",
+      "id": "enemy_1375_ltnclr_2",
+      "name": "Witch King's Orchestra Wind Player",
+      "index": "OCS10",
+      "rank": "Normal",
+      "sort": 721,
+      "hidden": false,
+      "icon": "/enemies-icons/Witch King's Orchestra Wind Player.webp",
+      "flavour_text": "Wind player who was once the concertmaster of their king's orchestra. He was once atop the ladder, but the orchestra is long gone, for which he is beyond resentful.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "ATK continuously increases when unblocked. ATK is reset after the next attack.",
+          "format": "normal"
+        },
+        {
+          "text": "When melancholic variation is active, ATK is greatly increased, and attacks Stun the target",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 600,
+            "def": 700,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "B",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "atkboostCore",
+              "parameters": {
+                "atk": 30.0,
+                "max_stack_count": 30.0,
+                "stun_duration": 10.0
+              }
+            },
+            {
+              "key": "switchMode",
+              "parameters": {
+                "enemy_act29side[buff_depressed].atk": 1.5,
+                "enemy_act29side[buff_depressed].attack_speed": -25.0,
+                "enemy_act29side[buff_depressed].def": 0.0,
+                "enemy_act29side[buff_depressed].move_speed": 0.7,
+                "enemy_act29side[buff_enthu].atk": 0.0,
+                "enemy_act29side[buff_enthu].attack_speed": 25.0,
+                "enemy_act29side[buff_enthu].def": -0.5,
+                "enemy_act29side[buff_enthu].move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "remnant_orchestra_drummer",
+      "id": "enemy_1376_ltndru",
+      "name": "Remnant Orchestra Drummer",
+      "index": "OCS11",
+      "rank": "Normal",
+      "sort": 722,
+      "hidden": false,
+      "icon": "/enemies-icons/Remnant Orchestra Drummer.webp",
+      "flavour_text": "Drummer who wants to set the beat for their king's music. Every beat he drums is filled with pain, for he punishes himself to achieve steady rhythm.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "After 2 attacks, the next attack deals splash damage to all targets in attack range",
+          "format": "silence"
+        },
+        {
+          "text": "Attack range increases when passionate variation is active",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 250,
+            "def": 250,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "D",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "aoeAttack",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "aoeAttack_enthu",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "switchMode",
+              "parameters": {
+                "enemy_act29side[buff_depressed].atk": 0.2,
+                "enemy_act29side[buff_depressed].attack_speed": -50.0,
+                "enemy_act29side[buff_depressed].def": 0.0,
+                "enemy_act29side[buff_depressed].move_speed": 0.5,
+                "enemy_act29side[buff_enthu].atk": 0.0,
+                "enemy_act29side[buff_enthu].attack_speed": 50.0,
+                "enemy_act29side[buff_enthu].def": -0.5,
+                "enemy_act29side[buff_enthu].move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "witch_kings_orchestra_drummer",
+      "id": "enemy_1376_ltndru_2",
+      "name": "Witch King's Orchestra Drummer",
+      "index": "OCS12",
+      "rank": "Normal",
+      "sort": 723,
+      "hidden": false,
+      "icon": "/enemies-icons/Witch King's Orchestra Drummer.webp",
+      "flavour_text": "Drummer who once set the beat for their king's music. Every beat he drums is filled with suffering, for he torments himself to achieve impeccable rhythm.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "After 2 attacks, the next attack deals splash damage to all targets in attack range",
+          "format": "silence"
+        },
+        {
+          "text": "Attack range increases when passionate variation is active",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12000,
+            "atk": 350,
+            "def": 300,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "aoeAttack",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "aoeAttack_enthu",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "switchMode",
+              "parameters": {
+                "enemy_act29side[buff_depressed].atk": 0.2,
+                "enemy_act29side[buff_depressed].attack_speed": -50.0,
+                "enemy_act29side[buff_depressed].def": 0.0,
+                "enemy_act29side[buff_depressed].move_speed": 0.5,
+                "enemy_act29side[buff_enthu].atk": 0.0,
+                "enemy_act29side[buff_enthu].attack_speed": 50.0,
+                "enemy_act29side[buff_enthu].def": -0.5,
+                "enemy_act29side[buff_enthu].move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "remnant_orchestra_cellist",
+      "id": "enemy_1377_ltnclo",
+      "name": "Remnant Orchestra Cellist",
+      "index": "OCS13",
+      "rank": "Elite",
+      "sort": 724,
+      "hidden": false,
+      "icon": "/enemies-icons/Remnant Orchestra Cellist.webp",
+      "flavour_text": "Cellist who wants to be their king's trusted henchman. He lives to earn their king's favor, for which he is willing to play obsequious tunes.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "More likely to be attacked by your units",
+          "format": "normal"
+        },
+        {
+          "text": "When melancholic variation is active, ATK is greatly increased, and gains a Shield that protects against a certain number of attacks; each time damage is prevented, reflects as Physical damage based on own ATK",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 600,
+            "def": 900,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 4,
+            "taunt": 1,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "B+",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "rechargeShield",
+              "parameters": {
+                "inverse_damage_scale": 0.2,
+                "shield": 10.0,
+                "shield_broken_fx": 5.0
+              }
+            },
+            {
+              "key": "switchMode",
+              "parameters": {
+                "enemy_act29side[buff_depressed].atk": 1.5,
+                "enemy_act29side[buff_depressed].attack_speed": -25.0,
+                "enemy_act29side[buff_depressed].def": 0.0,
+                "enemy_act29side[buff_depressed].move_speed": 0.7,
+                "enemy_act29side[buff_enthu].atk": 0.0,
+                "enemy_act29side[buff_enthu].attack_speed": 25.0,
+                "enemy_act29side[buff_enthu].def": -0.5,
+                "enemy_act29side[buff_enthu].move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "witch_kings_orchestra_cellist",
+      "id": "enemy_1377_ltnclo_2",
+      "name": "Witch King's Orchestra Cellist",
+      "index": "OCS14",
+      "rank": "Elite",
+      "sort": 725,
+      "hidden": false,
+      "icon": "/enemies-icons/Witch King's Orchestra Cellist.webp",
+      "flavour_text": "Cellist who was once their king's trusted henchman. He lives to keep their king's favor, for which he is willing to play loathed tunes.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "More likely to be attacked by your units",
+          "format": "normal"
+        },
+        {
+          "text": "When melancholic variation is active, ATK is greatly increased, and gains a Shield that protects against a certain number of attacks; each time damage is prevented, reflects as Physical damage based on own ATK",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 700,
+            "def": 1000,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 4,
+            "taunt": 1,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "A",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "rechargeShield",
+              "parameters": {
+                "inverse_damage_scale": 0.2,
+                "shield": 20.0,
+                "shield_broken_fx": 10.0
+              }
+            },
+            {
+              "key": "switchMode",
+              "parameters": {
+                "enemy_act29side[buff_depressed].atk": 1.5,
+                "enemy_act29side[buff_depressed].attack_speed": -25.0,
+                "enemy_act29side[buff_depressed].def": 0.0,
+                "enemy_act29side[buff_depressed].move_speed": 0.7,
+                "enemy_act29side[buff_enthu].atk": 0.0,
+                "enemy_act29side[buff_enthu].attack_speed": 25.0,
+                "enemy_act29side[buff_enthu].def": -0.5,
+                "enemy_act29side[buff_enthu].move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "remnant_orchestra_tuner",
+      "id": "enemy_1378_ltnmst",
+      "name": "Remnant Orchestra Tuner",
+      "index": "OCS15",
+      "rank": "Elite",
+      "sort": 726,
+      "hidden": false,
+      "icon": "/enemies-icons/Remnant Orchestra Tuner.webp",
+      "flavour_text": "Musician who wants to tune for their king. He seeks the harmony of origin, so that all sounds may be consonant.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Continuously casts at the nearest Tuning Node you control within attack range to disable it",
+          "format": "normal"
+        },
+        {
+          "text": "When the corresponding variation is in effect, attacks temporarily increase damage taken by your units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12000,
+            "atk": 450,
+            "def": 300,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.65,
+            "range": 2.2,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "charge",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_act29side[recover_sp_timer].recover_sp_duration": 3.0,
+                "enemy_act29side[recover_sp_timer].sp_ratio": 1.0,
+                "sp": -1.0,
+                "sp_ratio": 0.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "buff",
+              "parameters": {
+                "enemy_act29side[buff_depressed_lite].atk": 1.0,
+                "enemy_act29side[buff_depressed_lite].attack_speed": -25.0,
+                "enemy_act29side[buff_depressed_lite].def": 0.0,
+                "enemy_act29side[buff_depressed_lite].move_speed": 0.7,
+                "enemy_act29side[buff_enthu_lite].atk": 0.0,
+                "enemy_act29side[buff_enthu_lite].attack_speed": 50.0,
+                "enemy_act29side[buff_enthu_lite].def": -0.5,
+                "enemy_act29side[buff_enthu_lite].move_speed": 2.0,
+                "type": "enthusiastic"
+              }
+            },
+            {
+              "key": "weak",
+              "parameters": {
+                "damage_scale": 1.3,
+                "weak[limit]": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "witch_kings_orchestra_tuner",
+      "id": "enemy_1378_ltnmst_2",
+      "name": "Witch King's Orchestra Tuner",
+      "index": "OCS16",
+      "rank": "Elite",
+      "sort": 727,
+      "hidden": false,
+      "icon": "/enemies-icons/Witch King's Orchestra Tuner.webp",
+      "flavour_text": "Musician who once tuned for their king. He has touched the harmony of origin, and in his hands all sounds may be consonant.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Continuously casts at the nearest Tuning Node you control within attack range to disable it",
+          "format": "normal"
+        },
+        {
+          "text": "When the corresponding variation is in effect, attacks temporarily increase damage taken by your units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 550,
+            "def": 350,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.65,
+            "range": 2.2,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "charge",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_act29side[recover_sp_timer].recover_sp_duration": 3.0,
+                "enemy_act29side[recover_sp_timer].sp_ratio": 1.0,
+                "sp": -1.0,
+                "sp_ratio": 0.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "buff",
+              "parameters": {
+                "enemy_act29side[buff_depressed_lite].atk": 1.0,
+                "enemy_act29side[buff_depressed_lite].attack_speed": -25.0,
+                "enemy_act29side[buff_depressed_lite].def": 0.0,
+                "enemy_act29side[buff_depressed_lite].move_speed": 0.7,
+                "enemy_act29side[buff_enthu_lite].atk": 0.0,
+                "enemy_act29side[buff_enthu_lite].attack_speed": 50.0,
+                "enemy_act29side[buff_enthu_lite].def": -0.5,
+                "enemy_act29side[buff_enthu_lite].move_speed": 2.0,
+                "type": "enthusiastic"
+              }
+            },
+            {
+              "key": "weak",
+              "parameters": {
+                "damage_scale": 1.3,
+                "weak[limit]": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "remnant_orchestra_conductor",
+      "id": "enemy_1379_ltncdt",
+      "name": "Remnant Orchestra Conductor",
+      "index": "MST1",
+      "rank": "Elite",
+      "sort": 728,
+      "hidden": false,
+      "icon": "/enemies-icons/Remnant Orchestra Conductor.webp",
+      "flavour_text": "Conductor who wants to be the instrument of their king's will. Being a conductor is already a rare honor, but he still seeks to climb that great spire, for which he will go to any length.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Continuously casts at the nearest Tuning Node you control within attack range to disable it",
+          "format": "normal"
+        },
+        {
+          "text": "When the corresponding variation is in effect, increases the max HP of all enemies within attack range",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 23000,
+            "atk": 350,
+            "def": 550,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.65,
+            "range": 2.2,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "B",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "charge",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_act29side[recover_sp_timer].recover_sp_duration": 3.0,
+                "enemy_act29side[recover_sp_timer].sp_ratio": 1.0,
+                "sp": -1.0,
+                "sp_ratio": 0.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "HPAura",
+              "parameters": {
+                "max_hp": 0.5
+              }
+            },
+            {
+              "key": "buff",
+              "parameters": {
+                "enemy_act29side[buff_depressed_lite].atk": 1.0,
+                "enemy_act29side[buff_depressed_lite].attack_speed": -25.0,
+                "enemy_act29side[buff_depressed_lite].def": 0.0,
+                "enemy_act29side[buff_depressed_lite].move_speed": 0.7,
+                "enemy_act29side[buff_enthu_lite].atk": 0.0,
+                "enemy_act29side[buff_enthu_lite].attack_speed": 50.0,
+                "enemy_act29side[buff_enthu_lite].def": -0.5,
+                "enemy_act29side[buff_enthu_lite].move_speed": 2.0,
+                "type": "enthusiastic"
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "witch_kings_orchestra_conductor",
+      "id": "enemy_1379_ltncdt_2",
+      "name": "Witch King's Orchestra Conductor",
+      "index": "MST2",
+      "rank": "Elite",
+      "sort": 729,
+      "hidden": false,
+      "icon": "/enemies-icons/Witch King's Orchestra Conductor.webp",
+      "flavour_text": "Conductor who was once the instrument of their king's will. Having been second only to one, and having gazed upon that elusive spire, he will go to any length to see it again.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Continuously casts at the nearest Tuning Node you control within attack range to disable it",
+          "format": "normal"
+        },
+        {
+          "text": "When the corresponding variation is in effect, greatly increases the max HP of all enemies within attack range",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 450,
+            "def": 600,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.65,
+            "range": 2.2,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "C",
+            "def": "B",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "charge",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_act29side[recover_sp_timer].recover_sp_duration": 3.0,
+                "enemy_act29side[recover_sp_timer].sp_ratio": 1.0,
+                "sp": -1.0,
+                "sp_ratio": 0.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "HPAura",
+              "parameters": {
+                "max_hp": 0.7
+              }
+            },
+            {
+              "key": "buff",
+              "parameters": {
+                "enemy_act29side[buff_depressed_lite].atk": 1.0,
+                "enemy_act29side[buff_depressed_lite].attack_speed": -25.0,
+                "enemy_act29side[buff_depressed_lite].def": 0.0,
+                "enemy_act29side[buff_depressed_lite].move_speed": 0.7,
+                "enemy_act29side[buff_enthu_lite].atk": 0.0,
+                "enemy_act29side[buff_enthu_lite].attack_speed": 50.0,
+                "enemy_act29side[buff_enthu_lite].def": -0.5,
+                "enemy_act29side[buff_enthu_lite].move_speed": 2.0,
+                "type": "enthusiastic"
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "herkunftshorn_witch_king",
+      "id": "enemy_1548_ltniak",
+      "name": "Herkunftshorn, 'Witch King'",
+      "index": "HH",
+      "rank": "Boss",
+      "sort": 1345,
+      "hidden": false,
+      "icon": "/enemies-icons/Herkunftshorn, 'Witch King'.webp",
+      "flavour_text": "The long nightmare awakes. The ersatz night gives way to dawn. Come and witness the death of the king, and the death of the genesis of creation.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked, attacks deal splash damage",
+          "format": "normal"
+        },
+        {
+          "text": "[Death of Creation] After some time has passed, deals Arts splash damage to all your units, and drains all Life Points",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "Teleports to the next check point after some time has passed",
+          "format": "normal"
+        },
+        {
+          "text": "[Punishment of Foolishness] Whenever a certain percentage of HP is lost, devours 2 of your Operators and randomly redeploys them at 2 locations",
+          "format": "normal"
+        },
+        {
+          "text": "[Punishment of Insipidity] Periodically inflicts Mark of Insipidity on 2 of your Operators within attack range (requires 5 attacks to destroy), preventing them from attacking or using skills, and making them more likely to be attacked by enemies. The next time this skill is used, immediately defeats any Operators with Mark of Insipidity, and deals Arts splash damage to the 4 adjacent tiles.",
+          "format": "normal"
+        },
+        {
+          "text": "Reborn after being defeated for the first time, dealing Arts splash damage to all your units, and unleashes [Punishment of Foolishness]; once rebirth is complete, switches to 2nd form, and resets [Death of Creation] countdown",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "Cannot move; creates a Shield that protects against Physical and Arts damage from a single direction",
+          "format": "normal"
+        },
+        {
+          "text": "Attack range covers the entire battlefield; ATK is greatly decreased, attack splash area is increased, and DEF is greatly increased",
+          "format": "normal"
+        },
+        {
+          "text": "Takes control of all Tuning Nodes on the battlefield, disabling them",
+          "format": "normal"
+        },
+        {
+          "text": "[Sovereign's Edict] Periodically changes the variation; enemies are boosted while variation is active and are continuously checked against the orchestra's tempo; enemies that cannot keep up with the Witch King's tempo because of Stun are marked and take heavy Arts damage when the variation ends",
+          "format": "normal"
+        },
+        {
+          "text": "[Punishment of Insipidity] only selects one target",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 80000,
+            "atk": 750,
+            "def": 600,
+            "res": 80.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B",
+            "res": "S+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "BlinkS1",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "cooldown_0": 30.0
+              }
+            },
+            {
+              "key": "BlinkS2",
+              "sp_cost": 0,
+              "cooldown": 99999.0,
+              "initial_cooldown": 99999.0,
+              "priority": 0,
+              "parameters": {
+                "cooldown_0": 99999.0,
+                "location": "(4,2)"
+              }
+            },
+            {
+              "key": "RebuildS1",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 9999.0,
+              "priority": 0,
+              "parameters": {
+                "max_target": 2.0,
+                "not_add_respawn_cost_cnt": 1.0,
+                "respawn_time": 1.0
+              }
+            },
+            {
+              "key": "RebuildS2",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 9999.0,
+              "priority": 0,
+              "parameters": {
+                "max_target": 2.0,
+                "not_add_respawn_cost_cnt": 1.0,
+                "respawn_time": 1.0
+              }
+            },
+            {
+              "key": "DeathmarkS1",
+              "sp_cost": 0,
+              "cooldown": 45.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_ltniak[skill_1_AOE].damage_scale": 1.0,
+                "max_target": 2.0,
+                "suicide_duration": 999.0
+              }
+            },
+            {
+              "key": "DeathmarkS2",
+              "sp_cost": 0,
+              "cooldown": 45.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_ltniak[skill_1_AOE].damage_scale": 1.0,
+                "max_target": 1.0,
+                "suicide_duration": 999.0
+              }
+            },
+            {
+              "key": "SwitchAudioType",
+              "sp_cost": 0,
+              "cooldown": 50.0,
+              "initial_cooldown": 10.0,
+              "priority": 1,
+              "parameters": {
+                "cooldown_0": 50.0,
+                "duration": 40.0,
+                "type": "enthusiastic"
+              }
+            },
+            {
+              "key": "Suicide",
+              "sp_cost": 0,
+              "cooldown": 300.0,
+              "initial_cooldown": 300.0,
+              "priority": 2,
+              "parameters": {
+                "atk_scale": 1.0,
+                "value": -100.0
+              }
+            },
+            {
+              "key": "Suicide_1",
+              "sp_cost": 0,
+              "cooldown": 300.0,
+              "initial_cooldown": 300.0,
+              "priority": 2,
+              "parameters": {
+                "atk_scale": 1.0,
+                "value": -100.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "AttributeUP",
+              "parameters": {
+                "atk": -0.5,
+                "def": 0.5
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "atk_scale": 0.5,
+                "direction": 1.0,
+                "duration": 10.0,
+                "revive_duration": 7.5
+              }
+            },
+            {
+              "key": "ReduceDamageS1",
+              "parameters": {
+                "damage_resistance": 0.2
+              }
+            },
+            {
+              "key": "ReduceDamageS2",
+              "parameters": {
+                "damage_resistance": 0.2
+              }
+            },
+            {
+              "key": "SideShield",
+              "parameters": {
+                "direction": 1.0
+              }
+            },
+            {
+              "key": "SuicideEffectS1",
+              "parameters": {
+                "interval": 280.0
+              }
+            },
+            {
+              "key": "SuicideEffectS2",
+              "parameters": {
+                "interval": 280.0
+              }
+            },
+            {
+              "key": "Supervision",
+              "parameters": {
+                "damage_value": 5000.0,
+                "enemy_ltniak[depressed_buff_boost].atk": 0.1,
+                "enemy_ltniak[depressed_buff_boost].attack_speed": 0.0,
+                "enemy_ltniak[enthu_buff_boost].atk": 0.0,
+                "enemy_ltniak[enthu_buff_boost].attack_speed": 10.0
+              }
+            },
+            {
+              "key": "TriggerRebuildS1",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            },
+            {
+              "key": "TriggerRebuildS2",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 0,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 100000,
+            "atk": 1000,
+            "def": 700,
+            "res": 80.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A",
+            "def": "B",
+            "res": "S+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "BlinkS1",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "cooldown_0": 30.0
+              }
+            },
+            {
+              "key": "BlinkS2",
+              "sp_cost": 0,
+              "cooldown": 99999.0,
+              "initial_cooldown": 99999.0,
+              "priority": 0,
+              "parameters": {
+                "cooldown_0": 99999.0,
+                "location": "(4,2)"
+              }
+            },
+            {
+              "key": "RebuildS1",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 9999.0,
+              "priority": 0,
+              "parameters": {
+                "max_target": 2.0,
+                "not_add_respawn_cost_cnt": 1.0,
+                "respawn_time": 1.0
+              }
+            },
+            {
+              "key": "RebuildS2",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 9999.0,
+              "priority": 0,
+              "parameters": {
+                "max_target": 2.0,
+                "not_add_respawn_cost_cnt": 1.0,
+                "respawn_time": 1.0
+              }
+            },
+            {
+              "key": "DeathmarkS1",
+              "sp_cost": 0,
+              "cooldown": 45.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_ltniak[skill_1_AOE].damage_scale": 1.0,
+                "max_target": 2.0,
+                "suicide_duration": 999.0
+              }
+            },
+            {
+              "key": "DeathmarkS2",
+              "sp_cost": 0,
+              "cooldown": 45.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_ltniak[skill_1_AOE].damage_scale": 1.0,
+                "max_target": 1.0,
+                "suicide_duration": 999.0
+              }
+            },
+            {
+              "key": "SwitchAudioType",
+              "sp_cost": 0,
+              "cooldown": 50.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "cooldown_0": 50.0,
+                "duration": 40.0,
+                "type": "enthusiastic"
+              }
+            },
+            {
+              "key": "Suicide",
+              "sp_cost": 0,
+              "cooldown": 300.0,
+              "initial_cooldown": 300.0,
+              "priority": 2,
+              "parameters": {
+                "atk_scale": 1.0,
+                "value": -100.0
+              }
+            },
+            {
+              "key": "Suicide_1",
+              "sp_cost": 0,
+              "cooldown": 300.0,
+              "initial_cooldown": 300.0,
+              "priority": 2,
+              "parameters": {
+                "atk_scale": 1.0,
+                "value": -100.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "AttributeUP",
+              "parameters": {
+                "atk": -0.5,
+                "def": 0.5
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "atk_scale": 0.5,
+                "direction": 1.0,
+                "duration": 10.0,
+                "revive_duration": 7.5
+              }
+            },
+            {
+              "key": "ReduceDamageS1",
+              "parameters": {
+                "damage_resistance": 0.2
+              }
+            },
+            {
+              "key": "ReduceDamageS2",
+              "parameters": {
+                "damage_resistance": 0.2
+              }
+            },
+            {
+              "key": "SideShield",
+              "parameters": {
+                "direction": 1.0
+              }
+            },
+            {
+              "key": "SuicideEffectS1",
+              "parameters": {
+                "interval": 280.0
+              }
+            },
+            {
+              "key": "SuicideEffectS2",
+              "parameters": {
+                "interval": 280.0
+              }
+            },
+            {
+              "key": "Supervision",
+              "parameters": {
+                "damage_value": 8000.0,
+                "enemy_ltniak[depressed_buff_boost].atk": 0.1,
+                "enemy_ltniak[depressed_buff_boost].attack_speed": 0.0,
+                "enemy_ltniak[enthu_buff_boost].atk": 0.0,
+                "enemy_ltniak[enthu_buff_boost].attack_speed": 10.0
+              }
+            },
+            {
+              "key": "TriggerRebuildS1",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            },
+            {
+              "key": "TriggerRebuildS2",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 0,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

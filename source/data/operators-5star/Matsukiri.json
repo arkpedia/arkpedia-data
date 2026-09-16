@@ -1,0 +1,667 @@
+{
+  "name": "Matsukiri",
+  "rarity": 5,
+  "class": "Vanguard",
+  "branch": "Strategist",
+  "faction": "Higashi",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Support",
+    "DP-Recovery"
+  ],
+  "trait": "Blocks 2 enemies, and can support allies in the Deployment Waiting Zone",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Ato"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4199_makiri",
+  "otherLanguages": {
+    "Chinese": "松桐",
+    "Japanese": "マツキリ"
+  },
+  "characterInfo": {
+    "File no.": "HK17",
+    "Operator Record": "Bar Shin-Matsuri",
+    "Paradox Simulation": "Trump Card",
+    "Illustrator": "AerialB",
+    "Release Date": "2026/01/16",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Ryōta Iwasaki",
+    "Chinese": "Zhu Hongxi",
+    "English": "Andrew Kishino",
+    "Korean": "Lee Joo-seung"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "None",
+    "Place of Birth": "Higashi",
+    "Date of Birth": "June 16th",
+    "Race": "Lupo",
+    "Height": "183 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Slowpoke's Gambit",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "After being deployed for 30s, all Defender and Supporter Operators on the field and in the Deployment Waiting Zone gain ATK +5%; can only activate once"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "After being deployed for 30s, all Defender and Supporter Operators on the field and in the Deployment Waiting Zone gain ATK +7% (+2%) ; can only activate once"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "After being deployed for 30s, all Defender and Supporter Operators on the field and in the Deployment Waiting Zone gain ATK +10%; can only activate once"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "After being deployed for 30s, all Defender and Supporter Operators on the field and in the Deployment Waiting Zone gain ATK +12% (+2%) ; can only activate once"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Slowpoke's Gambit"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Matsukiri's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Slowpoke's Gambit .",
+        "New skill: Match of Myriad Tricks ."
+      ],
+      "prerequisite": "Raise Matsukiri to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Vanguard Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Slowpoke's Gambit improved."
+      ],
+      "prerequisite": "Raise Matsukiri to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Vanguard Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Transmuted Salt Agglomerate",
+          "quantity": 7
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 17
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Entry Plan",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Immediately generates 10 DP , and DP cost for the rightmost 1 Operator in the Deployment Waiting Zone -4",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Immediately generates 10 DP, and DP cost for the rightmost 1 Operator in the Deployment Waiting Zone -4",
+            "initialSp": 10,
+            "spCost": 39,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Immediately generates 10 DP, and DP cost for the rightmost 1 Operator in the Deployment Waiting Zone -4",
+            "initialSp": 10,
+            "spCost": 38,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Immediately generates 10 DP, and DP cost for the rightmost 1 Operator in the Deployment Waiting Zone -4",
+            "initialSp": 12,
+            "spCost": 37,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Immediately generates 10 DP, and DP cost for the rightmost 1 Operator in the Deployment Waiting Zone -4",
+            "initialSp": 12,
+            "spCost": 36,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Immediately generates 10 DP, and DP cost for the rightmost 1 Operator in the Deployment Waiting Zone -4",
+            "initialSp": 12,
+            "spCost": 35,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Immediately generates 10 DP, and DP cost for the rightmost 1 Operator in the Deployment Waiting Zone -4",
+            "initialSp": 14,
+            "spCost": 34,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Immediately generates 10 DP, and DP cost for the rightmost 1 Operator in the Deployment Waiting Zone -4",
+            "initialSp": 16,
+            "spCost": 33,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Immediately generates 10 DP, and DP cost for the rightmost 1 Operator in the Deployment Waiting Zone -4",
+            "initialSp": 18,
+            "spCost": 32,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Immediately generates 10 DP, and DP cost for the rightmost 1 Operator in the Deployment Waiting Zone -4",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 3
+            },
+            {
+              "name": "Coagulative Nodule",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Match of Myriad Tricks",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Gradually generates 15 DP , ATK +25% , recovers HP by 5% of Max HP per second; DP cost of all Defender and Supporter Operators in the Deployment Waiting Zone -1 , and Max HP +10% (HP increase stacks up to 2 times, lasting until next retreat)",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Gradually generates 15 DP, ATK +30% , recovers HP by 5% of Max HP per second; DP cost of all Defender and Supporter Operators in the Deployment Waiting Zone -1 , and Max HP +10% (HP increase stacks up to 2 times, lasting until next retreat)",
+            "initialSp": 10,
+            "spCost": 34,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Gradually generates 15 DP, ATK +35% , recovers HP by 5% of Max HP per second; DP cost of all Defender and Supporter Operators in the Deployment Waiting Zone -1 , and Max HP +10% (HP increase stacks up to 2 times, lasting until next retreat)",
+            "initialSp": 10,
+            "spCost": 33,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Gradually generates 15 DP, ATK +40% , recovers HP by 6% of Max HP per second; DP cost of all Defender and Supporter Operators in the Deployment Waiting Zone -1 , and Max HP +10% (HP increase stacks up to 2 times, lasting until next retreat)",
+            "initialSp": 10,
+            "spCost": 32,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Gradually generates 15 DP, ATK +45% , recovers HP by 6% of Max HP per second; DP cost of all Defender and Supporter Operators in the Deployment Waiting Zone -1 , and Max HP +10% (HP increase stacks up to 2 times, lasting until next retreat)",
+            "initialSp": 10,
+            "spCost": 31,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Gradually generates 15 DP, ATK +50% , recovers HP by 6% of Max HP per second; DP cost of all Defender and Supporter Operators in the Deployment Waiting Zone -1 , and Max HP +10% (HP increase stacks up to 2 times, lasting until next retreat)",
+            "initialSp": 10,
+            "spCost": 30,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Gradually generates 15 DP, ATK +55% , recovers HP by 8% of Max HP per second; DP cost of all Defender and Supporter Operators in the Deployment Waiting Zone -1 , and Max HP +12% (HP increase stacks up to 2 times, lasting until next retreat)",
+            "initialSp": 12,
+            "spCost": 29,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Gradually generates 15 DP, ATK +60% , recovers HP by 8% of Max HP per second; DP cost of all Defender and Supporter Operators in the Deployment Waiting Zone -1 , and Max HP +13% (HP increase stacks up to 2 times, lasting until next retreat)",
+            "initialSp": 13,
+            "spCost": 28,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Gradually generates 15 DP, ATK +65% , recovers HP by 8% of Max HP per second; DP cost of all Defender and Supporter Operators in the Deployment Waiting Zone -1 , and Max HP +14% (HP increase stacks up to 2 times, lasting until next retreat)",
+            "initialSp": 14,
+            "spCost": 27,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Gradually generates 15 DP, ATK +70% , recovers HP by 10% of Max HP per second; DP cost of all Defender and Supporter Operators in the Deployment Waiting Zone -1 , and Max HP +15% (HP increase stacks up to 2 times, lasting until next retreat)",
+            "initialSp": 15,
+            "spCost": 25,
+            "duration": 15
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Chiral Refractor",
+              "quantity": 3
+            },
+            {
+              "name": "Compound Cutting Fluid",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 3
+        },
+        {
+          "name": "Semi-Synthetic Solvent",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Clue Search α",
+      "facility": "Reception Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Reception Room , Clue search speed increases by 10%"
+    },
+    {
+      "name": "The Art of Deduction",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Reception Room , increases the likelihood of obtaining clues that are not on the Clue Board."
+    }
+  ],
+  "modules": [],
+  "review": {
+    "official": "Matsukiri, born Tooru Moriuchi, is an oden-stall owner and a well-known information dealer in the Kajimachi area. With connections in many walks of life, he is extremely well-informed on matters concerning\nHigashi\n. He initiated contact with\nRhodes Island\nand proposed cooperation in information sharing and an expansion of operations. He currently serves as a vanguard operator at his own request.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 746,
+          "atk": 244,
+          "def": 162,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 12,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1022,
+          "atk": 359,
+          "def": 243,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 12,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1022,
+          "atk": 359,
+          "def": 243,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 14,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1401,
+          "atk": 492,
+          "def": 320,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 14,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1401,
+          "atk": 492,
+          "def": 320,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 14,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2002,
+          "atk": 600,
+          "def": 400,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 14,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 50,
+      "def": 20
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this Operator is believed to be non-infected.\n\n[Cell-Originium Fusion Rate] 0% \nOperator shows no signs of infection at this time.\n\n[Blood Crystal Density] 0.09u/L \nPhysical data reveal this Operator to be in a roughly healthy state."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Operator Matsukiri performed well in aptitude testing. Despite stating that he found melee combat to be inelegant, he earned above-average scores in assault drills, full-gear running, and short distance bursts, demonstrating better body temperature, blood oxygen, and heartbeat curves than some of our veteran operators. For unknown reasons, however, he tends to slow down in melee elimination simulations when victory appears certain.\nOperator Matsukiri is highly skilled with a blade, efficiently separating the joints and tendons of a manglerbeast carcass using two short knives without the slightest hesitation. When faced with a human-shaped target, however, he froze when his blade was several meters from the target. It was as though he felt that making that cut would be going down a path of no return.\nAnyone can tell that he did it on purpose, but there is nothing we can do if he says he doesn't want to play the part of an 'executioner'...\n\nAfter discussions between HR and Field Ops, Operator Matsukiri has been assigned to vanguard duty, with primary responsibilities in reconnaissance, fire support, and tactical cover."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "[Schedule Report]\nX-21\nRequest: Retrieve stud that had fallen into a shredder's collection bag\nTied a stocking to the mouth of a vacuum cleaner and ran it while pouring out the bag's contents, successfully retrieving the stud that was caught on the stocking.\nThe client sneezed when she opened the collection bag, sending shredded paper flying everywhere, which I helped clean up afterwards. Did I need to write that too?\n\nX-24\nRequest: Investigate the 'haunting' of Elevator No.5, which had been ongoing for three weeks\nI was curious at first, but quickly realized that the so-called 'hauntings' simply involved uncommanded movement and red lights turning on. After referencing the elevator operation logs from Engineering, I found that the malfunctions corresponded to changes in humidity. I asked X from Engineering to take a look at the air conditioning and found that the malfunctions were caused by a leaky air conditioning pipe, causing water to fall on the elevator's floor sensor and triggering false inputs.\nX took care of the leak, saying that she was returning the favor for helping clean up her office.\nThe client did not seem to believe it when I said the elevator was not haunted.\n\nX-25\nRequest: Find appropriate sound effects for a ghost story party\nFound a bottle of soda that was running out of gas in the cafeteria and recorded the sound of bubbling as 'underground well water'. Used a spoon to scrape against an air-conditioning vent to simulate the sound of a metal door opening. Placed a scrap paper at the output tray of a printer and let it run on idle to record the rustling of paper against the rollers, serving as the sound of a 'ghost' moving. Looped the effects with the client's stories late at night.\nStill not sure how word about the 'haunted' elevator got out. And did I really have to be around to play the SFX manually?\nReceived a reprimand alongside the client. Apparently, these things require prior approval.\n\nX-30\nRequest: Find a way to make sure that projects are approved\nNo clue what the client's asking for. I agreed to bring back a suitable omamori next time I went back to Mitsukue. Will ask the high priest whether it's in his line of work."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "As more and more operators come into possession of his expertly designed business card, the name 'Moriuchi-san' gradually became a part of everyday life.\nAt sunset, a corner of the cafeteria became covered in steam from Matsukiri's pot, the aroma spreading to the bridge and causing a long line to form in front of his stall. The place was always noisy, filled with exclamations of operators who were tasting oden for the first time, and Higashinese-accented praise from other operators for whom it is a taste of home, both mixed in with unusual requests and the latest gossip. Matsukiri was an expert at finding the right conversation topic: A special receipt that he figured out last night, the latest kaidan of Mitsukue, or a timely word of consolation. Yet when the topic turned to himself, he would put another chikuwa in the soup and direct the conversation elsewhere. The origins of oden was always a good diversion: It was said to have been invented by a chuunagon of the court who was accompanying the imperial army on a campaign against rebels. The campaign was going poorly, and morale had hit rock-bottom when that chuunagon made a big pot of soup, putting in all the food they had brought with them from Kannogi-no-Miyako and handing it out to everyone in the army, from soldier to general. Their bellies filled and their spirits lifted by the advisor's skilled cooking, the imperial army charged and broke the rebels' lines and gained victory. The advisor's recipe then became known far and wide. One who has had their oden and heard the story would be remiss if they pressed Matsukiri any further about his own background.\nIt is not that Matsukiri is cold and indifferent. He simply weaves a screen of politeness, allowing him to keep a safe distance from others. He might be laughing and debating, having drawn everyone's attention on the dance floor a moment ago, but when the music stops, he might knock on the window glass with warm and trembling fingers and cast his gaze outside, towards the distant night sky beyond the corridors and decks. Once in a while, someone realizes that Matsukiri's passion is simply a courtesy-driven performance. The real Tooru Moriuchi exists only in the brief moments between Rhodes Island and Higashi.\nWhile Matsukiri often acts like a traveler—taking his stall, his wine, his gossip and urban legends with him, which admittedly helps Rhodes Island keep up with the latest developments in Higashi—the gaze that always seems to be cast towards the distance might, someday, meet the lights of this place."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Operator Matsukiri declined all leave.\nThis is not the first time he has surprised his colleagues. When he submitted his application, the man who looked like he could stop a war with his tongue alone smiled abashedly, never quite able to explain why he chose Rhodes Island.\nHis Rhodes Island schedule was packed. He frequently submitted fieldwork requests and traveled to different countries and regions, talking to people and listening to their stories. The stories often share the same refrains: of having been done wrong by someone, or having done someone wrong, of a wrong choice made in the past, or simply a choice made at a crossroad. Matsukiri sometimes offered his advice; other times, he simply listened silently as the other party engaged in self-persuasion. Once, over a round of drinks, Matsukiri confessed to another operator that he no longer had someone to confess to after his keychain fell into an alley, and his past was wiped away along with it. He had to find himself again, but did not seem interested in finding a new keychain, or a new prayer. Perhaps he had already rediscovered himself when he lost his keychain.\nOperator Matsukiri declined all leave. There seemed to be a void in him that caused him to incessantly seize the moment, as though driven by inevitability. To watch others build on empty land, reestablish themselves from ruins, and figure out a path from their own pace, breathing, or hesitation.\nHis prosthetic eye, which is the more lively of the two, sometimes shows a hint of loneliness, doubt, and other emotions buried deeper down. Whenever someone asks, Matsukiri puts on his signature lazy smile, saying it is simply a trick of the light.\n'Not everyone is as lucky as I am. How many people get to hear their own god tell them that He is not their god?'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "[Audio Log]\nThe air conditioning in this room has been quite strong these last few days. Perhaps you should move that golden pothos on your desk? It's facing the outlet directly, and I'm concerned about its leaves... I'm concerned about you too, of course. You're not the only one I've reminded not to spend so much time right under the air conditioner today.\nI watched that old movie you brought up last time, the black-and-white one. It wasn't really to my taste... Do you really like heroes like that? Restrained and suppressed, never showing the slightest bit of emotion until the end. It's such a chore, you know, to love and be loved by someone like that.\nYou're a fan of that Columbian author, aren't you? What was his name... Ivan Evan, I think? I read his <i>Time of Solitude</i>. Did you like it too? All the characters in it are quite eccentric. As a reader, it's kind of interesting to see how they keep revealing their desires through their actions, despite never daring to express the secrets in their hearts. Why do people express how they care in such roundabout ways? I suppose they're just afraid to face their bare, unconcealed heart. But you can certainly show your heart in front of me; we know each other so well, after all... Ah, don't glare at me like that.\nIs there anything else we need to talk about? I used to be like you, full of questions, but the one I asked always gave me the same answer. In fact, I'm not sure what answer I wanted. I was just convinced that the path ahead would be cleared up once I found this so-called answer. But you know what happened? When I actually arrived, I found that the so-called answer didn't matter. What mattered was what I saw along the way, the people I met.\nI stood at a crossroad at the end of that chaotic night. It was quiet, with only the puddles on the ground reflecting the street lamps. I gazed at them for a long time, watching the lights flicker upon the water. It was as though something had fallen from me, and I suddenly had this idea that this whole journey was just me waiting for it to fall. So, if I had to do it all over again, I would still go after it, seek it, and make the same choice. Maybe the end would be better if I did something different... but we wouldn't have met each other if that was the case. That would be such a loss! I know the chef of a fine establishment very well. I'll make a reservation with him...\n......\n...Will you believe me now when I say that I'm not dealing with any psychological issues? Frankly, I think methods like these are better suited to those who... well, 'need' it the most? Those who've returned from the battlefield, or those who've undergone some traumatic event or other. Me? All I did was survive a firefight, and I wasn't even one of its main characters. Look at your golden pothos. Its leaves keep pointing towards the window. Do you think it knows why? Maybe it's just chasing the light out of instinct, without really knowing why. But either way, it will keep growing, as long as the sun shines.\nThat's the same for me. So... maybe it's time we brought this to a close? Your plant will keep living as long as the sun shines down on it, and the same is true for me."
+    }
+  ]
+}

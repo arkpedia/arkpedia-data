@@ -1,0 +1,4306 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act1multi",
+    "label": "IG",
+    "name": "Icebreaker Games #1",
+    "release_date": "2025-09-04"
+  },
+  "enemies": [
+    {
+      "slug": "tactical_team_shooter",
+      "id": "enemy_4022_mushtm",
+      "name": "Tactical Team Shooter",
+      "index": "IB29",
+      "rank": "Normal",
+      "sort": 1251,
+      "hidden": false,
+      "icon": "/enemies-icons/Tactical Team Shooter.webp",
+      "flavour_text": "The Tactical Team is known for its tactical acumen and superb tactical equipment. Tactical Team Shooters equipped with thermal-imaging goggles can shoot with unerring accuracy in any condition, which is why they prefer to play in fog.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Shoots quicker and aims in a direction where there are no <Positional Barriers>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 1000,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.3,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 25.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.1,
+                "slapshot_force": 1.5
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.3,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 25.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.1,
+                "slapshot_force": 1.5
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "elite_tactical_team_shooter",
+      "id": "enemy_4022_mushtm_2",
+      "name": "Elite Tactical Team Shooter",
+      "index": "IB30",
+      "rank": "Normal",
+      "sort": 1252,
+      "hidden": false,
+      "icon": "/enemies-icons/Elite Tactical Team Shooter.webp",
+      "flavour_text": "Elite members of the Tactical Team are said to have been baptized by fire in battle. Elite Tactical Team Shooters equipped with thermal-imaging goggles can shoot with unerring accuracy in any condition, which is why they prefer to play in fog.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Shoots quicker and aims in a direction where there are no <Positional Barriers>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 1400,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.3,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 15.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.1,
+                "slapshot_force": 1.3
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.3,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.1,
+                "slapshot_force": 3.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tactical_team_goalie",
+      "id": "enemy_4023_mushtb",
+      "name": "Tactical Team Goalie",
+      "index": "IB31",
+      "rank": "Normal",
+      "sort": 1253,
+      "hidden": false,
+      "icon": "/enemies-icons/Tactical Team Goalie.webp",
+      "flavour_text": "The Tactical Team is known for its tactical acumen and superb tactical equipment. Tactical Team Goalies equipped with binocular goggles can find any gaps in the opposing formation and kick the ball directly into the opposing goal.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Kickoffs are more powerful and aims in a direction where there are no <Positional Barriers>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 1500,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "S"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 25.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.35,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "S"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 25.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.35,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "elite_tactical_team_goalie",
+      "id": "enemy_4023_mushtb_2",
+      "name": "Elite Tactical Team Goalie",
+      "index": "IB32",
+      "rank": "Normal",
+      "sort": 1254,
+      "hidden": false,
+      "icon": "/enemies-icons/Elite Tactical Team Goalie.webp",
+      "flavour_text": "Elite members of the Tactical Team are said to have been baptized by fire in battle. Elite Tactical Team Goalies equipped with binocular goggles can find any gaps in the opposing formation and kick the ball directly into the opposing goal.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Kickoffs are more powerful and aims in a direction where there are no <Positional Barriers>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 45000,
+            "atk": 2300,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "S"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.4,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "S"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 15.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.4,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tactical_team_hitter",
+      "id": "enemy_4024_mushtg",
+      "name": "Tactical Team Hitter",
+      "index": "IB33",
+      "rank": "Normal",
+      "sort": 1255,
+      "hidden": false,
+      "icon": "/enemies-icons/Tactical Team Hitter.webp",
+      "flavour_text": "The Tactical Team is known for its tactical acumen and superb tactical equipment. Tactical Team Hitters equipped with vital monitors and warning systems can quickly locate opposing players attempting to hurt their teammates. Watch out—they have already found you.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes searching for your units that dealt damage to opposing players",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 1100,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0
+              }
+            },
+            {
+              "key": "passiveMarkTarget",
+              "parameters": {
+                "cooldown": 6.0,
+                "duration": 3.0,
+                "move_speed": 1.4
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 0.0
+              }
+            },
+            {
+              "key": "searchtarget",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0
+              }
+            },
+            {
+              "key": "passiveMarkTarget",
+              "parameters": {
+                "cooldown": 6.0,
+                "duration": 3.0,
+                "move_speed": 1.4
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 0.0
+              }
+            },
+            {
+              "key": "searchtarget",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "elite_tactical_team_hitter",
+      "id": "enemy_4024_mushtg_2",
+      "name": "Elite Tactical Team Hitter",
+      "index": "IB34",
+      "rank": "Normal",
+      "sort": 1256,
+      "hidden": false,
+      "icon": "/enemies-icons/Elite Tactical Team Hitter.webp",
+      "flavour_text": "Elite members of the Tactical Team are said to have been baptized by fire in battle. Elite Tactical Team Hitters equipped with vital monitors and warning systems can quickly locate opposing players attempting to hurt their teammates. Watch out—they have already found you.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes searching for your units that dealt damage to opposing players",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 1600,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0
+              }
+            },
+            {
+              "key": "passiveMarkTarget",
+              "parameters": {
+                "cooldown": 6.0,
+                "duration": 3.0,
+                "move_speed": 1.4
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 0.0
+              }
+            },
+            {
+              "key": "searchtarget",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0
+              }
+            },
+            {
+              "key": "passiveMarkTarget",
+              "parameters": {
+                "cooldown": 6.0,
+                "duration": 3.0,
+                "move_speed": 1.4
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 0.0
+              }
+            },
+            {
+              "key": "searchtarget",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ball_mania_club_shooter",
+      "id": "enemy_4025_muhrym",
+      "name": "Ball Mania Club Shooter",
+      "index": "IB35",
+      "rank": "Normal",
+      "sort": 1257,
+      "hidden": false,
+      "icon": "/enemies-icons/Ball Mania Club Shooter.webp",
+      "flavour_text": "Members of the Ball Mania Club have such love for football that they have taken to the field dressed up as one. Ball is love, ball is life.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Dribbles for a period of time after touching the ball, increasing movement speed and taking up +1 Block",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 18000,
+            "atk": 1000,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.6,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "S"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "block_volume": 1.0,
+                "duration": 0.2,
+                "move_speed": 0.8,
+                "up_duration": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.1,
+                "slapshot_force": 1.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.6,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "S"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "block_volume": 1.0,
+                "duration": 0.2,
+                "move_speed": 0.8,
+                "up_duration": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.1,
+                "slapshot_force": 1.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ball_mania_club_honorary_shooter",
+      "id": "enemy_4025_muhrym_2",
+      "name": "Ball Mania Club Honorary Shooter",
+      "index": "IB36",
+      "rank": "Normal",
+      "sort": 1258,
+      "hidden": false,
+      "icon": "/enemies-icons/Ball Mania Club Honorary Shooter.webp",
+      "flavour_text": "Honorary members of the Ball Mania Club are one with the ball, physically and spiritually. Ball is love, ball is life.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Dribbles for a period of time after touching the ball, increasing movement speed and taking up +1 Block",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 39000,
+            "atk": 1400,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.6,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "S"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "block_volume": 1.0,
+                "duration": 0.2,
+                "move_speed": 0.8,
+                "up_duration": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.2,
+                "slapshot_force": 1.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.6,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "S"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "block_volume": 1.0,
+                "duration": 0.2,
+                "move_speed": 0.8,
+                "up_duration": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 15.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.2,
+                "slapshot_force": 1.2
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ball_mania_club_goalie",
+      "id": "enemy_4026_muhryb",
+      "name": "Ball Mania Club Goalie",
+      "index": "IB37",
+      "rank": "Normal",
+      "sort": 1259,
+      "hidden": false,
+      "icon": "/enemies-icons/Ball Mania Club Goalie.webp",
+      "flavour_text": "Members of the Ball Mania Club have such love for football that they have taken to the field dressed up as one. These goalies are so attuned to the ball that their passes never miss their mark.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes kicking off the ball to a shooter",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 1500,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.8,
+            "attack_speed": 100.0,
+            "move_speed": 2.6,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.3,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.8,
+            "attack_speed": 100.0,
+            "move_speed": 2.6,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.3,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ball_mania_club_honorary_goalie",
+      "id": "enemy_4026_muhryb_2",
+      "name": "Ball Mania Club Honorary Goalie",
+      "index": "IB38",
+      "rank": "Normal",
+      "sort": 1260,
+      "hidden": false,
+      "icon": "/enemies-icons/Ball Mania Club Honorary Goalie.webp",
+      "flavour_text": "Honorary members of the Ball Mania Club are one with the ball, physically and spiritually. These goalies are so attuned to the ball that their passes never miss their mark.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes kicking off the ball to a shooter",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 2000,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.8,
+            "attack_speed": 100.0,
+            "move_speed": 3.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.3,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.8,
+            "attack_speed": 100.0,
+            "move_speed": 3.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 15.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.3,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ball_mania_club_hitter",
+      "id": "enemy_4027_muhryg",
+      "name": "Ball Mania Club Hitter",
+      "index": "IB39",
+      "rank": "Normal",
+      "sort": 1261,
+      "hidden": false,
+      "icon": "/enemies-icons/Ball Mania Club Hitter.webp",
+      "flavour_text": "Members of the Ball Mania Club have such love for football that they have taken to the field dressed up as one. This love has slowly grown into a dangerous obsession. Careful, you may not want to let them see you kick their beloved ball.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes searching for your units near the ball",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 800,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 0.8,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "S",
+            "move_speed": "S"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.2,
+                "slapshot_force": 2.8
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 1.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 0.8,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "S",
+            "move_speed": "S"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.2,
+                "slapshot_force": 2.8
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 1.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ball_mania_club_honorary_hitter",
+      "id": "enemy_4027_muhryg_2",
+      "name": "Ball Mania Club Honorary Hitter",
+      "index": "IB40",
+      "rank": "Normal",
+      "sort": 1262,
+      "hidden": false,
+      "icon": "/enemies-icons/Ball Mania Club Honorary Hitter.webp",
+      "flavour_text": "Honorary members of the Ball Mania Club are one with the ball, physically and spiritually. The ball is all that matters to them, nothing else. Careful, you may not want to let them see you kick their beloved ball.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes searching for your units near the ball",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 36000,
+            "atk": 1200,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 0.8,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "S",
+            "move_speed": "S"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.2,
+                "slapshot_force": 2.8
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 0.8,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "S",
+            "move_speed": "S"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.2,
+                "slapshot_force": 2.8
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "sportsmen_united_shooter",
+      "id": "enemy_4028_mukfum",
+      "name": "Sportsmen United Shooter",
+      "index": "IB41",
+      "rank": "Normal",
+      "sort": 1263,
+      "hidden": false,
+      "icon": "/enemies-icons/Sportsmen United Shooter.webp",
+      "flavour_text": "For Sportsmen United, taking out all the opponent's players is the surest way to victory. The spikes on Sportsmen United Shooters make defending against them a daunting prospect.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Shots are more powerful, and the ball damages any of your units it touches",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 1200,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.2,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "aoe_duration": 10.0,
+                "ball_damage": 1000.0,
+                "damage_duration": 1.5,
+                "duration": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.35,
+                "slapshot_force": 1.6
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.2,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "aoe_duration": 10.0,
+                "ball_damage": 1000.0,
+                "damage_duration": 1.5,
+                "duration": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.35,
+                "slapshot_force": 1.6
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "sportsmen_united_veteran_shooter",
+      "id": "enemy_4028_mukfum_2",
+      "name": "Sportsmen United Veteran Shooter",
+      "index": "IB42",
+      "rank": "Normal",
+      "sort": 1264,
+      "hidden": false,
+      "icon": "/enemies-icons/Sportsmen United Veteran Shooter.webp",
+      "flavour_text": "Sportsmen United veterans take it upon themselves to uphold the Positional Football tradition of taking out opposing players. The spikes on Sportsmen United Veteran Shooters make defending against them a daunting prospect.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Shots are more powerful, and the ball damages any of your units it touches",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 44000,
+            "atk": 1600,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.2,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "aoe_duration": 10.0,
+                "ball_damage": 1000.0,
+                "damage_duration": 1.5,
+                "duration": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.45,
+                "slapshot_force": 1.5
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.2,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "passtheball",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            },
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "aoe_duration": 10.0,
+                "ball_damage": 1000.0,
+                "damage_duration": 1.5,
+                "duration": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 15.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "passing_force": 1.45,
+                "slapshot_force": 1.8
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "sportsmen_united_goalie",
+      "id": "enemy_4029_mukfub",
+      "name": "Sportsmen United Goalie",
+      "index": "IB43",
+      "rank": "Normal",
+      "sort": 1265,
+      "hidden": false,
+      "icon": "/enemies-icons/Sportsmen United Goalie.webp",
+      "flavour_text": "For Sportsmen United, taking out all the opponent's players is the surest way to victory. Sportsmen United Goalies may look mild-mannered, but they can be terrifying when angered.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When HP drops below 50%, gains increased ATK and DEF, temporarily stops defending the goal and starts attacking your players",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 2200,
+            "def": 550,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.3,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "rage",
+              "parameters": {
+                "atk": 2.0,
+                "def": 2.0,
+                "hp_ratio": 0.5,
+                "rage_duration": 15.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 1.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 550,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.3,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "rage",
+              "parameters": {
+                "atk": 2.0,
+                "def": 2.0,
+                "hp_ratio": 0.5,
+                "rage_duration": 15.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 1.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "sportsmen_united_veteran_goalie",
+      "id": "enemy_4029_mukfub_2",
+      "name": "Sportsmen United Veteran Goalie",
+      "index": "IB44",
+      "rank": "Normal",
+      "sort": 1266,
+      "hidden": false,
+      "icon": "/enemies-icons/Sportsmen United Veteran Goalie.webp",
+      "flavour_text": "Sportsmen United veterans take it upon themselves to uphold the Positional Football tradition of taking out opposing players. Sportsmen United Veteran Goalies may look mild-mannered, but they can be terrifying when angered.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When HP drops below 50%, gains increased ATK and DEF, temporarily stops defending the goal and starts attacking your players",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 52000,
+            "atk": 2500,
+            "def": 550,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 15.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.4,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "rage",
+              "parameters": {
+                "atk": 2.0,
+                "def": 2.0,
+                "hp_ratio": 0.5,
+                "rage_duration": 20.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 550,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 15.0
+              }
+            },
+            {
+              "key": "football",
+              "parameters": {
+                "clearance_force": 1.4,
+                "defence": 0.5,
+                "tile_col_end": 9.0
+              }
+            },
+            {
+              "key": "rage",
+              "parameters": {
+                "atk": 2.0,
+                "def": 2.0,
+                "hp_ratio": 0.5,
+                "rage_duration": 20.0
+              }
+            },
+            {
+              "key": "searchBall",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "sportsmen_united_hitter",
+      "id": "enemy_4030_mukfug",
+      "name": "Sportsmen United Hitter",
+      "index": "IB45",
+      "rank": "Normal",
+      "sort": 1267,
+      "hidden": false,
+      "icon": "/enemies-icons/Sportsmen United Hitter.webp",
+      "flavour_text": "For Sportsmen United, taking out all the opponent's players is the surest way to victory. No one knows if the hammers carried by Sportsmen United Hitters are really made of iron. No one wants to find out the hard way.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes attacking your units, high ATK",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 1200,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 0.0
+              }
+            },
+            {
+              "key": "searchtarget",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 0.0
+              }
+            },
+            {
+              "key": "searchtarget",
+              "parameters": {
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "sportsmen_united_veteran_hitter",
+      "id": "enemy_4030_mukfug_2",
+      "name": "Sportsmen United Veteran Hitter",
+      "index": "IB46",
+      "rank": "Normal",
+      "sort": 1268,
+      "hidden": false,
+      "icon": "/enemies-icons/Sportsmen United Veteran Hitter.webp",
+      "flavour_text": "Sportsmen United veterans take it upon themselves to uphold the Positional Football tradition of taking out opposing players. No one knows if the hammers carried by Sportsmen United Veteran Hitters are really made of iron. No one wants to find out the hard way.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes attacking your units, high ATK",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 42000,
+            "atk": 1500,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 0.0
+              }
+            },
+            {
+              "key": "searchtarget",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0
+              }
+            },
+            {
+              "key": "periodic_damage",
+              "parameters": {
+                "damage": 0.0
+              }
+            },
+            {
+              "key": "searchtarget",
+              "parameters": {
+                "range_radius": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "leaking_beetleball",
+      "id": "enemy_4031_muftsn",
+      "name": "Leaking Beetleball",
+      "index": "IB47",
+      "rank": "Normal",
+      "sort": 1269,
+      "hidden": false,
+      "icon": "/enemies-icons/Leaking Beetleball.webp",
+      "flavour_text": "An Originium beetle plays the part of the football. It sucks in air to expand rapidly when it feels threatened, but this one seems to have a leak and keeps getting flatter as it rolls.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Becomes smaller when kicked, requiring less damage to move",
+          "format": "normal"
+        },
+        {
+          "text": "Can only be blocked by a Goalkeeper or unit with Block Count of 3 or higher.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000,
+            "atk": 10000,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "SS",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "airleakage",
+              "parameters": {
+                "extra_value": -0.05,
+                "kick_times": 3.0,
+                "value": -2200.0
+              }
+            },
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 260.0,
+                "friction_factor": 0.19,
+                "restitution_factor": 1.0,
+                "value": 7100.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "airleakage",
+              "parameters": {
+                "extra_value": -0.05,
+                "kick_times": 3.0,
+                "value": -2200.0
+              }
+            },
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 260.0,
+                "friction_factor": 0.19,
+                "restitution_factor": 1.0,
+                "value": 7100.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "bloated_beetleball",
+      "id": "enemy_4032_muftmg",
+      "name": "Bloated Beetleball",
+      "index": "IB48",
+      "rank": "Normal",
+      "sort": 1270,
+      "hidden": false,
+      "icon": "/enemies-icons/Bloated Beetleball.webp",
+      "flavour_text": "An Originium beetle plays the part of the football. It sucks in air to expand rapidly when it feels threatened, to scare away predators, but this just makes it all the more adorable to those present.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Becomes bigger when kicked, requiring more damage to move",
+          "format": "normal"
+        },
+        {
+          "text": "Can only be blocked by a Goalkeeper or unit with Block Count of 3 or higher.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000,
+            "atk": 10000,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "SS",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "airinflation",
+              "parameters": {
+                "extra_value": 0.015,
+                "kick_times": 25.0,
+                "value": 200.0
+              }
+            },
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 400.0,
+                "friction_factor": 1.8,
+                "restitution_factor": 0.3,
+                "value": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "airinflation",
+              "parameters": {
+                "extra_value": 0.015,
+                "kick_times": 25.0,
+                "value": 200.0
+              }
+            },
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 400.0,
+                "friction_factor": 1.8,
+                "restitution_factor": 0.3,
+                "value": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "will_of_the_north_ball",
+      "id": "enemy_4033_muftic",
+      "name": "Will of the North Ball",
+      "index": "IB49",
+      "rank": "Normal",
+      "sort": 1271,
+      "hidden": false,
+      "icon": "/enemies-icons/Will of the North Ball.webp",
+      "flavour_text": "A ball made in the image of the indomitable will of the north. Like its inspiration, its mere presence summons snow and ice. Anyone up for a game of ice hockey?",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Leaves behind slippery ice on the ground",
+          "format": "normal"
+        },
+        {
+          "text": "Can only be blocked by a Goalkeeper or unit with Block Count of 3 or higher.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000,
+            "atk": 10000,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "SS",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 275.0,
+                "friction_factor": 0.5,
+                "restitution_factor": 0.9,
+                "value": 3800.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 275.0,
+                "friction_factor": 0.5,
+                "restitution_factor": 0.9,
+                "value": 3800.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "deep_sea_slider_ball",
+      "id": "enemy_4034_muftgl",
+      "name": "Deep Sea Slider Ball",
+      "index": "IB50",
+      "rank": "Normal",
+      "sort": 1272,
+      "hidden": false,
+      "icon": "/enemies-icons/Deep Sea Slider Ball.webp",
+      "flavour_text": "A ball made in the image of a strange sea creature. Like its inspiration, it excretes a mucous slime, but it is unable to slide smoothly. Instead, it gets stuck in its own slime all the time.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Leaves behind sticky slime on the ground",
+          "format": "normal"
+        },
+        {
+          "text": "Can only be blocked by a Goalkeeper or unit with Block Count of 3 or higher.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000,
+            "atk": 10000,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "SS",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 260.0,
+                "friction_factor": 0.3,
+                "restitution_factor": 1.0,
+                "value": 1500.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 80000,
+            "atk": 2250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "slapshot",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "clearance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "block_cnt": 3.0
+              }
+            },
+            {
+              "key": "physic",
+              "parameters": {
+                "force": 260.0,
+                "friction_factor": 0.3,
+                "restitution_factor": 1.0,
+                "value": 1500.0
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "monument_to_force",
+      "id": "enemy_4035_mufbsa",
+      "name": "Monument to Force",
+      "index": "IB51",
+      "rank": "Elite",
+      "sort": 1273,
+      "hidden": false,
+      "icon": "/enemies-icons/Monument to Force.webp",
+      "flavour_text": "Monument that Engineering made from leftover materials. A few had too much time on their hands and gave it the ability to move. After all, there is nothing in the rules that addresses what to do if the ball gets flattened into a pancake.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Gains significantly increased ASPD for every 20% HP lost",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000000,
+            "atk": 5000,
+            "def": 300,
+            "res": 15.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.8,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "SS",
+            "atk": "SS",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "S+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "hp20",
+              "parameters": {
+                "attack_speed": 1.5
+              }
+            },
+            {
+              "key": "hp40",
+              "parameters": {
+                "attack_speed": 1.5
+              }
+            },
+            {
+              "key": "hp60",
+              "parameters": {
+                "attack_speed": 1.5
+              }
+            },
+            {
+              "key": "hp80",
+              "parameters": {
+                "attack_speed": 1.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "monument_to_toughness",
+      "id": "enemy_4036_mufbsb",
+      "name": "Monument to Toughness",
+      "index": "IB52",
+      "rank": "Elite",
+      "sort": 1274,
+      "hidden": false,
+      "icon": "/enemies-icons/Monument to Toughness.webp",
+      "flavour_text": "Monument that Engineering made from leftover materials. A few had too much time on their hands and gave it the ability to move. After all, no one is foolish enough to try to stop something this big on the field.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Takes up more Blocks for every 20% HP lost",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000000,
+            "atk": 2500,
+            "def": 300,
+            "res": 15.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "SS",
+            "atk": "S",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "hp20",
+              "parameters": {
+                "block_cnt": 1.0
+              }
+            },
+            {
+              "key": "hp40",
+              "parameters": {
+                "block_cnt": 1.0
+              }
+            },
+            {
+              "key": "hp60",
+              "parameters": {
+                "block_cnt": 1.0
+              }
+            },
+            {
+              "key": "hp80",
+              "parameters": {
+                "block_cnt": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "monument_to_accuracy",
+      "id": "enemy_4037_mufbsc",
+      "name": "Monument to Accuracy",
+      "index": "IB53",
+      "rank": "Elite",
+      "sort": 1275,
+      "hidden": false,
+      "icon": "/enemies-icons/Monument to Accuracy.webp",
+      "flavour_text": "Monument that Engineering made from leftover materials. A few had too much time on their hands and gave it the ability to move. With enough skill, even a club can penetrate the target like a javelin.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Gains significantly increased ATK for every 20% HP lost",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000000,
+            "atk": 2000,
+            "def": 300,
+            "res": 15.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.5,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 4.0,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "SS",
+            "atk": "S",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "hp20",
+              "parameters": {
+                "atk": 1.0
+              }
+            },
+            {
+              "key": "hp40",
+              "parameters": {
+                "atk": 1.0
+              }
+            },
+            {
+              "key": "hp60",
+              "parameters": {
+                "atk": 1.0
+              }
+            },
+            {
+              "key": "hp80",
+              "parameters": {
+                "atk": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "monument_to_passion",
+      "id": "enemy_4038_mufbsd",
+      "name": "Monument to Passion",
+      "index": "IB54",
+      "rank": "Elite",
+      "sort": 1276,
+      "hidden": false,
+      "icon": "/enemies-icons/Monument to Passion.webp",
+      "flavour_text": "Monument that Engineering made from leftover materials. A few had too much time on their hands and gave it the ability to move. The fire in its hand never goes out. If it did though, all it would need to do is relight it from its head.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Gains significantly increased ATK for every 20% HP lost",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000000,
+            "atk": 1300,
+            "def": 300,
+            "res": 15.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.0,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "SS",
+            "atk": "A",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "hp20",
+              "parameters": {
+                "atk": 1.0
+              }
+            },
+            {
+              "key": "hp40",
+              "parameters": {
+                "atk": 1.0
+              }
+            },
+            {
+              "key": "hp60",
+              "parameters": {
+                "atk": 1.0
+              }
+            },
+            {
+              "key": "hp80",
+              "parameters": {
+                "atk": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "monument_to_swiftness",
+      "id": "enemy_4039_mufbse",
+      "name": "Monument to Swiftness",
+      "index": "IB55",
+      "rank": "Elite",
+      "sort": 1277,
+      "hidden": false,
+      "icon": "/enemies-icons/Monument to Swiftness.webp",
+      "flavour_text": "Monument that Engineering made from leftover materials. A few had too much time on their hands and gave it the ability to move. No one notices that the cleaning cart at the head of the course is faster than any of the race cars.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Gains significantly increased Movement Speed for every 20% HP lost",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000000,
+            "atk": 1,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "SS",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "hp20",
+              "parameters": {
+                "move_speed": 1.5
+              }
+            },
+            {
+              "key": "hp40",
+              "parameters": {
+                "move_speed": 1.5
+              }
+            },
+            {
+              "key": "hp60",
+              "parameters": {
+                "move_speed": 1.5
+              }
+            },
+            {
+              "key": "hp80",
+              "parameters": {
+                "move_speed": 1.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1832 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act48side",
+    "label": "ME",
+    "name": "Medjehtiqedti Bound",
+    "release_date": "2026-06-22"
+  },
+  "enemies": [
+    {
+      "slug": "heros_call",
+      "id": "enemy_10154_mnmblx",
+      "name": "Hero's Call",
+      "index": "MIN01",
+      "rank": "Normal",
+      "sort": 1111,
+      "hidden": false,
+      "icon": "/enemies-icons/Hero's Call.webp",
+      "flavour_text": "In the floral fragrance of the land of heroes, even simple stone columns seem to invite you to become a hero. It is a desire deeply rooted in every heart, and perhaps an opportunity is all that is needed to see it.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically spawns inside an Immersed Operator's Attack Range",
+          "format": "normal"
+        },
+        {
+          "text": "Can only be attacked by and is prioritized by Immersed Operators",
+          "format": "normal"
+        },
+        {
+          "text": "Disappears after taking a certain number of attacks",
+          "format": "normal"
+        },
+        {
+          "text": "Does not count towards the defeated enemies counter",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3,
+            "atk": 100,
+            "def": 100,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.2,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "D",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "E"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "taunt_level": 1.0
+              }
+            }
+          ],
+          "immunities": [
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "javelineer",
+      "id": "enemy_10155_mntjsd",
+      "name": "Javelineer",
+      "index": "MIN02",
+      "rank": "Normal",
+      "sort": 1112,
+      "hidden": false,
+      "icon": "/enemies-icons/Javelineer.webp",
+      "flavour_text": "Soldier played by a Minoan citizen. Even ordinary soldiers have a chance to become heroes. The most important thing is to have the courage and resilience to pick up the sword when the javelin is broken.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Becomes melee if ranged attack misses",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4200,
+            "atk": 360,
+            "def": 100,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.0,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "change",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "peltast",
+      "id": "enemy_10155_mntjsd_2",
+      "name": "Peltast",
+      "index": "MIN03",
+      "rank": "Normal",
+      "sort": 1113,
+      "hidden": false,
+      "icon": "/enemies-icons/Peltast.webp",
+      "flavour_text": "Warrior played by a Minoan citizen who is well-versed in the role, able to hit the backsides of passersby with his javelin with great precision.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Becomes melee if ranged attack misses",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5400,
+            "atk": 450,
+            "def": 150,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.0,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "change",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "novice_acolyte",
+      "id": "enemy_10156_mncrer",
+      "name": "Novice Acolyte",
+      "index": "MIN04",
+      "rank": "Normal",
+      "sort": 1114,
+      "hidden": false,
+      "icon": "/enemies-icons/Novice Acolyte.webp",
+      "flavour_text": "A novice acolyte at the Temple of Flora, a hero well-versed in the lore of flowers and plants who applied it to her Originium Arts. In addition to the standard acolyte duties of study, cleaning, incense burning, and other errands, they are also responsible for maintaining the floral fountains on the streets.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Refills a nearby Fountain and heals nearby enemies when defeated",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4000,
+            "atk": 300,
+            "def": 100,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "D",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Boom",
+              "parameters": {
+                "heal_scale": 5.0,
+                "projectile_range": 1.2
+              }
+            },
+            {
+              "key": "FillWater",
+              "parameters": {
+                "dynamic": 3000.0,
+                "projectile_range": 1.2
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "trainee_acolyte",
+      "id": "enemy_10156_mncrer_2",
+      "name": "Trainee Acolyte",
+      "index": "MIN05",
+      "rank": "Normal",
+      "sort": 1115,
+      "hidden": false,
+      "icon": "/enemies-icons/Trainee Acolyte.webp",
+      "flavour_text": "An acolyte at the Temple of Flora who is ready to take on greater clerical responsibilities, though they are still required to do their daily chores. Some still find the filled water jugs too heavy, even after several years as an acolyte.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Refills a nearby Fountain and heals nearby enemies when defeated",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5500,
+            "atk": 360,
+            "def": 100,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "D",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Boom",
+              "parameters": {
+                "heal_scale": 5.0,
+                "projectile_range": 1.2
+              }
+            },
+            {
+              "key": "FillWater",
+              "parameters": {
+                "dynamic": 3000.0,
+                "projectile_range": 1.2
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "questioning_statue",
+      "id": "enemy_10157_mnggyl",
+      "name": "Questioning Statue",
+      "index": "MIN06",
+      "rank": "Normal",
+      "sort": 1116,
+      "hidden": false,
+      "icon": "/enemies-icons/Questioning Statue.webp",
+      "flavour_text": "Once an ordinary sculpture found on the streets of Minos, inspired by a legendary monster who blocks roads and makes travelers answer riddles. The creative citizens of Minos have built drones in their image to carry out simple tasks such as carrying water and watering flowers.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Lands when passing over a Fountain without a statue",
+          "format": "normal"
+        },
+        {
+          "text": "Fountains it lands on cannot be healed and continuously lose water",
+          "format": "normal"
+        },
+        {
+          "text": "Leaves the battlefield after spending a certain amount of time on a Fountain",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 450,
+            "def": 600,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 1.5,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "B",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Lay",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 1.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "LayAnim",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 1.0,
+              "priority": 0,
+              "parameters": {
+                "interval": 1.0,
+                "value": 100.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "suiside",
+              "parameters": {
+                "duration": 500.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "disappointed_statue",
+      "id": "enemy_10157_mnggyl_2",
+      "name": "Disappointed Statue",
+      "index": "MIN07",
+      "rank": "Normal",
+      "sort": 1117,
+      "hidden": false,
+      "icon": "/enemies-icons/Disappointed Statue.webp",
+      "flavour_text": "Once an ordinary sculpture found on the streets of Minos, inspired by a legendary monster who blocks roads and makes travelers answer riddles, disappointedly devouring those who fail to answer correctly. A hero from Thebes eventually solved the monster's riddle through her courage and wisdom.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Lands when passing over a Fountain without a statue",
+          "format": "normal"
+        },
+        {
+          "text": "Fountains it lands on cannot be healed and continuously lose water",
+          "format": "normal"
+        },
+        {
+          "text": "Leaves the battlefield after spending a certain amount of time on a Fountain",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 550,
+            "def": 800,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 1.5,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "B+",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Lay",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 1.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "LayAnim",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 1.0,
+              "priority": 0,
+              "parameters": {
+                "interval": 1.0,
+                "value": 100.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "suiside",
+              "parameters": {
+                "duration": 500.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "pheidippides_the_jogger",
+      "id": "enemy_10158_mnzeno",
+      "name": "Pheidippides the Jogger",
+      "index": "MIN08",
+      "rank": "Normal",
+      "sort": 1118,
+      "hidden": false,
+      "icon": "/enemies-icons/Pheidippides the Jogger.webp",
+      "flavour_text": "The hero Pheidippides, played by a Minoan citizen. When Minos drove the Sargonian invaders from their soil, it was Pheidippides who ran from city to city from Athenius, carrying an olive branch and announcing Minos's victory over Sargon.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Movement Speed gradually increases, or gradually decreases instead when Immersed",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 100,
+            "def": 200,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "E",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "speed",
+              "parameters": {
+                "enemy_mnzeno_speed_down.move_speed": -0.2,
+                "enemy_mnzeno_speed_up.move_speed": 0.1,
+                "interval": 1.0,
+                "value": 1.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "pheidippides_the_marathoner",
+      "id": "enemy_10158_mnzeno_2",
+      "name": "Pheidippides the Marathoner",
+      "index": "MIN09",
+      "rank": "Normal",
+      "sort": 1119,
+      "hidden": false,
+      "icon": "/enemies-icons/Pheidippides the Marathoner.webp",
+      "flavour_text": "The hero Pheidippides, played by a Minoan citizen. Modern heroes meet ancient philosophy to create a brand-new paradox—Pheidippides can never catch the metal crab, no matter how hard he runs. This citizen sure tries his hardest to perform the paradox.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Movement Speed gradually increases, or gradually decreases instead when Immersed",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 9600,
+            "atk": 100,
+            "def": 300,
+            "res": 25.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "E",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "speed",
+              "parameters": {
+                "enemy_mnzeno_speed_down.move_speed": -0.2,
+                "enemy_mnzeno_speed_up.move_speed": 0.1,
+                "interval": 1.0,
+                "value": 1.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "wooden_burdenbeast_of_ilion",
+      "id": "enemy_10159_mntrjn",
+      "name": "Wooden Burdenbeast of Ilion",
+      "index": "MIN10",
+      "rank": "Elite",
+      "sort": 1120,
+      "hidden": false,
+      "icon": "/enemies-icons/Wooden Burdenbeast of Ilion.webp",
+      "flavour_text": "The wooden burdenbeast of Ilion, played by Minoan citizens. In the age of city states, Athenians captured the previously impregnable city of Ilion by hiding soldiers inside a wooden burdenbeast. The story is so well-known that a group of Minoans squeezing themselves into a vehicle is immediately understood as a recreation of the legend, and onlookers are invited to join in.",
+      "race": "Machina",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Carries up to 5 passengers",
+          "format": "normal"
+        },
+        {
+          "text": "Movement Speed reduced for each additional passenger",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 28000,
+            "atk": 100,
+            "def": 600,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 6,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "E",
+            "def": "B",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "bus",
+              "parameters": {
+                "half_cnt": 2.0,
+                "max_cnt": 5.0,
+                "move_speed": -0.2
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "iron_burdenbeast_of_ilion",
+      "id": "enemy_10159_mntrjn_2",
+      "name": "Iron Burdenbeast of Ilion",
+      "index": "MIN11",
+      "rank": "Elite",
+      "sort": 1121,
+      "hidden": false,
+      "icon": "/enemies-icons/Iron Burdenbeast of Ilion.webp",
+      "flavour_text": "The iron burdenbeast of Ilion, played by Minoan citizens. In addition to being tougher than the wooden burdenbeasts, the citizens have also become more skilled, allowing them to put on various performances on the vehicle. The only problem is that it really cannot hold any more people.",
+      "race": "Machina",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Carries up to 5 passengers",
+          "format": "normal"
+        },
+        {
+          "text": "Movement Speed reduced for each additional passenger",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 32000,
+            "atk": 100,
+            "def": 600,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 6,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "E",
+            "def": "B",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "bus",
+              "parameters": {
+                "half_cnt": 2.0,
+                "max_cnt": 5.0,
+                "move_speed": -0.2
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "comedic_poet",
+      "id": "enemy_10160_mnlaur",
+      "name": "Comedic Poet",
+      "index": "MIN12",
+      "rank": "Normal",
+      "sort": 1122,
+      "hidden": false,
+      "icon": "/enemies-icons/Comedic Poet.webp",
+      "flavour_text": "An aoidos on the streets of Minos, singing stories of mirth. The aoidos tradition predates the nation of Minos, and as the predecessor to Minoan drama, endures to this day.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Draws and absorbs water from Fountains, summoning <Heroic Ideal> when complete",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 600,
+            "def": 150,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 2.0,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "D",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Lasso",
+              "sp_cost": 0,
+              "cooldown": 90.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_key": "enemy_10161_mnserv",
+                "hit_duration": 10.0,
+                "value": 250.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "enemy_key",
+              "parameters": {
+                "value": "enemy_10161_mnserv"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "tragic_poet",
+      "id": "enemy_10160_mnlaur_2",
+      "name": "Tragic Poet",
+      "index": "MIN13",
+      "rank": "Normal",
+      "sort": 1123,
+      "hidden": false,
+      "icon": "/enemies-icons/Tragic Poet.webp",
+      "flavour_text": "An aoidos on the streets of Minos, singing stories of sorrow. Many classical plays were banned when the Sargonians invaded Minos, but the aoidoi continued to whisper the old legends, passing on the courage and spirit of the heroes. The voices of the aoidoi are stronger and more resonant when they sing of tragedies.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Draws and absorbs water from Fountains, summoning <Heroic Spirit> when complete",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 800,
+            "def": 150,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 2.0,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B+",
+            "def": "D",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Lasso",
+              "sp_cost": 0,
+              "cooldown": 90.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_key": "enemy_10161_mnserv_2",
+                "hit_duration": 10.0,
+                "value": 250.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "heroic_ideal",
+      "id": "enemy_10161_mnserv",
+      "name": "Heroic Ideal",
+      "index": "MIN14",
+      "rank": "Elite",
+      "sort": 1124,
+      "hidden": false,
+      "icon": "/enemies-icons/Heroic Ideal.webp",
+      "flavour_text": "An illusion created by the stories of the aoidoi. Heroic ideals come in a million forms—some are grand, others simple.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Not affected by Immersed",
+          "format": "normal"
+        },
+        {
+          "text": "Dodges Physical and Arts damage from your non-Immersed units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 22000,
+            "atk": 1100,
+            "def": 330,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "heroic_spirit",
+      "id": "enemy_10161_mnserv_2",
+      "name": "Heroic Spirit",
+      "index": "MIN15",
+      "rank": "Elite",
+      "sort": 1125,
+      "hidden": false,
+      "icon": "/enemies-icons/Heroic Spirit.webp",
+      "flavour_text": "An illusion created by the stories of the aoidoi. Heroic spirit comes in a million forms—no task is too enormous for a hero, if they shoulder their responsibility.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Not affected by Immersed",
+          "format": "normal"
+        },
+        {
+          "text": "Dodges Physical and Arts damage from your non-Immersed units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 1250,
+            "def": 360,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "handmade_catapult",
+      "id": "enemy_10162_mnctpt",
+      "name": "Handmade Catapult",
+      "index": "MIN16",
+      "rank": "Elite",
+      "sort": 1126,
+      "hidden": false,
+      "icon": "/enemies-icons/Handmade Catapult.webp",
+      "flavour_text": "Catapult handmade from cardboard by Minoan citizens, limiting its power. It has been loaded with too many rocks, making bringing it to its destination an exhausting task and hampering its accuracy as the operator's hand is usually shaking from fatigue by the time it is actually used.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks hit 3 times and deal physical splash damage",
+          "format": "normal"
+        },
+        {
+          "text": "Aim deviates randomly when Immersed",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 16000,
+            "atk": 750,
+            "def": 800,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 7.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 4.0,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "B+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "hit_interval": 0.3,
+                "offset_bound": 3.0,
+                "projectile_range": 0.5,
+                "times": 3.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "palladulis",
+      "id": "enemy_10163_mnctur",
+      "name": "Palladulis",
+      "index": "MIN18",
+      "rank": "Elite",
+      "sort": 1128,
+      "hidden": false,
+      "icon": "/enemies-icons/Palladulis.webp",
+      "flavour_text": "The hero Palladulis, played by two Minoans. Palladulis always led the charge from the front in Minos's war of liberation, making him one of the most popular of the Twelve Heroes. One person is insufficient to recreate his heroism, so the role is traditionally played by two.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Charges if there is an ally in the direction of its movement, dealing heavy Physical damage when it hits your unit",
+          "format": "normal"
+        },
+        {
+          "text": "When Immersed, charge passes through allies until hitting terrain, taking heavy True damage and becoming stunned",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 1700,
+            "def": 1000,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "A",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "rush",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "rushEndNormal",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "rushEndAdvance",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale_pure": 10.0,
+                "cooldown": 5.0,
+                "stun": 15.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "CollideChar",
+              "parameters": {
+                "atk_scale_collide": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "brave_palladulis",
+      "id": "enemy_10163_mnctur_2",
+      "name": "Brave Palladulis",
+      "index": "MIN19",
+      "rank": "Elite",
+      "sort": 1129,
+      "hidden": false,
+      "icon": "/enemies-icons/Brave Palladulis.webp",
+      "flavour_text": "The hero Palladulis, played by two Minoans. They have become experts at playing Palladulis, working in perfect tandem to recreate his heroic charge. The one in front has gotten used to getting dazed from hitting walls, as the one in back cannot see what is in front of them.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Charges if there is an ally in the direction of its movement, dealing heavy Physical damage when it hits your unit",
+          "format": "normal"
+        },
+        {
+          "text": "When Immersed, charge passes through allies until hitting terrain, taking heavy True damage and becoming stunned",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 44000,
+            "atk": 1900,
+            "def": 1600,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "A+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "rush",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "rushEndNormal",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "rushEndAdvance",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale_pure": 10.0,
+                "cooldown": 5.0,
+                "stun": 15.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "CollideChar",
+              "parameters": {
+                "atk_scale_collide": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "xanthos_the_avenger",
+      "id": "enemy_1580_mnchrn",
+      "name": "Xanthos, the Avenger",
+      "index": "XAN",
+      "rank": "Boss",
+      "sort": 1375,
+      "hidden": false,
+      "icon": "/enemies-icons/Xanthos, the Avenger.webp",
+      "flavour_text": "Come what may, he will stand before the Sargonians and his own people, with nothing to hide, and ask his question of them, here and now.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks hit 3 times",
+          "format": "normal"
+        },
+        {
+          "text": "[Question] Gains greatly increased Movement Speed when unblocked for 10s",
+          "format": "normal"
+        },
+        {
+          "text": "[Dried Waterway] When unblocked, DEF and RES are greatly increased, and ATK gradually increases (reaches max after 10s)",
+          "format": "normal"
+        },
+        {
+          "text": "[Imagination of Ruin] Every attack reduces the ATK gain from [Dried Waterway]",
+          "format": "normal"
+        },
+        {
+          "text": "[Recurring Grudge] Summons <'Ithakos Innumerable'> when defeated for the first time, then gains greatly increased HP, and attacks deal Physical splash damage; [Imagination of Ruin] becomes disabled",
+          "format": "normal"
+        },
+        {
+          "text": "When <'Ithakos Innumerable'> is defeated, takes True damage equal to its Max HP and becomes stunned; [Dried Waterway] is disabled",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 90000,
+            "atk": 1200,
+            "def": 800,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.6,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 1.1,
+            "weight": 7,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "MoveUp",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "AttriUp",
+              "parameters": {
+                "atk": 80.0,
+                "def": 2.0,
+                "interval": 1.0,
+                "magic_resistance": 2.0,
+                "max_stack_cnt": 10.0
+              }
+            },
+            {
+              "key": "MoveCheck",
+              "parameters": {
+                "atk_scale_splash": 0.3,
+                "interval": 10.0,
+                "move_speed": 1.0
+              }
+            },
+            {
+              "key": "atk_fx",
+              "parameters": {
+                "max_stack_cnt": 10.0,
+                "middle_stack_cnt": 5.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "branch_id": "boss_summon",
+                "duration": 15.0,
+                "max_hp": 1.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 115000,
+            "atk": 1400,
+            "def": 1100,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.6,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 1.1,
+            "weight": 7,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A",
+            "def": "A",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "MoveUp",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "AttriUp",
+              "parameters": {
+                "atk": 80.0,
+                "def": 2.0,
+                "interval": 1.0,
+                "magic_resistance": 2.0,
+                "max_stack_cnt": 10.0
+              }
+            },
+            {
+              "key": "MoveCheck",
+              "parameters": {
+                "atk_scale_splash": 0.3,
+                "interval": 10.0,
+                "move_speed": 1.0
+              }
+            },
+            {
+              "key": "atk_fx",
+              "parameters": {
+                "max_stack_cnt": 10.0,
+                "middle_stack_cnt": 5.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "branch_id": "boss_summon",
+                "duration": 15.0,
+                "max_hp": 1.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "ithakos_innumerable",
+      "id": "enemy_1581_mnchrs",
+      "name": "'Ithakos Innumerable'",
+      "index": "XAN",
+      "rank": "Boss",
+      "sort": 1376,
+      "hidden": false,
+      "icon": "/enemies-icons/'Ithakos Innumerable'.webp",
+      "flavour_text": "They left not even bones, all for the sake of the land beneath their feet.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks hit 3 times and deal physical splash damage",
+          "format": "normal"
+        },
+        {
+          "text": "[Divine Revelation] Dodges Physical and Arts damage from your non-Immersed units",
+          "format": "normal"
+        },
+        {
+          "text": "['Suffering'] <'Ithakos Innumerable'> stops attacking, becomes Invulnerable, and draws and absorbs water from Fountains within a certain range",
+          "format": "normal"
+        },
+        {
+          "text": "['Hope'] Cast immediately after ['Suffering'] complete; becomes invulnerable and deals Arts damage multiple times to your non-Immersed units over a period of time",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 90000,
+            "atk": 900,
+            "def": 300,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.6,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 1.1,
+            "weight": 7,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Skill",
+              "sp_cost": 10,
+              "cooldown": 60.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "Damage.atk_scale": 1.5,
+                "Damage.duration": 15.0,
+                "Damage.interval": 5.0,
+                "Water.duration": 10.0,
+                "Water.interval": 1.0,
+                "Water.value": 2000.0,
+                "range_radius": 4.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Die",
+              "parameters": {
+                "atk_scale_splash": 0.3,
+                "stun": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 30,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 115000,
+            "atk": 1050,
+            "def": 420,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.6,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 1.1,
+            "weight": 7,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Skill",
+              "sp_cost": 10,
+              "cooldown": 60.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "Damage.atk_scale": 1.5,
+                "Damage.duration": 15.0,
+                "Damage.interval": 5.0,
+                "Water.duration": 10.0,
+                "Water.interval": 1.0,
+                "Water.value": 2000.0,
+                "range_radius": 4.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Die",
+              "parameters": {
+                "atk_scale_splash": 0.3,
+                "stun": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 30,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "refurbished_lithobolos",
+      "id": "enemy_10162_mnctpt_2",
+      "name": "Refurbished Lithobolos",
+      "index": "MIN17",
+      "rank": "Elite",
+      "sort": 1127,
+      "hidden": false,
+      "icon": "/enemies-icons/Refurbished Lithobolos.webp",
+      "flavour_text": "Stone thrower from the city-state era, repurposed for use in theater. Classical architecture and modern buildings blend together on the streets of Minos, as do relics from the classical period, gaining new life in the hands of modern Minoans. It remains heavy, however, and the operator's hand still shakes.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks hit 3 times and deal physical splash damage",
+          "format": "normal"
+        },
+        {
+          "text": "Aim deviates randomly when Immersed",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 18000,
+            "atk": 1000,
+            "def": 800,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 7.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 4.0,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "B+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "hit_interval": 0.3,
+                "offset_bound": 3.0,
+                "projectile_range": 0.5,
+                "times": 3.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

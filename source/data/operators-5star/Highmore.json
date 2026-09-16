@@ -1,0 +1,770 @@
+{
+  "name": "Highmore",
+  "rarity": 5,
+  "class": "Guard",
+  "branch": "Reaper",
+  "faction": "Iberia",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS"
+  ],
+  "trait": "Cannot be healed by allies; Attacks deal AoE damage ; Recovers 50 HP for every enemy hit during attacks, up to Block count",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "IS Exclusive",
+      "Unlock Location": "Mizuki & Caerula Arbor"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "The Land With Me",
+    "Stranded"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4066_highmo",
+  "otherLanguages": {
+    "Chinese": "海沫",
+    "Japanese": "ハイモア",
+    "Korean": "하이모어"
+  },
+  "characterInfo": {
+    "File no.": "II10",
+    "Illustrator": "Horin",
+    "Release Date": "2023/05/23",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Natsumi Ohshita",
+    "Chinese": "Xu Xiaowen",
+    "English": "Ashlyn Madden",
+    "Korean": "Lee Da-eun"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Iberia",
+    "Date of Birth": "August 23rd",
+    "Race": "Aegir",
+    "Height": "156 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Standard",
+    "Endurance": "Outstanding",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Flawed"
+  },
+  "talents": [
+    {
+      "name": "Sustenance from The Reaper",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Recover 18 Elemental Injury per enemy hit during attacks, up to Block count"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Recover 23 (+5) Elemental Injury per enemy hit during attacks, up to Block count"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Recover 30 Elemental Injury per enemy hit during attacks, up to Block count"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Recover 35 (+5) Elemental Injury per enemy hit during attacks, up to Block count"
+        }
+      ]
+    },
+    {
+      "name": "Interfluence from Maladie",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "In [Mizuki & Caerula Arbor] , ASPD +10, Block +1"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "In [Mizuki & Caerula Arbor], ASPD +25, Block +1"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "Max HP +160"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Sustenance from the Reaper"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Highmore's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +1 .",
+        "Block +1 .",
+        "New skill: Evanescence from Paranoia .",
+        "New talents : Sustenance from the Reaper and Interfluence from Maladie ."
+      ],
+      "prerequisite": "Raise Highmore to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 7
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Sustenance from the Reaper and Interfluence from Maladie improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Highmore to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Guard Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Concentration",
+          "quantity": 9
+        },
+        {
+          "name": "Semi-Synthetic Solvent",
+          "quantity": 13
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Surrendrance from Hindsight",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The ATK of the next attack increases to 105% , attacking twice consecutively",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The ATK of the next attack increases to 110% , attacking twice consecutively",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The ATK of the next attack increases to 115% , attacking twice consecutively",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The ATK of the next attack increases to 120% , attacking twice consecutively",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The ATK of the next attack increases to 125% , attacking twice consecutively",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The ATK of the next attack increases to 130% , attacking twice consecutively",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The ATK of the next attack increases to 135% , attacking twice consecutively",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The ATK of the next attack increases to 145% , attacking twice consecutively",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The ATK of the next attack increases to 155% , attacking twice consecutively",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The ATK of the next attack increases to 165% , attacking twice consecutively",
+            "initialSp": 0,
+            "spCost": 2,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Evanescence from Paranoia",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +30% , gain 40% Physical dodge , and recover 5% of Max HP whenever an enemy dies within range",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +33% , gain 40% Physical dodge, and recover 5% of Max HP whenever an enemy dies within range",
+            "initialSp": 10,
+            "spCost": 39,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +36% , gain 40% Physical dodge, and recover 5% of Max HP whenever an enemy dies within range",
+            "initialSp": 10,
+            "spCost": 38,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +40% , gain 45% Physical dodge, and recover 6% of Max HP whenever an enemy dies within range",
+            "initialSp": 12,
+            "spCost": 37,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +43% , gain 45% Physical dodge, and recover 6% of Max HP whenever an enemy dies within range",
+            "initialSp": 12,
+            "spCost": 36,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +46% , gain 45% Physical dodge, and recover 6% of Max HP whenever an enemy dies within range",
+            "initialSp": 12,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +50% , gain 50% Physical dodge, and recover 7% of Max HP whenever an enemy dies within range",
+            "initialSp": 14,
+            "spCost": 34,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +53% , gain 53% Physical dodge, and recover 8% of Max HP whenever an enemy dies within range",
+            "initialSp": 16,
+            "spCost": 32,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +56% , gain 56% Physical dodge, and recover 9% of Max HP whenever an enemy dies within range",
+            "initialSp": 18,
+            "spCost": 31,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +60% , gain 60% Physical dodge, and recover 10% of Max HP whenever an enemy dies within range",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Consciousness Compatibility",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, all Rhine Lab and Pinus Sylvestris skills in the Factory are considered Standardization skills"
+    },
+    {
+      "name": "Standardization β",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, productivity +25%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Highmore's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "REA-X: \"Weighing Anchor\"",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Highmore, and have Highmore deal at least 12,000 damage",
+        "requirement2": "Clear Intermezzi SN-2 with a 3-star rating; You must deploy your own Highmore, and can only include 2 other Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +160 , ASPD +4",
+          "effectLabel": "Trait improved",
+          "effectText": "Cannot be healed by allies; Attacks deal AoE damage ; Recovers 60 HP for every enemy hit during attacks, up to Block count",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +230 , ASPD +5",
+          "effectLabel": "Sustenance from the Reaper improved",
+          "effectText": "Recover 35 Elemental Injury per enemy hit during attacks, up to Block count",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +300 , ASPD +6",
+          "effectLabel": "Sustenance from the Reaper improved",
+          "effectText": "Recover 40 Elemental Injury per enemy hit during attacks, up to Block count",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Highmore was brought to\nRhodes Island\nfor medical treatment after\nbeing involved in an operation in\nIberia\n.\nBased on observation and her test results, she was approved to become a field operator and now supports various missions around Iberia.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1055,
+          "atk": 306,
+          "def": 216,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 1389,
+          "atk": 438,
+          "def": 300,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 1.3
+        },
+        "rangeId": "1-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1389,
+          "atk": 438,
+          "def": 300,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 2,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 1759,
+          "atk": 569,
+          "def": 385,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 2,
+          "interval": 1.3
+        },
+        "rangeId": "1-3"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1759,
+          "atk": 569,
+          "def": 385,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 2,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 2120,
+          "atk": 670,
+          "def": 454,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 2,
+          "interval": 1.3
+        },
+        "rangeId": "1-3"
+      }
+    ],
+    "trust": {
+      "hp": 250,
+      "atk": 40,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, the operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Highmore shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.08u/L\nOperator Highmore rarely comes into contact with Originium.\n\nThat's it, what else do you want to know? The proliferation of Seaborn tissue on her arms and weapon? That's far beyond my area of expertise. I'm just a doctor who doesn't even know what a Sea Terror is, after all. Why don't you consult a biologist instead?"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "I still remember how disorganized we were when Highmore first arrived at Rhodes Island.\nThose of us who were present at the time should still remember it clearly. The Hunters from Ægir had only just finished their report at the Rhodes Island Landship and left when Tulip and Mizuki sent us such a big surprise. Even Dr. Kal'tsit was still in talks with Iberia...\nThough we always say we can't ignore a wounded patient in need, we're still responsible for the safety of the other personnel after all. If it weren't for Amiya using her power and guaranteeing that Highmore was different from those appalling creatures, we wouldn't have known what to do. I even heard that Medical faced some technical difficulties when operating on her wounds and the hyperplastic tissues?\nThat's not all. After the surgery, Mizuki even requested us to accept her as an operator, to allow her to once again experience life amongst people... We weren't the only ones surprised, I'd wager even Amiya couldn't hide her astonishment, and Tulip was next to her just coughing lightly.\nAs for me? Well, I ended up being the one in charge of arranging and recording her test results. ...No, I don't think there was anything worth remembering or discussing, especially not her weapon impact tests on bionic dummies. If you're really interested, have mercy on me and go check the recordings yourself."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Highmore does not shy away from revealing personal information, and readily cooperated with our background investigation.\nWhen the topic of her parents came up, Highmore continued to maintain a facade of calmness and indifference, but we were able to get a glimpse of her feelings through her phrasing and micro-expressions.\nThe tragedy she experienced is little different from that of many other Ægirs in Iberia. Whether it was her father being spirited away by the Inquisition under the pretense of his Ægir identity, never to return, or her mother gradually becoming mute in the few remaining years of her life before finally dying of despair, their departures left an irreparable mark in her life.\nSurprisingly, she does not seem to harbor any grudge or regret towards the Inquisition. Instead, she blames the townsfolk for falsely accusing her father to save their own skins, the neighbors for spreading false rumors of her mother's alluring voice, and herself for being helpless to change anything yet unable to let go.\nShe directs her hatred toward human weakness rather than ill will, and perhaps that is why she continues to wallow in remorse and shame to this day."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "When the townsfolk attempted to pry open the door—to take away her mother's corpse—shouting, cursing, declaring the drought to be a curse she'd brought about, wanting to purge it by incinerating the body...\nIt was still afternoon, the sun still high up in the sky. Yet, I swear I saw starlight through the window. It formed a humanoid body, looking grand and divine, with bright blue stars marking an old man's joints. They fluttered around like spores in the wind, while lines of starlight coalesced into blood vessels. Countless moist and vibrant organisms converged harmoniously, drawing out the lines and contours of a human body.\nWhen the old man raised his arm, it was like a bite had been taken out of the crowd. Where his hand passed, there remained no noise, nor any marks, or even bloodstains. The wriggling starlight consumed all violence, leaving only silence in its wake.\nWhen the entire street was fully illuminated by starlight—it took but a moment—the grandpa, the bishop, started walking towards me. Behind him flowed a living carpet, or a cape, or something, formed of nothing but the stars and the ocean.\nIt was serene, beautiful, brilliant. Ah, so this is what humans should really be like...\nI, too, wish to join that patch of starlight."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Miscellaneous Records] \nChild, I am not against your desire to change, starting with your name. However, I do not give you this name for you to simply blindly chase after some vague higher goal.\nHumans are infinitesimally small, unbelievably small. We are each but a tiny grain awash in the waves.\nIn our imaginations, the lives of ordinary people able to live self-sufficiently may suffice to represent all of humanity. However, within such imagination, the term 'humanity' eminently excludes the Infected, the impoverished barely able to eke out a living, the wanderers without a home in the wilderness, the Sarkaz branded with the epithet of evil, and we of Ægir. Such massive-yet-myopic idealism does not even include the land and the sea humans rely on to live, nor the flora and fauna that are reduced to mere resources. It contains only humans, and the creations they pride themselves upon.\nThis irrationality stems from the weakness and inefficacy of humanity, their inequality and distrust. Only by shedding our laziness and degeneration, by shattering our biases in the pursuit of evolution, can we finally realize the value of a human being.\nOh, Highmore. How dearly I wish for you to stand higher, to discover the means to bind all of this together, to find all the myriad paths to walk towards this future, instead of simply basking in the faint glory of any one pioneer."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "During a trip back to the landship, Highmore came to the abrupt realization that the mission she had just participated in was simply a short line on a random tactical planning map. To be clear, this should have been obvious with a bit of logic.\nThe difference this time was that she had suddenly discovered countless other lines just like it, along with operator codenames crammed wherever they fit, as if weaving a constellation chart, each point connecting people together.\nWhy had she never paid attention before, despite having seen similar things so many times? Heh, without even realizing it, you all are gently re-weaving the homes that humans rely on.\nOr perhaps, it could be us."
+    }
+  ]
+}

@@ -1,0 +1,866 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act1vecb",
+    "label": "VEC",
+    "name": "Vector Breakthrough",
+    "release_date": "2025-03-25"
+  },
+  "enemies": [
+    {
+      "slug": "rosmontis_simulated_sentry_enemy_8007_eltrsm",
+      "id": "enemy_8007_eltrsm",
+      "name": "Rosmontis, Simulated Sentry",
+      "index": "SFR03",
+      "rank": "Boss",
+      "sort": 1526,
+      "hidden": true,
+      "icon": "/enemies-icons/Rosmontis, Simulated Sentry.webp",
+      "flavour_text": "A Breakthrough Trainer simulating Rosmontis at the peak of her combat prowess.\nAs she gazes at the 'walking arsenal' brought to life from data, her memories are finally liberated. Braver and more determined, she now yearns to fight alongside her companions.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical",
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "[Mind Matrix] Takes less Physical and Arts damage. Loses this effect when the V.T.E. on the field is destroyed and cannot attack until the V.T.E. is re-obtained.",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Fling] Hurls a <V.T.E.> at an allied unit regardless of distance, dealing 3 instances of Physical damage to the target when it lands (The second and third instances are aftershocks, dealing half damage). Stunned targets are instantly defeated.",
+          "format": "normal"
+        },
+        {
+          "text": "[Retrieve] Clears all Matrices on the field and retrieves all Tactical Equipment.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 1600,
+            "def": 1000,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "A",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "HurlDivineRapier",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 20.0,
+              "priority": 10,
+              "parameters": {
+                "append_atk_scale": 0.5
+              }
+            },
+            {
+              "key": "TransToP1M2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 999999.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "RecycleDR",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 25.0,
+              "priority": 10,
+              "parameters": {}
+            },
+            {
+              "key": "HurlDivineRapierP2",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 30.0,
+              "priority": 10,
+              "parameters": {
+                "append_atk_scale": 0.5,
+                "sec_atk_time": 2.0
+              }
+            },
+            {
+              "key": "Transfor",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 999999.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "TransToP2M2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 999999.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "RecycleDRP2",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 25.0,
+              "priority": 10,
+              "parameters": {}
+            },
+            {
+              "key": "TransforM2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 999999.0,
+              "priority": 20,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "P1M1_Reborn",
+              "parameters": {
+                "branch_id": "eltrsm_branch",
+                "duration": 28.0,
+                "interval": 5.0,
+                "reborn_magic_damage": 1000.0
+              }
+            },
+            {
+              "key": "P1M2_Reborn",
+              "parameters": {
+                "branch_id": "eltrsm_branch",
+                "duration": 28.0,
+                "interval": 5.0,
+                "reborn_magic_damage": 1000.0
+              }
+            },
+            {
+              "key": "P1_Passive",
+              "parameters": {
+                "damage_resistance": 0.6
+              }
+            },
+            {
+              "key": "PassiveEnhance",
+              "parameters": {
+                "enhance_level": 0.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "rosmontis_simulated_sentry_enemy_8007_eltrsm_2",
+      "id": "enemy_8007_eltrsm_2",
+      "name": "Rosmontis, Simulated Sentry",
+      "index": "SFR03",
+      "rank": "Boss",
+      "sort": 1527,
+      "hidden": true,
+      "icon": "/enemies-icons/Rosmontis, Simulated Sentry.webp",
+      "flavour_text": "A Breakthrough Trainer simulating Rosmontis at the peak of her combat prowess.\nAs she gazes at the 'walking arsenal' brought to life from data, her memories are finally liberated. Braver and more determined, she now yearns to fight alongside her companions.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical",
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "[Mind Matrix] Takes less Physical and Arts damage. Loses this effect when the V.T.E. on the field is destroyed and cannot attack until the V.T.E. is re-obtained.",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Fling] Hurls a <V.T.E.> at an allied unit regardless of distance, dealing 3 instances of Physical damage to the target when it lands (The second and third instances are aftershocks, dealing half damage). Stunned targets are instantly defeated.",
+          "format": "normal"
+        },
+        {
+          "text": "[Retrieve] Clears all Matrices on the field and retrieves all Tactical Equipment.",
+          "format": "normal"
+        },
+        {
+          "text": "[Impulse Inhibition] Initiates revival when HP reaches 0, periodically dealing Arts damage over a wide area around her every few seconds during the process.",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "[Amplified Fling] Hurls a second <V.T.E.> a few seconds after the first. Stunned targets are instantly defeated.",
+          "format": "normal"
+        },
+        {
+          "text": "[Memory Loss] Loses a certain amount of HP with every attack and deals Arts damage over a wide area around her.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 1600,
+            "def": 1000,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "A",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "HurlDivineRapier",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 20.0,
+              "priority": 10,
+              "parameters": {
+                "append_atk_scale": 0.5
+              }
+            },
+            {
+              "key": "TransToP1M2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 999999.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "RecycleDR",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 25.0,
+              "priority": 10,
+              "parameters": {}
+            },
+            {
+              "key": "HurlDivineRapierP2",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 20.0,
+              "priority": 10,
+              "parameters": {
+                "append_atk_scale": 0.5,
+                "sec_atk_time": 4.0
+              }
+            },
+            {
+              "key": "Transfor",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 999999.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "TransToP2M2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 999999.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "RecycleDRP2",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 25.0,
+              "priority": 10,
+              "parameters": {}
+            },
+            {
+              "key": "TransforM2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 999999.0,
+              "priority": 20,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "P1M1_Reborn",
+              "parameters": {
+                "branch_id": "eltrsm_branch",
+                "duration": 28.0,
+                "interval": 5.0,
+                "reborn_magic_damage": 1000.0
+              }
+            },
+            {
+              "key": "P1M2_Reborn",
+              "parameters": {
+                "branch_id": "eltrsm_branch",
+                "duration": 28.0,
+                "interval": 5.0,
+                "reborn_magic_damage": 1500.0
+              }
+            },
+            {
+              "key": "P1_Passive",
+              "parameters": {
+                "damage_resistance": 0.6
+              }
+            },
+            {
+              "key": "P2M1_Passive",
+              "parameters": {
+                "aoe_atk_scale": 0.2,
+                "damage_resistance": 0.6,
+                "invinciable_dur": 15.0,
+                "self_damage": 1500.0
+              }
+            },
+            {
+              "key": "PassiveEnhance",
+              "parameters": {
+                "enhance_level": 1.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "rosmontis_simulated_sentry",
+      "id": "enemy_8007_eltrsm_3",
+      "name": "Rosmontis, Simulated Sentry",
+      "index": "SFR03",
+      "rank": "Boss",
+      "sort": 1528,
+      "hidden": false,
+      "icon": "/enemies-icons/Rosmontis, Simulated Sentry.webp",
+      "flavour_text": "A Breakthrough Trainer simulating Rosmontis at the peak of her combat prowess.\nAs she gazes at the 'walking arsenal' brought to life from data, her memories are finally liberated. Braver and more determined, she now yearns to fight alongside her companions.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical",
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "[Mind Matrix] Takes less Physical and Arts damage. Loses this effect when the V.T.E. on the field is destroyed and cannot attack until the V.T.E. is re-obtained.",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Fling] Hurls a <V.T.E.> at an allied unit regardless of distance, dealing 3 instances of Physical damage to the target when it lands (The second and third instances are aftershocks, dealing half damage). Stunned targets are instantly defeated.",
+          "format": "normal"
+        },
+        {
+          "text": "[Retrieve] Clears all Matrices on the field and retrieves all Tactical Equipment.",
+          "format": "normal"
+        },
+        {
+          "text": "[Impulse Inhibition] Initiates revival when HP reaches 0, periodically dealing Arts damage over a wide area around her every few seconds during the process.",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "[Amplified Fling] Hurls a second <V.T.E.> a few seconds after the first. Stunned targets are instantly defeated.",
+          "format": "normal"
+        },
+        {
+          "text": "[Memory Loss] Loses a certain amount of HP with every attack and deals Arts damage over a wide area around her.",
+          "format": "normal"
+        },
+        {
+          "text": "[Cognitive Collapse] Once HP drops below 50%, flies into the air and switches to ranged attacks. Increases ATK, no longer uses [Fling], and gains the following abilities:",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks stun the target for an extended period. [Mind Matrix] effect no longer expires and reduces damage taken even further. [Memory Loss] damage dealt and HP loss are both increased. When attacked, deals a certain amount of True damage to surrounding allies.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 50000,
+            "atk": 2000,
+            "def": 1000,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "A",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "HurlDivineRapier",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 20.0,
+              "priority": 10,
+              "parameters": {
+                "append_atk_scale": 0.5
+              }
+            },
+            {
+              "key": "TransToP1M2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 999999.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "RecycleDR",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 25.0,
+              "priority": 10,
+              "parameters": {}
+            },
+            {
+              "key": "HurlDivineRapierP2",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 25.0,
+              "priority": 10,
+              "parameters": {
+                "append_atk_scale": 0.5,
+                "sec_atk_time": 4.0
+              }
+            },
+            {
+              "key": "Transfor",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 999999.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "TransToP2M2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 999999.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "RecycleDRP2",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 25.0,
+              "priority": 10,
+              "parameters": {}
+            },
+            {
+              "key": "TransforM2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 999999.0,
+              "priority": 20,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "P1M1_Reborn",
+              "parameters": {
+                "branch_id": "eltrsm_branch",
+                "duration": 28.0,
+                "interval": 5.0,
+                "reborn_magic_damage": 1500.0
+              }
+            },
+            {
+              "key": "P1M2_Reborn",
+              "parameters": {
+                "branch_id": "eltrsm_branch",
+                "duration": 28.0,
+                "interval": 5.0,
+                "reborn_magic_damage": 1500.0
+              }
+            },
+            {
+              "key": "P1_Passive",
+              "parameters": {
+                "damage_resistance": 0.6
+              }
+            },
+            {
+              "key": "P2M1_Passive",
+              "parameters": {
+                "aoe_atk_scale": 0.2,
+                "damage_resistance": 0.6,
+                "invinciable_dur": 15.0,
+                "self_damage": 750.0
+              }
+            },
+            {
+              "key": "P2_to3",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            },
+            {
+              "key": "P3_Passive",
+              "parameters": {
+                "aoe_atk_scale": 0.3,
+                "atk": 0.5,
+                "damage_resistance": 0.9,
+                "dmg_interval": 0.8,
+                "invinciable_dur": 15.0,
+                "psv_pure_dmg": 500.0,
+                "range_radius": 1.7,
+                "self_damage": 1500.0,
+                "stun": 15.0
+              }
+            },
+            {
+              "key": "PassiveEnhance",
+              "parameters": {
+                "enhance_level": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "v_t_e",
+      "id": "enemy_8008_eltswd",
+      "name": "V.T.E.",
+      "index": "SFR04",
+      "rank": "Elite",
+      "sort": 1516,
+      "hidden": false,
+      "icon": "/enemies-icons/V.T.E..webp",
+      "flavour_text": "Cutting-edge tactical equipment designed by Rhodes Island's Engineering Department specifically for this round of Vector Breakout training.\nWhile manifesting your emotions takes a toll, it offers strength in equal measure.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "More likely to be attacked. When attacked, inflicts a certain amount of True damage on surrounding allied units.",
+          "format": "normal"
+        },
+        {
+          "text": "Continuously stuns surrounding allies.",
+          "format": "normal"
+        },
+        {
+          "text": "Disappears when touched by another enemy, granting that enemy bonus Max HP and ATK. When that enemy is defeated, a <V.T.E.> is created where they fall.",
+          "format": "normal"
+        },
+        {
+          "text": "Leaves a Matrix on the field when destroyed. Allies within the Matrix gain bonus Max HP and ATK, and take less Physical and Arts damage.",
+          "format": "normal"
+        },
+        {
+          "text": "Self-destructs after being on the field for some time, dealing Arts damage over a wide area.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 100,
+            "def": 1000,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 5,
+            "taunt": 1,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "E",
+            "def": "A",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "DR_Boom",
+              "sp_cost": 0,
+              "cooldown": 999999.0,
+              "initial_cooldown": 999999.0,
+              "priority": 0,
+              "parameters": {
+                "bomb_damage": 4000.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "PassiveAoe",
+              "parameters": {
+                "dmg_interval": 0.8,
+                "psv_pure_dmg": 250.0,
+                "range_radius": 1.7
+              }
+            },
+            {
+              "key": "PassiveBoom",
+              "parameters": {
+                "interval": 30.0
+              }
+            },
+            {
+              "key": "PassiveToAlly",
+              "parameters": {
+                "magic_damage_magic": 0.0
+              }
+            },
+            {
+              "key": "PassiveToEnemy",
+              "parameters": {
+                "atk": 1.0,
+                "attack_speed": 0.0,
+                "max_hp": 1.0,
+                "range_radius": 0.4,
+                "sp_recovery_per_sec": 0.0,
+                "taunt_level": 1.0
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 0.1
+              }
+            },
+            {
+              "key": "ShieldAura",
+              "parameters": {
+                "atk": 1.0,
+                "attack_speed": 0.0,
+                "damage_resistance": 0.5,
+                "hp_recovery_per_sec_by_max_hp_ratio": 0.0,
+                "max_hp": 2.0,
+                "sp": 0.0,
+                "taunt_level": 0.0
+              }
+            },
+            {
+              "key": "extra_immune",
+              "parameters": {
+                "value": 0.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "rosmontiss_drone",
+      "id": "enemy_8009_eltufo",
+      "name": "Rosmontis's Drone",
+      "index": "SFR05",
+      "rank": "Elite",
+      "sort": 1517,
+      "hidden": false,
+      "icon": "/enemies-icons/Rosmontis's Drone.webp",
+      "flavour_text": "A cutting-edge drone designed by Rhodes Island's Engineering Department specifically for this round of Vector Breakout training training.\nRosmontis loves its color.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Can only be attacked while inside a Matrix.",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks deal AoE damage.",
+          "format": "normal"
+        },
+        {
+          "text": "After two attacks, the next attack stuns all targets.",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated, leaves behind Supplies that will activate when Rosmontis, Simulated Sentry triggers [Cognitive Collapse]. Upon activation, allied units in a wide area will take reduced Physical and Arts damage.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 700,
+            "def": 550,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": null,
+            "weight": 3,
+            "taunt": 1,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B+",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "StunAtk",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "stun": 5.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "CrystalShield",
+              "parameters": {
+                "cast_duration": 60.0,
+                "damage_resistance": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

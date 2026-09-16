@@ -1,0 +1,943 @@
+{
+  "name": "Pepe",
+  "rarity": 6,
+  "class": "Guard",
+  "branch": "Earthshaker",
+  "faction": "Sargon",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS",
+    "Crowd-Control"
+  ],
+  "trait": "Attacks deal 50% ATK as AOE Physical damage to enemies around the target.",
+  "howToObtain": {
+    "Limited": "Yes",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Nuit of the Nightsky"
+  ],
+  "ep": {
+    "Main": "Mystic Light Quest",
+    "Co-star": null
+  },
+  "internalName": "char_4058_pepe",
+  "otherLanguages": {
+    "Chinese": "佩佩",
+    "Japanese": "ペペ",
+    "Korean": "페페"
+  },
+  "characterInfo": {
+    "File no.": "SG14",
+    "Illustrator": "Namie",
+    "Release Date": "2025/01/16",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Machico",
+    "Chinese": "Chen Tingting",
+    "English": "Sophia Eleni",
+    "Korean": "Seo Da-hye"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "3 years",
+    "Place of Birth": "Sargon",
+    "Date of Birth": "June 12th",
+    "Race": "Feline",
+    "Height": "155 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Normal",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Legacy of the Past",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Every enemy defeated while her skill is active grants Pepe 1 SP when the skill ends; restores up to 10 SP"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Every enemy defeated while her skill is active grants Pepe 1 SP when the skill ends; restores up to 13 (+3) SP"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Every enemy defeated while her skill is active grants Pepe 1 SP when the skill ends; restores up to 14 SP"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Every enemy defeated while her skill is active grants Pepe 1 SP when the skill ends; restores up to 17 (+3) SP"
+        }
+      ]
+    },
+    {
+      "name": "Perfuse With Lotus",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When deployed, all [Guard] Operators gain +16% ATK"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 3",
+          "description": "When deployed, all [Guard] Operators gain +20% (+4%) ATK"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Improves Perfuse With Lotus"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +35"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Legacy of the Past"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Pepe's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Legacy of the Past .",
+        "New skill: Whirling Hammer Defense ."
+      ],
+      "prerequisite": "Raise Pepe to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron",
+          "quantity": 7
+        },
+        {
+          "name": "Polyester",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Perfuse With Lotus .",
+        "New skill: Shock of Time .",
+        "Legacy of the Past improved."
+      ],
+      "prerequisite": "Raise Pepe to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Guard Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "D32 Steel",
+          "quantity": 4
+        },
+        {
+          "name": "Solidified Fiber Board",
+          "quantity": 5
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Get Stamped!",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack deals 160% ATK as Physical damage. When Pepe is affected by a Negative Status , this skill can be used to remove the Negative Status Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack deals 170% ATK as Physical damage. When Pepe is affected by a Negative Status , this skill can be used to remove the Negative Status Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack deals 180% ATK as Physical damage. When Pepe is affected by a Negative Status , this skill can be used to remove the Negative Status Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack deals 190% ATK as Physical damage. When Pepe is affected by a Negative Status , this skill can be used to remove the Negative Status Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack deals 200% ATK as Physical damage. When Pepe is affected by a Negative Status , this skill can be used to remove the Negative Status Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack deals 210% ATK as Physical damage. When Pepe is affected by a Negative Status , this skill can be used to remove the Negative Status Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack deals 230% ATK as Physical damage. When Pepe is affected by a Negative Status , this skill can be used to remove the Negative Status Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack deals 250% ATK as Physical damage. When Pepe is affected by a Negative Status , this skill can be used to remove the Negative Status Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack deals 270% ATK as Physical damage. When Pepe is affected by a Negative Status , this skill can be used to remove the Negative Status Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack deals 290% ATK as Physical damage. When Pepe is affected by a Negative Status , this skill can be used to remove the Negative Status Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 7
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Whirling Hammer Defense",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "18 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +40% , ASPD +40 ; attacks random enemies within attack range Each time this skill is activated, the next skill use has an additional ASPD +20, stacking up to 2 times",
+            "initialSp": 12,
+            "spCost": 40,
+            "duration": 18
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +45% , ASPD +40 ; attacks random enemies within attack range Each time this skill is activated, the next skill use has an additional ASPD +20, stacking up to 2 times",
+            "initialSp": 12,
+            "spCost": 38,
+            "duration": 18
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +50% , ASPD +50 ; attacks random enemies within attack range Each time this skill is activated, the next skill use has an additional ASPD +20, stacking up to 2 times",
+            "initialSp": 12,
+            "spCost": 36,
+            "duration": 18
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +55% , ASPD +50 ; attacks random enemies within attack range Each time this skill is activated, the next skill use has an additional ASPD +25, stacking up to 2 times",
+            "initialSp": 14,
+            "spCost": 34,
+            "duration": 18
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +60% , ASPD +60 ; attacks random enemies within attack range Each time this skill is activated, the next skill use has an additional ASPD +25, stacking up to 2 times",
+            "initialSp": 14,
+            "spCost": 32,
+            "duration": 18
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +65% , ASPD +60 ; attacks random enemies within attack range Each time this skill is activated, the next skill use has an additional ASPD +25, stacking up to 2 times",
+            "initialSp": 14,
+            "spCost": 30,
+            "duration": 18
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +70% , ASPD +70 ; attacks random enemies within attack range Each time this skill is activated, the next skill use has an additional ASPD +30, stacking up to 2 times",
+            "initialSp": 16,
+            "spCost": 28,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Range increases , ATK +75% , ASPD +70 ; attacks random enemies within attack range Each time this skill is activated, the next skill use has an additional ASPD +40, stacking up to 2 times",
+            "initialSp": 16,
+            "spCost": 27,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Range increases , ATK +80% , ASPD +70 ; attacks random enemies within attack range Each time this skill is activated, the next skill use has an additional ASPD +40, stacking up to 2 times",
+            "initialSp": 18,
+            "spCost": 27,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Range increases , ATK +90% , ASPD +80 ; attacks random enemies within attack range Each time this skill is activated, the next skill use has an additional ASPD +40, stacking up to 2 times",
+            "initialSp": 18,
+            "spCost": 25,
+            "duration": 18
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Fuscous Fiber",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 4
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Shock of Time",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "40 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Interval increases slightly , ATK +120% , attacks Stun targets for 0.8 seconds ( 1 seconds for the primary target). After every attack, splash area expands and Pepe gets an additional +10% ATK, stacking up to 4 times",
+            "initialSp": 28,
+            "spCost": 63,
+            "duration": 40
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Interval increases slightly , ATK +130% , attacks Stun targets for 0.8 seconds ( 1 seconds for the primary target). After every attack, splash area expands and Pepe gets an additional +10% ATK, stacking up to 4 times",
+            "initialSp": 28,
+            "spCost": 61,
+            "duration": 40
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Interval increases slightly , ATK +140% , attacks Stun targets for 0.8 seconds ( 1 seconds for the primary target). After every attack, splash area expands and Pepe gets an additional +10% ATK, stacking up to 4 times",
+            "initialSp": 28,
+            "spCost": 59,
+            "duration": 40
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Interval increases slightly , ATK +150% , attacks Stun targets for 0.8 seconds ( 1 seconds for the primary target). After every attack, splash area expands and Pepe gets an additional +13% ATK, stacking up to 4 times",
+            "initialSp": 30,
+            "spCost": 57,
+            "duration": 40
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Interval increases slightly , ATK +160% , attacks Stun targets for 0.8 seconds ( 1 seconds for the primary target). After every attack, splash area expands and Pepe gets an additional +13% ATK, stacking up to 4 times",
+            "initialSp": 30,
+            "spCost": 55,
+            "duration": 40
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Interval increases slightly , ATK +170% , attacks Stun targets for 0.8 seconds ( 1 seconds for the primary target). After every attack, splash area expands and Pepe gets an additional +13% ATK, stacking up to 4 times",
+            "initialSp": 30,
+            "spCost": 53,
+            "duration": 40
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Interval increases slightly , ATK +180% , attacks Stun targets for 0.8 seconds ( 1.5 seconds for the primary target). After every attack, splash area expands and Pepe gets an additional +16% ATK, stacking up to 4 times",
+            "initialSp": 32,
+            "spCost": 51,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Interval increases slightly , ATK +200% , attacks Stun targets for 0.8 seconds ( 1.5 seconds for the primary target). After every attack, splash area expands and Pepe gets an additional +20% ATK, stacking up to 4 times",
+            "initialSp": 32,
+            "spCost": 49,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Interval increases slightly , ATK +220% , attacks Stun targets for 0.8 seconds ( 1.5 seconds for the primary target). After every attack, splash area expands and Pepe gets an additional +20% ATK, stacking up to 4 times",
+            "initialSp": 32,
+            "spCost": 47,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Interval increases slightly , ATK +240% , attacks Stun targets for 0.8 seconds ( 1.5 seconds for the primary target). After every attack, splash area expands and Pepe gets an additional +25% ATK, stacking up to 4 times",
+            "initialSp": 35,
+            "spCost": 45,
+            "duration": 40
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 10
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 7
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 7
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Transmuted Salt",
+          "quantity": 5
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "All-Rounder",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, +1 order limit for every level of that Trading Post"
+    },
+    {
+      "name": "Insightful",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, Special Exclusive Orders will be obtained at a fixed rate (not considered as Defaulted trades). These orders are unaffected by any order acquisition efficiency modifiers"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Pepe's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "HAM-X: Rain or Shine",
+      "mission": {
+        "requirement1": "Defeat a total of 40 enemies with your own Pepe",
+        "requirement2": "Clear Main Theme 3-8 with a 3-star rating; You must deploy your own Pepe, and have her defeat Skullshatterer"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +200 , ATK +87",
+          "effectLabel": "New trait",
+          "effectText": "When there are 3 or more enemies within the splash area, ATK of the current instance of attack increases to 115%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +250 , ATK +102",
+          "effectLabel": "Legacy of the Past improved",
+          "effectText": "Every enemy defeated while her skill is active grants Pepe 2 SP when the skill ends; restores up to 14 SP",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +300 , ATK +113",
+          "effectLabel": "Legacy of the Past improved",
+          "effectText": "Every enemy defeated while her skill is active grants Pepe 2 SP when the skill ends; restores up to 17 SP",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "RA-α: Pepe's Specialized Badge",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +250 , ATK +50 , DEF +80",
+          "effectLabel": "New trait",
+          "effectText": "In Reclamation Algorithm , Redeployment Time reduces significantly if carrying resources",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +312 , ATK +67 , DEF +115",
+          "effectLabel": "Perfuse With Lotus improved",
+          "effectText": "When deployed, all Guard Operators gain +16% ATK; in Reclamation Algorithm , gain visibility of Treasure Chest positions when deployed, and every attack creates an aftershock equal to 50% ATK at the position of every Guard Operator",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +350 , ATK +85 , DEF +135",
+          "effectLabel": "Perfuse With Lotus improved",
+          "effectText": "When deployed, all Guard Operators gain +16% ATK; in Reclamation Algorithm , gain visibility of Treasure Chest positions when deployed, and every attack creates an aftershock equal to 50% ATK at the position of every Guard Operator; if the main target is a Resource, all connected Resource nodes will also generate an aftershock equal to 50% ATK (triggers up to 10 times)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Pepe, a renowned historian from\nSargon\nwith many tales of derring-do, is also the eldest daughter of a respected padishah. Now aiding\nRhodes Island\non a series of archaeological surveys in Sargon as a field operator.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "EO8E6V7I5Ic",
+      "creator": "DragonGJY"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1249,
+          "atk": 607,
+          "def": 186,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.8
+        },
+        "max": {
+          "hp": 1689,
+          "atk": 844,
+          "def": 255,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.8
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1689,
+          "atk": 844,
+          "def": 255,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 2,
+          "interval": 1.8
+        },
+        "max": {
+          "hp": 2223,
+          "atk": 1083,
+          "def": 328,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 2,
+          "interval": 1.8
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 2223,
+          "atk": 1083,
+          "def": 328,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 2,
+          "interval": 1.8
+        },
+        "max": {
+          "hp": 2851,
+          "atk": 1290,
+          "def": 387,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 2,
+          "interval": 1.8
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 70,
+      "def": 45
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Pepe shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.012u/L\nOperator Pepe rarely comes into contact with Originium.\n\n'Hard to believe, but while I was doing her medical exam, there was an etiquette officer by her side watching my every move.'"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Once operators aboard the landship heard there was a padishah's daughter about to visit Rhodes Island, there was no stemming their curiosity. They eagerly awaited her formal arrival, all so that they could take a peek behind the veil, so to speak. But she did not arrive at Rhodes Island with her caravan and retinue of servants until six months later. She came aboard in extravagant fashion, starting with a gold-embroidered carpet rolled out from the ship's hatch down to the reception room, followed by rows of servant girls bearing flowers and feather fans, then a sedan chair covered in layer upon layer of muslin curtains carried by four strapping young men in golden robes. Finally, a near-endless procession of porters, each carrying a rare treasure or ancient text from Sargon.\nIt's a shame this distinguished guest was hidden behind so many layers of servants, fans, and curtains that nobody was able to catch even a glimpse of her. Only her voice came through, one that felt slightly familiar to some.\nAs the gaggle of operators began to lose all hope, a clumsy servant accidentally tripped over their own robes, causing the line of servants to collapse like dominoes while also pulling away the curtains on the sedan chair, exposing the girl within. She was certainly not like how they imagined. A baggy T-shirt, carelessly tied-up hair, thick tomes in hand and ink smudged all over her face. Nobody could recognize her.\nUpon seeing the dumbfounded operators, she merely scratched her head and laughed awkwardly, quietly saying:\n'Thought I could wear whatever I wanted considering the curtains, haha...'\n\nIt was at this point an operator handling registration remembered why the padishah's daughter has a voice sounded so familiar.\nThree months ago, a girl came along with some field operators returning from Sargon, her body completely covered in mud and dust. Everyone thought she was a patient who had been rescued at first, but she cheerfully told the operator in charge to get registration done ASAP, since she had a caravan to another excavation site to catch.\nAnother operator working in the library also heard her voice often, as there was a collaborating operator with the Sargon office who would always come with a giant pile of books to return, then leave with another equally giant pile of materials.\nBut when asked about her appearance, none were able to answer.\n\n'Didn't see, her face was caked in mud.'\n'I didn't get a good look either, books always got in the way.'\n'...If she's been registered, surely there's a photo in the system, right? Can you look it up?'\n'Lemme see...'\n'...'\n'Dammit, who the hell swapped the photo out for some wacky selfie? There's a giant mustache scribbled all over it; you can't see what she looks like at all!'"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Pepe is rather fond of lotus flowers. The things in her room all sport some sort of lotus design. She even added a lotus sticker to her badge. Of the gifts she bestowed upon Rhodes Island, the most precious were lotus seeds. They were planted in the Convalescent Garden, and ever since, all operators can have the opportunity to appreciate their fragrance.\nHer giant hammer also has a lotus seal engraved into it. Once heated up by the flame jet, it can leave behind a painful lesson for any enemy—a great big lotus brand.\nIt's not hard to see why, considering the lotus is the symbol of Pepe's family, Sargon's most ancient line of historians. Her ancestor once followed Shahanshah Lugalszargus on all his campaigns, and with reed pen in hand, they recorded every epic scene of that heroic age.\nEver since, her family would pick the best of each generation to serve the Shahanshah. With the same ancient reed pen, they would record the entirety of the titan that was Sargon, experiencing all they could before finally compiling it all into an addendum to the famous endless tome, 'The Book of Sargon.'\nAs her family's eldest daughter, Pepe has shown an unusually strong interest in history, always seeking to inherit her ancestor's duty to enter the City of Gold and pen the newest chapter of Sargon's history. However, her father preferred her quieter younger brother Senid. This was hard for her to accept. Once an adult, she strove to do all she could to contribute to historical research, all to prove to her father that she was qualified to be the court historian. But his heart was set on the matter, and while Pepe was at an archaeological dig, he sent Senid to the City.\nThis development has not upset Pepe. Though she no longer constantly mentions 'a historian's duty' like she used to, she still pursues historical research with zeal. Not only does she fund, participate in and lead excavations, she also contributes heavily to the preservation of relics. In only half a year, tomb robbers have learned to cower in the face of that lotus pattern.\n\n[Audio Log]\nI always ask myself, why am I so into researching history? Back then, I would have said 'obviously my family's influence'...\nBut now, I'm starting to think you're a reason too. Ever since we were young, we'd study together, play together, scribble in the books together, recite texts as punishment from Father together... Safe to say that sitting at your desk and reading some dusty tome is super boring as a kid, but since you were there, time kinda just flew past while we bickered.\nHistorian... I'm not too interested in the position anymore. Now that you're in the City of Gold, I dunno when we can see each other again. I wonder... If I make some huge discovery... Maybe you'll read my paper on it, and that'll count as seeing each other...\nSenid... It's been so long. I-If we see each other again, I'll... I'll give you a right trashing.\n—Pepe babbling to herself after getting drunk"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Don't mention anything to do with Shahanshah Lugalszargus while talking to Pepe. This was something everyone on the landship quickly learned. There was once an unlucky operator who barely even hinted at this king and his tales during a pre-dinner chat. Pepe then shoved them into a chair and proceed to talk about his glorious deeds for the entire night. From his birth to his ascension to the throne, up until his disappearance alongside Kharanduu Khagan in the foehn hotlands... The piteous soul was trapped until the light of dawn peeked over the horizon, unable to get a word in edgewise, reduced to staring blankly at Pepe's lips as they flapped about in excitement. That operator remembered it as such:\n'My mind was completely blank. She kept saying things like 'this is a portrait of the Shah, very handsome I'd say, here, have a look—', then she'd take out a photo album with hundreds of pages and make sure I looked at each and every page real close.\n'When she was talking about that shah's life, it was like her eyes were glowing. All I wanted to know is where the Shahanshah actually went in the end... I didn't need to know about how he and Kharanduu Khagan drank, then fought, then drank after they fought...'\nIt's hard to blame Pepe for her adoration of Lugalszargus. The king holds an exalted position in the hearts of Sargonians. Every child falls asleep to his tales, many cities have statues of him, and countless texts cite his words. There is an unending stream of scholars looking into the riddles he left behind, and Pepe is one of the foremost among them. Her research not only portrays Lugalszargus as a great conqueror and military genius, but also him as a son, husband, and father, aspects often overshadowed by his radiant deeds as king.\nThese past few years have seen Pepe wander all over Sargon, reconstructing those who stood by the king's side from time-worn carvings and phrases—loyal retainers, concubines who died tragically young, as well as a prince who stood vigil by his grave in the wake of his departure and a princess who wrote a full account of his life. They were forgotten by history, but thanks to Pepe's efforts, they have seen renewed attention in academia.\n\n[Audio Log]\nTrue, compared to the Shah's military brilliance, they're basically nobodies when it comes to historical influence. But they all had a deep emotional connection with him. It's these private, moving feelings that round out the Shah, and allow the past to resonate with us now. I believe that no matter the era, genuine bonds will survive history's forward march, shining for all eternity.\n—A summary of one of Pepe's reports"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "As the one in charge of guiding Hatshepsut Hanim, I made my way down to the excavation site in the south of Sargon. Though dusk was about to set, the ruins were abuzz with workers scurrying about, laying down rain tarps above the excavation pits. It seems a rare rainstorm was about to hit.\nWhen night fell, the storm arrived as expected. While others were falling sleep to the sound of raindrops pattering against the tarps, Hatshepsut Hanim put on her raincoat and set out, checking every part of the site to make sure not a single corner was overlooked during the covering. A sharp piece of rubble had torn her coat, and it was not until I offered her a new one that she realized she was soaked to the bone. After thanking me, she did not return to her quarters, but instead enthusiastically offered to show me around the site. I accepted, and we entered the ruins together.\nThere were only stumps of walls and pillars within, but they were enough for a peek into the past. The scene below the tarp showed a master of a garden enjoying a drink, the deep red within their cup proving the maturity of the wine industry at the time. The ruts in the stone pavement beneath my feet reminded me that this was once a thriving hub with carts passing back and forth incessantly. On the way back, Hatshepsut Hanim explained the discoveries found within the ruins while leading me to their edge. There, she revealed her most astonishing find yet.\nAt the end of a path, she lifted up a tarp close to the ground. I expected to see some priceless treasure, but within the pit all I saw were two even footprints embedded in the soil, one large, one small.\nNoticing my confusion, she began to explain the principles behind the formation of these footprints. As she spoke, I began to imagine the distant past, walking alongside the footprints' makers as they wandered the city and enjoyed the fresh air and greenery, at least until some natural disaster or the other sealed their footprints in the mud for all eternity.\nI still remember the last part of her speech:\n'Preserving these footprints means preserving a beautiful, fleeting moment, in which these people will live on forever more. They will pass through the desert, walking into the distance...\n'Far, far away...'\n\n[News Clipping]\nOn the fourteenth of this month, the Padishah's wife Hati passed away after giving birth to her child in the hospital. She was mourned by all her people.\nThe funeral was held in the Padishah's residence on the twentieth, and she was buried in the garden she so loved in a private ceremony. She once mentioned during an interview that she was happiest when running barefoot through the garden with her daughter. Sadly, we can now only witness the tragic sight of her daughter carrying her baby brother while they mourn.\nThat day, countless citizens gathered in the streets to offer lotus flowers outside the Padishah's residence, enough to form small mountains of blossoms...\n\n[Garden Closure Notice]\nFrom this day forth, the garden will be forever closed. Do not enter without permission. Trespassers will be punished.\nDate: ■■■ 21st ■■■■"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "'Ahahaha, oh man, it hurts to laugh this much. Are these guys serious? A secret cabal of Savra in the jungles of Sargon, manipulating the governments of every country from the shadows... Haha, does this hack historian even know what he's writing?'\nYou look at the girl giddy with glee in front of you and don't know why. You look once more at the stack of books on the table and pull out a few at random, wanting to know what she's even laughing at. Upon seeing their titles, you become even more perplexed.\n'Exploring the Foehn Hotlands: Eternal Soldiers of the Sands'\n'Undying Immortal Sages'\n'A Romantic History of Lugalszargus: The Secret Passions of the Once and Future Shah'\n...\nYou help pull the girl up from the ground, her face contorted in a mixture of howling laughter and pain. The pain is echoed on your face as she grabs your arm tightly, twisting it as she rises. As you wonder what to do, Kal'tsit comes to both your rescues, supporting the girl laughing so hard she can barely breathe while freeing your arm from her vice grip.\nRelieved, you throw the books you're holding into the trash can.\n'The Shahanshah's secret passions? They couldn't even get the years right. Definitely not trustworthy.'\nWhat you don't notice, though, is that some of these ridiculous texts seem to have gone missing from the pile."
+    }
+  ]
+}

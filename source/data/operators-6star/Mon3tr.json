@@ -1,0 +1,964 @@
+{
+  "name": "Mon3tr",
+  "rarity": 6,
+  "class": "Medic",
+  "branch": "Chain Medic",
+  "faction": "Rhodes Island",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing",
+    "DPS",
+    "Support"
+  ],
+  "trait": "Restores HP of allies, bouncing between 3 allies. Healing reduced by 25% per bounce.",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Sharpened Blades"
+  ],
+  "ep": {
+    "Main": "Skeletal Wings",
+    "Co-star": null
+  },
+  "internalName": "char_4179_monstr",
+  "otherLanguages": null,
+  "characterInfo": {
+    "File no.": "R003",
+    "Illustrator": "伍秋秋秋秋",
+    "Release Date": "2025/09/16",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Fūka Izumi",
+    "Chinese": "Chen Yixuan",
+    "English": "Molly Harris",
+    "Korean": "Lee Myung-ho"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "Undisclosed",
+    "Place of Birth": "Rhodes Island",
+    "Date of Birth": "July 25th",
+    "Race": "Undisclosed",
+    "Height": "158 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "■■",
+    "Mobility": "Outstanding",
+    "Endurance": "■■",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Outstanding",
+    "Originium Arts Assimilation": "Flawed"
+  },
+  "talents": [
+    {
+      "name": "Self-Repair",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "Can deploy a Reconstruction on the ground within attack range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies ATK +3%; when the Reconstruction receives healing from itself and Mon3tr, it performs an additional healing bounce that does not weaken"
+        },
+        {
+          "stage": "Base",
+          "potential": "Potential 3",
+          "description": "Can deploy a Reconstruction on the ground within attack range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies ATK +8% (+5%) ; when the Reconstruction receives healing from itself and Mon3tr, it performs an additional healing bounce that does not weaken"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Can deploy a Reconstruction on the ground within attack range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies ATK +5%; when the Reconstruction receives healing from itself and Mon3tr, it performs an additional healing bounce that does not weaken"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 3",
+          "description": "Can deploy a Reconstruction on the ground within attack range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies ATK +10% (+5%) ; when the Reconstruction receives healing from itself and Mon3tr, it performs an additional healing bounce that does not weaken"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Can deploy a Reconstruction on the ground within attack range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies ATK +15%; when the Reconstruction receives healing from itself and Mon3tr, it performs an additional healing bounce that does not weaken"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 3",
+          "description": "Can deploy a Reconstruction on the ground within attack range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies ATK +20% (+5%) ; when the Reconstruction receives healing from itself and Mon3tr, it performs an additional healing bounce that does not weaken"
+        }
+      ]
+    },
+    {
+      "name": "Tactical Coordination",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Whenever Mon3tr or the Reconstruction heals a target, grants Mon3tr and the target ASPD +10 for 10 seconds (does not stack)"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 6",
+          "description": "Whenever Mon3tr or the Reconstruction heals a target, grants Mon3tr and the target ASPD +12 (+2) for 10 seconds (does not stack)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Whenever Mon3tr or the Reconstruction heals a target, grants Mon3tr and the target ASPD +20 for 10 seconds (does not stack)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 6",
+          "description": "Whenever Mon3tr or the Reconstruction heals a target, grants Mon3tr and the target ASPD +22 (+2) for 10 seconds (does not stack)"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Improve Self-Repair"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +25"
+      },
+      {
+        "level": 5,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 6,
+        "benefit": "Improve Tactical Coordination"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Mon3tr's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Tactical Coordination .",
+        "New skill: Stratagem: Overload .",
+        "Self-Repair improved.",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Mon3tr to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron",
+          "quantity": 8
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New skill: Stratagem: Meltdown .",
+        "Self-Repair and Tactical Coordination improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Mon3tr to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Medic Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Crystalline Electronic Unit",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Concentration",
+          "quantity": 2
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Stratagem: Hyperpressurized Link",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next heal is increased to 110% of ATK, and bounce count per heal +1",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next heal is increased to 120% of ATK, and bounce count per heal +1",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next heal is increased to 125% of ATK, and bounce count per heal +1",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next heal is increased to 135% of ATK, and bounce count per heal +1",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next heal is increased to 150% of ATK, and bounce count per heal +1",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next heal is increased to 160% of ATK, and bounce count per heal +1",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next heal is increased to 170% of ATK, and bounce count per heal +1",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next heal is increased to 180% of ATK, and bounce count per heal +1",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next heal is increased to 190% of ATK, and bounce count per heal +1",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next heal is increased to 200% of ATK, and bounce count per heal +1",
+            "initialSp": 0,
+            "spCost": 2,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 10
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Stratagem: Overload",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "When skill is active, prioritizes healing the Reconstruction ; whenever the Reconstruction is healed by Mon3tr, it will perform a bouncing heal; Talent 2 's effect increases to 1.5 times",
+            "initialSp": 5,
+            "spCost": 15,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "When skill is active, prioritizes healing the Reconstruction; whenever the Reconstruction is healed by Mon3tr, it will perform a bouncing heal; Talent 2's effect increases to 1.6 times",
+            "initialSp": 5,
+            "spCost": 15,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "When skill is active, prioritizes healing the Reconstruction; whenever the Reconstruction is healed by Mon3tr, it will perform a bouncing heal; Talent 2's effect increases to 1.7 times",
+            "initialSp": 5,
+            "spCost": 15,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "When skill is active, prioritizes healing the Reconstruction; whenever the Reconstruction is healed by Mon3tr, it will perform a bouncing heal; Talent 2's effect increases to 1.8 times",
+            "initialSp": 7,
+            "spCost": 15,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "When skill is active, prioritizes healing the Reconstruction; whenever the Reconstruction is healed by Mon3tr, it will perform a bouncing heal; Talent 2's effect increases to 2 times",
+            "initialSp": 7,
+            "spCost": 15,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "When skill is active, prioritizes healing the Reconstruction; whenever the Reconstruction is healed by Mon3tr, it will perform a bouncing heal; Talent 2's effect increases to 2.1 times",
+            "initialSp": 7,
+            "spCost": 15,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "When skill is active, prioritizes healing the Reconstruction; whenever the Reconstruction is healed by Mon3tr, it will perform a bouncing heal; Talent 2's effect increases to 2.3 times",
+            "initialSp": 8,
+            "spCost": 15,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "When skill is active, prioritizes healing the Reconstruction; whenever the Reconstruction is healed by Mon3tr, it will perform a bouncing heal; Talent 2's effect increases to 2.5 times",
+            "initialSp": 9,
+            "spCost": 15,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "When skill is active, prioritizes healing the Reconstruction; whenever the Reconstruction is healed by Mon3tr, it will perform a bouncing heal; Talent 2's effect increases to 2.6 times",
+            "initialSp": 10,
+            "spCost": 15,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "When skill is active, prioritizes healing the Reconstruction; whenever the Reconstruction is healed by Mon3tr, it will perform a bouncing heal; Talent 2's effect increases to 2.8 times",
+            "initialSp": 13,
+            "spCost": 15,
+            "duration": 30
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "2nd",
+            "priority": "main",
+            "explanation": "This skill makes it very easy to buff your allies with ATK and ASPD. Extremely worthy as the next-in-line to master."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            },
+            {
+              "name": "Chiral Refractor",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Stratagem: Meltdown",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Manual",
+        "duration": "25 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range changes, and Mon3tr Moves to the position of the Reconstruction . ATK +200% , Block +2 , Max HP +5000 , Attack Interval reduces, loses 80 HP per second, attacks all blocked enemies, attacks deal True damage and heal self for 50% ATK When skill ends or lethal damage is taken, Mon3tr returns to her original position",
+            "initialSp": 0,
+            "spCost": 15,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Range changes, and Mon3tr Moves to the position of the Reconstruction. ATK +220% , Block +2 , Max HP +5000 , Attack Interval reduces, loses 80 HP per second, attacks all blocked enemies, attacks deal True damage and heal self for 50% ATK When skill ends or lethal damage is taken, Mon3tr returns to her original position",
+            "initialSp": 0,
+            "spCost": 15,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Range changes, and Mon3tr Moves to the position of the Reconstruction. ATK +230% , Block +2 , Max HP +5000 , Attack Interval reduces, loses 80 HP per second, attacks all blocked enemies, attacks deal True damage and heal self for 50% ATK When skill ends or lethal damage is taken, Mon3tr returns to her original position",
+            "initialSp": 0,
+            "spCost": 15,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Range changes, and Mon3tr Moves to the position of the Reconstruction. ATK +250% , Block +2 , Max HP +5000 , Attack Interval reduces, loses 80 HP per second, attacks all blocked enemies, attacks deal True damage and heal self for 50% ATK When skill ends or lethal damage is taken, Mon3tr returns to her original position",
+            "initialSp": 5,
+            "spCost": 15,
+            "duration": 25
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Range changes, and Mon3tr Moves to the position of the Reconstruction. ATK +260% , Block +2 , Max HP +5000 , Attack Interval reduces, loses 80 HP per second, attacks all blocked enemies, attacks deal True damage and heal self for 50% ATK When skill ends or lethal damage is taken, Mon3tr returns to her original position",
+            "initialSp": 5,
+            "spCost": 15,
+            "duration": 25
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Range changes, and Mon3tr Moves to the position of the Reconstruction. ATK +270% , Block +2 , Max HP +5000 , Attack Interval reduces, loses 80 HP per second, attacks all blocked enemies, attacks deal True damage and heal self for 50% ATK When skill ends or lethal damage is taken, Mon3tr returns to her original position",
+            "initialSp": 5,
+            "spCost": 15,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Range changes, and Mon3tr Moves to the position of the Reconstruction. ATK +280% , Block +2 , Max HP +5000 , Attack Interval reduces, loses 80 HP per second, attacks all blocked enemies, attacks deal True damage and heal self for 50% ATK When skill ends or lethal damage is taken, Mon3tr returns to her original position",
+            "initialSp": 7,
+            "spCost": 15,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Range changes, and Mon3tr Moves to the position of the Reconstruction. ATK +300% , Block +2 , Max HP +5000 , Attack Interval reduces, loses 80 HP per second, attacks all blocked enemies, attacks deal True damage and heal self for 50% ATK When skill ends or lethal damage is taken, Mon3tr returns to her original position",
+            "initialSp": 8,
+            "spCost": 15,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Range changes, and Mon3tr Moves to the position of the Reconstruction. ATK +310% , Block +2 , Max HP +5000 , Attack Interval reduces, loses 80 HP per second, attacks all blocked enemies, attacks deal True damage and heal self for 50% ATK When skill ends or lethal damage is taken, Mon3tr returns to her original position",
+            "initialSp": 9,
+            "spCost": 15,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Range changes, and Mon3tr Moves to the position of the Reconstruction. ATK +330% , Block +2 , Max HP +5000 , Attack Interval reduces, loses 80 HP per second, attacks all blocked enemies, attacks deal True damage and heal self for 50% ATK When skill ends or lethal damage is taken, Mon3tr returns to her original position",
+            "initialSp": 11,
+            "spCost": 15,
+            "duration": 25
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "This classic skill of Mon3tr lets you wreck enemies with big AOE true damage. Assists in plenty of stages, first-in-line to master."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 4
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 6
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "True Damage",
+            "description": "Able to deal true damage"
+          },
+          {
+            "name": "Repositioning",
+            "description": "Allows the unit to enter a different tile"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 7
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar Pack",
+          "quantity": 7
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Compound Cutting Fluid",
+          "quantity": 5
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "New to the Job",
+      "facility": "Control Center",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by +0.05 per hour."
+    },
+    {
+      "name": "Highest Authority",
+      "facility": "Control Center",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Control Center, all Factories' productivity +2% (only the most effective one will take effect when assigned Operators have the same skill effect)"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Mon3tr's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "XAH-X: Ten Thousand Years of Memories",
+      "mission": {
+        "requirement1": "During battle, have your own Mon3tr use Stratagem: Meltdown a total of 6 times",
+        "requirement2": "Clear Main Theme 7-15 with a 3-star rating; you must deploy your own Mon3tr, and have Mon3tr defeat at least 2 Guerrilla Shieldguards"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +40 , DEF +30",
+          "effectLabel": "New trait",
+          "effectText": "Restores HP of allies, bouncing between 3 allies. Healing reduced by 15% per bounce.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +55 , DEF +35",
+          "effectLabel": "Self-Repair improved",
+          "effectText": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +20% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +65 , DEF +40",
+          "effectLabel": "Self-Repair improved",
+          "effectText": "Can deploy a Reconstruction on the ground within Attack Range that can only be healed by Mon3tr; the Reconstruction grants surrounding allies +25% ATK; when the Reconstruction receives healing from itself or Mon3tr, it performs an additional healing bounce that does not weaken, and the next bounce will not weaken either",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Mon3tr is profoundly knowledgeable in life sciences, Oripathy treatment, history and genealogy, and many other fields. She also possesses plentiful experience in mobile combat maneuvers, and offers much-needed assistance during Rhodes Island's rebuilding. Currently serves as a special consultant for the Medical, Engineering, and Field Operations departments.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "ruDgs7TQ8e4",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "v_4ORzA1I4A",
+      "creator": "Storn"
+    },
+    {
+      "videoId": "uR71tjEUXRM",
+      "creator": "DragonGJY"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 952,
+          "atk": 184,
+          "def": 96,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1253,
+          "atk": 303,
+          "def": 140,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "y-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1253,
+          "atk": 303,
+          "def": 140,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1492,
+          "atk": 422,
+          "def": 176,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "y-2"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1492,
+          "atk": 422,
+          "def": 176,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1735,
+          "atk": 528,
+          "def": 221,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "y-2"
+      }
+    ],
+    "trust": {
+      "hp": 500,
+      "atk": 30,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Mon3tr shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.00u/L\nShe is no longer steadfast, incisive, or relentless, nor the bearer of certain extreme traits. A reminder that our recent loss is all too real.\nMon3tr's vital signs are extremely unstable. This is not to say her new body is diseased, but rather that she is currently in a state of accelerated catalysis and morphosis—in simpler terms, this new body of hers is not yet truly complete. Thankfully, unlike Kal'tsit, who never acquiesced to a physical examination, Mon3tr is more than happy to cooperate with Medical, perhaps even too enthusiastic at times. We will continue monitoring her situation."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Dr. Kal'tsit has left us, and another wearing similar clothes is now at our side, helping to rebuild Rhodes Island. This leaves many feeling somewhat bewildered. We often heard such mutterings as HQ was being rebuilt, the earliest of which even came from Medical itself.\nAccording to the Medic operators, Mon3tr showed up to the very first meeting held after Medical was rebuilt. She stood in the corner of the room, not saying a word, electing to quietly listen to Dr. Warfarin's speech. Eventually, she was noticed. At first, Dr. Warfarin was clearly at a loss for words, but she quickly started raising her voice, drawing everyone's eyes back to her.\n'I know she wants to come along. She feels like she should be there. You must have noticed it, Amiya. Kal'tsit's stethoscope, hanging around her neck... Although she got it upside down.'\n'I don't think she's trying to copy Dr. Kal'tsit, nor does she hope to be her equal. She's inherited all her memories, but at the same time, she's trying to process all that pain... She needs a little... no, a lot more time, just like the rest of us.'\n\nI have decided to officially hire Operator Mon3tr as Medical's special consultant. This decision was made after an assessment of her professional ability in basic medicine, life sciences, clinical medicine, first aid, and other such fields. Her performance during this period has also been taken into account, having helped provide aid to the wounded of her own accord and assisting in surgery (using two talons to secure the wounded while using another two to distract them—Kal'tsit never did anything like that before). This has been decided by a show of hands from all members of Medical.\n—Warfarin\nYour hands are so soft, Mon3tr.\n—Rosmontis\nSee you at the training room today, Mon3tr! We're not leaving until we're all tired out!\n—Blaze\nShe's become Blaze's ideal sparring partner, and not long after she started participating in stool racing and nut-cracking racing; she got second place in both of them.\nShe is Mon3tr, our new comrade-in-arms.\n—Stormeye"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "[Training Room Recording]\n'Wait, wait, wait, I didn't get a good look. How'd you manage to block my chainsaw? I thought it'd be a sure thing, imploding the air to force you back. No way you'd be prepared for it...'\n'It was my talons.'\n'You're harder to get a solid hit on than ever. Speaking of, I was wondering... Can you still do that thing with your mouth...?'\n(Sound of a violent shockwave blast)\n'What the ****?!?'\n\nWith Operator Blaze's enthusiastic assistance, Mon3tr has gotten accustomed to her current body in a short period of time, and has mastered several unusual combat techniques. She makes full use of the metallic constructs that float in front of her. The pair of large and small constructs are able to decompress into a pair of upper talons and lower talons respectively. The decompression process is near-instantaneous, and their shape can be freely changed to suit the current needs. For example, they can be split into fragments and adhere onto someone else, or act as an Arts unit and help her render emergency treatment. The current Mon3tr does not possess the same formidable resilience she had while at Kal'tsit's side, but there is no doubt that her highly flexible nature on the battlefield is not something to be overlooked, whether she be threatening an enemy or aiding an ally. As a new operator who has not been with Rhodes Island for very long—sorry, official procedure, gotta follow it—she has been very active, participating in over a dozen field missions. She has proven herself a great help to us.\n\n[Classified Log]\nI've ordered Medical to set up a group dedicated to monitoring Mon3tr's condition. We need to keep an eye on it.\nShe accompanied Dr. Kal'tsit for an incredibly long time. The end of the gemini cycle system means a painful rebirth, one full of unknowns. She hasn't been awake for long enough... Mon3tr's current appearance is merely her initial form as an independent construct—in other words, her countenance and capabilities are currently in a state of continuous flux. This process is filled with uncontrollable elements. It must be guided. Ever since we experienced that grave incident, there have been more and more disturbing developments appearing across the land. The situation is deteriorating, and that deterioration is accelerating. Rhodes Island has no time to rest. I worry... I worry that our reliance on Mon3tr will outstrip the speed at which she is adapting to these changes...\nBut no matter what, we will stand with her, and meet those changes together."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "[Classified Log]\n'According to our intelligence, there has been a surge in 'academic exhanges' between the spires of Zwillingstürme lately. There is no doubt that the Golden Empress is trying to analyze the secrets plucked out from amidst the chaos. The hole in the starpod is still open, and the Columbian government is increasingly engrossed in levitation research... The nations of the Core love new opportunities, but they must understand that these opportunities indicate a brewing crisis that will affect us all, not the start of another round of disputes. We should offer Vina more support. She's able to do a lot more now... But Rhodes Island should refrain from official collaboration with Parliament.\n'Just note these words down for now, Mon3tr. The Doctor and Amiya will know what they mean.'\n\n'Laterano's Law has been on guard for a very long time now. The Holy City's futile call for peace across Terra is, in essence, a way of saving itself. We still do not know exactly what sort of disaster the Law has foreseen, but I fear that not so far in the future, all the past calamities we have seen will be but a shadow of this new one.\n'If there is the opportunity, try to contact the Law, but by no means regard it as a peer. It still retains the ability that caused endless dispute in the past. It is still able to cause irreversible influence on one's personality with ease.\n'But when the time is right, do not hesitate to access its system.'\n\n'I am glad that Clementia and Gladiia listened to my proposal. The 'Land Patrol' is a good starting point. For the time being, Ægir is willing to work on dry land via more neutral powers.\n'Ægir boasts of being the successor of prehistoric civilization. It is the closest to the most foundational of legacies, yet also closest to where the sea currents are cut off. If the one I least want to see shows herself, she will not overlook its existence. She will not come to them as equals of humanity, nor will she, as the philosophers of Ægir expect, reveal a million truths to them in endless communion. Even arrogant Ægir must learn how to confront a 'Creator'.\n'We must deepen our bond with them, and seek out more possibilities from the ruins. Perhaps even from the Seaborn.\n'Raise the priority level of founding an office in Ægir. The two consuls are a good place to start. But remember, Mon3tr. When in contact with Ægir, keep the Doctor well guarded.'\n\n......\n\n'War comes. It will not be one limited to her and us. It is one that affects all of Terra, and everyone on it.'\n\n[Office Recording]\n'Kal'tsit recorded this information bit by bit in my spinal cord. She probably already had an idea of how things would end, and made her final decision. Before her life faded away, she tried to leave behind as much guidance as she could for Rhodes Island.'\n'You've already told the Doctor and me all of this, Mon3tr. You don't need to sit here repeating it over and over... like you're just reciting lines.'\n'No, I need to understand it for myself too.'"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": ">TIMEDATA TT 197/19/09\n>ADMIN: Oracle; PRTS\nProject Codename: AMa-10\nA mechanical lifeform that uses the gemini cycle system as its core. This lifeform is characterized by an impressive ability to learn and a near-indestructible structure, one that can adapt to all sorts of extreme environments. Furthermore, in theory, it will not be recognized as life by ■■■. In the original plan, this model of mechanical lifeform would have been mass-produced by the millions, helping humanity terraform planets and build new homes for us.\nAt the time, this was not a particularly vital project. It would not have forestalled the oncoming calamity, nor would it have served as the ark of civilization like DWDB-221E. It was more of an investment by its creators. When they were discussing AMa-10, they decided it should be designed to survive, as a way to ensure that in the future, life will still persist.\nIf that is to be considered the moment I was born, then this ship named Rhodes Island should be considered my birthplace. At the time, she still sailed among the stars, the two administrators aboard her cautiously watching the undulations of the dark tides as they debated concepts for the future.\nBut the tide fell on them faster than anybody imagined, and the AMa-10 project could not wait for the day mass production of mechanical life was feasible. And so, I was special, and alone.\nOnce the administrators went into hibernation, I received no further signs of life. But before the true end comes to pass, I still have some duties I must see through.\n\n>TIMEDATA TT ???/??/??\n>ADMIN: AMa-10\nThe administrator known as Oracle has been awakened from hibernation, and I find myself accompanying Oracle alongside the investigation of this land known as Terra. However, this is not an appropriate time for it. None of our projects have progressed as we expected. Oracle should be aware of all this. From this perspective, this awakening was not a rational action.\nAt journey's end, Oracle issued one last command to me.\n'Find yourself.'\nThis command was not especially difficult to parse. What 'finding yourself' means is known to both philosophers and logicians. But I sensed a strong undercurrent of frustration in Oracle's words.\nPerhaps Oracle still had other matters for me to do?\nSeek out traces of life. Protect the spark of civilization. These actions may be of equal value to the hope Oracle advocated for during debates. Still, in contrast to that final instruction, they are somewhat more complicated issues.\nWith these doubts on my mind, I begin my own journey.\n\n>TIMEDATA 899/03/01\n>ADMIN: Kal'tsit; Mon3tr\nThis is the second death Kal'tsit had experienced.\nThe civilizations of this land are advancing, and the enemies we face are becoming more difficult to handle by the day.\nNot every step of Kal'tsit's plan can go smoothly. Her defeats are not unexpected. Yet I have never seen her put her full trust in anyone before, let alone a Sarkaz woman who was once an enemy. But as her mastery of DWDB-221E shows, she is a Terran with more wisdom than most. Maybe this is why Kal'tsit likes her.\nThe only thing I don't understand is why she gave up her former strength, why she chose a body like an ordinary Terran. She had begun to copy the appearance of the humans of Terra a very long time ago. Imitation is a biological instinct, and the starting point for wisdom, but to Kal'tsit, this copying must have another meaning.\nThis is not entirely a bad thing, however. We have a clearer division of labor between us. Sometimes her conversational skills can get us out of trouble, sure, but I think using my strength's the simpler option.\nI will protect her.\n\n>TIMEDATA 1101/09/03\n>ADMIN: Mon3tr\nI ran into the Doctor and Amiya again.\nIt's strange talking to them in words, especially when talking to the Doctor. My subconscious always treats it as some sort of reunion, after ten thousand long years of waiting, and I find myself having to suppress this inappropriate joy. I believe the past me has always been able to communicate with the two quite clearly, but only now, in this current form, is the connection between us truly close. We have 'become the same kind'.\nIt seems I now understand the choice Kal'tsit once made.\n\nI've been reorganizing this ten millennia of data. It feels like it all happened only yesterday, yet they also feel like ancient, faraway stories. They are the foundation my logic and personality rely on, and the treasures I share with Kal'tsit.\nProtect the Doctor and Amiya. I will follow this order to the last, but not only because I was commanded to. It is also my wish.\nPerhaps this will be a new beginning. I must 'find myself' once more."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Entering underlying linked data region. Executing data integrity check.\nTimestamp... verified.\nAuthorization... verified.\nEntering... 'Dandelion'.\n\n[Accessing work log, beginning recording]\n......\nJust last month, a herd of Feranmuts dragged mounts and rivers atop their bodies to the whirlpool near the Black Flow. What must be signed of these <i>Memoranda Pertaining to Abnormal Tides</i> has been signed, to no surprise. After all, as things stand, even the most opinionated of the Core nations must sit at the same table... In short, everything is going smoothly, though the bags under Amiya's and the Doctor's eyes are not particularly pleasant to look at.\nThis seedship contains genetic samples of more than 134,700 native Terran species and their associated breeding platform, as well as compatible databases, backups, expert systems able to answer all possible contingencies, 'Little Handies', vast amounts of equipment... The seedship is ready, and will soon join with the main hold. Our top priority is to find the runaway objective, to try and intervene in its path and allow it to be recaptured by Terra's gravitational field... But the seedship is a brief intermission, an unspoken acknowledgment of the joint project group. We will bid it farewell once it leaves the starpod, hurtling away into the distance... Perhaps it will fade away in an instant, or perhaps it will sail the stellar sea for eternity...\nOr perhaps it will be seized by some star system's gravity, and these 'dandelions' will be scattered across new ground.\nOf course, we cannot forget the movies of Wrankwood, the music of Leithanien, the sociological research, sculptures, and literature of Ægir. Many, many things worth preserving... Perhaps, once these seeds have been baptized by the ravages of time, people will discover by happenstance that this ship is a book with said seeds trapped between its pages. The transportation technology Terra has access to has its limits, so this was in truth a compromise, but who knows, it may turn out to be a pleasant surprise.\nMost likely, Project Dandelion will be meaningless... Just as their every past attempt has turned out. But we cannot give up on looking for a possibility, a chance, a miracle. Like the birth of civilization on Terra.\n[Work log archival complete, recording confirmed]\n\n'Ahh... Turns out, Kal'tsit, when people's heads are full of serious stuff, their tone of voice starts getting all weird.\n'I'm understanding you a lot more as the days go by.'"
+    }
+  ]
+}

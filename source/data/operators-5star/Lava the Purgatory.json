@@ -1,0 +1,764 @@
+{
+  "name": "Lava the Purgatory",
+  "rarity": 5,
+  "class": "Caster",
+  "branch": "Splash Caster",
+  "faction": "Rhodes Island",
+  "umbrellaFactions": [],
+  "connectedFactions": [
+    "Victoria"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS"
+  ],
+  "trait": "Deals AOE Arts damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Who is Real"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Dusk Wisteria",
+    "Purifying Flame"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_1011_lava2",
+  "otherLanguages": {
+    "Simplified Chinese": "炎狱炎熔",
+    "Traditional Chinese": "炎獄炎熔",
+    "Japanese": "炎 獄 ラヴァ",
+    "Korean": "라바 더 퍼거토리"
+  },
+  "characterInfo": {
+    "File no.": "RF01",
+    "Operator Record": "All the Same",
+    "Paradox Simulation": "Fruits of Training",
+    "Illustrator": "下野宏铭",
+    "Release Date": "2021/07/30",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Kaori Mizuhashi",
+    "Chinese": "Ying Xie",
+    "English": "Díana Bermudez",
+    "Korean": "Kim Ha-young"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "Undisclosed",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "June 22nd",
+    "Race": "Sarkaz",
+    "Height": "158 cm",
+    "Infection Status": "Originium crystals distributed across the surface of her body, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Spell Formation",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Immediately obtains 15 SP after first deployment. On each deployment, grants SP +2 to other Caster allies on the field. When deployed, other Caster allies obtain +2 SP after deployment [ note 1 ]"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Immediately obtains 20 (+5) SP after first deployment. On each deployment, grants SP +3 (+1) to other Caster allies on the field. When deployed, other Caster allies obtain +3 (+1) SP after deployment [ note 1 ]"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Immediately obtains 30 SP after first deployment. On each deployment, grants SP +4 to other Caster allies on the field. When deployed, other Caster allies obtain +4 SP after deployment [ note 1 ]"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Immediately obtains 35 (+5) SP after first deployment. On each deployment, grants SP +5 (+1) to other Caster allies on the field. When deployed, other Caster allies obtain +5 (+1) SP after deployment [ note 1 ]"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Spell Formation"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Lava the Purgatory's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +3 .",
+        "New talent: Spell Formation .",
+        "New skill: Ring of Hellfire .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Lava the Purgatory to Level 45.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Spell Formation improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Lava the Purgatory to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "White Horse Kohl",
+          "quantity": 8
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 13
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Flame Quenched Dagger",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25–35 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range +1 tile, ATK +2% , and attack up to 2 targets simultaneously",
+            "initialSp": 10,
+            "spCost": 60,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Range +1 tile, ATK +4% , and attack up to 2 targets simultaneously",
+            "initialSp": 10,
+            "spCost": 59,
+            "duration": 26
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Range +1 tile, ATK +6% , and attack up to 2 targets simultaneously",
+            "initialSp": 10,
+            "spCost": 58,
+            "duration": 27
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Range +1 tile, ATK +8% , and attack up to 2 targets simultaneously",
+            "initialSp": 10,
+            "spCost": 57,
+            "duration": 28
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Range +1 tile, ATK +10% , and attack up to 2 targets simultaneously",
+            "initialSp": 10,
+            "spCost": 56,
+            "duration": 29
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Range +1 tile, ATK +12% , and attack up to 2 targets simultaneously",
+            "initialSp": 10,
+            "spCost": 55,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Range +1 tile, ATK +14% , and attack up to 2 targets simultaneously",
+            "initialSp": 10,
+            "spCost": 54,
+            "duration": 31
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Range +1 tile, ATK +16% , and attack up to 2 targets simultaneously",
+            "initialSp": 10,
+            "spCost": 53,
+            "duration": 32
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Range +1 tile, ATK +18% , and attack up to 2 targets simultaneously",
+            "initialSp": 10,
+            "spCost": 52,
+            "duration": 33
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Range +1 tile, ATK +20% , and attack up to 2 targets simultaneously",
+            "initialSp": 10,
+            "spCost": 50,
+            "duration": 35
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 3
+            },
+            {
+              "name": "Aketon",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Ring of Hellfire",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30–40 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Stops attacking and targets the ally with the highest HP within range, enveloping them and herself within a ring of fire. Each ring of fire deals 30% ATK as Arts damage every second to all enemies in the surrounding 8 tiles",
+            "initialSp": 30,
+            "spCost": 80,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Stops attacking and targets the ally with the highest HP within range, enveloping them and herself within a ring of fire. Each ring of fire deals 30% ATK as Arts damage every second to all enemies in the surrounding 8 tiles",
+            "initialSp": 30,
+            "spCost": 79,
+            "duration": 31
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Stops attacking and targets the ally with the highest HP within range, enveloping them and herself within a ring of fire. Each ring of fire deals 30% ATK as Arts damage every second to all enemies in the surrounding 8 tiles",
+            "initialSp": 30,
+            "spCost": 78,
+            "duration": 32
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Stops attacking and targets the ally with the highest HP within range, enveloping them and herself within a ring of fire. Each ring of fire deals 35% ATK as Arts damage every second to all enemies in the surrounding 8 tiles",
+            "initialSp": 30,
+            "spCost": 77,
+            "duration": 33
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Stops attacking and targets the ally with the highest HP within range, enveloping them and herself within a ring of fire. Each ring of fire deals 35% ATK as Arts damage every second to all enemies in the surrounding 8 tiles",
+            "initialSp": 30,
+            "spCost": 76,
+            "duration": 34
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Stops attacking and targets the ally with the highest HP within range, enveloping them and herself within a ring of fire. Each ring of fire deals 35% ATK as Arts damage every second to all enemies in the surrounding 8 tiles",
+            "initialSp": 30,
+            "spCost": 75,
+            "duration": 35
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Stops attacking and targets the ally with the highest HP within range, enveloping them and herself within a ring of fire. Each ring of fire deals 40% ATK as Arts damage every second to all enemies in the surrounding 8 tiles",
+            "initialSp": 30,
+            "spCost": 74,
+            "duration": 36
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Stops attacking and targets the ally with the highest HP within range, enveloping them and herself within a ring of fire. Each ring of fire deals 40% ATK as Arts damage every second to all enemies in the surrounding 8 tiles",
+            "initialSp": 30,
+            "spCost": 73,
+            "duration": 37
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Stops attacking and targets the ally with the highest HP within range, enveloping them and herself within a ring of fire. Each ring of fire deals 40% ATK as Arts damage every second to all enemies in the surrounding 8 tiles",
+            "initialSp": 30,
+            "spCost": 72,
+            "duration": 38
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Stops attacking and targets the ally with the highest HP within range, enveloping them and herself within a ring of fire. Each ring of fire deals 50% ATK as Arts damage every second to all enemies in the surrounding 8 tiles",
+            "initialSp": 30,
+            "spCost": 70,
+            "duration": 40
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Damage Over Time",
+            "description": "Enemies incur a damage per second for a certain duration"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 4
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Alternate Operator",
+      "facility": "Control Center",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Control Center, each Alternate Operator increases the Morale of all Operators in the Control Center by +0.05 per hour"
+    },
+    {
+      "name": "Heat Charge γ",
+      "facility": "Power Plant",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +20%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Lava the Purgatory's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "SPC-X: Sarkaz's Knife",
+      "mission": {
+        "requirement1": "Defeat a total of 80 enemies with Lava the Purgatory (excluding Support Units)",
+        "requirement2": "Clear Side Story WR-4 with a 3-star rating; You must deploy your own Lava the Purgatory, and have Lava the Purgatory defeat at least 8 enemies, including at least 1 \"Lazy\""
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +80 , ATK +43",
+          "effectLabel": "Trait improved",
+          "effectText": "Attack Range expands □ □ □ ■ □ □ □ □ □ □",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +130 , ATK +55",
+          "effectLabel": "Spell Formation improved",
+          "effectText": "Immediately obtains 33 SP after the first deployment. On each deployment, grants SP +4 to other Caster allies on the field. When deployed, other Caster allies obtain +4 SP after deployment [ note 1 ]",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +165 , ATK +62",
+          "effectLabel": "Spell Formation improved",
+          "effectText": "Immediately obtains 35 SP after the first deployment. On each deployment, grants SP +4 to other Caster allies on the field. When deployed, other Caster allies obtain +4 SP after deployment [ note 1 ]",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Born in Londinium,\nVictoria\n,\nLava\nis the younger twin sister of her fellow\nOperator\n,\nHibiscus\n. It has been a few years since she contracted\nOripathy\nand came to\nRhodes Island\nfor treatment. She has remained ever diligent during her time in Rhodes Island and never wasted even a moment in her quest to hone her\nOriginium Arts\nprowess.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 692,
+          "atk": 370,
+          "def": 46,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 32,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 962,
+          "atk": 522,
+          "def": 70,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 32,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "2-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 962,
+          "atk": 522,
+          "def": 70,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 35,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 1203,
+          "atk": 670,
+          "def": 96,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 35,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "3-6"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1203,
+          "atk": 670,
+          "def": 96,
+          "res": 20,
+          "redeploy": 80,
+          "dp": 35,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 1543,
+          "atk": 798,
+          "def": 115,
+          "res": 20,
+          "redeploy": 80,
+          "dp": 35,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "3-6"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 90,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests have shown the outlines of her internal organs to be indistinct due to abnormal shadows. Originium granules have been detected in her circulatory system, confirming her to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 12%\nMild crystallization visible on her left arm.\n\n[Blood Originium-Crystal Density] 0.28u/L\nThe extended, high-intensity training; high-risk Originium Arts research; and the frequent field operations that Purgatory has taken part in have naturally taken their toll on her condition. Thanks to the meticulous care of her instructor, Pith, and Medic Operator Hibiscus, Purgatory's condition, though deteriorating, is still kept at manageable levels."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Ever since our Originium Arts instructors took note of Lava's unparalleled talent for Arts, the instructors have formulated a full-fledged curriculum to allow Lava to master her Originium Arts more efficiently and systematically. The results were remarkable, and Lava herself has also become obsessed with her studies in Originium Arts and being able to put them into actual use, to the point that she neglects rest during her own free time. She has had the opportunity to study under the tutelage of many of our casters, including some particularly exceptional elite operators. This has been a source of pride to Lava, and it has given her all the more reason to spend time to improve her skills.\nLava has slowly come to realize that there is much more to Originium Arts than the physical damage you inflict on the surface; and they go much deeper than damage alone. Originium Arts is an academic discipline that is constantly being studied by casters, be it the research of the myriad of Arts there is or their origins. Operator Lava is particularly talented in this field of study, and she sought to seek out the truth and the meaning of this power by taking on the calamities that plague our world herself. During her pursuit and her participation of the neutralization of those countless crises, she slowly discovered her destiny, hidden behind the tragedies of Oripathy and war, and she is trying to take control of it."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Although she may seem to be a rebellious young woman, ignorant of world affairs, Operator Lava is actually very scrupulous. She empathizes with society's underdogs and the insignificant yet most important wishes they have, and she takes it upon herself to help them. As she becomes more powerful, the responsibility she shoulders also becomes greater—This is not limited to the missions that she must complete as a Rhodes Island operator, but also what she asks from herself, her refusal to turn her back on those in need, and her strong desire to correct society's injustices. As Lava was raised in a normal family, poverty and unfairness were never on Lava's mind, yet after she started to live on her own, as a Sarkaz and an Infected, Lava gradually came to be aware of the immense, uncalled-for hatred that society has toward the 'oppressed.'\nBecause there are limits to her power, there are bound to be those who seek her aid that she cannot save. Because of her status as a Sarkaz and an Infected, she will always be antagonized by certain intolerant strangers. In her pursuit of justice, Lava has gradually come to understand that the 'right way' she has read in books is nothing like the reality she faces. Having gone through so many incidents during her time at Rhodes Island, she has slowly come to understand its ideals, even choosing to firmly stand on its side. This is a choice that she has made herself—Rhodes Island showed her the way, and she has long become an inseparable member as she continued to grow. In the future, she will undoubtedly be an important key to Rhodes Island's growth and leadership."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Just as Operator Lava's power continued to improve, so too did her combat equipment. Along with the gradual improvement in its performance, the appearance of her combat uniform is one of the aspects that she pays the most attention to. As can be seen in her language and the way she interacts with others, Lava has become much more mature and approachable. Perhaps this is why she's become somewhat apprehensive about revealing her interests.\n'What's that? You're kidding! Lava spent her pay on tweaking her combat outfit again? She always spends her allowance on weird stuff like this, but I really just don't see the difference. Well... Now that you mention it, compared to when she just started out, her outfit's changed quite a bit. She changes it little by little, though. How is anyone supposed to notice?! Last time, she got so mad just because of this, saying I didn't care about her as a sister. That I forced all those healthy meals on her, but I never paid attention to her hairstyle and how she changes her outfit... Sheesh, of course I care about her. I care about her so much, I know what kinds of food she eats, how many times she goes to the bathroom, and when exactly she goes to bed and wakes up each and every day,' said Operator Hibiscus, her arms confidently crossed as she unwittingly confessed to abusing her privileges to our record keeping personnel.\n'That 'costume?' Eh, that's no costume in the first place, and I definitely didn't make her wear it. That's just what girls like to do. We want to know if anyone notices what's changed about us. That's why she went through all that trouble putting that movie together all while not leaving even a trace. She wanted to show all that off to everyone. It turned out okay. Everyone seemed to like the way she looked. That's why she keeps all those outfits and works on her hair, adding new elements she comes up with bit by bit. Don't you think Lava was boring when she spent all her time picking up those simple Arts tricks? Hobbies like this are what make girls cute,' quipped a certain laid-back operator as she waved her fan around, joining in on the message's recording on her own accord."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Having demonstrated her prowess in our evaluations, Lava left Reserve Op Team A1 she was assigned to after she became a full-fledged member. To Lava, her time as an on-the-job trainee is irreplaceable. She had a group of kind and caring partners she could open her heart to; the effect this has had on her growth is simply beyond measure. Her relationship with Hibiscus has also finally been repaired, and the two sisters have learned to tolerate and understand each other. What a great ending.\n'What do you mean, 'what a great ending?' Do you know how what she did right after I 'compromised' with her? Healthy meals, healthy meals, and healthy meals! Not only that, she even gets in the way of my training and makes me go to bed before it's even dark out so to keep me from pulling all-nighters! Hmph, I'm not gonna let her push me around anymore. We get along better than we used to, but I'm not gonna spend any more than time her than I have to.'\nAhem... After that, Lava began to take part in operations of greater importance, becoming a powerful and dependable Caster.\nWe must take care to not underestimate the dangers and ploys that may harm us as we battle the many injustices in our world. This applies not only to Lava, but also Rhodes Island as a whole. Both have faced many seemingly unsurmountable dangers, and often sacrifices had to be made. During the ■■■■ Incident—\n[Log Partially Missing]\n—Having worked together for so long, this was undoubtedly the most difficult part of the whole incident to those teammates. After the ■■■■ Incident, it was as though Lava became a mature, full-grown adult in the span of a night, having learned to remain calm when it's time to part ways and to treasure the moments when we meet.\nI just wish that... the children who grew up in such difficulties and hardships would know how to cherish their own lives after they come to understand the pain of loss.\n[Addendum 1]\nPermission has not been granted to access information on related incidents.\n[Addendum 2]\nOut of respect for the wishes of the parties involved, access to certain information pertaining to the operator and the pertinent incidents has been restricted.\n[Addendum 3]\nCurrently, Operator Lava's psychological condition remains mostly stable."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "As with all Rhodes Island operators, Lava is required to regularly undergo psychological evaluations and counseling. One point worthy of note is that Lava's mental health values are not particularly stable. After she finds herself involved in sudden, unexpected major incidents, Operator Lava always comes out demonstrating a stronger resolve and determination. In contrast, her mental health also deteriorates by a demonstrable degree. The value she sees in her own life decreases after each incident, just as the sacrificing herself to protect others becomes more and more of a viable strategy to her. The braver and stronger she gets, the higher the price she has to pay for her power.\nThis has been a source of concern to Medical Operator Hibiscus, who frequently misuses her permissions to retrieve the relevant data."
+    }
+  ]
+}

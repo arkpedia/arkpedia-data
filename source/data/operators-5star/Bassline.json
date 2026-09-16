@@ -1,0 +1,750 @@
+{
+  "name": "Bassline",
+  "rarity": 5,
+  "class": "Defender",
+  "branch": "Guardian",
+  "faction": "Leithanien",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Defense",
+    "Healing"
+  ],
+  "trait": "Can heal allies by using the skill",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Starry Night Sky"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4109_baslin",
+  "otherLanguages": {
+    "Chinese": "深律",
+    "Japanese": "ベースライン",
+    "Korean": "베이스라인"
+  },
+  "characterInfo": {
+    "File no.": "LN13",
+    "Operator Record": "Aufführung im Abendrot",
+    "Paradox Simulation": "Section Principal",
+    "Illustrator": "九日九号",
+    "Release Date": "2024/04/30",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Aki Kanada",
+    "Chinese": "Hong Haitian",
+    "English": "Cassandra Schütt",
+    "Korean": "Heo Ye-eun"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "1 year",
+    "Place of Birth": "Leithanien",
+    "Date of Birth": "July 16th",
+    "Race": "Lupo",
+    "Height": "160 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Authoritarian Teachings",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "RES +6; if there are allied Operators in the 8 surrounding tiles, gain another RES +2"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "RES +12; if there are allied Operators in the 8 surrounding tiles, gain another RES +4"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DEF +25"
+      },
+      {
+        "level": 5,
+        "benefit": "Max HP +200"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Bassline's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Block +1 .",
+        "New talent: Authoritarian Teachings .",
+        "New skill: Calming Bass ."
+      ],
+      "prerequisite": "Raise Bassline to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Authoritarian Teachings improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Bassline to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Cyclicene Prefab",
+          "quantity": 7
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 15
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "First Aid",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 110% of the Operator 's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 115% of the Operator's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 120% of the Operator's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 130% of the Operator's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 135% of the Operator's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 140% of the Operator's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 150% of the Operator's ATK in the next attack Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 160% of the Operator's ATK in the next attack Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 170% of the Operator's ATK in the next attack Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 180% of the Operator's ATK in the next attack Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 3
+            },
+            {
+              "name": "Compound Cutting Fluid",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Calming Bass",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "60 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +20% ; stop attacking and focus on healing nearby allies, each heal giving the target a Barrier that absorbs Arts damage equal to 30% of Bassline's ATK",
+            "initialSp": 40,
+            "spCost": 70,
+            "duration": 60
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +25% ; stop attacking and focus on healing nearby allies, each heal giving the target a Barrier that absorbs Arts damage equal to 30% of Bassline's ATK",
+            "initialSp": 40,
+            "spCost": 70,
+            "duration": 60
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +30% ; stop attacking and focus on healing nearby allies, each heal giving the target a Barrier that absorbs Arts damage equal to 30% of Bassline's ATK",
+            "initialSp": 40,
+            "spCost": 70,
+            "duration": 60
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +35% ; stop attacking and focus on healing nearby allies, each heal giving the target a Barrier that absorbs Arts damage equal to 40% of Bassline's ATK",
+            "initialSp": 45,
+            "spCost": 65,
+            "duration": 60
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +40% ; stop attacking and focus on healing nearby allies, each heal giving the target a Barrier that absorbs Arts damage equal to 40% of Bassline's ATK",
+            "initialSp": 45,
+            "spCost": 65,
+            "duration": 60
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +45% ; stop attacking and focus on healing nearby allies, each heal giving the target a Barrier that absorbs Arts damage equal to 40% of Bassline's ATK",
+            "initialSp": 45,
+            "spCost": 65,
+            "duration": 60
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +50% ; stop attacking and focus on healing nearby allies, each heal giving the target a Barrier that absorbs Arts damage equal to 50% of Bassline's ATK",
+            "initialSp": 50,
+            "spCost": 60,
+            "duration": 60
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +60% ; stop attacking and focus on healing nearby allies, each heal giving the target a Barrier that absorbs Arts damage equal to 50% of Bassline's ATK",
+            "initialSp": 51,
+            "spCost": 60,
+            "duration": 60
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +70% ; stop attacking and focus on healing nearby allies, each heal giving the target a Barrier that absorbs Arts damage equal to 50% of Bassline's ATK",
+            "initialSp": 52,
+            "spCost": 60,
+            "duration": 60
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +80% ; stop attacking and focus on healing nearby allies, each heal giving the target a Barrier that absorbs Arts damage equal to 60% of Bassline's ATK",
+            "initialSp": 53,
+            "spCost": 60,
+            "duration": 60
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 3
+            },
+            {
+              "name": "Polyester Pack",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 4
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Compound Cutting Fluid",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Aggregate Cyclicene",
+          "quantity": 2
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Court Etiquette",
+      "facility": "Office",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the HR Office, HR contacting speed +10% , Morale consumed per hour -0.25"
+    },
+    {
+      "name": "Authoritarian EnvoyReplacesCourt Etiquette",
+      "facility": "Office",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the HR Office, HR contacting speed +30% , Morale consumed per hour -0.25"
+    },
+    {
+      "name": "Drawing the Heart's Voice",
+      "facility": "Office",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the HR Office, for every Recruit slot (Default slots do not count), Soundless Resonance +15"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Bassline's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "GUA-Y: Bestowed Trinket",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Bassline, and unleash Calming Bass at least 1 time in each battle",
+        "requirement2": "Clear Side Story LE-4 with a 3-star rating; You must deploy your own Bassline, and allow no Operators to be defeated"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +265 , ATK +23",
+          "effectLabel": "New trait",
+          "effectText": "Reduces damage taken by 15%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +345 , ATK +28",
+          "effectLabel": "Authoritarian Teachings improved",
+          "effectText": "RES +12; if there are allied Operators in the 8 surrounding tiles, both this unit and them gain another RES +4",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +410 , ATK +32",
+          "effectLabel": "Authoritarian Teachings improved",
+          "effectText": "RES +14; if there are allied Operators in the 8 surrounding tiles, both this unit and them gain another RES +5",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Bassline, appointed as a protocol officer to\nLeithanien\n's Twin Spires in the autumn of 1100, signed an agreement with\nRhodes Island\nto work primarily as an intermediary between us and Leithanien's Imperial Court.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1150,
+          "atk": 195,
+          "def": 238,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1555,
+          "atk": 279,
+          "def": 350,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1555,
+          "atk": 279,
+          "def": 350,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1994,
+          "atk": 378,
+          "def": 467,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1994,
+          "atk": 378,
+          "def": 467,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2770,
+          "atk": 473,
+          "def": 570,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 50,
+      "def": 30
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Bassline shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.12u/L\nOperator Bassline rarely comes into contact with Originium."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "'Back when I heard I had to receive an envoy from the Leithanian Imperial Court, I was at a loss. We have plenty of operators from all over Terra stationed here as liaisons between us and their respective nations, but this was the first time I had to be all serious and formal. Fortunately, we have operators experienced with this sort of thing, so I went around frantically barraging them with questions. I asked Dr. Hibiscus and Czerny about what I needed to pay attention to when dealing with Leithanian nobles, wrote down some notes, and even learned to play a little harmonica. Yeah, that's why I learned to play. Anyway, when that Lupo boy showed up at the office carrying a huge tuba and solemnly introducing himself as <i>the</i> protocol officer we'd been in contact with, it left me stunned in disbelief for a while. Afterwards, he handed over an official letter with the twin spires stamped in gold leaf on it, as well as his resume, but I was still so flabbergasted I nearly forgot to help him open it...'\n——Rhodes Island HR Operator\n\nInitial interactions with this Lupo from the Leithanian court gave the impression he's the taciturn type—perhaps it stems from his nature, or from caution. He spends most of his time quietly reading books, or playing his tuba alone in a specialized cabin on the landship. He will answer warmly if you strike up a conversation with him, and it's easy to tell that his reading habit and court upbringing has given him an extensive breadth of knowledge surpassing even people much older than him. He can elaborate on almost any topic you care to discuss, proactively asks for advice on ones he's not familiar with, and listens with an open mind. But once you're done talking, Bassline returns to his default silence, as if you'd never spoken at all. Such politeness and decorum also hint at his nigh indiscernible vigilance. \n—Initial HR evaluation"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "'Please, I insist that you call me by my codename. I mean, it would be somewhat inappropriate if 'Michael' were to be seen waltzing around outside Leithanien. It might even cause an unnecessary incident, which would be quite troublesome to deal with.' \nBassline still has his obligations to fulfill at the Imperial Court, so he frequently travels between Leithanien and Rhodes Island. He cannot stay on the landship for long, but he cherishes every visit nonetheless. After all, the young boy sees everything outside Leithanien as exotic, and coincidentally, the various personalities on Rhodes Island can satisfy his curiosity about Terra as well. \nHis musical mastery from growing up in the Imperial Court has easily grabbed the hearts of many an aficionado on Rhodes Island, turning a large crowd of operators into his loyal audience, and he will gladly use his tuba as a conversation starter. Through these exchanges, the operators seem to have gradually forgotten his identity as a court envoy, and the sound of his tuba has become an indispensable part of the Rhodes Island orchestra. \n\nSupposedly, Bassline once had a conversation with Dr. Kalt'sit that lasted over ten minutes. What they were discussing was too difficult for others to parse, and they probably did not dare to ask about it either. However, someone did use this incident as a basis to ask him for some conversational tips, and he replied:\nIt's alright, Dr. Kalt'sit isn't that difficult to talk to. You just have to be ready to take in all that information. She's accumulated so much knowledge and experience that you'll be easily overwhelmed if you're not prepared. There's merit in having more conversations with her, so you should try talking to her too—when she's not busy, that is.' \nYes, according to Baseline, no one on Terra is 'difficult to talk to.' Some operators do leave him momentarily speechless at times, but he always manages to swiftly end that line of conversation and change the subject. \n\n'Bassline rarely takes the initiative to get along with his peers, you say? Doesn't he join in when I gather the kids for a round of soccer? Of course, maybe he didn't decline because <i>I</i> was the one asking. The kid says he didn't know how to play, but I remember how easily he kicked a workpiece right into my hands when he passed by the engineering department the other day! It was more than ten meters away too! His shooting technique is crazy good!\n 'Bassline says he developed this skill by accident. When he was still in Zwillingstürme, he once accidentally sent a castanet flying on the way back to his room after work. It hit a book square in its spine, knocking it off the shelf and making a loud THUNK in the middle of the night. You'd think otherwise, but he felt like he... chilled out a little? From his tone, it sounded like a guilty pleasure of his, perhaps because that instrument was a gift from Leithanien's Golden Empress. We've all had a rebellious phase, right? Though his way of rebelling is a little unlike what an actual rebel would do. Or maybe he's just finally found something to do with the rare windows of free time he gets? \n'Anyway, he's integrating well with the others on the pitch. His penalty kicks are excellent, but his teamwork is no good. Nothing out of the ordinary, though. He's just never practiced with anyone else before. I'll do my best to look after him.'"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Among the nine regions of Leithanien, Kreis Lupukarn has always been the odd one out. Located in the southeastern edge of the empire, it is geographically closest to Siracusa, and its ethnic composition and culture are closer to its neighbor. While it does not share Siracusa's strong sense of independence, it nonetheless harbors an animosity towards the other Leithanian regions. Only a single Emperor in Leithanien's entire history was born in Lupukarn, and his reign was short. It lasted for only three years before he was deposed by the Kurfürsten. Additionally, Lupukarn was the first to be affected by Siracusa's age-old ideas of independence, so they have not had the Imperial Court's trust for a long time. In 969, the Witch King amended the Güldenesgesatz and acknowledged Siracusa's independence. Lupukarn then found itself in an awkward situation: under the most brutal periods of the Witch King's reign, Lupukarn's history of 'conniving and instigating rebellion' was blown out of proportion by his followers, and the region was heavily suppressed as a result. The Kurfürst's family lost much of their power and were nearly stripped of their nobility, while administrative and military leaders were both appointed and dismissed by the Witch King's court and citizens were evicted to other regions, leaving many displaced. Consequently, the Kurfürst of Lupukarn readily allied with the Twin Empresses during the subsequent 'Septemberrevolution.' However, despite their active contributions to the coup, the Imperial Court still distrusts them, and Lupukarn is still regarded as an invisible disease of the empire. \n——Excerpt from 'Research on the Politics Surrounding Siracusa' \n\nIn 1091, Lupukarn's Herzog Jansen instigated rebellions in three cities, but they were quelled in just three months—because Empress Grimmacht personally led her forces to subjugate the rebels. They confirmed it was a small-scale uprising involving just a few families, but the other nobles in the territory were nonetheless punished. The Twin Spires demanded the nobility send their heirs to Zwillingstürme for 'education,' placing them under direct supervision of the Imperial Court. They were effectively hostages, but not all of them entered the court as the Twin Spires had promised. Only a few managed to stay, while the others who did not gain the Empresses' trust were sent away to other spires. \n——■■■■Investigation Report\n\n[Audio Log]\n'These are skills one must master when running around for the Spire of Authority. I'm used to dealing with the spire nobles, and have accepted the fact that they'll never truly be close to the Spire of Authority. 'But there's no need for you to get close to them.' My master once told me that, taught me how to communicate with them, and how to make them listen to us. But sometimes I wonder, if she were to get along with them, would they no longer fear her as they did before? Maybe even come to respect and adore her? Or maybe, she <i>needs</i> them to fear her...'"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "The golden sunset shines through the landship's portholes, bathing its cabins in light. Bassline lowers the sunshade to block out the last rays of the dazzling afterglow. \n'I always have this strange misconception that night won't come after the sunset, that the darkness will never return.' \nConcerts on Rhodes Island usually begin after nightfall. A deep dark night is the best companion, but sometimes Bassline will say: 'The sounds of the night are beautiful enough, and my tuba is merely an accompaniment.' And thus, the huge instrument only plays after dark. Operators who often listen to him perform know that he likes to play a certain piece over and over—a piece from the Lupukarn folk ballad 'White Fang,' the ancient tale of a Lupo boy who put away his fangs. This was the piece he played when he arrived at the Twin Spires that year, facing that splendid Spire of Grace. \n'Actually, I really liked this piece, but the master of the spire didn't at all. Maybe she doesn't like the tune itself, or maybe the place it's from, or maybe, as I would prefer to believe, she just didn't like me, the performer... There was a time when I never wanted to play it ever again, but later I decided I had to, I had to keep performing it. Not for Lupukarn's sake, or even Leithanien's, but for myself. 'Our responsibilities should not be forced on us by others.' \n'I still have my duty to do, and that is why I stand before you today.'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "The castanet flies through the air and hits a bookshelf a few steps away, the sound rippling through the quiet space for a split second before the room falls silent again. \nThe first book to be knocked off the shelf is 'White Birch,' a novel narrating the love between an Ursus officer and a girl from a Sami tribe. \nMicha picks up the precious castanet and places it before his feet. He bounces it on his toe and kicks it toward the bookshelf again.\nIt hits the intended target: the spine of the second book. It falls from the shelf and lands cover side up, displaying its title: 'Towards The Sunset.' Micha has never liked the sunset much. \nMicha picks up the castanet once again, and there seem to be new scratches on it. But he could not care less, no matter how battered it gets, and the castanet takes to the air again. \nThe third target is a bulky tome that requires an additional castanet attack before it finally falls. 'A Compilation of Victorian Court Etiquette.' Victoria, Leithanien, it seems to be the same anywhere you go. \nMicha picks up the castanet and kicks it at the towering bookshelf for the final time, knocking down a tiny book into an inconspicuous corner. A poetry anthology, 'The sword's farewell.' \nPerhaps he should give this book a proper read-through."
+    }
+  ]
+}

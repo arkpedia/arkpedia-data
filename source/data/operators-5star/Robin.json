@@ -1,0 +1,767 @@
+{
+  "name": "Robin",
+  "rarity": 5,
+  "class": "Specialist",
+  "branch": "Trapmaster",
+  "faction": "Columbia",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Summon",
+    "Shift"
+  ],
+  "trait": "Can use traps to assist in combat, but traps cannot be placed on tiles already occupied by an enemy",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Mansfield Break"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Gift of Wild"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_451_robin",
+  "otherLanguages": {
+    "Simplified Chinese": "罗宾",
+    "Traditional Chinese": "羅賓",
+    "Japanese": "ロビン",
+    "Korean": "로빈"
+  },
+  "characterInfo": {
+    "File no.": "CB08",
+    "Operator Record": "To Live, To Feel",
+    "Paradox Simulation": "\"Bad Guys Stay Out\"",
+    "Illustrator": "aZLing4",
+    "Release Date": "2021/06/22",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Ryouko Ono",
+    "Chinese": "Shao Minjia (credited as \"Icy\" in EN)",
+    "English": "Kari Wahlgren",
+    "Korean": "Kim Ha-young"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Bodyguard Experience": "3 years",
+    "Place of Birth": "Columbia",
+    "Date of Birth": "May 18th",
+    "Race": "Anaty",
+    "Height": "155 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "\"Clip\" Specialist",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "Can deploy up to 4 \"Clip\" traps (Can store up to 6); The first enemy that steps on a trap will trigger its effect"
+        },
+        {
+          "stage": "Base",
+          "potential": "Potential 5",
+          "description": "Can deploy up to 6 (+2) \"Clip\" traps (Can store up to 6); The first enemy that steps on a trap will trigger its effect"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Can deploy up to 6 \"Clip\" traps (Can store up to 8); The first enemy that steps on a trap will trigger its effect"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Can deploy up to 8 (+2) \"Clip\" traps (Can store up to 8); The first enemy that steps on a trap will trigger its effect"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Can deploy up to 8 \"Clip\" traps (Can store up to 10); The first enemy that steps on a trap will trigger its effect"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Can deploy up to 10 (+2) \"Clip\" traps (Can store up to 10); The first enemy that steps on a trap will trigger its effect"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves \"Clip\" Specialist"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Robin's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Launching \"Clip\" .",
+        "\"Clip\" Specialist improved.",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Robin to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Specialist Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "\"Clip\" Specialist improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Robin to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Specialist Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Incandescent Alloy Block",
+          "quantity": 8
+        },
+        {
+          "name": "Aketon",
+          "quantity": 11
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Binding \"Clip\"",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Passive: When a trap is triggered, deals 200% ATK as Physical damage and Binds the target for 1.5 seconds Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Passive: When a trap is triggered, deals 210% ATK as Physical damage and Binds the target for 1.5 seconds Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Passive: When a trap is triggered, deals 220% ATK as Physical damage and Binds the target for 1.5 seconds Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Passive: When a trap is triggered, deals 240% ATK as Physical damage and Binds the target for 1.5 seconds Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 19,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Passive: When a trap is triggered, deals 250% ATK as Physical damage and Binds the target for 1.5 seconds Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 18,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Passive: When a trap is triggered, deals 260% ATK as Physical damage and Binds the target for 1.5 seconds Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 17,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Passive: When a trap is triggered, deals 280% ATK as Physical damage and Binds the target for 2 seconds Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 16,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Passive: When a trap is triggered, deals 300% ATK as Physical damage and Binds the target for 2.5 seconds Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 15,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Passive: When a trap is triggered, deals 320% ATK as Physical damage and Binds the target for 2.5 seconds Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 14,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Passive: When a trap is triggered, deals 350% ATK as Physical damage and Binds the target for 3 seconds Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 12,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 1
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Launching \"Clip\"",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Passive: When a trap is triggered, deals 230% ATK as Physical damage and pushes the target away slightly Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Passive: When a trap is triggered, deals 240% ATK as Physical damage and pushes the target away slightly Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Passive: When a trap is triggered, deals 250% ATK as Physical damage and pushes the target away slightly Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Passive: When a trap is triggered, deals 270% ATK as Physical damage and pushes the target away slightly Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 19,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Passive: When a trap is triggered, deals 280% ATK as Physical damage and pushes the target away slightly Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 18,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Passive: When a trap is triggered, deals 290% ATK as Physical damage and pushes the target away slightly Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 17,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Passive: When a trap is triggered, deals 310% ATK as Physical damage and pushes the target away moderately Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 16,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Passive: When a trap is triggered, deals 330% ATK as Physical damage and pushes the target away moderately Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 15,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Passive: When a trap is triggered, deals 350% ATK as Physical damage and pushes the target away moderately Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 14,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Passive: When a trap is triggered, deals 380% ATK as Physical damage and pushes the target away greatly Active: Immediately gets 1 trap",
+            "initialSp": 0,
+            "spCost": 12,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 2
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 2
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Specialist Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Specialist Operators' Specialization training speed +30%"
+    },
+    {
+      "name": "Trap FocusReplacesSpecialist Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Specialist Operators' Specialization training speed +30% ; if training this skill to Specialization Level 1 , training speed will be further increased by +45%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Robin's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "TRP-Y: Calendar the Limited Edition",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Robin, and cause at least 2 enemies to fall in a pit in each battle",
+        "requirement2": "Clear Side Story BI-EX-2 with a 3-star rating; You must deploy your own Robin, and cause at least 6 Icefield Arts Guards to fall in a pit"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +130 , ATK +36",
+          "effectLabel": "New trait",
+          "effectText": "Has 20% chance to deploy a trap that deals double damage",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +160 , ATK +39",
+          "effectLabel": "New talent: Advanced Concealment",
+          "effectText": "Gains Camouflage after being attacked, lasting for 4 seconds",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +185 , ATK +41",
+          "effectLabel": "Advanced Concealment improved",
+          "effectText": "Gains Camouflage after being attacked, lasting for 6 seconds",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Former\nColumbian\nbodyguard, passed examination and joined\nRhodes Island\non\nOperator\nSilence's\nreferral.\nExpert at remote lethality in coordination with homemade traps. Presently active in the gamut of missions as a\nSpecialist\nOperator.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 674,
+          "atk": 232,
+          "def": 68,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 11,
+          "block": 1,
+          "interval": 0.85
+        },
+        "max": {
+          "hp": 899,
+          "atk": 319,
+          "def": 104,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 11,
+          "block": 1,
+          "interval": 0.85
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 899,
+          "atk": 319,
+          "def": 104,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 13,
+          "block": 1,
+          "interval": 0.85
+        },
+        "max": {
+          "hp": 1139,
+          "atk": 420,
+          "def": 137,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 13,
+          "block": 1,
+          "interval": 0.85
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1139,
+          "atk": 420,
+          "def": 137,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 13,
+          "block": 1,
+          "interval": 0.85
+        },
+        "max": {
+          "hp": 1442,
+          "atk": 513,
+          "def": 166,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 13,
+          "block": 1,
+          "interval": 0.85
+        },
+        "rangeId": "3-3"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 40,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Robin shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.12u/L\nOperator Robin rarely comes into contact with Originium."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "A fairly reticent Anaty woman.\nPerpetually downcast between her brows, she gives the impression that much weighs on her mind, though she gives her own explanation for it—in keeping her household afloat, she often considers a great deal of things, and has gotten used to it.\nTalking to her, you realize that she's just the same as a city girl who likes to be with people her age."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "After finding out about Robin's father's circumstances, Rhodes Island notified its Columbian office's operators to go and look into it.\nRobin's father was in dire condition to say the least, and Rhodes Island was already hard-pressed to offer Robin treatment free of charge. There are too many suffering across this world, and Rhodes Island is no charity.\nHowever, as long as both sides have ideas, then there is always some leeway for mediation. In the end, Rhodes Island issued for Robin a fairly particular contract—much longer work hours than other Operators, with a further predetermined cut of all of Robin's mission earnings paid automatically to Rhodes Island, directly furnishing her father's medical fees.\nIn return, Rhodes Island would immediately provide her father treatment."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Many Operators aboard Rhodes Island have complicated backgrounds. It's led to the point that if you stopped and paid attention to the chatter, you'd be forgiven for thinking we were in an age of chaos and flames of war.\nBut if you set aside the effect of Oripathy, you'd find most people across the land living in peace, all the while enjoying the eclectic conveniences of modernization—it's a cruel thing, but if only the vast wealth of cities disregarded the conflict stemming from Infected and the like, wouldn't things seem so peaceful?\nNot to tread a time-worn supposition again; the point is that a portion of Rhodes Island's operators have, owing to their years of combat experience, been rather long estranged from modern life.\nThis is no good thing; a certain amount of recreation is indispensable, and Rhodes Island hardly restricts its operators' private lives. Yet, people continually lapped by the fire of conflict find it no easy thing to return to everyday life. Their greatest joys will often be confined to liquor, music, reading, and sleep.\nPeople like the ever-freewheeling Chief Engineer Closure are few and far between across Rhodes Island, and on more than one occasion she's been frustrated at not finding someone of like mind to have fun watching movies and soaps together.\nRobin's arrival alleviated one of her problems; after all, just as the first record states, Robin is by no means naturally gloomy—she was undeniably an open, cheerful city girl in the past, and her greatest hobby happens to be watching movies."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "According to our Columbian operators' investigations and Robin's own explanation, it was only following the bankruptcy of her father's company and his repeated failures to reprise that he entered a downwards spiral.\nAt the time of his divorce, the option to go with her mother was wholly open to Robin, but she chose to stay by her father's side in the end.\nShe says that even though her father became so violent, easy to enrage, she still remembers how he used to be so gentle. So she opted to bear her father's hysteria, all the while heading out alone, earning money by herself to keep the house going.\nIn spite of her relatively light build, she looked up to the robust, talented protagonists she'd seen since childhood in movies, and so when times at home were good, she took martial arts classes, and by her own efforts built up a good physique, as well as impressive combat skill for any ordinary person. Though adulthood came and she was nothing close to a hero who could plumb Paradise and Inferno alike, it did streamline finding herself a job.\nShe first tried to pursue mental labor, but she quickly realized such work couldn't support her father's spendthrift habits. Afterwards, she began seeking all sorts of physical work, and ultimately found a decent job as a bodyguard.\nThe job, however, was barely enough to maintain their livelihood, and she still sought better-paying work all throughout. Moreover, Robin has made it clear that during that period, how dangerous the work was no longer mattered much to her, as long as it could make any money.\nIndeed, she never imagined it'd be a turning point from where she'd meet Mountain and Silence, and eventually come to Rhodes Island.\nIn the end, even if her father can recover with Rhodes Island's aid, even greater problems will sooner or later arise should he fall back on his older self-abandoning ways, and it's clear that Robin would be powerless against them.\nThough it often doesn't end well when outsiders interfere in these types of domestic affairs, Robin herself has turned to the Doctor and asked for help, so it should be feasible at the least for the Doctor to offer her some suggestion of direction.\nWe hope for a day when things can improve for her."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "[Classified Log]\nAnthony raised something with me, concerning Robin's mid-jailbreak 'betrayal.'\nHe knows of it, Kafka knows, and in order to explain the jailbreak's events, he's told Silence and Mayer of it. Beyond that, though, he hasn't gone out of his way to tell Domma or Pinecone, and he hopes the two of them will never, ever know the jailbreak saw something like it happen.\nHe also hopes, if there comes a day when he's made known to the world, that this specific matter isn't raised.\nI have no reason to refuse.\nThat said, Robin still seems to be taking it quite deeply to heart, and this I can't help with. We can only watch to see if she, herself, can move on from it."
+    }
+  ]
+}

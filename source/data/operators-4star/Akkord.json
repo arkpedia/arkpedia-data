@@ -1,0 +1,754 @@
+{
+  "name": "Akkord",
+  "rarity": 4,
+  "class": "Caster",
+  "branch": "Blast Caster",
+  "faction": "Leithanien",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "AoE",
+    "DPS"
+  ],
+  "trait": "Deals AOE Arts damage in a long line",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Purchase Vouchers",
+      "Unlock Location": "Retracing Our Steps"
+    },
+    "Shop Operator": "Yes"
+  },
+  "alternate": null,
+  "skins": [],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4051_akkord",
+  "otherLanguages": {
+    "Chinese": "协律",
+    "Japanese": "アコルト",
+    "Korean": "아코르트"
+  },
+  "characterInfo": {
+    "File no.": "LN22",
+    "Illustrator": "Chi4",
+    "Release Date": "2026/04/14",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Saya Aizawa",
+    "Chinese": "Kokomi",
+    "English": "Amira Leisner",
+    "Korean": "Lim Jae-yi"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Leithanien",
+    "Date of Birth": "August 11th",
+    "Race": "Caprinae",
+    "Height": "165 cm",
+    "Infection Status": "Confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Average",
+    "Mobility": "Average",
+    "Endurance": "Average",
+    "Tactical Acumen": "Average",
+    "Combat Skill": "Average",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Pulse Isomorphism",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When there is at least 1 other Operator within range, +8% ATK"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When there is at least 1 other Operator within range, +10% (+2%) ATK"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When there is at least 1 other Operator within range, +15% ATK"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When there is at least 1 other Operator within range, +17% (+2%) ATK"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +32"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Pulse Isomorphism"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Akkord's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +3 .",
+        "New skill: Explosive Tuning .",
+        "New talent: Pulse Isomorphism .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Akkord to Level 45.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 15000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 3
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 1
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Pulse Isomorphism improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Akkord to Elite 1 Level 60.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 60000
+        },
+        {
+          "name": "Caster Chip Pack",
+          "quantity": 5
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 14
+        },
+        {
+          "name": "Semi-Synthetic Solvent",
+          "quantity": 9
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Backbeat Stress",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack deals 130% ATK as Arts damage Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 12,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack deals 135% ATK as Arts damage Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 12,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack deals 140% ATK as Arts damage Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 11,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack deals 145% ATK as Arts damage Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 11,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack deals 150% ATK as Arts damage Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack deals 160% ATK as Arts damage Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack deals 170% ATK as Arts damage Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack deals 180% ATK as Arts damage Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack deals 190% ATK as Arts damage Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack deals 200% ATK as Arts damage Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 1
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 2
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 2
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 2
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Explosive Tuning",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "32 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "+30% ATK, every attack triggers a sonic boom at the location of other Operators within attack range, dealing 10% ATK as AoE Arts damage",
+            "initialSp": 12,
+            "spCost": 64,
+            "duration": 32
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "+30% ATK, every attack triggers a sonic boom at the location of other Operators within attack range, dealing 10% ATK as AoE Arts damage",
+            "initialSp": 16,
+            "spCost": 64,
+            "duration": 32
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "+35% ATK, every attack triggers a sonic boom at the location of other Operators within attack range, dealing 10% ATK as AoE Arts damage",
+            "initialSp": 16,
+            "spCost": 60,
+            "duration": 32
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "+35% ATK, every attack triggers a sonic boom at the location of other Operators within attack range, dealing 15% ATK as AoE Arts damage",
+            "initialSp": 20,
+            "spCost": 60,
+            "duration": 32
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "+40% ATK, every attack triggers a sonic boom at the location of other Operators within attack range, dealing 15% ATK as AoE Arts damage",
+            "initialSp": 20,
+            "spCost": 56,
+            "duration": 32
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "+45% ATK, every attack triggers a sonic boom at the location of other Operators within attack range, dealing 15% ATK as AoE Arts damage",
+            "initialSp": 24,
+            "spCost": 56,
+            "duration": 32
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "+45% ATK, every attack triggers a sonic boom at the location of other Operators within attack range, dealing 20% ATK as AoE Arts damage",
+            "initialSp": 24,
+            "spCost": 52,
+            "duration": 32
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "+50% ATK, every attack triggers a sonic boom at the location of other Operators within attack range, dealing 20% ATK as AoE Arts damage",
+            "initialSp": 28,
+            "spCost": 52,
+            "duration": 32
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "+55% ATK, every attack triggers a sonic boom at the location of other Operators within attack range, dealing 20% ATK as AoE Arts damage",
+            "initialSp": 32,
+            "spCost": 52,
+            "duration": 32
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "+60% ATK, every attack triggers a sonic boom at the location of other Operators within attack range, dealing 25% ATK as AoE Arts damage",
+            "initialSp": 32,
+            "spCost": 48,
+            "duration": 32
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "Chiral Refractor",
+              "quantity": 1
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 2
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 3
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        },
+        {
+          "name": "Orirock",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Sugar",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Fuscous Fiber",
+          "quantity": 2
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Surging Tunes",
+      "facility": "Power Plant",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Power Plant , increases the drone recovery rate by +10%"
+    },
+    {
+      "name": "Surging Tunes",
+      "facility": "Power Plant",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to a Power Plant , increases the drone recovery rate by +15%"
+    },
+    {
+      "name": "Fugue Amalgamation",
+      "facility": "Dormitory",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to a Dormitory , increases own Morale restored per hour by +0.7 ; If there are other Operators in that Dormitory, further increases own Morale restored per hour by +0.05 for each additional Operator."
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Akkord's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "BLA-X: The Music Box of A Burdenbeast",
+      "mission": {
+        "requirement1": "Deal a total of 50,000 damage with your own Akkord",
+        "requirement2": "Clear Main Theme 2-1 with a 3-star rating; You must deploy your own Akkord, and have her defeat at least 3 enemies"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +145 , ATK +40",
+          "effectLabel": "New trait",
+          "effectText": "Attacks deal extremely long-ranged AoE Arts damage ; damage dealt increases with distance, up to 110%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Crystalline Component",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 20000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +160 , ATK +45",
+          "effectLabel": "Pulse Isomorphism improved",
+          "effectText": "When there is at least 1 other Operator within range, +17% ATK",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 15
+            },
+            {
+              "name": "Aketon",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 25000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +175 , ATK +50",
+          "effectLabel": "Pulse Isomorphism improved",
+          "effectText": "When there is at least 1 other Operator within range, +20% ATK",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 5
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 6
+            },
+            {
+              "name": "LMD",
+              "quantity": 30000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Akkord, real name Tonia Klang, is a tuner hailing from a remote\nLeithanian\ntown. She was referred to\nRhodes Island\nfor treatment after contracting\nOripathy\nin a soundfield core overload accident caused by a snowstorm. She currently helps out with Rhodes Island's music scene, while assisting in battle as a caster.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 45,
+        "base": {
+          "hp": 666,
+          "atk": 296,
+          "def": 42,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 29,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 952,
+          "atk": 423,
+          "def": 71,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 29,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "4-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 60,
+        "base": {
+          "hp": 952,
+          "atk": 423,
+          "def": 71,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 32,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 1237,
+          "atk": 564,
+          "def": 98,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 32,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "5-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1237,
+          "atk": 564,
+          "def": 98,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 32,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 1528,
+          "atk": 680,
+          "def": 110,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 32,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "5-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 60,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 3%\nSmall traces of infection are visible on the surface of the body.\n\n[Blood Originium-Crystal Density] 0.22u/L\nAkkord contracted Oripathy early, and comes into contact with Originium components regularly in her work, but she observes proper protection and is diligent about receiving treatment. Her condition is currently stable with no sign of infection spreading."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Operator Akkord has a habit of 'listening' in her daily work and inspections. She explains it as capturing the specific frequencies of the target's soundfield, and adding 'tags' to them in her notes.\nThe relationship between this behavior and her tuning work is unclear, but maintenance logs across different cities show a pattern: When Akkord notices any changes in the subject's tags, she will instantly check the audio facilities in the subject's block, make necessary adjustments, or perform extra inspections around the area.\nThe Medical Department is reserving judgment on the uniqueness of her hearing. Assessors believe it is not absolute pitch in the traditional sense of the word, but an identification method based on perception and experience.\nIt must be noted that Akkord has never publicly discussed the specific relationship between her tags and the tagged subjects, and her notes contain no decipherable information.\nOn the whole, we do not believe there are significant risks associated with this habit at this time, though continued observation is recommended regarding why and how she uses this ability in special missions."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "The town's train station was always noisy at dusk. Miners chatting and laughing as they return from work, children chasing each other over the tracks, and the fires of smelters roaring in the distance. Tonia slowly pushed her old soundfield tuner through the crowd. It was a heavy machine with creaking gears that sounded like they could fall apart at any moment. She was headed towards the broadcasting speakers at the town square, which had become distorted by age and sounded like they had been put through sand and rubble.\nThe people in town were not particularly hostile to her, nor were they particularly friendly. She was one of those people who don't do 'real work'. To the townsfolk, a little bit of Arts was all that was needed if some facility in town broke down, and they were not entirely wrong. As such, they did not bother to ask Tonia for help most of the time.\n'Doesn't seem like her Arts got any better, even after she got infected.'\n'I heard her grades were pretty ordinary. Didn't inherit her father's musical talent, I guess.'\n'Then what's the point of getting infected—'\n'Shh, don't say that...'\nTonia pretended not to hear these comments around town. She simply inserted her tuner's pin into the speakers, and turned the knob to minimize the noise while listening. Slowly but steadily, she tuned the sound of wind, furnaces, and footsteps into the waveform, until the screechiness was gone, and the broadcast sounded nice and smooth again.\nOnly a few nearby miners seemed to notice that the ambient sounds had become more pleasant. They nodded but said nothing to Tonia, as if they were simply acknowledging something that was always supposed to happen. Tonia put away the machine and pushed it away. She knew she was neither a scholar nor a smith, and she would not leave any signature or adage on her work, like the ones on the plaques hung up in the town hall. Even in such a remote town, in the most ordinary workshop, the people only spoke of the strongest and most worthy to be remembered. However, Tonia heard the weak and strong sounds just the same. Even the tiniest tremolo could not escape her.\nTonia felt herself stripped from familiar society and systems, layer by layer—on the results board at school, in the soundfield accident that snowy night... Sometimes she felt she had gotten used to the things that happened to her. What other choice was there? But she was happy, for the soundfield in the square was now in harmony, and she saw a few fowlbeasts perch on the station's window sill, a sight she had not seen for a while.\n'How to get the musical Arts on the murals to resonate better with the cries of fowlbeasts... I should come back tomorrow and re-tune it.'\nTonia thought as she pushed the tuner on the way back."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "'Is this... music theory? Or some kind of performance instruction?'\nAt the operator's question, Akkord realized she had dropped her old notebook. The operator who picked it up was reading through it with admiration in her eyes. The cover of the notebook was so worn that it had become glossy, while the edges of the pages had curled up from frequent turning. Akkord felt a tinge of embarrassment, unsure whether to take the notebook back, or answer the question.\n'The wind swirling in the notches of the stone spires creates sounds that do not belong to the original tune. If they are not eliminated, they could spread through the town along the cracks of the spire.'\n'Music flowing through the seams of copper tubes may become sharpened due to contraction in the cold. Mixing in wooden harmonies will make it less piercing.'\n'In rainy season, the rhythms caused by water dripping at the old clock tower may distort the soundfield, requiring regular maintenance, or passages with a different texture to counterbalance it...'\nOnly a few wall lights remained on in the archives, casting their light on the paper. The operator read through the notebook carefully with curiosity: There was nothing like music theory or intricate formulae, but only casually written tips and guidelines, combining Arts knowledge and everyday experience.\n'Just some informal adjustment tricks. Nothing significant,' answered Akkord.\n'But these are really useful! They would be great teaching materials. Not that I know much about music, but I know you always use musical Arts in the right situations, without any clashing melodies...'\nTeaching materials? Akkord was not listening to the latter half of what the operator was saying. She was thinking that such teaching materials were unneeded in Leithanien, as there were no special Arts in the notes, nor would they be considered musical creations. On this ship, however, someone was reading them quietly under the lights, even treating them as genuine knowledge.\nAkkord recalled the nights in Zwillingstürme, how the nameless tuners restored the harmony of the city's soundfield. Now, on this behemoth far away from home, she realized that these experiences, which she thought nobody cared about, could at least make other tuners feel less lonely.\n'Can I try tuning the musical equipment in my room by following your notes?'\nThe sound coming from beside her pulled Akkord back from the city's music to the Rhodes Island archive room. She smiled bashfully and nodded. Perhaps, these experiences she thought nobody cared about would spread even beyond the tuners."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Audio Log]\n'...On the count of three, we'll start singing together.'\n'One, two, three—'\n'......'\n'Goodness, who just went up into the atmosphere?'\n'It wasn't me... Wait, maybe it was? Sorry, I always seem to lose the key when I'm nervous.'\n'Heh, I wish I brought earplugs!'\n'Stop laughing, you sang even worse than I did! You dragged me off-key!'\n'Alright, alright. None of you were especially in harmony just now.'\n'Yeah, I know we're tone-deaf, Akkord...'\n'I was talking about the hesitation in your voices. Try think it this way: When you're out of tune, you're just in different positions. Some go up, some go down, some go here, some go there. And that's what gives a song its range, right?'\n'The audience must see us as a flock of squawking fowlbeasts.'\n'Fowlbeasts seem so in harmony when they're together, don't they? I don't think they discuss how to sing beforehand, or care about how others want them to sing. They just sing the way they want.'\n'Is it really the same thing?'\n'Of course.'\n'......'\n'How do you want us to sing, then, Akkord? We're performing in front of the whole ship in one hour.'\n'Sing what you can. It's my job to get these different voices in different positions together in the same place without stepping on each other's toes.'\n'Isn't that... cheating?'\n'No, I'm simply reigning in stray sounds and getting them to walk together. You have a bright soprano, but you're too scared to let it come out. You, you have a solid bass like a rock. No need to be scared, I'll catch it. As for you, you have a beautiful tone, and you're the one who put your heart and soul into these lyrics. All you need to do is sing what you want to express.'\n'Are you really talking about us, Akkord? You make it sound as though... all of us could be useful.'\n'Not just useful. Indispensable. You all enjoyed the process of writing the song, didn't you? You stand here now because you love it. All you need to do is sing what you love. Besides, Maestro Czerny wrote this song for you to sing together.'\n'What if it still sounds bad?'\n'All the more reason to sing out loud, so that no one can ignore how bad it sounds. Of course, I'll probably have to go with you to beg for permission to hold another event...'\n'Haha... alright, let's try again?'\n'Let's try again. All you need to do is open your mouths. Leave the rest to me.'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Tonia rarely participated in her class's creative showcases while at school. Her notebooks were filled with strange symbols, arrows, and overlapping waveforms, but rarely complete melodies. Her classmates used instruments or song to create musical Arts, but she preferred a little audio recorder, carrying it through streets, markets, and old workshops, collecting those authentic sounds around her—the knocking of hammer on metal, the low humming of winds gliding past the eaves on a snowy night, or the screeching sound of trains braking as sparks fly. She broke the sounds down into fundamental vibrations, and attempted to recreate their texture and temperature with Arts. To most of her peers and teachers, it was an act of documentation, not creation, a mosaic lacking in soul. Tonia never argued. All she did was put away her device and walk down from the stage after each showcase with her head bowed, through scattered applause and silent skepticism from the crowd.\nYears later, Tonia was in the Rhodes Island workshop, testing a piece of audio equipment. She knocked it lightly with a tuning fork, listening to the echoes bounce inside the casing. The monitor next to it flashed; the curved line on the screen fluctuated. In a split second, it looked just like the waves she wrote in her notebook in her youth.\nTonia gazed upon the curved line. Her fingertip stayed on the knob, as though trying to capture a familiar feeling—neither melody nor rhythm, but a position that gave her certainty that the sound belonged to her. The equipment hummed, and she bowed her head again to record the sound in her recorder. Tonia was not sure what she could eventually do with the collected sounds, but was in no hurry to answer the question."
+    }
+  ]
+}

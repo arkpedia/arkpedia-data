@@ -1,0 +1,747 @@
+{
+  "name": "Sussurro",
+  "rarity": 4,
+  "class": "Medic",
+  "branch": "Medic",
+  "faction": "Rhodes Island",
+  "umbrellaFactions": [],
+  "connectedFactions": [
+    "Siracusa"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing"
+  ],
+  "trait": "Restores the HP of allies",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Summer Flower FA026",
+    "Travel Freely"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_298_susuro",
+  "otherLanguages": {
+    "Simplified Chinese": "苏苏洛",
+    "Traditional Chinese": "蘇蘇洛",
+    "Japanese": "ススーロ",
+    "Korean": "수수로"
+  },
+  "characterInfo": {
+    "File no.": "R107",
+    "Operator Record": "Professional Doctor",
+    "Paradox Simulation": "First Aid",
+    "Illustrator": "将",
+    "Release Date": "2020/04/29",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Haruka Terui",
+    "Chinese": "Yue Xin",
+    "English": "Cassandra Lee Morris",
+    "Korean": "Seo Yu-ri"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "1 year",
+    "Place of Birth": "Siracusa",
+    "Date of Birth": "September 4th",
+    "Race": "Vulpo",
+    "Height": "142 cm",
+    "Infection Status": "Crystals have appeared on her body. Infection confirmed by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Minimally Invasive Surgery",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Increases healing effects by 10% on all Operators with DP Cost no more than 10 when Sussurro is in the squad"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Increases healing effects by 13% (+3%) on all Operators with DP Cost no more than 10 when Sussurro is in the squad"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Increases healing effects by 20% on all Operators with DP Cost no more than 10 when Sussurro is in the squad"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Increases healing effects by 23% (+3%) on all Operators with DP Cost no more than 10 when Sussurro is in the squad"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +23"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Minimally Invasive Surgery"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Sussurro's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Minimally Invasive Surgery .",
+        "New skill: Deep Healing .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Sussurro to Level 45.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 15000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 3
+        },
+        {
+          "name": "Device",
+          "quantity": 1
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Minimally Invasive Surgery improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Sussurro to Elite 1 Level 60.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 60000
+        },
+        {
+          "name": "Medic Chip Pack",
+          "quantity": 5
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 10
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 13
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Healing Up β",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +15%",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +20%",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +25%",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +30%",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 25
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +35%",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 25
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +40%",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +50%",
+            "initialSp": 10,
+            "spCost": 32,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +55%",
+            "initialSp": 10,
+            "spCost": 32,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +60%",
+            "initialSp": 10,
+            "spCost": 32,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +70%",
+            "initialSp": 10,
+            "spCost": 30,
+            "duration": 25
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 1
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 2
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 2
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 2
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Deep Healing",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20–30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +40% , ASPD +40 Can be used up to twice in one battle",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +45% , ASPD +45 Can be used up to twice in one battle",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": 21
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +50% , ASPD +50 Can be used up to twice in one battle",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": 22
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +55% , ASPD +55 Can be used up to twice in one battle",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": 25
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +60% , ASPD +60 Can be used up to twice in one battle",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": 26
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +65% , ASPD +65 Can be used up to twice in one battle",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": 27
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +70% , ASPD +70 Can be used up to twice in one battle",
+            "initialSp": 0,
+            "spCost": 19,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +80% , ASPD +80 Can be used up to twice in one battle",
+            "initialSp": 0,
+            "spCost": 18,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +90% , ASPD +90 Can be used up to twice in one battle",
+            "initialSp": 0,
+            "spCost": 17,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +100% , ASPD +100 Can be used up to twice in one battle",
+            "initialSp": 0,
+            "spCost": 15,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 1
+            },
+            {
+              "name": "Aketon",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 2
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 3
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 2
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Medic Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Medic Operators' Specialization training speed +30%"
+    },
+    {
+      "name": "Pharmacology β",
+      "facility": "Workshop",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to the Workshop to process elite material , the production rate of byproduct increases by 80%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Sussurro's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "PHY-X: ...Who Heals Not Herself",
+      "mission": {
+        "requirement1": "During battle, have Sussurro use Deep Healing a total of 6 times (excluding Support Units)",
+        "requirement2": "Clear Main Theme 4-7 with a 3-star rating; The only Medic Operator that can be deployed is your own Sussurro"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +50 , ASPD +3",
+          "effectLabel": "New trait",
+          "effectText": "When healing allied units with less than 50% HP, increases heal amount by 15%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Compound Cutting Fluid",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 20000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +80 , ASPD +4",
+          "effectLabel": "Minimally Invasive Surgery improved",
+          "effectText": "Increases healing effects by 23% on all Operators with DP Cost no more than 10 when Sussurro is in the squad",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 15
+            },
+            {
+              "name": "Aketon",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 30000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +100 , ASPD +5",
+          "effectLabel": "Minimally Invasive Surgery improved",
+          "effectText": "Increases healing effects by 25% on all Operators with DP Cost no more than 10 when Sussurro is in the squad",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 5
+            },
+            {
+              "name": "Incandescent Alloy",
+              "quantity": 6
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Sussurro is a graduate of the\nSiracusa\n-Palermo Medical Academy. She has a sufficient level of knowledge in basic medical care.\nShe is now a\nmedic\nat\nRhodes Island\nand is a respected member of the headquarters' logistics system.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 45,
+        "base": {
+          "hp": 725,
+          "atk": 173,
+          "def": 53,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 994,
+          "atk": 284,
+          "def": 77,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 60,
+        "base": {
+          "hp": 994,
+          "atk": 284,
+          "def": 77,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1170,
+          "atk": 395,
+          "def": 97,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1170,
+          "atk": 395,
+          "def": 97,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1345,
+          "atk": 488,
+          "def": 122,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-3"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 60,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests have shown the outlines of her internal organs to be indistinct due to abnormal shadows. Originium granules have been detected in her circulatory system, confirming her to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 2%\nPatient's oripathy is mild and currently shows no indications of spreading.\n\n[Blood Originium-Crystal Density] 0.3u/L\nPatient's disease is under control."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Sussurro was born to an ordinary family in a large city in Siracusa. Her parents were ordinary citizens who worked in local public institutions. They had two sons and two daughters. Sussurro was their third child.\nAlthough Sussurro's parents wanted her to be a quiet, obedient child, she did not respond positively to these expectations. Sometimes this was to help her younger sister get back snacks her brothers had stolen, and sometimes this was to help her sister get a hold of a toy she couldn't have. Since her childhood, Sussurro has developed a personality that takes initiative.\nSussurro's two older brothers have already grown up and have gone into business. Her younger sister is studying in kindergarten. Sussurro herself chose to study medicine. She did not do so out of any grand ambition or dream, but because the medical industry in Siracusa holds promise and is a good field to work in."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Sussurro's life as a medical student was uneventful. She busied herself preparing for exams and participating in experiments. Her small figure was often bouncing between the different buildings on campus, and her short stature notwithstanding, all of her abilities steadily progressed.\nLuckily for Sussurro, she got to make a solid group of friends between classes and maintained good relationships with some older students. These medical students all embraced the same dreams, confronted the same challenges, and worked towards the future together. With everyone's help and encouragement, Sussurro managed to press on through the long, dull days in her time as a medical student.\nThough Sussurro originally had no aspirations of her own, through making friends with all kinds of people, she gradually came to understand the reasoning behind their choices. Whether it was to secure a job with a stable salary and life environment, out of a genuine desire to help others, or just out of pure interest in biology, Sussurro found their aspirations infectious. She liked everyone who had a dream and worked hard to fulfill it, and at the same time, her own thinking became clear:\nDoes becoming a doctor hold any special meaning for me?"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "When the oripathy crisis gradually worsened throughout every major city, people were forced to confront an all-new and unknown illness. Now, both public and private hospitals were packed with patients, and medical resources became strained. Sussurro's clinical instructor as well as her seniors all participated in efforts to combat the disease.\nFaced with a notice that all major hospitals were recruiting medical students to act as volunteers, Sussurro did not think twice about signing up. It was at this moment that she felt she was finally a medical student, and she found genuine purpose."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Sussurro did not think about the fact that she had become infected by volunteering to participate in the treatment of the infected. Even when three days had passed since she herself had been transformed from doctor to infected, she did not feel anything. Everything just seemed to happen so suddenly.\nIt wasn't until she witnessed a patient be declared untreatable and get sent to the intensive care unit with a blank stare that she made the connection between herself and the situation at hand."
+    }
+  ]
+}

@@ -1,0 +1,729 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "story",
+    "id": "main_0",
+    "label": "EP 00",
+    "name": "Evil Time Part 1",
+    "release_date": "2020-01-16"
+  },
+  "enemies": [
+    {
+      "slug": "hound",
+      "id": "enemy_1000_gopro",
+      "name": "Hound",
+      "index": "O1",
+      "rank": "Normal",
+      "sort": 8,
+      "hidden": false,
+      "icon": "/enemies-icons/Hound.webp",
+      "flavour_text": "A creature controlled by a Reunion recon squad. Monitoring equipment is strapped to its body. Due to their speed and evasiveness, they can easily slip through enemy defenses and cause heavy damage.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 820,
+            "atk": 190,
+            "def": 0,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.4,
+            "attack_speed": 100.0,
+            "move_speed": 1.9,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "S+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 2350,
+            "atk": 400,
+            "def": 190,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.4,
+            "attack_speed": 100.0,
+            "move_speed": 1.9,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "C",
+            "def": "D",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "S+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "soldier",
+      "id": "enemy_1002_nsabr",
+      "name": "Soldier",
+      "index": "1",
+      "rank": "Normal",
+      "sort": 11,
+      "hidden": false,
+      "icon": "/enemies-icons/Soldier.webp",
+      "flavour_text": "One of Reunion's basic melee soldiers. Equipped with illegally obtained weapons and armor, they wear masks to conceal their identities during operations.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1650,
+            "atk": 200,
+            "def": 100,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.1,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "D",
+            "def": "D",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 2750,
+            "atk": 300,
+            "def": 130,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.1,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "C",
+            "def": "D",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "monster",
+      "id": "enemy_1005_yokai",
+      "name": "Monster",
+      "index": "D1",
+      "rank": "Normal",
+      "sort": 34,
+      "hidden": false,
+      "icon": "/enemies-icons/Monster.webp",
+      "flavour_text": "An unmanned enemy drone, called 'Monster' by Reunion forces. Equipped with a long-range Arts receiver, they are likely operated by concealed Casters. Though unlikely to cause heavy damage to armored Operators, they can still pose a considerable threat.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 800,
+            "atk": 0,
+            "def": 50,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.3,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 1870,
+            "atk": 0,
+            "def": 50,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.3,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "originium_slug_enemy_1007_slime",
+      "id": "enemy_1007_slime",
+      "name": "Originium Slug",
+      "index": "B1",
+      "rank": "Normal",
+      "sort": 1,
+      "hidden": false,
+      "icon": "/enemies-icons/Originium Slug.webp",
+      "flavour_text": "An infected wild creature. Due to their low intelligence, they are easily controlled by enemy casters for use as cannon fodder during invasions.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 550,
+            "atk": 130,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 2050,
+            "atk": 300,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "C",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "originium_slug_enemy_1007_slime_2",
+      "id": "enemy_1007_slime_2",
+      "name": "Originium Slug α",
+      "index": "B2",
+      "rank": "Normal",
+      "sort": 2,
+      "hidden": false,
+      "icon": "/enemies-icons/Originium Slug α.webp",
+      "flavour_text": "An infected wild creature that is more dangerous than a normal Originium Slug. Due to their low intelligence, they are easily controlled by enemy casters for use as cannon fodder during invasions.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1050,
+            "atk": 185,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 2850,
+            "atk": 400,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "C",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "originium_slug_enemy_1007_slime_3",
+      "id": "enemy_1007_slime_3",
+      "name": "Originium Slug β",
+      "index": "B3",
+      "rank": "Normal",
+      "sort": 3,
+      "hidden": false,
+      "icon": "/enemies-icons/Originium Slug β.webp",
+      "flavour_text": "An infected wild creature that is more dangerous than an Originium Slug α. Due to their low intelligence, they are easily controlled by enemy casters for use as cannon fodder during invasions.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1550,
+            "atk": 240,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "D",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "dual_swordsman",
+      "id": "enemy_1014_rogue",
+      "name": "Dual Swordsman",
+      "index": "4",
+      "rank": "Normal",
+      "sort": 22,
+      "hidden": false,
+      "icon": "/enemies-icons/Dual Swordsman.webp",
+      "flavour_text": "One of Reunion's melee soldiers. Trained in dual-wielding, it is likely that these fighters once served in the military. Their combat expertise makes them harder to deal with than the average rioter.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 2000,
+            "atk": 350,
+            "def": 100,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.2,
+            "attack_speed": 100.0,
+            "move_speed": 1.1,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "C",
+            "def": "D",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 1950,
+            "atk": 310,
+            "def": 150,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.2,
+            "attack_speed": 100.0,
+            "move_speed": 1.1,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "C",
+            "def": "D",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "rioter",
+      "id": "enemy_1027_mob",
+      "name": "Rioter",
+      "index": "17",
+      "rank": "Normal",
+      "sort": 53,
+      "hidden": false,
+      "icon": "/enemies-icons/Rioter.webp",
+      "flavour_text": "An enemy combatant of unknown identity. They are often found wherever there is turmoil and unrest. They wear a face mask to conceal their identity and use haphazardly-made weapons to engage in melee combat.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1700,
+            "atk": 250,
+            "def": 50,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.1,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "D",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "shielded_soldier",
+      "id": "enemy_1029_shdsbr",
+      "name": "Shielded Soldier",
+      "index": "19",
+      "rank": "Normal",
+      "sort": 57,
+      "hidden": false,
+      "icon": "/enemies-icons/Shielded Soldier.webp",
+      "flavour_text": "One of Reunion's melee soldiers. Equipped with illegally obtained weapons and armor, they additionally bear a shield. They are slightly harder to take down than a regular Reunion foot soldier.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 2050,
+            "atk": 240,
+            "def": 250,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "D",
+            "def": "C",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "junkman",
+      "id": "enemy_1030_wteeth",
+      "name": "Junkman",
+      "index": "21",
+      "rank": "Normal",
+      "sort": 59,
+      "hidden": false,
+      "icon": "/enemies-icons/Junkman.webp",
+      "flavour_text": "A ragged-looking enemy combatant. According to intel, they disguise themselves as drifters to conceal the fact that they are mercenaries. Though their background is unknown, their fierce attacks require them to be dealt with cautiously.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 500,
+            "def": 50,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B",
+            "def": "E",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

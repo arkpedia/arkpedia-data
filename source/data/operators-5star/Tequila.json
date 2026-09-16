@@ -1,0 +1,762 @@
+{
+  "name": "Tequila",
+  "rarity": 5,
+  "class": "Guard",
+  "branch": "Liberator",
+  "faction": "Bolívar",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Nuker"
+  ],
+  "trait": "Normally does not attack and has 0 Block; When skill is inactive, ATK gradually increases up to +200% over 40 seconds. ATK is reset when the skill ends",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Dossoles Holiday"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Cardwinner",
+    "Top Tier Live"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_486_takila",
+  "otherLanguages": {
+    "Simplified Chinese": "龙舌兰",
+    "Traditional Chinese": "龍舌蘭",
+    "Japanese": "テキーラ",
+    "Korean": "테킬라"
+  },
+  "characterInfo": {
+    "File no.": "BV12",
+    "Operator Record": "Taste of Thorns",
+    "Paradox Simulation": "Beach Vacation",
+    "Illustrator": "一千",
+    "Release Date": "2022/01/14",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Nobunaga Shimazaki",
+    "Chinese": "Zhengwu Wenjie (credited as \"Javen Zheng\" in EN)",
+    "English": "Diego Becerril",
+    "Korean": "Kim Sin-woo"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "3 years",
+    "Place of Birth": "Bolívar",
+    "Date of Birth": "May 15th",
+    "Race": "Perro",
+    "Height": "182 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Waiting Game",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When skill is inactive, deal 10% of Tequila's ATK as Arts damage to the attacker when Tequila is attacked"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When skill is inactive, deal 13% (+3%) of Tequila's ATK as Arts damage to the attacker when Tequila is attacked"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When skill is inactive, deal 20% of Tequila's ATK as Arts damage to the attacker when Tequila is attacked"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When skill is inactive, deal 23% (+3%) of Tequila's ATK as Arts damage to the attacker when Tequila is attacked"
+        }
+      ],
+      "technique": [
+        {
+          "name": "Reflection Damage",
+          "description": "Able to reflect damage onto enemies (especially ranged)"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Waiting Game"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Tequila's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Waiting Game .",
+        "New skill: Esoteric Bladework ."
+      ],
+      "prerequisite": "Raise Tequila to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Block +1 .",
+        "Waiting Game improved."
+      ],
+      "prerequisite": "Raise Tequila to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Guard Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Optimized Device",
+          "quantity": 5
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 11
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Decisive Action",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ASPD +20 and every attack deals 120% of ATK as Physical damage",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ASPD +23 and every attack deals 125% of ATK as Physical damage",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ASPD +26 and every attack deals 130% of ATK as Physical damage",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ASPD +29 and every attack deals 135% of ATK as Physical damage",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ASPD +32 and every attack deals 140% of ATK as Physical damage",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ASPD +35 and every attack deals 145% of ATK as Physical damage",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ASPD +38 and every attack deals 150% of ATK as Physical damage",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ASPD +42 and every attack deals 155% of ATK as Physical damage",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ASPD +46 and every attack deals 160% of ATK as Physical damage",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ASPD +50 and every attack deals 170% of ATK as Physical damage",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 3
+            },
+            {
+              "name": "Aketon",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Esoteric Bladework",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 140% of ATK as Physical damage. Charged effect: Changes to attacking 3 enemies simultaneously and skill duration is extended to 30 seconds Can manually deactivate skill (skill can be deactivated at will)",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 150% of ATK as Physical damage. Charged effect: Changes to attacking 3 enemies simultaneously and skill duration is extended to 30 seconds Can manually deactivate skill (skill can be deactivated at will)",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 160% of ATK as Physical damage. Charged effect: Changes to attacking 3 enemies simultaneously and skill duration is extended to 30 seconds Can manually deactivate skill (skill can be deactivated at will)",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 170% of ATK as Physical damage. Charged effect: Changes to attacking 3 enemies simultaneously and skill duration is extended to 30 seconds Can manually deactivate skill (skill can be deactivated at will)",
+            "initialSp": 5,
+            "spCost": 25,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 180% of ATK as Physical damage. Charged effect: Changes to attacking 3 enemies simultaneously and skill duration is extended to 30 seconds Can manually deactivate skill (skill can be deactivated at will)",
+            "initialSp": 5,
+            "spCost": 25,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 190% of ATK as Physical damage. Charged effect: Changes to attacking 3 enemies simultaneously and skill duration is extended to 30 seconds Can manually deactivate skill (skill can be deactivated at will)",
+            "initialSp": 5,
+            "spCost": 25,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 200% of ATK as Physical damage. Charged effect: Changes to attacking 3 enemies simultaneously and skill duration is extended to 30 seconds Can manually deactivate skill (skill can be deactivated at will)",
+            "initialSp": 10,
+            "spCost": 20,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 210% of ATK as Physical damage. Charged effect: Changes to attacking 3 enemies simultaneously and skill duration is extended to 30 seconds Can manually deactivate skill (skill can be deactivated at will)",
+            "initialSp": 10,
+            "spCost": 20,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 220% of ATK as Physical damage. Charged effect: Changes to attacking 3 enemies simultaneously and skill duration is extended to 30 seconds Can manually deactivate skill (skill can be deactivated at will)",
+            "initialSp": 12,
+            "spCost": 20,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 230% of ATK as Physical damage. Charged effect: Changes to attacking 3 enemies simultaneously and skill duration is extended to 30 seconds Can manually deactivate skill (skill can be deactivated at will)",
+            "initialSp": 12,
+            "spCost": 20,
+            "duration": 15
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 3
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Investment α",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, if the amount of Pure Gold traded is higher than 3 (Defaulted trades do not count), increase the LMD gained by +250 , and Morale consumed per hour is reduced by -0.25"
+    },
+    {
+      "name": "Investment βReplacesInvestment α",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, if the amount of Pure Gold traded is higher than 3 (Defaulted trades do not count), increase the LMD gained by +500 , and Morale consumed per hour is reduced by -0.25"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Tequila's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "LIB-X: Two Faces",
+      "mission": {
+        "requirement1": "During battle, have your own Tequila defeat at least 30 enemies",
+        "requirement2": "Clear Main Theme 7-11 with a 3-star rating; You must deploy your own Tequila and have him use Esoteric Bladework 2 times"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +178 , ATK +13 , DEF +13",
+          "effectLabel": "New trait",
+          "effectText": "Directly gains +100% charge after deployment",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +215 , ATK +19 , DEF +19",
+          "effectLabel": "Waiting Game improved",
+          "effectText": "When skill is inactive, deal 25% of Tequila's ATK as Arts damage to the attacker when Tequila or the unit behind is attacked",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +260 , ATK +25 , DEF +25",
+          "effectLabel": "Waiting Game improved",
+          "effectText": "When skill is inactive, deal 35% of Tequila's ATK as Arts damage to the attacker when Tequila or the unit behind is attacked",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "The former deputy director of the International Trade Management Department of\nDossoles\n, real name Ernesto Salas, was dismissed during\nthe riots in Dossoles City\n. After that, he was recommended to\nRhodes Island\nby Operator\nCh'en\n, and joined after passing the test.\nHe was taken to Rhodes Island by a person who had clashed with him just a few days prior. Even in the face of such an embarrassing situation, he still behaved as if nothing had happened, maintaining a friendly and jovial social atmosphere along the way. Truly,\nOperator\nTequila is a rare diplomatic talent fitting for one who serves the Mayor of Dossoles.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1871,
+          "atk": 137,
+          "def": 238,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 11,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2463,
+          "atk": 197,
+          "def": 331,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 11,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-2"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 2463,
+          "atk": 197,
+          "def": 331,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 13,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 3118,
+          "atk": 256,
+          "def": 425,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 13,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-2"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 3118,
+          "atk": 256,
+          "def": 425,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 13,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 3757,
+          "atk": 302,
+          "def": 501,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 13,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "1-2"
+      }
+    ],
+    "trust": {
+      "hp": 230,
+      "atk": 50,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Tequila shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.15 u/L\nOperator Tequila frequently comes in contact with Originium... or something related to Originium, and this may be related to his prior job. There is a certain risk of infection, and will require careful follow-up observations.\n\n\n'The way this one tries to fool his way through everything with a smile makes me concerned for his safety. In every way a person can be, he is very unsafe.'\n—Sussurro"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "After arriving at Rhodes Island, Operator Tequila seemed to adapt to his new lifestyle quickly and easily.\nLeveraging his excellent interpersonal skills, he can insert himself into any conversation without breaking the flow, and is able to communicate smoothly and amicably with everyone. Operator Tequila even mediated in some disputes, to remarkable results. He always uses a disarming attitude, cleverly proposing solutions that are amenable to everyone.\nHis outstanding communication abilities seem innate and do not seem to burden him. Some operators compared Tequila to other operators who are good communicators and were surprised to find that Operator Tequila always seems to have a hearty smile and a friendly attitude. Nobody seems to have ever seen Operator Tequila display any negative emotions.\nHowever, there is no such thing as a person who never experiences negative emotions, and some of the operators who've been in contact with him are persistently worried about this."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "The young Perro named Ernesto Salas was born into a military family in Bolívar. His father, Pancho Salas, joined the 'True Bolívarians' local resistance force because of his patriotic ideals, leaving behind his wife and his son.\nDuring the long years during which his father never came home, fighting for Bolívar's independence, Mrs. Salas suffered from a vicious illness that claimed her life after a prolonged struggle that almost lasted a year, leaving the young Ernesto alone. It was not until Ernesto had finished taking care of his mother's funeral that Pancho Salas suddenly appeared at his doorstep.\nAfter that, his father took Ernesto away from his hometown and followed the army through Bolívar. He was sent to join a True Bolívarians prep team, receiving professional military training along with a group of similarly-aged youths. After suffering defeat on the battlefield eight years ago, the old soldier brought Ernesto and Rafaela to Dossoles after three years of drifting and laid dormant within the city, hoping to stage a comeback.\nCompared to Operator La Pluma, who is more pure-hearted, Ernesto has a substantially deeper and more complex view on many things. His five years of living in Dossoles allowed the young man to fully integrate into the city, and the ideas of indulging in freedom and the supremacy of hedonism have had a profound influence upon him. His experiences working under the Mayor have undoubtedly changed his viewpoints regarding various matters."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Operator Tequila quickly accomplished two things at Rhodes Island:\nFirst, he improved the wine-tasting ability of many operators. In his spare time, he occasionally appears in the bar to introduce various wines to the other operators, finding something suiting their tastes. When a bartender is present, his sister La Pluma in particular, he demonstrates his knowledge of mixed drinks as well and introduces them to other patrons. After all, it is well known that though La Pluma is an excellent bartender, she seldom takes the initiative to talk.\nSecond, after joining Rhodes Island, he found that the company does not object to operators maintaining their own interests outside of work, and as such, he planned to continue operating his weapons shop on the ship — unlike the situation in Dossoles, the mobility of the Rhodes Island landship makes it easier to purchase high-quality equipment from various places. In front of the operators who come to his doorstep as customers, Tequila provides serious recommendations to each guest depending on their actual circumstances and needs. Furthermore, Tequila seems to have made significant inroads with the skilled craftspeople of Rhodes Island, and perhaps the modification and customization of weapons will soon be on the agenda.\n\nFrom the two things above, Operator Tequila clearly demonstrated an adept and ingenious ability to leverage his social skills, bringing his entrepreneurial temperament along with him, well-deserving of his former job as the deputy director of the Dossoles International Trade Management Department.\nHowever, there are certain individuals in Rhodes Island who he struggles to get along with, and Dobermann, an operator from Bolívar, is one such individual. The atmosphere between Tequila and Dobermann was rather tense when they first met. However, Dobermann, who hailed from the same country as him, had more convoluted experiences there than he did, and had a more profound understanding of Bolívar, ironically may have understood Tequila, who hides all kinds of complex thoughts behind a smile, better than anyone else at Rhodes Island. In fact, Dobermann easily saw through his facade and came to regard him as a young man from the same motherland, worthy of nurturing, and keeps a close eye on him. This makes Dobermann one of the few people who can make Tequila visibly squirm."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Classified Log]\nRegarding the events that occurred during the Dossoles championship, Operator Ch'en has already briefly explained the causes and consequences to us in a report, specifically mentioning why she would recommend Tequila and Rafaela to Rhodes Island.\nPancho Salas's long-planned plot fell short, and he will spend a long time in prison as a result. However, Mayor Candela Sanchez saw the championship as a great boon for viewership, and as a result, granted amnesty to all the people participating in the plot with the exception of Pancho, instead removing them from their posts and exiling them, an irony not lost upon us.\nThe siblings, Tequila and La Pluma, were faced with an uncertain future, and Operator Ch'en, after great deliberation, finally decided to recommend the two of them to Rhodes Island. Ch'en believed that she was in no position to pass judgment on Tequila's actions, and also recognized that Tequila was undergoing his own internal struggle. As such, she gave Ernesto the option of trying to apply to Rhodes Island through the newly-established regional branch in Dossoles. In the end, Tequila and La Pluma came to Rhodes Island together.\nWhat must be noted is that if Ernest was the type of person who could disregard the lives of civilians in order to further his own ends, Rhodes Island absolutely would have turned him down.\nHowever, we can rely on Ch'en's pieced-together account of the incident to understand some of Ernesto's thought process. Old Pancho's plan was very difficult to execute, and in order to enable him to smoothly coordinate with the available outside forces, Ernesto, who was in placed in charge of directing the operation, had to attract the attention of the Mayor as well as that of other unexpected players. He had to instigate a certain degree of panic within Dossoles, and also needed to apply sufficient psychological duress on Mayor Candela. To accomplish these ends, Ernesto commanded his subordinates to place a considerable amount of explosives in residential areas... Ch'en's views on these actions are as follows: At that time, the residential area had been temporarily expropriated due to the championship being held, and all residents had been evacuated before the games. In theory, that area would've been the least populated place in Dossoles during that time.\nOf course, this is not to say that Ernesto's guilt should be lessened in any capacity, nor is this to defend him. However, after taking stock of the situation after the fact, we can at least make a definite conclusion:\nErnesto Salas was not interested in creating a moving heap of rubble. Nor did he want corpses strewn everywhere.\nPerhaps as a result of the wars he had seen in his youth and his knowledge of their cruelty, Ernesto did not want to become like the armies in his memories, treating corpses and destruction as trophies to be shown off."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "The personality that we observed in this young man is not quite as sunny and hearty as the side he displays. We were able to discover this without much difficulty when he didn't try to cover it up from us too much.\nOperator Tequila thinks about both his own experiences and also the experiences of the people around him to a great extent, and to be able to maintain this is rare indeed. Obviously, Ernesto disagrees with some of Old Pancho's ideas, but nevertheless, chose to aid his father throughout the Dossoles incident.\nAs for Ernesto Salas, the turmoil of Dossoles and the failure of Pancho Salas was a turning point that helped him make up his mind. Now, the youth have convinced themselves that they've freed themselves from the will and control of the previous generation, and are determined to pave their own way.\nThis way may branch off in a completely different direction than the last generation, but Ernesto has always admitted that he belongs to Bolívar and will likely return there in the future. If there are more young people like him, the situation in Bolívar may experience new change as well.\nThis young man is trying to grasp his own destiny, and we are keenly interested in seeing where this leads him."
+    }
+  ]
+}

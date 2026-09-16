@@ -1,0 +1,761 @@
+{
+  "name": "Nearl",
+  "rarity": 5,
+  "class": "Defender",
+  "branch": "Guardian",
+  "faction": "Followers",
+  "umbrellaFactions": [],
+  "connectedFactions": [
+    "Kazimierz",
+    "Rhodes Island"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Defense",
+    "Healing"
+  ],
+  "trait": "Can heal allies by using the skill",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": "Nearl the Radiant Knight",
+  "skins": [
+    "Shining Dew SD01"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_148_nearl",
+  "otherLanguages": {
+    "Simplified Chinese": "临光",
+    "Traditional Chinese": "臨光",
+    "Japanese": "ニアール",
+    "Korean": "니어"
+  },
+  "characterInfo": {
+    "File no.": "FO02",
+    "Illustrator": "竜崎いち",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Ayane Sakura",
+    "Chinese": "Xueting Mu",
+    "English": "Devora Wilde",
+    "Korean": "Kim Ye-rim"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "5 years",
+    "Place of Birth": "Kazimierz",
+    "Date of Birth": "April 23rd",
+    "Race": "Kuranta",
+    "Height": "171 cm",
+    "Infection Status": "Infection confirmed by medical report."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Excellent",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Healing Boost",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Nearl's healing effect increases by 10%"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Nearl's healing effect increases by 12% (+2%)"
+        }
+      ]
+    },
+    {
+      "name": "Pegasus's HaloReplacesHealing Boost",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Increases the healing effect received by all allies in battlefield by 10% when deployed"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Increases the healing effect received by all allies in battlefield by 12% (+2%) when deployed"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DEF +25"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Healing Boost/Pegasus's Halo"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Nearl's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Block +1 .",
+        "New talent: Healing Boost .",
+        "New skill: First Aid Mode ."
+      ],
+      "prerequisite": "Raise Nearl to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Healing Boost becomes Pegasus's Halo .",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Nearl to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "White Horse Kohl",
+          "quantity": 9
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 16
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "First Aid",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 110% of Nearl's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 115% of Nearl's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 120% of Nearl's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 130% of Nearl's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 135% of Nearl's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 140% of Nearl's ATK in the next attack Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 150% of Nearl's ATK in the next attack Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 160% of Nearl's ATK in the next attack Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 170% of Nearl's ATK in the next attack Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Restores the HP of nearby ally with less than 50% HP by 180% of Nearl's ATK in the next attack Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "First Aid Mode",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "40 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +20% ; Stops attacking and focuses on healing surrounding allies",
+            "initialSp": 20,
+            "spCost": 60,
+            "duration": 40
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +25% ; Stops attacking and focuses on healing surrounding allies",
+            "initialSp": 20,
+            "spCost": 59,
+            "duration": 40
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +30% ; Stops attacking and focuses on healing surrounding allies",
+            "initialSp": 20,
+            "spCost": 58,
+            "duration": 40
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +35% ; Stops attacking and focuses on healing surrounding allies",
+            "initialSp": 25,
+            "spCost": 55,
+            "duration": 40
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +40% ; Stops attacking and focuses on healing surrounding allies",
+            "initialSp": 25,
+            "spCost": 54,
+            "duration": 40
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +45% ; Stops attacking and focuses on healing surrounding allies",
+            "initialSp": 25,
+            "spCost": 53,
+            "duration": 40
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +50% ; Stops attacking and focuses on healing surrounding allies",
+            "initialSp": 30,
+            "spCost": 52,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +60% ; Stops attacking and focuses on healing surrounding allies",
+            "initialSp": 30,
+            "spCost": 50,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +70% ; Stops attacking and focuses on healing surrounding allies",
+            "initialSp": 30,
+            "spCost": 45,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +80% ; Stops attacking and focuses on healing surrounding allies",
+            "initialSp": 30,
+            "spCost": 40,
+            "duration": 40
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Sugar Pack",
+              "quantity": 1
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 2
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 5
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar Pack",
+          "quantity": 3
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Capable Assistance",
+      "facility": "Control Center",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by +0.05 per hour."
+    },
+    {
+      "name": "Followers",
+      "facility": "Dormitory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Dormitory, restores +0.5 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour +0.25"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Nearl's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "GUA-X: Improved Knight Shield",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Nearl, and unleash First Aid Mode at least 1 time in each battle",
+        "requirement2": "Clear Main Theme 1-12 with a 3-star rating; You must deploy your own Nearl, and allow no Operators to be defeated"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +130 , ATK +40",
+          "effectLabel": "New trait",
+          "effectText": "When healing allied units with less than 50% HP, increases heal amount by 15%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +230 , ATK +50",
+          "effectLabel": "Pegasus's Halo improved",
+          "effectText": "When deployed, all allies receive 13% more healing",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +300 , ATK +60",
+          "effectLabel": "Pegasus's Halo improved",
+          "effectText": "When deployed, all allies receive 15% more healing",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Nearl, once known as the\nRadiant Knight\nof\nKazimierz\n, is a member of the\nInfected\nsupport group, \"Followers\". She has demonstrated remarkable combat techniques and military discipline, whether it's covering allies, mobile warfare, all-out assault or field battle.\nCurrently a heavy-weapon\nOperator\nfor\nRhodes Island\nand provides command and combat support in person.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1154,
+          "atk": 191,
+          "def": 240,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1560,
+          "atk": 273,
+          "def": 353,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1560,
+          "atk": 273,
+          "def": 353,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2001,
+          "atk": 369,
+          "def": 471,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2001,
+          "atk": 369,
+          "def": 471,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2780,
+          "atk": 462,
+          "def": 575,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 40,
+      "def": 50
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Don't worry, the Medical Department will monitor Nearl's physical condition. Records are available for review if necessary.\n—Medic Operator Shining"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Nearl's title as the Radiant Knight is more than just a title, or even an accolade earned for her noble character and mighty prowess. \nThe title relates directly to her Originium Arts. Her warhammer also doubles as her staff. She is known to radiate light when she uses her Arts. Through her power, Nearl can heal allies and inspire them to keep battling. \nThe Caster evaluator has surmised there are other manifestations and applications for her power, a theory yet to be proven so far."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Nearl was once a knight of Kazimierz, and as such she opposed the commercialization of knightly jousting in that city. It was also when she accidentally contracted Oripathy and subsequently forced to leave Kazimierz under tremendous pressure. \nThe incident greatly changed her fate. \nBefore arriving at Rhodes Island, the wandering Nearl had a chance meeting with the Sarkaz healers who would eventually also join the island--Shining and Nightingale, and traveled with them. They formed the 'Followers,' a group dedicated to helping the infected. The party traveled and provided healing to the Infected everywhere until they officially joined Rhodes Island and took on an even greater responsibility."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Many live drills have indicated that her current gear is somewhat limiting Nearl's combat utility. \nHowever, she's very fond of the protection it offered, because when it's said and done, Nearl is the shield and shelter for her allies, so she puts the utmost priority on resilient defense. \nAlso, to the author, Nearl's mobility and offense do not decrease because of her attention to her teammates. On the contrary, she deals with the situation almost flawlessly, whether offensive or defensive. \nMany Operators believe if Nearl's allies will not be affected as long as she is at the front, and that as long as she is on the battlefield, no one can snatch victory from Rhodes Island. \nMeanwhile, Miss Closure in charge of improving Nearl's gear has indicated that she modified her armor with many secret features. As to their exact functions, they are still unknown at the time of this writing."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "In our time together, Nearl rarely mentioned her life in Kazimierz. I didn't really get anything beyond that she has a grandfather she really admires and a much younger sister. \nShe loved to share news and opinions with us, but when it came to her past, she'd just shake her head and glaze over it with a smile. \nI can guess why she didn't want to talk about it. I mean, I don't say much about my past, either. \nBut I do know that whatever happened won't stop her from chasing her goals and dreams... \nAt the same time, however, I know too that if her past should return again, she'll turn right around, dive straight into the atrocity or sorrow until it is finally over, or her life is. \nI only hope that Liz and I could be there when it does to make sure she isn't alone. \n\n—Shining"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Miss Nearl has contributed so much to both Rhodes Island and the infected. \nWhile I understand her choice and will support her as always, I - and several other Operators - do hope that... \nShe'll get the fair treatment she deserves. \nAnd we should do something for her. \n\n—Amiya"
+    }
+  ]
+}

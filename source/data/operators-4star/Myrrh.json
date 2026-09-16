@@ -1,0 +1,743 @@
+{
+  "name": "Myrrh",
+  "rarity": 4,
+  "class": "Medic",
+  "branch": "Medic",
+  "faction": "Rhodes Island",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing"
+  ],
+  "trait": "Restores the HP of allies",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Bitter Herbs"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_117_myrrh",
+  "otherLanguages": {
+    "Chinese": "末药",
+    "Japanese": "ミルラ",
+    "Korean": "미르"
+  },
+  "characterInfo": {
+    "File no.": "R104",
+    "Operator Record": "Lucky Charm",
+    "Paradox Simulation": "Bitter Medicine",
+    "Illustrator": "下野宏铭",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Kana Yuuki",
+    "Chinese": "Z-kun (credited as \"Z\" in EN)",
+    "English": "Angel Lin",
+    "Korean": "Kang Eun-ae"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Unknown",
+    "Date of Birth": "May 5th",
+    "Race": "Vulpo",
+    "Height": "143 cm",
+    "Infection Status": "Non-infected as confirmed by medical report."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Standard",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "First Aid Kit",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Immediately restores the HP of all allies by 100% of Myrrh's ATK after deployment"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Immediately restores the HP of all allies by 110% (+10%) of Myrrh's ATK after deployment"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Immediately restores the HP of all allies by 150% of Myrrh's ATK after deployment"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Immediately restores the HP of all allies by 160% (+10%) of Myrrh's ATK after deployment"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +23"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves First Aid Kit"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Myrrh's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: First Aid Kit .",
+        "New skill: Medic Field .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Myrrh to Level 45.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 15000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester",
+          "quantity": 1
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "First Aid Kit improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Myrrh to Elite 1 Level 60.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 60000
+        },
+        {
+          "name": "Medic Chip Pack",
+          "quantity": 5
+        },
+        {
+          "name": "Aketon",
+          "quantity": 14
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 12
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Dual Healing",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next heal is increased to 100% of ATK and can target 1 extra ally Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next heal is increased to 102% of ATK and can target 1 extra ally Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next heal is increased to 104% of ATK and can target 1 extra ally Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next heal is increased to 106% of ATK and can target 1 extra ally Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next heal is increased to 108% of ATK and can target 1 extra ally Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next heal is increased to 110% of ATK and can target 1 extra ally Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next heal is increased to 112% of ATK and can target 1 extra ally Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next heal is increased to 116% of ATK and can target 1 extra ally Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next heal is increased to 120% of ATK and can target 1 extra ally Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next heal is increased to 125% of ATK and can target 1 extra ally Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 1
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 2
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 2
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 2
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Medic Field",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +5% ; Can heal 1 extra ally",
+            "initialSp": 5,
+            "spCost": 65,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +10% ; Can heal 1 extra ally",
+            "initialSp": 5,
+            "spCost": 65,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +15% ; Can heal 1 extra ally",
+            "initialSp": 5,
+            "spCost": 65,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +20% ; Can heal 1 extra ally",
+            "initialSp": 10,
+            "spCost": 60,
+            "duration": 25
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +25% ; Can heal 1 extra ally",
+            "initialSp": 10,
+            "spCost": 60,
+            "duration": 25
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +30% ; Can heal 1 extra ally",
+            "initialSp": 10,
+            "spCost": 60,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +35% ; Can heal 1 extra ally",
+            "initialSp": 15,
+            "spCost": 55,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +45% ; Can heal 1 extra ally",
+            "initialSp": 17,
+            "spCost": 53,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +55% ; Can heal 1 extra ally",
+            "initialSp": 18,
+            "spCost": 52,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +65% ; Can heal 1 extra ally",
+            "initialSp": 20,
+            "spCost": 50,
+            "duration": 25
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 1
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        },
+        {
+          "name": "Ester",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Oriron",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 2
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 2
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 4
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Pharmacology α",
+      "facility": "Workshop",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Workshop to process elite material , the production rate of byproduct increases by 75%"
+    },
+    {
+      "name": "Thoughtfulness",
+      "facility": "Dormitory",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to a Dormitory, restores +0.55 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place)"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Myrrh's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "PHY-X: \"Brevity of Life\"",
+      "mission": {
+        "requirement1": "During battle, have Myrrh use Medic Field a total of 5 times (excluding Support Units)",
+        "requirement2": "Clear Main Theme 6-11 with a 3-star rating; The only Medic Operator that can be deployed is your own Myrrh"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +50 , ASPD +3",
+          "effectLabel": "New trait",
+          "effectText": "When healing allied units with less than 50% HP, increases heal amount by 15%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Sugar Pack",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 20000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +80 , ASPD +4",
+          "effectLabel": "First Aid Kit improved",
+          "effectText": "Immediately restores the HP of all allies by 170% of Myrrh's ATK after deployment",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 15
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 25000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +100 , ASPD +5",
+          "effectLabel": "First Aid Kit improved",
+          "effectText": "Immediately restores the HP of all allies by 180% of Myrrh's ATK after deployment",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 5
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 6
+            },
+            {
+              "name": "LMD",
+              "quantity": 30000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Myrrh, birthplace Unknown, apothecary. Showed great promise in the arts and science of medicine research.\nCurrently a member of the\nRhodes Island\nmedical\nstaff and provides pharmaceutical services.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 45,
+        "base": {
+          "hp": 752,
+          "atk": 161,
+          "def": 57,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1060,
+          "atk": 264,
+          "def": 83,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 60,
+        "base": {
+          "hp": 1060,
+          "atk": 264,
+          "def": 83,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1278,
+          "atk": 372,
+          "def": 104,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1278,
+          "atk": 372,
+          "def": 104,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1420,
+          "atk": 465,
+          "def": 131,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-3"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 60,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this Operator is believed to be non-infected. \n\n[Cell-Originium Assimilation] 0% \nOperator Myrrh showed no symptoms of Oripathy. \n\n[Blood Originium-Crystal Density] 0.19u/L \nCompared to other non-infected Operators, Myrrh showed a higher concentration of crystal density in her blood. More intense daily test protocol recommended."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Although an ordinary medic, Operator Myrrh takes this responsibility very seriously. She goes work early and comes home late every day, giving her all to provide other Operators with quality medicine. Myrrh has unique insights into the pharmaceutical sciences, and is always keen to seek out new ingredients in nature. But she struggles with interpersonal communication. Terminally awkward with all but her closest friends, Myrrh demonstrates an inability to maintain strong and lasting relationships."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "After officially becoming a member of Rhodes Island, Operator Myrrh exhibited her precious positivity. Compared to other Senior Operators, Myrrh was much less savvy when it came to familiarity with job protocols or combat. But she worked her way through that toughest time, especially with her friend Harmonia still recuperating, which only further steeled her resolve to make it on the island. \nMyrrh did integrate much faster than other new recruits in some areas. She grasped the island's complicated structural layout and access system without much effort, almost never getting lost. She also made valid suggestions for obtaining unique resources in certain remote regions. All that had the island quickly taking notice of her."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Operator Myrrh's herbal mix was deemed a great medicine, but it has all the drawbacks of a premodern pharmaceutical: Uniquely indigenous ingredients, complicated creation processes, extremely bitter taste, and even elements of witchcraft as part of the recipe. The modern medical community saw it as a relic doomed to obsolescence.\nBut at Myrrh's insistence, Dr. Kal'tsit developed a special training course with modern technology specifically for her. The training has produced positive results. \nMyrrh quickly mastered a simplified pharmaceutical process and applied it to her work. While the result remains bitter, the remedies she offered have garnered positive feedback for their effectiveness. \nWith assistance from the convalescent home personnel, Operator Myrrh is now striving to overcome that final drawback of her medicine."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "As for her own and her friend Harmonia's background, Myrrh has never given a straight answer. She spoke of 'ruins' and 'secret worlds,' perhaps to throw others off the trail, or it could be that she had no understanding of them at all. What is known is the pair came from a region lacking the protection of a sovereign state, relying on strict rules of secrecy to prevent its location or status from becoming known to outsiders. That has stifled investigation into the subject. \nAccording to Myrrh's own account, her friend Harmonia got Infected during an exploratory mission on which Myrrh made a mistake. But Myrrh has not provided any details about the adventure or the cause of Harmonia's infection. During interviews, it became clear that Myrrh has suffered memory loss due to trauma and is unable to reconstruct the event. \nNote: No information regarding Harmonia's symptoms and prognosis are available through the archive. The patient is currently undergoing treatment as an ordinary Infected, but has declined all consultations and inquiries."
+    }
+  ]
+}

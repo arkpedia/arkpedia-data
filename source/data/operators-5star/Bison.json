@@ -1,0 +1,755 @@
+{
+  "name": "Bison",
+  "rarity": 5,
+  "class": "Defender",
+  "branch": "Protector",
+  "faction": "Lungmen",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Defense"
+  ],
+  "trait": "Blocks 3 enemies",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Code of Brawl"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Soaring Will"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_325_bison",
+  "otherLanguages": {
+    "Chinese": "拜松",
+    "Japanese": "バイソン",
+    "Korean": "바이슨"
+  },
+  "characterInfo": {
+    "File no.": "LM15",
+    "Operator Record": "A Fulfilling Holiday",
+    "Paradox Simulation": "Fighting With Friends",
+    "Illustrator": "竜崎いち",
+    "Release Date": "2020/05/27",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Junko Minagawa",
+    "Chinese": "Lu Xiaotong (credited as \"Thea\" in EN)",
+    "English": "Erica Mendez",
+    "Korean": "Bae Jeong-mi"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "1 year",
+    "Place of Birth": "Lungmen",
+    "Date of Birth": "October 15th",
+    "Race": "Forte",
+    "Height": "163 cm",
+    "Infection Status": "Confirmed uninfected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Interlocked Shield",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "DEF +25; If a Vanguard or Guard is deployed behind Bison, that Vanguard or Guard gains the same effect."
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "DEF +45 (+20) ; If a Vanguard or Guard is deployed behind Bison, that Vanguard or Guard gains the same effect."
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "DEF +50; If a Vanguard or Guard is deployed behind Bison, that Vanguard or Guard gains the same effect."
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "DEF +70 (+20) ; If a Vanguard or Guard is deployed behind Bison, that Vanguard or Guard gains the same effect."
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Interlocked Shield"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Bison's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Interlocked Shield .",
+        "New skill: Intensified Defense ."
+      ],
+      "prerequisite": "Raise Bison to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Interlocked Shield improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Bison to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Grindstone Pentahydrate",
+          "quantity": 7
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 11
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "DEF Up γ",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "40 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "DEF +30%",
+            "initialSp": 0,
+            "spCost": 45,
+            "duration": 40
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "DEF +35%",
+            "initialSp": 0,
+            "spCost": 45,
+            "duration": 40
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "DEF +40%",
+            "initialSp": 0,
+            "spCost": 45,
+            "duration": 40
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "DEF +45%",
+            "initialSp": 5,
+            "spCost": 40,
+            "duration": 40
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "DEF +50%",
+            "initialSp": 5,
+            "spCost": 40,
+            "duration": 40
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "DEF +55%",
+            "initialSp": 5,
+            "spCost": 40,
+            "duration": 40
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "DEF +60%",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "DEF +75%",
+            "initialSp": 10,
+            "spCost": 34,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "DEF +90%",
+            "initialSp": 10,
+            "spCost": 33,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "DEF +100%",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 40
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Intensified Defense",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "40 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Stops attacking; DEF +50% , increases the DEF of allies in the adjacent 4 tiles by +15% , and increases the likelihood of being targeted by enemy attacks",
+            "initialSp": 0,
+            "spCost": 60,
+            "duration": 40
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Stops attacking; DEF +55% , increases the DEF of allies in the adjacent 4 tiles by +15% , and increases the likelihood of being targeted by enemy attacks",
+            "initialSp": 10,
+            "spCost": 59,
+            "duration": 40
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Stops attacking; DEF +60% , increases the DEF of allies in the adjacent 4 tiles by +15% , and increases the likelihood of being targeted by enemy attacks",
+            "initialSp": 10,
+            "spCost": 58,
+            "duration": 40
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Stops attacking; DEF +65% , increases the DEF of allies in the adjacent 4 tiles by +20% , and increases the likelihood of being targeted by enemy attacks",
+            "initialSp": 13,
+            "spCost": 57,
+            "duration": 40
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Stops attacking; DEF +70% , increases the DEF of allies in the adjacent 4 tiles by +20% , and increases the likelihood of being targeted by enemy attacks",
+            "initialSp": 13,
+            "spCost": 56,
+            "duration": 40
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Stops attacking; DEF +75% , increases the DEF of allies in the adjacent 4 tiles by +20% , and increases the likelihood of being targeted by enemy attacks",
+            "initialSp": 13,
+            "spCost": 55,
+            "duration": 40
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Stops attacking; DEF +80% , increases the DEF of allies in the adjacent 4 tiles by +25% , and increases the likelihood of being targeted by enemy attacks",
+            "initialSp": 16,
+            "spCost": 54,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Stops attacking; DEF +90% , increases the DEF of allies in the adjacent 4 tiles by +25% , and increases the likelihood of being targeted by enemy attacks",
+            "initialSp": 17,
+            "spCost": 53,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Stops attacking; DEF +100% , increases the DEF of allies in the adjacent 4 tiles by +25% , and increases the likelihood of being targeted by enemy attacks",
+            "initialSp": 18,
+            "spCost": 52,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Stops attacking; DEF +120% , increases the DEF of allies in the adjacent 4 tiles by +30% , and increases the likelihood of being targeted by enemy attacks",
+            "initialSp": 20,
+            "spCost": 50,
+            "duration": 40
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Sugar Pack",
+              "quantity": 1
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 2
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar Pack",
+          "quantity": 5
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 3
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "MountainDash Logistics",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +20%"
+    },
+    {
+      "name": "Young MasterReplacesMountainDash Logistics",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +30% and the order limit +1"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Bison's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "PRO-X: \"The Journey Thus Far\"",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Bison, and unleash Intensified Defense at least 2 times in each battle",
+        "requirement2": "Clear Main Theme 3-7 with a 3-star rating; The only Defender Operator that can be deployed is your own Bison"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +150 , DEF +60",
+          "effectLabel": "New trait",
+          "effectText": "DEF +20% when blocking an enemy",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +200 , DEF +75",
+          "effectLabel": "Interlocked Shield improved",
+          "effectText": "DEF +60; If a Vanguard or Guard is deployed behind, that Vanguard or Guard gains the same effect",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +350 , DEF +85",
+          "effectLabel": "Interlocked Shield improved",
+          "effectText": "DEF +80; the Operator deployed behind gains the same effect",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "The executive manager of\nMountainDash Logistics\n, Bison, has worked closely with\nPenguin Logistics\n. He now provides operational assistance to\nRhodes Island\nduring the contracted period.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1475,
+          "atk": 198,
+          "def": 245,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1941,
+          "atk": 254,
+          "def": 367,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1941,
+          "atk": 254,
+          "def": 367,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2522,
+          "atk": 318,
+          "def": 504,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2522,
+          "atk": 318,
+          "def": 504,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 24,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 3456,
+          "atk": 375,
+          "def": 701,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 24,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 0,
+      "def": 80
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there are no other signs of infection. At this time, this operator can be confirmed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Bison shows no signs of Oripathy infection.\n\n[Blood Originium-Crystal Density] 0.15u/L\nOccasional contact with Originium due to work reasons, such as entering and exiting environments with slight Originium presence. Thanks to flawless personal protection measures, there are no signs of infection."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Also known as the 'Young Master', and the Director of MDL, this youthful messenger is responsible for the coordination between MountainDash Logistics and Penguin Logistics.\nDespite his age, he gives off an air of reliability. In fact, he has a very rich work experience, and knows the logistics industry like the back of his hand.\nHowever, outsiders often see him as 'the poor whipping boy of Penguin Logistics.'\nCompared to Penguin Logistics, whose members are known to all have very distinctive personalities, Bison gives off the impression of being closer to the public's stereotypical transporter, calmly and safely delivering goods and information to the intended destinations.\nAccording to him, cooperating with Penguin Logistics has made him realize his own shortcomings, but at the same time, profoundly shook his understanding of the logistics industry."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "At one point, MountainDash Logistics almost monopolized the entire private logistics industry in Lungmen, spreading its influence across the whole land at the same time. The founder of this behemoth was Bison's father.\nAs a result of this special status, Bison received an elite education at an early age and joined the workforce while many of his peers got to enjoy a carefree childhood. From this, one can imagine why Bison displays such maturity and reliability despite his years, and the hard work that went into that. Bison's addition to MDL undoubtedly paved the foundation for the cooperation between MDL and Rhodes Island. He also temporarily worked in Penguin Logistics, and made invaluable contributions that set the stage for good relationships between the three parties.\nIt is often said that were it not for Bison's reliability and responsibility in spearheading the logistics industry, some Operators would continue to use the 'Penguin Logistics method' to complete their work. As a result, we must give thanks to Bison for his efforts."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Regarding his work as a messenger, Bison's steady work ethic does not just greatly eclipse that of his peers, but does not falter even in comparison to veterans who have been deeply involved within the industry. Whether conducting external operations or conducting consultations on civil work, Bison's thoughtful actions have greatly benefited both Rhodes Island as an organization, and young Operators who see him as a role model.\nHowever, those who have known him longer will point out that it is not hard to see his more naïve, adolescent side. Though scarcely seen, Bison will unabashedly show his fascination towards the world in the face of the scenery of the North, the Laterano Church, or the wide deserts of Siracusa.\nBefore his father founded MDL, the young Bison accompanied his father through countless different lands. Perhaps at that time, the desire to become a transporter had already taken root within his heart. However, after the establishment of MDL, more and more responsibilities were piled upon his head, giving him no room to breathe - until he met Penguin Logistics.\n'It sounded like an interesting turning point, but after working with them, the gulf between us felt impossible to describe with words.'"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Mr. Emperor is incredibly capable, and also full of mysteries... Just think about it, letting Penguin Logistics operate the way it does but still managing to stay afloat is already an amazing feat! Don't you think so?\nExusiai? Hmm... There are many things I'd like to address with her, but she's not going to listen anyway.'\n'Texas is their team leader, right? Even though her tendency to snack on junk food could use quite a bit of correction, I hope that she can be a bit more understanding towards her fellow Operators, especially when she's on a mission with Exusiai. Not everyone shares the level of tacit understanding that they do. I've already faced consequences for it. That's why I know it.'\n'Croissant... Please put your money in the right places. Thank you!'\n'Yes, everyone loves Sora's music. Especially on long trips, music is a transporter's best friend... But why does Mr. Emperor's personal mixtape always come on?'\n'Doctor, perhaps you haven't realized this yourself, but the fact that you can unite so many people with very different personalities under one banner is- wait, did a Sankta just walk by? Was that Exusiai? Mr. Emperor had something important he wanted me to inform her about... Gone already? So fast! It couldn't be... Sorry, I'll be right back!'\n-Bison's conversation with the Doctor while cleaning up after a heavy metal party"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Due to certain circumstances, Rhodes Island had brief contact with Mr. Eurill Pides, the current CEO and head of MountainDash Logistics.\nThere is no doubt that Mr. Eurill is very fond of his son. Ever since Mr. Eurill's wife, Bison's mother, was admitted to Rim Billiton for medical reasons, Mr. Eurill arranged for Bison to enter the company. In the 10-or-so minutes of the meeting, Mr. Eurill's topics virtually all revolved around the topic of his son.\nHowever, Mr. Eurill seems to be very satisfied with Bison's current arrangements with Rhodes Island. For whatever reason, Mr. Eurill seems to have no intention of bringing Bison back to MDL - as a matter of fact, he doesn't even want his son back at his side too early.\nThe only time was when Mr. Eurill invited Bison to visit his mother, who had only just returned from treatment in Lungmen. The overly formal letter drew a sharp contrast with Mr. Eurill's daily image, making it seem as if this wasn't a family letter at all. However, only after seeing Bison's equally formal reply did everyone realize that yes, like father, like son."
+    }
+  ]
+}

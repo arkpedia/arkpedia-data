@@ -1,0 +1,2635 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "integrated_strategies",
+    "id": "rogue_2",
+    "label": "IS3",
+    "name": "Mizuki & Caerula Arbor",
+    "release_date": "2023-05-23"
+  },
+  "enemies": [
+    {
+      "slug": "rusthammer_warrior",
+      "id": "enemy_2006_flsnip",
+      "name": "Rusthammer Warrior",
+      "index": "RSH",
+      "rank": "Boss",
+      "sort": 1386,
+      "hidden": false,
+      "icon": "/enemies-icons/Rusthammer Warrior.webp",
+      "flavour_text": "'Rusthammer' is a violent organization that has broken away from civilization to wander the wastelands. In these barren wastes, far from the comforts offered by nomadic city-states, life itself is an endless war.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked and is initially Invulnerable for a period of time",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically releases a special bolt that deals massive Arts damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 1200,
+            "def": 550,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 20.0,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "CriticalHit",
+              "sp_cost": 0,
+              "cooldown": 18.0,
+              "initial_cooldown": 18.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "invincible",
+              "parameters": {
+                "duration": 60.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "frozen_monstrosity",
+      "id": "enemy_2007_flwitch",
+      "name": "'Frozen Monstrosity'",
+      "index": "FZM",
+      "rank": "Boss",
+      "sort": 1387,
+      "hidden": false,
+      "icon": "/enemies-icons/'Frozen Monstrosity'.webp",
+      "flavour_text": "A Sami snowpriest went to the endless tundra to defend against the demons that invaded her homeland. In the end, she went insane and became a part of the tundra's curse.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Normal attacks and Ice Nova deal Arts damage and applies Cold to targets",
+          "format": "normal"
+        },
+        {
+          "text": "If a target is defeated or retreats while Frozen, its Redeployment Time is doubled",
+          "format": "normal"
+        },
+        {
+          "text": "Can activate Originium Ice Crystals around the battlefield",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 27000,
+            "atk": 350,
+            "def": 1500,
+            "res": 80.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 2.4,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "C",
+            "def": "A+",
+            "res": "S+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "IceBurst",
+              "sp_cost": 0,
+              "cooldown": 12.0,
+              "initial_cooldown": 12.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.3,
+                "flwitch_s_atkscale.atk_scale": 2.0,
+                "freeze": 10.0
+              }
+            },
+            {
+              "key": "SummonFrosts",
+              "sp_cost": 0,
+              "cooldown": 75.0,
+              "initial_cooldown": 75.0,
+              "priority": 1,
+              "parameters": {
+                "branch_id": "frosts"
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "attackfreeze",
+              "parameters": {
+                "freeze": 5.0
+              }
+            },
+            {
+              "key": "invincible",
+              "parameters": {
+                "duration": 80.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "atk": 0.9,
+                "duration": 6.6,
+                "max_hp": 0.5,
+                "reborn_invincible.duration": 30.0
+              }
+            },
+            {
+              "key": "respawntimemul",
+              "parameters": {
+                "respawn_time": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "gravestone",
+      "id": "enemy_2008_flking",
+      "name": "'Gravestone'",
+      "index": "GST",
+      "rank": "Boss",
+      "sort": 1388,
+      "hidden": false,
+      "icon": "/enemies-icons/'Gravestone'.webp",
+      "flavour_text": "A cruel murderer, an assassin that pursues you relentlessly. The violence bred in this land will eventually grow inside every perpetrator.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Halves the ATK and DEF of all your units on the battlefield; Halves natural DP regeneration rate; Doubles Redeployment Time",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically gains a Barrier proportional to Max HP.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 60000,
+            "atk": 2000,
+            "def": 330,
+            "res": 55.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 2.2,
+            "weight": 6,
+            "taunt": null,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "refreshshield",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "hp_ratio": 0.1
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "atkdown",
+              "parameters": {
+                "atk_scale": 0.4
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "bone_sea_drifter",
+      "id": "enemy_2021_syfish",
+      "name": "Bone Sea Drifter",
+      "index": "SY1",
+      "rank": "Normal",
+      "sort": 1182,
+      "hidden": false,
+      "icon": "/enemies-icons/Bone Sea Drifter.webp",
+      "flavour_text": "Sea Terrors travel in large swarms, seeking carcasses to feast on and becoming food for other Sea Terrors themselves.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict additional Corrosion.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4000,
+            "atk": 250,
+            "def": 150,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.2,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "D",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "EpDamage",
+              "parameters": {
+                "ep_damage_ratio": 0.2
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "ocean_stonecutter",
+      "id": "enemy_2022_syzeni",
+      "name": "Ocean Stonecutter",
+      "index": "SY2",
+      "rank": "Normal",
+      "sort": 1183,
+      "hidden": false,
+      "icon": "/enemies-icons/Ocean Stonecutter.webp",
+      "flavour_text": "Sea Terror with a hard shell, protecting the swarm from enemies.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When your units enter its attack range for the first time, temporarily stops moving and gains increased DEF.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 300,
+            "def": 200,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": 2.4,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "def": 300.0,
+                "duration": 20.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "retching_broodmother",
+      "id": "enemy_2023_sypult",
+      "name": "Retching Broodmother",
+      "index": "SY3",
+      "rank": "Elite",
+      "sort": 1184,
+      "hidden": false,
+      "icon": "/enemies-icons/Retching Broodmother.webp",
+      "flavour_text": "Sea Terror mothers that throw fake offspring at oncoming threats, allowing the true offspring to flee.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can only attack ground targets",
+          "format": "normal"
+        },
+        {
+          "text": "Summons 1 <Baleful Broodling> near the target when dealing damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 16000,
+            "atk": 600,
+            "def": 600,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 8.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 4.0,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "B",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "enemy_key": "enemy_2024_synut"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "baleful_broodling",
+      "id": "enemy_2024_synut",
+      "name": "Baleful Broodling",
+      "index": "SY4",
+      "rank": "Normal",
+      "sort": 1185,
+      "hidden": false,
+      "icon": "/enemies-icons/Baleful Broodling.webp",
+      "flavour_text": "An extension of the broodmother's body, identical to newly-born offspring.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Unable to move",
+          "format": "normal"
+        },
+        {
+          "text": "Gradually loses HP over time",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks inflict additional Corrosion.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 2400,
+            "atk": 200,
+            "def": 150,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.6,
+            "attack_speed": 100.0,
+            "move_speed": 0.0,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "D",
+            "def": "D",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "E"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "EpDamage",
+              "parameters": {
+                "damage": 100.0,
+                "ep_damage_ratio": 0.6
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "skimming_sea_drifter",
+      "id": "enemy_2025_syufo",
+      "name": "Skimming Sea Drifter",
+      "index": "SY5",
+      "rank": "Elite",
+      "sort": 1186,
+      "hidden": false,
+      "icon": "/enemies-icons/Skimming Sea Drifter.webp",
+      "flavour_text": "Some Sea Terrors have begun to adapt to the sky, able to glide above the waves for extended periods. Perhaps this branch will eventually evolve to make their home in the heavens.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Low-Altitude Hovering",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks inflict additional Corrosion.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 500,
+            "def": 250,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 2.6,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "EpDamage",
+              "parameters": {
+                "ep_damage_ratio": 0.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "saint_carmen",
+      "id": "enemy_2026_syudg",
+      "name": "Saint Carmen",
+      "index": "UGF",
+      "rank": "Boss",
+      "sort": 1396,
+      "hidden": false,
+      "icon": "/enemies-icons/Saint Carmen.webp",
+      "flavour_text": "The last surviving Saint of Iberia, living well past mortal life expectancy. His longevity came at a price, but he remembers his duty and his enemies, despite having lost his reason.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "While this unit is holding Ammo, attacks become long-ranged and deal a large amount of Physical damage. Ammo capacity: 3",
+          "format": "normal"
+        },
+        {
+          "text": "If reloading is interrupted, becomes Stunned for an additional period of time",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 50000,
+            "atk": 1200,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 1.8,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Charge",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "Fire",
+              "sp_cost": 1,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reload",
+              "parameters": {
+                "interval": 35.0,
+                "sp_ratio": 0.0
+              }
+            },
+            {
+              "key": "Stun",
+              "parameters": {
+                "stun": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 3,
+            "max": 3,
+            "recovery": "Over time",
+            "increment": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "saint_iberia",
+      "id": "enemy_2027_syudg2",
+      "name": "Saint Iberia",
+      "index": "UGS",
+      "rank": "Boss",
+      "sort": 1397,
+      "hidden": false,
+      "icon": "/enemies-icons/Saint Iberia.webp",
+      "flavour_text": "The last surviving Saint of Iberia, living well past mortal life expectancy. His longevity came at a price, but he will hunt Iberia's enemies for as long as the flame of his life still burns.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "While this unit is holding Ammo, attacks become long-ranged and deal a large amount of Physical damage. Ammo capacity: 1",
+          "format": "normal"
+        },
+        {
+          "text": "If reloading is interrupted, becomes Stunned for an additional period of time",
+          "format": "normal"
+        },
+        {
+          "text": "Has higher HP and ATK",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 70000,
+            "atk": 2200,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 1.8,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Charge",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "sp": 1.0,
+                "sp_ratio": 1.0
+              }
+            },
+            {
+              "key": "Fire",
+              "sp_cost": 1,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 2.0,
+                "sp_ratio": 0.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reload",
+              "parameters": {
+                "interval": 35.0,
+                "sp_ratio": 0.0
+              }
+            },
+            {
+              "key": "Stun",
+              "parameters": {
+                "stun": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 1,
+            "max": 1,
+            "recovery": "Over time",
+            "increment": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tidelinked_bishop",
+      "id": "enemy_2028_syevil",
+      "name": "Tidelinked Bishop",
+      "index": "SEV",
+      "rank": "Boss",
+      "sort": 1398,
+      "hidden": false,
+      "icon": "/enemies-icons/Tidelinked Bishop.webp",
+      "flavour_text": "A bishop that has partially mutated. It is partly human, partly—",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "When its Other Half is alive and not in coma, enters a coma when HP reaches 0 and begins regenerating; revives when HP reaches max.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 600,
+            "def": 300,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 3.5,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "C",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "FakeDeath",
+              "parameters": {
+                "hp_ratio": 0.05,
+                "target_hp_ratio": 1.0
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 0.1,
+                "hp_ratio": 0.02
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "tidelinked_archon",
+      "id": "enemy_2029_symon",
+      "name": "Tidelinked Archon",
+      "index": "SMF",
+      "rank": "Boss",
+      "sort": 1399,
+      "hidden": false,
+      "icon": "/enemies-icons/Tidelinked Archon.webp",
+      "flavour_text": "—Sea Terror. Even Ægir technology has a role to play in the evolution of we many.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict additional Corrosion.",
+          "format": "normal"
+        },
+        {
+          "text": "When its Other Half is alive and not in coma, enters a coma when HP reaches 0 and begins regenerating; revives when HP reaches max.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 600,
+            "def": 800,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "B+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "EpDamage",
+              "parameters": {
+                "ep_damage_ratio": 0.5
+              }
+            },
+            {
+              "key": "FakeDeath",
+              "parameters": {
+                "hp_ratio": 0.05,
+                "target_hp_ratio": 1.0
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 0.1,
+                "hp_ratio": 0.02
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "tidelinked_immortal",
+      "id": "enemy_2030_symon2",
+      "name": "Tidelinked Immortal",
+      "index": "SMS",
+      "rank": "Boss",
+      "sort": 1400,
+      "hidden": false,
+      "icon": "/enemies-icons/Tidelinked Immortal.webp",
+      "flavour_text": "—Sea Terror. The product of both technology and evolutionary instincts.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict additional Corrosion.",
+          "format": "normal"
+        },
+        {
+          "text": "When its Other Half is alive and not in coma, enters a coma when HP reaches 0 and begins regenerating fast; revives when HP reaches max",
+          "format": "normal"
+        },
+        {
+          "text": "Has lower HP and ATK, but higher ASPD and Movement Speed",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 550,
+            "def": 800,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 0.7,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B",
+            "def": "B+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "S+",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "EpDamage",
+              "parameters": {
+                "ep_damage_ratio": 0.5
+              }
+            },
+            {
+              "key": "FakeDeath",
+              "parameters": {
+                "hp_ratio": 0.1,
+                "target_hp_ratio": 1.0
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 0.1,
+                "hp_ratio": 0.02
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "pathshaper",
+      "id": "enemy_2031_syboy",
+      "name": "Pathshaper",
+      "index": "SRF",
+      "rank": "Boss",
+      "sort": 1401,
+      "hidden": false,
+      "icon": "/enemies-icons/Pathshaper.webp",
+      "flavour_text": "Seaborn tasked with exploring evolutionary pathways, its fractals mapping out dead ends so that we many can stay on the right path.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Every 3rd attack summons a <Pathshaper Fractal>",
+          "format": "normal"
+        },
+        {
+          "text": "Summons 1 <Pathshaper Fractal> after taking a number of attacks",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 35000,
+            "atk": 800,
+            "def": 800,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B+",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Summon",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "cnt": 1.0,
+                "enemy_key": "enemy_2033_syboys",
+                "limit_amount": 8.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "SummonMark",
+              "parameters": {
+                "cnt": 1.0,
+                "damage_counter": 10.0,
+                "enemy_key": "enemy_2033_syboys",
+                "limit_amount": 8.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "lingering_pathshaper",
+      "id": "enemy_2032_syboy2",
+      "name": "Lingering Pathshaper",
+      "index": "SRS",
+      "rank": "Boss",
+      "sort": 1402,
+      "hidden": false,
+      "icon": "/enemies-icons/Lingering Pathshaper.webp",
+      "flavour_text": "Seaborn tasked with exploring evolutionary pathways. Its injuries and those suffered by its fractals become a guide for the evolution of we many.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Every 3rd attack summons a <Pathshaper Fractal>",
+          "format": "normal"
+        },
+        {
+          "text": "Summons 1 <Pathshaper Fractal> after taking a few attacks",
+          "format": "normal"
+        },
+        {
+          "text": "Has lower ASPD, but higher HP",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 70000,
+            "atk": 1000,
+            "def": 800,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B+",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Summon",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "cnt": 1.0,
+                "enemy_key": "enemy_2033_syboys",
+                "limit_amount": 8.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "SummonMark",
+              "parameters": {
+                "cnt": 1.0,
+                "damage_counter": 5.0,
+                "enemy_key": "enemy_2033_syboys",
+                "limit_amount": 8.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "pathshaper_fractal",
+      "id": "enemy_2033_syboys",
+      "name": "Pathshaper Fractal",
+      "index": "SY6",
+      "rank": "Normal",
+      "sort": 1187,
+      "hidden": false,
+      "icon": "/enemies-icons/Pathshaper Fractal.webp",
+      "flavour_text": "Fractals left behind by the Seaborn Pathshaper. Illusions must eventually vanish. The path is not clear. Search on, search on.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Dies after some time",
+          "format": "normal"
+        },
+        {
+          "text": "Every 3rd attack summons a <Pathshaper Fractal>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 600,
+            "def": 100,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Summon",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "cnt": 1.0,
+                "enemy_key": "enemy_2033_syboys",
+                "limit_amount": 12.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Suicide",
+              "parameters": {
+                "duration": 90.0
+              }
+            },
+            {
+              "key": "SummonMark",
+              "parameters": {
+                "cnt": 1.0,
+                "enemy_key": "enemy_2033_syboys"
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 3,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "crying_thief",
+      "id": "enemy_2034_sythef",
+      "name": "Crying Thief",
+      "index": "THF",
+      "rank": "Elite",
+      "sort": 1172,
+      "hidden": false,
+      "icon": "/enemies-icons/Crying Thief.webp",
+      "flavour_text": "A Perro who left his family to seek out a new life... but all that people know is that he is always weeping.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Invisible",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks Stun the target",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 300,
+            "def": 150,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "C",
+            "def": "D",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Combat",
+              "parameters": {
+                "stun": 4.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 18000,
+            "atk": 500,
+            "def": 250,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.9,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Combat",
+              "parameters": {
+                "stun": 4.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        },
+        {
+          "level": 2,
+          "stats": {
+            "hp": 25000,
+            "atk": 600,
+            "def": 250,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.8,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Combat",
+              "parameters": {
+                "stun": 4.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "chest_seaborn",
+      "id": "enemy_2035_sybox",
+      "name": "Chest Seaborn",
+      "index": "SY9",
+      "rank": "Elite",
+      "sort": 1190,
+      "hidden": false,
+      "icon": "/enemies-icons/Chest Seaborn.webp",
+      "flavour_text": "Sea Terror disguised as a treasure chest, often used by Bishops of the Deep to protect hideouts.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 600,
+            "def": 500,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 20000,
+            "atk": 800,
+            "def": 500,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        },
+        {
+          "level": 2,
+          "stats": {
+            "hp": 30000,
+            "atk": 1200,
+            "def": 500,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "cannot",
+      "id": "enemy_2036_syshop",
+      "name": "Cannot",
+      "index": "KNT",
+      "rank": "Boss",
+      "sort": 1407,
+      "hidden": false,
+      "icon": "/enemies-icons/Cannot.webp",
+      "flavour_text": "A mysterious trader who roams the barrenlands, selling anything that exists in civilization.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be attacked, will not deplete Life Points on leaving the field",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically releases random chemicals that affect the battlefield",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 100000,
+            "atk": 0,
+            "def": 4000,
+            "res": 80.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": null,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "E",
+            "def": "S+",
+            "res": "S+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Spray",
+              "sp_cost": 23,
+              "cooldown": 0.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "syshop_s[atk].atk": 1.0,
+                "syshop_s[atk].attack_speed": 100.0,
+                "syshop_s[atk].duration": 12.0,
+                "syshop_s[sleep].duration": 10.0,
+                "syshop_s[sleep].hp_ratio": 0.04
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Paralysis"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 25,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "paranoia_illusion",
+      "id": "enemy_2037_sygirl",
+      "name": "'Paranoia Illusion'",
+      "index": "GIR",
+      "rank": "Boss",
+      "sort": 1403,
+      "hidden": false,
+      "icon": "/enemies-icons/'Paranoia Illusion'.webp",
+      "flavour_text": "An Ægir girl who went out of control after ingesting Seaborn cells. Her throat makes no voice, for the prayers of we many have blocked it. She is drowned in power, becoming what she once detested the most.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "Low-Altitude Hovering",
+          "format": "normal"
+        },
+        {
+          "text": "All allied units within attack range have greatly reduced ASPD",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks up to 3 targets at the same time, inflicting additional Corrosion. Can attack a target multiple times if the number of targets is less than maximum",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "Attack Range expands, ASPD reduction is increased, and can attack up to 5 targets",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 45000,
+            "atk": 500,
+            "def": 700,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 6,
+            "taunt": null,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "B",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "ep_damage_ratio": 0.6
+              }
+            },
+            {
+              "key": "Attack2",
+              "parameters": {
+                "ep_damage_ratio": 0.6
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0,
+                "rest_duration": 17.799999
+              }
+            },
+            {
+              "key": "SlowDown",
+              "parameters": {
+                "attack_speed": -60.0
+              }
+            },
+            {
+              "key": "SlowDown2",
+              "parameters": {
+                "attack_speed": -80.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "the_last_knight",
+      "id": "enemy_2038_sydonq",
+      "name": "The Last Knight",
+      "index": "DOQ",
+      "rank": "Boss",
+      "sort": 1404,
+      "hidden": false,
+      "icon": "/enemies-icons/The Last Knight.webp",
+      "flavour_text": "The basis of a well-known folk tale in Kazimierz. The past died on the land, and neither the present nor the future have any meaning. Only the ocean; kill the ocean.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Initial Form",
+          "format": "title"
+        },
+        {
+          "text": "When damaged, inflicts Cold on the source. Effect increased if HP is below 50%",
+          "format": "normal"
+        },
+        {
+          "text": "Attack power increases when attacking Frozen targets",
+          "format": "normal"
+        },
+        {
+          "text": "The first time HP drops to 0, enters Charging Form",
+          "format": "normal"
+        },
+        {
+          "text": "Charging Form",
+          "format": "title"
+        },
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 100000,
+            "atk": 2000,
+            "def": 4000,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 0.0,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "S",
+            "def": "S+",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Reborning",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 30.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DamageScaleToFrozen",
+              "parameters": {
+                "atk_scale": 1.75
+              }
+            },
+            {
+              "key": "InverseDamage",
+              "parameters": {
+                "sydonq_t[freeze1].freeze": 2.0,
+                "sydonq_t[freeze2].freeze": 4.0
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 30.0,
+                "hp_ratio": 0.25
+              }
+            },
+            {
+              "key": "Slow",
+              "parameters": {
+                "move_speed": -0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "isharmla_heart_of_corruption",
+      "id": "enemy_2039_syskad",
+      "name": "Ishar'mla, Heart of Corruption",
+      "index": "SKA",
+      "rank": "Boss",
+      "sort": 1405,
+      "hidden": false,
+      "icon": "/enemies-icons/Ishar'mla, Heart of Corruption.webp",
+      "flavour_text": "She sings no more. It speaks for we many.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Initial Form",
+          "format": "title"
+        },
+        {
+          "text": "Regular attacks heal 3 enemies simultaneously",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically summons <Ishar'mla's Tears> to charge itself. Transforms once fully charged",
+          "format": "normal"
+        },
+        {
+          "text": "When HP drops below 50%, gains greatly increased ATK, and summons 2 additional <Ishar'mla's Tears>",
+          "format": "normal"
+        },
+        {
+          "text": "Transformed Form",
+          "format": "title"
+        },
+        {
+          "text": "Attacks deal True damage to 3 targets simultaneously",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 90000,
+            "atk": 1600,
+            "def": 1200,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 6,
+            "taunt": null,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "A+",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "change",
+              "sp_cost": 120,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "BerserkCorrupt",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {}
+            },
+            {
+              "key": "Corrupt",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 8.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Berserk",
+              "parameters": {
+                "atk": 0.5,
+                "hp_ratio": 0.5
+              }
+            },
+            {
+              "key": "FetchAttributes",
+              "parameters": {
+                "syskad_t[fetch].hp_ratio": 1.0,
+                "syskad_t[monster].atk": 0.625,
+                "syskad_t[monster].base_attack_time": 0.5,
+                "syskad_t[monster].def": 0.3,
+                "syskad_t[monster].hp_ratio": 1.0,
+                "syskad_t[monster].magic_resistance": 0.5,
+                "syskad_t[monster].max_hp": 0.5,
+                "syskad_t[monster].move_speed": -0.2
+              }
+            },
+            {
+              "key": "HpSave",
+              "parameters": {
+                "dynamic": -1.0
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 5.0,
+                "hp_ratio": 0.02
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 120,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "isharmlas_tears",
+      "id": "enemy_2040_syrott",
+      "name": "Ishar'mla's Tears",
+      "index": "SY7",
+      "rank": "Normal",
+      "sort": 1188,
+      "hidden": false,
+      "icon": "/enemies-icons/Ishar'mla's Tears.webp",
+      "flavour_text": "Manifestation of Ishar'mla's explorative and combative nature.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Appears around your units",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically deals True damage. If there are no targets within attack range, charges up <Ishar'mla, Heart of Corruption>",
+          "format": "normal"
+        },
+        {
+          "text": "Disappears when <Ishar'mla, Heart of Corruption> transforms",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 500,
+            "def": 1200,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.0,
+            "range": 0.0,
+            "weight": 6,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "A+",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "E"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Damage",
+              "parameters": {
+                "atk_scale": 1.0,
+                "interval": 3.0
+              }
+            },
+            {
+              "key": "RecoverSp",
+              "parameters": {
+                "interval": 3.0,
+                "sp": 25.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "izumiks_offspring",
+      "id": "enemy_2041_syjely",
+      "name": "Izumik's Offspring",
+      "index": "SY8",
+      "rank": "Normal",
+      "sort": 1189,
+      "hidden": false,
+      "icon": "/enemies-icons/Izumik's Offspring.webp",
+      "flavour_text": "One of Izumik's evolutionary branches, bringing genetic data collected across Terra back to the mother.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Becomes a random enemy when blocked.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 800,
+            "def": 2000,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 0.0,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "S",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Combat",
+              "parameters": {
+                "enemy_key": "enemy_2021_syfish",
+                "offset_bound": 0.15
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 120,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "izumik_source_of_ecology",
+      "id": "enemy_2042_syboss",
+      "name": "Izumik, Source of Ecology",
+      "index": "MZK",
+      "rank": "Boss",
+      "sort": 1406,
+      "hidden": false,
+      "icon": "/enemies-icons/Izumik, Source of Ecology.webp",
+      "flavour_text": "A perfect organism, approaching an evolutionary singularity. The pioneer and guide of we many. The last first-born. Seaborn.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Learning Stage",
+          "format": "title"
+        },
+        {
+          "text": "Cannot be attacked, HP and ATK increase permanently after absorbing a certain number of <Izumik's Offspring>, and deals Arts damage to all allied units",
+          "format": "normal"
+        },
+        {
+          "text": "Enters Interpretation Stage after some time, or if HP reaches max",
+          "format": "normal"
+        },
+        {
+          "text": "Interpretation Stage",
+          "format": "title"
+        },
+        {
+          "text": "Attacks deal additional Arts damage",
+          "format": "normal"
+        },
+        {
+          "text": "Inflicts Stun and Arts damage over time to all allied units whenever it loses a certain amount of HP, or after a period of time",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 150000,
+            "atk": 1200,
+            "def": 2000,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 1.5,
+            "weight": 6,
+            "taunt": null,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A",
+            "def": "S",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "SplashAOE",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "buff_stack": 4.0,
+                "max_hp_ratio": 1.0
+              }
+            },
+            {
+              "key": "Change",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "ExtraSummon",
+              "sp_cost": 120,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "branch_id": "syboss_extra",
+                "skill_stack": 4.0
+              }
+            },
+            {
+              "key": "RecoverAnim",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "duration": 15.0
+              }
+            },
+            {
+              "key": "StunAOE",
+              "sp_cost": 30,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.12,
+                "duration": 8.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "atk_scale": 1.0
+              }
+            },
+            {
+              "key": "Devour",
+              "parameters": {
+                "atk": 0.4,
+                "buff_stack": 4.0,
+                "counter_stack": 5.0,
+                "hp_ratio": 0.15
+              }
+            },
+            {
+              "key": "Rage",
+              "parameters": {
+                "syboss_t[rage_1].hp_ratio": 0.25,
+                "syboss_t[rage_2].hp_ratio": 0.5,
+                "syboss_t[rage_3].hp_ratio": 0.75
+              }
+            },
+            {
+              "key": "Summon",
+              "parameters": {
+                "syboss_summon[1].branch_id": "syboss_jely1",
+                "syboss_summon[1].duration": 70.0,
+                "syboss_summon[1].interval": 20.0,
+                "syboss_summon[2].branch_id": "syboss_jely2",
+                "syboss_summon[2].duration": 146.0,
+                "syboss_summon[2].interval": 16.0,
+                "syboss_summon[3].branch_id": "syboss_jely3",
+                "syboss_summon[3].duration": 260.0,
+                "syboss_summon[3].interval": 23.0,
+                "syboss_summon[4].branch_id": "syboss_jely4",
+                "syboss_summon[4].interval": 18.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 117,
+            "max": 120,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "fatty",
+      "id": "enemy_2085_skzjxd",
+      "name": "Fatty",
+      "index": "FAT",
+      "rank": "Elite",
+      "sort": 1174,
+      "hidden": false,
+      "icon": "/enemies-icons/Fatty.webp",
+      "flavour_text": "Duck Lord's associate and apprentice, an opportunist with a slick tongue. Frequently appears on dubious TV shows, preaching about how he cares little for losses or gains, as they are part of the natural money-making process.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Always faces the direction with the most Operators.",
+          "format": "normal"
+        },
+        {
+          "text": "Takes 80% less Physical/Arts damage from the front.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 50000,
+            "atk": 500,
+            "def": 0,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.35,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "E",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Show",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "ShowTrigger",
+              "parameters": {
+                "interval": 30.0
+              }
+            },
+            {
+              "key": "Weakness",
+              "parameters": {
+                "damage_resistance": 0.8
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 60000,
+            "atk": 500,
+            "def": 100,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.35,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "D",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Show",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "ShowTrigger",
+              "parameters": {
+                "interval": 30.0
+              }
+            },
+            {
+              "key": "Weakness",
+              "parameters": {
+                "damage_resistance": 0.8
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        },
+        {
+          "level": 2,
+          "stats": {
+            "hp": 80000,
+            "atk": 500,
+            "def": 200,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.35,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Show",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "ShowTrigger",
+              "parameters": {
+                "interval": 30.0
+              }
+            },
+            {
+              "key": "Weakness",
+              "parameters": {
+                "damage_resistance": 0.8
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

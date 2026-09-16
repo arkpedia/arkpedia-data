@@ -1,0 +1,769 @@
+{
+  "name": "Czerny",
+  "rarity": 5,
+  "class": "Defender",
+  "branch": "Arts Protector",
+  "faction": "Leithanien",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Defense",
+    "DPS"
+  ],
+  "trait": "Normal attacks deal Arts damage while the skill is active",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Lingering Echoes"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Freeland Tuneseeker"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4047_pianst",
+  "otherLanguages": {
+    "Simplified Chinese": "车尔尼",
+    "Traditional Chinese": "車爾尼",
+    "Japanese": "ツェルニー",
+    "Korean": "체르니"
+  },
+  "characterInfo": {
+    "File no.": "LN06",
+    "Operator Records": "Dämmerung und Anbruch Before the Spilling Sunlight",
+    "Paradox Simulation": "Melodie über das Schlachtfeld",
+    "Illustrator": "九日九号",
+    "Release Date": "2022/12/27",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Hiroki Yasumoto",
+    "Chinese": "Yu Fengshuo (credited as \"Qd\" in EN)",
+    "English": "Gunnar Cauthery",
+    "Korean": "Lee Hyun",
+    "German": "Lukas Wurm"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "None",
+    "Place of Birth": "Leithanien",
+    "Date of Birth": "September 10th",
+    "Race": "Elafia",
+    "Height": "182 cm",
+    "Infection Status": "Originium crystals distributed across surface of body, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Reverberation",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "RES +5. Deals 50% of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "RES +5. Deals 55% (+5%) of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "RES +10. Deals 80% of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "RES +10. Deals 85% (+5%) of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks"
+        }
+      ],
+      "technique": [
+        {
+          "name": "Reflection Damage",
+          "description": "Able to reflect damage onto enemies (especially ranged)"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Reverberation"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Czerny's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Reverberation .",
+        "New skill: Meisterwerk ."
+      ],
+      "prerequisite": "Raise Czerny to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Reverberation improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Czerny to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Manganese Trihydrate",
+          "quantity": 8
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 11
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Fingerfertigkeit",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25–35 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +20% and RES +50%",
+            "initialSp": 0,
+            "spCost": 50,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +25% and RES +55%",
+            "initialSp": 2,
+            "spCost": 49,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +30% and RES +60%",
+            "initialSp": 4,
+            "spCost": 48,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +35% and RES +65%",
+            "initialSp": 6,
+            "spCost": 46,
+            "duration": 27
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +40% and RES +70%",
+            "initialSp": 8,
+            "spCost": 45,
+            "duration": 27
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +45% and RES +75%",
+            "initialSp": 10,
+            "spCost": 44,
+            "duration": 27
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +50% and RES +80%",
+            "initialSp": 12,
+            "spCost": 42,
+            "duration": 29
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +60% and RES +85%",
+            "initialSp": 16,
+            "spCost": 40,
+            "duration": 31
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +70% and RES +90%",
+            "initialSp": 18,
+            "spCost": 38,
+            "duration": 33
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +80% and RES +100%",
+            "initialSp": 20,
+            "spCost": 35,
+            "duration": 35
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Meisterwerk",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Max HP +30% and becomes more likely to be attacked. For every attack taken, ATK +16% (up to 10 times), then deals 150% ATK as Arts damage to all nearby enemies when the skill ends",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Max HP +35% and becomes more likely to be attacked. For every attack taken, ATK +17% (up to 10 times), then deals 150% ATK as Arts damage to all nearby enemies when the skill ends",
+            "initialSp": 0,
+            "spCost": 39,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Max HP +40% and becomes more likely to be attacked. For every attack taken, ATK +18% (up to 10 times), then deals 150% ATK as Arts damage to all nearby enemies when the skill ends",
+            "initialSp": 0,
+            "spCost": 38,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Max HP +50% and becomes more likely to be attacked. For every attack taken, ATK +20% (up to 10 times), then deals 170% ATK as Arts damage to all nearby enemies when the skill ends",
+            "initialSp": 3,
+            "spCost": 37,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Max HP +55% and becomes more likely to be attacked. For every attack taken, ATK +21% (up to 10 times), then deals 170% ATK as Arts damage to all nearby enemies when the skill ends",
+            "initialSp": 3,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Max HP +60% and becomes more likely to be attacked. For every attack taken, ATK +22% (up to 10 times), then deals 170% ATK as Arts damage to all nearby enemies when the skill ends",
+            "initialSp": 3,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Max HP +70% and becomes more likely to be attacked. For every attack taken, ATK +24% (up to 10 times), then deals 190% ATK as Arts damage to all nearby enemies when the skill ends",
+            "initialSp": 6,
+            "spCost": 34,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Max HP +80% and becomes more likely to be attacked. For every attack taken, ATK +26% (up to 10 times), then deals 210% ATK as Arts damage to all nearby enemies when the skill ends",
+            "initialSp": 8,
+            "spCost": 33,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Max HP +90% and becomes more likely to be attacked. For every attack taken, ATK +28% (up to 10 times), then deals 230% ATK as Arts damage to all nearby enemies when the skill ends",
+            "initialSp": 9,
+            "spCost": 32,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Max HP +100% and becomes more likely to be attacked. For every attack taken, ATK +30% (up to 10 times), then deals 250% ATK as Arts damage to all nearby enemies when the skill ends",
+            "initialSp": 10,
+            "spCost": 30,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 1
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Reflection Damage",
+            "description": "Able to reflect damage onto enemies (especially ranged)"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 2
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Adagio",
+      "facility": "Dormitory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Dormitory, restores +0.65 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (only the strongest effect of this type applies), and each Dormitory level gives 1 Measure"
+    },
+    {
+      "name": "Walking the Keyboard",
+      "facility": "Dormitory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Dormitory, convert every 1 Measure to 1 Perception Information"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Czerny's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "AST-X: Tick-tock Tick-tock",
+      "mission": {
+        "requirement1": "During battle, have your own Czerny use Meisterwerk a total of 5 times",
+        "requirement2": "Clear Lingering Echoes LE-3 with a 3-star rating; You must deploy your own Czerny, and use Meisterwerk at least 1 time"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +150 , DEF +25",
+          "effectLabel": "Trait improved",
+          "effectText": "On skill activation, normal attacks deal Arts damage. When attacking and being attacked, deals extra 10% of ATK as Arts damage to target",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +225 , DEF +50",
+          "effectLabel": "Reverberation improved",
+          "effectText": "RES +10. Deals 100% of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +275 , DEF +57",
+          "effectLabel": "Reverberation improved",
+          "effectText": "RES +10. Deals 110% of Czerny's ATK as Arts damage to the attacker whenever Czerny receives Arts attacks",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Czerny, renowned musician from\nLeithanien\n's Afterglow. Took up a concurrent post as a\nDefender\nOperator\nat a local\nRhodes Island\nbranch office following the\nVyseheim\nincident\n.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1246,
+          "atk": 262,
+          "def": 231,
+          "res": 5,
+          "redeploy": 80,
+          "dp": 23,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1685,
+          "atk": 375,
+          "def": 341,
+          "res": 5,
+          "redeploy": 80,
+          "dp": 23,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1685,
+          "atk": 375,
+          "def": 341,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 25,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 2247,
+          "atk": 500,
+          "def": 461,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 25,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2247,
+          "atk": 500,
+          "def": 461,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 27,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 3122,
+          "atk": 625,
+          "def": 577,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 27,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 40,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 11%\nLarge distribution of crystals across neck and back.\n\n[Blood Originium-Crystal Density] 0.25u/L\nCondition stable, no signs of deterioration for the time being."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "William Fichte Czerny—just mention his name, and any resident of the Afterglow will be filled with pride and reverence. Aside from his eminent talent for composition, he also has impressive skill with piano performance. His fingers are unusually long, allowing him to span 11ths with ease; thus, many of his pieces tend to be quite taxing to perform. Even so, this doesn't stop the people of the Afterglow from playing his magnum opuses with full enthusiasm, day after day.\nLate night in the Afterglow, when babes in the cradle refuse to sleep, it is his lullabies sung at their sides. When lovers embrace in gentle dance under the streetlamps, it is his serenades that guide them. When old faces pass on in serenity, it is his requiems sounding by their coffins. Being ill with Oripathy, Czerny only infrequently goes outdoors, but when he does, every note he inks flows in the steps of traveling singers, crossing endless rolling mountains and rushing rivers, to places further and further beyond.\nIn the bright-lit ballrooms of the Afterglow, ensembles played Czerny's dances all throughout the night, but he himself had no interest in such venues; his focus was mostly spilled into sheet after disorderly sheet of staves. At times, he'd do nothing all day, simply sitting at his desk in silence. Nobody could blame him for it, for everyone knew that that was everything sustaining him.\nDuring the Vyseheim incident, Czerny's life was at one point gravely endangered, but it was that near-death experience that changed his mind and had him join Rhodes Island, which gave him the opportunity to leave Leithanien. Ever since, a land far wider than the Afterglow, than Leithanien herself, has been slowly unfolding before his eyes. Henceforth, no longer has that cramped little desk contained his thirsts, the yearnings for faraway lands roaring through Czerny's mind without abate."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "'Mr. Czerny's, um, let me think... sure, I've met worse people to get along with, and yeah, on the whole, I guess he means well. I don't know—sometimes you just really wanna slap him, you know? Everything's telling you to do it.'\n'I get you. He's the most difficult patient I've ever met, period. Last week I was telling him, uh, don't pull all-nighters, don't work too much, eat when you should, take your meds on time—I went over it three times, at least! But I went to the dorms this week to give him a checkup—ugh—guess what I found?'\n'I mean, what else? Sheet music all over the floor, mugs full of coffee stains, completely untouched dinners—oh, also, obviously, Mr. Czerny himself half-dead.'\n'Guys, stop talking. My hand's itching already.'\n'But that's his job, isn't it? You know there's a billion people onboard who work like that...'\n'Shut up, you li'l slug. Keep defending him and you'll get a week of graveyard shifts.'\n'I... give me a break, I like him! He's an amazing musician, seriously! And last month he gave me a whole jar of hand lotion. He was really considerate, insisted I should treasure my own hands.'\n'Yeesh—if treasuring them means twenty coats of cream a day like he does, count me out.'\n'Look, this is why you keep getting those hangnails. Listen to Mr. Czerny and you wouldn't.'\n'Hmph. Yeah, of course he wouldn't. He comes to Medical if he gets the tiniest scratch on his fingers.'\n'Honestly? If my hands were worth half as much as his, I'd do the same.'\n'Okay, that settles it. Both of you, get on your new overnight shifts, stat.'\n'Hi, is anyone sitting here? Everywhere else in the canteen's taken.'\n'Oh, no, sure, go ahead.'\n'Thanks. Oh, right, have you heard the new song Mr. Czerny just released? It's marvelous!'\n'Uh, we haven't had the time to...'\n'Look, there was this report from only a little while ago. It says he announced he'd donate all the proceeds from it to help Leithanian children who've been orphaned by Oripathy. It's hard to believe how nice he is... he barely even keeps much cash of his own.'\n'......'\n'Oh, aren't you eating that? You've got so much left. What's the rush?'\n'I'm doing a check-up!'\n'Check-up for who?'\n'Czerny. Who else?'\n—Informal conversation between Medic Operators at the cafeteria.\n'I wasn't eavesdropping. I just happened to sit down right there.'\n—As stated by Operator Hibiscus."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Before analyzing any piece of music, we must also conduct an in-depth analysis of the composer's experiences achievements. As we all know, William Czerny was born to a renowned family of musicians from the Afterglow. His mother Hayley Czerny raised him alone after his father passed away while he was young. As a pianist well-versed in musical theory, Hayley tuned pianos for a living following her husband's death.\nAs she had no one to take care of him, she often brought her son to work. Although many of her customers were talented pianists, all of them without exception were amazed by the young Czerny's extraordinary talents. And as he had yet to formally study piano, many of them taught him everything they knew.\nHayley died of illness when Czerny was fourteen, and he became infected with Oripathy by accident while dealing with her funeral arrangements. He had no choice but to abandon his plans to attend a music academy in Leithanien's capital, and instead studied under a famous local composer in the Afterglow. There, he met his teacher's eldest daughter. Her name is unknown, and all we know about her from our interviews with him is that Czerny sees her as a lifelong friend, and that she possessed great musical talent as well, but not only did their rivalry never get in the way of their friendship, it made them all the more inseparable as they appreciated each other's talent.\nThose wondrous days lasted six years, and Czerny had already become a performer of great renown by then. However, no amount of being in the spotlight could have illuminated the dark fate that shrouded him at the time. When he was twenty, his dear friend died of her worsening Oripathy symptoms. Shocked, the great musician was unable to recover from this setback and turned to the creative process to release the pain in his heart. After shutting himself in for a year, the world was introduced to his magnum opus, 'Morgen und Abend'—the piece today's lecture is on.\nThis 'Morgen und Abend' elevated its composer to the top ranks of Leithanian musicians, yet behind it was a pain so great that it swallowed the composer whole. This great pain tore open a deep, deep fissure in his iron-like body, and it is through this fissure that his soft, inner self finally caught a glimpse of the true face of the outer world.\n...I suppose I should leave it at that. Let's listen to this piece ourselves.\n—Excerpt from the lecture records of Leithanien's top music academy's music appreciation course's fourth session."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "My most respected Frau Kal'tsit and Doctor, the research I have been conducting has ground to a halt due to a budget deficit, and I am hoping the two of you will grant me additional funding.\nThis research project aims to help our young operators master Originium Arts through musical education, as well as to study the specific effects a person's musical skill has on their Originium Arts education. Using myself as an example, I ran into quite a but of trouble when I first studied Originium Arts during my formative years. I spent months making no progress at all. However, I later realized that Leithanien's Originium Arts system goes hand in hand with its music, and my musical gifts were like a rich mineral deposit waiting to be mined. Which is why I immediately adjusted my study plan and banished from my thoughts all the basic theories I'd read in the books. Instead, I applied the music theory I had mastered directly to my Originium Arts, in the end greatly improving my learning efficiency while putting in only half the work.\nSecondly, a person's Originium Arts education is of great value to our research on the role music plays in the Leithanian Originium Arts system. Leithanien's top Casters are almost without exception great musicians, and monumental musical works often led to breakthroughs in Arts development throughout Leithanien's classical Arts development history. It is also evident when looking at their history that the two's developments closely align with one another. Whenever Arts development reached a high point, a golden age of music occurred at either the same time or shortly after. Likewise, whenever the development of music stagnated, so too did the development of Arts.\nMy research has progressed far enough for me to draw the conclusion that the results our young operators achieve every step of the way are closely tied to the breakthroughs in their musical education. Further research should be able to illuminate the specific role that music plays.\nFinally, I would like to note that music has widespread applications in the Originium Arts across all of Leithanien. In particular, in the Afterglow we have a unique medical Arts system for dealing with Oripathy, and its effectiveness has been proven by my protracted experiments. Naturally, if you are able to provide me with more funding, I can immediately put this research project on the agenda.\n\n—Excerpt from Operator Czerny's 'Research Funding Application'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "'I've always thought that creating music is like walking a tightrope in a storm.' He sets down his beer bottle and turns to you to lament.\n'Your soul is the tightrope under your feet. It must be sturdy enough to withstand the strong gales, born of our desires and emotions. The winds are absolutely terrifying, beneath our feet lies a bottomless abyss, and our path ahead is but that narrow rope.' He swallows his saliva as if what he is about to say is difficult to broach.\n'I'm afraid, Doctor. Always have been.'\n'Because the melody in my head is also the sound of the rope swaying violently in the storm.'"
+    }
+  ]
+}

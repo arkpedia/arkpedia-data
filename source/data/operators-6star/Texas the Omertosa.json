@@ -1,0 +1,1016 @@
+{
+  "name": "Texas the Omertosa",
+  "rarity": 6,
+  "class": "Specialist",
+  "branch": "Executor",
+  "faction": "Penguin Logistics",
+  "umbrellaFactions": [
+    "Yan-Lungmen"
+  ],
+  "connectedFactions": [
+    "Siracusa"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Fast-Redeploy",
+    "DPS"
+  ],
+  "trait": "Significantly reduced Redeployment Time",
+  "howToObtain": {
+    "Limited": "Yes",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Wingbreaker",
+    "Il Segreto Della Notte"
+  ],
+  "ep": {
+    "Main": "Thorns in You",
+    "Co-star": null
+  },
+  "internalName": "char_1028_texas2",
+  "otherLanguages": {
+    "Chinese": "缄默德克萨斯",
+    "Japanese": "血掟 テキサス",
+    "Korean": "텍사스 디 오메르토사"
+  },
+  "characterInfo": {
+    "File no.": "PL07",
+    "Illustrator": "幻象黑兔 Studio Montagne ( Il Segreto Della Notte )",
+    "Release Date": "2023/05/23",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Azusa Tadokoro",
+    "Chinese": "Menglu Yang",
+    "English": "Jessica Preddy",
+    "Korean": "Kim Chae-ha",
+    "Italian": "Ilaria Silvestri"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "5 years",
+    "Place of Birth": "Columbia",
+    "Date of Birth": "June 1st",
+    "Race": "Lupo",
+    "Height": "161 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Excellent",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Texas Tradition",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Gains +10% ATK during the duration of the passive skill ; When defeating an enemy for the first time, fully restores HP and reactivates the effects of the passive skill"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Gains +20% ATK during the duration of the passive skill; When defeating an enemy for the first time, fully restores HP and reactivates the effects of the passive skill"
+        }
+      ]
+    },
+    {
+      "name": "Texas Swordsmanship",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Before defeating an enemy for the first time after each deployment, gains +8 ASPD and reduces all damage taken by 25%"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Before defeating an enemy for the first time after each deployment, gains +10 (+2) ASPD and reduces all damage taken by 30% (+5%)"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "ATK +22"
+      },
+      {
+        "level": 4,
+        "benefit": "Redeployment time -2 seconds"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Texas Swordmanship"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Texas the Omertosa's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Texas Tradition .",
+        "New skill: Unrelenting Downpour ."
+      ],
+      "prerequisite": "Raise Texas the Omertosa to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Specialist Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Texas Swordmanship .",
+        "New skill: Torrential Sword Rain .",
+        "Texas Tradition improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Texas the Omertosa to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Specialist Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Bipolar Nanoflake",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Block",
+          "quantity": 7
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Silent Drizzle",
+        "recoveryType": "Passive",
+        "activationType": "10–12 seconds",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "After deployment, gains ATK +25% ; Attacks Silence the target for 3 seconds and cause them to take 200 Arts damage per second during that duration",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "After deployment, gains ATK +30% ; Attacks Silence the target for 3 seconds and cause them to take 220 Arts damage per second during that duration",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "After deployment, gains ATK +35% ; Attacks Silence the target for 3 seconds and cause them to take 240 Arts damage per second during that duration",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "After deployment, gains ATK +40% ; Attacks Silence the target for 5 seconds and cause them to take 260 Arts damage per second during that duration",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 11
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "After deployment, gains ATK +45% ; Attacks Silence the target for 5 seconds and cause them to take 280 Arts damage per second during that duration",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 11
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "After deployment, gains ATK +50% ; Attacks Silence the target for 5 seconds and cause them to take 300 Arts damage per second during that duration",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 11
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "After deployment, gains ATK +55% ; Attacks Silence the target for 8 seconds and cause them to take 320 Arts damage per second during that duration",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 12
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "After deployment, gains ATK +60% ; Attacks Silence the target for 8 seconds and cause them to take 350 Arts damage per second during that duration",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 12
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "After deployment, gains ATK +65% ; Attacks Silence the target for 8 seconds and cause them to take 380 Arts damage per second during that duration",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 12
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "After deployment, gains ATK +70% ; Attacks Silence the target for 10 seconds and cause them to take 400 Arts damage per second during that duration",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 12
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "Transmuted Salt",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Damage Over Time",
+            "description": "Enemies incur a damage per second for a certain duration"
+          }
+        ]
+      },
+      {
+        "name": "Unrelenting Downpour",
+        "recoveryType": "Passive",
+        "activationType": "8–10 seconds",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "After deployment, immediately deals 120% ATK as Arts damage to all surrounding enemies and inflicts -10% RES for 8 seconds; ATK +20% , attacks hit 2 times and deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 8
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "After deployment, immediately deals 130% ATK as Arts damage to all surrounding enemies and inflicts -10% RES for 8 seconds; ATK +23% , attacks hit 2 times and deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 8
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "After deployment, immediately deals 140% ATK as Arts damage to all surrounding enemies and inflicts -10% RES for 8 seconds; ATK +26% , attacks hit 2 times and deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 8
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "After deployment, immediately deals 150% ATK as Arts damage to all surrounding enemies and inflicts -15% RES for 8 seconds; ATK +30% , attacks hit 2 times and deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 8
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "After deployment, immediately deals 160% ATK as Arts damage to all surrounding enemies and inflicts -15% RES for 8 seconds; ATK +33% , attacks hit 2 times and deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 8
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "After deployment, immediately deals 170% ATK as Arts damage to all surrounding enemies and inflicts -15% RES for 8 seconds; ATK +36% , attacks hit 2 times and deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 8
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "After deployment, immediately deals 180% ATK as Arts damage to all surrounding enemies and inflicts -20% RES for 10 seconds; ATK +40% , attacks hit 2 times and deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "After deployment, immediately deals 200% ATK as Arts damage to all surrounding enemies and inflicts -25% RES for 10 seconds; ATK +45% , attacks hit 2 times and deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "After deployment, immediately deals 220% ATK as Arts damage to all surrounding enemies and inflicts -30% RES for 10 seconds; ATK +50% , attacks hit 2 times and deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "After deployment, immediately deals 240% ATK as Arts damage to all surrounding enemies and inflicts -30% RES for 10 seconds; ATK +55% , attacks hit 2 times and deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "2nd",
+            "priority": "main",
+            "explanation": "An awesome skill to master right after Skill 3 due to its on-demand RES debuff and supplementary damage. Fantastic for arts-damage centric teams."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 8
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Torrential Sword Rain",
+        "recoveryType": "Passive",
+        "activationType": "6–8 seconds",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "After deployment, immediately deals 100% ATK as Arts damage twice to all surrounding enemies and Stuns them for 1 second, then releases a Sword Rain at up to 2 targets within range every second that deals 70% ATK as Arts damage and Stuns for 0.2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 6
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "After deployment, immediately deals 105% ATK as Arts damage twice to all surrounding enemies and Stuns them for 1 second, then releases a Sword Rain at up to 2 targets within range every second that deals 75% ATK as Arts damage and Stuns for 0.2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 6
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "After deployment, immediately deals 110% ATK as Arts damage twice to all surrounding enemies and Stuns them for 1 second, then releases a Sword Rain at up to 2 targets within range every second that deals 80% ATK as Arts damage and Stuns for 0.2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 6
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "After deployment, immediately deals 115% ATK as Arts damage twice to all surrounding enemies and Stuns them for 1.5 seconds., then releases a Sword Rain at up to 2 targets within range every second that deals 85% ATK as Arts damage and Stuns for 0.2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 6
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "After deployment, immediately deals 120% ATK as Arts damage twice to all surrounding enemies and Stuns them for 1.5 seconds, then releases a Sword Rain at up to 2 targets within range every second that deals 90% ATK as Arts damage and Stuns for 0.2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 6
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "After deployment, immediately deals 125% ATK as Arts damage twice to all surrounding enemies and Stuns them for 1.5 seconds, then releases a Sword Rain at up to 2 targets within range every second that deals 95% ATK as Arts damage and Stuns for 0.2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 6
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "After deployment, immediately deals 130% ATK as Arts damage twice to all surrounding enemies and Stuns them for 1.5 seconds, then releases a Sword Rain at up to 3 targets within range every second that deals 100% ATK as Arts damage and Stuns for 0.2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 7
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "After deployment, immediately deals 135% ATK as Arts damage twice to all surrounding enemies and Stuns them for 2 seconds, then releases a Sword Rain at up to 3 targets within range every second that deals 110% ATK as Arts damage and Stuns for 0.2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 7
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "After deployment, immediately deals 150% ATK as Arts damage twice to all surrounding enemies and Stuns them for 2 seconds, then releases a Sword Rain at up to 3 targets within range every second that deals 120% ATK as Arts damage and Stuns for 0.2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "After deployment, immediately deals 165% ATK as Arts damage twice to all surrounding enemies and Stuns them for 2 seconds, then releases a Sword Rain at up to 4 targets within range every second that deals 130% ATK as Arts damage and Stuns for 0.2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 8
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "The highly-used skill of Texas that provides on-demand stun and damage. Super easy to use and seen as a panic button when things go wrong. One of the best masteries to enjoy."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 4
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 7
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 6
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 5
+        },
+        {
+          "name": "Transmuted Salt",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Silence as a Sword",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Specialist and Vanguard Operators' Specialization training speed +30%"
+    },
+    {
+      "name": "Break the ShacklesReplacesSilence as a Sword",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Specialist and Vanguard Operators' Specialization training speed +30% ; if training a skill to Specialization Level 2 , training speed will be further increased by +50%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Texas the Omertosa's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "EXE-X: New Car and New Life",
+      "mission": {
+        "requirement1": "Deal a total of 80,000 damage with a non Support Texas the Omertosa",
+        "requirement2": "Clear Main Theme 5-3 with a 3-star ratings. You must deploy your own Texas the Omertosa and have her defeat at least 10 enemies."
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +130 , ATK +46",
+          "effectLabel": "New trait",
+          "effectText": "Refunds a large portion of the current DP Cost when retreated",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +150 , ATK +62",
+          "effectLabel": "Texas Swordmanship improved",
+          "effectText": "Before defeating an enemy for the first time after each deployment, gains +12 ASPD and reduces all damage taken by 30%. Further reduces Redeployment time by -10% if Texas defeats an enemy.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +160 , ATK +69",
+          "effectLabel": "Texas Swordmanship improved",
+          "effectText": "Before defeating an enemy for the first time after each deployment, gains +15 ASPD and reduces all damage taken by 30%. Further reduces Redeployment time by -20% if Texas defeats an enemy.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "EXE-Y: Blueberry & Dark Chocolate",
+      "mission": {
+        "requirement1": "Defeat 10 elite or leader enemies with Texas the Omertosa (excluding Support Units)",
+        "requirement2": "Clear Side Story CB-8 with a 3-star rating; You must deploy your own Texas the Omertosa, and have Texas the Omertosa defeat at least 2 Greytails"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +140 , ATK +40",
+          "effectLabel": "New trait",
+          "effectText": "When there are no allied units in the four adjacent tiles, ATK +10%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +160 , ATK +53",
+          "effectLabel": "Texas Tradition improved",
+          "effectText": "Gains +25% ATK during the duration of the passive skill ; When defeating an enemy for the first time, fully restores HP and reactivates the effects of the passive skill",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +180 , ATK +65",
+          "effectLabel": "Texas Tradition improved",
+          "effectText": "Gains +28% ATK during the duration of the passive skill; When defeating an enemy for the first time, fully restores HP and reactivates the effects of the passive skill",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Penguin Logistics\nemployee, last surviving member of the Texas family, excellent solo combat ability.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "B_V24SP630I",
+      "creator": "kukkikaze"
+    },
+    {
+      "videoId": "NnN3vTK7xzw",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "PSOPCJ9U3yM",
+      "creator": "Yii"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 747,
+          "atk": 219,
+          "def": 144,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 8,
+          "block": 1,
+          "interval": 0.93
+        },
+        "max": {
+          "hp": 996,
+          "atk": 323,
+          "def": 206,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 8,
+          "block": 1,
+          "interval": 0.93
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 996,
+          "atk": 323,
+          "def": 206,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 10,
+          "block": 1,
+          "interval": 0.93
+        },
+        "max": {
+          "hp": 1246,
+          "atk": 443,
+          "def": 268,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 10,
+          "block": 1,
+          "interval": 0.93
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1246,
+          "atk": 443,
+          "def": 268,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 10,
+          "block": 1,
+          "interval": 0.93
+        },
+        "max": {
+          "hp": 1598,
+          "atk": 569,
+          "def": 320,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 10,
+          "block": 1,
+          "interval": 0.93
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 90,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Texas shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.12u/L\nTo be able to avoid infection in such a dangerous environment is a minor miracle, and testament to Operator Texas's abilities."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "An old friend of Rhodes Island.\nMany were shocked when Texas came to Rhodes Island with the two who would later become Vigil and Penance, as she looked unmistakably Siracusan.\nThose who knew her were uneasy about her return to Siracusa. Though it was well-known that she had something to do with the country, no one knew what lay in her past.\nTheir minds were set at ease by the fact that she was joined by Penguin Logistics members. After all, Texas would be Texas as long as she was with Penguin Logistics.\nHowever, when it was learned what happened to her and Siracusa, and who she had brought to Rhodes Island, a consensus was quickly reached: \nDon't mess with Texas."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "For Texas, Giovanna and Lappland each represented her past lives in Columbia and Siracusa.\nIf not for what had happened 7 years ago, she might have become a reticent Lappland, or a cold-blooded Giovanna.\nLappland symbolized hysteria toward Siracusa; she could not face it, but there was nowhere else to go to.\nGiovanna represented apprehension toward Columbia; she knew she did not have to do it, but she did not know what else to do.\nTexas knows that she would have walked the same paths as them, if she had not run away from it all.\nWhenever she came face-to-face with Lappland and Columbia, it filled her with nostalgia, but guilt as well.\nThat is why she tolerated Lappland's actions, and accepted Giovanna's reproach. She was a Texas, no matter how much she detested everything to do with the family.\nShe knew the price she paid when she chose to step away from it all.\nWas it worth it?\nShe asked herself this many times, and unsurprisingly was never able to find the answer.\nAfter leaving Columbia and Siracusa, she desperately sought a new life to replace the old one.\nFor her, life is not about searching for meaning; it was life itself that was worth searching for.\nFortunately, she found what she was looking for."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Texas and Penguin Logistics did not stay in Nuova Volsinii for long.\nShe returned to Lungmen with the other members soon after the events concluded. Penguin Logistics reopened, and there did not seem to be any changes in their lives.\nBut she also meant her promise to Vigil: she would be there when Nuova Volsinii needs her.\nNuova Volsinii was established with Signora Sicilia's blessing, and thus most of the families have chosen to sit on the sidelines, keeping an eye on developments. However, this is no more than the calm before the storm.\nTexas knows this, as do the rest of Penguin Logistics.\nAt present, the main reason for them to travel between Lungmen and Nuova Volsinii is not so much Texas as Sora.\nThe success of La Morte di Texas made Sora a star, prompting Monster Siren Records to change its strategy and encourage her to continue her activities in Siracusa. Nuova Volsinii presents an ideal platform for Sora in more ways than one.\nIt was Sora, then, who has to regularly make the trip to Nuova Volsinii.\nMeanwhile, not wishing to let this opportunity go to waste, Croissant approached Bison and is trying to work with MountainDash Logistics and Vigil to build an international logistics route. It is a monumental task, but Croissant seems to enjoy it.\nExusiai, for her part, has made it her mission to try every pizza parlor in Siracusa and find the best.\nFor now, Texas is the one who is most idle.\nShe knows, however, that there is something tying them together. They will always be together, whether going forwards or backwards."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Not much has changed with Texas. She has not taken up the surname Texas to create a new mafia family, nor does she intend to become part of Nuova Volsinii under Vigil. For her, the only change is that she has started to pay regular visits to Nuova Volsinii.\nShe has made it clear that she will not stay in Siracusa when all is said and done. She does not want to leave too many traces there, and Vigil respects her decision. He has not interfered with Penguin Logistics's new Nuova Volsinii branch, and there are few among the mafiosi who know where the last Texas went after her brief reappearance in Volsinii.\nOf course, things are constantly changing.\nThe waves that Bernardo stirred have calmed, but the families have begun to stir again. Siracusa's balance teeters on a precipice, leaving precious little time for Nuova Volsinii to grow peacefully.\nAt the same time, the game that the Signori dei Lupi have played for many years has come to the surface. This round is coming to an end, and the impact it will have on Siracusa is yet unknown.\nThe only thing that is certain is that change is coming to Siracusa.\nShould she claim power, or at least associate herself with it, in the name of the greater good? Texas knows that the answer <i>should</i> be 'yes,' yet she has chosen to distance herself from Vigil and Penance.\nHer line of thinking is simple. She does not belong to that greater good; she is simply one of the common folk, who felt outraged out of the goodness of her heart. Her only promise to Vigil was that she would keep fighting, until either Siracusa has changed, or she is no more."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "At the celebration of Texas's return, Emperor brought up the founding of Penguin Logistics.\nHe was studying street performance in Columbia, when he smelled the presence of a Signore dei Lupi on Columbian soil, much to his surprise.\nHe decided to look into it, and found Zaaro dealing with a human—Texas.\n'Don't give me that look, Texas. Did you really think we met on that street by chance?'\nHe became interested in the mortal who was able to deal with a Signore dei Lupi, so he followed her, only to see her doubts and pent-up anger. For a long time, she lived like a walking corpse.\n'I learned about what happened to the Texas family, so I thought I'd help you kids out a little. Ain't no time for brooding when your feet are busy, so I founded this joint, and dragged her into it.'\n'Huh...'\n'What's the matter?'\n'Didn't think you had it in you to do something so decent, boss.'\n'Hey! I get no respect around here!'\n'So Columbia is the reason you like rap?'\n'No, <i>I'm</i> the reason Columbia likes rap.'"
+    }
+  ]
+}

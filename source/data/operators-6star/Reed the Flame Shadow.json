@@ -1,0 +1,957 @@
+{
+  "name": "Reed the Flame Shadow",
+  "rarity": 6,
+  "class": "Medic",
+  "branch": "Incantation Medic",
+  "faction": "Tara",
+  "umbrellaFactions": [
+    "Victoria"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing",
+    "DPS",
+    "Debuff"
+  ],
+  "trait": "Attacks deal Arts damage and heal the HP of an ally within Attack Range for 50% of the damage dealt",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Curator",
+    "Summer Flower FA075",
+    "Glowing Flame in the Night"
+  ],
+  "ep": {
+    "Main": "Flame Shadow",
+    "Co-star": null
+  },
+  "internalName": "char_1020_reed2",
+  "otherLanguages": {
+    "Simplified Chinese": "焰影苇草",
+    "Traditional Chinese": "焰影葦草",
+    "Japanese": "焔 影 リード",
+    "Korean": "리드 더 플레임 섀도우"
+  },
+  "characterInfo": {
+    "File no.": "DB02",
+    "Illustrator": "STAR影法师",
+    "Release Date": "2023/07/13",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Mamiko Noto",
+    "Chinese": "Fumeng Ruowei",
+    "English": "Martha Mackintosh",
+    "Korean": "Yoo Bora"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "8 years",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "October 16th",
+    "Race": "Draco",
+    "Height": "172 cm",
+    "Infection Status": "Originium crystals are distributed across the surface of her body, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Excellent",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Outstanding"
+  },
+  "talents": [
+    {
+      "name": "Cinder",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When dealing damage, 30% chance to inflict Cinder: ATK -10%, 15% Arts Fragility , does not stack, lasts 6s"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 3",
+          "description": "When dealing damage, 30% chance to inflict Cinder: ATK -12% (+2%) , 17% (+2%) Arts Fragility , does not stack, lasts 6s"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When dealing damage, 30% chance to inflict Cinder: ATK -20%, 30% Arts Fragility , does not stack, lasts 6s"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 3",
+          "description": "When dealing damage, 30% chance to inflict Cinder: ATK -22% (+2%) , 32% (+2%) Arts Fragility , does not stack, lasts 6s"
+        }
+      ]
+    },
+    {
+      "name": "Reflected Shine",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When healing an ally, Reed the Flame Shadow heals herself for 50% of the amount healed"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 6",
+          "description": "When healing an ally, Reed the Flame Shadow heals herself for 55% (+5%) of the amount healed"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Improves Cinder"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +26"
+      },
+      {
+        "level": 5,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 6,
+        "benefit": "Improves Reflected Shine"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Reed the Flame Shadow's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Cinder .",
+        "New skill: Wither and Thrive .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Reed the Flame Shadow to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Sugar",
+          "quantity": 8
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Reflected Shine .",
+        "New skill: Ember of Life .",
+        "Cinder improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Reed the Flame Shadow to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Medic Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Nucleic Crystal Sinter",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Concentration",
+          "quantity": 9
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Swift Strike γ",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "35 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +20% ; ASPD +20",
+            "initialSp": 0,
+            "spCost": 45,
+            "duration": 35
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +22% ; ASPD +20",
+            "initialSp": 0,
+            "spCost": 44,
+            "duration": 35
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +24% ; ASPD +20",
+            "initialSp": 0,
+            "spCost": 43,
+            "duration": 35
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +27% ; ASPD +25",
+            "initialSp": 5,
+            "spCost": 42,
+            "duration": 35
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +29% ; ASPD +25",
+            "initialSp": 5,
+            "spCost": 41,
+            "duration": 35
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +31% ; ASPD +25",
+            "initialSp": 5,
+            "spCost": 40,
+            "duration": 35
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +34% ; ASPD +35",
+            "initialSp": 10,
+            "spCost": 39,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +37% ; ASPD +35",
+            "initialSp": 10,
+            "spCost": 38,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +40% ; ASPD +35",
+            "initialSp": 10,
+            "spCost": 37,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +45% ; ASPD +45",
+            "initialSp": 15,
+            "spCost": 35,
+            "duration": 35
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            },
+            {
+              "name": "Semi-Synthetic Solvent",
+              "quantity": 6
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 10
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Wither and Thrive",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15–20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Prioritizing ground Operators , gives 1 ally 3 fireballs with the following effect: Every 1.5 seconds, deals 130% of Reed the Flame Shadow's ATK as Arts damage to an enemy, triggering her Trait but only on that ally.",
+            "initialSp": 5,
+            "spCost": 40,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Prioritizing ground Operators, gives 1 ally 3 fireballs with the following effect: Every 1.5 seconds, deals 140% of Reed the Flame Shadow's ATK as Arts damage to an enemy, triggering her Trait but only on that ally.",
+            "initialSp": 5,
+            "spCost": 39,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Prioritizing ground Operators, gives 1 ally 3 fireballs with the following effect: Every 1.5 seconds, deals 150% of Reed the Flame Shadow's ATK as Arts damage to an enemy, triggering her Trait but only on that ally.",
+            "initialSp": 5,
+            "spCost": 38,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Prioritizing ground Operators, gives 1 ally 3 fireballs with the following effect: Every 1.5 seconds, deals 160% of Reed the Flame Shadow's ATK as Arts damage to an enemy, triggering her Trait but only on that ally.",
+            "initialSp": 10,
+            "spCost": 37,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Prioritizing ground Operators, gives 1 ally 3 fireballs with the following effect: Every 1.5 seconds, deals 170% of Reed the Flame Shadow's ATK as Arts damage to an enemy, triggering her Trait but only on that ally.",
+            "initialSp": 10,
+            "spCost": 36,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Prioritizing ground Operators, gives 1 ally 3 fireballs with the following effect: Every 1.5 seconds, deals 180% of Reed the Flame Shadow's ATK as Arts damage to an enemy, triggering her Trait but only on that ally.",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Prioritizing ground Operators, gives 2 allies 3 fireballs with the following effect: Every 1.5 seconds, deals 190% of Reed the Flame Shadow's ATK as Arts damage to an enemy, triggering her Trait but only on that ally.",
+            "initialSp": 15,
+            "spCost": 33,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Prioritizing ground Operators, gives 2 allies 3 fireballs with the following effect: Every 1.5 seconds, deals 200% of Reed the Flame Shadow's ATK as Arts damage to an enemy, triggering her Trait but only on that ally.",
+            "initialSp": 16,
+            "spCost": 31,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Prioritizing ground Operators, gives 2 allies 3 fireballs with the following effect: Every 1.5 seconds, deals 220% of Reed the Flame Shadow's ATK as Arts damage to an enemy, triggering her Trait but only on that ally.",
+            "initialSp": 17,
+            "spCost": 29,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Prioritizing ground Operators, gives 2 allies 3 fireballs with the following effect: Every 1.5 seconds, deals 240% of Reed the Flame Shadow's ATK as Arts damage to an enemy, triggering her Trait but only on that ally.",
+            "initialSp": 18,
+            "spCost": 27,
+            "duration": 20
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "Transmuted Salt",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Damage Over Time",
+            "description": "Enemies incur a damage per second for a certain duration"
+          },
+          {
+            "name": "Focused AOE",
+            "description": "Placing the two units receiving the fireballs nearby can increase damage output on enemies in the middle of the two."
+          }
+        ]
+      },
+      {
+        "name": "Ember of Life",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attacks hit 2 enemies; ATK +10% ; Talent 1 activation chance increases to 100% ; enemies with the Cinder effect take 10% of Reed the Flame Shadow's ATK as Arts damage per second, and when defeated deal 90% of ATK as Arts damage and inflict Cinder to nearby enemies Cinder lasts until this skill expires",
+            "initialSp": 10,
+            "spCost": 50,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attacks hit 2 enemies; ATK +15% ; Talent 1 activation chance increases to 100% ; enemies with the Cinder effect take 10% of Reed the Flame Shadow's ATK as Arts damage per second, and when defeated deal 90% of ATK as Arts damage and inflict Cinder to nearby enemies Cinder lasts until this skill expires",
+            "initialSp": 10,
+            "spCost": 50,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attacks hit 2 enemies; ATK +20% ; Talent 1 activation chance increases to 100% ; enemies with the Cinder effect take 10% of Reed the Flame Shadow's ATK as Arts damage per second, and when defeated deal 90% of ATK as Arts damage and inflict Cinder to nearby enemies Cinder lasts until this skill expires",
+            "initialSp": 10,
+            "spCost": 50,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attacks hit 2 enemies; ATK +25% ; Talent 1 activation chance increases to 100% ; enemies with the Cinder effect take 20% of Reed the Flame Shadow's ATK as Arts damage per second, and when defeated deal 100% of ATK as Arts damage and inflict Cinder to nearby enemies Cinder lasts until this skill expires",
+            "initialSp": 15,
+            "spCost": 45,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attacks hit 2 enemies; ATK +30% ; Talent 1 activation chance increases to 100% ; enemies with the Cinder effect take 20% of Reed the Flame Shadow's ATK as Arts damage per second, and when defeated deal 100% of ATK as Arts damage and inflict Cinder to nearby enemies Cinder lasts until this skill expires",
+            "initialSp": 15,
+            "spCost": 45,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attacks hit 2 enemies; ATK +35% ; Talent 1 activation chance increases to 100% ; enemies with the Cinder effect take 20% of Reed the Flame Shadow's ATK as Arts damage per second, and when defeated deal 100% of ATK as Arts damage and inflict Cinder to nearby enemies Cinder lasts until this skill expires",
+            "initialSp": 15,
+            "spCost": 45,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attacks hit 2 enemies; ATK +40% ; Talent 1 activation chance increases to 100% ; enemies with the Cinder effect take 30% of Reed the Flame Shadow's ATK as Arts damage per second, and when defeated deal 110% of ATK as Arts damage and inflict Cinder to nearby enemies Cinder lasts until this skill expires",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attacks hit 2 enemies; ATK +45% ; Talent 1 activation chance increases to 100% ; enemies with the Cinder effect take 40% of Reed the Flame Shadow's ATK as Arts damage per second, and when defeated deal 120% of ATK as Arts damage and inflict Cinder to nearby enemies Cinder lasts until this skill expires",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attacks hit 2 enemies; ATK +50% ; Talent 1 activation chance increases to 100% ; enemies with the Cinder effect take 50% of Reed the Flame Shadow's ATK as Arts damage per second, and when defeated deal 130% of ATK as Arts damage and inflict Cinder to nearby enemies Cinder lasts until this skill expires",
+            "initialSp": 25,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attacks hit 2 enemies; ATK +60% ; Talent 1 activation chance increases to 100% ; enemies with the Cinder effect take 60% of Reed the Flame Shadow's ATK as Arts damage per second, and when defeated deal 140% of ATK as Arts damage and inflict Cinder to nearby enemies Cinder lasts until this skill expires",
+            "initialSp": 30,
+            "spCost": 40,
+            "duration": 30
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 8
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Damage Over Time",
+            "description": "Enemies incur a damage per second for a certain duration"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Ester",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 5
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Red Dragon's Blood",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Caster and Medic Operators' Specialization training speed +30%"
+    },
+    {
+      "name": "Red Dragon's Blood",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Caster and Medic Operators' Specialization training speed +45%"
+    },
+    {
+      "name": "Leader",
+      "facility": "Control Center",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to the Control Center, all Operators in Dormitories recover +0.05 Morale per hour (strongest effect of the same type applies)"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Reed the Flame Shadow's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "INC-X: \"A Floral Garland to the Red Dragon\"",
+      "mission": {
+        "requirement1": "During battles, have Reed the Flame Shadow use Wither and Thrive a total of 10 times (excluding Support Units)",
+        "requirement2": "Clear Main Theme 11-6 with a 3-star rating under Standard Environment; You must use your own Reed the Flame Shadow, and have Reed the Flame Shadow defeat at least 40 enemies"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +105 , ATK +32",
+          "effectLabel": "Trait improved",
+          "effectText": "Attacks deal Arts damage and heal the HP of an ally within Attack Range for 60% of the damage dealt",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +145 , ATK +42",
+          "effectLabel": "Reflected Shine improved",
+          "effectText": "When healing an ally, healing effect is increased by 3%, and Reed the Flame Shadow heals herself for 55% of the amount healed",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +160 , ATK +50",
+          "effectLabel": "Reflected Shine improved",
+          "effectText": "When healing an ally, healing effect is increased by 5%, and Reed the Flame Shadow heals herself for 60% of the amount healed",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Reed\npreviously applied to withdraw\nwhile stationed at a\nRhodes Island\nbranch office in southern\nVictoria\n, and has only recently reestablished contact with us. Presently actively leading a small force within Victorian borders under\nDublinn\n's name, with her primary objective being to aid those\nTarans\nforcefully displaced.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "NpFixMG9-fk",
+      "creator": "SharkyFerret"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 868,
+          "atk": 192,
+          "def": 36,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 15,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1143,
+          "atk": 316,
+          "def": 53,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 15,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1143,
+          "atk": 316,
+          "def": 53,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1361,
+          "atk": 440,
+          "def": 67,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1361,
+          "atk": 440,
+          "def": 67,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1583,
+          "atk": 550,
+          "def": 84,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-3"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 50,
+      "def": 30
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 10%\nNo apparent proliferation in Reed's surface Originium crystals compared to before she disembarked.\n\n[Blood Originium-Crystal Density] 0.22u/L\nThe emergency treatment of Operator Reed left a deep impression on all attending Medical Department Operators. While huge challenges were posed during the procedure, her condition was nevertheless successfully stabilized.\n'Upon regaining consciousness, the first thing the patient asked me was 'Why save me?', which I had no idea how to respond to... *sigh* I wonder if she's found her answer now?'"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "In order to keep her identity concealed, Reed applied to Engineering for a new weapon when she left. Left unable to discuss it with the applicant, Engineering had to estimate her Arts characteristics and combat tics based solely on her old lance. Even so, judging by post-reboarding tests, this new weapon is an unexpectedly superior fit for Reed; or perhaps, as Reed herself says, her previous weapon simply didn't fit her at all. She seems to feel a sense of freedom now that she can lay down her old weapon, but nevertheless asked that Rhodes Island keep it appropriately stored in the warehouse.\n[Originium Arts Overview]\nReed now has precise control over her Arts, and testing them no longer requires the grounds to be cleared of personnel, nor does Reed herself express strong opposition.\nI recall an operator once permitted to observe her in combat, who was practically stunned, even frightened by the energy innate to her casting. Now, however, her Arts manifest in a completely different form. Several theoretical Casters have confirmed that her Arts, as ever, accelerate activity within organic tissue, but said acceleration has clearly become more controlled. Rejuvenation of flesh spurs rapid healing of wounds, while neuronal replacement inhibits the transmission of pain. No longer does life rapidly wither to her Arts; now it shines with fresh vitality.\nTo so significantly alter how one's Arts are cast without any long-term training is, for the caster, potently dangerous. After our repeated inquiries, Reed conceded that she endures a level of burning pain in limiting her Arts' energy and constraining their use purely to therapy, but stated that as no practical harm comes to her body, no concern is needed.\nIt goes without saying that that destructive power still lies within her blood, and in testing that, or sending her directly into combat missions, we continue to observe how the instantaneous rush of her flames can burn anything and everything to ashes. She has simply chosen to reveal the therapeutic side of her Arts to us, for that is the peace embodied by her dreams."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Reed was highly positive during her reexamination at Medical. This stems partly from her preexisting trust established with Rhodes Island, but also from having accepted her identity as a Draco, and the responsibilities that follow. These days, she does not worry about allowing Rhodes Island to get a hold of information on the Draco, nor whether her simple touch would inadvertently burn another to ashes.\nMost of the time, Reed is as calm as ever. The minority of operators who came into direct contact with her in the past all recall how often she'd wake from a stupor with a shudder, eyes filled with fear, yet not say a word to indicate what weighed on her mind. This extreme resistance to contact with others was alleviated somewhat after repeated attempts by Rhodes Island's operators and the Doctor to communicate, but the comfortable, assured way she now talks from time to time is truly gratifying to all who care for her. If raising the topics of Victoria's present theater of chaos or her own duties, she'll be extremely earnest and prudent in offering her own thoughts; meanwhile, when you touch on local lays of the land, on poetry and hopes for the future, she'll bare her own sincere bereavement and affection, without even realizing.\nAt the end of her stay at Medical, Reed was actively asking about issues relating to Oripathy treatment and protection.\nBy no means is it the first time Reed has asked a Medic Operator something of her own accord. In fact, before she last left Rhodes Island to set out, she spent several days and a huge amount of effort packing medical articles, and her luggage practically transformed into a medkit. For every way to die she could imagine, she thought of a way to resist it, which might have been a mechanical way of affirming life's value to herself at the time. Happily, her medical preparations may well have saved the day in practice, and now Reed asks for the sake of far more than her own.\nBased on her accounts, Oripathy infection rates among Tarans are relatively high owing to the majority working under conditions of inadequate protection; conversely, the relentless pace of Dublinn's battles sees casualties emerge infected one after another. She feels she has to address this somehow, perhaps because she is the Leader, or perhaps simply because she is their companion.\nBesides that, at some point prior to Operator Saileach disembarking, she and Reed had had a lengthy conversation in the library. Reed's latest return to the landship coincidentally saw her meet Saileach again, who was reboarding to report in from County Hillock. Over these past several months roaming Victorian soil, a change has been evident in the both of them. Seeing Saileach leave the reception room alone with much weighing on her, we had our reservations that, similar to her fellow former Victorian serviceman Bagpipe, Saileach would be at irreconcilable odds with Reed, who presently fights for Dublinn's cause.\nBut the next day, an operator saw the two of them together in a corner of the library. Absorbed in a novel, Saileach never so much as lifted her face to greet the operator passing by, while Reed was taking a small break—head resting in her arms in a picture of tranquility—with a half-filled sheet of letter paper laid by her side. Until Reed left the library in the afternoon to visit Medical, not a word seemed to come from that corner, only the calm rustle of pages flipping and the soft scratching of a pen.\nNot long after, we noted that a great deal of Saileach's report highlighting the full course of events at County Hillock and how the Tarans were surviving, was referenced from Reed."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "We've already had a run in with Dublinn forces in Londinium; each participating operator may well have their own understanding of what Dublinn is. Reed did not come back to Rhodes Island in her Dublinn capacity, but she does not refrain from recounting to us the Dublinn she knows—as well as the Dublinn she considers herself to lead.\nThe name of Dublinn finds its origin in the two sisters' family name, one that was hidden by wandering for years and symbolizes their Draco bloodline. That said, the vast majority of Victorians would think little upon hearing it; the leader of Dublinn may well have chosen the name to stir up that forgotten history that comprises the Kingdom of Tara.\nThe Kingdom of Tara was founded by a Draco nomad in what is currently the Taran region. Thereafter, according to Victorian historical accounts, Victoria and Tara opted to merge so as to fend off the Nightzmora's Khagan, with Victoria conferring the title of King Gaeil upon Tara's ruler. However, with the amassing of relics, data, and oral tradition from the folk sphere in recent years, more and more scholars of Taran historical texts and culture are inclined to believe that the Kingdom of Victoria subjugated the Kingdom of Tara by force, the latter coerced into having its territory annexed. Some even hold that though the ruler of the Taran region held the title of King Gaeil, it was in fact the Victorian nobles dispatched to the Taran court that held greater authority. Another view largely accepted by modern historians is that in the centuries following their violent conquest, any culture unique to the Taran region had been suppressed and even destroyed by Victoria, with the Tarans' own dignity crushed underfoot as a consequence.\nRegardless of what history may lay behind it, the present region of Tara is inarguably lagging in development, and the people subjected to extremely arduous lives. The conflict between speakers and non-speakers of Taran becomes more pronounced by the day; it is in this context that Dublinn arose. Records would indicate that Dublinn's forces have only been active across Victoria's southern regions in the last two years, but in truth, it came into conception approximately seven years ago. And from then until now, its heart has remained the same: the Draco of Tara out to rescue her people from the clutches of suffering.\nWe have observed signs of conflict between different factions within Dublinn. Some are more concerned with the Taran name, while others seek to see the Draco dynasty restored; yet another side with no ties to the first two sets its sights on Dublinn's most powerful backer, the Duke of Wellington. Reed herself recognizes that though she only wishes for the Tarans who suffer to receive fair treatment, she simply cannot avoid the issues implicated by the Draco aspect.\n[Classified Log]\nWhether Reed's statements or our own independently gathered intel, everything indicates that Dublinn has no intention of vying for the Victorian crown—at least, at present. Reed's twin sister, the Draco Caster that presently commands Dublinn's main forces, is the one and only royal successor to a considerable portion of the population; what obstacles compel her—or what, if any, considerations lead her to take her current approach? Given that all intel paints Dublinn's Leader as a political conniver at ease with contending amidst numerous powers, if she is taking a back seat then it must be in exchange for something.\nPerhaps we'll be shown the answer sooner than we think."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Knowing that the Dublinn leader we recently encountered in Londinium was Eblana herself, we can understand to a certain degree why Reed fears her twin sister so much, even having warned Rhodes Island to avoid contact with her. Fortunately, she did not react with the same intense stress as before when we raised the topic of her sister again, after receiving our intel from Londinium. Instead she recounted, quite calmly, her past experiences as her sister's 'shadow,' and filled in some information which had been hazy in our records. Through Reed, we gained an explicit understanding of how the Dublinn leader's Arts manifest, and confirmed the combat MO of a portion of Dublinn's spec ops personnel.\nLater, she informed us that she still didn't quite grasp what goal Dublinn had in entering Londinium, and so couldn't approve of said action for the time being, but would be sure to meet with Eblana directly at an appropriate time in the future.\nWe were concerned that whether out of a desire for vengeance, or to prove her sister's wrongdoings and vie for leadership of Dublinn, the now-uncurbed Reed seemed on the verge of a clash with her sister, perhaps even to the death. However, she reassured us that this was not the case. By her account, the primary Dublinn force commanded by Eblana seems to have come to an unspoken understanding about Reed, ceasing their pursuit of her, while also regarding her and her companions as comrades, one and all. At present, each side is committed to their own plan of action, existing in some kind of pseudo-harmony.\n'She knows—that I'll return to her side, even if she doesn't pursue me, that's all. What I think, what I want—none of it matters to her. She's always believed... that I'll never avoid her, or escape from her grasp.'\n'Me? ...It doesn't matter to me either. If she fights for the life the Tarans deserve, then she and I are fundamentally doing the same thing. Is it that important that I matter?'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Before leaving Rhodes Island, I had left those knots I could not untie, could not face, in a letter to you. I remember I could not muster more than a word or two, but once I set my pen down, I felt I finally had the courage to trust in my own conscience... to trust that 'life has its value,' as Rhodes Island taught me.\nYet... if life had value, it must have been a dearly, gravely heavy one, so heavy I didn't know how I could bear it. I could not answer why Outcast saved me, the taker of countless lives, as I was dying. If I was not simply fuel for the flames, then what should I be?\nI had to emerge from this refuge, so I could answer her, answer all of you.\nAnd now, I pen a letter again, to tell you of what I found, and of my answer.\n...\nAnd so, my identity is one I cannot flee. Am I a Taran? I am; am I Dublinn? I am; am I the Draco? I am.\nAm I Dublinn's Leader? I can be.\nI want them too to see how life should be, and should that duty choose me, I will flee no longer.\nDoctor, I am aware. Choosing to return to Dublinn signifies that no longer do I seek first and foremost to protect and save the Oripathy-blighted, and that I cannot anymore avoid the hostility of some by your side. I have thought, and thought, and before I return to the Rhodes Island landship, I will have written and sent you this letter.\nI will not become an enemy to Rhodes Island. But should you not approve, I will not return to Rhodes Island unpermitted, posing as an operator. That is all for you to decide."
+    }
+  ]
+}

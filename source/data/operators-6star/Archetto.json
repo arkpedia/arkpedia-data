@@ -1,0 +1,1069 @@
+{
+  "name": "Archetto",
+  "rarity": 6,
+  "class": "Sniper",
+  "branch": "Marksman",
+  "faction": "Laterano",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS"
+  ],
+  "trait": "Attacks aerial enemies first",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Publicity Strategy",
+    "Glory to the Devout"
+  ],
+  "ep": {
+    "Main": "Till the Bell Tolls",
+    "Co-star": null
+  },
+  "internalName": "char_332_archet",
+  "otherLanguages": {
+    "Chinese": "空弦",
+    "Japanese": "アルケット",
+    "Korean": "아르케토"
+  },
+  "characterInfo": {
+    "File no.": "LT08",
+    "Operator Record": "Idol Promotion",
+    "Paradox Simulation": "Aiming Ever Further",
+    "Illustrator": "alchemaniac",
+    "Release Date": "2021/07/06",
+    "Kernel Addition Date": "2024/12/17"
+  },
+  "characterVoices": {
+    "Japanese": "Inori Minase",
+    "Chinese": "Muyaruilin",
+    "English": "Rita Angel Taylor",
+    "Korean": "Kwon Da-ye"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "2 years",
+    "Place of Birth": "Laterano",
+    "Date of Birth": "November 16th",
+    "Race": "Liberi",
+    "Height": "152 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Excellent",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Landen Tactics",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Every 3 seconds when deployed, restores 1 Skill Point to all deployed Sniper allies that have an Offensive Recovery skill ."
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Every 2.5 seconds when deployed, restores 1 Skill Point to all deployed Sniper allies that have an Offensive Recovery skill."
+        }
+      ],
+      "technique": [
+        {
+          "name": "SP Recovery Booster",
+          "description": "Able to supply additional SP to specific units"
+        }
+      ]
+    },
+    {
+      "name": "Iron Bowstring",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When deployed, this unit gains 1 Shield . Restores 7 Skill Points after the Shield breaks"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When deployed, this unit gains 1 Shield . Restores 9 (+2) Skill Points after the Shield breaks"
+        }
+      ],
+      "technique": [
+        {
+          "name": "Damage-Instance Shields",
+          "description": "Block any instance of damage, however high it is"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +27"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Iron Bowstring"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Archetto's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Landen Tactics .",
+        "New skill: Pursuing Arrows .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Archetto to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Sniper Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron",
+          "quantity": 7
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Iron Bowstring .",
+        "New skill: Thundering Arrows .",
+        "Landen Tactics improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Archetto to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Sniper Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Polymerization Preparation",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Concentration",
+          "quantity": 8
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Dispersing Arrows",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack deals 170% ATK as Physical damage to the target and 120% ATK as Physical damage to up to 3 other nearby enemies",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack deals 175% ATK as Physical damage to the target and 125% ATK as Physical damage to up to 3 other nearby enemies",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack deals 180% ATK as Physical damage to the target and 130% ATK as Physical damage to up to 3 other nearby enemies",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack deals 185% ATK as Physical damage to the target and 135% ATK as Physical damage to up to 3 other nearby enemies",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack deals 190% ATK as Physical damage to the target and 140% ATK as Physical damage to up to 3 other nearby enemies",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack deals 195% ATK as Physical damage to the target and 145% ATK as Physical damage to up to 3 other nearby enemies",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack deals 200% ATK as Physical damage to the target and 150% ATK as Physical damage to up to 3 other nearby enemies",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack deals 210% ATK as Physical damage to the target and 160% ATK as Physical damage to up to 3 other nearby enemies",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack deals 220% ATK as Physical damage to the target and 170% ATK as Physical damage to up to 3 other nearby enemies",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack deals 230% ATK as Physical damage to the target and 180% ATK as Physical damage to up to 3 other nearby enemies",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "2nd",
+            "priority": "sub",
+            "explanation": "Great skill for an auto version of Archetto, able to hit multiple targets, but may not have as high of a damage ceiling as the main skill. Consider doing this after Skill 3 only if you actively choose to use Archetto."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 7
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Pursuing Arrows",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Immediately fire an arrow that deals 108% ATK damage 5 times in a row. The arrow can repeatedly ricochet to nearby enemies that have not been targeted yet (each ricochet reduces available ricochets by 1); Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 14,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Immediately fire an arrow that deals 110% ATK damage 5 times in a row. The arrow can repeatedly ricochet to nearby enemies that have not been targeted yet (each ricochet reduces available ricochets by 1); Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 14,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Immediately fire an arrow that deals 112% ATK damage 5 times in a row. The arrow can repeatedly ricochet to nearby enemies that have not been targeted yet (each ricochet reduces available ricochets by 1); Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 14,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Immediately fire an arrow that deals 114% ATK damage 5 times in a row. The arrow can repeatedly ricochet to nearby enemies that have not been targeted yet (each ricochet reduces available ricochets by 1); Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 13,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Immediately fire an arrow that deals 116% ATK damage 5 times in a row. The arrow can repeatedly ricochet to nearby enemies that have not been targeted yet (each ricochet reduces available ricochets by 1); Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 13,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Immediately fire an arrow that deals 118% ATK damage 5 times in a row. The arrow can repeatedly ricochet to nearby enemies that have not been targeted yet (each ricochet reduces available ricochets by 1); Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 13,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Immediately fire an arrow that deals 120% ATK damage 5 times in a row. The arrow can repeatedly ricochet to nearby enemies that have not been targeted yet (each ricochet reduces available ricochets by 1); Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 12,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Immediately fire an arrow that deals 125% ATK damage 5 times in a row. The arrow can repeatedly ricochet to nearby enemies that have not been targeted yet (each ricochet reduces available ricochets by 1); Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 11,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Immediately fire an arrow that deals 130% ATK damage 5 times in a row. The arrow can repeatedly ricochet to nearby enemies that have not been targeted yet (each ricochet reduces available ricochets by 1); Can store 3 charges",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Immediately fire an arrow that deals 140% ATK damage 5 times in a row. The arrow can repeatedly ricochet to nearby enemies that have not been targeted yet (each ricochet reduces available ricochets by 1); Can store 3 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "3rd",
+            "priority": "sub",
+            "explanation": "A more controlled skill where you choose when to use it. Not ideal for people who don't enjoy clicking. It's a luxury mastery and not necessarily a bad one."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 4
+            },
+            {
+              "name": "Aketon",
+              "quantity": 8
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Thundering Arrows",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +5% , attack range +1 tile , attacks hit 3 times in a row and target 2 enemies simultaneously",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +5% , attack range +1 tile , attacks hit 3 times in a row and target 2 enemies simultaneously",
+            "initialSp": 15,
+            "spCost": 39,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +5% , attack range +1 tile , attacks hit 3 times in a row and target 2 enemies simultaneously",
+            "initialSp": 15,
+            "spCost": 38,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +10% , attack range +1 tile , attacks hit 3 times in a row and target 2 enemies simultaneously",
+            "initialSp": 15,
+            "spCost": 37,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +10% , attack range +1 tile , attacks hit 3 times in a row and target 2 enemies simultaneously",
+            "initialSp": 15,
+            "spCost": 36,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +10% , attack range +1 tile , attacks hit 3 times in a row and target 2 enemies simultaneously",
+            "initialSp": 15,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +15% , attack range +1 tile , attacks hit 3 times in a row and target 2 enemies simultaneously",
+            "initialSp": 15,
+            "spCost": 34,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +20% , attack range +1 tile , attacks hit 3 times in a row and target 2 enemies simultaneously",
+            "initialSp": 15,
+            "spCost": 33,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +25% , attack range +1 tile , attacks hit 3 times in a row and target 2 enemies simultaneously",
+            "initialSp": 15,
+            "spCost": 32,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +30% , attack range +1 tile , attacks hit 3 times in a row and target 2 enemies simultaneously",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 20
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "This skill gives Archetto the highest damage output while also having the further range extension. Best to prioritise this first."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Diketon",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 5
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 6
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 5
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Pious Fundraising α",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +1% for every level of each Dormitory"
+    },
+    {
+      "name": "Pious Fundraising βReplacesPious Fundraising α",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +2% for every level of each Dormitory"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Archetto's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "MAR-X: Yesterday Once More",
+      "mission": {
+        "requirement1": "Deal a total of 100,000 damage with Archetto (excluding Support Units)",
+        "requirement2": "Clear Intermezzi SV-4 with a 3-star rating; You must deploy your own Archetto, and cannot include any other Sniper Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +90 , ATK +32",
+          "effectLabel": "New trait",
+          "effectText": "Increases ATK to 110% when attacking aerial targets",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +130 , ATK +40",
+          "effectLabel": "Landen Tactics improved",
+          "effectText": "Every 2.3 seconds when deployed, restores 1 Skill Point to all deployed Sniper allies that have an Offensive Recovery skill; this unit restores 1 SP every 2s when there is another Sniper Operator deployed",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +160 , ATK +48",
+          "effectLabel": "Landen Tactics improved",
+          "effectText": "Every 2.2 seconds when deployed, restores 1 Skill Point to all deployed Sniper allies that have an Offensive Recovery skill; this unit restores 1 SP every 1.8s when there is another Sniper Operator deployed",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "MAR-Y: \"Seeds of Tomorrow\"",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Archetto, and have Archetto defeat at least 5 enemies",
+        "requirement2": "Clear Main Theme 2-9 with a 3-star rating; You must deploy your own Archetto, and cannot include any other Sniper Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +17 , DEF +17 , ASPD +2",
+          "effectLabel": "New trait",
+          "effectText": "When there are ground enemies within range, ASPD +8",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +22 , DEF +22 , ASPD +3",
+          "effectLabel": "Iron Bowstring improved",
+          "effectText": "When deployed, this unit gains 1 Shield and 5 Skill Points. Restores 7 Skill Points when the Shield breaks",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +24 , DEF +24 , ASPD +4",
+          "effectLabel": "Iron Bowstring improved",
+          "effectText": "When deployed, this unit gains 1 Shield and 9 Skill Points. Restores 7 Skill Points when the Shield breaks",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "ISW-α: Archetto's Specialized Badge",
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +32 , ASPD +6",
+          "effectLabel": "Trait improved",
+          "effectText": "In Integrated Strategies , for every deployed Operator with an Offensive Recovery skill, Archetto's Attack Range +1 (Max +3)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +45 , ASPD +7",
+          "effectLabel": "Landen Tactics improved",
+          "effectText": "Every 2.5 seconds when deployed, restores 1 Skill Point to all deployed Sniper allies that have an Offensive Recovery skill; in Integrated Strategies , all Operators with Offensive Recovery skills will benefit from this effect and will gain SP from Archetto's attacks",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +55 , ASPD +8",
+          "effectLabel": "Landen Tactics improved",
+          "effectText": "Every 2.5 seconds when deployed, restores 1 Skill Point to all deployed Sniper allies that have an Offensive Recovery skill; in Integrated Strategies , all Operators with Offensive Recovery skills will benefit from this effect and will gain SP from Archetto's attacks, and all Operators with Offensive Recovery skills have ATK +50% while their skill is active",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Cleric Hildegard hailing from Landen Monastery, code name: Archetto. Temporarily at\nRhodes Island\nserving certain collaborative business aims, proactive in putting forward all sorts of proposals, urging that both sides open up amicable dealings. Simultaneously displays exceptional combat proficiency across a breadth of operations; at her own request, presently serves as a Rhodes Island\nSniper\nOperator\n, active on all manner of missions.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "zD_dJENZK8w",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "vzIyaLaRh-4",
+      "creator": "Pengod"
+    },
+    {
+      "videoId": "BnKWAkfRqIY",
+      "creator": "Fizzyon"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 725,
+          "atk": 178,
+          "def": 61,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1036,
+          "atk": 298,
+          "def": 102,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1036,
+          "atk": 298,
+          "def": 102,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1364,
+          "atk": 427,
+          "def": 146,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1364,
+          "atk": 427,
+          "def": 146,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1705,
+          "atk": 528,
+          "def": 172,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "3-3"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 90,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Archetto shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.12u/L\nAs a Laterano convent with enduring reputation, Landen Monastery places immense value on its clergy's attention to their health and physical rudiments. Prior to her actual admission checkup, Miss Archetto provided Medical the last five years of her annual health assessments for reference. Aside from the need for Miss Archetto to be aware how her height might challenge her, everything's normal."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "A lot of the time, Archetto seems rather like a businesswoman.\nObviously, not a criticism, but compared to sweeping the barren soils, driving out mutated Originium slugs and other such missions, Archetto reserves her fervor for the exploration of business opportunities from every angle. Aside from her specialized bow and arrows, she also keeps on her several dozen pamphlets advertising Landen Monastery. If not for Executor's anecdotes about the monasteries, we may well have thought Landen a fly-by-night company on the verge of bankruptcy...\nArchetto has said that her sisters are scattered all across the land nowadays, trying to look for a way forward for Landen Monastery, but only Archetto has ventured as far as Lungmen, Siracusa and Sargon, with little to show for it. She was impotent alone, and needed to find a trusty collaborative partner. It was bearing all this in mind that Archetto finally came to seek Rhodes Island's cooperation."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Archetto is of half-Victorian, half-Laterano descent. She grew up in Laterano, and deeply loved her free and open homeland. She could've become a scholar and stayed with her alma mater, or succeeded her mother's furniture store, but Hildegard at the tender age of ten chose to join Landen Monastery, becoming one of the honored Landen Guard, devoting her own due power to the defense of Laterano.\nArchetto's archery skills come from her father, an ordinary Victorian hunter. Come fall and through winter, if safety held, he would take Hildegard out of the city, to the great snowcapped mountains. As Hildegard learned the arrow, she displayed incomparable talent, which would serve as a foundation for her outstanding displays at Landen Monastery in the future.\nHowever, every time life at the monastery comes up, the cheery and earnest Archetto takes up a begrudging look. Whether the lax elders or the ever-snoozing Landen bishopry, it seems Landen Monastery is a peerlessly undisciplined, carefree place. 'If there weren't a sign on it, you could call it a nursing home and I'd believe you,' so Archetto laments. Though by the looks of it, she truly did enjoy her time back there."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Concerning whether it was idleness and negligence that reduced Landen Monastery to its present state—this is fantasy. No matter their financial issues, they still uphold a soldier's basic virtues.\nOf course, we can't forget their Landen Monastery-exclusive secret recipe cystymilk bread either, of which Archetto repeatedly sings the praises. Maybe it's the soil and the feed that give Landen Monastery's cystybeasts such voluminous builds, with milk nothing like the oily, throat-parching stuff from Ursus breeds. They use this cystymilk to make cheese, and pour it over the bread after melting it, producing the exquisite, second-to-none taste of a monastery's special cystymilk bread.\nBeyond that, the monastery also has an in-house brewery. Their beer, with malt concentrations to beat them all, has a distinct aroma, once welcomed by aristocrats lucky enough to sample it. In the early days, the Landen bishopry had no interest in any industrial pipeline for the monastery to scale up production of the beer, it spread only by word of mouth amongst nobles and religious figures, but come Landen Monastery's economic winter, plenty of voices rose up inside. A young bishop declared: 'In all honesty, I don't care whether we make the tradition a commodity, or we don't. But taking faith and peddling it—that deserves our wholehearted resistance.'\nWhen a monastery fully becomes a mercenary organization, a pasture and a brewhouse all at once, it can be bewildering. Nevertheless, seeing how proud Archetto looks as she markets those goods, surely Laterano's a fine enough place."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Archetto has mastered three unusual ways of utilizing arrows, and her bow is just as unusual, a product of elaborate upgrades.\nNaturally, some were directed by Landen Monastery's older archers. Some suggestions came from the easy-going young Landen bishopry. By the end, even 'it can catapult' had made it in, and it was a weapon far beyond the realm of arrows at first glance. However, no matter what it was now, it couldn't fall short with Archetto's excellent firing technique working it. These came from Archetto's childhood winters, when her father would take her to the great snowcapped mountains. He taught her how to hunt, how to draw a bow, how to aim.\nThat said, relying only on a bow and arrow to rejuvenate a monastery would be utter nonsense. Once she left Laterano, Miss Archetto fumbled her way through the bishopry's remaining contacts, one by one visiting a great many cities, signing just as many deals. But Archetto knew deep down the Monastery was hardly an industrial plant, and these business deals hither and thither would less change the Monastery's current condition than it would take the Monastery's growth somewhere strange. Aiming to find the Monastery a true foundation for long-term collaboration, using any means she cares for, Archetto still strives to this day.\nOf course, 'almost took a wrong path' describes more than the Monastery, but for now, let's not look too hard into that time someone nearly induced Archetto to become an intercity net idol."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Landen Monastery: unlike general-knowledge Laterano teachings, its core reason for establishment lies in protecting the personal safety of the Apostle and important members of the clergy. The greatest difference between the Monastery and the Notarial Hall, or any other Laterano institution—the Monastery actively accept believers from beyond Laterano, and will offer them the chance to serve the Apostle.\nTime was, the Monastery adopted more of an employer model, receiving the devotion of pious warriors; back then, they earned the moniker 'Landen Guard.' However, as times changed, the Landen Guard began facing all sorts of problems with their employment framework. With a certain bishop's backing, the Monastery presided over the establishment of a complete educational system, further trialing the admission of a few youths to study at the Monastery. After that, the bishop also suggested that 'the Monastery ought to become a buoy of our faith,' and advocated admission of persons beyond Laterano. After that, some bishopry even suggested that 'justice is as faith,' and that Landen Monastery needn't be confined to the security and guarding of large-scale religious activity, as long as they could guard their true love, their Laterano—and so Landen Monastery appeared across every corner of the world.\n'History pushes for Landen Monastery's progress. In other words, we struggle and struggle so as to avoid becoming a relic. Really, we've just been more and more unable to find work, and we've had to expand business, and that's all, isn't it?'"
+    }
+  ]
+}

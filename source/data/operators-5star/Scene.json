@@ -1,0 +1,763 @@
+{
+  "name": "Scene",
+  "rarity": 5,
+  "class": "Supporter",
+  "branch": "Summoner",
+  "faction": "Sargon",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Summon",
+    "Support"
+  ],
+  "trait": "Deals Arts damage Can use Summons in battles",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Gold/Blue Certs",
+      "Unlock Location": "Contingency Contract Blade"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Betsushi",
+    "Unseen Terrain"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_336_folivo",
+  "otherLanguages": {
+    "Chinese": "稀音",
+    "Japanese": "シーン",
+    "Korean": "씬"
+  },
+  "characterInfo": {
+    "File no.": "R162",
+    "Operator Record": "Recorder",
+    "Paradox Simulation": "Faceoff",
+    "Illustrator": "アシマ",
+    "Release Date": "2021/02/04",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Satomi Amano",
+    "Chinese": "Mihu zzZ (credited as \"Misty\" in EN)",
+    "English": "Anjali Kunapaneni",
+    "Korean": "Jang Ye-na"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Sargon",
+    "Date of Birth": "December 31st",
+    "Race": "Pilosa",
+    "Height": "154 cm",
+    "Infection Status": "Confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Flawed",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Camera Squad",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "Can summon 3 Buggy Cams ; Buggy Cams will reveal Invisible enemies within the surrounding 8 tiles"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Can summon 4 Buggy Cams; Buggy Cams will reveal Invisible enemies within the surrounding 8 tiles"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Can summon 5 Buggy Cams; Buggy Cams will reveal Invisible enemies within the surrounding 8 tiles"
+        }
+      ],
+      "technique": [
+        {
+          "name": "Reveal Invisibility",
+          "description": "Reveals hidden enemies when in range"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "RES +8"
+      },
+      {
+        "level": 5,
+        "benefit": "Redeployment time -6 seconds"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Scene's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Panoramic Overload .",
+        "Camera Squad improved.",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Scene to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Supporter Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Camera Squad improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Scene to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Supporter Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "White Horse Kohl",
+          "quantity": 9
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 12
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Protective Camouflage",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": "Unlimited",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Increases the ATK of all Buggy Cams by +10% and grants them Camouflage Unlimited duration",
+            "initialSp": 0,
+            "spCost": 90,
+            "duration": "∞"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Increases the ATK of all Buggy Cams by +10% and grants them Camouflage Unlimited duration",
+            "initialSp": 0,
+            "spCost": 87,
+            "duration": "∞"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Increases the ATK of all Buggy Cams by +10% and grants them Camouflage Unlimited duration",
+            "initialSp": 0,
+            "spCost": 84,
+            "duration": "∞"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Increases the ATK of all Buggy Cams by +20% and grants them Camouflage Unlimited duration",
+            "initialSp": 0,
+            "spCost": 81,
+            "duration": "∞"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Increases the ATK of all Buggy Cams by +20% and grants them Camouflage Unlimited duration",
+            "initialSp": 0,
+            "spCost": 78,
+            "duration": "∞"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Increases the ATK of all Buggy Cams by +20% and grants them Camouflage Unlimited duration",
+            "initialSp": 0,
+            "spCost": 75,
+            "duration": "∞"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Increases the ATK of all Buggy Cams by +30% and grants them Camouflage Unlimited duration",
+            "initialSp": 0,
+            "spCost": 72,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Increases the ATK of all Buggy Cams by +40% and grants them Camouflage Unlimited duration",
+            "initialSp": 0,
+            "spCost": 69,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Increases the ATK of all Buggy Cams by +50% and grants them Camouflage Unlimited duration",
+            "initialSp": 0,
+            "spCost": 66,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Increases the ATK of all Buggy Cams by +60% and grants them Camouflage Unlimited duration",
+            "initialSp": 0,
+            "spCost": 60,
+            "duration": "∞"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Camouflage",
+            "description": "Has a time period of not receiving any attacks except AOE and environmental damage"
+          }
+        ]
+      },
+      {
+        "name": "Panoramic Overload",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15–20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Immediately obtains 1 Buggy Cam and grants all deployed Buggy Cams increased Detection Range, ATK +50% , DEF +50% , and RES +10 After the skill ends, all Buggy Cams are stunned for 5 seconds",
+            "initialSp": 5,
+            "spCost": 30,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Immediately obtains 1 Buggy Cam and grants all deployed Buggy Cams increased Detection Range, ATK +55% , DEF +55% , and RES +10 After the skill ends, all Buggy Cams are stunned for 5 seconds",
+            "initialSp": 5,
+            "spCost": 30,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Immediately obtains 1 Buggy Cam and grants all deployed Buggy Cams increased Detection Range, ATK +60% , DEF +60% , and RES +10 After the skill ends, all Buggy Cams are stunned for 5 seconds",
+            "initialSp": 5,
+            "spCost": 30,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Immediately obtains 1 Buggy Cam and grants all deployed Buggy Cams increased Detection Range, ATK +65% , DEF +65% , and RES +10 After the skill ends, all Buggy Cams are stunned for 5 seconds",
+            "initialSp": 7,
+            "spCost": 30,
+            "duration": 16
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Immediately obtains 1 Buggy Cam and grants all deployed Buggy Cams increased Detection Range, ATK +70% , DEF +70% , and RES +10 After the skill ends, all Buggy Cams are stunned for 5 seconds",
+            "initialSp": 7,
+            "spCost": 30,
+            "duration": 16
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Immediately obtains 1 Buggy Cam and grants all deployed Buggy Cams increased Detection Range, ATK +75% , DEF +75% , and RES +10 After the skill ends, all Buggy Cams are stunned for 5 seconds",
+            "initialSp": 7,
+            "spCost": 30,
+            "duration": 16
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Immediately obtains 1 Buggy Cam and grants all deployed Buggy Cams increased Detection Range, ATK +80% , DEF +80% , and RES +15 After the skill ends, all Buggy Cams are stunned for 5 seconds",
+            "initialSp": 9,
+            "spCost": 30,
+            "duration": 17
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Immediately obtains 1 Buggy Cam and grants all deployed Buggy Cams increased Detection Range, ATK +95% , DEF +95% , and RES +15 After the skill ends, all Buggy Cams are stunned for 5 seconds",
+            "initialSp": 11,
+            "spCost": 30,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Immediately obtains 1 Buggy Cam and grants all deployed Buggy Cams increased Detection Range, ATK +110% , DEF +110% , and RES +15 After the skill ends, all Buggy Cams are stunned for 5 seconds",
+            "initialSp": 13,
+            "spCost": 30,
+            "duration": 19
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Immediately obtains 1 Buggy Cam and grants all deployed Buggy Cams increased Detection Range, ATK +130% , DEF +130% , and RES +20 After the skill ends, all Buggy Cams are stunned for 5 seconds",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-12",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Diketon",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 8
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 3
+        },
+        {
+          "name": "Aketon",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Time-Lapse Photography",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, productivity +15% in the first hour and thereafter +2% per hour, up to +25%"
+    },
+    {
+      "name": "Editing α",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, capacity limit is increased by +12 when producing Battle Records"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Scene's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "SUM-X: Improved Lens.P",
+      "mission": {
+        "requirement1": "Complete 5 operations and summon Scene's summoned units at least 5 times in each operation (Scene cannot be a Support Unit)",
+        "requirement2": "Clear Main Theme 3-1 with a 3-star rating using a squad of at most 2 units (including Support Units); a non-Support Scene must be deployed during the operation and only Sniper operators are allowed for the remaining units"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +20 , DEF +20",
+          "effectLabel": "Trait improved",
+          "effectText": "The first summoned unit does not consume deployment slots (The last summoned unit on the field does not return a deployment slot when retreated or defeated)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +28 , DEF +25",
+          "effectLabel": "Camera Squad improved",
+          "effectText": "Can summon 5 Buggy Cams; Buggy Cams will reveal Invisible enemies within the surrounding 8 tiles and inflict -5% Movement Speed",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +36 , DEF +30",
+          "effectLabel": "Camera Squad improved",
+          "effectText": "Can summon 5 Buggy Cams; Buggy Cams will reveal Invisible enemies within the surrounding 8 tiles and inflict -8% Movement Speed",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Scene, photographer, specializes in using her photography auxiliary equipment, a robotic buggy named \"\nLens\n,\" to survey the battlefield. She provides visual information and works to provide field investigation and battlefield reconnaissance services to\nRhodes Island\n. However, Scene's athletic abilities are extremely limited, so the support of logistics operators are absolutely crucial.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 496,
+          "atk": 194,
+          "def": 67,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 9,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 671,
+          "atk": 278,
+          "def": 96,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 9,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-6"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 671,
+          "atk": 278,
+          "def": 96,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 11,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 872,
+          "atk": 371,
+          "def": 128,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 11,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 872,
+          "atk": 371,
+          "def": 128,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 11,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1105,
+          "atk": 432,
+          "def": 155,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 11,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 0,
+      "def": 35
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests have shown the outlines of her internal organs to be indistinct due to abnormal shadows. Originium granules have been detected in her circulatory system, confirming her to be infected with Oripathy. \n\n[Cell-Originium Assimilation] 1%\nThere are traces of Originium infection on the legs. \n\n[Blood Originium-Crystal Density] 0.21u/L\nThe infection status is stable and there is no visible evidence of metastasis. \n\n'She seems to have been infected for a while now, but her Oripathy shows no signs of acceleration. I guess slow metabolism actually helps with that. However, even though there aren't any issues with her throat, I've never heard her talk. I wonder what the problem is.' —A new medic operator"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "'Quiet and Reserved.' \nEven these adjectives aren't even particularly suitable. Operator Scene isn't just quiet and reserved, she doesn't speak at all. \nAs soon as she leaves her room, you could search every nook and cranny of Rhodes Island and never find her, so the only thing to do is to wait for her to return to her dorm. \nThis is when Scene's auxiliary equipment, 'Lens,' really comes in handy. Fortunately, her robotic buggy is rather clunky, and makes a lot of noise. As long as you recognize this sound, operators will be able to determine where Scene is."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Earlier in Sargon, Scene's family ordered an entire auxiliary robot team from Raythean Industries for her, and 'Lens' was the leader of her robotic photography team. \nBy combining cutting-edge photographic equipment with advanced all-terrain capabilities, this auxiliary robot team became the foundation of Scene's photography career. \nBefore Lens could even 'speak,' Scene came to regard Lens as her best friend, and for a completely silent person like Scene, making friends is not an easy task. Therefore, it is totally understandable that she would trust her work partner more than others. \nHowever, Closure said one day that 'it's better to have someone who can talk with you,' and before Scene could refuse, Closure transformed Lens into a talking photography assistant. \nAccording to Closure, Lens stands out from the crowd. 'It contains the previous generation of Raythean Industries' auxiliary AI. All I did was give the little guy a way to express itself. There's nothing wrong with it becoming Scene's friend. After all, nobody else can understand what Scene is thinking. What is Raythean Industries doing anyway? Even if these have been discontinued, you can't just go around selling off stuff like this. In any case, this thing is very, very rare.' \n\nBecause of this, many people believe that Lens's habit of long-windedness actually comes from Closure. Operators have occasionally reported seeing Lens communicating with Lancet-2 in the hallway, but could not figure out what the whirring and buzzing was all about. Perhaps its built-in thinking loop actually functions like this, but this quality was put on full display after the installation of a sound device. As for what goes on in the little brain of a robot, sometimes not even the owner knows. \nDo you think that Miss Scene is ever troubled by... what happened to her old partner? \nAt least up until this point, I haven't received any requests from her to uninstall the sound device."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "As a child, Scene was often bullied by her peers, and her teachers basically adopted a strategy of neglecting her. This quickly pushed her out of the public school system, and since then, she has only received private education. As to why, the answer was obvious: 'Who would like to make friends with someone who takes the entire day just to say a single word?' \nThe isolation she had suffered through in the classroom began to spread outwards into her social sphere. Even though she was born into a noble family in Sargon, Scene has hardly attained recognition from anyone, let alone the upper crust. \nOf course, and this may be for other reasons, Scene seems to have been born with a natural insensitivity and was never put down by the harsh words of others. Even more fortunately, she found a job that she loved — Photography. \nVery quickly, Scene amassed her own fame and wealth, along with everything else that came with it. However, she remains silent and, other than occasionally taking pictures of high-ranking officials, prefers to do her work away from the commotion of crowded areas. \nWhile it is true that her shyness, almost 'mechanical' movements, and her statue-like postures when stationary have brought about social difficulties, these qualities have also been immense assets towards her photography career that ordinary people simply do not have. \nFurthermore, if you are fortunate enough to see Scene working on her own robotic camera team, you might think that her usual behavior is just a result of not liking to expend energy."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Unexpectedly, Lens once told Closure about the time when Scene completely had the ability to leave the site of an impending Catastrophe.\nHowever, in order to catch the critical moment of the Catastrophe breaking, Scene was caught inside the Catastrophe and contracted Oripathy. \nAccording to Lens's description, we have no idea whether Scene did this to let more people learn about Catastrophes, or if she just spellbound by the view. All we know is that she continued to stay there, weaving a masterful tale about the unfolding of a Catastrophe with her camera. \nRegardless of what happened, at least Scene survived. \nAfter Scene contracted Oripathy, her parents consulted several medical organizations and finally decided to send her to Rhodes Island for treatment; however, they've never contacted their daughter since then. In the face of the somewhat complicated political situation in Sargon, this kind of decision seems almost natural to some operators. \nScene herself also doesn't seem to mind. Or if she does, she hasn't told anyone. \nIt didn't take long before she started to apply for the qualifications to work in the field, and even wanted to accompany operators to the battlefield in order to shoot more images. This means that Scene may be involved in battle, and possibly even lose her life. \nBut she didn't let that dissuade her. Lens is very proud to say that the places they've been to have been far worse than what people in Rhodes Island can imagine, and the dangers they've encountered are far more terrifying than what they now are dealing with. \nWhile Scene may have already honed her skills and be able to calmly face the doubts of others, another interpretation is that she might just be very dedicated to her trade. She believes that through her eyes and her lens, she can help others who are more sensitive to images than they are to words, just like her, see more and more of the world. \nScene very rarely says anything, but she did speak once with her dorm mates when discussing her family. She said, she believes in Lens, and deems the robot to be part of her family.\nAlso, she said that she believes in her parents. If her parents didn't love her, they never would've raised her in the way they did—\n'Everything we are born with in life is meaningful, but you are the only one who can discover that meaning. As long as you'll go do it, we will support you.' \nEven though Scene doesn't express it, she may perhaps be very happy now. \nBy the way, how did Closure manage to get a sample of Scene's voice to build Lens's audio library?! \n......\nWhat? Does Scene use Lens to speak for her sometimes? \nHmm, how do I know whether the one talking to me\nis Lens,\nor if it is actually Scene talking? \nIf I had to guess? \nLet's see......."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "[Excerpts from an Encrypted Channel - Scene's Notes] \n'Just so everyone knows, Miss Scene is the person who has won the most accolades in the Four-Country Landscape Photography Group, consisting of Columbia, Bolívar, Sargon, and Victoria - by a wide margin as well.' \n\n'I wanted to play a prank on her once, but I couldn't find her the entire day. She really is good at hiding.'\n\n'You can't poke her cheeks though. She doesn't seem to mind it too much, but her buggy will get really upset. The thing slammed into me and sent me flying.' \n\n'Every time I greet her, she never responds. However, her buggy will keep talking, which I find quite interesting.' \n\n'She's the one who took the pictures in that photo album? Can you get an autograph for me?!' \n\n'Bro, you'll have to get in line. She only gives out four a day.' \n\n'Why's that?' \n\n'Because each autograph takes her half an hour, and there are 12 people in line right now. What do you think?'"
+    }
+  ]
+}

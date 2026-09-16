@@ -1,0 +1,748 @@
+{
+  "name": "Mitm",
+  "rarity": 5,
+  "class": "Vanguard",
+  "branch": "Tactician",
+  "faction": "Rhodes Island",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DP-Recovery",
+    "Nuker"
+  ],
+  "trait": "This unit can designate one Tactical Point within attack range to call Reinforcements ; ATK is increased to 150% when attacking enemies blocked by Reinforcements",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Under Surgical Lights"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4147_mitm",
+  "otherLanguages": {
+    "Chinese": "渡桥",
+    "Japanese": "ミトム",
+    "Korean": "님프"
+  },
+  "characterInfo": {
+    "File no.": "R184",
+    "Operator Record": "Written in Black and White",
+    "Paradox Simulation": "Busybody",
+    "Illustrator": "〇亻",
+    "Release Date": "2025/02/07",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Fumiyoshi Shioya",
+    "Chinese": "Wang Fuping",
+    "English": "Shash Hira",
+    "Korean": "Hwang Dong-hyun"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "None",
+    "Place of Birth": "Kazdel",
+    "Date of Birth": "September 19th",
+    "Race": "Sarkaz",
+    "Height": "165 cm",
+    "Infection Status": "Originium crystals distributed across skin surface, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Normal",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Scrapheap Buggies",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "Can summon Cherry-3 to assist in combat from a Tactical Point; after being defeated, Cherry-3 will spawn Wreckage in the four adjacent tiles, then automatically respawn 20s later"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Can summon Cherry-3 to assist in combat from a Tactical Point; after being defeated, Cherry-3 will spawn Wreckage in the four adjacent tiles, then automatically respawn 17s later"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Can summon Cherry-3 to assist in combat from a Tactical Point; after being defeated, Cherry-3 will spawn Wreckage in the four adjacent tiles, then automatically respawn 15s later"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ASPD +8"
+      },
+      {
+        "level": 5,
+        "benefit": "Redeployment time -6 seconds"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Mitm's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Power Under Pressure .",
+        "Scrapheap Buggies improved.",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Mitm to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Vanguard Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Scrapheap Buggies improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Mitm to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Vanguard Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Crystalline Circuit",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 12
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Remote Self-Destruct",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Instantly gain 6 DP and causes the Cherry-3 to self-destruct, dealing 290% of Mitm's ATK as Physical damage to enemies in the four adjacent tiles",
+            "initialSp": 3,
+            "spCost": 29,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Instantly gain 6 DP and causes the Cherry-3 to self-destruct, dealing 300% of Mitm's ATK as Physical damage to enemies in the four adjacent tiles",
+            "initialSp": 3,
+            "spCost": 28,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Instantly gain 6 DP and causes the Cherry-3 to self-destruct, dealing 310% of Mitm's ATK as Physical damage to enemies in the four adjacent tiles",
+            "initialSp": 3,
+            "spCost": 27,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Instantly gain 6 DP and causes the Cherry-3 to self-destruct, dealing 320% of Mitm's ATK as Physical damage to enemies in the four adjacent tiles",
+            "initialSp": 5,
+            "spCost": 26,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Instantly gain 6 DP and causes the Cherry-3 to self-destruct, dealing 330% of Mitm's ATK as Physical damage to enemies in the four adjacent tiles",
+            "initialSp": 5,
+            "spCost": 25,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Instantly gain 6 DP and causes the Cherry-3 to self-destruct, dealing 340% of Mitm's ATK as Physical damage to enemies in the four adjacent tiles",
+            "initialSp": 5,
+            "spCost": 24,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Instantly gain 6 DP and causes the Cherry-3 to self-destruct, dealing 355% of Mitm's ATK as Physical damage to enemies in the four adjacent tiles",
+            "initialSp": 6,
+            "spCost": 23,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Instantly gain 6 DP and causes the Cherry-3 to self-destruct, dealing 370% of Mitm's ATK as Physical damage to enemies in the four adjacent tiles",
+            "initialSp": 7,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Instantly gain 6 DP and causes the Cherry-3 to self-destruct, dealing 385% of Mitm's ATK as Physical damage to enemies in the four adjacent tiles",
+            "initialSp": 8,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Instantly gain 6 DP and causes the Cherry-3 to self-destruct, dealing 400% of Mitm's ATK as Physical damage to enemies in the four adjacent tiles",
+            "initialSp": 9,
+            "spCost": 20,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 1
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Power Under Pressure",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Gradually gains 12 DP over the skill duration, ATK +30% ; Cherry-3 stops attacking , gains Block +1 and DEF +80% After the skill ends, Cherry-3 will self-destruct",
+            "initialSp": 10,
+            "spCost": 50,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Gradually gains 12 DP over the skill duration, ATK +35% ; Cherry-3 stops attacking , gains Block +1 and DEF +85% After the skill ends, Cherry-3 will self-destruct",
+            "initialSp": 10,
+            "spCost": 49,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Gradually gains 12 DP over the skill duration, ATK +40% ; Cherry-3 stops attacking , gains Block +1 and DEF +90% After the skill ends, Cherry-3 will self-destruct",
+            "initialSp": 10,
+            "spCost": 48,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Gradually gains 12 DP over the skill duration, ATK +45% ; Cherry-3 stops attacking , gains Block +1 and DEF +95% After the skill ends, Cherry-3 will self-destruct",
+            "initialSp": 15,
+            "spCost": 47,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Gradually gains 12 DP over the skill duration, ATK +50% ; Cherry-3 stops attacking , gains Block +1 and DEF +100% After the skill ends, Cherry-3 will self-destruct",
+            "initialSp": 15,
+            "spCost": 46,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Gradually gains 12 DP over the skill duration, ATK +55% ; Cherry-3 stops attacking , gains Block +1 and DEF +105% After the skill ends, Cherry-3 will self-destruct",
+            "initialSp": 15,
+            "spCost": 45,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Gradually gains 12 DP over the skill duration, ATK +60% ; Cherry-3 stops attacking , gains Block +1 and DEF +110% After the skill ends, Cherry-3 will self-destruct",
+            "initialSp": 17,
+            "spCost": 44,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Gradually gains 12 DP over the skill duration, ATK +65% ; Cherry-3 stops attacking , gains Block +1 and DEF +120% After the skill ends, Cherry-3 will self-destruct",
+            "initialSp": 18,
+            "spCost": 43,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Gradually gains 12 DP over the skill duration, ATK +70% ; Cherry-3 stops attacking , gains Block +1 and DEF +130% After the skill ends, Cherry-3 will self-destruct",
+            "initialSp": 19,
+            "spCost": 42,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Gradually gains 12 DP over the skill duration, ATK +80% ; Cherry-3 stops attacking , gains Block +1 and DEF +140% After the skill ends, Cherry-3 will self-destruct",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 15
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 2
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 3
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Semi-Synthetic Solvent",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Know the Ropes",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, the chance of getting higher-yield Precious Metal orders is increased slightly (rate is influenced by length of work time), and Morale consumed per hour is reduced by -0.25"
+    },
+    {
+      "name": "Gifted Adviser",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +15% , + 5% per Reception Room level, up to a maximum of 30%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Mitm's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "TAC-Y: Beware of the Edges",
+      "mission": {
+        "requirement1": "During battle, have your own Mitm use Power Under Pressure a total of 8 times",
+        "requirement2": "Clear Main Theme 3-1 with a 3-star rating; You must deploy your own Mitm and use Power Under Pressure at least 3 times"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +100 , ATK +25",
+          "effectLabel": "Trait improved",
+          "effectText": "This unit can designate one Tactical Point within attack range to call Reinforcements ; Enemies blocked by reinforcements are more likely to be attacked, and this unit's ATK is increased to 165% when attacking enemies blocked by Reinforcements",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +140 , ATK +35",
+          "effectLabel": "Scrapheap Buggies improved",
+          "effectText": "When in Buggy form, will spawn Wreckage with higher HP in the four adjacent tiles after being defeated, then automatically respawn 15s later; when in Wreckage form, can block 1 enemy",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +150 , ATK +40",
+          "effectLabel": "Scrapheap Buggies improved",
+          "effectText": "When in Buggy form, will spawn Wreckage with even higher HP in the four adjacent tiles after being defeated, then automatically respawn 15s later; when in Wreckage form, can block 1 enemy",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Pohl was known as \"Consultant\" amongst the citizens of\nKazdel\n, and is an important figure in maintaining order on the streets. He joined\nRhodes Island\nby the recommendation of Operator\nNymph\n, and assists Rhodes Island's intelligence and communication operations in Kazdel under the code name Mitm.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 612,
+          "atk": 208,
+          "def": 42,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 875,
+          "atk": 307,
+          "def": 71,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 875,
+          "atk": 307,
+          "def": 71,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1123,
+          "atk": 405,
+          "def": 102,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1123,
+          "atk": 405,
+          "def": 102,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1370,
+          "atk": 495,
+          "def": 122,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "3-3"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 60,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 8%\nNo visible Originium crystals have been observed on the surface of Mitm's body, but continued monitoring is required.\n\n[Blood Originium-Crystal Density] 0.18u/L\nThe growth rate of BOCD shows signs of slowing down. After leaving the high-Originium environment of Kazdel, it is expected that the condition will be better controlled.\nExamination of epidermis samples taken from the subject's chest tattoo revealed the presence of Originium in the dye used. He says he was unaware of this. The Medical Department has prepared a special ointment for external application."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "'My name's Pohl. No, it doesn't have any special meaning. Sarkaz like me, our parents don't really think too hard about the names they give us. I was born and raised in Kazdel. Spent most of my time as a street peacekeeper. They call me 'Consultant', but I don't get paid for the job. I didn't know much about Rhodes Island, but Nymph and Mudrock said it's a nice place. In terms of pay and benefits, I mean. Can't stay on the ship for too long, though, or all hell will break loose back home. Plus, I've gotta be your eyes and ears there, don't I? That's what you pay me for. Well, that's pretty much it. I've never written a 'personal statement', and I don't know how.'\n\n[Classified Log]\nOperator Mitm's personal statement shows that he continues to be guarded towards Rhodes Island.\nInformation from other sources in Kazdel indicates that he has never met his birth parents. The origin of the name 'Pohl' is unknown, but it has been seen etched into one of his daggers. The blade, which originated from Columbia, is of low quality, the only advantage being the low cost.\nPohl began monitoring any faction that has any dealings in Kazdel very early in his 'Consultant' career, including, of course, Rhodes Island.\nHe receives regular reports on comings and goings from the smugglers that roam the lands outside Kazdel, and any new faces are shadowed by orphans within the city, who also report to him. The information network he has built far exceeds the scope of his role as so-called 'street peacekeeper'.\nWe should perhaps reassess the motives of this slum 'Consultant' in joining Rhodes Island, and the potential risks of allowing him access to confidential data.\n\nNo need to blow things out of proportion. I've heard about him from Nymph. He's just a kid who's had some hard luck. Leave him alone.\n—■■■"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "[Special Supplies Request - Pending]\nApplicant: Mitm\nStatus: Pending\nReviewer: Logistics Department\nApplication: I found some discarded newspapers in the living area trash bin. I'll take them if nobody wants them.\n\n[Special Supplies Request - Rejected]\nApplicant: Mitm\nStatus: Rejected\nReviewer: Logistics Department\nResponse: Operator Mitm, garbage is collected and processed by specialized personnel. For hygiene reasons, please observe the Living Area Hygiene Convention and refrain from picking discarded newspapers from the trash bins. You may access newspapers in the reading room, or fill in a newspaper subscription application at the Logistics Department office.\n\n[Special Supplies Request - Pending]\nApplicant: Mitm\nStatus: Pending\nReviewer: Logistics Department\nApplication: Oh it's nothing, just wanted to let you know that I've taken those old newspapers. They're really clean and there are papers from everywhere. I want to figure out how these things are made, and then I'll start one in Kazdel myself ;)\n\nThe day after Operator Mitm was reprimanded for violating the Living Area Hygiene Convention, he was given a blank newspaper subscription application that listed all the newspapers that Procurement is able to supply. Rather than immediately fill it out, he studied the newspapers he had scavenged and came to a disappointing conclusion: Starting a newspaper is about more than just writing. It requires a large amount of paper, ink, and printing machinery, not to mention the manpower required to deliver the newspaper to households. Kazdel was not just missing a newspaper, it was missing the infrastructure to support one.\n\n'I used to think that the people of Kazdel needed a newspaper so that they'd know what's happening inside and outside the city, making it easier for them to go about their day. But now, I realize that newspapers are just a vehicle, and it's not the only way to pass on information.'\n'What are you planning?'\n'I'm gonna set up loudspeakers by each furnace node, and broadcast the news I learned to nearby residents. Still hammering out the details.'\n'Sounds like a good idea. You can request the necessary items from Logistics and Procurement. I guess I'll take this subscription application form back...'\n'Hey, not so fast! I'm filling it out. Two copies of each one, one for learning how to write news, and one for teaching the kids in Kazdel how to read. That's not against the rules, is it?'\n'No, but do you have enough room in your suitcase for all those newspapers?'\n'Worst case, I take less clothes and a few more suitcases. Not a problem.'"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Cherry-3, often believed to be an imitation of a popular Columbian remote recon car, was in fact invented by Mitm after joining Rhodes Island. He can only claim credit for the original idea, however. The actual blueprint, as well as the custom parts used, was mostly the work of others.\n\nI was taking a break in the Engineering's kitchen that day after spraining my ankle. Operator Mitm came in and said he had a golden opportunity to get rich. When no one paid attention to him, he said he had a cutting-edge research project. Still, no one paid attention to him. Finally, he sighed and said, 'I guess Engineering's all about theory and not practical tech. Guess I'll ask Logistics instead.' That got everybody's attention. I didn't really listen to what he was saying, but the gist was that he wanted a remote car that can fight, but all he had was a hundred LMD and some scrap metal. Everybody turned around and left, and I was the only one left in the kitchen... You're wondering why I stayed? Like I said, I sprained my ankle. He thought I was up for it, and so he grabbed my hand and thanked me profusely, talking about being 'pioneers' and 'industry-leading'. Well, I guess I fell for it. By the time I realized it, it was too late. I'd already said yes.\n—Interview log with Operator Humus, Engineering Department, joint inventor of Cherry-3\n\nDespite a rocky start, Mitm and Humus were able to build a prototype. Though Mayer's connections, they sold the rights of the Cherry Recon Car to a Columbian businessman at a handsome price.\nSurprisingly, Mitm handed the proceeds over to Humus, saying that he only supplied the idea, and that it was Humus who did most of the work. Humus gladly accepted the funds, which allowed him to finally begin the development of his 'automatic eating machine'.\n\nLet me reiterate that Cherry-3 is not related to the Columbian Cherry Recon Car in any way, nor is there any concern over intellectual property infringement whatsoever. First, their names are different. Second, Cherry-3 was designed for educational purposes; all of its functions have been designed with education in mind. You are aware, of course, that the environment in Kazdel is not at all friendly to kids who wish to study uninterrupted. Which is why the machine's been fitted with early-warning, deterrence, and limited self-defense systems. The all-terrain tires and solar panels provide it with the necessary mobility and endurance. Oh, this button? That's the self-destruct button. You are aware, of course, that the environment in Kazdel... ahem. Anyway, I've no intention of putting it out to market at this time, so our colleagues in the industry need not worry.\n—Interview log with Operator Mitm, joint inventor of Cherry-3"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "As Mitm's onboarding HR operator observed, Mitm remained on guard about Rhodes Island for a considerable period of time.\nTherefore, when a group of Sarkaz children came to him to ask about the current situation in Kazdel, he thought it was a move by HR to investigate his background.\nWitnesses reported that he threw a handful of rough sugar lumps at them and turned to leave, only for the children to pick up the sugar, return it to him, and tell him that he should not waste food. That encouraged him to sit down and talk to them.\nMost of these children were born in Kazdel, and some of their parents are still assisting with the city's rebuilding project. They had heard from Operator Odda that the famous 'Consultant' of Kazdel had come to Rhodes Island, and came to hear his stories between treatment sessions.\nMitm did not let his guard down, and embellished his stories with outlandish episodes in an attempt to interfere with the nonexistent 'investigator'. He soon realized, however, that the children eagerly took in even his most absurd stories.\nThey covered their ears in fear when he talked about how he escaped a mass grave by digging a hole with a knife; cheered when he talked about how he scared away bandits who were looking to plunder food; and wept when he talked about how he led emergency repairs for a collapsed furnace node, never letting go even when it burned the skin off his arms and chest. When a teary child brought him a jar of burn ointment the next day, Mitm decided to stop deceiving them.\nHe told them another story, of a Sarkaz orphan who learned to lie, learned to protect himself with a knife, and somehow became someone that people listened to without really meaning to. Even with all the respect, however, whenever he went to bed at night he dreamt of the walls collapsing and everyone berating him with tears in their eyes. He thought the children would be bored, but when he looked up, there were the same eager eyes as ever, waiting for him to continue.\nIt is hard to say when Operator Mitm truly let his guard down, but it must have been after he told that story.\n\nLater, Mitm asked Odda why the latter sent the kids to him. According to Odda, his answer was—\n'Because you're a kid, too.'\nMitm denies that this conversation ever happened."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "The name 'Consultant' is worth a day's worth of food in Kazdel. For Sarkaz in trouble, owing 'Consultant' a debt is often preferable to the alternative, which usually ends with somebody getting stabbed. Only Pohl knows how many names are on the Consultant's ledger, and it is one of the reasons why otherwise desperate outlaws still think twice about getting on his bad side: A single entry is worth somebody's life.\nPohl has set aside the Consultant's rules at Rhodes Island, where he has taken up the code name 'Mitm'. Here, he is the one who is uneasy about owing someone. Logistics operators in the cafeteria put on a little more gravy when they see the scars on his hands. Busy technicians set their work aside to help him clear spurious warnings from his terminal. And when he stands in bewilderment before the myriad goods on the procurement center shelves, a passing operator might recommend Mama John's vinegar-pickled cherry candy to him.\nAt first, Mitm thought he was somehow showing weakness that he should not, but after making adjustments to his tone of voice, his expression, and even the way he talked, he came to the conclusion that helping others came naturally to the people here.\nOn the eve of his return to Kazdel, Pohl cooked a pot of Sarkaz soup for the operators who had helped him.\n\n'You're one heck of a cook, Mitm! I haven't had fin soup this good in ages. Do people in Kazdel use fresh fins to cook soup too?'\n'Hah, no, fins are hard enough to come by in Kazdel, no one would waste them in soup.' Mitm scoops out a ladle-full of beans, mushroom and dried vegetables, and puts it into the operator's bowl.\n'These vegetables can make a soup that tastes like fin broth, and it's just as hearty as the real thing. Even better with fresh vegetables instead of dried ones. Want another bowl?'"
+    }
+  ]
+}

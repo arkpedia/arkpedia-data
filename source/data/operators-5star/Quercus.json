@@ -1,0 +1,762 @@
+{
+  "name": "Quercus",
+  "rarity": 5,
+  "class": "Supporter",
+  "branch": "Abjurer",
+  "faction": "Rhodes Island",
+  "umbrellaFactions": [],
+  "connectedFactions": [
+    "Victoria"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Support",
+    "Survival"
+  ],
+  "trait": "Deals Arts damage ; When skill is active, attacks instead restore the HP of allies (heal amount is equal to 75% of ATK)",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Distant Home's Guide",
+    "The Bard's Tale"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_492_quercu",
+  "otherLanguages": {
+    "Simplified Chinese": "夏栎",
+    "Traditional Chinese": "夏櫟",
+    "Japanese": "クエルクス",
+    "Korean": "퀘르쿠스"
+  },
+  "characterInfo": {
+    "File no.": "R121",
+    "Operator Records": "Final Moments The Sprouts of Life",
+    "Paradox Simulation": "As Things Should Be",
+    "Illustrator": "YUJI",
+    "Release Date": "2022/08/18",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Asami Takano",
+    "Chinese": "Miao Yang (credited as \"Mia Miao\" in EN)",
+    "English": "Meaghan Martin",
+    "Korean": "Kim Yeon-woo"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "7 years",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "December 22nd",
+    "Race": "Feline",
+    "Height": "174 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Forest Sanctuary",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Apply 8% Sanctuary effect to allies within range with more than 70% HP"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Apply 10% (+2%) Sanctuary effect to allies within range with more than 70% HP"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Apply 14% Sanctuary effect to allies within range with more than 70% HP"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Apply 16% (+2%) Sanctuary effect to allies within range with more than 70% HP"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "Max HP +160"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Forest Sanctuary"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Quercus's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Forest Sanctuary .",
+        "New skill: Echo of Life .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Quercus to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Supporter Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Forest Sanctuary improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Quercus to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Supporter Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Oriron Block",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 13
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Earth's Benevolence",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "Toggled",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +10% Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 54,
+            "duration": "∞"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +13% Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 53,
+            "duration": "∞"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +16% Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 52,
+            "duration": "∞"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +20% Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 50,
+            "duration": "∞"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +23% Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 49,
+            "duration": "∞"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +26% Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 48,
+            "duration": "∞"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +30% Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 46,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +33% Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 44,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +36% Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 42,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +40% Unlimited duration, can manually deactivate skill",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": "∞"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 3
+            },
+            {
+              "name": "Aketon",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Echo of Life",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "13–17 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ASPD +25 , restores 1 SP to the ally being healed",
+            "initialSp": 9,
+            "spCost": 36,
+            "duration": 13
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ASPD +28 , restores 1 SP to the ally being healed",
+            "initialSp": 9,
+            "spCost": 35,
+            "duration": 13
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ASPD +31 , restores 1 SP to the ally being healed",
+            "initialSp": 9,
+            "spCost": 34,
+            "duration": 13
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ASPD +36 , restores 1 SP to the ally being healed",
+            "initialSp": 11,
+            "spCost": 32,
+            "duration": 13
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ASPD +39 , restores 1 SP to the ally being healed",
+            "initialSp": 11,
+            "spCost": 31,
+            "duration": 13
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ASPD +42 , restores 1 SP to the ally being healed",
+            "initialSp": 11,
+            "spCost": 30,
+            "duration": 13
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ASPD +45 , restores 1 SP to the ally being healed",
+            "initialSp": 13,
+            "spCost": 28,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ASPD +50 , restores 1 SP to the ally being healed",
+            "initialSp": 13,
+            "spCost": 27,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ASPD +55 , restores 1 SP to the ally being healed",
+            "initialSp": 13,
+            "spCost": 26,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ASPD +60 , restores 1 SP to the ally being healed",
+            "initialSp": 15,
+            "spCost": 25,
+            "duration": 17
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Compound Cutting Fluid",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "SP Recovery Booster",
+            "description": "Able to supply additional SP to specific units"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock",
+          "quantity": 10
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 2
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 4
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Sound of the Wind",
+      "facility": "Reception Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Reception Room, the likelihood of obtaining Glasgow clues is increased (working time improves the likelihood)"
+    },
+    {
+      "name": "Information Collation",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Reception Room, every time that a non- Glasgow clue is collected, the likelihood of obtaining Glasgow clues is increased (working time improves the likelihood)"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Quercus's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "BLS-X: Rusty Stick",
+      "mission": {
+        "requirement1": "During battle, have Quercus use Echo of Life a total of 8 times (excluding Support Units)",
+        "requirement2": "Clear Main Theme 9-2 with a 3-star rating; You must deploy your own Quercus, and cannot include any Medic Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +60 , ATK +15 , DEF +10",
+          "effectLabel": "Trait improved",
+          "effectText": "Deals Arts damage ; When skill is active, attacks instead restore the HP of allies (heal amount is equal to 100% of ATK)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +90 , ATK +20 , DEF +15",
+          "effectLabel": "Forest Sanctuary improved",
+          "effectText": "Grants a 16% Sanctuary effect to all friendly units within range with more than 70% HP",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +110 , ATK +30 , DEF +25",
+          "effectLabel": "Forest Sanctuary improved",
+          "effectText": "Grants a 16% Sanctuary effect to all friendly units within range with more than 60% HP",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Quercus, one of\nRhodes Island\n's intelligence officers stationed in\nVictoria\n, is a master of the traditional\nOriginium Arts\nof Victoria's Gododdin peoples. Prior to joining Rhodes Island, she traversed Victoria's southern wastelands with the mission of healing her compatriots in the wasteland settlements.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 658,
+          "atk": 209,
+          "def": 80,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 10,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 969,
+          "atk": 299,
+          "def": 115,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 10,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "y-2"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 969,
+          "atk": 299,
+          "def": 115,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1310,
+          "atk": 384,
+          "def": 151,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "y-6"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1310,
+          "atk": 384,
+          "def": 151,
+          "res": 25,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1680,
+          "atk": 463,
+          "def": 172,
+          "res": 25,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "y-6"
+      }
+    ],
+    "trust": {
+      "hp": 400,
+      "atk": 0,
+      "def": 30
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, the operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Quercus shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.13u/L\nOperator Quercus has a certain amount of exposure to Originium, but as her primary operation sites are in the wilds, there is little risk of crystal density increasing further."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Quercus's Originium Arts and her lifestyle all stem from the traditions of her hometown, rooted in a primordial reverence and mimicry of nature. She enjoys being outside, can skillfully climb trees with her bare hands, can distinguish the different scents of flowers and cries of fowlbeasts upon the wind, and claims that the closed-off environment of the Rhodes Island landship makes it hard for her to breathe. As for her Originium Arts, while they are able to mend wounds, they are also able to make seeds grow quickly into vines, or make weeds sprout along distant mountain roads. This procedure is usually accompanied by a ceremonial language with no discernable effect. According to her, in her tradition this is known as a dialogue with the land.\nThough her Originium Arts can promote plant growth, Quercus will not use it to help save the wilted potted plants of other operators. 'While I could use my Originium Arts to revive your plants, that is not something the flowers ever wanted to show you. You'd better water them instead.'\n\n'There are no issues with Rhodes Island's circulation or ventilation systems. If Quercus is mentioned in any complaint about the air quality sent by other operators, the contents can be safely ignored. There's a high likelihood of it being a psychosomatic effect after listening to Quercus.'\n—Additional memo from an Engineering Department Operator"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "As an operator stationed abroad, Quercus spends most of her time away from the Rhodes Island landship. Though she is primarily active in Victoria, this does not affect the fact that she maintains cordial relationships with many operators. This is largely due to her excellent memory: just by eating lunch with someone in the cafeteria, she'll instantly be able to recognize that person and call out their name, even after half a year. Additionally, each time she shows up at Rhodes Island, she always brings back a variety of gifts and local specialties, enough for all her friends. Strangers who partake of her gifts quickly become her friends too. Of course, if someone is overly enthusiastic about her preserved fruits, fresh flower cakes, or other handmade products, she'll remind them that 'bulk orders must be made in advance.' As a result, each time she contacts Rhodes Island, she tends to include some private information, such as 'the homemade fruit wine has fermented,' 'I've stored three crates of canned seasoned sandworms,' etc.\nWhile carrying out field missions abroad in Victoria, Quercus always has ways of turning her base into a popular spot for visitors. So far, she's tried setting up a flower shop, a jam bakery, and a co-op bookstore. Thanks to her cheerful and gentle image as a shopkeeper, all her business ventures have gone well, leading many to wonder if she's actually doing her job or just trying to live life to its fullest. Still, the contents of her reports have never given any cause for disappointment.\n...Has she gotten addicted to the city's hustle and bustle? It's almost as if she's terrified of empty places."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "I happened to run into the travelling doctor while out on a mission. I'm a bit ashamed to admit, but it was originally my mission to protect the Infected, and she actually beat me to it. Rhodes Island was newly established at the time and we were in need of helping hands. Though she wasn't Infected, she was still a benevolent doctor who treated the Infected as equals, while also displaying some professional combat prowess, so I tried reaching out to her.\nSomewhat to my surprise, she was not the dogmatic tribal healer I made her out to be, instead exhibiting an open-mindedness I rarely saw in the other locals. She candidly admitted that her traditional Originium Arts and herbal remedies were unable to treat many ailments.\nRhodes Island's hopes of treating Oripathy clearly appealed to her, and she provided the following conditions for her joining: she would not leave Victorian soil, she would not kill anyone in the line of work, and Rhodes Island would share its experiences of handling the Infected with her. I thought we would be able to meet all three of those conditions.\n\n—Rhodes Island Operator, Bitter Root\n\n[Classified Log]\nAccording to Operator Bitter Root, Quercus should have a history of military service. Taking her test results and personal wishes in consideration, Quercus will serve as a Rhodes Island intelligence officer operating long-term in Victoria, reporting directly to Kal'tsit.\n\nAuthorization Change: From now on, Operator Quercus will report directly to the Doctor."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Classified Log]\nQuercus has never taken the initiative to bring up her military service. Most of the time, she acts as if she'd never left the soil of her hometown. However, when Rhodes Island obtained her Special Forces combat history during a background check, she spoke openly about a conflict that broke out in a Victorian enclave, clearly reciting the full names of every young soldier under her at the time.\nShe made no attempt to turn away from the fact that she would go on to lose all her comrades-in-arms during the ensuing battles, an all-too-common experience. In her own words, she was already well acquainted with death, being the only healer in her hometown. She is even glad she managed to survive to the end, and was thus able to sing lamentations for each and every one of those children, sending them off in a foreign land.\nWhile she did not explicitly admit to any regrets during the conversation, before she made the decision to join Rhodes Island she displayed an extremely cautious attitude, carefully inquiring about Rhodes Island's philosophy, course of action, and what we fought for. Presumably, she did not want to be deceived into taking up arms again. As for the young soldiers, who Quercus called 'children', they had apparently taken her rallying cries to heart, plunging into the conflict with full faith. While she returned home bitter and angry, they did not return home at all.\nIn response to her frankness, the HR operator answered her questions as thoroughly as possible. However, after signing her preliminary contract, she slyly asked the staff in charge of her onboarding: 'Since you don't need an army, what's the use of knowing that I was a soldier before?'\n\nWhile Operator Quercus has been genuine with Rhodes Island, her statement also rings true. As a mere commander of a squad, there was no way for her to understand the internal political struggles in Victoria underpinning that conflict. Rhodes Island can trust her, but also needs to avoid thrusting her into certain subjects of investigation.\n—HR Operator"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Even now, there are still some in Quercus's hometown that are hostile to and do not trust her, as well as those who accept neither her healing nor her blessings.\nMany people harboring guilt in their heart would be reluctant to face the judgment back home, but Quercus, after returning from the battlefield weighed down by such feelings, knocked on the doors of each and every deceased, one by one, apologizing to their relatives waiting anxiously inside for being unable to bring back even a single ID tag."
+    }
+  ]
+}

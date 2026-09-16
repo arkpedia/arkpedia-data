@@ -1,0 +1,1010 @@
+{
+  "name": "Ceobe",
+  "rarity": 6,
+  "class": "Caster",
+  "branch": "Core Caster",
+  "faction": "Rhodes Island",
+  "umbrellaFactions": [],
+  "connectedFactions": [
+    "Bolívar"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS",
+    "Crowd-Control"
+  ],
+  "trait": "Deals Arts damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Summer Flowers FA333",
+    "Unfettered"
+  ],
+  "ep": {
+    "Main": "Solitary Journey Honey Funny Days",
+    "Co-star": null
+  },
+  "internalName": "char_2013_cerber",
+  "otherLanguages": {
+    "Chinese": "刻俄柏",
+    "Japanese": "ケオベ",
+    "Korean": "케오베"
+  },
+  "characterInfo": {
+    "File no.": "R155",
+    "Operator Record": "XXL Honey Biscuit",
+    "Paradox Simulation": "Tips for Beating Up Bad Guys",
+    "Illustrator": "LM7",
+    "Release Date": "2020/08/26",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Asami Seto",
+    "Chinese": "Zi Mao (credited as \"Kousou Mao\" in EN)",
+    "English": "Christina Costello",
+    "Korean": "Ryu Jeom-hee"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "3 years",
+    "Place of Birth": "Bolívar",
+    "Date of Birth": "March 3rd",
+    "Race": "Perro",
+    "Height": "153 cm",
+    "Infection Status": "Originium crystals are distributed across the surface of her body, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Excellent",
+    "Endurance": "Exceptional",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Thresher",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Each attack deals additional Arts damage to the target equal to 25% of its DEF"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Each attack deals additional Arts damage to the target equal to 29% (+4%) of its DEF"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Each attack deals additional Arts damage to the target equal to 40% of its DEF"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Each attack deals additional Arts damage to the target equal to 44% (+4%) of its DEF"
+        }
+      ]
+    },
+    {
+      "name": "Lone Journey",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When there are no other friendly units in the surrounding 4 tiles, ATK +8% and ASPD +8"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +27"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Thresher"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Ceobe's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Thresher .",
+        "New skill: \"Really Hot Knives\" .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Ceobe to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        },
+        {
+          "name": "Device",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Lone Journey .",
+        "New skill: \"Really Heavy Spear\" .",
+        "Thresher improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Ceobe to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Bipolar Nanoflake",
+          "quantity": 4
+        },
+        {
+          "name": "Incandescent Alloy Block",
+          "quantity": 5
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "\"Really Cold Axe\"",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Increases the ATK of the next attack by 150% , prioritizing enemies that are not blocked and Binding them for 1.5 seconds Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Increases the ATK of the next attack by 155% , prioritizing enemies that are not blocked and Binding them for 1.5 seconds Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Increases the ATK of the next attack by 160% , prioritizing enemies that are not blocked and Binding them for 1.5 seconds Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Increases the ATK of the next attack by 165% , prioritizing enemies that are not blocked and Binding them for 2 seconds Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Increases the ATK of the next attack by 170% , prioritizing enemies that are not blocked and Binding them for 2 seconds Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Increases the ATK of the next attack by 175% , prioritizing enemies that are not blocked and Binding them for 2 seconds Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Increases the ATK of the next attack by 180% , prioritizing enemies that are not blocked and Binding them for 2.5 seconds Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Increases the ATK of the next attack by 190% , prioritizing enemies that are not blocked and Binding them for 2.5 seconds Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Increases the ATK of the next attack by 200% , prioritizing enemies that are not blocked and Binding them for 2.5 seconds Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Increases the ATK of the next attack by 210% , prioritizing enemies that are not blocked and Binding them for 3 seconds Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 7
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "\"Really Hot Knives\"",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30–40 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Interval is reduced slightly , and attacks prioritize enemies with the highest DEF",
+            "initialSp": 10,
+            "spCost": 50,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Interval is reduced slightly , and attacks prioritize enemies with the highest DEF",
+            "initialSp": 11,
+            "spCost": 49,
+            "duration": 31
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Interval is reduced slightly , and attacks prioritize enemies with the highest DEF",
+            "initialSp": 12,
+            "spCost": 48,
+            "duration": 32
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Interval is reduced , and attacks prioritize enemies with the highest DEF",
+            "initialSp": 13,
+            "spCost": 47,
+            "duration": 33
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Interval is reduced , and attacks prioritize enemies with the highest DEF",
+            "initialSp": 14,
+            "spCost": 46,
+            "duration": 34
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Interval is reduced , and attacks prioritize enemies with the highest DEF",
+            "initialSp": 15,
+            "spCost": 45,
+            "duration": 35
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Interval is reduced moderately , and attacks prioritize enemies with the highest DEF",
+            "initialSp": 16,
+            "spCost": 44,
+            "duration": 36
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Interval is reduced significantly , and attacks prioritize enemies with the highest DEF",
+            "initialSp": 18,
+            "spCost": 43,
+            "duration": 37
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Interval is reduced significantly , and attacks prioritize enemies with the highest DEF",
+            "initialSp": 20,
+            "spCost": 42,
+            "duration": 38
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Interval is reduced greatly , and attacks prioritize enemies with the highest DEF",
+            "initialSp": 25,
+            "spCost": 40,
+            "duration": 40
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "This skill has aged very well. Fantastic against high DEF enemies due to her uncapped scaling in damage."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            },
+            {
+              "name": "RMA70-12",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Scaler",
+            "description": "The damage output of this unit scales with enemies' DEF"
+          }
+        ]
+      },
+      {
+        "name": "\"Really Heavy Spear\"",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "55–60 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range expands , ATK +100% , attacks now deal Physical damage, prioritize enemies with the lowest defense, and silence targets for 2 seconds",
+            "initialSp": 35,
+            "spCost": 80,
+            "duration": 55
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack range expands , ATK +110% , attacks now deal Physical damage, prioritize enemies with the lowest defense, and silence targets for 2 seconds",
+            "initialSp": 37,
+            "spCost": 80,
+            "duration": 55
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack range expands , ATK +120% , attacks now deal Physical damage, prioritize enemies with the lowest defense, and silence targets for 2 seconds",
+            "initialSp": 39,
+            "spCost": 80,
+            "duration": 55
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack range expands , ATK +130% , attacks now deal Physical damage, prioritize enemies with the lowest defense, and silence targets for 2.5 seconds",
+            "initialSp": 41,
+            "spCost": 80,
+            "duration": 56
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack range expands , ATK +140% , attacks now deal Physical damage, prioritize enemies with the lowest defense, and silence targets for 2.5 seconds",
+            "initialSp": 43,
+            "spCost": 80,
+            "duration": 56
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack range expands , ATK +150% , attacks now deal Physical damage, prioritize enemies with the lowest defense, and silence targets for 2.5 seconds",
+            "initialSp": 45,
+            "spCost": 80,
+            "duration": 56
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack range expands , ATK +160% , attacks now deal Physical damage, prioritize enemies with the lowest defense, and silence targets for 3 seconds",
+            "initialSp": 47,
+            "spCost": 80,
+            "duration": 57
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack range expands , ATK +175% , attacks now deal Physical damage, prioritize enemies with the lowest defense, and silence targets for 3.5 seconds",
+            "initialSp": 49,
+            "spCost": 80,
+            "duration": 58
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack range expands , ATK +190% , attacks now deal Physical damage, prioritize enemies with the lowest defense, and silence targets for 4 seconds",
+            "initialSp": 52,
+            "spCost": 80,
+            "duration": 59
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack range expands , ATK +210% , attacks now deal Physical damage, prioritize enemies with the lowest defense, and silence targets for 5 seconds",
+            "initialSp": 55,
+            "spCost": 80,
+            "duration": 60
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 11
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Aketon",
+          "quantity": 6
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 5
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "I Want It All",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, capacity limit +8 and Morale consumed per hour -0.25"
+    },
+    {
+      "name": "Right Now",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, productivity +20% in the first hour and thereafter +1% per hour, up to +25%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Ceobe's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "CCR-X: \"Really Dry Bread\"",
+      "mission": {
+        "requirement1": "Defeat 10 elite or leader enemies with Ceobe (excluding Support Units)",
+        "requirement2": "Clear Side Story RI-6 with a 3-star rating; You must deploy your own Ceobe, and have Ceobe defeat at least 2 Tiacauh Shredders"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +130 , ATK +40",
+          "effectLabel": "New trait",
+          "effectText": "Ignore 10 of target's RES",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +160 , ATK +55",
+          "effectLabel": "Thresher improved",
+          "effectText": "Each attack deals additional Arts damage to the target equal to 45% of its DEF; percentage increases with repeated attacks against the same target, up to 70%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +180 , ATK +65",
+          "effectLabel": "Thresher improved",
+          "effectText": "Each attack deals additional Arts damage to the target equal to 50% of its DEF; percentage increases with repeated attacks against the same target, up to 75%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "CCR-Y: \"Knife, I Made\"",
+      "mission": {
+        "requirement1": "Deal a total of 120,000 damage with Ceobe (excluding Support Units)",
+        "requirement2": "Clear Main Theme 11-7 with a 3-star rating under Standard Environment; You must deploy your own Ceobe, and have Ceobe defeat the Rot Eater"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +80 , ATK +40 , DEF +17",
+          "effectLabel": "New trait",
+          "effectText": "Gain 1 SP when normal attacks hit an elite or leader enemy .",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +105 , ATK +49 , DEF +21",
+          "effectLabel": "Lone Journey improved",
+          "effectText": "Gains +12% ATK and +12 ASPD when there are no allied units in the adjacent 4 tiles [ note 1 ]",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +120 , ATK +56 , DEF +23",
+          "effectLabel": "Lone Journey improved",
+          "effectText": "Gains +15% ATK and +15 ASPD when there are no allied units in the adjacent 4 tiles [ note 1 ]",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "A wanderer from birth, Ceobe was infected through her prolonged treks through the harsh wilderness. After being rescued by\nRhodes Island\nand successfully passing the\nOperator\nexam, she became a member of Rhodes Island.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "l8jmxa4eb58",
+      "creator": "SharkyFerret"
+    },
+    {
+      "videoId": "nbKAXJnTxUY",
+      "creator": "FrostByte262"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 657,
+          "atk": 302,
+          "def": 48,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 939,
+          "atk": 420,
+          "def": 82,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-6"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 939,
+          "atk": 420,
+          "def": 82,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1220,
+          "atk": 553,
+          "def": 114,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1220,
+          "atk": 553,
+          "def": 114,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1565,
+          "atk": 667,
+          "def": 128,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 90,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal blurry outlines of this operator's internal organs, clouded with abnormal dark spots. Her circulatory system shows an abnormally high rate of Originium particulate matter, with other signs of Oripathy infection, we can confirm that the Operator is Infected. \n\n[Cell-Originium Assimilation] 9%\nOperator Ceobe has clear signs of Infection, with crystals deposited mainly on the trunk perhaps due to blood circulation.\n\n[Blood Originium-Crystal Density] 0.31u/L\nA long period of wandering has resulted in this Operator never receiving formal treatment, and her infection is quickly getting worse. A significant cause for worry.\n\nHas she dragged this body around all over the world? This ship is perhaps the last chance she has for a miracle, but her body... I hope there is still something we can do......\n--J.A., Medic Operator"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Ceobe and Rhodes Island first made contact as enemies on the battlefield. At the time, a hungry Ceobe attacked one of Rhodes Island's reserve squads while they were performing missions in Leithanien. The tired and hungry Ceobe was eventually defeated after a bitter battle. The Rhodes Island Operators then disarmed her and dropped her off at the Leithanian branch of Rhodes Island, but due to the deteriorating living conditions of the Infected in Leithanien, the team finally brought Ceobe back to the vessel. Along the way, Ceobe, who had always kept her distance from civilization, was slightly wary of communicating with others. However, after coming to Rhodes Island, she began to gain a new understanding of the people who had bested her - eat well, drink well, sleep well, and beat up bad people. Coincidentally, these are all things that she likes to do, so upon an Operator's recommendation, she joined Rhodes Island without hesitation."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Ceobe felt confused - or rather, was mystified by the new world she was able to step into. With the exception of the few familiar faces she had met before, there were far too many people waiting to make her acquaintance. Of course, her priority is not so much becoming acquainted with people, but rather becoming acquainted with food. In the place where everyone gathers to eat, there is a certain door. On the other side is a world of countless edibles, waiting for her to sample. She's not particularly subtle in her efforts to sneak in, resulting in a high probability of being found and shown the way out. However, that doesn't seem to deter her - at least until she's tasted the contents of all the bottles and cans there.\nIn light of the fact that Ceobe is still learning about the norms of civilized life, everyone privately agreed to not punish her when she gets caught, and some people even took the opportunity to feed Ceobe some strange things. Though these people usually fall under one of three categories - the experimenters, the kind-hearted, and those who just wanted to make fun of her, Ceobe generally only has two words to say about the things she eats: 'Yummy,' or 'Good.' No one can coax any other words out of Ceobe - naturally, the experimenters can't get the kind of data they're looking for, the kind-hearted pretty much all get the same few responses, and those who try to make fun of Ceobe are undertaking a self-defeating task. Over time, the number of people casually trying to feed Ceobe decreased as well.\nAlthough she has indulged in many foods of all shapes and sizes since coming to Rhodes Island, if asked to pick out the food she loved the most, she would choose honey biscuits. As a matter of fact, honey biscuits are the only thing that she seems to be picky with - currently, she only accepts biscuits baked by Lava, Vulcan, and Matterhorn. She won't touch even a single crumb of the biscuits baked by anyone else - even by the logistics chief.\nSummary: She won't eat, but she absolutely can eat just about everything. She loves honey biscuits. If the day comes where she's in the mood to eat the entirety of Rhodes Island, she'll likely do just that."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Ceobe made many good friends after arriving at Rhodes Island, but the greatest, mightiest, and most reliable person of all in her eyes is the Doctor. Though the Doctor looks a lot weaker than her, she finds the Doctor to be much smarter than even Vulcan, capable of explaining concepts that seem utterly inconceivable to her in just a few simple words so that she can understand the gist of things. When being briefed on missions, she couldn't wrap her head around things like tactical simulations, but the Doctor had a brilliant idea - by giving her simple, concrete commands such as 'stand here,' 'attack this,' or 'fight until I arrive,' she was able to complete her missions. As a result, Ceobe was able to save some brain cells, and the Doctor entered the ranks of the few people who Ceobe would completely set her weapons down around.\nOther than the Doctor, the person who Ceobe respects the most is Vulcan."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Ceobe's very first weapon was an axe with her name engraved upon it. Her curiosity led her to seek the meaning behind the axe, so she stopped to ask a question to the first person she could find - and thus began her life of wandering. Along the way, when she got hungry, she ate wild fruits. When she was thirsty, she drank water from the rivers. Her journeys took her away from most of civilization. Because she didn't have the ability to discern areas that were contaminated with Originium, Ceobe quickly contracted Oripathy, and what she described as 'black crystals' started to appear across some parts of her body. At first, these growths were a source of fear for her, but as she continued to wander, she began to see the power that these crystals had brought her - her weapons had grown stronger. Ceobe's fears were soon replaced with a strong desire to obtain more weapons, an uncontrollable impulse that often drove her to resort to violence to satisfy. Though she tried to suppress these impulses and use peaceful methods to obtain weapons, the outcomes would often differ greatly from her expectations. Sometimes she would rescue others, sometimes she would injure them; Some would reward her with weapons for completing tasks for them, some would use weapons to try to lure her, while others would gift them to her with no strings attached. In any case, her journey took her far to the east, where a well-intentioned person told her that she had taken the wrong way. With her large collection of weapons and tales in tow, she turned around and returned west. Her journey finally came to an end when she attacked a Rhodes Island squad led by Fang while trying to obtain food.\nWhile Ceobe lacked the qualifications to become an Operator, the HR Department finally gave her an opportunity to take the Operator evaluation exam upon Vulcan's recommendation. She had no expectation of becoming an Operator, nor did she know what such a job entailed, but she still demonstrated a great desire to become one. After becoming a fully-fledged member in Rhodes Island, her daily routine of eating, drinking, and fighting, combined with medical treatment of her Oripathy, also alleviated her strange fixation upon collecting weapons. She has grown accustomed to her comfortable lifestyle, and hopes that her time her can last forever if possible...\nAs long as someone can unlock the secret of her axe."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Ceobe's advanced infection has given her the ability to enchant her weapons. Because the enchanting process requires a suitable weapon to serve as a carrier, each enchantment will instinctively 'choose' its own weapon and then, in accordance with the quality of the weapon, the enchantment will confer a different Originium Arts characteristic, such as flames, rocks, or ice. In the past, this ability was a subconscious process that she could not control, and therefore she didn't give much thought into it. Now, under the tutelage of Rhodes Island Operators, she is working hard to understand her unique skill: though she may never be able to master the fundamentals of Originium Arts through studying, she must learn enough to operate her skills on a basic level, which would be enough to help her achieve a baseline level of identification and control and strengthen her abilities all around. Today, Rhodes Island has developed a comprehensive learning plan for Ceobe, and as long as she is willing to sit down in a classroom and begin working on her literacy, we have reason to believe that she can become an excellent Arts user in the future.\n'Feel free to dream.' --Anonymous comments"
+    }
+  ]
+}

@@ -1,0 +1,757 @@
+{
+  "name": "Paprika",
+  "rarity": 5,
+  "class": "Medic",
+  "branch": "Chain Medic",
+  "faction": "Rhodes Island",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing"
+  ],
+  "trait": "Restores HP of allies, bouncing between 3 allies. Healing reduced by 25% per bounce.",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "The Road to Here"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4071_peper",
+  "otherLanguages": {
+    "Chinese": "明椒",
+    "Japanese": "パプリカ",
+    "Korean": "파프리카"
+  },
+  "characterInfo": {
+    "File no.": "R175",
+    "Operator Record": "Mercenary Youth",
+    "Paradox Simulation": "\"Don't Touch My Friends!\"",
+    "Illustrator": "板板",
+    "Release Date": "2023/04/27",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Yu Sasahara",
+    "Chinese": "Zhou Yihan",
+    "English": "Erika Harlacher (credited as \"Erika Harlacher-Stone\")",
+    "Korean": "Park Ri-na"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "2 years",
+    "Place of Birth": "Columbia",
+    "Date of Birth": "March 13th",
+    "Race": "Sarkaz",
+    "Height": "155 cm",
+    "Infection Status": "Originium crystals distributed across surface of body, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Focused Attention",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When healing, heal an extra 80 HP if target HP is below 40%"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When healing, heal an extra 90 (+10) HP if target HP is below 40%"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When healing, heal an extra 140 HP if target HP is below 40%"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When healing, heal an extra 150 (+10) HP if target HP is below 40%"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +24"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Focused Attention"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Paprika's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Focused Attention .",
+        "New skill: Camaraderie .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Paprika to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Focused Attention improved."
+      ],
+      "prerequisite": "Raise Paprika to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Medic Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Concentration",
+          "quantity": 8
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 12
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Shielding Tactics γ",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ASPD +25",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ASPD +30",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ASPD +35",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ASPD +40",
+            "initialSp": 20,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ASPD +45",
+            "initialSp": 20,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ASPD +50",
+            "initialSp": 20,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ASPD +55",
+            "initialSp": 20,
+            "spCost": 32,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ASPD +65",
+            "initialSp": 20,
+            "spCost": 32,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ASPD +75",
+            "initialSp": 20,
+            "spCost": 32,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ASPD +85",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Semi-Synthetic Solvent",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Camaraderie",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +10% , bounces per heal +1 , Talent activation threshold becomes 50% HP",
+            "initialSp": 15,
+            "spCost": 45,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +15% , bounces per heal +1 , Talent activation threshold becomes 50% HP",
+            "initialSp": 15,
+            "spCost": 44,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +20% , bounces per heal +1 , Talent activation threshold becomes 50% HP",
+            "initialSp": 15,
+            "spCost": 43,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +30% , bounces per heal +1 , Talent activation threshold becomes 60% HP",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +35% , bounces per heal +1 , Talent activation threshold becomes 60% HP",
+            "initialSp": 20,
+            "spCost": 39,
+            "duration": 25
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +40% , bounces per heal +1 , Talent activation threshold becomes 60% HP",
+            "initialSp": 20,
+            "spCost": 38,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +50% , bounces per heal +1 , Talent activation threshold becomes 70% HP",
+            "initialSp": 25,
+            "spCost": 35,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +60% , bounces per heal +1 , Talent activation threshold becomes 70% HP",
+            "initialSp": 25,
+            "spCost": 33,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +65% , bounces per heal +1 , Talent activation threshold becomes 70% HP",
+            "initialSp": 25,
+            "spCost": 32,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +70% , bounces per heal +1 , Talent activation threshold becomes 80% HP",
+            "initialSp": 25,
+            "spCost": 30,
+            "duration": 25
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 5
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Semi-Synthetic Solvent",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Full of Vigor",
+      "facility": "Control Center",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Control Center, all Trading Posts' order efficiency +7% (only the most effective one will take effect when assigned Operators have the same skill effect)"
+    },
+    {
+      "name": "Tailoring α",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, the chance of getting higher-yield Precious Metal orders is increased slightly (rate is influenced by length of work time), and Morale consumed per hour is reduced by -0.25"
+    },
+    {
+      "name": "Tailoring βReplacesTailoring α",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, the chance of getting higher-yield Precious Metal orders is increased (rate is influenced by length of work time), and Morale consumed per hour is reduced by -0.25"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Paprika's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "XAH-X: \"Colorful Life\"",
+      "mission": {
+        "requirement1": "During battle, have your own Paprika use Camarederie a total of 5 times",
+        "requirement2": "Clear Main Theme 3-5 with a 3-star rating; You must deploy your own Paprika, and use Camaraderie at least 2 times"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +160 , ATK +36",
+          "effectLabel": "New trait",
+          "effectText": "Restores HP of allies, bouncing between 3 allies. Healing reduced by 15% per bounce.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Chiral Refractor",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +180 , ATK +51",
+          "effectLabel": "Focused Attention improved",
+          "effectText": "When healing, heal an extra 170 HP if target HP is below 40%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +200 , ATK +61",
+          "effectLabel": "Focused Attention improved",
+          "effectText": "When healing, heal an extra 200 HP if target HP is below 50%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "A member of the\nColumbian\nmercenaries recruited to\nLondinium\nby\nManfred\n. She and her squad left his command owing to conflicting ideals, and when they were ambushed, we were there to rescue them.\nNow employed by\nRhodes Island\n, she provides on-field medical support to our combat squads.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 913,
+          "atk": 153,
+          "def": 74,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1202,
+          "atk": 252,
+          "def": 108,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "y-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1202,
+          "atk": 252,
+          "def": 108,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1432,
+          "atk": 351,
+          "def": 136,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "y-2"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1432,
+          "atk": 351,
+          "def": 136,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1666,
+          "atk": 439,
+          "def": 171,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "y-2"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 50,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 10%\nCrystal distribution clearly visible on the right arm and chest.\n\n[Blood Originium-Crystal Density] 0.26u/L\nOperator Paprika has been infected with Oripathy for several years; her condition is currently stable."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Paprika, a Sarkaz mercenary who left her original post, is a straightforward, lively girl.\nWhen we first made contact with her, we could also see the silhouettes of a few other Sarkaz related to us behind her. In other words, this girl and the Sarkaz mercenaries she brought with her were guided to us.\nWith her childish appearance, not many see her as a full-fledged mercenary. At most, she's like a girl scout. She's too young, too inexperienced, and doesn't think most things through. A kid like her should never have been fighting a war in Londinium—Most operators who've met her share this opinion.\nAnd that is indeed the case.\nWhile working with her mercenary team in Columbia, Paprika took on only minor duties such as serving as a bodyguard or slaying wild beasts. When her team leader, Grimm, heeded Theresis's call and told everyone they were heading to Londinium, she did not even understand what this new contract entailed.\nTrusting in her captain, the Sarkaz girl ignorantly marched into Londinium and followed the orders of the higher-ups. This lasted until she was brought back to the barracks by Manfred and soon saw for herself what war was really like."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Paprika's parents died in an accident when she was still young. Thus, she was raised by her grandmother in a small town in Columbia.\nThe town was several hours away by car from the nearest nomadic city, and a large number of Pioneers and Infected gathered in the area. Although life was hardly luxurious, she nonetheless enjoyed a happy, stable childhood thanks to the hand-knitted items her grandmother sold for a living.\nLike most Sarkaz, Paprika became infected with Oripathy at a young age. According to her, on her tenth birthday she woke up, rubbed her eyes, and stood in front of her chipped mirror to find a small rock having emerged from her chest.\nShe immediately understood that she was already Infected.\nThe Sarkaz girl's condition was fairly stable most of the time, and she's had no critical flare-ups. To the Sarkaz, Oripathy infection is almost a foregone conclusion, so becoming Infected is hardly a major disruption to their lives. When a company, facility, or city already rejects the Sarkaz, it doesn't matter to them whether the one they're refusing entry to is also infected or not.\nAfter her infection was confirmed, Paprika's path to adulthood became more or less set in stone:\nHer grades at school were only average, so she had no opportunity to continue her education. The school she was enrolled in encouraged her to drop out, and no other would accept her.\nUnable to attend school anymore, she at first helped her grandmother with her knitting business. Then she followed the local Pioneers and started slaying wild beasts out in the barrenlands for money. In the process, she came into contact with a team of Sarkaz mercenaries, and after spending some time with them chose to join them as well.\nAfter all, other than becoming a mercenary, what choice did a Sarkaz like her have?"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "[Purchase Order 004]\nItems:\nYellow, green, purple, and white yarn. Give me one bundle each.\nAnd two blacks!\nUsage:\nPersonal use!\nRemarks:\nIf there are any discounts, buy more!\n[Purchase Order 005]\nItems:\nRed, black, and white yarn, two bundles each.\nA sack of decorative colored beads.\nUsage:\nPersonal use!\nRemarks:\nThe brand we went with last time didn't work all that well. Try to pick something higher quality and more durable! It doesn't matter if it's more expensive. Be especially on the lookout for something that holds up against explosions...\nBy the way, does anyone know how often W and Ines come aboard?\n[Purchase Order 006][Cancelled]\nItems:\nRed, black, and white yarn, ten bundles each.\nUsage:\nPersonal use!!!\nRemarks:\nNo need to worry about how well it holds up against explosions anymore. It's meant for holding explosives, anyway.\n[Purchase Order 007]\nItems:\nRed, black, and white yarn, ten bundles each.\nFive sacks of decorative colored beads.\nUsage:\nAsk that damn W! She's the one who's getting any use out of this!\nShe said this can be expensed... I <i>can</i> expense this, right?!\nRemarks:\nGive me the cheapest you can find!!\n\n[Logistics Department Log]\nThat Sarkaz girl who loves knitting just stopped by. She snatched the purchase order she turned in earlier right back.\nThis is the second time she cancelled a purchase order this afternoon, though. I guess that white-haired bomb freak Sarkaz merc probably pulled her leg and told her something like, 'Your stuff's not so bad. They're just perfect for sticking bombs in to fool people. Make me a couple more next time.' She didn't have to make them. What an honest girl.\nAs for expensing this stuff? Forget it. She has a knack for this, though, so maybe she should look into selling her wares on the ship. She'd probably make her money back."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Paprika has clearly matured after the string of events she experienced.\nHaving come face-to-face with the cold, harsh truth, she's started to think about a lot of questions she had never considered, such as what meaning does the rebuilding of Kazdel hold for the Sarkaz, how do wars happen, and why do people choose to give their lives without a second thought?\nJust like how until recently she was still completely ignorant of everything. Why did so many Sarkaz participate in the war when they didn't even have a reason to fight? Why did they have to choose to either kill or be killed on the battlefield?\nAre death and parting really so common to mercenaries that there's nothing to be so sad about, like what Old Grimm told her?\nPaprika still hasn't found concrete answers to many of her questions.\nHowever, every time she stares down at the old cigarette box in her hands, she thinks back to that night in the Columbian wilderness, when the mercenary team had set up a tent and a campfire. Old Grimm sat next to the fire. The exposed areas of the old Sarkaz man's body were covered in scars, and every time his lips twitched, the look on his face would scare the pants off any normal folks in the vicinity. Nonetheless, he would always give the freshest roasted jerky to the team's youngest girl, and downplayed it like he wasn't taking care of the youngsters.\nWhen he talked about the good life awaiting the Sarkaz just around the corner, even the scars on his old face stretched as he grinned.\nSadly, luck wasn't on Old Grimm's side. Soon enough, he gave his life in Victoria. When she was detained by Manfred, Paprika held onto the cigarette box she got from the old man and tried her hardest to imagine the good life that he looked forward to so much.\nWhat would that life be like? Would they never catch Oripathy again? Or would they get to pay less money each year and not be rejected for 'insufficient qualifications' when applying for school or work, simply because they're Sarkaz?\n'I used to think being a mercenary was great. We put our skills to use to make a living.'\nThat's what Operator Paprika told our other mercenary operators.\n'But they said I wasn't a full-fledged mercenary. They told me I hadn't even killed.\n'Then I finally figured it out and made sure of it.\n'It doesn't matter what grand objectives Manfred and the men above him have, at the very least, following a bastard like him and becoming a 'full-fledged mercenary' who kills without blinking an eye is not the kind of life I want to live!'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "[Mistakenly Recorded Communications Log]\n'I take good care of her? Do I now? I just thought I'd give her a hand since she's new here, and so young.'\n'Huh? What do you mean, I'm bigger than her?! Of course I'm bigger!'\n'This has got nothing to do with whether she's a Sarkaz or not. And nothing to do with the wool knee pads she gave me last week, either! That shit's for old people, they clash with my style!'\n'She's been knitting a lot of stuff for everyone, saying it's her way of thanking them for always taking care of her. Plenty of people got them. She even made those earmuffs the Doctor's been wearing lately.'\n'Hibiscus told me she likes that little medical pouch she got, too. I mean, it <i>is</i> pretty practical. So how come I got stuck with the knee pads? They even have these goddamn pompoms hanging off of them... No, that's not the point!'\n'For a girl that young to get herself caught up in what went down in Londinium... luck sure wasn't on her side. But she's still got all four limbs, still alive and kicking. She's even saving up some money to send home, so she's definitely not <i>completely</i> down on her luck.'\n'The little trinkets she made for Beanstalk's metal crabs don't look half bad, either. Aren't they planning on putting out some kind of merch? I know the Doctor invested some money in that, too.'\n'And what's wrong with that? She became a merc because she didn't know what else she could do. She's got no real reason, otherwise. So if she's found something she likes doing, what's wrong with a little career change?'\n'There are still loads of others who were dragged into this mess just like her. We can give her a push in the back, but we can't give her an answer. It's her own mess, let her sort it out. Let her look, hear, and think on her own.'\n'She can handle it.'"
+    }
+  ]
+}

@@ -1,0 +1,1019 @@
+{
+  "name": "Sankta Miksaparato",
+  "rarity": 6,
+  "class": "Defender",
+  "branch": "Sentry Protector",
+  "faction": "Laterano",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Defense",
+    "DPS",
+    "Support"
+  ],
+  "trait": "Blocks 3 enemies and attacks from long range.",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "The Masses' Travels"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Caelum Aeternum"
+  ],
+  "ep": {
+    "Main": "Still the Same",
+    "Co-star": null
+  },
+  "internalName": "char_4194_rmixer",
+  "otherLanguages": {
+    "Chinese": "信仰搅拌机",
+    "Japanese": "サンクタ・ミキサー",
+    "Korean": "산크타 믹사파라토"
+  },
+  "characterInfo": {
+    "File no.": "LT32",
+    "Illustrator": "九日九号 (original design by Skade )",
+    "Release Date": "2025/10/14",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Nobuo Tobita",
+    "Chinese": "Liu Bin",
+    "English": "Andres Williams",
+    "Korean": "Min Eung-shik"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "54 years",
+    "Place of Birth": "Laterano",
+    "Date of Birth": "December 26th",
+    "Race": "Sankta",
+    "Height": "210 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Outstanding",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Machine-Gun Welcome Ceremony",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Whenever Sankta Miksaparato deals damage, he gains DEF +20 and ASPD +2 for 10 seconds, stacking up to 3 times"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Whenever Sankta Miksaparato deals damage, he gains DEF +30 and ASPD +3 for 10 seconds, stacking up to 3 times"
+        }
+      ]
+    },
+    {
+      "name": "Shield-Up Farewell Ceremony",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When Sankta Miksaparato has not attacked for 8 seconds, he gains a Barrier equal to 15% Max HP; this timer restarts once the Barrier is lost"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When Sankta Miksaparato has not attacked for 8 seconds, he gains a Barrier equal to 18% (+3%) Max HP; this timer restarts once the Barrier is lost"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Shield-Up Farewell Ceremony"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Sankta Miksaparato's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Machine-Gun Welcome Ceremony .",
+        "New skill: Eight-Armed Chainsaw Guy ."
+      ],
+      "prerequisite": "Raise Sankta Miksaparato to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 12
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Shield-Up Farewell Ceremony .",
+        "New skill: Pre-Retirement Preaching .",
+        "Machine-Gun Welcome Ceremony improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Sankta Miksaparato to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "D32 Steel",
+          "quantity": 4
+        },
+        {
+          "name": "Crystalline Circuit",
+          "quantity": 5
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Gun-Knight Examiner-in-Chief",
+        "recoveryType": "Defensive Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack hits three times , each hit dealing 100% of ATK as Physical damage, and Replenishes 1 bullet to another nearby [ Laterano ] Operator with an ammo-type skill active",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack hits three times , each hit dealing 110% of ATK as Physical damage, and Replenishes 1 bullet to another nearby [Laterano] Operator with an ammo-type skill active",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack hits three times , each hit dealing 120% of ATK as Physical damage, and Replenishes 1 bullet to another nearby [Laterano] Operator with an ammo-type skill active",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack hits three times , each hit dealing 130% of ATK as Physical damage, and Replenishes 1 bullet to another nearby [Laterano] Operator with an ammo-type skill active",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack hits three times , each hit dealing 140% of ATK as Physical damage, and Replenishes 1 bullet to another nearby [Laterano] Operator with an ammo-type skill active",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack hits three times , each hit dealing 150% of ATK as Physical damage, and Replenishes 1 bullet to another nearby [Laterano] Operator with an ammo-type skill active",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack hits three times , each hit dealing 160% of ATK as Physical damage, and Replenishes 1 bullet to another nearby [Laterano] Operator with an ammo-type skill active",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack hits three times , each hit dealing 170% of ATK as Physical damage, and Replenishes 1 bullet to another nearby [Laterano] Operator with an ammo-type skill active",
+            "initialSp": 1,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack hits three times , each hit dealing 180% of ATK as Physical damage, and Replenishes 1 bullet to another nearby [Laterano] Operator with an ammo-type skill active",
+            "initialSp": 2,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack hits three times , each hit dealing 190% of ATK as Physical damage, and Replenishes 1 bullet to another nearby [Laterano] Operator with an ammo-type skill active",
+            "initialSp": 3,
+            "spCost": 4,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            },
+            {
+              "name": "Aketon",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 4
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Eight-Armed Chainsaw Guy",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "Toggled",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +60% , DEF +50% , and if lethal damage is received while skill is active, immediately consumes 30 ammo to resist the damage Skill activation grants 40 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 27,
+            "spCost": 65,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +65% , DEF +55% , and if lethal damage is received while skill is active, immediately consumes 30 ammo to resist the damage Skill activation grants 40 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 27,
+            "spCost": 65,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +70% , DEF +60% , and if lethal damage is received while skill is active, immediately consumes 30 ammo to resist the damage Skill activation grants 40 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 27,
+            "spCost": 65,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +80% , DEF +70% , and if lethal damage is received while skill is active, immediately consumes 30 ammo to resist the damage Skill activation grants 42 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 30,
+            "spCost": 60,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +85% , DEF +75% , and if lethal damage is received while skill is active, immediately consumes 30 ammo to resist the damage Skill activation grants 42 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 30,
+            "spCost": 60,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +90% , DEF +80% , and if lethal damage is received while skill is active, immediately consumes 30 ammo to resist the damage Skill activation grants 42 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 30,
+            "spCost": 60,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +105% , DEF +90% , and if lethal damage is received while skill is active, immediately consumes 25 ammo to resist the damage Skill activation grants 45 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 33,
+            "spCost": 55,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +120% , DEF +105% , and if lethal damage is received while skill is active, immediately consumes 25 ammo to resist the damage Skill activation grants 47 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 34,
+            "spCost": 53,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +135% , DEF +115% , and if lethal damage is received while skill is active, immediately consumes 20 ammo to resist the damage Skill activation grants 47 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 34,
+            "spCost": 52,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +150% , DEF +130% , and if lethal damage is received while skill is active, immediately consumes 20 ammo to resist the damage Skill activation grants 50 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 35,
+            "spCost": 50,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 4
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Immortality",
+            "description": "Allow units to take big damage from enemies, while also not dying for it."
+          }
+        ]
+      },
+      {
+        "name": "Pre-Retirement Preaching",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "Toggled",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "On skill activation, Replenishes 2 bullets to all other [ Laterano ] Operators ; Attack Range expands , Max HP +20% , ATK +110% , DEF +20% ; stops attacking enemies; when attacked, immediately counterattacks up to 3 enemies within Attack Range once; minimum interval between counterattacks is 100% of actual Attack Interval Skill activation grants 30 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 18,
+            "spCost": 45,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "On skill activation, Replenishes 2 bullets to all other [Laterano] Operators; Attack Range expands , Max HP +25% , ATK +120% , DEF +25% ; stops attacking enemies; when attacked, immediately counterattacks up to 3 enemies within Attack Range once; minimum interval between counterattacks is 100% of actual Attack Interval Skill activation grants 30 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 18,
+            "spCost": 45,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "On skill activation, Replenishes 2 bullets to all other [Laterano] Operators; Attack Range expands , Max HP +30% , ATK +130% , DEF +30% ; stops attacking enemies; when attacked, immediately counterattacks up to 3 enemies within Attack Range once; minimum interval between counterattacks is 100% of actual Attack Interval Skill activation grants 30 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 18,
+            "spCost": 45,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "On skill activation, Replenishes 2 bullets to all other [Laterano] Operators; Attack Range expands , Max HP +35% , ATK +140% , DEF +35% ; stops attacking enemies; when attacked, immediately counterattacks up to 3 enemies within Attack Range once; minimum interval between counterattacks is 60% of actual Attack Interval Skill activation grants 30 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 20,
+            "spCost": 43,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "On skill activation, Replenishes 2 bullets to all other [Laterano] Operators; Attack Range expands , Max HP +40% , ATK +150% , DEF +40% ; stops attacking enemies; when attacked, immediately counterattacks up to 3 enemies within Attack Range once; minimum interval between counterattacks is 60% of actual Attack Interval Skill activation grants 30 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 20,
+            "spCost": 43,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "On skill activation, Replenishes 2 bullets to all other [Laterano] Operators; Attack Range expands , Max HP +50% , ATK +160% , DEF +50% ; stops attacking enemies; when attacked, immediately counterattacks up to 3 enemies within Attack Range once; minimum interval between counterattacks is 60% of actual Attack Interval Skill activation grants 30 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 20,
+            "spCost": 43,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "On skill activation, Replenishes 3 bullets to all other [Laterano] Operators; Attack Range expands , Max HP +55% , ATK +170% , DEF +55% ; stops attacking enemies; when attacked, immediately counterattacks up to 3 enemies within Attack Range once; minimum interval between counterattacks is 30% of actual Attack Interval Skill activation grants 30 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 22,
+            "spCost": 41,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "On skill activation, Replenishes 3 bullets to all other [Laterano] Operators; Attack Range expands , Max HP +60% , ATK +185% , DEF +60% ; stops attacking enemies; when attacked, immediately counterattacks up to 3 enemies within Attack Range once; minimum interval between counterattacks is 30% of actual Attack Interval Skill activation grants 30 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 23,
+            "spCost": 39,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "On skill activation, Replenishes 3 bullets to all other [Laterano] Operators; Attack Range expands , Max HP +70% , ATK +200% , DEF +70% ; stops attacking enemies; when attacked, immediately counterattacks up to 3 enemies within Attack Range once; minimum interval between counterattacks is 10% of actual Attack Interval Skill activation grants 30 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 24,
+            "spCost": 37,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "On skill activation, Replenishes 4 bullets to all other [Laterano] Operators; Attack Range expands , Max HP +80% , ATK +220% , DEF +80% ; stops attacking enemies; when attacked, immediately counterattacks up to 3 enemies within Attack Range once; minimum interval between counterattacks is 10% of actual Attack Interval Skill activation grants 30 ammo and the skill ends when all ammo is used (Can manually deactivate the skill)",
+            "initialSp": 25,
+            "spCost": 35,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Chiral Refractor",
+              "quantity": 4
+            },
+            {
+              "name": "Coagulative Nodule",
+              "quantity": 6
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 10
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 6
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Reflection Damage",
+            "description": "Able to reflect damage onto enemies (especially ranged)"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Ester",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 7
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Aggregate Cyclicene",
+          "quantity": 5
+        },
+        {
+          "name": "Semi-Synthetic Solvent",
+          "quantity": 4
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Tea Master",
+      "facility": "Reception Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by 15%"
+    },
+    {
+      "name": "Expert SocializerReplacesTea Master",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by 20%"
+    },
+    {
+      "name": "Eternal Youth",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Reception Room, if Fiammetta is assigned to a Dormitory, Clue search speed increases by 10%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Sankta Miksaparato's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "SPT-X: Armor Cleaning Brush Set",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Sankta Miksaparato and use Pre-Retirement Preaching at least 1 time in each battle",
+        "requirement2": "Clear Main Theme 14-5 with a 3-star rating under Standard Environment; You must deploy your own Sankta Miksaparato and have him defeat at least 10 enemies"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +210 , ATK +40 , DEF +30",
+          "effectLabel": "New trait",
+          "effectText": "Reveals Invisible enemies within range",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +250 , ATK +48 , DEF +37",
+          "effectLabel": "Machine-Gun Welcome Ceremony improved",
+          "effectText": "Whenever Sankta Miksaparato deals damage, he gains DEF +40 and ASPD +4 for 10 seconds, stacking up to 3 times",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +280 , ATK +54 , DEF +43",
+          "effectLabel": "Machine-Gun Welcome Ceremony improved",
+          "effectText": "Whenever Sankta Miksaparato deals damage, he gains DEF +50 and ASPD +5 for 10 seconds, stacking up to 3 times; once at max stacks, all [ Laterano ] Operators on the field cannot have their ASPD decrease below their starting ASPD",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "SPT-Y: \"Old Friends\"",
+      "mission": {
+        "requirement1": "Have a non Support Sankta Miksaparato use Pre-Retirement Preaching a total of 3 times.",
+        "requirement2": "Clear Main Theme 4-3 with a 3-star ratings. You must deploy your own Sankta Miksaparato and can only include 7 other operators in the squad."
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +60 , DEF +50",
+          "effectLabel": "Trait improved",
+          "effectText": "Attack range expands ■ □ □ □",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +68 , DEF +57",
+          "effectLabel": "Shield-Up Farewell Ceremony improved",
+          "effectText": "When Sankta Miksaparato has not attacked for 5 seconds, he gains a Barrier equal to 15% Max HP; this timer restarts once the Barrier is lost. ATK +8% when under Barrier effect",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +74 , DEF +63",
+          "effectLabel": "Shield-Up Farewell Ceremony improved",
+          "effectText": "When Sankta Miksaparato has not attacked for 5 seconds, he gains a Barrier equal to 20% Max HP; this timer restarts once the Barrier is lost. ATK +15% when under Barrier effect",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Patrizion is a citizen of Laterano entitled to the rights listed in Clauses 1 through 13 of the Laterano Constitution, and the longest-tenured active gun-knight of Laterano. He is intimately familiar with the use of various types of firearms.\nIn accordance with the memorandum of cooperation between the Lateran Curia and Rhodes Island, he is currently stationed on Rhodes Island as a collaborating operator under the code name Sankta Miksaparato.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "NONSVve_W20",
+      "creator": "Dagyo"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1483,
+          "atk": 260,
+          "def": 253,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 21,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1978,
+          "atk": 334,
+          "def": 379,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 21,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "2-2"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1978,
+          "atk": 334,
+          "def": 379,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 23,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2638,
+          "atk": 418,
+          "def": 513,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 23,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "2-2"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 2638,
+          "atk": 418,
+          "def": 513,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 25,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 3677,
+          "atk": 504,
+          "def": 703,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 25,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "2-2"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 60,
+      "def": 60
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Sankta Miksaparato shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.10u/L\nOperator Sankta Miksaparato has many scars on his body, but all were properly treated, and in his fitness examination he demonstrated the physical prowess befitting a gun-knight, surpassing many younger field operators.\nThere is irreversible damage to his left hip joint. Surgical replacement is recommended, considering his age and the associated risk of bone fracture. I am available next month to perform the operation.\n—Mon3tr\n\n'I'm a little concerned. A gun-knight's presence on Rhodes Island represents Laterano's trust in us, but... Operator Mon3tr isn't nearly as meticulous as Dr. Kal'tsit was when it comes to dealing with people.'\n'Don't worry, I just saw her pushing Mr. Patrizion's wheelchair through the corridor at great speed. He was laughing heartily.'"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "[A Day in Patrizion's Life]\n05:00 - Wakes up and changes into full gun-knight armor. Typically takes one hour (he refused to pick a squire, insisting on wearing and removing his armor without assistance).\n06:00 - Morning prayer. Typically takes one hour, though 10-15 minutes may be spent deciding which scripture ribbon to display on his armor (scriptures issued during Yvangelista XI's reign are excluded from selection).\n07:00 - Arrives for duty. Patrizion leads his squad to patrol the designated district, wearing a halo amplifier (a.k.a. helmet-mounted supplemental halo light). Laterano guidebooks recommend that tourists in need of assistance seek out the brightest halo in the crowd.\n13:00 - Change of shift. Patrizion climbs the walls and uses city-defense artillery loaded with special ammunition to clear obstacles in Laterano's route. Laterano is the only nomadic city that maintains its route by such means, and only the gun-knights are skilled enough to destroy large obstacles (typically overgrown Originium crystals) without compromising the terrain of the route. This is his favorite part of the day.\n17:00 - Change of shift. Patrizion arrives at the firing range for practice or to train new Pontifica Cohors recruits, and demonstrates the usage of large firearms to the numerous Lateran citizens who gather to watch. Typically takes much longer than expected due to the large crowds, but he never turns down citizens seeking his advice.\n19:00 - Audience with Yvangelista XI to report on Laterano's security matters, discuss the Law, and share cactus tarts (as the previous item on the schedule tends to overrun, Patrizion typically only has time to do the latter).\n20:00 - End of work day. Patrizion blocks Yvangelista XI's work account, removes his personal account from the blacklist, picks out a message that includes movie tickets from the many unread messages to reply to, then turns off his terminal.\n20:30 - Watches a movie with Yvangelista XI.\n22:00 - Attempts to sleep (usually unsuccessful, in which case he turns on his terminal and attempts to send a message to Yvangelista XI's personal account, only to get a popup message that he has been blocked).\n\n[Audio Log]\n'Why don't you answer his messages? Weren't you the only one to realize that he disappeared when we were dragged into the dream by the Law? I thought you guys were good friends.'\n'Mm... all I remembered was that there was this old man who gave me the habit of eating cactus tarts, but I couldn't remember who it was. Speaking of, you're friends with Mostima, aren't you, Fia? Why don't you answer HER messages?'\n'......'"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "It took six months before Operator Fiammetta and Operator Sankta Miksaparato met on Rhodes Island. She promptly looked up his mission logs and found that the gun-knight, despite claiming to want to find a place outside Laterano to get some good rest, had participated in a large number of field missions, along with other even more outlandish activities:\nAt Roberta's introduction, he starred in the Wrankwood action blockbuster <i>Kingdom of Outlaws</i>. He had showed up at just the right time—the filmmakers were having trouble casting someone more than two meters tall who could play a villain, wear a special suit of armor, and carry a massive weapon that sprayed fire. Conveniently, he was able to do all this without special effects or even a custom costume: all the crew had to do was spray-paint his gun-knight armor. He was extremely interested in acting, and turned out to be a natural, finishing most of his scenes in one take. The producer called him 'the last piece of the puzzle for this film to become a classic'...\nHe also took part in a Columbian off-road rally—it took the combined efforts of Closure and Chiave's team and a full month of work to create a vehicle that could carry his weight and that of his armor, but the final result was unsatisfactory at best: though no one was foolish enough to clash with him, the machine lacked the necessary performance, and the massive rider and his massive bike were the last to cross the finish line at sunset. Though the photo album 'Gun-knights and the Art of Motorcycle Maintenance' became the subject of much discussion on the intercity net.\n......\nItems such as 'helping Engineering with deck repairs' and 'learning qinggong from Yanese operators' were dismissed by Fiammetta as being mundane.\n\n'Is this your idea of rest and recuperation, Patrizion? You're even busier than you were in Laterano.'\n'Did you think I'd spend my days on the deck basking in the sun?'\n'......'\n'Sure, that sounds like what an old man on the verge of retirement might do. But I've spent my entire life as a gun-knight and nothing else. What's wrong with a chance to experience other ways of living?'\n'I didn't even say anything!'\n'Look, Fia, I won't interfere with your life anymore, so I hope you won't interfere with mine either... There might not be much left of it, but there are still so many possibilities.'"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "It is difficult to define the relationship between Patrizion and Fiammetta.\nThey are not your average grandfather and granddaughter. He took her in when she was seven, vowing to his fallen comrade to raise her into a Lateran any parent would be proud of. Their first 'war' broke out that very day, when he attempted to comfort the young Liberi with movies when she stubbornly refused to show her sorrow. The attempt was a failure, with Patrizion being forced to defend his choice of films (though he insists it was a win because he achieved his original goal of making her forget her sorrow). The adoption documents at the Notarial Hall record their relationship as grandparent and grandchild, but they rarely call each other that. Indeed, during what little time they spend together, they are like two bickering friends, arguing over each other's fighting styles, interests, hobbies, behavior, and even diet, before going back to their own lives, satisfied.\nThey are also not your average mentor and pupil. Patrizion was indeed Fiammetta's mentor, and he was involved in the important moments of her life, from choice of school to choice of career. According to her, however, he only seriously exercised his role as a mentor on three occasions: accompanying her when she upgraded her grenade launcher, encouraging her to join the gun-knights, and attempting to rectify her tastes in cinema. He did not deny these claims, and simply reiterated his disapproval of her prejudice against Wrankwood movies.\n\n[Medical Department Audio Log]\n'Ah, it's nothing I can't talk about... I've always felt that my role as her mentor was to be the embodiment of Laterano for Fia. As a Liberi child who lost her parents at a young age, she had many questions growing up that 'Paradise' had to answer, questions that couldn't be answered by the papers of the Notarial Hall, or the 'faith' that every Lateran speaks of yet can't properly explain. For Fia, I was a gun-knight, someone who was in a position to interpret the Law. I was a Lateran she could talk to... Honestly, I was in the same boat. After Gia left the Holy City and Pag distanced himself from me—when I realized I'd never truly shared anything with the Liberi I lived side-by-side with—I began to have doubts about the Holy City, and needed a 'Laterano' I could talk to. That was when Fia came into my life. Who's to say who couldn't leave whose side?'\n'I see. But why don't you want her to find out that you'll be hospitalized for a while because of arthritis?'\n'Because I don't want her to think of me as a bedridden old man.'"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Postcard]\nDear Grandmother,\nI will graduate soon. I would like to apologize for the impulsive decision I made behind your back... Perhaps you already realized that I've felt out-of-place studying theology these past four years. I still believe that my childhood dream is my destined path, and that I can do so much more as a gun-knight than as a priest.\nI'll be applying to become a cadet gun-knight, so I won't be coming back for the holidays. The training and approval process may take a while, but I'll be in full armor the next time I come see you.\nWith Love, Patrizion\n[Notice Letter]\nMr. Patrizion Pozzo,\nWe regret to inform you that we have held the remains of your grandmother, Marion Pozzo, for the maximum period permitted. As we have been unable to contact you, we have cremated her remains in accordance with the Law. You may retrieve the ashes at your convenience.\nWith Apologies, Ecclesia Requietum Stevonus\n\n[Permit]\nPatrizion Pozzo, Apostolic Knight, is hereby authorized to supervise the departure of the long-range landship <i>Twinflower</i> and accompanying vehicles from Laterano, for the purpose of deporting Lateran citizens afflicted with Oripathy in accordance with the Law.\nPatrizion Pozzo is hereby granted absolute discretion over all personnel on the ship, and is authorized to make any modifications or cancellations to the schedule as necessary.\n[Notification]\nCitizen Gia Lopez, you have been diagnosed with Oripathy, and are now scheduled to depart Laterano on the landship <i>Twinflower</i> in accordance with the Law.\nCooperate with supervising personnel during the journey, and remain in the Infected cabins on the lower levels except when necessary. Detailed instructions are attached with this notification. Please read them prior to departure.\n\n[Recommendation]\nYour Holiness:\nI, Patrizion Pozzo, hereby recommend the cadet gun-knight Aurela, who demonstrated extraordinary performance during the assessment process. While her pride can still get in her way at times, I believe that with proper guidance she could be the most promising gun-knight of the next generation.\nPatrizion Pozzo\n[Rejection]\nTo Patrizion Pozzo, Apostolic Knight:\nAs the Pontiff of Laterano, I hereby reject your resignation. What happened to Aurela was not your fault—not entirely, at least—and there is still much for you to do in your current position.\nIf you still insist on resigning and nothing will change your mind, write another resignation letter.\nYvangelista XI\n\n[Unsent Letter]\n...Gia.\nI retired today. I've been a gun-knight for fifty years... It's plenty, but at the end of it all, I still don't understand what a gun-knight is.\nAt first, I thought becoming one would let me protect everyone.\nLater, I thought becoming one is what made me lose everyone around me.\nRecently, however, an even scarier thought occupies my mind. Maybe all the ups and downs in my life had nothing to do with becoming a gun-knight at all.\nThat it's not that being in this position made all those choices for me, but that I was unwilling to make them myself... Was becoming a gun-knight the only choice I ever made in my life?\nIf so, a 'gun-knight' might be no more than a symbol, an ideal, an answer for me that I'd taken for granted.\nBut that's not what a gun-knight should be, and it's not what Laterano should be. No one should allow a symbol, an ideal, to dictate all their choices in life. Do you think I still have a chance to help the children understand this?\nOr maybe they've always understood it better than I have.\nI hope so, Gia. I really do..."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "It has been a long day. You were unable to get out of work until quite late, and the movie has already started by the time you arrive at the theater. You feel less guilty when you sit down and see that the seat next to you is empty; it would be rude to be half an hour late for a meeting with an old man, but not so much if the other party is late too.\nThe movie ends, and the old man never showed up. As you get ready to return to your office, someone pats you on the shoulder.\n'You were late, Doctor.'\nYou turn around to see the tall figure of Patrizion, his head wrapped tight in a scarf that almost covers the top of his head. It has been a cold winter.\nYou express your dissatisfaction. After all, it was he who never showed up. He sighs and apologizes.\n'The people behind me complained I was too tall, so I moved to the last row. Sorry, I forgot to send you a message.'\nNow you are the one in the wrong. You blink.\n'I usually pick the late shows, where I won't have to worry about blocking someone else's view. For some reason, though, I always have someone sitting behind me, so I always have to go sit in the last row. At my age, it gets really hard to see the screen from there...'\nPatrizion keeps talking along the way, right up until you have to part. That is when he realizes it—\n'Oh, look at me, I've been babbling, haven't I? It's been so long since I've watched a movie with someone, and I was just too excited.' He shakes his head abashedly and turns around to leave.\nYou stop him before he rounds the corner and tell him you were planning to get some ice cream. You can walk with him for a little while longer."
+    }
+  ]
+}

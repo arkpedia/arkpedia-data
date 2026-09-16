@@ -1,0 +1,768 @@
+{
+  "name": "Bryophyta",
+  "rarity": 5,
+  "class": "Guard",
+  "branch": "Instructor",
+  "faction": "Siesta",
+  "umbrellaFactions": [
+    "Columbia"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS",
+    "Support"
+  ],
+  "trait": "Can attack enemies from range ; When attacking enemies not blocked by self, increase ATK to 120%",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "So Long, Adele"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Vibrant"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4106_bryota",
+  "otherLanguages": {
+    "Simplified Chinese": "苍苔",
+    "Traditional Chinese": "蒼苔",
+    "Japanese": "ブライオフャイタ",
+    "Korean": "브라이오피타"
+  },
+  "characterInfo": {
+    "File no.": "SS03",
+    "Operator Record": "Day & Night at Fashion Street",
+    "Paradox Simulation": "Against the Storm",
+    "Illustrator": "Cenm0",
+    "Release Date": "2024/01/16",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Daisuke Sakaguchi",
+    "Chinese": "Zhang Pei",
+    "English": "John Patneaude",
+    "Korean": "Lim Hyuk"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "None",
+    "Place of Birth": "Siesta",
+    "Date of Birth": "September 29th",
+    "Race": "Liberi",
+    "Height": "178 cm",
+    "Infection Status": "Originium crystals distributed across skin surface, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Cautious and Calculated",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "When not blocking an enemy, increases the DEF of melee Operators in the surrounding 8 tiles by +4%; while blocking enemies, increases this unit's DEF by +4%"
+        },
+        {
+          "stage": "Base",
+          "potential": "Potential 5",
+          "description": "When not blocking an enemy, increases the DEF of melee Operators in the surrounding 8 tiles by +6% (+2%) ; while blocking enemies, increases this unit's DEF by +6% (+2%)"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When not blocking an enemy, increases the DEF of melee Operators in the surrounding 8 tiles by +8%; while blocking enemies, increases this unit's DEF by +8%"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When not blocking an enemy, increases the DEF of melee Operators in the surrounding 8 tiles by +10% (+2%) ; while blocking enemies, increases this unit's DEF by +10% (+2%)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When not blocking an enemy, increases the DEF of melee Operators in the surrounding 8 tiles by +12%; while blocking enemies, increases this unit's DEF by +12%"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When not blocking an enemy, increases the DEF of melee Operators in the surrounding 8 tiles by +14% (+2%) ; while blocking enemies, increases this unit's DEF by +14% (+2%)"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Cautious and Calculated"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Bryophyta's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Earthen Tenacity .",
+        "Cautious and Calculated improved."
+      ],
+      "prerequisite": "Raise Bryophyta to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Cautious and Calculated improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Bryophyta to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Guard Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Refined Solvent",
+          "quantity": 7
+        },
+        {
+          "name": "Aketon",
+          "quantity": 15
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Power Strike β",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Increases the ATK of the next attack to 170%",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Increases the ATK of the next attack to 175%",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Increases the ATK of the next attack to 180%",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Increases the ATK of the next attack to 185%",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Increases the ATK of the next attack to 190%",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Increases the ATK of the next attack to 195%",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Increases the ATK of the next attack to 200%",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Increases the ATK of the next attack to 210%",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Increases the ATK of the next attack to 220%",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Increases the ATK of the next attack to 230%",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Compound Cutting Fluid",
+              "quantity": 1
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Earthen Tenacity",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +30% , and grants DEF +30% to the melee Operator in the surrounding 8 tiles with the highest Block (if no applicable Operators, effect is granted to self) After skill ends, Stuns self for 8s",
+            "initialSp": 20,
+            "spCost": 60,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +35% , and grants DEF +35% to the melee Operator in the surrounding 8 tiles with the highest Block (if no applicable Operators, effect is granted to self) After skill ends, Stuns self for 8s",
+            "initialSp": 20,
+            "spCost": 60,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +40% , and grants DEF +40% to the melee Operator in the surrounding 8 tiles with the highest Block (if no applicable Operators, effect is granted to self) After skill ends, Stuns self for 8s",
+            "initialSp": 20,
+            "spCost": 60,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +45% , and grants DEF +45% to the melee Operator in the surrounding 8 tiles with the highest Block (if no applicable Operators, effect is granted to self) After skill ends, Stuns self for 7s",
+            "initialSp": 25,
+            "spCost": 55,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +50% , and grants DEF +50% to the melee Operator in the surrounding 8 tiles with the highest Block (if no applicable Operators, effect is granted to self) After skill ends, Stuns self for 7s",
+            "initialSp": 25,
+            "spCost": 55,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +55% , and grants DEF +55% to the melee Operator in the surrounding 8 tiles with the highest Block (if no applicable Operators, effect is granted to self) After skill ends, Stuns self for 7s",
+            "initialSp": 25,
+            "spCost": 55,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +60% , and grants DEF +60% to the melee Operator in the surrounding 8 tiles with the highest Block (if no applicable Operators, effect is granted to self) After skill ends, Stuns self for 6s",
+            "initialSp": 30,
+            "spCost": 50,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +65% , and grants DEF +65% to the melee Operator in the surrounding 8 tiles with the highest Block (if no applicable Operators, effect is granted to self) After skill ends, Stuns self for 6s",
+            "initialSp": 30,
+            "spCost": 50,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +70% , and grants DEF +70% to the melee Operator in the surrounding 8 tiles with the highest Block (if no applicable Operators, effect is granted to self) After skill ends, Stuns self for 6s",
+            "initialSp": 35,
+            "spCost": 50,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +80% , and grants DEF +80% to the melee Operator in the surrounding 8 tiles with the highest Block (if no applicable Operators, effect is granted to self) After skill ends, Stuns self for 5s",
+            "initialSp": 35,
+            "spCost": 50,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 3
+            },
+            {
+              "name": "Aketon",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 3
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 4
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Transmuted Salt",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 3
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Metalwork α",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, Precious Metal formula related productivity +30%"
+    },
+    {
+      "name": "Occupational Experience",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, gain +5% productivity for each Metalwork-type skill in this Factory"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Bryophyta's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "INS-X: Sobremesa",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Bryophyta, and unleash Earthen Tenacity at least 1 time in each battle",
+        "requirement2": "Clear Main Theme 9-3 with a 3-star rating; You must deploy your own Bryophyta, and allow no Operators to be defeated"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +120 , ATK +40",
+          "effectLabel": "Trait improved",
+          "effectText": "Can attack enemies from range ; When attacking enemies not blocked by self, increase ATK to 130%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +160 , ATK +52",
+          "effectLabel": "Cautious and Calculated improved",
+          "effectText": "When not blocking an enemy, Melee Operators in the surrounding 4 tiles obtain DEF +15%; while blocking enemies, increases this unit's DEF by +15%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +190 , ATK +60",
+          "effectLabel": "Cautious and Calculated improved",
+          "effectText": "When not blocking an enemy, increases the DEF of melee Operators in the surrounding 8 tiles by +17%; while blocking enemies, increases this unit's DEF by +17%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Bryophyta, real name Enis Visser, is from\nSiesta\n. Together with his family, he runs a restaurant-and-bar called the \"White Volcano\" on Fashion Street, a tourist hotspot in Siesta. Following the volcanic eruption, he was advised to seek treatment at\nRhodes Island\nas per\nCeylon\n's medical advice, and has now joined Logistics in assisting with daily affairs.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 768,
+          "atk": 286,
+          "def": 197,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 16,
+          "block": 2,
+          "interval": 1.05
+        },
+        "max": {
+          "hp": 1053,
+          "atk": 409,
+          "def": 278,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 16,
+          "block": 2,
+          "interval": 1.05
+        },
+        "rangeId": "2-2"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1053,
+          "atk": 409,
+          "def": 278,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.05
+        },
+        "max": {
+          "hp": 1368,
+          "atk": 546,
+          "def": 353,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.05
+        },
+        "rangeId": "2-2"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1368,
+          "atk": 546,
+          "def": 353,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.05
+        },
+        "max": {
+          "hp": 1900,
+          "atk": 650,
+          "def": 421,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.05
+        },
+        "rangeId": "2-2"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 35,
+      "def": 35
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 5%\nA small amount of Oripathy crystallization can be seen on Operator Bryophyta's right abdomen.\n\n[Blood Originium-Crystal Density] 0.23u/L\nThanks to Dr. Ceylon's emergency treatment, the infection has not worsened and his condition is currently stable.\n\n'Doctor, my nosebleeds seem to have started back up recently...'\n'Hmm... I don't see anything wrong in the check-up.\n'How about you stop stuffing your schedule with part-time work and give yourself some time to rest? Give it a try.'"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "The name 'Enis' has quietly worked its way into the consciousness of Rhodes Island's operators.\nAt first, people would only see it on the business cards of equipment maintenance companies. Slowly, they began to see it again on the menus of refreshing beverages. Nowadays, it has become a household name for the operators of Rhodes Island, who turn to this enthusiastic young Siestan to resolve many of the 'minor troubles' they face in their daily lives.\nWhen he first arrived at Rhodes Island, Enis was just an ordinary Infected patient seeking treatment. Very quickly, he was drawn to Rhodes Island's comprehensive facilities and found himself looking forward to every place he visited. As soon as his condition stabilized, he could hardly wait to submit his application to formally work there – and though he failed to meet our minimum standards during the combat assessment, we found ourselves swept up by his persistence and allowed him to join the Logistics Department.\n'Just clean up over there and mop up these 'minor incidents' over here? No problem. If there's anything else you need, just hit me up! For instance, could I interest you in some of Siesta's specialty drinks and desserts?'\nJust as his codename Bryophyta suggests, he flourishes in the corner, just out of people's notice, yet nonetheless offering comfort with his energy and enthusiasm. If he ever recommends you the 'White Volcano' restaurant-and-bar from his hometown, please accept his hospitality by taking the hand-drawn flyer that he meticulously designed himself.\n\n[Voice Log]\n'Hey, hey, you peeps see that?'\n'For sure, it's just like magic!'\n'Tch, what's the big deal? Probably just some parlor trick he learned to pick up chicks. Can't count on young guys for anything these days.'\n'What are you talking about? He told me before that he used to do all this stuff at his store back home!'\n'...Why are you taking his side? Don't tell me you...'\n'No way, right...'\n'O-Of course not! Get those weird ideas out of your head–'\n'Then when did he tell you all that?'\n'I just happened to bump into him earlier!\n'When he saw me looking at him, his face turned totally red and he got all flustered. He even forgot to catch the cocktail shaker that was in midair...\n'I apologized to him, but he just laughed it off and explained that he was reminiscing about back home.\n'I dunno how to describe it, but... I thought he was kinda cute.'\n'......'\n'See? Knew it.'\n'Yeah. It's that, for sure.'"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Bryophyta often brings up the story of him and 'White Volcano.' Just from the smile on his face as he recounts his past, we can imagine what kind of warm and happy family life he had on Siesta's Fashion Street.\nWhen 'White Volcano' was just a small beach shack, he helped out his mother whenever she was busy, bringing the sweetness and refreshment of the holidays to visiting tourists. Whenever he had free time, he would head down to the beach to play with his younger brother and sister, where he drew what he saw and heard into handmade books, came up with fairy tales, and wondered together what hardships their father, living abroad, was enduring.\nAs the volcanic activity increased, Siesta relocated from the beach to a nomadic city. The number of tourists visiting the once-bustling Fashion Street dropped sharply, and 'White Volcano' quickly fell into dire financial straits. In order to continue his happy family life at their little store, he started to seek out additional employment, even secretly heading into the volcano to mine obsidian. Because of this, he contracted Oripathy following an accident.\nEven though life hasn't always been smooth sailing for him, Bryophyta has never complained. On the contrary, whenever he looks back on the tough times he's been through, he instead thinks of the iced drinks his mother used to make for him when he came home from work, or his siblings pestering him to share the discoveries from his latest urban 'adventures.'\nAs such, when Bryophyta casually mentioned that his family wasn't actually blood-related, everyone was shocked. Perhaps they could only develop such deep, lasting bonds because of a little store by the name of 'White Volcano.'\n\n[HR Department Conversation Log]\nMister Enis, as I recall, you mentioned that you don't remember when you were born. But in your onboarding file, you seem to have filled out the birthdate...'\n'Oh, actually, that day... is the day when 'White Volcano' opened.\n'For me, that's the day when I finally had a family. Isn't that what a birthday is? The day you met your family.'"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "After formally joining the Logistics Department, Operator Bryophyta demonstrated the pace of life he was familiar with from 'White Volcano' – or to be more precise, a level of 'entrepreneurial spirit' that is difficult for ordinary people to imitate.\nIn addition to getting his work done in a timely and efficient manner, he employs a number of clever tricks he used to keep the tourism industry afloat back home. For example, he often posts lists of new cafeteria drinks in places where people regularly gather, such as the water purification room, the screening room, the training era, etc, in a way that's conspicuous without being blatant. Afterwards, he waits at the cafeteria's wine bar as if he had nothing to do with it, only serving the purest Siestan flavors his mind can offer to all who come to experience it – the 'White Volcano' special. As long as you show even the slightest interest in Siestan Fashion Street after tasting it, he'll hand you a personally-crafted Fashion Street travel guide, complete with two coupons for the 'White Volcano' restaurant-and-bar.\n'Though it's unfortunate that you can no longer witness the moment of the volcano's eruption, you can still experience that same surging heat through our Volcanic Coffee! That's how we Siestans make our coffee – with bubbling-hot volcanic springwater!'\n'That's absolutely right – nowadays, freshly-unearthed obsidian is rare... but have you ever heard of obsidian citrus tea? It's said that these tiny black tangerines grow from obsidian-rich soil!'\n'Across from Fashion Street is the largest and most exciting waterpark in all of Siesta, funded and built by a wealthy visionary from Lungmen!'\nAs a result of his unrelenting efforts, more and more operators are taking time off to pack their bags for Siesta. Though almost everyone returns to the landship complaining that things were misleading or blown out of proportion, they never place the blame on Bryophyta. At most, they'll tease him a little before sharing with others whatever they found interesting about their trip. We can see without a doubt that the relaxation and joy gained from a vacation to Fashion Street is real, but this might be thanks to the interesting and sufficiently touching improvisation of Fashion Street's residents.\nWe've noticed that a number of operators, after getting to know Bryophyta, have also invited him to visit their own hometowns. He will always carefully mark these locations on his map, then come to ask when Rhodes Island will be stopping nearby."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "As a young man who grew up in the tourist city of Siesta, Enis had a dream to become an explorer.\nHow did he ever get the idea of wanting to go outside to have a look around? Perhaps from his curiosity towards all the various places the tourists on the beach had come from, or perhaps from his well-traveled parents who wrote of their journey in the 'Rock n' Roll of Life.' After the establishment of 'White Volcano,' Harley remained behind in the city while Chuck left to continue his journey. In addition to regularly writing home and sending back living expenses, Chuck returns every year or so to bring home some 'trophies' acquired in his travels, ranging from funny-looking handicrafts to local folk songs. These objects from afar have become seeds sown in the hearts of his children. When the time is right, they will emerge from the ground and look up to see the magnificence of this land.\nThe germination of Enis's seed sped up considerably when he accidentally contracted Oripathy. The frequent pains in his chest and the blood that pours from his nose are constantly reminding him that his life is slipping away. There was a time when he concluded that he would never be able to leave Siesta and traverse the mountains and rivers he so dreamt of, but at least he would be able to grow up alongside his siblings, for the time being. Perhaps they and their 'Exploration Team' would be able to leave Siesta in his place, and bring his hazy dreams to fruition.\nHowever, following a series of events surrounding the renovation of Fashion Street and an adventure with Eyjafjalla along with a flock of mysterious creatures, the inevitable volcanic eruption changed his outlook on life. He began to realize that Oripathy was no excuse to give up, but rather all the more reason to live life to its fullest. The love and support from his family prompted him to take the next step, and thus he arrived at Rhodes Island––\nIf you ask Enis now about how he sees his dreams, he would say that of course he wants to get better, work hard, live well, continue to love his family, make friends with his natural enthusiasm, and fearlessly delve deeper into the stories he's never known – but if you've ever taken a glance at his thick handmade travel log, or heard his stories from every corner of the land, you'll know."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "[Combat Training Report]\nAfter a period of rigorous training, Bryophyta's combat abilities have shown visible improvement. Compared to how defenseless he was when he started, he has already made the first steps towards finding a fighting style that suits him – either through keeping his distance, or using his agility to make up for differences in strength. He often uses his tenacity to tough out the first volley of attacks, before finding the right moment to create an opening for him and his teammates to counterattack.\nWe've noticed that the tenacity he's displayed during training can actually be attributed to the Originium Arts he subconsciously uses during critical moments. From what we know, his Arts allow him to craft small objects from soil and stone, such as the dolls resembling fluffy creatures he's shown us.\nLooking back at his training videos, we can see that his Arts have a new way of manifesting: by quickly generating tiny earthen barriers in the area about to be struck, he effectively improves his physical resilience in actual combat. We believe that this may be a concrete expression of the ideas of 'guarding' and 'protecting others' apparent in his personality.\nOf course, Bryophyta's usage of his Arts is only at the novice level, and he has not yet mastered a way to continuously control this ability. We will continue paying attention to any future possibilities for him.\n\n'Why do you push yourself so hard to learn combat skills when you get beat up this badly every time...?' –A question posed by a Medical Operator.\n'Because every explorer needs to know a bit of self-defense, of course...'\n'Eventually, I need to take Lut and Liv to all sorts of different places...'\n'It's okay... I can keep doing this...' replied Enis with a wince as he got up from his hospital bed."
+    }
+  ]
+}

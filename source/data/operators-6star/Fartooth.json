@@ -1,0 +1,1014 @@
+{
+  "name": "Fartooth",
+  "rarity": 6,
+  "class": "Sniper",
+  "branch": "Deadeye",
+  "faction": "Pinus Sylvestris",
+  "umbrellaFactions": [
+    "Kazimierz"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS"
+  ],
+  "trait": "Prioritizes attacking the enemy with lowest DEF within range first",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Hear the Wind Sing"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_430_fartth",
+  "otherLanguages": {
+    "Simplified Chinese": "远牙",
+    "Traditional Chinese": "遠牙",
+    "Japanese": "ファートゥース",
+    "Korean": "파투스"
+  },
+  "characterInfo": {
+    "File no.": "KZ13",
+    "Operator Record": "Where She Belongs",
+    "Paradox Simulation": "Listen to the Wind",
+    "Illustrator": "NoriZC",
+    "Release Date": "2022/04/14",
+    "Kernel Addition Date": "2025/12/05"
+  },
+  "characterVoices": {
+    "Japanese": "Suzuko Mimori",
+    "Chinese": "Wen Liu",
+    "English": "Samantha Dakin",
+    "Korean": "Yeo Yun-mi"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "4 years",
+    "Place of Birth": "Kazimierz",
+    "Date of Birth": "October 10th",
+    "Race": "Liberi",
+    "Height": "155 cm",
+    "Infection Status": "Confirmed infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Excellent",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Concentration",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When no damage is taken in the past 10 seconds, ATK +10%"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When no damage is taken in the past 10 seconds, ATK +13% (+3%)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When no damage is taken in the past 10 seconds, ATK +15%"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When no damage is taken in the past 10 seconds, ATK +18% (+3%)"
+        }
+      ]
+    },
+    {
+      "name": "Stilled Breath",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When this unit's skill is active, becomes less likely to be targeted by attacks and attacks ignore the target's Physical Dodge"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +40"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Concentration"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Fartooth's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Concentration .",
+        "New skill: Ally Support .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Fartooth to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Sniper Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 7
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Stilled Breath .",
+        "New skill: Feathershine Arrows .",
+        "Concentration improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Fartooth to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Sniper Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "D32 Steel",
+          "quantity": 4
+        },
+        {
+          "name": "Cutting Fluid Solution",
+          "quantity": 7
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Swift Strike γ",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "35 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +20% ; ASPD +20",
+            "initialSp": 0,
+            "spCost": 45,
+            "duration": 35
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +22% ; ASPD +20",
+            "initialSp": 0,
+            "spCost": 44,
+            "duration": 35
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +24% ; ASPD +20",
+            "initialSp": 0,
+            "spCost": 43,
+            "duration": 35
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +27% ; ASPD +25",
+            "initialSp": 5,
+            "spCost": 42,
+            "duration": 35
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +29% ; ASPD +25",
+            "initialSp": 5,
+            "spCost": 41,
+            "duration": 35
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +31% ; ASPD +25",
+            "initialSp": 5,
+            "spCost": 40,
+            "duration": 35
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +34% ; ASPD +35",
+            "initialSp": 10,
+            "spCost": 39,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +37% ; ASPD +35",
+            "initialSp": 10,
+            "spCost": 38,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +40% ; ASPD +35",
+            "initialSp": 10,
+            "spCost": 37,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +45% ; ASPD +45",
+            "initialSp": 15,
+            "spCost": 35,
+            "duration": 35
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 4
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 4
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Ally Support",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25–35 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Can attack blocked enemies outside of Attack Range. ASPD +60",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Can attack blocked enemies outside of Attack Range. ASPD +65",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 26
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Can attack blocked enemies outside of Attack Range. ASPD +70",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 27
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Can attack blocked enemies outside of Attack Range. ASPD +75",
+            "initialSp": 18,
+            "spCost": 40,
+            "duration": 28
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Can attack blocked enemies outside of Attack Range. ASPD +80",
+            "initialSp": 18,
+            "spCost": 40,
+            "duration": 29
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Can attack blocked enemies outside of Attack Range. ASPD +85",
+            "initialSp": 18,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Can attack blocked enemies outside of Attack Range. ASPD +90",
+            "initialSp": 21,
+            "spCost": 40,
+            "duration": 31
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Can attack blocked enemies outside of Attack Range. ASPD +95",
+            "initialSp": 22,
+            "spCost": 40,
+            "duration": 32
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Can attack blocked enemies outside of Attack Range. ASPD +100",
+            "initialSp": 23,
+            "spCost": 40,
+            "duration": 33
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Can attack blocked enemies outside of Attack Range. ASPD +110",
+            "initialSp": 25,
+            "spCost": 40,
+            "duration": 35
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 7
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Feathershine Arrows",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "16–20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range changes to an infinitely long straight line ahead, ATK +60% . When attacking an enemy outside of the normal Attack Range, damage dealt increases to 120%",
+            "initialSp": 5,
+            "spCost": 30,
+            "duration": 16
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Range changes to an infinitely long straight line ahead, ATK +65% . When attacking an enemy outside of the normal Attack Range, damage dealt increases to 120%",
+            "initialSp": 5,
+            "spCost": 29,
+            "duration": 16
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Range changes to an infinitely long straight line ahead, ATK +70% . When attacking an enemy outside of the normal Attack Range, damage dealt increases to 120%",
+            "initialSp": 5,
+            "spCost": 28,
+            "duration": 16
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Range changes to an infinitely long straight line ahead, ATK +80% . When attacking an enemy outside of the normal Attack Range, damage dealt increases to 125%",
+            "initialSp": 6,
+            "spCost": 27,
+            "duration": 16
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Range changes to an infinitely long straight line ahead, ATK +85% . When attacking an enemy outside of the normal Attack Range, damage dealt increases to 125%",
+            "initialSp": 6,
+            "spCost": 26,
+            "duration": 16
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Range changes to an infinitely long straight line ahead, ATK +90% . When attacking an enemy outside of the normal Attack Range, damage dealt increases to 125%",
+            "initialSp": 6,
+            "spCost": 25,
+            "duration": 16
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Range changes to an infinitely long straight line ahead, ATK +100% . When attacking an enemy outside of the normal Attack Range, damage dealt increases to 130%",
+            "initialSp": 7,
+            "spCost": 24,
+            "duration": 17
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Range changes to an infinitely long straight line ahead, ATK +110% . When attacking an enemy outside of the normal Attack Range, damage dealt increases to 130%",
+            "initialSp": 8,
+            "spCost": 23,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Range changes to an infinitely long straight line ahead, ATK +120% . When attacking an enemy outside of the normal Attack Range, damage dealt increases to 130%",
+            "initialSp": 9,
+            "spCost": 22,
+            "duration": 19
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Range changes to an infinitely long straight line ahead, ATK +140% . When attacking an enemy outside of the normal Attack Range, damage dealt increases to 140%",
+            "initialSp": 10,
+            "spCost": 20,
+            "duration": 20
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "sub",
+            "explanation": "Fartooth's Skill 3 being able to hit very far tiles can be a very fun niche. But, there isn't as many stages that have allowed this skill to shine. The damage output combined with generally lower ASPD may not impress players. This is still however Fartooth's best skill."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 7
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 6
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 5
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "\"Homecoming\"",
+      "facility": "Dormitory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Dormitory, self Morale recovered per hour +0.55 , and restores +0.1 Morale per hour to all other Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
+    },
+    {
+      "name": "Pinus Sylvestris α",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, productivity +15%"
+    },
+    {
+      "name": "Pinus Sylvestris βReplacesPinus Sylvestris α",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, productivity +25%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Fartooth's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "DEA-X: First-show Support Set",
+      "mission": {
+        "requirement1": "Defeat a total of 80 enemies with Fartooth (Fartooth cannot be a Support Unit)",
+        "requirement2": "Clear Main Theme S2-2 with a 3-star rating; a non-Support Fartooth must be deployed during the operation, and Fartooth must defeat at least 8 enemies with Feathershine Arrows"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +70 , ASPD +5",
+          "effectLabel": "New trait",
+          "effectText": "The further away the enemy, the higher the damage dealt (up to an increase of 15% )",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +85 , ASPD +6",
+          "effectLabel": "Concentration improved",
+          "effectText": "When no damage is taken within the past 8 seconds, ATK +20%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +100 , ASPD +7",
+          "effectLabel": "Concentration improved",
+          "effectText": "When no damage is taken within the past 6 seconds, ATK +22%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 15
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "DEA-Y: Fan Letters",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Fartooth, and unleash Feathershine Arrows at least 2 times in each battle",
+        "requirement2": "Clear Main Theme 2-5 with a 3-star rating; You must deploy your own Fartooth, and have Fartooth defeat at least 2 Senior Casters"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +80 , ATK +80",
+          "effectLabel": "New trait",
+          "effectText": "If the attacked enemy remains alive, gain 1 additional SP",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +100 , ATK +100",
+          "effectLabel": "Concentration improved",
+          "effectText": "When no damage is taken within the past 5 seconds, ATK +15% and ASPD +4",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +120 , ATK +120",
+          "effectLabel": "Concentration improved",
+          "effectText": "When no damage is taken within the past 3 seconds, ATK +15% and ASPD +7",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "\"Fartooth\" Knight Justyna, garnered initial fame at\nthe Major\n, presently affiliated with the\nInfected\nknight-founded\nPinus Sylvestris\nKnightclub. An\nInfected\nknight with some degree of fame in Kazimierz. Following a string of crises in the recent Major,\nPinus Sylvestris\nand\nRhodes Island\nemerged with a cooperative relationship, in which Fartooth Knight came to Rhodes Island as a collaborator, to receive\nOripathy\ntreatment, and provide Rhodes Island with combat support.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "6froUd4i2ys",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "Hun60GyIO1A",
+      "creator": "Tsalthsu"
+    },
+    {
+      "videoId": "AMiz5xLI2T8",
+      "creator": "SharkyFerret"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 749,
+          "atk": 535,
+          "def": 79,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.7
+        },
+        "max": {
+          "hp": 973,
+          "atk": 744,
+          "def": 106,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.7
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 973,
+          "atk": 744,
+          "def": 106,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 1,
+          "interval": 2.7
+        },
+        "max": {
+          "hp": 1217,
+          "atk": 980,
+          "def": 133,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 1,
+          "interval": 2.7
+        },
+        "rangeId": "3-9"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1217,
+          "atk": 980,
+          "def": 133,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 1,
+          "interval": 2.7
+        },
+        "max": {
+          "hp": 1522,
+          "atk": 1196,
+          "def": 163,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 1,
+          "interval": 2.7
+        },
+        "rangeId": "3-9"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 100,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 5%\nOperator Fartooth's degree of infection is relatively light, but minor crystallization is visible on the surface of the body.\n\n[Blood Originium-Crystal Density] 0.21u/L\nGiven the overall stability of her condition, and control over her lesions, treatment is focused on monitoring.\n\nKnight competitions really do pay out fast. If she didn't have the money to afford treatment, there's no chance she'd be in such good condition. Undeniably, the Blood Knight has given options to those who otherwise had none.\n——Warfarin"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "With the agreement between Pinus Sylvestris Knightclub and Rhodes Island and several Infected knights arriving to receive treatment, we have gained a rough understanding of the characters of these knights.\nFartooth Knight is seen as a woman of few words, cold and reserved. She earned the title 'Fartooth' as an independent knight, declining droves of invitations from firms and Knight Orders, publicly declaring that she was considering founding a Knightclub herself. This choice brought her considerable hassle, but also served as the turning point for her to join Pinus Sylvestris.\nCompared to the Knightclub's early members, the later-arriving Fartooth Knight needed some time to acclimate. However, from her relationship with the likes of Flametail, as well as her interaction with our Operators during her time at Rhodes Island, we see that Fartooth Knight is surprisingly not as aloof and difficult to approach as her outward appearance may suggest. Under her firm shell, this Infected knight has a fairly gentle manner—even soft."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Fartooth Knight was shone brilliantly in the Major preliminaries; her strength cannot be underestimated.\nRarer is that while her individual strength is second-to-none in Pinus Sylvestris, she doesn't share the same failing that many with strength often do—arrogance. This small-statured knight is entirely adept at cooperation, proactively coordinating with her teammates. If required to serve as primary offense, her attacks are fierce and intense, but if other assault personnel are in her lineup, Fartooth will change tactics, as though she can hear the wind, seizing upon its tiniest whispers of information, providing agile and flexible long-range support to her teammates.\nAlso worth mentioning is that on first contact, Fartooth Knight's succinct and unique manner of speech led some operators to misunderstand her for a time. However, we all quickly grasped that her tendency to utter perplexing sentence fragments, supplemented by further explanation, comes from her penchant for lonely pondering—she keeps rapidly deducing the main point in her head, reaching a conclusion, and then blurting it out. After realizing how she confuses those around her, only then does she follow up by elaborating."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Fartooth Knight, original name Justyna Valentine, was born in a tranquil part of rural Kazimierz, and up until adulthood, was no more than a normal village girl.\nJustyna longed since childhood to become a knight, like any average Kazimierzian child would. The knights in shining armor were awe-inspiring, dashing and formidable, the targets of all their adoration. Despite the prevalence of the Major and the old chivalric spirit gradually fading from Kazimierzian minds as Justyna grew up, her image of the knights wasn't badly damaged (an all-too-rare case), thanks to the Radiant Knight. When she finally met her knightly role model, both parties were far removed from where they started, but Justyna's feelings are known only to herself.\nHowever, bearing the dream of knighthood, the now-grown village girl who ventured on a journey to the Grand Knight Territory had never once imagined the utterly unexpected misfortune that might strike her. Before she could officially register to become a knight at Kawalerielki, an accident en route infected her with Oripathy, and in the time when the Blood Knight hadn't yet won the championship, it was no more than wild fantasy for Infected to become knights. Her dream snuffed out by unforeseeable circumstances, she had nowhere to go, and nowhere to return. That is until the Blood Knight reigned victorious, and news came of the push for the Infected Knights Act.\nThoroughly damped down before, fires of hope is ignited once again, true and searing, so hot as to scald some, yet making for it like mad, unable to let go."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Fartooth's experiences are by no means unusual; like all Infected knights, she had to strive far harder than the vast majority if she wished to obtain formal knight qualification. It's hard to imagine how this girl of such unassuming stature survived through the bloodiness of the illegal tournaments, or how she struggled to obtain her knighthood, how she could finally make a brilliant show in the preliminaries, and obtain a title so quickly.\nAnd though there was much controversy as this lone girl barged her way into the Major, she had some supporters of her own too, as well as a considerable income. In the masses' eyes, past the living exception of the Blood Knight, there was no better outcome for an Infected knight than this.\nBut for Fartooth herself, all this may not have been so important. No matter if she wanted to found her own Knightclub, or agreed to join Pinus Sylvestris, it all went far in showing she wanted something more than simple fame or wealth.\nShe was now a knight. Had Justyna the village girl's dream really come true? She'd become Infected, then once again found hope, had narrowly climbed up on this thin, thin thread, but the higher she climbed, the more she came in touch with the other side of the knights she'd once yearned after. Now in the present, perhaps more than any riches or renown, more than any chivalric glory that once was her dream, Justyna simply wants to return home.\nIn her time receiving treatment at Rhodes Island, Fartooth spends most of her time on the upper deck, except when she's with her Knightclub fellows. There, she recalls how she used to work in the fields, saving the money to buy her first longbow, fantasizing about her gallant figure as she wielded it someday. She reminisces on the haystacks that smelt of sunshine, on the wind brushing past her ears, and her friends and family that would listen as she blew folk songs. Yet by the time she could be as gallant as she dreamed, she now only wanted to return to those simple, peaceful countryside days.\nWhen she sits alone high up, playing her carved recorder, she only hopes that somehow the wind will carry her flutesong back home, just as if she could return home with it.\n\nOf course, Justyna is clearer than anyone that for Infected, returning to past life is little more than a wild hope."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Fartooth tends to stay with the other members of her Knightclub. Despite Wild Mane and Ashlock's quarrels giving her headaches, she continues to silently follow her companions as they work together. Compared to Flametail's overflowing ideas, and the goals Ashlock and Wild Mane hold to, Fartooth's motive for joining and staying in Pinus Sylvestris is the simplest of all. \nFlametail invited her. As Infected knights together, they stand in identical situations, and Pinus Sylvestris brought her a sense of security. For someone left out of the crowd, with nowhere to return to, no further reason could be needed. One could say that Fartooth doesn't care what sort of direction Pinus Sylvestris may head in future; so long as her companions are still there, so long as this new home remains, that is enough for her. \nShe'll spare nothing, protecting all this that she treasures."
+    }
+  ]
+}

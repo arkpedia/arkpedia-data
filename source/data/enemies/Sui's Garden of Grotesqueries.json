@@ -1,0 +1,3689 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "integrated_strategies",
+    "id": "rogue_5",
+    "label": "IS6",
+    "name": "Sui's Garden of Grotesqueries",
+    "release_date": "2025-12-18"
+  },
+  "enemies": [
+    {
+      "slug": "rampaging_abnormal_manglerbeast",
+      "id": "enemy_1571_mirbst",
+      "name": "Rampaging Abnormal Manglerbeast",
+      "index": "KD",
+      "rank": "Boss",
+      "sort": 1367,
+      "hidden": false,
+      "icon": "/enemies-icons/Rampaging Abnormal Manglerbeast.webp",
+      "flavour_text": "Has long lost its divinity. Only its survival instinct keeps it going.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "Attacks hit twice and greatly increase the damage the target takes from this unit",
+          "format": "normal"
+        },
+        {
+          "text": "Enraged. Attacks both friend and foe, and seeks out units that have dealt damage to it; Physical and Arts damage taken greatly reduced, ASPD and Movement Speed greatly increased",
+          "format": "normal"
+        },
+        {
+          "text": "Loses rage and attempts to flee after some time, or if HP drops below a certain level",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "Reappears after a short delay, remaining enraged for a while; during this time, Physical and Arts damage taken is greatly reduced, while ATK is greatly increased",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks all nearby allied units",
+          "format": "normal"
+        },
+        {
+          "text": "[Rockfall] Deals Physical damage to the unit that has dealt the most damage to it, inflicting Stun",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 150000,
+            "atk": 1000,
+            "def": 300,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 1.0,
+            "weight": 7,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "StartRun",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "ThrowStone",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.5,
+                "stun": 10.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "AttackParam",
+              "parameters": {
+                "max_target": 3.0
+              }
+            },
+            {
+              "key": "HpRatioCtrl",
+              "parameters": {
+                "min_hp_ratio": 0.2
+              }
+            },
+            {
+              "key": "IncreasedDamage",
+              "parameters": {
+                "damage_scale": 2.0,
+                "damage_scale_duration": 20.0
+              }
+            },
+            {
+              "key": "M0CrazyBonus",
+              "parameters": {
+                "attack_speed": 200.0,
+                "damage_resistance": 0.5,
+                "enemy_atk_scale": 2.0,
+                "move_speed": 2.0
+              }
+            },
+            {
+              "key": "M2LimitCrazyBonus",
+              "parameters": {
+                "atk": 1.0,
+                "damage_resistance": 0.6,
+                "duration": 60.0
+              }
+            },
+            {
+              "key": "RunController",
+              "parameters": {
+                "hp_ratio": 0.5,
+                "run_duration": 120.0
+              }
+            },
+            {
+              "key": "RunToNearestHole",
+              "parameters": {
+                "branch_id": "mirbst_m2_route",
+                "delay": 10.0,
+                "map_position_list": "(1,6)|(3,10)|(4,1)|(6,6)"
+              }
+            }
+          ],
+          "immunities": [
+            "Sleep",
+            "Fear"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 200000,
+            "atk": 1200,
+            "def": 300,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 1.0,
+            "weight": 7,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "StartRun",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "ThrowStone",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.5,
+                "stun": 10.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "AttackParam",
+              "parameters": {
+                "max_target": 3.0
+              }
+            },
+            {
+              "key": "HpRatioCtrl",
+              "parameters": {
+                "min_hp_ratio": 0.2
+              }
+            },
+            {
+              "key": "IncreasedDamage",
+              "parameters": {
+                "damage_scale": 2.0,
+                "damage_scale_duration": 20.0
+              }
+            },
+            {
+              "key": "M0CrazyBonus",
+              "parameters": {
+                "attack_speed": 200.0,
+                "damage_resistance": 0.5,
+                "enemy_atk_scale": 2.0,
+                "move_speed": 2.0
+              }
+            },
+            {
+              "key": "M2LimitCrazyBonus",
+              "parameters": {
+                "atk": 1.0,
+                "damage_resistance": 0.6,
+                "duration": 60.0
+              }
+            },
+            {
+              "key": "RunController",
+              "parameters": {
+                "hp_ratio": 0.5,
+                "run_duration": 120.0
+              }
+            },
+            {
+              "key": "RunToNearestHole",
+              "parameters": {
+                "branch_id": "mirbst_m2_route",
+                "delay": 10.0,
+                "map_position_list": "(1,6)|(3,10)|(4,1)|(6,6)"
+              }
+            }
+          ],
+          "immunities": [
+            "Sleep",
+            "Fear"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "talisman",
+      "id": "enemy_2101_dyspll",
+      "name": "Talisman",
+      "index": "JY1",
+      "rank": "Normal",
+      "sort": 1210,
+      "hidden": false,
+      "icon": "/enemies-icons/Talisman.webp",
+      "flavour_text": "Paper talisman seen throughout the Garden of Grotesqueries, with various messages written on them: Timetables, notes, tips, prohibitions... Endowed with meaning by the hand of man, it stubbornly refuses to leave anyone that it sticks to.",
+      "race": "Apparition",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Destroyed after taking a certain number of attacks",
+          "format": "normal"
+        },
+        {
+          "text": "When attached to a target, deals Arts damage every second and prevents them from using skills",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12,
+            "atk": 40,
+            "def": 100,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 0.3,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "D",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "shadow_scholar",
+      "id": "enemy_2102_dytmbr",
+      "name": "Shadow Scholar",
+      "index": "JY2",
+      "rank": "Normal",
+      "sort": 1211,
+      "hidden": false,
+      "icon": "/enemies-icons/Shadow Scholar.webp",
+      "flavour_text": "A character often seen in Yanese shadow plays, prone to strange encounters in those plays. This Shadowgeist has seen these scenes play out so many times that it believes them to be real, and even warning of the talismans is not enough to dissuade it.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When HP drops below a certain level, absorbs a nearby <Talisman> and recovers HP",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 13000,
+            "atk": 350,
+            "def": 50,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "E",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B+"
+          },
+          "skills": [
+            {
+              "key": "Eat",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "hp_ratio": 0.6,
+                "range_radius": 1.5
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Eat",
+              "parameters": {
+                "hp_ratio": 0.4
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "bottle_swordsman",
+      "id": "enemy_2103_dykens",
+      "name": "Bottle Swordsman",
+      "index": "JY3",
+      "rank": "Normal",
+      "sort": 1212,
+      "hidden": false,
+      "icon": "/enemies-icons/Bottle Swordsman.webp",
+      "flavour_text": "Once a wandering physician's medicine bottle, it provided healing to many warriors. When it became a geist, it was moved by a talisman and put the talisman in its bottle, embarking on a journey of chivalry.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Starts with 3 <Talismans>; attacks attach a <Talisman> to the target when carrying a <Talisman>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 14000,
+            "atk": 500,
+            "def": 400,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 0.8,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 3,
+            "max": 3,
+            "recovery": "Over time",
+            "increment": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "mirror_tianshi",
+      "id": "enemy_2104_dycast",
+      "name": "Mirror Tianshi",
+      "index": "JY4",
+      "rank": "Normal",
+      "sort": 1213,
+      "hidden": false,
+      "icon": "/enemies-icons/Mirror Tianshi.webp",
+      "flavour_text": "A well-polished mirror that believes it sees everything clearly. When it became a Geist, it was not content with just seeing things, but could not stop itself from giving unsolicited advice, just like the old scholars in the Tianshi Bureau.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Picks a target from very long range, dealing Arts damage and sending a <Talisman>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 16000,
+            "atk": 300,
+            "def": 150,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 3.0,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "D",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "GlobalAttack",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "duration": 2.0,
+                "interval": 10.0,
+                "move_speed": 1.0,
+                "speed_duration": 2.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "pseudomut",
+      "id": "enemy_2105_dyrnge",
+      "name": "Pseudomut",
+      "index": "JY5",
+      "rank": "Elite",
+      "sort": 1214,
+      "hidden": false,
+      "icon": "/enemies-icons/Pseudomut.webp",
+      "flavour_text": "Similar in appearance to a Feranmut, it looks like an ancient 'God', but it is no more than a mere beast. It has become extinct in modern times, for its greed never diminished, despite no longer having the reputation of the Feranmuts to draw from.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When blocked for the first time, devours the blocker and gains Low-Altitude Hovering",
+          "format": "normal"
+        },
+        {
+          "text": "Returns devoured Operator when defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 35000,
+            "atk": 450,
+            "def": 1500,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 0.5,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "C",
+            "def": "A+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Devour",
+              "sp_cost": 0,
+              "cooldown": -1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Fly",
+              "parameters": {
+                "def": -1500.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "strange_gourd",
+      "id": "enemy_2106_dyremy",
+      "name": "Strange Gourd",
+      "index": "JY6",
+      "rank": "Elite",
+      "sort": 1215,
+      "hidden": false,
+      "icon": "/enemies-icons/Strange Gourd.webp",
+      "flavour_text": "A gourd that turned into a geist, with an incessant desire for hoarding despite not being particularly active. When disturbed, it tries to draw everything around it into its interior.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Strange Gourd gains increased HP and ATK based on the amount of Originium Ingots owned",
+          "format": "normal"
+        },
+        {
+          "text": "Steals Originium Ingots upon entering the Objective.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12000,
+            "atk": 600,
+            "def": 500,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "GetPower",
+              "parameters": {
+                "atk": 0.15,
+                "coin_base": 3.0,
+                "max_hp": 0.15,
+                "max_stack_cnt": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 15000,
+            "atk": 900,
+            "def": 700,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "GetPower",
+              "parameters": {
+                "atk": 0.15,
+                "coin_base": 3.0,
+                "max_hp": 0.15,
+                "max_stack_cnt": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        },
+        {
+          "level": 2,
+          "stats": {
+            "hp": 18000,
+            "atk": 1100,
+            "def": 900,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "B+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "GetPower",
+              "parameters": {
+                "atk": 0.15,
+                "coin_base": 3.0,
+                "max_hp": 0.15,
+                "max_stack_cnt": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "can_doe",
+      "id": "enemy_2107_dycant",
+      "name": "Can Doe",
+      "index": "JY",
+      "rank": "Boss",
+      "sort": 1438,
+      "hidden": false,
+      "icon": "/enemies-icons/Can Doe.webp",
+      "flavour_text": "A mysterious trader who roams the garden and serves as Big Bob's subordinate, selling anything that exists in tomes.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be attacked, will not deplete Life Points on leaving the field",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically releases random chemicals that affect the battlefield, and sometimes throws <Talismans>",
+          "format": "normal"
+        },
+        {
+          "text": "Turns Statuegeist into <Pseudomut> after a while",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 60000,
+            "atk": 1200,
+            "def": 800,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.2,
+            "range": null,
+            "weight": 7,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B+",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "Spray",
+              "sp_cost": 10,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_dycant_s[atk].atk": 1.5,
+                "enemy_dycant_s[atk].attack_speed": 100.0,
+                "enemy_dycant_s[atk].duration": 15.0,
+                "enemy_dycant_s[move].duration": 15.0,
+                "enemy_dycant_s[move].hp_ratio": 0.05,
+                "enemy_dycant_s[move].move_speed": 0.5,
+                "enemy_dycant_s[summon].cnt": 3.0,
+                "enemy_dycant_s[summon].enemy_key": "enemy_2101_dyspll"
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "TriggerSummon",
+              "parameters": {
+                "duration": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 5,
+            "max": 10,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "dusk_beauty",
+      "id": "enemy_2108_dypryg",
+      "name": "Dusk Beauty",
+      "index": "XE",
+      "rank": "Boss",
+      "sort": 1439,
+      "hidden": false,
+      "icon": "/enemies-icons/Dusk Beauty.webp",
+      "flavour_text": "The mythical Yanese woman who flew up to the twin moons to seek her husband. Ancient myths speak of feats far beyond the possibility of today's mortals, and the boundaries between truth and fiction are often blurred.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks 2 targets simultaneously; starts with Low-Altitude Hovering, and gains 50% Physical and Arts Dodge when Low-Altitude Hovering is active",
+          "format": "normal"
+        },
+        {
+          "text": "Absorbs nearby <Talismans> to recover HP and regain Low-Altitude Hovering",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically selects a Vagary Tile at random and summons a <Talisman>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 36000,
+            "atk": 400,
+            "def": 200,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 1.3,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "C",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "ChangeType",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "hp_ratio": 0.2,
+                "range_radius": 0.8
+              }
+            },
+            {
+              "key": "SummonEnemy",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "max_cnt": 1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "FlyEvade",
+              "parameters": {
+                "prob": 0.5
+              }
+            },
+            {
+              "key": "MeetDyspl",
+              "parameters": {
+                "hp_ratio": 0.2
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "lady_of_the_twin_moons",
+      "id": "enemy_2109_dypry2",
+      "name": "Lady of the Twin Moons",
+      "index": "YZ",
+      "rank": "Boss",
+      "sort": 1440,
+      "hidden": false,
+      "icon": "/enemies-icons/Lady of the Twin Moons.webp",
+      "flavour_text": "The legend of Dusk Beauty has become the symbol of the twin moons in folk tradition. If she cannot find her husband even on the moons, perhaps she will leap into the endless void beyond.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks 2 targets simultaneously; attack range increased when Low-Altitude Hovering is active",
+          "format": "normal"
+        },
+        {
+          "text": "Absorbs nearby <Talismans> to increase ASPD and regain Low-Altitude Hovering",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically selects several Vagary Tiles at random and summons <Talismans>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 600,
+            "def": 300,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 1.5,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "ChangeType",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "attack_speed": 50.0,
+                "range_radius": 0.8,
+                "up_duration": 10.0
+              }
+            },
+            {
+              "key": "SummonEnemy",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "max_cnt": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "MeetDyspl",
+              "parameters": {
+                "attack_speed": 50.0,
+                "range_radius": 5.0,
+                "up_duration": 10.0
+              }
+            },
+            {
+              "key": "RangeExpand",
+              "parameters": {
+                "range_scale": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "ash_spear",
+      "id": "enemy_2110_dyyrzf",
+      "name": "Ash Spear",
+      "index": "TM",
+      "rank": "Boss",
+      "sort": 1443,
+      "hidden": false,
+      "icon": "/enemies-icons/Ash Spear.webp",
+      "flavour_text": "A famous spear-wielder who was renowned during the Hundred Clan Rebellion, but his strength was not enough to rid the world of evil.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "More likely to be attacked",
+          "format": "normal"
+        },
+        {
+          "text": "When blocked, it and the unit blocking it take greatly increased Physical and Arts damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 100000,
+            "atk": 1200,
+            "def": 400,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 4,
+            "taunt": 1,
+            "life_cost": 3
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "StartBattle",
+              "sp_cost": 0,
+              "cooldown": 999.0,
+              "initial_cooldown": 75.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "damage_scale": 1.5,
+                "lb_damage_scale": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "lord_huan",
+      "id": "enemy_2111_dyyrz2",
+      "name": "Lord Huan",
+      "index": "HJ",
+      "rank": "Boss",
+      "sort": 1446,
+      "hidden": false,
+      "icon": "/enemies-icons/Lord Huan.webp",
+      "flavour_text": "A figure enshrined in the Shrine of Heroes, youngest of the Three Heroes. He will stand at the bridgehead and terrify his foes with his gaze if it is the last thing he does. His foes shall dare not pass, many as they are.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "More likely to be attacked",
+          "format": "normal"
+        },
+        {
+          "text": "When blocked, it and the unit blocking it take greatly increased Physical and Arts damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 100000,
+            "atk": 1000,
+            "def": 400,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 4,
+            "taunt": 1,
+            "life_cost": 3
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "StartBattle",
+              "sp_cost": 0,
+              "cooldown": 999.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "damage_scale": 1.5,
+                "lb_damage_scale": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "crimson_crescent_blade",
+      "id": "enemy_2112_dyhlgy",
+      "name": "Crimson Crescent Blade",
+      "index": "ZM",
+      "rank": "Boss",
+      "sort": 1442,
+      "hidden": false,
+      "icon": "/enemies-icons/Crimson Crescent Blade.webp",
+      "flavour_text": "A famous blade-wielder who was renowned during the Hundred Clan Rebellion, but his loyalty was not enough to quench the fires of war.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When blocked, becomes unblockable, gains greatly increased movement speed, and deals Physical damage equal to a percentage of ATK to surrounding targets",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 35000,
+            "atk": 800,
+            "def": 800,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 4,
+            "taunt": 1,
+            "life_cost": 3
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B+",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "StartBattle",
+              "sp_cost": 0,
+              "cooldown": 999.0,
+              "initial_cooldown": 105.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "WindMove",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 2.0,
+                "lb_duration": 4.0,
+                "move_speed": 2.0
+              }
+            },
+            {
+              "key": "WindEnd",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 9999.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "WindDamage",
+              "parameters": {
+                "atk_scale": 0.8,
+                "interval": 1.0,
+                "range_radius": 1.2
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "lord_wenheng",
+      "id": "enemy_2113_dyhlg2",
+      "name": "Lord Wenheng",
+      "index": "WHJ",
+      "rank": "Boss",
+      "sort": 1445,
+      "hidden": false,
+      "icon": "/enemies-icons/Lord Wenheng.webp",
+      "flavour_text": "A figure enshrined in the Shrine of Heroes, second of the Three Heroes. He will retrieve his oath-brother's body for burial if it is the last thing he does.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When blocked, becomes unblockable, gains greatly increased movement speed, and deals Physical damage equal to a percentage of ATK to surrounding targets",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 24000,
+            "atk": 600,
+            "def": 600,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 4,
+            "taunt": 1,
+            "life_cost": 3
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "B",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "StartBattle",
+              "sp_cost": 0,
+              "cooldown": 999.0,
+              "initial_cooldown": 30.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "WindMove",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 2.0,
+                "lb_duration": 4.0,
+                "move_speed": 2.0
+              }
+            },
+            {
+              "key": "WindEnd",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 9999.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "WindDamage",
+              "parameters": {
+                "atk_scale": 0.8,
+                "interval": 1.0,
+                "range_radius": 1.2
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "jade_twin_swords",
+      "id": "enemy_2114_dylbgg",
+      "name": "Jade Twin-Swords",
+      "index": "YM",
+      "rank": "Boss",
+      "sort": 1441,
+      "hidden": false,
+      "icon": "/enemies-icons/Jade Twin-Swords.webp",
+      "flavour_text": "A famous sword-wielder who was renowned during the Hundred Clan Rebellion, but his benevolence was not enough to rid the people's hearts of darkness.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "When on the battlefield, increase <Ash Spear> and <Crimson Crescent Blade> talent and skill effects",
+          "format": "normal"
+        },
+        {
+          "text": "Takes reduced Physical and Arts damage when <Ash Spear> and <Crimson Crescent Blade> are on the field",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically heals and removes all negative statuses from the one with the lowest HP among itself, <Ash Spear>, and <Crimson Crescent Blade>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 16000,
+            "atk": 600,
+            "def": 400,
+            "res": 35.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 1.5,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 3
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "StartBattle",
+              "sp_cost": 0,
+              "cooldown": 999.0,
+              "initial_cooldown": 135.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "FirstAid",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "heal_scale": 5.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "GlobalDyBuff",
+              "parameters": {
+                "damage_resistance": 0.4
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "lord_zhaolie",
+      "id": "enemy_2115_dylbg2",
+      "name": "Lord Zhaolie",
+      "index": "ZLJ",
+      "rank": "Boss",
+      "sort": 1444,
+      "hidden": false,
+      "icon": "/enemies-icons/Lord Zhaolie.webp",
+      "flavour_text": "A figure enshrined in the Shrine of Heroes, eldest of the Three Heroes. He will defend good and fight evil if it is the last thing he does. His actions destroyed several warring factions, ensuring Yan's legitimate rule.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "When on the battlefield, increases <Lord Huan> and <Lord Wenheng> talent and skill effects",
+          "format": "normal"
+        },
+        {
+          "text": "Takes reduced Physical and Arts damage when <Lord Huan> and <Lord Wenheng> are on the field",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically heals and removes all negative statuses from the one with the lowest HP among itself, <Lord Huan>, and <Lord Wenheng>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 42000,
+            "atk": 1100,
+            "def": 700,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.2,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 3
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "StartBattle",
+              "sp_cost": 0,
+              "cooldown": 999.0,
+              "initial_cooldown": 50.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "FirstAid",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {
+                "heal_scale": 5.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "GlobalDyBuff",
+              "parameters": {
+                "damage_resistance": 0.4
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "revered_grandmaster",
+      "id": "enemy_2116_dyyysg",
+      "name": "Revered Grandmaster",
+      "index": "JSZ",
+      "rank": "Boss",
+      "sort": 1447,
+      "hidden": false,
+      "icon": "/enemies-icons/Revered Grandmaster.webp",
+      "flavour_text": "The grandmaster of the Tianshi, able to move heaven and earth, but who has not been seen since he helped establish the House of Yan's rule. Has been seen fincatching by the riverside on a fortunebeast.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Periodically summons stationary <Talismans> in the 8 surrounding tiles",
+          "format": "normal"
+        },
+        {
+          "text": "Fishes at a random Vagary Tile, moving any hooked Operator or unit to self; if the hooked unit is an enemy, increases their ASPD and Movement Speed and changes their route",
+          "format": "normal"
+        },
+        {
+          "text": "When a long time has passed in the battle, disappears and drains 5 Life Points",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 60000,
+            "atk": 400,
+            "def": 300,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 2.2,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "C",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "SummonSpll",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 3.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_key": "enemy_2101_dyspll"
+              }
+            },
+            {
+              "key": "Fishing",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "attack_speed": 50.0,
+                "move_speed": 1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "EndGame",
+              "parameters": {
+                "duration": 999.0,
+                "value": 5.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Levitate",
+            "Fear"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "grand_duke",
+      "id": "enemy_2117_dyyys2",
+      "name": "Grand Duke",
+      "index": "JTG",
+      "rank": "Boss",
+      "sort": 1448,
+      "hidden": false,
+      "icon": "/enemies-icons/Grand Duke.webp",
+      "flavour_text": "The region of Jiangqi is named after Grand Duke's surname, Jiang. Despite his title, he has never taken office, and has never been seen at court. He has only been glimpsed where the hills meet the waters, where the feet of mankind tread not. Perhaps this is why Tianshi Bureaus are often built in the mountains.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks 2 targets simultaneously; periodically summons stationary <Talismans> in the 8 surrounding tiles",
+          "format": "normal"
+        },
+        {
+          "text": "Fishes at 3 random Vagary Tiles, moving any hooked Operator or unit to self; if the hooked unit is an enemy unit, increases their ATK and HP and changes their route",
+          "format": "normal"
+        },
+        {
+          "text": "When a long time has passed in the battle, disappears and drains 5 Life Points",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 60000,
+            "atk": 800,
+            "def": 400,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 1.5,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "Fishing",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk": 0.5,
+                "max_cnt": 3.0,
+                "max_hp": 0.5
+              }
+            },
+            {
+              "key": "SummonSpll",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 3.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_key": "enemy_2101_dyspll"
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "EndGame",
+              "parameters": {
+                "duration": 999.0,
+                "max_target": 2.0,
+                "value": 5.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Levitate",
+            "Fear"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "yi",
+      "id": "enemy_2118_dylbhm",
+      "name": "Yi",
+      "index": "YI",
+      "rank": "Boss",
+      "sort": 1449,
+      "hidden": false,
+      "icon": "/enemies-icons/Yi.webp",
+      "flavour_text": "Build pillars and towers from clouds and earth, and make pairs out of like and like.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "Starts with Hui attribute and attacks 2 targets simultaneously, prioritizing units with the opposite Hui-Ming Attribute",
+          "format": "normal"
+        },
+        {
+          "text": "[Amalgam] Periodically enters a casting state to change his Hui-Ming Attribute",
+          "format": "normal"
+        },
+        {
+          "text": "[Summon Liangs] Periodically summons <Liangs> from both sides of the map",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "[Amalgam] Periodically enters a casting state to change his Hui-Ming Attribute and gain Barrier",
+          "format": "normal"
+        },
+        {
+          "text": "[Summon Liangs] Periodically summons more <Liangs> from both sides of the map",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 150000,
+            "atk": 1200,
+            "def": 1500,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 2.0,
+            "weight": 7,
+            "taunt": 0,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A",
+            "def": "A+",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Reborning",
+              "sp_cost": 0,
+              "cooldown": 99999.0,
+              "initial_cooldown": 99999.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "ChangeYinYang",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {
+                "hp_ratio": 1.0,
+                "shield_duration": 15.0
+              }
+            },
+            {
+              "key": "SummonEnemy",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 25.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 18.0,
+                "high_row_cnt": 2.0,
+                "interval": 6.0,
+                "max_cnt": 8.0,
+                "row_cnt": 1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0,
+                "invincible_duration": 30.0
+              }
+            },
+            {
+              "key": "YinYang",
+              "parameters": {
+                "dynamic": 0.0,
+                "enemy_dylbhm_buff_yinyang[diff].atk_scale": 1.2,
+                "enemy_dylbhm_buff_yinyang[diff].high_atk_scale": 1.5,
+                "enemy_dylbhm_buff_yinyang[same].atk_scale": 0.8,
+                "enemy_dylbhm_buff_yinyang[same].high_atk_scale": 0.8,
+                "max_target": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sui_enemy_2119_dyshhj",
+      "id": "enemy_2119_dyshhj",
+      "name": "'Sui'",
+      "index": "SUI",
+      "rank": "Boss",
+      "sort": 1450,
+      "hidden": false,
+      "icon": "/enemies-icons/'Sui'.webp",
+      "flavour_text": "The manifestation of the half-awake god that was defeated by Yan's final shot. A Proxy has taken Its place and appropriated Its context, seemingly attempting to fully awaken It.",
+      "race": "Apparition",
+      "movement": "Flying",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Does not normally exist on the battlefield; periodically locks on to your unit with the most nearby units, triggering [Sleepless] and remaining on the field for a while",
+          "format": "normal"
+        },
+        {
+          "text": "[Sleepless] Forces the target and your units in the 8 surrounding tiles to retreat, creating undeployable tiles for a while",
+          "format": "normal"
+        },
+        {
+          "text": "[Shake the Mountains] After [Sleepless] is triggered, slams the ground three times, dealing high Physical damage to all your units, ignoring Camouflage",
+          "format": "normal"
+        },
+        {
+          "text": "Triggers a [Sleepless] that forces all units to retreat when HP drops below a certain level",
+          "format": "normal"
+        },
+        {
+          "text": "When a long time has passed in the battle, triggers [Sleepless] before disappearing and draining 50 Life Points",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 560000,
+            "atk": 800,
+            "def": 800,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 50
+          },
+          "stat_ranks": {
+            "hp": "SS",
+            "atk": "B+",
+            "def": "B+",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "ThreeStrikes",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 9999.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0
+              }
+            },
+            {
+              "key": "Bombard",
+              "sp_cost": 50,
+              "cooldown": 5.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "block_duration": 20.0,
+                "duration": 21.0,
+                "interval": 20.0,
+                "is_override_respawn_time": 1.0,
+                "respawn_time": 30.0
+              }
+            },
+            {
+              "key": "SuicideBoombard",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 600.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "HpTriggerBoombard",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 9999.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 11.0,
+                "interval": 10.0
+              }
+            },
+            {
+              "key": "FlyToThreeBoombard",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 9999.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "Fly",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 9999.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "BuildCntCheck",
+              "parameters": {
+                "cnt": 6.0,
+                "sp_recovery_per_sec": 1.5
+              }
+            },
+            {
+              "key": "HpRatioCheck",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            },
+            {
+              "key": "TriggerThreeStrikes",
+              "parameters": {
+                "duration": 4.0,
+                "interval": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Lure"
+          ],
+          "sp": {
+            "initial": 20,
+            "max": 50,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "body_of_sui",
+      "id": "enemy_2119_dyshhj_2",
+      "name": "'Body of Sui'",
+      "index": "SQ",
+      "rank": "Boss",
+      "sort": 1451,
+      "hidden": true,
+      "icon": "/enemies-icons/'Body of Sui'.webp",
+      "flavour_text": "Formed from ink and sculptures, It hides in the clouds, waiting for the opportunity to extinguish the candle of mankind.",
+      "race": "Apparition",
+      "movement": "Flying",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Does not normally exist on the battlefield; locks on to your unit with the most nearby units, triggering [Sleepless]",
+          "format": "normal"
+        },
+        {
+          "text": "[Sleepless] Forces the target and Operators in the 8 surrounding tiles to retreat, temporarily creating undeployable for a while",
+          "format": "normal"
+        },
+        {
+          "text": "Triggers [Sleepless] and stays on the battlefield for a while before leaving without draining Life Points",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 240000,
+            "atk": 800,
+            "def": 800,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "B+",
+            "def": "B+",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "Bombard",
+              "sp_cost": 50,
+              "cooldown": 9999.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "block_duration": 20.0,
+                "duration": 21.0,
+                "interval": 20.0,
+                "is_override_respawn_time": 1.0,
+                "respawn_time": 30.0
+              }
+            },
+            {
+              "key": "Fly",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 9999.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "HpRatioCheck",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Lure"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 50,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "wang",
+      "id": "enemy_2120_dywqgs",
+      "name": "'Wang'",
+      "index": "WAN",
+      "rank": "Boss",
+      "sort": 1452,
+      "hidden": false,
+      "icon": "/enemies-icons/'Wang'.webp",
+      "flavour_text": "The strategist, the sinner, the chess piece laid at the Tomb of Sui.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Initial Form",
+          "format": "title"
+        },
+        {
+          "text": "[Placement] Whenever you deploy a unit, deploy a 'Flaw' in one of the 4 adjacent deployable tiles around it",
+          "format": "normal"
+        },
+        {
+          "text": "[Placement] Periodically deploys a 'Flaw' on a deployable tile in one of the 4 adjacent tiles around your units that does not already have a unit",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "Nearby 'Flaws' will recover a percentage of HP every second and attack nearby your units, stunning them",
+          "format": "normal"
+        },
+        {
+          "text": "For every nearby 'Flaw', Physical and Arts damage taken is reduced, and control effect duration is reduced",
+          "format": "normal"
+        },
+        {
+          "text": "[Ladder] When a target on the field is 'Emptied', enters full-screen attack mode, prioritizing surrounded targets and attacking up to 3 targets at a time",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "Deploys multiple 'Flaws' when entering second form; if a deployable tile surrounded by 'Flaws' does not have a unit, it will begin to spawn enemies continuously",
+          "format": "normal"
+        },
+        {
+          "text": "After reviving, deploys a 'Flaw' on deployable tiles around your units",
+          "format": "normal"
+        },
+        {
+          "text": "Leaves the field when the last 'Flaw' is defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 200000,
+            "atk": 800,
+            "def": 1200,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 5.0,
+            "weight": 7,
+            "taunt": 0,
+            "life_cost": 50
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "B+",
+            "def": "A+",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "SiegeChess1",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 25.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "StartBattle",
+              "sp_cost": 0,
+              "cooldown": 999999.0,
+              "initial_cooldown": 40.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "SwitchFinalMode",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 1.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 10.0
+              }
+            },
+            {
+              "key": "Reborning",
+              "sp_cost": 0,
+              "cooldown": 99999.0,
+              "initial_cooldown": 99999.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 30.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "ActiveChessDamage",
+              "parameters": {
+                "hp_ratio": 0.02,
+                "max_stack_cnt": -1.0,
+                "max_valid_stack_cnt": 4.0,
+                "one_minus_status_resistance": -0.2,
+                "range_radius": 1.6,
+                "temp_damage_resistance": 0.2
+              }
+            },
+            {
+              "key": "ActiveChessDamageS2",
+              "parameters": {
+                "range_radius": 1.6,
+                "temp_damage_resistance": 0.2
+              }
+            },
+            {
+              "key": "FinalAttributeUp",
+              "parameters": {
+                "atk_scale": 1.0,
+                "attack_speed": 100.0,
+                "max_target": 3.0
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 30.0,
+                "invincible_duration": 60.0
+              }
+            },
+            {
+              "key": "RebornSpawn",
+              "parameters": {
+                "interval": 30.0,
+                "spawn_duration": 30.0
+              }
+            },
+            {
+              "key": "SummonChessWhenBorn",
+              "parameters": {
+                "cd_duration": 30.0
+              }
+            },
+            {
+              "key": "SummonEnemyBetweenTraps",
+              "parameters": {
+                "enemy_key": "enemy_2101_dyspll",
+                "interval": 20.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Levitate",
+            "Fear"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "liang",
+      "id": "enemy_2122_dybgzd",
+      "name": "Liang",
+      "index": "YIS",
+      "rank": "Normal",
+      "sort": 1216,
+      "hidden": false,
+      "icon": "/enemies-icons/Liang.webp",
+      "flavour_text": "Created by Yi to handle various mundane matters, so that he may live in seclusion without being interrupted by official matters.",
+      "race": "Apparition",
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Explodes upon death, dealing Arts damage to friendly units. Causes even greater damage and stuns friendly units if similar units of the opposite attribute are in its vicinity",
+          "format": "normal"
+        },
+        {
+          "text": "Destroyed after taking a certain number of attacks",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10,
+            "atk": 800,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.2,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "B+",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Boom",
+              "parameters": {
+                "atk_scale": 2.0,
+                "atk_scale_2": 3.0
+              }
+            },
+            {
+              "key": "BoomAura",
+              "parameters": {
+                "range_radius": 0.3
+              }
+            },
+            {
+              "key": "BoomAura[YinYang]",
+              "parameters": {
+                "range_radius": 0.3
+              }
+            },
+            {
+              "key": "BoomToDiff",
+              "parameters": {
+                "atk_scale": 1.4,
+                "atk_scale_2": 4.2
+              }
+            },
+            {
+              "key": "BoomToSame",
+              "parameters": {
+                "atk_scale": 0.6,
+                "atk_scale_2": 1.8
+              }
+            },
+            {
+              "key": "YinYang",
+              "parameters": {
+                "dynamic": 1.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "bestial_hou",
+      "id": "enemy_2123_dyjsww",
+      "name": "Bestial Hou",
+      "index": "HOU",
+      "rank": "Boss",
+      "sort": 1453,
+      "hidden": false,
+      "icon": "/enemies-icons/Bestial Hou.webp",
+      "flavour_text": "Of the same form as the earth, of the same height as the mountains. None amongst the many are its equal, and its name is Hou.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Inaction] Cannot be attacked; enters 2nd form when <Bestial Ju> is defeated or leaves the field, or when enough time has elapsed, activating all Ancient Statuegeists on the field",
+          "format": "normal"
+        },
+        {
+          "text": "[Timeshift] Periodically teleports to a certain tile, reducing the ASPD of your units deployed in the opposite direction of its movement, and increasing the Movement Speed of enemy units moving in the same direction",
+          "format": "normal"
+        },
+        {
+          "text": "[Transmogrification] When touched by an enemy other than <Bestial Ju>, removes them from the field, deducts 1 Life Point, deals Arts damage to all your units, and permanently gains increased ATK",
+          "format": "normal"
+        },
+        {
+          "text": "[Altruism] Periodically locks on to one of your Operators parallel to it and attacks in a straight line, dealing splash Arts damage to the first Operator hit, and deploying an Ancient Statuegeist on a nearby passable tile",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "[Transmogrification] Causes all enemies other than <Bestial Ju> to move towards this unit until it is defeated or leaves the field; when touched by an enemy other than <Bestial Ju>, removes them from the field, deducts 1 Life Point, deals Arts damage to all your units, and permanently gains increased ATK",
+          "format": "normal"
+        },
+        {
+          "text": "[Timeshift] Periodically reduces the ASPD of your units deployed in the opposite direction of its movement, and increasing the Movement Speed of enemy units moving in the same direction",
+          "format": "normal"
+        },
+        {
+          "text": "When a long time has passed in the battle, disappears and drains 50 Life Points",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000000,
+            "atk": 800,
+            "def": 100,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.1,
+            "range": null,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 50
+          },
+          "stat_ranks": {
+            "hp": "SS",
+            "atk": "B+",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "DyjswwSwitch",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "Blink",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 30.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_dyjsww_blink_buff[ally].attack_speed": -50.0,
+                "enemy_dyjsww_blink_buff[ally].duration": 30.0,
+                "enemy_dyjsww_blink_buff[enemy].duration": 30.0,
+                "enemy_dyjsww_blink_buff[enemy].move_speed": 2.0
+              }
+            },
+            {
+              "key": "SummonBranchEnemy",
+              "sp_cost": 0,
+              "cooldown": 170.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "branch_id": "dyjsww_summon"
+              }
+            },
+            {
+              "key": "Punishment",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 30.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0
+              }
+            },
+            {
+              "key": "GlobalDoom",
+              "sp_cost": 0,
+              "cooldown": 999.0,
+              "initial_cooldown": 999.0,
+              "priority": 0,
+              "parameters": {
+                "value": -50.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "ActiveRgcssm",
+              "parameters": {
+                "bgm\n": "rl5boss4_2"
+              }
+            },
+            {
+              "key": "LevelUp",
+              "parameters": {
+                "interval": 500.0
+              }
+            },
+            {
+              "key": "ReturnToDust",
+              "parameters": {
+                "atk": 0.2,
+                "atk_scale": 0.5,
+                "life_value": 1.0,
+                "max_stack_cnt": 20.0,
+                "range_radius": 1.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "bestial_ju",
+      "id": "enemy_2124_dyjsfg",
+      "name": "Bestial Ju",
+      "index": "JU",
+      "rank": "Boss",
+      "sort": 1454,
+      "hidden": false,
+      "icon": "/enemies-icons/Bestial Ju.webp",
+      "flavour_text": "Bring unity and order, halt conflict and quell disaster. It is upright and unyielding, and its name is Ju.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "[Sober] Duration of negative statuses such as Stun, Cold, and Freeze greatly reduced; Physical and Arts damage taken greatly reduced; damage reduction effect reduced when blocked or prevented from moving",
+          "format": "normal"
+        },
+        {
+          "text": "[Concordance] Continuously deals Physical damage around itself, and deals one instance of heavy Physical damage around itself whenever it is blocked",
+          "format": "normal"
+        },
+        {
+          "text": "[Unlife] When HP drops below 50% for the first time, gains increased Block cost, ATK, and Movement Speed",
+          "format": "normal"
+        },
+        {
+          "text": "[Benevolence] When defeated or on leaving the field, removes all enemies other than <Bestial Hou> from the field, and deals one instance of heavy Physical damage to all your units, ignoring Invisibility",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 350000,
+            "atk": 1500,
+            "def": 1000,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "S+",
+            "atk": "A+",
+            "def": "A",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "CombatAoe",
+              "sp_cost": 0,
+              "cooldown": 2.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "combat_atk_scale": 2.0,
+                "range_radius": 1.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Huge",
+              "parameters": {
+                "enemy_dyjsfg_high_damage_resistance.damage_resistance": 0.9,
+                "enemy_dyjsfg_low_damage_resistance.damage_resistance": 0.35,
+                "one_minus_status_resistance": -0.8
+              }
+            },
+            {
+              "key": "OutOfControll",
+              "parameters": {
+                "atk_scale": 2.0
+              }
+            },
+            {
+              "key": "Overload",
+              "parameters": {
+                "atk": 0.5,
+                "block_volume": 1.0,
+                "move_speed": 2.0
+              }
+            },
+            {
+              "key": "Trample",
+              "parameters": {
+                "atk_scale": 1.0,
+                "interval": 2.5,
+                "range_radius": 1.6
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "little_bajie",
+      "id": "enemy_2125_dylnpp",
+      "name": "Little Ba'jie",
+      "index": "BA",
+      "rank": "Elite",
+      "sort": 1176,
+      "hidden": false,
+      "icon": "/enemies-icons/Little Ba'jie.webp",
+      "flavour_text": "A mascot for the Garden of Grotesqueries that Yi made himself, transformed into a geist from the adoration of visitors. One of the few geists not under the supervision of the Sui Regulator or Tianshi Bureaus. It spends its days interacting with visitors at the souvenir shop, or playing with ritual processions on the days when the garden is closed.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Low-Altitude Hovering",
+          "format": "normal"
+        },
+        {
+          "text": "After receiving a certain number of hits, deals Arts damage to all allied units in a large area and stuns them",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 500,
+            "def": 200,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "CircleDamage",
+              "parameters": {
+                "atk_scale": 3.0,
+                "range_radius": 3.5,
+                "stun": 15.0,
+                "take_damage_cnt": 15.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 50000,
+            "atk": 700,
+            "def": 400,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "CircleDamage",
+              "parameters": {
+                "atk_scale": 3.0,
+                "range_radius": 3.5,
+                "stun": 15.0,
+                "take_damage_cnt": 15.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        },
+        {
+          "level": 2,
+          "stats": {
+            "hp": 70000,
+            "atk": 900,
+            "def": 500,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "CircleDamage",
+              "parameters": {
+                "atk_scale": 3.0,
+                "range_radius": 3.5,
+                "stun": 15.0,
+                "take_damage_cnt": 15.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "vessel_of_shuo",
+      "id": "enemy_2126_dycyue",
+      "name": "Vessel of Shuo",
+      "index": "SQ",
+      "rank": "Boss",
+      "sort": 1456,
+      "hidden": false,
+      "icon": "/enemies-icons/Vessel of Shuo.webp",
+      "flavour_text": "A vessel that has been annexed, containing all malice and wrath. Its original owner slumbers eternal, replaced by—",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "[Violence] Chance to dodge Physical and Arts damage from units who are not blocking this unit; ATK increased for every 'Olden Pride' in the Deployment Waiting Zone",
+          "format": "normal"
+        },
+        {
+          "text": "[Drunken Stupor] Adds an 'Olden Pride' to the Deployment Waiting Zone",
+          "format": "normal"
+        },
+        {
+          "text": "[Tracing the Law] Spawns 'Restrained Pride' at current location, and spawns another 'Restrained Pride' for every 'Olden Pride' in the Deployment Waiting Zone",
+          "format": "normal"
+        },
+        {
+          "text": "[Depict] Summons a 'Body' segment, forcing units on it to retreat; cannot be attacked while 'Body' is on the field",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 500000,
+            "atk": 1800,
+            "def": 2500,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 2.5,
+            "weight": 9,
+            "taunt": null,
+            "life_cost": 50
+          },
+          "stat_ranks": {
+            "hp": "SS",
+            "atk": "A+",
+            "def": "S",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Punch",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "range_radius": 13.0
+              }
+            },
+            {
+              "key": "SendPunchCard",
+              "sp_cost": 0,
+              "cooldown": 36.0,
+              "initial_cooldown": 5.0,
+              "priority": 1,
+              "parameters": {
+                "cnt": 1.0,
+                "max_cards": 8.0
+              }
+            },
+            {
+              "key": "SummonBody",
+              "sp_cost": 0,
+              "cooldown": 54.0,
+              "initial_cooldown": 20.0,
+              "priority": 2,
+              "parameters": {
+                "branch_id": "dycyue_body"
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "BranchData",
+              "parameters": {
+                "max_index": 5.0
+              }
+            },
+            {
+              "key": "MasterBlcok",
+              "parameters": {
+                "action_index": 2.0,
+                "base_atk": 0.3,
+                "branch_id": "summon_dysuih",
+                "prob": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "arrogance_embodied",
+      "id": "enemy_2127_dysuih",
+      "name": "Arrogance Embodied",
+      "index": "WQH",
+      "rank": "Boss",
+      "sort": 1457,
+      "hidden": false,
+      "icon": "/enemies-icons/Arrogance Embodied.webp",
+      "flavour_text": "—It, awakened.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "[Wisdom] Physical and Arts damage taken reduced by 50% for every 'Body' segment on the field",
+          "format": "normal"
+        },
+        {
+          "text": "[Flame of Intrigue] Adds an 'Olden Grudge' to the Deployment Waiting Zone",
+          "format": "normal"
+        },
+        {
+          "text": "[Build Foundation] Summons a 'Body' segment; summons 'Body' every time it loses a certain amount of HP",
+          "format": "normal"
+        },
+        {
+          "text": "[Purifying Flame] Spawns 'Fume of Anger' at current location, and spawns another 'Fume of Anger' for every 'Olden Grudge' in the Deployment Waiting Zone",
+          "format": "normal"
+        },
+        {
+          "text": "[Woven Prison] Continuously casts, summoning multiple 'Fumes of Anger' to attack the target",
+          "format": "normal"
+        },
+        {
+          "text": "Leave the field and drains 50 Life Points after a long time has passed in the battle",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 500000,
+            "atk": 2400,
+            "def": 3000,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 2.5,
+            "weight": 13,
+            "taunt": null,
+            "life_cost": 50
+          },
+          "stat_ranks": {
+            "hp": "SS",
+            "atk": "S",
+            "def": "S+",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "SendFireCard",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 15.0,
+              "priority": 3,
+              "parameters": {
+                "cnt": 1.0,
+                "max_cards": 8.0
+              }
+            },
+            {
+              "key": "SummonFire",
+              "sp_cost": 0,
+              "cooldown": 12.0,
+              "initial_cooldown": 5.0,
+              "priority": 1,
+              "parameters": {
+                "max_target": 15.0,
+                "range_radius": 15.0
+              }
+            },
+            {
+              "key": "FireToFarthestTile",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 40.0,
+              "priority": 2,
+              "parameters": {
+                "duration": 10.0,
+                "enemy_dysuih_summon_fire_to_farthest.interval": 0.49
+              }
+            },
+            {
+              "key": "GiantTailStrike",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 3000.0,
+              "priority": 5,
+              "parameters": {
+                "value": -50.0
+              }
+            },
+            {
+              "key": "StunAnimation",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 15.0
+              }
+            },
+            {
+              "key": "SummonBody",
+              "sp_cost": 0,
+              "cooldown": 60.0,
+              "initial_cooldown": 20.0,
+              "priority": 4,
+              "parameters": {
+                "Branch_id": "dysuih_s_body"
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "BornSummon",
+              "parameters": {
+                "action_index": 2.0,
+                "branch_id": "dysuih_body"
+              }
+            },
+            {
+              "key": "BranchData",
+              "parameters": {
+                "max_index": 1.0
+              }
+            },
+            {
+              "key": "HpTriggerSummon",
+              "parameters": {
+                "hp_ratio": 0.3
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "body",
+      "id": "enemy_2128_dysuib",
+      "name": "Body",
+      "index": "WQH",
+      "rank": "Boss",
+      "sort": 1455,
+      "hidden": false,
+      "icon": "/enemies-icons/Body.webp",
+      "flavour_text": "Its least human feature.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 80000,
+            "atk": 200,
+            "def": 1000,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 2.5,
+            "weight": 13,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "D",
+            "def": "A",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "DysuihAura",
+              "parameters": {
+                "damage_resistance": 0.5,
+                "stun": 15.0
+              }
+            },
+            {
+              "key": "SecondRelicTalent",
+              "parameters": {
+                "active_relic_a": 0.0,
+                "active_relic_b": 0.0,
+                "def": 1500.0,
+                "enemy_dysuib_second_relic_t[summon_enemy].branch_id": "dysuib_relic_branch",
+                "enemy_dysuib_second_relic_t[summon_enemy].interval": 30.0
+              }
+            },
+            {
+              "key": "WithdrawAlly",
+              "parameters": {
+                "respawn_time": 0.15
+              }
+            },
+            {
+              "key": "inverseDamage",
+              "parameters": {
+                "atk_scale": 0.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "hateful_carrion",
+      "id": "enemy_2129_dylong",
+      "name": "Hateful Carrion",
+      "index": "YH",
+      "rank": "Elite",
+      "sort": 1217,
+      "hidden": false,
+      "icon": "/enemies-icons/Hateful Carrion.webp",
+      "flavour_text": "Under the influence of the tomb's host, these inanimate objects have gained vessels just like It, and a life of their own. The Sui Regulator has termed such changes 'geistification'.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Deals Arts damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 600,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 2.5,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "restrained_pride",
+      "id": "enemy_2130_dyswrd",
+      "name": "Restrained Pride",
+      "index": "LA",
+      "rank": "Elite",
+      "sort": 1218,
+      "hidden": false,
+      "icon": "/enemies-icons/Restrained Pride.webp",
+      "flavour_text": "The tail was born to be a blade, which men take to be a sword. Once, It let Its arrogance run unchecked. Now, It knows to conceal the blade.",
+      "race": "Apparition",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Aerial unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Self-destructs when near an Operator, dealing Physical damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 1800,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 1.3,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "\nBoom",
+              "parameters": {
+                "atk_scale": 1.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "fume_of_anger",
+      "id": "enemy_2131_dyfire",
+      "name": "Fume of Anger",
+      "index": "YN",
+      "rank": "Elite",
+      "sort": 1219,
+      "hidden": false,
+      "icon": "/enemies-icons/Fume of Anger.webp",
+      "flavour_text": "All that came to be because It saw the fire must end in fire.",
+      "race": "Apparition",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Aerial unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Self-destructs when near an Operator, dealing Arts damage and inflicting Burn",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 1800,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 1.3,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Boom",
+              "parameters": {
+                "atk_scale": 1.0,
+                "ep_damage_ratio": 0.25
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "miner_guerrilla",
+      "id": "enemy_3010_mcreep",
+      "name": "Miner Guerrilla",
+      "index": "KG01",
+      "rank": "Normal",
+      "sort": 1077,
+      "hidden": false,
+      "icon": "/enemies-icons/Miner Guerrilla.webp",
+      "flavour_text": "Resistance unit formed by miners, many of whom are still relatively young. They are not a rampaging mob: all they want to do is protect their families who are still underground.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Allied unit; recovers HP when within any Medic Operator's Attack Range",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3000,
+            "atk": 500,
+            "def": 150,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 1.0,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "B",
+            "def": "D",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "FearLoseBlood",
+              "parameters": {
+                "value": 200.0
+              }
+            },
+            {
+              "key": "GetHeal",
+              "parameters": {
+                "heal_scale": 0.5
+              }
+            },
+            {
+              "key": "TileEscapeShadowManager",
+              "parameters": {
+                "times": 3.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

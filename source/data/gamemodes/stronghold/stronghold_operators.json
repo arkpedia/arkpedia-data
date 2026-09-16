@@ -1,0 +1,3602 @@
+[
+  {
+    "operator": "Caper",
+    "tier": "I",
+    "cls": "SNIPER",
+    "sub": "loopshooter",
+    "hits_air": true,
+    "alliances": [
+      "Precision"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "When attacking enemy Drones, increases ATK to 150%",
+    "promoted_attribute": "When attacking enemy Drones, increases ATK to 200%",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Estelle",
+    "tier": "I",
+    "cls": "WARRIOR",
+    "sub": "centurion",
+    "hits_air": false,
+    "alliances": [
+      "Sargon"
+    ],
+    "role": [
+      "One-Time Stack Bonus"
+    ],
+    "in_game_role": "One-time",
+    "base_attribute": "<When obtained> +2 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "promoted_attribute": "<When obtained> +4 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Greyy",
+    "tier": "I",
+    "cls": "CASTER",
+    "sub": "splashcaster",
+    "hits_air": true,
+    "alliances": [
+      "Agile"
+    ],
+    "role": [
+      "Refund"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When sold> Obtain 1 extra Funds next Rest Phase",
+    "promoted_attribute": "<When sold> Obtain 2 extra Funds next Rest Phase",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Gummy",
+    "tier": "I",
+    "cls": "TANK",
+    "sub": "guardian",
+    "hits_air": false,
+    "alliances": [
+      "Durable"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "SP recovery rate +0.15/s",
+    "promoted_attribute": "SP recovery rate +0.3/second",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Indigo",
+    "tier": "I",
+    "cls": "CASTER",
+    "sub": "mystic",
+    "hits_air": true,
+    "alliances": [
+      "Arcane",
+      "Precision"
+    ],
+    "role": [
+      "One-Time Stack Bonus"
+    ],
+    "in_game_role": "One-time",
+    "base_attribute": "<When obtained> +2 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "promoted_attribute": "<When obtained> +4 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Insider",
+    "tier": "I",
+    "cls": "SNIPER",
+    "sub": "fastshot",
+    "hits_air": true,
+    "alliances": [
+      "Laterano",
+      "Swift"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "For every 5 stacks added to [Laterano] Alliance, this Operator gains +1 ASPD",
+    "promoted_attribute": "For every 5 stacks added to [Laterano] Alliance, this Operator gains +2 ASPD",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "Laterano"
+    ]
+  },
+  {
+    "operator": "Leizi",
+    "tier": "I",
+    "cls": "CASTER",
+    "sub": "chain",
+    "hits_air": true,
+    "alliances": [
+      "Yan"
+    ],
+    "role": [
+      "One-Time Stack Bonus"
+    ],
+    "in_game_role": "One-time",
+    "base_attribute": "<When obtained> Gain [Yan] Alliance stacks equivalent to Dispatch Center level (Alliance does not need to be active)",
+    "promoted_attribute": "<When obtained> Gain [Yan] Alliance stacks equivalent to 2x Dispatch Center level (Alliance does not need to be active)",
+    "stacks": [
+      {
+        "n": "dispatch",
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "Yan"
+        ]
+      }
+    ],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Liskarm",
+    "tier": "I",
+    "cls": "TANK",
+    "sub": "shotprotector",
+    "hits_air": true,
+    "alliances": [
+      "Resilient"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +1 stack to active [Resilient] Alliance",
+    "promoted_attribute": "<When Rest Phase ends> +2 stacks to active [Resilient] Alliance",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Resilient"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Resilient"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Matterhorn",
+    "tier": "I",
+    "cls": "TANK",
+    "sub": "protector",
+    "hits_air": false,
+    "alliances": [
+      "Kjerag",
+      "Durable"
+    ],
+    "role": [
+      "One-Time Stack Bonus"
+    ],
+    "in_game_role": "One-time",
+    "base_attribute": "<When obtained> +2 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "promoted_attribute": "<When obtained> +4 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Podenco",
+    "tier": "I",
+    "cls": "SUPPORT",
+    "sub": "slower",
+    "hits_air": true,
+    "alliances": [
+      "Aid"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +1 stack to the most stacked active Alliance; takes effect even if the Operator is on Bench",
+    "promoted_attribute": "<When Rest Phase ends> +2 stacks to the most stacked active Alliance; takes effect even if the Operator is on Bench",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "most-stacked"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "most-stacked"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Provence",
+    "tier": "I",
+    "cls": "SNIPER",
+    "sub": "closerange",
+    "hits_air": true,
+    "alliances": [
+      "Siracusa"
+    ],
+    "role": [
+      "Special"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When obtained> Gain 1 free Refresh",
+    "promoted_attribute": "<When obtained> Gain 2 free Refreshes",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Texas",
+    "tier": "I",
+    "cls": "PIONEER",
+    "sub": "pioneer",
+    "hits_air": false,
+    "alliances": [
+      "Solo",
+      "Siracusa"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When sold> Gain 1 free Refresh",
+    "promoted_attribute": "<When sold> Gain 2 free Refreshes",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Underflow",
+    "tier": "I",
+    "cls": "TANK",
+    "sub": "shotprotector",
+    "hits_air": true,
+    "alliances": [
+      "Ægir"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "When attacking Sea Monster enemies, increases ATK to 150%",
+    "promoted_attribute": "When attacking Sea Monster enemies, increases ATK to 200%",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Utage",
+    "tier": "I",
+    "cls": "WARRIOR",
+    "sub": "musha",
+    "hits_air": false,
+    "alliances": [
+      "Raid"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "<In battle> Deals Weakness damage (changes damage type to either Physical or Arts depending on the target's DEF and RES)",
+    "promoted_attribute": null,
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Vendela",
+    "tier": "I",
+    "cls": "MEDIC",
+    "sub": "incantationmedic",
+    "hits_air": false,
+    "alliances": [
+      "Victoria",
+      "Aid"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +1 stack to active [Victoria] Alliance",
+    "promoted_attribute": "<When Rest Phase ends> +2 stacks to active [Victoria] Alliance",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Victoria"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Victoria"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Wild Mane",
+    "tier": "I",
+    "cls": "PIONEER",
+    "sub": "charger",
+    "hits_air": false,
+    "alliances": [
+      "Kazimierz",
+      "Swift"
+    ],
+    "role": [
+      "One-Time Stack Bonus"
+    ],
+    "in_game_role": "One-time",
+    "base_attribute": "<When obtained> +2 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "promoted_attribute": "<When obtained> +4 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Ashlock",
+    "tier": "II",
+    "cls": "TANK",
+    "sub": "fortress",
+    "hits_air": false,
+    "alliances": [
+      "Kazimierz",
+      "Durable"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "One-time",
+    "base_attribute": "<When obtained> +3 stacks to the most stacked active Alliance",
+    "promoted_attribute": "<When obtained> +6 stacks to the most stacked active Alliance",
+    "stacks": [
+      {
+        "n": 3,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "most-stacked"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 6,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "most-stacked"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Bubble",
+    "tier": "II",
+    "cls": "TANK",
+    "sub": "protector",
+    "hits_air": false,
+    "alliances": [
+      "Sargon",
+      "Durable"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "For every 3 stacks added to [Sargon] or [Durable] Alliances, this Operator +1% DEF",
+    "promoted_attribute": "For every 3 stacks added to [Sargon] or [Durable] Alliances, this Operator +2% DEF",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "Sargon",
+      "Durable"
+    ]
+  },
+  {
+    "operator": "Executor",
+    "tier": "II",
+    "cls": "SNIPER",
+    "sub": "reaperrange",
+    "hits_air": true,
+    "alliances": [
+      "Laterano",
+      "Precision"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> The first enemy defeated grants +3 stacks to active [Precision] and [Laterano] Alliances",
+    "promoted_attribute": "<In battle> The first enemy defeated grants +6 stacks to active [Precision] and [Laterano] Alliances",
+    "stacks": [
+      {
+        "n": 3,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Precision",
+          "Laterano"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 6,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Precision",
+          "Laterano"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Grain Buds",
+    "tier": "II",
+    "cls": "SUPPORT",
+    "sub": "slower",
+    "hits_air": true,
+    "alliances": [
+      "Yan",
+      "Agile"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +1 stack to active [Yan] Alliance for every Operator obtained this round",
+    "promoted_attribute": "<When Rest Phase ends> +2 stacks to active [Yan] Alliance for every Operator obtained this round",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Yan"
+        ],
+        "per": "Operator obtained this round"
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Yan"
+        ],
+        "per": "Operator obtained this round"
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Gravel",
+    "tier": "II",
+    "cls": "SPECIAL",
+    "sub": "executor",
+    "hits_air": false,
+    "alliances": [
+      "Kazimierz",
+      "Resilient"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<On deployment> +1 stack to active [Kazimierz] Alliance\n<When defeated> +2 stacks to active [Resilient] Alliance",
+    "promoted_attribute": "<On deployment> +2 stacks to active [Kazimierz] Alliance\n<When defeated> +4 stacks to active [Resilient] Alliance",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "deploy",
+        "cadence": "battle",
+        "targets": [
+          "Kazimierz"
+        ]
+      },
+      {
+        "n": 2,
+        "trigger": "defeated",
+        "cadence": "battle",
+        "targets": [
+          "Resilient"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "deploy",
+        "cadence": "battle",
+        "targets": [
+          "Kazimierz"
+        ]
+      },
+      {
+        "n": 4,
+        "trigger": "defeated",
+        "cadence": "battle",
+        "targets": [
+          "Resilient"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Harold",
+    "tier": "II",
+    "cls": "MEDIC",
+    "sub": "wandermedic",
+    "hits_air": false,
+    "alliances": [
+      "Kjerag",
+      "Victoria"
+    ],
+    "role": [
+      "One-Time Wealth Bonus"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "+20% ATK and HP; for every 3 stacks added to Core Alliances, this Operator gains +1% ATK and HP",
+    "promoted_attribute": "+40% ATK and HP; for every 3 stacks added to Core Alliances, this Operator gains +2% ATK and HP",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "core"
+    ]
+  },
+  {
+    "operator": "Humus",
+    "tier": "II",
+    "cls": "WARRIOR",
+    "sub": "reaper",
+    "hits_air": false,
+    "alliances": [
+      "Raid"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> For every 2 enemy defeated, +1 stack to active [Raid] Alliance",
+    "promoted_attribute": "<In battle> For every 2 enemies defeated, +2 stacks to active [Raid] Alliance",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Raid"
+        ],
+        "per": "2 enemy defeated"
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Raid"
+        ],
+        "per": "2 enemies defeated"
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Kazemaru",
+    "tier": "II",
+    "cls": "SPECIAL",
+    "sub": "dollkeeper",
+    "hits_air": false,
+    "alliances": [
+      "Marvel"
+    ],
+    "role": [
+      "Special"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "Only 2 copies of this Operator are needed for Elite promotion",
+    "promoted_attribute": null,
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Lappland",
+    "tier": "II",
+    "cls": "WARRIOR",
+    "sub": "lord",
+    "hits_air": true,
+    "alliances": [
+      "Siracusa"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<On refresh> +4 stacks to active [Siracusa] Alliance on first active refresh; takes effect even if the Operator is on Bench",
+    "promoted_attribute": "<On refresh> +8 stacks to active [Siracusa] Alliance on first active refresh; takes effect even if the Operator is on Bench",
+    "stacks": [
+      {
+        "n": 4,
+        "trigger": "unknown",
+        "cadence": "battle",
+        "targets": [
+          "Siracusa"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 8,
+        "trigger": "unknown",
+        "cadence": "battle",
+        "targets": [
+          "Siracusa"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Papyrus",
+    "tier": "II",
+    "cls": "MEDIC",
+    "sub": "chainhealer",
+    "hits_air": false,
+    "alliances": [
+      "Sargon"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> On first skill activation, +5 stacks to active [Sargon] Alliance",
+    "promoted_attribute": "<In battle> On first skill activation, +10 stacks to active [Sargon] Alliance",
+    "stacks": [
+      {
+        "n": 5,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Sargon"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 10,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Sargon"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Perfumer",
+    "tier": "II",
+    "cls": "MEDIC",
+    "sub": "ringhealer",
+    "hits_air": false,
+    "alliances": [
+      "Aid",
+      "Assist Operator"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +2 stacks to the most stacked active Alliance; takes effect even if the Operator is on Bench",
+    "promoted_attribute": "<When Rest Phase ends> +4 stacks to the most stacked active Alliance; takes effect even if the Operator is on Bench",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "most-stacked"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "most-stacked"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Rockrock",
+    "tier": "II",
+    "cls": "CASTER",
+    "sub": "funnel",
+    "hits_air": true,
+    "alliances": [
+      "Victoria",
+      "Arcane"
+    ],
+    "role": [
+      "Special"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When obtained> Randomly obtain 1 piece of Rockrock's custom creations",
+    "promoted_attribute": "<When obtained> Randomly obtain 2 pieces of Rockrock's custom creations",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Silence",
+    "tier": "II",
+    "cls": "MEDIC",
+    "sub": "physician",
+    "hits_air": false,
+    "alliances": [
+      "Foresight"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When entering Rest Phase> +2 stacks to own active Alliance(s)",
+    "promoted_attribute": "<When entering Rest Phase> +4 stacks to own active Alliance(s)",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "rest-start",
+        "cadence": "round",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "rest-start",
+        "cadence": "round",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Specter",
+    "tier": "II",
+    "cls": "WARRIOR",
+    "sub": "centurion",
+    "hits_air": false,
+    "alliances": [
+      "Ægir"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> When defeated, +3 stacks to active [Ægir] Alliance",
+    "promoted_attribute": "<In battle> When defeated, +6 stacks to active [Ægir] Alliance",
+    "stacks": [
+      {
+        "n": 3,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Ægir"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 6,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Ægir"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Tin Man",
+    "tier": "II",
+    "cls": "SPECIAL",
+    "sub": "alchemist",
+    "hits_air": true,
+    "alliances": [
+      "Investor",
+      "Swift"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "+20% ATK and HP; for every 3 stacks added to [Investor] and [Swift] Alliances, this Operator gains +1% ATK and HP",
+    "promoted_attribute": "+40% ATK and HP; for every 3 stacks added to [Investor] and [Swift] Alliances, this Operator gains +2% ATK and HP",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "Investor",
+      "Swift"
+    ]
+  },
+  {
+    "operator": "Tippi",
+    "tier": "II",
+    "cls": "SPECIAL",
+    "sub": "skywalker",
+    "hits_air": true,
+    "alliances": [
+      "Swift",
+      "Agile"
+    ],
+    "role": [
+      "One-Time Stack Bonus"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When entering Rest Phase> +2 stacks to own active Alliance(s)",
+    "promoted_attribute": "<When entering Rest Phase> +4 stacks to own active Alliance(s)",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "rest-start",
+        "cadence": "round",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "rest-start",
+        "cadence": "round",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Vetochki",
+    "tier": "II",
+    "cls": "TANK",
+    "sub": "unyield",
+    "hits_air": false,
+    "alliances": [
+      "Durable",
+      "Solo"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +4 stacks to active [Durable] Alliance",
+    "promoted_attribute": "<When Rest Phase ends> +8 stacks to active [Durable] Alliance",
+    "stacks": [
+      {
+        "n": 4,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Durable"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 8,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Durable"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Archetto",
+    "tier": "III",
+    "cls": "SNIPER",
+    "sub": "fastshot",
+    "hits_air": true,
+    "alliances": [
+      "Laterano",
+      "Agile"
+    ],
+    "role": [
+      "Self Alliance Stacker",
+      "Other Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When entering Rest Phase> +3 stacks each to active Alliance(s) of self and of the Operator 1 tile ahead",
+    "promoted_attribute": "<When entering Rest Phase> +6 stacks each to active Alliance(s) of self and of the Operator 1 tile ahead",
+    "stacks": [
+      {
+        "n": 3,
+        "trigger": "rest-start",
+        "cadence": "round",
+        "targets": [
+          "own",
+          "ahead"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 6,
+        "trigger": "rest-start",
+        "cadence": "round",
+        "targets": [
+          "own",
+          "ahead"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Ayerscarpe",
+    "tier": "III",
+    "cls": "WARRIOR",
+    "sub": "lord",
+    "hits_air": true,
+    "alliances": [
+      "Agile"
+    ],
+    "role": [
+      "Self Alliance Stacker",
+      "Other Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +3 stacks each to active Alliance(s) of self and of the Operator 1 tile behind",
+    "promoted_attribute": "<When Rest Phase ends> +6 stacks each to active Alliance(s) of self and of the Operator 1 tile behind",
+    "stacks": [
+      {
+        "n": 3,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "own",
+          "behind"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 6,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "own",
+          "behind"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Blemishine",
+    "tier": "III",
+    "cls": "TANK",
+    "sub": "guardian",
+    "hits_air": false,
+    "alliances": [
+      "Kazimierz",
+      "Raid"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<On deployment> +4 stacks to own active Alliance(s) (Can stack up to 12x every battle)",
+    "promoted_attribute": "<On deployment> +8 stacks to own active Alliance(s) on skill activation (Can stack up to 24x every battle)",
+    "stacks": [
+      {
+        "n": 4,
+        "trigger": "deploy",
+        "cadence": "battle",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 8,
+        "trigger": "deploy",
+        "cadence": "battle",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Cuora",
+    "tier": "III",
+    "cls": "TANK",
+    "sub": "protector",
+    "hits_air": false,
+    "alliances": [
+      "Durable",
+      "Resilient"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +1 stack to active [Durable] Alliance for every Operator in the same row",
+    "promoted_attribute": "<When Rest Phase ends> +2 stacks to active [Durable] Alliance for every Operator in the same row",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Durable"
+        ],
+        "per": "Operator in the same row"
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Durable"
+        ],
+        "per": "Operator in the same row"
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Exusiai",
+    "tier": "III",
+    "cls": "SNIPER",
+    "sub": "fastshot",
+    "hits_air": true,
+    "alliances": [
+      "Laterano",
+      "Marvel"
+    ],
+    "role": [
+      "One-Time Wealth Bonus"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When obtained> Obtain 1 extra Funds next Rest Phase",
+    "promoted_attribute": "<When obtained> Obtain 2 extra Funds next Rest Phase",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Kjera",
+    "tier": "III",
+    "cls": "CASTER",
+    "sub": "funnel",
+    "hits_air": true,
+    "alliances": [
+      "Kjerag",
+      "Aid"
+    ],
+    "role": [
+      "Special"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When obtained> Obtain 1 'Kjeragi Nevermeltice'",
+    "promoted_attribute": "<When obtained> Obtain 2 'Kjeragi Nevermeltice'",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Lucilla",
+    "tier": "III",
+    "cls": "SUPPORT",
+    "sub": "underminer",
+    "hits_air": true,
+    "alliances": [
+      "Ægir",
+      "Arcane"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> The first enemy or ally defeated grants +3 stacks to active [Ægir] and [Arcane] Alliances",
+    "promoted_attribute": "<In battle> The first enemy or ally defeated grants +6 stacks to active [Ægir] and [Arcane] Alliances",
+    "stacks": [
+      {
+        "n": 3,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Ægir",
+          "Arcane"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 6,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Ægir",
+          "Arcane"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Meteor",
+    "tier": "III",
+    "cls": "SNIPER",
+    "sub": "fastshot",
+    "hits_air": true,
+    "alliances": [
+      "Kazimierz",
+      "Solo"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "<In battle> +25% ATK and HP; deals Weakness damage (changes damage type to either Physical or Arts depending on the target's DEF and RES)",
+    "promoted_attribute": "<In battle> +50% ATK and HP; deals Weakness damage (changes damage type to either Physical or Arts depending on the target's DEF and RES)",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Minimalist",
+    "tier": "III",
+    "cls": "CASTER",
+    "sub": "funnel",
+    "hits_air": true,
+    "alliances": [
+      "Sargon",
+      "Agile"
+    ],
+    "role": [
+      "Cost 1"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "Costs 1 Funds to purchase",
+    "promoted_attribute": null,
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Mint",
+    "tier": "III",
+    "cls": "CASTER",
+    "sub": "phalanx",
+    "hits_air": true,
+    "alliances": [
+      "Victoria"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +2 stacks to active [Victoria] Alliance for every [Victoria] Operator of a different Tier on the field",
+    "promoted_attribute": "<When Rest Phase ends> +4 stacks to active [Victoria] Alliance for every [Victoria] Operator of a different Tier on the field",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Victoria"
+        ],
+        "per": "[Victoria] Operator of a different Tier on the field"
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Victoria"
+        ],
+        "per": "[Victoria] Operator of a different Tier on the field"
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Philae",
+    "tier": "III",
+    "cls": "TANK",
+    "sub": "primprotector",
+    "hits_air": false,
+    "alliances": [
+      "Sargon"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> On skill activation, +6 stacks to active [Sargon] Alliance",
+    "promoted_attribute": "<In battle> On skill activation, +12 stacks to active [Sargon] Alliance",
+    "stacks": [
+      {
+        "n": 6,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Sargon"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 12,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Sargon"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Pinecone",
+    "tier": "III",
+    "cls": "SNIPER",
+    "sub": "reaperrange",
+    "hits_air": true,
+    "alliances": [
+      "Swift",
+      "Assist Operator"
+    ],
+    "role": [
+      "Special"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When sold> Do a special free refresh of Tier I Operators\nWhen this Operator is promoted to Elite, refresh offers Tier V Operators instead",
+    "promoted_attribute": "<When sold> Do a special free refresh of Tier V Operators",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Pramanix",
+    "tier": "III",
+    "cls": "SUPPORT",
+    "sub": "underminer",
+    "hits_air": true,
+    "alliances": [
+      "Kjerag",
+      "Foresight"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> Whenever an enemy within range is Frozen, 50% chance for +1 stack to active [Kjerag] Alliance",
+    "promoted_attribute": "<In battle> Whenever an enemy within range is Frozen, 50% chance for +2 stacks to active [Kjerag] Alliance",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Kjerag"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Kjerag"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Skadi",
+    "tier": "III",
+    "cls": "WARRIOR",
+    "sub": "fearless",
+    "hits_air": false,
+    "alliances": [
+      "Ægir",
+      "Durable",
+      "Raid"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> For every 2 units defeated, +1 stack each to active [Ægir], [Durable], and [Raid] Alliances",
+    "promoted_attribute": "<In battle> For every 2 enemies defeated, +2 stacks to active [Ægir], [Durable], and [Raid] Alliances",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Ægir",
+          "Durable",
+          "Raid"
+        ],
+        "per": "2 units defeated"
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Ægir",
+          "Durable",
+          "Raid"
+        ],
+        "per": "2 enemies defeated"
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Snow Hunter",
+    "tier": "III",
+    "cls": "SNIPER",
+    "sub": "hunter",
+    "hits_air": true,
+    "alliances": [
+      "Kjerag",
+      "Precision"
+    ],
+    "role": [
+      "One-Time Stack Bonus"
+    ],
+    "in_game_role": "One-time",
+    "base_attribute": "<When obtained> +5 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "promoted_attribute": "<When obtained> +10 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "stacks": [
+      {
+        "n": 5,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 10,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Swire",
+    "tier": "III",
+    "cls": "WARRIOR",
+    "sub": "instructor",
+    "hits_air": true,
+    "alliances": [
+      "Yan",
+      "Foresight"
+    ],
+    "role": [
+      "Special"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When obtained> Gain 1 'Alliance Coin'",
+    "promoted_attribute": "<When obtained> Gain 2 'Alliance Coins'",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Swire the Elegant Wit",
+    "tier": "III",
+    "cls": "SPECIAL",
+    "sub": "merchant",
+    "hits_air": false,
+    "alliances": [
+      "Yan",
+      "Investor"
+    ],
+    "role": [
+      "Wealth Stacker"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When Rest Phase ends> Obtain 1 extra Funds in next Rest Phase (takes effect when [Yan]/[Investor] is active in Bench)",
+    "promoted_attribute": "<When Rest Phase ends> Obtain 2 extra Funds in next Rest Phase (takes effect when [Yan]/[Investor] is active in Bench)",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Vigil",
+    "tier": "III",
+    "cls": "PIONEER",
+    "sub": "tactician",
+    "hits_air": true,
+    "alliances": [
+      "Siracusa",
+      "Marvel"
+    ],
+    "role": [
+      "Self-Beneficial",
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> Deals Weakness damage (changes damage type to either Physical or Arts depending on the target's DEF and RES); the first 3 enemies defeated grant +2 stacks to active [Siracusa] Alliance and +1 stack to [Marvel] Alliance",
+    "promoted_attribute": "<In battle> Deals Weakness damage (changes damage type to either Physical or Arts depending on the target's DEF and RES); the first 3 enemies defeated grant +4 stacks to active [Siracusa] Alliance and +2 stacks to [Marvel] Alliance",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Siracusa"
+        ]
+      },
+      {
+        "n": 1,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Marvel"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Siracusa"
+        ]
+      },
+      {
+        "n": 2,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Marvel"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Vulpisfoglia",
+    "tier": "III",
+    "cls": "PIONEER",
+    "sub": "pioneer",
+    "hits_air": false,
+    "alliances": [
+      "Siracusa",
+      "Swift"
+    ],
+    "role": [
+      "One-Time Stack Bonus"
+    ],
+    "in_game_role": "One-time",
+    "base_attribute": "<When obtained> +6 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "promoted_attribute": "<When obtained> +12 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "stacks": [
+      {
+        "n": 6,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 12,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Aroma",
+    "tier": "IV",
+    "cls": "CASTER",
+    "sub": "blastcaster",
+    "hits_air": true,
+    "alliances": [
+      "Siracusa",
+      "Arcane"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +2 stacks to active [Siracusa] and [Arcane] Alliances for every refresh done this round (Can stack up to 6x)",
+    "promoted_attribute": "<When Rest Phase ends> +4 stacks to active [Siracusa] and [Arcane] Alliances for every refresh done this round (Can stack up to 12x per round)",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Siracusa",
+          "Arcane"
+        ],
+        "per": "refresh done this round"
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Siracusa",
+          "Arcane"
+        ],
+        "per": "refresh done this round"
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Bagpipe",
+    "tier": "IV",
+    "cls": "PIONEER",
+    "sub": "charger",
+    "hits_air": false,
+    "alliances": [
+      "Victoria",
+      "Foresight",
+      "Resilient"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> The first 3 enemies defeated grant +2 stacks to active [Victoria], [Foresight], and [Resilient] Alliances",
+    "promoted_attribute": "<In battle> The first 3 enemies defeated grant +4 stacks to active [Victoria], [Foresight], and [Resilient] Alliances",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Victoria",
+          "Foresight",
+          "Resilient"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Victoria",
+          "Foresight",
+          "Resilient"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Carnelian",
+    "tier": "IV",
+    "cls": "CASTER",
+    "sub": "phalanx",
+    "hits_air": true,
+    "alliances": [
+      "Sargon",
+      "Aid"
+    ],
+    "role": [
+      "Special"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When obtained> Obtain 1 piece of 'Quick Combat Rations'",
+    "promoted_attribute": "<When obtained> Obtain 2 pieces of 'Quick Combat Rations'",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Catherine",
+    "tier": "IV",
+    "cls": "SUPPORT",
+    "sub": "craftsman",
+    "hits_air": false,
+    "alliances": [
+      "Victoria",
+      "Agile"
+    ],
+    "role": [
+      "Special"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When entering Rest Phase> On odd-numbered rounds, gain 1 random piece of equipment",
+    "promoted_attribute": "<When entering Rest Phase> On odd-numbered rounds, gain 2 random pieces of equipment",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Civilight Eterna",
+    "tier": "IV",
+    "cls": "SUPPORT",
+    "sub": "bard",
+    "hits_air": true,
+    "alliances": [
+      "Assist Operator"
+    ],
+    "role": [
+      "Other Alliance Stacker"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "<In battle> When the Operator in the tile ahead adds stacks from their Attribute, +1 additional stack",
+    "promoted_attribute": "<In battle> When the Operator in front adds stacks from their Attribute, +2 additional stacks",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "ahead"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "ahead"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Fartooth",
+    "tier": "IV",
+    "cls": "SNIPER",
+    "sub": "longrange",
+    "hits_air": true,
+    "alliances": [
+      "Kazimierz",
+      "Precision"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<At the start of battle> Grants '<On deployment> +4 stacks to active [Kazimierz] and [Precision] Alliances (Can stack up to 24x every battle)' to the rightmost Operator deployed in the same row",
+    "promoted_attribute": "<At the start of battle> Grants '<On deployment> +8 stacks to active [Kazimierz] and [Precision] Alliances (Can stack up to 48x every battle)' to the rightmost Operator deployed in the same row",
+    "stacks": [
+      {
+        "n": 4,
+        "trigger": "deploy",
+        "cadence": "battle",
+        "targets": [
+          "Kazimierz",
+          "Precision"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 8,
+        "trigger": "deploy",
+        "cadence": "battle",
+        "targets": [
+          "Kazimierz",
+          "Precision"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Flametail",
+    "tier": "IV",
+    "cls": "PIONEER",
+    "sub": "pioneer",
+    "hits_air": false,
+    "alliances": [
+      "Kazimierz"
+    ],
+    "role": [
+      "Growth"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When obtained> Obtain 1 Wildmane or Ashlock, with a small chance to get Fartooth",
+    "promoted_attribute": "<When obtained> Obtain 2 Wildmane or Ashlock, with a small chance to get Fartooth",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Gavial the Invincible",
+    "tier": "IV",
+    "cls": "WARRIOR",
+    "sub": "centurion",
+    "hits_air": false,
+    "alliances": [
+      "Sargon"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> On skill activation, +9 stacks to active [Sargon] Alliance",
+    "promoted_attribute": "<In battle> On skill activation, +18 stacks to active [Sargon] Alliance",
+    "stacks": [
+      {
+        "n": 9,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Sargon"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 18,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Sargon"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Gladiia",
+    "tier": "IV",
+    "cls": "SPECIAL",
+    "sub": "hookmaster",
+    "hits_air": true,
+    "alliances": [
+      "Ægir"
+    ],
+    "role": [
+      "Growth"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When entering Rest Phase> If there are 3 Operators in the same row, obtain 1 Skadi, Specter, or Underflow",
+    "promoted_attribute": "<When entering Rest Phase> If there are 3 Operators in the same row, obtain 1 Skadi, Specter, or Underflow; repeats 2 times",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Gnosis",
+    "tier": "IV",
+    "cls": "SUPPORT",
+    "sub": "underminer",
+    "hits_air": true,
+    "alliances": [
+      "Kjerag",
+      "Agile"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "One-time",
+    "base_attribute": "<When obtained> +5 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "promoted_attribute": "<When obtained> +10 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "stacks": [
+      {
+        "n": 5,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 10,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Hoshiguma",
+    "tier": "IV",
+    "cls": "TANK",
+    "sub": "protector",
+    "hits_air": false,
+    "alliances": [
+      "Yan"
+    ],
+    "role": [
+      "One-Time Stack Bonus"
+    ],
+    "in_game_role": "One-time",
+    "base_attribute": "<When obtained> +8 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "promoted_attribute": "<When obtained> +16 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "stacks": [
+      {
+        "n": 8,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 16,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Ines",
+    "tier": "IV",
+    "cls": "PIONEER",
+    "sub": "agent",
+    "hits_air": true,
+    "alliances": [
+      "Foresight",
+      "Raid"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +5 stacks to own active Alliance(s)",
+    "promoted_attribute": "<When Rest Phase ends> +10 stacks to own active Alliance(s)",
+    "stacks": [
+      {
+        "n": 5,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 10,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Kroos the Keen Glint",
+    "tier": "IV",
+    "cls": "SNIPER",
+    "sub": "fastshot",
+    "hits_air": true,
+    "alliances": [
+      "Precision"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<At the start of battle> Grants '+1 stack to active [Precision] Alliance on skill activation' to the Operator in the tile ahead (Can stack up to 10x every battle)",
+    "promoted_attribute": "<At the start of battle> Grants '+2 stacks to active [Precision] Alliance on skill activation' to the Operator in the tile ahead (Can stack up to 20x every battle)",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "battle-start",
+        "cadence": "battle",
+        "targets": [
+          "Precision"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "battle-start",
+        "cadence": "battle",
+        "targets": [
+          "Precision"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Leonhardt",
+    "tier": "IV",
+    "cls": "CASTER",
+    "sub": "splashcaster",
+    "hits_air": true,
+    "alliances": [
+      "Swift",
+      "Precision"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +5 stacks to own active Alliance(s)",
+    "promoted_attribute": "<When Rest Phase ends> +10 stacks to own active Alliance(s)",
+    "stacks": [
+      {
+        "n": 5,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 10,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Mizuki",
+    "tier": "IV",
+    "cls": "SPECIAL",
+    "sub": "stalker",
+    "hits_air": true,
+    "alliances": [
+      "Ægir",
+      "Solo"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "For every 3 stacks added to [Ægir] Alliance, this Operator gains +1% ATK",
+    "promoted_attribute": "For every 3 stacks added to [Ægir] Alliance, this Operator gains +2% ATK",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "Ægir"
+    ]
+  },
+  {
+    "operator": "Mostima",
+    "tier": "IV",
+    "cls": "CASTER",
+    "sub": "splashcaster",
+    "hits_air": true,
+    "alliances": [
+      "Laterano",
+      "Arcane"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> Whenever Operators in the 4 adjacent tiles spend 6 bullets, +1 stack to active [Laterano] Alliance",
+    "promoted_attribute": "<In battle> Whenever Operators in the 4 adjacent tiles spend 6 bullets, +2 stacks to active [Laterano] Alliance",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Laterano"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Laterano"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Mudrock",
+    "tier": "IV",
+    "cls": "TANK",
+    "sub": "unyield",
+    "hits_air": false,
+    "alliances": [
+      "Solo"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When sold> Obtain 2 extra Funds next Rest Phase",
+    "promoted_attribute": "<When sold> Obtain 4 extra Funds next Rest Phase",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Ptilopsis",
+    "tier": "IV",
+    "cls": "MEDIC",
+    "sub": "ringhealer",
+    "hits_air": false,
+    "alliances": [
+      "Aid",
+      "Agile"
+    ],
+    "role": [
+      "Repeat"
+    ],
+    "in_game_role": "Specialized",
+    "base_attribute": "If Operator ahead of self has a <When entering Rest Phase> Attribute, this Operator copies it",
+    "promoted_attribute": null,
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Sankta Miksaparato",
+    "tier": "IV",
+    "cls": "TANK",
+    "sub": "shotprotector",
+    "hits_air": true,
+    "alliances": [
+      "Laterano",
+      "Durable"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "For every 3 stacks added to [Laterano] or [Durable] Alliances, this Operator gains +1% DEF",
+    "promoted_attribute": "For every 3 stacks added to [Laterano] or [Durable] Alliances, this Operator gains +2% DEF",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "Laterano",
+      "Durable"
+    ]
+  },
+  {
+    "operator": "SilverAsh",
+    "tier": "IV",
+    "cls": "WARRIOR",
+    "sub": "lord",
+    "hits_air": true,
+    "alliances": [
+      "Kjerag"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> Whenever an enemy within range is Frozen, 50% chance for +1 stack to active [Kjerag] Alliance",
+    "promoted_attribute": "<In battle> Whenever an enemy within range is Frozen, 50% chance for +2 stacks to active [Kjerag] Alliance",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Kjerag"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Kjerag"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Texas the Omertosa",
+    "tier": "IV",
+    "cls": "SPECIAL",
+    "sub": "executor",
+    "hits_air": false,
+    "alliances": [
+      "Siracusa",
+      "Raid"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When entering Rest Phase> Gain 1 free Refresh",
+    "promoted_attribute": "<When entering Rest Phase> Gain 2 free Refreshes",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Warfarin",
+    "tier": "IV",
+    "cls": "MEDIC",
+    "sub": "physician",
+    "hits_air": false,
+    "alliances": [
+      "Marvel"
+    ],
+    "role": [
+      "Other Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<At the start of battle> Grants '+1 stack to own active Alliance(s) on skill activation' to the Operator in the tile ahead (Can stack up to 7x every battle)",
+    "promoted_attribute": "<At the start of battle> Grants '+2 stacks to own active Alliance(s) on skill activation' to the Operator in the tile ahead (Can stack up to 14x every battle)",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "battle-start",
+        "cadence": "battle",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "battle-start",
+        "cadence": "battle",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Angelina",
+    "tier": "V",
+    "cls": "SUPPORT",
+    "sub": "slower",
+    "hits_air": true,
+    "alliances": [
+      "Siracusa",
+      "Marvel"
+    ],
+    "role": [
+      "One-Time Stack Bonus"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +4 stacks to active [Siracusa] Alliance for every refresh done this round (Can stack up to 12x per round)",
+    "promoted_attribute": "<When Rest Phase ends> +8 stacks to active [Siracusa] Alliance for every refresh done this round (Can stack up to 24x per round)",
+    "stacks": [
+      {
+        "n": 4,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Siracusa"
+        ],
+        "per": "refresh done this round"
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 8,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Siracusa"
+        ],
+        "per": "refresh done this round"
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Blaze the Igniting Spark",
+    "tier": "V",
+    "cls": "CASTER",
+    "sub": "primcaster",
+    "hits_air": true,
+    "alliances": [
+      "Victoria",
+      "Yan"
+    ],
+    "role": [
+      "One-Time Stack Bonus"
+    ],
+    "in_game_role": "One-time",
+    "base_attribute": "<When obtained> +5 stacks to [Yan] and [Victoria] Alliances (Alliances do not need to be active)",
+    "promoted_attribute": "<When obtained> +10 stacks to [Yan] and [Victoria] Alliances (Alliances do not need to be active)",
+    "stacks": [
+      {
+        "n": 5,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "Yan",
+          "Victoria"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 10,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "Yan",
+          "Victoria"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Dusk",
+    "tier": "V",
+    "cls": "CASTER",
+    "sub": "splashcaster",
+    "hits_air": true,
+    "alliances": [
+      "Yan",
+      "Arcane"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +2 stacks to active [Yan] and [Arcane] Alliances for every Operator obtained during this Rest Phase",
+    "promoted_attribute": "<When Rest Phase ends> +4 stacks to active [Yan] and [Arcane] Alliances for every Operator obtained during this Rest Phase",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Yan",
+          "Arcane"
+        ],
+        "per": "Operator obtained during this Rest Phase"
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Yan",
+          "Arcane"
+        ],
+        "per": "Operator obtained during this Rest Phase"
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Entelechia",
+    "tier": "V",
+    "cls": "WARRIOR",
+    "sub": "reaper",
+    "hits_air": false,
+    "alliances": [
+      "Resilient",
+      "Agile"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "For every 3 stacks added to Core Alliances, this Operator gains +1% ATK and HP",
+    "promoted_attribute": "For every 3 stacks added to Core Alliances, this Operator gains +2% ATK and HP",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "core"
+    ]
+  },
+  {
+    "operator": "Executor the Ex Foedere",
+    "tier": "V",
+    "cls": "WARRIOR",
+    "sub": "reaper",
+    "hits_air": false,
+    "alliances": [
+      "Laterano",
+      "Foresight"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> Whenever this Operator spends 7 bullets, +7 [Laterano] and +3 [Foresight] stacks if Alliances are active, can trigger up to 7 times per battle for each effect\n<In battle> Whenever this Operator spends 7 bullets, +7 [Laterano] and +3 [Foresight] Alliances if Alliances are active ([Foresight] can stack up to 21x every battle)",
+    "promoted_attribute": "<In battle> Whenever this Operator spends 7 bullets, +14 [Laterano] and +6 [Foresight] stacks if Alliances are active (Can stack up to 7x every battle)\n<In battle> Whenever this Operator spends 7 bullets, +14 [Laterano] and +6 [Foresight] Alliances if Alliances are active ([Foresight] can stack up to 42x every battle)",
+    "stacks": [
+      {
+        "n": 7,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Laterano"
+        ]
+      },
+      {
+        "n": 3,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Foresight"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 14,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Laterano"
+        ]
+      },
+      {
+        "n": 6,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Foresight"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Horn",
+    "tier": "V",
+    "cls": "TANK",
+    "sub": "fortress",
+    "hits_air": false,
+    "alliances": [
+      "Victoria"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +2 stacks to the most stacked active Alliance for every member Operator of a different Tier on the field",
+    "promoted_attribute": "<When Rest Phase ends> +4 stacks to the most stacked active Alliance for every member Operator of a different Tier on the field",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "most-stacked"
+        ],
+        "per": "member Operator of a different Tier on the field"
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "most-stacked"
+        ],
+        "per": "member Operator of a different Tier on the field"
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Młynar",
+    "tier": "V",
+    "cls": "WARRIOR",
+    "sub": "librator",
+    "hits_air": false,
+    "alliances": [
+      "Kazimierz"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "For every 5 stacks added to [Kazimierz] Alliance, this Operator gains +10 base ATK and +50 base HP for 100 seconds",
+    "promoted_attribute": "For every 5 stacks added to [Kazimierz] Alliance, this Operator gains +20 base ATK and +100 base HP for 100 seconds",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "Kazimierz"
+    ]
+  },
+  {
+    "operator": "Mountain",
+    "tier": "V",
+    "cls": "WARRIOR",
+    "sub": "fighter",
+    "hits_air": false,
+    "alliances": [
+      "Investor"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +1 stack to active [Investor] Alliance for every Operator obtained this round",
+    "promoted_attribute": "<When Rest Phase ends> +2 stacks to active [Investor] Alliance for every Operator obtained this round",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Investor"
+        ],
+        "per": "Operator obtained this round"
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Investor"
+        ],
+        "per": "Operator obtained this round"
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Nymph",
+    "tier": "V",
+    "cls": "CASTER",
+    "sub": "primcaster",
+    "hits_air": true,
+    "alliances": [
+      "Swift"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +2 stacks to active [Swift] Alliance for every Operator on Bench",
+    "promoted_attribute": "<When Rest Phase ends> +4 stacks to active [Swift] Alliance for every Operator on Bench",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Swift"
+        ],
+        "per": "Operator on Bench"
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Swift"
+        ],
+        "per": "Operator on Bench"
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Record Keeper",
+    "tier": "V",
+    "cls": "MEDIC",
+    "sub": "physician",
+    "hits_air": false,
+    "alliances": [
+      "Yan",
+      "Marvel"
+    ],
+    "role": [
+      "One-Time Stack Bonus"
+    ],
+    "in_game_role": "One-time",
+    "base_attribute": "<When obtained> +6 stacks to [Yan] Alliance and +3 stacks to [Marvel] Alliance (Alliances do not need to be active)",
+    "promoted_attribute": "<When obtained> +12 stacks to [Yan] Alliance and +6 stacks to [Marvel] Alliance (Alliances do not need to be active)",
+    "stacks": [
+      {
+        "n": 6,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "Yan"
+        ]
+      },
+      {
+        "n": 3,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "Marvel"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 12,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "Yan"
+        ]
+      },
+      {
+        "n": 6,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "Marvel"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Santalla",
+    "tier": "V",
+    "cls": "CASTER",
+    "sub": "splashcaster",
+    "hits_air": true,
+    "alliances": [
+      "Foresight"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When entering Rest Phase> <When Rest Phase ends> +4 stacks to active [Foresight] Alliance",
+    "promoted_attribute": "<When entering Rest Phase> <When Rest Phase ends> +8 stacks to active [Foresight] Alliance",
+    "stacks": [
+      {
+        "n": 4,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Foresight"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 8,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Foresight"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Saria",
+    "tier": "V",
+    "cls": "TANK",
+    "sub": "guardian",
+    "hits_air": false,
+    "alliances": [
+      "Durable",
+      "Solo"
+    ],
+    "role": [
+      "Repeat"
+    ],
+    "in_game_role": "Specialized",
+    "base_attribute": "If Operator ahead of self has a <When Rest Phase ends> Attribute, this Operator copies it",
+    "promoted_attribute": null,
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "SilverAsh the Reignfrost",
+    "tier": "V",
+    "cls": "PIONEER",
+    "sub": "counsellor",
+    "hits_air": false,
+    "alliances": [
+      "Kjerag",
+      "Investor",
+      "Swift"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<At the start of battle> Grants 'Whenever an enemy within range is Frozen, 60% chance for +1 stack to active [Kjerag] Alliance' to the [Kjerag] Alliance Operator on the tile ahead",
+    "promoted_attribute": "<At the start of battle> Grants 'Whenever an enemy within range is Frozen, 60% chance for +2 stacks to active [Kjerag] Alliance' to the [Kjerag] Alliance Operator on the tile ahead",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "battle-start",
+        "cadence": "battle",
+        "targets": [
+          "Kjerag"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "battle-start",
+        "cadence": "battle",
+        "targets": [
+          "Kjerag"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Specter the Unchained",
+    "tier": "V",
+    "cls": "SPECIAL",
+    "sub": "dollkeeper",
+    "hits_air": false,
+    "alliances": [
+      "Ægir",
+      "Resilient"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> When defeated or switched to Substitute, +5 [Ægir] and [Resilient] stacks if Alliances are active",
+    "promoted_attribute": "<In battle> When defeated or switched to Substitute, +10 [Ægir] and [Resilient] stacks if Alliances are active",
+    "stacks": [
+      {
+        "n": 5,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Ægir"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 10,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Ægir"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Surtr",
+    "tier": "V",
+    "cls": "WARRIOR",
+    "sub": "artsfghter",
+    "hits_air": false,
+    "alliances": [
+      "Raid",
+      "Arcane"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<On deployment> +8 stacks to active [Raid] Alliance (Can stack up to 50x every battle)",
+    "promoted_attribute": "<On deployment> +16 stacks to active [Raid] Alliance (Can stack up to 100x every battle)",
+    "stacks": [
+      {
+        "n": 8,
+        "trigger": "deploy",
+        "cadence": "battle",
+        "targets": [
+          "Raid"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 16,
+        "trigger": "deploy",
+        "cadence": "battle",
+        "targets": [
+          "Raid"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Suzuran",
+    "tier": "V",
+    "cls": "SUPPORT",
+    "sub": "slower",
+    "hits_air": true,
+    "alliances": [
+      "Siracusa",
+      "Assist Operator"
+    ],
+    "role": [
+      "Repeat"
+    ],
+    "in_game_role": "Specialized",
+    "base_attribute": "<When entering Rest Phase> Trigger the 'When obtained' Attribute of the Operator in the tile ahead",
+    "promoted_attribute": "<When entering Rest Phase> Trigger the 'When obtained' Attributes of Operators two tiles ahead of self",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Thorns the Lodestar",
+    "tier": "V",
+    "cls": "SPECIAL",
+    "sub": "alchemist",
+    "hits_air": true,
+    "alliances": [
+      "Swift",
+      "Marvel"
+    ],
+    "role": [
+      "Self Alliance Stacker",
+      "Other Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +4 stacks each to active Alliance(s) of self and of the Operator 1 tile ahead",
+    "promoted_attribute": "<When Rest Phase ends> +8 stacks each to active Alliance(s) of self and of the Operator 1 tile ahead",
+    "stacks": [
+      {
+        "n": 4,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "own",
+          "ahead"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 8,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "own",
+          "ahead"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Titi",
+    "tier": "V",
+    "cls": "MEDIC",
+    "sub": "incantationmedic",
+    "hits_air": false,
+    "alliances": [
+      "Sargon",
+      "Precision"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> When a unit or enemy within Attack Range is inflicted with Sleep or Stun, +1 stack to active [Sargon] and [Precision] Alliances (Can stack up to 24x every battle)",
+    "promoted_attribute": "<In battle> When a unit or enemy within Attack Range is inflicted with Sleep or Stun, +2 stacks to active [Sargon] and [Precision] Alliances (Can stack up to 48x every battle)",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Sargon",
+          "Precision"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Sargon",
+          "Precision"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Ulpianus",
+    "tier": "V",
+    "cls": "WARRIOR",
+    "sub": "crusher",
+    "hits_air": false,
+    "alliances": [
+      "Ægir"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "For every 2 stacks added to [Ægir] Alliance, this Operator gains +1% ATK",
+    "promoted_attribute": "For every 2 stacks added to [Ægir] Alliance, this Operator gains +2% ATK",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "Ægir"
+    ]
+  },
+  {
+    "operator": "Astgenne the Lightchaser",
+    "tier": "VI",
+    "cls": "SUPPORT",
+    "sub": "slower",
+    "hits_air": true,
+    "alliances": [
+      "Arcane",
+      "Agile"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +2 stacks to active [Agile] and [Arcane] Alliances for every 3 Funds spent this round",
+    "promoted_attribute": "<When Rest Phase ends> +4 stacks to active [Agile] and [Arcane] Alliances for every 3 Funds spent this round",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Agile",
+          "Arcane"
+        ],
+        "per": "3 Funds spent this round"
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Agile",
+          "Arcane"
+        ],
+        "per": "3 Funds spent this round"
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Degenbrecher",
+    "tier": "VI",
+    "cls": "WARRIOR",
+    "sub": "sword",
+    "hits_air": false,
+    "alliances": [
+      "Kjerag",
+      "Kazimierz",
+      "Swift"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<On deployment> +8 stacks to own active Alliance(s) on skill activation (Can stack up to 24x)\n<When obtained> +8 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "promoted_attribute": "<On deployment> +16 stacks to own active Alliance(s) on skill activation (Can stack up to 48x)\n<When obtained> +16 stacks to own Alliance(s) (Alliances do not need to be active)",
+    "stacks": [
+      {
+        "n": 8,
+        "trigger": "deploy",
+        "cadence": "battle",
+        "targets": [
+          "own"
+        ]
+      },
+      {
+        "n": 8,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 16,
+        "trigger": "deploy",
+        "cadence": "battle",
+        "targets": [
+          "own"
+        ]
+      },
+      {
+        "n": 16,
+        "trigger": "obtained",
+        "cadence": "once",
+        "targets": [
+          "own"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Exusiai the New Covenant",
+    "tier": "VI",
+    "cls": "SPECIAL",
+    "sub": "geek",
+    "hits_air": true,
+    "alliances": [
+      "Laterano"
+    ],
+    "role": [
+      "One-Time Wealth Bonus"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When obtained> Obtain 2 extra Funds next Rest Phase",
+    "promoted_attribute": "<When obtained> Obtain 4 extra Funds next Rest Phase",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Eyjafjalla the Hvít Aska",
+    "tier": "VI",
+    "cls": "MEDIC",
+    "sub": "wandermedic",
+    "hits_air": false,
+    "alliances": [
+      "Aid"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> On skill activation, +3 stacks to the most stacked active Alliance",
+    "promoted_attribute": "<In battle> On skill activation, +6 stacks to the most stacked active Alliance",
+    "stacks": [
+      {
+        "n": 3,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "most-stacked"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 6,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "most-stacked"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Lappland the Decadenza",
+    "tier": "VI",
+    "cls": "CASTER",
+    "sub": "funnel",
+    "hits_air": true,
+    "alliances": [
+      "Siracusa"
+    ],
+    "role": [
+      "Self Alliance Stacker",
+      "Other Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> +2 stacks to active [Siracusa] Alliance when an enemy is defeated\nWhen Lappland the Decadenza is promoted to an Elite Operator, all [Siracusa] Alliance Operators gain the effect",
+    "promoted_attribute": "<At the start of battle> Grants '+2 stacks to active [Siracusa] Alliance when this Operator defeats an enemy' to all [Siracusa] Alliance Operators",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Siracusa"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "battle-start",
+        "cadence": "battle",
+        "targets": [
+          "Siracusa"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Lemuen",
+    "tier": "VI",
+    "cls": "SNIPER",
+    "sub": "longrange",
+    "hits_air": true,
+    "alliances": [
+      "Laterano",
+      "Precision"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> Whenever this Operator spends 10 bullets with 3 Operators in the same row, +2 [Laterano] and [Precision] stacks if Alliances are active",
+    "promoted_attribute": "<In battle> Whenever this Operator spends 10 bullets while there are 3 Operators in the same row, +4 [Laterano] and [Precision] stacks if Alliances are active",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Laterano"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "Laterano"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Lumen",
+    "tier": "VI",
+    "cls": "MEDIC",
+    "sub": "healer",
+    "hits_air": false,
+    "alliances": [
+      "Aid"
+    ],
+    "role": [
+      "Other Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +2 stacks each to active Alliances of all Operators on Bench",
+    "promoted_attribute": "<When Rest Phase ends> +4 stacks each to active Alliances of all Operators on Bench",
+    "stacks": [
+      {
+        "n": 2,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "bench"
+        ]
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 4,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "bench"
+        ]
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Muelsyse",
+    "tier": "VI",
+    "cls": "PIONEER",
+    "sub": "tactician",
+    "hits_air": true,
+    "alliances": [
+      "Harmony"
+    ],
+    "role": [
+      "Special"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When obtained> Gain 1 piece of 'Damazti Isomorph'",
+    "promoted_attribute": "<When obtained> Gain 2 pieces of 'Damazti Isomorph'",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Nearl the Radiant Knight",
+    "tier": "VI",
+    "cls": "WARRIOR",
+    "sub": "fearless",
+    "hits_air": false,
+    "alliances": [
+      "Kazimierz",
+      "Raid"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<At the start of battle> Grants self and Operator on the tile ahead 'For every 3 stacks added to [Kazimierz] Alliance, this Operator has -1.5% Redeployment Time and +0.5 ASPD'\nFor every 3 stacks added to [Kazimierz] Alliance, this Operator gains +0.5 ASPD",
+    "promoted_attribute": "<At the start of battle> Grants self and Operator on the tile ahead 'For every 3 stacks added to [Kazimierz] Alliance, this Operator has -3% Redeployment Time and +1 ASPD'\nFor every 3 stacks added to [Kazimierz] Alliance, this Operator gains +1 ASPD",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "Kazimierz"
+    ]
+  },
+  {
+    "operator": "Passenger",
+    "tier": "VI",
+    "cls": "CASTER",
+    "sub": "chain",
+    "hits_air": true,
+    "alliances": [
+      "Sargon",
+      "Swift",
+      "Precision"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "For every 3 stacks added to [Sargon], [Swift] or [Precision] Alliances, this Operator gains +2% ATK",
+    "promoted_attribute": "For every 3 stacks added to [Sargon], [Swift] or [Precision] Alliances, this Operator gains +4% ATK",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "Sargon"
+    ]
+  },
+  {
+    "operator": "Pepe",
+    "tier": "VI",
+    "cls": "WARRIOR",
+    "sub": "hammer",
+    "hits_air": false,
+    "alliances": [
+      "Sargon",
+      "Resilient"
+    ],
+    "role": [
+      "Special"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When entering Rest Phase> Obtain 1 Alliance Coin or Sargon Teaspresso, with a small chance to find Desert Compass",
+    "promoted_attribute": "<When entering Rest Phase> Obtain 2 Alliance Coins or Sargon Teaspressos, with a small chance to find Desert Compasses",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  },
+  {
+    "operator": "Pramanix the Prerita",
+    "tier": "VI",
+    "cls": "CASTER",
+    "sub": "phalanx",
+    "hits_air": true,
+    "alliances": [
+      "Kjerag",
+      "Arcane"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "For every 3 stacks added to [Kjerag] or [Arcane] Alliances, this Operator gains +1% ATK",
+    "promoted_attribute": "For every 3 stacks added to [Kjerag] or [Arcane] Alliances, this Operator gains +2% ATK",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "Kjerag",
+      "Arcane"
+    ]
+  },
+  {
+    "operator": "Qiubai",
+    "tier": "VI",
+    "cls": "WARRIOR",
+    "sub": "lord",
+    "hits_air": true,
+    "alliances": [
+      "Yan",
+      "Raid"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "For every 3 stacks added to [Yan] or [Raid] Alliances, this Operator deals extra +1% ATK of damage to enemies inflicted with Bind and Slow",
+    "promoted_attribute": "For every 3 stacks added to [Yan] or [Raid] Alliances, this Operator deals extra 2% ATK of damage to enemies inflicted with Bind and Slow",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "Yan",
+      "Raid"
+    ]
+  },
+  {
+    "operator": "Reed the Flame Shadow",
+    "tier": "VI",
+    "cls": "MEDIC",
+    "sub": "incantationmedic",
+    "hits_air": false,
+    "alliances": [
+      "Victoria",
+      "Precision"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "For every 3 stacks added to [Victoria] Alliance, this Operator gains +1 ASPD",
+    "promoted_attribute": "For every 3 stacks added to [Victoria] Alliance, this Operator gains +2 ASPD",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "Victoria"
+    ]
+  },
+  {
+    "operator": "Rosmontis",
+    "tier": "VI",
+    "cls": "SNIPER",
+    "sub": "bombarder",
+    "hits_air": true,
+    "alliances": [
+      "Precision",
+      "Foresight",
+      "Assist Operator"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "+20% ATK and HP; for every 3 stacks added to Core Alliances, this Operator gains +1% ATK and HP",
+    "promoted_attribute": "+40% ATK and HP; for every 3 stacks added to Core Alliances, this Operator gains +2% ATK and HP",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "core"
+    ]
+  },
+  {
+    "operator": "Skadi the Corrupting Heart",
+    "tier": "VI",
+    "cls": "SUPPORT",
+    "sub": "bard",
+    "hits_air": true,
+    "alliances": [
+      "Ægir"
+    ],
+    "role": [
+      "Self-Beneficial"
+    ],
+    "in_game_role": "Combat",
+    "base_attribute": "For every 10 stacks added to [Ægir] Alliance, this Operator recovers 50 HP/s and gains +0.15/s SP recovery rate",
+    "promoted_attribute": "For every 10 stacks added to [Ægir] Alliance, this Operator recovers 100 HP/s and +0.3/s SP recovery rate",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": [
+      "Ægir"
+    ]
+  },
+  {
+    "operator": "Vina Victoria",
+    "tier": "VI",
+    "cls": "WARRIOR",
+    "sub": "artsfghter",
+    "hits_air": false,
+    "alliances": [
+      "Victoria",
+      "Marvel"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<When Rest Phase ends> +3/+2 stacks respectively to active [Victoria]/[Marvel] Alliances for every [Victoria]/[Marvel] Operator of a different Tier on the field",
+    "promoted_attribute": "<When Rest Phase ends> +6/+4 stacks respectively to active [Victoria]/[Marvel] Alliances for every [Victoria]/[Marvel] Operator of a different Tier on the field",
+    "stacks": [
+      {
+        "n": 3,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Victoria"
+        ],
+        "per": "[Victoria]/[Marvel] Operator of a different Tier on the field"
+      },
+      {
+        "n": 2,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Marvel"
+        ],
+        "per": "[Victoria]/[Marvel] Operator of a different Tier on the field"
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 6,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Victoria"
+        ],
+        "per": "[Victoria]/[Marvel] Operator of a different Tier on the field"
+      },
+      {
+        "n": 4,
+        "trigger": "rest-end",
+        "cadence": "round",
+        "targets": [
+          "Marvel"
+        ],
+        "per": "[Victoria]/[Marvel] Operator of a different Tier on the field"
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Virtuosa",
+    "tier": "VI",
+    "cls": "SUPPORT",
+    "sub": "ritualist",
+    "hits_air": true,
+    "alliances": [
+      "Laterano"
+    ],
+    "role": [
+      "Self Alliance Stacker"
+    ],
+    "in_game_role": "Can stack",
+    "base_attribute": "<In battle> On skill activation, +1 stack to the most stacked active Alliance for every Operator in the same row (Can stack up to 10x every battle)",
+    "promoted_attribute": "<In battle> On skill activation, +2 stacks to the most stacked active Alliance for every Operator in the same row (Can stack up to 20x every battle)",
+    "stacks": [
+      {
+        "n": 1,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "most-stacked"
+        ],
+        "per": "Operator in the same row"
+      }
+    ],
+    "stacks_promoted": [
+      {
+        "n": 2,
+        "trigger": "battle",
+        "cadence": "battle",
+        "targets": [
+          "most-stacked"
+        ],
+        "per": "Operator in the same row"
+      }
+    ],
+    "spends": []
+  },
+  {
+    "operator": "Yu",
+    "tier": "VI",
+    "cls": "TANK",
+    "sub": "primprotector",
+    "hits_air": false,
+    "alliances": [
+      "Yan",
+      "Durable"
+    ],
+    "role": [
+      "Growth"
+    ],
+    "in_game_role": "Prep",
+    "base_attribute": "<When entering Rest Phase> If there are 3 Operators in the same row, obtain 1 random Operator from the Alliance with most members in your current squad",
+    "promoted_attribute": "<When entering Rest Phase> Obtain 1 random Operator from the Alliance with most members in your current squad",
+    "stacks": [],
+    "stacks_promoted": [],
+    "spends": []
+  }
+]

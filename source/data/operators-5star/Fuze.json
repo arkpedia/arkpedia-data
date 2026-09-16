@@ -1,0 +1,757 @@
+{
+  "name": "Fuze",
+  "rarity": 5,
+  "class": "Guard",
+  "branch": "Centurion",
+  "faction": "Team Rainbow",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "AoE",
+    "Survival"
+  ],
+  "trait": "Attacks all blocked enemies [ note 1 ]",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Limited Welfare",
+      "Unlock Location": "Operation Lucent Arrowhead"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4126_fuze",
+  "otherLanguages": {
+    "Simplified Chinese": "导火索",
+    "Traditional Chinese": "導火索",
+    "Japanese": "フューズ",
+    "Korean": "퓨즈"
+  },
+  "characterInfo": {
+    "File no.": "RS08",
+    "Operator Record": "Waking From A Dream",
+    "Illustrator": "Ubisoft",
+    "Release Date": "2024/09/05",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "English": "Gabriel Furman"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "Unknown",
+    "Place of Birth": "Unknown",
+    "Date of Birth": "October 12th",
+    "Race": "Unknown",
+    "Height": "180 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Normal",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "■■"
+  },
+  "talents": [
+    {
+      "name": "Ballistic Shield",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Gains 17% ranged Physical resist"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Gains 20% (+3%) ranged Physical resist"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Gains 27% ranged Physical resist"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Gains 30% (+3%) ranged Physical resist"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Ballistic Shield"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Fuze's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Ballistic Shield .",
+        "New skill: Cluster Charge ."
+      ],
+      "prerequisite": "Raise Fuze to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Block +1 .",
+        "Ballistic Shield improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Fuze to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Guard Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Incandescent Alloy Block",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar Pack",
+          "quantity": 16
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Force Recon",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "Toggled",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack range +1 , ATK +10% , ASPD +60 Skill activation grants 100 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 15,
+            "spCost": 55,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack range +1 , ATK +11% , ASPD +60 Skill activation grants 100 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 15,
+            "spCost": 54,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack range +1 , ATK +12% , ASPD +60 Skill activation grants 100 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 15,
+            "spCost": 53,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack range +1 , ATK +13% , ASPD +70 Skill activation grants 100 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 18,
+            "spCost": 52,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack range +1 , ATK +14% , ASPD +70 Skill activation grants 100 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 18,
+            "spCost": 51,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack range +1 , ATK +15% , ASPD +70 Skill activation grants 100 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 18,
+            "spCost": 50,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack range +1 , ATK +17% , ASPD +75 Skill activation grants 100 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 21,
+            "spCost": 49,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack range +1 , ATK +22% , ASPD +80 Skill activation grants 100 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 22,
+            "spCost": 48,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack range +1 , ATK +25% , ASPD +85 Skill activation grants 100 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 23,
+            "spCost": 47,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack range +1 , ATK +30% , ASPD +90 Skill activation grants 100 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 25,
+            "spCost": 45,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-12",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Cluster Charge",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Upon skill activation, places a Cluster Charge on the high-ground tile in front, causing 5 explosions on the passable tile behind it; Each explosion deals 380% of ATK as Physical damage to surrounding targets. Skill can only be used when this unit is facing a high-ground tile with a passable tile behind it; Can only be used 3 times per deployment",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Upon skill activation, places a Cluster Charge on the high-ground tile in front, causing 5 explosions on the passable tile behind it; Each explosion deals 390% of ATK as Physical damage to surrounding targets. Skill can only be used when this unit is facing a high-ground tile with a passable tile behind it; Can only be used 3 times per deployment",
+            "initialSp": 10,
+            "spCost": 39,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Upon skill activation, places a Cluster Charge on the high-ground tile in front, causing 5 explosions on the passable tile behind it; Each explosion deals 400% of ATK as Physical damage to surrounding targets. Skill can only be used when this unit is facing a high-ground tile with a passable tile behind it; Can only be used 3 times per deployment",
+            "initialSp": 10,
+            "spCost": 38,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Upon skill activation, places a Cluster Charge on the high-ground tile in front, causing 5 explosions on the passable tile behind it; Each explosion deals 410% of ATK as Physical damage to surrounding targets. Skill can only be used when this unit is facing a high-ground tile with a passable tile behind it; Can only be used 3 times per deployment",
+            "initialSp": 13,
+            "spCost": 37,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Upon skill activation, places a Cluster Charge on the high-ground tile in front, causing 5 explosions on the passable tile behind it; Each explosion deals 420% of ATK as Physical damage to surrounding targets. Skill can only be used when this unit is facing a high-ground tile with a passable tile behind it; Can only be used 3 times per deployment",
+            "initialSp": 13,
+            "spCost": 36,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Upon skill activation, places a Cluster Charge on the high-ground tile in front, causing 5 explosions on the passable tile behind it; Each explosion deals 430% of ATK as Physical damage to surrounding targets. Skill can only be used when this unit is facing a high-ground tile with a passable tile behind it; Can only be used 3 times per deployment",
+            "initialSp": 13,
+            "spCost": 35,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Upon skill activation, places a Cluster Charge on the high-ground tile in front, causing 5 explosions on the passable tile behind it; Each explosion deals 440% of ATK as Physical damage to surrounding targets. Skill can only be used when this unit is facing a high-ground tile with a passable tile behind it; Can only be used 3 times per deployment",
+            "initialSp": 16,
+            "spCost": 34,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Upon skill activation, places a Cluster Charge on the high-ground tile in front, causing 5 explosions on the passable tile behind it; Each explosion deals 450% of ATK as Physical damage to surrounding targets. Skill can only be used when this unit is facing a high-ground tile with a passable tile behind it; Can only be used 3 times per deployment",
+            "initialSp": 17,
+            "spCost": 33,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Upon skill activation, places a Cluster Charge on the high-ground tile in front, causing 5 explosions on the passable tile behind it; Each explosion deals 460% of ATK as Physical damage to surrounding targets. Skill can only be used when this unit is facing a high-ground tile with a passable tile behind it; Can only be used 3 times per deployment",
+            "initialSp": 18,
+            "spCost": 32,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Upon skill activation, places a Cluster Charge on the high-ground tile in front, causing 5 explosions on the passable tile behind it; Each explosion deals 480% of ATK as Physical damage to surrounding targets. Skill can only be used when this unit is facing a high-ground tile with a passable tile behind it; Can only be used 3 times per deployment",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 3
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 3
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 4
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "AOE Nuke",
+            "description": "Group enemies closely together to deal maximum big damage at first hit"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 6
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 5
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 3
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Tactic Guidance: Offense",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed +10% for each Operator in the Base (excluding Assistants and Activity Room users, caps at 4 Operators)"
+    },
+    {
+      "name": "Silent and Hardworking",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, Productivity +20% ; for every 1 Ursus Specialty Beverage , capacity limit +2"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Fuze's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "CEN-Y: Sublinguistical Sign Showing System",
+      "mission": {
+        "requirement1": "Deal a total of 80,000 damage with Fuze (excluding Support Units)",
+        "requirement2": "Clear Main Theme 3-1 with a 3-star rating; You must deploy your own Fuze, and have Fuze defeat at least 30 enemies"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +100 , ATK +50",
+          "effectLabel": "Trait improved",
+          "effectText": "While above 50% HP, reduces the amount of Physical damage taken by 20%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +150 , ATK +60",
+          "effectLabel": "Ballistic Shield improved",
+          "effectText": "Gains 30% ranged Physical resist , +3% DEF",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +180 , ATK +70",
+          "effectLabel": "Ballistic Shield improved",
+          "effectText": "Gains 32% ranged Physical resist, +6% DEF",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "The introverted and quiet Fuze is a talented and experienced engineer.\nHis signature gear is the\nAPM-6 \"Matryoshka\" Cluster Bomb\n, which causes a large area explosion. As a weapon that does not distinguish between friend and foe, the application of the Cluster Charge is limited by many factors, but there is no substitute for its impact and ability to clear out enclosed spaces.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1213,
+          "atk": 321,
+          "def": 122,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 21,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1556,
+          "atk": 446,
+          "def": 175,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 21,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1556,
+          "atk": 446,
+          "def": 175,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 23,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1995,
+          "atk": 604,
+          "def": 237,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 23,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1995,
+          "atk": 604,
+          "def": 237,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 25,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2660,
+          "atk": 795,
+          "def": 290,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 25,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 40,
+      "def": 40
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nFuze shows no sign of Originium infection.\n\n[Blood Originium-Crystal Density] Undisclosed\nThe Medical Department has agreed not to disclose the relevant data."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Shuhrat 'Fuze' Kessikbayev is a member of Team Rainbow. He was involved in the Krysztauowa Incident and became an associate of Rhodes Island following the conclusion of that incident.\nThe expert engineer is a man of few words, who excels at using explosives to achieve tactical goals. He demonstrated high anti-personnel and anti-materiel performance, as well as considerable combat experience.\nIt is worth mentioning that Team Rainbow members are only working with us temporarily. They are not formally employed by Rhodes Island, and with how much they have on their hands, it would not be advisable to call on their help too often."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Just because Fuze doesn't like to talk doesn't mean he's not thinking. He is in fact a quick and flexible thinker, who is not afraid to voice his opinions in tactical meetings. His taciturn nature and tendency toward unexpected action can lead to misunderstandings in certain cases, however.\nWhile the members of Team Rainbow are used to Fuze's personality, we should take it into account when assigning Fuze alongside other Rhodes Island operators, in particular encouraging them to communicate with him. He may be silent as a lump of iron, but it is a lump of iron that surges with the currents of inspiration, waiting for the opportunity to spark into action."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Fuze is an expert at creating chaos, and with it, opportunity. Although Team Rainbow has faced more than their usual share of chaos lately, he has remained his quiet and reliable self.\nSeeing a two meter-tall Forte use a hammer to smash through a wall that he had planned to blast open seems to have dealt a small blow to his self-confidence, though the rest of his teammates may see it as a 'necessary adjustment', particularly those like Ash who established contact with Rhodes Island earlier. They say it's something that will pass, perhaps even inspire Fuze to new inventions."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Fuze's quiet nature could not hide his interest in the Engineering Department. He applied for and was granted his own workshop, in which he spends most of his time at Rhodes Island, maintaining and testing his weapons and those of his teammates.\nIn one incident, Fuze rescued a twelve year-old Infected boy and brought him to Rhodes Island. Having witnessed the Cluster Charge in action, the boy was fascinated, and wanted to trade his doll for a Matryoshka.\nFuze spent an afternoon in the workshop, and emerged with what looked like an ordinary wooden doll.\nThe boy looked disappointed, until Fuze pressed a button in the same way that he would activate a Cluster Charge, and the wooden doll flew apart, leaving behind one that was identical, but smaller. And again. And again.\nThe boy was overjoyed at the imitation, but Fuze patted his head and told him that it was no imitation; this, he said, was the true 'Matryoshka'."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "[Classified Log]\nThe principles of the Cluster Charge are simple: Set it on the wall, drill through it, then launch the explosives one by one. It's not at all hard to understand.\nIn practice, however, there is no shortage of obstacles. Originium explosives of equal mass simply do not have the same destructive power. Drilling through a wall is easier said than done, as I already learned when working with Ash, while the Cluster Charge also works very differently from Breaching Rounds. But the hardest part was launching the explosives one by one: how do you ensure that the Originium explosives do not detonate too early or too late? It's about as easy as running 5km through the Infy Icefield naked.\nThe more I deal with Fuze, the more curious I get about what's in his head, especially when he quickly comes up with solutions for something that you've been banging your head against for a long time. At least Closure doesn't give you that sense of inferiority, even if she does nag.\nAnd then he comes to me asking how a simple Originium-powered hand-warmer works. We're even now!"
+    }
+  ]
+}

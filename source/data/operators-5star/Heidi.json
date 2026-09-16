@@ -1,0 +1,773 @@
+{
+  "name": "Heidi",
+  "rarity": 5,
+  "class": "Supporter",
+  "branch": "Bard",
+  "faction": "Victoria",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Support",
+    "Healing"
+  ],
+  "trait": "Does not attack but continuously restores the HP of all allies within range (the HP restored per second is equal to 10% of self ATK). Self is unaffected by Inspiration",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Main Story Unlock",
+      "Unlock Location": "Shatterpoint"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "A Thousand Correspondences"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4045_heidi",
+  "otherLanguages": {
+    "Chinese": "海蒂",
+    "Japanese": "ハイディ",
+    "Korean": "하이디"
+  },
+  "characterInfo": {
+    "File no.": "VC19",
+    "Operator Record": "The First Letter",
+    "Paradox Simulation": "Watertight",
+    "Illustrator": "熊太",
+    "Release Date": "2022/10/19",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Akira Sekine",
+    "Chinese": "Ying Xie",
+    "English": "Sophie Shad",
+    "Korean": "Sung Hye-won"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "March 26th",
+    "Race": "Feline",
+    "Height": "165 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Crafty Rebel",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When Skill 1 is equipped, allies within range gains +2% ATK; When Skill 2 is equipped, allies within range gains +2% DEF"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When Skill 1 is equipped, allies within range gains +3% (+1%) ATK; When Skill 2 is equipped, allies within range gains +3% (+1%) DEF"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When Skill 1 is equipped, allies within range gains +5% ATK; When Skill 2 is equipped, allies within range gains +5% DEF"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When Skill 1 is equipped, allies within range gains +6% (+1%) ATK; When Skill 2 is equipped, allies within range gains +6% (+1%) DEF"
+        }
+      ]
+    },
+    {
+      "name": "Private Messenger",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Increases SP recovery of all allies in range by +0.5/sec while in [Shatterpoint] (only the strongest effect of this type applies) [ note 1 ]"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Crafty Rebel"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Heidi's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Crafty Rebel .",
+        "New skill: Tale of Fiction: Rust .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Heidi to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Supporter Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Private Messenger .",
+        "Crafty Rebel improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Heidi to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Supporter Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Refined Solvent",
+          "quantity": 9
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 7
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Tale of Fiction: A Warrior's Anger",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "10 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "All ally units within range have -3 Block and Inspiration equal to 50% of Heidi's ATK",
+            "initialSp": 4,
+            "spCost": 25,
+            "duration": 10
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "All ally units within range have -3 Block and Inspiration equal to 55% of Heidi's ATK",
+            "initialSp": 5,
+            "spCost": 25,
+            "duration": 10
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "All ally units within range have -3 Block and Inspiration equal to 60% of Heidi's ATK",
+            "initialSp": 6,
+            "spCost": 25,
+            "duration": 10
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "All ally units within range have -3 Block and Inspiration equal to 70% of Heidi's ATK",
+            "initialSp": 7,
+            "spCost": 24,
+            "duration": 10
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "All ally units within range have -3 Block and Inspiration equal to 75% of Heidi's ATK",
+            "initialSp": 8,
+            "spCost": 24,
+            "duration": 10
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "All ally units within range have -3 Block and Inspiration equal to 80% of Heidi's ATK",
+            "initialSp": 9,
+            "spCost": 24,
+            "duration": 10
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "All ally units within range have -3 Block and Inspiration equal to 90% of Heidi's ATK",
+            "initialSp": 10,
+            "spCost": 23,
+            "duration": 10
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "All ally units within range have -3 Block and Inspiration equal to 100% of Heidi's ATK",
+            "initialSp": 11,
+            "spCost": 22,
+            "duration": 10
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "All ally units within range have -3 Block and Inspiration equal to 105% of Heidi's ATK",
+            "initialSp": 11,
+            "spCost": 21,
+            "duration": 10
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "All ally units within range have -3 Block and Inspiration equal to 110% of Heidi's ATK",
+            "initialSp": 12,
+            "spCost": 20,
+            "duration": 10
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 6
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Tale of Fiction: Rust",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15–20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "All ally units within range gain +1 Block, and Inspiration equal to 15% of Heidi's DEF and 11% of Heidi's Max HP. This unit's Trait effect is increased to 15%",
+            "initialSp": 8,
+            "spCost": 30,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "All ally units within range gain +1 Block, and Inspiration equal to 20% of Heidi's DEF and 12% of Heidi's Max HP. This unit's Trait effect is increased to 16%",
+            "initialSp": 10,
+            "spCost": 30,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "All ally units within range gain +1 Block, and Inspiration equal to 25% of Heidi's DEF and 13% of Heidi's Max HP. This unit's Trait effect is increased to 18%",
+            "initialSp": 11,
+            "spCost": 30,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "All ally units within range gain +1 Block, and Inspiration equal to 30% of Heidi's DEF and 16% of Heidi's Max HP. This unit's Trait effect is increased to 20%",
+            "initialSp": 12,
+            "spCost": 30,
+            "duration": 17
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "All ally units within range gain +1 Block, and Inspiration equal to 35% of Heidi's DEF and 17% of Heidi's Max HP. This unit's Trait effect is increased to 21%",
+            "initialSp": 13,
+            "spCost": 30,
+            "duration": 17
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "All ally units within range gain +1 Block, and Inspiration equal to 40% of Heidi's DEF and 18% of Heidi's Max HP. This unit's Trait effect is increased to 22%",
+            "initialSp": 14,
+            "spCost": 30,
+            "duration": 17
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "All ally units within range gain +1 Block, and Inspiration equal to 50% of Heidi's DEF and 20% of Heidi's Max HP. This unit's Trait effect is increased to 23%",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "All ally units within range gain +1 Block, and Inspiration equal to 55% of Heidi's DEF and 23% of Heidi's Max HP. This unit's Trait effect is increased to 25%",
+            "initialSp": 17,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "All ally units within range gain +1 Block, and Inspiration equal to 60% of Heidi's DEF and 26% of Heidi's Max HP. This unit's Trait effect is increased to 28%",
+            "initialSp": 18,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "All ally units within range gain +1 Block, and Inspiration equal to 70% of Heidi's DEF and 30% of Heidi's Max HP. This unit's Trait effect is increased to 30%",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-12",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Diketon",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 8
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Semi-Synthetic Solvent",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Compound Cutting Fluid",
+          "quantity": 3
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Order Distribution α",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post , order acquisition efficiency +20%"
+    },
+    {
+      "name": "High SocietyReplacesOrder Distribution α",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +35%"
+    },
+    {
+      "name": "\"One Thousand Letters\"",
+      "facility": "Control Center",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Control Center, the likelihood of the Reception Room obtaining Glasgow clues is increased (Rate is influenced by length of work time)"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Heidi's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "BAR-X: Luxurious Life-and-Death Struggle",
+      "mission": {
+        "requirement1": "During battle, have your own Heidi use Tale of Fiction: A Warrior's Anger a total of 8 times",
+        "requirement2": "Clear Main Theme 9-7 with a 3-star rating under Standard Environment; You must deploy your own Heidi, and have her use Tale of Fiction: Rust at least 3 times"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +70 , ATK +13 , DEF +12",
+          "effectLabel": "New trait",
+          "effectText": "When there are 2 or more other Operators within range, ATK +8% (unaffected by skill)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +85 , ATK +18 , DEF +16",
+          "effectLabel": "Crafty Rebel improved",
+          "effectText": "When Skill 1 is equipped, allies within range gains +7% ATK; When Skill 2 is equipped, allies within range gains +7% DEF",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +100 , ATK +21 , DEF +19",
+          "effectLabel": "Crafty Rebel improved",
+          "effectText": "When Skill 1 is equipped, allies within range gains +8% ATK; When Skill 2 is equipped, allies within range gains +8% DEF",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Heidi, active in\nVictoria\nunder a novelist's pseudonym, and simultaneously\nKal'tsit\n's personal Messenger of many years. Arrested by\nSarkaz\nforces owing to her participation in the\nCitizens' Self-Salvation Corps\n, and rescued when\nRhodes Island\nentered\nLondinium\n, soon after formally joining Rhodes Island as an Operator.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 482,
+          "atk": 126,
+          "def": 107,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 7,
+          "block": 1,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 689,
+          "atk": 198,
+          "def": 160,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 7,
+          "block": 1,
+          "interval": 1.3
+        },
+        "rangeId": "x-4"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 689,
+          "atk": 198,
+          "def": 160,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 9,
+          "block": 1,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 945,
+          "atk": 265,
+          "def": 214,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 9,
+          "block": 1,
+          "interval": 1.3
+        },
+        "rangeId": "x-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 945,
+          "atk": 265,
+          "def": 214,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 9,
+          "block": 1,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 1260,
+          "atk": 320,
+          "def": 268,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 9,
+          "block": 1,
+          "interval": 1.3
+        },
+        "rangeId": "x-1"
+      }
+    ],
+    "trust": {
+      "hp": 250,
+      "atk": 40,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, the operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Heidi shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.12u/L\nOperator Heidi rarely comes into contact with Originium."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "The majority of the Londinium Citizens' Self-Salvation Corps aren't professional combat personnel, and Heidi is no exception. Of the souls who gather under the morale imparted by Clovisia's speeches, only some typically possess the will to rebel and the conviction to defend their homeland, and Heidi simply has a few more methods than most, along with a tactical acumen that comes from her teacher.\nBut though it was anticipated to a degree, her formal Rhodes Island onboarding test results still surprised operators in HR. She serves as a vital figure in the Self-Salvation Corps, and Dr. Kal'tsit's personal Messenger, yet her combat ability registered as no more than an ordinary civilian's.\n'There has to be some way you defend yourself, right?' is a class of question to which Heidi lightly explains: not attracting people's attention is her best self-defense. Most times while shuttling between typical drinking parties of the gentry, she carries a mignon cane that perfectly complements her attire, and no one ever cottons on that finely crafted cane conceals an Arts Unit, let alone imagines it originates the very Arts that guide the Self-Salvation Corps.\nIn fact, for a very long time, this style of concealment was the only one available to the resistance of Londinium.\n\n\n'Think she was there right when the Self-Salvation Corps actually formed. I remember she came by while Commander Clovisia was giving a speech. Good chunk of us thought she was a noble here to meddle with the fancy way she dressed, but she just stood on the very outside of the crowd, listening quietly. After the Commander's speech wound up, she and her both got to chatting for a while, and then Lady Heidi became one of us.'\n'I didn't know what was in her ability, really. The Sarkaz army had every district other than Sudean pinned in their sights, but she could find any way to slip by the watch, get info out. That let us really get going in every little nook and cranny of Londinium. Honestly, bless her for always threading the needle.'\n'I like the stories Miss Heidi tells before bedtime.'\n\n—Citizens' Self-Salvation Corps members"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Operator Heidi has been extremely frank about keeping her real name since formally onboarding with Rhodes Island, stemming from her amicable relationship with Dr. Kal'tsit. Pay just a little attention when you're in Victoria, and you can find the name Heidi Thomson crop up from time to time in newspapers' literature and arts columns, or maybe on a romance novel bookshelf. However, should you ask the bookshop's owner about it, you'll find her few novels have hardly sold well; they've sat there piling up forever. By her very same sincerity, perhaps, Heidi did not do with Rhodes Island as she does when visiting noble residences, bringing her works with her as a meeting gift.\nThough she never made it big as an author, it was in fact her maiden work that got her foot in high society's door, and from there mingled with the aristocrats wherever they gathered. This can be principally attributed to her family name already having enough renown in the Victorian literary sphere. Plenty of the gentry are old friends with her father, and so they show every courtesy to the young author continuing her father's work, often bidding her to appreciate works and publish commentaries, so as to keep up her appearances. The vast majority commend Heidi's talent in succeeding her father on the literary front, believing her book sales are simply laid low by misfortune; a small portion are frank to point out that 'she's unable to escape her father's aura.'\nHowever, Golding, whom Heidi frequently exchanges letters with, scoffs at these evaluations.\n'How do others see Heidi? That's hardly important, nor does she mind. She herself chose the position of third-rate novelist. She deliberately covers life up with fictitious writing. What you see is hardly the end of her talents. I know where it is she's set on pouring her true works and ideas. It's a shame how one's private letters are forever bound to be made public posthumously, no earlier.'\n'Why is this the way she does things? The present situation in Victoria is one reason, and the other... I say you ask yourselves that, Rhodes Island.'"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Neither the paperboy running through the street nor the mover hauling a heavy container knew Heidi, nor did they know what exact technology was reclaiming the old mines' industrial equipment. The letters passed through their hands without word or whisper, arriving at either Victorian nobles' desks, or the gloves of checkpoint officials. Through several months of arrangement and bribery by Heidi, the Rhodes Island landship gained the ostensible status of 'organization for scrap reclamation,' and swiftly passed all border checkpoint inspections, staying incognito under Theresis' surveillance, all to enter Victoria and approach Londinium.\nFor many years, the network of contacts Heidi and her father have built in Victoria has relayed info precisely as such. The Messenger accepts intel to be entered into information storage equipment, delivers it to the resident Dr. Kal'tsit at Rhodes Island, and then launches into action based on the reply.\n—Those Operators who've heard of this Messenger's activities prefer to imagine Heidi as cunning and sharp, easily all things to all people, but the reality is that, onboarded at Rhodes Island, Heidi seems unexpectedly relaxed. If she has free time, you can simply ask her for the behind-the-scenes on her intel work, and she'll unabashedly tell you story after vivid story, like how she got to know a Count thanks to his taste in a brooch, or how she shrugged off the surveillance without blinking in the streets of Londinium. Moreover, all the Self-Salvation Corps members working with Rhodes Island can testify that at the very least, the part once she enters Londinium is an absolutely real tale.\n\n'Has she ever mentioned Ella? Sorry, maybe I shouldn't be asking, but... see, we all know it wasn't Heidi's fault she died, and we completely understand how her choice was for the greater good. Heidi, though... *sigh* Look, I've seen how she unwinds around the Rhodes operators. She really does. So I'm just hoping she can chat with somebody about all of it.' —Citizens' Self-Salvation Corps member who did not give their name"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[A personal letter]\n...from now on, she'll be the Thomsons' new Messenger. Since she first met you years ago, she's been ardent about wanting to correspond personally with you—to consult you on all those profusely imaginative issues of hers so particular to the youth. I think it'll be far better to make her your student, rather than let her keep using you as a character template in all her childish stories.\nShe's at the proud, arrogant age now, and won't take a single word of advice from me. You'll see once you receive her own letters. I say that of it all she knows precisely the half of it; she postulates and conjectures far too much about the facets of the great land you unveil in your letters, not to mention the extravagance of her ambitions.\nWe aspire wildly so in our younger years. It's time she sees it all for herself.\nI won't deny she is prepared in part. She showed a great deal of sharp wit when we took up the Duke on his invitation; she adopted an ignorance appropriate to her age as a cover, to inquire about a great deal quite ingeniously.\nMoreover, she's shown quite the timely talent for endearing others. Not that I can say it's been deliberate of her—only that she's had quite the words for me about my methods ever since I changed professions, so every time a stranger greets me on old literary circle business, she's there lukewarm, and insists on giving her own opinion or two.\nYou know my views. I'd rather she not write a word, speak not a thing about this, and I don't like her using 'literature' as her stepping stone into the noble circles.\nMost of it is to spite me; she's at the stage where she willingly has me read all the gibberish she pens. She hasn't yet truly set foot into these lands, hence how feathery and hollow most of her writing is. I say gibberish with no exaggeration.\nBut there is a redeeming quality. The one and only, being... the footprints that stretch into the oak forests beyond the snow, the oil that trickles about the seams of our capital's brickwork, the whistles from freighters as they dock in the haze. It is not my wish that these phrases constitute homesickness for her some day in the future, let alone for the Victorians one and all.\nPerhaps more practical terms will do. How long until we no longer have the written word to read? Even here in our remote Toron, the people can sense the dark clouds gathering over the throne, the earth tremoring, the present sprouting of the seeds the 'great figures' planted long ago.\nKal'tsit, how much longer do you believe we still have to prepare? She trusts in every word you say, and I trust that'll you'll guide her where she needs to go."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "As Kal'tsit's personal Messenger of many years, Heidi is more aware of Rhodes Island's past affairs than the majority, despite not having boarded the landship once before now. For example, people are more often than not surprised when meeting Rhodes Island's Officer-in-Charge Amiya for the first time, but Heidi showed her a gentle love and caring at first blush. Of course, she also knows of the Doctor, and has a shadow of curiosity about this person Kal'tsit has described.\nBut rest assured that said curiosity for Rhodes Island's past doesn't drive her to delve too deeply, since her greatest interest is Kal'tsit herself, and she's never hounded any particular issue.\nOnly once, when she returned to the landship to pass on intel, did she raise her own personal request with Kal'tsit:\n'Once Victoria's settled down, I'd like to tour about this land too. Would you permit that? Would you tell me—what you've seen for yourself?'"
+    }
+  ]
+}

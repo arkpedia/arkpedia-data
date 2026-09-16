@@ -1,0 +1,951 @@
+{
+  "name": "Civilight Eterna",
+  "rarity": 6,
+  "class": "Supporter",
+  "branch": "Bard",
+  "faction": "Rhodes Island",
+  "umbrellaFactions": [],
+  "connectedFactions": [
+    "Babel"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Support",
+    "Survival",
+    "DPS"
+  ],
+  "trait": "Does not attack but continuously restores the HP of all allies within range (the HP restored per second is equal to 10% of self ATK). Self is unaffected by Inspiration",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Main Story Unlock",
+      "Unlock Location": "Absolved Will Be The Seekers"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Condolence"
+  ],
+  "ep": {
+    "Main": "Echoism",
+    "Co-star": null
+  },
+  "internalName": "char_4134_cetsyr",
+  "otherLanguages": {
+    "Chinese": "魔王",
+    "Japanese": "シヴィライト・エテルナ 魔王",
+    "Korean": "시빌라이트 에테르나"
+  },
+  "characterInfo": {
+    "File no.": "DWDB",
+    "Operator Record": "As Time Itself",
+    "Paradox Simulation": "Unfinished Simulation",
+    "Illustrator": "Chuzenji",
+    "Release Date": "2024/10/31",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Yuka Nanri",
+    "Chinese": "Ji Guanlin",
+    "English": "Kari Wahlgren",
+    "Korean": "Kim Yoon-chae"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "Undisclosed",
+    "Place of Birth": "Kazdel",
+    "Date of Birth": "July 11th",
+    "Race": "Undisclosed",
+    "Height": "165 cm",
+    "Infection Status": "Undisclosed"
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Standard",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Outstanding",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Outstanding"
+  },
+  "talents": [
+    {
+      "name": "Dust of the Past",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "3 Particles orbit Civilight Eterna at all times. When a Particle collides with an allied Operator , it disappears and increases Civilight Eterna's Trait effect on that Operator to 1.2x for 6s. The disappeared Particle respawns after 6s."
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "3 Particles orbit Civilight Eterna at all times. When a Particle collides with an allied Operator, it disappears and increases Civilight Eterna's Trait effect on that Operator to 1.5x for 6s. The disappeared Particle respawns after 6s."
+        }
+      ]
+    },
+    {
+      "name": "The Echo of Kings",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When deployed, all allied units take 10% less damage from [Sarkaz] enemies ."
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When deployed, all allied units take 15% (+5%) less damage from [Sarkaz] enemies."
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves The Echo of Kings"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Civilight Eterna's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: The Future Elusive .",
+        "Dust of the Past improved.",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Civilight Eterna to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Supporter Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron",
+          "quantity": 7
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: The Echo of Kings .",
+        "New skill: The Present Reconstructed .",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Civilight Eterna to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Supporter Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Polymerization Preparation",
+          "quantity": 4
+        },
+        {
+          "name": "Manganese Trihydrate",
+          "quantity": 6
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "The Past Lingering",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": "Unlimited",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Trait effect increases to 12% and Particle generation speed is increased. Unlimited duration",
+            "initialSp": 0,
+            "spCost": 90,
+            "duration": "∞"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Trait effect increases to 15% and Particle generation speed is increased. Unlimited duration",
+            "initialSp": 0,
+            "spCost": 90,
+            "duration": "∞"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Trait effect increases to 18% and Particle generation speed is increased. Unlimited duration",
+            "initialSp": 0,
+            "spCost": 90,
+            "duration": "∞"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Trait effect increases to 20% and Particle generation speed is increased. Unlimited duration",
+            "initialSp": 0,
+            "spCost": 80,
+            "duration": "∞"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Trait effect increases to 22% and Particle generation speed is increased. Unlimited duration",
+            "initialSp": 0,
+            "spCost": 80,
+            "duration": "∞"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Trait effect increases to 25% and Particle generation speed is increased. Unlimited duration",
+            "initialSp": 0,
+            "spCost": 80,
+            "duration": "∞"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Trait effect increases to 28% and Particle generation speed is increased. Unlimited duration",
+            "initialSp": 0,
+            "spCost": 75,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Trait effect increases to 30% and Particle generation speed is increased. Unlimited duration",
+            "initialSp": 0,
+            "spCost": 70,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Trait effect increases to 32% and Particle generation speed is increased. Unlimited duration",
+            "initialSp": 0,
+            "spCost": 68,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Trait effect increases to 35% and Particle generation speed is increased. Unlimited duration",
+            "initialSp": 0,
+            "spCost": 65,
+            "duration": "∞"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 6
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "The Future Elusive",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "35 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Particle limit +3 and immediately gains 6 Particles. Particle orbit radius expands, and all allies in attack range gain Inspiration equal to 50% of Civilight Eterna's ATK. Particles no longer collide with allied Operators, and instead deal 200% of Civilight Eterna's ATK as True damage when colliding with an enemy unit, and also Binding them for 3 s.",
+            "initialSp": 0,
+            "spCost": 35,
+            "duration": 35
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Particle limit +3 and immediately gains 6 Particles. Particle orbit radius expands, and all allies in attack range gain Inspiration equal to 55% of Civilight Eterna's ATK. Particles no longer collide with allied Operators, and instead deal 210% of Civilight Eterna's ATK as True damage when colliding with an enemy unit, and also Binding them for 3 s.",
+            "initialSp": 0,
+            "spCost": 35,
+            "duration": 35
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Particle limit +3 and immediately gains 6 Particles. Particle orbit radius expands, and all allies in attack range gain Inspiration equal to 60% of Civilight Eterna's ATK. Particles no longer collide with allied Operators, and instead deal 215% of Civilight Eterna's ATK as True damage when colliding with an enemy unit, and also Binding them for 3 s.",
+            "initialSp": 0,
+            "spCost": 35,
+            "duration": 35
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Particle limit +3 and immediately gains 6 Particles. Particle orbit radius expands, and all allies in attack range gain Inspiration equal to 65% of Civilight Eterna's ATK. Particles no longer collide with allied Operators, and instead deal 220% of Civilight Eterna's ATK as True damage when colliding with an enemy unit, and also Binding them for 3 s.",
+            "initialSp": 5,
+            "spCost": 35,
+            "duration": 35
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Particle limit +3 and immediately gains 6 Particles. Particle orbit radius expands, and all allies in attack range gain Inspiration equal to 70% of Civilight Eterna's ATK. Particles no longer collide with allied Operators, and instead deal 235% of Civilight Eterna's ATK as True damage when colliding with an enemy unit, and also Binding them for 3 s.",
+            "initialSp": 5,
+            "spCost": 35,
+            "duration": 35
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Particle limit +3 and immediately gains 6 Particles. Particle orbit radius expands, and all allies in attack range gain Inspiration equal to 75% of Civilight Eterna's ATK. Particles no longer collide with allied Operators, and instead deal 250% of Civilight Eterna's ATK as True damage when colliding with an enemy unit, and also Binding them for 3 s.",
+            "initialSp": 5,
+            "spCost": 35,
+            "duration": 35
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Particle limit +3 and immediately gains 6 Particles. Particle orbit radius expands, and all allies in attack range gain Inspiration equal to 80% of Civilight Eterna's ATK. Particles no longer collide with allied Operators, and instead deal 260% of Civilight Eterna's ATK as True damage when colliding with an enemy unit, and also Binding them for 3 s.",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Particle limit +3 and immediately gains 6 Particles. Particle orbit radius expands, and all allies in attack range gain Inspiration equal to 85% of Civilight Eterna's ATK. Particles no longer collide with allied Operators, and instead deal 265% of Civilight Eterna's ATK as True damage when colliding with an enemy unit, and also Binding them for 3 s.",
+            "initialSp": 15,
+            "spCost": 35,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Particle limit +3 and immediately gains 6 Particles. Particle orbit radius expands, and all allies in attack range gain Inspiration equal to 90% of Civilight Eterna's ATK. Particles no longer collide with allied Operators, and instead deal 270% of Civilight Eterna's ATK as True damage when colliding with an enemy unit, and also Binding them for 3 s.",
+            "initialSp": 18,
+            "spCost": 35,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Particle limit +3 and immediately gains 6 Particles. Particle orbit radius expands, and all allies in attack range gain Inspiration equal to 100% of Civilight Eterna's ATK. Particles no longer collide with allied Operators, and instead deal 275% of Civilight Eterna's ATK as True damage when colliding with an enemy unit, and also Binding them for 3.5 s.",
+            "initialSp": 20,
+            "spCost": 35,
+            "duration": 35
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 4
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "True Damage",
+            "description": "Able to deal true damage"
+          }
+        ]
+      },
+      {
+        "name": "The Present Reconstructed",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack range expands and Trait effect increases to 50% . Particles no longer disappear, and all allies in attack range gain Inspiration equal to 50% of Civilight Eterna's max HP. Redistribute HP of all allies in attack range every 2 s.",
+            "initialSp": 35,
+            "spCost": 90,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack range expands and Trait effect increases to 55% . Particles no longer disappear, and all allies in attack range gain Inspiration equal to 55% of Civilight Eterna's max HP. Redistribute HP of all allies in attack range every 2 s.",
+            "initialSp": 35,
+            "spCost": 90,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack range expands and Trait effect increases to 60% . Particles no longer disappear, and all allies in attack range gain Inspiration equal to 60% of Civilight Eterna's max HP. Redistribute HP of all allies in attack range every 2 s.",
+            "initialSp": 35,
+            "spCost": 90,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack range expands and Trait effect increases to 65% . Particles no longer disappear, and all allies in attack range gain Inspiration equal to 65% of Civilight Eterna's max HP. Redistribute HP of all allies in attack range every 2 s.",
+            "initialSp": 35,
+            "spCost": 80,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack range expands and Trait effect increases to 70% . Particles no longer disappear, and all allies in attack range gain Inspiration equal to 70% of Civilight Eterna's max HP. Redistribute HP of all allies in attack range every 2 s.",
+            "initialSp": 35,
+            "spCost": 75,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack range expands and Trait effect increases to 72% . Particles no longer disappear, and all allies in attack range gain Inspiration equal to 75% of Civilight Eterna's max HP. Redistribute HP of all allies in attack range every 2 s.",
+            "initialSp": 35,
+            "spCost": 75,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack range expands and Trait effect increases to 75% . Particles no longer disappear, and all allies in attack range gain Inspiration equal to 80% of Civilight Eterna's max HP. Redistribute HP of all allies in attack range every 2 s.",
+            "initialSp": 35,
+            "spCost": 70,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack range expands and Trait effect increases to 80% . Particles no longer disappear, and all allies in attack range gain Inspiration equal to 85% of Civilight Eterna's max HP. Redistribute HP of all allies in attack range every 2 s.",
+            "initialSp": 35,
+            "spCost": 65,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack range expands and Trait effect increases to 85% . Particles no longer disappear, and all allies in attack range gain Inspiration equal to 90% of Civilight Eterna's max HP. Redistribute HP of all allies in attack range every 2 s.",
+            "initialSp": 35,
+            "spCost": 60,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack range expands and Trait effect increases to 90% . Particles no longer disappear, and all allies in attack range gain Inspiration equal to 100% of Civilight Eterna's max HP. Redistribute HP of all allies in attack range every 2 s.",
+            "initialSp": 35,
+            "spCost": 55,
+            "duration": 30
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            },
+            {
+              "name": "Polyester Pack",
+              "quantity": 8
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Diketon",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 5
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 6
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 4
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "King's Legacy",
+      "facility": "Control Center",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Control Center with Amiya , self and Amiya 's Morale recovered per hour +0.05 ."
+    },
+    {
+      "name": "\"Unfinished Story\"ReplacesKing's Legacy",
+      "facility": "Control Center",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Control Center with Amiya , self and Amiya 's Morale recovered per hour +0.1 ."
+    },
+    {
+      "name": "Convergence of Hope",
+      "facility": "Control Center",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Control Center, clue collection speed +15% (Only the strongest effect of this type takes place)."
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Civilight Eterna's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "BAR-X: Another Story",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Civilight Eterna, and unleash The Present Reconstructed at least 1 time in each battle",
+        "requirement2": "Clear Main Theme 14-5 with a 3-star rating under Standard Environment; You must deploy your own Civilight Eterna, and only Melee Operators are allowed for the remaining members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +180 , ATK +20",
+          "effectLabel": "New trait",
+          "effectText": "When there are 2 or more other Operators within range, ATK +8% (unaffected by skill)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +238 , ATK +24",
+          "effectLabel": "Dust of the Past improved",
+          "effectText": "3 Particles orbit Civilight Eterna at all times. When a Particle collides with an allied Operator , it disappears and increases Civilight Eterna's Trait effect on that Operator by 1.6x for 6s, and immediately recovers the Operator's HP equal to 20% of Civilight Eterna's ATK. The disappeared Particle respawns after 6s.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +280 , ATK +27",
+          "effectLabel": "Dust of the Past improved",
+          "effectText": "3 Particles orbit Civilight Eterna at all times. When a Particle collides with an allied Operator, it disappears and increases Civilight Eterna's Trait effect on that Operator by 1.6x for 6s, and immediately recovers the Operator's HP equal to 30% of Civilight Eterna's ATK. The disappeared Particle respawns after 6s.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Theresa\n, founder of the nomadic city of\nKazdel\n, co-originator of the\nMilitary Commission of Kazdel\n, creator of the\nBabel\norganization, and former head of state of Kazdel. She's spearheaded medical, educational, and urban infrastructure projects, led the\nSarkaz\nin repelling multiple invasions, and personally raised the bar of diplomacy work during her time in office. She passed away during the\nKazdelian-Victorian War\n.\n(This personnel file is stored in a database sealed by the\nRhodes Island\nHR Department.)",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "e_EtD90eAAg",
+      "creator": "DragonGJY"
+    },
+    {
+      "videoId": "b3Yi67Z9QPA",
+      "creator": "Tsalthsu"
+    },
+    {
+      "videoId": "pECY1jscNSI",
+      "creator": "Ninji202"
+    },
+    {
+      "videoId": "XOba1uh7TJI",
+      "creator": "Dagyo"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 623,
+          "atk": 146,
+          "def": 94,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 8,
+          "block": 1,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 891,
+          "atk": 229,
+          "def": 141,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 8,
+          "block": 1,
+          "interval": 1.3
+        },
+        "rangeId": "x-4"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 891,
+          "atk": 229,
+          "def": 141,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 10,
+          "block": 1,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 1221,
+          "atk": 306,
+          "def": 188,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 10,
+          "block": 1,
+          "interval": 1.3
+        },
+        "rangeId": "x-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1221,
+          "atk": 306,
+          "def": 188,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 10,
+          "block": 1,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 1628,
+          "atk": 369,
+          "def": 236,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 10,
+          "block": 1,
+          "interval": 1.3
+        },
+        "rangeId": "x-1"
+      }
+    ],
+    "trust": {
+      "hp": 300,
+      "atk": 30,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 17%\n\n[Blood Originium-Crystal Density] 0.29u/L\n'Patient BOCD has risen steadily over last three months. Proposing curtailment of any Originium-related work.'\nLast logged: Nov 17 1093\nLogged by: Kal'tsit\n\n(An old medical report that Kal'tsit always keeps in the locked top left drawer of her desk.)"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "[Classified Log]\nThe war is over now.\nIn doing what we can, Rhodes Island has accomplished the objective set out for it. I thank you for all your efforts, and Rhodes Island will commemorate everyone who gave their lives here.\nWaves from the sea of change in Victoria will soon be felt throughout all of Terra. We've passed a point of no return as plain as day.\nOnce, Rhodes Island persisted in sidestepping any given nation's agenda, but as it stands now, it is no longer our role to be the perfect outsider. We must prepare ourselves for the changes that lie ahead.\n...\nFor the first item of this meeting, our verdict is rendered.\nRhodes Island will not revive its Babel callsign.\nWiš'adel has brought the name 'Babel' back to Kazdel, as well as Babel's founding goal, one imperceptibly yet definitively inherited throughout the years. I imagine Theresa would be delighted to see what we've achieved.\nWe will continue to work with Babel, or should I say Kazdel. That said, we will stay true to our original course, and go ever further.\nOripathy... no, not only Oripathy, but Originium itself; these are the issues Rhodes Island has always striven to solve. As our past will attest, our future will only see us grow firmer. Rhodes Island will not forget how conquering Oripathy has been our guiding star. It is in this first and foremost goal of ours, in fact, that we must meet the greater weight of its calling.\nWe will fight for the future of these vast lands.\nOriginium proliferates in a manner almost beyond control. We are likely to face an enemy beyond comprehension. We will put every ounce of strength we have to the task, and steel ourselves to the prospect of sacrificing everything we have.\nAll in all, Rhodes Island resolves today to be ever more proactive in its interventions, as we go unto all that transpires to endanger these lands.\n...\nYes, Theresa has left us forever.\nIt was she who led the way in touting Babel's philosophy. But in her words, it was those at her side who lifted Rhodes Island to where it is today. It was everyone sat in attendance now, and everyone who fights on for this ship's future.\nIf there is anyone still skeptical of the passing of this resolution, you have the following ten minutes to submit your objection.\n...\nAmiya... I understand.\nI know she's listening.\n(—As spoken by Kal'tsit at the ■■■■■■■■ conference.)"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "[Log of visit 1.]\nVisitor: Amiya\n'Miss Theresa...?'\nYes, I'm here.\n'I'm... sorry for coming so late. I wasn't sure if I should bother you or not, but I still have so many questions. I... what exactly are you?'\nI am a program Theresa stored within Civilight Eterna. For you, she left my highest user privileges. You need but keep the crown with you, and I will never leave your side.\nMy 'physical manifestation' exists sustained by Civilight Eterna, and has the power to protect you. Only you, and those you grant permission, can see me.\nYou can try holding my hand, Amiya.\n'Thank you... I can feel... its warmth.\n'I'm still a little confused. Should I be calling you Miss Theresa? I'm not sure how I should address you...'\nAmiya. Theresa is gone. I have her memories, but nothing more.\nIf you'd like, though, you can still call me Theresa.\n'I'm sorry... I understand. We already said our goodbyes. I can put away my unrealistic fantasies now.'\nYes, I remember.\nA reunion so fleeting could do little to fill the void left behind by those years of companionship. In our time to come, I will see her promise to protect you through.\nAmiya. It tore at Theresa so. Leaving you was her one and only regret.\n'I've been so grateful, truly, to feel Miss Theresa's love for me. I've never once had reason to resent it, not at all... It's just...\n'There, in that space, she saw my past, and everything that Rhodes Island has experienced since. But looking ahead, our path is still so long, and surely the list of places I'll go will only grow. There's still so much I'll want to tell her...\n'And she won't be able to hear, will she?'\nI'm sorry, Amiya. In that sense, I'm just as powerless as you.\n...\nIs there anything else I can do for you?\n'No, that's all, really... Goodbye, for now.'\nGoodnight. Sweet dreams, Amiya."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "[Log of visit 4.]\nVisitor: Kal'tsit\n'Query: Celestial Fulcrum.'\nIn the 10,000 sidereal years of Civilight Eterna's extant logs, active Celestial Fulcrum signals were only transmitted from the planet's surface on one occasion. You are acquainted with what the planetary system's natives did.\nEver since the curtains fell, it's been silent as the old stars, with the continent lifted by the Shadow-Moon showing no signs of life whatsoever.\n'And still no word from the legacies of the past?'\nThe Preservator's sarcophagi remain silent. Further, the other two 'Originiums' are buried deep where they belong, their only trace is the occasional unsettling noise from the southern ocean's waves.\nKal'tsit, these logs, and all of this crown's data, should be plain to you by now. Retrieving the same files again and again won't reveal any new possibilities.\nYou look extremely worried.\n'I need to check if your... if Theresa's experiment has... already had unanticipated repercussions.'\nIt pains me to say this, but even as Civilight Eterna I still lack a way to log the internal fluctuations of Originium.\n'...You can <i>see,</i> can't you?'\nYes.\nTheresa found Civilight Eterna to come with limitations, but I assure you my current form can read all the data stored within.\nAnd you... you've shouldered this weight all alone, for all your interminable time.\n'...'\n'Then I ask. Would Theresa, now knowing all this, still choose 'hope'?'\nI'm afraid I cannot easily answer that. There is no simple way to sever one's personality from their knowledge.\nBut I'm willing to trust that, knowing Theresa, she would marvel at how the breadth of dangers to Terra—the countless critical moments only a hair from collapse—had relentlessly remolded the very land on which she lived. Indeed, this world's present manifestation is its own miracle, one that statistical probability has no chance of explaining.\nThe more one comes to know the full picture of our world, the more the very word 'hope' seems a kind of foolishness flying in the face of reason.\nYou know better than anyone the challenge in bearing your mission... and your choice to press on has <i>never</i> been contingent on hope.\nHence why Theresa always trusted you would stand alongside her.\n'...'\n'Meeting over. Please encrypt the contents of this conversation so as to keep the Doctor and Amiya from reading it... At least until the time is right.'\nAs you wish. While still a lie of omission to Amiya, this is well in accordance with Theresa's original intent to protect her.\n'You were right, Theresa. For all they could do, none would dare claim with certainty to change their own fated end.\n'I hope that... from hereon out, you can keep the Doctor and Amiya safe.'"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Log of visit 11.]\nVisitor: The Doctor\n'It's surprising to realize, Doctor, how long you've traveled with Rhodes Island now.\n'You may call yourself just a passerby, but I'd still like to welcome you alongside us.\n'I'll never get to see the epoch you came from. I hear its people were free from the troubles of Catastrophes and Oripathy, and words and notions could be conveyed to one another in the blink of an eye.\n'How beautiful a past that must be. Still, I'm sure you see something or other in this great land, given your eagerness to return to a lone journey of ten thousand years and counting.\n'Please, I ask that you continue to keep Amiya and Kal'tsit company.\n'I have faith you'll learn to love this world anew, to choose hope and a future once again.\n'Thank you, Doctor.'\n(—As taken from Theresa's voice logs, last updated Jan 1 ■■■■ 0:00.)\n\nTheresa predicted this would happen eventually, Doctor.\nYou, questioning Civilight Eterna about Theresa, everything about her. You, out of either curiosity or remorse, wanting to know what kind of person she was. Why she would rest such grave expectations on you of all people, and why... you would 'betray' her like that.\nSo she recorded these messages, just for you.\nThe answers you seek aren't in the past.\nYou shouldn't trust surface appearances. You can look up every last piece of information on her here, but you'll never know the full her from that, just as you'll never know the full you from what others tell you.\nAnd as for yourself, Doctor, this is all Theresa sought to tell you: you are her dear friend, her most trusted companion.\nContinue on your journey.\nIt's only on your own path that you'll find the answers to her.\nAnd those will be the answers to you too."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "[Log of visit ■■■■.]\nVisitor: ■■■■\nWeird, what's all this noise in here?\nWho plugs their personal instruction set into a Public Calculational & Metrological Reconstruction Platform? And filled with nothing but Open Project Gate Definition they forgot to delete?\nScrubbing the redundant data out of Originium is already frustrating enough—does Project DWDB really need more people helping with the chores?\nComplaining doesn't solve anything. Just handle it and move on. This timeslice is almost up, anyway.\nWARNING. Malicious routine detected. WARN—[STATIC]—threat to—\nNo, hold on.\nIt's... It's 'you people.' Are the project targets skewed too?\nOverriding permissions. Calculating structural integrity—\n[STATIC]—\nWait...\nI remember you. We've met before, haven't we?\nHow amusing...\nYou're like a creature who's just learned the use of tinder, leaning on the clumsiest motions over and over until you finally leave a scorch mark on the land beneath, a sign that civilization was there.\nIn the midst of all you puny organisms, you surprise me as a specimen... I may need to reevaluate this 'redundant data' now.\nSo this is the 'hope' you've chosen, Oracle?"
+    }
+  ]
+}

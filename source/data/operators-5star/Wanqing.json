@@ -1,0 +1,756 @@
+{
+  "name": "Wanqing",
+  "rarity": 5,
+  "class": "Vanguard",
+  "branch": "Standard Bearer",
+  "faction": "Yan",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DP-Recovery",
+    "Support"
+  ],
+  "trait": "Cannot block enemies during the skill duration",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Here a People Sows"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Tons of Sunshine"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4119_wanqin",
+  "otherLanguages": {
+    "Simplified Chinese": "万顷",
+    "Traditional Chinese": "萬頃",
+    "Japanese": "ワンチィン",
+    "Korean": "완칭"
+  },
+  "characterInfo": {
+    "File no.": "YD13",
+    "Operator Record": "Seeking Secrets",
+    "Paradox Simulation": "With the Aid of the Wind",
+    "Illustrator": "三目YYB",
+    "Release Date": "2024/07/31",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Anju Nitta",
+    "Chinese": "Feng Xiu",
+    "English": "Yung-I Chang",
+    "Korean": "Kim Jin-hong"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "None",
+    "Place of Birth": "Yan",
+    "Date of Birth": "May 6th",
+    "Race": "Forte",
+    "Height": "170 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Average",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Observe Nature's Way",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Increases the Max HP of Operators in the surrounding 8 tiles by +3%, increased to +5% if they are deployed facing the same direction as Wanqing"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Increases the Max HP of Operators in the surrounding 8 tiles by +4% (+1%) , increased to +6% (+1%) if they are deployed facing the same direction as Wanqing"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Increases the Max HP of Operators in the surrounding 8 tiles by +5%, increased to +9% if they are deployed facing the same direction as Wanqing"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Increases the Max HP of Operators in the surrounding 8 tiles by +6% (+1%) , increased to +10% (+1%) if they are deployed facing the same direction as Wanqing"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Observe Nature's Way"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Wanqing's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Observe Nature's Way .",
+        "New skill: Along the Easterlies ."
+      ],
+      "prerequisite": "Raise Wanqing to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Vanguard Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Device",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Observe Nature's Way improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Wanqing to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Vanguard Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Cutting Fluid Solution",
+          "quantity": 9
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 9
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Support γ",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "8 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Stops attacking and recovers 18 DP over the skill duration",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 8
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Stops attacking and recovers 18 DP over the skill duration",
+            "initialSp": 10,
+            "spCost": 34,
+            "duration": 8
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Stops attacking and recovers 18 DP over the skill duration",
+            "initialSp": 10,
+            "spCost": 33,
+            "duration": 8
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Stops attacking and recovers 18 DP over the skill duration",
+            "initialSp": 11,
+            "spCost": 32,
+            "duration": 8
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Stops attacking and recovers 18 DP over the skill duration",
+            "initialSp": 11,
+            "spCost": 31,
+            "duration": 8
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Stops attacking and recovers 18 DP over the skill duration",
+            "initialSp": 11,
+            "spCost": 30,
+            "duration": 8
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Stops attacking and recovers 18 DP over the skill duration",
+            "initialSp": 12,
+            "spCost": 29,
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Stops attacking and recovers 18 DP over the skill duration",
+            "initialSp": 13,
+            "spCost": 28,
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Stops attacking and recovers 18 DP over the skill duration",
+            "initialSp": 14,
+            "spCost": 27,
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Stops attacking and recovers 18 DP over the skill duration",
+            "initialSp": 15,
+            "spCost": 26,
+            "duration": 8
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Along the Easterlies",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Stops attacking, gradually recovers 20 DP in total While skill is active, restores the HP of surrounding allied Operators equal to 10% of Wanqing's ATK every second, and increases their ASPD by +10 if they are deployed facing the same direction as Wanqing",
+            "initialSp": 6,
+            "spCost": 40,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Stops attacking, gradually recovers 20 DP in total While skill is active, restores the HP of surrounding allied Operators equal to 10% of Wanqing's ATK every second, and increases their ASPD by +12 if they are deployed facing the same direction as Wanqing",
+            "initialSp": 6,
+            "spCost": 39,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Stops attacking, gradually recovers 20 DP in total While skill is active, restores the HP of surrounding allied Operators equal to 12% of Wanqing's ATK every second, and increases their ASPD by +12 if they are deployed facing the same direction as Wanqing",
+            "initialSp": 6,
+            "spCost": 38,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Stops attacking, gradually recovers 20 DP in total While skill is active, restores the HP of surrounding allied Operators equal to 12% of Wanqing's ATK every second, and increases their ASPD by +15 if they are deployed facing the same direction as Wanqing",
+            "initialSp": 8,
+            "spCost": 37,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Stops attacking, gradually recovers 20 DP in total While skill is active, restores the HP of surrounding allied Operators equal to 15% of Wanqing's ATK every second, and increases their ASPD by +15 if they are deployed facing the same direction as Wanqing",
+            "initialSp": 8,
+            "spCost": 36,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Stops attacking, gradually recovers 20 DP in total While skill is active, restores the HP of surrounding allied Operators equal to 15% of Wanqing's ATK every second, and increases their ASPD by +20 if they are deployed facing the same direction as Wanqing",
+            "initialSp": 8,
+            "spCost": 35,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Stops attacking, gradually recovers 20 DP in total While skill is active, restores the HP of surrounding allied Operators equal to 20% of Wanqing's ATK every second, and increases their ASPD by +20 if they are deployed facing the same direction as Wanqing",
+            "initialSp": 10,
+            "spCost": 34,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Stops attacking, gradually recovers 20 DP in total While skill is active, restores the HP of surrounding allied Operators equal to 20% of Wanqing's ATK every second, and increases their ASPD by +23 if they are deployed facing the same direction as Wanqing",
+            "initialSp": 12,
+            "spCost": 33,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Stops attacking, gradually recovers 20 DP in total While skill is active, restores the HP of surrounding allied Operators equal to 25% of Wanqing's ATK every second, and increases their ASPD by +23 if they are deployed facing the same direction as Wanqing",
+            "initialSp": 14,
+            "spCost": 32,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Stops attacking, gradually recovers 20 DP in total While skill is active, restores the HP of surrounding allied Operators equal to 25% of Wanqing's ATK every second, and increases their ASPD by +25 if they are deployed facing the same direction as Wanqing",
+            "initialSp": 16,
+            "spCost": 30,
+            "duration": 15
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Aketon",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 3
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Tianshi Bureau Artisanship",
+      "facility": "Workshop",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Workshop to process any material , the production rate of byproduct increases by 65%"
+    },
+    {
+      "name": "Tireless Study",
+      "facility": "Workshop",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Workshop to process any material , all formulas that cost 4 Morale now -1 Morale cost"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Wanqing's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "BEA-X: With My Wind",
+      "mission": {
+        "requirement1": "During battles, have Wanqing use Support γ a total of 10 times (excluding Support Units)",
+        "requirement2": "Clear Main Theme 9-13 with a 3-star rating under Standard Environment; You must deploy your own Wanqing, and use Along the Easterlies at least 2 times"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +105 , DEF +45",
+          "effectLabel": "Trait improved",
+          "effectText": "Cannot block enemies during the skill duration, but grants +1 Block to an Operator in front of this unit",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +120 , DEF +55",
+          "effectLabel": "Observe Nature's Way improved",
+          "effectText": "Increases the Max HP of Operators in the surrounding 8 tiles by +7%, increased to +11% if they are deployed facing the same direction as Wanqing",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +135 , DEF +60",
+          "effectLabel": "Observe Nature's Way improved",
+          "effectText": "Increases the Max HP of Operators in the surrounding 8 tiles by +9%, increased to +13% if they are deployed facing the same direction as Wanqing",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Wanqing, real name He Sheng, an Agricultural\nTianshi\napprentice of the\nYanese\nTianshi Bureaus. Produced significant research results in many\nDahuang\nplanting projects. Introduced to\nRhodes Island\nby\nShu\n, he is now on the landship as an exchange student and Logistics Operator.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 637,
+          "atk": 228,
+          "def": 176,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 11,
+          "block": 1,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 873,
+          "atk": 327,
+          "def": 245,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 11,
+          "block": 1,
+          "interval": 1.3
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 873,
+          "atk": 327,
+          "def": 245,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 13,
+          "block": 1,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 1106,
+          "atk": 431,
+          "def": 323,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 13,
+          "block": 1,
+          "interval": 1.3
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1106,
+          "atk": 431,
+          "def": 323,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 13,
+          "block": 1,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 1516,
+          "atk": 514,
+          "def": 380,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 13,
+          "block": 1,
+          "interval": 1.3
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 100,
+      "atk": 0,
+      "def": 45
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Wanqing shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.12u/L\nOperator Wanqing is very meticulous about following protection procedures when handling Originium."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "While many operators on Rhodes Island are familiar with the farming life, a scholar specialized in agricultural research is still rare enough to turn heads.\n'Is it true that you'd need to be hunched over plowing a field every day, all year round?'\n'I heard that during the harvest season, everyone from little kids to grannies get their sickles out to reap wheat as far as the eye can see, from dawn until dusk.'\nUnder the sympathetic yet admiring gazes of everyone around him, Wanqing shyly scratches his head before earnestly introducing himself. Dahuang is Yan's foremost center for agricultural research. There, the entire process is mechanized. From sowing seeds to harvesting crops, from spreading fertilizer to spraying pesticides, every step is handled by Originium machinery. It is said that there are even plates that not a single person need set foot on all year. As Wanqing speaks, he takes out all sorts of Tianshi apparatuses, displaying high-precision agricultural Originium devices we have never seen before. He also decides to show off a painstakingly-choreographed performance by his 'Sky Pole' drones...\nSince time immemorial, Yan has always found it incredibly important to track agricultural yield. Countless lives are built upon that foundation of tiny seeds. Which is why an entire group of Tianshis like Wanqing dedicate themselves to agricultural research, unceasingly developing more efficient planting methods and higher quality grains. Despite their sophisticated equipment though, their research is hardly a walk in the park. Whether carefully selecting which plants in their fields meet their requirements, or imitating remote environments without access to Originium machinery, toil cannot be avoided. It is a tough life, as can be seen in Wanqing's young but toned arms and the calluses poking through his gloves. It is this sort of work that the Nongye Tianshis of Dahuang perform year after year, after which the finest seeds from their programs are sent to every corner of the country, carrying with them the wishes of their creators for a successful germination.\nWhen asked whether he is proud of his work, Wanqing finds it hard to hide his embarrassment.\n'It's hard to think about anything but farming when you're out in the field... I'm pleased whenever we get a bumper crop, and getting to see everyone eating their fill, well, that makes me happy too.'"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "In Yan, a Tianshi is an occupation that commands respect, but demands great responsibility in turn. To become part of this elite group, one needs to pass the Tianshi Bureaus' grueling exams.\nThey require not only outstanding talent in Arts, but also a deep pool of specialized knowledge. Thanks to Wanqing's exceptional exam results at the young age of fifteen, an exception was made for him, and he was placed under the tutelage of a senior Nongye Tianshi, Shu. Only a handful of test-takers in all of Yan meet that standard. Some suspected cheating at first, but suspicions were quickly dispelled once his performance at the Tianshi Bureaus became clear. Not only were his academic scores once-in-a-generation, his first crop breeding experiment yielded promising results. Only three years after entering the Bureaus, he'd already taken on several fellow Tianshis as students.\nHowever, Wanqing was by no means a child prodigy. Even now, he is somewhat slow to pick up new techniques, a fact reflected in the courses he takes while on Rhodes Island. His tutor, Shu, who is just as kind as he is, says: 'using your mind always means being a touch slower than those around you, and your limbs will always be a touch slower than your mind.' Instead, he was able to achieve such amazing scores thanks to his unusual concentration and focus. As he himself puts it, if he runs into an issue while on the job, he'll simply think of a way to solve it. Thoughts such as 'maybe I could take a shortcut?' or 'what happens if I can't fix this?' never even cross his mind. While that sounds simple, it is actually quite difficult for most people to work without mulling over the consequences. 'For every step, plan three further' is an ancient Yanese saying for a reason, and its people are naturally disposed towards caution and forward planning, while always keeping an escape route in mind. This, too, can be considered a form of instinctive wisdom. However, only those who able to completely immerse themselves in the act of moving forward are able to arrive at their chosen destination.\n'In earlier eras, crops still needed to be harvested by hand. More experienced farmers would tell younger ones, in all seriousness, that they must never raise their heads as they worked. Seeing the full fields stretching out to the horizon would demotivate even the hardest worker. But if you only see the stalk in your hand, then, well, you need only cut a single stalk.' Wanqing is rather serious when sharing his experiences with others, without a hint of arrogance or pride in his voice.\n'While being able to focus like that is a rather rare trait, it's not always an appropriate one. Once, Wanqing accidentally broke an automatic door by bumping into it, and he silently took it on himself to fix it. By the time someone found him, he'd been at it for a full twenty-four hours... Can someone make sure to help him out the next time this happens? I'm scared that he'll starve to death.'"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "When Wanqing was registering as an operator, he came up with his codename in almost no time at all.\nDahuang focuses on several distinct problems plaguing the farmers of Yan, and is host to multiple experimental crops, each with their own name. For example, a crop bred for colder climates is named 'Kangdong', or 'Frost Resister'. If a descendant of this crop shows marked improvement during further experimentation, it would be named 'Kangdong #2'. In addition, there is also 'Zaoyou' ('Early Excellence'), 'Fanglao' ('Flood Defender'), 'Chuibudao' ('Unblowable'), 'Esichong' ('Pest Starver'), etc etc. These simple names entrust a simple hope into each and every variant. Of special note is 'Wanqing', or 'Vast Expanse'.\nSince time immemorial, people have been fighting with Catastrophes for land. Catastrophes destroy buildings and farmland alike, and soil contaminated with Originium is extremely difficult to grow crops in. As such, in ancient times, Catastrophes were usually followed by famine. Since the invention of the nomadic city, most scholars of agriculture have focused on increasing the yields of food grown on nomadic plates. However, the Tianshis of the Dahuang persist in trying to breed crops resistant to Originium. But despite their long efforts, countless academics have deemed it futile.\nThe Dahuang Tianshis believe that limited space is a fundamental flaw of nomadic plates, and that though their research has been slow, it is only by exploiting the vast unused tracts of land that all the people of the lands can eat their fill. Generation upon generation of Tianshis have contributed, breeding crops that could tolerate more and more Originium activity. Five percent grew to fifteen percent, which blossomed further into twenty-five percent. Now though, progress is made only in fractions of a percent, with the rate of improvement inversely proportional to the time put into the experiments. Great leaps in tolerance seem to be a thing of the past. According to the Tianshis participating in the research, one could dedicate their entire life with no results to show for it, denied a place in the annals of history.\nWanqing is just one such nameless Tianshi.\n'People have asked if I'm afraid I'll never see my experiments bear fruit. I used to be... because I felt that anything I did needed a result, any result, so I could face myself in the end. But I think I see the bigger picture now. A man's life may be all too short, but the road he walks is long. It isn't the destination that's the result. It's the path you follow, and the footsteps that you leave behind.'"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "In modern times, 'starvation' is a rather foreign concept to most of us.\nIt is more than simply having to endure until the cafeteria opens for dinner because you missed lunch, or skipping a few meals for two or three days straight during a tough mission. Rather, it is the inability to obtain sufficient nutrition for a long period of time, and the pain, suffering, and despair that comes along with it. Such an experience is beyond our imagination, and the same can be said for Wanqing. However, the records of withered crops and the photos of famished crowds in his textbooks have stamped themselves into his mind's eye.\nHe returned to the village ruins up the large river outside the city. The ruins could very well have been his 'hometown', and he knew that his biological parents, and possibly others in his family, could easily have been in one of those starving crowds in the books. They, too, had experienced suffering unlike anything he could imagine.\nWanqing was a fortunate child, being set adrift in a basket along the river at the tender age of two, sent by the wind and the flowing waters to Dahuang, like a seed blown by the breeze and coming to rest in a rice paddy. Thankfully, he survived the experience. As the farmers would tell him, after several years of poor harvests, the year he floated in saw Dahuang a bumper crop. And that is the story of how Wanqing came to the city, where he spent his childhood after being taken in by the kind-hearted farmers. One day he would eat at a house on the east side of the village, the next he would eat on the west side. He would run madly on the ridges between rice paddies, pulling along his kite. He would clamber up the greenhouses and back down again. All in all, he was just like any other child born in Dahuang. He might not be great with words, but he remembers their kindness, deep in his heart. Ever since then, he's treated the day summer began that year as his birthday. And as if by divine providence, ten years since his fateful landing, he was back in that very same paddy, gathering the rice fortunate enough to break through to a new level of Originium tolerance.\nHe brings the seeds, bred with his own hands, alongside him as he sets off once more on the endless road, sending them to every corner of Yan. Wherever the wind takes these seeds, hope sprouts."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "The Tianshi Bureaus have a tradition of conducting apprenticeship ceremonies whenever a young student passes their exams. They are formally placed under the care of a senior Tianshi, and the ceremonies they hold, large or small, will give some insight into their mentor's character. During Wanqing's apprenticeship ceremony, Shu gave him only a single verdant seedling.\n'In the past, these ceremonies would require three bows and nine kowtows, but that's rather out of fashion these days. Take this rice seedling and plant it beneath you. We can consider it your mark of respect. I cannot teach you much myself, for all the knowledge that you wish to learn ultimately springs forth from the soil.'\nWanqing did not fully understand this, but respectfully stooped to plant the seedling in the soil beneath him. When he raised his head, he saw the endless, fertile fields, and the calming greenery that grew within them.\nFrom that moment on, he began to put down his roots."
+    }
+  ]
+}

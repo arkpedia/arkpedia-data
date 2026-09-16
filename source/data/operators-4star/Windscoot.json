@@ -1,0 +1,748 @@
+{
+  "name": "Windscoot",
+  "rarity": 4,
+  "class": "Guard",
+  "branch": "Liberator",
+  "faction": "Yan",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS"
+  ],
+  "trait": "Normally does not attack and has 0 Block; When skill is inactive, ATK gradually increases up to +200% over 40 seconds. ATK is reset when the skill ends",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Cloud in Foreign Lands"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_445_wscoot",
+  "otherLanguages": {
+    "Chinese": "骋风",
+    "Japanese": "ウインドスクート",
+    "Korean": "윈드스쿠트"
+  },
+  "characterInfo": {
+    "File no.": "YD22",
+    "Operator Record": "Just Wait For Daybreak",
+    "Paradox Simulation": "Courtesy Before Violence",
+    "Illustrator": "azuタロウ",
+    "Release Date": "2025/09/16",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Tetsuei Sumiya",
+    "Chinese": "Guo Ruolin",
+    "English": "Austin Yang",
+    "Korean": "Park Gi-wook"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "5 years",
+    "Place of Birth": "Yan",
+    "Date of Birth": "November 5th",
+    "Race": "Feline",
+    "Height": "178 cm",
+    "Infection Status": "Originium crystals distributed across surface of body, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Average",
+    "Tactical Acumen": "Average",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Sheathed Blade, Studied Foe",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack of 25% ATK"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack of 28% (+3%) ATK"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack of 40% ATK"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack of 43% (+3%) ATK"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +25"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Sheathed Blade, Studied Foe"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Windscoot's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Sheathed Blade, Studied Foe .",
+        "New skill: Unerring Proficiency ."
+      ],
+      "prerequisite": "Raise Windscoot to Level 45.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 15000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester",
+          "quantity": 1
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Block count +1",
+        "Sheathed Blade, Studied Foe improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Windscoot to Elite 1 Level 60.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 60000
+        },
+        {
+          "name": "Guard Chip Pack",
+          "quantity": 5
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 17
+        },
+        {
+          "name": "Transmuted Salt",
+          "quantity": 8
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "The Best Defense",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ASPD +18 , DEF +20%",
+            "initialSp": 10,
+            "spCost": 28,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ASPD +20 , DEF +23%",
+            "initialSp": 10,
+            "spCost": 27,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ASPD +23 , DEF +26%",
+            "initialSp": 10,
+            "spCost": 26,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ASPD +26 , DEF +29%",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ASPD +30 , DEF +33%",
+            "initialSp": 10,
+            "spCost": 24,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ASPD +34 , DEF +37%",
+            "initialSp": 10,
+            "spCost": 23,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ASPD +38 , DEF +41%",
+            "initialSp": 10,
+            "spCost": 22,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ASPD +42 , DEF +45%",
+            "initialSp": 10,
+            "spCost": 21,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ASPD +46 , DEF +49%",
+            "initialSp": 10,
+            "spCost": 20,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ASPD +50 , DEF +55%",
+            "initialSp": 10,
+            "spCost": 18,
+            "duration": 15
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 1
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 2
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 2
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 2
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Unerring Proficiency",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 140% ATK as Physical damage, and attacks cannot be dodged",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 145% ATK as Physical damage, and attacks cannot be dodged",
+            "initialSp": 1,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 150% ATK as Physical damage, and attacks cannot be dodged",
+            "initialSp": 2,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 155% ATK as Physical damage, and attacks cannot be dodged",
+            "initialSp": 3,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 160% ATK as Physical damage, and attacks cannot be dodged",
+            "initialSp": 5,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 165% ATK as Physical damage, and attacks cannot be dodged",
+            "initialSp": 7,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 170% ATK as Physical damage, and attacks cannot be dodged",
+            "initialSp": 9,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 180% ATK as Physical damage, and attacks cannot be dodged",
+            "initialSp": 11,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 190% ATK as Physical damage, and attacks cannot be dodged",
+            "initialSp": 13,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Range expands and attacks 2 enemies simultaneously. Every attack deals 200% ATK as Physical damage, and attacks cannot be dodged",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 25
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 1
+            },
+            {
+              "name": "Aggregate Cyclicene",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 2
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 2
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "Chiral Refractor",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Device",
+          "quantity": 1
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Aggregate Cyclicene",
+          "quantity": 2
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 4
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Making Friends",
+      "facility": "Reception Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Reception Room, every Recruit slot (Default slots do not count) increases Clue search speed by 5%"
+    },
+    {
+      "name": "On the Alert",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to the Reception Room, if in Clue Exchange, increases the likelihood of obtaining clues that are not on the Clue Board"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Windscoot's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "LIB-X: Yi",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Windscoot and have him use Unerring Proficiency at least 1 time in each battle",
+        "requirement2": "Clear Intermezzo SN-2 with a 3-star rating; You must deploy your own Windscoot and have him use Unerring Proficiency 2 times"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +145 , ATK +15 , DEF +18",
+          "effectLabel": "New trait",
+          "effectText": "Directly gains +100% charge after deployment",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Aggregate Cyclicene",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 20000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +185 , ATK +18 , DEF +22",
+          "effectLabel": "Sheathed Blade, Studied Foe improved",
+          "effectText": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack equal to 45% of ATK",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 15
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 20000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +230 , ATK +22 , DEF +25",
+          "effectLabel": "Sheathed Blade, Studied Foe improved",
+          "effectText": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack equal to 52% of ATK",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 5
+            },
+            {
+              "name": "Fuscous Fiber",
+              "quantity": 6
+            },
+            {
+              "name": "LMD",
+              "quantity": 30000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Windscoot does year-round armed escort work in\nShangshu\nand its surrounding areas in\nYan\n. He came to Rhodes Island for Oripathy treatment, and signed a cooperation agreement to expand his escort business, providing medicine transportation and talent recommendation services to Rhodes Island.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 45,
+        "base": {
+          "hp": 1671,
+          "atk": 132,
+          "def": 231,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 8,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2199,
+          "atk": 189,
+          "def": 322,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 8,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-2"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 60,
+        "base": {
+          "hp": 2199,
+          "atk": 189,
+          "def": 322,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 10,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2784,
+          "atk": 246,
+          "def": 413,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 10,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-2"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 2784,
+          "atk": 246,
+          "def": 413,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 10,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 3355,
+          "atk": 290,
+          "def": 486,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 10,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "1-2"
+      }
+    ],
+    "trust": {
+      "hp": 300,
+      "atk": 30,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 4%\nSmall distribution of Originium crystals can be seen on the left hand.\n\n[Blood Originium-Crystal Density] 0.14u/L\nOperator Windscoot seldom comes into contact with Originium, and does a good job at keeping his condition under control.\n\nOperator Windscoot attended our Originium Protection Course on time, and earnestly took down many notes despite his difficulty doing so. Apparently, he has a group of people to teach what he's learned here.\n—A Medic Operator"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "[Rhodes Island Assistance Log]\nRhodes Island's Medical Department received an unusual request for help. A patient had given up on her plans to continue school in Leithanien, but received a sum of money this morning from an unknown source, accompanied by a note haphazardly filled with misspellings of 'Schulgeld'—'Tuition fees' in Leithanian.\nOddly enough, she asked her acquaintances for any information on where the money came from, to no avail. We later came to learn that the only time she might bump into a stranger is when she practices her violin every morning.\nSo on the next day, we tried waiting by the open space where she was practicing, just to see if her benefactor would show up. As the violin played, a window from the adjacent Training Room opened up. We ran over and looked in, only to startle Operator Windscoot, who was quietly training.\n'Ah... hah, I don't get music, but I like it. My tail goes everywhere every time I hear her violin, like I'm tipsy. So when I heard she couldn't further her studies, I just impulsively...'\nThe investigation into this international act of chivalry stopped here, with a gratifying finale: The patient accepted Windscoot's assistance, and they both agreed he would get his money back in a few years, with Rhodes Island serving as the intermediary. Windscoot also sincerely accepted our boss's criticism over this small disturbance. This was actually not the first time he had done a quiet act of 'charity'!\n'When you're always wandering, upholding justice is the name of the game.' Operator Windscoot spread out his hands like it was the natural thing to do, with no apparent intention to reflect on his headstrong actions."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "SOMETHING BIG IN STORE?!\nAdditionally, the infamous Gang of Justice, known for their efficient intimidation tactics and record of 32 robberies in three days without a single casualty under their belt, has not attempted any robberies for 15 days straight. An informant who wishes to remain anonymous claims a Gang of Justice member told him they're about to 'score big', but no one knows what the gang has in store, when other gangs have been keeping a low profile with the current spotlight on highway robbery investigations.\n—Excerpt from the first March issue of 'Shancheng's Jianghu tip-offs'\n\nTURNING A NEW LEAF OR UP TO SOMETHING WORSE?\nA new flag with 'Escort' written on it hangs at the foot of a mountain, and behind it stands a group of fierce, familiar faces—members of the Gang of Justice who claimed they would 'score big'. Are these brigands possibly planning to pivot into armed escort work?! This writer approached them to pose the question, only to discover their fee is abnormally low for such services. Is this a front for something more sinister? Will their clients find their pockets emptied after taking up their cheap offer?\n—Excerpt from the third March issue of 'Shancheng's Jianghu tip-offs'\n\nMYSTERIOUS FELINE RETURNS\nAfter two weeks, the Gang of Justice's escort team has returned to the foot of the mountain. The former bandits actually handed over the entrusted goods to the consignee and received their reward without any shenanigans? It is worth noting that the escort team is led by a young yet unfamiliar face, absent from the history of the gang's various activities. An informant tells us this person used to live with the gang, goes by 'Windscoot' in the jianghu, and returned to the gang after having left for several years. Is this individual related to the Gang of Justice's sudden transformation from bandits into a formal escort firm? This writer shall continue to keep a close eye on the matter.\n—Excerpt from the second April issue of 'Shancheng's Jianghu tip-offs'"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "The merchant frowned as he entered the escort firm. That's what they called it anyway, yet it looked like a bandit den. Idle escorts squatted on the ground, and their gazes made the merchant's hair stand on end. The young man who welcomed him is enthusiastic, but so clumsy that he struggled to even produce a shipping bill. The merchant had had enough, and turned around to leave. The young man chased him all the way to the front door, stammering a request for his business card, and promising the escort firm would improve within a month.\nA month later, the young man actually showed up at the merchant's office, introducing the escort firm in a green but practiced manner. With trust and doubt evenly matched in his mind, the merchant followed the young man back. As he walked through the door, he heard the young man cough right before two rows of bodyguards greeted him with a unified roar and their backs bent 90 degrees.\nFloored by their sincerity, the merchant began working with them. On his third visit, he ran into a client stirring up trouble, who seemed to be waving his unsigned bill, flatly denying that the delivery happened. The troublemaker provoked the young man by saying: 'Hit me, then! Or are you scared? Spineless coward!' The young man's brows knit tighter and he suddenly raised a fist—to apologize, and even compensate the troublemaker. The client grabbed the compensation fee, sighed, and left disappointed. Only then did the young man realize that what the other party wanted was not just monetary compensation.\n'I didn't realize what he wanted, but... I decided I'd try my best to avoid resorting to violence to solve my problems.' The young man smiled awkwardly.\nWas that a professional scammer sent to bully the young escort agency? Or someone from their peers in the industry trying to challenge them? No one knew. Anyway, when the merchant contacted the escort firm again, he found out the young man had given every escort team leader a terminal. They also straightened out their handover process—confirm and sign, every step now flowing as easily as one breathes. The escort firm born from a bandit den had metamorphosed into a proper business.\nThe merchant could not help but ask: 'How did you manage all that? I mean like, everything.'\nThe young man who had always managed to handle everything with ease now scratched his head, lost in thought, unsure where to begin."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Operator Windscoot's Personal History]\nAge 2: Picked up by a gang, with the day they picked me up treated as my birthday.\nAge 10: They begged the school down the mountain for half a day until they finally let me study there. Later, I helped the weak wherever I went, handled my classmates who were being bullies, but was treated as the top bully and expelled.\nAge 11 to 17: Too embarrassed to return to the gang, I wandered the jianghu.\nAge 18: Heard rumors that the gang back home was opening an escort firm, so I rushed back. I've been working there ever since.\n\nWhen we questioned Windscoot about the details, he showed a cheerful candidness unique to jianghu adventurers. His mouth twists experiences unworthy of celebration into interesting tales, and it often drew laughter from us. However, when we were organizing our records later, we realized there was still a blank period between his return home and the escort firm's founding. We had indeed asked about that, and he seemed to... just when did he skip over the questions?\n\n[Collection details of a certain Yanese agency]\nBy chance we obtained a payment record showing that Windscoot had paid off fines for several captured bandits. These bandits seem to belong to the gang that took him in when he was a toddler, but their names do not appear in the escort firm's employee roster.\n\n[Rhodes Island Weapon Maintenance Log]\n'Can you not tell the difference between your blades? Why do you always send the same one to me?'\n'I maintain the other one myself. Oh, don't get me wrong, it's not that I don't trust your craft. It's just, the other blade's owner is super fierce and nitpicky. She once gave me a beating when she wasn't satisfied. And I mean a real beatdown!'\n'Huh, so the other blade isn't yours?'\n'I'm just keeping it safe for now. One day I'll be able to return it.'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "'A-Ahem! Uncles and aunties, if you insist on having the youth chime in, then look at these two numbers on the wall. Which one is bigger, and by how much?'\n'That's 1 above and 5 below. 5's obviously bigger than 1!'\n'Bah, you should be looking at the first number. 4 on top, 3 below. Top one's bigger!'\n'Hahaha! Makes sense. Well, I won't keep you all guessing. The numbers above are the Gang of Justice's income for the year, while the numbers below are the escort firm's.'\n'Aiya! Which one's bigger then?!'\n'Look, isn't the bottom number longer than the one on top? Our escort firm earns way more than when we were still in the gang. Almost ten times as much! ...Basically, it's a TON of money! Look, everyone. It's possible to walk the right path <i>and</i> have a good life! ...Y-You guys agree, right?'\nThe dinner table observes a moment of silence before bursting into laughter.\n'Hahaha! Just look at this brat, working his ass off because he's scared we'll go back to being bandits! I hope you aren't spending all your time worrying about that?!'\n'...Haha, of course not. I'll drink first as a toast to all your hard work in the coming year!'\n—A conversation from the escort firm's annual new year's eve dinner"
+    }
+  ]
+}

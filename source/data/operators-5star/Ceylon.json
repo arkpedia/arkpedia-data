@@ -1,0 +1,753 @@
+{
+  "name": "Ceylon",
+  "rarity": 5,
+  "class": "Medic",
+  "branch": "Therapist",
+  "faction": "Siesta",
+  "umbrellaFactions": [
+    "Columbia"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing"
+  ],
+  "trait": "Has a large healing range, but the healing amount on farther targets is reduced to 80%",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Heart of Surging Flame"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Holiday HD49"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_348_ceylon",
+  "otherLanguages": {
+    "Simplified Chinese": "锡兰",
+    "Traditional Chinese": "錫蘭",
+    "Japanese": "セイロン",
+    "Korean": "실론"
+  },
+  "characterInfo": {
+    "File no.": "SS01",
+    "Operator Records": "Heartfelt Present The Ones Left Behind",
+    "Paradox Simulation": "Still Waters Run Deep",
+    "Illustrator": "Skade Horin ( Holiday HD49 )",
+    "Release Date": "2020/05/13",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Miho Arakawa",
+    "Chinese": "Cheng Li",
+    "English": "AmaLee",
+    "Korean": "Lee Bo-hee"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Siesta (Independent City)",
+    "Date of Birth": "September 25th",
+    "Race": "Liberi",
+    "Height": "162 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Lake Walker",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "ATK +3%, when there is water terrain on the battlefield, the effect becomes ATK +9%"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "ATK +4% (+1%) , when there is water terrain on the battlefield, the effect becomes ATK +15% (+6%)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "ATK +5%, when there is water terrain on the battlefield, the effect becomes ATK +18%"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "ATK +6% (+1%) , when there is water terrain on the battlefield, the effect becomes ATK +24% (+6%)"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Lake Walker"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Ceylon's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Lake Walker .",
+        "New skill: Water Blessing .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Ceylon to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Lake Walker improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Ceylon to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Medic Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Oriron Block",
+          "quantity": 7
+        },
+        {
+          "name": "Aketon",
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Concentrated Hydrotherapy",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Increases next healing's amount to 140% of ATK. The amount will not be reduced by trait effects Can charge for 1 times",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Increases next healing's amount to 145% of ATK. The amount will not be reduced by trait effects Can charge for 1 times",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Increases next healing's amount to 150% of ATK. The amount will not be reduced by trait effects Can charge for 1 times",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Increases next healing's amount to 155% of ATK. The amount will not be reduced by trait effects Can charge for 1 times",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Increases next healing's amount to 160% of ATK. The amount will not be reduced by trait effects Can charge for 1 times",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Increases next healing's amount to 165% of ATK. The amount will not be reduced by trait effects Can charge for 1 times",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Increases next healing's amount to 170% of ATK. The amount will not be reduced by trait effects Can charge for 2 times",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Increases next healing's amount to 180% of ATK. The amount will not be reduced by trait effects Can charge for 2 times",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Increases next healing's amount to 190% of ATK. The amount will not be reduced by trait effects Can charge for 2 times",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Increases next healing's amount to 200% of ATK. The amount will not be reduced by trait effects Can charge for 3 times",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Water Blessing",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20–40 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +30% , each attack heals 1 additional target. While the skill is active, all allies within range gain status resistance",
+            "initialSp": 20,
+            "spCost": 80,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +30% , each attack heals 1 additional target. While the skill is active, all allies within range gain status resistance",
+            "initialSp": 22,
+            "spCost": 80,
+            "duration": 21
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +30% , each attack heals 1 additional target. While the skill is active, all allies within range gain status resistance",
+            "initialSp": 24,
+            "spCost": 80,
+            "duration": 23
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +40% , each attack heals 1 additional target. While the skill is active, all allies within range gain status resistance",
+            "initialSp": 26,
+            "spCost": 80,
+            "duration": 25
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +40% , each attack heals 1 additional target. While the skill is active, all allies within range gain status resistance",
+            "initialSp": 28,
+            "spCost": 80,
+            "duration": 26
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +40% , each attack heals 1 additional target. While the skill is active, all allies within range gain status resistance",
+            "initialSp": 30,
+            "spCost": 80,
+            "duration": 27
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +50% , each attack heals 1 additional target. While the skill is active, all allies within range gain status resistance",
+            "initialSp": 32,
+            "spCost": 80,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +53% , each attack heals 1 additional target. While the skill is active, all allies within range gain status resistance",
+            "initialSp": 34,
+            "spCost": 80,
+            "duration": 33
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +56% , each attack heals 1 additional target. While the skill is active, all allies within range gain status resistance",
+            "initialSp": 36,
+            "spCost": 80,
+            "duration": 36
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +60% , each attack heals 1 additional target. While the skill is active, all allies within range gain status resistance",
+            "initialSp": 40,
+            "spCost": 80,
+            "duration": 40
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 5
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 2
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Scholar",
+      "facility": "Workshop",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Workshop to process elite material , the production rate of byproduct increases by 80%"
+    },
+    {
+      "name": "Originium Study",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, Originium formula related productivity +35%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Ceylon's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "WAH-X: Field Research Equipment",
+      "mission": {
+        "requirement1": "Have Ceylon use Water Blessing a total of 3 times (excluding Support Units)",
+        "requirement2": "Clear Side Story OF-3 with a 3-star rating; The only Medic Operator that can be deployed is your own Ceylon"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +25 , RES +5",
+          "effectLabel": "New trait",
+          "effectText": "Gain status resistance and become less likely to be attacked",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +35 , RES +5",
+          "effectLabel": "Lake Walker improved",
+          "effectText": "ATK +8%, when there is water terrain on the battlefield, the effect becomes ATK +30%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +45 , RES +5",
+          "effectLabel": "Lake Walker improved",
+          "effectText": "ATK +11%, when there is water terrain on the battlefield, the effect becomes ATK +42%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "A graduate of the\nVictorian\nNational University who majored in\nOriginium\nResearch, Ceylon now works as an assistant researcher to Dr.\nKal'tsit\non her indoor research work.\nShe has a precocious level of master in water arts and can provide reliable treatment to allies on the battlefield.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 798,
+          "atk": 164,
+          "def": 55,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1050,
+          "atk": 269,
+          "def": 80,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1050,
+          "atk": 269,
+          "def": 80,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1251,
+          "atk": 374,
+          "def": 100,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-4"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1251,
+          "atk": 374,
+          "def": 100,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1455,
+          "atk": 468,
+          "def": 126,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-4"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 40,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Somatic Cell-Originium Fusion Rate] 0%\nAlthough for occupational reasons, the patient must come into extended contact with Originium, the operator has taken the appropriate steps to protect herself. As a result, she shows no sign of infection.\n\n[Blood Originium-Crystal Density] 0.21u/L\nThe numbers are on the high side of normal, but Originium researchers do not yet believe there is anything to be concerned about."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "She is a somewhat arrogant and spoiled young lady.\nThe reason why I say 'young lady' instead of 'researcher' is because she gives such a strong impression of a spoiled noble lady that any time she is mentioned, they will say 'Ah! That Lady!' even if they know the content of her work.\nOf course, even though they'll ridicule her as 'the Lady,' there isn't anybody who actually dislikes her. This is because most of the time, she is right, and if she is wrong, she is not stingy with her apologies."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Ceylon's hometown, Siesta, is a rare independent city.\nIts rareness lies not just in the fact that it's a non-nomadic city, but also that it's an independent city, and even more so in that it is currently in a state of rapid development.\nIn truth, on Terra, even though there are many long-established nations, nations are not a widespread concept. Independent city-states, however, are.\nIt should be said that in the context of the present day, the social collectives referred to by 'nation' were city-states in the past. The predecessors of several nations were independent cities gathered together. Additionally, even today, some nomadic cities that nominally belong to certain nations still to varying degrees retain the customs and traditions of the city as opposed to those of the nation.\nHowever, it must be conceded that the concept of an independent city is falling by the wayside, although the old-fashioned and elderly might refuse to admit it. That is because the concept of a nation is more powerful.\nNow, even though there is still a considerable number of independent cities on Terra, their leaders have already recognized that independent cities are no match for nations. In recent years, there have been many such independent cities that have surrendered to neighboring nations.\nHowever, Siesta's special characteristics may be able to take them in a new direction."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "In order to better facilitate understanding, Ceylon did not mention her specific area of study when introducing herself. In fact, the discipline of Originium Research has a large number of sub-categories, both in the applied area of the doctrine as well as the theoretical. Ceylon specializes in researching the history of applied development of Originium. \nBefore the modern academics managed to specialize the research, many precious historical materials on Originium were not well preserved. In fact, collecting clues from past historical data to infer the paths of development of the various Originium schools was also an important part of modern Originium research.\nAlthough today, with the development of science and technology, the study of historical materials has gradually become less concerned with the development of theory and more the verification of it. Of course, the importance of recording history itself is self-evident for the meaning of a civilization.\nNaturally, although Ceylon has only just graduated from university, her intellectual reserves and enthusiasm for the study of Originium is breath-taking, and one can clearly see how much effort Ceylon put into her studies. For Rhodes Island, the addition of such an outstanding talent is a most unexpected surprise."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "The reason why Schwarz's presence is not mentioned in Ceylon's file is the same reason Ceylon was not mentioned in Schwarz's.\nThe reason is very simple, and that's because it's simply not necessary. Words cannot be used to sufficiently describe the depth of feeling they have for one another.\nHowever, one point that may be worth recording is that while they regard one another as the most important thing in each other's lives, their worlds are not merely limited to one another.\nCeylon still eats with other researchers, works with them, and can argue theory until the wee hours of the morning. Schwarz can independently carry out her tasks as well as hit the taverns with other mercenary operators and engage in hand-to-hand combat with them in the practice area.\nThey both have their own independent lives, and after joining Rhodes Island, they expanded their horizons even more. We can intuit that they will become more accustomed to this life while still remaining as important to one another as they've always been.\nThis could be described as a 'profound mutual affection,' with emphasis put on 'profound.'"
+    }
+  ]
+}

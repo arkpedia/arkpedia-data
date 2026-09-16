@@ -1,0 +1,580 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act2break",
+    "label": "VEC",
+    "name": "Vector Breakthrough #2: Trial from Misery",
+    "release_date": "2026-07-30"
+  },
+  "enemies": [
+    {
+      "slug": "misery_blade_of_silence_enemy_8016_misery_1",
+      "id": "enemy_8016_misery_1",
+      "name": "'Misery', Blade of Silence",
+      "index": "SFR12",
+      "rank": "Boss",
+      "sort": 1536,
+      "hidden": true,
+      "icon": "/enemies-icons/'Misery', Blade of Silence.webp",
+      "flavour_text": "A Breakthrough Trainer simulating Misery at the peak of his combat prowess.\nA stealth specialist who excels in spatial Arts, he toys with the dagger in his hand as he keeps opponents distracted. Beware, he's not especially fond of being called an 'assassin'.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "100% Physical and Arts dodge when on a tile shrouded by night",
+          "format": "normal"
+        },
+        {
+          "text": "[Instant Scar] Deals heavy Physical damage to the Operator with lowest Max HP; targets defeated this way have greatly increased Redeployment Time; target loses visibility if hit 3 times in a row",
+          "format": "normal"
+        },
+        {
+          "text": "[Dissolution Space] When affected by Stun, Cold, Freeze, Fear, Lure, or Shifted, immediately removes the condition, recovers HP, and becomes immune to these effects for several seconds",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 60000,
+            "atk": 1500,
+            "def": 700,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "S"
+          },
+          "skills": [
+            {
+              "key": "assassinate",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "assassinate_cd": 15.0,
+                "assassinate_duration": 3.0,
+                "atk_scale_assassinate": 2.0,
+                "max_stack_cnt": 3.0,
+                "respawn_time": 2.5
+              }
+            },
+            {
+              "key": "assassinate_2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "assassinate_cd": 15.0,
+                "assassinate_duration": 3.0,
+                "atk_scale_assassinate": 2.0,
+                "max_stack_cnt": 3.0,
+                "respawn_time": 2.5
+              }
+            },
+            {
+              "key": "retreat",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "retreat_cd_fail": 10.0,
+                "retreat_cd_succeed": 1.0
+              }
+            },
+            {
+              "key": "mark",
+              "sp_cost": 0,
+              "cooldown": 999999.0,
+              "initial_cooldown": 1.0,
+              "priority": 1,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0,
+                "location": "(3,3)"
+              }
+            },
+            {
+              "key": "heal_data",
+              "parameters": {
+                "heal_duration": 5.0,
+                "hp_ratio": 0.1
+              }
+            },
+            {
+              "key": "heal_trigger",
+              "parameters": {
+                "heal_cd": 10.0
+              }
+            },
+            {
+              "key": "l2",
+              "parameters": {
+                "active": 0.0
+              }
+            },
+            {
+              "key": "l3",
+              "parameters": {
+                "active": 0.0
+              }
+            },
+            {
+              "key": "night_trigger",
+              "parameters": {
+                "prob": 1.0
+              }
+            },
+            {
+              "key": "poison",
+              "parameters": {
+                "atk_scale_poison": 0.2,
+                "interval": 1.0,
+                "poison_duration": 10.0,
+                "respawn_time": 2.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Sleep",
+            "Levitate",
+            "Disarm"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "misery_blade_of_silence_enemy_8016_misery_2",
+      "id": "enemy_8016_misery_2",
+      "name": "'Misery', Blade of Silence",
+      "index": "SFR12",
+      "rank": "Boss",
+      "sort": 1537,
+      "hidden": true,
+      "icon": "/enemies-icons/'Misery', Blade of Silence.webp",
+      "flavour_text": "A Breakthrough Trainer simulating Misery at the peak of his combat prowess.\nA stealth specialist who excels in spatial Arts, he toys with the dagger in his hand as he keeps opponents distracted. Beware, he's not especially fond of being called an 'assassin'.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "100% Physical and Arts dodge when on a tile shrouded by night",
+          "format": "normal"
+        },
+        {
+          "text": "[Instant Scar] Deals heavy Physical damage to the Operator with lowest Max HP; targets defeated this way have greatly increased Redeployment Time; target loses visibility if hit 3 times in a row",
+          "format": "normal"
+        },
+        {
+          "text": "[Dissolution Space] When affected by Stun, Cold, Freeze, Fear, Lure, or Shifted, immediately removes the condition, recovers HP, and becomes immune to these effects for several seconds",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated for the first time, returns to the field and changes behavior: When entering your visibility, immediately moves to a tile shrouded by night and stops moving (no allies in path); continues moving after casting [Instant Scar], or if he does not find a target",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 70000,
+            "atk": 1750,
+            "def": 700,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "S"
+          },
+          "skills": [
+            {
+              "key": "assassinate",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "assassinate_cd": 15.0,
+                "assassinate_duration": 3.0,
+                "atk_scale_assassinate": 2.0,
+                "max_stack_cnt": 3.0,
+                "respawn_time": 2.5
+              }
+            },
+            {
+              "key": "assassinate_2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "assassinate_cd": 15.0,
+                "assassinate_duration": 3.0,
+                "atk_scale_assassinate": 2.0,
+                "max_stack_cnt": 3.0,
+                "respawn_time": 2.5
+              }
+            },
+            {
+              "key": "retreat",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "retreat_cd_fail": 10.0,
+                "retreat_cd_succeed": 1.0
+              }
+            },
+            {
+              "key": "mark",
+              "sp_cost": 0,
+              "cooldown": 999999.0,
+              "initial_cooldown": 1.0,
+              "priority": 1,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0,
+                "location": "(3,3)"
+              }
+            },
+            {
+              "key": "heal_data",
+              "parameters": {
+                "heal_duration": 5.0,
+                "hp_ratio": 0.1
+              }
+            },
+            {
+              "key": "heal_trigger",
+              "parameters": {
+                "heal_cd": 10.0
+              }
+            },
+            {
+              "key": "l2",
+              "parameters": {
+                "active": 1.0
+              }
+            },
+            {
+              "key": "l3",
+              "parameters": {
+                "active": 0.0
+              }
+            },
+            {
+              "key": "night_trigger",
+              "parameters": {
+                "prob": 1.0
+              }
+            },
+            {
+              "key": "poison",
+              "parameters": {
+                "atk_scale_poison": 0.2,
+                "interval": 1.0,
+                "poison_duration": 10.0,
+                "respawn_time": 2.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Sleep",
+            "Levitate",
+            "Disarm"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "misery_blade_of_silence_enemy_8016_misery_3",
+      "id": "enemy_8016_misery_3",
+      "name": "'Misery', Blade of Silence",
+      "index": "SFR12",
+      "rank": "Boss",
+      "sort": 1538,
+      "hidden": true,
+      "icon": "/enemies-icons/'Misery', Blade of Silence.webp",
+      "flavour_text": "A Breakthrough Trainer simulating Misery at the peak of his combat prowess.\nA stealth specialist who excels in spatial Arts, he toys with the dagger in his hand as he keeps opponents distracted. Beware, he's not especially fond of being called an 'assassin'.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical",
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "100% Physical and Arts dodge when on a tile shrouded by night",
+          "format": "normal"
+        },
+        {
+          "text": "[Instant Scar] Deals heavy Physical damage to the Operator with lowest Max HP; targets defeated this way have greatly increased Redeployment Time; target loses visibility if hit 3 times in a row",
+          "format": "normal"
+        },
+        {
+          "text": "[Dissolution Space] When affected by Stun, Cold, Freeze, Fear, Lure, or Shifted, immediately removes the condition, recovers HP, and becomes immune to these effects for several seconds",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated for the first time, returns to the field and changes behavior: When entering your visibility, immediately moves to a tile shrouded by night and stops moving (no allies in path); continues moving after casting [Instant Scar], or if he does not find a target",
+          "format": "normal"
+        },
+        {
+          "text": "[Diffuse Fission] Attacks and [Instant Scar] deal continuous Arts damage, and targets that leave the field while effect is active have greatly increased Redeployment Time",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 80000,
+            "atk": 2000,
+            "def": 700,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "S"
+          },
+          "skills": [
+            {
+              "key": "assassinate",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "assassinate_cd": 15.0,
+                "assassinate_duration": 3.0,
+                "atk_scale_assassinate": 2.0,
+                "max_stack_cnt": 3.0,
+                "respawn_time": 2.5
+              }
+            },
+            {
+              "key": "assassinate_2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "assassinate_cd": 15.0,
+                "assassinate_duration": 3.0,
+                "atk_scale_assassinate": 2.0,
+                "max_stack_cnt": 3.0,
+                "respawn_time": 2.5
+              }
+            },
+            {
+              "key": "retreat",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "retreat_cd_fail": 10.0,
+                "retreat_cd_succeed": 1.0
+              }
+            },
+            {
+              "key": "mark",
+              "sp_cost": 0,
+              "cooldown": 999999.0,
+              "initial_cooldown": 1.0,
+              "priority": 1,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0,
+                "location": "(3,3)"
+              }
+            },
+            {
+              "key": "heal_data",
+              "parameters": {
+                "heal_duration": 5.0,
+                "hp_ratio": 0.1
+              }
+            },
+            {
+              "key": "heal_trigger",
+              "parameters": {
+                "heal_cd": 10.0
+              }
+            },
+            {
+              "key": "l2",
+              "parameters": {
+                "active": 1.0
+              }
+            },
+            {
+              "key": "l3",
+              "parameters": {
+                "active": 1.0
+              }
+            },
+            {
+              "key": "night_trigger",
+              "parameters": {
+                "prob": 1.0
+              }
+            },
+            {
+              "key": "poison",
+              "parameters": {
+                "atk_scale_poison": 0.2,
+                "interval": 1.0,
+                "poison_duration": 10.0,
+                "respawn_time": 2.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Sleep",
+            "Levitate",
+            "Disarm"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "lava_flame_of_resistance",
+      "id": "enemy_8017_vcblva",
+      "name": "Lava, Flame of Resistance",
+      "index": "SFR13",
+      "rank": "Elite",
+      "sort": 1522,
+      "hidden": false,
+      "icon": "/enemies-icons/Lava, Flame of Resistance.webp",
+      "flavour_text": "Lava, Rhodes Island operator, currently receiving instruction from elite operators. Her talent in Arts is only part of the story: the real reason elite operators are willing to teach her everything they know is because of her resolve to never give up.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Your units cannot be deployed on her tile or the 8 surrounding tiles",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 70000,
+            "atk": 700,
+            "def": 800,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 1.2,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B+",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

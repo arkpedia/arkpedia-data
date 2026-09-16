@@ -1,0 +1,757 @@
+{
+  "name": "Snowsant",
+  "rarity": 5,
+  "class": "Specialist",
+  "branch": "Hookmaster",
+  "faction": "Lungmen",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Shift",
+    "Slow"
+  ],
+  "trait": "Can Shift enemies by using skills Can be deployed on Ranged Tiles",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Ancient Forge"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Fated Hero"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_383_snsant",
+  "otherLanguages": {
+    "Chinese": "雪雉",
+    "Japanese": "スノーズント",
+    "Korean": "스노우상트"
+  },
+  "characterInfo": {
+    "File no.": "LM16",
+    "Operator Record": "A Dilemma of Values",
+    "Paradox Simulation": "Efficient Pest Control",
+    "Illustrator": "NoriZC",
+    "Release Date": "2020/07/29",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Kana Asumi",
+    "Mandarin": "Zhou Tong (credited as \"Atom\" in EN)",
+    "Hangzhouhua": "Mao Qian",
+    "English": "Ariel Fournier",
+    "Korean": "Bang Si-woo"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Lungmen",
+    "Date of Birth": "October 17th",
+    "Race": "Liberi",
+    "Height": "155 cm",
+    "Infection Status": "Confirmed uninfected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Bug Catcher",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When dragging an \"Infected Creature,\" silence it for 4 seconds"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When dragging an \"Infected Creature,\" silence it for 8 (+4) seconds"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When dragging an \"Infected Creature,\" the strength of the shift increases by 1 degree, and silences the target for 4 seconds"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When dragging an \"Infected Creature,\" the strength of the shift increases by 1 degree, and silences the target for 8 (+4) seconds"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Bug Catcher"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Snowsant's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Bug Catcher .",
+        "New skill: Telescoping Electric Net .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Snowsant to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Specialist Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Bug Catcher improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Snowsant to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Specialist Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Polymerized Gel",
+          "quantity": 8
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 15
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Barbed Clawhook",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack drags the target towards this unit slightly , dealing 110% ATK as Physical damage and Slowing it for 1 seconds",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack drags the target towards this unit slightly , dealing 115% ATK as Physical damage and Slowing it for 1 seconds",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack drags the target towards this unit slightly , dealing 120% ATK as Physical damage and Slowing it for 1 seconds",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack drags the target towards this unit moderately , dealing 125% ATK as Physical damage and Slowing it for 1 seconds",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack drags the target towards this unit moderately , dealing 130% ATK as Physical damage and Slowing it for 1 seconds",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack drags the target towards this unit moderately , dealing 135% ATK as Physical damage and Slowing it for 1 seconds",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack drags the target towards this unit moderately , dealing 140% ATK as Physical damage and Slowing it for 1 seconds",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack drags the target towards this unit moderately , dealing 150% ATK as Physical damage and Slowing it for 1.2 seconds",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack drags the target towards this unit moderately , dealing 160% ATK as Physical damage and Slowing it for 1.4 seconds",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack drags the target towards this unit greatly , dealing 170% ATK as Physical damage and Slowing it for 1.6 seconds",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Telescoping Electric Net",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Launches a net forward, dragging all enemies caught within it towards this unit slightly , dealing 130% ATK as Arts Damage and Slowing them for 2.1 seconds",
+            "initialSp": 10,
+            "spCost": 27,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Launches a net forward, dragging all enemies caught within it towards this unit slightly , dealing 135% ATK as Arts Damage and Slowing them for 2.1 seconds",
+            "initialSp": 10,
+            "spCost": 26,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Launches a net forward, dragging all enemies caught within it towards this unit slightly , dealing 140% ATK as Arts Damage and Slowing them for 2.1 seconds",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Launches a net forward, dragging all enemies caught within it towards this unit moderately , dealing 145% ATK as Arts Damage and Slowing them for 2.3 seconds",
+            "initialSp": 10,
+            "spCost": 24,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Launches a net forward, dragging all enemies caught within it towards this unit moderately , dealing 150% ATK as Arts Damage and Slowing them for 2.3 seconds",
+            "initialSp": 10,
+            "spCost": 23,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Launches a net forward, dragging all enemies caught within it towards this unit moderately , dealing 155% ATK as Arts Damage and Slowing them for 2.3 seconds",
+            "initialSp": 10,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Launches a net forward, dragging all enemies caught within it towards this unit moderately , dealing 160% ATK as Arts Damage and Slowing them for 2.5 seconds",
+            "initialSp": 10,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Launches a net forward, dragging all enemies caught within it towards this unit moderately , dealing 170% ATK as Arts Damage and Slowing them for 2.8 seconds",
+            "initialSp": 10,
+            "spCost": 20,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Launches a net forward, dragging all enemies caught within it towards this unit moderately , dealing 180% ATK as Arts Damage and Slowing them for 3.1 seconds",
+            "initialSp": 10,
+            "spCost": 19,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Launches a net forward, dragging all enemies caught within it towards this unit greatly , dealing 200% ATK as Arts Damage and Slowing them for 3.5 seconds",
+            "initialSp": 10,
+            "spCost": 17,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 3
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Heavenly Reward α",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, provides an additional 5% order acquisition efficiency for every 5% order acquisition efficiency provided by all other Operators assigned to that Trading Post, up to a maximum of 25% order acquisition efficiency."
+    },
+    {
+      "name": "Heavenly Reward βReplacesHeavenly Reward α",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, provides an additional 5% order acquisition efficiency for every 5% order acquisition efficiency provided by all other Operators assigned to that Trading Post, up to a maximum of 35% order acquisition efficiency."
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Snowsant's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "HOK-X: Snowsant's Precious Money Bank",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Snowsant, and cause at least 2 enemies to fall in a pit in each battle",
+        "requirement2": "Clear Main Theme 4-6 with a 3-star rating; You must deploy your own Snowsant, and use Telescoping Electric Net at least 2 times"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +110 , DEF +22",
+          "effectLabel": "New trait",
+          "effectText": "While being pulled, enemies take Arts damage proportional to the distance traveled [ note 1 ]",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +170 , DEF +27",
+          "effectLabel": "Bug Catcher improved",
+          "effectText": "When pulling an [Infected Creature] , increases the strength of the shift by 1 degree, and silences the target for 6 seconds",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +210 , DEF +31",
+          "effectLabel": "Bug Catcher improved",
+          "effectText": "When pulling an [Infected Creature], increases the strength of the shift by 1 degree, and silences the target for 8 seconds",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Operator\nSnowsant, a native of\nLungmen\n, has a rich experience in scientific research from the various high-tech development zones of\nColumbia\n.\nAfter returning to Lungmen to develop her home town, she signed a contract with\nRhodes Island\nduring the following period.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 794,
+          "atk": 320,
+          "def": 155,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 13,
+          "block": 2,
+          "interval": 1.8
+        },
+        "max": {
+          "hp": 1073,
+          "atk": 458,
+          "def": 228,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 13,
+          "block": 2,
+          "interval": 1.8
+        },
+        "rangeId": "2-2"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1073,
+          "atk": 458,
+          "def": 228,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 15,
+          "block": 2,
+          "interval": 1.8
+        },
+        "max": {
+          "hp": 1394,
+          "atk": 596,
+          "def": 301,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 15,
+          "block": 2,
+          "interval": 1.8
+        },
+        "rangeId": "3-2"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1394,
+          "atk": 596,
+          "def": 301,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 15,
+          "block": 2,
+          "interval": 1.8
+        },
+        "max": {
+          "hp": 1835,
+          "atk": 745,
+          "def": 355,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 15,
+          "block": 2,
+          "interval": 1.8
+        },
+        "rangeId": "3-2"
+      }
+    ],
+    "trust": {
+      "hp": 300,
+      "atk": 0,
+      "def": 40
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there are no other signs of infection. At this time, this operator can be confirmed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Snowsant shows no signs of Oripathy infection.\n\n[Blood Originium-Crystal Density] 0.14u/L\nDue to scientific research and related reasons, Snowsant comes into contact with Originium on occasion. Though there is almost no risk of infection, regular inspections are still required."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "A hard worker from birth, Snowsant was born into the lower class and became a self-taught student only through her own efforts. She invested her hard-earned savings to head to Columbia to pursue her dreams.\nAccording to an investigation into her resume, Snowsant once settled in a well-known high-tech development zone in Columbia, working as a researcher in a notorious private research institute. Since this small-scale institute did not produce any results of importance, we once dismissed her research capabilities.\nBut when we delved into the papers titled 'Next-Generation Convenience Improvements for Floor-Sweeping Robots' and 'A Mechanical Clawhook That Will Never Become Loose (Haven't Thought of a Good Use Yet),' we came to reevaluate Snowsant in a different light.\nAfter all, nothing serves as a better testimony to Snowsant's vigorous and enthusiastic work ethic than the fact that she went all-out even when researching things that probably don't matter at all. This misunderstanding was likely caused by the fact that she was excluded from the field for a long period of time, and did not have the opportunity to enter the high-tech field. In fact, Snowsant is even more talented than she is aware of. Compared to those geniuses that are prone to crashing and burning, a steadfast researcher who has never stopped inching forward seems to be more worthy of Rhodes Island's attention."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "The story of 'Snowsant's Coin' was once popular among younger Operators, without any malicious intent of course.\nOnce, during one of Dobermann's speeches that dragged on for dozens of minutes, Snowsant's eyes were fixated upon the instructor's feet the entire time. As soon as Dobermann concluded her speech, Snowsant immediately shot up and approached Dobermann - nobody had ever seen her move so quickly before. Then, she bent over - in front of everyone in the room, picked up a coin, and stood back up. Even Dobermann did not know how to react at that time. Though Snowsant quickly seemed to realize her rude behavior, she stood there for a few seconds before shuffling back to her seat, trembling in front of the whole room.\nWe later learned that her purse had a small hole in it, and the purse was filled with coins that she had painstakingly scrounged up. Surprisingly, though Snowsant was fidgeting around for the coin almost the entire meeting, her notes were almost identical to what was given by Dobermann. We hope that the Operators prone to falling asleep during meetings can learn a thing or two from her diligence.\nAlthough sometimes this diligence reaches a level that makes others worried about her health, most Operators watch over her fondly as this frail girl carefully and painstakingly goes about her work."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Somehow, Miss Jessica and Miss Snowsant have developed a good relationship.\nDuring a certain equipment maintenance job, Jessica struck up a conversation with Snowsant. Perhaps due to their shared similarities - both girls being kind, hard-working, and conscientious, the two quickly came to understand each other, and sympathized with and admired each others' experiences.\nOf course, in the eyes of outsiders, these two girls also have strikingly similar weaknesses. There are too many talented people surrounding them, which makes them underestimate their abilities, and they compensate through an almost stubborn work ethic, taking one step at a time.\nHowever, despite understanding each other in many regards and confiding in each other, after learning about Jessica's monthly expenditures on firearms, equipment, and Originium bullets, Snowsant once questioned Jessica's grasp of currency and basic mathematical knowledge. If you see the two eating together at a cafeteria, don't be surprised if you see Snowsant with an empty tray in front of her. While Jessica is certainly capable of helping Snowsant financially, she also knows the value of the sacrifices Snowsant is willing to make for her ideals. Perhaps, the two of them really can become each others' emotional pillar of support."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "If Rhodes Island has a 'paragon of frugality,' that would be none other than Snowsant.\nAccording to her own account, before traveling to Columbia, she lived a bare-bones life in Lungmen. Even after her scholarships and salary from the research institute eased her financial burdens, she continued her frugality in order to fund her independent research and development projects.\nFrom the smallest of things, such as turning off the lights before going outside or recycling whatever she could, Snowsant had precise calculations and plans for all her daily expenses. After rigorously withholding what she needed for her research funds and squeezing anything out of her living expenses, she would send whatever was left over back to her hometown.\nIt is worth mentioning the industrial clawhooks that Snowsant carries with her. Reportedly, this clawhook is the first scientific achievement that Snowsant made by herself before leaving Lungmen. Obviously, she had no idea how to use patent rights and marketing to turn a profit for herself. She simply took this clawhook to participate in a certain regional industrial design competition, relying on the meager proceeds to buy a one-way ticket to Columbia to begin chasing her dreams.\nSnowsant has little confidence in her abilities, and though I don't know when, some very successful people who understood the value of her quiet diligence turned their attention towards her and invited her back to Lungmen when the time was right."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "During her hardest time in Columbia, Snowsant repeatedly missed research opportunities due to exclusion and discrimination. When Snowsant learned that the few scientific achievements she made had been plagiarized by the institute and registered under another person's name to secure research funds, she could only helplessly shuffle through the bustling streets of Columbia. Under the crushing weight of utter disappointment, she took out the lucky charm bag that her grandmother had prepared for her. Within it was but a piece of paper with the four words: 'Heaven rewards the hardworking.'\nThough useless for her situation, Snowsant cheered up and found solace in those words.\nHeaven rewards the hardworking, and the proverb became reality.\nThree days later, Snowsant received an invitation from officials in Lungmen's upper echelons. Though the research institute tried to persuade her to stay upon learning this news, Snowsant eventually rejected the institute's offer and returned to her hometown with a deep longing in her heart."
+    }
+  ]
+}

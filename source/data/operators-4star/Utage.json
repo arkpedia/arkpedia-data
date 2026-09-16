@@ -1,0 +1,751 @@
+{
+  "name": "Utage",
+  "rarity": 4,
+  "class": "Guard",
+  "branch": "Soloblade",
+  "faction": "Higashi",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS",
+    "Survival"
+  ],
+  "trait": {
+    "Base": "Can't be healed by other units. Recovers 30 self HP every time this operator attacks an enemy",
+    "Elite 1": "Can't be healed by other units. Recovers 50 self HP every time this operator attacks an enemy",
+    "Elite 2": "Can't be healed by other units. Recovers 70 self HP every time this operator attacks an enemy"
+  },
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Summer Flowers FA661",
+    "Disguise"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_337_utage",
+  "otherLanguages": {
+    "Chinese": "宴",
+    "Japanese": "ウタゲ",
+    "Korean": "우타게"
+  },
+  "characterInfo": {
+    "File no.": "HK03",
+    "Operator Records": "The Game of Chic The Tale of Nuegiri",
+    "Paradox Simulation": "Guardian Trendsetter",
+    "Illustrator": "釜飯轟々丸",
+    "Release Date": "2020/09/10",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Mayu Yoshioka",
+    "Chinese": "Xu Xu (credited as \"Skye\" in EN)",
+    "English": "Ayaka Kyo",
+    "Korean": "Choi Ha-ri"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Higashi",
+    "Date of Birth": "April 4th",
+    "Race": "Unknown",
+    "Height": "161 cm",
+    "Infection Status": "Confirmed infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Serious Mode",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "Gains up to +50 ASPD Tenacity (reaches maximum bonus when losing 50% Max HP)"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Gains up to +75 ASPD Tenacity (reaches maximum bonus when losing 60% Max HP)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Gains up to +100 ASPD Tenacity (reaches maximum bonus when losing 70% Max HP)"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +23"
+      },
+      {
+        "level": 5,
+        "benefit": "Redeployment time -6 seconds"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Utage's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Descending Strike - Earth Splitter .",
+        "Serious Mode improved.",
+        "Operator Modules available.",
+        "Trait improved."
+      ],
+      "prerequisite": "Raise Utage to Level 45.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 15000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 3
+        },
+        {
+          "name": "Device",
+          "quantity": 1
+        },
+        {
+          "name": "Sugar",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Serious Mode improved.",
+        "Trait improved."
+      ],
+      "prerequisite": "Raise Utage to Elite 1 Level 60.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 60000
+        },
+        {
+          "name": "Guard Chip Pack",
+          "quantity": 5
+        },
+        {
+          "name": "Aketon",
+          "quantity": 14
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 14
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Space Out",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "8 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Stops attacking, Block becomes 0, DEF +100% , and restores HP by 6% of Max HP every second",
+            "initialSp": 0,
+            "spCost": 15,
+            "duration": 8
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Stops attacking, Block becomes 0, DEF +110% , and restores HP by 6% of Max HP every second",
+            "initialSp": 1,
+            "spCost": 15,
+            "duration": 8
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Stops attacking, Block becomes 0, DEF +120% , and restores HP by 6% of Max HP every second",
+            "initialSp": 2,
+            "spCost": 15,
+            "duration": 8
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Stops attacking, Block becomes 0, DEF +130% , and restores HP by 7% of Max HP every second",
+            "initialSp": 3,
+            "spCost": 15,
+            "duration": 8
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Stops attacking, Block becomes 0, DEF +140% , and restores HP by 7% of Max HP every second",
+            "initialSp": 4,
+            "spCost": 15,
+            "duration": 8
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Stops attacking, Block becomes 0, DEF +150% , and restores HP by 7% of Max HP every second",
+            "initialSp": 5,
+            "spCost": 15,
+            "duration": 8
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Stops attacking, Block becomes 0, DEF +160% , and restores HP by 8% of Max HP every second",
+            "initialSp": 6,
+            "spCost": 15,
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Stops attacking, Block becomes 0, DEF +170% , and restores HP by 8% of Max HP every second",
+            "initialSp": 7,
+            "spCost": 15,
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Stops attacking, Block becomes 0, DEF +180% , and restores HP by 8% of Max HP every second",
+            "initialSp": 8,
+            "spCost": 15,
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Stops attacking, Block becomes 0, DEF +200% , and restores HP by 10% of Max HP every second",
+            "initialSp": 10,
+            "spCost": 15,
+            "duration": 8
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 1
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 2
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 2
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Descending Strike - Earth Splitter",
+        "recoveryType": "Passive",
+        "activationType": null,
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "After deployment, immediately loses 50% current HP. For 13 seconds after deployment, ATK +50% and attacks deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "After deployment, immediately loses 50% current HP. For 13 seconds after deployment, ATK +55% and attacks deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "After deployment, immediately loses 50% current HP. For 13 seconds after deployment, ATK +60% and attacks deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "After deployment, immediately loses 50% current HP. For 14 seconds after deployment, ATK +65% and attacks deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "After deployment, immediately loses 50% current HP. For 14 seconds after deployment, ATK +70% and attacks deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "After deployment, immediately loses 50% current HP. For 14 seconds after deployment, ATK +75% and attacks deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "After deployment, immediately loses 50% current HP. For 15 seconds after deployment, ATK +80% and attacks deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "After deployment, immediately loses 50% current HP. For 15 seconds after deployment, ATK +90% and attacks deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "After deployment, immediately loses 50% current HP. For 15 seconds after deployment, ATK +100% and attacks deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "After deployment, immediately loses 50% current HP. For 16 seconds after deployment, ATK +110% and attacks deal Arts damage",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 1
+            },
+            {
+              "name": "RMA70-12",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 2
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 2
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 2
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 2
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 2
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 4
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Psychology",
+      "facility": "Office",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the HR Office, HR contacting speed +40%"
+    },
+    {
+      "name": "Clue Search β",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by 20%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Utage's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "SBL-X: Flip Phone",
+      "mission": {
+        "requirement1": "During battles, have Utage use Descending Strike - Earth Splitter a total of 5 times (excluding Support Units)",
+        "requirement2": "Clear Main Theme 1-12 with a 3-star rating; You must deploy your own Utage, and cannot include any other Guard Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +160 , ATK +45",
+          "effectLabel": "New trait",
+          "effectText": "Gains 25% Sanctuary when HP is below 50%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 20000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +210 , ATK +55",
+          "effectLabel": "New talent: Cold-Blooded",
+          "effectText": "+3% ATK and +3% DEF when HP is below 50%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 15
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 25000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +240 , ATK +60",
+          "effectLabel": "Cold-Blooded improved",
+          "effectText": "+4% ATK and +4% DEF when HP is below 50%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 5
+            },
+            {
+              "name": "Semi-Synthetic Solvent",
+              "quantity": 6
+            },
+            {
+              "name": "LMD",
+              "quantity": 30000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "An ordinary student from\nHigashi\nwho came to study in\nLungmen\n, Utage contracted\nOripathy\nafter getting pulled into an incident with\nInfected\npersons. After coming to\nRhodes Island\nper physician's advice, Utage passed the evaluation to become an\nOperator\n.\nShe is level-headed in her view of Oripathy, living life largely the same as before she became Infected. However, when she is working, she exhibits a terrifying demeanor.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 45,
+        "base": {
+          "hp": 1413,
+          "atk": 309,
+          "def": 150,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1963,
+          "atk": 442,
+          "def": 206,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 60,
+        "base": {
+          "hp": 1963,
+          "atk": 442,
+          "def": 206,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 1,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2583,
+          "atk": 575,
+          "def": 265,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 1,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 2583,
+          "atk": 575,
+          "def": 265,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 24,
+          "block": 1,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 3444,
+          "atk": 693,
+          "def": 312,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 24,
+          "block": 1,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 30,
+      "def": 40
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal blurry outlines of this operator's internal organs, clouded with abnormal dark spots. Her circulatory system shows an abnormally high rate of Originium particulate matter, with other signs of Oripathy infection, we can confirm that the Operator is Infected. \n\n[Cell-Originium Assimilation] 2%\nOperator Utage is Infected, but has no external signs of infection.\n\n[Blood Originium-Crystal Density] 0.18u/L\nOperator Utage rarely comes in contact with Originium. Please maintain that situation."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "This exchange student from Higashi loves to eat, chases the latest fashion trends, and likes to have a good time. After contracting Oripathy after getting caught up in an incident, she came to Rhodes Island in accordance with her physician's advice. At first, a non-combat role was planned for her based upon her complete lack of combat experience, but during the evaluation, she demonstrated a considerable talent for fighting. After some discussion, the examiner decided to let her participate in some field missions. Of course, the bulk of her work will still be non-combat related, such as logistics or HR work more suitable for someone her age."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Utage revels in the challenge of new things. As fashion is constantly shifting and lines up with her interests, she naturally pays more attention to these things. Over time, she has become a bit of an authority. What company is gearing up to release a new product, and how does its prospects on the market look? She always has her finger on the pulse of new information, and is ready to share it with any nearby Operators who are interested. Thanks to her, the average fashionability of the Operators here has improved greatly, but their wallets have been proportionally flattened."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "I must note that Utage is very good at disguising and manipulating her mental state. As a result, conventional psychological monitoring methods are not reliable in her case. In addition to her strong psychological qualities, I also believe that her race has something to do with the phenomenon. The other Operators from Higashi have no insights as to her race, and unless she decides to disclose this information herself, we might have to commit a lot of effort into this question... Wait, you mean, her blade? Hmm.... perhaps there is a lot we can learn from her blade. This line of tracking may well be more successful than other alternatives. Understood, I'll get in touch with Vulcan. Once I have the information, I'll enter it into the database and make it available to you."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "'You're back? Did you get it done? I see. Still couldn't find anything, huh? Guess that's not unexpected... Hey, s-stop hitting me, it's my bad, so stop already!'\n'I know you had good intentions and wanted the Doctor to get to know each Operator better. However, everyone has their own secrets, right? For example, you wouldn't want everyone to find out right now that you're planning to propose to your girlfriend and have an engagement ring in a compartment in your desk. Oh, how'd I find out? Well, uh, ahahaha.'\n'What's important is not to air out every nitty gritty detail about an Operator's life, but rather to determine whether or not they are trustworthy, and assign them accordingly. That's already enough. Utage deserves the Doctor's trust, as well as ours, but she may never decide to trust us with her secrets. As for the Doctor, perhaps she will eventually open up, given the right time and place."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "[Excerpts from an Encrypted Channel - Regarding Utage] \n'If you want to know what's 'in' with the chicks, then you've come to the right place.'\n'She's really good at creating a laid-back atmosphere.'\n\n'She always has her finger on the pulse. Whenever something limited edition hits the market, she's on top of it right away. Being able to strike a business deal was super lucky.'\n\n'D-did she just give me an evil eye? I could feel shivers going down my spine...'\n\n'I can't figure out what that kid is thinking.'\n\n'When she smiles like that, yes, those vibes, now that's a bit interesting.'\n\n'That's just me faking it~ I don't mind teach you if you want to learn.'"
+    }
+  ]
+}

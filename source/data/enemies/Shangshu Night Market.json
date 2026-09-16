@@ -1,0 +1,307 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "sss",
+    "id": "tower_n_18",
+    "label": null,
+    "name": "Shangshu Night Market",
+    "release_date": "2025-10-16"
+  },
+  "enemies": [
+    {
+      "slug": "aubade",
+      "id": "enemy_6029_solzac",
+      "name": "'Aubade'",
+      "index": "DL29",
+      "rank": "Boss",
+      "sort": 1489,
+      "hidden": false,
+      "icon": "/enemies-icons/'Aubade'.webp",
+      "flavour_text": "A set of chime bells that turned into a Waregeist. Its previous owner was a musician whose deathbed request was for Miss Du to deliver it to a friend. After it was stolen, it was transformed into a Waregeist by the influence of Sui-Xiang. It makes a poignant sound as it wanders about trying to return to its master, not knowing that its master has already passed away.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Initial Form",
+          "format": "title"
+        },
+        {
+          "text": "Throws <'Woodthreads'> at one of your Operators after losing a percentage of HP; the Operator is Stunned while <'Woodthreads'> is on the battlefield",
+          "format": "normal"
+        },
+        {
+          "text": "Reborn Form",
+          "format": "title"
+        },
+        {
+          "text": "When HP is reduced to 0, remains Invulnerable and splits into a large number of <'Twitter'>; [Reborn Form] expires when there are no <'Twitter'> on the battlefield",
+          "format": "normal"
+        },
+        {
+          "text": "Returns to initial form if 'Aubade' HP is not at 0 when [Reborn Form] expires",
+          "format": "normal"
+        },
+        {
+          "text": "ATK increases when returning from [Reborn Form] to initial form",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 60000,
+            "atk": 800,
+            "def": 700,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": 3.0,
+            "weight": 6,
+            "taunt": 0,
+            "life_cost": 3
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "spawn_enemy",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 1.0,
+              "priority": 0,
+              "parameters": {
+                "range_radius": 5.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "fragment",
+              "parameters": {
+                "cnt": 10.0
+              }
+            },
+            {
+              "key": "get_frgzac",
+              "parameters": {
+                "atk": 0.3,
+                "hp_ratio": 0.1,
+                "max_stack_cnt": 5.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "duration": 1.0,
+                "enemy_key": "enemy_6030_frgzac",
+                "hp_ratio": 0.001
+              }
+            },
+            {
+              "key": "summon_stun_1",
+              "parameters": {
+                "hp_ratio": 0.7
+              }
+            },
+            {
+              "key": "summon_stun_2",
+              "parameters": {
+                "hp_ratio": 0.4
+              }
+            },
+            {
+              "key": "summon_stun_3",
+              "parameters": {
+                "hp_ratio": 0.1
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Sleep",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "twitter",
+      "id": "enemy_6030_frgzac",
+      "name": "'Twitter'",
+      "index": "DL30",
+      "rank": "Normal",
+      "sort": 1490,
+      "hidden": false,
+      "icon": "/enemies-icons/'Twitter'.webp",
+      "flavour_text": "A fragment of the body of 'Aubade'. Its mind is hazy like that of a newborn foal, yearning to return to its 'mother'.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 25 times to defeat",
+          "format": "normal"
+        },
+        {
+          "text": "After coming into contact with <'Aubade'>, disappears and restores the HP of <'Aubade'> by a certain amount",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated, reduces the number of <'Twitter'> that <'Aubade'> can split into",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25,
+            "atk": 100,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.15,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "E"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "start",
+              "parameters": {
+                "duration": 6.0
+              }
+            },
+            {
+              "key": "trace",
+              "parameters": {
+                "enemy_key": "enemy_6029_solzac"
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Sleep",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "woodthreads",
+      "id": "enemy_6031_visfrg",
+      "name": "'Woodthreads'",
+      "index": "DL31",
+      "rank": "Normal",
+      "sort": 1491,
+      "hidden": false,
+      "icon": "/enemies-icons/'Woodthreads'.webp",
+      "flavour_text": "A fragment of the pedestal of 'Aubade'. It drifts like feathers, repelling enemies that attempt to obstruct 'Twitter'.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "More likely to be attacked, and causes the target Operator to be Stunned while on the battlefield; provides 10 Transfer Permits when defeated",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 30 times to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30,
+            "atk": 100,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 5,
+            "taunt": 1,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "die",
+              "parameters": {
+                "cnt": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear"
+          ],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

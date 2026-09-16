@@ -1,0 +1,757 @@
+{
+  "name": "Ashlock",
+  "rarity": 5,
+  "class": "Defender",
+  "branch": "Fortress",
+  "faction": "Pinus Sylvestris",
+  "umbrellaFactions": [
+    "Kazimierz"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS",
+    "Defense"
+  ],
+  "trait": "When not blocking enemies, prioritizes dealing ranged AoE Physical damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Lances of Kaliskas"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_431_ashlok",
+  "otherLanguages": {
+    "Chinese": "灰毫",
+    "Japanese": "アッシュロック",
+    "Korean": "애쉬락"
+  },
+  "characterInfo": {
+    "File no.": "KZ12",
+    "Operator Record": "Duel",
+    "Paradox Simulation": "The Roar",
+    "Illustrator": "NoriZC",
+    "Release Date": "2022/04/14",
+    "Kernel Addition Date": "2025/12/05"
+  },
+  "characterVoices": {
+    "Japanese": "Hitomi Ueda",
+    "Chinese": "Gui Niang (credited as \"D. QQ\" in EN)",
+    "English": "Díana Bermudez",
+    "Korean": "Lee Ji-young"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "4 years",
+    "Place of Birth": "Kazimierz",
+    "Date of Birth": "March 20th",
+    "Race": "Zalak",
+    "Height": "164 cm",
+    "Infection Status": "Originium crystals distributed across surface of body, confirmed infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Standard",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Bombardment Studies",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "ATK +4%. If the four adjacent tiles are ground tiles, ATK +8% instead"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "ATK +6% (+2%) . If the four adjacent tiles are ground tiles, ATK +10% (+2%) instead"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "ATK +8%. If the four adjacent tiles are ground tiles, ATK +16% instead"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "ATK +10% (+2%) . If the four adjacent tiles are ground tiles, ATK +18% (+2%) instead"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +32"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Bombardment Studies"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Ashlock's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Block +1 .",
+        "New talent: Bombardment Studies .",
+        "New skill: Focused Bombardment ."
+      ],
+      "prerequisite": "Raise Ashlock to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 7
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Bombardment Studies improved.",
+        "Range extended.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Ashlock to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Polymerized Gel",
+          "quantity": 8
+        },
+        {
+          "name": "Compound Cutting Fluid",
+          "quantity": 13
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "ATK Up γ",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +30%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +35%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +40%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +45%",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +50%",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +55%",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +60%",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +75%",
+            "initialSp": 10,
+            "spCost": 34,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +90%",
+            "initialSp": 10,
+            "spCost": 33,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +100%",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 1
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Focused Bombardment",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "10 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Cannot block enemies and only carry out ranged attacks. Attack Interval reduces slightly , ATK +10%",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": 10
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Cannot block enemies and only carry out ranged attacks. Attack Interval reduces slightly , ATK +15%",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": 10
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Cannot block enemies and only carry out ranged attacks. Attack Interval reduces slightly , ATK +20%",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": 10
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Cannot block enemies and only carry out ranged attacks. Attack Interval reduces moderately , ATK +25%",
+            "initialSp": 5,
+            "spCost": 23,
+            "duration": 10
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Cannot block enemies and only carry out ranged attacks. Attack Interval reduces moderately , ATK +30%",
+            "initialSp": 5,
+            "spCost": 23,
+            "duration": 10
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Cannot block enemies and only carry out ranged attacks. Attack Interval reduces moderately , ATK +35%",
+            "initialSp": 5,
+            "spCost": 23,
+            "duration": 10
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Cannot block enemies and only carry out ranged attacks. Attack Interval reduces , ATK +40%",
+            "initialSp": 10,
+            "spCost": 20,
+            "duration": 10
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Cannot block enemies and only carry out ranged attacks. Attack Interval reduces , ATK +45%",
+            "initialSp": 10,
+            "spCost": 18,
+            "duration": 10
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Cannot block enemies and only carry out ranged attacks. Attack Interval reduces , ATK +50%",
+            "initialSp": 10,
+            "spCost": 18,
+            "duration": 10
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Cannot block enemies and only carry out ranged attacks. Attack Interval reduces significantly , ATK +55%",
+            "initialSp": 10,
+            "spCost": 18,
+            "duration": 10
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 3
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 3
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 3
+        },
+        {
+          "name": "Semi-Synthetic Solvent",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Pinus Sylvestris α",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, productivity +15%"
+    },
+    {
+      "name": "Pinus Sylvestris βReplacesPinus Sylvestris α",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, productivity +25%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Ashlock's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "FOR-X: Outdoor Essential Kit",
+      "mission": {
+        "requirement1": "Deal a total of 100,000 damage with Ashlock (excluding Support Units)",
+        "requirement2": "Clear Main Theme 7-9 with a 3-star rating; You must deploy your own Ashlock, and have Ashlock defeat at least 2 Guerrilla Heralds"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +235 , ATK +45",
+          "effectLabel": "New trait",
+          "effectText": "Increases ATK to 110% when attacking blocked enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +290 , ATK +60",
+          "effectLabel": "Bombardment Studies improved",
+          "effectText": "ATK +10%. If the two tiles to the front and back are ground tiles, ATK +16% instead",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +325 , ATK +70",
+          "effectLabel": "Bombardment Studies improved",
+          "effectText": "ATK +10%. If the two tiles to the front and back are ground tiles, ATK +20% instead",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Member of\nPinus Sylvestris\nKnightclub, Ashlock Knight Greynuty, joined\nRhodes Island\nfollowing the\nKazimierz Major\n.\nFights with a handheld cannonlance and sturdy shield. Able to inflict casualties on faraway enemies, and can also hold the front, protecting other\nOperators\n.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1293,
+          "atk": 446,
+          "def": 194,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 2,
+          "interval": 2.8
+        },
+        "max": {
+          "hp": 1725,
+          "atk": 573,
+          "def": 291,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 2,
+          "interval": 2.8
+        },
+        "rangeId": "4-5"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1725,
+          "atk": 573,
+          "def": 291,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 25,
+          "block": 3,
+          "interval": 2.8
+        },
+        "max": {
+          "hp": 2301,
+          "atk": 717,
+          "def": 394,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 25,
+          "block": 3,
+          "interval": 2.8
+        },
+        "rangeId": "4-5"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2301,
+          "atk": 717,
+          "def": 394,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 27,
+          "block": 3,
+          "interval": 2.8
+        },
+        "max": {
+          "hp": 3207,
+          "atk": 865,
+          "def": 541,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 27,
+          "block": 3,
+          "interval": 2.8
+        },
+        "rangeId": "4-6"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 50,
+      "def": 50
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 7%\nClear Originium crystallization is visible on the face.\n\n[Blood Originium-Crystal Density] 0.19u/L\nThe state of Operator Greynuty's infection has tended towards stability."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "After the conclusion of the Kazimierz Major, Greynuty joined Rhodes Island, together with her fellow Pinus Sylvestris members. After witnessing first-hand Kazimierz's treatment of the Infected, and as Infected themselves, they were pleasantly surprised that an organization like Rhodes Island still existed in this world. Here, they could live a new life, and fight for the Infected.\nNevertheless, Greynuty still felt at a loss.\nShe needed a goal.\nShe once strove to sharpen herself for the sake of her family; after becoming Infected, her goal was to ascend the Major and the Champion's throne like the Radiant Knight and the Blood Knight had done; now, she followed Sona, followed the others of Pinus Sylvestris, and came aboard Rhodes Island as an employee of a pharmaceutical company. She would range far from Kazimierz, fighting unlike a knight, or even a Kazimierzian.\nThe rules she was familiar with would no more be applicable.\nAnd so, at present, she is still bewildered, and still vexed.\nBut please don't worry. If you need her, she will step forth.\nJust as the ancient knight nobles of Kazimierz would have."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Pinus Sylvestris Knightclub's founding members were Flametail Knight Sona and Ashlock Knight Greynuty. Though both were Zalaks, and were born in similar places, their first time meeting came entirely by accident. Not long after the Infected Knights Act was passed, Greynuty was expelled from her family, arriving at the Grand Knight Territory to participate in brutal underground knight competitions. Right before a group melee, she first met Flametail Sona, who wanted a temporary alliance with her for the group match; Greynuty agreed. Just like that, the cannoneer and the swiftblade covered each other's weaknesses, standing out in the tumult of the melee. Once they were left alone on the field, Sona made a thrust at Greynuty, taking the points she had.\nAs a knight, Greynuty ought to have been angered, but in Sona, she found a long-lost trust and peace of mind, as well as Greynuty's own guilt towards her—Sona was once one of the subjects of the Kaliska family, but when a Catastrophe assaulted her home, the Kaliskas never fulfilled their duty as knight nobles. Ultimately, Sona's hometown fell into ruin, and she was Infected.\nAfter that, Greynuty, together with Sona, founded Pinus Sylvestris Knightclub, competing in matches for prize money on one hand, and aiding the Infected of the Grand Knight Territory on the other. They've tried working by themselves, they've tried making deals with the Adeptus Sprawiedliwi, and now, they've found an even better collaborator than before."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Greynuty is not at all a textbook competition knight; she keeps silent on the field, lets the audience's cheers and jeers bounce off her, steadily confronting her opponents. She rarely participates in commercial activities, and she reads every letter from her supporters one by one in detail, writing a reply for each. When she's spotted out and about; fans gather around excitedly asking for signatures, which seems to put Greynuty at a complete, flustered loss, looking to quiet them down as quickly as she can. She then pulls the fans away from the crowd, asks in a stammer what they're looking for, and signs her name on the objects the fans hand her. Her antics have inadvertently garnered her a good number of fanatics; Sona even suggests on occasion that she ought to pursue the path of the idol knight, teasing that her prospects might be greater than as a competition knight. Of course, each time Sona says it, Greynuty sternly declines.\nGreynuty's combat ability is by no means lacking. Preeminent even in Pinus Sylvestris, many an opponent has fallen under her baptism by shellfire. However, she has her weaknesses too—heavy artillery and thick armor consume her endurance, and she moves relatively slowly when fighting the enemy in close quarters, plus the fatal gap that switching spent magazines produces. So long as these problems remain undealt with, and she doesn't temper herself as all-around as a Champion of the Major would, then there will always be a knight who seizes on her weaknesses, and she'll be unable to take the final steps to arrive at her goals."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Those familiar with Greynuty know she brims with hatred for the knight nobles. However, Greynuty once was one herself.\nGreynuty's family used to be quite well-known, but after her grandmother passed away, the elders in charge of running the family enterprise made a strategic blunder, and the whole business was left with a deep deficit, and set the family's decline in stone. It was at this time, too, that Greynuty caught Oripathy.\nAfter the fact, there was a change in the way her relatives treated her.\nHer siblings who she'd played with since childhood broke off contact, her few friendly uncles gradually fell out of touch, and her family's elders seemed to forget about her entirely.\nOne common voice held in the Kaliskas' hearts: 'The Kaliskas shouldn't have Infected. So long as Greynuty remains, our prestige will suffer.'\nIn the wake of the family's continued destitution, the way its members regarded her turned slowly from silence to anger. She'd seen how her elders shamed the estate's Infected, but never imagined that as a part of the family, Oripathy would subject her to such treatment.\nEven more unbelievable to her was that the Knight Primus seemed to want her, an Infected, gone from the family.\nIt was like she was no Kaliska, only some homeless commoner blighted by Oripathy, of a village razed in a disaster.\nThis doubt was quickly dispelled, but reality was more ruthless than her mind—she might have even lost the freedom to stay in her home.\nOne day, the Knight Primus summoned her to discuss how to resolve a certain matter. The one who passed it on was highly tactful, but she was well aware, she was that so-called 'matter'.\nAfter a knock on the Primus' parlor door, Greynuty found the Knight Primus of the Kaliskas—along with another noble Knight Primus.\nThey were presumably in talks; the atmosphere was utterly fractured, both sides menacing, trying to wrest more benefit from the other, and here in his parlor, it seemed Greynuty's Knight Primus had readily surrendered every last bargaining chip he'd held.\nThe other noble Primus flew into sudden fury on seeing Greynuty, denouncing the Kaliskas for harboring an Infected, and even bringing her before him. He tore up the treaty, and swore he would no longer work with the Kaliskas.\nGreynuty knew the other side had only used her appearance to wash himself of any blame for the ruined contract, but her Knight Primus, and her family's elders, lacked total awareness of it, going so far as to cast all their rage directly on her.\nIn the end, on a moonless night, the Primus convened a full meeting, deciding by vote whether Greynuty, the Infected, was to go.\n——It was unanimous.\nNo one present dissented; no one so much as abstained. Even Greynuty's mother and father raised their hands.\nGreynuty knew they had sorrows of their own, but in that moment, she felt her own teardrops as they ran down her face.\nThose who sympathized with her said nothing, those who detested her cheered, and the Primus sat at the head of the table feigning impartiality.\nThese were the Kaliskas, a microcosm of Kazimierz's knight nobility.\nSince then, Greynuty has left her home and come alone to the Grand Knight Territory, fighting upward from the underground arenas step by step. Through the knight competitions, she wants to recover her reputation, and thus return to that decrepit and hollowed-out family, give them a good long look at her accomplishments, make them admit they were wrong about her, make them wash off the stigma forced onto her.\nBut what comes afterward?\nSona has given it thought, but she still hasn't."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "The cannon is a traditional and mighty siege weapon. With modern industrial refinement have come cannonlances wieldable by a single person, their might weakened by a degree, but still retaining fine destructive power against humanoid targets. Greynuty's ancestors relied on such armaments to make their family's future, but the present Kaliska progeny are, by and large, now strangers to this skill.\nAs part of her childhood training, from a young age, Greynuty's grandmother instructed her in cannonlance handling and maintenance, on one hand wanting her to steel herself through such a course, and on the other, hoping she may also come to pass this skill down through her family. Regrettably, before Greynuty finished this course, her grandmother laid on her sickbed never to wake again, and while her elders once solemnly vowed to finance Greynuty's studies, they never made good on their commitment. In the end, Greynuty could only teach herself, diligently rounding off the remainder of the course."
+    }
+  ]
+}

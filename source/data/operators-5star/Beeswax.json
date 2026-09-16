@@ -1,0 +1,702 @@
+{
+  "name": "Beeswax",
+  "rarity": 5,
+  "class": "Caster",
+  "branch": "Phalanx Caster",
+  "faction": "Sargon",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "AoE",
+    "Defense"
+  ],
+  "trait": "Normally does not attack , but has greatly increased DEF and RES ; When skill is active, attacks deal AoE Arts damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Weißer Sand",
+    "Holiday HD61"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_344_beewax",
+  "otherLanguages": {
+    "Simplified Chinese": "蜜蜡",
+    "Traditional Chinese": "蜜蠟",
+    "Japanese": "ビーズワクス",
+    "Korean": "비즈왁스"
+  },
+  "characterInfo": {
+    "File no.": "R147",
+    "Operator Record": "Trail of Sands",
+    "Paradox Simulation": "On the Reef",
+    "Illustrator": "カワグチ",
+    "Release Date": "2021/05/14",
+    "Kernel Addition Date": "2024/12/17"
+  },
+  "characterVoices": {
+    "Japanese": "Eri Kitamura",
+    "Chinese": "Weng Yuan",
+    "English": "Natasha Atherton",
+    "Korean": "Kim Yeon-woo"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Sargon",
+    "Date of Birth": "September 15th",
+    "Race": "Caprinae",
+    "Height": "157 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Shambhala's Sanctuary",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When this unit's skill is not active, restores 2.5% Max HP per second"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When this unit's skill is not active, restores 4% Max HP per second"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +30"
+      },
+      {
+        "level": 5,
+        "benefit": "Redeployment time -6 seconds"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Beeswax's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Shambhala's Sanctuary .",
+        "New skill: Guardian Obelisk .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Beeswax to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Shambala's Sanctuary improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Beeswax to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Optimized Device",
+          "quantity": 5
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 18
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Growing Sandstorm",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15–20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Range expands , ATK +10%",
+            "initialSp": 6,
+            "spCost": 28,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Range expands , ATK +15%",
+            "initialSp": 6,
+            "spCost": 28,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Range expands , ATK +20%",
+            "initialSp": 6,
+            "spCost": 28,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Range expands , ATK +25%",
+            "initialSp": 6,
+            "spCost": 26,
+            "duration": 16
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Range expands , ATK +30%",
+            "initialSp": 6,
+            "spCost": 26,
+            "duration": 16
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Range expands , ATK +35%",
+            "initialSp": 6,
+            "spCost": 26,
+            "duration": 16
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Range expands , ATK +40%",
+            "initialSp": 8,
+            "spCost": 24,
+            "duration": 17
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Range expands , ATK +45%",
+            "initialSp": 8,
+            "spCost": 22,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Range expands , ATK +50%",
+            "initialSp": 8,
+            "spCost": 20,
+            "duration": 19
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Range expands , ATK +60%",
+            "initialSp": 8,
+            "spCost": 18,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": null,
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Guardian Obelisk",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Summons an Obelisk upon a melee tile within this unit's Attack Range. When the Obelisk appears, it deals 170% ATK as Arts damage to nearby enemies and Stuns them for 1 seconds",
+            "initialSp": 10,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Summons an Obelisk upon a melee tile within this unit's Attack Range. When the Obelisk appears, it deals 180% ATK as Arts damage to nearby enemies and Stuns them for 1 seconds",
+            "initialSp": 10,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Summons an Obelisk upon a melee tile within this unit's Attack Range. When the Obelisk appears, it deals 190% ATK as Arts damage to nearby enemies and Stuns them for 1 seconds",
+            "initialSp": 10,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Summons an Obelisk upon a melee tile within this unit's Attack Range. When the Obelisk appears, it deals 200% ATK as Arts damage to nearby enemies and Stuns them for 1 seconds",
+            "initialSp": 10,
+            "spCost": 28,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Summons an Obelisk upon a melee tile within this unit's Attack Range. When the Obelisk appears, it deals 210% ATK as Arts damage to nearby enemies and Stuns them for 1 seconds",
+            "initialSp": 10,
+            "spCost": 28,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Summons an Obelisk upon a melee tile within this unit's Attack Range. When the Obelisk appears, it deals 220% ATK as Arts damage to nearby enemies and Stuns them for 1 seconds",
+            "initialSp": 10,
+            "spCost": 28,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Summons an Obelisk upon a melee tile within this unit's Attack Range. When the Obelisk appears, it deals 230% ATK as Arts damage to nearby enemies and Stuns them for 1.5 seconds",
+            "initialSp": 10,
+            "spCost": 26,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Summons an Obelisk upon a melee tile within this unit's Attack Range. When the Obelisk appears, it deals 250% ATK as Arts damage to nearby enemies and Stuns them for 2 seconds",
+            "initialSp": 10,
+            "spCost": 24,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Summons an Obelisk upon a melee tile within this unit's Attack Range. When the Obelisk appears, it deals 270% ATK as Arts damage to nearby enemies and Stuns them for 2.5 seconds",
+            "initialSp": 10,
+            "spCost": 22,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Summons an Obelisk upon a melee tile within this unit's Attack Range. When the Obelisk appears, it deals 300% ATK as Arts damage to nearby enemies and Stuns them for 3 seconds",
+            "initialSp": 10,
+            "spCost": 20,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 6
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 2
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Caster Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Caster Operators' Specialization training speed +30%"
+    },
+    {
+      "name": "Caster Expert βReplacesCaster Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Caster Operators' Specialization training speed +50%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Beeswax's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "PLX-X: \"Beeswax's Blessing\"",
+      "mission": {
+        "requirement1": "During battles, have Beeswax use Guardian Obelisk a total of 8 times (excluding Support Units)",
+        "requirement2": "Clear Side Story DH-6 with a 3-star rating; You must deploy your own Beeswax, and cannot include any Defender Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +150 , ATK +55",
+          "effectLabel": "Trait improved",
+          "effectText": "Normally does not attack , but has greatly increased DEF and RES ; when skill is active, retains some of the bonus and attacks deal AoE Arts damage",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +180 , ATK +64",
+          "effectLabel": "Shambhala's Sanctuary improved",
+          "effectText": "When this unit's skill is not active, +10% Max HP, and restores 4% Max HP per second",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +210 , ATK +70",
+          "effectLabel": "Shambhala's Sanctuary improved",
+          "effectText": "When this unit's skill is not active, +15% Max HP, and restores 4% Max HP per second",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Operator\nBeeswax, a member of an ancient tribe from the depths of the deserts of\nSargon\n, contacted us of her own initiative and asked to board the ship in order to locate\nsomeone\n. After learning that the person of interest will not be returning to the ship for the time being, Miss Beeswax has applied to join and travel with\nRhodes Island\n, waiting for the time she can reunite with relative.\nBeeswax has passed the entrance examination and has been given the official Operator status, and now serves as a\nCaster\nfor Rhodes Island. This will be the first stop in her lengthy journey of discovery.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1052,
+          "atk": 378,
+          "def": 131,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 2
+        },
+        "max": {
+          "hp": 1315,
+          "atk": 505,
+          "def": 153,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 2
+        },
+        "rangeId": "x-4"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1315,
+          "atk": 505,
+          "def": 153,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 1,
+          "interval": 2
+        },
+        "max": {
+          "hp": 1644,
+          "atk": 632,
+          "def": 178,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 1,
+          "interval": 2
+        },
+        "rangeId": "x-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1644,
+          "atk": 632,
+          "def": 178,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 1,
+          "interval": 2
+        },
+        "max": {
+          "hp": 2005,
+          "atk": 735,
+          "def": 205,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 1,
+          "interval": 2
+        },
+        "rangeId": "x-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 70,
+      "def": 20
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected. \n\n[Cell-Originium Assimilation] 0%\nOperator Beeswax has no signs of Originium infections. \n\n[Blood Originium-Crystal Density] 0.11u/L\nOperator Beeswax seldom comes in contact with Originium in her living environment.\n\nAlthough coming into contact with Originium is inevitable through the course of using Originium Arts, not only has she not fallen ill, but she even seems to be quite healthy - healthier than most of us, in fact. Have you seen the color and sheen of her horns? I could tell at a glance that little girl has nothing wrong with her!\n—Warfarin"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Miss Beeswax made no attempts to hide her purpose for seeking out Rhodes Island. In fact, she was rather candid throughout the entire meeting, and this straightforward demeanor was consistent with the experiences she had described. In front of us was a young woman who had stepped away from home for the first time, without a deceptive bone in her body or a reason to be wary of others. \nAccording to her statement, Miss Beeswax contacted Rhodes Island in order to find a blood relative who had left the tribe first on a journey. After verification, we found that her relative indeed is an active operator, and belongs to one of our affiliated departments. However, that individual is currently on a secret mission and cannot return to the landship any time soon. \nUpon hearing this, Beeswax was visibly dejected. This young Caprinae from the golden sands does not usually display many expressions, but when her shoulders and eyelids droop, one can see subtle hints of the sense of loss she undoubtedly feels. Fortunately, these depressive bouts rarely last long, and she quickly regains her vitality. \nAt this time, Miss Beeswax made the first important decision since leaving her home to embark on this journey. \nShe decided to become a part of Rhodes Island."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Operator Beeswax cherishes her two horns greatly, and almost all operators who've talked to her are aware of this. \nAmong Caprinae, Forte, and other horned races, the horns are a very important part of one's appearance. Akin to the booming and developing beauty industry here, horn care services arose to meet the demand and are well-received. However, even among the operators who are more concerned about their image, very few will make a conscious effort to focus on their appearance. Operators, like Beeswax, who pay close attention their appearance to the point of mastering skills relevant to those interests are among the minority. \nEvery day, Beeswax sets aside a bit of time to maintain her large, curved horns. This maintenance process usually involves multiple steps such as wiping them down with a fine cloth, applying essential oils, soft brush care, and polish. Beeswax always completes each step meticulously, ensuring that nothing is omitted. Through her persistent effort, her horns have achieved a remarkable state of lustre, shape, and hardness. \nThrough our inquiries with other Caprinae operators, we have established that even by Caprinae standards, Beeswax's horns are magnificent, a rare and beautiful sight to behold. \nAfter finishing her daily care, Beeswax often provides help to operators who need it, making her very popular within certain small circles."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "The heart of the Sargon desert is difficult to traverse, and even experienced Messengers find it difficult to reach the deepest portions. In Beeswax's tribe, it is not unusual for young members of the tribe to go on journeys to the outside world and bring back what they see. Because these journeys have become traditions in their own rights, this particular tribe is unlike many others in that it does not totally reject novel things from the outside. \nIn addition to these journeys, one or two veteran Messengers may visit each year at certain times to bring the latest news to clan members, including the most recent music magazines. \nBeeswax does not appear to be someone who is incredibly shrewd; rather, she is straightforward and easy to understand. She loves music as well. When she left home, she brought with her a number of magazines issued by the Music Society, and these new publications became quite popular among the Caster teams. Even Beeswax herself quick integrated, smoothly establishing good relationships with the other operators. \nThough Beeswax doesn't talk much, is quiet most of the time, and tends to lose her train of thought, by no means is she simple-minded. In choosing to officially become an Operator of Rhodes Island, Beeswax did not rush to her decision, but had to weigh a variety of considerations. \nThe fact that she chose to stay to wait for her relative, while certainly her primary reason, is only one of several considerations. After a bit of inquiry, we determined that Beeswax believes that her time at Rhodes Island will serve as valuable experience to help her pass her tribe's rites of passage to adulthood— or rather, she sees working with Rhodes Island as one rung of that trial. \nAfter comprehensive deliberation, we also saw no reason to deny the participation of a talented and powerful Caster. On one hand, the addition of Beeswax is beneficial to us. On the other hand, we believe that such an option will help Beeswax as well, and Rhodes Island will be able to provide her with many further opportunities to understand this land. \n\nAs an addendum, the young Caprinae waited for several months before picking out her official code name. After writing to her hometown for help, she finally decided on the name she now uses."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "The heart of Sargon is a vast region with a harsh environment, home to a large number of small and medium-sized tribes. Among them, some ancient tribes lack means of communicating with the outside world, and often retain their unique customs and traditions. Although the Caprinae tribe to which Beeswax belongs does not fall under this category, it still retains its customs despite regular contact with the outside world. \nThough many view the so-called 'pagan' beliefs of these tribes as little more than barbaric vestiges of a primitive legacy, there are a few researchers who have been trying to ascertain the true source of these ancient beliefs. \nOperator Beeswax is not shy about sharing her beliefs. From her descriptions, she tends to use more abstract expressions, trying to depict a conceptual existence rather than a physical object of worship with an actual image. In fact, even though Beeswax claimed to have received the blessings of the gods, she admitted that she had frankly never directly seen these gods."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Every operator has their own journey, and in this case, Rhodes Island is just the first step of Beeswax's journey, not the end. \nWe may be in each others' company for the time being, like-minded and hand-in-hand, but we will all find our own direction one day. There will come a day when we go our separate ways. \nNo two roads completely overlap; while they may intersect at times, an intersection is just that. \n\nBut do remember that no matter where we go, her blessings will always follow us."
+    }
+  ]
+}

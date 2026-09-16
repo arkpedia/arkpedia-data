@@ -1,0 +1,1706 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act32side",
+    "label": "CR",
+    "name": "Operation Lucent Arrowhead",
+    "release_date": "2024-09-05"
+  },
+  "enemies": [
+    {
+      "slug": "coalition_army_hound",
+      "id": "enemy_1401_pogpro",
+      "name": "Coalition Army Hound",
+      "index": "R18",
+      "rank": "Normal",
+      "sort": 768,
+      "hidden": false,
+      "icon": "/enemies-icons/Coalition Army Hound.webp",
+      "flavour_text": "A hound trained by the Bolívar Coalition Army. Perro officers were not too enthused about this being introduced into their tactical considerations.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 2500,
+            "atk": 320,
+            "def": 100,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.4,
+            "attack_speed": 100.0,
+            "move_speed": 1.9,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "C",
+            "def": "D",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "S+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "coalition_army_hound_pro",
+      "id": "enemy_1401_pogpro_2",
+      "name": "Coalition Army Hound Pro",
+      "index": "R19",
+      "rank": "Normal",
+      "sort": 769,
+      "hidden": false,
+      "icon": "/enemies-icons/Coalition Army Hound Pro.webp",
+      "flavour_text": "A hunting hound trained in Columbia and purchased by the Bolívarian Coalition government. The idea was met with some resistance within the army.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3500,
+            "atk": 380,
+            "def": 100,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.4,
+            "attack_speed": 100.0,
+            "move_speed": 1.9,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "D",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "S+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "armored_scout",
+      "id": "enemy_1402_tgshd",
+      "name": "Armored Scout",
+      "index": "R20",
+      "rank": "Elite",
+      "sort": 770,
+      "hidden": false,
+      "icon": "/enemies-icons/Armored Scout.webp",
+      "flavour_text": "An armored scout. The armor they wear is capable of pinpointing the location of attackers.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Exposes the attacker for 5s when attacked",
+          "format": "silence"
+        },
+        {
+          "text": "When Exposed, allied units cannot use barricades to keep themselves out of enemy's sight, and take more damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 11000,
+            "atk": 600,
+            "def": 1200,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "A+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Expose",
+              "parameters": {
+                "damage_scale": 1.2,
+                "weak[limit]": 5.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "heavy_scout",
+      "id": "enemy_1402_tgshd_2",
+      "name": "Heavy Scout",
+      "index": "R21",
+      "rank": "Elite",
+      "sort": 771,
+      "hidden": false,
+      "icon": "/enemies-icons/Heavy Scout.webp",
+      "flavour_text": "A heavily-armored scout. The Coalition Army has reinforced the armor, but has no clue how to upgrade the tracing function.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Exposes the attacker for 5s when attacked",
+          "format": "silence"
+        },
+        {
+          "text": "When Exposed, allied units cannot use barricades to keep themselves out of enemy's sight, and take more damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 13000,
+            "atk": 700,
+            "def": 1500,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "A+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Expose",
+              "parameters": {
+                "damage_scale": 1.2,
+                "weak[limit]": 5.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "light_rapid_crossbowman",
+      "id": "enemy_1403_gunsho",
+      "name": "Light Rapid Crossbowman",
+      "index": "R22",
+      "rank": "Normal",
+      "sort": 772,
+      "hidden": false,
+      "icon": "/enemies-icons/Light Rapid Crossbowman.webp",
+      "flavour_text": "A light crossbowman who can fire three bolts at once. The price of such on-demand firepower is their weakness in long-time battles.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 3 bolts in the target's direction",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4500,
+            "atk": 350,
+            "def": 180,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B+"
+          },
+          "skills": [
+            {
+              "key": "CrossAttack",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 2.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "heavy_crossbowman_ambusher",
+      "id": "enemy_1404_msnip",
+      "name": "Heavy Crossbowman Ambusher",
+      "index": "R24",
+      "rank": "Normal",
+      "sort": 774,
+      "hidden": false,
+      "icon": "/enemies-icons/Heavy Crossbowman Ambusher.webp",
+      "flavour_text": "A sniper issued with a mass-produced kinetically-boosted crossbow. Though expensive, they are well worth the price tag, capable of stunning targets for long durations after being charged up.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Invisible",
+          "format": "normal"
+        },
+        {
+          "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 1 bolt in the target's direction that deals Arts damage and inflicts Stun",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 400,
+            "def": 180,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "D",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "CrossAttack",
+              "sp_cost": 0,
+              "cooldown": 8.0,
+              "initial_cooldown": 2.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "duration": 2.0,
+                "stun": 5.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "heavy_crossbowman_hunter",
+      "id": "enemy_1404_msnip_2",
+      "name": "Heavy Crossbowman Hunter",
+      "index": "R25",
+      "rank": "Normal",
+      "sort": 775,
+      "hidden": false,
+      "icon": "/enemies-icons/Heavy Crossbowman Hunter.webp",
+      "flavour_text": "A sniper issued with a prototype kinetically-boosted crossbow. Exorbitantly expensive. It's said that the buyer reached a secret agreement with a small Columbian company.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Invisible",
+          "format": "normal"
+        },
+        {
+          "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 1 bolt in the target's direction that deals Arts damage and inflicts Stun",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7000,
+            "atk": 500,
+            "def": 250,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "CrossAttack",
+              "sp_cost": 0,
+              "cooldown": 8.0,
+              "initial_cooldown": 2.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "duration": 2.0,
+                "stun": 5.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "reckless_grenadier",
+      "id": "enemy_1405_boomer",
+      "name": "Reckless Grenadier",
+      "index": "R26",
+      "rank": "Normal",
+      "sort": 776,
+      "hidden": false,
+      "icon": "/enemies-icons/Reckless Grenadier.webp",
+      "flavour_text": "A specialized combatant who does not carry conventional weapons. Though well-paid and exempted from standard military training, nobody envies them.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Upon taking damage for the first time while unblocked, fires an explosive in each cardinal direction; afterwards, gains increased Movement Speed and reduced Weight",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4000,
+            "atk": 450,
+            "def": 700,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "B",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Bomb",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 2.0,
+                "projectile_range": 1.1
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Light",
+              "parameters": {
+                "mass_level": -2.0,
+                "move_speed": 0.7
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "impetuous_grenadier",
+      "id": "enemy_1405_boomer_2",
+      "name": "Impetuous Grenadier",
+      "index": "R27",
+      "rank": "Normal",
+      "sort": 777,
+      "hidden": false,
+      "icon": "/enemies-icons/Impetuous Grenadier.webp",
+      "flavour_text": "A specialized combatant whose fighting methods differ from the norm. The other soldiers call them cannon fodder, unaware that they are seen the exact same way by their superiors.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Upon taking damage for the first time while unblocked, fires an explosive in each cardinal direction; afterwards, gains increased Movement Speed and reduced Weight",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 550,
+            "def": 900,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B",
+            "def": "B+",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Bomb",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 2.0,
+                "projectile_range": 1.1
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Light",
+              "parameters": {
+                "mass_level": -2.0,
+                "move_speed": 0.7
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "battleline_advance_guard",
+      "id": "enemy_1406_chghmr",
+      "name": "Battleline Advance Guard",
+      "index": "R28",
+      "rank": "Elite",
+      "sort": 778,
+      "hidden": false,
+      "icon": "/enemies-icons/Battleline Advance Guard.webp",
+      "flavour_text": "Heavily-armed personnel in charge of advancing the frontline. Typically made up of grumpy old veterans who take out their anger towards their superiors on anything standing in their way.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Each time this unit is blocked, the next attack's ATK is greatly increased.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 1350,
+            "def": 1000,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "A",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "PowerHit",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk": 0.8
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DmgUp",
+              "parameters": {
+                "sheltr_atk_scale": 2.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "battleline_breacher",
+      "id": "enemy_1406_chghmr_2",
+      "name": "Battleline Breacher",
+      "index": "R29",
+      "rank": "Elite",
+      "sort": 779,
+      "hidden": false,
+      "icon": "/enemies-icons/Battleline Breacher.webp",
+      "flavour_text": "Heavily-armored personnel in charge of breaking through enemy lines. They only know how to swing their hammer, whether it's towards a roadblock or a living person.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Each time this unit is blocked, the next attack's ATK is greatly increased.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 1750,
+            "def": 1000,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A+",
+            "def": "A",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "PowerHit",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk": 0.8
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DmgUp",
+              "parameters": {
+                "sheltr_atk_scale": 2.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "battlefield_observing_mortarman",
+      "id": "enemy_1408_scotcn",
+      "name": "Battlefield Observing Mortarman",
+      "index": "R32",
+      "rank": "Elite",
+      "sort": 782,
+      "hidden": false,
+      "icon": "/enemies-icons/Battlefield Observing Mortarman.webp",
+      "flavour_text": "A mortarman with keen senses, who fires shells embedded with reconnaissance units. An exceptional talent within the Coalition Army.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Capable of extremely long ranged-attacks",
+          "format": "normal"
+        },
+        {
+          "text": "Shells deal area damage to target and any allied units in the surrounding 8 tiles, and exposes targets for 5s",
+          "format": "normal"
+        },
+        {
+          "text": "When Exposed, allied units cannot use barricades to keep themselves out of enemy's sight, and take more damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 400,
+            "def": 450,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 15.0,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "C",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "damage_scale": 1.2,
+                "weak[limit]": 5.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "battlefield_surveying_mortarman",
+      "id": "enemy_1408_scotcn_2",
+      "name": "Battlefield Surveying Mortarman",
+      "index": "R33",
+      "rank": "Elite",
+      "sort": 783,
+      "hidden": false,
+      "icon": "/enemies-icons/Battlefield Surveying Mortarman.webp",
+      "flavour_text": "A mortarman with a wealth of experience, who fires shells embedded with reconnaissance units. It is said that two military leaders once even fought to claim a senior mortarman.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Capable of extremely long ranged-attacks",
+          "format": "normal"
+        },
+        {
+          "text": "Shells deal area damage to target and any allied units in the surrounding 8 tiles, and exposes targets for 5s",
+          "format": "normal"
+        },
+        {
+          "text": "When Exposed, allied units cannot use barricades to keep themselves out of enemy's sight, and take more damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 9000,
+            "atk": 500,
+            "def": 450,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 15.0,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "damage_scale": 1.2,
+                "weak[limit]": 5.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "mateos_security_guard",
+      "id": "enemy_1409_bdguad",
+      "name": "Mateo's Security Guard",
+      "index": "R34",
+      "rank": "Elite",
+      "sort": 784,
+      "hidden": false,
+      "icon": "/enemies-icons/Mateo's Security Guard.webp",
+      "flavour_text": "Mateo's security guard. Every Coalition Army leader needs people like these, or they wouldn't be able to sleep well at night.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 2 explosives in the target's direction",
+          "format": "silence"
+        },
+        {
+          "text": "When unblocked, Physical and Arts damage taken is reduced",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 18000,
+            "atk": 1100,
+            "def": 1000,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "A",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "CrossBomb",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 2.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.7,
+                "projectile_range": 1.1,
+                "times": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DmgResist",
+              "parameters": {
+                "damage_resistance": 0.4
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "mateos_bodyguard",
+      "id": "enemy_1409_bdguad_3",
+      "name": "Mateo's Bodyguard",
+      "index": "R36",
+      "rank": "Elite",
+      "sort": 786,
+      "hidden": false,
+      "icon": "/enemies-icons/Mateo's Bodyguard.webp",
+      "flavour_text": "Mateo's most trusted bodyguard. Very few military leaders have such individuals around them, but they often fail to appreciate how precious such loyalty really is.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 2 explosives in the target's direction",
+          "format": "silence"
+        },
+        {
+          "text": "When unblocked, Physical and Arts damage taken is reduced",
+          "format": "normal"
+        },
+        {
+          "text": "Replenishes all ammo for <Captain Mateo> upon approaching him",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 18000,
+            "atk": 1100,
+            "def": 1000,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "A",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "CrossBomb",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 2.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.7,
+                "projectile_range": 1.1,
+                "times": 2.0
+              }
+            },
+            {
+              "key": "Support",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "sp_ratio": 1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DmgResist",
+              "parameters": {
+                "damage_resistance": 0.4
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 25000,
+            "atk": 1300,
+            "def": 1200,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "A+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "CrossBomb",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 2.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.7,
+                "projectile_range": 1.1,
+                "times": 2.0
+              }
+            },
+            {
+              "key": "Support",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "sp_ratio": 1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DmgResist",
+              "parameters": {
+                "damage_resistance": 0.4
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "captain_mateo",
+      "id": "enemy_1551_bolicp",
+      "name": "Captain Mateo",
+      "index": "EC",
+      "rank": "Boss",
+      "sort": 1348,
+      "hidden": false,
+      "icon": "/enemies-icons/Captain Mateo.webp",
+      "flavour_text": "Captain Mateo of the Coalition Army. He refuses to recognize the dead end he stands at, and employs violence against anyone who reminds him of that.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 10 bolts in the target's direction, with the last bolt permanently reducing the target's DEF",
+          "format": "normal"
+        },
+        {
+          "text": "When HP drops to 0 for the first time, appears at another location and enters Second Form",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "['Lights Out!'] Upon receiving damage, releases 3 smoke bombs in a frontal area that make enemies inside Invisible; smokescreen lasts for 30s (Initial use: 1)",
+          "format": "normal"
+        },
+        {
+          "text": "['Stand Down!'] Attacks Stun the target for 6s (Initial uses: 6)",
+          "format": "normal"
+        },
+        {
+          "text": "['Attention!'] Calls all <Mateo's Bodyguard> to this unit's current position, and makes them hold there for 30s",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 550,
+            "def": 1000,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 8,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "A",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "CrossAttack",
+              "sp_cost": 0,
+              "cooldown": 8.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "def": -100.0,
+                "duration": 3.5
+              }
+            },
+            {
+              "key": "SmokeBomb",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "projectile_delay_time": 30.0,
+                "projectile_range": 1.3
+              }
+            },
+            {
+              "key": "Shotgun",
+              "sp_cost": 1,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "stun": 6.0
+              }
+            },
+            {
+              "key": "CallBdguad",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "atk_scale": 2.5
+              }
+            },
+            {
+              "key": "DmgResist",
+              "parameters": {
+                "damage_resistance": 0.4
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "atk": 1.5,
+                "base_attack_time": 1.0,
+                "duration": 3.0,
+                "location": "(4,5)"
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Sleep"
+          ],
+          "sp": {
+            "initial": 6,
+            "max": 6,
+            "recovery": "Over time",
+            "increment": 0.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 55000,
+            "atk": 700,
+            "def": 700,
+            "res": 80.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 8,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B",
+            "res": "S+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "CrossAttack",
+              "sp_cost": 0,
+              "cooldown": 8.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "def": -150.0,
+                "duration": 3.5
+              }
+            },
+            {
+              "key": "SmokeBomb",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "projectile_delay_time": 30.0,
+                "projectile_range": 1.3
+              }
+            },
+            {
+              "key": "Shotgun",
+              "sp_cost": 1,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "stun": 6.0
+              }
+            },
+            {
+              "key": "CallBdguad",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "atk_scale": 2.5
+              }
+            },
+            {
+              "key": "DmgResist",
+              "parameters": {
+                "damage_resistance": 0.4
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "atk": 1.5,
+                "base_attack_time": 1.0,
+                "duration": 3.0,
+                "location": "(4,5)"
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Sleep"
+          ],
+          "sp": {
+            "initial": 6,
+            "max": 6,
+            "recovery": "Over time",
+            "increment": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "heavy_rapid_crossbowman",
+      "id": "enemy_1403_gunsho_2",
+      "name": "Heavy Rapid Crossbowman",
+      "index": "R23",
+      "rank": "Normal",
+      "sort": 773,
+      "hidden": false,
+      "icon": "/enemies-icons/Heavy Rapid Crossbowman.webp",
+      "flavour_text": "A heavy crossbowman who can fire three bolts at once. The Columbian investigation team was forced to admit that these 'homemade gadgets' were just as powerful as some of the latest cutting-edge weaponry.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 3 bolts in the target's direction",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5500,
+            "atk": 400,
+            "def": 250,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B+"
+          },
+          "skills": [
+            {
+              "key": "CrossAttack",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 2.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "farseer",
+      "id": "enemy_1407_hummbd",
+      "name": "Farseer",
+      "index": "R30",
+      "rank": "Normal",
+      "sort": 780,
+      "hidden": false,
+      "icon": "/enemies-icons/Farseer.webp",
+      "flavour_text": "An unmanned drone issued by Coalition Army. Though originally designed for reconnaissance, a circuitry issue made it unreliable at this, so an attack module was installed as a last resort.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated, Exposes nearby allied units for 8s",
+          "format": "silence"
+        },
+        {
+          "text": "When Exposed, allied units cannot use barricades to keep themselves out of enemy's sight, and take more damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4500,
+            "atk": 250,
+            "def": 120,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.0,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "D",
+            "def": "D",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Expose",
+              "parameters": {
+                "damage_scale": 1.2,
+                "range_radius": 1.7,
+                "weak[limit]": 8.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "farseer_b",
+      "id": "enemy_1407_hummbd_2",
+      "name": "Farseer B",
+      "index": "R31",
+      "rank": "Normal",
+      "sort": 781,
+      "hidden": false,
+      "icon": "/enemies-icons/Farseer B.webp",
+      "flavour_text": "An unmanned drone modified by a Coalition veteran, who haphazardly adjusted the circuitry of the recon module before devoting the rest of his effort into boosting the firepower.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated, Exposes nearby allied units for 8s",
+          "format": "silence"
+        },
+        {
+          "text": "When Exposed, allied units cannot use barricades to keep themselves out of enemy's sight, and take more damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5500,
+            "atk": 350,
+            "def": 180,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.0,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "D",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Expose",
+              "parameters": {
+                "damage_scale": 1.2,
+                "range_radius": 1.7,
+                "weak[limit]": 8.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "mateos_guard",
+      "id": "enemy_1409_bdguad_2",
+      "name": "Mateo's Guard",
+      "index": "R35",
+      "rank": "Elite",
+      "sort": 785,
+      "hidden": false,
+      "icon": "/enemies-icons/Mateo's Guard.webp",
+      "flavour_text": "Mateo's guard. Certain Coalition Army leaders have cultivated such individuals, leading them to feel that they are above their peers.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Launches a Straight Shot when positioned in a straight line with an allied unit: fires 2 explosives in the target's direction",
+          "format": "silence"
+        },
+        {
+          "text": "When unblocked, Physical and Arts damage taken is reduced",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 1300,
+            "def": 1200,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "A+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "CrossBomb",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 2.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.7,
+                "projectile_range": 1.1,
+                "times": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DmgResist",
+              "parameters": {
+                "damage_resistance": 0.4
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

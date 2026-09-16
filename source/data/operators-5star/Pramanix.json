@@ -1,0 +1,765 @@
+{
+  "name": "Pramanix",
+  "rarity": 5,
+  "class": "Supporter",
+  "branch": "Hexer",
+  "faction": "Kjerag",
+  "umbrellaFactions": [],
+  "connectedFactions": [
+    "Karlan Trade"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Debuff"
+  ],
+  "trait": "Deals Arts damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": "Pramanix the Prerita",
+  "skins": [
+    "Caster's Frost"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_174_slbell",
+  "otherLanguages": {
+    "Chinese": "初雪",
+    "Japanese": "プラマニクス",
+    "Korean": "프라마닉스"
+  },
+  "characterInfo": {
+    "File no.": "JC05",
+    "Operator Record": "Beyond the Snowy Mountain",
+    "Paradox Simulation": "The Blizzard is Nigh",
+    "Illustrator": "竜崎いち",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Saori Hayami",
+    "Chinese": "Xueting Mu",
+    "English": "Ashleigh Haddad",
+    "Korean": "Chun Song-e (2025/04/14–) Park Ko-woon (2022/06/30–2025/04/14)"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "6 months",
+    "Place of Birth": "Kjerag",
+    "Date of Birth": "February 13th",
+    "Race": "Feline",
+    "Height": "161 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Outstanding"
+  },
+  "talents": [
+    {
+      "name": "Weakening",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Apply 15% Fragile effect to enemies within range with less than 40% HP"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Apply 18% (+3%) Fragile effect to enemies within range with less than 40% HP"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Apply 30% Fragile effect to enemies within range with less than 40% HP"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Apply 33% (+3%) Fragile effect to enemies within range with less than 40% HP"
+        }
+      ]
+    },
+    {
+      "name": "The Bell Tolls Twice",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Attacks 2 enemies simultaneously"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "RES +8"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Weakening"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Pramanix's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Weakening .",
+        "New skill: Natural Deterrent .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Pramanix to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Supporter Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: The Bell Tolls Twice .",
+        "Weakening improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Pramanix to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Supporter Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Keton Colloid",
+          "quantity": 7
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 11
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Echolocation",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "10–20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -30",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 10
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -30",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 11
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -30",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 12
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -40",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 13
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -40",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 14
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -40",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -50",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 16
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -53",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 17
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -56",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -60",
+            "initialSp": 25,
+            "spCost": 40,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Natural Deterrent",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "10–25 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "For all enemies within range, DEF -35% and RES -20%",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 10
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "For all enemies within range, DEF -35% and RES -20%",
+            "initialSp": 11,
+            "spCost": 40,
+            "duration": 11
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "For all enemies within range, DEF -35% and RES -20%",
+            "initialSp": 12,
+            "spCost": 40,
+            "duration": 12
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "For all enemies within range, DEF -40% and RES -23%",
+            "initialSp": 13,
+            "spCost": 40,
+            "duration": 14
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "For all enemies within range, DEF -40% and RES -23%",
+            "initialSp": 14,
+            "spCost": 40,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "For all enemies within range, DEF -40% and RES -23%",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 16
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "For all enemies within range, DEF -45% and RES -26%",
+            "initialSp": 16,
+            "spCost": 40,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "For all enemies within range, DEF -50% and RES -26%",
+            "initialSp": 17,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "For all enemies within range, DEF -55% and RES -26%",
+            "initialSp": 18,
+            "spCost": 40,
+            "duration": 22
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "For all enemies within range, DEF -60% and RES -30%",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 25
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-12",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 2
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Karlan Saint",
+      "facility": "Dormitory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Dormitory, restores +0.5 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour +0.25"
+    },
+    {
+      "name": "Supporter Expert β",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Supporter Operators' Specialization training speed +50%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Pramanix's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "UMD-X: \"Knitting of a Future\"",
+      "mission": {
+        "requirement1": "Deal a total of 60,000 damage with Pramanix (excluding Support Units)",
+        "requirement2": "Clear Main Theme 2-3 with a 3-star rating; You must deploy your own Pramanix, and can only include 6 other Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +100 , ASPD +4",
+          "effectLabel": "New trait",
+          "effectText": "Applies 10% Enfeeble to targets for 2 seconds",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +140 , ASPD +6",
+          "effectLabel": "The Bell Tolls Twice improved",
+          "effectText": "Attacks 2 enemies simultaneously, and has 20% chance to inflict Cold for 1 second",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +180 , ASPD +8",
+          "effectLabel": "The Bell Tolls Twice improved",
+          "effectText": "Attacks 2 enemies simultaneously, and has 25% chance to inflict Cold for 1 second",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Pramanix is a Karlan  Saintess born in\nKjerag\n, the leader of the entire religion of her homeland. She uses the holy bell given to her by the\ngods\nto summon the power of wind and snow. She came to\nRhodes Island\nby secret means, and the post she holds as well as how long she's held it are both confidential.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 629,
+          "atk": 193,
+          "def": 46,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 10,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 925,
+          "atk": 277,
+          "def": 67,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 10,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "y-2"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 925,
+          "atk": 277,
+          "def": 67,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1251,
+          "atk": 356,
+          "def": 89,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "y-6"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1251,
+          "atk": 356,
+          "def": 89,
+          "res": 25,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1605,
+          "atk": 430,
+          "def": 102,
+          "res": 25,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "y-6"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 65,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this Operator is believed to be non-infected.\n\n[Cell-Originium Fusion Rate] 0% \nOperator shows no signs of infection at this time.\n\n[Blood Crystal Density] 0.11u/L\nThis Operator has not been active in zones with large concentrations of Originium."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "The Karlan Saintess, the Enlightened One, and the Praised One...all of these titles belong to Pramanix and Pramanix alone. As the supreme leader of the entire religion of Kjerag, she has a series of special privileges. Even her older brother, nominally Kjerag's most senior official, SilverAsh, must bow to her in public. She is honored, perfect, and divine. She brings glory to Kjerag. Yet nobody knows that in her heart, she is suffering."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "The ceremony for canonizing a new saint is sacred, but brutal. After the current saint passes away, girls of the appropriate age all head to the shrine where a saint is chosen. Only the girl hit by the first drop of water from the thawing ice obtains the right to be the saint. Afterward, the chosen one takes the trial bell and sets out from the shrine. They follow Heaven's Road up the mountain to the Residence of the Gods. Once they hang the trial bell upon its hook there, the trial is over. En route, it is customary for the girl to nod her head every three steps and ring the bell every five. Those who break this custom lose their chance to become saints. The new saint is born from the thawing snow on the second day. Because Heaven's Road is long and winding, the trial is very severe. Some give up immediately. Others collapse on the side of the road. Only those who have a solid constitution, strength, piety, and the protection of the gods will have the chance to become the saint."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Aside from the elders of the Vine-Bead Court, Pramanix also has to deal with the everyday affairs of the clergy: visiting statesmen, conducting all manner of religious ceremonies, and deciphering countless scriptures. There are so many tasks that she is sometimes overwhelmed with pressure, to the point of being unable to breathe. Because of this, she has to come up with clever methods to relax. It is then that she unloads her burden and reveals her true nature."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "If she hadn't become saint, Pramanix might still be at the old Silverash residence, fiddling with her favorite silks, drinking tea, or reading books into the afternoon. However, her brother made a difficult decision, and they reached a compromise. The two have since broken off contact with one another. Even their blood relation cannot make up for the disappointment Pramanix feels toward SilverAsh. Apart from polite greetings in public, the two haven't had a conversation since."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Pramanix's bell was given to her by the gods. According to legend, its sound can summon ice and snow strong enough to extinguish flames and wrap the world in cold. In reality, it does not live up to such exaggerated stories, but it is still a much stronger weapon than most ordinary staves. It should be noted that when ringing the bell, it must be accompanied by a prayer. If the bell does not sound, then its wielder will be encased in ice. If a mistake is made in the prayer, the Arts will be cast upon the bell-wielder herself. Essentially, no one but Pramanix is capable of using the bell."
+    }
+  ]
+}

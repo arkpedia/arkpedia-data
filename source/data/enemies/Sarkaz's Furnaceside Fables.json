@@ -1,0 +1,3360 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "integrated_strategies",
+    "id": "rogue_4",
+    "label": "IS5",
+    "name": "Sarkaz's Furnaceside Fables",
+    "release_date": "2025-02-14"
+  },
+  "enemies": [
+    {
+      "slug": "hateful_avenger_enemy_1539_reid",
+      "id": "enemy_1539_reid",
+      "name": "'Hateful Avenger'",
+      "index": "A15",
+      "rank": "Boss",
+      "sort": 1336,
+      "hidden": false,
+      "icon": "/enemies-icons/'Hateful Avenger'.webp",
+      "flavour_text": "A Reunion squad leader you've previously faced, who attacks with an impressive searing blade. The formidable foe you defeated in the Area 59 Ruins appears before you once again, unsheathing the flames of vengeance.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Gains significantly increased ATK when HP is under 50%",
+          "format": "normal"
+        },
+        {
+          "text": "[Charge] Locks onto a target within range on the path ahead, and gains greatly increased Movement Speed for a period of time",
+          "format": "normal"
+        },
+        {
+          "text": "Revives after being defeated for the first time, recovering half its HP",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 23000,
+            "atk": 800,
+            "def": 650,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.65,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "B",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Rush",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 4.5,
+                "move_speed": 2.0,
+                "range_radius": 1.5
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "AtkUp",
+              "parameters": {
+                "atk": 1.8,
+                "damage_resistance": 0.0
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 5.0,
+                "hp_ratio": 0.5,
+                "invincible": 0.0
+              }
+            },
+            {
+              "key": "atkup",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Sleep"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_maze_guide",
+      "id": "enemy_2063_skzlch",
+      "name": "Sarkaz Maze Guide",
+      "index": "SFF1",
+      "rank": "Normal",
+      "sort": 1199,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Maze Guide.webp",
+      "flavour_text": "A Lich who was once a custodian of the Temple of Knowledge, now lost to the illusions of the furnace for times unknown. He may hail from a Kazdel different from the one you know.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Extends the duration of the current Epoch upon entering the Objective.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 260,
+            "def": 100,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 1.5,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "D",
+            "def": "D",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_maze_returner",
+      "id": "enemy_2064_skzwdd",
+      "name": "Sarkaz Maze Returner",
+      "index": "SFF2",
+      "rank": "Normal",
+      "sort": 1200,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Maze Returner.webp",
+      "flavour_text": "A Wendigo warrior bound by a promise to his homeland. The heavy tombstone on his back, engraved with the names of his kindred, has often forced him to his knees, but even more often compelled him to rise.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks hit 2 times when on a Mark of Epoch.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 800,
+            "def": 700,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "dreadkaz",
+      "id": "enemy_2065_skzjs",
+      "name": "Dreadkaz",
+      "index": "SFF3",
+      "rank": "Normal",
+      "sort": 1201,
+      "hidden": false,
+      "icon": "/enemies-icons/Dreadkaz.webp",
+      "flavour_text": "Born neither from Sarkaz soul nor blood, yet it can deprive both. It is an enigmatic impostor, an unknown plague, a latent curse. It must not be released.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When spawned, deals Arts damage to all allied units around its tile and creates a temporary Mark of Epoch.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 800,
+            "def": 350,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "damage_scale": 0.5,
+                "exist_duration": 30.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_maze_spellweaver",
+      "id": "enemy_2066_skzlcp",
+      "name": "Sarkaz Maze Spellweaver",
+      "index": "SFF4",
+      "rank": "Elite",
+      "sort": 1202,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Maze Spellweaver.webp",
+      "flavour_text": "A vigilant Lich, one of the many custodians of the Temple of Knowledge. His threads entwine with the sparks in the Soul Furnace, rescuing unwitting wanderers and punishing trespassers.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Stops attacking and starts channeling to create Marks of Epoch around the Objective.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 600,
+            "def": 350,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 2.0,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "OngoingApoptosis",
+              "sp_cost": 0,
+              "cooldown": 60.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "skill_duration": 20.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "portal",
+      "id": "enemy_2067_skzcy",
+      "name": "'Portal'",
+      "index": "SFF5",
+      "rank": "Elite",
+      "sort": 1203,
+      "hidden": false,
+      "icon": "/enemies-icons/'Portal'.webp",
+      "flavour_text": "A portal that follows the living and can occasionally be encountered in the Furnace. Do not fear if it compels you to enter, for it has already prepared an exit.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Temporarily removes an Operator from the squad when it disappears.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 50000,
+            "atk": 1000,
+            "def": 300,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "effect_duration": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "holy_automaton",
+      "id": "enemy_2068_skzirn",
+      "name": "Holy Automaton",
+      "index": "SFF6",
+      "rank": "Normal",
+      "sort": 1204,
+      "hidden": false,
+      "icon": "/enemies-icons/Holy Automaton.webp",
+      "flavour_text": "Automaton protecting the Holy City. It can execute its built-in sacrificial ritual to unleash a powerful holy shockwave, commonly known by some Sarkaz as 'self-destruction.'",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Movement Speed gradually increases. Deals Physical damage to all units upon entering the Objective.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 800,
+            "def": 500,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.2,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B+",
+            "def": "B",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "E"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Rush",
+              "parameters": {
+                "predelay_duration": 3.0,
+                "skzirn_t[trigger].interval": 0.5,
+                "skzirn_t[trigger].move_speed": 0.5,
+                "skzirn_t[trigger].trig_cnt": 28.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "lost_contraption",
+      "id": "enemy_2069_skzbox",
+      "name": "Lost Contraption",
+      "index": "SFF7",
+      "rank": "Elite",
+      "sort": 1205,
+      "hidden": false,
+      "icon": "/enemies-icons/Lost Contraption.webp",
+      "flavour_text": "An automated thought collector built by a lost Kazdelian empire. It has continuously operated for so long that its movements have become slow and haphazard.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Steals Originium Ingots upon entering the Objective.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 700,
+            "def": 550,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 15000,
+            "atk": 800,
+            "def": 600,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": null
+        },
+        {
+          "level": 2,
+          "stats": {
+            "hp": 25000,
+            "atk": 1200,
+            "def": 600,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "lost_hovercraft",
+      "id": "enemy_2070_skzfbx",
+      "name": "Lost Hovercraft",
+      "index": "SFF8",
+      "rank": "Elite",
+      "sort": 1206,
+      "hidden": false,
+      "icon": "/enemies-icons/Lost Hovercraft.webp",
+      "flavour_text": "An automated thought collector built by a lost Kazdelian empire. Despite its ability to hover for extended periods, its built-in package protection mechanism compels it to land immediately upon encountering interference.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Low-Altitude Hovering",
+          "format": "normal"
+        },
+        {
+          "text": "Steals Originium Ingots upon entering the Objective.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 700,
+            "def": 550,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.35,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "RecoverAnim",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "move_speed": 0.35
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 15000,
+            "atk": 800,
+            "def": 600,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.35,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "RecoverAnim",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "move_speed": 0.35
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": null
+        },
+        {
+          "level": 2,
+          "stats": {
+            "hp": 25000,
+            "atk": 1200,
+            "def": 600,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.35,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "RecoverAnim",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "move_speed": 0.35
+              }
+            }
+          ],
+          "immunities": [
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "laqeramaline",
+      "id": "enemy_2071_skzdny",
+      "name": "Laqeramaline",
+      "index": "LMR",
+      "rank": "Boss",
+      "sort": 1420,
+      "hidden": false,
+      "icon": "/enemies-icons/Laqeramaline.webp",
+      "flavour_text": "A young master of witchcraft destined to become the Lord of the Banshees and one of the Six Heroes. It would take two hundred years before she discovers what makes her truly smile.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks deal Necrosis",
+          "format": "normal"
+        },
+        {
+          "text": "Summons <Spike of Lament> upon exit, which drops Plans when defeated.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 55000,
+            "atk": 900,
+            "def": 500,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.9,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 3.0,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "enemy_key": "enemy_2073_skzrck",
+                "ep_damage_ratio": 0.2
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "the_tear_weaver",
+      "id": "enemy_2072_skdny2",
+      "name": "The Tear Weaver",
+      "index": "LMS",
+      "rank": "Boss",
+      "sort": 1421,
+      "hidden": false,
+      "icon": "/enemies-icons/The Tear Weaver.webp",
+      "flavour_text": "A young master of witchcraft destined to become the Lord of the Banshees and one of the Six Heroes. However, neither her veil nor the paint she covers the earth in came from the Kazdel you knew.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks deal Necrosis and hit 2 targets simultaneously.",
+          "format": "normal"
+        },
+        {
+          "text": "Summons <Spike of Lament> upon exit, which drops Plans when defeated.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 55000,
+            "atk": 350,
+            "def": 500,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.9,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 5.0,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "C",
+            "def": "B",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "enemy_key": "enemy_2073_skzrck",
+                "ep_damage_ratio": 0.2
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "goliath",
+      "id": "enemy_2074_skzgly",
+      "name": "Goliath",
+      "index": "GLT",
+      "rank": "Boss",
+      "sort": 1422,
+      "hidden": false,
+      "icon": "/enemies-icons/Goliath.webp",
+      "flavour_text": "The strongest Goliath warrior. Though he never mentions his name, this champion is destined to become one of the Six Heroes. His ideals are even more heroic than his strength.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "The next attack deals heavy Physical damage to the target. Recovers all SP if this skill kills the target or if the target retreats.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 80000,
+            "atk": 2350,
+            "def": 1000,
+            "res": 25.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "A",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "PowerAttack",
+              "sp_cost": 3,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.5,
+                "s1_anim_duration": 8.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 3,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "champion_of_lost_agonies",
+      "id": "enemy_2075_skgly2",
+      "name": "Champion of Lost Agonies",
+      "index": "GLS",
+      "rank": "Boss",
+      "sort": 1423,
+      "hidden": false,
+      "icon": "/enemies-icons/Champion of Lost Agonies.webp",
+      "flavour_text": "The strongest Goliath warrior. Though he never mentions his name, this champion is destined to become one of the Six Heroes. He has chosen to forsake his mortal wounds, giving his all to his trusted friend and king.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks deal Necrosis",
+          "format": "normal"
+        },
+        {
+          "text": "The next attack deals heavy Physical damage to the target. Recovers all SP if this skill kills the target or if the target retreats.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 80000,
+            "atk": 1850,
+            "def": 1000,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "A",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "PowerAttack",
+              "sp_cost": 3,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.5,
+                "ep_damage_ratio": 0.3,
+                "s1_anim_duration": 8.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "EpDamage",
+              "parameters": {
+                "ep_damage_ratio": 0.3
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 3,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "kaltsit",
+      "id": "enemy_2076_skzklz",
+      "name": "Kal'tsit",
+      "index": "KST",
+      "rank": "Boss",
+      "sort": 1424,
+      "hidden": false,
+      "icon": "/enemies-icons/Kal'tsit.webp",
+      "flavour_text": "The mediator hesitantly makes a choice that allows no further hesitation: to face the challenge of the Six Heroes. She will fail, and they will succeed.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Switches position with Mon2tr when HP drops below 50%, dealing Physical damage to all nearby allied units and stunning them for several seconds.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 50000,
+            "atk": 1000,
+            "def": 500,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.39,
+            "range": null,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "SwapM3",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "stop_attack_duration": 5.0
+              }
+            },
+            {
+              "key": "Boom",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "boom_duration": 5.0,
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "HpChecker",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "the_doomsday_prophet",
+      "id": "enemy_2077_skklz2",
+      "name": "The Doomsday Prophet",
+      "index": "KSS",
+      "rank": "Boss",
+      "sort": 1425,
+      "hidden": false,
+      "icon": "/enemies-icons/The Doomsday Prophet.webp",
+      "flavour_text": "The mediator makes a resolute choice that allows no hesitation: to confront the challenge of the Six Heroes. Time is short, but she will neither fail nor surrender. She will fight to the bitter end.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Switches position with Evolving Monster when HP drops below 50%, dealing Physical damage to all nearby allied units and stunning them for several seconds.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 37500,
+            "atk": 1500,
+            "def": 500,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.39,
+            "range": null,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "B",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "SwapM3",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "stop_attack_duration": 5.0
+              }
+            },
+            {
+              "key": "Boom",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "boom_duration": 5.0,
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "HpChecker",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "mon2tr",
+      "id": "enemy_2078_skzmst",
+      "name": "Mon2tr",
+      "index": "M2T",
+      "rank": "Boss",
+      "sort": 1426,
+      "hidden": false,
+      "icon": "/enemies-icons/Mon2tr.webp",
+      "flavour_text": "The mediator's guardian and companion. It will fail, and they will succeed.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Upon switching positions or death, deals Physical damage to all nearby allied units and stuns them for several seconds.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 50000,
+            "atk": 800,
+            "def": 1000,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.39,
+            "range": null,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "A",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "StopAttack",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "stop_attack_duration": 5.0
+              }
+            },
+            {
+              "key": "Boom",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "boom_duration": 5.0,
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "atk_scale": 1.5,
+                "boom_duration": 5.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "evolving_monster",
+      "id": "enemy_2079_skmst2",
+      "name": "Evolving Monster",
+      "index": "M2S",
+      "rank": "Boss",
+      "sort": 1427,
+      "hidden": false,
+      "icon": "/enemies-icons/Evolving Monster.webp",
+      "flavour_text": "The mediator's guardian and companion. It will always choose obedience over admonition, trusting that its master's choice will bring the only hope in this disaster.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Upon switching positions or death, deals Physical damage to all nearby allied units and stuns them for several seconds.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 35000,
+            "atk": 1200,
+            "def": 1000,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.39,
+            "range": null,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "A",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "StopAttack",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "stop_attack_duration": 5.0
+              }
+            },
+            {
+              "key": "Boom",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "boom_duration": 5.0,
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "atk_scale": 1.5,
+                "boom_duration": 5.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "fremont_enlightener_of_minds",
+      "id": "enemy_2080_skzlwy",
+      "name": "Fremont, Enlightener of Minds",
+      "index": "FMT",
+      "rank": "Boss",
+      "sort": 1428,
+      "hidden": false,
+      "icon": "/enemies-icons/Fremont, Enlightener of Minds.webp",
+      "flavour_text": "Leader of the Liches, high arbiter of civil disputes in Kazdel, and above all, an ageless teacher. He does not approve of your dangerous actions within the furnace, and intervenes purely for your own good.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Improvised Defense] Gains 1 Attack Energy charge periodically, up to 3 charges. Each charge reduces Physical and Arts damage taken. The next attack expends all charges.",
+          "format": "normal"
+        },
+        {
+          "text": "['Sarcophagus of Exile'] When Fremont, Enlightener of Minds is on the field, allied Operators who retreat or are defeated will each be sealed in a 'Sarcophagus of Exile' until it is defeated.",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "[Punishment of Foolishness] Upon resurrection, charges up briefly before redeploying all operators on the field to random locations.",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks deal Necrosis",
+          "format": "normal"
+        },
+        {
+          "text": "Third Form",
+          "format": "title"
+        },
+        {
+          "text": "When your mind is Fractured, Fremont, Enlightener of Minds, will enter Third Form.",
+          "format": "normal"
+        },
+        {
+          "text": "Immediately seals an Operator in a 'Sarcophagus of Exile' and attempts self resurrection. HP recovered upon resurrection scales with the number of 'Sarcophagus of Exile' on the field.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 100000,
+            "atk": 1250,
+            "def": 1500,
+            "res": 80.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 2.0,
+            "weight": 7,
+            "taunt": 0,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A",
+            "def": "A+",
+            "res": "S+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Rebuild",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "rebuild_loop_duration": 5.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "M0ChargeAttack",
+              "parameters": {
+                "cooldown": 6.0,
+                "times": 3.0
+              }
+            },
+            {
+              "key": "M0Reborn",
+              "parameters": {
+                "duration": 1.6,
+                "hp_ratio": 0.01
+              }
+            },
+            {
+              "key": "M1Passive",
+              "parameters": {
+                "hp_recovery_per_sec_by_max_hp_ratio": 0.1,
+                "m1_revive_duration": 10.0
+              }
+            },
+            {
+              "key": "M2ChargeAttack",
+              "parameters": {
+                "attack@ep_damage_ratio": 0.1,
+                "cooldown": 6.0,
+                "ep_damage_ratio": 0.1,
+                "times": 3.0
+              }
+            },
+            {
+              "key": "M2Reborn",
+              "parameters": {
+                "duration": 2.6,
+                "hp_ratio": 0.01
+              }
+            },
+            {
+              "key": "Passive",
+              "parameters": {
+                "hp_ratio": 0.2,
+                "hp_recovery_per_sec_by_max_hp_ratio": 0.02
+              }
+            },
+            {
+              "key": "Resistance",
+              "parameters": {
+                "damage_resistance": 0.3
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "theresis_black_crowned_lord",
+      "id": "enemy_2081_skztxs",
+      "name": "Theresis, Black Crowned Lord",
+      "index": "TRS",
+      "rank": "Boss",
+      "sort": 1429,
+      "hidden": false,
+      "icon": "/enemies-icons/Theresis, Black Crowned Lord.webp",
+      "flavour_text": "Conqueror of the land, whose pen has not marked the ceremonial deed. The responsibility that he and his sister must carry has yet to come, a fact that their crown constantly reminds them of.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Twins] The closer Theresis and Theresa are, the more damage they deal, and the less Arts and Physical damage they take.",
+          "format": "normal"
+        },
+        {
+          "text": "[Brandish] Unleashes a sword wave in a direction after charging up, dealing Physical damage to all allied units in its path.",
+          "format": "normal"
+        },
+        {
+          "text": "[Guardian] Periodically attempts to significantly restore Theresa, Black Crowned Sage's SP by launching an energy sphere, which deals massive Arts damage to the first allied unit that it collides with.",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "[Gemini] The closer Theresis and Theresa are, the less Physical and Arts damage they take, and the faster Theresa, Black Crowned Sage's SP recovers.",
+          "format": "normal"
+        },
+        {
+          "text": "[Reshape Will] Drains a significant amount of Objective HP after an extended duration into battle.",
+          "format": "normal"
+        },
+        {
+          "text": "When your mind is Fractured, defeating Theresis, Black Crowned Lord summons several elite enemies.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 120000,
+            "atk": 1800,
+            "def": 2000,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.35,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A+",
+            "def": "S",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "PingPong",
+              "sp_cost": 0,
+              "cooldown": 18.0,
+              "initial_cooldown": 18.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "sp": 35.0
+              }
+            },
+            {
+              "key": "Hack",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 3.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 1.5,
+                "duration": 9.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Blink",
+              "parameters": {
+                "delay": 3.0,
+                "location": "(5,7)"
+              }
+            },
+            {
+              "key": "Line",
+              "parameters": {
+                "branch_id": "branch_skztxy_final",
+                "damage_resistance_1": 0.9,
+                "damage_resistance_2": 0.75,
+                "damage_resistance_3": 0.6,
+                "damage_resistance_4": 0.5,
+                "damage_resistance_5": 0.35,
+                "damage_scale_1": 3.0,
+                "damage_scale_2": 2.5,
+                "damage_scale_3": 2.0,
+                "damage_scale_4": 1.5,
+                "damage_scale_5": 1.0,
+                "dist_1": 1.0,
+                "dist_2": 1.5,
+                "dist_3": 2.5,
+                "dist_4": 3.5,
+                "sp_recover_per_sec_1": 5.0,
+                "sp_recover_per_sec_2": 3.5,
+                "sp_recover_per_sec_3": 3.0,
+                "sp_recover_per_sec_4": 2.0,
+                "sp_recover_per_sec_5": 1.0
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 3.95
+              }
+            },
+            {
+              "key": "TimeUp",
+              "parameters": {
+                "duration": 500.0,
+                "value": -99.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "buldrokkastee_holy_gun_knight",
+      "id": "enemy_2082_skzdd",
+      "name": "Buldrokkas'tee, Holy Gun-Knight",
+      "index": "SPT",
+      "rank": "Boss",
+      "sort": 1430,
+      "hidden": false,
+      "icon": "/enemies-icons/Buldrokkas'tee, Holy Gun-Knight.webp",
+      "flavour_text": "An Apostolic Knight who guards the gates to the Holy City. He believes in order and willingly serves the peace brought about by Law, but he has never abandoned his doubts. In time, he will become Kazdel's true 'Patriot.'",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "[Ritual of Exhortation] More likely to be attacked, retreated units have significantly increased Redeployment Time.",
+          "format": "normal"
+        },
+        {
+          "text": "[Ritual of Holy Guard] Physical and Arts damage dealt to Buldrokkas'tee, Holy Gun-Knight, by units outside a certain range is significantly reduced.",
+          "format": "normal"
+        },
+        {
+          "text": "Units that have taken damage from Buldrokkas'tee, Holy Gun-Knight gain increased ATK and take more damage.",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Ritual of Automaton] Periodically summons multiple Holy Automatons.",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "Attacks become ranged and deal Physical splash damage.",
+          "format": "normal"
+        },
+        {
+          "text": "[Ritual of Strafing] Locks on to all High Grounds on the field, strafing each one in sequence to deal Physical damage.",
+          "format": "normal"
+        },
+        {
+          "text": "[Ritual of Guidance] Immediately summons several Guardian Bulwarks upon entering Second Form.",
+          "format": "normal"
+        },
+        {
+          "text": "Third Form",
+          "format": "title"
+        },
+        {
+          "text": "When your mind is Fractured, Buldrokkas'tee, Holy Gun-Knight will enter Third Form, gaining increased ATK and summoning several elite enemies.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 150000,
+            "atk": 3000,
+            "def": 5000,
+            "res": 80.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.35,
+            "range": 2.0,
+            "weight": 10,
+            "taunt": 1,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "S+",
+            "def": "SS",
+            "res": "S+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "SpawnEnemy_S1",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {
+                "branch_id": "spawn_skzirn"
+              }
+            },
+            {
+              "key": "SpawnToken_S2",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "branch_id": "spawn_skzddd"
+              }
+            },
+            {
+              "key": "SpawnEnemy_S2",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {
+                "branch_id": "spawn_skzirn"
+              }
+            },
+            {
+              "key": "Fire_S2",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 0.5
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Duel_S1",
+              "parameters": {
+                "atk": 0.3,
+                "damage_scale": 1.5
+              }
+            },
+            {
+              "key": "Duel_S2",
+              "parameters": {
+                "atk": 0.3,
+                "damage_scale": 1.5
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0,
+                "invincible_duration": 15.0
+              }
+            },
+            {
+              "key": "RebornS2",
+              "parameters": {
+                "atk": 0.25,
+                "branch_id": "spawn_skzcy",
+                "duration": 10.0,
+                "hp_ratio": 0.5,
+                "invincible_duration": 6.0,
+                "max_respawn_cnt": 0.0
+              }
+            },
+            {
+              "key": "Respawn_S1",
+              "parameters": {
+                "respawn_time": 2.0
+              }
+            },
+            {
+              "key": "Respawn_S2",
+              "parameters": {
+                "respawn_time": 2.0
+              }
+            },
+            {
+              "key": "Shield_S1",
+              "parameters": {
+                "damage_resistance": 0.8,
+                "range_radius": 2.0
+              }
+            },
+            {
+              "key": "Shield_S2",
+              "parameters": {
+                "damage_resistance": 0.8,
+                "range_radius": 2.0
+              }
+            },
+            {
+              "key": "Splash_S2",
+              "parameters": {
+                "atk_scale": 1.0
+              }
+            },
+            {
+              "key": "TokenDamage",
+              "parameters": {
+                "damage_scale": 0.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "mr_goodenough",
+      "id": "enemy_2084_skzcan",
+      "name": "Mr. Goodenough",
+      "index": "KNS",
+      "rank": "Boss",
+      "sort": 1431,
+      "hidden": false,
+      "icon": "/enemies-icons/Mr. Goodenough.webp",
+      "flavour_text": "A mysterious trader who traverses the currents of history, selling anything that exists in time.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Summons several Lost Contraptions when HP drops below a certain point.",
+          "format": "normal"
+        },
+        {
+          "text": "When HP drops below a certain percentage, Movement Speed is significantly increased while Physical and Arts damage taken is significantly reduced.",
+          "format": "normal"
+        },
+        {
+          "text": "Steals a large amount of Originium Ingots upon entering the Objective.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 80000,
+            "atk": 500,
+            "def": 1000,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.2,
+            "range": null,
+            "weight": 7,
+            "taunt": 0,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "A",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "Summon",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "cnt": 3.0,
+                "enemy_key": "enemy_2069_skzbox"
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "1_1",
+              "parameters": {
+                "hp_ratio": 0.75
+              }
+            },
+            {
+              "key": "1_2",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            },
+            {
+              "key": "2",
+              "parameters": {
+                "damage_resistance": 0.5,
+                "hp_ratio": 0.25,
+                "move_speed": 0.9
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 120000,
+            "atk": 750,
+            "def": 1000,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.2,
+            "range": null,
+            "weight": 7,
+            "taunt": 0,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "B+",
+            "def": "A",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "Summon",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "cnt": 3.0,
+                "enemy_key": "enemy_2069_skzbox"
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "1_1",
+              "parameters": {
+                "hp_ratio": 0.75
+              }
+            },
+            {
+              "key": "1_2",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            },
+            {
+              "key": "2",
+              "parameters": {
+                "damage_resistance": 0.5,
+                "hp_ratio": 0.25,
+                "move_speed": 0.9
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "quilon_avatar_of_the_mahasattva",
+      "id": "enemy_2089_skzjkl",
+      "name": "Qui'lon, Avatar of the Mahasattva",
+      "index": "QLN",
+      "rank": "Boss",
+      "sort": 1432,
+      "hidden": false,
+      "icon": "/enemies-icons/Qui'lon, Avatar of the Mahasattva.webp",
+      "flavour_text": "The enlightened of Terra, an Anasa. His Cakraratna is Civilight Eterna, and his Dharmaparaya is a shattered sword. If the living wishes to be free from their worldly shackles, he will remain among the rubble to preach the Dharma, walking the path of Duhkha once more.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "State of Samadhi",
+          "format": "title"
+        },
+        {
+          "text": "[Tathata] After a period of invulnerability, enters State of Vimutti",
+          "format": "normal"
+        },
+        {
+          "text": "[Anapanasati] Periodically summons Aggini of Nila; for every existing Aggini of Nila, Qui'lon takes less Physical and Arts damage, and gains status resistance",
+          "format": "normal"
+        },
+        {
+          "text": "[Quenching the Three Fires] Qui'lon periodically deals Arts damage to all units within range of an Aggini of Nila",
+          "format": "normal"
+        },
+        {
+          "text": "State of Vimutti",
+          "format": "title"
+        },
+        {
+          "text": "[Anapanasati] Gains status resistance; periodically summons Aggini of Nila, and for every existing Aggini of Nila, Qui'lon takes less Physical and Arts damage; periodically summons a wave of enemies, and when the mind is chaotic, summons different enemies",
+          "format": "normal"
+        },
+        {
+          "text": "[Wrathful Gaze] Every attack deals Arts damage to all units within range of an Aggini of Nila",
+          "format": "normal"
+        },
+        {
+          "text": "[Breaching of the Five Precepts] Unleashes 5 consecutive attacks on the target",
+          "format": "normal"
+        },
+        {
+          "text": "[Trikaya] Summons a 'Padmasana of Rebirth' whenever 25% of Max HP is lost; Invulnerable until 'Padmasana of Rebirth' enters the Objective Point",
+          "format": "normal"
+        },
+        {
+          "text": "[Upaya] When HP drops to 0% for the first time, removes all allied and enemy units from the field along with all Operators in the Deployment Waiting Zone, then enters State of Ashoka",
+          "format": "normal"
+        },
+        {
+          "text": "State of Ashoka",
+          "format": "title"
+        },
+        {
+          "text": "[Debate of the Bodhisattvas] Moves to a new combat map and attacks strike twice; only Operators who were on the 'Padmasana of Rebirth' when it entered the Objective Point can be used",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 300000,
+            "atk": 1800,
+            "def": 2000,
+            "res": 75.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 9,
+            "taunt": null,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "S+",
+            "atk": "A+",
+            "def": "S",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "M0TriggerSkzth",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 30.0,
+              "priority": 2,
+              "parameters": {
+                "boom_damage_scale": 1.0
+              }
+            },
+            {
+              "key": "M0SwitchMode",
+              "sp_cost": 0,
+              "cooldown": 95.0,
+              "initial_cooldown": 95.0,
+              "priority": 10,
+              "parameters": {}
+            },
+            {
+              "key": "M1MultiAttack",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 2,
+              "parameters": {
+                "atk_scale": 1.0,
+                "boom_damage_scale": 1.0
+              }
+            },
+            {
+              "key": "M1SummonSkzjbc",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 3,
+              "parameters": {
+                "anim_fix_duration": 99999.0,
+                "branch_id": "skzjkl_m1_summon_skzjbc"
+              }
+            },
+            {
+              "key": "M3MultiAttack",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 2,
+              "parameters": {
+                "atk_scale": 1.0,
+                "boom_damage_scale": 1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "M0_T1",
+              "parameters": {
+                "branch_id": "skzjkl_skzth_m0",
+                "interval": 25.0
+              }
+            },
+            {
+              "key": "M0_T2",
+              "parameters": {
+                "branch_id": "skzjkl_m0_summon_enemy",
+                "interval": 55.0
+              }
+            },
+            {
+              "key": "M1Reborn",
+              "parameters": {
+                "duration": 0.33
+              }
+            },
+            {
+              "key": "M1_T1",
+              "parameters": {
+                "branch_id": "skzjkl_skzth_m1",
+                "interval": 35.0
+              }
+            },
+            {
+              "key": "M1_T2",
+              "parameters": {
+                "branch_id": "skzjkl_m1_summon_enemy",
+                "interval": 38.0
+              }
+            },
+            {
+              "key": "M1_T31",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            },
+            {
+              "key": "M1_T32",
+              "parameters": {
+                "hp_ratio": 0.25
+              }
+            },
+            {
+              "key": "M1_T33",
+              "parameters": {
+                "hp_ratio": 0.75
+              }
+            },
+            {
+              "key": "M2Passive",
+              "parameters": {
+                "m2_revive_duration": 7.0
+              }
+            },
+            {
+              "key": "M2ReviveEnd",
+              "parameters": {
+                "branch_id": "skzjkl_stage_2",
+                "delay": 7.0,
+                "location": "(5,20)"
+              }
+            },
+            {
+              "key": "M3_T1",
+              "parameters": {
+                "branch_id": "skzjkl_skzth_m3",
+                "interval": 10.0
+              }
+            },
+            {
+              "key": "M3_T2",
+              "parameters": {
+                "branch_id": "skzjkl_m3_summon_enemy",
+                "interval": 20.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "padmasana_of_rebirth",
+      "id": "enemy_2090_skzjbc",
+      "name": "Padmasana of Rebirth",
+      "index": "SFF9",
+      "rank": "Elite",
+      "sort": 1207,
+      "hidden": false,
+      "icon": "/enemies-icons/Padmasana of Rebirth.webp",
+      "flavour_text": "It has no bottom yet never leaks, ferrying passengers from all lands to greener pastures atop a bed of cerulean flames. Only the freed may board this ark.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Loads up to 3 allied Operators upon contact. Movement speed is reduced when loaded.",
+          "format": "normal"
+        },
+        {
+          "text": "Will not deduct Life Points when entering the Objective Point; loaded allied Operators cannot be placed on the field",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 50000,
+            "atk": 500,
+            "def": 2000,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.0,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "S",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "swallowAnim",
+              "sp_cost": 0,
+              "cooldown": 99999.0,
+              "initial_cooldown": 99999.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "effect_duration": 10.0
+              }
+            },
+            {
+              "key": "swallowOperators",
+              "parameters": {
+                "max_passenger_count": 3.0,
+                "move_speed": 0.5,
+                "range_radius": 0.3
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "window",
+      "id": "enemy_2091_skzgds",
+      "name": "'Window'",
+      "index": "SFF10",
+      "rank": "Elite",
+      "sort": 1208,
+      "hidden": false,
+      "icon": "/enemies-icons/'Window'.webp",
+      "flavour_text": "A solitary window, manifested from all that is bright and beautiful within the dark void. Find the strength to open it, and you will behold prosperity beyond your wildest dreams.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Upon defeating the 'Window', the player will enter Prosperity",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 50000,
+            "atk": 1000,
+            "def": 300,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 1.5,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "effect_duration": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "amiya_furnaces_finale",
+      "id": "enemy_2092_skzamy",
+      "name": "'Amiya', Furnace's Finale",
+      "index": "AFF",
+      "rank": "Boss",
+      "sort": 1433,
+      "hidden": false,
+      "icon": "/enemies-icons/'Amiya', Furnace's Finale.webp",
+      "flavour_text": "It awaits at the end of each story, taking away every character, shutting the door on every possibility, bringing a close to every narration. It is the imagination of the end, and the end of imagination. It is everything, but it is not someone you know.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "[Vestiges of Creativity] Vestiges of Creativity on the battlefield change direction when they come into contact with Guideposts of the Past or terrain features. When they come into contact with Guideposts of the Past, they release the enemy or allied Operator contained within.",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Those Who Should Not Be] Amiya takes 50% less Physical and Arts damage, and becomes Invulnerable when HP drops below 50% for the first time",
+          "format": "normal"
+        },
+        {
+          "text": "[Recreation of the End] Recovers SP when Buldrokkas'tee, Holy Gun-Knight, Theresis, Black Crowned Lord, Qui'lon, Avatar of the Mahasattva, or Manfred are defeated or leave the battlefield. When SP is at max, casts [Premonition of Continuation].",
+          "format": "normal"
+        },
+        {
+          "text": "[Premonition of Continuation] Stops attacking and begins to gradually erase tiles and all units on them. For each Guidepost of the Past or enemy erased, reduces Life Points based on the enemy erased before moving to the next area. Premonition of Continuation SP requirement is greatly reduced when the mind is Fractured.",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "[Afterglow of the Black Crown] Immediately deals one instance of True damage to up to 7 nearby units when entering second form, and whenever she touches a Vestige of Creativity",
+          "format": "normal"
+        },
+        {
+          "text": "[Wordless Expectation] Periodically summons one Vestige of Creativity",
+          "format": "normal"
+        },
+        {
+          "text": "[Eternal Existence] Erases all enemies, Operators, and Guideposts of the Past, ending the operation",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 200000,
+            "atk": 600,
+            "def": 8000,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.35,
+            "range": 10.0,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 999
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "B",
+            "def": "SS",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "DeepBreathS1",
+              "sp_cost": 180,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 35.0,
+                "endCol": 9.0,
+                "interval": 3.5,
+                "startCol": 1.0
+              }
+            },
+            {
+              "key": "DeepBreathS2",
+              "sp_cost": 180,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 35.0,
+                "endCol": 22.0,
+                "interval": 3.5,
+                "startCol": 13.0
+              }
+            },
+            {
+              "key": "DeepBreathS3",
+              "sp_cost": 180,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 60.0,
+                "endCol": 35.0,
+                "interval": 6.0,
+                "startCol": 24.0
+              }
+            },
+            {
+              "key": "DeepBreathS4",
+              "sp_cost": 280,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 60.0,
+                "endCol": 35.0,
+                "interval": 6.0,
+                "startCol": 24.0
+              }
+            },
+            {
+              "key": "AOEAttackInit",
+              "sp_cost": 0,
+              "cooldown": 99999.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 2.5
+              }
+            },
+            {
+              "key": "AOEAttack",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 2.5
+              }
+            },
+            {
+              "key": "Doom",
+              "sp_cost": 0,
+              "cooldown": 99999.0,
+              "initial_cooldown": 3.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "SummonBallS4",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "AbsorbSkzamb",
+              "parameters": {
+                "range_radius": 0.5
+              }
+            },
+            {
+              "key": "Blink1",
+              "parameters": {
+                "location": "(5,15)"
+              }
+            },
+            {
+              "key": "Blink2",
+              "parameters": {
+                "location": "(3,26)"
+              }
+            },
+            {
+              "key": "InvincibleS1",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            },
+            {
+              "key": "InvincibleS2",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            },
+            {
+              "key": "RebornS3",
+              "parameters": {
+                "duration": 10.0
+              }
+            },
+            {
+              "key": "RebornS4",
+              "parameters": {
+                "duration": 2.5
+              }
+            },
+            {
+              "key": "ReduceDamageS1",
+              "parameters": {
+                "damage_resistance": 0.5
+              }
+            },
+            {
+              "key": "ReduceDamageS2",
+              "parameters": {
+                "damage_resistance": 0.5
+              }
+            },
+            {
+              "key": "ReduceDamageS3",
+              "parameters": {
+                "damage_resistance": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 300,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "finale_cadence",
+      "id": "enemy_2093_skzams",
+      "name": "Finale Cadence",
+      "index": "SFF11",
+      "rank": "Normal",
+      "sort": 1209,
+      "hidden": false,
+      "icon": "/enemies-icons/Finale Cadence.webp",
+      "flavour_text": "The only way to the end.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Drops a random Collectible when it enters the Protection Objective; Remaining HP carries over to the next operation",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 500000,
+            "atk": 250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": 10.0,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "SS",
+            "atk": "D",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 500000,
+            "atk": 250,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": 10.0,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "SS",
+            "atk": "D",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "buldrokkastee_holy_gun_knight_enemy_2097_skzfdd",
+      "id": "enemy_2097_skzfdd",
+      "name": "Buldrokkas'tee, Holy Gun-Knight",
+      "index": "SPT",
+      "rank": "Boss",
+      "sort": 1434,
+      "hidden": true,
+      "icon": "/enemies-icons/Buldrokkas'tee, Holy Gun-Knight.webp",
+      "flavour_text": "An Apostolic Knight who guards the gates to the Holy City.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "[Ritual of Exhortation] More likely to be attacked, retreated units have significantly increased Redeployment Time.",
+          "format": "normal"
+        },
+        {
+          "text": "[Ritual of Holy Guard] Physical and Arts damage dealt to Buldrokkas'tee, Holy Gun-Knight, by units outside a certain range is significantly reduced.",
+          "format": "normal"
+        },
+        {
+          "text": "Units that have taken damage from Buldrokkas'tee, Holy Gun-Knight gain increased ATK and take more damage.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 100000,
+            "atk": 3500,
+            "def": 5000,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.35,
+            "range": null,
+            "weight": 8,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "S+",
+            "def": "SS",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "SpawnEnemy_S1",
+              "sp_cost": 0,
+              "cooldown": 999.0,
+              "initial_cooldown": 99999.0,
+              "priority": 0,
+              "parameters": {
+                "branch_id": "spawn_skzirn"
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DeathSacrifice",
+              "parameters": {
+                "sp": 250.0
+              }
+            },
+            {
+              "key": "Duel_S1",
+              "parameters": {
+                "atk": 0.3,
+                "damage_scale": 1.5
+              }
+            },
+            {
+              "key": "Respawn_S1",
+              "parameters": {
+                "respawn_time": 2.0
+              }
+            },
+            {
+              "key": "Shield_S1",
+              "parameters": {
+                "damage_resistance": 0.8,
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 3,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "theresis_black_crowned_lord_enemy_2098_skzftx",
+      "id": "enemy_2098_skzftx",
+      "name": "Theresis, Black Crowned Lord",
+      "index": "TRS",
+      "rank": "Boss",
+      "sort": 1435,
+      "hidden": true,
+      "icon": "/enemies-icons/Theresis, Black Crowned Lord.webp",
+      "flavour_text": "Conqueror of the land.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "[Brandish] Unleashes a sword wave in a direction after charging up, dealing Physical damage to all allied units in its path.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 150000,
+            "atk": 3000,
+            "def": 2000,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.35,
+            "range": null,
+            "weight": 6,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "S+",
+            "def": "S",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Hack",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 5.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 2.0,
+                "duration": 9.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DeathSacrifice",
+              "parameters": {
+                "sp": 250.0
+              }
+            },
+            {
+              "key": "Resistance",
+              "parameters": {
+                "damage_resistance": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 20,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "quilon_avatar_of_the_mahasattva_enemy_2099_skzfkl",
+      "id": "enemy_2099_skzfkl",
+      "name": "Qui'lon, Avatar of the Mahasattva",
+      "index": "QLN",
+      "rank": "Boss",
+      "sort": 1436,
+      "hidden": true,
+      "icon": "/enemies-icons/Qui'lon, Avatar of the Mahasattva.webp",
+      "flavour_text": "The enlightened of Terra, an Anasa.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "[Breaching of the Five Precepts] Unleashes 5 consecutive attacks on the target",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 250000,
+            "atk": 3000,
+            "def": 1500,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.35,
+            "range": null,
+            "weight": 8,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "S+",
+            "atk": "S+",
+            "def": "A+",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "MultiAttack",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 15.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 0.9
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DeathSacrifice",
+              "parameters": {
+                "sp": 250.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 3,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "manfred_enemy_2100_skzfmf",
+      "id": "enemy_2100_skzfmf",
+      "name": "Manfred",
+      "index": "MAN",
+      "rank": "Boss",
+      "sort": 1437,
+      "hidden": true,
+      "icon": "/enemies-icons/Manfred.webp",
+      "flavour_text": "A young Sarkaz general, member of the Military Commission of Kazdel.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks with floating cannon, dealing Arts damage",
+          "format": "normal"
+        },
+        {
+          "text": "[Focus] Continuously gains ASPD when attacking the same target (this effect is capped), resets when switching targets or not attacking for a few seconds",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 150000,
+            "atk": 1000,
+            "def": 800,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 2.0,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A",
+            "def": "B+",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "DeathSacrifice",
+              "parameters": {
+                "sp": 250.0
+              }
+            },
+            {
+              "key": "Funnel_common",
+              "parameters": {
+                "attack_speed": 60.0,
+                "duration": 6.0,
+                "max_stack_cnt": 5.0
+              }
+            },
+            {
+              "key": "Funnel_rage_charge",
+              "parameters": {
+                "sp": 6.0
+              }
+            },
+            {
+              "key": "Funnel_s1",
+              "parameters": {
+                "atk_scale": 0.5,
+                "ep_damage_ratio": 0.0
+              }
+            },
+            {
+              "key": "Shield",
+              "parameters": {
+                "disable_duration": 30.0,
+                "prob": 0.8
+              }
+            },
+            {
+              "key": "Shield[disable]",
+              "parameters": {
+                "stun": 8.0
+              }
+            },
+            {
+              "key": "aura",
+              "parameters": {
+                "atk_scale": 0.05,
+                "interval": 0.5,
+                "isenabled": "aura_off",
+                "range_radius": 1.1
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Sleep"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 3,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

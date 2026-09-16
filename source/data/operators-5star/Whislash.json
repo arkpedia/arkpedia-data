@@ -1,0 +1,760 @@
+{
+  "name": "Whislash",
+  "rarity": 5,
+  "class": "Guard",
+  "branch": "Instructor",
+  "faction": "Kazimierz",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS",
+    "Support"
+  ],
+  "trait": "Can attack enemies from range ; When attacking enemies not blocked by self, increase ATK to 120%",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Maria Nearl"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Glory Purple"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_265_sophia",
+  "otherLanguages": {
+    "Chinese": "鞭刃",
+    "Japanese": "ウィスラッシュ",
+    "Korean": "위슬래시"
+  },
+  "characterInfo": {
+    "File no.": "KZ07",
+    "Operator Record": "Exclusive Interview",
+    "Paradox Simulation": "Personalized Lessons",
+    "Illustrator": "竜崎いち",
+    "Release Date": "2021/04/08",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Minami Takahashi",
+    "Chinese": "Sun Yuting (credited as \"Tin\" in EN)",
+    "English": "Barbara Blanka",
+    "Korean": "Kang Si-hyun"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Competition Knight Experience": "4 years",
+    "Place of Birth": "Kazimierz",
+    "Date of Birth": "June 28th",
+    "Race": "Kuranta",
+    "Height": "165 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Rebuke",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "When deployed, all Melee allies with 3 or more Block gain +2 ASPD and +4% DEF"
+        },
+        {
+          "stage": "Base",
+          "potential": "Potential 5",
+          "description": "When deployed, all Melee allies with 3 or more Block gain +4 (+2) ASPD and +6% (+2%) DEF"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When deployed, all Melee allies with 3 or more Block gain +4 ASPD and +8% DEF"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When deployed, all Melee allies with 3 or more Block gain +6 (+2) ASPD and +10% (+2%) DEF"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When deployed, all Melee allies with 3 or more Block gain +6 ASPD and +12% DEF"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When deployed, all Melee allies with 3 or more Block gain +8 (+2) ASPD and +14% (+2%) DEF"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Rebuke"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Whislash's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Whip Sword .",
+        "Rebuke improved."
+      ],
+      "prerequisite": "Raise Whislash to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Rebuke improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Whislash to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Guard Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Keton Colloid",
+          "quantity": 7
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 12
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Motivational Skills",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15–20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The effect of this unit's first Talent increases to 2.1 times and Melee Operators with less than 3 Block gain half the effect",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The effect of this unit's first Talent increases to 2.2 times and Melee Operators with less than 3 Block gain half the effect",
+            "initialSp": 0,
+            "spCost": 39,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The effect of this unit's first Talent increases to 2.3 times and Melee Operators with less than 3 Block gain half the effect",
+            "initialSp": 0,
+            "spCost": 38,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The effect of this unit's first Talent increases to 2.4 times and Melee Operators with less than 3 Block gain half the effect",
+            "initialSp": 0,
+            "spCost": 37,
+            "duration": 16
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The effect of this unit's first Talent increases to 2.5 times and Melee Operators with less than 3 Block gain half the effect",
+            "initialSp": 0,
+            "spCost": 36,
+            "duration": 16
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The effect of this unit's first Talent increases to 2.6 times and Melee Operators with less than 3 Block gain half the effect",
+            "initialSp": 0,
+            "spCost": 35,
+            "duration": 16
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The effect of this unit's first Talent increases to 2.7 times and Melee Operators with less than 3 Block gain half the effect",
+            "initialSp": 0,
+            "spCost": 34,
+            "duration": 17
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The effect of this unit's first Talent increases to 2.8 times and Melee Operators with less than 3 Block gain half the effect",
+            "initialSp": 0,
+            "spCost": 33,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The effect of this unit's first Talent increases to 2.9 times and Melee Operators with less than 3 Block gain half the effect",
+            "initialSp": 0,
+            "spCost": 32,
+            "duration": 19
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The effect of this unit's first Talent increases to 3 times and Melee Operators with less than 3 Block gain half the effect",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 2
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Whip Sword",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20–25 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The effect of this unit's first Talent increases to 1.1 times; ATK +25% , Attack Range +1 , Block +1 and attacks all blocked enemies",
+            "initialSp": 20,
+            "spCost": 70,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The effect of this unit's first Talent increases to 1.2 times; ATK +25% , Attack Range +1 , Block +1 and attacks all blocked enemies",
+            "initialSp": 20,
+            "spCost": 69,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The effect of this unit's first Talent increases to 1.3 times; ATK +25% , Attack Range +1 , Block +1 and attacks all blocked enemies",
+            "initialSp": 20,
+            "spCost": 68,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The effect of this unit's first Talent increases to 1.4 times; ATK +30% , Attack Range +1 , Block +1 and attacks all blocked enemies",
+            "initialSp": 20,
+            "spCost": 67,
+            "duration": 21
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The effect of this unit's first Talent increases to 1.5 times; ATK +30% , Attack Range +1 , Block +1 and attacks all blocked enemies",
+            "initialSp": 20,
+            "spCost": 66,
+            "duration": 21
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The effect of this unit's first Talent increases to 1.6 times; ATK +30% , Attack Range +1 , Block +1 and attacks all blocked enemies",
+            "initialSp": 20,
+            "spCost": 65,
+            "duration": 21
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The effect of this unit's first Talent increases to 1.7 times; ATK +35% , Attack Range +1 , Block +1 and attacks all blocked enemies",
+            "initialSp": 20,
+            "spCost": 64,
+            "duration": 22
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The effect of this unit's first Talent increases to 1.8 times; ATK +40% , Attack Range +1 , Block +1 and attacks all blocked enemies",
+            "initialSp": 20,
+            "spCost": 63,
+            "duration": 23
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The effect of this unit's first Talent increases to 1.9 times; ATK +50% , Attack Range +1 , Block +1 and attacks all blocked enemies",
+            "initialSp": 20,
+            "spCost": 62,
+            "duration": 24
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The effect of this unit's first Talent increases to 2 times; ATK +60% , Attack Range +1 , Block +1 and attacks all blocked enemies",
+            "initialSp": 20,
+            "spCost": 60,
+            "duration": 25
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 6
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 2
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 2
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Guard Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room , Guard Operators' Specialization training speed +30%"
+    },
+    {
+      "name": "Drillmaster",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Operators' Specialization training speed +25%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Whislash's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "INS-X: Whipsword Wire.L",
+      "mission": {
+        "requirement1": "Defeat a total of 50 enemies with Whislash (Whislash cannot be a Support Unit)",
+        "requirement2": "Clear Main Story S3-6 with a 3-star rating; a non-Support Whislash must be deployed during the operation and only Defender operators are allowed for the remaining units"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +35 , DEF +35",
+          "effectLabel": "Trait improved",
+          "effectText": "Can attack enemies from range ; When attacking enemies not blocked by self, increase ATK to 130%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +47 , DEF +47",
+          "effectLabel": "New talent: Vision of Unity",
+          "effectText": "On deployment, all Melee allies with 3 or more Block gain 1 Physical Shield",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +52 , DEF +52",
+          "effectLabel": "Vision of Unity improved",
+          "effectText": "On deployment, all Melee allies with 3 or more Block gain 1 Physical Shield ; [Kazimierz] Operators gain 1 additional stack",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Whislash Zofia, former competitive\nKazimierz\nKnight. In family terms,\nOperators\nNearl\nand\nBlemishine's\naunt on their father's side. Has reached the Final 16 of\nthe Majors\nbefore. Was left-handed in the past, but owing to some impairment, has switched to using her right hand.\nThough atrophied in combat compared to her peak, she holds unique insight and a rare talent in training others, currently folding herself into the Instructor lineup headed by\nDobermann\n. Training\nOperators\nis her day-to-day priority, only joining any missions as required.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 781,
+          "atk": 283,
+          "def": 197,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 16,
+          "block": 2,
+          "interval": 1.05
+        },
+        "max": {
+          "hp": 1071,
+          "atk": 405,
+          "def": 278,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 16,
+          "block": 2,
+          "interval": 1.05
+        },
+        "rangeId": "2-2"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1071,
+          "atk": 405,
+          "def": 278,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.05
+        },
+        "max": {
+          "hp": 1391,
+          "atk": 541,
+          "def": 352,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.05
+        },
+        "rangeId": "2-2"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1391,
+          "atk": 541,
+          "def": 352,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.05
+        },
+        "max": {
+          "hp": 1932,
+          "atk": 645,
+          "def": 420,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.05
+        },
+        "rangeId": "2-2"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 30,
+      "def": 40
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected. \n\n[Cell-Originium Assimilation] 0%\nOperator Whislash shows no signs of Originium infection. \n\n[Blood Originium-Crystal Density] 0.12u/L\nOperator Whislash rarely comes into contact with Originium."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "The distantly removed aunt of Nearl and Blemishine. A Kuranta madam with a domineering streak. \nPossesses bountiful Kazimierz assets from her winnings in the competition knight circuit, but seems not to take much interest in her own wealth. \nShe's got no ill will at all, but when chatting with her, you may invariably feel she projects a sort of arrogance. As long as you push past that first impression of yours, getting along with her is easy as could be."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "At the outset, Whislash had a prolonged dispute with Dobermann, which at its root was due to their conflicting views on the training of operators. \nDobermann, of military birth, believes that operators should be required to attain what she sees as average proficiency for a combatant, afterwards earning the right to choose how they develop themselves. Whislash of competition knight lineage, however, doesn't care at all whether operators meet a uniform average, instead aspiring to bring each operator's own characteristics to their maximum potential. \nNeither's way of thinking is wrong, but even so, Dobermann and Whislash are both particularly stubborn. They were at an impasse for a while, before finally taking a meeting and reaching a compromise. \nThough perhaps they came to understand each other while butting heads. Ever since then, their relationship's gotten pretty good. You might hear them talking tactics from time to time now, or even just eating meals together."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "While she is Nearl and Blemishine's aunt, Zofia the Whislash does not take the surname Nearl. Strictly speaking, she cannot, since her standing is as a branch member of the Nearl family, which bars her from directly taking up the name. \nBut this was policy for the Nearl family at its shining peak. Following Nearl's exile, it might've been simple enough, with all that she possessed, to seize the title of Nearl if she so wished. \nMind you, Whislash did not. \nOne part of it was her sisterly relationship with Maria. The other, as she saw it, was that the Nearl name held hallowed significance. \nIn a certain sense, her opinion overlaps with a true direct relative of Nearl's and Blemishine's, their uncle, Młynar—'This is not a name I'd tarnish with such underhandedness.' \nThough, sure enough, they define 'tarnishing' in different ways. \nUnlike Młynar, Zofia does not reject the idea of the competition knight itself. Put another way, she accepts at least its existence—but does not err in her forthright and sporting approach to dueling, which she took to the competition as humble representative of the Nearl family. Unwilling to bow to any sponsors or firms, she went from start to finish lacking any favorable provisions or equipment, until the Final 16 brought her journey to an end. Even now, despite that gulf in equipment taking her left hand out of action indefinitely, she has no regrets. None—come the Major, she wants to make sure Blemishine continues to fight as she once did.  \nIt's plain how in Whislash's heart of hearts, her honor as a member of the Nearl family is unbreakable, and anyone could see how she looks after Nearl and Blemishine. When joining, she even assured us that if Rhodes Island wasn't fit for purpose, she'd prefer to take Nearl and Blemishine with her to raise them herself. We've had some personnel envy the sisters in a way, having an elder who cares for them like that."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "When joining us, it seemed that as long as Nearl and Blemishine were doing well, Whislash wouldn't have any issue with us. But as time passed, as other operators arrived, and showed her ever more ways of life from ever more corners of Terra... chatting with the Doctor one day, she posed a question she'd never thought of asking before—somehow, she'd never considered what she wanted to do herself.  \nSafeguarding the Nearl family name, looking after Nearl and Blemishine. These were what she wanted to do, but somehow not all she wanted to do. \nEver since Nearl was cast out, she'd found a new purpose for herself. Maria had jumped headlong into her beloved engineering. The name of Nearl was all but safe. Once everything she'd worried about no longer needed her, the realization struck her—she had no idea what should come next. \nBlessedly, the operators of Rhodes Island not only reminded her of life's variety, but that the vast majority of it was open to try herself. After a short period of haziness, Whislash decided to continue as an Instructor on the one hand, while trying all sorts of new things she'd never imagined on the other. She could seek out her new purpose in life. After all, she's young, life's long, and it's not like there's a rush."
+    }
+  ]
+}

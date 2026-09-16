@@ -1,0 +1,764 @@
+{
+  "name": "Mint",
+  "rarity": 5,
+  "class": "Caster",
+  "branch": "Phalanx Caster",
+  "faction": "Victoria",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "AoE",
+    "Crowd-Control"
+  ],
+  "trait": "Normally does not attack , but has greatly increased DEF and RES ; When skill is active, attacks deal AoE Arts damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Rewinding Breeze"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Tsukiyoi",
+    "Private Study"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_388_mint",
+  "otherLanguages": {
+    "Simplified Chinese": "薄绿",
+    "Traditional Chinese": "薄綠",
+    "Japanese": "ミント",
+    "Korean": "민트"
+  },
+  "characterInfo": {
+    "File no.": "VC08",
+    "Operator Record": "Yesterday Once More",
+    "Paradox Simulation": "Come On, Then, You!",
+    "Illustrator": "ヌードル",
+    "Release Date": "2021/03/25",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Hitomi Oowada",
+    "Chinese": "Song Yuanyuan (credited as \"Esther\" in EN)",
+    "English": "Kelly Ohanian",
+    "Korean": "Yeo Yoon-mi"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "February 5th",
+    "Race": "Feline",
+    "Height": "155 cm",
+    "Infection Status": "Originium crystals distributed across the surface of her body, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Geologist",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When this unit's skill is not active, adjacent allies gain +5% DEF"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When this unit's skill is not active, adjacent allies gain +7% (+2%) DEF"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When this unit's skill is not active, adjacent allies gain +10% DEF; When this unit's skill is active, become less likely to be targeted by enemies"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When this unit's skill is not active, adjacent allies gain +12% (+2%) DEF; When this unit's skill is active, become less likely to be targeted by enemies"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Geologist"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Mint's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Geologist .",
+        "New skill: Swirling Vortex .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Mint to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Geologist improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Mint to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Incandescent Alloy Block",
+          "quantity": 9
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 14
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Wind Whispers",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15–20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Range expands; Attacks deal 110% ATK as Arts damage",
+            "initialSp": 6,
+            "spCost": 30,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Range expands; Attacks deal 115% ATK as Arts damage",
+            "initialSp": 6,
+            "spCost": 30,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Range expands; Attacks deal 120% ATK as Arts damage",
+            "initialSp": 6,
+            "spCost": 30,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Range expands; Attacks deal 125% ATK as Arts damage",
+            "initialSp": 6,
+            "spCost": 28,
+            "duration": 16
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Range expands; Attacks deal 130% ATK as Arts damage",
+            "initialSp": 6,
+            "spCost": 28,
+            "duration": 16
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Range expands; Attacks deal 135% ATK as Arts damage",
+            "initialSp": 6,
+            "spCost": 28,
+            "duration": 16
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Range expands; Attacks deal 140% ATK as Arts damage",
+            "initialSp": 8,
+            "spCost": 26,
+            "duration": 17
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Range expands; Attacks deal 145% ATK as Arts damage",
+            "initialSp": 8,
+            "spCost": 24,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Range expands; Attacks deal 150% ATK as Arts damage",
+            "initialSp": 8,
+            "spCost": 22,
+            "duration": 19
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Range expands; Attacks deal 160% ATK as Arts damage",
+            "initialSp": 8,
+            "spCost": 20,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Swirling Vortex",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Every attack drags the targets to Mint slightly , dealing 105% ATK as Arts damage. Deal 180% ATK as Arts damage when the skill ends",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Every attack drags the targets to Mint slightly , dealing 105% ATK as Arts damage. Deal 190% ATK as Arts damage when the skill ends",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Every attack drags the targets to Mint slightly , dealing 105% ATK as Arts damage. Deal 200% ATK as Arts damage when the skill ends",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Every attack drags the targets to Mint slightly , dealing 110% ATK as Arts damage. Deal 210% ATK as Arts damage when the skill ends",
+            "initialSp": 10,
+            "spCost": 33,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Every attack drags the targets to Mint slightly , dealing 110% ATK as Arts damage. Deal 220% ATK as Arts damage when the skill ends",
+            "initialSp": 10,
+            "spCost": 33,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Every attack drags the targets to Mint slightly , dealing 110% ATK as Arts damage. Deal 230% ATK as Arts damage when the skill ends",
+            "initialSp": 10,
+            "spCost": 33,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Every attack drags the targets to Mint slightly , dealing 115% ATK as Arts damage. Deal 240% ATK as Arts damage when the skill ends",
+            "initialSp": 12,
+            "spCost": 31,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Every attack drags the targets to Mint slightly , dealing 120% ATK as Arts damage. Deal 260% ATK as Arts damage when the skill ends",
+            "initialSp": 13,
+            "spCost": 29,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Every attack drags the targets to Mint slightly , dealing 125% ATK as Arts damage. Deal 280% ATK as Arts damage when the skill ends",
+            "initialSp": 14,
+            "spCost": 27,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Every attack drags the targets to Mint moderately , dealing 130% ATK as Arts damage. Deal 300% ATK as Arts damage when the skill ends",
+            "initialSp": 15,
+            "spCost": 25,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 3
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Caster Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Caster Operators' Specialization training speed +30%"
+    },
+    {
+      "name": "Widely-ReadReplacesCaster Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, increases the Specialization training speed of Caster Operators by +30% , and further increases this speed by +45% if training the skill to Specialization Level 2"
+    },
+    {
+      "name": "Geology α",
+      "facility": "Factory",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to a Factory, Originium formula related productivity +30%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Mint's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "PLX-X: Attention-holding Device",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Mint, and cause at least 2 enemies to fall in a pit in each battle",
+        "requirement2": "Clear Side Story BI-2 with a 3-star rating; You must deploy your own Mint, and cause at least 4 Icefield Warriors to fall in a pit"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +130 , ATK +40 , DEF +15",
+          "effectLabel": "Trait improved",
+          "effectText": "Normally does not attack , but has greatly increased DEF and RES ; when skill is active, retains some of the bonus and attacks deal AoE Arts damage",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +150 , ATK +47 , DEF +20",
+          "effectLabel": "Geologist improved",
+          "effectText": "When this unit's skill is not active, adjacent allies gain +18% DEF; when skill is active, less likely to be targeted by enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +170 , ATK +52 , DEF +23",
+          "effectLabel": "Geologist improved",
+          "effectText": "When this unit's skill is not active, adjacent allies gain +21% DEF; when skill is active, less likely to be targeted by enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Mint is a\nCaster\naffiliated with the\nVictorian\nInstitution for Higher Studies, specializing in geology, frequently participating in investigative field projects. She contracted\nOripathy\non an expedition and was referred by\nOperator\nSkyfire\nto\nRhodes Island\nfor consultation.\nShe currently receives treatment at Rhodes Island while assisting with\nOriginium\nresearch, environmental and geological observation, and related services.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1020,
+          "atk": 377,
+          "def": 125,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 23,
+          "block": 1,
+          "interval": 2
+        },
+        "max": {
+          "hp": 1275,
+          "atk": 503,
+          "def": 146,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 23,
+          "block": 1,
+          "interval": 2
+        },
+        "rangeId": "x-4"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1275,
+          "atk": 503,
+          "def": 146,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 25,
+          "block": 1,
+          "interval": 2
+        },
+        "max": {
+          "hp": 1594,
+          "atk": 629,
+          "def": 170,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 25,
+          "block": 1,
+          "interval": 2
+        },
+        "rangeId": "x-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1594,
+          "atk": 629,
+          "def": 170,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 25,
+          "block": 1,
+          "interval": 2
+        },
+        "max": {
+          "hp": 1945,
+          "atk": 732,
+          "def": 196,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 25,
+          "block": 1,
+          "interval": 2
+        },
+        "rangeId": "x-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 75,
+      "def": 15
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests have shown the outlines of her internal organs to be indistinct due to abnormal shadows. Originium granules have been detected in her circulatory system, confirming her to be infected with Oripathy. \n\n[Cell-Originium Assimilation] 4%\nSmall traces of infection visible on surface of body. Severity of condition is mild and notably stable. \n\n[Blood Originium-Crystal Density] 0.17u/L\nOperator Mint often works deep within danger zones. Despite strict safety measures, risk of aggravation remains present. We recommend she receives regular checkups."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "With her backgroundin the Victorian Institution for Higher Studies, and being introduced to Rhodes Island by Operator Skyfire, many Operators who had not yet met Mint could not help but have certain preconceptions about her. \nRegardless, once they met the new Victorian for themselves, they quickly realized she was not an elite in the vein of Operator Skyfire. This isn't to say Operator Mint isn't outstanding; rather, she and Skyfire are two completely separate sorts. She looks quiet and proper at first glance, but in truth she bursts with a curious spirit and a lively step. Compared to her senior Skyfire, a cream-of-the-crop Caster who gained her qualifications from school and promptly graduated, Mint values her research in geological fields much more. \nIt's no surprise that when the time came to decide where she wanted to go, Mint chose to stick around and further her studies, continuing her pursuit of cutting-edge geological research. It was on such a pivotal field investigation that she came to contract Oripathy."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "The new Feline girl has a book that'll bite you. \nOnce Mint came to Rhodes Island, the rumor swiftly followed, spreading like wildfire amongst the younger Operators. \nMint does indeed hold an Arts unit, one fashioned into the form of a book, that together with her staff helps her to make full, free use of her Originium Arts. Mint usually has the 'book' bound with a specially made tie, so as not to cause any accidents. It's as the rumors say—the book will bite people. If someone randomly flips its pages, they'll very likely set off its built-in retaliative mechanisms. It won't cause any life-threatening harm, but according to Mint, 'Its bites hurt so much. It's even worse than stubbing your little toe.' \nMint says she happened upon the book at an old marketplace near school, where all the shops sold old books and worn knick-knacks that had probably traded hands countless times, and where no shortage of questionably-legal goods moved around under wraps. \n'Don't go in there expecting anything. People who treat it as one great treasure hunt by and large end up buying complete useless rubbish, ' stated Operator Skyfire on this topic. 'If you honest-to-God know how to find something nice, you'll find it. If you can't see a thing's true worth, tough. That's the only way. '"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Operator Mint's sense of curiosity is extremely strong. \nMost Institution scholars have passion to embrace as they seek the verities of their matters, and Mint is no exception. Though most of the time she comes off simply as polite and sweet, Mint's natural-born curiosity and hunger for knowledge is impossible to hide, and it didn't take long to show once she arrived at Rhodes Island. \nShe spent the first couple of days 'exploring' most areas of the ship provided to Operators, before selecting a few lesser trodden places to act as her own secret bases. She's taken to life at Rhodes Island very quickly. \nHowever, her wildly scattering curiosity has definitely invited trouble at times. \nOne thing that worries people is while doing something, Mint is distractable. Of course, this isn't to say she has no sense of priority. When a directly pressing matter is at hand, Mint focuses and spares no detail until it's done, but the moment the most critical part is finished, she loosens up, and it's then that something else can easily steal her attention. \nFor example, after a mission, she might be lured away by some novel ore or Originium-infected creature, and will wander off from her team without realizing it until she's lost in the dead of the wilderness... That has happened more than once. \nAnd if this continues without any mediation or regulation, we fear that Operator Skyfire, who already loses her temper whenever it happens, will sooner or later burn the ship out from the inside."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Mint doesn't seem to be too bothered by her own Oripathy. \nHer infection was completely unforeseen. At the time, a group of scholars had made due preparations and entered a deep fault left by a Catastrophe. Exploration there went without a hitch—only as they withdrew, the ground beneath Mint's footing subsided, and the rest is history. \nMint herself cares less about her illness, a lost cause as it is, and much more about if she's obtained some good samples for experimentation, or whether she's onto any breakthrough discoveries. Those are what really matter to her. \nAfter all, geological research has always been part and parcel of all sorts of dangerous environments. No matter the stringent safety measures, no one can guarantee an accident will never occur. Mint and all the researchers with her were all aware of this. It was with a fundamental understanding of the risk that they made their choices. \nOperator Mint has never once been regretful."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Mint likes hiding in her secret bases and reading in silence, and she likes fooling around together with her friends. She likes to climb trees. She likes adventures. She likes every last new and novel thing. \nShe might tiptoe as she follows behind her friends, and she might suddenly get distracted by something and go bounding off instead. \nShould you ever receive a small present from her, be it as little as a misshapen piece of ore with mud still stuck to it, take it. Accept it. Without a doubt, it's something she's fond of, and regardless of how, she'd like for you to share in it too."
+    }
+  ]
+}

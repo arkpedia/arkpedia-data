@@ -1,0 +1,766 @@
+{
+  "name": "Rose Salt",
+  "rarity": 5,
+  "class": "Medic",
+  "branch": "Multi-target Medic",
+  "faction": "Iberia",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing",
+    "Support"
+  ],
+  "trait": "Restores the HP of 3 allies simultaneously.",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Exodus from the Pale Sea"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "The Starting Point"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4163_rosesa",
+  "otherLanguages": {
+    "Chinese": "瑰盐",
+    "Japanese": "ローズソルト",
+    "Korean": "로즈솔트"
+  },
+  "characterInfo": {
+    "File no.": "II11",
+    "Operator Record": "Dreaming of the Good Life",
+    "Paradox Simulation": "¡Hola, Hermanos y Hermanas!",
+    "Illustrator": "二开",
+    "Release Date": "2025/06/05",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Miria Takagishi",
+    "Chinese": "Nan Zhao",
+    "English & Spanish": "Andrea Alzuri Barro",
+    "Korean": "Mi So"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Thieving Experience": "5 years",
+    "Place of Birth": "Iberia",
+    "Date of Birth": "March 30th",
+    "Race": "Phidia",
+    "Height": "146 cm",
+    "Infection Status": "Originium crystals distributed across surface of body, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Herbalist Número Uno",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "ATK -5%, but allied Operators within range receive 5% more healing"
+        },
+        {
+          "stage": "Base",
+          "potential": "Potential 5",
+          "description": "ATK -5%, but allied Operators within range receive 7% (+2%) more healing"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "ATK -5%, but allied Operators within range receive 10% more healing"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "ATK -5%, but allied Operators within range receive 12% (+2%) more healing"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "ATK -5%, but allied Operators within range receive 15% more healing"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "ATK -5%, but allied Operators within range receive 17% (+2%) more healing"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Herbalist Número Uno"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Rose Salt's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Super-Fine Slow-Release Meds! .",
+        "Herbalist Número Uno improved.",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Rose Salt to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Herbalist Número Uno improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Rose Salt to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Medic Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Crystalline Circuit",
+          "quantity": 7
+        },
+        {
+          "name": "Compound Cutting Fluid",
+          "quantity": 11
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Top-Notch Emergency Meds!",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next heal is increased to 140% ATK Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 11,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next heal is increased to 145% ATK Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 11,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next heal is increased to 150% ATK Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 11,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next heal is increased to 150% ATK Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next heal is increased to 155% ATK Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next heal is increased to 160% ATK Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next heal is increased to 165% ATK Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next heal is increased to 170% ATK Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next heal is increased to 180% ATK Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next heal is increased to 190% ATK Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 3
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Super-Fine Slow-Release Meds!",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "27 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Interval reduces slightly , 10% of Physical and Arts damage received by allied Operators within range becomes HP loss over 5 seconds",
+            "initialSp": 17,
+            "spCost": 46,
+            "duration": 27
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Interval reduces slightly , 15% of Physical and Arts damage received by allied Operators within range becomes HP loss over 5 seconds",
+            "initialSp": 17,
+            "spCost": 45,
+            "duration": 27
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Interval reduces slightly , 20% of Physical and Arts damage received by allied Operators within range becomes HP loss over 5 seconds",
+            "initialSp": 17,
+            "spCost": 44,
+            "duration": 27
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Interval reduces somewhat slightly , 20% of Physical and Arts damage received by allied Operators within range becomes HP loss over 5 seconds",
+            "initialSp": 19,
+            "spCost": 43,
+            "duration": 27
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Interval reduces somewhat slightly , 25% of Physical and Arts damage received by allied Operators within range becomes HP loss over 5 seconds",
+            "initialSp": 19,
+            "spCost": 42,
+            "duration": 27
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Interval reduces somewhat slightly , 30% of Physical and Arts damage received by allied Operators within range becomes HP loss over 5 seconds",
+            "initialSp": 19,
+            "spCost": 41,
+            "duration": 27
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Interval reduces , 30% of Physical and Arts damage received by allied Operators within range becomes HP loss over 5 seconds",
+            "initialSp": 21,
+            "spCost": 40,
+            "duration": 27
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Interval reduces , 35% of Physical and Arts damage received by allied Operators within range becomes HP loss over 5 seconds",
+            "initialSp": 23,
+            "spCost": 39,
+            "duration": 27
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Interval reduces , 40% of Physical and Arts damage received by allied Operators within range becomes HP loss over 5 seconds",
+            "initialSp": 25,
+            "spCost": 38,
+            "duration": 27
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Interval reduces , 50% of Physical and Arts damage received by allied Operators within range becomes HP loss over 5 seconds",
+            "initialSp": 27,
+            "spCost": 36,
+            "duration": 27
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Semi-Synthetic Solvent",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 3
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Time Is Money",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, +1 order limit for every level of that Trading Post"
+    },
+    {
+      "name": "Order Distribution β",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +30%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Rose Salt's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "RIN-X: Colorful Life in the Salt Flat",
+      "mission": {
+        "requirement1": "During battle, have your own Rose Salt use Super-Fine Slow-Release Meds! a total of 8 times",
+        "requirement2": "Clear Main Theme 4-6 with a 3-star rating; You must deploy your own Rose Salt, and use Super-Fine Slow-Release Meds! at least 1 time"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +70 , ATK +25",
+          "effectLabel": "Trait improved",
+          "effectText": "Attack Range expands □ □ □ □ □ ■ □ □ □ □ □ □ □",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +88 , ATK +38",
+          "effectLabel": "Herbalist Número Uno improved",
+          "effectText": "ATK -5%, but allied Operators within range receive 18% more healing",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +100 , ATK +47",
+          "effectLabel": "Herbalist Número Uno improved",
+          "effectText": "ATK -5%, but allied Operators within range receive 20% more healing",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Rose Salt, an herbalist who wanders\nIberia\n. She boasts many local connections of every class and creed, and currently provides\nRhodes Island\nwith intelligence on Iberia and preliminary research.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 782,
+          "atk": 120,
+          "def": 72,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 17,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1058,
+          "atk": 195,
+          "def": 96,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 17,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "y-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1058,
+          "atk": 195,
+          "def": 96,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 19,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1323,
+          "atk": 264,
+          "def": 125,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 19,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "y-2"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1323,
+          "atk": 264,
+          "def": 125,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 19,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1675,
+          "atk": 330,
+          "def": 151,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 19,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "y-2"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 30,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 12%\nSome Originium crystals are visible on Operator Rose Salt's left arm.\n\n[Blood Originium-Crystal Density] 0.15u/L\n'I'm not sure why Rose Salt is so health-conscious at her young age. The moment she heard that new hires get a free medical examination, she requested Medical to pull out all the stops for hers. She even got a screening for hereditary diseases. She's also extremely cooperative with her Oripathy treatment. The other day, someone spotted her poring over a copy of 'A Hundred Habits of the Long-Lived.' I guess she's planning to live forever!'"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Barely a day had passed before the operators coming and going from Rhodes Island were aware of a newly-arrived, sweet little girl. She would greet people with honey-glazed 'señor's and 'señora's, and if she ever spotted anyone unwell, she would approach to ask if they needed help. She would even give herself all sorts of cutesy nicknames for others to call her. Her petite build and elegant yet yellowed and old-fashioned clothing also contributed to the image of a young girl going through hard times, yet still keeping herself tidy while doing what she could to help others with her herbs (despite the full suite of medical facilities aboard Rhodes Island). She had successfully lodged herself in the hearts of the operators, making them all the fonder of this new hire.\nBut this situation would soon deteriorate, as her old habits reared their head and she found herself palming another operator's beautiful bracelet.\nAs a thief and pickpocket who had long operated in remote regions of Iberia, Rose Salt was completely unaware of 'Closure's Handmade High-Grade Security System' when she did the deed, and her crime was recorded in high definition by the surveillance cameras. To teach her a lesson, Closure had her do honest work by weaving three hundred identical bracelets and selling them. At first, Rose Salt assumed she would be paid a portion of whatever she earned, but to give her the experience of having her things taken by others, Closure put all the money towards security system maintenance.\nAfter this harsh punishment, Rose Salt was a pitiful sight, slumped against the wall of the dormitory. Yet she never expected to be approached by the operator she stole from, carrying one of the bracelets she had made for Closure. The operator gave her her bracelet and said to the young girl: 'If you liked it that much, you could have just told me. We could have woven them together, and I'd have given one to you.'\nRose Salt's face was blank as she received it, but she quickly broke into a sincere smile. Since that day, she rarely falls back into her cloying, honeyed greetings. Perhaps she has learned there is no need for her to pretend while aboard Rhodes Island, and that if she is true to others, they will be true to her."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "For a drifter, the title of 'herbalist' is a useful one. People are always ready to trust a doctor, and will not question what is inside her bag even as it bulges at the seams. While she does make use of this identity to approach her targets, it is not a false one. She really does have medical skills, and is able to treat minor scrapes and illnesses with ease. She is even famous as a wandering medic in some regions of Iberia.\nAccording to her, her medical knowledge stems mostly from observing which herbs wild beasts would eat when poisoned or ill, or noting what herbs other doctors had used to treat her. She would then gather these herbs and dig them out of her bag the next time she ran into similar circumstances, either for herself or others. She claims the results speak for themselves, and that she's never run into any issues with this method. However, we have also asked Operator Thorns his opinion, as he has received her treatment before.\nDuring a serious bout of motion sickness while traversing the Salt Flat, he drank an herbal soup offered by Rose Salt. As soon as it went down his throat, he found himself gripped by some indescribable force restoring his vitality, allowing him to walk the shuddering saltship like it was dry land. His limbs also felt like they had minds of their own, and it took a while before he felt in control of them again. He only later learned the cause of this: Rose Salt had given him an anti-nausea dosage appropriate for a healthy adult mangler beast. While it did cure his motion sickness for good, he does not recommend taking her prescriptions lightly.\nWhile she does stock life-saving herbs (though given the aforementioned incident, 'life-saving' is debateable), the majority of Rose Salt's herb collection is instead for inducing dizziness. While she claims this is for self-defense, after seeing her knock out a raging tuskbeast with ease during a mission, most people no longer believe a word she says.\nHowever, Aak has displayed a keen interest in his new coworker. After all, the censer she carries is effective in distributing all sorts of smoke and vapors. The two of them have been secretly collaborating in the development of 'miracle cures'. We can only hope that we have not found ourselves yet another laboratory explosion extraordinaire."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Before coming to Rhodes Island, Rose Salt made a living working for Iberians of every social class. She is well-acquainted with mayoral aides, the Inquisition, and the wealthy in general, but also familiar with street-level thieves and traders. Most of the time, she would act as a naive little girl, enthusiastically helping others while showing a deep interest in the lives of the rich. Once she had discreetly learned when they would not be home, she would sneak in and rob them. When not buttering someone up, she would show her true self, loitering in the marketplace and trading loot and favors until she had what she wanted.\nAfter joining Rhodes Island, we taught her the knowledge and etiquette appropriate for her age, and how to hold a steady job like the other operators, essentially changing her lifestyle to one where she earned a fair wage. To our astonishment, she was not wholly unfamiliar with our lessons. In fact, not only was she already experienced with dining etiquette and formal speech, unlike most she even had some knowledge of subjects like formal letter writing, classical music, and painting. It seems she had received a robust education fit for nobility. But for whatever reason, she did not continue with her education, leaving her knowledge of etiquette at the level of a seven or eight year old. Now, she leans towards another extreme: in order to obtain what she wants, she will happily pretend to be a young maiden of whichever archetype she wishes, easily deceiving those who would lower their guard towards a little girl.\nTo live the 'good life' she envisions, Rose Salt has begrudgingly heeded our instructions and joined a classroom of seven and eight-year-olds in their lessons. However, she has repeatedly emphasized that we are not to mention she is going to class in front of the Iberians who call her Señora Pascuala, or to give her a really bad noogie!"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "There is a phrase Rose Salt is fond of saying: 'I'm going to live the good life!' And true enough, she came aboard Rhodes Island one day with a large sum of money.\nApparently, it was a reward for remarkable performance during a mission. With it, she bought herself fine clothes, shiny jewelry, and all sorts of things she did not need in the slightest: a small bedside couch made with silk, a hand mirror inlaid with miniature diamonds, and a gorgeous gown with a hem trailing along the floor, etc.\nYet she still dresses in her usual clothes, having set aside such finery after only wearing it once or twice. She is simply unused to these refined luxuries. She piles the silk couch full of things she needs for her missions, the diamond-studded mirror is wedged beneath her luggage to balance it out, the gorgeous gown is draped over the bed to form a sheet, and everything else is stuffed into whatever free space there is in the small dorm we assigned to her. The glinting and glimmering coming from random corners of her room is proof enough that they exist. It seems this is the 'good life' she always dreamed of.\nMoreover, the moment she has her wages for the month, she always tops up her meal card before spending the rest as soon as she can, buying all sorts of beautiful baubles she needs (or does not need), filling her dorm more and more. Rarely does she ever actually wear any of them, though. We are not sure why, but compared to others with such lavish tastes, who delight in decorating themselves, Rose Salt seems to prefer the act of spending money itself, as well as simply owning these sparkling treasures.\nMany items in her collection are things she has owned for a very long time. While they no longer shine like they used to, she still takes good care of them. One time, she lost one of her baubles. She tracked it all the way to the trash storage, digging the once-beautiful object from its depths. It is as if what she cares about is not their appearance, but simply possessing them.\nYet it seems this is still not the 'good life' she longs for.\nAs the days passed, Rose Salt tried the life of an ordinary, rule-abiding operator, doing ordinary fieldwork and earning an ordinary wage. She has also tried returning to the life of a drifter in Iberia, assisting Rhodes Island by discreetly gathering intelligence, and occasionally earning a big wad of cash for her troubles. But after asking around, she has begun to show a keen interest in developed nations such as Columbia or Kazimierz. It is apparent that in her eyes, these two countries are lands of endless wealth. We are unsure where she picked up such notions, but she is convinced she will strike it rich there. To her, she is destined to join the upper echelons of moneyed society as a hyper-rich magnate of some sort, and finally live the true 'good life' of her dreams."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "When she first arrived on Rhodes Island, Rose Salt introduced herself with a bevy of cloyingly cute nicknames in order to maintain her cutesy persona. These sickly-sweet names include, but are not limited to, 'Peludita', 'Little Pascy', 'Beautiful Lil' Viper', etc. Many operators, taken in by her charm, starting actually calling her by these names, satisfying her need for cuteness. But after more time together, nearly every operator has learned her true nature, and to get back at her for lying, they started breaking out these cloying nicknames whenever she exposes her true colors, such as when she tries to assert authority over her underlings—\n'Peludita~'\n'Little Pascy~'\n'Beau~ti~ful~ Lil'~ Vi~per~'\n'GAHHH! STOP CALLING ME THAT!'"
+    }
+  ]
+}

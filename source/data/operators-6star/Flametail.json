@@ -1,0 +1,1008 @@
+{
+  "name": "Flametail",
+  "rarity": 6,
+  "class": "Vanguard",
+  "branch": "Pioneer",
+  "faction": "Pinus Sylvestris",
+  "umbrellaFactions": [
+    "Kazimierz"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DP-Recovery",
+    "Survival"
+  ],
+  "trait": "Blocks 2 enemies",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Sport For All"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_420_flamtl",
+  "otherLanguages": {
+    "Chinese": "焰尾",
+    "Japanese": "フレイムテイル",
+    "Korean": "플레임테일"
+  },
+  "characterInfo": {
+    "File no.": "KZ11",
+    "Operator Record": "Like a Blazing Fire",
+    "Paradox Simulation": "Candlelight at Midnight",
+    "Illustrator": "NoriZC",
+    "Release Date": "2022/04/28",
+    "Kernel Addition Date": "2025/12/05"
+  },
+  "characterVoices": {
+    "Japanese": "Aya Hirano",
+    "Chinese": "Su Wan (credited as \"Sue\" in EN)",
+    "English": "Jennie Kwan",
+    "Korean": "Kim Bo-min"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "6 years",
+    "Place of Birth": "Kazimierz",
+    "Date of Birth": "October 8th",
+    "Race": "Zalak",
+    "Height": "159 cm",
+    "Infection Status": "Originium crystals distributed across skin surface, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Excellent",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Vanguard Swordsmanship",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "After dodging an attack, the next attack deals two hits"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "After dodging an attack, the next attack deals two hits and attacks all blocked enemies"
+        }
+      ],
+      "technique": [
+        {
+          "name": "Reflection Damage",
+          "description": "Able to reflect damage onto enemies (especially ranged)"
+        }
+      ]
+    },
+    {
+      "name": "Pinus Sylvestris Leader",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When deployed, all \"Kazimierz\" Operators gain 22% Physical Dodge"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When deployed, all \"Kazimierz\" Operators gain 25% (+3%) Physical Dodge"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +25"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Pinus Sylvestris Leader"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Flametail's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Vanguard Swordsmanship .",
+        "New skill: \"Pinus Sylvestris\" ."
+      ],
+      "prerequisite": "Raise Flametail to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Vanguard Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 12
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Pinus Sylvestris Leader .",
+        "New skill: Flameheart .",
+        "Vanguard Swordsmanship improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Flametail to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Vanguard Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Bipolar Nanoflake",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Concentration",
+          "quantity": 9
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Quick Intuition",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Immediately gains 6 DP and dodge the next Physical attack",
+            "initialSp": 0,
+            "spCost": 23,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Immediately gains 6 DP and dodge the next Physical attack",
+            "initialSp": 0,
+            "spCost": 23,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Immediately gains 6 DP and dodge the next Physical attack",
+            "initialSp": 0,
+            "spCost": 23,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Immediately gains 6 DP and dodge the next Physical attack",
+            "initialSp": 3,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Immediately gains 6 DP and dodge the next Physical attack",
+            "initialSp": 4,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Immediately gains 6 DP and dodge the next Physical attack",
+            "initialSp": 5,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Immediately gains 6 DP and dodge the next Physical attack",
+            "initialSp": 6,
+            "spCost": 19,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Immediately gains 6 DP and dodge the next Physical attack",
+            "initialSp": 7,
+            "spCost": 19,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Immediately gains 6 DP and dodge the next Physical attack",
+            "initialSp": 8,
+            "spCost": 19,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Immediately gains 6 DP and dodge the next Physical attack",
+            "initialSp": 9,
+            "spCost": 18,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 4
+            },
+            {
+              "name": "Aketon",
+              "quantity": 8
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "\"Pinus Sylvestris\"",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Immediately gains 10 DP ; Deals 150% ATK as Physical damage twice to up to 6 nearby enemies and Stuns them for 0.5 seconds. Allied units within Attack Range gain 35% Physical Dodge for 10 seconds",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Immediately gains 10 DP; Deals 160% ATK as Physical damage twice to up to 6 nearby enemies and Stuns them for 0.5 seconds. Allied units within Attack Range gain 35% Physical Dodge for 10 seconds",
+            "initialSp": 21,
+            "spCost": 40,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Immediately gains 10 DP; Deals 170% ATK as Physical damage twice to up to 6 nearby enemies and Stuns them for 0.5 seconds. Allied units within Attack Range gain 35% Physical Dodge for 10 seconds",
+            "initialSp": 22,
+            "spCost": 40,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Immediately gains 11 DP; Deals 180% ATK as Physical damage twice to up to 6 nearby enemies and Stuns them for 0.5 seconds. Allied units within Attack Range gain 40% Physical Dodge for 10 seconds",
+            "initialSp": 23,
+            "spCost": 40,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Immediately gains 11 DP; Deals 190% ATK as Physical damage twice to up to 6 nearby enemies and Stuns them for 0.5 seconds. Allied units within Attack Range gain 40% Physical Dodge for 10 seconds",
+            "initialSp": 24,
+            "spCost": 40,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Immediately gains 11 DP; Deals 200% ATK as Physical damage twice to up to 6 nearby enemies and Stuns them for 0.5 seconds. Allied units within Attack Range gain 40% Physical Dodge for 10 seconds",
+            "initialSp": 25,
+            "spCost": 40,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Immediately gains 12 DP; Deals 210% ATK as Physical damage twice to up to 6 nearby enemies and Stuns them for 0.5 seconds. Allied units within Attack Range gain 45% Physical Dodge for 10 seconds",
+            "initialSp": 26,
+            "spCost": 40,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Immediately gains 12 DP; Deals 220% ATK as Physical damage twice to up to 6 nearby enemies and Stuns them for 0.5 seconds. Allied units within Attack Range gain 45% Physical Dodge for 10 seconds",
+            "initialSp": 27,
+            "spCost": 40,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Immediately gains 12 DP; Deals 230% ATK as Physical damage twice to up to 6 nearby enemies and Stuns them for 0.5 seconds. Allied units within Attack Range gain 50% Physical Dodge for 10 seconds",
+            "initialSp": 28,
+            "spCost": 40,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Immediately gains 13 DP; Deals 240% ATK as Physical damage twice to up to 6 nearby enemies and Stuns them for 0.5 seconds. Allied units within Attack Range gain 50% Physical Dodge for 10 seconds",
+            "initialSp": 30,
+            "spCost": 40,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Compound Cutting Fluid",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Flameheart",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "8 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Gradually gains 8 DP over the skill duration. Attack Interval reduces , ATK +30% , Block +1 and gain 60% Physical and Arts Dodge",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": 8
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Gradually gains 8 DP over the skill duration. Attack Interval reduces , ATK +35% , Block +1 and gain 60% Physical and Arts Dodge",
+            "initialSp": 1,
+            "spCost": 22,
+            "duration": 8
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Gradually gains 8 DP over the skill duration. Attack Interval reduces , ATK +40% , Block +1 and gain 60% Physical and Arts Dodge",
+            "initialSp": 1,
+            "spCost": 21,
+            "duration": 8
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Gradually gains 8 DP over the skill duration. Attack Interval reduces , ATK +45% , Block +1 and gain 60% Physical and Arts Dodge",
+            "initialSp": 2,
+            "spCost": 21,
+            "duration": 8
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Gradually gains 8 DP over the skill duration. Attack Interval reduces , ATK +50% , Block +1 and gain 60% Physical and Arts Dodge",
+            "initialSp": 2,
+            "spCost": 20,
+            "duration": 8
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Gradually gains 8 DP over the skill duration. Attack Interval reduces , ATK +55% , Block +1 and gain 60% Physical and Arts Dodge",
+            "initialSp": 3,
+            "spCost": 20,
+            "duration": 8
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Gradually gains 8 DP over the skill duration. Attack Interval reduces , ATK +60% , Block +1 and gain 80% Physical and Arts Dodge",
+            "initialSp": 3,
+            "spCost": 19,
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Gradually gains 8 DP over the skill duration. Attack Interval reduces , ATK +70% , Block +1 and gain 80% Physical and Arts Dodge",
+            "initialSp": 4,
+            "spCost": 18,
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Gradually gains 8 DP over the skill duration. Attack Interval reduces , ATK +80% , Block +1 and gain 80% Physical and Arts Dodge",
+            "initialSp": 5,
+            "spCost": 17,
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Gradually gains 8 DP over the skill duration. Attack Interval reduces , ATK +90% , Block +1 and gain 80% Physical and Arts Dodge",
+            "initialSp": 6,
+            "spCost": 16,
+            "duration": 8
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "sub",
+            "explanation": "Despite being Flametail's best skill, it has few instances where it will look impressive. Use it as stage-openers or in between to dodge hard-hitting enemies or even attempt to kill them. This skill would have to be mastered only by Flametail 'mains'."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 5
+        },
+        {
+          "name": "Diketon",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 4
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 4
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Tiny Leader",
+      "facility": "Control Center",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by +0.05 per hour."
+    },
+    {
+      "name": "Knights of Pinus Sylvestris",
+      "facility": "Control Center",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Control Center, each Pinus Sylvestris Operator assigned to Factories have +10% productivity towards Battle Records and -10% productivity towards Precious Metals"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Flametail's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "SOL-X: Their Future",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Flametail, and unleash Flameheart at least 2 times in each battle",
+        "requirement2": "Clear Side Story NL-5 with a 3-star rating; You must deploy your own Flametail, Flametail must be the first deployed, and Flametail cannot retreat or be defeated for the entire stage"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +44 , DEF +30",
+          "effectLabel": "Trait improved",
+          "effectText": "Blocks 2 enemies; Gains +8% ATK and DEF while blocking enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +58 , DEF +40",
+          "effectLabel": "Pinus Sylvestris Leader improved",
+          "effectText": "When deployed, all Kazimierz Operators gain 27% Physical Dodge ; additionally, generates 2 DP whenever a Kazimierz Operator is deployed",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +70 , DEF +48",
+          "effectLabel": "Pinus Sylvestris Leader improved",
+          "effectText": "When deployed, all Kazimierz Operators gain 30% Physical Dodge; additionally, generates 3 DP whenever a Kazimierz Operator is deployed",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "SOL-Y: The Origins of Pinus Sylvestris",
+      "mission": {
+        "requirement1": "Deal a total of 40,000 damage with Flametail (excluding Support Units)",
+        "requirement2": "Clear Side Story NL-3 with a 3-star rating; You must deploy your own Flametail, and can only include 4 other Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +175 , ATK +35",
+          "effectLabel": "New trait",
+          "effectText": "The first Deployment Cost -4",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +240 , ATK +40",
+          "effectLabel": "Vanguard Swordsmanship improved",
+          "effectText": "After dodging an attack, the next attack deals 115% damage, deals two hits, and attacks all blocked enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +300 , ATK +45",
+          "effectLabel": "Vanguard Swordsmanship improved",
+          "effectText": "After dodging an attack, the next attack deals 120% damage, deals two hits, and attacks all blocked enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "An\nInfected\nKnight of\nKazimierz\n, and practical leader of spontaneously established Infected Knightclub\n\"Pinus Sylvestris.\"\nCame into contact with\nRhodes Island\nduring cooperation with\nKazimierz\n, and sought Rhodes Island's treatment of her own accord.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "_qbAu28Y5Pk",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "sNMwAcnukaQ",
+      "creator": "Tsalthsu"
+    },
+    {
+      "videoId": "M1z218zWlts",
+      "creator": "SharkyFerret"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 864,
+          "atk": 216,
+          "def": 157,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 2,
+          "interval": 1.05
+        },
+        "max": {
+          "hp": 1138,
+          "atk": 314,
+          "def": 231,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 2,
+          "interval": 1.05
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1138,
+          "atk": 314,
+          "def": 231,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 2,
+          "interval": 1.05
+        },
+        "max": {
+          "hp": 1560,
+          "atk": 431,
+          "def": 313,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 2,
+          "interval": 1.05
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1560,
+          "atk": 431,
+          "def": 313,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 2,
+          "interval": 1.05
+        },
+        "max": {
+          "hp": 2138,
+          "atk": 526,
+          "def": 392,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 2,
+          "interval": 1.05
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 85,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 8%\nPartially visible crystal distribution on the surface of Operator Flametail's body.\n\n[Blood Originium-Crystal Density] 0.22u/L\nOperator Flametail's infection grants no optimistic outlook, especially considering non-standard medical treatment sustained in Kazimierz and its lack of ability to curb her disease in a timely fashion.\n\nThe institution of Infected knights is in no way friendly treatment of the Infected by Kazimierz. All 'special cases' without exception, and Oripathy itself remains a cause for exclusion. However, from a certain perspective, the lust for profit in Kazimierz exceeds even its fear of Oripathy. It's this that allows the Infected to climb onto the stage of 'knight competitions', providing entertainment to the masses. This amounts to the same tragedy suffered by Infected in other countries, but takes a form clearly characteristic of Kazimierz—at least, for the time being."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Operator Flametail's codename originates from her knight title, but those who know her all call her by her name, Sona. She doesn't come from any age-old knight family, and she's far from any gifted knight prodigy. Flametail Knight used to just be the Zalak girl Sona, no more than an ordinary Kazimierzian living in a Zalak settlement. It was one day when a Catastrophe changed the course of Sona's life, owing to the Kaliska knight family's neglect of their few subjects, leading to the destruction of Sona's home. Her family, friends and once peaceful life vanished like mist in a single night. The young Zalak girl wasn't strong enough to accept the truth straight away—and despite her past being far out of sight these days, every time her home and her past are mentioned, the conversation-loving, ever cheerily smiling Sona's mood always, unconsciously, halts for just a moment. And we have no idea how Sona, that helpless Zalak, made it out of the disaster. We only know that by the time Pinus Sylvestris's other members came to know her, Sona was already the way she is today, as if she's never changed.\n'I can tell something's hanging between the two of them, but the past comes up from time to time the and I never hear much more than, well, Greynuty's old knight family failed Sona and whatever.' —Wild Mane\n'Of course Sona's not as strong as you people think. I've actually seen her crying in secr... uh, forget I said that.' —Ashlock"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "The 'Pinus Sylvestris' for which the Knightclub is named reportedly comes from Flametail and Ashlock's hometown. This plantlife on the verge of extinction nowadays was once an emblem of magnificence, beauty and tenacity.\nAfter leaving her hometown, Flametail lived in a booming commercial city for a time, eking out a living on the lowest rung. Unexpectedly, however, that city became part of the Kawalerielki Alliance, and through this, Flametail learned of another way out—Infected knighthood. It wasn't long at this time since Flametail had caught Oripathy, and she'd never gone through any training related to knight competitions, but she really didn't have all that many choices for a living.\nAt the start, independent knight Sona was thrown into a cage filled with vicious beasts and traps, and after that came an artificial jungle, and a sealed-off skyscraper. Sona realized what the Infected experienced was a world of difference to the immaculate, bright competition knights on TV—they were all voluntarily spectated playthings, and their own lives practically became the one worth they held.\nWhat definitively changed Sona actually was an official knight competition. Knight vs. knight, Infected vs. Infected. But whether Sona herself, or the Pinus Sylvestris members we talked with afterwards, no one would touch on what everyone went through during that period. However, what we can be sure of is that that blood sport of Infected knights thoroughly changed her. In the moment she held her riches and 'Flametail' title from the Knights Association high, the seed was planted in Sona's heart, waiting to root and bud."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Beyond the Infected knights, Sona still holds decent fame in other Infected communities of Kawalerielki. Pinus Sylvestris Knightclub used all the wealth they earned from knight competitions to house Infected—but in the course of things, Infected numbers began to exceed what Sona imagined. At first, she just wanted to try to unite the Infected knights, to find survival in the ruthless wipe out qualifiers. After they found their footing, they became aware of an enormous amount of Infected existing in poverty in the Grand Knight Territory, with no means to become knights, forced to live in the city's sub-levels. And the first to decide, to know she would help every Infected she could, was Flametail Knight Sona.\nShe didn't take long to go from founding Pinus Sylvestris Knightclub to rescuing the Infected of Kawalerielki. No speeches to stir the heart, no carefully detailed plan, it was practically by chance that Sona led the Infected knights to see today. She didn't come to Rhodes Island just for herself and Pinus Sylvestris's knights either. More than that, it was a hope that the vulnerable Infected they guided could seek Rhodes Island's treatment.\nThough the Infected experience in Kawalerielki is complex, the Adeptus Sprawiedliwi and General Chamber of Commerce remain in constant friction to this day. The city's neon shades and loud crowds have imperceptibly led people to accept a fact—knights are no longer what they used to be. The people have forgotten what glory the knights once stood for. And despite Sona never having truly treated herself as a knight, and never stressing any point of glory or justice, she undoubtedly, wholly fits the part of that romantic imagination of knights.\n'Sona is a true knight. It gladdens me that in the Kazimierz of now, I could still meet a fellow companion like her.' —Nearl"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "We often forget Flametail's age and her life as an ordinary girl. Only in very, very occasional circumstances do we see another side of her.\nShe's fond of cute things, likes eating candy, and has a strong curiosity for novel equipment. If they hadn't been infected, forced to take this path, perhaps Pinus Sylvestris's people would all be living some other life in Kazimierz.\nFlametail's intermittent appearances on the landship aren't marked just by the core of Infected knights; her smile, cheerful attitude, and nature of pressing forward when running into difficulty involuntarily draw in everyone surrounding. Quite a number of Kazimierz-born operators even head for the Grand Knight Territory of their own accord thanks to Sona, and though it's led to her joking along the lines of 'Wait, is this Knightclub poaching talent from Rhodes Island now?', Flametail's leaderly charm as a knight of Kazimierz is clear to see.\nOf course, Flametail has admitted herself that there are three knights she's come to respect from the heart after getting to know them a little. The Radiant Knight, a.k.a. our Nearl, certainly holds a place, and as for who the other two are, Flametail Knight has left us on a cliffhanger."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Pinus Sylvestris Knightclub was, at first, established to allow the Infected to survive in the Grand Knight Territory. Sona was right in choosing her partners. Fartooth Knight, Ashlock Knight, Wild Mane Knight; they all have their own reasons for fighting.\nNow, with the dust settled, whether it's the K.G.C.C. or the Armorless Union exploiting them, whether Kazimierz hasn't remedied the tiniest bit, they've escaped, they've survived, and moreover, they've saved many doing it.\nSo what next?\nAshley surely trusts her most. Silently, Fartooth follows her too. Wild Mane, just as ever, wants her to give a direction to charge in.\nSeemingly since it started, Sona has been the one most lacking a reason for standing on the frontline.\nBut of course she doesn't really 'lack reason.' No one who lacks faith can, under a city grinding humanity away, put up a struggle to that degree.\nExceedingly few people simply realize—like our Radiant Knight, Nearl does—that some people are born with a mind for devotion and a consciousness of sacrifice, that some are innately able to fight for a grand, distant goal.\nAnd this goal, and Rhodes Island's, are presently highly identical.\nIn future? In future, well... the present Land of the Knights is a mile from the 'Knights' already. Just what its future will be, by all appearances, isn't much to do with us.\n—■■■"
+    }
+  ]
+}

@@ -1,0 +1,738 @@
+{
+  "name": "Asbestos",
+  "rarity": 5,
+  "class": "Defender",
+  "branch": "Arts Protector",
+  "faction": "Rim Billiton",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Defense",
+    "DPS"
+  ],
+  "trait": "Normal attacks deal Arts Damage while the skill is active",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Glen Sonata"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_378_asbest",
+  "otherLanguages": {
+    "Chinese": "石棉",
+    "Japanese": "アスベストス",
+    "Korean": "아스베스토스"
+  },
+  "characterInfo": {
+    "File no.": "RB05",
+    "Operator Record": "Strange Sights",
+    "Paradox Simulation": "Patience!",
+    "Illustrator": "TEAM EXPNDR",
+    "Release Date": "2020/11/11",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Kei Shindou",
+    "Chinese": "Luo Yanqian (credited as \"Rose\" in EN)",
+    "English": "Phoebe Panaretos",
+    "Korean": "Jung Yu-mi"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Rim Billiton",
+    "Date of Birth": "July 30th",
+    "Race": "Savra",
+    "Height": "156 cm",
+    "Infection Status": "Confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Excellent",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Moist Skin",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "RES +5, restores 1 extra SP when hit by an enemy's normal Arts attack"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "RES +10, restores 3 extra SP when hit by an enemy's normal Arts attack"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "Max HP +210"
+      },
+      {
+        "level": 5,
+        "benefit": "Redeployment time -6 seconds"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Asbestos's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Moist Skin .",
+        "New skill: Thermal Power Mode ."
+      ],
+      "prerequisite": "Raise Asbestos to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Moist Skin improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Asbestos to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Optimized Device",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Resilient Mode",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Dodges the next instance of Arts damage, and reduces Arts damage taken by -10% during the skill duration",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Dodges the next instance of Arts damage, and reduces Arts damage taken by -10% during the skill duration",
+            "initialSp": 0,
+            "spCost": 29,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Dodges the next instance of Arts damage, and reduces Arts damage taken by -10% during the skill duration",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Dodges the next instance of Arts damage, and reduces Arts damage taken by -15% during the skill duration",
+            "initialSp": 0,
+            "spCost": 27,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Dodges the next instance of Arts damage, and reduces Arts damage taken by -15% during the skill duration",
+            "initialSp": 0,
+            "spCost": 26,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Dodges the next instance of Arts damage, and reduces Arts damage taken by -15% during the skill duration",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Dodges the next instance of Arts damage, and reduces Arts damage taken by -20% during the skill duration",
+            "initialSp": 0,
+            "spCost": 24,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Dodges the next instance of Arts damage, and reduces Arts damage taken by -23% during the skill duration",
+            "initialSp": 0,
+            "spCost": 23,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Dodges the next instance of Arts damage, and reduces Arts damage taken by -26% during the skill duration",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Dodges the next instance of Arts damage, and reduces Arts damage taken by -30% during the skill duration",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 2
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Thermal Power Mode",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "40–50 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack interval increases , ATK +30% , DEF +25% , Attack Range expands , and normal attacks now deal AoE damage",
+            "initialSp": 10,
+            "spCost": 60,
+            "duration": 40
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack interval increases , ATK +35% , DEF +25% , Attack Range expands , and normal attacks now deal AoE damage",
+            "initialSp": 12,
+            "spCost": 59,
+            "duration": 41
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack interval increases , ATK +40% , DEF +25% , Attack Range expands , and normal attacks now deal AoE damage",
+            "initialSp": 14,
+            "spCost": 58,
+            "duration": 42
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack interval increases , ATK +45% , DEF +35% , Attack Range expands , and normal attacks now deal AoE damage",
+            "initialSp": 16,
+            "spCost": 57,
+            "duration": 43
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack interval increases , ATK +50% , DEF +35% , Attack Range expands , and normal attacks now deal AoE damage",
+            "initialSp": 18,
+            "spCost": 56,
+            "duration": 44
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack interval increases , ATK +55% , DEF +35% , Attack Range expands , and normal attacks now deal AoE damage",
+            "initialSp": 20,
+            "spCost": 55,
+            "duration": 45
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack interval increases , ATK +60% , DEF +45% , Attack Range expands , and normal attacks now deal AoE damage",
+            "initialSp": 22,
+            "spCost": 54,
+            "duration": 46
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack interval increases , ATK +70% , DEF +50% , Attack Range expands , and normal attacks now deal AoE damage",
+            "initialSp": 24,
+            "spCost": 53,
+            "duration": 47
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack interval increases , ATK +80% , DEF +55% , Attack Range expands , and normal attacks now deal AoE damage",
+            "initialSp": 26,
+            "spCost": 52,
+            "duration": 48
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack interval increases , ATK +90% , DEF +60% , Attack Range expands , and normal attacks now deal AoE damage",
+            "initialSp": 30,
+            "spCost": 50,
+            "duration": 50
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Diketon",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 8
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 4
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Maverick",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, productivity +25% , capacity limit -12 , and Morale consumed per hour +0.25"
+    },
+    {
+      "name": "Explorer",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, capacity limit +16 and Morale consumed per hour -0.25"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Asbestos's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "AST-X: \"Asbestos vs. Two-headed Gloompincer\"",
+      "mission": {
+        "requirement1": "Complete a total of 3 battles; You must deploy your own Asbestos, and unleash Thermal Power Mode at least 1 time in each battle",
+        "requirement2": "Clear Main Theme 6-2 with a 3-star rating; You must deploy your own Asbestos, and use Thermal Power Mode at least 2 times"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +80 , ATK +28 , DEF +18",
+          "effectLabel": "Trait improved",
+          "effectText": "On skill activation, normal attacks deal Arts damage. When attacking and being attacked, deals extra 10% of ATK as Arts damage to target",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +125 , ATK +35 , DEF +25",
+          "effectLabel": "Moist Skin improved",
+          "effectText": "RES +12, restores 3 extra SP when hit by an enemy's normal Arts attack",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +150 , ATK +45 , DEF +30",
+          "effectLabel": "Moist Skin improved",
+          "effectText": "RES +12, restores 4 extra SP when hit by an enemy's normal Arts attack",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "One of\nRim Billiton\n's more famous explorers. Asbestos was recommended to\nRhodes Island\nfor treatment by\nOperator\nMagallan\n, and signed an agreement to become an operator after negotiation.\nAfter professional training, she uses a large shield that she personally modified to protect other operators on the front lines.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1252,
+          "atk": 265,
+          "def": 223,
+          "res": 5,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1692,
+          "atk": 379,
+          "def": 328,
+          "res": 5,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1692,
+          "atk": 379,
+          "def": 328,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 2257,
+          "atk": 506,
+          "def": 444,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2257,
+          "atk": 506,
+          "def": 444,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 25,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 3135,
+          "atk": 633,
+          "def": 555,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 25,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 40,
+      "def": 40
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests have shown the outlines of her internal organs to be indistinct due to abnormal shadows. Originium granules have been detected in her circulatory system, confirming her to be infected with Oripathy. \n\n[Cell-Originium Assimilation] 7%\nA small amount of crystals are distributed across the surface of the body, and the disease has caused her eyes to change color. So far, no other complications besides the discoloration have been found. \n\n[Blood Originium-Crystal Density] 0.22u/L\nThe operator contracted Oripathy at a young age and had not done anything previously to respond to the condition, which means that the original symptoms could be very profound. However, due to her frequent expeditions and excellent physical condition, her symptoms have been relieved to a certain extent, and stabilized further after receiving treatment from Rhodes Island. Requires regular treatment."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Asbestos is an explorer with a foul attitude. \nShe's never friendly with anyone and is the epitome of 'doing things my way,' but if you can withstand her verbal abuse, you'll find her to be a mature and capable individual. \nShe spends most of her time exploring outdoors, and rarely makes public appearances when she is on Rhodes Island. Occasionally, she is seen forcing the Doctor to drink."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Even though she denies it, it is clear that Asbestos is a true explorer. Of course, she is very different from Magallan. \nOn one hand, Magallan is employed by Rhine Lab. Though the desire to explore the frozen tundra was her own, the core reason she undertook her exploration had a great deal to do with Rhine Lab. Additionally, Magallan's exploration was better planned and thoroughly measured. \nOn the other hand, Asbestos's exploration is completely amateur - nobody asked her to do it, and nobody is backing her financially. She merely follows her own ideas, walking around and recording her observations in her travel notes and publishing them in magazines. \nIn fact, almost all active explorers on Terra are affiliated with either some country or company, such as Magallan is, and explorers with no backing, such as Asbestos, are very rare. Realistically speaking, a desire to explore the world cannot be fulfilled solely through courage, but requires capital as well. \nThough Asbestos is reluctant to reveal her background, we can surmise that there's likely nothing exceedingly bad or traumatic. As for why she decided to become a maverick explorer, Rhodes Island does not intend to pry too much. That is to say, on this point, she differs greatly from Magallan. \nAs for the differences in their views on exploration, Asbestos claims that she's just 'in it for the excitement.' While it is true that when we mention explorers, we often have an impression of them as being pioneers, trailblazers, delvers into the unknown, or torchbearers for those who come after them, etc., none of these are substantively different. \n'Opening the way for those in the future' is generally the result rather than the cause. For example, while Magallan has always wanted to be an explorer, that desire fundamentally stems from her longing for the frozen tundra. Rather, those who try to act out of one of these clichéd ideals of righteousness usually end up giving up halfway through. \nFrom the footprints that Asbestos has left and the records she has taken, there is no doubt that she is an excellent explorer."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Unlike most operators who are introverted or have trouble managing their interpersonal relationships, we can determine two things from Asbestos's interactions with others: First, she knows how to see a task through to its completion, and second, she knows exactly how to get along with people. \nIt's just that she doesn't want to do it. \nShe doesn't care if she acts in a way that makes others hate her. As a matter of fact, she even revels in that animus, especially when people say it to her face. She understands that the true way to alienate others is not to rudely refuse, but rather to be calculatingly evasive, or to be ambivalent. \nRather than saying she doesn't understand interpersonal relationships, it's more accurate to say that she sees them far too thoroughly and hasn't chosen not to maintain certain norms after recognizing all of this. \nLike Magallan, she knows how to endure loneliness, but a major difference is, one of Magallan's greatest motivating factors is the fact that someone is waiting for her. Asbestos, however, has no need for such motivation, nor is she trying to compensate for that with something else. She simply has learned to draw her motivation from other things. \nIt's little wonder that some operators think she's very cool. She's willing to bear the consequences of her decisions, alone. \nEven though we have no way of finding out about her past without her cooperation, based upon the result, she claims to actively want to be a 'jerk' that antagonizes everyone, and is intent on staying that way until the end of her life. \nIt is not for us to judge whether her lifestyle is correct, nor do we expect her to change. However, from Rhodes Island's standpoint, we always hope that operators will be able to trust us. In this respect, Asbestos may be one of the most difficult operators we've ever dealt with. \nHowever, thanks to the Doctor's persistent efforts, Asbestos is now willing to recognize Rhodes Island as the company behind her, and she has made respectable progress."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Based upon her own account, Asbestos contracted Oripathy when she went too far into an Originium-rich zone. \nGiven that the possibility of infection through prolonged exposure to Originium is well known, the reality is that she knowingly put herself at risk. But, as mentioned in a previous file, Asbestos's great strength is that she can always accept the consequences for her decisions. Because she accepted this reality, there is no way to really blame her. \nOf course, the life of an explorer also facilitates her liberties in a certain sense. After all, she has very little contact with people except for those needed to refill her supplies. \nBecause Asbestos's autonomy does not infringe upon other people, the biggest victims are probably the Doctor and certain operators who are trying to establish a good relationship with her. Therefore, Rhodes Island will continue to uphold its consistent policy of not interfering with the private lives of its operators. \nBut even if that is the case, just as she insists on living life her own way, Rhodes Island also has something it insists on - we will never let her die as she wishes."
+    }
+  ]
+}

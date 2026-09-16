@@ -1,0 +1,750 @@
+{
+  "name": "Record Keeper",
+  "rarity": 5,
+  "class": "Medic",
+  "branch": "Medic",
+  "faction": "Yan",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing"
+  ],
+  "trait": "Restores the HP of allies",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4196_reckpr",
+  "otherLanguages": {
+    "Simplified Chinese": "录武官",
+    "Traditional Chinese": "錄武官",
+    "Japanese": "レコードキーパー",
+    "Korean": "레코드키퍼"
+  },
+  "characterInfo": {
+    "File no.": "YD26",
+    "Operator Record": "Need Not the Sword",
+    "Illustrator": "九日九号",
+    "Release Date": "2025/12/11",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Seiji Maeda",
+    "Chinese": "Sun Jinglong",
+    "English": "Jonathon Ha",
+    "Korean": "Kim Min-ju"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "None",
+    "Place of Birth": "Yan",
+    "Date of Birth": "March 23rd",
+    "Race": "Perro",
+    "Height": "178 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Flawed",
+    "Mobility": "Normal",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Accumulated Knowledge",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When Operators within Attack Range activate a skill, Record Keeper recovers 1 SP and gains ASPD +8 for 8s"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When Operators within Attack Range activate a skill, Record Keeper recovers 1 SP and gains ASPD +8 for 10 (+2) s"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When Operators within Attack Range activate a skill, Record Keeper recovers 1 SP and gains ASPD +16 for 8s"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When Operators within Attack Range activate a skill, Record Keeper recovers 1 SP and gains ASPD +16 for 10 (+2) s"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +27"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Accumulated Knowledge"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Record Keeper's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Accumulated Knowledge",
+        "New skill: Sage Advice .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Record Keeper to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Accumulated Knowledge improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Record Keeper to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Medic Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Crystalline Circuit",
+          "quantity": 7
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 16
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Learning by Analogy",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next heal is increased to 100% of ATK and heals an additional target Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next heal is increased to 105% of ATK and heals an additional target Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next heal is increased to 110% of ATK and heals an additional target Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next heal is increased to 115% of ATK and heals an additional target Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next heal is increased to 120% of ATK and heals an additional target Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next heal is increased to 125% of ATK and heals an additional target Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next heal is increased to 130% of ATK and heals an additional target Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next heal is increased to 135% of ATK and heals an additional target Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next heal is increased to 145% of ATK and heals an additional target Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next heal is increased to 155% of ATK and heals an additional target Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "Sugar Pack",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Chiral Refractor",
+              "quantity": 3
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Sage Advice",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +30% ; after healing an Operator , grants them a buff for 10s that recovers 50 HP whenever they take damage",
+            "initialSp": 15,
+            "spCost": 45,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +35% ; after healing an Operator, grants them a buff for 10s that recovers 60 HP whenever they take damage",
+            "initialSp": 15,
+            "spCost": 44,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +40% ; after healing an Operator, grants them a buff for 10s that recovers 70 HP whenever they take damage",
+            "initialSp": 15,
+            "spCost": 43,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +45% ; after healing an Operator, grants them a buff for 10s that recovers 80 HP whenever they take damage",
+            "initialSp": 20,
+            "spCost": 42,
+            "duration": 25
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +50% ; after healing an Operator, grants them a buff for 10s that recovers 90 HP whenever they take damage",
+            "initialSp": 20,
+            "spCost": 41,
+            "duration": 25
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +55% ; after healing an Operator, grants them a buff for 10s that recovers 100 HP whenever they take damage",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +60% ; after healing an Operator, grants them a buff for 10s that recovers 120 HP whenever they take damage",
+            "initialSp": 25,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +70% ; after healing an Operator, grants them a buff for 10s that recovers 130 HP whenever they take damage",
+            "initialSp": 25,
+            "spCost": 39,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +75% ; after healing an Operator, grants them a buff for 10s that recovers 140 HP whenever they take damage",
+            "initialSp": 25,
+            "spCost": 37,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +80% ; after healing an Operator, grants them a buff for 10s that recovers 150 HP whenever they take damage",
+            "initialSp": 25,
+            "spCost": 35,
+            "duration": 25
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "Crystalline Component",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 4
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 3
+        },
+        {
+          "name": "Transmuted Salt",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Medic Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Medic Operators' Specialization training speed +30%"
+    },
+    {
+      "name": "Master of Everything α",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room , Operators' Specialization training speed +25%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Record Keeper's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "PHY-X: Unfinished Record",
+      "mission": {
+        "requirement1": "During battle, have your own Record Keeper use Sage Advice a total of 6 times",
+        "requirement2": "Clear Side Story? HS-5 with a 3-star rating; You must deploy your own Record Keeper, and cannot include any other Medic Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +70 , ASPD +4",
+          "effectLabel": "New trait",
+          "effectText": "When healing allied units with less than 50% HP, increases heal amount by 15%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +100 , ASPD +5",
+          "effectLabel": "Accumulated Knowledge improved",
+          "effectText": "When Operators within Attack Range activates a skill, Record Keeper recovers 1 SP and gains ASPD +20 for 8s",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +120 , ASPD +6",
+          "effectLabel": "Accumulated Knowledge improved",
+          "effectText": "When Operators within Attack Range activates a skill, Record Keeper recovers 1 SP and gains ASPD +23 for 8s",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Yun Qingping, former record keeper of\nYan\n, responsible for documenting martial arts for use by Yanese soldiers. Currently stationed at Rhodes Island as a representative of the Sui Regulator at Operator Zuo Le's recommendation. He participates in the observation and documentation of the\nSui\nProxies while also assisting Rhodes Island with its logistics work.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 837,
+          "atk": 177,
+          "def": 54,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1180,
+          "atk": 291,
+          "def": 79,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1180,
+          "atk": 291,
+          "def": 79,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1422,
+          "atk": 416,
+          "def": 99,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1422,
+          "atk": 416,
+          "def": 99,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1580,
+          "atk": 502,
+          "def": 124,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-3"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 75,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this Operator is believed to be non-infected.\n\n[Cell-Originium Assimilation] 0%\nOperator Record Keeper showed no symptoms of Oripathy.\n\n[Blood Originium-Crystal Density] 0.12u/L\nOperator Record Keeper rarely comes into contact with Originium."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "[Field Mission Application Assessment Report]\nApplicant: Yun Qingping\nAssessment:\nWhile Yun Qingping is not afflicted with Oripathy, the injuries he suffered during childhood have taken their toll in their own ways, hindering his participation in activities with a high risk of fatigue or injuries. His physical examination results during his field internship were highly concerning, with barely adequate figures in most areas, and well-below adequate in strength and reaction times. Considering even the safest field missions involve significant travel and physical exertion, he is not an ideal candidate for fieldwork.\nWe have reserved decision on his application, however, due to his unique traits. As a matter of fact, his results far exceed reasonable expectations based on his physical condition, and he possesses certain abilities far beyond that of ordinary people:\nHe has an incredible sense of balance, able to stand on one foot on top of a walnut; he is able to hold his breath for longer than experienced fishermen; and he possesses remarkable dynamic vision. His abilities can be traced to his daily habits: improving core strength through balance training, improving his health through breathing studies, and obviously training his dynamic vision through his work in documenting martial arts.\nInterviews with Yun have revealed that he is well aware of his own physical condition, developing training methods specifically designed for himself and committing to them day after day, pushing simplicity to its extremes. While his constitution remains frail, he can play an irreplaceable role in certain special field missions.\nHe shows strong interest in fieldwork and wants to see new places and new things without being hindered by his health. As a result, he is hereby approved for limited field deployment, so long as care is taken to ensure that he is not overexerted."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Having spent many years as a record keeper in Yan, we expected Yun Qingping's work to be more or less like the archiving of battle records, but his description was much livelier in his interview.\n'I helped choreograph Yan's standard calisthenics program for students. Do you know how many children absolutely hate my guts?' he said jokingly as he took out several books. 'Here is the summary of my work over the past several years.'\nThe first book he took out was <i>Introduction to Martial Arts (Revised Edition)'</i>\n'Working on the revision of this book was one of the most important things in my life. Martial arts may seem like a traditional concept, but they are also constantly changing, and it is the job of the record keepers to observe and record such changes. Yet the moves themselves are only the form: to know the substance entails understanding <i>why</i> the moves change—'\nThe second book he took out was <i>Knowledge of the East and West</i>.\n'I wrote down my thoughts in this book as I traveled with my mentor. For example, it was the rise of the crafts industry that led to the decline of concealed weapon making in the south, while the conflict between traditional and emerging schools of martial arts in the north has its origins in burgeoning trade. Jianghu is about the people in it, and it is only when I saw these things that I realized martial arts change because people's lives change.'\nYun Qingping may be an introvert, but his eyes light up when he talks about his work as a record keeper. We found his unique perspective of viewing things through the lens of martial arts to be worthy of note."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Yun Qingping's Record of Martial Combat never leaves his side. It is more than just a notebook of martial arts to him. Sometimes, Yun would tell us funny stories about it.\nOnce, when General Zuo Xuanliao was checking Zuo Le's homework, he picked up the Record of Martial Combat, where all of Zuo Le's wrong moves and every instance that he slacked off were clearly recorded, much to Zuo Le's embarrassment. After that, Yun Qingping began to intentionally left a few things out of his records, while focusing more on observation and discussing with Zuo Le his own weaknesses and ways to mitigate them. Soon, Zuo Le became one of his very few friends around his own age.\nSoldiers often rely on the Record of Martial Combat for their wagers, trusting in Yun Qingping's judgment as to who made a quicker strike, and whose arrow found the target better. They take him along when the loser buys a round of drinks or meals, and he is treated like a member of the soldiers' fraternity.\nWe recently received a letter from Yan, addressed to him. After reading the letter, he quickly retrieved his record, made a copy of several pages, and asked the messenger to deliver it back to the sender. Since it all seemed very important and urgent, we were curious what kind of technique were in those papers, only for him to give us a poignant smile.\n'Just some memories. Not every soldier gets to go home, and such records are important to their loved ones.'\nWe did not expect the conversation to take such a sorrowful turn. Turns out that he has been keeping a record of the memories he shared with those close to him, such as the practical jokes amongst the troops that earned the Grandmaster's ire, and the stupid sword-skiing competition that we started... to Yun Qingping, it is indeed far more than just a notebook."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Yun Qingping has two swords on file: the sword he normally wears on his belt, and a rusty, broken sword which he never carries or submits for repair, though he spoke of it when discussing his physical condition.\nHis home was attacked by villains when he was ten years old, and he nearly died when one of them struck him in the chest. He only survived because he was holding the sword in his arms, which absorbed part of the impact. That sword has been with him ever since.\nThe case of the Yun family was a topic of much discussion back in the day. Looking up old newspaper archives, we found that they were an upstanding family residing in a Yanese village. They had taken a stand when bandits colluded with corrupt officials to harass the villagers, and so they became the bandits' target. Later reports claimed that the bandits were wiped out and the corrupt officials punished, achieving some justice for him.\nWe were surprised to find that a sword of the bandits, seen in the newspaper photos, had the same patterns on it as Yun Qingping's rusty, broken sword.\nDid his sword belong to one of the bandits?\nOr did someone take his sword and use it to kill the bandits?\nWe believed the latter was more likely, that someone had taken revenge for him. Otherwise, how could a ten-year-old have overcome the trauma and hatred of losing everything overnight? But if that was the case, why did he have to retrieve the sword?\nWe never put the question to Yun Qingping directly, but the answer was revealed by accident. When we asked which department he wanted to join, Chongyue suggested that he pick Medical.\n'You've always had a kind heart.'\nYun Qingping looked a little embarrassed, and asked his mentor why he still remembered that day. Chongyue replied, 'You still keep that sword at your side, because you don't want to lose that kind heart of a child, do you?'\nChongyue's words made us realize that our speculation was likely incorrect. Yun Qingping's sword was never used for revenge; he had picked up his foe's sword in an attempt to protect his own family. Of course, this too is speculation; it is not our place to force a confession."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "'Look at that white fowlbeast and note the way it hunts. Can you do it?'\n'Yes, master. I'll hand in my notes tomorrow.'\nDay 1\n'Sorry, master, I was overconfident... it was too quick, and moved in the blink of an eye. I won't blink next time.'\nDay 5\n'This water isn't for drinking. Warm your eyes with the cup. They were dry and teary last night, weren't they?'\n'I... I understand why you picked that fowlbeast now. It's agile and cunning, never diving the same way twice, just as how the same move in martial arts can take a thousand forms in actual combat.'\nDay 10\n'I think my eyes are finally able to follow its motions, but I'm always just one second slow... why?'\n'Think about it.'\nDay 15\n...\nDay 21\n'Tea.'\n'Thank you, master, but my eyes are not dry.'\n'No, it's not for rubbing your eyes. It's good tea.'\n'Wait, isn't this from General Zuo's private collection?'\n'Shh. Well? Did you find the answer?'\n'It's coming, master. Listen, the fowlbeast is crying in the woods to the west, the musbeast beneath the wall looking up in its direction. Watch. It spirals, dives, avoids the wall, dives again, and reaches out with its talons!\n'I had been troubled that my eyes could not follow it. But then I understood. To observe the fowlbeast with human eyes is to be limited by its look. Observe the fowlbeast through its own eyes, and one might perhaps see the spirit. Observe it through the musbeast's eyes, and one finally sees every detail.'\n—The first page of Record of Martial Combat, documented at Chongyue's behest"
+    }
+  ]
+}

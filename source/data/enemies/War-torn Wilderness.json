@@ -1,0 +1,204 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "sss",
+    "id": "tower_n_15",
+    "label": null,
+    "name": "War-torn Wilderness",
+    "release_date": "2025-03-16"
+  },
+  "enemies": [
+    {
+      "slug": "altar_of_hatred",
+      "id": "enemy_6025_tinker",
+      "name": "Altar of Hatred",
+      "index": "DL25",
+      "rank": "Boss",
+      "sort": 1485,
+      "hidden": false,
+      "icon": "/enemies-icons/Altar of Hatred.webp",
+      "flavour_text": "A war altar imbued with Sarkaz witchcraft. Once abandoned in the ruins of battle, it has been resurrected. Now, the earth trembles in its might and no living being is safe around it. It seeks neither preservation nor remembrance—only a fight to the very end. Surrounded by its creations, it will not go down alone.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Enters into defensive mode when HP drops below 60% for the first time, gaining temporary Arts and Physical damage reduction, and summoning Witchcraft Orbs.",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically fires many witchcraft missiles across the entire field, dealing Physical damage to your units. Prioritizes the 2 allied units closest to it.",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically summons Witchcraft Orbs in the 4 adjacent tiles.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 45000,
+            "atk": 150,
+            "def": 1200,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.0,
+            "range": 4.0,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "E",
+            "def": "A+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "SummonTechn",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 65.0,
+              "priority": 0,
+              "parameters": {
+                "branch_id": "techn"
+              }
+            },
+            {
+              "key": "EndTheGame",
+              "sp_cost": 0,
+              "cooldown": 1200.0,
+              "initial_cooldown": 1200.0,
+              "priority": 0,
+              "parameters": {
+                "value": -100.0
+              }
+            },
+            {
+              "key": "Missile",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 30.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "enemy_tinker_s_emit_projectile.interval": 0.2,
+                "fire_duration": 3.0,
+                "max_atk_scale": 3.0,
+                "up_scale": 0.2
+              }
+            },
+            {
+              "key": "Mark",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 1.0,
+              "priority": 1,
+              "parameters": {
+                "max_target": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "halfHp",
+              "parameters": {
+                "damage_resistance": 0.9,
+                "duration": 45.0,
+                "hp_ratio": 0.6
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "witchcraft_orb",
+      "id": "enemy_6026_techn",
+      "name": "Witchcraft Orb",
+      "index": "DL26",
+      "rank": "Normal",
+      "sort": 1486,
+      "hidden": false,
+      "icon": "/enemies-icons/Witchcraft Orb.webp",
+      "flavour_text": "Stone spheres created by the Altar of Hatred. Sarkaz witchcraft has given them 'life,' yet they seek out the living so that they might perish together.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Upon destruction, deals True damage and stuns all allied units in the surrounding area.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3000,
+            "atk": 200,
+            "def": 200,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "D",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Boom",
+              "parameters": {
+                "atk_scale": 1.5,
+                "atk_value": 200.0,
+                "stun": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

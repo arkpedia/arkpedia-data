@@ -1,0 +1,759 @@
+{
+  "name": "Kirara",
+  "rarity": 5,
+  "class": "Specialist",
+  "branch": "Ambusher",
+  "faction": "Higashi",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS",
+    "Survival"
+  ],
+  "trait": "Deals Damage to all targets within range 50% chance to dodge Physical and Arts attacks and is less likely to be targeted by enemies",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Trendsetting Player",
+    "Leisurely Snapshot"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_478_kirara",
+  "otherLanguages": {
+    "Simplified Chinese": "绮良",
+    "Traditional Chinese": "綺良",
+    "Japanese": "キララ",
+    "Korean": "키라라"
+  },
+  "characterInfo": {
+    "File no.": "HK05",
+    "Operator Records": "Secret Ending No-Damage Clear",
+    "Paradox Simulation": "Optimal Partner",
+    "Illustrator": "我妻洛醬",
+    "Release Date": "2021/12/09",
+    "Kernel Addition Date": "2024/12/17"
+  },
+  "characterVoices": {
+    "Japanese": "Anzu Haruno",
+    "Chinese": "Chen Tingting",
+    "English": "Summer Natsuki",
+    "Korean": "Yoon Mi-na"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Higashi",
+    "Date of Birth": "November 29th",
+    "Race": "Aegir",
+    "Height": "160 cm",
+    "Infection Status": "Originium crystals are present on the body's surface, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Lonesome Protector",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Restores 1% HP per second. If there are no allied Operators in the surrounding 8 tiles, restores 2% HP per second instead"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Restores 1% HP per second. If there are no allied Operators in the surrounding 8 tiles, restores 2.5% (+0.5%) HP per second instead"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Restores 2% HP per second. If there are no allied Operators in the surrounding 8 tiles, restores 3.5% HP per second instead"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Restores 2% HP per second. If there are no allied Operators in the surrounding 8 tiles, restores 4% (+0.5%) HP per second instead"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +30"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Lonesome Protector"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Kirara's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Lonesome Protector .",
+        "New skill: Anchor Point Snap ."
+      ],
+      "prerequisite": "Raise Kirara to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Specialist Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Lonesome Protector improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Kirara to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Specialist Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Incandescent Alloy Block",
+          "quantity": 7
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 11
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Anchor Strike",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack deals an additional hit equal to 75% of ATK as Arts damage",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack deals an additional hit equal to 80% of ATK as Arts damage",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack deals an additional hit equal to 85% of ATK as Arts damage",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack deals an additional hit equal to 90% of ATK as Arts damage",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack deals an additional hit equal to 95% of ATK as Arts damage",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack deals an additional hit equal to 100% of ATK as Arts damage",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack deals an additional hit equal to 110% of ATK as Arts damage",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack deals an additional hit equal to 120% of ATK as Arts damage",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack deals an additional hit equal to 130% of ATK as Arts damage",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack deals an additional hit equal to 150% of ATK as Arts damage",
+            "initialSp": 0,
+            "spCost": 2,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 1
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Anchor Point Snap",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "8 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The effect of this unit's Talent increases to 2.1 times. Deals 45% of ATK as Arts damage to enemies within Attack Range every second",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 8
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The effect of this unit's Talent increases to 2.2 times. Deals 50% of ATK as Arts damage to enemies within Attack Range every second",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 8
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The effect of this unit's Talent increases to 2.3 times. Deals 55% of ATK as Arts damage to enemies within Attack Range every second",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 8
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The effect of this unit's Talent increases to 2.4 times. Deals 60% of ATK as Arts damage to enemies within Attack Range every second",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 8
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The effect of this unit's Talent increases to 2.5 times. Deals 65% of ATK as Arts damage to enemies within Attack Range every second",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 8
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The effect of this unit's Talent increases to 2.6 times. Deals 70% of ATK as Arts damage to enemies within Attack Range every second",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 8
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The effect of this unit's Talent increases to 2.7 times. Deals 75% of ATK as Arts damage to enemies within Attack Range every second",
+            "initialSp": 5,
+            "spCost": 30,
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The effect of this unit's Talent increases to 2.8 times. Deals 80% of ATK as Arts damage to enemies within Attack Range every second",
+            "initialSp": 6,
+            "spCost": 30,
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The effect of this unit's Talent increases to 2.9 times. Deals 90% of ATK as Arts damage to enemies within Attack Range every second",
+            "initialSp": 8,
+            "spCost": 30,
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The effect of this unit's Talent increases to 3 times. Deals 100% of ATK as Arts damage to enemies within Attack Range every second",
+            "initialSp": 10,
+            "spCost": 30,
+            "duration": 8
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 2
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Damage Over Time",
+            "description": "Enemies incur a damage per second for a certain duration"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 2
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Order Flow Visualization α",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +5% , and for every 4 Pure Gold Production Line , Trading Post gains another 2 Pure Gold Production Line"
+    },
+    {
+      "name": "Order Flow Visualization βReplacesOrder Flow Visualization α",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +5% , and for every 2 Pure Gold Production Line , Trading Post gains another 2 Pure Gold Production Line"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Kirara's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "AMB-X: We Will Survive 3 Online",
+      "mission": {
+        "requirement1": "During battle, have Kirara use Anchor Point Snap a total of 5 times (excluding Support Units)",
+        "requirement2": "Clear Main Theme 3-1 with a 3-star rating; You must deploy your own Kirara, and have Kirara defeat at least 20 enemies"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +180 , DEF +35",
+          "effectLabel": "New trait",
+          "effectText": "Slows the Movement Speed of enemies within this unit's Attack Range by 20%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +260 , DEF +50",
+          "effectLabel": "Lonesome Protector improved",
+          "effectText": "Restores 2.5% HP per second. If there are no allied operators in the surrounding 8 tiles, restores 3.5% HP per second instead",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +330 , DEF +60",
+          "effectLabel": "Lonesome Protector improved",
+          "effectText": "Restores 2.5% HP per second. If there are no allied operators in the surrounding 8 tiles, restores 4% HP per second instead",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Higashi\nstudent Kirara, chose to leave home due to her\nOripathy\n. After sending out an SOS message to her former classmates, she got a reply from\nUtage\nand sought treatment from\nRhodes Island\nfollowing instructions. Has a considerable understanding of electronic equipment. Presently providing assistance to Rhodes Island with broadcast communications and equipment maintenance.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 849,
+          "atk": 372,
+          "def": 141,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 0,
+          "interval": 3.5
+        },
+        "max": {
+          "hp": 1180,
+          "atk": 503,
+          "def": 217,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 0,
+          "interval": 3.5
+        },
+        "rangeId": "y-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1180,
+          "atk": 503,
+          "def": 217,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 0,
+          "interval": 3.5
+        },
+        "max": {
+          "hp": 1513,
+          "atk": 646,
+          "def": 282,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 0,
+          "interval": 3.5
+        },
+        "rangeId": "y-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1513,
+          "atk": 646,
+          "def": 282,
+          "res": 30,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 0,
+          "interval": 3.5
+        },
+        "max": {
+          "hp": 1780,
+          "atk": 798,
+          "def": 340,
+          "res": 30,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 0,
+          "interval": 3.5
+        },
+        "rangeId": "y-1"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 60,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 5%\nOperator Kirara has been infected by Originium, with minor amounts of crystals visible on the surface of her body.\n\n[Blood Originium-Crystal Density] 0.17u/L\nKirara's infection was only an accident. In daily life, she rarely comes into contact with Originium. So long as her situation holds steady, the chance of her condition worsening is particularly small."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Kirara comes from a small-scale nomadic city in the south of Higashi, falling under the jurisdiction of Mitsumoto, the southern ruling bloc. The town borders the sea, the surrounding land level, rich in resources in all respects, and so a commercial economy has developed, trading fairly closely with its surrounding city regions.\nAt the same time, since it lies far from Higashi's internal two-power line of contention, Kirara's hometown has been less affected by the dispute. Prior to Kirara's own unfortunate contraction of Oripathy, she had been living a proper, stable life as a student should have, her only worry about the tumult of war being whether games produced by the north could make it safely across the chaos zone, for a smooth delivery by their hired shinobi."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "As a patient who was introduced by Operator Utage, it never occurred to Kirara at the outset to find work at Rhodes Island, and become a formal Operator like her classmate Utage. For the introverted girl, Rhodes Island offering her treatment for Oripathy also gave her somewhere to stay for a while, and for the money she paid as compensation, it was quite a worthwhile deal. At first, that's all it was.\nHowever, plans are where the little things always go awry. While the Higashi girl would shut herself in her room the majority of the time, using SMS in place of verbal dialogue, and making maximum efforts possible to avoid interacting directly with others, on her occasional 'outings,' she'd always come back having helped some operators while she was out, at times resolving some minor issues with electronic equipment, or being entrusted ad-hoc with instructing operators on how to work appliances, and once she'd even been pursued with inquiries for a walkthrough of a popular game at the time... In short, before Kirara herself even realized it, she was already on fairly good terms with our operators.\nWe very quickly sent a formal invitation to this Higashi girl, inviting her to become one.\nGratefully, fearful of strangers as she was, she didn't decline."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "In Higashi, lineages of Ægir that migrated in and settled down like Kirara's are not uncommon to see. In contrast to our understanding of Iberia's internal situation, Higashi's Ægir by and large have not been faced with overt exclusion, putting down roots in the country without a problem. In the present day, Kirara's own recognition of herself tells the tale—without any weight to it, she can say 'I'm just a normal Higashi girl, that's all.'\nHowever, as is plain to see, stemming from different environs in upbringing, Kirara and other Higashi operators—for example, Operator Matoimaru—have differing conceptions of many things, despite being fellow Higashi.\n\n'The north? Uh... I'm not too clued in about what Kougon's like, but I hear everyone's pretty old-timey there?'\nWhen Kirara introduced her homeland Higashi to us, she raised the subject of its two ceaselessly warring powers, each one occupying one half of the country, exerting their governances on familially unified grounds.\n'Mitsumoto didn't seem as heavily armed as the guys over there.' When regarding the contrast in power between her own home faction and the opposition, Kirara first skirted around the topic, only conceding after a while that 'if the fight started, then on a face-to-face battlefield it'd be pretty hard to win... b—but, direct conflict isn't the only thing that goes into who wins and loses! Besides, it's not like it's just war and life's on pause. When it comes to economy, openness and good atmosphere—livability, that's it—then it's us who come out on top, right? Uh, not that they're bad or anything, just, that's how I feel about it at least.'\nBeyond this, the Higashi girl also somewhat regretfully, and somewhat barbedly stated:\n'Honestly, if we could just not fight, then let's not. The past few years have been pretty good. Been peaceful for a while. Sometimes I buy games from over there and shinobi even deliver them straight to me. But after I heard about it, it seemed kind of difficult to say. Um. I'm not really sure, I don't get it much myself.'\n'I heard the eight families used to be one, but then they disagreed on something and that's why they've been split across ever since... *sigh* Honestly, isn't it kind of an overdone premise? What's the point? It's just a bunch of brothers infighting, isn't it?'"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Operator Kirara's interests and hobbies are startlingly expansive, with a major love for all niche entertainment comprised in novels, manga, games, etc.—though she had no choice but to leave her home, Kirara insisted on bringing more than half her collection with her, leaving people speechless. Aside from that, music is also one of Kirara's passions; before catching Oripathy, Kirara used to have a part-time job at a bar near her home, and putting on music to fit each day's mood was one of her daily joys.\nPer her own absorptions, Kirara has spent considerable time and energy, even at times near the point of foregoing sleep and food, throwing her whole devotion into games or manga. The shut-off manner in which she refused interaction initially worried people, but as we've spent more time knowing her, we've been quick to realize that it's not that Kirara truly opposes interacting with people, but rather, it's a self-defense mechanism of sorts, stemming from a mentality of fearing being hurt.\nThis fear is closely related to Kirara's experiences as a child. During childhood, her reserved character and her interests unlike those of the children around her led to her being bullied. The experience of being ostracized still has an effect on Kirara to this day; she fears that when she bares her own soul and displays her true self, she may well be rejected or attacked, and so she has preemptively avoided contact with others.\nHowever, should you break past Kirara's inner defenses, and be recognized as a close friend, it'll be clear for anyone to see that the true way she treats people is sincere, passionate, and without any reservation."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "There is always some way to clear a game.\nSo long as one makes the right choices, the people in the screen will turn to them and smile. So long as one strives hard enough, the enemy can be defeated and a good ending welcomed.\nBut reality...\nThere are no retries in reality. Reality has no choice that reliably wins others over and earns one smiles. Failures in reality cannot be done over, and that is why we dread and are scared of ruining everything.\nBut, if one has companions willing to confront the elements with them, face the trials together...\nJust maybe, things are no longer as scary as when one was all alone."
+    }
+  ]
+}

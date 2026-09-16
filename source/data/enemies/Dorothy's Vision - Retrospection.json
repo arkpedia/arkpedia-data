@@ -1,0 +1,1506 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act19sre",
+    "label": "DV",
+    "name": "Dorothy's Vision - Retrospection",
+    "release_date": "2023-03-14"
+  },
+  "enemies": [
+    {
+      "slug": "rhine_defense_member",
+      "id": "enemy_1249_lysdb",
+      "name": "Rhine Defense Member",
+      "index": "RO01",
+      "rank": "Normal",
+      "sort": 487,
+      "hidden": false,
+      "icon": "/enemies-icons/Rhine Defense Member.webp",
+      "flavour_text": "Guard personnel of Rhine Lab. With their company-provided anti-riot gear and training, they are qualified for escort duties.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Blocks 1 instance of Physical or Arts damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4500,
+            "atk": 410,
+            "def": 250,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.8,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "C",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Shield",
+              "parameters": {
+                "block_damage_cnt": 0.0,
+                "max_block_damage_cnt": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "rhine_defense_senior_member",
+      "id": "enemy_1249_lysdb_2",
+      "name": "Rhine Defense Senior Member",
+      "index": "RO02",
+      "rank": "Normal",
+      "sort": 488,
+      "hidden": false,
+      "icon": "/enemies-icons/Rhine Defense Senior Member.webp",
+      "flavour_text": "Security personnel of Rhine Lab. With their company-provided anti-riot gear and advanced training, they are much more qualified for escort duties.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Blocks 1 instance of Physical or Arts damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 485,
+            "def": 300,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.8,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "C",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Shield",
+              "parameters": {
+                "block_damage_cnt": 0.0,
+                "max_block_damage_cnt": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "rhine_engineering_member",
+      "id": "enemy_1250_lyengs",
+      "name": "Rhine Engineering Member",
+      "index": "RO03",
+      "rank": "Normal",
+      "sort": 489,
+      "hidden": false,
+      "icon": "/enemies-icons/Rhine Engineering Member.webp",
+      "flavour_text": "An engineer of Rhine Lab. Responsible for both providing equipment and giving their professional opinion on its production, they also maintain a close relationship with the Energy Section.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Recovers the HP of inactive <R-Series Power Armors>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6500,
+            "atk": 300,
+            "def": 100,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.5,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "D",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Charge",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "hit_duration": 10.0,
+                "hp_ratio": 0.05
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "rhine_engineering_senior_member",
+      "id": "enemy_1250_lyengs_2",
+      "name": "Rhine Engineering Senior Member",
+      "index": "RO04",
+      "rank": "Normal",
+      "sort": 490,
+      "hidden": false,
+      "icon": "/enemies-icons/Rhine Engineering Senior Member.webp",
+      "flavour_text": "A senior engineer of Rhine Lab. Energy managed to convince Columbia's officials to provide the company more funding, so Engineering took the chance to design and produce even more sophisticated equipment.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Recovers the HP of inactive <R-Series Power Armors>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 375,
+            "def": 100,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.5,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "C",
+            "def": "D",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Charge",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "hit_duration": 10.0,
+                "hp_ratio": 0.05
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "dor_1_failure",
+      "id": "enemy_1251_lysyta",
+      "name": "Dor-1 Failure",
+      "index": "RO05",
+      "rank": "Normal",
+      "sort": 491,
+      "hidden": false,
+      "icon": "/enemies-icons/Dor-1 Failure.webp",
+      "flavour_text": "A product of Dorothy's failed experiments. An irregularly-shaped silver object emanating a soft glow, like a slumbering Dreamland.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When touching an inactive <R-Series Power Armor>, the Power Armor recovers some SP",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 2750,
+            "atk": 310,
+            "def": 0,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.8,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "C",
+            "def": "E",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "S"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Driver",
+              "parameters": {
+                "sp": 50.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "dor_failure",
+      "id": "enemy_1251_lysyta_2",
+      "name": "Dor-α Failure",
+      "index": "RO06",
+      "rank": "Normal",
+      "sort": 492,
+      "hidden": false,
+      "icon": "/enemies-icons/Dor-α Failure.webp",
+      "flavour_text": "A product of Dorothy's failed experiments. An irregularly-shaped silver object emanating a soft glow, its unusual appearance instinctively scares people away from it.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When touching an inactive <R-Series Power Armor>, the Power Armor recovers some SP",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3200,
+            "atk": 360,
+            "def": 50,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.8,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "C",
+            "def": "E",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "S"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Driver",
+              "parameters": {
+                "sp": 50.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "dor_2_replica",
+      "id": "enemy_1252_lysytb",
+      "name": "Dor-2 Replica",
+      "index": "RO07",
+      "rank": "Normal",
+      "sort": 493,
+      "hidden": false,
+      "icon": "/enemies-icons/Dor-2 Replica.webp",
+      "flavour_text": "A product of Dorothy's repeated experiments. She was fascinated by its beauty when it was first created.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When touching an inactive <R-Series Power Armor>, the Power Armor recovers some SP",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 390,
+            "def": 0,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": 2.2,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "C",
+            "def": "E",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Driver",
+              "parameters": {
+                "sp": 50.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "dor_replica",
+      "id": "enemy_1252_lysytb_2",
+      "name": "Dor-β Replica",
+      "index": "RO08",
+      "rank": "Normal",
+      "sort": 494,
+      "hidden": false,
+      "icon": "/enemies-icons/Dor-β Replica.webp",
+      "flavour_text": "A product of Dorothy's repeated experiments. Even though it fell far below expectations, she remains ever hopeful.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When touching an inactive <R-Series Power Armor>, the Power Armor recovers some SP",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 9000,
+            "atk": 420,
+            "def": 50,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": 2.2,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "C",
+            "def": "E",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Driver",
+              "parameters": {
+                "sp": 50.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "dor_3_bionic",
+      "id": "enemy_1253_lysytc",
+      "name": "Dor-3 Bionic",
+      "index": "RO09",
+      "rank": "Elite",
+      "sort": 495,
+      "hidden": false,
+      "icon": "/enemies-icons/Dor-3 Bionic.webp",
+      "flavour_text": "A product of Dorothy's private experiments. To her, it is not a mere creation, it is her family, her dream.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "When not blocked, Physical and Arts damage taken is significantly reduced",
+          "format": "normal"
+        },
+        {
+          "text": "When touching an inactive <R-Series Power Armor>, the Power Armor recovers a lot of SP",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 500,
+            "def": 1000,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B",
+            "def": "A",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "DamageReduce",
+              "parameters": {
+                "damage_resistance": 0.5
+              }
+            },
+            {
+              "key": "Driver",
+              "parameters": {
+                "sp": 100.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "dor_bionic",
+      "id": "enemy_1253_lysytc_2",
+      "name": "Dor-γ Bionic",
+      "index": "RO10",
+      "rank": "Elite",
+      "sort": 496,
+      "hidden": false,
+      "icon": "/enemies-icons/Dor-γ Bionic.webp",
+      "flavour_text": "A product of Dorothy's private experiments. Dreams must ultimately feed back into reality, and she hopes to be a warm and safe harbor.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "When not blocked, Physical and Arts damage taken is significantly reduced",
+          "format": "normal"
+        },
+        {
+          "text": "When touching an inactive <R-Series Power Armor>, the Power Armor recovers a lot of SP",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7500,
+            "atk": 600,
+            "def": 1200,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B",
+            "def": "A+",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "DamageReduce",
+              "parameters": {
+                "damage_resistance": 0.5
+              }
+            },
+            {
+              "key": "Driver",
+              "parameters": {
+                "sp": 100.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "experimental_power_armor",
+      "id": "enemy_1254_lypa",
+      "name": "Experimental Power Armor",
+      "index": "RO11",
+      "rank": "Elite",
+      "sort": 497,
+      "hidden": false,
+      "icon": "/enemies-icons/Experimental Power Armor.webp",
+      "flavour_text": "An unpiloted Power Armor. It is able to function without a pilot, but nevertheless maintains high agility.",
+      "race": "Machina",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 700,
+            "def": 700,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.3,
+            "attack_speed": 100.0,
+            "move_speed": 1.2,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "A+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Sleep"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "test_power_armor",
+      "id": "enemy_1254_lypa_2",
+      "name": "Test Power Armor",
+      "index": "RO12",
+      "rank": "Elite",
+      "sort": 498,
+      "hidden": false,
+      "icon": "/enemies-icons/Test Power Armor.webp",
+      "flavour_text": "An unpiloted Power Armor. It seems to have a mind of its own, and even experienced engineers struggle to tell if it's being piloted.",
+      "race": "Machina",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 850,
+            "def": 800,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.3,
+            "attack_speed": 100.0,
+            "move_speed": 1.2,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B+",
+            "def": "B+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "A+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Sleep"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "r_31_heavy_power_armor",
+      "id": "enemy_1255_lybgpa",
+      "name": "R-31 Heavy Power Armor",
+      "index": "RO13",
+      "rank": "Elite",
+      "sort": 499,
+      "hidden": false,
+      "icon": "/enemies-icons/R-31 Heavy Power Armor.webp",
+      "flavour_text": "A model that appeared around half a year ago among some mercenary groups, its performance is on par with mass-produced military models from five years ago. Rhine Lab's Energy Section cooperates with many parties, and continues to look for ever more opportunities.",
+      "race": "Machina",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "[Overload] Continuously deals Physical damage to the target proportional to the unit's ATK, andStuns the target",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 1600,
+            "def": 1200,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "A+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Punch",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.75,
+                "duration": 10.0,
+                "stun": 2.0,
+                "unmovable_duration": 1.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Sleep",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "r_31a_heavy_power_armor",
+      "id": "enemy_1255_lybgpa_2",
+      "name": "R-31a Heavy Power Armor",
+      "index": "RO14",
+      "rank": "Elite",
+      "sort": 500,
+      "hidden": false,
+      "icon": "/enemies-icons/R-31a Heavy Power Armor.webp",
+      "flavour_text": "A model that appeared around half a year ago among some mercenary groups, its performance is on par with mass-produced military models from five years ago. Technology is unregulated, so Columbians continue to seek greater efficiency within the bounds of the law.",
+      "race": "Machina",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "[Overload] Continuously deals Physical damage to the target proportional to the unit's ATK, andStuns the target",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 32500,
+            "atk": 2000,
+            "def": 1500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "A+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Punch",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.5,
+                "duration": 10.0,
+                "stun": 1.0,
+                "unmovable_duration": 1.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Sleep",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "r_11_assault_power_armor",
+      "id": "enemy_1256_lyacpa",
+      "name": "R-11 Assault Power Armor",
+      "index": "RO15",
+      "rank": "Elite",
+      "sort": 501,
+      "hidden": false,
+      "icon": "/enemies-icons/R-11 Assault Power Armor.webp",
+      "flavour_text": "A model equipped with long-ranged weapons, massively increasing its offensive capabilities. While these experimental weapons are still in the prototype phase, its energy and firepower cannot be overlooked.",
+      "race": "Machina",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks 4 enemies simultaneously",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 1200,
+            "def": 1200,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": 5.0,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "A+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "ranged.atk_scale": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Sleep",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "r_11a_assault_power_armor",
+      "id": "enemy_1256_lyacpa_2",
+      "name": "R-11a Assault Power Armor",
+      "index": "RO16",
+      "rank": "Elite",
+      "sort": 502,
+      "hidden": false,
+      "icon": "/enemies-icons/R-11a Assault Power Armor.webp",
+      "flavour_text": "A model equipped with long-ranged weapons, massively increasing its offensive capabilities. It's difficult to imagine what sort of changes might come about if this tech could be mass-produced.",
+      "race": "Machina",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks 4 enemies simultaneously",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 32500,
+            "atk": 1350,
+            "def": 1500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": 5.0,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "A+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "ranged.atk_scale": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Sleep",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "dorothy",
+      "id": "enemy_1257_lydrty",
+      "name": "Dorothy",
+      "index": "RO17",
+      "rank": "Elite",
+      "sort": 503,
+      "hidden": false,
+      "icon": "/enemies-icons/Dorothy.webp",
+      "flavour_text": "Dorothy Franks, director of Rhine Lab's Originium Art Section. With the power of both technology and ideals, she hopes to eliminate the differences between people. The weak will always receive her protection.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Can deploy traps. Allies who step on them will receive Arts damage and be Stunned for some time",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 37500,
+            "atk": 650,
+            "def": 600,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 2.0,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "B",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "PlaceTrap",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "atk": 0.1,
+                "atk_scale": 1.5,
+                "max_stack_cnt": 50.0,
+                "projectile_delay_time": 999.0,
+                "range_radius": 0.3,
+                "stun": 10.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 50000,
+            "atk": 850,
+            "def": 700,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 2.0,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "PlaceTrap",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "atk": 0.1,
+                "atk_scale": 1.5,
+                "max_stack_cnt": 50.0,
+                "projectile_delay_time": 999.0,
+                "range_radius": 0.3,
+                "stun": 10.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "awaken",
+      "id": "enemy_1531_bbrain",
+      "name": "'Awaken'",
+      "index": "BBR",
+      "rank": "Boss",
+      "sort": 1327,
+      "hidden": false,
+      "icon": "/enemies-icons/'Awaken'.webp",
+      "flavour_text": "The 'Dreamland' that Dorothy personally created. In here, no one will ever have to suffer the pain of the journey. Love and hope shall achieve that which technology cannot.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Unable to move",
+          "format": "normal"
+        },
+        {
+          "text": "When 'Awaken' takes damage, transfers 50% of the damage received to Dorothy's other experiments on the field",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "Periodically transfers itself to a specified tile and casts [Shattered Vision], dealing a large amount of physical damage to all units on the field. This damage is split equally among all deployed units",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically casts [Journey] to the left and right, dealing Physical damage to the first unit hit",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "Gains increased ATK",
+          "format": "normal"
+        },
+        {
+          "text": "Immediately activates all <R-Series Power Armors> on the field",
+          "format": "normal"
+        },
+        {
+          "text": "[Shattered Vision] Now also Stuns units on high ground",
+          "format": "normal"
+        },
+        {
+          "text": "'Awaken' will cast [Journey] in all 4 directions",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 37500,
+            "atk": 1200,
+            "def": 650,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.1,
+            "range": null,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "Blink",
+              "sp_cost": 0,
+              "cooldown": 38.0,
+              "initial_cooldown": 50.0,
+              "priority": 1,
+              "parameters": {
+                "cooldown_0": 38.0
+              }
+            },
+            {
+              "key": "AttackUDLR",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "AttackLR",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "Aoe",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 10,
+              "parameters": {
+                "aoe_prepare_duration": 3.0,
+                "atk_scale": 5.0
+              }
+            },
+            {
+              "key": "AoeM2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 10,
+              "parameters": {
+                "aoe_prepare_duration": 3.0,
+                "atk_scale": 5.0,
+                "stun": 15.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DamageSplit",
+              "parameters": {
+                "damage_resistance": 0.5
+              }
+            },
+            {
+              "key": "M2",
+              "parameters": {
+                "atk": 0.25
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 50000,
+            "atk": 1350,
+            "def": 750,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.1,
+            "range": null,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "Blink",
+              "sp_cost": 0,
+              "cooldown": 38.0,
+              "initial_cooldown": 50.0,
+              "priority": 1,
+              "parameters": {
+                "cooldown_0": 38.0
+              }
+            },
+            {
+              "key": "AttackUDLR",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "AttackLR",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "Aoe",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 10,
+              "parameters": {
+                "aoe_prepare_duration": 3.0,
+                "atk_scale": 5.0
+              }
+            },
+            {
+              "key": "AoeM2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 10,
+              "parameters": {
+                "aoe_prepare_duration": 3.0,
+                "atk_scale": 5.0,
+                "stun": 15.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DamageSplit",
+              "parameters": {
+                "damage_resistance": 0.5
+              }
+            },
+            {
+              "key": "M2",
+              "parameters": {
+                "atk": 0.25
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

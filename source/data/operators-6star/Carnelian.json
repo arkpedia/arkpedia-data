@@ -1,0 +1,1016 @@
+{
+  "name": "Carnelian",
+  "rarity": 6,
+  "class": "Caster",
+  "branch": "Phalanx Caster",
+  "faction": "Leithanien",
+  "umbrellaFactions": [],
+  "connectedFactions": [
+    "Sargon"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "AoE",
+    "Defense"
+  ],
+  "trait": "Normally does not attack , but has greatly increased DEF and RES ; When skill is active, attacks deal AoE Arts damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Hohenlohe Chillysand",
+    "Shining Dew SD08"
+  ],
+  "ep": {
+    "Main": "Real Me",
+    "Co-star": null
+  },
+  "internalName": "char_426_billro",
+  "otherLanguages": {
+    "Chinese": "卡涅利安",
+    "Japanese": "カーネリアン",
+    "Korean": "카넬리안"
+  },
+  "characterInfo": {
+    "File no.": "LN04",
+    "Operator Record": "Protector's Nature",
+    "Paradox Simulation": "Harvest",
+    "Illustrator": "カワグチ",
+    "Release Date": "2021/12/09",
+    "Kernel Addition Date": "2024/12/17"
+  },
+  "characterVoices": {
+    "Japanese": "Eri Kitamura",
+    "Chinese": "Cai Na",
+    "English": "Sara Masry",
+    "Korean": "Park Shin-hee"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "6 years",
+    "Place of Birth": "Sargon",
+    "Date of Birth": "January 17th",
+    "Race": "Caprinae",
+    "Height": "173 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Meal of Life",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Restores 30% Max HP when skill is activated; Effect is doubled when Charged"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Restores 35% (+5%) Max HP when skill is activated; Effect is doubled when Charged"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Restores 40% Max HP when skill is activated; Effect is doubled when Charged"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Restores 45% (+5%) Max HP when skill is activated; Effect is doubled when Charged"
+        }
+      ]
+    },
+    {
+      "name": "Poised for Action",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Improves own SP recovery rate by +0.6/second when SP is above the limit"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +34"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Meal of Life"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Carnelian's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Meal of Life .",
+        "New skill: Sand Fetters .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Carnelian to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Device",
+          "quantity": 5
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Poised for Action .",
+        "New skill: Mark of Gluttony .",
+        "Meal of Life improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Carnelian to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "D32 Steel",
+          "quantity": 4
+        },
+        {
+          "name": "RMA70-24",
+          "quantity": 7
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Sandstorm Guardian",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15–20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +10% , DEF +10% Charged effect: Trait effect remains active during the skill",
+            "initialSp": 0,
+            "spCost": 18,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +15% , DEF +20% Charged effect: Trait effect remains active during the skill",
+            "initialSp": 0,
+            "spCost": 18,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +20% , DEF +30% Charged effect: Trait effect remains active during the skill",
+            "initialSp": 0,
+            "spCost": 18,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +25% , DEF +40% Charged effect: Trait effect remains active during the skill",
+            "initialSp": 0,
+            "spCost": 18,
+            "duration": 16
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +30% , DEF +50% Charged effect: Trait effect remains active during the skill",
+            "initialSp": 0,
+            "spCost": 18,
+            "duration": 16
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +35% , DEF +60% Charged effect: Trait effect remains active during the skill",
+            "initialSp": 0,
+            "spCost": 18,
+            "duration": 16
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +40% , DEF +70% Charged effect: Trait effect remains active during the skill",
+            "initialSp": 1,
+            "spCost": 18,
+            "duration": 17
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +45% , DEF +80% Charged effect: Trait effect remains active during the skill",
+            "initialSp": 2,
+            "spCost": 18,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +50% , DEF +90% Charged effect: Trait effect remains active during the skill",
+            "initialSp": 3,
+            "spCost": 18,
+            "duration": 19
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +60% , DEF +100% Charged effect: Trait effect remains active during the skill",
+            "initialSp": 5,
+            "spCost": 18,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Sand Fetters",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Interval reduces slightly and every attack inflicts Slow for 0.3 seconds Charged effect: ATK +5% and instead of slowing, Binds targets for 0.3 seconds",
+            "initialSp": 1,
+            "spCost": 25,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Interval reduces slightly and every attack inflicts Slow for 0.3 seconds Charged effect: ATK +5% and instead of slowing, Binds targets for 0.3 seconds",
+            "initialSp": 2,
+            "spCost": 25,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Interval reduces slightly and every attack inflicts Slow for 0.3 seconds Charged effect: ATK +10% and instead of slowing, Binds targets for 0.3 seconds",
+            "initialSp": 3,
+            "spCost": 25,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Interval reduces and every attack inflicts Slow for 0.3 seconds Charged effect: ATK +10% and instead of slowing, Binds targets for 0.3 seconds",
+            "initialSp": 4,
+            "spCost": 25,
+            "duration": 25
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Interval reduces and every attack inflicts Slow for 0.3 seconds Charged effect: ATK +10% and instead of slowing, Binds targets for 0.4 seconds",
+            "initialSp": 5,
+            "spCost": 25,
+            "duration": 25
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Interval reduces and every attack inflicts Slow for 0.3 seconds Charged effect: ATK +15% and instead of slowing, Binds targets for 0.4 seconds",
+            "initialSp": 6,
+            "spCost": 25,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Interval reduces greatly and every attack inflicts Slow for 0.3 seconds Charged effect: ATK +15% and instead of slowing, Binds targets for 0.4 seconds",
+            "initialSp": 7,
+            "spCost": 25,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Interval reduces greatly and every attack inflicts Slow for 0.3 seconds Charged effect: ATK +15% and instead of slowing, Binds targets for 0.5 seconds",
+            "initialSp": 8,
+            "spCost": 25,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Interval reduces greatly and every attack inflicts Slow for 0.3 seconds Charged effect: ATK +20% and instead of slowing, Binds targets for 0.5 seconds",
+            "initialSp": 9,
+            "spCost": 25,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Interval reduces significantly and every attack inflicts Slow for 0.3 seconds Charged effect: ATK +20% and instead of slowing, Binds targets for 0.6 seconds",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 25
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "sub",
+            "explanation": "Due to the third skill not having impressive damage output in modern Arknights, this skill has more viability in the current game state due to still providing an acceptable amount of utility. Consider giving masteries if you want Carnelian in your gameplay."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 4
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 10
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 7
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Mark of Gluttony",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "21 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range expands and ATK gradually increases up to +80% Charged effect: Every attack increases the damage taken by the target from Carnelian by 20% (stacks up to 5 times), lasting until the end of the skill",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": 21
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Range expands and ATK gradually increases up to +100% Charged effect: Every attack increases the damage taken by the target from Carnelian by 20% (stacks up to 5 times), lasting until the end of the skill",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": 21
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Range expands and ATK gradually increases up to +120% Charged effect: Every attack increases the damage taken by the target from Carnelian by 20% (stacks up to 5 times), lasting until the end of the skill",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": 21
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Range expands and ATK gradually increases up to +140% Charged effect: Every attack increases the damage taken by the target from Carnelian by 20% (stacks up to 5 times), lasting until the end of the skill",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": 21
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Range expands and ATK gradually increases up to +160% Charged effect: Every attack increases the damage taken by the target from Carnelian by 20% (stacks up to 5 times), lasting until the end of the skill",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": 21
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Range expands and ATK gradually increases up to +180% Charged effect: Every attack increases the damage taken by the target from Carnelian by 20% (stacks up to 5 times), lasting until the end of the skill",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": 21
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Range expands and ATK gradually increases up to +200% Charged effect: Every attack increases the damage taken by the target from Carnelian by 20% (stacks up to 5 times), lasting until the end of the skill",
+            "initialSp": 1,
+            "spCost": 28,
+            "duration": 21
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Range expands and ATK gradually increases up to +220% Charged effect: Every attack increases the damage taken by the target from Carnelian by 20% (stacks up to 5 times), lasting until the end of the skill",
+            "initialSp": 2,
+            "spCost": 28,
+            "duration": 21
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Range expands and ATK gradually increases up to +240% Charged effect: Every attack increases the damage taken by the target from Carnelian by 20% (stacks up to 5 times), lasting until the end of the skill",
+            "initialSp": 3,
+            "spCost": 28,
+            "duration": 21
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Range expands and ATK gradually increases up to +280% Charged effect: Every attack increases the damage taken by the target from Carnelian by 20% (stacks up to 5 times), lasting until the end of the skill",
+            "initialSp": 5,
+            "spCost": 28,
+            "duration": 21
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "2nd",
+            "priority": "sub",
+            "explanation": "This tends to be seen as Carnelian's main skill but has not aged very well even with module. You may still consider giving this masteries if you want to main Carnelian as one of your damage dealers."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Orirock",
+          "quantity": 6
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyester",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Aketon",
+          "quantity": 6
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 3
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 4
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Caster Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Caster Operators' Specialization training speed +30%"
+    },
+    {
+      "name": "Within One's GraspReplacesCaster Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Caster Operators' Specialization training speed +60%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Carnelian's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "PLX-X: Hyacinth and Dagger",
+      "mission": {
+        "requirement1": "Deal a total of 120,000 damage with Carnelian (excluding Support Units)",
+        "requirement2": "Clear Main Theme 7-3 with a 3-star rating; You must deploy your own Carnelian, and cannot include any Defender Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +200 , ATK +66",
+          "effectLabel": "Trait improved",
+          "effectText": "Normally does not attack , but has greatly increased DEF and RES ; when skill is active, retains some of the bonus and attacks deal AoE Arts damage",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +230 , ATK +76",
+          "effectLabel": "Meal of Life improved",
+          "effectText": "+30% Max HP when skill is active, restores 40% Max HP when skill is activated; Effect is doubled when Charged",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +260 , ATK +85",
+          "effectLabel": "Meal of Life improved",
+          "effectText": "+45% Max HP when skill is active, restores 45% Max HP when skill is activated; Effect is doubled when Charged",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "PLX-Y: Always Have Your Back",
+      "mission": {
+        "requirement1": "Defeat a total of 80 enemies with Carnelian (excluding Support Units)",
+        "requirement2": "Clear Main Theme 4-6 with a 3-star rating; You must deploy your own Carnelian, and can only include 6 other Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +65 , DEF +30",
+          "effectLabel": "New trait",
+          "effectText": "Damage increases with number of enemies in the area (max increase 15% )",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +85 , DEF +35",
+          "effectLabel": "Poised for Action improved",
+          "effectText": "Improves own SP recovery rate by +0.8/second when SP is above the limit; less likely to be attacked when skill is used while charged",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +95 , DEF +38",
+          "effectLabel": "Poised for Action improved",
+          "effectText": "Improves own SP recovery rate by +1.0/second when SP is above the limit; less likely to be attacked when skill is used while charged",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Carnelian hails from an ancient tribe in the depths of\nSargon\n, outside the control of the lords ameer\n[\nsic\n]\n. She is currently traveling abroad, and has taken long-term residence in\nLeithanien\nafter coming under the employ of a Count Hohenlohe there\n[\nsic\n]\n. She has formed a partnership with\nRhodes Island\nand, as one of its operators, carries out missions inside Leithanien's borders.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "bbEjYDM7t8M",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "P26mzgPvF4U",
+      "creator": "Dr Volke"
+    },
+    {
+      "videoId": "ZkjdyYQdfqs",
+      "creator": "MineMoon"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1104,
+          "atk": 435,
+          "def": 146,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 1,
+          "interval": 2
+        },
+        "max": {
+          "hp": 1380,
+          "atk": 581,
+          "def": 170,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 1,
+          "interval": 2
+        },
+        "rangeId": "x-4"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1380,
+          "atk": 581,
+          "def": 170,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 24,
+          "block": 1,
+          "interval": 2
+        },
+        "max": {
+          "hp": 1726,
+          "atk": 727,
+          "def": 198,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 24,
+          "block": 1,
+          "interval": 2
+        },
+        "rangeId": "x-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1726,
+          "atk": 727,
+          "def": 198,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 24,
+          "block": 1,
+          "interval": 2
+        },
+        "max": {
+          "hp": 2106,
+          "atk": 846,
+          "def": 228,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 24,
+          "block": 1,
+          "interval": 2
+        },
+        "rangeId": "x-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 80,
+      "def": 30
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Carnelian shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.12u/L\nBack home, Operator Carnelian rarely came into contact with Originium. She has also shown herself to be particularly healthy and strong. As a Sargon in Leithanien, she has a good understanding of her own health. As long as she takes proper precautions and doesn't get in any accidents, it shouldn't be hard for her to stay healthy and in good shape."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Carnelian's origins are no secret.\nShe comes from an old tribe that resides deep in Sargon's golden sands. Per the tribe's traditions, everyone must leave home to study abroad when they come of age. This Caprinae has been to many places, and aside from browsing and studying, her favorite pastime is buying some small, special souvenirs for herself... Had there not been any accidents, Leithanien would have been Carnelian's last stop. Fortunately or not, there was an accident.\nWhile she was taking a stroll in a certain Leithanian city, Carnelian bumped into the ruler of the territory. What's more, the Hyacinth Count, then still young, was unable to hide the fact that he was infected. As a result, she was detained, and what could have been a simple conclusion to her study trip got far more complicated.\nDespite the tense first meeting, as she started to spend time with him, the frail Leithanian count and Carnelian warmed up to each other. According to Carnelian, this might be because she was already used to dealing with kids, having helped raise her little sister, so the young count was like a bothersome little brother to her. In other words, a headache that would only turn into an even bigger headache if left unattended. However, there is no doubt now that she approves of the young count, who is in a tough situation, trying his hardest to hide his infection. Not only that, but she took it upon herself to protect him and aid him however she could.\nAs it turns out, Carnelian first made contact with Rhodes Island because she needed to discreetly obtain treatment for the count. In exchange for the medication that Rhodes Island is providing the count, she is assisting Rhodes Island as an operator with any affairs it is unable to conduct in Leithanien."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "The first impression that Carnelian usually leaves is that she is tall and confident, meticulous and full of vigor, capable of assigning tasks methodically, and always having a well-thought-out plan for everything around her. Nonetheless, for an attendant to a Leithanian count, she can be lacking in elegance and delicacy. On the other hand, as a Sargonian, her words and demeanor can also seem somewhat restrained. These contradicting aspects both factor into Carnelian's own unique disposition. Those who don't know her well enough would likely be confused by the Caprinae's easygoing personality and mistake her for a friendly woman.\nOver time, as her partnership with Rhodes Island continued, Carnelian's own personality became apparent to all those who interact with her. She may seem charming and open, getting along with the other operators well, and always wearing a smile on her face, but it would be a mistake to forget Carnelian hails from Sargon. All those who fought alongside her described her with words like 'fierce,' 'violent,' and 'cruel.' The elegant, exquisite techniques she demonstrates in battle are all facades imposed upon her by Leithanien to hide her primal thirst to attack.\nCarnelian doesn't try to hide her true self much. No matter the circumstance, she does things according to her principles. Be it the kindness she shows her friends or her cruelty toward those she sees as her enemies, she will never hold back. Leithanien can never truly keep such a Sargonian in check.\nThat said, Carnelian, the self-proclaimed 'qualified big sister,' does try to calm down a little when her actual little sister and the little brother that she 'picked off the streets' are around to maintain a gentle image—Whether she succeeds at doing so is up for debate, though."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "As one of the conditions of our quid pro quo, Carnelian is registered as an external operator at Rhodes Island. However, whenever anyone tries to look up Carnelian's operational records with insufficient permissions, all they will receive is a falsified message that claims she is 'currently on a secret mission.' This is the very first request that Carnelian made when she was listed as a Rhodes Island operator.\nCarnelian explained that she has a little sister with whom she is fairly close. Thanks to the disruption in her study plans, it has been two years since she took up residence in Leithanien. Soon, her sister will come of age, and it will be her turn to follow the tribe's tradition and leave on a journey. Because of the restrictions that come with her job in Leithanien and the fact that she doesn't want to get her sister mixed up in this affair, she has avoided reaching out to her sister. As a result of her overprotectiveness, while she has no qualms about putting herself in danger, she fears putting those whom she holds dear in even the slimmest chance of danger.\nNow that she is also a Rhodes Island operator, Carnelian has made it clear she wishes to use this status to make contact with her sister. If her sister comes to Rhodes Island, she will find out that Carnelian is carrying out a secret operation, and once Carnelian catches wind of this, she will find the right time to 'finish her mission and come back to Rhodes Island,' so to speak, to reunite with her family."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "The pride and egotism that Leithanian nobles show for their bloodline is likely unimaginable to anyone from outside the country. Indeed, it may be hard for an outsider like Carnelian to truly understand this place. While, to most Leithanians, outsiders may indeed be able to temporarily seize glory and step into the spotlight, but those without roots here will find this fabricated fame disappear in no time. Carnelian scoffed at this idea. According to her, even the most pureblooded of nobles frequently find themselves having to tread each of their steps carefully.\nShe recounted the following story to us:\nAfter the House of Hohenlohe was defeated in a conspiracy perpetrated by their political enemies, there was only a young boy left to succeed to the family's title. Unfortunately, the boy was also infected during the upheaval.\nGiven the situation, it would be extraordinarily dangerous to contact outside medical organizations or pharmaceutical companies. In the end, it was Carnelian, the girl who chose to stay behind to mind other people's business, who persuaded the count to get treatment. Carnelian is undoubtedly a careful and perceptive woman who is nonetheless honest to her feelings, and she has never tried to change this.\nThe House of Hohenlohe's political enemies or their pride are the least of her worries, as the only thing that's on her mind is the child's condition.\nFortunately, after their careful deliberation, the Hohenlohes decided against contacting massive conglomerates or organizations, instead, they picked out Rhodes Island from their long lists of companies to reach out to.\n\n[Classified Log]\nThe assistance we are providing to one side of the struggle in Leithanien has caused a rift between our members. As such, I would like to elaborate on my own personal view of the issue.\nIt has been some time since the Twin Empresses took over from Leithanien's Witch King. The country has recovered from that terror, and the nobles have regained control. We have already seen far too many ugly power struggles occur under the Empresses' eyes. It's not unreasonable that some of you are worried about our hasty decision to take sides, that it may destabilize our standing and lead us down a path detrimental to our original purpose. This speculation is reasonable, and it is of course important to be cautious and to take all necessary considerations carefully.\nRegardless, I must maintain my standpoint:\nProviding treatment to Oripathy patients has been and will remain Rhodes Island's foremost objective, and we will never abandon the patients who seek our help regardless of their status or standing.\n—Spokeswoman Amiya"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "As both sides' trust for each other continues to deepen, during her time with Rhodes Island, Carnelian has revealed to us crucial nuggets of information more than once.\nEvidently, the Sargonian has her own ideas about what's going on around her. This not-so-discreet intimation may be a kind of test or a kind of advance notice. It could even be a sign that she needs our help. If we trust that everything she says is true and sincere, then those thoughts evidently have long lingered in her mind. Perhaps she has already pondered these ideas over and over for a long time, and given the right opportunity, she will likely put her plans into action.\nPerhaps it won't be long before she openly requests further help from us.\nWhen that time comes, what should Rhodes Island do? It would be a difficult question to answer.\n\nAside from this, there is one thing that we should pay extra attention to:\nWhile it is a good thing to be trusted and loved, we mustn't let our guard down. Carnelian seems intent on bringing home everything that catches her eye."
+    }
+  ]
+}

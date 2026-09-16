@@ -1,0 +1,1729 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act44side",
+    "label": "AT",
+    "name": "Ato",
+    "release_date": "2026-01-16"
+  },
+  "enemies": [
+    {
+      "slug": "certain_fates_enemy_10111_ymgpck",
+      "id": "enemy_10111_ymgpck",
+      "name": "'Certain Fates'",
+      "index": "HI01",
+      "rank": "Normal",
+      "sort": 1027,
+      "hidden": false,
+      "icon": "/enemies-icons/'Certain Fates'.webp",
+      "flavour_text": "The size of a fingertip, the weight of a murmur of fate and inertia. It does not intend to destroy, not even to arrive. It only follows the shortest path of inevitability and the longest path of coincidence, spinning and moving forward. In its own time, the world is simply walls to collide with, propositions to bounce off, cacophonous and silent.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Gain 'Favor' when it collides with an enemy",
+          "format": "normal"
+        },
+        {
+          "text": "Disappears when it stops moving",
+          "format": "normal"
+        },
+        {
+          "text": "Disappears after a while",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000,
+            "atk": 100,
+            "def": 500,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 0.0,
+            "attack_speed": 0.0,
+            "move_speed": 3.5,
+            "range": null,
+            "weight": 5,
+            "taunt": -1,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "E",
+            "def": "B",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": null,
+            "move_speed": "SS"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "PhysicsTalent",
+              "parameters": {
+                "friction_factor": 0.2,
+                "restitution_factor": 1.0
+              }
+            },
+            {
+              "key": "PushEnemy",
+              "parameters": {
+                "angle": 30.0,
+                "delta_force": "5|5|3|3|0|0|3",
+                "push_limit_time": 1.0,
+                "source": "enemy_10116_ymgtop|enemy_10116_ymgtop_2|enemy_10119_ymgbxm|enemy_10119_ymgbxm_2|enemy_10114_ymgsld|enemy_10114_ymgsld_2|enemy_10118_ymgprc",
+                "target": "enemy_10111_ymgpck|enemy_10111_ymgpck|enemy_10111_ymgpck|enemy_10111_ymgpck|enemy_10111_ymgpck|enemy_10111_ymgpck|enemy_10111_ymgpck"
+              }
+            },
+            {
+              "key": "SelfKill",
+              "parameters": {
+                "kill_time": 90.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "certain_fates_enemy_10111_ymgpck_2",
+      "id": "enemy_10111_ymgpck_2",
+      "name": "'Certain Fates'",
+      "index": "HI02",
+      "rank": "Normal",
+      "sort": 1028,
+      "hidden": false,
+      "icon": "/enemies-icons/'Certain Fates'.webp",
+      "flavour_text": "The size of a fingertip, the weight of a murmur of fate and inertia. It does not intend to destroy, not even to arrive. It only follows the shortest path of inevitability and the longest path of coincidence, spinning and moving forward. In its own time, the world is simply walls to collide with, propositions to bounce off, cacophonous and silent. The most glancing impact is enough to make life and chaos collide with each other.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Gain 'Favor' when it collides with an enemy",
+          "format": "normal"
+        },
+        {
+          "text": "Disappears when it stops moving",
+          "format": "normal"
+        },
+        {
+          "text": "Disappears after a while",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000,
+            "atk": 100,
+            "def": 500,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 0.0,
+            "attack_speed": 0.0,
+            "move_speed": 3.5,
+            "range": null,
+            "weight": 5,
+            "taunt": -1,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "E",
+            "def": "B",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": null,
+            "move_speed": "SS"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "PhysicsTalent",
+              "parameters": {
+                "friction_factor": 0.2,
+                "restitution_factor": 1.0
+              }
+            },
+            {
+              "key": "PushEnemy",
+              "parameters": {
+                "angle": 0.0,
+                "delta_force": "5|5|5|5|5|5|5",
+                "hit_count_duration": 3.0,
+                "push_limit_time": 1.0,
+                "source": "enemy_10116_ymgtop|enemy_10116_ymgtop_2|enemy_10119_ymgbxm|enemy_10119_ymgbxm_2|enemy_10114_ymgsld|enemy_10114_ymgsld_2|enemy_10118_ymgprc",
+                "target": "enemy_10111_ymgpck_2|enemy_10111_ymgpck_2|enemy_10111_ymgpck_2|enemy_10111_ymgpck_2|enemy_10111_ymgpck_2|enemy_10111_ymgpck_2|enemy_10111_ymgpck_2"
+              }
+            },
+            {
+              "key": "SelfKill",
+              "parameters": {
+                "kill_time": 90.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "careless_underling",
+      "id": "enemy_10112_ymgds",
+      "name": "Careless Underling",
+      "index": "HI03",
+      "rank": "Normal",
+      "sort": 1029,
+      "hidden": false,
+      "icon": "/enemies-icons/Careless Underling.webp",
+      "flavour_text": "A Kinsekikai underling who goes into deep self-doubt if he falls, stopping to philosophize about his own existence. That is why he remains an underling.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Becomes temporarily stunned when shifted",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 500,
+            "def": 80,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "StunAfterUnbalance",
+              "parameters": {
+                "stun": 3.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "raiton_ninja",
+      "id": "enemy_10113_ymgung",
+      "name": "Raiton Ninja",
+      "index": "HI05",
+      "rank": "Normal",
+      "sort": 1031,
+      "hidden": false,
+      "icon": "/enemies-icons/Raiton Ninja.webp",
+      "flavour_text": "A ninja who loves technology, wielding a kendama-shaped flash drive as a weapon. Unbound by anyone, they leap to avoid danger.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Briefly takes off when colliding with <'Certain Fates'>, blocked, or encountering a Hole.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 300,
+            "def": 50,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 1.0,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "E",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "Jump",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "HoleTileTrigger",
+              "parameters": {
+                "range_radius": 0.8
+              }
+            },
+            {
+              "key": "JumpSpeedUp",
+              "parameters": {
+                "move_speed": 3.0
+              }
+            },
+            {
+              "key": "YmgholJumpTrigger",
+              "parameters": {
+                "range_radius": 0.5
+              }
+            },
+            {
+              "key": "YmgpckJumpTrigger",
+              "parameters": {
+                "range_radius": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "pessimistic_oath_brother",
+      "id": "enemy_10114_ymgsld",
+      "name": "Pessimistic Oath-Brother",
+      "index": "HI07",
+      "rank": "Elite",
+      "sort": 1033,
+      "hidden": false,
+      "icon": "/enemies-icons/Pessimistic Oath-Brother.webp",
+      "flavour_text": "A shield-wielding elite Kinsekikai bruiser who believes that life is a constant cycle of losing one's balance and starting over.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Has Barrier, and loses Barrier when shifted",
+          "format": "normal"
+        },
+        {
+          "text": "DEF is reduced when Barrier is lost",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 800,
+            "def": 1200,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B+",
+            "def": "A+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "EndShieldSwitchMode",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "DefDesc",
+              "parameters": {
+                "def": -0.5
+              }
+            },
+            {
+              "key": "Shield",
+              "parameters": {
+                "dynamic": 8000.0,
+                "range_radius": 0.4
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "doton_ninja",
+      "id": "enemy_10115_ymghol",
+      "name": "Doton Ninja",
+      "index": "HI09",
+      "rank": "Normal",
+      "sort": 1035,
+      "hidden": false,
+      "icon": "/enemies-icons/Doton Ninja.webp",
+      "flavour_text": "An introverted ninja disguising himself as a hole. He may look ridiculous, but he is harder to detect than you might expect.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "When on the battlefield, has Invisibility and disguises as a Hole",
+          "format": "normal"
+        },
+        {
+          "text": "Becomes hostile after losing Invisibility or absorbing <'Certain Fates'>",
+          "format": "normal"
+        },
+        {
+          "text": "Permanently loses Invisibility when becoming hostile",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 350,
+            "def": 200,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 1.5,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "C",
+            "def": "C",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "SwitchMode",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "EndHole",
+              "parameters": {
+                "duration": 60.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "suiton_ninja",
+      "id": "enemy_10116_ymgtop",
+      "name": "Suiton Ninja",
+      "index": "HI11",
+      "rank": "Elite",
+      "sort": 1037,
+      "hidden": false,
+      "icon": "/enemies-icons/Suiton Ninja.webp",
+      "flavour_text": "A ninja who can spin in place for a long time. He claims that there is water surrounding him; your vision is just too poor to see it. Never stops spinning unless tripped.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Deals Physical damage to surroundings while spinning, and stops spinning when shifted",
+          "format": "silence"
+        },
+        {
+          "text": "Bounces <'Certain Fates'>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 600,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "SwitchModeTrigger",
+              "sp_cost": 0,
+              "cooldown": 60.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "EndAnim",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "BeginAnim",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "EndRotate",
+              "parameters": {
+                "rotate_duration": 60.0
+              }
+            },
+            {
+              "key": "ProtectionTime",
+              "parameters": {
+                "protection_duration": 1.0
+              }
+            },
+            {
+              "key": "RotateDamage",
+              "parameters": {
+                "atk_scale": 1.2,
+                "interval": 1.0,
+                "range_radius": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "fuuton_ninja",
+      "id": "enemy_10117_ymggld",
+      "name": "Fuuton Ninja",
+      "index": "HI13",
+      "rank": "Normal",
+      "sort": 1039,
+      "hidden": false,
+      "icon": "/enemies-icons/Fuuton Ninja.webp",
+      "flavour_text": "A fast ninja who is able to take flight briefly. A visiting Columbian delegate looked at him suspiciously for a long time.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Continuously accelerates, taking off after reaching a certain speed.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 500,
+            "def": 250,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.2,
+            "range": 1.2,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "TakeOff",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "FlyMoveSpeedAdd",
+              "parameters": {
+                "move_speed": 8.0
+              }
+            },
+            {
+              "key": "Rush",
+              "parameters": {
+                "predelay_duration": 3.0,
+                "ymggld_t[trigger].fly_start_speed_rate": 8.0,
+                "ymggld_t[trigger].interval": 0.5,
+                "ymggld_t[trigger].move_speed": 0.2,
+                "ymggld_t[trigger].trigger_cnt": 28.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Lure"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 0,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "mio",
+      "id": "enemy_10118_ymgprc",
+      "name": "Mio",
+      "index": "MI01",
+      "rank": "Elite",
+      "sort": 1041,
+      "hidden": false,
+      "icon": "/enemies-icons/Mio.webp",
+      "flavour_text": "Drive out oni, and you drive out dreams. Welcome in curses, and you welcome in kindness. Ask not of right or wrong, or good and evil. She simply draws her sword in silence.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks hit 2 times",
+          "format": "normal"
+        },
+        {
+          "text": "[Icy Gaze] After several attacks, the next attack strikes twice with higher damage",
+          "format": "normal"
+        },
+        {
+          "text": "Bounces <'Certain Fates'>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 50000,
+            "atk": 777,
+            "def": 900,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B+",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "PowerAttack",
+              "sp_cost": 3,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.5
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 3,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "kouhei_mifune",
+      "id": "enemy_1570_ymgscm",
+      "name": "Kouhei Mifune",
+      "index": "MF",
+      "rank": "Boss",
+      "sort": 1365,
+      "hidden": false,
+      "icon": "/enemies-icons/Kouhei Mifune.webp",
+      "flavour_text": "His sword speaks not of honor or loyalty, only the obsession to cut away all obstacles in the way of the tide, even if he himself is destined to become a nameless bubble within before the end.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "None",
+          "format": "normal"
+        },
+        {
+          "text": "[Garyui Iai - Issen] Immediately moves a certain distance towards the next checkpoint when blocked",
+          "format": "normal"
+        },
+        {
+          "text": "ATK and DEF increase as HP drops",
+          "format": "normal"
+        },
+        {
+          "text": "The first time HP drops to 0, enters second form and casts [Manipulate Opinion]",
+          "format": "normal"
+        },
+        {
+          "text": "[Manipulate Opinion] Removes all 'Favor' and stops current 'Lucksack'",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "[Garyui Iai - Ketsujin] Immediately moves a certain distance towards the next checkpoint when blocked; recovers all SP when the blocked unit is defeated or retreats",
+          "format": "normal"
+        },
+        {
+          "text": "[Canvas of Strategy] Periodically gains a 'Zan'",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks deal damage one more time for every 'Zan' possessed",
+          "format": "normal"
+        },
+        {
+          "text": "ATK and DEF increase as HP drops",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 60000,
+            "atk": 1000,
+            "def": 800,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.35,
+            "range": null,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B+",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "M0AdvanceSuddenly",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "dist": 1.5
+              }
+            },
+            {
+              "key": "M2AdvanceSuddenly",
+              "sp_cost": 0,
+              "cooldown": 70.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.5,
+                "dist": 1.5
+              }
+            },
+            {
+              "key": "BoomCard",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "cnt": 1.0,
+                "max_cnt": 2.0,
+                "min_cnt": 0.0,
+                "token_key": "trap_255_pckzhn"
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "LowHpHighPower",
+              "parameters": {
+                "max_hp_ratio": 1.0,
+                "min_atk": 1500.0,
+                "min_def": 2000.0,
+                "min_hp_ratio": 0.0
+              }
+            },
+            {
+              "key": "M0Reborn",
+              "parameters": {
+                "duration": 1.33,
+                "hp_ratio": 0.01
+              }
+            },
+            {
+              "key": "M1Passive",
+              "parameters": {
+                "hp_recovery_per_sec_by_max_hp_ratio": 0.1,
+                "m1_revive_duration": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 110000,
+            "atk": 1500,
+            "def": 1000,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.35,
+            "range": null,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A+",
+            "def": "A",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "M0AdvanceSuddenly",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "dist": 1.5
+              }
+            },
+            {
+              "key": "M2AdvanceSuddenly",
+              "sp_cost": 0,
+              "cooldown": 70.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.5,
+                "dist": 1.5
+              }
+            },
+            {
+              "key": "BoomCard",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "cnt": 1.0,
+                "max_cnt": 2.0,
+                "min_cnt": 0.0,
+                "token_key": "trap_255_pckzhn"
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "LowHpHighPower",
+              "parameters": {
+                "max_hp_ratio": 1.0,
+                "min_atk": 1500.0,
+                "min_def": 2000.0,
+                "min_hp_ratio": 0.0
+              }
+            },
+            {
+              "key": "M0Reborn",
+              "parameters": {
+                "duration": 1.33,
+                "hp_ratio": 0.01
+              }
+            },
+            {
+              "key": "M1Passive",
+              "parameters": {
+                "hp_recovery_per_sec_by_max_hp_ratio": 0.1,
+                "m1_revive_duration": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "veteran_underling",
+      "id": "enemy_10112_ymgds_2",
+      "name": "Veteran Underling",
+      "index": "HI04",
+      "rank": "Normal",
+      "sort": 1030,
+      "hidden": false,
+      "icon": "/enemies-icons/Veteran Underling.webp",
+      "flavour_text": "A veteran Kinsekikai underling who has fallen many times and gotten back up, but still cannot help but philosophize about his own existence and if he is suited to this line of work. That is why he remains an underling, despite his experience.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Becomes temporarily stunned when shifted",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 550,
+            "def": 150,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B",
+            "def": "D",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "StunAfterUnbalance",
+              "parameters": {
+                "stun": 3.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "raiton_master",
+      "id": "enemy_10113_ymgung_2",
+      "name": "Raiton Master",
+      "index": "HI06",
+      "rank": "Normal",
+      "sort": 1032,
+      "hidden": false,
+      "icon": "/enemies-icons/Raiton Master.webp",
+      "flavour_text": "A ninja obsessed with technology, wielding a kendama-shaped flash drive filled with deadly spam. Completely unbound by anyone, they quickly leap to avoid danger.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Briefly takes off when colliding with <'Certain Fates'>, blocked, or encountering a Hole.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7000,
+            "atk": 350,
+            "def": 100,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 1.0,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "Jump",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "HoleTileTrigger",
+              "parameters": {
+                "range_radius": 0.8
+              }
+            },
+            {
+              "key": "JumpSpeedUp",
+              "parameters": {
+                "move_speed": 3.0
+              }
+            },
+            {
+              "key": "YmgholJumpTrigger",
+              "parameters": {
+                "range_radius": 0.5
+              }
+            },
+            {
+              "key": "YmgpckJumpTrigger",
+              "parameters": {
+                "range_radius": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "desperate_oath_brother",
+      "id": "enemy_10114_ymgsld_2",
+      "name": "Desperate Oath-Brother",
+      "index": "HI08",
+      "rank": "Elite",
+      "sort": 1034,
+      "hidden": false,
+      "icon": "/enemies-icons/Desperate Oath-Brother.webp",
+      "flavour_text": "An elite Kinsekikai bruiser obsessed with his shield, which seems to have a habit of abandoning him when he needs it the most, leaving him in despair.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Has Barrier, and loses Barrier when shifted",
+          "format": "normal"
+        },
+        {
+          "text": "DEF is reduced when Barrier is lost",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 1200,
+            "def": 1500,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "A+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "EndShieldSwitchMode",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "DefDesc",
+              "parameters": {
+                "def": -0.5
+              }
+            },
+            {
+              "key": "Shield",
+              "parameters": {
+                "dynamic": 8000.0,
+                "range_radius": 0.4
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "doton_master",
+      "id": "enemy_10115_ymghol_2",
+      "name": "Doton Master",
+      "index": "HI10",
+      "rank": "Normal",
+      "sort": 1036,
+      "hidden": false,
+      "icon": "/enemies-icons/Doton Master.webp",
+      "flavour_text": "A professional ninja who has carefully studied the texture and scent of the soil to improve his disguise. Still not that much harder to detect, despite his efforts.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "When on the battlefield, has Invisibility and disguises as a Hole",
+          "format": "normal"
+        },
+        {
+          "text": "Becomes hostile after losing Invisibility or absorbing <'Certain Fates'>",
+          "format": "normal"
+        },
+        {
+          "text": "Permanently loses Invisibility when becoming hostile",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 500,
+            "def": 250,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 1.5,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "C",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "SwitchMode",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "EndHole",
+              "parameters": {
+                "duration": 60.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "suiton_master",
+      "id": "enemy_10116_ymgtop_2",
+      "name": "Suiton Master",
+      "index": "HI12",
+      "rank": "Elite",
+      "sort": 1038,
+      "hidden": false,
+      "icon": "/enemies-icons/Suiton Master.webp",
+      "flavour_text": "A ninja that attacks by spinning in place. Claims that creating a vortex from air is a type of suiton too, even without water around him. Nobody wants to go out with him because he refuses to walk properly.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Deals Physical damage to surroundings while spinning, and stops spinning when shifted",
+          "format": "silence"
+        },
+        {
+          "text": "Bounces <'Certain Fates'>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12000,
+            "atk": 750,
+            "def": 550,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "SwitchModeTrigger",
+              "sp_cost": 0,
+              "cooldown": 60.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "EndAnim",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "BeginAnim",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "EndRotate",
+              "parameters": {
+                "rotate_duration": 60.0
+              }
+            },
+            {
+              "key": "ProtectionTime",
+              "parameters": {
+                "protection_duration": 1.0
+              }
+            },
+            {
+              "key": "RotateDamage",
+              "parameters": {
+                "atk_scale": 1.2,
+                "interval": 1.0,
+                "range_radius": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "fuuton_master",
+      "id": "enemy_10117_ymggld_2",
+      "name": "Fuuton Master",
+      "index": "HI14",
+      "rank": "Normal",
+      "sort": 1040,
+      "hidden": false,
+      "icon": "/enemies-icons/Fuuton Master.webp",
+      "flavour_text": "A very fast ninja who is able to glide longer. Ancient techniques meet the latest technology.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Continuously accelerates, taking off after reaching a certain speed.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12000,
+            "atk": 550,
+            "def": 300,
+            "res": 25.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.2,
+            "range": 1.2,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "TakeOff",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "FlyMoveSpeedAdd",
+              "parameters": {
+                "move_speed": 8.0
+              }
+            },
+            {
+              "key": "Rush",
+              "parameters": {
+                "predelay_duration": 3.0,
+                "ymggld_t[trigger].fly_start_speed_rate": 8.0,
+                "ymggld_t[trigger].interval": 0.5,
+                "ymggld_t[trigger].move_speed": 0.2,
+                "ymggld_t[trigger].trigger_cnt": 28.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Lure"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 0,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "stress_relief_helper",
+      "id": "enemy_10119_ymgbxm",
+      "name": "Stress-Relief Helper",
+      "index": "HI15",
+      "rank": "Elite",
+      "sort": 1042,
+      "hidden": false,
+      "icon": "/enemies-icons/Stress-Relief Helper.webp",
+      "flavour_text": "Punching robot used for stress relief by gang members. It would very much like to be on the punching side for once. The gang members who use it do not know that their stress has simply been transferred from human to robot, and it will return the favor someday.",
+      "race": "Machina",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Bounces <'Certain Fates'>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 35000,
+            "atk": 3000,
+            "def": 1500,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 7.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S+",
+            "def": "A+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Sleep",
+            "Fear"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "zero_stress_helper",
+      "id": "enemy_10119_ymgbxm_2",
+      "name": "Zero-Stress Helper",
+      "index": "HI16",
+      "rank": "Elite",
+      "sort": 1043,
+      "hidden": false,
+      "icon": "/enemies-icons/Zero-Stress Helper.webp",
+      "flavour_text": "Punching robot used to increase gang member morale, which has gotten addicted to the feeling of punching people. Victims claim to hear angry shouts of 'payback a hundred-fold' when being attacked, but they must be hearing things.",
+      "race": "Machina",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Bounces <'Certain Fates'>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 50000,
+            "atk": 3800,
+            "def": 1500,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 7.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S+",
+            "def": "A+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Sleep",
+            "Fear"
+          ],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

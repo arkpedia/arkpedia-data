@@ -1,0 +1,820 @@
+{
+  "name": "Bellone",
+  "rarity": 6,
+  "class": "Guard",
+  "branch": "Fighter",
+  "faction": "Siracusa",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS",
+    "Debuff"
+  ],
+  "trait": "Blocks 1 enemy",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [],
+  "ep": {
+    "Main": "Oath",
+    "Co-star": null
+  },
+  "internalName": "char_4037_demetr",
+  "otherLanguages": {
+    "Simplified Chinese": "贝洛内",
+    "Traditional Chinese": "貝洛內",
+    "Japanese": "ベッローネ",
+    "Korean": "벨로네"
+  },
+  "characterInfo": {
+    "File no.": "SR42",
+    "Illustrator": "Lowro & Studio Montagne",
+    "Release Date": "2026/08/13",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Kentaro Kumagai",
+    "Chinese": "Sang Yuze",
+    "Italian": "Samuele Torrigiani"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "15 years",
+    "Place of Birth": "Siracusa",
+    "Date of Birth": "August 6th",
+    "Race": "Lupo",
+    "Height": "180 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Excellent",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Average"
+  },
+  "talents": [
+    {
+      "name": "Famiglia Artifice",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Attacks reduce the target's DEF by 5% for 10 seconds, stacks up to 5 times. Additionally, Bellone's damage increases as the target's HP decreases, reaching a maximum of 120% bonus damage when the target is below 20% HP."
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 4",
+          "description": "Attacks reduce the target's DEF by 5% for 10 seconds, stacks up to 5 times. Additionally, Bellone's damage increases as the target's HP decreases, reaching a maximum of 128% (+8%) bonus damage when the target is below 20% HP."
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Attacks reduce the target's DEF by 7% for 10 seconds, stacks up to 5 times. Additionally, Bellone's damage increases as the target's HP decreases, reaching a maximum of 128% bonus damage when the target is below 20% HP."
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 4",
+          "description": "Attacks reduce the target's DEF by 7% for 10 seconds, stacks up to 5 times. Additionally, Bellone's damage increases as the target's HP decreases, reaching a maximum of 136% (+8%) bonus damage when the target is below 20% HP."
+        }
+      ]
+    },
+    {
+      "name": "Street Wits",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Gain 40% Physical and Arts Dodge . After deployment, this is increased to 80% Physical and Arts Dodge that will gradually decay over 20 seconds."
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +24"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Famiglia Artifice"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Bellone's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Famiglia Artifice .",
+        "New skill: Tactician's Schemes ."
+      ],
+      "prerequisite": "Raise Bellone to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron",
+          "quantity": 7
+        },
+        {
+          "name": "Polyester",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Street Wits .",
+        "New skill: Settling Old Score .",
+        "Famiglia Artifice improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Bellone to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "Guard Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Rephasic Enantiomer",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Block",
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Don's Ease",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack deals 150% of ATK and strikes twice",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack deals 160% of ATK and strikes twice",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack deals 170% of ATK and strikes twice",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack deals 180% of ATK and strikes twice",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack deals 190% of ATK and strikes twice",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack deals 200% of ATK and strikes twice",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack deals 210% of ATK and strikes twice",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack deals 220% of ATK and strikes twice",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack deals 230% of ATK and strikes twice",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack deals 250% of ATK and strikes twice",
+            "initialSp": 0,
+            "spCost": 3,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Chiral Refractor",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Consigliere's Schemes",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "12-22 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range Expands, ASPD +30 , attacks hit 3 targets for 140% ATK as Physical damage. During Skill duration, Talent 1 can be stacked up to 8 times, and the target will be Slowed continuously upon reaching maximum stacks.",
+            "initialSp": 14,
+            "spCost": 32,
+            "duration": 12
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Range Expands, ASPD +30 , attacks hit 3 targets for 145% ATK as Physical damage. During Skill duration, Talent 1 can be stacked up to 8 times, and the target will be Slowed continuously upon reaching maximum stacks.",
+            "initialSp": 14,
+            "spCost": 31,
+            "duration": 12
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Range Expands, ASPD +40 , attacks hit 3 targets for 150% ATK as Physical damage. During Skill duration, Talent 1 can be stacked up to 8 times, and the target will be Slowed continuously upon reaching maximum stacks.",
+            "initialSp": 14,
+            "spCost": 30,
+            "duration": 12
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Range Expands, ASPD +40 , attacks hit 3 targets for 155% ATK as Physical damage. During Skill duration, Talent 1 can be stacked up to 8 times, and the target will be Slowed continuously upon reaching maximum stacks.",
+            "initialSp": 14,
+            "spCost": 29,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Range Expands, ASPD +50 , attacks hit 3 targets for 160% ATK as Physical damage. During Skill duration, Talent 1 can be stacked up to 8 times, and the target will be Slowed continuously upon reaching maximum stacks.",
+            "initialSp": 14,
+            "spCost": 28,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Range Expands, ASPD +50 , attacks hit 3 targets for 165% ATK as Physical damage. During Skill duration, Talent 1 can be stacked up to 8 times, and the target will be Slowed continuously upon reaching maximum stacks.",
+            "initialSp": 14,
+            "spCost": 27,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Range Expands, ASPD +60 , attacks hit 3 targets for 170% ATK as Physical damage. During Skill duration, Talent 1 can be stacked up to 8 times, and the target will be Slowed continuously upon reaching maximum stacks.",
+            "initialSp": 14,
+            "spCost": 26,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Range Expands, ASPD +70 , attacks hit 3 targets for 180% ATK as Physical damage. During Skill duration, Talent 1 can be stacked up to 8 times, and the target will be Slowed continuously upon reaching maximum stacks.",
+            "initialSp": 14,
+            "spCost": 25,
+            "duration": 19
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Range Expands, ASPD +70 , attacks hit 3 targets for 190% ATK as Physical damage. During Skill duration, Talent 1 can be stacked up to 8 times, and the target will be Slowed continuously upon reaching maximum stacks.",
+            "initialSp": 14,
+            "spCost": 24,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Range Expands, ASPD +80 , attacks hit 3 targets for 200% ATK as Physical damage. During Skill duration, Talent 1 can be stacked up to 8 times, and the target will be Slowed continuously upon reaching maximum stacks.",
+            "initialSp": 14,
+            "spCost": 22,
+            "duration": 22
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "Bellone's second skill grants him the highest amount of DEF shred given by a singular unit. Combined with pleasant ASPD and high damage ramp up, he is both a damage dealer and support for the team. Extremely good skill to master."
+          }
+        ],
+        "cost": null,
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Settling Old Scores",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +80% , ASPD +20 , attacks has 30% chance to increase its damage to 130% of ATK. Upon Skill activation, seeks a ground target within nearby tiles. If the said tile is deployable, move to its tile. If an elite/boss enemy is defeated or if Bellone did not attack for 1 second, he will seek another target. When Lethal Damage is taken, Bellone will not retreat but instead will end skill. When skill ends, Bellone returns to his original position",
+            "initialSp": 17,
+            "spCost": 45,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +90% , ASPD +20 , attacks has 30% chance to increase its damage to 130% of ATK. Upon Skill activation, seeks a ground target within nearby tiles. If the said tile is deployable, move to its tile. If an elite/boss enemy is defeated or if Bellone did not attack for 1 second, he will seek another target. When Lethal Damage is taken, Bellone will not retreat but instead will end skill. When skill ends, Bellone returns to his original position",
+            "initialSp": 18,
+            "spCost": 44,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +100% , ASPD +20 , attacks has 30% chance to increase its damage to 130% of ATK. Upon Skill activation, seeks a ground target within nearby tiles. If the said tile is deployable, move to its tile. If an elite/boss enemy is defeated or if Bellone did not attack for 1 second, he will seek another target. When Lethal Damage is taken, Bellone will not retreat but instead will end skill. When skill ends, Bellone returns to his original position",
+            "initialSp": 19,
+            "spCost": 43,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +110% , ASPD +30 , attacks has 35% chance to increase its damage to 140% of ATK. Upon Skill activation, seeks a ground target within nearby tiles. If the said tile is deployable, move to its tile. If an elite/boss enemy is defeated or if Bellone did not attack for 1 second, he will seek another target. When Lethal Damage is taken, Bellone will not retreat but instead will end skill. When skill ends, Bellone returns to his original position",
+            "initialSp": 20,
+            "spCost": 42,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +120% , ASPD +30 , attacks has 35% chance to increase its damage to 140% of ATK. Upon Skill activation, seeks a ground target within nearby tiles. If the said tile is deployable, move to its tile. If an elite/boss enemy is defeated or if Bellone did not attack for 1 second, he will seek another target. When Lethal Damage is taken, Bellone will not retreat but instead will end skill. When skill ends, Bellone returns to his original position",
+            "initialSp": 21,
+            "spCost": 41,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +130% , ASPD +30 , attacks has 35% chance to increase its damage to 140% of ATK. Upon Skill activation, seeks a ground target within nearby tiles. If the said tile is deployable, move to its tile. If an elite/boss enemy is defeated or if Bellone did not attack for 1 second, he will seek another target. When Lethal Damage is taken, Bellone will not retreat but instead will end skill. When skill ends, Bellone returns to his original position",
+            "initialSp": 22,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +140% , ASPD +40 , attacks has 40% chance to increase its damage to 150% of ATK. Upon Skill activation, seeks a ground target within nearby tiles. If the said tile is deployable, move to its tile. If an elite/boss enemy is defeated or if Bellone did not attack for 1 second, he will seek another target. When Lethal Damage is taken, Bellone will not retreat but instead will end skill. When skill ends, Bellone returns to his original position",
+            "initialSp": 23,
+            "spCost": 39,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +150% , ASPD +40 , attacks has 45% chance to increase its damage to 160% of ATK. Upon Skill activation, seeks a ground target within nearby tiles. If the said tile is deployable, move to its tile. If an elite/boss enemy is defeated or if Bellone did not attack for 1 second, he will seek another target. When Lethal Damage is taken, Bellone will not retreat but instead will end skill. When skill ends, Bellone returns to his original position",
+            "initialSp": 24,
+            "spCost": 38,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +160% , ASPD +40 , attacks has 45% chance to increase its damage to 170% of ATK. Upon Skill activation, seeks a ground target within nearby tiles. If the said tile is deployable, move to its tile. If an elite/boss enemy is defeated or if Bellone did not attack for 1 second, he will seek another target. When Lethal Damage is taken, Bellone will not retreat but instead will end skill. When skill ends, Bellone returns to his original position",
+            "initialSp": 25,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +170% , ASPD +50 , attacks has 50% chance to increase its damage to 185% of ATK. Upon Skill activation, seeks a ground target within nearby tiles. If the said tile is deployable, move to its tile. If an elite/boss enemy is defeated or if Bellone did not attack for 1 second, he will seek another target. When Lethal Damage is taken, Bellone will not retreat but instead will end skill. When skill ends, Bellone returns to his original position",
+            "initialSp": 27,
+            "spCost": 35,
+            "duration": 30
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "2nd",
+            "priority": "main",
+            "explanation": "Bellone's third skill gives him a heat-seeking behaviour, locking on to enemies to kill them before moving on. He has a great ATK upscale making him decent against elites and bosses too. This would be the next skill to go for."
+          }
+        ],
+        "cost": null,
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Repositioning",
+            "description": "Allows the unit to enter a different tile"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 7
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 5
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Coagulative Nodule",
+          "quantity": 5
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Bellone's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "FGT-Y: The Instrument",
+      "mission": {
+        "requirement1": "Have your own Bellone use Settling Old Scores 5 times.",
+        "requirement2": "Clear Main Theme 6-2 with a 3-star rating. You must deploy your own Bellone and have him defeat at least 4 enemies."
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +140 , ATK +50",
+          "effectLabel": "New trait",
+          "effectText": "Blocks 1 enemy; Gains +10 ASPD when above 50% HP",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +180 , ATK +65",
+          "effectLabel": "Famiglia Artifice improved",
+          "effectText": "Attacks reduce the target's DEF by 7% for 10 seconds, stacks up to 5 times. Additionally, Bellone's damage increases as the target's HP decreases, reaching a maximum of 142% bonus damage when the target is below 20% HP.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +230 , ATK +80",
+          "effectLabel": "Famiglia Artifice improved",
+          "effectText": "Attacks reduce the target's DEF by 8% for 10 seconds, stacks up to 5 times. Additionally, Bellone's damage increases as the target's HP decreases, reaching a maximum of 142% bonus damage when the target is below 20% HP.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "The current head of Bellone\nfamiglia\nfrom\nSiracusa\n. Introduced by operator\nVigil\n, he represents the Bellone\nfamiglia\nto conduct various partnership works with Rhodes Island such as intelligence exchange and trading.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "P2jLn64K5fI",
+      "creator": "SUPAH"
+    },
+    {
+      "videoId": "FgM14qNVZKM",
+      "creator": "sten"
+    },
+    {
+      "videoId": "Jco0SbcUm1U",
+      "creator": "Ebenblaze"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1241,
+          "atk": 249,
+          "def": 154,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 9,
+          "block": 1,
+          "interval": 0.78
+        },
+        "max": {
+          "hp": 1678,
+          "atk": 367,
+          "def": 220,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 9,
+          "block": 1,
+          "interval": 0.78
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1678,
+          "atk": 367,
+          "def": 220,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 11,
+          "block": 1,
+          "interval": 0.78
+        },
+        "max": {
+          "hp": 2152,
+          "atk": 490,
+          "def": 298,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 11,
+          "block": 1,
+          "interval": 0.78
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 2152,
+          "atk": 490,
+          "def": 298,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 11,
+          "block": 1,
+          "interval": 0.78
+        },
+        "max": {
+          "hp": 2625,
+          "atk": 605,
+          "def": 355,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 11,
+          "block": 1,
+          "interval": 0.78
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 60,
+      "def": 30
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected. \n\n[Cell-Originium Assimilation] 0%\nOperator Bellone shows no trace of Originium infection. \n\n[Blood Originium-Crystal Density] 0.14u/L\nOperator Bellone rarely comes into contact with Originium."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "A young Lupo who always has a smile on his face, yet is nevertheless somehow quietly intimidating.\nOperator Bellone's first visit to Rhodes Island caused a small uproar within HR, as we had previously written in Operator Vigil's file that Vigil was the 'last leader of Siracusa's Bellone Family'.\nThis misunderstanding was quickly cleared up: according to Operator Bellone's statement, the Bellones almost dissolved when Don Bernando died, and his heir Vigil left the old city to build Nuova Volsinii. The Family's power structure had fallen apart, and the remaining former Bellones were barely scraping by under pressure from other Families, unable to either return to a normal life or join another family and thus betray Bellone. That was when Demetri Certaldo decided to take up the mantle of the Don of the Bellone Family, taking those who had lost the family's protection under his wing.\nBased on our current understanding of Siracusa, we are aware that his statement is missing quite a few details. Someone who was not the designated heir could hardly have inherited a family—even a declining one—without facing opposition both within and without. When asked about this, however, he deflected our questions with a smile.\n'I grew up in the famiglia. The people there are like blood family to me, and I could never abandon them no matter what,' he said, and declined to elaborate further.\nIt is perhaps worth mentioning that Bellone ran into Chiave's gang at lunch that day. The always-jolly Chiave welcomed Bellone's arrival with his gang—to Bellone's apparent surprise, though he eventually assented to Chiave's eager (and rather physical) show of friendship with a smile. The scene seemed familiar, but also quite different from when Vigil first arrived.\nAn operator who was present recalled, 'It makes you realize how easy-going Vigil is by comparison. The smile never left Bellone's face, but for some reason I was really worried for Chiave the entire time.'"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "The Bellone Family staked a foothold in Nuova Volsinii through the Saluzzo Vino winery. Soon after Demetri Bellone and Alberto's deal, Alberto was arrested, and control of Saluzzo Vino fell into Bellone's hands. He has since made Saluzzo Vino stronger, establishing a dominant position in the local wine market following the Kazimierz-sponsored Red Wine Championship, and demonstrating the ability to compete with international brands from outside Siracusa.\nIn addition to wine, the Bellone Family has also invested in various industries in Nuova Volsinii, which are also growing at a breakneck pace. Although public data is not available, it is estimated that they are bringing the Bellone Family roughly the same revenue as Saluzzo Vino, perhaps even more. Yet there are also issues: most of these investments are in traditional mafia industries such as restaurants, bars, hotels, and moneylending—rarely involving the production of physical goods—inevitably leading to speculation that the Bellone Family is going back to the old ways in Nuova Volsinii. Furthermore, while Bellone's new investments are heavily staffed with Bellone members, Saluzzo Vino maintains a strong Saluzzo presence. Even setting aside potential problems caused by mafia members in corporate leadership, one cannot help but feel concerned as to whether the Saluzzo members truly accept Bellone leadership, and whether this arrangement will impact Rhodes Island's partnership with the Bellone Family.\nAn HR operator made a secret visit to Saluzzo Vino with these concerns in mind.\n'Signor Bellone? He's a good man!\n'We're still called Saluzzo Vino, aren't we? He said Saluzzo's only working with Bellone on a temporary basis. We're still Saluzzo, of course, and he even praised us for our loyalty, saying he was honored to be working with a famiglia like ours that respects tradition!\n'Of course, we're in Nuova Volsinii now, and Signor Bellone told us to respect City Hall's policies, work hard, and follow the rules of the New Urban Management Act. I can tell you it took some getting used to. Back in the day, whenever I heard my terminal ring, the first thing I did wasn't pick up the call, but check my knife and gun. But I'm not even doing any brawling these days. I work fixed hours and go home for dinner with my wife and kids. I've got to admit, it's not such a bad feeling after all.\n'Oh, of course I'm still part of the famiglia. We're all waiting for Don Saluzzo to get out of prison! I even asked Signor Bellone if there was a way to get him out. He said it would be hard to get his sentence reduced under the New Urban Management Act, but he would pull a few strings and make things more comfortable for him. Sure enough, when I visited the Don a couple of days ago, he had a cell to himself and seemed to have gotten a little plumper. I'm so grateful to Signor Bellone!\n'I wasn't able to talk to the Don too much in the allotted time, so I just told him about how things had been going with us. He didn't say anything, but ended the visit with a smile. I'm sure he's very grateful to Signor Bellone too!'\nThe HR operator could not help but feel that something was not quite right. Seeing the Perro's bright smile, however, he could only follow Alberto Saluzzo's lead and smile back."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "We are well aware that Demetri Certaldo was not groomed to become the next Don of the Bellone Family. His father had held an advisor position in the Bellones, and when he was killed in a mafia struggle, young Demetri was taken in by the Family and raised alongside Operator Vigil. This sort of arrangement is in line with what we know about Siracusan mafia tradition: having core members live together helps instill loyalty in those pegged for important Family positions in the future.\nDemetri quickly accepted his role as Leontuzzo's advisor, taking care of his daily needs and teaching him everything he knew about the mafia, business, and fighting—essentially grooming the boy four years his junior to become the perfect leader, one who could take care of every member of the Family and protect their interests.\nThis should have ensured a smooth transition of power to Leontuzzo, until Bernardo's views on the Family began to change and he brought Lavinia—Operator Penance—into the Bellone Family. Under Lavinia's influence, Leontuzzo began to deviate from the path that Demetri had set for him. This was seen as a regrettable development, but an understandable one: for Leontuzzo, the scope of the 'family' had grown from a single Family to what is today all of Nuova Volsinii, and perhaps eventually all of Siracusa. The rules of the Family that he used to value had became the law and justice that Lavinia upheld.\nAgain, Operator Bellone's statement here seemed to omit many details, which we do not feel the need to delve deeper into, but there was a question we could not help but ask regarding Siracusan mafia tradition: is the Family's advisor normally expected to take care of the Don's daily needs?\nBellone did not answer.\nWe did, however, receive a valuable reference from another 'party concerned':\n'Most advisors don't, but Demetri and I grew up together. He was a few years older, and he was used to taking care of me, while I was used to being taken care of. Or maybe... he was already showing his potential to become the Don, by seeing me as his famiglia and finding it perfectly natural that he should take care of me. He used to tell me that a Don should take care of his famiglia. I think he's doing a fine job of it.'"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "The announcement of the amendment to the New Urban Management Act sent shock waves throughout Nuova Volsinii. Most heavily impacted were the foreign corporations in the involved industries, whose stakeholders and investors expressed their dissatisfaction to City Hall. City Hall stood firm, however, and as a result some corporations have begun to adjust their business strategies based on the amendment's provisions. It was met with a generally positive response from local enterprises, who were long clamoring for its policies, as well as the general populace of Nuova Volsinii. Although some have noted that the amendment represents a form of protectionism, which could cause Siracusa's mafia traditions to once again rear their heads in the guise of local enterprises.\nThe full impact of the amendment on Nuova Volsinii remains to be seen, and we are keeping a close eye on further developments.\n—Central Journal, International Edition\n\nWhen Bellone finally stood before Signora Sicilia, he felt nothing but fear.\nIt was not her power that he feared. On the contrary, when he stood before her and saw her face clearly for the first time, he saw her sagging cheeks and sunken eye sockets, and the spots on her skin that not even heavy powdering could disguise. That was when he realized that the legends of Signora Sicilia he was so familiar with took place sixty years ago, and that the legendary matriarch had already entered her twilight years.\nHer gaze was still strong, her movements elegant and confident, and her words soft yet impossible to refute or defy. The authority of Siracusa was still concentrated in her, but this only served to amplify his fear: all this power was centered on her, yet she was merely mortal. The order that she represented, the influence she wielded over the many Siracusan famiglie, and the deterrence her presence represented to other countries would all inevitably vanish upon her death. When the time came, would the famiglie still sit together and negotiate in the Grey Hall to resolve their conflicts? Or would Siracusa fall into chaos and desolation again?\n'I don't give a damn what happens to Siracusa after I die,'\nSignora Sicilia said as she ascended the steps of her manor. Her steps were slow, and seemingly steady, but she grabbed Bellone's arm with such strength that all he could say in response was, 'Please do not mention that word, Signora. You still have many years ahead of you.'\n'The only people who love to bring up that word are the young who've never known death and the old for whom death is near. I know my own body best,' she smiled. 'The future does not belong to me. Whether it belongs to you—all of you—depends on you. Your idea is interesting, and you have shown respect by coming to see me before you act. Go. Go and try it out in Nuova Volsinii.'\nHis fear prevented Bellone from answering, but in that instant the faint notions in his mind became concrete and firm. He had wanted someone to show him a path he could simply follow. Now, he had to become the one leading the way, the one who saw it through to the end. He must build a new order.\nThere is little time left. For him, for them, and for Siracusa."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "You wish to mediate between me and Leon, Doctor? I appreciate it, but that will not be necessary.\nI understand that it concerns you that he is avoiding me at Rhodes Island, but I assure you it is simply because he does not know how to treat me in an informal setting. We were family, after all, brothers who grew up together, the future Don and his advisor. Now, we are partners, friends who speak to each other as equals. It will take some time for him to get used to it, as well as hearing the name 'Bellone' in his ears, but he <i>will</i> get used to it. He must. We must all accept certain things that we cannot change, must we not? Leon has, after all, chosen a different path.\nNo, I do not oppose Lavinia's ideas. They are very fine ideals, light and justice and all that. I fully believe that they will guide Nuova Volsinii and Siracusa toward a better future. You must understand that I was in charge of his education long before Lavinia came to the Bellones. The famiglia and Signor Bernardo groomed me to be its advisor, and I taught Leon everything I knew, raising him to be the leader I wanted the famiglia to have. Yes, we've had our disagreements, but what he believes in is essentially no different from what I believe in.\nI have simply walked too long in the rain, which is the reason for our differences. I could never abandon my famiglia, so long as they consider themselves that. On this, both Signor Bernardo and Leon have a leg up on me, possessing the resolve and determination that I lack. Still, I firmly believe that the Bellones and I have the right to exist, that we are needed. Where there is light, there is shadow. If you wish to breathe the fresh air after a rain, you must first accept the rain.\nIt is true that I am a long way from the ideal leader I dream of. This doesn't matter. It was never what I aspired to be, and I will not change who I am now. I once placed all my hopes on Leontuzzo Bellone, but he will not become Don, and I will not be his advisor. This, I have accepted. In the distant future, I may become an advisor again—if someone proves that they will make a better Don than I am."
+    }
+  ]
+}

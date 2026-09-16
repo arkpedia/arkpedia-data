@@ -1,0 +1,759 @@
+{
+  "name": "Harmonie",
+  "rarity": 5,
+  "class": "Caster",
+  "branch": "Mystic Caster",
+  "faction": "Tara",
+  "umbrellaFactions": [
+    "Victoria"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS"
+  ],
+  "trait": "Attacks deal Arts damage ; When unable to find a target, attacks can be stored up and fired all at once (Up to 3 charges)",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Invitation",
+    "Decoration"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_297_hamoni",
+  "otherLanguages": {
+    "Chinese": "和弦",
+    "Japanese": "ハーモニー",
+    "Korean": "아르모니"
+  },
+  "characterInfo": {
+    "File no.": "DB03",
+    "Operator Record": "Solitary Dancer",
+    "Paradox Simulation": "Heavy Dance Steps",
+    "Illustrator": "STAR影法师",
+    "Release Date": "2023/07/13",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Yumi Kakazu",
+    "Chinese": "Cao Yawen (credited as \"Elaine\" in EN)",
+    "English": "Lexi Fontaine",
+    "Korean": "Lee Myung-ho"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "9 years",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "May 13th",
+    "Race": "Feline",
+    "Height": "160 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Normal",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Unexpected Arrive",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Deals 12% more damage when attacking blocked enemies"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Deals 15% (+3%) more damage when attacking blocked enemies"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Deals 17% more damage when attacking blocked enemies"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Deals 20% (+3%) more damage when attacking blocked enemies"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +45"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Unexpected Arrive"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Harmonie's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Unexpected Arrive .",
+        "New skill: A Disastrous Drowning .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Harmonie to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Unexpected Arrive improved."
+      ],
+      "prerequisite": "Raise Harmonie to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 12000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "RMA70-24",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 15
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Lithe Steps",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "5 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 30% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 25,
+            "duration": 5
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 31% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 24,
+            "duration": 5
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 32% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 23,
+            "duration": 5
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 35% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 22,
+            "duration": 5
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 36% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 21,
+            "duration": 5
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 37% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 20,
+            "duration": 5
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 40% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 19,
+            "duration": 5
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 43% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 18,
+            "duration": 5
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 46% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 17,
+            "duration": 5
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 50% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 15,
+            "duration": 5
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "A Disastrous Drowning",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "When activated, attacks only blocked enemies. Attack interval reduces very slightly , and creates a pool of water in attack range, which causes ground enemies to have -45% Movement Speed and take 100 Arts damage every second",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "When activated, attacks only blocked enemies. Attack interval reduces very slightly , and creates a pool of water in attack range, which causes ground enemies to have -45% Movement Speed and take 120 Arts damage every second",
+            "initialSp": 20,
+            "spCost": 39,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "When activated, attacks only blocked enemies. Attack interval reduces very slightly , and creates a pool of water in attack range, which causes ground enemies to have -45% Movement Speed and take 140 Arts damage every second",
+            "initialSp": 20,
+            "spCost": 38,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "When activated, attacks only blocked enemies. Attack interval reduces slightly , and creates a pool of water in attack range, which causes ground enemies to have -50% Movement Speed and take 140 Arts damage every second",
+            "initialSp": 20,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "When activated, attacks only blocked enemies. Attack interval reduces slightly , and creates a pool of water in attack range, which causes ground enemies to have -50% Movement Speed and take 160 Arts damage every second",
+            "initialSp": 20,
+            "spCost": 36,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "When activated, attacks only blocked enemies. Attack interval reduces slightly , and creates a pool of water in attack range, which causes ground enemies to have -50% Movement Speed and take 180 Arts damage every second",
+            "initialSp": 20,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "When activated, attacks only blocked enemies. Attack interval reduces moderately , and creates a pool of water in attack range, which causes ground enemies to have -55% Movement Speed and take 180 Arts damage every second",
+            "initialSp": 20,
+            "spCost": 34,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "When activated, attacks only blocked enemies. Attack interval reduces moderately , and creates a pool of water in attack range, which causes ground enemies to have -60% Movement Speed and take 200 Arts damage every second",
+            "initialSp": 20,
+            "spCost": 33,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "When activated, attacks only blocked enemies. Attack interval reduces moderately , and creates a pool of water in attack range, which causes ground enemies to have -60% Movement Speed and take 230 Arts damage every second",
+            "initialSp": 20,
+            "spCost": 32,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "When activated, attacks only blocked enemies. Attack interval reduces , and creates a pool of water in attack range, which causes ground enemies to have -60% Movement Speed and take 250 Arts damage every second",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 3
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Damage Over Time",
+            "description": "Enemies incur a damage per second for a certain duration"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar Pack",
+          "quantity": 5
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 3
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Solitude",
+      "facility": "Dormitory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Dormitory, self Morale recovered +0.7 per hour"
+    },
+    {
+      "name": "Double Agent",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Reception Room, if no other Operators are working in the Reception Room, increases Clue search speed by 50% , and Morale consumed per hour +2"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Harmonie's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "MSC-X: The Spy's Dossiers",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Harmonie, and unleash A Disastrous Drowning at least 1 time in each battle",
+        "requirement2": "Clear Main Theme 6-5 with a 3-star rating; You must deploy your own Harmonie, and have Harmonie defeat at least 2 Possessed Heavy Defenders"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +50 , RES +3",
+          "effectLabel": "Trait improved",
+          "effectText": "Attacks deal Arts damage ; When unable to find a target, attacks can be stored up and fired all at once (Up to 4 charges)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +68 , RES +4",
+          "effectLabel": "Unexpected Arrive improved",
+          "effectText": "Deals 20% more damage when attacking blocked enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +82 , RES +4",
+          "effectLabel": "Unexpected Arrive improved",
+          "effectText": "Deals 22% more damage when attacking blocked enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Harmonie, former\nVictorian\nmilitary intelligence agent, now a high-ranking officer for the forces of\nDublinn\n. Stationed aboard\nRhodes Island\nas diplomatic ambassador to the\nDuke of Wellington\n, and partially assists Rhodes Island with affairs within Victoria's borders.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 674,
+          "atk": 543,
+          "def": 48,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 1,
+          "interval": 3
+        },
+        "max": {
+          "hp": 964,
+          "atk": 776,
+          "def": 81,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 1,
+          "interval": 3
+        },
+        "rangeId": "3-13"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 964,
+          "atk": 776,
+          "def": 81,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 24,
+          "block": 1,
+          "interval": 3
+        },
+        "max": {
+          "hp": 1252,
+          "atk": 1008,
+          "def": 112,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 24,
+          "block": 1,
+          "interval": 3
+        },
+        "rangeId": "3-14"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1252,
+          "atk": 1008,
+          "def": 112,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 24,
+          "block": 1,
+          "interval": 3
+        },
+        "max": {
+          "hp": 1546,
+          "atk": 1245,
+          "def": 125,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 24,
+          "block": 1,
+          "interval": 3
+        },
+        "rangeId": "3-14"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 130,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Harmonie shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.12u/L\nOperator Harmonie leads a life of minimal contact with Originium or the Infected."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Due to safety concerns, we have carried out an inspection of the staff Harmonie wields, and can presently confirm it bears no extraneous videotaping nor messaging functionality. Additionally, we have seen the Originium Arts she casts with it, similar in nature to waves of water, and have experienced the induced illusory side-effect of making it difficult to breathe. I went in assuming a Caster of such excellence would be using a more refined staff as an Arts Unit, but found it to fall short of even regulation Victorian military standards. This, plus the fact our records show she almost never visits the training grounds, may be an indicator that she much prefers to grapple with others with her words, pulling strings and building bridges behind the scenes, and makes no habit of setting foot into true, live combat.\nThat said, touching on the several field missions Harmonie has undertaken, her teammates frequently describe her in their reports as 'unforgiving' along with 'swift and decisive,' while those she's helped out are often left feeling like they've made some kind of mistake—not that she actually tells them as such; she simply continues to carry out her orders, completing her mission in a rote manner.\nIt goes without saying, but just as Harmonie herself is typically lax, her own reports are every bit as sloppy."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Prior to entering Victoria, Rhodes Island was fully prepared for the complex situation it'd be involving itself in, and we understood our actions in Londinium would unavoidably draw scrutiny from certain powers. Despite that, the vast majority in the loop were set on edge by Operator Harmonie, envoy to the dukes, boarding the Rhodes Island landship.\nAs far as the lofty dukes go, the fact that they'd explicitly notify us that they were sending an envoy to observe Rhodes Island, rather than employing force to obstruct our continued operations, counts as goodwill in its own right. More crucially, Harmonie voluntarily informed HR of her years of history with intelligence work when submitting her registration data, and provided us with a few classified documents, even (intentionally or not) exposing how she'd been forced on the run until now. She clearly sought to win Rhodes Island's trust by being candid, but what exactly could motivate her to do it like this? And does it represent her own will, or the inclination of the powers that back her?\nSoon after, we investigated Harmonie's background and any matters she'd been involved in. We ascertained that she had previously served as a Victorian Army intelligence officer for a long period, and then elected to serve as a double agent shortly following contact with Dublinn in its early formation, dancing the line between two mutually antagonistic sides. In recent operations, she had inadvertently exposed her identity, was made the target of a covert Victorian Army manhunt, and had no choice but to seek refuge.\nConsidering all the roles she's played in her personal history, as well as the political hazard her relationship with the dukes backing her poses, Rhodes Island put forward strict limitations on her actions during her time stationed here. For her part, she gladly accepted our proposals and reached an agreement with us that she would provide us aid in non-sensitive affairs.\n\nI'm loathed to imagine the risk Rhodes Island is put in by accepting a duke's envoy aboard. Victoria's powers are a tangled web, and the more we investigate the more danger we find hidden in our operators' histories... It seems we've all grown accustomed to it, bit by bit.\n—An HR Operator who declined to be named\n\nIt's true that Operator Harmonie has described being given the cold shoulder within Dublinn following her failures, but beware—this is a trick spies love to use when feigning defection. We will be continuing to monitor her attitude carefully.\nDoes she pose a thorn in our side? Maybe her mixing of fact and fiction is a little irritating. Still, we know her A-to-Z, and possess intelligence that could put her in peril. Someone as clever as her is going to work with us.\n—■■■"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Since passing her file review and employment test, Harmonie has ceased to make mention of her identity, neither touting herself as a Victorian ducal emissary, nor displaying any ties to Dublinn or the Victorian Army. To the vast majority of operators, she's just a new Victorian Rhodes Island arrival with a brisk step and a rather cultured upbringing. They'll often find her on their rest days attending little dance parties and pressing a glass of bubbly into their hands, or run into her cradling a pile of books at the library to check out one after another, skimming everything from assorted national histories to collections of fashion magazines.\nDespite effortlessly striking up conversations with others, Harmonie leaves most operators with neither a friendly nor kind impression—in fact, thoughts such as 'is she having fun with me?' or 'she was lying just now, right?' are the instinctive reaction. 'Y'see, there was this new model of control console in a brochure and she was telling me if I was interested, I should send in a purchase form lickety-split. And, well, just a few days later, the manufacturer's trade route got locked down. Listen, honest, I could've sworn she was messing with me the way she acted. But here I am now, one of the last lucky buyers,' said an operator from Engineering. Whether or not Operator Harmonie is intentionally distancing herself from others as a way of proving she has no intention of causing trouble here, we simply cannot say.\nIn observing this ducal envoy's movements, we were surprised to find that several children have shown a degree of trust in Harmonie. We note that she had little to do in her first days aboard Rhodes Island other than borrow publicly available books from the repository, and the young patients in question, permitted to leave Medical, just happened to have a fledgling interest in history, and would have gladly asked her to teach them about it.\nAmusingly, after some time, the children have very naturally taken to addressing her as 'Miss' like one would a teacher, though Harmonie—who has always taken others' evaluations of her in stride—outright rejects this appellation, stating 'How would I ever be a good teacher?'"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Rhodes Island's operator roster currently contains some persons who have a history with Harmonie. On account of Victoria's ongoing and highly divisive chaos, she has proactively suggested that her contact with said persons be avoided. Needless to say, she also expressed that if Rhodes Island was willing to work with her, she would be very eager to know of Operator Reed's present movements.\nDespite her request for intel pertinent to Reed being principally of benefit to Dublinn, she also claimed, 'I admit I'm just quite curious, knowing how Loughshinny's come so far.' We learned that when Reed was serving in Dublinn as the Leader's body double, Harmonie may well have been the one to have the most contact with her, keeping her company in a role analogous to a tutor or mentor. Reed had minimal contact with her sister, and was unwilling to actively participate in Dublinn's schemes; when Dublinn first began reaching out to nobles with an interest in supporting her, her behavior during their talks was likewise left extremely wanting. In regard to this issue, Harmonie offered all the help she could.\n'What do you think? Give her more reading time alone, give her less pressure, less responsibility? Is that all it would've taken to do good by her? I certainly wouldn't say so. It would always have been hell for her, you see, situated where she was. And it's a shame—her in that position is exactly what Dublinn wanted, so she could play the part of her sister like a good girl.'\nRE: Reed's sister, the other Draco to guide Dublinn's flames, who has now taken center stage—Harmonie has not told us much on this subject, but during an idle chat she seemingly inadvertently mentioned that she is by no means loyal to Dublinn, only hoping to see how far the Leader's endeavors will take her.\n'The batch of personal records I gave you was the truth. I haven't a tie to the Draco royal family nor the Tarans, and the Duke of Wellington? No one in my family's ever had the prestige to serve under, well, His Excellency. I do have some old Gaulish blood in me, though it's an awful pity I have absolutely no interest in the Gaulish irredentist or Draco restoration movements. Rotten old bygones, all of it, you know.\n'I'm just curious to see powers I've never seen, ones that will smash convention into tiny little pieces.'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "I've asked her about it, and she said she was drunk.\nAn unlikely story, of course, even to herself. The lights weren't on in the AV room, save for the projector, and the table was strewn with drinks and snacks from the viewing party, but she didn't knock anything over, didn't so much as bump anything. She was just... there, dancing away gracefully on top of that tiny little coffee table.\nNo, you're right, it's not important. Maybe I just wanted to ask what was on the projector at the time. I know she borrowed some Rhodes Island combat records along with two Leithanian concert tapes, and I just don't think it was the latter she was watching.\nOr maybe... it's how she turned to the security camera at the end and held out her hand... maybe that's what got me.\nSay, someone just so happened to visit the control center last night, right? Three in the morning? Who could that be?"
+    }
+  ]
+}

@@ -1,0 +1,681 @@
+{
+  "name": "Aphrissa",
+  "rarity": 6,
+  "class": "Caster",
+  "branch": "Blast Caster",
+  "faction": "Columbia",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "AoE",
+    "DPS"
+  ],
+  "trait": "Deals AOE Arts damage in a long line",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [],
+  "ep": {
+    "Main": "Conflicted Remedy",
+    "Co-star": null
+  },
+  "internalName": "char_4229_aphris",
+  "otherLanguages": {
+    "Chinese": "谬因"
+  },
+  "characterInfo": {
+    "File no.": "CB35",
+    "Illustrator": "下野宏铭",
+    "Release Date": "2026/12/13",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Miku Itou",
+    "Chinese": "Song Yuanyuan"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Columbia",
+    "Date of Birth": "April 22nd",
+    "Race": "Feline",
+    "Height": "165 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Link Protocol",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "Can deploy a \" Repeater \" for 15 seconds, which changes the direction of her attacks and increases their range by 2"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Can deploy a \"Repeater\" for 20 seconds, which changes the direction of her attacks and increases their range by 2; ATK +15% while the Repeater is deployed"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Can deploy a \"Repeater\" for 25 seconds, which changes the direction of her attacks and increases their range by 2; ATK +25% while the Repeater is deployed"
+        }
+      ]
+    },
+    {
+      "name": "Sampling Optimization",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Operators in attack range ignore 10 RES"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 6",
+          "description": "Operators in attack range ignore 13 ( +3 ) RES"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +35"
+      },
+      {
+        "level": 5,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 6,
+        "benefit": "Improves Sampling Optimization"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Aphrissa's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +3 .",
+        "Link Protocol improved.",
+        "New skill: Critical Burst .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Aphrissa to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 7
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 7
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Link Protocol improved.",
+        "New talent: Sampling Optimization .",
+        "New skill: The Essence of Chaos .",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Aphrissa to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Rephasic Enantiomer",
+          "quantity": 4
+        },
+        {
+          "name": "Liquified Ether Absorber",
+          "quantity": 2
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Continuous Mapping",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": "Unlimited",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +60% , \"Repeater\" duration becomes infinite Unlimited duration",
+            "initialSp": 0,
+            "spCost": 50,
+            "duration": "∞"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +70% , \"Repeater\" duration becomes infinite Unlimited duration",
+            "initialSp": 0,
+            "spCost": 50,
+            "duration": "∞"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +80% , \"Repeater\" duration becomes infinite Unlimited duration",
+            "initialSp": 0,
+            "spCost": 50,
+            "duration": "∞"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +90% , \"Repeater\" duration becomes infinite Unlimited duration",
+            "initialSp": 0,
+            "spCost": 45,
+            "duration": "∞"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +100% , \"Repeater\" duration becomes infinite Unlimited duration",
+            "initialSp": 0,
+            "spCost": 45,
+            "duration": "∞"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +110% , \"Repeater\" duration becomes infinite Unlimited duration",
+            "initialSp": 0,
+            "spCost": 45,
+            "duration": "∞"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +120% , \"Repeater\" duration becomes infinite Unlimited duration",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +135% , \"Repeater\" duration becomes infinite Unlimited duration",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +150% , \"Repeater\" duration becomes infinite Unlimited duration",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +165% , \"Repeater\" duration becomes infinite Unlimited duration",
+            "initialSp": 0,
+            "spCost": 35,
+            "duration": "∞"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": null,
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Critical Burst",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Fires an infinitely long beam in a straight line ahead, dealing 60% of ATK as Arts damage every 0.5 seconds; The beam's direction can be redirected by friendly Operators.",
+            "initialSp": 5,
+            "spCost": 25,
+            "duration": 8
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Fires an infinitely long beam in a straight line ahead, dealing 70% of ATK as Arts damage every 0.5 seconds; The beam's direction can be redirected by friendly Operators.",
+            "initialSp": 5,
+            "spCost": 25,
+            "duration": 8
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Fires an infinitely long beam in a straight line ahead, dealing 80% of ATK as Arts damage every 0.5 seconds; The beam's direction can be redirected by friendly Operators.",
+            "initialSp": 5,
+            "spCost": 25,
+            "duration": 8
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Fires an infinitely long beam in a straight line ahead, dealing 90% of ATK as Arts damage every 0.5 seconds; The beam's direction can be redirected by friendly Operators.",
+            "initialSp": 10,
+            "spCost": 22,
+            "duration": 8
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Fires an infinitely long beam in a straight line ahead, dealing 100% of ATK as Arts damage every 0.5 seconds; The beam's direction can be redirected by friendly Operators.",
+            "initialSp": 10,
+            "spCost": 22,
+            "duration": 8
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Fires an infinitely long beam in a straight line ahead, dealing 110% of ATK as Arts damage every 0.5 seconds; The beam's direction can be redirected by friendly Operators.",
+            "initialSp": 10,
+            "spCost": 22,
+            "duration": 8
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Fires an infinitely long beam in a straight line ahead, dealing 120% of ATK as Arts damage every 0.5 seconds; The beam's direction can be redirected by friendly Operators.",
+            "initialSp": 15,
+            "spCost": 20,
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Fires an infinitely long beam in a straight line ahead, dealing 130% of ATK as Arts damage every 0.5 seconds; The beam's direction can be redirected by friendly Operators.",
+            "initialSp": 15,
+            "spCost": 19,
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Fires an infinitely long beam in a straight line ahead, dealing 140% of ATK as Arts damage every 0.5 seconds; The beam's direction can be redirected by friendly Operators.",
+            "initialSp": 16,
+            "spCost": 19,
+            "duration": 8
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Fires an infinitely long beam in a straight line ahead, dealing 150% of ATK as Arts damage every 0.5 seconds; The beam's direction can be redirected by friendly Operators.",
+            "initialSp": 16,
+            "spCost": 18,
+            "duration": 8
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": null,
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "The Essence of Chaos",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Upon activation, stops attacking for 3 seconds, recalls all \"Repeaters\" and refreshes their deployment cooldown; Attack interval is significantly reduced, ATK +80% , attacks deal 125% of ATK as Arts damage and Slow targets for 0.2 seconds；If an attack passes through a \"Repeater\", it deals an additional 20% of ATK as Arts damage and extends the Slow duration by 0.2 seconds Skill grants 2 additional \"Repeaters\" that can be deployed during the skill's duration; \"Repeaters\" will not retreat during the skill, and retreat automatically when the skill ends Skill activation grants 20 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 20,
+            "spCost": 55,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Upon activation, stops attacking for 3 seconds, recalls all \"Repeaters\" and refreshes their deployment cooldown; Attack interval is significantly reduced, ATK +85% , attacks deal 130% of ATK as Arts damage and Slow targets for 0.2 seconds；If an attack passes through a \"Repeater\", it deals an additional 20% of ATK as Arts damage and extends the Slow duration by 0.2 seconds Skill grants 2 additional \"Repeaters\" that can be deployed during the skill's duration; \"Repeaters\" will not retreat during the skill, and retreat automatically when the skill ends Skill activation grants 20 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 20,
+            "spCost": 55,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Upon activation, stops attacking for 3 seconds, recalls all \"Repeaters\" and refreshes their deployment cooldown; Attack interval is significantly reduced, ATK +90% , attacks deal 135% of ATK as Arts damage ATK and Slow targets for 0.2 seconds；If an attack passes through a \"Repeater\", it deals an additional 20% of ATK as Arts damage and extends the Slow duration by 0.2 seconds Skill grants 2 additional \"Repeaters\" that can be deployed during the skill's duration; \"Repeaters\" will not retreat during the skill, and retreat automatically when the skill ends Skill activation grants 20 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 20,
+            "spCost": 55,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Upon activation, stops attacking for 3 seconds, recalls all \"Repeaters\" and refreshes their deployment cooldown; Attack interval is significantly reduced, ATK +95% , attacks deal 140% of ATK as Arts damage and Slow targets for 0.2 seconds；If an attack passes through a \"Repeater\", it deals an additional 25% of ATK as Arts damage and extends the Slow duration by 0.2 seconds Skill grants 2 additional \"Repeaters\" that can be deployed during the skill's duration; \"Repeaters\" will not retreat during the skill, and retreat automatically when the skill ends Skill activation grants 20 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 25,
+            "spCost": 50,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Upon activation, stops attacking for 3 seconds, recalls all \"Repeaters\" and refreshes their deployment cooldown; Attack interval is significantly reduced, ATK +100% , attacks deal 145% of ATK as Arts damage and Slow targets for 0.2 seconds；If an attack passes through a \"Repeater\", it deals an additional 25% of ATK as Arts damage and extends the Slow duration by 0.2 seconds Skill grants 2 additional \"Repeaters\" that can be deployed during the skill's duration; \"Repeaters\" will not retreat during the skill, and retreat automatically when the skill ends Skill activation grants 20 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 25,
+            "spCost": 50,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Upon activation, stops attacking for 3 seconds, recalls all \"Repeaters\" and refreshes their deployment cooldown; Attack interval is significantly reduced, ATK +105% , attacks deal 150% of ATK as Arts damage and Slow targets for 0.2 seconds；If an attack passes through a \"Repeater\", it deals an additional 25% of ATK as Arts damage and extends the Slow duration by 0.2 seconds Skill grants 2 additional \"Repeaters\" that can be deployed during the skill's duration; \"Repeaters\" will not retreat during the skill, and retreat automatically when the skill ends Skill activation grants 20 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 25,
+            "spCost": 50,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Upon activation, stops attacking for 3 seconds, recalls all \"Repeaters\" and refreshes their deployment cooldown; Attack interval is significantly reduced, ATK +115% , attacks deal 155% of ATK as Arts damage and Slow targets for 0.4 seconds；If an attack passes through a \"Repeater\", it deals an additional 30% of ATK as Arts damage and extends the Slow duration by 0.4 seconds Skill grants 2 additional \"Repeaters\" that can be deployed during the skill's duration; \"Repeaters\" will not retreat during the skill, and retreat automatically when the skill ends Skill activation grants 20 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 30,
+            "spCost": 45,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Upon activation, stops attacking for 3 seconds, recalls all \"Repeaters\" and refreshes their deployment cooldown; Attack interval is significantly reduced, ATK +125% , attacks deal 170% of ATK as Arts damage and Slow targets for 0.4 seconds；If an attack passes through a \"Repeater\", it deals an additional 30% of ATK as Arts damage and extends the Slow duration by 0.4 seconds Skill grants 2 additional \"Repeaters\" that can be deployed during the skill's duration; \"Repeaters\" will not retreat during the skill, and retreat automatically when the skill ends Skill activation grants 20 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 31,
+            "spCost": 43,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Upon activation, stops attacking for 3 seconds, recalls all \"Repeaters\" and refreshes their deployment cooldown; Attack interval is significantly reduced, ATK +135% , attacks deal 185% of ATK as Arts damage and Slow targets for 0.4 seconds；If an attack passes through a \"Repeater\", it deals an additional 30% of ATK as Arts damage and extends the Slow duration by 0.4 seconds Skill grants 2 additional \"Repeaters\" that can be deployed during the skill's duration; \"Repeaters\" will not retreat during the skill, and retreat automatically when the skill ends Skill activation grants 20 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 32,
+            "spCost": 42,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Upon activation, stops attacking for 3 seconds, recalls all \"Repeaters\" and refreshes their deployment cooldown; Attack interval is significantly reduced, ATK +145% , attacks deal 200% of ATK as Arts damage and Slow targets for 0.4 seconds；If an attack passes through a \"Repeater\", it deals an additional 30% of ATK as Arts damage and extends the Slow duration by 0.4 seconds Skill grants 2 additional \"Repeaters\" that can be deployed during the skill's duration; \"Repeaters\" will not retreat during the skill, and retreat automatically when the skill ends Skill activation grants 20 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 33,
+            "spCost": 40,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": null,
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": null
+  },
+  "baseSkills": [],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Aphrissa's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "BLA-Y: The Third Phase",
+      "mission": {
+        "requirement1": "During battle, have your own Aphrissa use The Essence of Chaos a total of 6 times",
+        "requirement2": "Clear Side Story DV-8 with a 3-star rating; you must deploy your own Aphrissa, and have her deal at least 20,000 damage"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "Cost -8 , HP +120 , ATK +45",
+          "effectLabel": "New trait",
+          "effectText": "Reduces Deployment Cost",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "Cost -8 , HP +165 , ATK +60",
+          "effectLabel": "Link Protocol improved",
+          "effectText": "Can deploy a \"Repeater\" for 35 seconds, which changes the direction of her attacks and increases their range by 2; ATK +30% while the Repeater is deployed",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "Cost -8 , HP +200 , ATK +70",
+          "effectLabel": "Link Protocol improved",
+          "effectText": "Can deploy a \"Repeater\" with reduced redeployment time for 35 seconds, which changes the direction of her attacks and increases their range by 2; ATK +35% while the Repeater is deployed",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Aphrissa is a\nColumbian\nwho mainly resides in\nBolívar\n. She is an ex-associate professor at the La Unidad Campus of the Luminas University, and had achieved feats in various fields, including Applied\nOriginium\nStudies, Informatics, and Computational Science. After the Great March of Bolívar, she had resigned from her teaching position and is now employed in\nRhodes Island\nas a\nCaster\nOperator.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "jbbTBTHB0-M",
+      "creator": "SUPAH"
+    },
+    {
+      "videoId": "aKPhKh_moqc",
+      "creator": "FrostByte262"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 679,
+          "atk": 379,
+          "def": 51,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 31,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 970,
+          "atk": 567,
+          "def": 78,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 31,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "4-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 970,
+          "atk": 567,
+          "def": 78,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 34,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 1261,
+          "atk": 727,
+          "def": 107,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 34,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "5-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1261,
+          "atk": 727,
+          "def": 107,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 34,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 1660,
+          "atk": 876,
+          "def": 128,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 34,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "5-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 110,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "造影检测结果显示，该干员体内脏器轮廓清晰，未见异常阴影，循环系统内源石颗粒检测未见异常，无矿石病感染迹象，现阶段可确认为非矿石病感染者。\n\n【体细胞与源石融合率】0%\n干员谬因没有被源石感染的迹象。\n\n【血液源石结晶密度】0.16u/L\n虽然所从事的研究需要长期接触源石，但干员谬因的防护工作做得十分到位，故其数值趋近正常。\n\n“没有感染矿石病，各项测试结果都很正常，非常标准的诊断报告——你的表情怎么凝重成这样？”\n“奇怪，我是什么时候写下了这份报告？”"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "【回总部人事部信】\n受当前局势影响，卢米内斯大学（拉乌尼达分校）半数以上的哥伦比亚籍教职员工已陆续撤离玻利瓦尔。幸运的是，在教务部联络人蕾切尔女士的热心协助下，我们顺利完成了谬因干员的履历核验。经确认，其就读、毕业及任职记录，均与其本人提交的入职信息完全一致——她的确在年仅十二岁时，便已进入该校应用源石学专业学习，并于四年后取得博士学位，留校任教至今。\n但同样令人惊讶的是，这位堪称“天才”的源石科技研究员，在任教的八年间，仅发表过三篇学术论文，出席学术会议的记录更是少之又少。虽说玻利瓦尔长期陷于战乱，整体的科研环境不及哥伦比亚本土，可谬因干员这样的工作状态，着实让人有些担心。\n\n【语音记录】\n偷懒？不，谬因在工程部的表现几乎无可挑剔。无论是棘手的实验数据分析，还是装备研发跟进和后续改造，她都处理得得心应手。听说她还答应了医疗部，要去病房给孩子们开设“走进源石科学”小课堂呢。你瞧，她怎么都不像是那种无心科研，一份教学文档用了七年都不换的人吧！\n你说她之前在卢米内斯大学任教？还是拉乌尼达分校？嘶，那情况就有些复杂了。我想想该怎么讲......咳，这事儿，得从三四十年前说起咯。\n\n卢米内斯大学坐落于麦克斯哥伦比亚特区，是联邦独立后首批建立的高等学府之一，曾为各部门、各行业输送了大量理工科人才。上世纪四十年代初，学校被正式划归哥伦比亚国防部管辖，自此蒙上了浓厚的军工色彩。\n六十年代中期，伴随着“提前遏制”战略的推行，校发展规划部在玻利瓦尔联合政府辖下的拉乌尼达设立了第一座分校。消息一出，各界学者纷纷表示反对。迫于内外压力，卢米内斯大学本土的各个学院接连向校长致函，拉乌尼达分校的建设也因此被延缓。不过，由于背靠国防部和联合政府，分校的研发资金和工作待遇一直都极具竞争力，许多手头拮据的哥伦比亚研究员仍会选择前往拉乌尼达，以期实现自己的抱负。到了八十年代初，分校发展已完全步入正轨。但因早年的建校问题，不少哥伦比亚本土的研究员仍对分校产出的科研成果抱有一定的偏见。"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "敌人把这场行动谎称为“撤离”。他们对外宣称，从北部撤走的全是平民。但我们查验后发现，里面实则混入了大批真正玻利瓦尔人士兵。他们正不断向南方集结，企图对我方数座移动城市和聚落发动恐怖袭击。\n没错，昨天那场针对我方人道主义援助基地特科马防控镇的袭击，正是这场阴谋的预演。长官，这根本不是什么“撤离”。请务必转达联合议会：这是一场蓄谋已久的“行军”。\n——大行军事件后，在哥伦比亚军事法庭上播放的一段录音\n\n【克洛丝的行动记录】\n截至目前，哥伦比亚国防部已将近来发生在玻利瓦尔的一系列极端暴力事件，定性为一场以平民为掩护的大型军事行动。真正玻利瓦尔人方面对此表示强烈谴责。双方的矛盾极有可能再度升级。\nA1小队成员克洛丝、米格鲁，以及部分驻玻利瓦尔办事处的罗德岛干员共同参与了此次行动。根据我们的观察，虽然撤离的队伍中的确有部分士兵，但这次行动的主体，无疑是那些受北部封锁影响的普通市民。\n\n那天夜里，原定在西南部峡谷与我们会合的米格鲁并未按时抵达。两天后我们才得知，为解救被困在联合政府猎犬病防控镇特科马的患者，米格鲁和部分队伍成员临时改道去了特科马。随后发生的便是：黑流吞没了整片区域，许多人因此失踪，米格鲁也是其中之一。\n联合政府后续发布的声明称，是一支真正玻利瓦尔人的军队袭击了小镇，导致储藏库发生爆炸，最终酿成了惨剧。\n但我想，情况绝非如此。\n\nA1小队克洛丝，申请返回事故区寻找米格鲁。我能感受到，她一定还在那片树林。\n\n在河谷附近，我遇到了受伤的谬因小姐。所幸她当时并未被黑流感染。简单处理了伤口后，我们便分开了。\n\n【语音记录】\n当时，我接受了一支哥伦比亚探险队的邀请，作为小队的信息联络员，随他们前往黑流树海附近进行调查。谁知道这一去，就遇上了波及整个玻利瓦尔的多索雷斯动乱和大行军......小队也因此被冲散。\n申请访问罗德岛的理由？一方面，当然是为了表达感谢；另一方面，也是想再找一个合适的地方，继续自己的研究工作。看您的表情，还有疑惑的地方？呵呵，请直接问吧，我都会如实回答。"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "那本是个普通的下午，谬因照例踩着点走进病房，准备给孩子们上课。一进门，却发现听众里多了一位意料之外的客人——Miss.Christine。下课后，女士翘着尾巴绕着她转悠了好几圈。可当谬因刚蹲下身，想伸手摸摸女士的下巴时，女士却倏地一跃而起，审视般打量起她。\n被Miss.Christine拒绝摸摸并不稀奇，可病房里的孩子们却莫名上了心。他们联名给就在总部的“养宠爱好者交流会”写了封信，想帮谬因老师争取一个“如愿摸摸小动物”的机会。就这样，谬因收到邀请，参加了那次聚会。\n聚会上，一只小循兽摇着尾巴凑到她跟前。谬因任由小家伙蹭着她的手心，一人一兽相处得十分融洽。但奇怪的是，慕斯的“猫猫”们却对她有些戒备——每当谬因伸出手，它们就会迅速弓起身，逃出她的抚摸范围，只围着她打转。这就怪了，身为菲林，谬因干员似乎格外不受菲林兽亲们的亲近。难道是她身上有它们不喜欢的气息？搞不明白......\n闲聊中大家得知，谬因曾养过一只循兽。有干员顺口问她要不要再养一只，她却微笑着摇了摇头。\n\n“从我记事起，那只小循兽就一直在我身边。五岁那年，全家搬到了玻利瓦尔中部的一座小镇。可就在抵达的那天，小循兽便跑进了镇外的树林，到天黑都没有回来。第二天一早，我想到树林里去找它，可镇上的大人们却不同意——毕竟，玻利瓦尔的树林里藏着太多的秘密。也许是某个军阀的驻防地，也许是兜售违禁品的黑市，又或许......”\n“等等！我们不是在说小循兽吗？怎么突然变成了这么恐怖的话题......”\n\n【罗德岛病房录音】\n“您又来听课了？\n“小羊们在甲板上晒太阳，狼群不知道跟着那位银白色的小姐去了哪儿。大帝先生最近会带着新的唱片来罗德岛看看，还有......”\n（拉长的喵呜声）\n“唉，好好好，我会好好回答您的问题。”\n（短促的喵呜声）\n“伤害已经造成，想要完全修复是不可能的。但请放心，现在，卡德霍已经重新寻回了他自己。”\n（满意的喵呜声）\n“看您这反应......冒昧一问：我能否将您的到访，视作是对同类的担心？”\n（疑惑的喵呜声）\n“我的状态？呵呵，和您一样，女士。如果可能，希望您也能将我视为可以信任的......‘同类’。”"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "“洛伦茨”......曾有位洛伦茨是老师的旧识，两人研究领域相近，在很多场合都有过公开的交流。但后来因为一些丑闻，那位学者从学术界消失了。\n——异客\n\n【ZOOT访问记录】\n访问人：■■\n访问时间：？？？\n关键词：源石，信息，转写，等式\n警告：无访问权限。\n\n访问人：■■\n访问时间：？？？\n关键词：源石，干涉，临界值，不等式\n警告：非法访问。\n\n访问人：■■\n访问时间：？？？\n关键词：源石，存储，重构，■■■■\n警告：对话已终止。\n\n“博士，我对她的身份仍有怀疑，她对源石的了解程度远超我们的预料。我能从她身上感受到危险的气息，我担心——\n“但她在总部的确没有任何逾矩的行为......好吧，那就先维持原样。\n“不行！还是得让人事部的干员再去查查她的档案！ZOOT的加密程序我也要再检查一遍！”\n\n【权限记录】\n在可露希尔小姐的强烈要求下，我们对干员谬因的履历进行了第三次核查。复核结果与前两次无异——她的信息本身不存在任何问题。可......恰恰是这样一份严丝合缝的档案，反倒令人生疑。\n顺着她的姓氏，“洛伦茨”，我们从哥伦比亚学术圈翻出了一段往事：\n上世纪七十年代末，一位名为“罗伯特·洛伦茨”的应用源石学研究员，在三十岁出头的年纪，便凭数篇开创性的论文震动了哥伦比亚学术圈。但令人惊讶的是，这位风华正茂的学者并未留在哥伦比亚本土，而是应卢米内斯大学（拉乌尼达分校）的高薪邀请，远赴玻利瓦尔。此后，这位天才便接连陷入数桩丑闻。据目前可查的信息，这位“洛伦茨”似乎有为某位争议议员站台的经历；有参与某私人基金会违规挪用慈善捐款的嫌疑；甚至插足了某位本土学术权威的家庭关系......起初，这些说法尚且被视为是对他的诽谤，一些学者还公开呼吁大家理性看待科学家的个人选择。而随着“罗伯特·洛伦茨在玻利瓦尔进行非法实验”的消息不胫而走，这位年轻的学者迅速沦为了众矢之的。自那以后，这颗锋芒毕露的学术新星便再未得到本土学术界的认可。八十年代末的某一天，外界得到了他疑似已去世的消息。\n依据手头的资料，我们未能查到这位洛伦茨与干员谬因存在任何确切的关联。当下，也无法查到任何他在拉乌尼达组建家庭的明确记录......他人生最后几年的轨迹，几乎是一片空白。但我们始终怀疑，干员谬因和这位罗伯特·洛伦茨之间，存在某种关联。\n卢米内斯大学（拉乌尼达分校）——这座先后容纳过两位“洛伦茨”的校园，必定还藏着更多不为人知的秘密。它本身，似乎就是为某项更机密的行动披上的一层精巧的面纱。\n\n不觉得这是个相当精彩的故事吗？如果可能，真希望蓝卡坞的哪位大导演能相中它，拍成电影，想必能卖出不错的票房。\n——出现在博士桌面上的一张便签"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "睁大眼睛，托妮，你看到的一切都是真的。别相信那些家伙的鬼话，你不是什么“小罗伯特”“小洛伦茨”，你有你自己的名字，也该有你自己的人生。\n你出生在哥伦比亚，但因为我年轻时干的一些蠢事......也出于我的私心，你被悄悄地带到了特科马。之后发生的一切都如你所见：在猜想得到证实、理论得以实践后，这里没有变好，反而滋生了无数的痛苦和暴力。我没法回答你事情为何会变成这样。我知道自己犯下了大错，可我无法弥补——我明明不想把任何人拖入泥沼......我想要重新分清对与错，重新找到道德、正义和良心，却只发现自己这双试图触及真理的双手，早已沾满了罪孽。\n......但你还有未来，托妮，无论用什么办法，你都要离开特科马。我不知道你长大后会是什么样子，我猜，你大概仍会为科学着迷，对理想的模型充满热忱。如果真是这样，那我会为你祈祷......祈祷你会与我不同，你会比我厉害得多，能为自己的所有研究负责，为自己的每一个决定负责。\n特科马处处充斥着谎言，但你的人生不是。托妮，有人真切地爱过你，往后，也一定会有人在乎你最真实的样子。至于这台计算终端......我想了很久，还是决定把它留下。过去的事都与你无关，未来，就用它来记录你自己的事吧。\n对了，用户名是你的名字，密码也是。"
+    }
+  ]
+}

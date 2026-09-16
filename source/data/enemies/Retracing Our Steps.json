@@ -1,0 +1,2369 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act46side",
+    "label": "OS",
+    "name": "Retracing Our Steps",
+    "release_date": "2026-04-14"
+  },
+  "enemies": [
+    {
+      "slug": "snowchild",
+      "id": "enemy_10138_xdsnow",
+      "name": "Snowchild",
+      "index": "KL01",
+      "rank": "Normal",
+      "sort": 1079,
+      "hidden": false,
+      "icon": "/enemies-icons/Snowchild.webp",
+      "flavour_text": "Tiny creatures that hop around the uninhabited Kjerag snowfields. Rather careless and prone to accidents. In spring, their coat turns from snow-white to a dusty gray and grows fluffy.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Takes extra damage on colliding with high ground",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5500,
+            "atk": 200,
+            "def": 200,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "D",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "hitWall",
+              "parameters": {
+                "value": 5000.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "snowbrat",
+      "id": "enemy_10138_xdsnow_2",
+      "name": "Snowbrat",
+      "index": "KL02",
+      "rank": "Normal",
+      "sort": 1080,
+      "hidden": false,
+      "icon": "/enemies-icons/Snowbrat.webp",
+      "flavour_text": "Taller and more solidly built than other Snowchildren, they have become even more hyperactive due to the mysterious substance that landed on Karlan. Most have completed the achievement of going all the way around Kjerag.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Takes extra damage on colliding with high ground",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7000,
+            "atk": 300,
+            "def": 200,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "hitWall",
+              "parameters": {
+                "value": 5000.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "fluffy_snowball",
+      "id": "enemy_10139_xdseal",
+      "name": "Fluffy Snowball",
+      "index": "KL03",
+      "rank": "Normal",
+      "sort": 1081,
+      "hidden": false,
+      "icon": "/enemies-icons/Fluffy Snowball.webp",
+      "flavour_text": "Creatures indigenous to Kjerag, popular amongst tourists for their soft, fluffy fur and friendly nature. Some claim that their fur was once the main clothing material for the people of Kjerag, but there is no evidence to verify this claim.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Absorbs passing Snowchildren to increase its weight, HP, ATK, DEF, and RES",
+          "format": "normal"
+        },
+        {
+          "text": "Returns to initial form on colliding with high ground",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5500,
+            "atk": 200,
+            "def": 200,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "D",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "upgrade",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "growth",
+              "parameters": {
+                "enemy_xdseal_t[stack].atk": 200.0,
+                "enemy_xdseal_t[stack].def": 200.0,
+                "enemy_xdseal_t[stack].magic_resistance": 10.0,
+                "enemy_xdseal_t[stack].mass_level": 1.0,
+                "enemy_xdseal_t[stack].max_hp": 5500.0,
+                "enemy_xdseal_t[stack].max_stack_cnt": 3.0,
+                "range_radius": 0.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "penumbral_snowball",
+      "id": "enemy_10139_xdseal_2",
+      "name": "Penumbral Snowball",
+      "index": "KL04",
+      "rank": "Normal",
+      "sort": 1082,
+      "hidden": false,
+      "icon": "/enemies-icons/Penumbral Snowball.webp",
+      "flavour_text": "Creatures indigenous to Kjerag. The influence of the mysterious substance that landed on Karlan seems to have changed their friendly nature, and made their fur even softer and fluffier, providing excellent protection against the cold.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Absorbs passing Snowbrats to increase its weight, HP, ATK, DEF, and RES",
+          "format": "normal"
+        },
+        {
+          "text": "Returns to initial form on colliding with high ground",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7000,
+            "atk": 300,
+            "def": 200,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "upgrade",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "growth",
+              "parameters": {
+                "enemy_xdseal_t[stack].atk": 300.0,
+                "enemy_xdseal_t[stack].def": 200.0,
+                "enemy_xdseal_t[stack].magic_resistance": 10.0,
+                "enemy_xdseal_t[stack].mass_level": 1.0,
+                "enemy_xdseal_t[stack].max_hp": 7000.0,
+                "enemy_xdseal_t[stack].max_stack_cnt": 3.0,
+                "range_radius": 0.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "cave_snowsprite",
+      "id": "enemy_10140_xdbird",
+      "name": "Cave Snowsprite",
+      "index": "KL05",
+      "rank": "Normal",
+      "sort": 1083,
+      "hidden": false,
+      "icon": "/enemies-icons/Cave Snowsprite.webp",
+      "flavour_text": "Nocturnal creatures that dwell in the caves of Kjerag, able to fly in even the fiercest blizzards. Their main diet is berries, moss, and mushrooms. Kjerag hunter lore says that encountering them in the forests is a sign that the hunt will go well.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Can land on deployable high ground, where its attacks become ranged and deal Arts damage",
+          "format": "normal"
+        },
+        {
+          "text": "Increases Avalanche Warning Index when landing in an Avalanche Area",
+          "format": "normal"
+        },
+        {
+          "text": "Takes off again after some time",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4500,
+            "atk": 200,
+            "def": 100,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 2.0,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "D",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "land",
+              "sp_cost": 0,
+              "cooldown": 60.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "take_off",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "land_trigger",
+              "parameters": {
+                "land_cnt_max": 3.0,
+                "random_delay_max": 0.5,
+                "random_delay_min": 0.25
+              }
+            },
+            {
+              "key": "wait",
+              "parameters": {
+                "sp": 1.0,
+                "wait_duration": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "valley_snowsprite",
+      "id": "enemy_10140_xdbird_2",
+      "name": "Valley Snowsprite",
+      "index": "KL06",
+      "rank": "Normal",
+      "sort": 1084,
+      "hidden": false,
+      "icon": "/enemies-icons/Valley Snowsprite.webp",
+      "flavour_text": "Free creatures that dwell in the valleys of Kjerag. They are no longer afraid of the light due to the influence of the substance that landed on Karlan. Stronger and more agile, they are dangerous creatures that snatch prey from hunters.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Can land on deployable high ground, where its attacks become ranged and deal Arts damage",
+          "format": "normal"
+        },
+        {
+          "text": "Increases Avalanche Warning Index when landing in an Avalanche Area",
+          "format": "normal"
+        },
+        {
+          "text": "Takes off again after some time",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 300,
+            "def": 150,
+            "res": 15.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 2.0,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "land",
+              "sp_cost": 0,
+              "cooldown": 60.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "take_off",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "land_trigger",
+              "parameters": {
+                "land_cnt_max": 3.0,
+                "random_delay_max": 0.5,
+                "random_delay_min": 0.25
+              }
+            },
+            {
+              "key": "wait",
+              "parameters": {
+                "sp": 1.0,
+                "wait_duration": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "eggcradler_fowlbeast",
+      "id": "enemy_10141_xdpeng",
+      "name": "Eggcradler Fowlbeast",
+      "index": "KL07",
+      "rank": "Normal",
+      "sort": 1085,
+      "hidden": false,
+      "icon": "/enemies-icons/Eggcradler Fowlbeast.webp",
+      "flavour_text": "Fowlbeasts indigenous to Kjerag, clutching their eggs tightly with powerful claws. The eggs never drop or break. Rhine Lab bionics researchers are studying them in the hope of developing a new type of stabilizer.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Loses egg after being shifted, gaining Movement Speed and becoming unblockable",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7500,
+            "atk": 300,
+            "def": 150,
+            "res": 15.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 1.5,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "switch",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "speed",
+              "parameters": {
+                "move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "frostcradler_fowlbeast",
+      "id": "enemy_10141_xdpeng_2",
+      "name": "Frostcradler Fowlbeast",
+      "index": "KL08",
+      "rank": "Normal",
+      "sort": 1086,
+      "hidden": false,
+      "icon": "/enemies-icons/Frostcradler Fowlbeast.webp",
+      "flavour_text": "Fowlbeasts indigenous to Kjerag. The influence of the mysterious substance that landed on Karlan has strengthened their vision and sense of smell, but also made them more aggressive. They clutch an icy rock formed from an unhatched egg, which they use to dig for food and crack the skulls of enemies.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Loses egg after being shifted, gaining Movement Speed and becoming unblockable",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 400,
+            "def": 200,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 1.5,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "C",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "switch",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "speed",
+              "parameters": {
+                "move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "frostdillo",
+      "id": "enemy_10142_xdturt",
+      "name": "Frostdillo",
+      "index": "KL09",
+      "rank": "Elite",
+      "sort": 1087,
+      "hidden": false,
+      "icon": "/enemies-icons/Frostdillo.webp",
+      "flavour_text": "Creatures with heavy shells on their backs. Despite their intimidating appearance, they are actually docile and friendly and can be trained to serve as burdenbeasts. They can get back on their feet even when flipped on their backs.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Loses all DEF and RES and becomes unable to move for some time on colliding with high ground",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 500,
+            "def": 3200,
+            "res": 80.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "S+",
+            "res": "S+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "switch",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "switch_back",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "weak",
+              "parameters": {
+                "def": 0.0,
+                "magic_resistance": 0.0,
+                "weak_duration": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "rime_frostdillo",
+      "id": "enemy_10142_xdturt_2",
+      "name": "Rime Frostdillo",
+      "index": "KL10",
+      "rank": "Elite",
+      "sort": 1088,
+      "hidden": false,
+      "icon": "/enemies-icons/Rime Frostdillo.webp",
+      "flavour_text": "Creatures with heavy spiked shells on their backs. The influence of the mysterious substance that landed on Karlan has made them aggressive and agile. They can perform flips, turns, 180-degree about-faces, and triple rolls.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Loses all DEF and RES and becomes unable to move for some time on colliding with high ground",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 700,
+            "def": 3200,
+            "res": 80.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B+",
+            "def": "S+",
+            "res": "S+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "switch",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "switch_back",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "weak",
+              "parameters": {
+                "def": 0.0,
+                "magic_resistance": 0.0,
+                "weak_duration": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "snowcap",
+      "id": "enemy_10143_xdmush",
+      "name": "Snowcap",
+      "index": "KL11",
+      "rank": "Elite",
+      "sort": 1089,
+      "hidden": false,
+      "icon": "/enemies-icons/Snowcap.webp",
+      "flavour_text": "Large, umbrella-shaped mushrooms. They accumulate nutrients from spring through autumn, then grow rapidly in winter, reaching nearly a meter tall in two weeks. A favorite ingredient in Kjerag cheese fondue.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be shifted",
+          "format": "normal"
+        },
+        {
+          "text": "[Takes Root] at specific locations, causing its tile to become undeployable",
+          "format": "normal"
+        },
+        {
+          "text": "[Takes Root] Reduces damage taken and protects all units behind it from avalanches",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12000,
+            "atk": 500,
+            "def": 600,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 1.5,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "B",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "switch",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "switch_back",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "damage_resistance": 0.5,
+                "range_radius": 1.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "bright_snowcap",
+      "id": "enemy_10143_xdmush_2",
+      "name": "Bright Snowcap",
+      "index": "KL12",
+      "rank": "Elite",
+      "sort": 1090,
+      "hidden": false,
+      "icon": "/enemies-icons/Bright Snowcap.webp",
+      "flavour_text": "Massive, umbrella-shaped mushrooms. The influence of the mysterious substance that landed on Karlan makes their colors brighter and their texture more appealing, but Kjeragandr taught us to never eat colorful mushrooms.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be shifted",
+          "format": "normal"
+        },
+        {
+          "text": "[Takes Root] at specific locations, causing its tile to become undeployable",
+          "format": "normal"
+        },
+        {
+          "text": "[Takes Root] Reduces damage taken and protects all units behind it from avalanches",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 18000,
+            "atk": 800,
+            "def": 800,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 1.5,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "B+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "switch",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "switch_back",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "damage_resistance": 0.5,
+                "range_radius": 1.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "greathorn_rhuul",
+      "id": "enemy_10144_xdelk",
+      "name": "Greathorn Rhuul",
+      "index": "KL13",
+      "rank": "Elite",
+      "sort": 1091,
+      "hidden": false,
+      "icon": "/enemies-icons/Greathorn Rhuul.webp",
+      "flavour_text": "Burdenbeasts with massive horns on their heads. Their unique name comes from Kjeragandr's blessing. It is said that someone once witnessed Her mumbling to this creature: 'Rhuul, rhuul...' Since then, 'Rhuul' has become its new name.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "[Clash of Brawn] Performs Charged Attacks and tries to push units that block it",
+          "format": "normal"
+        },
+        {
+          "text": "After charging, deals damage to the target and pushes it back one tile; if unable to push, deals more damage and stuns the target for several seconds",
+          "format": "normal"
+        },
+        {
+          "text": "Charge can be interrupted by negative statuses like Stun and Shift",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 800,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "skill",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale_s": 1.0,
+                "duration": 8.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "data",
+              "parameters": {
+                "fail_duration": 5.0,
+                "fail_duration2": 4.0
+              }
+            }
+          ],
+          "immunities": [
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "blackhorn_rhuul",
+      "id": "enemy_10144_xdelk_2",
+      "name": "Blackhorn Rhuul",
+      "index": "KL14",
+      "rank": "Elite",
+      "sort": 1092,
+      "hidden": false,
+      "icon": "/enemies-icons/Blackhorn Rhuul.webp",
+      "flavour_text": "Sturdy burdenbeasts with massive horns on their heads. The influence of the mysterious substance that landed on Karlan has turned their horns black. The Saintess said: Once upon a time, there was a girl who, finding the sight of others accompanied by their pets endearing, wanted a pet of her own. She thought she should first give it a name...",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "[Clash of Brawn] Performs Charged Attacks and tries to push units that block it",
+          "format": "normal"
+        },
+        {
+          "text": "After charging, deals damage to the target and pushes it back one tile; if unable to push, deals more damage and stuns the target for several seconds",
+          "format": "normal"
+        },
+        {
+          "text": "Charge can be interrupted by negative statuses like Stun and Shift",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 1000,
+            "def": 800,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "B+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "skill",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale_s": 1.0,
+                "duration": 8.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "data",
+              "parameters": {
+                "fail_duration": 5.0,
+                "fail_duration2": 4.0
+              }
+            }
+          ],
+          "immunities": [
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "isbit",
+      "id": "enemy_10145_xdrock",
+      "name": "Isbit",
+      "index": "KL15",
+      "rank": "Elite",
+      "sort": 1093,
+      "hidden": false,
+      "icon": "/enemies-icons/Isbit.webp",
+      "flavour_text": "Icy rock giants with a mind of their own. The name 'Isbit' means 'ice cube' in Kjeragi. Kjeragi legends say that frozen rocks turn into giants to throw intruders off the side of Mount Karlan. The tale has proven effective at dissuading children from climbing Karlan on their own.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks deal splash damage",
+          "format": "normal"
+        },
+        {
+          "text": "Loses HP proportional to distance moved when shifted",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 1500,
+            "def": 2500,
+            "res": 80.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 7.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": 1.5,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A+",
+            "def": "S",
+            "res": "S+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "start",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "data",
+              "parameters": {
+                "atk_scale": 1.0,
+                "atk_scale_2": 1.0
+              }
+            },
+            {
+              "key": "unbalanced_bleed",
+              "parameters": {
+                "damage": 800.0,
+                "interval": 0.066
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "storisbit",
+      "id": "enemy_10145_xdrock_2",
+      "name": "Storisbit",
+      "index": "KL16",
+      "rank": "Elite",
+      "sort": 1094,
+      "hidden": false,
+      "icon": "/enemies-icons/Storisbit.webp",
+      "flavour_text": "Icy rock giants with a mind of their own. The name 'Storisbit' means 'giant ice cube' in Kjeragi. Even more massive due to influence from the mysterious substance that landed on Karlan, they indiscriminately attack anyone who climbs the holy mountain, forcing Rhine Lab researchers to postpone their plans to survey the peaks.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks deal splash damage",
+          "format": "normal"
+        },
+        {
+          "text": "Loses HP proportional to distance moved when shifted",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 24000,
+            "atk": 1500,
+            "def": 3000,
+            "res": 80.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 7.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": 1.5,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A+",
+            "def": "S+",
+            "res": "S+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "start",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "data",
+              "parameters": {
+                "atk_scale": 1.0,
+                "atk_scale_2": 1.0
+              }
+            },
+            {
+              "key": "unbalanced_bleed",
+              "parameters": {
+                "damage": 800.0,
+                "interval": 0.066
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "maiden_of_snow_and_ice",
+      "id": "enemy_1574_xdagt",
+      "name": "Maiden of Snow and Ice",
+      "index": "KL",
+      "rank": "Boss",
+      "sort": 1369,
+      "hidden": false,
+      "icon": "/enemies-icons/Maiden of Snow and Ice.webp",
+      "flavour_text": "The eons and the frost both weigh upon her. Beneath her silent visage, you see the complexity of her regard, regret, relief, and resolve.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can perform long-ranged attacks that inflict Cold",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically gains increased ATK and DEF",
+          "format": "normal"
+        },
+        {
+          "text": "After a long time has passed, deals Arts splash damage to all allied units on the field, and drains all Life Points",
+          "format": "normal"
+        },
+        {
+          "text": "[Rimechill] Stops attacking, summoning several <'Coldness'> to lock on to the location of the <Karlan Saintess> and release there; the number of <'Coldness'> increases with each cast",
+          "format": "normal"
+        },
+        {
+          "text": "<'Coldness'> takes shape after some time and flies towards the target; if not destroyed before it reaches the target, deals Arts damage in a large area and increases Avalanche Warning Index in the area",
+          "format": "normal"
+        },
+        {
+          "text": "When <Kjeragandr> is on the field, also summons an equivalent number of <'Coldness'> and releases them at a targeted Operator",
+          "format": "normal"
+        },
+        {
+          "text": "First Phase",
+          "format": "title"
+        },
+        {
+          "text": "Cannot be attacked; can only be damaged by [Pious Prayer] from the <Karlan Saintess>",
+          "format": "normal"
+        },
+        {
+          "text": "Phase 2",
+          "format": "title"
+        },
+        {
+          "text": "[Wintertide] Stops attacking whenever HP drops by a certain percentage, summoning <Saintess' Snowrobe> to imprison the <Karlan Saintess>; during this time, <Kjeragandr> will continuously summon icicles to attack allied units, increasing the Avalanche Warning Index of areas where the icicles land",
+          "format": "normal"
+        },
+        {
+          "text": "<Saintess' Snowrobe> continuously loses HP, releasing the <Karlan Saintess> when destroyed, allowing her to move again",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 125000,
+            "atk": 600,
+            "def": 600,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 7.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.1,
+            "range": null,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "B",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "p1_hurt",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 100,
+              "parameters": {
+                "aoe_stack_delay": 15.0,
+                "hurt_duration": 12.0
+              }
+            },
+            {
+              "key": "triggerAoe",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 70,
+              "parameters": {}
+            },
+            {
+              "key": "summon",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 80,
+              "parameters": {
+                "add_cnt": 1.0,
+                "duration": 12.0,
+                "max_cnt": 3.0,
+                "source_cnt": 1.0,
+                "startPos1": "(4,9)",
+                "startPos2": "(4,11)",
+                "summon_cnt": 1.0
+              }
+            },
+            {
+              "key": "p2_lock",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 0.0,
+              "priority": 90,
+              "parameters": {}
+            },
+            {
+              "key": "summon2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 80,
+              "parameters": {
+                "add_cnt": 0.0,
+                "duration": 12.0,
+                "max_cnt": 3.0,
+                "source_cnt": 1.0,
+                "startPos1": "(4,9)",
+                "startPos3": "(4,11)",
+                "summon_cnt": 3.0
+              }
+            },
+            {
+              "key": "doom",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 0.0,
+              "priority": 99,
+              "parameters": {
+                "value": 30.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "p1_growth",
+              "parameters": {
+                "atk": 0.1,
+                "def": 0.1,
+                "interval": 120.0,
+                "trig_cnt": 3.0
+              }
+            },
+            {
+              "key": "p2_data",
+              "parameters": {
+                "enemy_xdagt_t[p2_aoe_trigger].interval": 45.0,
+                "enemy_xdagt_t[p2_summon_trigger].interval": 30.0,
+                "freeze": 5.0
+              }
+            },
+            {
+              "key": "passive",
+              "parameters": {
+                "doom_time": 480.0,
+                "max_point": 4.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "duration": 10.0,
+                "freeze": 5.0
+              }
+            },
+            {
+              "key": "trigger_stack",
+              "parameters": {
+                "enemy_xdagt_t[aoe_trigger].hp_ratio": 2.0,
+                "enemy_xdagt_t[lock_trigger].hp_ratio": 0.3
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 100,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 150000,
+            "atk": 750,
+            "def": 750,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 7.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.1,
+            "range": null,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "B+",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "p1_hurt",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 100,
+              "parameters": {
+                "aoe_stack_delay": 15.0,
+                "hurt_duration": 12.0
+              }
+            },
+            {
+              "key": "triggerAoe",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 70,
+              "parameters": {}
+            },
+            {
+              "key": "summon",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 80,
+              "parameters": {
+                "add_cnt": 1.0,
+                "duration": 12.0,
+                "max_cnt": 3.0,
+                "source_cnt": 1.0,
+                "startPos1": "(6,5)",
+                "startPos2": "(6,7)",
+                "summon_cnt": 1.0
+              }
+            },
+            {
+              "key": "p2_lock",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 0.0,
+              "priority": 90,
+              "parameters": {}
+            },
+            {
+              "key": "summon2",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 80,
+              "parameters": {
+                "add_cnt": 0.0,
+                "duration": 12.0,
+                "max_cnt": 3.0,
+                "source_cnt": 1.0,
+                "startPos1": "(6,5)",
+                "startPos3": "(6,7)",
+                "summon_cnt": 3.0
+              }
+            },
+            {
+              "key": "doom",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 0.0,
+              "priority": 99,
+              "parameters": {
+                "value": 30.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "p1_growth",
+              "parameters": {
+                "atk": 0.1,
+                "def": 0.1,
+                "interval": 120.0,
+                "trig_cnt": 3.0
+              }
+            },
+            {
+              "key": "p2_data",
+              "parameters": {
+                "enemy_xdagt_t[p2_aoe_trigger].interval": 45.0,
+                "enemy_xdagt_t[p2_summon_trigger].interval": 30.0,
+                "freeze": 5.0
+              }
+            },
+            {
+              "key": "passive",
+              "parameters": {
+                "doom_time": 480.0,
+                "max_point": 3.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "duration": 10.0,
+                "freeze": 5.0
+              }
+            },
+            {
+              "key": "trigger_stack",
+              "parameters": {
+                "enemy_xdagt_t[aoe_trigger].hp_ratio": 2.0,
+                "enemy_xdagt_t[lock_trigger].hp_ratio": 0.3
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 100,
+            "recovery": "Over time",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "kjeragandr",
+      "id": "enemy_1575_xdmon",
+      "name": "Kjeragandr",
+      "index": "Kj",
+      "rank": "Boss",
+      "sort": 1370,
+      "hidden": false,
+      "icon": "/enemies-icons/Kjeragandr.webp",
+      "flavour_text": "As white, as beautiful, as vast as the great icefields, She is mesmerizing and magnificent, beyond reckoning then, now, and forever.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Periodically gives <Maiden of Snow and Ice> protection, preventing her from being attacked",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks together with <Maiden of Snow and Ice>, dealing Arts damage to units in an entire row and inflicting Cold",
+          "format": "normal"
+        },
+        {
+          "text": "Partners with <Maiden of Snow and Ice> to unleash [Rimechill] and [Wintertide], boosting skill effects",
+          "format": "normal"
+        },
+        {
+          "text": "[Silent Whiteout] Deals heavy Arts damage to all units on the field and inflicts Cold, shared by all allied units; Cold duration increases with each cast; can be cast when not on the field",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 125000,
+            "atk": 600,
+            "def": 600,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 7.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.1,
+            "range": null,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "B",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "start",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 100,
+              "parameters": {}
+            },
+            {
+              "key": "p2_sheild",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 0.0,
+              "priority": 99,
+              "parameters": {
+                "shield_cd": 20.0
+              }
+            },
+            {
+              "key": "summon",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 80,
+              "parameters": {
+                "duration": 12.0
+              }
+            },
+            {
+              "key": "aoe",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 70,
+              "parameters": {
+                "atk_scale": 8.0,
+                "freeze": 7.0,
+                "freeze_add": 1.0,
+                "freeze_max": 12.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "m2_data",
+              "parameters": {
+                "atk_scale_m_2": 1.5,
+                "lock_duration": 1.5,
+                "sp": 1.0
+              }
+            },
+            {
+              "key": "p2_data",
+              "parameters": {
+                "freeze": 7.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 150000,
+            "atk": 750,
+            "def": 750,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 7.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.1,
+            "range": null,
+            "weight": 10,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "B+",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "E",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "start",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 100,
+              "parameters": {}
+            },
+            {
+              "key": "p2_sheild",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 0.0,
+              "priority": 99,
+              "parameters": {
+                "shield_cd": 20.0
+              }
+            },
+            {
+              "key": "summon",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 80,
+              "parameters": {
+                "duration": 12.0
+              }
+            },
+            {
+              "key": "aoe",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 70,
+              "parameters": {
+                "atk_scale": 8.0,
+                "freeze": 7.0,
+                "freeze_add": 1.0,
+                "freeze_max": 12.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "m2_data",
+              "parameters": {
+                "atk_scale_m_2": 1.5,
+                "lock_duration": 1.5,
+                "sp": 1.0
+              }
+            },
+            {
+              "key": "p2_data",
+              "parameters": {
+                "freeze": 7.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "karlan_saintess",
+      "id": "enemy_1576_spbell",
+      "name": "Karlan Saintess",
+      "index": "KL",
+      "rank": "Elite",
+      "sort": 1371,
+      "hidden": false,
+      "icon": "/enemies-icons/Karlan Saintess.webp",
+      "flavour_text": "The chosen one. She rings her bell, again and again, for you, and for Her.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Revives when defeated",
+          "format": "normal"
+        },
+        {
+          "text": "First Phase",
+          "format": "title"
+        },
+        {
+          "text": "[Pious Prayer] Prays at specific locations, dealing damage to and paralyzing the <Maiden of Snow and Ice> when prayer is complete",
+          "format": "normal"
+        },
+        {
+          "text": "Prayer can be interrupted by negative statuses like Stun and Shift",
+          "format": "normal"
+        },
+        {
+          "text": "Ritual enters the second phase when all prayer steps are complete",
+          "format": "normal"
+        },
+        {
+          "text": "Phase 2",
+          "format": "title"
+        },
+        {
+          "text": "[Heart of Breakthrough] Periodically attacks, breaking the protection of <Kjeragandr> and allowing the <Maiden of Snow and Ice> to be attacked",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 1000,
+            "def": 250,
+            "res": 15.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 10.0,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "A",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "pray",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 36.0,
+                "hp_ratio": 0.25,
+                "trigger_delay": 5.0
+              }
+            },
+            {
+              "key": "hurt",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 100,
+              "parameters": {}
+            },
+            {
+              "key": "big_attack",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 30.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale_s": 3.75
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "passive",
+              "parameters": {
+                "stun": 10.0
+              }
+            },
+            {
+              "key": "reborn_1",
+              "parameters": {
+                "duration": 15.0
+              }
+            },
+            {
+              "key": "reborn_2",
+              "parameters": {
+                "duration": 15.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "coldness",
+      "id": "enemy_1577_iceball",
+      "name": "'Coldness'",
+      "index": "FR",
+      "rank": "Normal",
+      "sort": 1372,
+      "hidden": true,
+      "icon": null,
+      "flavour_text": "A chill comes over you. You feel a heavy weight on your shoulders, like snow gathering on pine branches.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Takes shape in place after some time and flies towards the target; if not destroyed before it reaches the target, self-destructs to deal Arts damage in a large area and increase Avalanche Warning Index in the area",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 750,
+            "def": 200,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.2,
+            "range": null,
+            "weight": 0,
+            "taunt": 1,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B+",
+            "def": "C",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "BigBomb",
+              "sp_cost": 0,
+              "cooldown": 999999.0,
+              "initial_cooldown": 999999.0,
+              "priority": 0,
+              "parameters": {
+                "big_bomb_damage": 750.0,
+                "range_radius": 2.0,
+                "sp": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "passive",
+              "parameters": {
+                "enemy_iceball_t[move].move_speed": 0.2,
+                "stop_duration": 12.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 7000,
+            "atk": 750,
+            "def": 200,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.2,
+            "range": null,
+            "weight": 0,
+            "taunt": 1,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B+",
+            "def": "C",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "BigBomb",
+              "sp_cost": 0,
+              "cooldown": 999999.0,
+              "initial_cooldown": 999999.0,
+              "priority": 0,
+              "parameters": {
+                "big_bomb_damage": 750.0,
+                "range_radius": 2.0,
+                "sp": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "passive",
+              "parameters": {
+                "enemy_iceball_t[move].move_speed": 0.2,
+                "stop_duration": 12.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "saintesss_snowrobe",
+      "id": "enemy_1578_icecage",
+      "name": "Saintess's Snowrobe",
+      "index": "KL",
+      "rank": "Normal",
+      "sort": 1373,
+      "hidden": true,
+      "icon": null,
+      "flavour_text": "This 'fine dress', perfectly fitting yet just like tears, once clothed many young women like her.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "When <Saintess's Snowrobe> is on the field, the <Karlan Saintess> is imprisoned and unable to move or attack",
+          "format": "normal"
+        },
+        {
+          "text": "<Saintess' Snowrobe> continuously loses HP, releasing the <Karlan Saintess> when destroyed",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 0,
+            "def": 200,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 1,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "E",
+            "def": "C",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "possess",
+              "parameters": {
+                "hp_ratio": 0.03,
+                "interval": 1.0,
+                "range_radius": 0.3
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 20000,
+            "atk": 0,
+            "def": 200,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 1,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "E",
+            "def": "C",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "possess",
+              "parameters": {
+                "hp_ratio": 0.03,
+                "interval": 1.0,
+                "range_radius": 0.3
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

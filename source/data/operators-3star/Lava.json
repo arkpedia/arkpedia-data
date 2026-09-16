@@ -1,0 +1,333 @@
+{
+  "name": "Lava",
+  "rarity": 3,
+  "class": "Caster",
+  "branch": "Splash Caster",
+  "faction": "Op Reserve A1",
+  "umbrellaFactions": [
+    "Rhodes Island"
+  ],
+  "connectedFactions": [
+    "Victoria"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "AoE"
+  ],
+  "trait": "Deals AOE Arts damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": "Lava the Purgatory",
+  "skins": [
+    "Bunch of Sunlight"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_121_lava",
+  "otherLanguages": {
+    "Chinese": "炎熔",
+    "Japanese": "ラヴァ",
+    "Korean": "라바"
+  },
+  "characterInfo": {
+    "File no.": "PA15",
+    "Operator Records": "Sisters Caring",
+    "Paradox Simulation": "Just a few little bugs!",
+    "Illustrator": "下野宏铭",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Kaori Mizuhashi",
+    "Chinese": "Ying Xie",
+    "English": "Díana Bermudez",
+    "Korean": "Kim Ha-young"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "Half a year",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "June 22nd",
+    "Race": "Sarkaz",
+    "Height": "154 cm",
+    "Infection Status": "Infection confirmed by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Quick Skill Usage",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Immediately obtains 15 Skill Points after deployment"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Immediately obtains 20 (+5) Skill Points after deployment"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Immediately obtains 30 Skill Points after deployment"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Immediately obtains 35 (+5) Skill Points after deployment"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ASPD +8"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Quick Skill Usage"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Lava's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +3 .",
+        "New talent: Quick Skill Usage .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Lava to Level 40.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 10000
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Tactical Chant α",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ASPD +10",
+            "initialSp": 0,
+            "spCost": 50,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ASPD +15",
+            "initialSp": 0,
+            "spCost": 50,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ASPD +20",
+            "initialSp": 0,
+            "spCost": 50,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ASPD +30",
+            "initialSp": 0,
+            "spCost": 45,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ASPD +35",
+            "initialSp": 0,
+            "spCost": 45,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ASPD +40",
+            "initialSp": 0,
+            "spCost": 45,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ASPD +50",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": null,
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": null
+  },
+  "baseSkills": [
+    {
+      "name": "Heat Charge α",
+      "facility": "Power Plant",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%"
+    },
+    {
+      "name": "Originium Work β",
+      "facility": "Factory",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to a Factory, Originium formula related productivity +35%"
+    }
+  ],
+  "modules": [],
+  "review": {
+    "official": "Born in Londinium in\nVictoria\n, Lava is the younger twin sister of her fellow\nOperator\n,\nHibiscus\n. After contracting\nOripathy\n, she came to\nRhodes Island\nfor treatment. She found the idea of saving lives appealing, and so volunteered for training.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 40,
+        "base": {
+          "hp": 614,
+          "atk": 321,
+          "def": 41,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 27,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 878,
+          "atk": 453,
+          "def": 69,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 27,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "2-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 55,
+        "base": {
+          "hp": 878,
+          "atk": 453,
+          "def": 69,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 30,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 1141,
+          "atk": 582,
+          "def": 95,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 30,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "3-6"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 60,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests have shown the outlines of her internal organs to be indistinct due to abnormal shadows. Originium granules have been detected in her circulatory system, confirming her to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 9.4%\nShe presents no obvious external symptoms of Oripathy.\n\n[Blood Originium-Crystal Density] 0.25 u/L\nDegree of infection is minor and has not had any physical impact."
+    },
+    {
+      "section": "Originium Arts Rating",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Under the guidance of her Originium Arts instructor, Lava learned how to control basic Arts in less than a month despite never touching Originium before. Her methods are still rudimentary, and at present she can still only use simple flame conversions, but her stability and learning speed are astounding. If she trains for a long period of time, she may be able to reach a very high level."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Unlike other stray children hiding in dark alleys, Lava was born into a relatively normal middle-class Victorian family. Lava believes that one must personally put in effort to help others, rather than stand at a distance. When she was young, she enjoyed working with the poor and the orphaned. She was very aware how much pain they suffered, which planted in her heart the seeds of compassion and justice."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Lava is tough and ignores the advice of others when she moves into action. In fact, she is gentle and childlike at heart but prefers not to admit it to herself. Whenever anyone brings this up, she immediately changes the subject and tries to play it cool."
+    }
+  ]
+}

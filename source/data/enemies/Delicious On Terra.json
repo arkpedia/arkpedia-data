@@ -1,0 +1,1721 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act36side",
+    "label": "DT",
+    "name": "Delicious On Terra",
+    "release_date": "2025-03-10"
+  },
+  "enemies": [
+    {
+      "slug": "basic_slug",
+      "id": "enemy_10001_trslim",
+      "name": "Basic Slug",
+      "index": "DT1",
+      "rank": "Normal",
+      "sort": 841,
+      "hidden": false,
+      "icon": "/enemies-icons/Basic Slug.webp",
+      "flavour_text": "An Originium slug raised in captivity. Has a relatively low infection rate and a rather ordinary taste. Its anatomical structure is different from that of wild slugs.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flees when HP is under 50%! Gains bonus Movement Speed and cannot be blocked for a period of time.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4500,
+            "atk": 200,
+            "def": 50,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "D",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "StartRun",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "block_free_time": 3.0,
+                "move_speed": 1.5
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "gourmet_slug",
+      "id": "enemy_10001_trslim_2",
+      "name": "Gourmet Slug",
+      "index": "DT2",
+      "rank": "Normal",
+      "sort": 842,
+      "hidden": false,
+      "icon": "/enemies-icons/Gourmet Slug.webp",
+      "flavour_text": "A free-range Originium slug raised with care, though it still retains a fierce streak. The quality of its meat hasn't improved much either. Requires a complex process to make edible.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flees when HP is under 50%! Gains bonus Movement Speed and cannot be blocked for a period of time.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 250,
+            "def": 50,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "D",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "StartRun",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "block_free_time": 3.0,
+                "move_speed": 1.5
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "berry_slug",
+      "id": "enemy_10002_trtrsl",
+      "name": "Berry Slug",
+      "index": "DT3",
+      "rank": "Normal",
+      "sort": 843,
+      "hidden": false,
+      "icon": "/enemies-icons/Berry Slug.webp",
+      "flavour_text": "A creepy-crawly that lives in a mild environment, forming a symbiotic relationship with a particular species of plant. The berries it bears have a complex flavor, and are a rare delicacy.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Releases a blinding gleam upon taking damage, stunning surrounding allies for an extended period before attempting to escape via digging.",
+          "format": "normal"
+        },
+        {
+          "text": "Drops <Shiny Berry> if defeated before escaping.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5400,
+            "atk": null,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": null,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": null,
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": null,
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Shine",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 12.0,
+                "enemy_trtrsl_shine.interval": 15.0,
+                "enemy_trtrsl_shine.move_speed": 2.0,
+                "interval": 12.0,
+                "range_radius": 1.6,
+                "stun": 12.0
+              }
+            },
+            {
+              "key": "ShineEx",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 12.0,
+                "enemy_trtrsl_shine.interval": 15.0,
+                "enemy_trtrsl_shine.move_speed": 2.0,
+                "interval": 12.0,
+                "range_radius": 1.6,
+                "stun": 12.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Drop",
+              "parameters": {
+                "token_key": "trap_173_slfrut",
+                "token_key_ex": "trap_174_smfrut"
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "fruit_slug",
+      "id": "enemy_10002_trtrsl_2",
+      "name": "Fruit Slug",
+      "index": "DT4",
+      "rank": "Normal",
+      "sort": 844,
+      "hidden": false,
+      "icon": "/enemies-icons/Fruit Slug.webp",
+      "flavour_text": "A creepy-crawly that lives in a mild environment. When the ripe fruits dangle from the symbiotic plant atop its back, that's the best time to harvest them.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Releases a blinding gleam upon taking damage, stunning surrounding allies for an extended period before attempting to escape via digging.",
+          "format": "normal"
+        },
+        {
+          "text": "Drops <Shiny Berry> if defeated before escaping.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7200,
+            "atk": null,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": null,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": null,
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": null,
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Shine",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 12.0,
+                "enemy_trtrsl_shine.interval": 15.0,
+                "enemy_trtrsl_shine.move_speed": 2.0,
+                "interval": 12.0,
+                "range_radius": 1.6,
+                "stun": 12.0
+              }
+            },
+            {
+              "key": "ShineEx",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 12.0,
+                "enemy_trtrsl_shine.interval": 15.0,
+                "enemy_trtrsl_shine.move_speed": 2.0,
+                "interval": 12.0,
+                "range_radius": 1.6,
+                "stun": 12.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Drop",
+              "parameters": {
+                "token_key": "trap_173_slfrut",
+                "token_key_ex": "trap_174_smfrut"
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "berry_metal_crab",
+      "id": "enemy_10004_trdiam",
+      "name": "Berry Metal Crab",
+      "index": "DT7",
+      "rank": "Elite",
+      "sort": 847,
+      "hidden": false,
+      "icon": "/enemies-icons/Berry Metal Crab.webp",
+      "flavour_text": "A thriving metal crab that's rarely seen. The fruits attached to its body serve as spare energy reserves and can be made into delicious dishes.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When HP is under 50%, will eat the <Shiny Berry> it carries to recover HP.",
+          "format": "silence"
+        },
+        {
+          "text": "If not carrying a <Shiny Berry>, will pick up a <Shiny Berry> near it.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 550,
+            "def": 4000,
+            "res": 90.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.3,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B",
+            "def": "S+",
+            "res": "SS",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Recover",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "Eat",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "fruit_metal_crab",
+      "id": "enemy_10004_trdiam_2",
+      "name": "Fruit Metal Crab",
+      "index": "DT8",
+      "rank": "Elite",
+      "sort": 848,
+      "hidden": false,
+      "icon": "/enemies-icons/Fruit Metal Crab.webp",
+      "flavour_text": "An even rarer variant of metal crab. Its body is laden with even more fruits, and their scents have seeped into its steely carapace. Gluttons and gourmands across the land dream of having a taste.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When HP is under 50%, will eat the <Shiny Berry> it carries to recover HP.",
+          "format": "silence"
+        },
+        {
+          "text": "If not carrying a <Shiny Berry>, will pick up a <Shiny Berry> near it.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 650,
+            "def": 4000,
+            "res": 90.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.3,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B",
+            "def": "S+",
+            "res": "SS",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Recover",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "Eat",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "corrupted_soldier",
+      "id": "enemy_10005_trsmsb",
+      "name": "Corrupted Soldier",
+      "index": "DT9",
+      "rank": "Normal",
+      "sort": 849,
+      "hidden": false,
+      "icon": "/enemies-icons/Corrupted Soldier.webp",
+      "flavour_text": "A Sami soldier tainted by demonic corruption. It seems all that's left are base instincts.",
+      "race": "Collapsal",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes attacking <Berry Slugs> and <Fruit Slugs> that are not fleeing, causing them to Collapse.",
+          "format": "normal"
+        },
+        {
+          "text": "Gains bonus Movement Speed when exposed to a berry or fruit slug's gleam.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4000,
+            "atk": 350,
+            "def": 300,
+            "res": null,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "C",
+            "res": null,
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "corrupted_warrior",
+      "id": "enemy_10005_trsmsb_2",
+      "name": "Corrupted Warrior",
+      "index": "DT10",
+      "rank": "Normal",
+      "sort": 850,
+      "hidden": false,
+      "icon": "/enemies-icons/Corrupted Warrior.webp",
+      "flavour_text": "A brave warrior who could not escape the fate of demonic corruption. With all consciousness consumed, not even instincts remain.",
+      "race": "Collapsal",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes attacking <Berry Slugs> and <Fruit Slugs> that are not fleeing, causing them to Collapse.",
+          "format": "normal"
+        },
+        {
+          "text": "Gains bonus Movement Speed when exposed to a berry or fruit slug's gleam.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4800,
+            "atk": 420,
+            "def": 350,
+            "res": null,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "C",
+            "res": null,
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "corrupted_golem",
+      "id": "enemy_10006_trsmgi",
+      "name": "Corrupted Golem",
+      "index": "DT11",
+      "rank": "Elite",
+      "sort": 851,
+      "hidden": false,
+      "icon": "/enemies-icons/Corrupted Golem.webp",
+      "flavour_text": "A golem formed from dirt bound together by roots, summoned by a shaman. Unfortunately, it has been possessed by a demon. The ribbon tied to its arm warns, 'Do Not Approach'.",
+      "race": "Collapsal",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When HP is under 50% for the first time, scatters <Berry Slugs> all around it before gaining bonus Movement Speed.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 1300,
+            "def": 50,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "StartRun",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "move_speed": 1.5,
+                "unmove_duration": 2.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "warped_golem",
+      "id": "enemy_10006_trsmgi_2",
+      "name": "Warped Golem",
+      "index": "DT12",
+      "rank": "Elite",
+      "sort": 852,
+      "hidden": false,
+      "icon": "/enemies-icons/Warped Golem.webp",
+      "flavour_text": "A golem summoned by a shaman for battle. Over many years of fighting, it too was possessed. The ribbon tied to its arm warns, 'Extremely Dangerous'.",
+      "race": "Collapsal",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When HP is under 50% for the first time, scatters <Fruit Slugs> all around it before gaining bonus Movement Speed.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 45000,
+            "atk": 1500,
+            "def": 50,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "StartRun",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_key": "enemy_10002_trtrsl_2",
+                "move_speed": 1.5,
+                "unmove_duration": 2.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "ink_brew",
+      "id": "enemy_10007_trspsb",
+      "name": "'Ink Brew'",
+      "index": "DT13",
+      "rank": "Elite",
+      "sort": 853,
+      "hidden": false,
+      "icon": "/enemies-icons/'Ink Brew'.webp",
+      "flavour_text": "A carefree Ink Spirit named by the painter herself. An inebriating aroma wafts from it, perhaps due to wine mixed into the ink—a joke from an old friend with a fondness for drink.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Non-Leader enemies passing by this enemy gain bonus ASPD and Movement Speed, and take less Physical and Arts damage.",
+          "format": "normal"
+        },
+        {
+          "text": "Really likes <Shiny Berries>.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 600,
+            "def": 800,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.3,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 0.9,
+            "weight": 6,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "B+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Ally",
+              "parameters": {
+                "def": -1.0,
+                "max_hp": -0.5
+              }
+            },
+            {
+              "key": "Aura",
+              "parameters": {
+                "attack@damage_resistance": 0.4,
+                "attack_speed": 50.0,
+                "damage_resistance": 0.5,
+                "duration": 300.0,
+                "move_speed": 1.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "merry_ink_brew",
+      "id": "enemy_10007_trspsb_2",
+      "name": "Merry 'Ink Brew'",
+      "index": "DT14",
+      "rank": "Elite",
+      "sort": 854,
+      "hidden": false,
+      "icon": "/enemies-icons/Merry 'Ink Brew'.webp",
+      "flavour_text": "A carefree Ink Spirit named by the painter herself. Its presence influences those nearby to sing heartily or ramble on—surely inspired by an old friend with a fondness for drink.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Non-Leader enemies passing by this enemy gain bonus ASPD and Movement Speed, and take less Physical and Arts damage.",
+          "format": "normal"
+        },
+        {
+          "text": "Really likes <Shiny Berries>.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 18000,
+            "atk": 700,
+            "def": 800,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.3,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 0.9,
+            "weight": 6,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "B+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Ally",
+              "parameters": {
+                "def": -1.0,
+                "max_hp": -0.5
+              }
+            },
+            {
+              "key": "Aura",
+              "parameters": {
+                "attack@damage_resistance": 0.4,
+                "attack_speed": 50.0,
+                "damage_resistance": 0.5,
+                "duration": 300.0,
+                "move_speed": 1.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sea_terror_chest",
+      "id": "enemy_10008_trbbox",
+      "name": "Sea Terror Chest",
+      "index": "DT15",
+      "rank": "Elite",
+      "sort": 855,
+      "hidden": false,
+      "icon": "/enemies-icons/Sea Terror Chest.webp",
+      "flavour_text": "A Sea Terror disguised as a treasure chest. It emits ultrasonic sounds that disrupt the brain waves of anyone who touches it, ensnaring unsuspecting treasure hunters.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Shrieks for a while when awakened, continuously causing Nervous Impairment to surrounding allied units.",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks inflict Nervous Impairment.",
+          "format": "normal"
+        },
+        {
+          "text": "Drops <Chest Limb?> upon defeat.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 450,
+            "def": 700,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "C",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Scream",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Drop",
+              "parameters": {
+                "cnt": 1.0,
+                "ep_damage_ratio": 0.2,
+                "token_key": "trap_177_tentcl"
+              }
+            },
+            {
+              "key": "DropEx",
+              "parameters": {
+                "cnt": 3.0,
+                "token_key": "trap_177_tentcl"
+              }
+            },
+            {
+              "key": "ScreamDebuff",
+              "parameters": {
+                "element_type": 1.0,
+                "ep_damage_value": 20.0,
+                "interval": 0.2
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sea_monster_chest",
+      "id": "enemy_10008_trbbox_2",
+      "name": "Sea Monster Chest",
+      "index": "DT16",
+      "rank": "Elite",
+      "sort": 856,
+      "hidden": false,
+      "icon": "/enemies-icons/Sea Monster Chest.webp",
+      "flavour_text": "A Sea Terror disguised as an ornate treasure chest. In addition to emitting ultrasonic sound waves, it has incredibly powerful tentacles, making it all the more difficult for entrapped prey to escape.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Shrieks for a while when awakened, continuously causing Nervous Impairment to surrounding allied units.",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks inflict Nervous Impairment.",
+          "format": "normal"
+        },
+        {
+          "text": "Drops <Chest Limb?> upon defeat.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12000,
+            "atk": 550,
+            "def": 700,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.7,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Scream",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Drop",
+              "parameters": {
+                "cnt": 1.0,
+                "ep_damage_ratio": 0.3,
+                "token_key": "trap_177_tentcl"
+              }
+            },
+            {
+              "key": "DropEx",
+              "parameters": {
+                "cnt": 3.0,
+                "token_key": "trap_177_tentcl"
+              }
+            },
+            {
+              "key": "ScreamDebuff",
+              "parameters": {
+                "element_type": 1.0,
+                "ep_damage_value": 30.0,
+                "interval": 0.2
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "tri_maw",
+      "id": "enemy_1557_trcerb",
+      "name": "'Tri-Maw'",
+      "index": "DT",
+      "rank": "Boss",
+      "sort": 1353,
+      "hidden": false,
+      "icon": "/enemies-icons/'Tri-Maw'.webp",
+      "flavour_text": "A giant hound with a rumbling tummy and three heads, each craving something different. Satisfy its picky palates to survive!",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical",
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "[Picky Palates] Clears all ingredients in the <Really Big Pot> at the start of each phase. Ingredients can only be added by defeating designated enemies. The current phase can be skipped by serving it a satisfying meal.",
+          "format": "normal"
+        },
+        {
+          "text": "Upon reaching the <Really Big Pot> without being subdued, if meal is not ready, deduct 1 Life Point.",
+          "format": "normal"
+        },
+        {
+          "text": "Takes less Physical and Arts damage based on the amount of ingredients in the <Really Big Pot>. The fewer ingredients there are, the less damage is taken.",
+          "format": "normal"
+        },
+        {
+          "text": "Becomes enraged when HP drops below 50%, greatly increasing ATK and Movement Speed, and becoming immune to most control effects.",
+          "format": "normal"
+        },
+        {
+          "text": "Forcibly adding special ingredients to the pot will cause it to get angry and refuse the meal, immediately enraging it and causing it to take less Physical and Arts damage.",
+          "format": "normal"
+        },
+        {
+          "text": "'This One!'",
+          "format": "title"
+        },
+        {
+          "text": "[Predation] After several attacks, the next attack deals increased Physical damage while lowering the target's DEF.",
+          "format": "normal"
+        },
+        {
+          "text": "'That One!'",
+          "format": "title"
+        },
+        {
+          "text": "[Howl of Hunger] Lets out an ear-splitting howl, stunning nearby allies and immediately waking all <Berry Slugs> and <Fruit Slugs> on the field.",
+          "format": "normal"
+        },
+        {
+          "text": "'Chow Time!'",
+          "format": "title"
+        },
+        {
+          "text": "[Flame of Gluttony] Shoots flames at a designated target, dealing increasing Arts damage over time. If the target leaves the field, triggers an explosion at the target's former location, dealing significant Arts damage.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 1000,
+            "def": 600,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 2.0,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "PowerAttack",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.5,
+                "def": -150.0
+              }
+            },
+            {
+              "key": "P2Skill",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 40.0,
+              "priority": 0,
+              "parameters": {
+                "range_radius": 1.6,
+                "stun": 4.5
+              }
+            },
+            {
+              "key": "P3Skill",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 8.0,
+                "enemy_trcerb_s3_debuff.aoe_damage_scale": 2.0,
+                "enemy_trcerb_s3_debuff.atk_scale_add": 0.03,
+                "enemy_trcerb_s3_debuff.atk_scale_cur": 0.025,
+                "enemy_trcerb_s3_debuff.atk_scale_max": 0.25,
+                "enemy_trcerb_s3_debuff.interval": 0.5,
+                "enemy_trcerb_s3_debuff.range_radius": 2.5,
+                "hit_duration": 7.6,
+                "range_radius": 2.0
+              }
+            },
+            {
+              "key": "StartEat",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": -1,
+              "parameters": {
+                "direction": 1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "ClearTrpotSp",
+              "parameters": {
+                "sp_cost_0": 90.0,
+                "sp_cost_1": 45.0,
+                "sp_cost_2": 42.0,
+                "sp_cost_3": 70.0
+              }
+            },
+            {
+              "key": "P1Food",
+              "parameters": {
+                "enemy_key": "enemy_10001_trslim"
+              }
+            },
+            {
+              "key": "P1Passive",
+              "parameters": {
+                "enemy_trcerb_branch.interval": 10.0
+              }
+            },
+            {
+              "key": "P2Food",
+              "parameters": {
+                "enemy_key": "enemy_10002_trtrsl"
+              }
+            },
+            {
+              "key": "P2Passive",
+              "parameters": {
+                "enemy_trcerb_branch.interval": 20.0
+              }
+            },
+            {
+              "key": "P3Food",
+              "parameters": {
+                "enemy_key": "enemy_10004_trdiam"
+              }
+            },
+            {
+              "key": "P3Passive",
+              "parameters": {
+                "atk_scale": 0.8,
+                "enemy_trcerb_branch.interval": 25.0
+              }
+            },
+            {
+              "key": "PositionCheck",
+              "parameters": {
+                "back_move_speed": 1.3,
+                "eat_col": 8.0,
+                "eat_move_speed": 4.0,
+                "eat_row": 5.0,
+                "enemy_trcerb_wait_to_eat.food_effect_level_1": 1.0,
+                "enemy_trcerb_wait_to_eat.food_effect_level_2": 2.0,
+                "enemy_trcerb_wait_to_eat.food_effect_level_3": 5.0,
+                "enemy_trcerb_wait_to_eat.interval": 3.0,
+                "wait_col": 1.0,
+                "wait_row": 5.0
+              }
+            },
+            {
+              "key": "Rage",
+              "parameters": {
+                "atk": 0.5,
+                "move_speed": 1.2
+              }
+            },
+            {
+              "key": "Strong",
+              "parameters": {
+                "damage_resistance_max": 0.8
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 40000,
+            "atk": 1200,
+            "def": 750,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 2.0,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "PowerAttack",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.5,
+                "def": -150.0
+              }
+            },
+            {
+              "key": "P2Skill",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 20.0,
+              "priority": 0,
+              "parameters": {
+                "range_radius": 1.6,
+                "stun": 5.0
+              }
+            },
+            {
+              "key": "P3Skill",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 8.0,
+                "enemy_trcerb_s3_debuff.aoe_damage_scale": 2.0,
+                "enemy_trcerb_s3_debuff.atk_scale_add": 0.03,
+                "enemy_trcerb_s3_debuff.atk_scale_cur": 0.03,
+                "enemy_trcerb_s3_debuff.atk_scale_max": 0.35,
+                "enemy_trcerb_s3_debuff.interval": 0.5,
+                "enemy_trcerb_s3_debuff.range_radius": 2.5,
+                "hit_duration": 7.6,
+                "range_radius": 2.0
+              }
+            },
+            {
+              "key": "StartEat",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": -1,
+              "parameters": {
+                "direction": 1.0,
+                "sp_cost_0": 120.0,
+                "sp_cost_1": 100.0,
+                "sp_cost_2": 45.0,
+                "sp_cost_3": 50.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "ClearTrpotSp",
+              "parameters": {
+                "sp_cost_0": 90.0,
+                "sp_cost_1": 90.0,
+                "sp_cost_2": 45.0,
+                "sp_cost_3": 60.0
+              }
+            },
+            {
+              "key": "P1Food",
+              "parameters": {
+                "enemy_key": "enemy_1309_mhboar"
+              }
+            },
+            {
+              "key": "P1Passive",
+              "parameters": {
+                "enemy_trcerb_branch.interval": 35.0
+              }
+            },
+            {
+              "key": "P2Food",
+              "parameters": {
+                "enemy_key": "enemy_10002_trtrsl_2"
+              }
+            },
+            {
+              "key": "P2Passive",
+              "parameters": {
+                "enemy_trcerb_branch.interval": 60.0
+              }
+            },
+            {
+              "key": "P3Food",
+              "parameters": {
+                "enemy_key": "enemy_1050_lslime"
+              }
+            },
+            {
+              "key": "P3Passive",
+              "parameters": {
+                "atk_scale": 1.0,
+                "enemy_trcerb_branch.interval": 60.0
+              }
+            },
+            {
+              "key": "PositionCheck",
+              "parameters": {
+                "back_move_speed": 1.3,
+                "eat_col": 10.0,
+                "eat_move_speed": 4.0,
+                "eat_row": 4.0,
+                "enemy_trcerb_wait_to_eat.food_effect_level_1": 4.0,
+                "enemy_trcerb_wait_to_eat.food_effect_level_2": 3.0,
+                "enemy_trcerb_wait_to_eat.food_effect_level_3": 0.0,
+                "enemy_trcerb_wait_to_eat.interval": 3.0,
+                "wait_col": 6.0,
+                "wait_row": 7.0
+              }
+            },
+            {
+              "key": "Rage",
+              "parameters": {
+                "atk": 0.5,
+                "move_speed": 1.2
+              }
+            },
+            {
+              "key": "Strong",
+              "parameters": {
+                "damage_resistance_max": 0.8
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "raging_slug_eater",
+      "id": "enemy_10003_trwlpl",
+      "name": "Raging Slug Eater",
+      "index": "DT5",
+      "rank": "Elite",
+      "sort": 845,
+      "hidden": false,
+      "icon": "/enemies-icons/Raging Slug Eater.webp",
+      "flavour_text": "A lab-bred insectivorous plant. Due to mutations from a wrong nutrient fluid used by accident, it can now prey on more than just insects.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Devours a surrounding unit but requires an extended period to digest on the spot before devouring again.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 0,
+            "def": 250,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": null,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "E",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": null,
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Devour",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "Eat",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "InitEat",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 40.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "InitEat",
+              "parameters": {
+                "cnt": 2.0,
+                "token_key": "trap_173_slfrut"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "raging_man_eater",
+      "id": "enemy_10003_trwlpl_2",
+      "name": "Raging Man Eater",
+      "index": "DT6",
+      "rank": "Elite",
+      "sort": 846,
+      "hidden": false,
+      "icon": "/enemies-icons/Raging Man Eater.webp",
+      "flavour_text": "A biological weapon bred in a lab. Though a plant, it boasts astonishing bite force and digestive capabilities. What's even more terrifying is that they've started to appear in the wild.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Devours a surrounding unit but requires an extended period to digest on the spot before devouring again.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 13000,
+            "atk": 0,
+            "def": 250,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": null,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "E",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": null,
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Devour",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "Eat",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "InitEat",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 40.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "InitEat",
+              "parameters": {
+                "cnt": 2.0,
+                "token_key": "trap_173_slfrut"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

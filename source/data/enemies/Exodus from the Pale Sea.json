@@ -1,0 +1,1753 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act39sre",
+    "label": "EP",
+    "name": "Exodus from the Pale Sea",
+    "release_date": "2025-06-05"
+  },
+  "enemies": [
+    {
+      "slug": "bridge_builder",
+      "id": "enemy_10042_prtrop",
+      "name": "Bridge Builder",
+      "index": "PI1",
+      "rank": "Normal",
+      "sort": 913,
+      "hidden": false,
+      "icon": "/enemies-icons/Bridge Builder.webp",
+      "flavour_text": "Portable and quick to build, rope bridges are a convenient way to connect two salt ships. Bridge builders are responsible for constructing them, but they still need others to help hold them in place and prevent them from falling apart.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Invisible",
+          "format": "normal"
+        },
+        {
+          "text": "Builds rope bridges that allow units to cross",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 600,
+            "def": 150,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.65,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B",
+            "def": "D",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "BuildBridge",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "bridge_duration": 150.0,
+                "extra_skill_time": 1.0,
+                "interval": 2.0,
+                "loop_duration": 5.0,
+                "time_each_tile": 2.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "bridge_holder",
+      "id": "enemy_10042_prtrop_2",
+      "name": "Bridge Holder",
+      "index": "PI2",
+      "rank": "Normal",
+      "sort": 914,
+      "hidden": false,
+      "icon": "/enemies-icons/Bridge Holder.webp",
+      "flavour_text": "Portable and quick to build, rope bridges are a convenient way to connect two salt ships. These experienced bridge holders have steady hands, but have not figured out how to fix the structural defects of the bridge.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Invisible",
+          "format": "normal"
+        },
+        {
+          "text": "Builds rope bridges that allow units to cross",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 720,
+            "def": 300,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.65,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B+",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "BuildBridge",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "bridge_duration": 150.0,
+                "extra_skill_time": 1.0,
+                "interval": 2.0,
+                "loop_duration": 5.0,
+                "time_each_tile": 2.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "risk_seeking_sailor",
+      "id": "enemy_10043_sailor",
+      "name": "Risk-seeking Sailor",
+      "index": "PI3",
+      "rank": "Normal",
+      "sort": 915,
+      "hidden": false,
+      "icon": "/enemies-icons/Risk-seeking Sailor.webp",
+      "flavour_text": "Sailing in the Salt Flat is a hazardous affair to begin with, but some sailors seek even greater thrills, such as hanging from a flying fin, or firing themselves from saltheap cannons.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Movement Speed increases briefly when crossing a Rope Bridge or launched by a <Saltheap Cannon>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5500,
+            "atk": 350,
+            "def": 50,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "E",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "ep_damage_ratio": 0.3
+              }
+            },
+            {
+              "key": "MoveSpeedUp",
+              "parameters": {
+                "move_speed": 2.0,
+                "speed_up_duration": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "risk_surviving_sailor",
+      "id": "enemy_10043_sailor_2",
+      "name": "Risk-surviving Sailor",
+      "index": "PI4",
+      "rank": "Normal",
+      "sort": 916,
+      "hidden": false,
+      "icon": "/enemies-icons/Risk-surviving Sailor.webp",
+      "flavour_text": "Sailing in the Salt Flat is a hazardous affair to begin with, but some sailors seek even greater thrills, such as hanging from a flying fin, or firing themselves from saltheap cannons. Those who survive tend to go to even more extreme lengths to satisfy their thirst for danger.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Movement Speed increases briefly when crossing a Rope Bridge or launched by a <Saltheap Cannon>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6500,
+            "atk": 420,
+            "def": 60,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "E",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "ep_damage_ratio": 0.3
+              }
+            },
+            {
+              "key": "MoveSpeedUp",
+              "parameters": {
+                "move_speed": 2.0,
+                "speed_up_duration": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "garum_gourmet",
+      "id": "enemy_10044_wintun",
+      "name": "Garum Gourmet",
+      "index": "PI5",
+      "rank": "Normal",
+      "sort": 917,
+      "hidden": false,
+      "icon": "/enemies-icons/Garum Gourmet.webp",
+      "flavour_text": "Sailors recommend their favorite things to each other, including saltfin garum. Some sailors take it a little too far, however, and roll their barrels into each other's faces.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Movement Speed increases when carrying a Booze Barrel",
+          "format": "normal"
+        },
+        {
+          "text": "First attack consumes Booze Barrel to deal heavy Physical damage and create an area where enemies gain increased ASPD and Physical Dodge",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 9000,
+            "atk": 850,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "BlockedBoom",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "attack_speed": 100.0,
+                "blockee_atk_scale": 2.8,
+                "fixed_duration": 30.0,
+                "prob": 0.8
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "move_speed": 3.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "rum_gourmet",
+      "id": "enemy_10044_wintun_2",
+      "name": "Rum Gourmet",
+      "index": "PI6",
+      "rank": "Normal",
+      "sort": 918,
+      "hidden": false,
+      "icon": "/enemies-icons/Rum Gourmet.webp",
+      "flavour_text": "Sailors recommend their favorite things to each other, including rum. Not that rum needs recommending to begin with—everyone on the crew understands how valuable it is out on the flat, and would love to share it at any time.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Movement Speed increases when carrying a Booze Barrel",
+          "format": "normal"
+        },
+        {
+          "text": "First attack consumes Booze Barrel to deal heavy Physical damage and create an area where enemies gain increased ASPD and Physical Dodge",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10500,
+            "atk": 1000,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "A",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "BlockedBoom",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "attack_speed": 100.0,
+                "blockee_atk_scale": 2.8,
+                "fixed_duration": 30.0,
+                "prob": 0.8
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "move_speed": 3.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "lucky_flyfin",
+      "id": "enemy_10045_parrot",
+      "name": "Lucky Flyfin",
+      "index": "PI7",
+      "rank": "Normal",
+      "sort": 919,
+      "hidden": false,
+      "icon": "/enemies-icons/Lucky Flyfin.webp",
+      "flavour_text": "A female fin that leaps out of the salt layer during breeding season, gliding briefly in mid-air and releasing pleasant pheromones. Having one fall onto the deck is seen as a sign of good luck.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Low-Altitude Hovering; after losing Low-Altitude Hovering, becomes stunned for some time before taking off again",
+          "format": "normal"
+        },
+        {
+          "text": "Movement Speed briefly increases after taking damage for the first time. Sometimes carries <Risk-seeking Sailor>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 100,
+            "def": 0,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "E",
+            "def": "E",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "ThrowEnemy",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "cnt": 1.0,
+                "delay": 0.5,
+                "enemy_key": "enemy_10043_sailor",
+                "mode": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "M0SpeedUp",
+              "parameters": {
+                "duration": 5.0,
+                "move_speed": 3.0
+              }
+            },
+            {
+              "key": "M1SpeedUp",
+              "parameters": {
+                "duration": 5.0,
+                "move_speed": 3.0
+              }
+            },
+            {
+              "key": "Mode",
+              "parameters": {
+                "mode": 0.0
+              }
+            },
+            {
+              "key": "StateController",
+              "parameters": {
+                "cnt": 1.0,
+                "delay": 1.0,
+                "enemy_key": "enemy_10043_sailor"
+              }
+            },
+            {
+              "key": "Stun",
+              "parameters": {
+                "duration": 8.0
+              }
+            },
+            {
+              "key": "ThrowEnemy",
+              "parameters": {
+                "checkpoint": 0.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "unlucky_flyfin",
+      "id": "enemy_10045_parrot_2",
+      "name": "Unlucky Flyfin",
+      "index": "PI8",
+      "rank": "Normal",
+      "sort": 920,
+      "hidden": false,
+      "icon": "/enemies-icons/Unlucky Flyfin.webp",
+      "flavour_text": "A male fin that leaps out of the salt layer during breeding season, gliding briefly in mid-air and releasing unpleasant pheromones. Having one fall onto the deck is seen as an omen of bad luck.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Low-Altitude Hovering; after losing Low-Altitude Hovering, becomes stunned for some time before taking off again",
+          "format": "normal"
+        },
+        {
+          "text": "Movement Speed briefly increases after taking damage for the first time. Sometimes carries <Risk-surviving Sailor>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12000,
+            "atk": 100,
+            "def": 0,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "E",
+            "def": "E",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "ThrowEnemy",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "cnt": 1.0,
+                "delay": 0.5,
+                "enemy_key": "enemy_10043_sailor_2",
+                "mode": 2.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "M0SpeedUp",
+              "parameters": {
+                "duration": 5.0,
+                "move_speed": 3.0
+              }
+            },
+            {
+              "key": "M1SpeedUp",
+              "parameters": {
+                "duration": 5.0,
+                "move_speed": 3.0
+              }
+            },
+            {
+              "key": "Mode",
+              "parameters": {
+                "mode": 0.0
+              }
+            },
+            {
+              "key": "StateController",
+              "parameters": {
+                "cnt": 1.0,
+                "delay": 1.0,
+                "enemy_key": "enemy_10043_sailor_2"
+              }
+            },
+            {
+              "key": "Stun",
+              "parameters": {
+                "duration": 8.0
+              }
+            },
+            {
+              "key": "ThrowEnemy",
+              "parameters": {
+                "checkpoint": 0.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "saltfin_shaker",
+      "id": "enemy_10046_pshark",
+      "name": "Saltfin Shaker",
+      "index": "PI9",
+      "rank": "Elite",
+      "sort": 921,
+      "hidden": false,
+      "icon": "/enemies-icons/Saltfin Shaker.webp",
+      "flavour_text": "Despite its size and weight, this saltfin is surprisingly lithe when swimming through the salts. Normally gentle in nature, it can shake the salt fields and cause land subsidence with its powerful slamming attacks when provoked.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks deal Physical splash damage to all nearby allied units",
+          "format": "normal"
+        },
+        {
+          "text": "Immune to the effects of Salt Flat and gains increased Movement Speed while in Salt Flat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 70000,
+            "atk": 1500,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "damage_atk_scale": 1.0
+              }
+            },
+            {
+              "key": "Invisible",
+              "parameters": {
+                "move_speed": 3.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "saltfin_breaker",
+      "id": "enemy_10046_pshark_2",
+      "name": "Saltfin Breaker",
+      "index": "PI10",
+      "rank": "Elite",
+      "sort": 922,
+      "hidden": false,
+      "icon": "/enemies-icons/Saltfin Breaker.webp",
+      "flavour_text": "Despite its size and weight, this saltfin is surprisingly lithe when swimming through the salts. Normally gentle in nature, it can shatter even hardened ancient salt layers with its powerful slamming attacks when provoked.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks deal Physical splash damage to all nearby allied units",
+          "format": "normal"
+        },
+        {
+          "text": "Immune to the effects of Salt Flat and gains increased Movement Speed while in Salt Flat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 100000,
+            "atk": 2000,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "S",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "damage_atk_scale": 1.0
+              }
+            },
+            {
+              "key": "Invisible",
+              "parameters": {
+                "move_speed": 3.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "explosion_chaser",
+      "id": "enemy_10047_shrknt",
+      "name": "Explosion Chaser",
+      "index": "PI11",
+      "rank": "Elite",
+      "sort": 923,
+      "hidden": false,
+      "icon": "/enemies-icons/Explosion Chaser.webp",
+      "flavour_text": "The Saltheap Cannon is driven not by Originium explosives, but by the kinetic power of saltfin sinew. Dissatisfied with this state of affairs, some sailors have taken to stuffing improvised powder into metal tubes, trying to create true explosions.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Can perform a charged attack, dealing a large amount of Arts Damage to all nearby allied units with a Stun effect",
+          "format": "normal"
+        },
+        {
+          "text": "Can ride <Saltfin Shakers>, gaining some of their abilities",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12000,
+            "atk": 350,
+            "def": 250,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.6,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "M0SplashCannon",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "magic_atk_scale": 3.0,
+                "projectile_range": "x-4",
+                "stun": 8.0
+              }
+            },
+            {
+              "key": "M1SplashCannon",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "magic_atk_scale": 3.0,
+                "projectile_range": "x-4",
+                "stun": 8.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "M1_Invisible",
+              "parameters": {
+                "move_speed": 1.5
+              }
+            },
+            {
+              "key": "TryBus",
+              "parameters": {
+                "enemy_key": "enemy_10046_pshark",
+                "max_cnt": 1.0,
+                "mode": 0.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "explosion_devotee",
+      "id": "enemy_10047_shrknt_2",
+      "name": "Explosion Devotee",
+      "index": "PI12",
+      "rank": "Elite",
+      "sort": 924,
+      "hidden": false,
+      "icon": "/enemies-icons/Explosion Devotee.webp",
+      "flavour_text": "The Saltheap Cannon is driven not by Originium explosives, but by the kinetic power of saltfin sinew. Dissatisfied with this state of affairs, some sailors have taken to stuffing massive amounts of improvised powder into metal tubes, trying to light up the night sky of the Salt Flat.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Can perform a charged attack, dealing a large amount of Arts Damage to all nearby allied units with a Stun effect",
+          "format": "normal"
+        },
+        {
+          "text": "Can ride <Saltfin Breakers>, gaining some of their abilities",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 420,
+            "def": 300,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.6,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "M0SplashCannon",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "magic_atk_scale": 3.0,
+                "projectile_range": "x-4",
+                "stun": 8.0
+              }
+            },
+            {
+              "key": "M1SplashCannon",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "magic_atk_scale": 3.0,
+                "projectile_range": "x-4",
+                "stun": 8.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "M1_Invisible",
+              "parameters": {
+                "move_speed": 1.5
+              }
+            },
+            {
+              "key": "TryBus",
+              "parameters": {
+                "enemy_key": "enemy_10046_pshark_2",
+                "max_cnt": 1.0,
+                "mode": 0.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "bloody_chef",
+      "id": "enemy_10048_prtsld",
+      "name": "Bloody Chef",
+      "index": "PI13",
+      "rank": "Elite",
+      "sort": 925,
+      "hidden": false,
+      "icon": "/enemies-icons/Bloody Chef.webp",
+      "flavour_text": "More butcher than cook, the fleet's chefs are more adept at dismembering carcasses than making the aftermath fit for human consumption. The smell of blood from the kitchen is enough to make even the most hardened sailors lose their appetite.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "More likely to be attacked",
+          "format": "normal"
+        },
+        {
+          "text": "Nearby enemies and <Saltheap Cannons> take far less Physical/Arts damage from sources in the direction of the shield",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 1000,
+            "def": 1500,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 4,
+            "taunt": 1,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "A+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "SingleShieldEnemy",
+              "parameters": {
+                "damage_resistance": 0.6
+              }
+            },
+            {
+              "key": "SingleShieldTrap",
+              "parameters": {
+                "damage_resistance": 0.6
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "terrible_chef",
+      "id": "enemy_10048_prtsld_2",
+      "name": "Terrible Chef",
+      "index": "PI14",
+      "rank": "Elite",
+      "sort": 926,
+      "hidden": false,
+      "icon": "/enemies-icons/Terrible Chef.webp",
+      "flavour_text": "More butcher than cook, the fleet's chefs are more adept at dismembering carcasses than making the aftermath fit for human consumption. No sailor who has seen one dismember a saltfin has the guts to complain about their cooking.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "More likely to be attacked",
+          "format": "normal"
+        },
+        {
+          "text": "Nearby enemies and <Saltheap Cannons> take far less Physical/Arts damage from sources in the direction of the shield",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 1200,
+            "def": 1800,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 4,
+            "taunt": 1,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "A+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "SingleShieldEnemy",
+              "parameters": {
+                "damage_resistance": 0.8
+              }
+            },
+            {
+              "key": "SingleShieldTrap",
+              "parameters": {
+                "damage_resistance": 0.8
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "cacophonous_boatswain",
+      "id": "enemy_10049_pcaptn",
+      "name": "Cacophonous Boatswain",
+      "index": "PI15",
+      "rank": "Elite",
+      "sort": 927,
+      "hidden": false,
+      "icon": "/enemies-icons/Cacophonous Boatswain.webp",
+      "flavour_text": "Maybe it is the loud winds of the Salt Flat, or maybe the sailors are acting floppy—the boatswain constantly suspects that someone is not listening to his commands. Thus, he has grabbed a cacophonous saltfin to catch the sailors' attention.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "While on the battlefield, <Risk-seeking Sailor> attacks also inflict Corrosion; Periodically summons 2 <Risk-seeking Sailors>",
+          "format": "normal"
+        },
+        {
+          "text": "ATK increases when blocked",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 700,
+            "def": 600,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.45,
+            "range": 1.5,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "SummonSailor",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "cnt": 2.0,
+                "enemy_key": "enemy_10043_sailor"
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "combat_atk_scale": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "bel_canto_boatswain",
+      "id": "enemy_10049_pcaptn_2",
+      "name": "Bel Canto Boatswain",
+      "index": "PI16",
+      "rank": "Elite",
+      "sort": 928,
+      "hidden": false,
+      "icon": "/enemies-icons/Bel Canto Boatswain.webp",
+      "flavour_text": "The boatswain's saltfin has caught the sailors' attention, but it does not stop bellowing when the boatswain wants it to. Forced to yell above the saltfin's cacophony, the boatswain has developed a bel canto voice so beautiful that it may impress the salt flat itself.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "While on the battlefield, <Risk-surviving Sailor> attacks also inflict Corrosion; Periodically summons 2 <Risk-surviving Sailors>",
+          "format": "normal"
+        },
+        {
+          "text": "ATK increases when blocked",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 850,
+            "def": 800,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.45,
+            "range": 1.5,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "SummonSailor",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "cnt": 2.0,
+                "enemy_key": "enemy_10043_sailor_2"
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "combat_atk_scale": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "anastasio_the_atoner",
+      "id": "enemy_1561_crzjdg",
+      "name": "Anastasio, the Atoner",
+      "index": "AR",
+      "rank": "Boss",
+      "sort": 1357,
+      "hidden": false,
+      "icon": "/enemies-icons/Anastasio, the Atoner.webp",
+      "flavour_text": "Anastasio has died. Anastasio rises again. He lives to atone for the sins ingrained in his very nature. He envies both the innocent for living and the sinner for dying, for it is not his place to either live with integrity or die in peace.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Performs ranged attacks when unblocked, dealing Physical damage to the target and all allied units within the 8 surrounding tiles",
+          "format": "normal"
+        },
+        {
+          "text": "[Gospel Spray] Fires within range 10 times, dealing Physical damage and Corrosion to the target and surrounding allied units, prioritizing allies with the lowest total Corrosion",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "Immune to the effects of Salt Flat, and takes far less Physical and Arts damage when in the surrounding 8 tiles around a <Saltheap Cannon>",
+          "format": "normal"
+        },
+        {
+          "text": "[Inquisition of Sin] Buffs a <Saltheap Cannon> within Attack Range, increasing its splash area for a period of time",
+          "format": "normal"
+        },
+        {
+          "text": "The first time HP drops to 0, jumps to a fixed spot and enters second form, summoning a <Saltheap Cannon>",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "Immune to Stun; gains increased Movement Speed and ASPD",
+          "format": "normal"
+        },
+        {
+          "text": "When another enemy appears, gains increased ATK, but loses HP per second for a period of time",
+          "format": "normal"
+        },
+        {
+          "text": "When not blocked, takes significantly reduced Physical and Arts damage; when blocked, causes all <Saltheap Cannons> to target the location of the blocker",
+          "format": "normal"
+        },
+        {
+          "text": "[Heart-Piercing Salvation] Whenever a certain amount of HP is lost, passes through the unit blocking him, dealing Physical damage to units along the path",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 55000,
+            "atk": 1200,
+            "def": 500,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": 1.8,
+            "weight": 7,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "ReinforcedCannon",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "big_boom_duration": 6.0,
+                "sp_recover_ratio": 0.0
+              }
+            },
+            {
+              "key": "M0MultiRangedAttack",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.5,
+                "ep_damage_ratio": 0.5
+              }
+            },
+            {
+              "key": "M1MultiRangedAttack",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.5,
+                "ep_damage_ratio": 0.5
+              }
+            },
+            {
+              "key": "SummonCnnon",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "branch_id": "HidenCnnon"
+              }
+            },
+            {
+              "key": "AdvanceSuddenly",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 0.0,
+              "priority": 2,
+              "parameters": {
+                "atk_scale": 2.0,
+                "buff_duration": 4.0,
+                "dist": 1.5
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "BlockAbility",
+              "parameters": {
+                "damage_resistance": 0.8
+              }
+            },
+            {
+              "key": "CnnonShield",
+              "parameters": {
+                "damage_resistance": 0.8
+              }
+            },
+            {
+              "key": "M0RangeAtkScale",
+              "parameters": {
+                "range_atk_scale": 0.5
+              }
+            },
+            {
+              "key": "M1Passive",
+              "parameters": {
+                "hp_recovery_per_sec_by_max_hp_ratio": 0.1,
+                "m1_revive_duration": 10.0
+              }
+            },
+            {
+              "key": "M1ReviveEnd",
+              "parameters": {
+                "location": "(5,7)"
+              }
+            },
+            {
+              "key": "M2BuffAura",
+              "parameters": {
+                "atk": 0.5,
+                "buff_duration": 20.0,
+                "fixed_value": 150.0
+              }
+            },
+            {
+              "key": "M2GainAttribute",
+              "parameters": {
+                "attack_speed": 50.0,
+                "invinsible_duration": 10.0,
+                "move_speed": 2.0
+              }
+            },
+            {
+              "key": "M2RangeAtkScale",
+              "parameters": {
+                "range_atk_scale": 0.5
+              }
+            },
+            {
+              "key": "M2S1Trigger",
+              "parameters": {
+                "hp_ratio": 0.335
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 0.5,
+                "hp_ratio": 0.01
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Sleep"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 70000,
+            "atk": 1500,
+            "def": 600,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": 1.8,
+            "weight": 7,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "ReinforcedCannon",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "big_boom_duration": 6.0,
+                "sp_recover_ratio": 0.0
+              }
+            },
+            {
+              "key": "M0MultiRangedAttack",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.5,
+                "ep_damage_ratio": 0.5
+              }
+            },
+            {
+              "key": "M1MultiRangedAttack",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.5,
+                "ep_damage_ratio": 0.5
+              }
+            },
+            {
+              "key": "SummonCnnon",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "branch_id": "HidenCnnon"
+              }
+            },
+            {
+              "key": "AdvanceSuddenly",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 0.0,
+              "priority": 2,
+              "parameters": {
+                "atk_scale": 2.0,
+                "buff_duration": 4.0,
+                "dist": 1.5
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "BlockAbility",
+              "parameters": {
+                "damage_resistance": 0.8
+              }
+            },
+            {
+              "key": "CnnonShield",
+              "parameters": {
+                "damage_resistance": 0.8
+              }
+            },
+            {
+              "key": "M0RangeAtkScale",
+              "parameters": {
+                "range_atk_scale": 0.5
+              }
+            },
+            {
+              "key": "M1Passive",
+              "parameters": {
+                "hp_recovery_per_sec_by_max_hp_ratio": 0.1,
+                "m1_revive_duration": 10.0
+              }
+            },
+            {
+              "key": "M1ReviveEnd",
+              "parameters": {
+                "location": "(5,7)"
+              }
+            },
+            {
+              "key": "M2BuffAura",
+              "parameters": {
+                "atk": 0.5,
+                "buff_duration": 20.0,
+                "fixed_value": 150.0
+              }
+            },
+            {
+              "key": "M2GainAttribute",
+              "parameters": {
+                "attack_speed": 50.0,
+                "invinsible_duration": 10.0,
+                "move_speed": 2.0
+              }
+            },
+            {
+              "key": "M2RangeAtkScale",
+              "parameters": {
+                "range_atk_scale": 0.5
+              }
+            },
+            {
+              "key": "M2S1Trigger",
+              "parameters": {
+                "hp_ratio": 0.335
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 0.5,
+                "hp_ratio": 0.01
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Sleep"
+          ],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

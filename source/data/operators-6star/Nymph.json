@@ -1,0 +1,1029 @@
+{
+  "name": "Nymph",
+  "rarity": 6,
+  "class": "Caster",
+  "branch": "Primal Caster",
+  "faction": "Rhodes Island",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Elemental",
+    "DPS",
+    "Crowd-Control"
+  ],
+  "trait": "Attacks deal Arts damage , and can inflict Elemental damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Sweetness to the Heart",
+    "Blooming Reverie"
+  ],
+  "ep": {
+    "Main": "Warm and Small Light",
+    "Co-star": null
+  },
+  "internalName": "char_4146_nymph",
+  "otherLanguages": {
+    "Chinese": "妮芙",
+    "Japanese": "ニンフ",
+    "Korean": "님프"
+  },
+  "characterInfo": {
+    "File no.": "R182",
+    "Operator Record": "Leaping Glimmer",
+    "Paradox Simulation": "Facing the Soul",
+    "Illustrator": "YUJI",
+    "Release Date": "2025/02/07",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Hitomi Sekine",
+    "Chinese": "Cai Na",
+    "English": "Anna Devlin",
+    "Korean": "Lee Yu-ri"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Kazdel",
+    "Date of Birth": "August 31st",
+    "Race": "Sarkaz",
+    "Height": "156 cm",
+    "Infection Status": "Confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Soul Stolen",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When attacking enemies under the burst effect of Necrosis , deals an additional 30% ATK as Elemental damage per second, lasting until the end of the Necrosis burst"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When attacking enemies under the burst effect of Necrosis , deals an additional 40% ATK as Elemental damage per second, lasting until the end of the Necrosis burst"
+        }
+      ]
+    },
+    {
+      "name": "Key to the Heart",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Whenever a Necrosis burst effect is triggered within Nymph's attack range, ATK +2%, stacking up to 10 times"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Whenever a Necrosis burst effect is triggered within Nymph's attack range, ATK +2%, stacking up to 12 (+2) times"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +27"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Key to the Heart"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Nymph's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Soul Stolen .",
+        "New skill: Fear Blast .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Nymph to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Polyester",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Key to the Heart .",
+        "New skill: Crumbling Heart .",
+        "Soul Stolen improved."
+      ],
+      "prerequisite": "Raise Nymph to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Polymerization Preparation",
+          "quantity": 4
+        },
+        {
+          "name": "Optimized Device",
+          "quantity": 5
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Strike of the Djall",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +40% , attacks deal an additional 10% of Arts damage as Necrosis ; if target is under the burst effect of Necrosis , deal an additional 20% ATK as Elemental damage",
+            "initialSp": 0,
+            "spCost": 39,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +45% , attacks deal an additional 10% of Arts damage as Necrosis ; if target is under the burst effect of Necrosis , deal an additional 20% ATK as Elemental damage",
+            "initialSp": 0,
+            "spCost": 38,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +50% , attacks deal an additional 10% of Arts damage as Necrosis ; if target is under the burst effect of Necrosis , deal an additional 20% ATK as Elemental damage",
+            "initialSp": 0,
+            "spCost": 37,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +60% , attacks deal an additional 10% of Arts damage as Necrosis ; if target is under the burst effect of Necrosis , deal an additional 30% ATK as Elemental damage",
+            "initialSp": 5,
+            "spCost": 36,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +65% , attacks deal an additional 10% of Arts damage as Necrosis ; if target is under the burst effect of Necrosis , deal an additional 30% ATK as Elemental damage",
+            "initialSp": 5,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +70% , attacks deal an additional 10% of Arts damage as Necrosis ; if target is under the burst effect of Necrosis , deal an additional 30% ATK as Elemental damage",
+            "initialSp": 5,
+            "spCost": 34,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +80% , attacks deal an additional 10% of Arts damage as Necrosis ; if target is under the burst effect of Necrosis , deal an additional 40% ATK as Elemental damage",
+            "initialSp": 15,
+            "spCost": 33,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +90% , attacks deal an additional 15% of Arts damage as Necrosis ; if target is under the burst effect of Necrosis , deal an additional 40% ATK as Elemental damage",
+            "initialSp": 15,
+            "spCost": 32,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +100% , attacks deal an additional 15% of Arts damage as Necrosis ; if target is under the burst effect of Necrosis , deal an additional 40% ATK as Elemental damage",
+            "initialSp": 15,
+            "spCost": 31,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +110% , attacks deal an additional 15% of Arts damage as Necrosis ; if target is under the burst effect of Necrosis , deal an additional 50% ATK as Elemental damage",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": 20
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 10
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Fear Blast",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Deals 240% ATK as Arts damage to the target and inflicts Fear for 3 seconds, also dealing an equal amount of Arts splash damage around the target; both instances deal an additional 16% of Arts damage as Necrosis . If the target hit is under the burst effect of Necrosis , the damage dealt by Talent 1 increases to 60% ATK Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Deals 250% ATK as Arts damage to the target and inflicts Fear for 3 seconds, also dealing an equal amount of Arts splash damage around the target; both instances deal an additional 16% of Arts damage as Necrosis . If the target hit is under the burst effect of Necrosis , the damage dealt by Talent 1 increases to 60% ATK Can store 1 charges",
+            "initialSp": 1,
+            "spCost": 19,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Deals 260% ATK as Arts damage to the target and inflicts Fear for 3 seconds, also dealing an equal amount of Arts splash damage around the target; both instances deal an additional 18% of Arts damage as Necrosis . If the target hit is under the burst effect of Necrosis , the damage dealt by Talent 1 increases to 60% ATK Can store 1 charges",
+            "initialSp": 2,
+            "spCost": 18,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Deals 270% ATK as Arts damage to the target and inflicts Fear for 4 seconds, also dealing an equal amount of Arts splash damage around the target; both instances deal an additional 18% of Arts damage as Necrosis . If the target hit is under the burst effect of Necrosis , the damage dealt by Talent 1 increases to 70% ATK Can store 1 charges",
+            "initialSp": 3,
+            "spCost": 17,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Deals 280% ATK as Arts damage to the target and inflicts Fear for 4 seconds, also dealing an equal amount of Arts splash damage around the target; both instances deal an additional 20% of Arts damage as Necrosis . If the target hit is under the burst effect of Necrosis , the damage dealt by Talent 1 increases to 75% ATK Can store 1 charges",
+            "initialSp": 4,
+            "spCost": 16,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Deals 290% ATK as Arts damage to the target and inflicts Fear for 4 seconds, also dealing an equal amount of Arts splash damage around the target; both instances deal an additional 20% of Arts damage as Necrosis . If the target hit is under the burst effect of Necrosis , the damage dealt by Talent 1 increases to 80% ATK Can store 1 charges",
+            "initialSp": 5,
+            "spCost": 15,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Deals 300% ATK as Arts damage to the target and inflicts Fear for 5 seconds, also dealing an equal amount of Arts splash damage around the target; both instances deal an additional 22% of Arts damage as Necrosis . If the target hit is under the burst effect of Necrosis , the damage dealt by Talent 1 increases to 85% ATK Can store 2 charges",
+            "initialSp": 6,
+            "spCost": 14,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Deals 360% ATK as Arts damage to the target and inflicts Fear for 5 seconds, also dealing an equal amount of Arts splash damage around the target; both instances deal an additional 22% of Arts damage as Necrosis . If the target hit is under the burst effect of Necrosis , the damage dealt by Talent 1 increases to 90% ATK Can store 2 charges",
+            "initialSp": 7,
+            "spCost": 13,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Deals 380% ATK as Arts damage to the target and inflicts Fear for 5 seconds, also dealing an equal amount of Arts splash damage around the target; both instances deal an additional 25% of Arts damage as Necrosis . If the target hit is under the burst effect of Necrosis , the damage dealt by Talent 1 increases to 95% ATK Can store 2 charges",
+            "initialSp": 8,
+            "spCost": 13,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Deals 400% ATK as Arts damage to the target and inflicts Fear for 5 seconds, also dealing an equal amount of Arts splash damage around the target; both instances deal an additional 25% of Arts damage as Necrosis . If the target hit is under the burst effect of Necrosis , the damage dealt by Talent 1 increases to 100% ATK Can store 2 charges",
+            "initialSp": 9,
+            "spCost": 12,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 4
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 1
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Fear",
+            "description": "Causes enemies to move away from the unit casting fear"
+          },
+          {
+            "name": "Damage Over Time",
+            "description": "Enemies incur a damage per second for a certain duration"
+          }
+        ]
+      },
+      {
+        "name": "Crumbling Heart",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25–35 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +110% , ASPD +25 , attacks 2 targets simultaneously. If target is under the burst effect of Necrosis , attacks deal Elemental damage",
+            "initialSp": 15,
+            "spCost": 55,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +120% , ASPD +25 , attacks 2 targets simultaneously. If target is under the burst effect of Necrosis , attacks deal Elemental damage",
+            "initialSp": 16,
+            "spCost": 55,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +130% , ASPD +25 , attacks 2 targets simultaneously. If target is under the burst effect of Necrosis , attacks deal Elemental damage",
+            "initialSp": 17,
+            "spCost": 55,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +140% , ASPD +30 , attacks 2 targets simultaneously. If target is under the burst effect of Necrosis , attacks deal Elemental damage",
+            "initialSp": 19,
+            "spCost": 55,
+            "duration": 27
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +150% , ASPD +30 , attacks 2 targets simultaneously. If target is under the burst effect of Necrosis , attacks deal Elemental damage",
+            "initialSp": 21,
+            "spCost": 55,
+            "duration": 27
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +160% , ASPD +30 , attacks 2 targets simultaneously. If target is under the burst effect of Necrosis , attacks deal Elemental damage",
+            "initialSp": 24,
+            "spCost": 55,
+            "duration": 27
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Range increases , ATK +170% , ASPD +45 , attacks 2 targets simultaneously. If target is under the burst effect of Necrosis , attacks deal Elemental damage",
+            "initialSp": 27,
+            "spCost": 55,
+            "duration": 29
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Range increases , ATK +190% , ASPD +45 , attacks 2 targets simultaneously. If target is under the burst effect of Necrosis , attacks deal Elemental damage",
+            "initialSp": 30,
+            "spCost": 55,
+            "duration": 31
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Range increases , ATK +205% , ASPD +60 , attacks 2 targets simultaneously. If target is under the burst effect of Necrosis , attacks deal Elemental damage",
+            "initialSp": 33,
+            "spCost": 55,
+            "duration": 33
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Range increases , ATK +220% , ASPD +60 , attacks 2 targets simultaneously. If target is under the burst effect of Necrosis , attacks deal Elemental damage",
+            "initialSp": 36,
+            "spCost": 55,
+            "duration": 35
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Fuscous Fiber",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 10
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Diketon",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 5
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 6
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 5
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Meditative Rites α",
+      "facility": "Dormitory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Dormitory, restores +0.15 Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
+    },
+    {
+      "name": "Meditative Rites βReplacesMeditative Rites α",
+      "facility": "Dormitory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Dormitory, restores +0.2 Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
+    },
+    {
+      "name": "Wandering Heart",
+      "facility": "Control Center",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Control Center, all Operators in Dormitories recover +0.05 Morale per hour (strongest effect of the same type applies)"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Nymph's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "PRI-X: \"Aspiration\"",
+      "mission": {
+        "requirement1": "Deal a total of 60,000 Elemental damage with your own Nymph",
+        "requirement2": "Clear Main Theme 14-7 with a 3-star rating under Standard Environment; You must deploy your own Nymph, and have Nymph deal at least 5000 Elemental damage"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +100 , ATK +50",
+          "effectLabel": "New trait",
+          "effectText": "Damage dealt to enemies under an Elemental Burst effect increased to 110%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +125 , ATK +65",
+          "effectLabel": "Key to the Heart improved",
+          "effectText": "Whenever a Necrosis burst effect is triggered, ATK +2%, stacking up to 10 times; at 10 stacks, ASPD +7",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +150 , ATK +80",
+          "effectLabel": "Key to the Heart improved",
+          "effectText": "Whenever a Necrosis burst effect is triggered, ATK +3%, stacking up to 10 times; at 10 stacks, ASPD +12",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "PRI-Y: Consultation Toolkit",
+      "mission": {
+        "requirement1": "During battle, have your own Nymph use Fear Blast a total of 20 times",
+        "requirement2": "Clear Main Theme 11-13 with a 3-star rating under Standard Environment; You must deploy your own Nymph, and have Nymph defeat at least 6 enemies, including at least 1 Sarkaz Wither Tank OR Londinium Mobile Defense Artillery"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +120 , ATK +50",
+          "effectLabel": "New trait",
+          "effectText": "SP recovery +0.2/sec when there are enemies under the burst effect of Elemental Injury within range",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +150 , ATK +60",
+          "effectLabel": "Soul Stolen improved",
+          "effectText": "When attacking enemies under the burst effect of Necrosis , deals an additional 40% ATK as Elemental damage every 0.8 seconds, lasting until the end of the Necrosis burst",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +170 , ATK +75",
+          "effectLabel": "Soul Stolen improved",
+          "effectText": "When attacking enemies under the burst effect of Necrosis , deals an additional 40% ATK as Elemental damage every 0.7 seconds, lasting until the end of the Necrosis burst",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 15
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Nymph is a citizen of\nKazdel\nwho joined the Field Operations Department through\nRhodes Island\n's Kazdel office.\nHer skills with mental\nOriginium Arts\nand her natural gifts as a\nDjall\nhave a wide range of applications.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "61OknUrvWNE",
+      "creator": "DragonGJY"
+    },
+    {
+      "videoId": "OvSUGbdiqm4",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "IuUKaIDuTTs",
+      "creator": "SUPAH"
+    },
+    {
+      "videoId": "g4K-f1StMhg",
+      "creator": "Tsalthsu"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 685,
+          "atk": 321,
+          "def": 52,
+          "res": 5,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 952,
+          "atk": 440,
+          "def": 79,
+          "res": 5,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-6"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 952,
+          "atk": 440,
+          "def": 79,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1237,
+          "atk": 550,
+          "def": 107,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1237,
+          "atk": 550,
+          "def": 107,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1650,
+          "atk": 655,
+          "def": 129,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 90,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 8%\nNo visible Originium crystals have been observed on the surface of Nymph's body, but continued monitoring is required.\n\n[Blood Originium-Crystal Density] 0.14u/L\nNymph is no exception to the effects of Kazdel's high-Originium environment, but medical intervention has been effective at keeping her condition under control."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Nymph has gotten many more visitors recently.\nAs Kazdel becomes more prosperous, the Sarkaz are coming home, bringing with them the money they earned with their blood. Arms dealers are starting to dabble in food and other consumer goods, and factories are no longer churning out disposables that only last a few days on the battlefield, instead turning their attention to making pots and pans. People on the streets are looking for honest work, rather than mugging over nothing more than a piece of bread. The city was not always like this: it had been a place of chaos, where lives were cheaper than a piece of metal. The wailing and fury of souls had echoed in Nymph's mind night and day, never stopping; if one screamed its throat hoarse, there was always another to take its place. Perhaps this was why there were so few Djalls: the hatred and anger that constantly surround them was enough to drive them to madness. When Nymph's parents left Kazdel, they considered bringing her with them. Perhaps leaving her somewhere else while they dealt with matters was preferable to leaving her there.\nBut she chose to stay.\nKazdel was at least familiar, compared to the unknown outside. For all its chaos and madness, it was her home, and she wanted to change it, to dig up the hope that had been buried beneath all the hatred. A fanciful idea, of course. It was already precious enough that a young child could grow up in Kazdel without hatred. What could she possibly achieve? In the end, her parents agreed to let her stay, leaving behind some connections, some protective talismans, some food, and some neighbors that weren't so bad, at least by Kazdelian standards.\nBefore the end of the war, Nymph's efforts had been in vain. Pain and suffering filled the lives of the Sarkaz, and the young Djall's altruism was no more than another tool to be abused. Perhaps her actions gave a sliver of hope to a few, but the spark of hope is quickly extinguished by the burden of life.\nBut she continued to help those around her, persevering day after day. Perhaps change would come to Kazdel tomorrow, perhaps next week, perhaps next month, perhaps next year. Why not wait a while longer? It wasn't like life could get any worse.\nShe started to notice the differences in the months following the end of the war. Fewer people were fighting and more were talking. Some even remembered the young Djall who pulled them back from the brink of the abyss. They came back to her and asked for her help again—but this time, they were willing to pay for it. For the first time, Nymph felt a light emanating from the hearts of the people in the city.\nChange had come."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Things she had known only through books and rumors started showing up in Nymph's life. First was the organization known as Rhodes Island. A Sarkaz had invited her to the local office after she helped him out of a tight spot. The name Rhodes Island did not ring a bell at the time, but something felt familiar about the emblem on the Sarkaz's uniform. He took her to the former Babel headquarters in Kazdel, which Nymph remembered being seized by the Military Commission. A Cautus girl was giving orders to people of many different races, many of whom wore the same uniform as the one who brought her here, and all of whom were known as 'Operators'.\nThe Sarkaz greeted the Cautus and explained what had happened. The Cautus had someone take over her work and came over to thank Nymph. They chatted for quite a while, and arranged for Nymph to have a light meal and Oripathy screening, and for someone to walk her home. Nymph began to learn more about Rhodes Island and its mission of solving the Oripathy problem. It had never even occurred to her that this was possible. The severe Originium pollution in Kazdel, combined with the inherent susceptibility of Sarkaz to Oripathy, led the residents ignore the prevention and treatment of Oripathy. She began to grow curious about an organization devoted to doing so.\nFrom then on, Nymph began to visit the office whenever she had time on her hands. Amiya was rarely there, but the operators told her she was welcome to visit their headquarters at the landship, if she was interested. She was not eager to venture outside Kazdel at first, but her encounter with Mudrock during the search for the revenant fragments and her adventure in the furnace began to stoke her interest in what lay beyond the nomadic city. In the end, it was the mysterious director of HR who brought Nymph into the fold. The landship was docked at Kazdel that day, and Nymph took advantage of the opportunity to seek out Amiya on the ship. She was taken to the HR director's office, where she encountered a fellow Djall—one who brought her greetings from her parents.\nThis was Nymph's first ever meeting with her older sister, whom she had only known through the photos and documents her parents left behind. ■■■ told Nymph about her parents' love for her. She said that their 'irresponsible' parents were still traveling, and that even she did not know where they went. Then she took Nymph on a tour of Rhodes Island, visited Amiya during her breaktime, tried out various instruments at the testing site, and finally brought her back to the office to sign a few documents. Nymph was asked whether she wanted to do something to help Kazdel and Rhodes Island and answered in the affirmative, whereupon she received a badge identifying her as a reserve field operator. She was told that she was always welcome to visit the Landship, whether for work or leisure, and that was when Nymph finally caught up to all that had happened. Perhaps her dear sister had already made all the arrangements before she even set foot on Rhodes Island, an offer that she could not refuse—not that Nymph had any intention of doing so. With the formalities out of the way, it was time for the two Djaj to mingle, in a way that only Djaj can."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Of all the Sarkaz rituals, Djall rituals are the most mysterious and esoteric, just like the Djaj themselves. There are no procedures, no rites: all begins with the soul, and ends with the soul. Nymph gazed into ■■■'s eyes, and passed through the material surface towards the depths of the soul.\nShe saw the name hidden behind layer after layer of witchcraft and mental suggestions. It soon reassembled itself into ■■■, which can neither be uttered or written down. It was her secret. She may not leave behind a name that can be directly referenced, though it was unclear whether this is due to Rhodes Island policy or her personal circumstances.\nShe saw the past of Rhodes Island, or rather, Babel. A young Djall bid farewell to her parents and took Theresa's hand. She worked away from the crowd, behind a desk. Numbers were her soldiers, and information was her weapon. One tiny decision meant the difference between victory and defeat, life and death. A single piece of paper, a single stamp, decided countless futures. The burden was shouldered by an unbreakable vow to the crowned one. That, and love, passion, and joy, but hope was the one thing absent.\nNymph tried to probe deeper, but was gently pushed away, and she understood that she may go no further. In return, she dug up the secrets buried deep within her memories as her own offering.\nHer counterpart saw an ever-howling city, where crystals pierced the heart, battles raged from dawn to dusk, struggles fought for survival, and torment throbbed for robbing another's life. It was the resistance of a young soul that transformed all this into strength. She resisted the city's innate evil, and the Sarkaz's interpretation of suffering. She searched for the peace and kindness that lay deep within the consciousness, despite the toll it took on her.\n...\nThe two shared their deepest secrets with the other. They dissected each other's memories, and fear poured out of these secrets, dashing against their souls. Nymph shivered at the tide of suffocating helplessness. She had performed this ritual with her parents, a long time ago, but she was too young at the time to fully feel the weight of what she had seen. Now, though, every wound was being torn apart, and every memory wailing in despair. Nymph fought the urge to flinch, and faced the tide head-on with her will. Finally, the storm passed, and the bleeding wounds began to seal. A thin membrane covered the tender heart, and the shared experience of pain became a new bond between the two.\nThe older Djall helped Nymph sit down. She seemed familiar with the ritual; her smile did not waver in the slightest. For her part, Nymph felt like a fledging fowlbeast that had just survived a thunderstorm. Her legs kept shaking, and her palms were filled with sweat. The ritual, which was only performed between close ones, was once a form of contest to determine the division of loot. Today, the ritual for inflicting pain on one another has become one for sharing pain with one another, and the division of loot replaced by the strengthening of bonds and trust. At the conclusion of the ritual, each gained proof of the other's true heart—■■■ held Nymph's personal profile, which had seemingly appeared out of thin air, while Nymph held a heart-shaped lock, with the key still in the keyhole."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "The Djall leave behind indelible marks on their victim's soul the first time they plunder it. They feast upon the mind like a Vampire feasts upon the flesh, but over time they have learned to temper their hunger. While some Djalls continue to rip their victim's soul apart, most have to feed more gently, inviting the target to share their deepest secret, extracting it gently like a Banshee's kiss, and storing it within their own soul, to be savored repeatedly over and over again—or used to inflict trauma upon its owner. Even ordinary people without psychic powers can observe what their own memories look like with the naked eye as a Djall performs this act, the image determined by the Djall's nature. Sometimes it is a fruit, sometimes a sword. In Nymph's hands it is a lock and key, and in ■■■'s files and documents. This gentle taking serves to obscure the actions of the Djaj, explaining why so little is known about this branch of Sarkaz. When two Djaj extract from each other secrets that belong to others, and preserve them within their own souls, they have formed a bond that is tighter than blood.\n...\nAfter Nymph returned to Kazdel, ■■■ perused the report on the recovery of the fragments from the Soul Furnace explosion, including Mudrock's report on the incident during the ritual of appeasement, and the Liches' analysis of the ritual. She sensed that it was her sister who transformed story to reality in the illusion. In the face of Kazdel's malice, Nymph buried her hopes deep within her consciousness, hopes that were released through the powers of the Djall when Tin Man built a connection with the revenants, bringing the Sarkaz's consciousness into the revenants' illusionary realm, and causing earnest imagination to manifest itself materially, rather than in the form of esoteric subconscious symbols. As for what the uninhibited release would bring to Nymph—■■■ read through the file on Nymph in her hands, and decided to continue observing before making a decision."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "[Excerpts from an Encrypted Channel—Nymph's Notes]\n'Why does my mind go blank when Nymph smiles at me? Did she use some kind of Sarkaz witchcraft on me?'\n'That's because she's so cute she makes your heart skip a beat. If you believe witchcraft is the cause, you should look for Logos and have him fill your brain with it.'\n\n'Nymph smiled at me today, and I've been seeing the afterimage of it all day. Am I being turned into a Djall? I'm a Feline, by the way. Can I keep my ears if I turn into a Djall?'\n'Nothing will happen to you, just like you won't turn into a Nachzehrer if you wrapped yourself in bandages, or a Vampire if you share a drink with one. You're only seeing that because you like her, just like everybody else. It's nothing to be ashamed of.'\n\n'I saw Nymph do something to someone's ear, and then that person just left quietly. Did she suck their brain out?'\n'More likely a fowlbeast ate <i>your</i> brain. That's call whispering, and not everyone who whispers in your ear wants a piece of your brain. It doesn't even taste that good.'\n\n'Did you see Nymph walking with a four-legged brain on a leash in the corridors today? That was scary!'\n'That's just my pet burdenbeast! It's none of your business that it has a few more folds on its skin. Maybe it's <i>your</i> brain that walked right out of your head!'"
+    }
+  ]
+}

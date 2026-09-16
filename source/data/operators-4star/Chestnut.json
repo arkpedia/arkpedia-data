@@ -1,0 +1,661 @@
+{
+  "name": "Chestnut",
+  "rarity": 4,
+  "class": "Medic",
+  "branch": "Wandering Medic",
+  "faction": "Rhodes Island",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing"
+  ],
+  "trait": "Restores the HP of allied units and recovers Elemental Injury by 50% of ATK (can recover Elemental Injury of unhurt allied units)",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Holiday HDm57"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4041_chnut",
+  "otherLanguages": {
+    "Chinese": "褐果",
+    "Japanese": "チェスナット",
+    "Korean": "체스트넛"
+  },
+  "characterInfo": {
+    "File no.": "R134",
+    "Operator Record": "Black Rocks",
+    "Paradox Simulation": "\"Concentrate\"",
+    "Illustrator": "树豚",
+    "Release Date": "2022/10/19",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Shōya Chiba",
+    "Chinese": "An Zhi",
+    "English": "Chris Naoki Lee",
+    "Korean": "Hong Seung-hyo"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "None",
+    "Place of Birth": "Undisclosed",
+    "Date of Birth": "March 15th",
+    "Race": "Durin",
+    "Height": "132 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Solidly Grounded",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Elemental Injury recovery +10% when healing ground units"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Elemental Injury recovery +13% (+3%) when healing ground units"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Elemental Injury recovery +20% when healing ground units"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Elemental Injury recovery +23% (+3%) when healing ground units"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +15"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Solidly Grounded"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Chestnut's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Solidly Grounded .",
+        "New skill: Rising Earth .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Chestnut to Level 45.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 15000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester",
+          "quantity": 1
+        },
+        {
+          "name": "Device",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Solidly Grounded improved."
+      ],
+      "prerequisite": "Raise Chestnut to Elite 1 Level 60.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 60000
+        },
+        {
+          "name": "Medic Chip Pack",
+          "quantity": 5
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 20
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 8
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Little By Little",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Perform a healing with Elemental Injury recovery increased to 150% Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Perform a healing with Elemental Injury recovery increased to 160% Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 19,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Perform a healing with Elemental Injury recovery increased to 170% Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 18,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Perform a healing with Elemental Injury recovery increased to 200% Can store 1 charges",
+            "initialSp": 4,
+            "spCost": 17,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Perform a healing with Elemental Injury recovery increased to 210% Can store 1 charges",
+            "initialSp": 4,
+            "spCost": 16,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Perform a healing with Elemental Injury recovery increased to 220% Can store 1 charges",
+            "initialSp": 4,
+            "spCost": 15,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Perform a healing with Elemental Injury recovery increased to 250% Can store 2 charges",
+            "initialSp": 6,
+            "spCost": 14,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Perform a healing with Elemental Injury recovery increased to 270% Can store 2 charges",
+            "initialSp": 6,
+            "spCost": 13,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Perform a healing with Elemental Injury recovery increased to 280% Can store 2 charges",
+            "initialSp": 6,
+            "spCost": 12,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Perform a healing with Elemental Injury recovery increased to 300% Can store 2 charges",
+            "initialSp": 8,
+            "spCost": 10,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": null,
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Rising Earth",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25–35 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range reduced ; ASPD +80 ; when healing the same target multiple times, healing effect and Elemental Injury recovery are increased to 105%",
+            "initialSp": 20,
+            "spCost": 90,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Range reduced ; ASPD +80 ; when healing the same target multiple times, healing effect and Elemental Injury recovery are increased to 110%",
+            "initialSp": 21,
+            "spCost": 88,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Range reduced ; ASPD +80 ; when healing the same target multiple times, healing effect and Elemental Injury recovery are increased to 115%",
+            "initialSp": 22,
+            "spCost": 86,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Range reduced ; ASPD +90 ; when healing the same target multiple times, healing effect and Elemental Injury recovery are increased to 120%",
+            "initialSp": 25,
+            "spCost": 82,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Range reduced ; ASPD +90 ; when healing the same target multiple times, healing effect and Elemental Injury recovery are increased to 120%",
+            "initialSp": 26,
+            "spCost": 80,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Range reduced ; ASPD +90 ; when healing the same target multiple times, healing effect and Elemental Injury recovery are increased to 130%",
+            "initialSp": 27,
+            "spCost": 78,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Range reduced ; ASPD +100 ; when healing the same target multiple times, healing effect and Elemental Injury recovery are increased to 135%",
+            "initialSp": 30,
+            "spCost": 74,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Range reduced ; ASPD +110 ; when healing the same target multiple times, healing effect and Elemental Injury recovery are increased to 140%",
+            "initialSp": 34,
+            "spCost": 72,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Range reduced ; ASPD +110 ; when healing the same target multiple times, healing effect and Elemental Injury recovery are increased to 145%",
+            "initialSp": 36,
+            "spCost": 72,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Range reduced ; ASPD +130 ; when healing the same target multiple times, healing effect and Elemental Injury recovery are increased to 150%",
+            "initialSp": 40,
+            "spCost": 70,
+            "duration": 35
+          }
+        ],
+        "recommendation": [],
+        "cost": null,
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Oriron",
+          "quantity": 2
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 2
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Standardization α",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, productivity +15%"
+    },
+    {
+      "name": "Geology α",
+      "facility": "Factory",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to a Factory, Originium formula related productivity +30%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Chestnut's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "WDM-X: Ground Journey Memorial Light",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Chestnut, and unleash Rising Earth at least 1 time in each battle",
+        "requirement2": "Clear Intermezzo SV-3 with a 3-star rating; You must deploy your own Chestnut, and cannot include any other Medic Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +50 , ATK +15",
+          "effectLabel": "Trait improved",
+          "effectText": "Restores the HP of allied units and recovers Elemental Injury by 60% of ATK (can recover Elemental Injury of unhurt allied units)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "RMA70-12",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 20000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +60 , ATK +24",
+          "effectLabel": "Solidly Grounded improved",
+          "effectText": "Elemental Injury recovery +25% when healing ground units",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 15
+            },
+            {
+              "name": "Semi-Synthetic Solvent",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 25000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +70 , ATK +30",
+          "effectLabel": "Solidly Grounded improved",
+          "effectText": "Elemental Injury recovery +27% when healing ground units",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 5
+            },
+            {
+              "name": "Sugar Pack",
+              "quantity": 6
+            },
+            {
+              "name": "LMD",
+              "quantity": 30000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Chestnut, a geological surveyor of his\nDurin\ntribe. A quiet, introverted man, he is adept at using minerals to provide medical treatment with his\nOriginium Arts\n, and he chose to become a doctor when he came aboveground.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 45,
+        "base": {
+          "hp": 623,
+          "atk": 136,
+          "def": 44,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 820,
+          "atk": 223,
+          "def": 64,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 60,
+        "base": {
+          "hp": 820,
+          "atk": 223,
+          "def": 64,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 977,
+          "atk": 311,
+          "def": 80,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-17"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 977,
+          "atk": 311,
+          "def": 80,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1137,
+          "atk": 389,
+          "def": 101,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-17"
+      }
+    ],
+    "trust": {
+      "hp": 100,
+      "atk": 35,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, the operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nThere ain't enough Durins here! Should kidnap a few next time and run some tests on them.\n\n[Blood Originium-Crystal Density] 0.12u/L\nVery healthy!"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "A Durin man with a short stature. He claims to be a fully grown adult, but like all Durins, there's no way to tell for sure just by looking.\nFrom what Chestnut told us, the Druins often use all kinds of crystal lights for lighting, and he has long had an interest in these colorful crystals, even hoping that he could one day mine these beautiful rocks himself. Dreams are always the best motivator, and even though most Durins are lively in nature and dislike confinement, to make his small childhood wish come true, Chestnut learned every last detail he could from the adults in his tribe about these ores. When he dug his first crystal out of the ground and unleashed its colorful radiance, he excitedly made a small lamp out of this ore. Even though this small crystal lamp isn't particularly well-made and its light's color isn't especially vivid, it is still one of Chestnut's favorite possessions.\nWhen they spend their entire lives living underground, it is very important to the Durins to continue to build and expand their underground cities. They must first survey the geological features of their destination to determine whether it is suitable for habitation. The adults who taught Chestnut his geological knowledge became his teacher, and in this underground world where there isn't a clear concept of occupation, they formed a close relationship built upon knowledge and enthusiasm. Whenever the city had to be expanded, Chestnut and his teachers would put all their knowledge and power to use to repay their homeland.\nAfter Chestnut made it to the surface, he changed course and instead walked the path of a doctor. Although his teachers and friends couldn't understand his fixation on the surface, they took notice of how he persisted down this path quietly and decided to support the boy who's so fond of researching his interests. After all, there are many ways that one can live. As long as you are happy and you aren't affecting anyone else, who could say that's the wrong way to live?\n\nHe gave me a small ore as a present and said it's unique to the Durins. That's so cute!\n—Note from the writer"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "When we asked him why he didn't continue his research into ores and instead became a medical operator, Chestnut told us about his past. The Durins need to regularly trade with tribes that live elsewhere, and so they generally have friendly relationships with each other, and large scale bloodshed is extremely rare. Which is why he thought of war as something very far removed from him.\nOne day, a Catastrophe occurred on the surface directly above Chestnut's homeland by coincidence and triggered a larger scale cave-in, which destroyed a substantial portion of the underground city. Although the situation on the surface was unclear, the underground structure had already been altered. Chestnut understood that his homeland needed his help. He traversed the fissures opened by the Catastrophe, collected samples and ores, and recorded data that could affect his homeland. By the time he was finished with his work, half a year had passed. His tribe repaired much of the rail tracks and elevators thanks to the data that he and the other prospectors collected, and the only things left could only be healed with the passing time and continued effort. Having seen everything turn out so successfully, Chestnut finally had the time to explore the question he had at the very beginning: 'Just what happened on the surface?'\nWhen he was still a kid, Chestnut was already struck with admiration of the surface, having heard how vast and wide it was on the surface from adults that had been there. He was perhaps even more of a fan of the surface than the unique landscapes underground. Chestnut worked on his plan to climb aboveground day after day, and even though reality wasn't quite how he imagined, he didn't let it get to him. Ignoring the fissures that led aboveground and the glimpses of the blue sky above during his geological surveys, Chestnut instead turned his attention to the ground under his feet.\nWith the way things are now, Chestnut decided to take the chance to do some traveling. He rode the newly repaired elevators traversed layers after layers of dark but differing geological cross sections, and finally made it above ground for the first time. He kept going, and aside from that narrow blue above he ignored during his surveys, he saw a lot of landscapes that even the tribesmen who returned from surface never saw: a large, bottomless valley; a wide, calm lake; and strange, wind-eroded rocks. Yet he also saw something that's the furthest away from beauty for the first time: the land-dwellers' blood-soaked wars. After everything came to an end, Chestnut asked them about the cause. Apparently, a group of bandits attempted to steal the farmers' harvest, leading them to fight back. Born and raised in the underground where items are traded peacefully, he didn't understand why this happened, but he felt there was something for him to do, and so he raised his staff and offered this group of men a helping hand.\nAlthough his hometown is habitable after it was repaired by his tribesmen, Chestnut has already made the decision to remain on the surface. He chose to follow his childhood dream. What's more, there are a lot more people here who need his help."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Since he joined Rhodes Island, Chestnut has continued further and further down the path of a doctor. He started to take field operations one after another, upholding his responsibility at each and every meaningful and meaningless conflict along the way. Most of our operators are very fond of this calm doctor, and Chestnut himself also treasures everyone's trust greatly, leading him to devote himself in his work to save his patients more rapidly and attentively.\nThat said, the operators and Chestnut himself both overlooked one thing during his onerous missions, and that's how humans must, aside from work, also pay attention to how they feel in their hearts. Chestnut encountered a problem that almost every doctor encounters at some point during their practice: It seems that simply being a doctor doesn't affect much.\nOne day, after the field operations squad had completed all the preparations for their evacuation, they found Chestnut standing on a patch of muddy field when they called roll. He didn't respond to their calls, even casting his Originium Arts into the sky in a retaliatory way.\nAfter he got back to the landship, Chestnut told our Medical Department's operators his misgivings: With pain caused by sickness, he believes that as long as he keeps putting in the effort, even the most stubborn of diseases can be defeated. But after he came to the surface, he realized just how many of the injured were wounded by conflict. Their pains weren't caused by disease, but something much more complicated that he is unsure of. He can treat them, but he cannot stop those more complicated reasons from happening. In particular, through his work in Rhodes Island, he has had much more chances to see for himself how ugly war is.\nChestnut started to crumple.\nHe looked at this strange, beautiful world and began to reminisce his homeland.\nAnd so, Rhodes Island approved his leave request."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Returning to the familiar yet strange underground, Chestnut told his tribe's curious children about the things he saw on the surface. It felt as though he made it back to his childhood. Everything was the same, only that, this time, he was the adult that came back from the surface, yet he didn't feel he deserved the children's admiration with the way he was.\nDuring his vacation, Chestnut started to work his old job of geological prospecting and crystal ore mining again. On his free time, he visited the waterfall he used to visit as a kid and compare his height to the fluorescent mushrooms there. This slow-paced life gave him more time to think: What is it that I wanted to do in the very beginning? What am I so distressed about? Is the thing that's giving me all this anxiety something I can solve if I put myself to it?\nJust like when he worked as a geological prospector to help his tribesmen, although a Catastrophe striking his homeland was vexing, he knew there was nothing he could do to stop Catastrophes. In that case, saving others as a doctor should be no different. He knew there was nothing he could do to stop the conflicts between people, and he must accept that.\nChestnut spent over a month to carefully think about all this. He didn't know if this was just a fake sense of optimism for self consolation, but he felt he couldn't let what he had no control over to drag him down any longer. He chose to return to work, as only then will he be able to find the right way to solve these problems.\nWhen Chestnut returned to Rhodes Island, it was obvious that he now had a much firmer conviction. Although psychological scars cannot be completely erased within such a short amount of time, everyone at Rhodes Island is happy to see him moving forward once again."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "To tell the truth, when Chestnut first told us why he came to us, we thought it was both sad and hilarious... Although the surface does see its fair share of Durin visitors, most of them only come up because they think it's fun up here instead of trying to make a living to feed their families. Chestnut said that he actually asked around and learned what things are like on the surface. He then decided to follow in our footsteps and looked for a job at a hospital, only to be treated like a kid. He managed to find a few that knew about the Durins, but all of them turned him away owing to concerns about their patients. You can't exactly blame them. If I got sick, and the doctor at the hospital turned out to be this short, I would think there's something wrong with the hospital, too.\nThat's why things really were pretty hard for him. He even said that he almost cried when he found out we already had not one, but two Durins here."
+    }
+  ]
+}

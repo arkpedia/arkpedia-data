@@ -1,0 +1,753 @@
+{
+  "name": "Nowell",
+  "rarity": 5,
+  "class": "Medic",
+  "branch": "Therapist",
+  "faction": "Victoria",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing"
+  ],
+  "trait": "Has a large healing range, but the healing amount on farther targets is reduced to 80%",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "The Spirit-Farer"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4173_nowell",
+  "otherLanguages": {
+    "Simplified Chinese": "诺威尔",
+    "Traditional Chinese": "諾威爾",
+    "Japanese": "ノウエル",
+    "Korean": "노웰"
+  },
+  "characterInfo": {
+    "File no.": "VC29",
+    "Operator Record": "When Our Lives Began",
+    "Paradox Simulation": "Helping Hand",
+    "Illustrator": "板板",
+    "Release Date": "2025/08/07",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Tarusuke Shingaki",
+    "Chinese": "Liu Yao",
+    "English": "Benjamin Lhommas",
+    "Korean": "Kwon Sung-hyuk"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "None",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "December 25th",
+    "Race": "Vulpo",
+    "Height": "175 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Precise Prescription",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Healing increases to 110% when healing an ally affected by negative status"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Healing increases to 113% (+3%) when healing an ally affected by negative status"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Healing increases to 120% when healing an ally affected by negative status"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Healing increases to 123% (+3%) when healing an ally affected by negative status"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +23"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Precise Prescription"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Nowell's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Precise Prescription .",
+        "New skill: Unending Life .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Nowell to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 7
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Precise Prescription improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Nowell to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Medic Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Cutting Fluid Solution",
+          "quantity": 8
+        },
+        {
+          "name": "Aggregate Cyclicene",
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Ceaseless Steps",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +15% , ASPD +15 , and prioritizes healing allied units with Negative Status",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +20% , ASPD +20 , and prioritizes healing allied units with Negative Status",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +20% , ASPD +25 , and prioritizes healing allied units with Negative Status",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +25% , ASPD +25 , and prioritizes healing allied units with Negative Status",
+            "initialSp": 20,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +25% , ASPD +30 , and prioritizes healing allied units with Negative Status",
+            "initialSp": 20,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +30% , ASPD +30 , and prioritizes healing allied units with Negative Status",
+            "initialSp": 20,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +30% , ASPD +35 , and prioritizes healing allied units with Negative Status",
+            "initialSp": 20,
+            "spCost": 32,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +35% , ASPD +35 , and prioritizes healing allied units with Negative Status",
+            "initialSp": 20,
+            "spCost": 32,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +35% , ASPD +40 , and prioritizes healing allied units with Negative Status",
+            "initialSp": 20,
+            "spCost": 32,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +40% , ASPD +40 , and prioritizes healing allied units with Negative Status",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Semi-Synthetic Solvent",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Unending Life",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Immediately buffs two friendly Operators within range (prioritizing units with Negative Status ), healing them equal to 25% of Nowell's ATK every second for 12s and granting them status resistance",
+            "initialSp": 12,
+            "spCost": 30,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Immediately buffs two friendly Operators within range (prioritizing units with Negative Status ), healing them equal to 25% of Nowell's ATK every second for 12s and granting them status resistance",
+            "initialSp": 12,
+            "spCost": 29,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Immediately buffs two friendly Operators within range (prioritizing units with Negative Status ), healing them equal to 25% of Nowell's ATK every second for 12s and granting them status resistance",
+            "initialSp": 12,
+            "spCost": 28,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Immediately buffs two friendly Operators within range (prioritizing units with Negative Status ), healing them equal to 30% of Nowell's ATK every second for 12s and granting them status resistance",
+            "initialSp": 12,
+            "spCost": 27,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Immediately buffs two friendly Operators within range (prioritizing units with Negative Status ), healing them equal to 30% of Nowell's ATK every second for 12s and granting them status resistance",
+            "initialSp": 12,
+            "spCost": 26,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Immediately buffs two friendly Operators within range (prioritizing units with Negative Status ), healing them equal to 30% of Nowell's ATK every second for 12s and granting them status resistance",
+            "initialSp": 12,
+            "spCost": 25,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Immediately buffs three friendly Operators within range (prioritizing units with Negative Status ), healing them equal to 30% of Nowell's ATK every second for 12s and granting them status resistance",
+            "initialSp": 12,
+            "spCost": 24,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Immediately buffs three friendly Operators within range (prioritizing units with Negative Status ), healing them equal to 35% of Nowell's ATK every second for 12s and granting them status resistance",
+            "initialSp": 12,
+            "spCost": 23,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Immediately buffs three friendly Operators within range (prioritizing units with Negative Status ), healing them equal to 40% of Nowell's ATK every second for 12s and granting them status resistance",
+            "initialSp": 12,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Immediately buffs three friendly Operators within range (prioritizing units with Negative Status ), healing them equal to 45% of Nowell's ATK every second for 12s and granting them status resistance",
+            "initialSp": 12,
+            "spCost": 20,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "Sugar Pack",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Aketon",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 4
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Artisan's Dignity",
+      "facility": "Workshop",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Workshop to process elite material , the production rate of byproduct increases by 75%"
+    },
+    {
+      "name": "Surfeit of Years",
+      "facility": "Workshop",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Workshop to process Elite materials , reduces the Morale consumed by all corresponding formulas that cost 2 Morale by -1"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Nowell's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "WAH-Y: To Grandpa",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; you must deploy your own Nowell, and use Unending Life at least once in each battle",
+        "requirement2": "Clear Main Theme 5-7 with a 3-star rating; you must deploy your own Nowell, and cannot include any other Medic Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +100 , ATK +25",
+          "effectLabel": "Trait improved",
+          "effectText": "Has a large healing range and healing is no longer reduced for distant targets",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +125 , ATK +33",
+          "effectLabel": "Precise Prescription improved",
+          "effectText": "Healing increases to 130% when healing an ally affected by negative status",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +145 , ATK +38",
+          "effectLabel": "Precise Prescription improved",
+          "effectText": "Healing increases to 135% when healing an ally affected by negative status",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Before his brief stint with\nNine\n's new\nNew Reunion\nmovement, the\nVictorian\noptician Nowell traveled across\nTerra\nin search of someone, making a living with his optician skills. After the\nLondinium\nincident, Nowell was reunited with a former customer who introduced him to\nRhodes Island\n.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 750,
+          "atk": 180,
+          "def": 46,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 987,
+          "atk": 296,
+          "def": 68,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 987,
+          "atk": 296,
+          "def": 68,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1175,
+          "atk": 412,
+          "def": 86,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-4"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1175,
+          "atk": 412,
+          "def": 86,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1367,
+          "atk": 516,
+          "def": 108,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-4"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 40,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Nowell shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.08u/L\nOperator Nowell scored full marks on Medical's standard Oripathy prevention quiz, and demonstrates a degree of understanding of applied Arts theory. His cautious and logical approach towards knowledge is also to be commended.\n\n'He can take over the Introduction to Oripathy seminar for new operators as far as I'm concerned.'\n—Warfarin"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Operator Nowell was born in Victoria, though he does not remember exactly where. Based on his Gaulish accent, we speculate that it was somewhere in the northern regions.\n\nRemarks:\nThis is merely a hypothesis, and has not been verified.\nRemarks on remarks:\nForget the hypotheses and standard practice for background checks. Would anyone still use those brass glasses things with gradation marks he's got in his box? The only other place you'd find something like that is in a museum.\n...That doesn't mean he's lying! No optician has used the Gaulish style ever since the fall of Lingones and the sacking of the Imperial Academy of Sciences. Besides, the Royal Victorian Academy of Sciences soon established new regulations that defined optometrists and opticians as separate professions. No matter where he was born, someone who mixes up the two definitely does NOT have an optometrist's license!\n\n[Internal Medical Department Memo]\nAfter discussions with Operator Nowell concerning his lack of an optometrist's license, we have arrived at the following solution:\n1. Operator Nowell will go through training and receive formal education on modern optometry and lens fitting theory.\n2. Operator Nowell will undergo formal optometry accreditation, pursuant to his progress in training.\n3. Until he obtains optometrist accreditation, Operator Nowell will no longer conduct eye examinations, and focus solely on fitting and dispensing.\n\n'I would say that Mr. Nowell is not so much an optometrist or optician as a craftsman. Even after learning how to use more convenient instruments, he still prefers to make the lenses and frames by hand.\n'It may take more time, but every pair of glasses he makes is unique. The other patients say they envy my sister for the poem he engraved on her glasses frame: 'Under the blue sky the river flows / And by its banks sway the willows.' It's about what a bedridden child sees after walking out of the door for the first time in a long time.\n—Family member of a patient"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Nowell was the first client who came to seek my assistance at the Londinium office after the war, not for himself, but for the child he was accompanying.\nI was surprised to find him looking exactly the same as he did thirty years ago, when he passed through my village and made me a pair of glasses. I was around the same age as the child at the time. He didn't recognize me, and I didn't say anything. He was anxious at the boy's stubborn refusal to cooperate with medical personnel, but never lost his patience, just like how he listened to a farmer's child thirty years ago, before producing a pair of glasses like a magician and saying that he would collect payment once I graduated from university. Does he still remember those few pounds he has yet to collect?\nWe proceeded with the registration process. Nowell had brought the boy here at the request of his parents—whom he had assisted during the evacuation—in order to examine him for Oripathy. The boy had calmed down by then, and Nowell knelt down to speak to him in a low and serious tone. From what he said, I gathered that he understood quite well the tragedy that had occurred here in Londinium.\nHe was unsurprised by the results of the examination.\nThe child had finally stopped struggling and sat on the stool. As I was drawing his blood, I kept waiting for the words to come out of Nowell's mouth.\nBut he did not ask the question, even when all the tests had concluded. Had he stopped searching for that certain someone? The invisible shadow behind history, whose identity no one in town knew? Were they ever even a real person?\nHe never asked, so I could only guess. Perhaps he had already found them, or perhaps he had simply stopped obsessing over it. Regardless of the reason, he was there, standing, waiting in silence... As though he finally had unlimited time to spend at his leisure, without having to hurry to the next village, asking the question few knew the answer to.\n\n[Addendum]\nOperator Nowell entered Londinium and assisted the Self-Salvation Corps in evacuating the survivors. Reports about his agelessness and his search for the 'Unicorn' are to be archived with no immediate action at this time.\nExpenses incurred by Operator Price of the Londinium office in purchasing corrective lenses have been reimbursed by the Medical Department as an employment benefit.\n—HR Department Archive"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Mr. Miltner admitted he had low expectations when he first reached out to Rhodes Island, particularly as we had already turned down several visitation requests for various reasons.\nHe did not give up, however, attributing the previous failures to bad timing, such as the landship being too far away, or the subject of his visit being away from the ship at the time. Far from being frustrated, he continued to submit his requests to meet with Operator Nowell.\nWhen his eighth request finally went through, the rest of the process went surprisingly smoothly. Even though Norwell claimed not to know any middle-aged men by the name of Georgia Miltner, and showed clear reluctance regarding this 'family visit', and even though Mr. Miltner himself admitted having doubts about whether this Nowell of Rhodes Island was really the one he was looking for... the meeting came to pass, at long last.\n\n[Audio Log]\n'I've lost track of how many leads came out empty. Middle-aged Vulpo optician by the name of Nowell... there were three who fit all the criteria, in Victoria alone.\n'But none were the one Grandma Madeline was looking for. None were... my great-grandfather.\n'My father had already passed away, but I'd always hoped to tell Grandma Madeline that I found Great-Grandpa Nowell, while she could still see and hear.\n'Do you know, she isn't even that concerned with being able to see him one last time. She just wanted to ask him a question, and hear the answer.\n'That was the one thought keeping her going for a century. To me, she's always been a healthy, happy, and well-to-do old woman, which made me even more curious about this Great-Grandpa Nowell.\n'And at long last, I'll get to see him with my own two eyes.\n'I hope it's really him.'\n\nAfter the meeting, Operator Nowell escorted Mr. Miltner all the way outside the ship. They bid each other farewell with a smile.\nIt seems Mr. Miltner had finally found his man.\n\n[Addendum]\n'Have you found peace?'\n'I will. Someday.'\n'Then...\n'That's all Grandma Madeline wanted to ask, and all I need to know.'"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "'The words I say often feel like they're coming out of somebody else's mouth.\n'It's like a distorted voice coming from a telephone left on a table, asking if there's someone on the other end. That's the feeling some of the voices in the dream give me, a feeling that extends to reality, making it difficult to distinguish them.'\n'Sounds like something out of a movie.'\n'...I haven't watched many movies. I'm just describing what it feels like.'\n'Sorry. The words just came out of my mouth...'\n'It's alright. Do you like movies?'\n'They briefly immerse me in somebody else's life and story, because my own is so easily forgotten against my will.'\n'...I'm sorry.'\n'It's okay, sir.'\n'...Here, the coated non-corrective glasses you wanted. The lightweight frame should make them easy to wear for long periods. I suppose this is what young people want these days?'\n'Wow, they're so light! Thank you.'\n'Then I'll take my leave—'\n'Do you want to come to this Friday's movie screening, Nowell?'\n'What?'\n'It's where we all get together watch a movie and talk about it.'\n'Even if I won't have much to say?'\n'But you described the voices in your dream so beautifully. We're showing an Ursine children's movie this week, and there'll be a lot of young operators there.'\n'...Very well. Let me know the time and place.'\n\n[A Prominent Memo]\nMon 9am, Eyewear Fitting Room, Medical Department. After work—Drink in moderation with Hellagur and Mountain at the bar.\nTue Morning—Repairing glasses. Totter comes for pickup at 3pm.\nWed 9am, Eyewear Fitting Room, Medical Department. 5pm—Training Room.\nThu—Day off. Pick up package. Check location on terminal.\nFri Morning—Prepare glasses. Afternoon—Prepare glasses. 7am—Movie screening (no doubleheaders if working the next day)\nSat/Sun—Off if no field assignment."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Dear Doctor,\nI am currently on a field mission. This letter is not urgent, and you may read it in your spare time.\nAs we returned to our vehicles, one of the other operators picked up a few white hairs from my shoulder. After I put them away, I heard that sound like joints creaking in my ear again, which I'd heard while boarding the vehicle.\nIt made me start searching for signs, tracing it back to my increasingly frequent dreams. Fragments of memory float to the surface even during the day, making it difficult to make up for the restless nights with a nap.\nIn my dreams, I sit in a workshop by the Lingones River, or walk through the marshes in southern Victoria. I see flashbacks of all my journeys across Terra. There is only one thing that I am sure of, no matter how blurred the fragments are: my heart is at peace. I am waiting.\nBut what am I waiting for? What CAN I wait for?\nPerhaps I have saved enough lives. I have tasted happiness. Perhaps this ember will be scattered to the winds. Perhaps...\nPerhaps that day is near.\nIf so, I ask for your blessings, friend.\n\nThere is no need to reply or hold on to this letter. Do with it as you please.\nI will see you soon if all goes well with the mission. Take care.\n\n(There is no signature)"
+    }
+  ]
+}

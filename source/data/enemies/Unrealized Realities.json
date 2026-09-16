@@ -1,0 +1,1428 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act47side",
+    "label": "UR",
+    "name": "Unrealized Realities",
+    "release_date": "2026-05-21"
+  },
+  "enemies": [
+    {
+      "slug": "skybuster_soda",
+      "id": "enemy_10146_nscola",
+      "name": "Skybuster Soda",
+      "index": "AS01",
+      "rank": "Normal",
+      "sort": 1095,
+      "hidden": false,
+      "icon": "/enemies-icons/Skybuster Soda.webp",
+      "flavour_text": "Shake the bottle vigorously for three hundred seconds then pry the cap open according to the instructions, and it will shoot into the sky with immense force. Don't worry, the bottle is made of high-toughness acrylic that will not break easily.\nAs for the soda inside... does anyone actually buy it for the soda?",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Gradually accelerates when moving, but loses HP over time",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 350,
+            "def": 100,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "enemy_nscola[speed].interval": 0.5,
+                "enemy_nscola[speed].max_time": 25.0,
+                "enemy_nscola[speed].move_speed": 0.3,
+                "fixed_value_damage": 120.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "skybuster_soda_sour_and_spicy",
+      "id": "enemy_10146_nscola_2",
+      "name": "Skybuster Soda (Sour and Spicy)",
+      "index": "AS02",
+      "rank": "Normal",
+      "sort": 1096,
+      "hidden": false,
+      "icon": "/enemies-icons/Skybuster Soda (Sour and Spicy).webp",
+      "flavour_text": "Shake the bottle vigorously for three hundred seconds then pry the cap open according to the instructions, and it will shoot into the sky with immense force. Don't worry, the bottle is made of high-toughness acrylic that will not break easily.\nThe soda inside is a strong sour and spicy flavor. Do not open indoors.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Gradually accelerates when moving, but loses HP over time",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6500,
+            "atk": 400,
+            "def": 100,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "enemy_nscola[speed].interval": 0.5,
+                "enemy_nscola[speed].max_time": 25.0,
+                "enemy_nscola[speed].move_speed": 0.3,
+                "fixed_value_damage": 120.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "flying_toaster",
+      "id": "enemy_10147_nsbomb",
+      "name": "Flying Toaster",
+      "index": "AS03",
+      "rank": "Normal",
+      "sort": 1097,
+      "hidden": false,
+      "icon": "/enemies-icons/Flying Toaster.webp",
+      "flavour_text": "A crisp beep, then fresh toast falls directly onto your plate.\nRestaurants that use it typically require customers to take off their hats. Not for good manners, but because it often mistakes hats for plates.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "When not blocked, continuously deals splash damage to surrounding allied units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7000,
+            "atk": 330,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "atk_scale": 2.0,
+                "interval": 2.5,
+                "range_radius": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "flying_toaster_with_jam",
+      "id": "enemy_10147_nsbomb_2",
+      "name": "Flying Toaster (With Jam)",
+      "index": "AS04",
+      "rank": "Normal",
+      "sort": 1098,
+      "hidden": false,
+      "icon": "/enemies-icons/Flying Toaster (With Jam).webp",
+      "flavour_text": "A crisp beep, then fresh toast spread with jam falls directly onto your plate.\nRestaurants that use it typically require customers to take off their hats. Not for good manners, but because it often mistakes hats for plates.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "When not blocked, continuously deals splash damage to surrounding allied units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 9000,
+            "atk": 400,
+            "def": 300,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "C",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "atk_scale": 2.0,
+                "interval": 2.5,
+                "range_radius": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "skyhowl_vacuum",
+      "id": "enemy_10148_nsmos",
+      "name": "Skyhowl Vacuum",
+      "index": "AS05",
+      "rank": "Normal",
+      "sort": 1099,
+      "hidden": false,
+      "icon": "/enemies-icons/Skyhowl Vacuum.webp",
+      "flavour_text": "For other appliances, the ability to fly is just a gimmick. For vacuum cleaners, the ability to fly is a revolutionary breakthrough, allowing it to vacuum the ceiling with ease.\nPlease follow the instructions in the safety manual if it catches your hair as it flies over your head.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically searches for nearby Balloons, Powerful Balloons or allied units and attacks them for some time while absorbing certain SP",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 200,
+            "def": 200,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 0.3,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "D",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "KeepAttack",
+              "sp_cost": 0,
+              "cooldown": 12.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "all_cnt": 15.0,
+                "atk_scale": 1.0,
+                "sp": 1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "range_radius": 1.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "high_powered_skyhowl_vacuum",
+      "id": "enemy_10148_nsmos_2",
+      "name": "High-Powered Skyhowl Vacuum",
+      "index": "AS06",
+      "rank": "Normal",
+      "sort": 1100,
+      "hidden": false,
+      "icon": "/enemies-icons/High-Powered Skyhowl Vacuum.webp",
+      "flavour_text": "Merely vacuuming the ceiling isn't enough of a selling point. This new model has had its sucking power massively boosted, claiming that it can suck all the dust out of the air.\nDon't bother looking for the safety manual if this upgraded model catches your hair. Find a clinic to book a scalp replacement surgery.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically searches for nearby Balloons, Powerful Balloons or allied units and attacks them for some time while absorbing certain SP",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7000,
+            "atk": 250,
+            "def": 200,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 0.3,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "D",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "KeepAttack",
+              "sp_cost": 0,
+              "cooldown": 12.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "all_cnt": 15.0,
+                "atk_scale": 1.0,
+                "sp": 1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "range_radius": 1.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "skybreaker_soda_keg",
+      "id": "enemy_10149_nscan",
+      "name": "Skybreaker Soda Keg",
+      "index": "AS07",
+      "rank": "Elite",
+      "sort": 1101,
+      "hidden": false,
+      "icon": "/enemies-icons/Skybreaker Soda Keg.webp",
+      "flavour_text": "A flying soda keg that was banned by the ATAO three days after its release for being too dangerous.\nPerhaps a hat with a hole in it will one day be displayed in the Columbian Aerospace Museum, commemorating the wrong turns in the development of flight technology.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Gradually accelerates when moving, but loses HP over time; the first attack after being blocked deals bonus damage based on Movement Speed, and blows away Balloons and Powerful Balloons at the target's tile",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 11000,
+            "atk": 550,
+            "def": 400,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "atk_scale_speed": 500.0,
+                "enemy_nscan[speed].interval": 0.5,
+                "enemy_nscan[speed].max_time": 25.0,
+                "enemy_nscan[speed].move_speed": 0.5,
+                "fixed_value_damage": 250.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "skybreaker_soda_keg_family_size",
+      "id": "enemy_10149_nscan_2",
+      "name": "Skybreaker Soda Keg (Family Size)",
+      "index": "AS08",
+      "rank": "Elite",
+      "sort": 1102,
+      "hidden": false,
+      "icon": "/enemies-icons/Skybreaker Soda Keg (Family Size).webp",
+      "flavour_text": "A family-size version of the flying soda keg compresses the soda further, making it so dangerous that it was banned by the ATAO just three days after release. It packs an even bigger punch.\nPerhaps a skull with a hole in it will one day be displayed in the Columbian Aerospace Museum, commemorating the wrong turns in the development of flight technology.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Gradually accelerates when moving, but loses HP over time; the first attack after being blocked deals bonus damage based on Movement Speed, and blows away Balloons and Powerful Balloons at the target's tile",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 13000,
+            "atk": 650,
+            "def": 400,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "atk_scale_speed": 700.0,
+                "enemy_nscan[speed].interval": 0.5,
+                "enemy_nscan[speed].max_time": 25.0,
+                "enemy_nscan[speed].move_speed": 0.5,
+                "fixed_value_damage": 250.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "scorching_propeller",
+      "id": "enemy_10150_nsheat",
+      "name": "Scorching Propeller",
+      "index": "AS09",
+      "rank": "Elite",
+      "sort": 1103,
+      "hidden": false,
+      "icon": "/enemies-icons/Scorching Propeller.webp",
+      "flavour_text": "Widely used in Propeller Paradise to keep things afloat, it is an excellent performer that offers both power and stability.\nUnfortunately, its poor cooling causes platforms equipped with it to feel like midsummer all year round.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Continuously inflicts Burn on all other nearby units",
+          "format": "silence"
+        },
+        {
+          "text": "Grants 1 Buoyancy when on a Levitatable Zone",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 360,
+            "def": 200,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 2.0,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Damage",
+              "parameters": {
+                "ep_damage_ratio": 0.1,
+                "range_radius": 2.0
+              }
+            },
+            {
+              "key": "Passive",
+              "parameters": {
+                "force": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "scorched_scent_propeller",
+      "id": "enemy_10150_nsheat_2",
+      "name": "Scorched-Scent Propeller",
+      "index": "AS10",
+      "rank": "Elite",
+      "sort": 1104,
+      "hidden": false,
+      "icon": "/enemies-icons/Scorched-Scent Propeller.webp",
+      "flavour_text": "Widely used in Propeller Paradise to keep things afloat, this upgraded version is an excellent performer that offers both power and stability, as well as the ability to repel fowlbeasts.\nUnfortunately, the upgrade has only exacerbated its cooling issues, causing platforms equipped with it to give off an annoying scorched aroma all year round.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Continuously inflicts Burn on all other nearby units",
+          "format": "silence"
+        },
+        {
+          "text": "Grants 1 Buoyancy when on a Levitatable Zone",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 480,
+            "def": 200,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 2.0,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Damage",
+              "parameters": {
+                "ep_damage_ratio": 0.1,
+                "range_radius": 2.0
+              }
+            },
+            {
+              "key": "Passive",
+              "parameters": {
+                "force": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "skystrider_porta_potty",
+      "id": "enemy_10151_nspace",
+      "name": "Skystrider Porta-Potty",
+      "index": "AS11",
+      "rank": "Elite",
+      "sort": 1105,
+      "hidden": false,
+      "icon": "/enemies-icons/Skystrider Porta-Potty.webp",
+      "flavour_text": "What is the most important feature for a facility that can avoid the traffic and reach the client in time, regardless of road conditions?\nThe Volvort Kochinski Flying Restroom, which ceased production after just two weeks, was definitely not the answer. Perhaps the price of 500 certs per call was too much?",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated for the first time, crashes and becomes debris with extremely high DEF, nullifying 1 Buoyancy if on a Levitatable Zone",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 800,
+            "def": 1000,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "A",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Dead",
+              "parameters": {
+                "def": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "skystrider_ambulance",
+      "id": "enemy_10151_nspace_2",
+      "name": "Skystrider Ambulance",
+      "index": "AS12",
+      "rank": "Elite",
+      "sort": 1106,
+      "hidden": false,
+      "icon": "/enemies-icons/Skystrider Ambulance.webp",
+      "flavour_text": "Learning from their previous mistakes, Volvort Kochinski R&D repurposed the failed flying restroom into an ambulance.\nUnfortunately, their invention was still ahead of its time. Not everywhere in Propeller Paradise has a landing pad, and grabbing patients with pincers was considered too rough.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated for the first time, crashes and becomes debris with extremely high DEF, nullifying 1 Buoyancy if on a Levitatable Zone",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 18000,
+            "atk": 900,
+            "def": 1200,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "A+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Dead",
+              "parameters": {
+                "def": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "liberated_tree",
+      "id": "enemy_10152_nstree",
+      "name": "'Liberated Tree'",
+      "index": "AS13",
+      "rank": "Elite",
+      "sort": 1107,
+      "hidden": false,
+      "icon": "/enemies-icons/'Liberated Tree'.webp",
+      "flavour_text": "In the era of Sky Fever, everything must fly, even trees. What once planted its roots in the soil now flies away to every corner of Terra.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Only attacks allied units in aerial state",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 2500,
+            "def": 600,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 1.0,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sunchaser_tree",
+      "id": "enemy_10152_nstree_2",
+      "name": "'Sunchaser Tree'",
+      "index": "AS14",
+      "rank": "Elite",
+      "sort": 1108,
+      "hidden": false,
+      "icon": "/enemies-icons/'Sunchaser Tree'.webp",
+      "flavour_text": "In the era of Sky Fever, everything must fly, even trees. What once planted its roots in the soil now flies away to every corner of Terra.\nThey chase the sun according to their primal instincts, and even their leaves have been dyed red.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Only attacks allied units in aerial state",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 50000,
+            "atk": 3000,
+            "def": 600,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 1.0,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "S+",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "balloon",
+      "id": "enemy_10153_nsblon",
+      "name": "Balloon",
+      "index": "AS15",
+      "rank": "Normal",
+      "sort": 1109,
+      "hidden": false,
+      "icon": "/enemies-icons/Balloon.webp",
+      "flavour_text": "One of the thousands of hot-air balloons that comprise the first levitating plate on Terra.\nKing Charles the Mad believed the only reason his castle would not move was because it did not have enough Originium engines. People never change, even after centuries.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Does not count towards the defeated enemies counter",
+          "format": "normal"
+        },
+        {
+          "text": "Grants 1 Buoyancy when on a Levitatable Zone",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 0,
+            "def": 0,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": 1.0,
+            "weight": 0,
+            "taunt": -1,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "E",
+            "def": "E",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "S"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "force": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "powerful_balloon",
+      "id": "enemy_10153_nsblon_2",
+      "name": "Powerful Balloon",
+      "index": "AS16",
+      "rank": "Normal",
+      "sort": 1110,
+      "hidden": false,
+      "icon": "/enemies-icons/Powerful Balloon.webp",
+      "flavour_text": "One of many powerful hot-air balloons that comprise the first levitating plate on Terra.\nTurn the technological legacy of the Ring Lab into children's toys, and balloons for children into a levitating plate's source of power. That is the Columbian way.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Does not count towards the defeated enemies counter",
+          "format": "normal"
+        },
+        {
+          "text": "Grants 1 Buoyancy when on a Levitatable Zone",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 0,
+            "def": 0,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": 1.0,
+            "weight": 0,
+            "taunt": -1,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "E",
+            "def": "E",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "S"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "force": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "v_la_of_convallis",
+      "id": "enemy_1579_nstmom",
+      "name": "Væla of Convallis",
+      "index": "VOV",
+      "rank": "Boss",
+      "sort": 1374,
+      "hidden": false,
+      "icon": "/enemies-icons/Væla of Convallis.webp",
+      "flavour_text": "If only there were something she could still do, for Convallis, for the Banshee, for her.",
+      "race": "Sarkaz",
+      "movement": "Flying",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical",
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks deal Physical damage and splash damage to allied units, Balloons, and Powerful Balloons in a large area around the target",
+          "format": "normal"
+        },
+        {
+          "text": "[Return to Oblivion] Sequentially locks on to up to 2 allied units, dealing gradually increasing Arts damage; if the unit retreats or is defeated, nullifies 2 additional Buoyancy on their Levitatable Zone for the remainder of the skill; prioritizes low ground units",
+          "format": "normal"
+        },
+        {
+          "text": "ATK, DEF, and RES reduced for a period of time when [Return to Oblivion] expires; the more targets the skill had, the longer the duration",
+          "format": "normal"
+        },
+        {
+          "text": "When HP drops to 0 for the first time, takes the battlefield into the sky and revives",
+          "format": "normal"
+        },
+        {
+          "text": "Flight Phase",
+          "format": "title"
+        },
+        {
+          "text": "Permanent Field Change: All units on the ground are defeated, and tiles and Levitatable Zones on the ground are destroyed",
+          "format": "normal"
+        },
+        {
+          "text": "Increases starting ATK, DEF, and RES; immune to Stun, Freeze, and Fear; [Return to Oblivion] locks onto 1 additional target",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 70000,
+            "atk": 1200,
+            "def": 2000,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "S",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "RayTile",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 30.0,
+              "priority": 0,
+              "parameters": {
+                "atk": -0.5,
+                "def": -0.7,
+                "force": 0.0,
+                "force_extra": 2.0,
+                "magic_resistance": -0.5,
+                "max_scale": 0.5,
+                "max_target_main": 1.0,
+                "max_target_sub": 1.0,
+                "ray_time": 12.0,
+                "ray_time_sub": 8.0,
+                "scale_per_second": 0.025,
+                "start_scale": 0.2,
+                "weak_duration": 5.0,
+                "weak_duration_2": 10.0,
+                "weak_duration_3": 10.0
+              }
+            },
+            {
+              "key": "RayTileM2",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 30.0,
+              "priority": 0,
+              "parameters": {
+                "atk": -0.5,
+                "def": -0.7,
+                "force": 0.0,
+                "force_extra": 2.0,
+                "magic_resistance": -0.5,
+                "max_scale": 0.5,
+                "max_target_main": 1.0,
+                "max_target_sub": 2.0,
+                "ray_time": 12.0,
+                "ray_time_sub": 8.0,
+                "scale_per_second": 0.025,
+                "start_scale": 0.2,
+                "weak_duration": 5.0,
+                "weak_duration_2": 10.0,
+                "weak_duration_3": 15.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "spash_atk_scale": 0.5
+              }
+            },
+            {
+              "key": "PassiveM2",
+              "parameters": {
+                "atk": 0.2,
+                "base_attack_time": 0.0,
+                "def": 0.5,
+                "inf_duration": 15.0,
+                "magic_resistance": 20.0,
+                "spash_atk_scale": 0.5
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 15.0,
+                "hp_ratio": 1.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Sleep"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 110000,
+            "atk": 1700,
+            "def": 2400,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A+",
+            "def": "S",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "RayTile",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 30.0,
+              "priority": 0,
+              "parameters": {
+                "atk": -0.5,
+                "def": -0.7,
+                "force": 0.0,
+                "force_extra": 2.0,
+                "magic_resistance": -0.5,
+                "max_scale": 0.5,
+                "max_target_main": 1.0,
+                "max_target_sub": 1.0,
+                "ray_time": 12.0,
+                "ray_time_sub": 8.0,
+                "scale_per_second": 0.025,
+                "start_scale": 0.2,
+                "weak_duration": 5.0,
+                "weak_duration_2": 10.0,
+                "weak_duration_3": 10.0
+              }
+            },
+            {
+              "key": "RayTileM2",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 30.0,
+              "priority": 0,
+              "parameters": {
+                "atk": -0.5,
+                "def": -0.7,
+                "force": 0.0,
+                "force_extra": 2.0,
+                "magic_resistance": -0.5,
+                "max_scale": 0.5,
+                "max_target_main": 1.0,
+                "max_target_sub": 2.0,
+                "ray_time": 12.0,
+                "ray_time_sub": 8.0,
+                "scale_per_second": 0.025,
+                "start_scale": 0.2,
+                "weak_duration": 5.0,
+                "weak_duration_2": 10.0,
+                "weak_duration_3": 15.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "spash_atk_scale": 0.5
+              }
+            },
+            {
+              "key": "PassiveM2",
+              "parameters": {
+                "atk": 0.2,
+                "base_attack_time": 0.0,
+                "def": 0.5,
+                "inf_duration": 15.0,
+                "magic_resistance": 20.0,
+                "spash_atk_scale": 0.5
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 15.0,
+                "hp_ratio": 1.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence",
+            "Sleep"
+          ],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

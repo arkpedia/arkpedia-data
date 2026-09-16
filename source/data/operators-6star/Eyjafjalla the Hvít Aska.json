@@ -1,0 +1,1020 @@
+{
+  "name": "Eyjafjalla the Hvít Aska",
+  "rarity": 6,
+  "class": "Medic",
+  "branch": "Wandering Medic",
+  "faction": "Leithanien",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing"
+  ],
+  "trait": "Restores the HP of allied units and recovers Elemental Injury by 50% of ATK (can recover Elemental Injury of unhurt allied units)",
+  "howToObtain": {
+    "Limited": "Yes",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "A Picnic Before A Long Trip",
+    "One More Story"
+  ],
+  "ep": {
+    "Main": "Miss You Kogareru Hitotoki",
+    "Co-star": null
+  },
+  "internalName": "char_1016_agoat2",
+  "otherLanguages": {
+    "Simplified Chinese": "纯烬艾雅法拉",
+    "Traditional Chinese": "純燼艾雅法拉",
+    "Japanese": "純 燼 エイヤフィヤトラ",
+    "Korean": "에이야퍄들라 더 크비트 아스카"
+  },
+  "characterInfo": {
+    "File no.": "LN10",
+    "Operator Record": "The First Step Into Night",
+    "Paradox Simulation": "A Scholar's Strength",
+    "Illustrator": "Anmi",
+    "Release Date": "2024/01/16",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Risa Taneda",
+    "Chinese": "Jiang Wen (credited as \"Juniper Berry\" in EN)",
+    "English": "Hollie Taylor",
+    "Korean": "Kim Ha-ru"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Leithanien",
+    "Date of Birth": "October 18th",
+    "Race": "Caprinae",
+    "Height": "153 cm",
+    "Infection Status": "Originium crystals distributed across skin surface, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Flawed",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Outstanding"
+  },
+  "talents": [
+    {
+      "name": "Replenishing Mist",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Normal heals additionally restores HP and Elemental Injury per second equal to 8% of the original amount, lasting for 4 seconds (stacks up to 3 times)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Normal heals additionally restores HP and Elemental Injury per second equal to 10% of the original amount, lasting for 6 seconds (stacks up to 3 times)"
+        }
+      ]
+    },
+    {
+      "name": "Volcanic Ash Remedy",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Increases the Max HP of friendly units within range by +6%, and reduces the Elemental Injury they take by 12%"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Increases the Max HP of friendly units within range by +8% (+2%) , and reduces the Elemental Injury they take by 12%"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +23"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Volcanic Ash Remedy"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Eyjafjalla the Hvít Aska's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Replenishing Mist .",
+        "New skill: Cloudmist Shelter .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Eyjafjalla the Hvít Aska to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 12
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Volcanic Ash Remedy .",
+        "New skill: Volcanic Echoes .",
+        "Replenishing Mist improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Eyjafjalla the Hvít Aska to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Medic Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Bipolar Nanoflake",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Block",
+          "quantity": 5
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Soundless Sustenance",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": "Unlimited",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +10% , each heal can affect an additional target, and all friendly units within range will recover Elemental Injury equal to 2% of Eyjafjalla the Hvít Aska's ATK per second Unlimited duration",
+            "initialSp": 0,
+            "spCost": 80,
+            "duration": "∞"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +10% , each heal can affect an additional target, and all friendly units within range will recover Elemental Injury equal to 3% of Eyjafjalla the Hvít Aska's ATK per second Unlimited duration",
+            "initialSp": 0,
+            "spCost": 78,
+            "duration": "∞"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +10% , each heal can affect an additional target, and all friendly units within range will recover Elemental Injury equal to 4% of Eyjafjalla the Hvít Aska's ATK per second Unlimited duration",
+            "initialSp": 0,
+            "spCost": 76,
+            "duration": "∞"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +20% , each heal can affect an additional target, and all friendly units within range will recover Elemental Injury equal to 4% of Eyjafjalla the Hvít Aska's ATK per second Unlimited duration",
+            "initialSp": 0,
+            "spCost": 74,
+            "duration": "∞"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +20% , each heal can affect an additional target, and all friendly units within range will recover Elemental Injury equal to 5% of Eyjafjalla the Hvít Aska's ATK per second Unlimited duration",
+            "initialSp": 0,
+            "spCost": 72,
+            "duration": "∞"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +20% , each heal can affect an additional target, and all friendly units within range will recover Elemental Injury equal to 6% of Eyjafjalla the Hvít Aska's ATK per second Unlimited duration",
+            "initialSp": 0,
+            "spCost": 70,
+            "duration": "∞"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +30% , each heal can affect an additional target, and all friendly units within range will recover Elemental Injury equal to 6% of Eyjafjalla the Hvít Aska's ATK per second Unlimited duration",
+            "initialSp": 0,
+            "spCost": 68,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +30% , each heal can affect an additional target, and all friendly units within range will recover Elemental Injury equal to 7% of Eyjafjalla the Hvít Aska's ATK per second Unlimited duration",
+            "initialSp": 0,
+            "spCost": 64,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +30% , each heal can affect an additional target, and all friendly units within range will recover Elemental Injury equal to 8% of Eyjafjalla the Hvít Aska's ATK per second Unlimited duration",
+            "initialSp": 0,
+            "spCost": 62,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +40% , each heal can affect an additional target, and all friendly units within range will recover Elemental Injury equal to 8% of Eyjafjalla the Hvít Aska's ATK per second Unlimited duration",
+            "initialSp": 0,
+            "spCost": 60,
+            "duration": "∞"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "2nd",
+            "priority": "main",
+            "explanation": "While this is considered the AFK skill of Eyjafjalla, it does have one of the best consistent elemental healing. Master this when you don't have other building priorities."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "Aketon",
+              "quantity": 8
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Cloudmist Shelter",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Immediately heals all allied units within range and creates a Protective Barrier for them that lasts 10 seconds; Protective Barrier absorbs Elemental Injury for all friendly units equal to 350% of ATK",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Immediately heals all allied units within range and creates a Protective Barrier for them that lasts 10 seconds; Protective Barrier absorbs Elemental Injury for all friendly units equal to 400% of ATK",
+            "initialSp": 0,
+            "spCost": 29,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Immediately heals all allied units within range and creates a Protective Barrier for them that lasts 10 seconds; Protective Barrier absorbs Elemental Injury for all friendly units equal to 450% of ATK",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Immediately heals all allied units within range and creates a Protective Barrier for them that lasts 12 seconds; Protective Barrier absorbs Elemental Injury for all friendly units equal to 500% of ATK",
+            "initialSp": 0,
+            "spCost": 27,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Immediately heals all allied units within range and creates a Protective Barrier for them that lasts 12 seconds; Protective Barrier absorbs Elemental Injury for all friendly units equal to 550% of ATK",
+            "initialSp": 0,
+            "spCost": 26,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Immediately heals all allied units within range and creates a Protective Barrier for them that lasts 12 seconds; Protective Barrier absorbs Elemental Injury for all friendly units equal to 600% of ATK",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Immediately heals all allied units within range and creates a Protective Barrier for them that lasts 14 seconds; Protective Barrier absorbs Elemental Injury for all friendly units equal to 650% of ATK",
+            "initialSp": 0,
+            "spCost": 24,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Immediately heals all allied units within range and creates a Protective Barrier for them that lasts 16 seconds; Protective Barrier absorbs Elemental Injury for all friendly units equal to 750% of ATK",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Immediately heals all allied units within range and creates a Protective Barrier for them that lasts 18 seconds; Protective Barrier absorbs Elemental Injury for all friendly units equal to 800% of ATK",
+            "initialSp": 0,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Immediately heals all allied units within range and creates a Protective Barrier for them that lasts 20 seconds; Protective Barrier absorbs Elemental Injury for all friendly units equal to 900% of ATK",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Polyester Pack",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Volcanic Echoes",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "50 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range becomes global, and each heal is converted to a 5 -heal sequence that prioritizes different targets, each with 25% healing effectiveness and Elemental Injury recovery; the effect of the Second Talent increases to 2 times",
+            "initialSp": 20,
+            "spCost": 80,
+            "duration": 50
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Range becomes global, and each heal is converted to a 5 -heal sequence that prioritizes different targets, each with 25% healing effectiveness and Elemental Injury recovery; the effect of the Second Talent increases to 2.3 times",
+            "initialSp": 20,
+            "spCost": 79,
+            "duration": 50
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Range becomes global, and each heal is converted to a 5 -heal sequence that prioritizes different targets, each with 25% healing effectiveness and Elemental Injury recovery; the effect of the Second Talent increases to 2.6 times",
+            "initialSp": 20,
+            "spCost": 78,
+            "duration": 50
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Range becomes global, and each heal is converted to a 5 -heal sequence that prioritizes different targets, each with 35% healing effectiveness and Elemental Injury recovery; the effect of the Second Talent increases to 2.9 times",
+            "initialSp": 30,
+            "spCost": 75,
+            "duration": 50
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Range becomes global, and each heal is converted to a 5 -heal sequence that prioritizes different targets, each with 35% healing effectiveness and Elemental Injury recovery; the effect of the Second Talent increases to 3.2 times",
+            "initialSp": 30,
+            "spCost": 74,
+            "duration": 50
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Range becomes global, and each heal is converted to a 5 -heal sequence that prioritizes different targets, each with 35% healing effectiveness and Elemental Injury recovery; the effect of the Second Talent increases to 3.5 times",
+            "initialSp": 30,
+            "spCost": 73,
+            "duration": 50
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Range becomes global, and each heal is converted to a 5 -heal sequence that prioritizes different targets, each with 45% healing effectiveness and Elemental Injury recovery; the effect of the Second Talent increases to 3.8 times",
+            "initialSp": 40,
+            "spCost": 70,
+            "duration": 50
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Range becomes global, and each heal is converted to a 5 -heal sequence that prioritizes different targets, each with 50% healing effectiveness and Elemental Injury recovery; the effect of the Second Talent increases to 4.2 times",
+            "initialSp": 40,
+            "spCost": 66,
+            "duration": 50
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Range becomes global, and each heal is converted to a 5 -heal sequence that prioritizes different targets, each with 55% healing effectiveness and Elemental Injury recovery; the effect of the Second Talent increases to 4.6 times",
+            "initialSp": 40,
+            "spCost": 63,
+            "duration": 50
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Range becomes global, and each heal is converted to a 5 -heal sequence that prioritizes different targets, each with 60% healing effectiveness and Elemental Injury recovery; the effect of the Second Talent increases to 5 times",
+            "initialSp": 40,
+            "spCost": 60,
+            "duration": 50
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "Eyjafjalla's best skill, providing map-wide healing no matter where your units are. There's much to gain from giving masteries to this."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 9
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Global Range",
+            "description": "Heals allies no matter where they are"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 5
+        },
+        {
+          "name": "Diketon",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 8
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Semi-Synthetic Solvent",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Medic Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Medic Operators' Specialization training speed +30%"
+    },
+    {
+      "name": "Combat Techniques: Wandering MedicReplacesMedic Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Medic Operators' Specialization training speed +30% ; if the trainee's Job Branch is Wandering Medic , training speed will be further increased by +45%"
+    },
+    {
+      "name": "Volcanic Hot Springs Bath",
+      "facility": "Dormitory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Dormitory, Morale recovery per hour of all Operators in that Dormitory +0.06 for each Wandering Medic Operator in the Base (excluding Assistants and Activity Room users, caps at 4 Operators, strongest effect of the same type applies)"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Eyjafjalla the Hvít Aska's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "WDM-X: Sounds I Want to Retain",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Eyjafjalla the Hvít Aska, and unleash Volcanic Echoes at least 1 times in each battle",
+        "requirement2": "Clear Side Story FC-5 with a 3-star rating; You must deploy your own Eyjafjalla the Hvít Aska, and cannot include any other Medic Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +110 , ATK +25",
+          "effectLabel": "Trait improved",
+          "effectText": "Restores the HP of allied units and recovers Elemental Injury by 60% of ATK (can recover Elemental Injury of unhurt allied units)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +125 , ATK +36",
+          "effectLabel": "Volcanic Ash Remedy improved",
+          "effectText": "Increases the Max HP of friendly units within range by +6%, and reduces the Elemental Injury they take by 14%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +140 , ATK +44",
+          "effectLabel": "Volcanic Ash Remedy improved",
+          "effectText": "Increases the Max HP of friendly units within range by +8%, and reduces the Elemental Injury they take by 14%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "WDM-Y: Life I Want to Retain",
+      "mission": {
+        "requirement1": "Complete 3 battles with a non support Eyjafjalla the Hvit Aska and have her use Soundless Sustenance at least once.",
+        "requirement2": "Clear Intermezzi SN-5 with a 3-star ratings. You must deploy your own Eyjafjalla the Hvit Aska and cannot include other Medic operators in the squad."
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +35",
+          "effectLabel": "New trait",
+          "effectText": "When friendly operators in attack range receives Elemental Injury, ASPD +8",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +48",
+          "effectLabel": "Replenishing Mist improved",
+          "effectText": "Normal heals additionally restores HP and Elemental Injury per second equal to 12% of the original amount, lasting for 7 seconds (stacks up to 3 times)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +60",
+          "effectLabel": "Replenishing Mist improved",
+          "effectText": "Normal heals additionally restores HP and Elemental Injury per second equal to 13% of the original amount, lasting for 8 seconds (stacks up to 3 times)",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Eyjafjalla\n, Volcanologist and\nCatastrophe Messenger\n. In recent years, she has participated in the production of multiple documentaries and written and published multiple books on volcanoes. She continues to receive treatment at\nRhodes Island\nand undertakes a variety of activities, including Catastrophe research, as needed.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "ySBm8xVyQ0c",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "JVLwpU5N0S4",
+      "creator": "DragonGJY"
+    },
+    {
+      "videoId": "gnaDbe3pBDU",
+      "creator": "Dokutah Shikikan"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 789,
+          "atk": 148,
+          "def": 47,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1039,
+          "atk": 244,
+          "def": 69,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1039,
+          "atk": 244,
+          "def": 69,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1237,
+          "atk": 339,
+          "def": 87,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-17"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1237,
+          "atk": 339,
+          "def": 87,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1439,
+          "atk": 424,
+          "def": 109,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-17"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 45,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 11%\nOccurrences of deafness and blurred vision have become more frequent.\n\n[Blood Originium-Crystal Density] 0.59u/L\nWith Rhodes Island having brought her condition under control, Operator Eyjafjalla's Blood Originium-Crystal Density has not seen a significant increase.\n\n'Dr. Keller... My numbers haven't gone up. I'm not lying! We can't delay this field survey... Please! Believe me!'"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "After returning from her trip, Eyjafjalla slowly recounted to her fellow operators all her experiences during her time away. And when telling those stories, each and every piece of volcanic rock has an interesting factoid behind it: rocks with lots of holes can float in water, and sometimes even make noise; the distribution of obsidian is closely related to magma activity, and their hidden luster has other meanings to it; etc.\nAt the same time, our operators have also noticed that, while her hearing loss used to be a barrier to communication, it has since become much easier to talk to her. Whenever they tell her that her condition must have improved, she just keeps smiling as she always does and tells them with a bit of pride that, while her hearing has deteriorated to the point where she can now only hear with hearing aids in a quiet environment, they're finding it easier to talk to her because she learned to read lips.\n'Hearing aids really don't help me understand that much anymore, so I usually rely on both them and lip reading to understand what everyone is saying. Is it that hard to tell if you're not watching for it?\n'Sometimes, after I tell others about my condition, they start to look at me kind of differently. It's not that I want to be treated differently or earn anyone's sympathy. All I really need is for everyone to interact with me as usual.'\nThe worrying thing is that we occasionally have operators visit Medical and tell us that they saw her talking alone by herself, and that she sometimes even seemed a little angry. They were afraid to interrupt her, but were nonetheless worried that perhaps her condition has worsened in some strange way..."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Few are aware of the concept of a 'Sovereign of Beasts.' When interacting with humans, they are usually treated as either a human with distinctive traits or some kind of supernatural ruler. The natural characteristics demonstrated by these Sovereigns are also quite distinct from Terra's existing creatures. Recently, there has also been a string of strange occurrences aboard Rhodes Island, and we surmise that this is the work of a Sov■■■ (A long string of sheep hoofprints can be seen here; the letters are illegible)\n—■■■(Another string of hoofprints}\n\n'Skyfire told me they were scared to death when I got lost in the wilderness again, but they didn't expect me to suddenly appear out of nowhere in the crossroads they were in, alone. But I had a pink, fluffy critter lead me there. It even took a bite out of my book!'\n'Pink, fluffy critters? They've been showing up whenever I play my guitar! Gotta say, they have great taste in music. Even when I'm jamming out in the wind, they stand out there with me, up against the gales and unleashing life! Wish they'd stop eating my strings, though.'\n'Outta the way, outta the way~ Metal Crabs coming through~ These chubby little guys seem to be having a lot of fun with somebody lately; their body weight is back to normal now! I even found these pink furballs stuck to their claws. Any of you know whose pet they belong to?'\n—Rhodes Island Cafeteria audio recording\n\nWarning\nFollowing the disappearance of instruction materials and food stockpiles in September, the instructors have found the following discipline violations during the October inspection:\nUsing Originium Arts to play with toys, suspending them midair and sending them flying around; the inexplicable disappearance of ice cream ingredients meant for classes; skateboarding on the deck outside of set hours and hiding as soon as the instructors arrive.\nOffending operators should report to the instructors' office immediately to acknowledge and rectify their mistakes, as well as uphold all rules and regulations to prevent further offenses.\n—Dur-nar\n\nGive me my motherf■■in' limited edition vinyls back!\n—■■ (Unknown penguin footprint on the wall)\n\nA few days later, after a significant increase in incidents involving 'strange pink silhouettes,' Eyjafjalla had no choice but to leave her laboratory and spend what little time and energy she has dealing with the problems caused by the stealthy sheep, apologizing to everyone one-by-one, and helping everyone touch those invisible mischievous animals.\nThat said, it's apparent that she's also enjoying this."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Dr. Kahn:\nYou have my sincerest gratitude.\nI know that if it weren't for your assistance in the beginning, I would likely not have received such quality healthcare. Over the past few years, I have persistently worked to complete the volcano expedition. I feel that as a volcanologist and a daughter taking over her parents' unfinished research, this is a life goal I must complete. In spite of your numerous letters, I have insisted on continuing down this path, and I apologize for making you worry.\nI also know that you have been trying to uncover the truth of all those years ago, and that you've been protecting me time and again by trying to keep me from getting too involved. If it weren't for your persistence and care, I would never have learned what actually happened back then. Although the vacation itself may have helped alleviate my worries, it was you, the truth that you worked so hard to give me, and Dr. Keller's frankness in the end that truly gave me the relief I needed.\nI will come visit you in Leithanien in the near future. My mother used to tell me that you would sometimes be upset when your experiments went wrong, and that you'd need my parents to bring a cake to your lab to comfort you... I really want to tell you that we can't completely prevent accidents. All we can do is hold on to every meaningful bit of time we have. I really hope you were able to finally calm down, and that you could tell me any old stories about my parents.\n—Adele\n\nAdele:\nI have given this a lot of thought, but I finally decided to write you this letter. I want you to know that I am truly grateful to you.\nI had decided many years ago that I would never again climb a volcano, and that this museum would be my final memento to Magna and Katia.\nAt first, I invited you to participate in the museum and Mt. Siesta's affairs because my work required it, and also because you are Magna and Katia's child. I had intended to retire from all research and work pertaining to volcanoes after bringing this matter to completion. I couldn't face you, nor could I face Kahn's question. I had been wondering: if I'd chosen to make them stay as well, would they not have been caught in that pyroclastic flow and lost their lives? However, I never expected you to have never questioned my involvement nor resented me.\nI'm sorry, Adele. I was too harsh on you before, and it was partly because I was afraid I'd be reminded of the time I spent with your parents. My memories with them were once a heavy burden to me, but thanks to you, I can finally bring myself to put them into words again, and share them with you as simply fun anecdotes.\nI await your next letter, and am preparing for our next expedition together.\n—Keller"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Upon her return to Rhodes Island, Eyjafjalla immediately began to gather all the data she had kept at Rhodes Island and send them to Siesta's Volcano Museum, as well as prepare for future joint research projects with Lady Keller.\nNaturally, we were a little worried. After all, she had been working with volcanoes both from closer distances and more often over the past few years, all to complete the project that her parents were unable to finish. This is no doubt detrimental to her health. Our Medical operators often tried to talk her out of participating in surveys, but she would always tell us a story she heard when she was still a child: of a sickly scientist bedridden with illness, but who didn't hesitate to spend what little strength she had left to continue her research. In the end, she reached a conclusion, and closed her eyes.\nShe asked us a question: If you were that scientist, at the final days of your life, would you rather climb a summit or spend your remaining time in bed, peacefully with your family?\nWe were unable to give Eyjafjalla an answer, but perhaps her answer would be to achieve both. Compared to others who've made significant breakthroughs in the field of volcanology, she is still very young. Some races can live past a hundred years, perhaps even longer, while others live a much more fleeting life. However, the length of one's life does not determine its worth. Judging from the data and research papers she's managed to put together in her dorm room, we can't help but be awestruck at how much she's already fit into her short life, and she is continually adding more.\n\n'There are many secrets hidden across the lands under our feet. Each insignificant rock has endured far more time than even the oldest Savra.\n'Underneath layers upon layers of strata, there is a chamber of magma that is ever flowing at unimaginable temperatures, while the strata themselves are slowly moving and constantly crushing one another. We once made the bold assumption that perhaps the seas were once tall mountains, and that the earth currently beneath our feet could perhaps have once reached even the clouds above. When, after traveling hundreds of thousands of miles, the earth that once saw the skies, or the bottom of the ocean, finally encounters its compatriot, they release a most radiant and blazing light.\n'Throughout this process, my parents lifted their heads and pondered just what exactly it is that boils our lands' bloodstreams. And now, I am following their footsteps and walking the path they once did, to seek an answer from the land. The footsteps of future generations will likewise trample over ours as they continue down this path.\n'This is the meaning of our lives.'\n—The opening monologue of the volcano documentary <i>One Step After Another</i>, as narrated by Eyjafjalla"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Eyjafjalla's health isn't the best right now, but she still insists on climbing the Unna Volcano.\nAs her assistants, there was nothing we could do to talk her out of it...\nEven before we reached the mountain, she was already starting to pass out from fatigue. She couldn't even hear us warning her. I know that Unna has seen a clear fluctuation across all indicators, and it's in prime observation condition, but pushing herself like that without regard for her own health is clearly against the most basic rules she taught us herself.\nWorried about her, we've been following her.\nThe residents of the village all seem to know her very well. While still at the foot of the mountain, we rested a little and reorganized. Perhaps I should've tried to talk to her again...\n......\nWe finally made it to the summit, but Eyjafjalla didn't start recording data right away.\nInstead she dug a shallow hole and buried... a small rock.\nIs something going to grow from this?\nThere are also the garlands of flowers she's been holding onto the whole time, and she kept hugging them tight even though she almost tripped a couple times. But suddenly, those two garlands just up and fluttered away. What a shame! Even though there wasn't any wind at all.\nStill, I don't think I've ever seen her look so gratified..."
+    }
+  ]
+}

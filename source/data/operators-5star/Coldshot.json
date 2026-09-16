@@ -1,0 +1,763 @@
+{
+  "name": "Coldshot",
+  "rarity": 5,
+  "class": "Sniper",
+  "branch": "Hunter",
+  "faction": "Columbia",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS"
+  ],
+  "trait": {
+    "Base": "Attacks consume Ammo to increase ATK to 120% ; While not attacking, Ammo will be slowly reloaded (max capacity 4)",
+    "Elite 1": "Attacks consume Ammo to increase ATK to 120% ; While not attacking, Ammo will be slowly reloaded (max capacity 6)",
+    "Elite 2": "Attacks consume Ammo to increase ATK to 120% ; While not attacking, Ammo will be slowly reloaded (max capacity 8)"
+  },
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Come Catastrophes or Wakes of Vultures"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Dawnbreak"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4104_coldst",
+  "otherLanguages": {
+    "Simplified Chinese": "冰酿",
+    "Traditional Chinese": "冰釀",
+    "Japanese": "コールドショット",
+    "Korean": "콜드샷"
+  },
+  "characterInfo": {
+    "File no.": "CB28",
+    "Operator Record": "Have A Safe Trip",
+    "Paradox Simulation": "Staying Sober",
+    "Illustrator": "Mag42",
+    "Release Date": "2024/03/19",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Fuyuka Ono",
+    "Chinese": "Wu Xiangtong",
+    "English": "Stephanie Southerland",
+    "Korean": "Jo Hyun-jung"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "18 years",
+    "Place of Birth": "Columbia",
+    "Date of Birth": "July 26th",
+    "Race": "Elafia",
+    "Height": "173 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Not to be Outdone",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "If no attack is made for 2 seconds, the next attack deals 120% of ATK as Physical damage"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "If no attack is made for 2 seconds, the next attack deals 123% (+3%) of ATK as Physical damage"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "If no attack is made for 2 seconds, the next attack deals 130% of ATK as Physical damage"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "If no attack is made for 2 seconds, the next attack deals 133% (+3%) of ATK as Physical damage"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Not to be Outdone"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Coldshot's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Not to be Outdone .",
+        "New skill: Party Night .",
+        "Range extended.",
+        "Trait improved."
+      ],
+      "prerequisite": "Raise Coldshot to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Sniper Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Not to be Outdone improved.",
+        "Operator Modules available.",
+        "Trait improved."
+      ],
+      "prerequisite": "Raise Coldshot to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Sniper Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "RMA70-24",
+          "quantity": 8
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "ATK Up γ",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +30%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +35%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +40%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +45%",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +50%",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +55%",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +60%",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +75%",
+            "initialSp": 10,
+            "spCost": 34,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +90%",
+            "initialSp": 10,
+            "spCost": 33,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +100%",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 3
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Party Night",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20–40 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Increases reload interval, ATK +40% , and attacks Slow the target for 1 second",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Increases reload interval, ATK +50% , and attacks Slow the target for 1 second",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 23
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Increases reload interval, ATK +60% , and attacks Slow the target for 1 second",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 26
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Increases reload interval, ATK +70% , and attacks Slow the target for 1 second",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Increases reload interval, ATK +80% , and attacks Slow the target for 1 second",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 33
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Increases reload interval, ATK +90% , and attacks Slow the target for 1 second",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 36
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Increases reload interval, ATK +100% , and attacks Slow the target for 1 second",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Increases reload interval, ATK +115% , and attacks Slow the target for 1 second",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Increases reload interval, ATK +125% , and attacks Slow the target for 1 second",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Increases reload interval, ATK +140% , and attacks Slow the target for 1 second",
+            "initialSp": 25,
+            "spCost": 40,
+            "duration": 40
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-12",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar Pack",
+          "quantity": 5
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 3
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Million Dollar Smile",
+      "facility": "Control Center",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by +0.05 per hour."
+    },
+    {
+      "name": "Wet Your Whistles",
+      "facility": "Dormitory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Dormitory, restores +0.8 Morale per hour distributed evenly to Operators assigned to that Dormitory whose Morale is not full (When this skill is in effect on a single or multiple Operators, only the strongest effect of this type respectively applies)"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Coldshot's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "HUN-X: \"Unbridled\"",
+      "mission": {
+        "requirement1": "Deal a total of 80,000 damage with Coldshot (excluding Support Units)",
+        "requirement2": "Clear Main Theme S3-3 with a 3-star rating; You must deploy your own Coldshot, and have Coldshot defeat at least 8 enemies"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +128 , ATK +53",
+          "effectLabel": "New trait",
+          "effectText": "When Ammo count is empty, the next reload +1 Ammo additionally",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +168 , ATK +65",
+          "effectLabel": "Not to be Outdone improved",
+          "effectText": "If no attack is made for 2 seconds, the next attack deals 135% of ATK as Physical damage",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +205 , ATK +75",
+          "effectLabel": "Not to be Outdone improved",
+          "effectText": "If no attack is made for 2 seconds, the next attack deals 138% of ATK as Physical damage",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Helena, a collaborating operator introduced to\nRhodes Island\nby\nJessica\n, now assisting with our local office in the frontier.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 845,
+          "atk": 476,
+          "def": 105,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 17,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1113,
+          "atk": 635,
+          "def": 141,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 17,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-12"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1113,
+          "atk": 635,
+          "def": 141,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 19,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1428,
+          "atk": 804,
+          "def": 179,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 19,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "4-9"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1428,
+          "atk": 804,
+          "def": 179,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1855,
+          "atk": 958,
+          "def": 224,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "4-9"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 105,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Coldshot shows no signs of Originium infection..\n\n[Blood Originium-Crystal Density] 0.18u/L\nOperator Helena frequently comes into contact with Originium in her day-to-day life. Although she demonstrates adequate safety awareness, further attention is still needed."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "The day Helena arrived at the landship, she did not immediately report for duty as previously agreed upon. It wasn't until a number of operators reported hearing faint fowlbeast chirps on the bridge that we traced the sound to the deck and found her along with two fowlbeasts perched on the railing. Helena was enjoying her lunch with them, and imitating their chirps.\nAccording to her, that kind of fowlbeast has a peculiar habit: They rest on land on clear, windless days, and take flight only when the storm comes, throwing themselves into the gales without looking back. With the help of the fierce winds, they can fly much greater distances than other fowlbeasts. Of course, it is also a much more dangerous journey. Few of their kind ever reach their destination.\nAside from her remarkable mimicry of animal noises, Helena also counts cooking, bartending, sewing, divination, hunting, forging, transport repair, weapon retrofitting, and more among her skill set. Yet she has never received any professional training, and every last skill she possesses is a result of the hardship she endured on the frontier. Nor does she shy away from teaching the skills she's painstakingly acquired to others. Every time she comes aboard, everyone hears her signature, passionate, and loud voice inviting all the operators to taste her cooking.\n'The raisin shortbread's recipe? No problem. I'll get you a copy in a bit.\n'No one ever taught me. I was on the run from someone and hid in some battlefield ruins. There I found this poor fella. His body was almost all ash, but somehow the recipes in his pocket made it through.\n'Reckoned it'd be a shame to leave 'em, so I brought 'em with me.\n'Not for nothing, of course. Left him a nice bottle of rum.'"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Never get on the same transport or burdenbeast as Helena—This is common knowledge to all the operators at the frontier office. Her driving skills are unparalleled: she has the transport's speed under her control at all times, and she can accurately make decisions based on her surroundings. Be it the most precipitous terrain of the frontier or a complicated alley, she is able to keep her hand on the gear stick without a change in expression, and speed through as though driving on flat ground.\nWhat separates her from other excellent drivers or riders is that Helena has no actual preferences for a transport or burdenbeast. In her eyes, every last one has its own temperament and personality. So as long as you understand them and drive appropriately, you can unleash speeds that tear through the wind at a moment's notice. When she's holding the reins or a steering wheel, any objective is in reach. The only thing left to pursue are 'limits.'\n'Ms. Helena, did you know that some operators have described your driving as like passing through a windstorm in their mission reports?'\n'Ah, yeah, I can explain that. Had a group of frontier bandits on our tail. So I had to get a little extreme to shake 'em off.'\n'Extreme?'\n'Drove a little faster, took a different path. Nothing special.'\n'Could you be more specific?'\n'See, here's what happened... After a wild chase in the city for a few miles, I drove up onto the roof of a four-story hotel. Did a couple loops up there before finding a path through the air that'd take us across the river. That's how we got the medicine to the other side.'\n'What the hell, lady, what were you thinking?'\n'Oh, just that it'd've been nice if we got a little rain. Or else it'd kick up a cloud of dust when we landed, and the guys out there to meet us would get a mouthful of sand.'"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Anna Mitterrand, a tall Elafia woman from Nulaiteburgh. Age 18, with green eyes, pale purplish ankle-length hair, and a small mole at the corner of her mouth. On April 26, 1066, at around 11 PM, she eloped with a man from the frontier she met at the local watering hole, the McCullen Saloon, and she remains missing. She left home wearing a green dress, a pearl necklace, and priceless emerald earrings.\nIf you're reading this, Anna, please come home as soon as you can. Your parents are worried sick, and your family is ashamed of your behavior. If anyone has seen her or has any leads, please immediately contact her father, Charlie Mitterrand, and her fiance Kendall Gould. A reward will be provided. If you can capture her and bring her back, the reward will be doubled.\n—Excerpt from <i>The Nulaiteburgh Evening Post</i>\n\nHelena F■■■■, age 23, Elafia, has a ■■■■ by her mouth, ■■■■ eyes, ■■■■ braided hair tied behind her head. Left ■■ on March 1■, 10■■ and has not returned.\nTook only a few items of clothing and a burdenbeast.\nIf anyone ■■■■ her whereabouts and has any leads, please contact her lover ■■■■.\n—From the missing persons posters stuck to the wall of a certain pub on the frontier. Due to its age, some of the words have faded into illegibility.\n\nMadeline, Elafia, in her 30s, green eyes, purple shoulder-length hair, mole by her mouth, packs a homemade nail gun. Last month, she barged into our hideout, killed our boss, and torched the place.\nIf you know where she is, we got money for ya.\nIf you bring us her corpse, more money than you can count.\nAnyone who covers for her or helps her out is a dead man walking.\n—From the bounty posted by a certain frontier gang\n\nNameless female, estimated to be in her 40s, an Elafia with a fair appearance, green eyes, short purple hair, and a mole at the corner of her mouth.\nYears ago, she avenged my parents by taking down a gang in the frontier, and paid for my ride to Ironforge City. I have since distinguished myself in academia and amassed a small fortune, and would like to repay this kind woman.\nIf anyone knows her whereabouts, please contact Anna Brandt. Huge reward offered.\n—From <i>The Ironforge Evening Post</i>"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "After wandering the frontier on her own for years, Helena arrived in Davistown and accepted the final request of her old lover before his passing: to take care of the diner he left behind. Later, when Davistown went bankrupt, the platform was bought out by Blacksteel. It was only then that she and the other residents started their new lives on the frontier.\nWhen she first arrived at Davistown, Helena wasn't planning on ending her free-roaming frontier life just yet. She only wanted to find someone dependable to take over the restaurant. However, as the years went by, she remained on the platform to run the eatery. Every time someone asked her about it, she would nonchalantly reply that it was because the residents loved her cooking. Aside from compliments and payment for their meals, her patrons never left her anything unnecessary, and moreover, none of them ever asked her to stay. This made her feel relaxed and unrestrained. From this, it's not hard to see that while Helena is warm and friendly to others, she prefers to keep a certain distance in her interpersonal relations.\nIn theory, dealing with a personality such as hers should be exhausting, but every operator who has been around her agrees that interacting with her is actually very pleasant. She is good at mixing drinks, and even better at listening to people vent about their troubles. However, the most important part is that she respects each and every person's personal space. Never does she cross the line and pry into anyone's innermost thoughts, even if they open up to her themselves.\nWhen operators go to her for advice on interpersonal relationships, she only ever gives them a very simple answer:\n'It ain't complicated. When you're dealing with someone, you just gotta remember that she's first and foremost herself. It's only after that she's someone else's kid, friend, partner, or parent.'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "You can't help but frown when you see the white liquid in your cup, but the woman opposite you seems completely unconcerned by your dissatisfaction as she goes back to cleaning wine glasses.\n'Alright, enough with the face, young man.\n'You can't sleep? Then don't. Drinking ain't a good habit. Keep on downing drink after drink like that, and the whole night'll be chaos. How about a warm glass of milk instead?\n'At first, all you'll feel is helplessness from the darkness and loneliness, but they'll have you cornered soon enough. Then, all you'll feel is tiredness, but don't sleep. Splash some cold water on your face to keep yourself awake.\n'When the lights outside the window start going out one by one in anticipation of the coming morning sun, the red glow'll stab your eyes that have adjusted to the dark. It'll sting, but bear with it. Just a reminder that you got a strange new day ahead of you.\n'By then, you'll have forgotten all the troubles you had the night before, and all the pain you suffered in the past. Because right then, your fear for the future'll trump everything else.\n'It'll have you anxious, for sure. But also excited. You'll find yourself trembling from it.'"
+    }
+  ]
+}

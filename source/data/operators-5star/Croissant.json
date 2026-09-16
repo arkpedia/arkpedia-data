@@ -1,0 +1,752 @@
+{
+  "name": "Croissant",
+  "rarity": 5,
+  "class": "Defender",
+  "branch": "Protector",
+  "faction": "Penguin Logistics",
+  "umbrellaFactions": [
+    "Yan-Lungmen"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Defense",
+    "Shift"
+  ],
+  "trait": "Blocks 3 enemies",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Seven in the Morning",
+    "Seeker SK03"
+  ],
+  "ep": {
+    "Main": "Autumn Moods",
+    "Co-star": null
+  },
+  "internalName": "char_201_moeshd",
+  "otherLanguages": {
+    "Simplified Chinese": "可颂",
+    "Traditional Chinese": "可頌",
+    "Japanese": "クロワッサン",
+    "Korean": "크루아상"
+  },
+  "characterInfo": {
+    "File no.": "PL04",
+    "Operator Record": "The Business",
+    "Paradox Simulation": "An Almighty Blow",
+    "Illustrator": "幻象黑兔",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Yurika Kubo",
+    "Chinese": "Wen Liu",
+    "English": "Risa Mei",
+    "Korean": "Yang Jung-hwa"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "1 year",
+    "Place of Birth": "Minos",
+    "Date of Birth": "September 29th",
+    "Race": "Forte",
+    "Height": "163 cm",
+    "Infection Status": "Non-infected as confirmed by medical report."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Normal",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Miracle Field",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Has a 10% chance to resist Physical and Arts Damage. The allies in the four surrounding grids obtain half of the effect"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Has a 13% (+3%) chance to resist Physical and Arts Damage. The allies in the four surrounding grids obtain half of the effect"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Has a 20% chance to resist Physical and Arts Damage. The allies in the four surrounding grids obtain half of the effect"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Has a 23% (+3%) chance to resist Physical and Arts Damage. The allies in the four surrounding grids obtain half of the effect"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DEF +26"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Miracle Field"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Croissant's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Miracle Field .",
+        "New skill: Magnetic Hammer ."
+      ],
+      "prerequisite": "Raise Croissant to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyester",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Miracle Field improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Croissant to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "RMA70-24",
+          "quantity": 8
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 8
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Auto Defense",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": "20–30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "DEF +20% ; Talent effect increases to 110% Automatically activated",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "DEF +20% ; Talent effect increases to 120% Automatically activated",
+            "initialSp": 0,
+            "spCost": 29,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "DEF +20% ; Talent effect increases to 130% Automatically activated",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "DEF +30% ; Talent effect increases to 140% Automatically activated",
+            "initialSp": 4,
+            "spCost": 27,
+            "duration": 23
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "DEF +30% ; Talent effect increases to 150% Automatically activated",
+            "initialSp": 4,
+            "spCost": 26,
+            "duration": 23
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "DEF +30% ; Talent effect increases to 160% Automatically activated",
+            "initialSp": 4,
+            "spCost": 25,
+            "duration": 23
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "DEF +40% ; Talent effect increases to 170% Automatically activated",
+            "initialSp": 8,
+            "spCost": 24,
+            "duration": 26
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "DEF +50% ; Talent effect increases to 180% Automatically activated",
+            "initialSp": 8,
+            "spCost": 23,
+            "duration": 27
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "DEF +60% ; Talent effect increases to 190% Automatically activated",
+            "initialSp": 8,
+            "spCost": 22,
+            "duration": 28
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "DEF +70% ; Talent effect increases to 200% Automatically activated",
+            "initialSp": 12,
+            "spCost": 20,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 2
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 4
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Magnetic Hammer",
+        "recoveryType": "Defensive Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Bumps nearby enemies away moderately , Stunning them for 2.5 seconds and dealing 240% ATK as Physical damage to them",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Bumps nearby enemies away moderately , Stunning them for 2.5 seconds and dealing 260% ATK as Physical damage to them",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Bumps nearby enemies away moderately , Stunning them for 2.5 seconds and dealing 280% ATK as Physical damage to them",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Bumps nearby enemies away moderately , Stunning them for 3 seconds and dealing 300% ATK as Physical damage to them",
+            "initialSp": 0,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Bumps nearby enemies away moderately , Stunning them for 3 seconds and dealing 320% ATK as Physical damage to them",
+            "initialSp": 0,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Bumps nearby enemies away moderately , Stunning them for 3 seconds and dealing 340% ATK as Physical damage to them",
+            "initialSp": 0,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Bumps nearby enemies away greatly , Stunning them for 3.5 seconds and dealing 360% ATK as Physical damage to them",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Bumps nearby enemies away greatly , Stunning them for 3.5 seconds and dealing 400% ATK as Physical damage to them",
+            "initialSp": 0,
+            "spCost": 19,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Bumps nearby enemies away greatly , Stunning them for 3.5 seconds and dealing 440% ATK as Physical damage to them",
+            "initialSp": 0,
+            "spCost": 18,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Bumps nearby enemies away significantly , Stunning them for 4 seconds and dealing 480% ATK as Physical damage to them",
+            "initialSp": 0,
+            "spCost": 17,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 3
+            },
+            {
+              "name": "Aketon",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Aketon",
+          "quantity": 2
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 4
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Penguin Logistics α",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +20%"
+    },
+    {
+      "name": "Mission GuaranteeReplacesPenguin Logistics α",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +30% and the order limit +1"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Croissant's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "PRO-Y: Combat Boots",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Croissant, and cause at least 3 enemies to fall in a pit in each battle",
+        "requirement2": "Clear Main Theme 2-8 with a 3-star rating; You must deploy your own Croissant, and use Magnetic Hammer 2 times"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +180 , DEF +50 , Block +1",
+          "effectLabel": "Trait improved",
+          "effectText": "Blocks 4 enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +275 , DEF +60 , Block +1",
+          "effectLabel": "Miracle Field improved",
+          "effectText": "Has a 24% chance to resist Physical and Arts Damage. The allies in the four surrounding grids obtain half of the effect",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +350 , DEF +68 , Block +1",
+          "effectLabel": "Miracle Field improved",
+          "effectText": "Has a 27% chance to resist Physical and Arts Damage. The allies in the four surrounding grids obtain half of the effect",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Croissant, a member of\nPenguin Logistics\n, is a proficient\ndefender\nwho is able to hold back several enemies at once. She also possesses monstrous strength, able to send lesser enemies flying with her massive hammer.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1503,
+          "atk": 201,
+          "def": 249,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1978,
+          "atk": 258,
+          "def": 373,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1978,
+          "atk": 258,
+          "def": 373,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2569,
+          "atk": 323,
+          "def": 511,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2569,
+          "atk": 323,
+          "def": 511,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 3520,
+          "atk": 380,
+          "def": 710,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      }
+    ],
+    "trust": {
+      "hp": 150,
+      "atk": 0,
+      "def": 60
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this Operator is believed to be non-infected. \n\n[Cell-Originium Assimilation] 0% \nOperator Croissant showed no symptoms of Oripathy. \n\n[Blood Originium-Crystal Density] 0.12u/L \nOperator Croissant sometimes delivers packages or sells goods with Originium content, but it has not caused infection to date."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "An energetic messenger. \nShe believes that the purpose of work is to improve one's quality of life, and that shopping is the best way to improve her life. \nShe isn't hung up on money, but she does enjoy living paycheck-to-paycheck while jumping on opportunities to make a quick profit. She can often be seen hawking goods in various places."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Messengers usually get two kinds of work: Delivering mail and messages, or transporting cargo. \nThe former requires speed; the latter, strength and endurance. In Penguin Logistics, Croissant was an obvious stand-out in the latter. \nAlso notable, Croissant is extraordinarily strong even for a Forte. Swinging a hefty hammer in one hand while carrying a heavy shield in the other is as simple as breathing to her."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "While not a big operation, Penguin Logistics is well-connected at all levels in Lungmen. \nThus, taking advantage of the channels back home, Croissant's irregular hawking ventures could be a treasure trove that just might offer rarities you wouldn't find anywhere else. \nOf course, don't let Croissant know if you did spot a valuable item, or she will wring your wallet."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Even as an Operator, Croissant has no plans to give up her hobbies and interests. \nShe knows an Operator will face unprecedented danger and see many unfortunate events. Nevertheless, she is still a city girl who counts her pennies. \nMaybe Rhodes Island recruits civilian Operators because they're not jaded and thus fearless, but it's definitely not because they should be exposed to the cruelty of the real world. It's more like the island have many unfortunate people who needed someone as adorable as Croissant to show them what a normal, blissful life is like. \nOf course, the unfortunate or hateful may begrudge the blessed, but at least it never happens at Rhodes Island."
+    }
+  ]
+}

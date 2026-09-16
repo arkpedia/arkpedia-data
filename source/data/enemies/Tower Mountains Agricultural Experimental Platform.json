@@ -1,0 +1,203 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "sss",
+    "id": "tower_n_11",
+    "label": null,
+    "name": "Tower Mountains Agricultural Experimental Platform",
+    "release_date": "2024-07-16"
+  },
+  "enemies": [
+    {
+      "slug": "hatred_without_root",
+      "id": "enemy_6018_carrier",
+      "name": "'Hatred Without Root'",
+      "index": "DL18",
+      "rank": "Boss",
+      "sort": 1478,
+      "hidden": false,
+      "icon": "/enemies-icons/'Hatred Without Root'.webp",
+      "flavour_text": "An airborne command center for agricultural drones. Long has it tended the crops in the field, even treating them as its own, but it is nevertheless lonely because of its rootless wandering. Malware has turned its loneliness into hatred for all who dwell on the ground.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically summons drones at its location",
+          "format": "normal"
+        },
+        {
+          "text": "When there are drones nearby, gain Invisible",
+          "format": "normal"
+        },
+        {
+          "text": "[Spread Malice] Summons several <Seeding Drones> and temporarily gives all drones within an area extra ATK and HP. If there are no nearby <Seeding Drones> when skill ends, stops moving and temporarily gains Fragile",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 96000,
+            "atk": 300,
+            "def": 605,
+            "res": 65.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 3
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "C",
+            "def": "B",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "SummonDrones",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "cnt": 2.0,
+                "enemy_key": "enemy_1005_yokai_2",
+                "enemy_key_b": "enemy_1041_lazerd",
+                "enemy_key_c": "enemy_1106_byokai"
+              }
+            },
+            {
+              "key": "SummonEscortAircraft",
+              "sp_cost": 0,
+              "cooldown": 45.0,
+              "initial_cooldown": 22.0,
+              "priority": 0,
+              "parameters": {
+                "cnt": 3.0,
+                "damage_scale": 1.25,
+                "enemy_key": "enemy_6019_escort",
+                "inspire_duration": 20.0,
+                "range_radius": 2.0,
+                "weak_duration": 15.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DroneAura",
+              "parameters": {
+                "atk": 0.3,
+                "max_hp": 0.45
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "seeding_drone",
+      "id": "enemy_6019_escort",
+      "name": "Seeding Drone",
+      "index": "DL19",
+      "rank": "Normal",
+      "sort": 1479,
+      "hidden": false,
+      "icon": "/enemies-icons/Seeding Drone.webp",
+      "flavour_text": "Agriculture drone equipped with a variety of tools for seeding, watering, fertilizing, etc. It is proud of its role, and of its natural fertilizer fermentation system. 'No one can refuse some steaming hot fertilizer.'",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Every 3rd attack Stuns your Operators for several seconds",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6500,
+            "atk": 340,
+            "def": 250,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 2.2,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "StunAttack",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "stun": 9.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

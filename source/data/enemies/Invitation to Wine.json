@@ -1,0 +1,2672 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act15sre",
+    "label": "IW",
+    "name": "Invitation to Wine",
+    "release_date": "2022-07-29"
+  },
+  "enemies": [
+    {
+      "slug": "grindstone",
+      "id": "enemy_1195_sfyin",
+      "name": "Grindstone",
+      "index": "AN1",
+      "rank": "Normal",
+      "sort": 383,
+      "hidden": false,
+      "icon": "/enemies-icons/Grindstone.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. All blades must be sharpened to not lose their edge. A Waregeist of this type tends to be timid and will dash out of harm's way at the first sign of danger.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Spawns 2 <Wooden Seals> when defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 2000,
+            "atk": 310,
+            "def": 0,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.5,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "C",
+            "def": "E",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "S"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 2.0,
+                "enemy_key": "enemy_1196_msfyin"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "brightmirror",
+      "id": "enemy_1195_sfyin_2",
+      "name": "Brightmirror",
+      "index": "AN2",
+      "rank": "Normal",
+      "sort": 384,
+      "hidden": false,
+      "icon": "/enemies-icons/Brightmirror.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. All blades must be sharpened to not lose their edge. A Waregeist of this type tends to be timid, but often goes the extra mile in an attempt to prove itself.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Spawns 2 <Rosewood Seals> when defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3100,
+            "atk": 390,
+            "def": 0,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.5,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "C",
+            "def": "E",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "S"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 2.0,
+                "enemy_key": "enemy_1196_msfyin_2"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "wooden_seal",
+      "id": "enemy_1196_msfyin",
+      "name": "Wooden Seal",
+      "index": "AN3",
+      "rank": "Normal",
+      "sort": 385,
+      "hidden": false,
+      "icon": "/enemies-icons/Wooden Seal.webp",
+      "flavour_text": "The original form of 'Grindstone.' Made of modest materials.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 2 times to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 2,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "rosewood_seal",
+      "id": "enemy_1196_msfyin_2",
+      "name": "Rosewood Seal",
+      "index": "AN4",
+      "rank": "Normal",
+      "sort": 386,
+      "hidden": false,
+      "icon": "/enemies-icons/Rosewood Seal.webp",
+      "flavour_text": "The original form of 'Brightmirror.' Made of durable materials and adorned with elegant patterns.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 3 times to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "vernacularism",
+      "id": "enemy_1197_sfshu",
+      "name": "Vernacularism",
+      "index": "AN5",
+      "rank": "Normal",
+      "sort": 387,
+      "hidden": false,
+      "icon": "/enemies-icons/Vernacularism.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. The world is a strange place, but there is joy to be had. A Waregeist of this type is unusually energetic and likes to hang out with other Waregeists.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Spawns 3 <Novel Scrolls> when defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 2500,
+            "atk": 320,
+            "def": 60,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.4,
+            "attack_speed": 100.0,
+            "move_speed": 1.4,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "C",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "A+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 3.0,
+                "enemy_key": "enemy_1198_msfshu"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sophistication",
+      "id": "enemy_1197_sfshu_2",
+      "name": "Sophistication",
+      "index": "AN6",
+      "rank": "Normal",
+      "sort": 388,
+      "hidden": false,
+      "icon": "/enemies-icons/Sophistication.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. Among its serene mountains and waterscapes, one can be free and enjoy themselves without a care in the world. A Waregeist of this type is quiet and refined, bringing joy to other Waregeists.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Spawns 3 <Painting Scrolls> when defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3350,
+            "atk": 410,
+            "def": 70,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.4,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "C",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 3.0,
+                "enemy_key": "enemy_1198_msfshu_2"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "novel_scroll",
+      "id": "enemy_1198_msfshu",
+      "name": "Novel Scroll",
+      "index": "AN7",
+      "rank": "Normal",
+      "sort": 389,
+      "hidden": false,
+      "icon": "/enemies-icons/Novel Scroll.webp",
+      "flavour_text": "The original form of 'Vernacularism.' An written account of the world's wondrous happenings.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 3 times to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "painting_scroll",
+      "id": "enemy_1198_msfshu_2",
+      "name": "Painting Scroll",
+      "index": "AN8",
+      "rank": "Normal",
+      "sort": 390,
+      "hidden": false,
+      "icon": "/enemies-icons/Painting Scroll.webp",
+      "flavour_text": "The original form of 'Sophistication.' An illustration of the mountainscapes and spring snow.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 4 times to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "introspection",
+      "id": "enemy_1199_sfjin",
+      "name": "Introspection",
+      "index": "AN9",
+      "rank": "Elite",
+      "sort": 391,
+      "hidden": false,
+      "icon": "/enemies-icons/Introspection.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. Beauty is in the eye of the beholder. A Waregeist of this type can show its opponent their inner secrets, and is more likely to anger its opponents than other Waregeists.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "More likely to be attacked by allied units",
+          "format": "normal"
+        },
+        {
+          "text": "Spawns 1 <Bronze Mirror> when defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6500,
+            "atk": 700,
+            "def": 750,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 3,
+            "taunt": 1,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B+",
+            "def": "B",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 1.0,
+                "enemy_key": "enemy_1200_msfjin"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "scantwords",
+      "id": "enemy_1199_sfjin_2",
+      "name": "Scantwords",
+      "index": "AN10",
+      "rank": "Elite",
+      "sort": 392,
+      "hidden": false,
+      "icon": "/enemies-icons/Scantwords.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. Beauty is in the eye of the beholder. A Waregeist of this type can show its opponent their inner secrets in their most relentless, truest form, and is more likely to anger its opponents than other Waregeists.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "More likely to be attacked by allied units",
+          "format": "normal"
+        },
+        {
+          "text": "Spawns 1 <Brass Mirror> when defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 900,
+            "def": 900,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 3,
+            "taunt": 1,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B+",
+            "def": "B+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 1.0,
+                "enemy_key": "enemy_1200_msfjin_2"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "bronze_mirror",
+      "id": "enemy_1200_msfjin",
+      "name": "Bronze Mirror",
+      "index": "AN11",
+      "rank": "Normal",
+      "sort": 393,
+      "hidden": false,
+      "icon": "/enemies-icons/Bronze Mirror.webp",
+      "flavour_text": "The original form of 'Introspection.' Has a simple, unembellished design.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 30 times to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "brass_mirror",
+      "id": "enemy_1200_msfjin_2",
+      "name": "Brass Mirror",
+      "index": "AN12",
+      "rank": "Normal",
+      "sort": 394,
+      "hidden": false,
+      "icon": "/enemies-icons/Brass Mirror.webp",
+      "flavour_text": "The original form of 'Scantwords.' Has a crystal-clear reflective surface and an elegant design.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 35 times to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 35,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "inkwave",
+      "id": "enemy_1201_sfzhi",
+      "name": "Inkwave",
+      "index": "AN13",
+      "rank": "Elite",
+      "sort": 395,
+      "hidden": false,
+      "icon": "/enemies-icons/Inkwave.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. It is always difficult to put brush to paper, and though the paperweight was once calm and patient, it is now anxious and restless.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Spawns 15 <Wooden Paperweights> when defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 400,
+            "def": 400,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.0,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 15.0,
+                "enemy_key": "enemy_1202_msfzhi"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "heartbillow",
+      "id": "enemy_1201_sfzhi_2",
+      "name": "Heartbillow",
+      "index": "AN14",
+      "rank": "Elite",
+      "sort": 396,
+      "hidden": false,
+      "icon": "/enemies-icons/Heartbillow.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. The crouching demon and sleeping dragon solemnly stand guard and ward off evil, and though the paperweight was once stately and majestic, it is now anxious and restless, always ready to attack.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Spawns 15 <Rosewood Paperweights> when defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7600,
+            "atk": 500,
+            "def": 500,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.0,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 15.0,
+                "enemy_key": "enemy_1202_msfzhi_2"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "wooden_paperweight",
+      "id": "enemy_1202_msfzhi",
+      "name": "Wooden Paperweight",
+      "index": "AN15",
+      "rank": "Normal",
+      "sort": 397,
+      "hidden": false,
+      "icon": "/enemies-icons/Wooden Paperweight.webp",
+      "flavour_text": "The original form of 'Inkwave.' Made of modest materials.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 3 times to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "rosewood_paperweight",
+      "id": "enemy_1202_msfzhi_2",
+      "name": "Rosewood Paperweight",
+      "index": "AN16",
+      "rank": "Normal",
+      "sort": 398,
+      "hidden": false,
+      "icon": "/enemies-icons/Rosewood Paperweight.webp",
+      "flavour_text": "The original form of 'Heartbillow.' Made of fine, durable materials with an antiquated aesthetic.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 4 times to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "fountainboil",
+      "id": "enemy_1203_sfhu",
+      "name": "Fountainboil",
+      "index": "AN17",
+      "rank": "Normal",
+      "sort": 399,
+      "hidden": false,
+      "icon": "/enemies-icons/Fountainboil.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. When the water comes to a boil, spreading its fragrance far and wide, none can resist partaking in a cup of tea. A Waregeist of this type can paralyze its foes and slow their attacks.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Upon death, explodes and deals area Arts damage, greatly reducing allied units' ASPD (can be Resisted)",
+          "format": "silence"
+        },
+        {
+          "text": "Spawns 4 <Celadon Teaware> when defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6500,
+            "atk": 280,
+            "def": 290,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.0,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "D",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "DeadBoom",
+              "parameters": {
+                "attack_speed": -40.0,
+                "attack_speed_add": 0.0,
+                "duration": 15.0,
+                "interval": 3.0
+              }
+            },
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 4.0,
+                "enemy_key": "enemy_1204_msfhu"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "rainbowbrew",
+      "id": "enemy_1203_sfhu_2",
+      "name": "Rainbowbrew",
+      "index": "AN18",
+      "rank": "Normal",
+      "sort": 400,
+      "hidden": false,
+      "icon": "/enemies-icons/Rainbowbrew.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. Adding water to wine gets you a less potent drink, while adding water to tea creates a richer beverage. A Waregeist of this type can paralyze its foes and slow their attacks. It is tireless, fighting more gallantly by the minute.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Upon death, explodes and deals area Arts damage, greatly reducing allied units' ASPD (can be Resisted)",
+          "format": "silence"
+        },
+        {
+          "text": "Spawns 4 <Porcelain Teaware> when defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8750,
+            "atk": 360,
+            "def": 380,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.0,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "C",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "DeadBoom",
+              "parameters": {
+                "attack_speed": -50.0,
+                "attack_speed_add": 0.0,
+                "duration": 15.0,
+                "interval": 3.0
+              }
+            },
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 4.0,
+                "enemy_key": "enemy_1204_msfhu_2"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "celadon_teaware",
+      "id": "enemy_1204_msfhu",
+      "name": "Celadon Teaware",
+      "index": "AN19",
+      "rank": "Normal",
+      "sort": 401,
+      "hidden": false,
+      "icon": "/enemies-icons/Celadon Teaware.webp",
+      "flavour_text": "The original form of 'Fountainboil.' The celadon is fine and exquisite, and its shape simple yet refined.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 4 times by Arts or True damage to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "porcelain_teaware",
+      "id": "enemy_1204_msfhu_2",
+      "name": "Porcelain Teaware",
+      "index": "AN20",
+      "rank": "Normal",
+      "sort": 402,
+      "hidden": false,
+      "icon": "/enemies-icons/Porcelain Teaware.webp",
+      "flavour_text": "The original form of 'Rainbowbrew.' Bright in color, its shape is elegant and solid.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 6 times by Arts or True damage to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "blueflower",
+      "id": "enemy_1205_sfpin",
+      "name": "Blueflower",
+      "index": "AN21",
+      "rank": "Elite",
+      "sort": 403,
+      "hidden": false,
+      "icon": "/enemies-icons/Blueflower.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. Crystalline and adorned with engravings of dragons and phoenixes, a Waregeist of this type is graceful and sophisticated, though it's hard to say whether that goes for its temperament too.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "After several attacks, inflicts continuous Arts damage that slowly increases over time (can be Resisted)",
+          "format": "normal"
+        },
+        {
+          "text": "Spawns 1 <Celadon Vase> when defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7000,
+            "atk": 400,
+            "def": 350,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": 2.0,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B+"
+          },
+          "skills": [
+            {
+              "key": "PowerAttack",
+              "sp_cost": 5,
+              "cooldown": 5.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale_add": 0.3,
+                "atk_scale_init": 0.3,
+                "duration": 20.0,
+                "times": 4.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 1.0,
+                "enemy_key": "enemy_1206_msfpin"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 3,
+            "max": 5,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "scarletmist",
+      "id": "enemy_1205_sfpin_2",
+      "name": "Scarletmist",
+      "index": "AN22",
+      "rank": "Elite",
+      "sort": 404,
+      "hidden": false,
+      "icon": "/enemies-icons/Scarletmist.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. Crystalline and adorned with engravings of dragons and phoenixes, a Waregeist of this type is mysterious and imposing in nature, though it is also extremely irritable in temperament and very aggressive.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "After several attacks, inflicts continuous Arts damage that slowly increases over time (can be Resisted)",
+          "format": "normal"
+        },
+        {
+          "text": "Spawns 1 <Porcelain Vase> when defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 570,
+            "def": 450,
+            "res": 65.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": 2.0,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B+"
+          },
+          "skills": [
+            {
+              "key": "PowerAttack",
+              "sp_cost": 5,
+              "cooldown": 5.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale_add": 0.3,
+                "atk_scale_init": 0.3,
+                "duration": 20.0,
+                "times": 4.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 1.0,
+                "enemy_key": "enemy_1206_msfpin_2"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 3,
+            "max": 5,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "celadon_vase",
+      "id": "enemy_1206_msfpin",
+      "name": "Celadon Vase",
+      "index": "AN23",
+      "rank": "Normal",
+      "sort": 405,
+      "hidden": false,
+      "icon": "/enemies-icons/Celadon Vase.webp",
+      "flavour_text": "The original form of 'Blueflower.' The celadon is fine and exquisite, and its shape simple yet refined.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 12 times by Arts or True damage to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "porcelain_vase",
+      "id": "enemy_1206_msfpin_2",
+      "name": "Porcelain Vase",
+      "index": "AN24",
+      "rank": "Normal",
+      "sort": 406,
+      "hidden": false,
+      "icon": "/enemies-icons/Porcelain Vase.webp",
+      "flavour_text": "The original form of 'Scarletmist.' Bright in color, its shape is elegant and solid.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 15 times by Arts or True damage to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sinkingsand",
+      "id": "enemy_1207_sfji",
+      "name": "Sinkingsand",
+      "index": "AN25",
+      "rank": "Elite",
+      "sort": 407,
+      "hidden": false,
+      "icon": "/enemies-icons/Sinkingsand.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. The weaponry dreams of the past, brooding on its utter defeat. A Waregeist of this type holds deep, bottomless grudges, and can be particularly destructive.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Consumes Broken Blades to gain increased ATK",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated, each unconsumed Broken Blade will spawn a <Bronze Spearhead> (minimum 1)",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 11000,
+            "atk": 1100,
+            "def": 600,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.2,
+            "attack_speed": 100.0,
+            "move_speed": 1.3,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "A",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Atkup",
+              "parameters": {
+                "atk": 0.7
+              }
+            },
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 4.0,
+                "cnt_add": -1.0,
+                "enemy_key": "enemy_1208_msfji"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sharpedge",
+      "id": "enemy_1207_sfji_2",
+      "name": "Sharpedge",
+      "index": "AN26",
+      "rank": "Elite",
+      "sort": 408,
+      "hidden": false,
+      "icon": "/enemies-icons/Sharpedge.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. The weaponry yet again dreams of the past. A Waregeist of this type rouses its old memories as though it is taking to the battlefield again. Its strength is doubled as it and its peers rally each other.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Consumes Broken Blades to gain increased ATK",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated, each unconsumed Broken Blade will spawn a <Iron Spearhead> (minimum 1)",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 14000,
+            "atk": 1350,
+            "def": 750,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.2,
+            "attack_speed": 100.0,
+            "move_speed": 1.3,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "AtkUp",
+              "parameters": {
+                "atk": 0.8
+              }
+            },
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 4.0,
+                "cnt_add": -1.0,
+                "enemy_key": "enemy_1208_msfji_2"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "bronze_spearhead",
+      "id": "enemy_1208_msfji",
+      "name": "Bronze Spearhead",
+      "index": "AN27",
+      "rank": "Normal",
+      "sort": 409,
+      "hidden": false,
+      "icon": "/enemies-icons/Bronze Spearhead.webp",
+      "flavour_text": "The original form of 'Sinkingsand.' Its surface is severely rusted.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 25 times to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "iron_spearhead",
+      "id": "enemy_1208_msfji_2",
+      "name": "Iron Spearhead",
+      "index": "AN28",
+      "rank": "Normal",
+      "sort": 410,
+      "hidden": false,
+      "icon": "/enemies-icons/Iron Spearhead.webp",
+      "flavour_text": "The original form of 'Sharpedge.' Although rusted, it is nonetheless an instrument of death. Even though the Waregeist has faded, the killing intent yet lingers.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 30 times to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "clarity",
+      "id": "enemy_1209_sfden",
+      "name": "Clarity",
+      "index": "AN29",
+      "rank": "Elite",
+      "sort": 411,
+      "hidden": false,
+      "icon": "/enemies-icons/Clarity.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. Its tiny glimmer can flood its surroundings with light. Other Waregeists are invisible under its radiance, as though shrouded by its blessings.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Periodically grants temporary Invisibility to surrounding enemy units",
+          "format": "normal"
+        },
+        {
+          "text": "Spawns 1 <Bronze Lampstand> when defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 14000,
+            "atk": 550,
+            "def": 850,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.0,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "B+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "InvisibleShield",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 5.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 1.0,
+                "enemy_key": "enemy_1210_msfden"
+              }
+            },
+            {
+              "key": "InvisibleShield",
+              "parameters": {
+                "duration": 3.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "magnificence",
+      "id": "enemy_1209_sfden_2",
+      "name": "Magnificence",
+      "index": "AN30",
+      "rank": "Elite",
+      "sort": 412,
+      "hidden": false,
+      "icon": "/enemies-icons/Magnificence.webp",
+      "flavour_text": "A Waregeist that manifested when it was infected by Sui-Xiang. Its tiny glimmer serves as a beacon casting light upon the dark night. A Waregeist of this type not only blesses its peers with its radiance, but is also particularly destructive.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Periodically grants temporary Invisibility to surrounding enemy units",
+          "format": "normal"
+        },
+        {
+          "text": "Spawns 1 <Iron Lampstand> when defeated",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 18000,
+            "atk": 700,
+            "def": 1050,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.0,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "A",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "InvisibleShield",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "DeadSpawn",
+              "parameters": {
+                "cnt": 1.0,
+                "enemy_key": "enemy_1210_msfden_2"
+              }
+            },
+            {
+              "key": "InvisibleShield",
+              "parameters": {
+                "duration": 3.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "bronze_lampstand",
+      "id": "enemy_1210_msfden",
+      "name": "Bronze Lampstand",
+      "index": "AN31",
+      "rank": "Normal",
+      "sort": 413,
+      "hidden": false,
+      "icon": "/enemies-icons/Bronze Lampstand.webp",
+      "flavour_text": "The original form of 'Clarity.' Its surface is severely rusted.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 35 times to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 35,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "iron_lampstand",
+      "id": "enemy_1210_msfden_2",
+      "name": "Iron Lampstand",
+      "index": "AN32",
+      "rank": "Normal",
+      "sort": 414,
+      "hidden": false,
+      "icon": "/enemies-icons/Iron Lampstand.webp",
+      "flavour_text": "The original form of 'Magnificence.' A thick layer of wax remains inside.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 45 times to defeat",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 45,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "wisp",
+      "id": "enemy_1211_msfsui",
+      "name": "Wisp",
+      "index": "AN33",
+      "rank": "Normal",
+      "sort": 415,
+      "hidden": false,
+      "icon": "/enemies-icons/Wisp.webp",
+      "flavour_text": "An everlasting will-o'-the-wisp shed from Sui-Xiang's body.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Must be damaged 10 times to defeat",
+          "format": "normal"
+        },
+        {
+          "text": "After coming into contact with <Sui-Xiang's> <Dantian>, grants it increased Starting HP",
+          "format": "normal"
+        },
+        {
+          "text": "After entering Sui-Xiang's Third Form, grants SP to its [Omnidirectional Breath]",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sui_xiang",
+      "id": "enemy_1526_sfsui",
+      "name": "'Sui-Xiang'",
+      "index": "SUI",
+      "rank": "Boss",
+      "sort": 1322,
+      "hidden": false,
+      "icon": "/enemies-icons/'Sui-Xiang'.webp",
+      "flavour_text": "The shadow of the bestial Sui, towering and venerable. It casts its lazy gaze upon the mortal realm, and in the blink of an eye a thousand years have come and gone. With the millennium passing like a dream, it is uncertain whether it is feeling anger or bitterness.",
+      "race": "Apparition",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Reduces damage taken from above and below",
+          "format": "normal"
+        },
+        {
+          "text": "Drains all Life Points after a long time has passed in the battle",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Faraway Mountains' Thunderclap] Deals continuous Arts damage to units within cross areas around three ranged units",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated, the unit takes its next form after a period of time, and reappears a certain distance to the right",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "[Heavensfall] Deals Physical damage twice to melee units and additionally inflicts continuous Arts damage that slowly increases over time (can be Resisted)",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated, the unit takes its next form after a period of time, and reappears a certain distance to the right",
+          "format": "normal"
+        },
+        {
+          "text": "Third Form",
+          "format": "title"
+        },
+        {
+          "text": "[Omnidirectional Breath] Inflicts continuous damage to a large area to the right and renders the tiles no longer available for deployment, Operators on the left side of the target area can reduce damage taken by allied units to their right and mitigate damage to the tiles",
+          "format": "normal"
+        },
+        {
+          "text": "Can absorb <Wisps> to recover SP",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 55000,
+            "atk": 1400,
+            "def": 550,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.1,
+            "range": null,
+            "weight": 9,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "TimeUpDoom",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 5.0,
+              "priority": 4,
+              "parameters": {
+                "value": -999.0
+              }
+            },
+            {
+              "key": "ThunderS1",
+              "sp_cost": 0,
+              "cooldown": 18.0,
+              "initial_cooldown": 10.0,
+              "priority": 3,
+              "parameters": {
+                "atk_scale": 0.13,
+                "projectile_life_time": 15.0
+              }
+            },
+            {
+              "key": "ThunderS2",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 20.0,
+              "priority": 3,
+              "parameters": {
+                "atk_scale": 0.2,
+                "projectile_life_time": 15.0
+              }
+            },
+            {
+              "key": "ThunderS3",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 10.0,
+              "priority": 3,
+              "parameters": {
+                "atk_scale": 0.2,
+                "projectile_life_time": 21.0
+              }
+            },
+            {
+              "key": "PowerSlashS2",
+              "sp_cost": 0,
+              "cooldown": 18.0,
+              "initial_cooldown": 5.0,
+              "priority": 2,
+              "parameters": {
+                "atk_scale": 1.2,
+                "atk_scale_add": 0.25,
+                "atk_scale_init": 0.25,
+                "duration": 20.0,
+                "max_target": 1.0,
+                "times": 3.0
+              }
+            },
+            {
+              "key": "PowerSlashS3",
+              "sp_cost": 0,
+              "cooldown": 18.0,
+              "initial_cooldown": 5.0,
+              "priority": 2,
+              "parameters": {
+                "atk_scale": 1.2,
+                "atk_scale_add": 0.25,
+                "atk_scale_init": 0.25,
+                "duration": 15.0,
+                "max_target": 1.0,
+                "times": 3.0
+              }
+            },
+            {
+              "key": "DragonBreath",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "anim_duration": 7.0,
+                "atk_scale": 0.5,
+                "atk_scale_ex": 1.0,
+                "projectile_life_time": 7.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "AppearMode",
+              "parameters": {
+                "mode": 1.0
+              }
+            },
+            {
+              "key": "AppearS1",
+              "parameters": {
+                "hp_ratio": 0.5,
+                "hp_ratio_per_fire": 0.05
+              }
+            },
+            {
+              "key": "Bristleback",
+              "parameters": {
+                "damage_resistance": 0.5
+              }
+            },
+            {
+              "key": "DevourMsfsui",
+              "parameters": {
+                "sp": 5.0
+              }
+            },
+            {
+              "key": "NormalAttackS3",
+              "parameters": {
+                "max_target": 2.0
+              }
+            },
+            {
+              "key": "TileSpawn",
+              "parameters": {
+                "tile_col_end": -1.0
+              }
+            },
+            {
+              "key": "TimeUp",
+              "parameters": {
+                "duration": 540.0
+              }
+            },
+            {
+              "key": "delay_to_appear",
+              "parameters": {
+                "value": 2.0
+              }
+            },
+            {
+              "key": "wait_other_finish",
+              "parameters": {
+                "value": 20.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 75000,
+            "atk": 1600,
+            "def": 700,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.1,
+            "range": null,
+            "weight": 9,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "TimeUpDoom",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 5.0,
+              "priority": 4,
+              "parameters": {
+                "value": -999.0
+              }
+            },
+            {
+              "key": "ThunderS1",
+              "sp_cost": 0,
+              "cooldown": 18.0,
+              "initial_cooldown": 10.0,
+              "priority": 3,
+              "parameters": {
+                "atk_scale": 0.13,
+                "projectile_life_time": 15.0
+              }
+            },
+            {
+              "key": "ThunderS2",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 20.0,
+              "priority": 3,
+              "parameters": {
+                "atk_scale": 0.2,
+                "projectile_life_time": 15.0
+              }
+            },
+            {
+              "key": "ThunderS3",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 10.0,
+              "priority": 3,
+              "parameters": {
+                "atk_scale": 0.2,
+                "projectile_life_time": 21.0
+              }
+            },
+            {
+              "key": "PowerSlashS2",
+              "sp_cost": 0,
+              "cooldown": 18.0,
+              "initial_cooldown": 5.0,
+              "priority": 2,
+              "parameters": {
+                "atk_scale": 1.2,
+                "atk_scale_add": 0.25,
+                "atk_scale_init": 0.25,
+                "duration": 20.0,
+                "max_target": 1.0,
+                "times": 3.0
+              }
+            },
+            {
+              "key": "PowerSlashS3",
+              "sp_cost": 0,
+              "cooldown": 18.0,
+              "initial_cooldown": 5.0,
+              "priority": 2,
+              "parameters": {
+                "atk_scale": 1.2,
+                "atk_scale_add": 0.25,
+                "atk_scale_init": 0.25,
+                "duration": 15.0,
+                "max_target": 1.0,
+                "times": 3.0
+              }
+            },
+            {
+              "key": "DragonBreath",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "anim_duration": 7.0,
+                "atk_scale": 0.5,
+                "atk_scale_ex": 1.0,
+                "projectile_life_time": 7.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "AppearMode",
+              "parameters": {
+                "mode": 1.0
+              }
+            },
+            {
+              "key": "AppearS1",
+              "parameters": {
+                "hp_ratio": 0.5,
+                "hp_ratio_per_fire": 0.05
+              }
+            },
+            {
+              "key": "Bristleback",
+              "parameters": {
+                "damage_resistance": 0.5
+              }
+            },
+            {
+              "key": "DevourMsfsui",
+              "parameters": {
+                "sp": 5.0
+              }
+            },
+            {
+              "key": "NormalAttackS3",
+              "parameters": {
+                "max_target": 2.0
+              }
+            },
+            {
+              "key": "TileSpawn",
+              "parameters": {
+                "tile_col_end": -1.0
+              }
+            },
+            {
+              "key": "TimeUp",
+              "parameters": {
+                "duration": 540.0
+              }
+            },
+            {
+              "key": "delay_to_appear",
+              "parameters": {
+                "value": 2.0
+              }
+            },
+            {
+              "key": "wait_other_finish",
+              "parameters": {
+                "value": 20.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

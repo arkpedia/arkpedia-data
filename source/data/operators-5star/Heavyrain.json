@@ -1,0 +1,774 @@
+{
+  "name": "Heavyrain",
+  "rarity": 5,
+  "class": "Defender",
+  "branch": "Protector",
+  "faction": "Rhodes Island",
+  "umbrellaFactions": [],
+  "connectedFactions": [
+    "Sargon"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Defense",
+    "Support"
+  ],
+  "trait": "Blocks 3 enemies",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "A Walk in the Dust"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Tranquil Moss"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_304_zebra",
+  "otherLanguages": {
+    "Chinese": "暴雨",
+    "Japanese": "ヘビーレイン",
+    "Korean": "헤비레인"
+  },
+  "characterInfo": {
+    "File no.": "R164",
+    "Operator Record": "Untimeliness",
+    "Paradox Simulation": "Indecisiveness",
+    "Illustrator": "aZLing4",
+    "Release Date": "2021/09/30",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Kaori Ishihara",
+    "Chinese": "Xiantawutong (credited as \"Cotton Candy\" in EN)",
+    "English": "Natasha Atherton",
+    "Korean": "Shin On-yu"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "5 years",
+    "Place of Birth": "Sargon",
+    "Date of Birth": "March 3rd",
+    "Race": "Kuranta",
+    "Height": "159 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Striped Camouflage",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Heavyrain and allies on high ground tiles within the 8 surrounding tiles gain 10% Physical Dodge"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Heavyrain and allies on high ground tiles within the 8 surrounding tiles gain 13% (+3%) Physical Dodge"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Heavyrain and allies on high ground tiles within the 8 surrounding tiles gain 20% Physical Dodge"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Heavyrain and allies on high ground tiles within the 8 surrounding tiles gain 23% (+3%) Physical Dodge"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Striped Camouflage"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Heavyrain's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Striped Camouflage .",
+        "New skill: Group Camouflage ."
+      ],
+      "prerequisite": "Raise Heavyrain to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Device",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Striped Camouflage improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Heavyrain to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Concentration",
+          "quantity": 9
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 14
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Emergency Camouflage",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": "4 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack grants Camouflage and 30 HP recovery per second to a nearby ally with less than 50% HP, lasting for 4 seconds (will not use on an ally unit already under the same effect) Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": 4
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack grants Camouflage and 33 HP recovery per second to a nearby ally with less than 50% HP, lasting for 4 seconds (will not use on an ally unit already under the same effect) Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": 4
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack grants Camouflage and 36 HP recovery per second to a nearby ally with less than 50% HP, lasting for 4 seconds (will not use on an ally unit already under the same effect) Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": 4
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack grants Camouflage and 40 HP recovery per second to a nearby ally with less than 50% HP, lasting for 4 seconds (will not use on an ally unit already under the same effect) Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": 4
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack grants Camouflage and 43 HP recovery per second to a nearby ally with less than 50% HP, lasting for 4 seconds (will not use on an ally unit already under the same effect) Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": 4
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack grants Camouflage and 46 HP recovery per second to a nearby ally with less than 50% HP, lasting for 4 seconds (will not use on an ally unit already under the same effect) Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": 4
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack grants Camouflage and 50 HP recovery per second to a nearby ally with less than 50% HP, lasting for 4 seconds (will not use on an ally unit already under the same effect) Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": 4
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack grants Camouflage and 55 HP recovery per second to a nearby ally with less than 50% HP, lasting for 4 seconds (will not use on an ally unit already under the same effect) Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": 4
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack grants Camouflage and 60 HP recovery per second to a nearby ally with less than 50% HP, lasting for 4 seconds (will not use on an ally unit already under the same effect) Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": 4
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack grants Camouflage and 70 HP recovery per second to a nearby ally with less than 50% HP, lasting for 4 seconds (will not use on an ally unit already under the same effect) Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": 4
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Camouflage",
+            "description": "Gives a unit a time period of not receiving any attacks except AOE and environmental damage"
+          }
+        ]
+      },
+      {
+        "name": "Group Camouflage",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15–20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Stops attacking; DEF +20% and Max HP +20% . Self and allies in the surrounding 4 tiles gain Camouflage",
+            "initialSp": 15,
+            "spCost": 60,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Stops attacking; DEF +23% and Max HP +23% . Self and allies in the surrounding 4 tiles gain Camouflage",
+            "initialSp": 15,
+            "spCost": 58,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Stops attacking; DEF +26% and Max HP +26% . Self and allies in the surrounding 4 tiles gain Camouflage",
+            "initialSp": 15,
+            "spCost": 56,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Stops attacking; DEF +30% and Max HP +30% . Self and allies in the surrounding 4 tiles gain Camouflage",
+            "initialSp": 20,
+            "spCost": 54,
+            "duration": 16
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Stops attacking; DEF +33% and Max HP +30% . Self and allies in the surrounding 4 tiles gain Camouflage",
+            "initialSp": 20,
+            "spCost": 52,
+            "duration": 16
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Stops attacking; DEF +36% and Max HP +30% . Self and allies in the surrounding 4 tiles gain Camouflage",
+            "initialSp": 20,
+            "spCost": 50,
+            "duration": 16
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Stops attacking; DEF +40% and Max HP +30% . Self and allies in the surrounding 4 tiles gain Camouflage",
+            "initialSp": 25,
+            "spCost": 48,
+            "duration": 17
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Stops attacking; DEF +45% and Max HP +30% . Self and allies in the surrounding 4 tiles gain Camouflage",
+            "initialSp": 25,
+            "spCost": 46,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Stops attacking; DEF +50% and Max HP +30% . Self and allies in the surrounding 4 tiles gain Camouflage",
+            "initialSp": 25,
+            "spCost": 44,
+            "duration": 19
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Stops attacking; DEF +55% and Max HP +30% . Self and allies in the surrounding 4 tiles gain Camouflage",
+            "initialSp": 25,
+            "spCost": 40,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Camouflage",
+            "description": "Gives multiple units a time period of not receiving any attacks except AOE and environmental damage"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock",
+          "quantity": 10
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Aketon",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 2
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Guarding",
+      "facility": "Control Center",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by +0.05 per hour."
+    },
+    {
+      "name": "Defender Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Defender Operators' Specialization training speed +30%"
+    },
+    {
+      "name": "Field ExperienceReplacesDefender Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, increases the Specialization training speed of Defender Operators by +30% , and further increases this speed by +45% if training the skill to Specialization Level 2"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Heavyrain's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "PRO-Y: Stickers of a Popular Character",
+      "mission": {
+        "requirement1": "During battle, have Heavyrain use Emergency Camouflage a total of 30 times (excluding Support Units)",
+        "requirement2": "Clear Main Theme 2-7 with a 3-star rating; You must deploy your own Heavyrain, and allow no Operators to be defeated"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +200 , DEF +50 , Block +1",
+          "effectLabel": "Trait improved",
+          "effectText": "Blocks 4 enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +280 , DEF +60 , Block +1",
+          "effectLabel": "Striped Camouflage improved",
+          "effectText": "This unit and allies on high ground tiles within the 8 surrounding tiles gain 23% Physical Dodge",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +375 , DEF +65 , Block +1",
+          "effectLabel": "Striped Camouflage improved",
+          "effectText": "This unit and allies on high ground tiles within the 8 surrounding tiles gain 25% Physical Dodge",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Formerly a soldier under the wings of a previous Lord Ameer of\nSargon\n, Heavyrain left its army after the betrayal of an ally has left her disillusioned, eventually making her way to\nRhodes Island\n.\nA seasoned combat veteran, she is currently active in a variety of missions as a defender operator.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1443,
+          "atk": 199,
+          "def": 253,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1899,
+          "atk": 256,
+          "def": 378,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1899,
+          "atk": 256,
+          "def": 378,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2467,
+          "atk": 321,
+          "def": 519,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2467,
+          "atk": 321,
+          "def": 519,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 24,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 3380,
+          "atk": 378,
+          "def": 721,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 24,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      }
+    ],
+    "trust": {
+      "hp": 350,
+      "atk": 0,
+      "def": 35
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Heavyrain shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.12u/L\nOperator Heavyrain rarely comes into contact with Originium."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "A bashful female Kuranta.\nThe first impression most operators have of Heavyrain is that she is gloomy. In a noisy, crowded environment, she always prefers to stand in the side quietly as though she is completely removed from all the bustling activity.\nHowever, Heavyrain is far from asocial; those who worked with her before can attest to her gentle, attentive personality.\n'She just doesn't know how to express herself.'\nThis is how most operators describe her in their evaluations of Heavyrain, and it is quite an apt description."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Prior to Heavyrain's onboarding, Rhodes Island has already had another former Sargon soldier, Spot. Nonetheless, because of his lazy personality, most operators don't tend to associate him with what they consider soldiers. The fact that Spot has himself admitted to leaving the Sargon army because he wanted to get away from military life certainly doesn't help. Therefore, Heavyrain might just be a better example of a Sargon soldier than Spot.\nAnd while most people tend to forget Heavyrain's background as a soldier because of her bashful nature in their daily interactions, the moment she steps on the battlefield, her professional combat training is immediately apparent to any observers. Be it assessing the battlefield or executing the orders she is given, she is capable of carrying out the task on hand well without letting her personal views getting in the way. In Instructor Dobermann's words, 'If you're looking for a professional soldier, look no further than Heavyrain.'\nThat being said, Heavyrain is far from flawless.\nHer shortcoming is particularly noticeable when her allies are injured or otherwise in danger. She becomes fretful and anxious and displays a level of aggressiveness not normally seen in her; this further causes her to lose her calm and ability to analyze her surroundings effectively.\nThis is not a fatal flaw, as she can usually regain her calm in a relatively short period of time as long as her commanding officer knows how to work with her. Yet the problem still remains. Owing to this, Heavyrain was assigned as a Defender operator by Instructor Dobermann. Furthermore, Instructor Dobermann has requested her to adopt a combat style that is practically entirely foreign to her. That is her main responsibility on the battlefield now—To defend her allies."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "With Heavyrain's permission, this entry will serve as a record of the operator's past experience in Sargon:\nHeavyrain's family is just like any other Sargon family. They are strict, quiet, and depressed.\nSoon after she came of age, Heavyrain enlisted in her Lord Ameer's army, going on to achieve many great accomplishments for her Lord Ameer. However, because of her withdrawn personality, she wasn't able to develop a good relationship with most of her fellow soldiers. In the end, there was only a single person who befriended her.\nHowever, during a confrontation with another Lord Ameer, Heavyrain found herself betrayed by her one and only friend. As it turns out, the friend had been planning on using her as a stepping stone to join the enemies.\nHer entire squadron was wiped out in a single skirmish while her friend defected to the enemy Lord Ameer with information about their side. She alone was spared only to be used as a scapegoat for the chaos that unfolded.\nBecause of her aloofness, she was left without any support in the army, and she was almost sentenced to death by the military court, only finding herself spared thanks to the testimony of a survivor who managed to escape.\nThe betrayal had left her disillusioned, and, in the end, she used her accomplishments in the army to buy herself the opportunity to leave, becoming a mercenary thereafter.\nHowever, the incident has left her even more sensitive than before. As a result, she found herself repeatedly running up the wall, and this eventually led her here to Rhodes Island."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Heavyrain's behavior on the battlefield can be easily explained by her past—\nShe yearns for acknowledgement. The army's oppressive environment has only served to put even more pressure on her, leaving her unsure of how to express herself. At the same time, it has also made her willing to trust anyone who shows her even the tiniest bit of goodwill.\nAlthough Rhodes Island is home to operators with vastly different personalities, many of them are accepting of others. Heavyrain's introversion has hardly kept these operators from forming a friendship with her. Therefore, Heavyrain thinks of every last operator who has shown her a smile as someone she must repay with her very life, which is why she loses control of herself on the battlefield—she cares about them way too much, and she will not tolerate anyone hurting her friends.\nSuch a cute reason for someone so berserk.\nMost of our operators realize that Heavyrain doesn't know how to express herself, but they most likely have never imagined that Heavyrain thinks that, for the kindheartedness they have extended to her, she should naturally repay the favor.\nThat said, adorable as it may be, we must remember that this mentality is unhealthy. Heavyrain herself knows as well, but she evidently doesn't know how to correct it.\nFortunately, the Doctor is at the top of the list of people whose kindness she must repay.\nThe time she has spent with the Doctor since her onboarding has clearly left Heavyrain very trustful of, if not outright dependent on, the Doctor, who has undoubtedly already come to understand this aspect of Heavyrain. Surely, the Doctor will be able to guide her on the right path and slowly help her learn to express her emotions and manage her relationships with others."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "According to Heavyrain, she met Spot before and received his help when her squadron stopped by the city that Spot was garrisoned in at the time.\nSupoosedly, Spot handed her a bottle of water and lent her a comic book when he noticed she was all alone and isolated from her fellow teammates.\nSpot has himself noted that he has no recollection of this ever taking place.\n'Heh, that happened? Hold up... This comic book thing rings a bell. No wonder I couldn't find it!'\nUnfortunately, even though Heavyrain was really fond of the comic book, she later lost it during her time as a mercenary.\nSpot didn't seem to care about this at all.\nThanks to this, however, Heavyrain can sometimes be seen in the corner of the break room, enjoying a comic book by herself."
+    }
+  ]
+}

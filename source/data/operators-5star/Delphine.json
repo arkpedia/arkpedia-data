@@ -1,0 +1,767 @@
+{
+  "name": "Delphine",
+  "rarity": 5,
+  "class": "Caster",
+  "branch": "Mystic Caster",
+  "faction": "Victoria",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS"
+  ],
+  "trait": "Attacks deal Arts damage ; When unable to find a target, attacks can be stored up and fired all at once (Up to 3 charges)",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Main Story Unlock",
+      "Unlock Location": "The Whirlpool that is Passion"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4110_delphn",
+  "otherLanguages": {
+    "Chinese": "戴菲恩",
+    "Japanese": "デルフィーン",
+    "Korean": "델핀"
+  },
+  "characterInfo": {
+    "File no.": "VC23",
+    "Illustrator": "Cenm0",
+    "Release Date": "2024/04/16",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Risa Sekiguchi",
+    "Chinese": "Zeng Tong",
+    "English": "Amber Lee Connors",
+    "Korean": "Kim Ji-yoon"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "3 years",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "November 2nd",
+    "Race": "Feline",
+    "Height": "152 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Baptize the Blade",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Increases damage dealt to enemies above 80% HP by 10%"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Increases damage dealt to enemies above 80% HP by 12% (+2%)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Increases damage dealt to enemies above 80% HP by 18%"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Increases damage dealt to enemies above 80% HP by 20% (+2%)"
+        }
+      ]
+    },
+    {
+      "name": "Cut Without Mercy",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "In [The Whirlpool that is Passion] , ATK is increased to 120% against [Sarkaz] enemies , and stores an additional attack charge that only fires against [Sarkaz] enemies"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Baptize the Blade"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Delphine's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Baptize the Blade .",
+        "New skill: \"Preemptive Strike\" .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Delphine to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Cut Without Mercy .",
+        "Baptize the Blade improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Delphine to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Cyclicene Prefab",
+          "quantity": 8
+        },
+        {
+          "name": "Semi-Synthetic Solvent",
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "\"Concentration\"",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "5 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 30% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 25,
+            "duration": 5
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 31% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 24,
+            "duration": 5
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 32% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 23,
+            "duration": 5
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 35% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 22,
+            "duration": 5
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 36% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 21,
+            "duration": 5
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 37% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 20,
+            "duration": 5
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 40% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 19,
+            "duration": 5
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 43% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 18,
+            "duration": 5
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 46% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 17,
+            "duration": 5
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack range changes , attack interval is significantly reduced , and each attack deals 50% ATK as Arts damage",
+            "initialSp": 5,
+            "spCost": 15,
+            "duration": 5
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 1
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 3
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "\"Preemptive Strike\"",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +30% , but no longer targets enemies below 50% HP. Attacks cause targets to take 6% of Delphine's ATK per second as Arts damage (stacks up to 4 times, lasts until the skill ends)",
+            "initialSp": 10,
+            "spCost": 50,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +35% , but no longer targets enemies below 50% HP. Attacks cause targets to take 6% of Delphine's ATK per second as Arts damage (stacks up to 4 times, lasts until the skill ends)",
+            "initialSp": 11,
+            "spCost": 49,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +40% , but no longer targets enemies below 50% HP. Attacks cause targets to take 6% of Delphine's ATK per second as Arts damage (stacks up to 4 times, lasts until the skill ends)",
+            "initialSp": 12,
+            "spCost": 48,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +45% , but no longer targets enemies below 50% HP. Attacks cause targets to take 6% of Delphine's ATK per second as Arts damage (stacks up to 4 times, lasts until the skill ends)",
+            "initialSp": 13,
+            "spCost": 47,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +50% , but no longer targets enemies below 50% HP. Attacks cause targets to take 6% of Delphine's ATK per second as Arts damage (stacks up to 4 times, lasts until the skill ends)",
+            "initialSp": 14,
+            "spCost": 46,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +55% , but no longer targets enemies below 50% HP. Attacks cause targets to take 6% of Delphine's ATK per second as Arts damage (stacks up to 4 times, lasts until the skill ends)",
+            "initialSp": 15,
+            "spCost": 45,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +60% , but no longer targets enemies below 50% HP. Attacks cause targets to take 6% of Delphine's ATK per second as Arts damage (stacks up to 4 times, lasts until the skill ends)",
+            "initialSp": 16,
+            "spCost": 44,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +75% , but no longer targets enemies below 50% HP. Attacks cause targets to take 6% of Delphine's ATK per second as Arts damage (stacks up to 4 times, lasts until the skill ends)",
+            "initialSp": 17,
+            "spCost": 43,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +90% , but no longer targets enemies below 50% HP. Attacks cause targets to take 6% of Delphine's ATK per second as Arts damage (stacks up to 4 times, lasts until the skill ends)",
+            "initialSp": 18,
+            "spCost": 42,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +100% , but no longer targets enemies below 50% HP. Attacks cause targets to take 6% of Delphine's ATK per second as Arts damage (stacks up to 4 times, lasts until the skill ends)",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 3
+            },
+            {
+              "name": "Transmuted Salt",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Damage Over Time",
+            "description": "Enemies incur a damage per second for a certain duration"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Semi-Synthetic Solvent",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Compound Cutting Fluid",
+          "quantity": 4
+        },
+        {
+          "name": "Aggregate Cyclicene",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Old Acquaintances, New Friends",
+      "facility": "Office",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the HR Office, HR contacting speed +20% , and for every 1 contact made, increases the likelihood of obtaining Glasgow Gang clues (working time and recruit slots improve the likelihood)"
+    },
+    {
+      "name": "Master Strategist",
+      "facility": "Control Center",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Control Center, for each Glasgow Gang Operator assigned to the same Trading Post, order acquisition efficiency +10%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Delphine's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "MSC-Y: Gloomy Justice",
+      "mission": {
+        "requirement1": "Defeat a total of 30 enemies with Delphine (excluding Support Units)",
+        "requirement2": "Clear Intermezzo WD-6 with a 3-star rating; You must deploy your own Delphine, and use \"Preemptive Strike\" at least 2 times"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +95 , ATK +70",
+          "effectLabel": "New trait",
+          "effectText": "ASPD +30 when there are stored attacks",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +110 , ATK +85",
+          "effectLabel": "Baptize the Blade improved",
+          "effectText": "Increases damage dealt to enemies above 80% HP by 21%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +120 , ATK +92",
+          "effectLabel": "Baptize the Blade improved",
+          "effectText": "Increases damage dealt to enemies above 80% HP by 23%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Delphine, formerly an active intelligence officer in Norport for many years, later participating in a series of military campaigns near\nLondinium\nas a member of the Exemplars. After the\nVictoria incident\n, she worked out a number of cooperative strategic agreements with\nRhodes Island\nto assist the\nVictorian\nbranch office.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 667,
+          "atk": 541,
+          "def": 48,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 24,
+          "block": 1,
+          "interval": 3
+        },
+        "max": {
+          "hp": 954,
+          "atk": 773,
+          "def": 82,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 24,
+          "block": 1,
+          "interval": 3
+        },
+        "rangeId": "3-13"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 954,
+          "atk": 773,
+          "def": 82,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 26,
+          "block": 1,
+          "interval": 3
+        },
+        "max": {
+          "hp": 1240,
+          "atk": 1004,
+          "def": 114,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 26,
+          "block": 1,
+          "interval": 3
+        },
+        "rangeId": "3-14"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1240,
+          "atk": 1004,
+          "def": 114,
+          "res": 20,
+          "redeploy": 80,
+          "dp": 26,
+          "block": 1,
+          "interval": 3
+        },
+        "max": {
+          "hp": 1532,
+          "atk": 1240,
+          "def": 128,
+          "res": 20,
+          "redeploy": 80,
+          "dp": 26,
+          "block": 1,
+          "interval": 3
+        },
+        "rangeId": "3-14"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 130,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, the operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Delphine shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.14u/L\nOperator Delphine's BOCD is on the high side, and the fighting in Londinium must have affected her health to some degree. She needs to be extra careful to lower her risk of contracting Oripathy."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Delphine is the daughter of Victoria's famous Duke of Windermere, and first in line to the title. This is practically an open secret in Rhodes Island. \nWe have plenty of operators with status and power, but even among them, the authority Delphine wields—or perhaps we should say 'could wield'—is still an extraordinary case. No matter how Victoria is perceived today, being the heir to a truly powerful dukedom implies being able to command an entire fleet of high-speed battleships, having full control over the territory, and access to a considerable amount of wealth. However, Delphine seems to have voluntarily given up all of these enviable resources. The only things she has kept for herself appear to be the coat embroidered with the Windermere name and the saber left by her mother. \nNowadays, other than the training room, she spends most of her time on Rhodes Island consulting a variety of travel guides and well-traveled operators. She carefully notes down valuable information and researches the best routes, just like a seasoned backpacker. However, she does not seem to have any passion for sightseeing, as neither the natural nor cultural tourist attractions that ordinary travelers flock to are ever a priority in her plans. She has not divulged much detail about her itinerary, but one thing we are sure of is that she seems to prefer visiting more chaotic regions that most prefer to avoid. \n\nDelphine and I talked a bunch about fun places and delicious shops near my place! But most people don't pay special attention to places like metallurgical factories and mines when they're plannin' a travel route, aye? ——Bagpipe \nMm-hmm, the habits of a workaholic. Understandable. ——Harmonie"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Delphine rarely talks about her past, but sometimes she tells her friends from the Glasgow gang about the summers she spent as a child at Lynncardine. \nLynncardine is located on Victoria's northeastern border with Leithanien. It is Victoria's military stronghold and the most important nomadic city in the Duke of Windermere's demesne—these descriptions often conjure an image of a stark and daunting nomadic fortress, but Delphine describes the place is completely differently. \nNaturally, since it is her hometown. \nShe will speak of a small lake that shows up on the road to the city. Only during the summer do the city's denizens have the privilege to catch a glimpse of its always-clear waters. She will also mention a strange tree by the lake, and the seven or eight insect species one can find in June. Sometimes the city comes close to a woodland in summer, and she will always enthusiastically list off every type of tree one can find whenever she mentions it. Also, when Lynncardine sails into the shadow of a mountain, or when it heads toward a huge raincloud... \nThere is no doubt that Delphine spent the best moments of her childhood there. But no fragment of these memories matches what we'd expect from 'a Duke's successor.' The Duke of Windermere was known in Victorian aristocratic circles for her strictness, and many speculated that even her heirs would be spared no quarter. Delphine's adeptness at combat and the calluses on her hands are proof her mother did indeed have high expectations of her. But on the other hand, her mother also wished to protect her daughter's smile more than she wanted to prepare her successor to become the next Duke by shuttling her between banquets and military camps as the Duke of Windermere. \nPerhaps precisely because she knew that her child would find it difficult to earnestly raise the corners of her lips again, upon inheriting her responsibilities."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "[Classified Log] \nThe chaos erupting in several counties under Windermere came as no surprise to us. \nAfter the Duke was KIA, all her troops retreated from Londinium's frontlines, effectively withdrawing from the war. The nomadic fortresses sent to the frontlines were also called back. According to several statements from Lynncardine, Duke Amphelise Windermere and her heir, Delphine Windermere, died on the battlefields near Londinium. Several factions with succession rights have begun competing for control over Windermere's demesne, and one can see the various supporters behind their backs: traditional military corporations, other Victorian dukes, and even Leithanien's Kurfürsten. \nBut Delphine shows a rather negative attitude toward the situation in Windermere, reluctant to return to Lynncardine or to use her identity to regain any faction's support. She told us she would not use any connections or assets available to her as Windermere's successor, and that Lynncardine has nothing to do with what she plans to do next. \n\nThis archive includes a recorded conversation approved by the concerned parties: \nEnough asking, Hannah. I'm not going back. I know you mean well, but I won't change my mind. It's not because I think I'm not up for it, or that I'm afraid of giving myself all that trouble. I know all too well how to play those political games, win over a few people, suppress a few more, and promise another few some benefits... Don't forget, I've spent a considerable number of years doing intelligence work. \nThe question is: Do I want to continue playing these games? \nOf course I love my mother and father who dedicated their lives to the demesne, and I don't want to deny their efforts, but we've seen how everything ended. Lynncardine's savior won't be me, or any one person, that's just not possible. I'd rather do more concrete work, to kill the specific culprits instead of continuing to get myself hopelessly entangled with those conspirators as a 'Duke's daughter' or a 'Duke.' \nThat's how I feel about Lynncardine, and Victoria too. Don't underestimate the people living there, they can make their own choices. What they need are not leaders, but companions. \nI'm one of you guys, part of the Exemplars. We help everyone we meet with practical work, and it'd be no different even if I took on some kind of position. \nWe praise those who 'take up responsibility,' but whoever said that responsibility requires entering the palace?"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "An unsent letter: \nDon't worry, Mum. I'm doing fine here. \nI'll be heading out again soon, to Castshire County this time. I still have no plans to return to Lynncardine just yet, and there's no way I can see you in person, so all I can do is to write you a letter about my current situation. \nI'm still in Norport, and the reconstruction work here is going pretty smoothly. The 'Slobberknocker' has reopened, and Hannah made a vow to make it the best in Victoria. I have no doubts about that. We paid Baird a visit too, and Morgan wanted to bring her some new tapes. I know she liked going over to the video shop just to sleep, and not for a love of movies, but as long as they're happy, I'm fine with that. Baird would definitely be glad to know that we plan to reopen the place in a while after saving up enough money, and we'll always leave a chair out for her. \nI've seen so many things these days, so much more than I ever saw on my trips with Papa. I'm starting to realize that I don't really know the country I grew up in. I learned how crude ale is brewed, and that people go door-to-door buying burdenbeast dung to use as fuel. I learned too little from you and Papa, but it's also because of this that I feel I've made the right choice. \nTwo days ago, I dug out an old photo that I must have used as a bookmark and brought all the way to Londinium. I already forget how old I was back then, but Papa was holding up a huge fin with both hands while you were holding onto my shoulders with a scowl on my face—probably because that was yet another vacation that ended early. It was only then that we were nobodies, and nothing happened. \nI really miss you, Mum."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "The doctor's seen your mum. She told me she's injured, but she'll wake up in no time. \n'I know how you feel. You're thinking: if only you were stronger, less hesitant, if you hadn't been slacking on your training, if you'd walked a different path... would your mum be fine now? \n'But... there's no way to change what's already happened. Your mum put herself out there to protect you, so if you want to repay her for that, then you have to become stronger, strong enough to stand in front of her the next time she's in danger. \n'So, don't cry anymore. She's waiting for you to grow up and protect her too, you know!' \nAfter the Londinium incident concluded, Delphine rescued a mother and daughter duo at the Victorian border who survived a bandit raid. She handed the seriously injured and comatose woman over to the doctor, and held the incessantly crying girl in her arms, spending the entire night calming her down until she finally fell asleep at dawn."
+    }
+  ]
+}

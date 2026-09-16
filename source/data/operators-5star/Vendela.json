@@ -1,0 +1,757 @@
+{
+  "name": "Vendela",
+  "rarity": 5,
+  "class": "Medic",
+  "branch": "Incantation Medic",
+  "faction": "Victoria",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing"
+  ],
+  "trait": "Attacks deal Arts damage and heal the HP of an ally within Attack Range for 50% of the damage dealt",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "The Enigma of Roses"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_494_vendla",
+  "otherLanguages": {
+    "Chinese": "刺玫",
+    "Japanese": "ヴァンデラ",
+    "Korean": "벤델라"
+  },
+  "characterInfo": {
+    "File no.": "VC24",
+    "Operator Record": "Something New",
+    "Paradox Simulation": "Thorned Rose",
+    "Illustrator": "Studio Montagne (additional design by Kumatangent) Kumatangent ( The Enigma of Roses )",
+    "Release Date": "2024/04/16",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Yuu Wakui",
+    "Chinese": "Chang Jiameng",
+    "English": "Cassandra Lee Morris",
+    "Korean": "Kim Mi-so"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "May 14th",
+    "Race": "Feline",
+    "Height": "160 cm",
+    "Infection Status": "Confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Flawed",
+    "Mobility": "Normal",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Soil Fertilizer Enhancement",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "The ally with the highest Max HP within range receives 8% more healing"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "The ally with the highest Max HP within range receives 11% (+3%) more healing"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "The ally with the highest Max HP within range receives 15% more healing"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "The ally with the highest Max HP within range receives 18% (+3%) more healing"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +22"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Soil Fertilizer Enhancement"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Vendela's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Soil Fertilizer Enhancement .",
+        "New skill: Umbrage of Thorns .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Vendela to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Soil Fertilizer Enhancement improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Vendela to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Medic Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Keton Colloid",
+          "quantity": 5
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 13
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Tactical Chant γ",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ASPD +30",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ASPD +35",
+            "initialSp": 0,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ASPD +40",
+            "initialSp": 5,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ASPD +45",
+            "initialSp": 5,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ASPD +50",
+            "initialSp": 5,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ASPD +55",
+            "initialSp": 5,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ASPD +60",
+            "initialSp": 10,
+            "spCost": 32,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ASPD +70",
+            "initialSp": 10,
+            "spCost": 32,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ASPD +80",
+            "initialSp": 10,
+            "spCost": 32,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ASPD +90",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 6
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Umbrage of Thorns",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +30% . Makes the ally with the highest Max HP within Attack Range more likely to be attacked by enemies, and when this ally receives an enemy attack, Vendela deals 10% ATK as Arts damage to the attacker and activates her Trait on the ally",
+            "initialSp": 5,
+            "spCost": 40,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +40% . Makes the ally with the highest Max HP within Attack Range more likely to be attacked by enemies, and when this ally receives an enemy attack, Vendela deals 15% ATK as Arts damage to the attacker and activates her Trait on the ally",
+            "initialSp": 5,
+            "spCost": 38,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +50% . Makes the ally with the highest Max HP within Attack Range more likely to be attacked by enemies, and when this ally receives an enemy attack, Vendela deals 18% ATK as Arts damage to the attacker and activates her Trait on the ally",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +55% . Makes the ally with the highest Max HP within Attack Range more likely to be attacked by enemies, and when this ally receives an enemy attack, Vendela deals 20% ATK as Arts damage to the attacker and activates her Trait on the ally",
+            "initialSp": 10,
+            "spCost": 36,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +60% . Makes the ally with the highest Max HP within Attack Range more likely to be attacked by enemies, and when this ally receives an enemy attack, Vendela deals 25% ATK as Arts damage to the attacker and activates her Trait on the ally",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +70% . Makes the ally with the highest Max HP within Attack Range more likely to be attacked by enemies, and when this ally receives an enemy attack, Vendela deals 28% ATK as Arts damage to the attacker and activates her Trait on the ally",
+            "initialSp": 10,
+            "spCost": 34,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +75% . Makes the ally with the highest Max HP within Attack Range more likely to be attacked by enemies, and when this ally receives an enemy attack, Vendela deals 30% ATK as Arts damage to the attacker and activates her Trait on the ally",
+            "initialSp": 12,
+            "spCost": 32,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +75% . Makes the ally with the highest Max HP within Attack Range more likely to be attacked by enemies, and when this ally receives an enemy attack, Vendela deals 35% ATK as Arts damage to the attacker and activates her Trait on the ally",
+            "initialSp": 14,
+            "spCost": 31,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +80% . Makes the ally with the highest Max HP within Attack Range more likely to be attacked by enemies, and when this ally receives an enemy attack, Vendela deals 40% ATK as Arts damage to the attacker and activates her Trait on the ally",
+            "initialSp": 15,
+            "spCost": 31,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +80% . Makes the ally with the highest Max HP within Attack Range more likely to be attacked by enemies, and when this ally receives an enemy attack, Vendela deals 50% ATK as Arts damage to the attacker and activates her Trait on the ally",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 15
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Reflection Damage",
+            "description": "Able to reflect damage onto enemies (especially ranged)"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock",
+          "quantity": 10
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Semi-Synthetic Solvent",
+          "quantity": 3
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Aroma Convalescence α",
+      "facility": "Dormitory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Dormitory, restores +0.15 Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
+    },
+    {
+      "name": "Aroma Convalescence βReplacesAroma Convalescence α",
+      "facility": "Dormitory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Dormitory, restores +0.15 Morale per hour to all Operators assigned to that Dormitory and restores an additional +0.1 to Operators whose Morale is below 18 (Only the strongest effect of this type applies)"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Vendela's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "INC-X: Broken Rose",
+      "mission": {
+        "requirement1": "During battle, have Vendela use Umbrage of Thorns a total of 10 times (excluding Support Units)",
+        "requirement2": "Clear Side Story IC-2 with a 3-star rating; You must deploy your own Vendela, and cannot include any other Medic Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +105 , ATK +23",
+          "effectLabel": "Trait improved",
+          "effectText": "Attacks deal Arts damage and heal the HP of an ally within Attack Range for 60% of the damage dealt",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +122 , ATK +30",
+          "effectLabel": "Soil Fertilizer Enhancement improved",
+          "effectText": "The ally with the highest Max HP within range receives 20% more healing",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +143 , ATK +38",
+          "effectLabel": "Soil Fertilizer Enhancement improved",
+          "effectText": "The ally with the highest Max HP within range receives 23% more healing",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Magdelene Shaw, survivor of\nthe Sanguinarch\n's ceremony in the town of Brentwood. More than half the town was razed, including the family greenhouse she so cherished.\nAt the invitation of\nRockrock\nand\nFeist\n, she joined the\nSelf-Salvation Corps\n, offering them her assistance before eventually joining\nRhodes Island\n. After the\nLondinium incident\n, she decided on her own to apply to return to\nVictoria\nto rebuild her hometown, taking up a post as a local Rhodes Island branch office liaison.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 751,
+          "atk": 192,
+          "def": 44,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 15,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 989,
+          "atk": 316,
+          "def": 64,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 15,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 989,
+          "atk": 316,
+          "def": 64,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1178,
+          "atk": 440,
+          "def": 80,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1178,
+          "atk": 440,
+          "def": 80,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1370,
+          "atk": 550,
+          "def": 100,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-3"
+      }
+    ],
+    "trust": {
+      "hp": 180,
+      "atk": 30,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy. \n\n[Cell-Originium Assimilation] 6%\nOperator Vendela does not yet have visible Originium crystals on her body, and requires continued observation. \n\n[Blood Originium-Crystal Density] 0.17u/L\nBOCD is still trending upwards, and it is possible that her condition may severely worsen. \nWe have studied the test results of many Brentwood survivors, and found that their conditions matched that of Operator Vendela's. All have succumbed to acute infection during the incident and suddenly found themselves Infected, and for that reason Medical has already applied for additional psychological counseling."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Vendela first came to Rhodes Island as a patient rather than a member of the Medical Department. Though the records concerning the town of Brentwood as regards to the Londinium operation are still currently restricted, by extrapolating from Vendela's condition it is hard to be hopeful about the prognosis of the other survivors. The long-term impact on their health also appears grim. Vendela is aware of this, and took the initiative to submit an application to Medical, hoping to learn everything she can about Oripathy. According to her statement, because of the town's geography, most residents have historically worked in agriculture and been isolated from industry and cases of Oripathy. As such, they now find themselves lacking in specialists able to assist them in these matters. Currently, she thinks only of how she can help. After all, everyone in town has always treated her so well. \n 'I still remember the first time Vendela tagged along as an intern. She was pretty much as normal as can be. Not many even noticed their new gentle and unassuming co-worker,' said a similarly shy operator as she sentimentally recalled when she and Vendela met. 'Back then, I never imagined that a cheerful girl like her could have gone through such an experience. When the two of us background characters formed a small study group to help each other out, I went over to her room and saw it absolutely stuffed with fresh flowers and stacks of medical reports for her fellow townsfolk. Only then did I realize that even though she looks so quiet and peaceful on the outside, she was secretly doing some ultra-super-duper cool stuff!' \nVendela truly is someone who keeps a low profile, as exasperatedly noted by Rockrock, who has worked with her in the past: 'Magdelene and I were once out on an operation with Logistics working our arses off, but she didn't even think to let people know she'd done anything! That's just not right!' \n 'That's right, we all went to Vendela's private farewell party, since she had already applied for leave to go back home and help rebuild. Medical even gave her special permission to take a batch of Oripathy suppressants. She also agreed to let me come along and help, hehe!' the same shy operator noted excitedly."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Wow, Doctor, you really don't understand Vendela at all, do you?! Obviously you were all together on that Londinium operation that whole time, yet you didn't even know she did flower fortunetelling? Well, I guess it's not that surprising. After all, who'd have time for that when you're busy fighting? Whatever, no excuses, give it a shot when you have time, Doctor. Even my big sister Lancet-2 was really happy with her fortune. What did it say? That's a secret! \n—A certain anonymous operator\n\nWhile at first glance Vendela does not share the same aura of mystique as a diviner like Gitano—since she always speaks with a kind and gentle tone, barely above a whisper—but the results of her flower divination really are as accurate as the rumors say. \n—A certain intern head over heels in love\n\n*Sigh* I don't know who's going around telling people about Vendela's talent for fortunetelling, but now there's always someone sneaking about trying to get her to tell their love fortune, or if a mission will go well, things like that. It's enough to give even her a headache. It's not even that mysterious—you just have to trust that the last petal you pluck will set your fate in stone—but even so, it's far too cruel to those poor flowers! Ever since she came aboard, more and more of the flowers I'm growing go missing, yet she still can't find it in her to refuse anyone. She even had to come to me secretly to ask for help. Doctor, we really should help her out... Oh, but back to the main topic, Vendela may not handle that many breeds of plants, but she's incredibly skilled at caring for them. \n—Lena\n\nThe secret to flower divination? There's no secret, Doctor. It's just a game my grandfather taught me when I was little. Because each kind of flower has a fixed number of petals, all I need to know is what kind of fortune they want told, then I can guess what they want to hear and pick a suitable flower. I love seeing their smiling faces when they find out that their wishes will come true! Huh? You're asking if I can understand the heart of a robot too? ...To be honest, not really, but I do understand the heart of the lady who sticks to the robot like glue. Please please please keep this a secret!\n—Medical Department Operator Vendela"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "[Mission Report]\nThe reconstruction of Brentwood is proceeding unbelievably smoothly. Although the Victorian Parliament's post-war reconstruction task force has previously suggested that they aid survivors in moving away from the ruins, a majority of residents do not wish to leave where they have lived for generations. And so, with the aid of Parliament, at least 30% of the town has been rebuilt now, but the rest was completely destroyed in the ceremony, with no hope of restoration.\nIt turns out that Vendela's wrecked greenhouse had been rebuilt by the locals from spare materials before we arrived, and they've been taking care of it the whole time. Yet she insisted on turning that small shack into the town's only medical observation post, not only as a temporary resting place for the gravely Infected, but also as somewhere for us to provide further treatment alongside functioning as a liaison office. Fortunately, Vendela is very familiar with the locals, which lets us proceed with our jobs as medics smoothly, and she does her best to settle what few misunderstandings pop up. She also set up a system where staff periodically visit patients' homes and perform tests there, which has already been accepted by the locals.\n\n[Work Conversation Recording]\n...\n'Vendela, are you really not ready to rebuild the greenhouse yet?'\n'It's not time for that. Everyone in town still needs our help... There's an even better use for this place now. I'm sure my grandfather will understand.'\n'It can wait until next year... Right, next year, when everyone's healed up a bit more, and we've managed to make progress on rebuilding the town. We can't guarantee we'll find anywhere bigger to let everyone rest and recuperate.'\n'Let's wait until everyone in town is better, and you don't need my help anymore. Then I'll turn this place back into a greenhouse, just the way that it used to be... Mhm, that's what I think...'\n'Everyone also entrusted me with inviting you all to join in this year's harvest festival... Oh, though it does sound a bit strange to hold a harvest festival in the ruins. Ah, that's right, I still haven't asked Miss Lena to help us prepare flowers for the festival...'\n'Oh, I've been so busy that I forgot to turn off the recording!'\n\nI recognize these seeds. Vendela called ahead to inform me about them. These are new varieties of roses that she bred from local cultivars, and she asked if I had any ideas of my own to add. Perhaps... what's in these other big sacks? These look like crop seeds for faming, and these are... potatoes? Eh? This year was a bumper harvest, so the locals wanted to prepare a special thank-you gift for the returning operators?\n—Perfumer, shocked by the incredible spread of edible crops before her"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Back when you said you wanted to go with the heroes who swooped in and saved our little town, we advised you not to take that risk, but we also knew that that's just who you are—no matter how much you might nod along, you always end up stubbornly following your heart. After the incident, I can understand how you want to hold your breath and keep going, to force yourself to keep walking forward, to do everything you can for our town, but I'm worried you'll lead yourself into a dead end.\nBut thankfully, because of how long we've been apart, this last time you came back you'd grown so big! And though you're not so young anymore, we're all relieved to see you in such good shape! You and your new friends at Rhodes Island have done so much for us, and we'll never forget all the good you've done. I hate to admit it, but while we promised your granddad that we'd take good care of you, in the end it was you who took care of us. We'll try and make sure you don't have to do too much, and help you rebuild the greenhouse and take care of those seedlings you love, and we'll listen to you and the doctors at Rhodes Island... Whenever you're ready to go back to being that carefree young lass from the flower shop, we'll hand your plants back to you right away.\nAh, us old fogeys are getting a little emotional, so we'll have to ask the good doctors at Rhodes Island to pass these words along. Please remember to thank those selfless souls for us.\n—From a recording by a Brentwood resident named Hank, brought out during some of Operator Vendela's daily psychological counselling exercises \n\n[Operator Psychological Record - Vendela 05]\nWhat does Operator Vendela care about the most? It's not easy to summarize without first going back to simpler times for her. During a few sessions, I played a recording from someone familiar to her. She was moved, and admitted with some surprise that she hadn't noticed any change in herself since the time she first left home.\nShe does not actually have any issues with her self-image. Since her grandfather passed away, she started living alone, and has always been slowly maturing into what she believes is a better person. Recent events have not interrupted this in any way.\nThough she looks frail on the outside, she hides an inner strength. Her home and her greenhouse are not simply memories of the past with no meaning for her, they are where she places her hopes for life. Will's optimism, Freda's endurance and sacrifice, her grandfather's gentleness, even the suffering of the Sarkaz that she once met in that small town. These have all already become moments where she got to know herself once more. Sooner or later there will come a day when she realizes that what she truly cares about, and what fuels her urge to never stop moving forward, is her unshakeable hope for the future."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "'Why do you keep wanting to come with us, Magdelene?'\n'Our target is in the most dangerous part of Londinium. If we run into anything there, it's going to be way worse than anything we've seen in that little town...'\n'I've already decided, Rockrock. If this war never ends, things like that will just keep happening...'\n'Freda made her choice for the sake of the town. She sacrificed herself for everyone else... Although things might not have gone the way she planned, I don't want everything she did to go to waste.'\n'I'll take on her wish of protecting everyone. And if that wish can only bloom once this war has ended, then I want to see this through to the very end, with my own eyes.'\n'Alright, if that's what you want... Congratulations on becoming a Self-Salvation Corps member, Miss Magdelene.'\n'Hurry up and get going with everyone else, we're leaving immediately. This war... It's about time to wrap it up.'"
+    }
+  ]
+}

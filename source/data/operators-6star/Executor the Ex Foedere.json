@@ -1,0 +1,1021 @@
+{
+  "name": "Executor the Ex Foedere",
+  "rarity": 6,
+  "class": "Guard",
+  "branch": "Reaper",
+  "faction": "Laterano",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS"
+  ],
+  "trait": "Cannot be healed by allies; Attacks deal AoE damage ; Recovers 50 HP for every enemy hit during attacks, up to Block count",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Allmind As One",
+    "The Train Runner"
+  ],
+  "ep": {
+    "Main": "Stained",
+    "Co-star": null
+  },
+  "internalName": "char_1032_excu2",
+  "otherLanguages": {
+    "Simplified Chinese": "圣约送葬人",
+    "Traditional Chinese": "聖約送葬人",
+    "Japanese": "聖約 イグゼキュター",
+    "Korean": "이그제큐터 디 엑스 포에데레"
+  },
+  "characterInfo": {
+    "File no.": "LT40",
+    "Operator Record": "Azure",
+    "Paradox Simulation": "Safe Framework",
+    "Illustrator": "Skade",
+    "Release Date": "2023/12/21",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Takashi Kondō",
+    "Chinese": "Lengquan Yeyue",
+    "English": "Eliah Mountjoy",
+    "Korean": "Kim Young-sun"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "7 years",
+    "Place of Birth": "Laterano",
+    "Date of Birth": "July 7th",
+    "Race": "Sankta",
+    "Height": "181 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "The Chosen One",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Attacks have a 10% chance to hit twice; this chance increases by 3% for each ammo consumed while a skill is active, resetting when the skill ends"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Attacks have a 13% (+3%) chance to hit twice; this chance increases by 3% for each ammo consumed while a skill is active, resetting when the skill ends"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Attacks have a 20% chance to hit twice; this chance increases by 5% for each ammo consumed while a skill is active, resetting when the skill ends"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Attacks have a 23% (+3%) chance to hit twice; this chance increases by 5% for each ammo consumed while a skill is active, resetting when the skill ends"
+        }
+      ]
+    },
+    {
+      "name": "Empathy by Shotgun",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "For every Laterano Operator deployed, increases the ammo capacity of this unit's ammo-based skills by +1 (stacks up to 4 times)"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "DEF +22"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +26"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves The Chosen One"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Executor the Ex Foedere's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +1 .",
+        "Block +1 .",
+        "New talent: The Chosen One .",
+        "New skill: Close Combat ."
+      ],
+      "prerequisite": "Raise Executor the Ex Foedere to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 7
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Empathy by Shotgun .",
+        "New skill: Damnatus Ex Foedere .",
+        "The Chosen One improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Executor the Ex Foedere to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Guard Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Nucleic Crystal Sinter",
+          "quantity": 3
+        },
+        {
+          "name": "Polymerized Gel",
+          "quantity": 7
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Testament Exacted",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Auto",
+        "duration": "Toggled",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range expands , ATK +10% , attacks ignore 100 DEF Skill activation grants 8 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Range expands , ATK +10% , attacks ignore 130 DEF Skill activation grants 8 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Range expands , ATK +10% , attacks ignore 160 DEF Skill activation grants 8 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Range expands , ATK +20% , attacks ignore 190 DEF Skill activation grants 8 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Range expands , ATK +20% , attacks ignore 220 DEF Skill activation grants 8 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Range expands , ATK +20% , attacks ignore 250 DEF Skill activation grants 8 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Range expands , ATK +30% , attacks ignore 280 DEF Skill activation grants 8 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Range expands , ATK +40% , attacks ignore 320 DEF Skill activation grants 8 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Range expands , ATK +45% , attacks ignore 360 DEF Skill activation grants 8 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Range expands , ATK +50% , attacks ignore 400 DEF Skill activation grants 8 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "2nd",
+            "priority": "sub",
+            "explanation": "This will be a luxury mastery. Only to be used by Executor 'mains' who wants him to be AFK."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Close Combat",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Manual",
+        "duration": "Toggled",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +30% , DEF +30% , Block +1 ; upon receiving a melee attack from an enemy, there is a 10% chance to dodge and reload 1 ammo Skill activation grants 12 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 15,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +35% , DEF +35% , Block +1 ; upon receiving a melee attack from an enemy, there is a 10% chance to dodge and reload 1 ammo Skill activation grants 12 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 1,
+            "spCost": 15,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +40% , DEF +40% , Block +1 ; upon receiving a melee attack from an enemy, there is a 10% chance to dodge and reload 1 ammo Skill activation grants 12 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 2,
+            "spCost": 15,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +45% , DEF +45% , Block +1 ; upon receiving a melee attack from an enemy, there is a 20% chance to dodge and reload 1 ammo Skill activation grants 12 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 3,
+            "spCost": 15,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +50% , DEF +50% , Block +1 ; upon receiving a melee attack from an enemy, there is a 20% chance to dodge and reload 1 ammo Skill activation grants 12 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 4,
+            "spCost": 15,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +55% , DEF +55% , Block +1 ; upon receiving a melee attack from an enemy, there is a 20% chance to dodge and reload 1 ammo Skill activation grants 12 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 5,
+            "spCost": 15,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +60% , DEF +60% , Block +1 ; upon receiving a melee attack from an enemy, there is a 30% chance to dodge and reload 1 ammo Skill activation grants 12 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 6,
+            "spCost": 15,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +70% , DEF +70% , Block +1 ; upon receiving a melee attack from an enemy, there is a 30% chance to dodge and reload 1 ammo Skill activation grants 12 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 6,
+            "spCost": 14,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +75% , DEF +75% , Block +1 ; upon receiving a melee attack from an enemy, there is a 30% chance to dodge and reload 1 ammo Skill activation grants 12 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 6,
+            "spCost": 13,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +80% , DEF +80% , Block +1 ; upon receiving a melee attack from an enemy, there is a 40% chance to dodge and reload 1 ammo Skill activation grants 12 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 6,
+            "spCost": 12,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 6
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Damnatus Ex Foedere",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Manual",
+        "duration": "Toggled",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Interval lengthens slightly , Attack Range expands , ATK +90% ; each time 1 ammo is consumed, ATK increases by an additional +3% (up to a maximum of 30 stacks); increases the Trait HP recovery effectiveness to 2 times; when the skill ends, deals 200% of ATK as Physical damage to all enemies attacked while the skill is active Skill activation grants 16 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 36,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Interval lengthens slightly , Attack Range expands , ATK +100% ; each time 1 ammo is consumed, ATK increases by an additional +3% (up to a maximum of 30 stacks); increases the Trait HP recovery effectiveness to 2 times; when the skill ends, deals 200% of ATK as Physical damage to all enemies attacked while the skill is active Skill activation grants 16 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 2,
+            "spCost": 35,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Interval lengthens slightly , Attack Range expands , ATK +110% ; each time 1 ammo is consumed, ATK increases by an additional +3% (up to a maximum of 30 stacks); increases the Trait HP recovery effectiveness to 2 times; when the skill ends, deals 200% of ATK as Physical damage to all enemies attacked while the skill is active Skill activation grants 16 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 4,
+            "spCost": 34,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Interval lengthens slightly , Attack Range expands , ATK +120% ; each time 1 ammo is consumed, ATK increases by an additional +4% (up to a maximum of 30 stacks); increases the Trait HP recovery effectiveness to 2 times; when the skill ends, deals 200% of ATK as Physical damage to all enemies attacked while the skill is active Skill activation grants 16 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 6,
+            "spCost": 33,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Interval lengthens slightly , Attack Range expands , ATK +130% ; each time 1 ammo is consumed, ATK increases by an additional +4% (up to a maximum of 30 stacks); increases the Trait HP recovery effectiveness to 2 times; when the skill ends, deals 200% of ATK as Physical damage to all enemies attacked while the skill is active Skill activation grants 16 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 8,
+            "spCost": 32,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Interval lengthens slightly , Attack Range expands , ATK +140% ; each time 1 ammo is consumed, ATK increases by an additional +4% (up to a maximum of 30 stacks); increases the Trait HP recovery effectiveness to 2 times; when the skill ends, deals 200% of ATK as Physical damage to all enemies attacked while the skill is active Skill activation grants 16 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 10,
+            "spCost": 31,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Interval lengthens slightly , Attack Range expands , ATK +150% ; each time 1 ammo is consumed, ATK increases by an additional +5% (up to a maximum of 30 stacks); increases the Trait HP recovery effectiveness to 2 times; when the skill ends, deals 200% of ATK as Physical damage to all enemies attacked while the skill is active Skill activation grants 16 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 12,
+            "spCost": 30,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Interval lengthens slightly , Attack Range expands , ATK +160% ; each time 1 ammo is consumed, ATK increases by an additional +5% (up to a maximum of 30 stacks); increases the Trait HP recovery effectiveness to 3 times; when the skill ends, deals 200% of ATK as Physical damage to all enemies attacked while the skill is active Skill activation grants 16 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 12,
+            "spCost": 28,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Interval lengthens slightly , Attack Range expands , ATK +170% ; each time 1 ammo is consumed, ATK increases by an additional +5% (up to a maximum of 30 stacks); increases the Trait HP recovery effectiveness to 3 times; when the skill ends, deals 200% of ATK as Physical damage to all enemies attacked while the skill is active Skill activation grants 16 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 12,
+            "spCost": 26,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Interval lengthens slightly , Attack Range expands , ATK +180% ; each time 1 ammo is consumed, ATK increases by an additional +6% (up to a maximum of 30 stacks); increases the Trait HP recovery effectiveness to 3 times; when the skill ends, deals 250% of ATK as Physical damage to all enemies attacked while the skill is active Skill activation grants 16 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 12,
+            "spCost": 24,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "Executor's main skill that can deal a big amount of damage in True AOE fashion. If enemies bypass him, deactivate or have the skill to end for a respectable-sized explosion too."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 8
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 7
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 7
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar Pack",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Trihydrate",
+          "quantity": 4
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Notarial Hall Instructor α",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, Battle Record formula related productivity +20%"
+    },
+    {
+      "name": "Notarial Hall Instructor βReplacesNotarial Hall Instructor α",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, Battle Record formula related productivity +30%"
+    },
+    {
+      "name": "Reasonable Utilization",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, capacity limit is increased by +4 when producing Battle Records"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Executor the Ex Foedere's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "REA-X: Unanswered",
+      "mission": {
+        "requirement1": "Deal a total of 80,000 damage with Executor the Ex Foedere (excluding Support Units)",
+        "requirement2": "Clear Main Theme 7-14 with a 3-star rating; You must deploy your own Executor the Ex Foedere, and have Executor the Ex Foedere defeat at least 2 Guerrilla Shieldguards"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +40 , DEF +24 , ASPD +5",
+          "effectLabel": "Trait improved",
+          "effectText": "Cannot be healed by allies; Attacks deal AoE damage ; Recovers 60 HP for every enemy hit during attacks, up to Block count",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +50 , DEF +32 , ASPD +6",
+          "effectLabel": "The Chosen One improved",
+          "effectText": "When attacking, there is a 30% chance to perform an additional attack that ignores 150 DEF; this chance increases by 5% for each ammo consumed while a skill is active, resetting when the skill ends",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +60 , DEF +40 , ASPD +7",
+          "effectLabel": "The Chosen One improved",
+          "effectText": "When attacking, there is a 35% chance to perform an additional attack that ignores 300 DEF; this chance increases by 5% for each ammo consumed while a skill is active, resetting when the skill ends",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "REA-Y: Acknowledged",
+      "mission": {
+        "requirement1": "Defeat a total of 40 enemies with your own Executor the Ex Foedere",
+        "requirement2": "Clear Guide Ahead GA-3 with a 3-star rating; You must deploy your own Executor the Ex Foedere, and only Supporter Operators are allowed for the remaining members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +280 , ATK +45",
+          "effectLabel": "Trait improved",
+          "effectText": "ASPD +12 when there are 2 or more enemies within Attack Range",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +320 , ATK +65",
+          "effectLabel": "Empathy by Shotgun improved",
+          "effectText": "For every Laterano Operator deployed, increases the ammo capacity of this unit's ammo-type skills by +1 (stacks up to 4 times); when this unit's ammo-type skill is active, ATK +8%; when ammo count is above 50%, gains 20% Physical and Arts Dodge",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +350 , ATK +80",
+          "effectLabel": "Empathy by Shotgun improved",
+          "effectText": "For every Laterano Operator deployed, increases the ammo capacity of this unit's ammo-type skills by +1 (stacks up to 4 times); when this unit's ammo-type skill is active, ATK +12%; when ammo count is above 50%, gains 30% Physical and Arts Dodge",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Executor, professional statutory executor of the\nLaterano\nNotarial Hall, is entitled to the privileges listed in Clauses 1 through 13 of the Laterano Constitution and has been personally granted the title of \"Saint\" by the current Lateran Pope\nYvangelista XI\n.\nLaterano has not placed any restrictions on\nRhodes Island\n's contact with this Saint, and the rapport between us and the Notarial Hall continues to grow. He continues to provide services to Rhodes Island in accordance with his contract, while performing tasks pertaining to the rights of Lateran citizens.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "g4a_k7fn6uw",
+      "creator": "DragonGJY"
+    },
+    {
+      "videoId": "KBHzRscpB1k",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "OB6JBJrqvYM",
+      "creator": "Dokutah Shikikan"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1076,
+          "atk": 298,
+          "def": 224,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 1475,
+          "atk": 439,
+          "def": 308,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 1.3
+        },
+        "rangeId": "1-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1475,
+          "atk": 439,
+          "def": 308,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 2,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 1967,
+          "atk": 586,
+          "def": 396,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 2,
+          "interval": 1.3
+        },
+        "rangeId": "1-3"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1967,
+          "atk": 586,
+          "def": 396,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 2,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 2491,
+          "atk": 707,
+          "def": 461,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 2,
+          "interval": 1.3
+        },
+        "rangeId": "1-3"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 70,
+      "def": 30
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, the operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Executor shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.14u/L\nBlood Originium-Crystal Density has increased slightly, and though not yet at a dangerous level, it requires closer attention. So, how do I put this... has there been a recent upward trend in the density of his interpersonal interactions? Has anyone looked into this?\n–Medic Operator T.O."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Despite being granted the title of Saint, Operator Executor is still affiliated with the Laterano Notarial Hall. As such, the Notarial Hall still has the right to issue him tasks. In this sense, the additional title does not seem to have any particular impact on the normal course of his work.\nUpon his return to Rhodes Island, his outward appearance had certainly changed from before, if nothing else.\nBased on his own explanation, as well as corroborating accounts from a number of excited operators, we learned that the entire outfit he now wears was provided by the Lateran Curia, carefully tailored from completely different materials than ordinary clothing. It emphasizes not only aesthetics and comfort, but also practicality. With Executor's permission, we carried out a number of tests on his garb, which demonstrated that it boasts features such as impact and puncture resistance, and even a certain degree of anti-riot protection.\nThe two guns he carries have also attracted the attention of some Sankta operators. While dual wielding, his combat style is more aggressive than before, and his methods of attack more diverse.\n'During the last mission, Federico used his stock to knock out every enemy who got close to him,' commented Operator Spuria. 'His fighting style has nothing to do with how many guns you cram into his hands. Even with just a stick, or barehanded, that guy'll get the job done.\n'Huh? You wanna know why they went through all that effort to give him a makeover?\n'Because everyone thought it'd be badass, duh!'\n\n[Engineering Department Classified Log]\nRegarding the mechanical object that always follows Operator Executor, at first I thought it was some unique type of drone. However, while going over recordings of his battles, I saw it in action. The number of functions it has... far surpasses that of an ordinary auxiliary drone.\nBut it seems that even he himself doesn't know much about it, claiming that it was handed to him directly by His Holiness the Pope.\nWhat IS the secret behind this tiny little thing? It's really gnawing away at me, and I sure wish I had the chance to take it apart and see what makes it tick..."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "'He asks more questions now.'\nThis is a sentiment shared by every Rhodes Island operator of late.\nIndeed, some of the recent changes exhibited by Operator Executor are obvious to all – but by no means does this imply that he now wears his heart on his sleeve. Not at all. If someone who normally scores a 90 on exams got an extra point one day, nobody would bat an eye. However, if someone who only ever turns in blank exams suddenly started filling in the answers... Of course that would turn some heads.\nThe situation with Executor is similar. Several operators who've had contact with him have mentioned that he has begun to ask them questions in casual settings.\n'He asked why I didn't just kidnap the client right back...'\n'Haha, he let you off easy. He asked ME why I didn't just blow up the whole building to prevent the target from escaping...'\n'...So what'd you tell him?'\n'What else? The truth. Putting on a fireworks show might seem like the most straightforward option in the moment, but the cleanup afterwards would be an absolute nightmare!'\n'Did he listen?'\n'Seems like it. So what'd you answer?'\n'Uhh, about the same. Abducting the guy would've been faster, but dealing with the fallout would've been too much of a headache.'\n'As for Executor... He said that while he doesn't quite understand, after giving it some thought, he agreed that our way is more sensible and efficient.'\n\nThese unusual changes in Executor have attracted the attention of many. Based on the recent feedback we've received, we can surmise that he is trying to take more factors into account when determining what the most logical course of action is. Moreover, he's already putting this into practice, regularly attempting to complete tasks in a better and more reasonable manner.\n\n'It's like he just got patched with a new algorithm. It's better than before, but still spits out some weird results from time to time.'\n'Are you talking about when he went to console the target after defeating a group of bandits, just like you suggested, except he was completely covered in blood so he scared them half to death with his emotionless face?'\n\n[Medical Department Work Log]\nWe've received feedback from a number of our personnel that Executor seems to believe he is suffering from some kind of disease, manifesting as the sporadic prioritization of certain actions, some of which he finds perplexing. As a result, he has been going to Medical for regular physical examinations at an unnecessarily high frequency.\n'It's good to want to stay on top of your health. Not saying it isn't.' A member of Medical complained to us with an air of resignation. 'But there's nothing wrong with him, seriously. Except mentally.'\n\nAs an aside:\nSome members of Medical actually welcome Operator Executor's behavior, and are discussing using his case as an example to those patients who really need checkups but refuse to show up."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "[Fifth Tribunal Internal Conversation Log 1]\nFederico makes for an excellent executor. I can attest to that. Although it is unclear why His Holiness bestowed him the title of Saint at such a sensitive juncture, I do believe that if anyone can shoulder the Pope's expectations, it is that exceptional young man.\nHis background? Of course there's nothing problematic. As I recall, his parents were also affiliated with the Fifth Tribunal... Hold on, I'll go pull up their records. Ah, here we are, Mr. and Mrs. Giallo. Both were statutory executors with the Notarial Hall, both very capable. Unfortunately, they passed away during a mission fifteen years ago. Federico would only have been about ten years old at the time? Poor child...\nSo, what made you suddenly decide to look into him? The whole 'Saint' thing?\n...It's about Arturia Giallo?\n...First, let me make this abundantly clear:\nFederico's files were strictly reviewed at the time of his onboarding, and there were no issues.\nKeep that in mind, as it will be the premise for the rest of our conversation.\nArturia Giallo. Her father and Federico's father were cousins, as is unambiguously stated in the documents; there's nothing to hide. After the death of the Giallos in the line of duty, Federico stayed at his cousin's household for a period of... about two or three years, after which entered middle school and began living on campus.\nIncidentally, when Arturia's crimes first came to light seven years ago, forcing her to leave Laterano, it was Federico, then a newcomer, who pieced together the relevant clues. Since then, he's made efforts to raise the priority of the mission to bring her into custody. I'd imagine that a young man's first case must have special significance to him.\nNo, I don't think there's anything problematic about that. We carried out a detailed investigation when Arturia first became a wanted fugitive. As far as I know, Federico and Arturia were never in close contact, and there is no reason to believe it would affect his work – his day-to-day performance speaks for itself.\n\n[Fifth Tribunal Internal Conversation Log 2]\nArturia stayed at Sanctilaminium Ambrosii for a week, after which we decided that she would go to Leithanien; the relevant investigation reports have been sent to the Notarial Hall.\nHis Holiness has other plans for follow-up investigations and related matters, which I cannot disclose in advance.\nA sister?\nFrom a biological perspective, Arturia is only my distant relative, and I have no need for such informal relationships. A meaningless question."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "When we use the term 'Saint,' it may evoke images of the Saints of the Iberian Inquisition. Though the term was originally borrowed from the Lateran faith, the concept has been fully absorbed by Iberia, is iconic to its people, and has taken on its own unique cultural expression.\nFor the Laterans, however, 'Saint' is not just a title to be thrown around haphazardly.\nIn all the classics relating to Lateran history, there are records of the first generation of Saints erecting stone towers and building the Holy City. The first group of Sanktas led everyone to lay the foundations for Laterano, and only after generations of hard work did they create a peace to continue for thousands of years. Only then did we finally have a society elevated above the flames of war – harmonious Laterano.\nWith the exception of the first group of sages who established the city-state, only the Pope is ever bestowed the title of Saint, during their term in office. This is not only a great honor, but also represents the weighty responsibility to lead the Sankta, as well as all of Laterano. For thousands of years, this title has without exception been passed down from generation to generation through the Pope – until this millennia old tradition was broken by the decision of Yvangelista XI.\nFederico Giallo became the first non-Papal canonization in thousands of years.\nWhy would the Pope make such an unprecedented decision? There is no doubt that Executor is excellent at his job, but Laterano has no shortage of combatants who are braver or more skilled than he, and no shortage of devotees more faithful. There also a litany of other prestigious figures, so everyone had the same question: why Federico? Why 'Saint?'\nHis undeniably excellent performance aside, the situation seems somewhat less shocking thanks to his detached attitude and the unique circumstances surrounding Laterano, but without a doubt, the decision made by His Holiness goes completely against common sense and warrants astonishment.\nWhy did the sitting Pope, in all his wisdom, make this decision, and what signal is he sending? Operator Executor told us that the Pope informed him that a disaster would befall this land, but what sort of disaster would force Laterano, a city that has been peaceful for thousands of years, to take such urgent measures?\nFederico Giallo was his first appointment, but what comes next? Will we also see Laterano appoint a second or third unconventional Saint?\nDr. Kal'tsit seems to be very concerned by the news coming from Operator Executor and Laterano. I think... it may be prudent to start preparing in advance.\n\n[Excerpt from Kal'tsit's Personal Records]\nThere is no doubt in my mind that His Holiness has issued us a warning. Calamity is coming, and Laterano will not be able to survive alone. It may even be the case that... the calamity will destroy Laterano first.\nThis so-called 'canonization' is undoubtedly the countermeasure chosen by Yvangelista XI.\nA 'Saint'... One who guides all Laterans, is it?\nThen there cannot be only one such person. Perhaps we will soon see more of these unconventional cases, more non-standard Lateran Saints.\nThey will become Laterano's cornerstones, a sign of hope amidst the coming calamity, the symbols of another way forward for the Sankta.\nAs for this calamity... \nI still can't give a definitive answer, but things are becoming clearer and clearer within my mind.\nThere are too many signs, too many omens.\nIt is coming, and soon."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Executor often finds himself lost in thought.\nAfter his mission at Sanctilaminium Ambrosii, he often finds himself at an impasse, and he believes that he has encountered his most difficult situation yet.\nLetting emotions affect his actions is something he cannot understand. The rationality of his behavior troubles him.\nHe has yet to reach his own conclusive understanding. But he still knows exactly what he must do – complete his job faithfully, just as always.\nIf you run into a problem, try to solve it.\nIf you have any doubts, ask someone for help.\n\n[Conversation Record]\n'I saw Executor the other day... Yeah, THAT Executor.'\n'Oh, I know. The guy your entire dorm was chasing after at one point, right?'\n'We put that behind us a long time ago! But you know what I saw? I saw him lost in thought in front of a flower...'\n'...Someone's trying to get a head start again?'\n'No! That's not the issue! He had this serious look on his face, as if he was grappling with something difficult! I didn't even have the guts to say hi!'\n'Oh... Yeah, I think I get it...'\n'Get what?'\n'Calm down for a sec and think about this rationally. What in the world could make a guy like that lost in thought? It's not normal.'\n'H-Huh?'\n'Were you sure he was holding flowers? Not some kind of explosive device or other weapon shaped like one? If it looks like a flower, it could be some new kind of landmine, right?'\n'When you put it that way, that does seem pretty plausible...'\n'Now you get it. Flower or not, that thing has gotta have thorns.'\n'That does make sense... And I did see him handing it to the Doctor later. Say, do you think it has something to do with a secret mission?'"
+    }
+  ]
+}

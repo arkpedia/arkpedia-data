@@ -1,0 +1,1379 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act2multi",
+    "label": "IG",
+    "name": "Icebreaker Games #2",
+    "release_date": "2026-04-01"
+  },
+  "enemies": [
+    {
+      "slug": "beacon_tower",
+      "id": "enemy_4040_mugoal",
+      "name": "Beacon Tower",
+      "index": "IB56",
+      "rank": "Normal",
+      "sort": 1278,
+      "hidden": false,
+      "icon": "/enemies-icons/Beacon Tower.webp",
+      "flavour_text": "The ending point of Obstacle Drift. The signal tower in the middle sends out the signal announcing the end of the match as soon as the Drifter touches the buoy.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000,
+            "atk": 100,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "1",
+              "parameters": {
+                "interval": 0.2
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "ruby_flightwing",
+      "id": "enemy_4041_mundr",
+      "name": "Ruby Flightwing",
+      "index": "IB57",
+      "rank": "Normal",
+      "sort": 1279,
+      "hidden": false,
+      "icon": "/enemies-icons/Ruby Flightwing.webp",
+      "flavour_text": "Cargo drone commissioned by the organizers to ensure the smooth operation of Obstacle Drift. The red version still has some bugs to iron out in the software. Please report any drone failures to the organizers.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Shoot it down to earn a small amount of points",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 600,
+            "atk": 100,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sapphire_flightwing",
+      "id": "enemy_4042_murdr",
+      "name": "Sapphire Flightwing",
+      "index": "IB58",
+      "rank": "Normal",
+      "sort": 1280,
+      "hidden": false,
+      "icon": "/enemies-icons/Sapphire Flightwing.webp",
+      "flavour_text": "Cargo drone commissioned by the organizers to ensure the smooth operation of Obstacle Drift. The blue version has not completed the quality checks yet. Watch out for debris created when they crash.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Shoot it down to earn a moderate amount of points",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 2000,
+            "atk": 100,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "S"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "diamond_flightwing",
+      "id": "enemy_4043_muedr",
+      "name": "Diamond Flightwing",
+      "index": "IB59",
+      "rank": "Normal",
+      "sort": 1281,
+      "hidden": false,
+      "icon": "/enemies-icons/Diamond Flightwing.webp",
+      "flavour_text": "Cargo drone commissioned by the organizers to ensure the smooth operation of Obstacle Drift. The white version has successfully passed all performance tests. Please contact the organizers if you would like to make a purchase.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Shoot it down to earn a large amount of points!",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3000,
+            "atk": 100,
+            "def": 100,
+            "res": 10.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "E",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "S"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "supplies_floater",
+      "id": "enemy_4044_mutdek",
+      "name": "Supplies Floater",
+      "index": "IB60",
+      "rank": "Normal",
+      "sort": 1282,
+      "hidden": false,
+      "icon": "/enemies-icons/Supplies Floater.webp",
+      "flavour_text": "Floating board with supply crates on it. Competitors are scored based on the amount of supplies they bring back. Be careful, as the board can be quite fragile.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Attaches itself to the Drifter when it comes into contact",
+          "format": "normal"
+        },
+        {
+          "text": "Gives a large amount of points if not destroyed after being attached to the Drifter!",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1200,
+            "atk": 100,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "submerged_supply_crate",
+      "id": "enemy_4045_murtre",
+      "name": "Submerged Supply Crate",
+      "index": "IB61",
+      "rank": "Normal",
+      "sort": 1283,
+      "hidden": false,
+      "icon": "/enemies-icons/Submerged Supply Crate.webp",
+      "flavour_text": "Sports gear boxes lying along the course that have not been cleaned up, from previous competitors who failed to complete the event.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Gains Invisibility while in water",
+          "format": "normal"
+        },
+        {
+          "text": "Provides <Basic Floater> or <Gravity Floater> at random",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "GainToken",
+              "parameters": {
+                "trap_260_murbas": 0.7,
+                "trap_261_murmag": 0.3
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "moored_buoy",
+      "id": "enemy_4046_muobst",
+      "name": "Moored Buoy",
+      "index": "IB62",
+      "rank": "Normal",
+      "sort": 1284,
+      "hidden": false,
+      "icon": "/enemies-icons/Moored Buoy.webp",
+      "flavour_text": "A buoy that marks the boundaries of Obstacle Drift. It is not nearly as flimsy as it looks.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000,
+            "atk": 100,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "passive",
+              "parameters": {
+                "move_speed": 1.3
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "brazier_buoy",
+      "id": "enemy_4047_mustak",
+      "name": "Brazier Buoy",
+      "index": "IB63",
+      "rank": "Normal",
+      "sort": 1285,
+      "hidden": false,
+      "icon": "/enemies-icons/Brazier Buoy.webp",
+      "flavour_text": "A buoy set up on the Obstacle Drift course. The brazier is not firmly fastened. It is doubtful that you will ever be able to find the safety official responsible for these buoys.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": null,
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Deals Physical damage to <Basic Floater>, <Gravity Floater>, and <Supplies Floater>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1000,
+            "atk": 500,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "B",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "passive",
+              "parameters": {
+                "atk_scale": 1.0,
+                "move_speed": 1.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "salty_gym_goer",
+      "id": "enemy_4048_mubarn",
+      "name": "Salty Gym-goer",
+      "index": "IB64",
+      "rank": "Normal",
+      "sort": 1286,
+      "hidden": false,
+      "icon": "/enemies-icons/Salty Gym-goer.webp",
+      "flavour_text": "A cragpincer that feels the need to strengthen its limbs, but something is not quite right with its training, resulting in one limb being significantly larger than the other.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 2100,
+            "atk": 260,
+            "def": 380,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "D",
+            "def": "C",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "super_pincer_salty_gym_goer",
+      "id": "enemy_4048_mubarn_2",
+      "name": "'Super Pincer' Salty Gym-goer",
+      "index": "IB65",
+      "rank": "Normal",
+      "sort": 1287,
+      "hidden": false,
+      "icon": "/enemies-icons/'Super Pincer' Salty Gym-goer.webp",
+      "flavour_text": "A cragpincer that feels the need to strengthen its limbs. Amongst its kind, the size of one's limb has become a status symbol.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3000,
+            "atk": 340,
+            "def": 460,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "C",
+            "def": "C",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "wavebringer",
+      "id": "enemy_4049_muston",
+      "name": "Wavebringer",
+      "index": "IB66",
+      "rank": "Elite",
+      "sort": 1288,
+      "hidden": false,
+      "icon": "/enemies-icons/Wavebringer.webp",
+      "flavour_text": "A creature that drifts leisurely along the course. The locals see it as a mascot, and attacking it will invoke their fury.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Unable to move",
+          "format": "normal"
+        },
+        {
+          "text": "Continuously deals Corrosion to its surroundings",
+          "format": "normal"
+        },
+        {
+          "text": "Revives when defeated for the first time, summoning specific enemies; after reviving, deals more Corrosion with expanded range",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 600,
+            "def": 500,
+            "res": 55.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "B",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Aura",
+              "parameters": {
+                "interval": 1.0,
+                "value": 150.0
+              }
+            },
+            {
+              "key": "AuraAdvance",
+              "parameters": {
+                "interval": 1.0,
+                "value": 250.0
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "branch_id": "muston",
+                "duration": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "pearl_of_the_waves_wavebringer",
+      "id": "enemy_4049_muston_2",
+      "name": "'Pearl of the Waves' Wavebringer",
+      "index": "IB67",
+      "rank": "Elite",
+      "sort": 1289,
+      "hidden": false,
+      "icon": "/enemies-icons/'Pearl of the Waves' Wavebringer.webp",
+      "flavour_text": "A creature that drifts leisurely along the course. When disturbed, it disturbs the currents with its body, creating significant danger.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Unable to move",
+          "format": "normal"
+        },
+        {
+          "text": "Continuously deals Corrosion to its surroundings",
+          "format": "normal"
+        },
+        {
+          "text": "Revives when defeated for the first time, summoning specific enemies; after reviving, deals more Corrosion with expanded range",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 58000,
+            "atk": 600,
+            "def": 650,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 4,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "B",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Aura",
+              "parameters": {
+                "interval": 1.0,
+                "value": 200.0
+              }
+            },
+            {
+              "key": "AuraAdvance",
+              "parameters": {
+                "interval": 1.0,
+                "value": 300.0
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "branch_id": "muston",
+                "duration": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Paralysis",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "marine_strongman",
+      "id": "enemy_4050_mubbar",
+      "name": "Marine Strongman",
+      "index": "IB68",
+      "rank": "Elite",
+      "sort": 1290,
+      "hidden": false,
+      "icon": "/enemies-icons/Marine Strongman.webp",
+      "flavour_text": "Large cragpincer that can lift very heavy objects. It shows off by lifting barbells, in order to persuade other cragpincers to train under it.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can only be blocked by Operators with 3 or more Block",
+          "format": "normal"
+        },
+        {
+          "text": "Gains Invisibility while in water, and performs ranged attacks",
+          "format": "normal"
+        },
+        {
+          "text": "Throws Salty Gym-goer when performing ranged attacks",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 26000,
+            "atk": 540,
+            "def": 950,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 3.5,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "B+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "passive",
+              "parameters": {
+                "enemy_key": "enemy_4048_mubarn",
+                "range_radius": 0.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "weightlifting_champ_marine_strongman",
+      "id": "enemy_4050_mubbar_2",
+      "name": "'Weightlifting Champ' Marine Strongman",
+      "index": "IB69",
+      "rank": "Elite",
+      "sort": 1291,
+      "hidden": false,
+      "icon": "/enemies-icons/'Weightlifting Champ' Marine Strongman.webp",
+      "flavour_text": "Large cragpincer that can lift massive barbells. It has many students and fans, all of whom believe that the strength of one's limb is everything.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can only be blocked by Operators with 3 or more Block",
+          "format": "normal"
+        },
+        {
+          "text": "Gains Invisibility while in water, and performs ranged attacks",
+          "format": "normal"
+        },
+        {
+          "text": "Throws 'Super Pincer' Salty Gym-goer when performing ranged attacks",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 32000,
+            "atk": 680,
+            "def": 1200,
+            "res": 0.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 3.5,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "A+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "passive",
+              "parameters": {
+                "enemy_key": "enemy_4048_mubarn_2",
+                "range_radius": 0.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "seawind_manipulator",
+      "id": "enemy_4051_mublow",
+      "name": "Seawind Manipulator",
+      "index": "IB70",
+      "rank": "Elite",
+      "sort": 1292,
+      "hidden": false,
+      "icon": "/enemies-icons/Seawind Manipulator.webp",
+      "flavour_text": "Fowlbeast with an unusual plume, able to manipulate airflow by spinning its head, bringing unexpected challenges to the match.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Starts battle in Standby and will not attack",
+          "format": "normal"
+        },
+        {
+          "text": "Becomes Combat-Ready and Aerial when damaged",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically stops attack, dealing AoE Arts damage while pushing the Drifter in the targeted direction; then escapes into the distance",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 32000,
+            "atk": 550,
+            "def": 200,
+            "res": 65.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.3,
+            "range": 3.5,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "fly",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "WindOwner",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 6.0,
+              "priority": 0,
+              "parameters": {
+                "dist": 3.0,
+                "duration": 5.0,
+                "force": 12.0,
+                "interval": 1.6,
+                "length": 15.0,
+                "width": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Wind",
+              "parameters": {
+                "atk_scale": 1.0,
+                "interval": 1.6
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "weathervane_seawind_manipulator",
+      "id": "enemy_4051_mublow_2",
+      "name": "'Weathervane' Seawind Manipulator",
+      "index": "IB71",
+      "rank": "Elite",
+      "sort": 1293,
+      "hidden": false,
+      "icon": "/enemies-icons/'Weathervane' Seawind Manipulator.webp",
+      "flavour_text": "Fowlbeast with an unusual plume, able to manipulate airflow by spinning its head, which it uses as a form of attack.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Starts battle in Standby and will not attack",
+          "format": "normal"
+        },
+        {
+          "text": "Becomes Combat-Ready and Aerial when damaged",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically stops attack, dealing AoE Arts damage while pushing the Drifter in the targeted direction; then escapes into the distance",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 38000,
+            "atk": 660,
+            "def": 300,
+            "res": 65.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.3,
+            "range": 3.5,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "A+"
+          },
+          "skills": [
+            {
+              "key": "fly",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "WindOwner",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 6.0,
+              "priority": 0,
+              "parameters": {
+                "dist": 3.0,
+                "duration": 5.0,
+                "force": 12.0,
+                "interval": 1.6,
+                "length": 15.0,
+                "width": 3.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Wind",
+              "parameters": {
+                "atk_scale": 1.0,
+                "interval": 1.6
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "radiance_scorer",
+      "id": "enemy_4052_mulaze",
+      "name": "Radiance Scorer",
+      "index": "IB72",
+      "rank": "Elite",
+      "sort": 1294,
+      "hidden": false,
+      "icon": "/enemies-icons/Radiance Scorer.webp",
+      "flavour_text": "Photography drone that records what is happening in the arena. The programmers accidentally set triggers for both 'recording' and 'warning' to 'unconditional', causing it to attack all competitors.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Deals Arts damage",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically locks onto a unit, dealing AoE Arts damage in its direction after a short delay",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 29000,
+            "atk": 730,
+            "def": 600,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": 3.0,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B+"
+          },
+          "skills": [
+            {
+              "key": "Line",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 2.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 2.0,
+                "focus_time": 3.0,
+                "wait_time": 3.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "judgment_radiance_scorer",
+      "id": "enemy_4052_mulaze_2",
+      "name": "'Judgment' Radiance Scorer",
+      "index": "IB73",
+      "rank": "Elite",
+      "sort": 1295,
+      "hidden": false,
+      "icon": "/enemies-icons/'Judgment' Radiance Scorer.webp",
+      "flavour_text": "Photography drone that records what is happening in the arena. Learning to identify its attack cues is an important part of any competitor's training.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Deals Arts damage",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically locks onto a unit, dealing AoE Arts damage in its direction after a short delay",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 36000,
+            "atk": 830,
+            "def": 750,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": 3.0,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B+"
+          },
+          "skills": [
+            {
+              "key": "Line",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 2.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 2.0,
+                "focus_time": 3.0,
+                "wait_time": 3.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,760 @@
+{
+  "name": "Philae",
+  "rarity": 5,
+  "class": "Defender",
+  "branch": "Primal Protector",
+  "faction": "Sargon",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Elemental",
+    "Defense"
+  ],
+  "trait": "Blocks 3 enemies, and can inflict Elemental Injury",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Purchase Vouchers",
+      "Unlock Location": "I Portatori dei Velluti"
+    },
+    "Shop Operator": "Yes"
+  },
+  "alternate": null,
+  "skins": [
+    "An Opera of Flowers"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4148_philae",
+  "otherLanguages": {
+    "Chinese": "菲莱",
+    "Japanese": "フィラエ",
+    "Korean": "필라에"
+  },
+  "characterInfo": {
+    "File no.": "SG10",
+    "Operator Record": "New Life",
+    "Paradox Simulation": "Before the Living",
+    "Illustrator": "Horin",
+    "Release Date": "2025/04/24",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Shino Sato",
+    "Chinese": "Chen Yixuan",
+    "English": "Sara Masry",
+    "Korean": "Jang Chae-yeon"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "8 years",
+    "Place of Birth": "Sargon",
+    "Date of Birth": "May 29th",
+    "Race": "Sarkaz",
+    "Height": "168 cm",
+    "Infection Status": "Originium crystals distributed across surface of body, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Average",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Herald of the Divine River",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Receives -5% Elemental Injury , and recovers 1 SP when receiving Necrosis"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Receives -7% (+2%) Elemental Injury, and recovers 1 SP when receiving Necrosis"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Receives -10% Elemental Injury, and recovers 2 SP when receiving Necrosis"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Receives -12% (+2%) Elemental Injury, and recovers 2 SP when receiving Necrosis"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +25"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Herald of the Divine River"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Philae's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Herald of the Divine River .",
+        "New skill: Curse of the River of Death ."
+      ],
+      "prerequisite": "Raise Philae to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Herald of the Divine River improved."
+      ],
+      "prerequisite": "Raise Philae to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "RMA70-24",
+          "quantity": 6
+        },
+        {
+          "name": "Aketon",
+          "quantity": 16
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Blessing of the River of Life",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Max HP +30% , clears all Elemental Injury on self and gains a Protective Barrier that absorbs 600 Elemental Injury",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Max HP +35% , clears all Elemental Injury on self and gains a Protective Barrier that absorbs 700 Elemental Injury",
+            "initialSp": 0,
+            "spCost": 27,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Max HP +40% , clears all Elemental Injury on self and gains a Protective Barrier that absorbs 800 Elemental Injury",
+            "initialSp": 0,
+            "spCost": 26,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Max HP +45% , clears all Elemental Injury on self and gains a Protective Barrier that absorbs 900 Elemental Injury",
+            "initialSp": 5,
+            "spCost": 25,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Max HP +50% , clears all Elemental Injury on self and gains a Protective Barrier that absorbs 1000 Elemental Injury",
+            "initialSp": 5,
+            "spCost": 24,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Max HP +55% , clears all Elemental Injury on self and gains a Protective Barrier that absorbs 1100 Elemental Injury",
+            "initialSp": 5,
+            "spCost": 23,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Max HP +60% , clears all Elemental Injury on self and gains a Protective Barrier that absorbs 1200 Elemental Injury",
+            "initialSp": 5,
+            "spCost": 22,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Max HP +70% , clears all Elemental Injury on self and gains a Protective Barrier that absorbs 1400 Elemental Injury",
+            "initialSp": 10,
+            "spCost": 21,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Max HP +80% , clears all Elemental Injury on self and gains a Protective Barrier that absorbs 1600 Elemental Injury",
+            "initialSp": 10,
+            "spCost": 20,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Max HP +90% , clears all Elemental Injury on self and gains a Protective Barrier that absorbs 1800 Elemental Injury",
+            "initialSp": 10,
+            "spCost": 18,
+            "duration": 15
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "Aggregate Cyclicene",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Curse of the River of Death",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "40 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Stops attacking, Max HP +30% ; when attacked, deals 80% of ATK as Arts damage to surrounding ground enemies and an additional 25% of ATK as Necrosis (can only trigger once every 2 seconds); if Elemental Injury is received while skill is active, ATK +60% until this skill ends",
+            "initialSp": 10,
+            "spCost": 60,
+            "duration": 40
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Stops attacking, Max HP +33% ; when attacked, deals 90% of ATK as Arts damage to surrounding ground enemies and an additional 25% of ATK as Necrosis (can only trigger once every 2 seconds); if Elemental Injury is received while skill is active, ATK +60% until this skill ends",
+            "initialSp": 11,
+            "spCost": 58,
+            "duration": 40
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Stops attacking, Max HP +36% ; when attacked, deals 100% of ATK as Arts damage to surrounding ground enemies and an additional 25% of ATK as Necrosis (can only trigger once every 2 seconds); if Elemental Injury is received while skill is active, ATK +60% until this skill ends",
+            "initialSp": 12,
+            "spCost": 57,
+            "duration": 40
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Stops attacking, Max HP +40% ; when attacked, deals 110% of ATK as Arts damage to surrounding ground enemies and an additional 25% of ATK as Necrosis (can only trigger once every 2 seconds); if Elemental Injury is received while skill is active, ATK +70% until this skill ends",
+            "initialSp": 13,
+            "spCost": 55,
+            "duration": 40
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Stops attacking, Max HP +43% ; when attacked, deals 120% of ATK as Arts damage to surrounding ground enemies and an additional 25% of ATK as Necrosis (can only trigger once every 2 seconds); if Elemental Injury is received while skill is active, ATK +70% until this skill ends",
+            "initialSp": 14,
+            "spCost": 53,
+            "duration": 40
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Stops attacking, Max HP +46% ; when attacked, deals 130% of ATK as Arts damage to surrounding ground enemies and an additional 25% of ATK as Necrosis (can only trigger once every 2 seconds); if Elemental Injury is received while skill is active, ATK +70% until this skill ends",
+            "initialSp": 15,
+            "spCost": 52,
+            "duration": 40
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Stops attacking, Max HP +50% ; when attacked, deals 140% of ATK as Arts damage to surrounding ground enemies and an additional 25% of ATK as Necrosis (can only trigger once every 2 seconds); if Elemental Injury is received while skill is active, ATK +80% until this skill ends",
+            "initialSp": 17,
+            "spCost": 50,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Stops attacking, Max HP +50% ; when attacked, deals 160% of ATK as Arts damage to surrounding ground enemies and an additional 25% of ATK as Necrosis (can only trigger once every 2 seconds); if Elemental Injury is received while skill is active, ATK +85% until this skill ends",
+            "initialSp": 18,
+            "spCost": 49,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Stops attacking, Max HP +50% ; when attacked, deals 180% of ATK as Arts damage to surrounding ground enemies and an additional 25% of ATK as Necrosis (can only trigger once every 2 seconds); if Elemental Injury is received while skill is active, ATK +90% until this skill ends",
+            "initialSp": 19,
+            "spCost": 47,
+            "duration": 40
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Stops attacking, Max HP +50% ; when attacked, deals 200% of ATK as Arts damage to surrounding ground enemies and an additional 25% of ATK as Necrosis (can only trigger once every 2 seconds); if Elemental Injury is received while skill is active, ATK +100% until this skill ends",
+            "initialSp": 20,
+            "spCost": 45,
+            "duration": 40
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Reflection Damage",
+            "description": "Able to reflect damage onto enemies (especially ranged)"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Transmuted Salt",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Fuscous Fiber",
+          "quantity": 3
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "River Charge α",
+      "facility": "Power Plant",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%"
+    },
+    {
+      "name": "River Resonance",
+      "facility": "Power Plant",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Power Plant, drone recovery rate +0.5% for every level of each Dormitory"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Philae's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "PRP-X: The Days Rubbed to Silence",
+      "mission": {
+        "requirement1": "Trigger a total of 3 Necrosis Bursts with your own Philae",
+        "requirement2": "Clear Main Theme 10-2 with a 3-star rating under Standard Environment; You must deploy your own Philae, and use Curse of the River of Death at least 1 time"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +150 , ATK +45",
+          "effectLabel": "New trait",
+          "effectText": "Deals 15% more Elemental Injury when blocking enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Chiral Refractor",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +230 , ATK +57",
+          "effectLabel": "Herald of the Divine River improved",
+          "effectText": "Receives -16% Elemental Injury, and recovers 2 SP when receiving Necrosis",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +300 , ATK +70",
+          "effectLabel": "Herald of the Divine River improved",
+          "effectText": "Receives -20% Elemental Injury, and recovers 2 SP when receiving Necrosis",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Philae, a temple guardian from Sargon, is a devout follower of the 'River of Life'. She travels across the land, spreading the faith as she goes.\nDuring her journey, she became acquainted with the operators in our Sargon branch, establishing a long term partnership with them. She assists Rhodes Island with security and disaster relief while also serving as a defender operator in the field.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1289,
+          "atk": 252,
+          "def": 218,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1742,
+          "atk": 361,
+          "def": 321,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1742,
+          "atk": 361,
+          "def": 321,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 2323,
+          "atk": 482,
+          "def": 435,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2323,
+          "atk": 482,
+          "def": 435,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 25,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 3227,
+          "atk": 603,
+          "def": 544,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 25,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 40,
+      "def": 40
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 12%\nOperator Philae's prognosis is grim. Many crystals can be seen on her body, especially her horns, and there is a high degree of crystallization.\n\n[Blood Originium-Crystal Density] 0.24u/L\nCurrently, her disease is stable.\nOperator Philae is in much better health than expected, considering the level of infection present. This is thanks to her regular regimen, and perhaps also related to her frequent habit of quiet contemplation."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "If, as you walk through the corridor, you happen to see Philae sitting on the floor with her eyes closed, please don't be surprised: she is meditating. This is a habit she picked up while serving as a temple guard.\nIf someone approaches her during her meditation, she will gently stop them and advise them to keep their distance. As she explains it, it's not that she fears being disturbed, but rather that she worries her Arts might unintentionally harm innocent bystanders.\nHowever, if someone were to invite her to the pens to watch the birth of a cub, or to the Convalescent Garden to watch educational videos about growing plants, she would be very willing to pause her meditation and go along. Yes, for Philae, witnessing the birth of new life is the most meaningful activity imaginable.\n\n'Where did all this sandworm jerky come from? Did you bring it from your hometown? Drying and curing it must have been a lot of work!'\n'No... the sandworms invaded our vegetable garden, and Philae just happened to be helping with the harvest.'\n'You mean... Philae took care of them?'\n'Yes. We were shocked. The most incredible thing was...\n'When we arrived in the garden, the apple in her hand was still fresh and glistening...'\n—A conversation happened at the Sargon branch\n\n[Classified Log]\n...\nWe have detected traces of long-term, sustained Arts casting within Operator Philae's body. This phenomenon is common during the acute infection and onset periods of Oripathy patients, but it is very rare during the progressive clinical stages.\nHowever, the Arts detected are weaker than expected. The patient has stated that she has been controlling it with her willpower. She resolutely refuses to show us her unrestrained Arts, which bring withering and desiccation, as this goes against her core beliefs.\nWe are well aware of the pain an Infected individual experiences when they involuntarily cast Arts during the onset of their disease. However, Philae has managed to control her Arts for a long time.\nFortunately, we have yet to observe any signs of her condition worsening. After talking things over with the patient, we provided her with a small amount of suppressive medication—only to be used during episodes of acute infection—in hopes of alleviating her symptoms.\nThe efficacy of this treatment is still under observation.\n—Excerpt from Operator Philae's medical record"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Operator Philae hails from the deserts of Sargon, where she once worked day and night guarding a temple dedicated to the 'River of Life'.\nAt first, we assumed the River of Life was merely a symbol, representing the longing for a source of vitality in a parched land. However, through Philae's patient retellings, we came to understand that the broad, elegant river winding through the yellow sands is no mere legend—it truly exists. Flowing ceaselessly from the mountains of Sargon, the river never falters, nourishing a long stretch of oasis across the flat wilderness. The people hope the river will flow eternally, and the temple priests give life to those hopes, receiving the river's blessings and praying for abundance and prosperity. The priests also perform funerary rites, ferrying the departed souls to their eternal rest.\nWhen we inquired further about the temple's daily operations, Philae surprised us by saying she didn't know much about them. Soon after, we learned a shocking truth: she has never set foot inside the temple.\nAs it turns out, Philae was separated from her people as a child. She wandered alone through the endless sands, and just as her senses were blurring from thirst, the head priest of the temple found her.\n'...When the head priest brought me back to the settlement, I was dazed and utterly exhausted,' Philae recalled.\n'They gave me water to drink—water from the River of Life. I drank deeply, feeling my heart beat with a strength I'd never known before... That's when I realized I had been saved.'\nYet, perhaps it was this near-death struggle that awakened her fearsome magical talent—cubs she held in her arms would grow unnaturally weak, struggling to stand for days. The fruit she picked with her own hands would rot faster than usual. Most unsettling of all, even bowls of water she accidentally touched would rapidly evaporate.\nThe priests believed that welcoming a Sarkaz, let alone one who brought with her decay and drought, went against their faith in the sanctity of life. But the head priest stood firm against their opposition and took her in, giving her the name 'Philae'—a term from ancient scriptures meaning 'an oasis that never withers.' From then on, she kept her Sarkaz name to herself. Under the head priest's tutelage, she learned everything there was to know about the 'faith of life', spending her days reading, writing, and training in martial arts.\nPhilae told us candidly that the priests strictly forbade her from entering the temple, and that she never once stepped inside, not even after she left the settlement to begin her journey. When we asked why, despite this, she was still willing to protect them, her answer was simple yet unwavering:\n'Because the temple houses the river, and the river nourishes the oasis—it brings all life.'"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "The operators at the Sargon branch once recounted their first encounter with Philae.\nAt the time, a team of field operators on a mission in the grasslands was caught in an unusually heavy downpour. They awoke from a damp, restless sleep to find that their riverside camp had turned into an isolated island amidst the surging waters. As the river threatened to flood their tents, the operators had no choice but to abandon all their essential supplies and embark on a risky swim back to the riverbank. Suddenly, a faint light cut through the storm and darkness.\n'...At first, we saw a weak light in the distance, so we ventured to called out for help. To our surprise, the light moved toward us.'\n'The river was raging, but it was as if the waves themselves were afraid of the small boat, parting to either side as it approached. When it stopped, I saw a woman cloaked in white, impossibly light and graceful, standing beside a coffin lid emitting an eerie glow.'\n'At that moment, I thought, 'It's over. The messenger of death has come to take us away.''\nBut they didn't die. Instead, the operators and their supplies were safely brought to the riverbank. As they watched the woman silently sail away, they had a profound realization. If this truly was a miraculous encounter, that woman, the one who saved them, couldn't have been a messenger of death—she was in fact a kind, magnanimous, and compassionate river goddess.\n\n[Weapon Evaluation]\nYes, everyone's first reaction upon seeing Philae's shield—crafted from a coffin lid—is always the same: 'Does that thing actually work?'\nWe conducted strength tests on it, and without a doubt, it meets most of the basic combat requirements for a shield. In fact, its durability exceeds that of some common metal shields.\nPhilae explained that in her former home, people used only the most robust stone materials and the most intricate techniques to craft coffins. This was to ensure they could protect the deceased from the bone-chilling river waters during their eternal rest on the riverbed. Or, on the day the river dried up, shield them from the blazing sun and harsh winds.\nThe massive yellow-green gemstone embedded at the top of the shield functions like a standard casting unit, though we're still unsure how it enhances Philae's Arts so significantly. What's clear, however, is that its presence makes her self-restraint all the more challenging.\n\n[Voice Log]\n'Wait—if Philae left right after rescuing you, how did she end up joining Rhodes Island?'\n'That's a long story...'\n'To keep it brief, we ran into her a few more times—no one could forget that coffin-lid shield of hers. When we finally spoke, we realized she wasn't some kind of deity, just a devout practitioner on a spiritual journey.'\n'Later, during disaster relief efforts, we worked together to resettle those survivors. The collaboration went smoothly, and things progressed naturally from there...'\n'It seemed like fate to cross paths with her so many times. Rhodes Island and Philae really are connected.'\n'Yeah, we thought the same thing, though she seemed to have foreseen that our paths would cross again—'\n''Since we all work hard for the denizens of this land, we are destined to converge.' That's how she put it at the time.'"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "May you break free from all thorns and bindings, even those that are innate.\nMay you rise to the surface when shrouded in darkness, and see the light once more.\nMay you chase away weariness, may you banish fatigue, and may you, from beginning to end, hold firmly onto your right to live.\n—Excerpt from the ancient Sargon scripture 'The Bitter Journey of the Spirit River'\n\nWho would have thought something like this could happen in the desert?\nThe river floods every few years, enriching the soil, and people regard it as a blessing from the river god. But a flood of this magnitude... well, there hasn't been any record of such an event in nearly two centuries.\nNaturally, the settlements in the middle and lower reaches of the oasis bore the brunt of it. That river is central to the faith of the locals. You've heard of the temple, right? Yes, the one with the particularly fervent worshipers—it was destroyed by the flood. How ironic!\nLook, I'm not being heartless or callous. It's definitely tragic. Thankfully, there weren't many casualties. They say the temple's guard noticed something off about the water flow and led the priests and villagers to higher ground in time. Oh, and that guard? A Sarkaz they kindly took in years ago… I suppose their years of piety and devotion finally paid off.\n—Street chatter in a Sargonian city\n\nWe are very grateful that Philae was willing to share her experiences with us. Hopefully the temple will be restored soon.\nI believe many of you are already familiar with Philae—her humility, her curiosity, and her enthusiasm for embracing new experiences. I'm sure plenty of you still remember the time she asked Myrtle for tips on war games. She's also an excellent partner. If you ever need a sparring buddy, she'll gladly join you at the training ground for a match. Even if you're as strong as Gavial, her shield is more than enough to make it a challenge. I've even heard some operators go to her to drive away 'bad luck'… I don't know if she can truly change your luck, but I <i>can</i> say she knows how to face adversity with determination. She is undoubtedly an inspiring role model.\n—Remarks from an organizer at a small sharing session on Rhodes Island"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "The first test the head priest gave me was to make a seed sprout.\nAt the time, I was eager to prove myself to the priests, so I tended to it carefully every day. At the slightest sign of dryness in the soil, I would water it immediately.\nAs you might expect... it finally managed to sprout, only to drown in the end. I still remember the head priest's words of encouragement: he said there's a path out there meant for me. I just have to find it.\nMany years later, the river flooded the fields, destroyed the temple, and threatened the lives of the people. That was when I finally realized that what nourishes life can also take it away. If that's the case, then could what takes life also save it?\nI embarked on my journey to answer that very question. I've also come to understand that even if I cannot help a seed grow, I can still shield it from the threats to its survival.\nRedemption?\nNo, I don't believe I'm doing this out of a desire for redemption.\nI was born a Sarkaz, and my talent for Arts is equally inherent... I cannot change that.\nBut I can use my abilities better, because I know very well the kind of Sarkaz I want to be, the kind of person I want to become.\nYes, Doctor, I have many questions—about you, about life, about this land. I understand not everything has an answer, but I won't stop moving forward.\nIn the future, I hope you will continue to guide me."
+    }
+  ]
+}

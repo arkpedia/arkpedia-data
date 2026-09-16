@@ -1,0 +1,756 @@
+{
+  "name": "Enforcer",
+  "rarity": 5,
+  "class": "Specialist",
+  "branch": "Push Stroker",
+  "faction": "Laterano",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Shift",
+    "Crowd-Control"
+  ],
+  "trait": "Can attack all blocked enemies Can be deployed on Ranged Tiles",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Guide Ahead"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Paper Wing"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4036_forcer",
+  "otherLanguages": {
+    "Simplified Chinese": "见行者",
+    "Traditional Chinese": "見行者",
+    "Japanese": "エンフォーサー",
+    "Korean": "인포서"
+  },
+  "characterInfo": {
+    "File no.": "LT10",
+    "Operator Record": "Departure Plans",
+    "Paradox Simulation": "Consilium Praeparatorius",
+    "Illustrator": "Chuzenji",
+    "Release Date": "2022/09/16",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Kensho Ono",
+    "Chinese": "Du Guangyi",
+    "English": "Chase Brown",
+    "Korean": "Shin Yong-woo"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "Half a year",
+    "Place of Birth": "Laterano",
+    "Date of Birth": "January 30th",
+    "Race": "Sankta",
+    "Height": "176 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Excellent",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Precise Aim",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Ignores 90 DEF when attacking enemies with a weight greater than or equal to 3"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Ignores 110 (+20) DEF when attacking enemies with a weight greater than or equal to 3"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Ignores 180 DEF when attacking enemies with a weight greater than or equal to 3"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Ignores 200 (+20) DEF when attacking enemies with a weight greater than or equal to 3"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Precise Aim"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Enforcer's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Precise Aim .",
+        "New skill: Staggering Shot ."
+      ],
+      "prerequisite": "Raise Enforcer to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Specialist Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Precise Aim improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Enforcer to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Specialist Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Polymerized Gel",
+          "quantity": 8
+        },
+        {
+          "name": "Compound Cutting Fluid",
+          "quantity": 12
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Deterring Shot",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack pushes the target towards the attack direction slightly , stunning it for 1.2 seconds if the target collides with High Ground.",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack pushes the target towards the attack direction slightly , stunning it for 1.3 seconds if the target collides with High Ground.",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack pushes the target towards the attack direction slightly , stunning it for 1.4 seconds if the target collides with High Ground.",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack pushes the target towards the attack direction moderately , stunning it for 1.4 seconds if the target collides with High Ground.",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack pushes the target towards the attack direction moderately , stunning it for 1.5 seconds if the target collides with High Ground.",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack pushes the target towards the attack direction moderately , stunning it for 1.6 seconds if the target collides with High Ground.",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack pushes the target towards the attack direction moderately , stunning it for 1.7 seconds if the target collides with High Ground.",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack pushes the target towards the attack direction moderately , stunning it for 1.8 seconds if the target collides with High Ground.",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack pushes the target towards the attack direction moderately , stunning it for 1.9 seconds if the target collides with High Ground.",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack pushes the target towards the attack direction greatly , stunning it for 2 seconds if the target collides with High Ground.",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 1
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Staggering Shot",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Immediately pushes back all enemies within range moderately in the direction this unit is facing, additionally stunning them for 1.6 seconds (the stun duration is increased to 2.7 seconds if the target collides with High Ground). If the target collides with another enemy, the enemy will also be stunned for 1.6 seconds.",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Immediately pushes back all enemies within range moderately in the direction this unit is facing, additionally stunning them for 1.7 seconds (the stun duration is increased to 2.8 seconds if the target collides with High Ground). If the target collides with another enemy, the enemy will also be stunned for 1.7 seconds.",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Immediately pushes back all enemies within range moderately in the direction this unit is facing, additionally stunning them for 1.8 seconds (the stun duration is increased to 2.9 seconds if the target collides with High Ground). If the target collides with another enemy, the enemy will also be stunned for 1.8 seconds.",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Immediately pushes back all enemies within range moderately in the direction this unit is facing, additionally stunning them for 1.9 seconds (the stun duration is increased to 3 seconds if the target collides with High Ground). If the target collides with another enemy, the enemy will also be stunned for 1.9 seconds.",
+            "initialSp": 0,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Immediately pushes back all enemies within range moderately in the direction this unit is facing, additionally stunning them for 2 seconds (the stun duration is increased to 3.1 seconds if the target collides with High Ground). If the target collides with another enemy, the enemy will also be stunned for 2 seconds.",
+            "initialSp": 0,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Immediately pushes back all enemies within range moderately in the direction this unit is facing, additionally stunning them for 2.1 seconds (the stun duration is increased to 3.2 seconds if the target collides with High Ground). If the target collides with another enemy, the enemy will also be stunned for 2.1 seconds.",
+            "initialSp": 0,
+            "spCost": 21,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Immediately pushes back all enemies within range greatly in the direction this unit is facing, additionally stunning them for 2.2 seconds (the stun duration is increased to 3.4 seconds if the target collides with High Ground). If the target collides with another enemy, the enemy will also be stunned for 2.2 seconds.",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Immediately pushes back all enemies within range greatly in the direction this unit is facing, additionally stunning them for 2.3 seconds (the stun duration is increased to 3.6 seconds if the target collides with High Ground). If the target collides with another enemy, the enemy will also be stunned for 2.3 seconds.",
+            "initialSp": 0,
+            "spCost": 19,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Immediately pushes back all enemies within range greatly in the direction this unit is facing, additionally stunning them for 2.4 seconds (the stun duration is increased to 3.8 seconds if the target collides with High Ground). If the target collides with another enemy, the enemy will also be stunned for 2.4 seconds.",
+            "initialSp": 0,
+            "spCost": 18,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Immediately pushes back all enemies within range significantly in the direction this unit is facing, additionally stunning them for 2.5 seconds (the stun duration is increased to 4 seconds if the target collides with High Ground). If the target collides with another enemy, the enemy will also be stunned for 2.5 seconds.",
+            "initialSp": 0,
+            "spCost": 17,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 3
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 3
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 3
+        },
+        {
+          "name": "Semi-Synthetic Solvent",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Clue Search α",
+      "facility": "Reception Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Reception Room , Clue search speed increases by 10%"
+    },
+    {
+      "name": "Logical DeductionReplacesClue Search α",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Reception Room, increases Clue search speed by 35% , and Morale consumed per hour by +2"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Enforcer's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "PUS-X: Heaven, Here, Now",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Enforcer, and unleash Staggering Shot at least 2 times in each battle",
+        "requirement2": "Clear Side Story GA-EX-1 with a 3-star rating; You must deploy your own Enforcer, and cause at least 3 Pathfinder Sagittarius Prefects [ sic ] to fall in a pit"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +170 , ATK +45",
+          "effectLabel": "Trait improved",
+          "effectText": "Simultaneously attacks all blocked enemies Can be deployed on ranged tiles, and refunds half the DP cost of this deployment",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +215 , ATK +54",
+          "effectLabel": "Precise Aim improved",
+          "effectText": "Ignores 250 DEF when attacking enemies with a weight greater than or equal to 3",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +240 , ATK +60",
+          "effectLabel": "Precise Aim improved",
+          "effectText": "Ignores 280 DEF when attacking enemies with a weight greater than or equal to 3",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Enforcer, citizen of\nLaterano\n, entitled to the privileges listed in Clauses 1 through 13 of the Laterano Constitution, is an executor of the Notarial Hall who just passed his training term. During the Summit of Nations, he was involved in\nriots caused by heretics\n. Following the incident's conclusion, he was recommended by\nOperator\nExecutor\n. In accordance to an agreement between\nRhodes Island\nand the Notarial Hall, he now assists Rhodes Island as a specialist operator.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 825,
+          "atk": 285,
+          "def": 158,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1147,
+          "atk": 396,
+          "def": 240,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1147,
+          "atk": 396,
+          "def": 240,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1510,
+          "atk": 528,
+          "def": 316,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1510,
+          "atk": 528,
+          "def": 316,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1937,
+          "atk": 653,
+          "def": 381,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 350,
+      "atk": 0,
+      "def": 35
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, the operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Enforcer shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.12u/L\nOperator Enforcer rarely comes into contact with Originium, but consumes coffee in excess. Moderation is encouraged."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Operator Enforcer, real name Ezell Pastore, quickly won over everyone's hearts shortly after arriving at Rhodes Island thanks to his gentle, friendly demeanor and helpful attitude. It is hard to imagine that Executor and Enforcer, both executors from the same Laterano Notarial Hall, have such dramatically different ways of handling people and situations. From this, we can infer that Laterano may have various ways of protecting their citizens' civil rights. Enforcer prefers a more diplomatic approach of listening and mediation, rather than resolving disputes through physical means. He tries to fully understand the intentions and arguments of all parties, before finally resolving the conflict by finding a solution everyone can accept.\nHowever, this does not mean that Enforcer is incapable of fighting—far from it. During his operator exam, Enforcer displayed stunning combat prowess, particularly in close-quarters. Though he may lack experience in emergency situations, as far as his skills are concerned, he is very likely more than capable of dragging everyone to the negotiation table, one way or another.\nGreat, the Notarial Hall even has enforcers like him! The kid even offered to help me whip up a cup of coffee!\n—Closure"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "As we understand it, Enforcer recently completed his training period as an executor of the Notarial Hall, certainly no small feat for someone so young. Under normal circumstances, when a citizen of Laterano receives their patron firearm at the age of twelve, they still need an extensive period of study to truly master using it. After passing a number of examinations and obtaining the corresponding qualification certificates, including the Laterano Firearm Carry and Usage Permit, they formally earn the authorization to use their gun in self-defense, escort duty, ceremonies, and other purposes. Additionally, every few years, gun-owning citizens of Laterano need to bring their patron firearms to the relevant branches of the Notarial Hall and complete gun inspections before they can continue to legally use their 'partners'.\nHowever, the education and training required of a Notarial Hall executor goes far beyond that.\nWorking in the Notarial Hall is a difficult task, and each official requires a deep understanding of several layers of laws, regulations, and rules. In other words, it can be said that many in the Notarial Hall are profound legal scholars. On top of all this, an executor must also have excellent gun-handling skills, and most difficult of all, must deal with situations where they might be forced to point the muzzle at their own kind. This is not something that can be learned from a textbook.\nDue to both the Sankta's laws and their own empathy, it is inherently difficult for one to harbor hostilities towards another, or even to hide their hostilities. Even if it would not violate the law, one still needs to overcome massive psychological pressure, as well as a sense of moral condemnation, to lift one's hand against a fellow Sankta. Perhaps Operator Executor represents the ideal state that skilled, experienced executors should aspire towards. However, Operator Enforcer still managed to pass his Notarial Hall training, all while maintaining his gentle demeanor.\nWith a smile on his face, he told the HR operator that he had no special secrets to accomplish this. Simply a bit more patience."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "When Enforcer arrived at Rhodes Island to handle the necessary onboarding procedures, he had with him a young Sankta girl named Cecelia. What a mature and adorable child. Even though she won't be here for long, she has already become good friends with almost all the other children here, and they all look forward to seeing her again. This came as a surprise to us. From what we knew, Cecelia grew up in a very unique environment. Isolated at home for a long time because of her identity, she never had any contact with her peers, and was not given a chance to get along with them or develop bonds. However, Cecelia did not exhibit any social impairments, personality flaws, or psychological problems usually present in children growing up under similar circumstances. Her deceased guardian must've painstakingly nurtured her emotional growth. Undoubtedly, she has been given more than enough love and companionship.\nAccording to Operator Enforcer's explanations, Cecelia's health is not in stable condition, and, following Dr. Kal'tsit's judgment, Rhodes Island will provide her with as much medical assistance as possible. Unfortunately though, there really is not much we can do for this lovely young lady. Dr. Kal'tsit can only provide a few bits of basic medical advice on diet and rest. Given that Cecelia will travel to areas near Kazdel, it will be difficult for Medical to conduct follow-up health monitoring. However, Cecelia assures us that she can take care of herself, and we have little choice but to trust in this precocious girl. After all, Enforcer will be accompanying her along the way. An executor should have the skills to handle whatever challenges may arise on the way.\nIt's worth noting that in the period before leaving for Kazdel, Enforcer often spoke with the operators in charge of educating the minors at Rhodes Island, consulting them in great detail on all the recommended textbooks and supplementary materials from primary education through secondary education, and downloading everything onto his terminal."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Classified Log]\nCecelia's condition is very unique. Unexpectedly, Operator Enforcer seems to have a deeper understanding of this than we do, perhaps due to what they experienced during Laterano's Summit of Nations.\nThat's right. The girl named Cecelia has a mix of Sankta and Sarkaz blood. Despite the deep hatred between these two races, there are always those who can overcome the barriers built over thousands of years. To be honest, this girl is not alone. Emotions have a lot more power than one would expect.\nThe truly remarkable thing is that even as a mixed-blood, Cecelia's halo still shines bright above her head, though somewhat unstably. Children between Sankta and foreigners can never be Sankta, and this should have been ironclad law. Their haloes and wings of light are proof of their acceptance by the law, which shuns all else.\nWhat, then, does Cecelia's existence mean?\nWe have too little information to work with.\nNeither Cecelia nor Ezell seemed insistent on asking this question, which is likely the wisest course of action. For us, what truly matters isn't the meaning given to one's existence, but what meaning that existence can go on to create. The journey ahead of them is destined to be rough, and there will be no shortage of trials and tribulations. They may well tread a thorny path, and even come home empty-handed.\nBut their journey will never be in vain, and we wish all the luck in the world to these two youths."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Operator Enforcer always carries a coffee mug with him when he works, which always contains the same kind of black coffee—made from a very bitter bean, with not a single granule of sugar added. However, like most Laterans, he is also extremely fond of sweets such as cakes and cookies. In his own words, his choice of black coffee is only to help him focus on his work.\nYet when he finishes his work, Enforcer will pull out a separate coffee brewing set. He often spends hours at a time comparing the differences in flavor caused by varying degrees of roasting, configuring the perfect blend of coffee bean varieties, optimizing the proper ratio of cream and sugar, and even subscribing to the Bolívar Agricultural Magazine just to read the coffee planting columns—even though the magazine is often delivered months late. If Enforcer ever invites you to try the new blend of coffee he whipped up after work, be sure to accept his offer: you won't be disappointed.\nHowever, if you ever accept a cup of coffee from him during work hours, be sure to determine whose cup it is."
+    }
+  ]
+}

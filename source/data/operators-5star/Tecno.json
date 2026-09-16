@@ -1,0 +1,744 @@
+{
+  "name": "Tecno",
+  "rarity": 5,
+  "class": "Caster",
+  "branch": "Shaper Caster",
+  "faction": "Bolívar",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Summon"
+  ],
+  "trait": "Deals Arts Damage ; Can create Summons by defeating enemies , and can attack enemies blocked by these Summons",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4164_tecno",
+  "otherLanguages": {
+    "Chinese": "特克诺",
+    "Japanese": "テクノ",
+    "Korean": "테크노"
+  },
+  "characterInfo": {
+    "File no.": "BV23",
+    "Operator Record": "A Dance Together",
+    "Paradox Simulation": "Puppet Masquerade",
+    "Illustrator": "水滴鱼",
+    "Release Date": "2025/06/05",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Kokoro Minamino",
+    "Chinese": "Jin Miao'er",
+    "English": "Anna Devlin",
+    "Korean": "Park Ha-jin"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Bolívar",
+    "Date of Birth": "August 30th",
+    "Race": "Durin",
+    "Height": "130 cm",
+    "Infection Status": "Originium crystals distributed across surface of body, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Standard",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Freestyle Puppetry",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "After defeating any ground enemy within range, a Puppet Dancer spawns where they fall (up to 2 at a time); Puppet Dancers deal Arts damage"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "After defeating any ground enemy within range, a Puppet Dancer spawns where they fall (up to 3 at a time); Puppet Dancers deal Arts damage"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "After defeating any ground enemy within range, a Puppet Dancer spawns where they fall (up to 5 at a time); Puppet Dancers deal Arts damage"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +25"
+      },
+      {
+        "level": 5,
+        "benefit": "Redeployment time -6 seconds"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Tecno's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Poppin' .",
+        "Freestyle Puppetry improved.",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Tecno to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Freestyle Puppetry improved."
+      ],
+      "prerequisite": "Raise Tecno to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Incandescent Alloy Block",
+          "quantity": 7
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 14
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Lockin'",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +20% , Puppet Dancer Block +1 , Max HP +20% , DEF +70%",
+            "initialSp": 0,
+            "spCost": 35,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +23% , Puppet Dancer Block +1 , Max HP +23% , DEF +70%",
+            "initialSp": 1,
+            "spCost": 34,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +26% , Puppet Dancer Block +1 , Max HP +26% , DEF +70%",
+            "initialSp": 2,
+            "spCost": 33,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +30% , Puppet Dancer Block +1 , Max HP +30% , DEF +80%",
+            "initialSp": 3,
+            "spCost": 32,
+            "duration": 25
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +33% , Puppet Dancer Block +1 , Max HP +33% , DEF +80%",
+            "initialSp": 4,
+            "spCost": 31,
+            "duration": 25
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +36% , Puppet Dancer Block +1 , Max HP +36% , DEF +80%",
+            "initialSp": 5,
+            "spCost": 30,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +40% , Puppet Dancer Block +1 , Max HP +40% , DEF +90%",
+            "initialSp": 6,
+            "spCost": 28,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +43% , Puppet Dancer Block +1 , Max HP +43% , DEF +90%",
+            "initialSp": 7,
+            "spCost": 27,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +46% , Puppet Dancer Block +1 , Max HP +46% , DEF +90%",
+            "initialSp": 8,
+            "spCost": 26,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +50% , Puppet Dancer Block +1 , Max HP +50% , DEF +100%",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 25
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 3
+            },
+            {
+              "name": "Fuscous Fiber",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Poppin'",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Range increases, Tecno and her Puppet Dancers gain ASPD +40 , and Puppet Dancer attacks become ranged and can attack enemies within Tecno's Attack Range When the skill ends, all Puppet Dancers respawn on the closest deployable tile to Tecno",
+            "initialSp": 10,
+            "spCost": 45,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Range increases, Tecno and her Puppet Dancers gain ASPD +45 , and Puppet Dancer attacks become ranged and can attack enemies within Tecno's Attack Range When the skill ends, all Puppet Dancers respawn on the closest deployable tile to Tecno",
+            "initialSp": 10,
+            "spCost": 44,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Range increases, Tecno and her Puppet Dancers gain ASPD +50 , and Puppet Dancer attacks become ranged and can attack enemies within Tecno's Attack Range When the skill ends, all Puppet Dancers respawn on the closest deployable tile to Tecno",
+            "initialSp": 10,
+            "spCost": 43,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Range increases, Tecno and her Puppet Dancers gain ASPD +55 , and Puppet Dancer attacks become ranged and can attack enemies within Tecno's Attack Range When the skill ends, all Puppet Dancers respawn on the closest deployable tile to Tecno",
+            "initialSp": 10,
+            "spCost": 42,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Range increases, Tecno and her Puppet Dancers gain ASPD +60 , and Puppet Dancer attacks become ranged and can attack enemies within Tecno's Attack Range When the skill ends, all Puppet Dancers respawn on the closest deployable tile to Tecno",
+            "initialSp": 10,
+            "spCost": 41,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Range increases, Tecno and her Puppet Dancers gain ASPD +65 , and Puppet Dancer attacks become ranged and can attack enemies within Tecno's Attack Range When the skill ends, all Puppet Dancers respawn on the closest deployable tile to Tecno",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Range increases, Tecno and her Puppet Dancers gain ASPD +70 , and Puppet Dancer attacks become ranged and can attack enemies within Tecno's Attack Range When the skill ends, all Puppet Dancers respawn on the closest deployable tile to Tecno",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Range increases, Tecno and her Puppet Dancers gain ASPD +80 , and Puppet Dancer attacks become ranged and can attack enemies within Tecno's Attack Range When the skill ends, all Puppet Dancers respawn on the closest deployable tile to Tecno",
+            "initialSp": 15,
+            "spCost": 38,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Range increases, Tecno and her Puppet Dancers gain ASPD +90 , and Puppet Dancer attacks become ranged and can attack enemies within Tecno's Attack Range When the skill ends, all Puppet Dancers respawn on the closest deployable tile to Tecno",
+            "initialSp": 15,
+            "spCost": 36,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Range increases, Tecno and her Puppet Dancers gain ASPD +100 , and Puppet Dancer attacks become ranged and can attack enemies within Tecno's Attack Range When the skill ends, all Puppet Dancers respawn on the closest deployable tile to Tecno",
+            "initialSp": 20,
+            "spCost": 35,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 1
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Diketon",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 8
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 3
+        },
+        {
+          "name": "Aggregate Cyclicene",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Familiarity",
+      "facility": "Workshop",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Workshop to process Crystal -type materials, all Morale costs -1"
+    },
+    {
+      "name": "DIY Crystal",
+      "facility": "Workshop",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Workshop to process Crystal -type materials, the byproduct chance is increased by 80%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Tecno's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "SOC-Y: Official Coupon Stamp of the BBQ House",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Tecno, and use Poppin' at least once in each battle",
+        "requirement2": "Clear Side Story DH-6 with a 3-star rating; You must deploy your own Tecno, and can only include 7 other Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +25 , ASPD +5",
+          "effectLabel": "New trait",
+          "effectText": "Attack Range expands □ □ □ □ □ ■ □ □ □ □ □ □ □ □",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +35 , ASPD +6",
+          "effectLabel": "Freestyle Puppetry improved",
+          "effectText": "After defeating any ground enemy within range, a stronger [ note 1 ] Puppet Dancer spawns where they fall (up to 5 at a time); Puppet Dancers deal Arts damage",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +42 , ASPD +7",
+          "effectLabel": "Freestyle Puppetry improved",
+          "effectText": "After defeating any ground enemy within range, a stronger [ note 1 ] Puppet Dancer spawns where they fall (up to 5 at a time); Puppet Dancers deal Arts damage; and Tecno's ATK +15% when a Puppet Dancer is on the field",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Tecno is a member of\nDossoles\n's street art community who became involved in the\nterrorist attack\non the\nGalería Krysztauowa\n. Exposed to large amounts of\nOriginium\ndust during the incident, her infection worsened and she was introduced to\nRhodes Island\nfor treatment by\nOperator\nTequila\n. Once her condition stabilized, she decided to join us. After passing the relevant training courses and tests, she now resides in Dossoles as a field operator.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 687,
+          "atk": 254,
+          "def": 28,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 955,
+          "atk": 348,
+          "def": 42,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-6"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 955,
+          "atk": 348,
+          "def": 42,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1241,
+          "atk": 435,
+          "def": 58,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1241,
+          "atk": 435,
+          "def": 58,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1655,
+          "atk": 519,
+          "def": 70,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 0,
+      "def": 35
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 7%\nThere are distinct, visible Originium crystals on the surface of Operator Tecno's skin.\n\n[Blood Originium-Crystal Density] 0.23u/L\nAlthough Tecno sees her own infection as an accident, a statistical analysis of the street art community's Infected leads us to believe this is no mere 'misfortune'. There is a never-ending encroachment on their living space by the harsh, uncaring environment surrounding it, leading to a vicious cycle. Thankfully, the 'Papá' she always mentions appears to be taking our environmental safety assessment seriously, and has begun taking steps to rectify the issue.\n—A Medical Operator"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "According to reports from many operators, spray-paint graffiti has recently been popping up all over the landship: the metal walls of the corridors, the tables in the cafeteria, the mirrors in public restrooms, etc. Nowhere seems to be safe. Inquisitive operators asked Closure to check the security tapes, hoping to find the 'artiste' behind it. While skimming the tapes, they noticed a small puppet holding a can of spray paint and toddling through a corridor. As they leaned in to see what it would do, the little rascal leaped at the camera, making even the veteran operators scream. They did not dare investigate further. Undeterred, Closure checked the rest of the tapes in her free time. According to her, the trouble-making puppet is good at playing to the camera and has a solid sense of rhythm, and she claims the video of it she put together is a cut above Wrankwood's latest horror movies.\nA few days later, the warden of the sickbays, who rarely ever leaves Medical, passed by a gaggle of rubberneckers admiring one of the latest 'masterpieces'. She immediately recognized the art style, and skillfully herded the street artists headed by Tecno to the corridor in question. After the eye-catching yet unruly youths obediently cleaned up the wall, the warden gave each of them discharge papers. Ever since, the plague of graffiti has died down.\nThough Tecno has given Medical a number of headaches, she also brings smiles and laughter to the other patients, especially the children. During her first stint in the ward, she drew a small cartoon on a child's plaster cast to help him sleep after his traumatic experience in a Catastrophe. Her second time around, she took apart a ward lamp and added a mechanism to make it float. Whenever the serious-faced warden made her rounds, the lamp would cast shadows resembling a pair of adorable fowlbeast wings floating behind her, distracting any children scared of needles.\nRecently, a boy with the broken arm was reluctant to part with Tecno's drawing, refusing to allow us to break open the cast. During this tense situation, Tecno had a rare serious moment and told the boy about the role of destruction and reconstruction in art theory, stunning him into silence. By the time he came to his senses, the cast was already off. Before he left Rhodes Island, Tecno gave him a small sculpture she fashioned out of bits of plaster. Of course, the actual plaster cast had already been disposed of as medical waste, so her souvenir was a mock-up cast she made herself. After redrawing her cartoon, she shattered it to make the piece.\nHer brash exterior may lead to misunderstandings, but I believe that when all's said and done, her sincere approach towards both art and other people lets her get along very well with pretty much anyone.\n—The sickbay warden"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "While sorting out information on onboarding operators, an HR operator spotted a familiar figure in a years-old Dossoles newspaper: a young girl with red hair wearing a breezy dress, looking bashfully at the camera. The article was titled 'Brilliant New Star of the Arts: Durin Beauty Leaves Home to Chase Her Dreams.' Tecno, sitting in the office at the time, snatched the newspaper clipping, shaking as she gripped it so hard her knuckles turned white, her face beet-red. After calming down, she decided to tell us about her years in Dossoles, if only to prevent HR from learning of it elsewhere and spreading rumors of her 'dark past'.\nUnable to find anyone in her underground hometown who shared her aesthetic sensibilities, she left in a huff before unintentionally finding herself in Dossoles. Perhaps due to how rare Durins were there, the local TV station immediately jumped in for an interview, while also taking videos of her puppet shows. This interview was distilled into the newspaper article which made it onto the front page. 'Smooth sailing? Not really. The TV guys took out any mention of the art I was REALLY proud of. Said it was too niche, and wouldn't be good for ratings. If I listened to them, what would have been the point of leaving home?' She refused their package plan, instead devoting herself to her own art, but just as she was preparing for a solo exhibition, she was swindled out of all her savings.\nStanding out in the street in her darkest hour, she was helped by a stranger. He brought her to the local art community, introducing her to the vibrant neighborhood artists. After seeing her puppetry, they joined her in mocking the TV station for being unable to recognize true talent. One after another they asked if she wanted to incorporate any other elements into her performance. Some independent artists even offered their latest works as background music.\nThe community Tecno found herself in lived hard lives. Homes that violated every regulation as they teetered on the brink of collapse, electric cables criss-crossing through the air, piles of garbage no-one wanted to deal with... Pretty much everything was a safety hazard of some sort. The street artists were poor, malnourished, and lacking in sleep. Many nights, Tecno would find herself drinking with her friends under an awning, shouting to high heaven how they didn't want to do art ever again. After sobering up, they would return to their ateliers, darkrooms and workshops, revising their current projects. Even in these forgotten corners of the city, they would refine the art they so loved, trying to bring out its inner shine.\nHowever, this was Dossoles, after all. The power and profit they struggled against had always 'cared' about this plot of land no-one else did. She and her friends were doomed to be drawn into that thorny affair, and found themselves forced to take up arms in resistance."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "The report Operator Tequila submitted on the Galería Krysztauowa incident was rather carefully worded. The whims of a rich Kazimierzian businessman, the restless Bolívarian Coalition Government representative, and the Dossoles government watching from the sidelines. Their fight over the lot intensified, bringing disaster to the street artist community and opening ceremony audience alike. Tecno and the other artists who took part in the incident came to Rhodes Island for medical treatment afterwards. They were no hardened mercenaries, and paid a heavy price during their rescue and resistance operations. After Tecno formally became a Rhodes Island operator, the Archives Department suggested an interview, hoping they would be able to hear about the incident from her point of view. The following is an audio clip from that interview:\n'Taking down those soldiers wasn't easy, not to mention the Originium explosives they had hidden in the gallery. We all wanted to give those bastards what they deserved after they put us to siege, but our bodies wouldn't listen. Even I was a bit shaky using my staff to control my puppets.\n'The moment they hit the roof, everyone jumped at Mateo. He never thought a bunch of starving artists like us could be so strong. Reynell had blood all over his face, but was in high spirits when he saw that brute pinned down against the floor. That's when I realized he never planned on leaving alive. But bringing down the gallery and all those people with him... I couldn't let him do that.\n'My two puppets were busted, but my friends and I had made inflatable versions of the same size to help with the choreography. Before that whole mess, we'd only wanted to protest in the plaza, so we brought the inflatables along too, with Reynell's stupid face scribbled on them. The moment the blast started rushing out the vents, Papá and I grabbed Reynell by the shoulders and jumped down. But it turns out you can't use any old inflatable as a proper landing pad.\n'His little manservant dude thanked us, and I think he wanted to explain why he did something so stupid, but I kinda tuned him out when he started going on about a 'complicated family situation.' If Reynell considers himself an artist, he should be putting that resentment into his art, not getting other people to talk about it for him.\n'A musician friend of mine got too caught up in the stuff happening in the gallery, didn't make it out in time to save his ears. The explosion messed up his hearing for good. I dunno, maybe if we'd had seasoned mercs to climb to the balcony instead of us, we wouldn't have taken so much damage. Maybe if Reynell had had an actual friend to give him a good hard slap, he wouldn't have done something so stupid.'"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "A few months later, our investigators revisited the artist community. Tecno would hand out medication to the Infected alongside the branch office operators, and often ran into members of the community who took protection lightly. She would then use her small puppets to step on their feet until they were able to recite her fierce warnings fluently. Everyone she met was surprised by the changes they noticed in her. Though she was as prickly and blunt as ever when talking about art, she had started to see her situation in a new light ever since the Galería Krysztauowa incident. Before, she had never cared about her physical condition, always prioritizing her creations, even sharing the unfortunately common view that her affliction made her a better, more expressive, artist. 'After I got infected, I never really treated Oripathy as anything special. All it meant was my career would be a bit shorter compared to others. But facing death in the eye isn't the same as welcoming it. I had slowly forgotten that after being infected for so long. I don't think burning your life away for your art is something to be praised for. Ever since the explosion at Galería Krysztauowa, every time I hear an Infected in our neighborhood say something that, I can't help but think of Reynell's face, wallowing in all that self-pity.'\nDuring her treatment on Rhodes Island, Tecno learned many of the sordid details from Operator Tequila. Her forceful personality can make her hard to handle, but fortunately Ernesto has experience communicating with people like her. 'Reynell gave the gallery and the rights to the land to Papá before he left, but the military and the moneygrubbers still won't let things go. As long as the neighborhood is considered part of Dossoles, they'll still be able to meddle with it.' In the wake of the Krysztauowa incident, artists have left one after the other. But despite the manpower shortage as the community rebuilds itself, Diaz and Tecno have never tried to stop them.\n'Whenever anyone leaves, they always leave behind the piece they're most satisfied with. A parting gift for the simple shelter. While we're cleaning up all this garbage and burnt walls, we moved those pieces out of the neighborhood, just temporarily. It was enough to fill two whole streets, and tourists from the business district came over to look at the pretty colors, cramming themselves into our little alleyways. Then my friends wanted to scratch their creative itch, so they picked up their spray cans and gave the business district a good makeover. Sure, they didn't make it ten minutes before security chased them away, but what's that got to do with anything? The point is, who says we can only make art on our own turf?\n'Even after living in Dossoles for so long, I only recently got to know the rhythm of the city. What have I been doing this whole time? I want to go with Rhodes Island to see every corner of Terra, see the local street art. Maybe one day I'll head back to that underground city, share my experiences with the guys who voted against me back then. But if they're still going to vote a thousand to one after hearing music from all over the land, then whatever! I don't care! Okay, maybe I care a little... Guess I'm still a bit angry... Let's save that for later. I've still got a long art career ahead of me!'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "'Four rounds, no less.'\n'Bet or not—it'll be settled in three. The Doctor likes cute things more than anything.'\n'Really? Seems to me like the Doctor isn't that picky. Never seemed even a little interested in—Whoa! Tecno's getting pat on the head! Normally she'd hit you if you called her a kid, even as a joke!'\n'What a sweet smile, befitting an idol about to make her debut.'\n'Where'd you hear <i>that</i> from?'\n'A friend in HR told me. But keep it between us, yeah?'\n'What're you two chatting about? The Doctor didn't scold us for the damage we caused during the mission, and your vacation got approved too.'\n'Knew you could do it, Tecno. I'll admit, I had my doubts when you first said you'd handle it.'\n'Just a little trick I've used on Papá plenty of times. Picked it up real quick.'\n'That fawning—err, acting was pretty much perfect.'\n'Hehe~'\n'But what about those rosy eartips I saw? Can you control that too?'\n'Er, just a talent us Durins have.'\n'But I heard from Myrtle that—'\n'How about I go up to the Doctor right now and say you've decided to forfeit your leave? And also that you volunteered to model for the oil painting society in eight hours.'\n'I heard nothing from nobody.'\n'Good.'"
+    }
+  ]
+}

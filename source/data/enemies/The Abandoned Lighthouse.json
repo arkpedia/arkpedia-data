@@ -1,0 +1,240 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "sss",
+    "id": "tower_n_10",
+    "label": null,
+    "name": "The Abandoned Lighthouse",
+    "release_date": "2024-03-16"
+  },
+  "enemies": [
+    {
+      "slug": "blazing_originium_slug",
+      "id": "enemy_1305_mhslim",
+      "name": "Blazing Originium Slug",
+      "index": "HS05",
+      "rank": "Normal",
+      "sort": 593,
+      "hidden": false,
+      "icon": "/enemies-icons/Blazing Originium Slug.webp",
+      "flavour_text": "A wild infected creature, they spray superheated fluids at their foes, posing more of a threat than typical Originium Slugs. Abundant in environments with abnormal energy, their breeding and migration patterns remain a mystery.",
+      "race": "Infected Creature",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks deal Burn",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 1200,
+            "atk": 50,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 1.8,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "EpDamage",
+              "parameters": {
+                "ep_damage_ratio": 1.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "thirster",
+      "id": "enemy_6016_splash",
+      "name": "Thirster",
+      "index": "DL16",
+      "rank": "Boss",
+      "sort": 1476,
+      "hidden": false,
+      "icon": "/enemies-icons/Thirster.webp",
+      "flavour_text": "It once bore an Iberian name, until it tossed that name into the sea and disappeared into the abyss. However, embracing the seawater was not enough to moisten its parched throat, and the clear red liquid flowing within its veins is equally enticing, so it has returned to dry land once more, thirstier than ever.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict additional Nervous Impairment",
+          "format": "normal"
+        },
+        {
+          "text": "Has high DEF and RES, but those can be reduced by healing <Absorbers> to full HP",
+          "format": "normal"
+        },
+        {
+          "text": "Spits out filth at set intervals, placing an <Absorber> in the Deployment Waiting Zone and attacking several operators on the field; number of operators attacked increases according to Danger Level",
+          "format": "normal"
+        },
+        {
+          "text": "After losing a certain percentage of HP, immediately Stuns multiple Operators on the field and creates a Barrier equal to the HP lost; if the Barrier is not destroyed before it expires, the Barrier shatters and inflicts a large amount of Nervous Impairment to all Operators on the field",
+          "format": "normal"
+        },
+        {
+          "text": "When it creates a Barrier for the second time and thereafter, it will stun more Operators if the previous Barrier was not destroyed; this effect can stack up to a number of times, and resets when a Barrier is destroyed",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 85000,
+            "atk": 500,
+            "def": 1950,
+            "res": 95.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.7,
+            "attack_speed": 100.0,
+            "move_speed": 0.2,
+            "range": null,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "A+",
+            "res": "SS",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "ElementBarrier_0",
+              "sp_cost": 0,
+              "cooldown": 99999.0,
+              "initial_cooldown": 99999.0,
+              "priority": 0,
+              "parameters": {
+                "max_target": 3.0,
+                "max_target_ceil": 6.0,
+                "max_target_floor": 3.0,
+                "stun_duration": 8.0
+              }
+            },
+            {
+              "key": "GlobalSanity",
+              "sp_cost": 0,
+              "cooldown": 99999.0,
+              "initial_cooldown": 99999.0,
+              "priority": 0,
+              "parameters": {
+                "element_value": 1000.0
+              }
+            },
+            {
+              "key": "ElementBarrier_1",
+              "sp_cost": 0,
+              "cooldown": 99999.0,
+              "initial_cooldown": 99999.0,
+              "priority": 0,
+              "parameters": {
+                "barrier_duration": 20.0,
+                "fell_ground_duration": 10.0
+              }
+            },
+            {
+              "key": "SeveralAttack",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 40.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "delay_duration": 3.0,
+                "each_add_num": 0.0,
+                "ep_damage_ratio": 0.5,
+                "max_target": 2.0,
+                "trig_cnt": 1.0
+              }
+            },
+            {
+              "key": "DangerMonitor",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "first_add_danger_grade": 12.0,
+                "second_add_danger_grade": 15.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "AuraElement",
+              "parameters": {
+                "base_damage": 25.0,
+                "base_damage_pure": 10.0,
+                "current_damage": 0.0,
+                "current_damage_pure": 0.0
+              }
+            },
+            {
+              "key": "BarrierTrigger",
+              "parameters": {
+                "hp_ratio": 0.15
+              }
+            },
+            {
+              "key": "epdamage",
+              "parameters": {
+                "ep_damage_ratio": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

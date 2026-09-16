@@ -1,0 +1,952 @@
+{
+  "name": "Lemuen",
+  "rarity": 6,
+  "class": "Sniper",
+  "branch": "Deadeye",
+  "faction": "Laterano",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS",
+    "Nuker"
+  ],
+  "trait": "Prioritizes attacking the enemy with lowest DEF within range first",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Requiem Vesperis"
+  ],
+  "ep": {
+    "Main": "Sanctuary Inside",
+    "Co-star": null
+  },
+  "internalName": "char_4193_lemuen",
+  "otherLanguages": {
+    "Simplified Chinese": "蕾缪安",
+    "Traditional Chinese": "蕾繆安",
+    "Japanese": "レミュアン",
+    "Korean": "르무엔"
+  },
+  "characterInfo": {
+    "File no.": "LT17",
+    "Illustrator": "IRIS_口艺",
+    "Release Date": "2025/10/14",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Eriko Nakamura",
+    "Chinese": "Su Wan",
+    "English": "Bridget Lappin",
+    "Korean": "Shin Na-ri"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "12 years",
+    "Place of Birth": "Laterano",
+    "Date of Birth": "May 21st",
+    "Race": "Sankta",
+    "Height": "169 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Flawed",
+    "Mobility": "Standard",
+    "Endurance": "Flawed",
+    "Tactical Acumen": "Outstanding",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Diploma Persecutionis Internationalis",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Elite or leader enemies who are within a Laterano Operator 's Attack Range for more than 10 seconds become Wanted; Lemuen can attack all Wanted enemies"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Elite or leader enemies who are within a Laterano Operator's Attack Range for more than 8 (-2) seconds become Wanted; Lemuen can attack all Wanted enemies"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Elite or leader enemies who are within a Laterano Operator's Attack Range for more than 8 seconds become Wanted, taking +15% more damage from Laterano Operators; Lemuen can attack all Wanted enemies"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Elite or leader enemies who are within a Laterano Operator's Attack Range for more than 6 (-2) seconds become Wanted, taking +18% (+3%) more damage from Laterano Operators; Lemuen can attack all Wanted enemies"
+        }
+      ]
+    },
+    {
+      "name": "Modus Extraditio Fugitivi",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "After being deployed for 20 seconds, ATK +10% and Lemuen's ammo -type skills have +1 Ammo capacity"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +46"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Diploma Persecutionis Internationalis"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Lemuen's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Diploma Persecutionis Internationalis .",
+        "New skill: Honesta Missio .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Lemuen to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Sniper Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Device",
+          "quantity": 5
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 7
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Modus Extraditio Fugitivi .",
+        "New skill: Salutatio Sclopeti: Memento Mori .",
+        "Diploma Persecutionis Internationalis improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Lemuen to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Sniper Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Polymerization Preparation",
+          "quantity": 4
+        },
+        {
+          "name": "Incandescent Alloy Block",
+          "quantity": 7
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Salvē Etiam",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Auto",
+        "duration": "Toggled",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Increases ATK to 150% when attacking, and attacks 1 additional target Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 12,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Increases ATK to 155% when attacking, and attacks 1 additional target Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 12,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Increases ATK to 160% when attacking, and attacks 1 additional target Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 12,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Increases ATK to 165% when attacking, and attacks 1 additional target Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 11,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Increases ATK to 170% when attacking, and attacks 1 additional target Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 11,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Increases ATK to 175% when attacking, and attacks 1 additional target Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 11,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Increases ATK to 180% when attacking, and attacks 1 additional target Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Increases ATK to 190% when attacking, and attacks 1 additional target Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Increases ATK to 200% when attacking, and attacks 1 additional target Skill activation grants 6 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Increases ATK to 210% when attacking, and attacks 1 additional target Skill activation grants 6 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 4
+            },
+            {
+              "name": "Semi-Synthetic Solvent",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 6
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Honesta Missio",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "Toggled",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ASPD +35 , ATK +30% ; when there are Wanted enemies on the battlefield, consumes a bullet to take aim for 2 seconds before firing a shot that ignores Dodge (while aiming, ATK gradually increases from 180% to 320% ; if Lemuen's ATK is higher than the sum of the target's remaining HP and DEF, stops aiming and immediately fires) Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 6,
+            "spCost": 40,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ASPD +40 , ATK +30% ; when there are Wanted enemies on the battlefield, consumes a bullet to take aim for 2 seconds before firing a shot that ignores Dodge (while aiming, ATK gradually increases from 180% to 320% ; if Lemuen's ATK is higher than the sum of the target's remaining HP and DEF, stops aiming and immediately fires) Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 6,
+            "spCost": 39,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ASPD +45 , ATK +30% ; when there are Wanted enemies on the battlefield, consumes a bullet to take aim for 2 seconds before firing a shot that ignores Dodge (while aiming, ATK gradually increases from 180% to 320% ; if Lemuen's ATK exceeds the enemies' HP and DEF combined, immediately immediately stops aiming and attacks them. Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 8,
+            "spCost": 38,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ASPD +50 , ATK +40% ; when there are Wanted enemies on the battlefield, consumes a bullet to take aim for 2.5 seconds before firing a shot that ignores Dodge (while aiming, ATK gradually increases from 180% to 355% ; if Lemuen's ATK is higher than the sum of the target's remaining HP and DEF, stops aiming and immediately fires) Skill activation grants 6 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 8,
+            "spCost": 37,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ASPD +55 , ATK +40% ; when there are Wanted enemies on the battlefield, consumes a bullet to take aim for 2.5 seconds before firing a shot that ignores Dodge (while aiming, ATK gradually increases from 180% to 355% ; if Lemuen's ATK is higher than the sum of the target's remaining HP and DEF, stops aiming and immediately fires) Skill activation grants 6 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 10,
+            "spCost": 36,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ASPD +60 , ATK +40% ; when there are Wanted enemies on the battlefield, consumes a bullet to take aim for 2.5 seconds before firing a shot that ignores Dodge (while aiming, ATK gradually increases from 180% to 355% ; if Lemuen's ATK is higher than the sum of the target's remaining HP and DEF, stops aiming and immediately fires) Skill activation grants 6 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ASPD +65 , ATK +50% ; when there are Wanted enemies on the battlefield, consumes a bullet to take aim for 3 seconds before firing a shot that ignores Dodge (while aiming, ATK gradually increases from 180% to 390% ; if Lemuen's ATK is higher than the sum of the target's remaining HP and DEF, stops aiming and immediately fires) Skill activation grants 6 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 12,
+            "spCost": 34,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ASPD +70 , ATK +60% ; when there are Wanted enemies on the battlefield, consumes a bullet to take aim for 3 seconds before firing a shot that ignores Dodge (while aiming, ATK gradually increases from 180% to 390% ; if Lemuen's ATK is higher than the sum of the target's remaining HP and DEF, stops aiming and immediately fires) Skill activation grants 6 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 14,
+            "spCost": 33,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ASPD +75 , ATK +60% ; when there are Wanted enemies on the battlefield, consumes a bullet to take aim for 3 seconds before firing a shot that ignores Dodge (while aiming, ATK gradually increases from 180% to 390% ; if Lemuen's ATK is higher than the sum of the target's remaining HP and DEF, stops aiming and immediately fires) Skill activation grants 7 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 14,
+            "spCost": 32,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ASPD +80 , ATK +70% ; when there are Wanted enemies on the battlefield, consumes a bullet to take aim for 3.5 seconds before firing a shot that ignores Dodge (while aiming, ATK gradually increases from 180% to 425% ; if Lemuen's ATK is higher than the sum of the target's remaining HP and DEF, stops aiming and immediately fires) Skill activation grants 7 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "2nd",
+            "priority": "main",
+            "explanation": "A high-damage single-target skill against all types of enemies. It sees less uses than Skill 3, but has times that it is preferred over Skill 3 due to lower SP cost and ease of locking on to enemies."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 4
+            },
+            {
+              "name": "Sugar Pack",
+              "quantity": 9
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Pure Lock-on",
+            "description": "Locks on to an enemy, needing to kill it before moving on to another"
+          }
+        ]
+      },
+      {
+        "name": "Salutatio Sclopeti: Memento Mori",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "Toggled",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Stops attacking , consumes 1 bullet every 0.5 seconds to lock onto enemies in succession; when the skill ends, bombards the positions of all locked-on enemies, dealing 210% of ATK as AoE Physical damage per bombardment (damage increases to 330% of ATK for enemies in the center of the bombardment) Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 23,
+            "spCost": 48,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Stops attacking , consumes 1 bullet every 0.5 seconds to lock onto enemies in succession; when the skill ends, bombards the positions of all locked-on enemies, dealing 220% of ATK as AoE Physical damage per bombardment (damage increases to 340% of ATK for enemies in the center of the bombardment) Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 24,
+            "spCost": 47,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Stops attacking , consumes 1 bullet every 0.5 seconds to lock onto enemies in succession; when the skill ends, bombards the positions of all locked-on enemies, dealing 230% of ATK as AoE Physical damage per bombardment (damage increases to 350% of ATK for enemies in the center of the bombardment) Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 25,
+            "spCost": 46,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Stops attacking , consumes 1 bullet every 0.5 seconds to lock onto enemies in succession; when the skill ends, bombards the positions of all locked-on enemies, dealing 240% of ATK as AoE Physical damage per bombardment (damage increases to 360% of ATK for enemies in the center of the bombardment) Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 26,
+            "spCost": 45,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Stops attacking , consumes 1 bullet every 0.5 seconds to lock onto enemies in succession; when the skill ends, bombards the positions of all locked-on enemies, dealing 250% of ATK as AoE Physical damage per bombardment (damage increases to 370% of ATK for enemies in the center of the bombardment) Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 27,
+            "spCost": 44,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Stops attacking , consumes 1 bullet every 0.5 seconds to lock onto enemies in succession; when the skill ends, bombards the positions of all locked-on enemies, dealing 260% of ATK as AoE Physical damage per bombardment (damage increases to 380% of ATK for enemies in the center of the bombardment) Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 28,
+            "spCost": 43,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Stops attacking , consumes 1 bullet every 0.5 seconds to lock onto enemies in succession; when the skill ends, bombards the positions of all locked-on enemies, dealing 270% of ATK as AoE Physical damage per bombardment (damage increases to 390% of ATK for enemies in the center of the bombardment) Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 29,
+            "spCost": 42,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Stops attacking , consumes 1 bullet every 0.5 seconds to lock onto enemies in succession; when the skill ends, bombards the positions of all locked-on enemies, dealing 280% of ATK as AoE Physical damage per bombardment (damage increases to 410% of ATK for enemies in the center of the bombardment) Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 30,
+            "spCost": 41,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Stops attacking , consumes 1 bullet every 0.5 seconds to lock onto enemies in succession; when the skill ends, bombards the positions of all locked-on enemies, dealing 290% of ATK as AoE Physical damage per bombardment (damage increases to 430% of ATK for enemies in the center of the bombardment) Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 31,
+            "spCost": 39,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Stops attacking , consumes 1 bullet every 0.5 seconds to lock onto enemies in succession; when the skill ends, bombards the positions of all locked-on enemies, dealing 300% of ATK as AoE Physical damage per bombardment (damage increases to 450% of ATK for enemies in the center of the bombardment) Skill activation grants 5 ammo and the skill ends when all ammo is used (Can manually deactivate skill)",
+            "initialSp": 32,
+            "spCost": 38,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "An explosive skill that lets you barrage numerous enemies in one go or accumulate it into a singular elite or boss. A highly considered skill in difficult stages."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Component",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            },
+            {
+              "name": "Chiral Refractor",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "AOE Nuke",
+            "description": "Group enemies closely together to deal maximum big damage"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        },
+        {
+          "name": "Diketon",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 5
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Order Distribution α",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post , order acquisition efficiency +20%"
+    },
+    {
+      "name": "AmicusReplacesOrder Distribution α",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +20% ; if Exusiai is assigned to the same Trading Post, additionally order acquisition efficiency +25%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Lemuen's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "DEA-Y: Magazine and Stained Glass",
+      "mission": {
+        "requirement1": "Defeat a total of 30 enemies with your own Lemuen",
+        "requirement2": "Clear Main Theme 13-13 with a 3-star rating under Standard Environment; You must deploy your own Lemuen and have her defeat at least 2 Sarkaz Boneguard Flayers"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +80 , ATK +80",
+          "effectLabel": "New trait",
+          "effectText": "If the attacked enemy remains alive, gain 1 additional SP",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +100 , ATK +100",
+          "effectLabel": "Modus Extraditio Fugitivi improved",
+          "effectText": "After being deployed for 20 seconds, ATK +15% and Lemuen's ammo -type skills have +2 Ammo capacity",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +120 , ATK +120",
+          "effectLabel": "Modus Extraditio Fugitivi improved",
+          "effectText": "After being deployed for 15 seconds, ATK +18%, Lemuen's ammo-type skills have +2 Ammo capacity, and other Laterano Operators ' ammo-type skills have +1 Ammo capacity",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Lemuen is a citizen of\nLaterano\nentitled to the rights listed in Clauses 1 through 13 of the Laterano Constitution. She is currently a cardinal of the Lateran Curia's Seventh Tribunal.\nWhile Lemuen claims to be visiting Rhodes Island as the family of\nan operator\n, her presence here must be treated as an official visit by a representative of Laterano. During her visit, she will provide us assistance in accordance with our agreement.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "UrvpyPIcr9E",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "GbyvqcyMXio",
+      "creator": "DragonGJY"
+    },
+    {
+      "videoId": "ekxEgeOJztI",
+      "creator": "smallphi"
+    },
+    {
+      "videoId": "CDrNFhUG-bk",
+      "creator": "Roze Prelati"
+    },
+    {
+      "videoId": "0gXTDMGbcTQ",
+      "creator": "Storn"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 713,
+          "atk": 537,
+          "def": 85,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.7
+        },
+        "max": {
+          "hp": 926,
+          "atk": 747,
+          "def": 114,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.7
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 926,
+          "atk": 747,
+          "def": 114,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 1,
+          "interval": 2.7
+        },
+        "max": {
+          "hp": 1158,
+          "atk": 984,
+          "def": 143,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 1,
+          "interval": 2.7
+        },
+        "rangeId": "3-9"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1158,
+          "atk": 984,
+          "def": 143,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 1,
+          "interval": 2.7
+        },
+        "max": {
+          "hp": 1448,
+          "atk": 1201,
+          "def": 175,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 1,
+          "interval": 2.7
+        },
+        "rangeId": "3-9"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 100,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is confirmed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nLemuen shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.12u/L\nLemuen submitted her full patient records from Stevonus Central Hospital. We agree with their conclusion that continued rehabilitation and avoidance of secondary injury may allow her to regain the ability to walk, but it is a process that could take years or even decades. There is no guarantee that she will walk normally again in her lifetime.\nLemuen was very calm when we explained this to her, as though she had expected it. That afternoon, she brought us desserts, calling them a token of gratitude for the care we showed during the examination.\nI know what she was truly thanking us for, though... It was for telling her the truth. "
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "After being created cardinal, Lemuen gave the Seventh Tribunal's office a complete makeover, connecting several floors and making a rest space in the atrium. Office areas were rearranged based on function and interaction, and a dedicated channel for transferring physical documents was created in order to address the inefficiency and risks of human delivery.\nShe also set up suggestion boxes for various areas in the atrium that cover a wide range of issues, from the Seventh Tribunal's policies to the cafeteria menu. She reads and responds to each suggestion personally.\n\nYes, the office building of the Seventh Tribunal has been completely rebuilt. It is now more like a computer than an office, with Cardinal Lemuen as the central processing unit. It is fortunate to have a colleague who understands the value of efficiency and has successfully implemented such a system. If only she were allowed to hold positions across multiple tribunals.\n—Executor Federico, in his report after a joint project\n\n[Report on Renovation of the Seventh Tribunal's Office Area]\n...The renovation of the Seventh Tribunal's office is now complete. Expenses were within budget, and quality checks are complete. The new office area is now ready for use.\nNote: A minor incident occurred during renovation, but has been properly resolved and did not result in any material impact on the project.\n[Review Committee Meeting Minutes]\n'This 'minor incident' she mentions was a chain explosion caused by stray fireworks from a passing procession. Numerous unauthorized personnel entered the scene and held an impromptu explosion party with the construction team, resulting in a scene of extreme chaos. How's that a 'minor incident'?'\n'It occurred on the afternoon of the 23rd? But the inspection report on the morning of the 24th said 'No issues', right?'\n'Cardinal Lemuen must have dealt with it on her own. Should we have a talk with her? She could have requested our assistance for accidents like these.'\n'She used to report them, but all our response officers could do once they arrived was stare at the spotless scene after everything was already dealt with.'\n'...Send an announcement to remind the other departments and teams. As for Cardinal Lemuen... well, I guess that's who she is.'\n\nThat's what my sister was like at home too. Not just the suggestion boxes—she always has everything figured out, from how we decide where to go on a trip, how we make up after a fight, and how we treat each other at home.\nAs for the trouble I used to cause when I was little... Heh, I've lost count of how many times she's smoothed things over for me.\n—Exusiai"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "The first time I observed my biological father, he did not know I was watching him. The moment our eyes met, he frantically made my powdered milk and changed my diapers. For a long time, he seemed to believe that I only looked at him when I was hungry, sleepy, or needed my diaper changed.\nAfter my grandmother died and he separated from my biological mother, something seemed to change in him. He would come to my crib every day to talk to me, telling me about his loneliness and helplessness. I understood very little of what he said at the time, but it was more interesting listening to him than staring at the ceiling. As I listened to him talk, I started to imagine strange things, picturing him shrinking until he was smaller than I was, lying on a bed, unable to move. That was how I understood the concept of 'growing old' at the time, and in my imagination I would be sitting by his bedside talking to him.\nThat was when I first said the word 'papà', and this light appeared above my head.\n\nThe first time I observed our parents, they didn't know I was watching them either. They stood for a long time at the door to my room, playing rubber-bullet roulette to decide what was for supper as they peeked into my room. When they left, I saw them high-five each other for opening the car door at the exact same time, like two little kids. I started imagining them taking me to a lake outside the city, with me in-between them, making footprints both shallow and deep on the shores, and walking over each other's. When the sun set, we'd look back and see that we'd only left a single row of footprints, and we'd high-five each other like three little kids.\nThat was when I told the Notarial Hall officer that I liked that family.\n\nThe first time I observed you, you were lying in your crib, but I had a feeling that you knew I was watching you. Do you remember how you grabbed my hair and tried to eat it? You called me 'sis' before I could react.\nThat was when I truly began to treat you as a sister.\nYes, I started treating you as my dear sister because I pictured us being with each other.\nWhat exactly did I see? That's a secret. But I'm not telling you this as a riddle. I just wanted you to know that what I see in my head aren't predictions or even expectations for the future. I've never decided to get along with somebody simply because I predicted that I'd be happy with them... Besides, none of those images ever come true. I never had the chance to care for my biological father in his old age, and I doubt our parents and I will ever walk on a lake shore together.\nBut I feel like if you're going to be spending a lot of time with someone, you should be able to clearly imagine what that would look like. Only then can I be confident in us building that relationship.\nSo, those Rhodes Island operators you've been introducing me to, the ones who can use prophetic Arts... Maybe we'll become friends, but I won't ask them to predict my future. If I really could tell the future, and everything I pictured came true... That's when I would stop trying to get along with anyone."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "[Relic Inquiry Request]\nTo whom it may concern, Notarial Hall:\nWe did not find Lemuen's baby handprints and footprints among the effects of her biological parents after we adopted her.\nShe has expressed a strong desire for them, and we consider it very important for her mental health. We would like to ask whether they are currently in your possession, and whether it is possible to transfer them to us.\nJuly 19, 1073\n\n[Complaint letter, Family Suggestion Box]\nWhy does sis always take so long in the shower?\nShe's in the bathroom for like half an hour after the sound of water stops! What's she doing in there?\nCan we at least make it so she's always the last to shower at night?\n—El, 1085-08-02\n\n[Audio Log, 1101/09/23]\nThey cut out a shot with blood in this scene, didn't they?\nNo, I'm not complaining, I just happened to notice.\nMost people don't notice? Yes, I know. No, I'm not thirsting for more bloodshed in the movies I watch, although I guess I HAVE made you watch quite a few splatter films with me.\nYou're curious why I pay attention to these things?\nUnlike a lot of critics, I don't think blood and gore are sacrilegious... They mean something to me.\nWhen I was little, I took a lot time in the shower. No, I wasn't obsessed with cleanliness, but I would observe myself in the mirror after turning off the water, just like I observed everyone else.\nJust as I see in others the possibility of getting along with them, I saw my own possibilities in myself. I would imagine the places this body could take me, the things we could do together. It began at a very young age, maybe as early as when my biological father bought my baby handprints and footprints... Isn't it amazing that my hands and feet could permanently leave their mark somewhere?\nI imagined a lot of things. The more I imagined, the more I got along comfortably with myself. But you know what happened next.\nWhen I was bedridden, I didn't dare look in a mirror for a long time. I knew I didn't have any scars, and I wasn't worried about being ugly... I just feared that I wouldn't be able get along with myself like I used to.\nThat is, until Mostima started playing movies in my ward. It was a B-movie like we used to see in theaters, one with more than its fair share of gore. But when I saw that blood on screen, instead of making me uneasy, I felt a strange sense of... comfort.\nBecause that's all there is to the human body, this body I'd observed for so long, isn't it? A bag of blood and meat that could fall apart at any time.\nIt's not really logical, but when I saw all that gore, I suddenly felt foolish for entrusting all of my possibilities to this sack of meat. And even if it no longer listens to me, perhaps I was still in charge of my own future.\nI spent a few more years in the hospital, but I used that time to accomplish something quite impressive.\nYou want to know what it was? It's this wheelchair I'm sitting in, most of which I designed from the hospital bed.\nWould you like to hear everything it can do?"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Why do you see the reinstitution of mercenary guards, as exemplified by Landen, as a step back for Laterano?\nWhether you admit it or not, the sanctity of Laterano is fading. Can you picture the couriers of Leithanien proclaiming the revelation that the Sankta come from the same roots as the Sarkaz? Have you thought about how many times the Maylander Foundation has updated its report on the military value of the Law?\nA more formal organization? Do not forget that every Sankta, from the moment they obtain their patron firearm, is de facto part of a formal military organization. Laterano does not want for military strength, yet the best we can protect is this city beneath our feet, as well as an area of several hundred square kilometers around it.\nBut the protection the Lateran faith once offered extends far beyond that, and as such we must rely on the strength of the mercenary guards beyond its borders. You have already perused the proposal on accommodating the war refugees seeking sanctuary in Laterano. Did you ever stop to consider why it was not a town or a castle that protected them from the wars of Bolívar for a decade, but a monastery built to serve our Law?\nIt may be arrogant, but it cannot be denied that our monasteries across Terra, numbering more than a hundred, have provided sanctuary to believers who have never even once seen the white walls of Laterano—believers who may be even more devout than we are—on the strength of their sanctity alone. After our First Saint revealed the truth to all, however, this sanctity has become a curse, an excuse for those with ulterior motives to justify pillage and murder in the name of justice.\nYes, it is the Seventh Tribunal's duty to protect and restore Laterano's international reputation. How do you intend to achieve that, then? Another summit? In the previous summit, we at least offered a reason and a venue for peaceful dialogue between nations. Today, we have few if any chips to bargain with.\nBefore we can demonstrate our innocence to nonbelievers, we must first demonstrate to our <i>believers</i> that Laterano still offers salvation.\nThis is the duty of the Seventh Tribunal, and of myself, Lemuen.\nI ask you, assembled cardinals, for your cooperation.\n—Lemuen, Cardinal of the Seventh Tribunal, addressing the college of cardinals"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "The first time I saw her was on an old wall on the edge of the city, abandoned and forgotten because of plate rearrangements. Aside from my garage, there were only a few retired folks in this old district, soon to be demolished. There shouldn't have been anyone I didn't know.\nIt was a windy night. She sat on the wall, her legs like two dried branches, swaying stiffly in the wind. A wheelchair was parked behind her, reflecting the pale moonlight. I kept an eye on her as I searched the address book for the Notarial Hall's number, afraid that she would do something stupid if I looked away.\nShe did nothing, except look at me with a gaze so sharp I could not shake it even if I shed my whole skin. She raised a finger to her lips in a gesture to shush me. I put away my terminal, and by the time I looked back at her, her gaze had turned towards the night sky.\nI don't know why she climbed that old wall, or how, but I was relieved that she didn't intend to take her own life.\nAfter that, I saw her on the wall from time to time. I would wave at her, and she would wave back. I began to suspect she sat there for the same reason I wandered the old district at night. Laterano's days belonged to the noisy, happy crowds. Its nights belonged to the homeless vagabonds, to the angels whose empathy had gone awry, even to hooded Sarkaz—the ones who don't fit in, the ones who are broken.\nThe night before the old district was scheduled to be demolished, she appeared on the wall again, and I approached her for the first time. I told her I had a little toy in my garage that I made when I was young, a glider that fulfilled the dreams of many children before it was forgotten. Perhaps a little flight would make up for some regrets... if she wanted.\nShe gazed at me for a long time, before eventually declining.\n'Running away has no meaning if I'm not running away on my own,' she said.\n'Besides, I can fly without a glider.'\nWhen I looked up at the wall again, she was gone. The empty wheelchair drove back down the path I had come up on its own. On the other side, she sank towards the night beneath the walls, a massive umbrella in her hands."
+    }
+  ]
+}

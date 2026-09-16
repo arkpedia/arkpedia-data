@@ -1,0 +1,743 @@
+{
+  "name": "Gummy",
+  "rarity": 4,
+  "class": "Defender",
+  "branch": "Guardian",
+  "faction": "Ursus Student Self-Governing Group",
+  "umbrellaFactions": [
+    "Ursus"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Defense",
+    "Healing"
+  ],
+  "trait": "Can heal allies by using the skill",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Summer Flowers FA011"
+  ],
+  "ep": {
+    "Main": "Gazing From Great Heights",
+    "Co-star": null
+  },
+  "internalName": "char_196_sunbr",
+  "otherLanguages": {
+    "Chinese": "古米",
+    "Japanese": "グム",
+    "Korean": "굼"
+  },
+  "characterInfo": {
+    "File no.": "USS3",
+    "Operator Records": "Lost Companion Growing Up",
+    "Paradox Simulation": "Battlefield Culinarian",
+    "Illustrator": "Skade",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Natsumi Takamori",
+    "Chinese": "Liang Ruixue (credited as \"Winter\" in EN)",
+    "English": "Cristina Vee",
+    "Korean": "Kim Chae-ha",
+    "Russian": "Varvara Sarantseva (credited as \"Varvara Sarantzeva\")"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Ursus",
+    "Date of Birth": "October 2nd",
+    "Race": "Ursus",
+    "Height": "155 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Normal",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Frying Pan Specialist",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When attacking, has a 10% chance to deal 150% damage and Stun the target for 0.5 seconds"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When attacking, has a 13% (+3%) chance to deal 150% damage and Stun the target for 0.5 seconds"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When attacking, has a 15% chance to deal 200% damage and Stun the target for 1 second"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When attacking, has a 18% (+3%) chance to deal 200% damage and Stun the target for 1 second"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +21"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Frying Pan Specialist"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Gummy's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Block +1 .",
+        "New talent: Frying Pan Specialist .",
+        "New skill: Cooking ."
+      ],
+      "prerequisite": "Raise Gummy to Level 45.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 15000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 3
+        },
+        {
+          "name": "Sugar",
+          "quantity": 1
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Frying Pan Specialist improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Gummy to Elite 1 Level 60.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 60000
+        },
+        {
+          "name": "Defender Chip Pack",
+          "quantity": 5
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 13
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 7
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Provisions",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Restores the HP of a nearby ally by 95% of Gummy's ATK in the next attack Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Restores the HP of a nearby ally by 100% of Gummy's ATK in the next attack Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Restores the HP of a nearby ally by 105% of Gummy's ATK in the next attack Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Restores the HP of a nearby ally by 115% of Gummy's ATK in the next attack Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Restores the HP of a nearby ally by 120% of Gummy's ATK in the next attack Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Restores the HP of a nearby ally by 125% of Gummy's ATK in the next attack Can store 1 charges",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Restores the HP of a nearby ally by 130% of Gummy's ATK in the next attack Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Restores the HP of a nearby ally by 140% of Gummy's ATK in the next attack Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Restores the HP of a nearby ally by 150% of Gummy's ATK in the next attack Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Restores the HP of a nearby ally by 160% of Gummy's ATK in the next attack Can store 3 charges",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 1
+            },
+            {
+              "name": "Polyester Pack",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 2
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 2
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 2
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Cooking",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Start cooking and stops attacking for 10 seconds; DEF +50% Focuses on healing nearby allies after finishing cooking; ATK +30%",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Start cooking and stops attacking for 10 seconds; DEF +50% Focuses on healing nearby allies after finishing cooking. ATK +33%",
+            "initialSp": 10,
+            "spCost": 39,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Start cooking and stops attacking for 10 seconds; DEF +50% Focuses on healing nearby allies after finishing cooking; ATK +36%",
+            "initialSp": 10,
+            "spCost": 38,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Start cooking and stops attacking for 10 seconds; DEF +60% Focuses on healing nearby allies after finishing cooking; ATK +40%",
+            "initialSp": 12,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Start cooking and stops attacking for 10 seconds; DEF +60% Focuses on healing nearby allies after finishing cooking; ATK +43%",
+            "initialSp": 12,
+            "spCost": 36,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Start cooking and stops attacking for 10 seconds; DEF +60% Focuses on healing nearby allies after finishing cooking; ATK +46%",
+            "initialSp": 12,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Start cooking and stops attacking for 10 seconds; DEF +70% Focuses on healing nearby allies after finishing cooking; ATK +50%",
+            "initialSp": 14,
+            "spCost": 34,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Start cooking and stops attacking for 10 seconds; DEF +70% Focuses on healing nearby allies after finishing cooking; ATK +60%",
+            "initialSp": 16,
+            "spCost": 33,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Start cooking and stops attacking for 10 seconds; DEF +70% Focuses on healing nearby allies after finishing cooking; ATK +70%",
+            "initialSp": 18,
+            "spCost": 32,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Start cooking and stops attacking for 10 seconds; DEF +80% Focuses on healing nearby allies after finishing cooking; ATK +80%",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 2
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 1
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 2
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 2
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 2
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Oriron",
+          "quantity": 2
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Communication",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +30% and Morale consumed per hour -0.25"
+    },
+    {
+      "name": "Cooking",
+      "facility": "Dormitory",
+      "eliteLevel": "Elite 1",
+      "description": "When this Operator is assigned to a Dormitory, restores +0.35 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour +0.35"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Gummy's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "GUA-X: Медовые Пряники",
+      "mission": {
+        "requirement1": "During battle, have Gummy use Cooking a total of 6 times (excluding Support Units)",
+        "requirement2": "Clear Main Theme 4-2 with a 3-star rating; You must deploy your own Gummy, and cannot include any other Defender Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +150 , ATK +40",
+          "effectLabel": "New trait",
+          "effectText": "When healing allied units with less than 50% HP, increases heal amount by 15%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Aketon",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 20000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +210 , ATK +48",
+          "effectLabel": "Frying Pan Specialist improved",
+          "effectText": "When attacking, has a 20% chance to deal 200% damage and Stun the target for 1.5 seconds",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 15
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 25000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +250 , ATK +55",
+          "effectLabel": "Frying Pan Specialist improved",
+          "effectText": "When attacking, has a 23% chance to deal 200% damage and Stun the target for 1.5 seconds",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 5
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 6
+            },
+            {
+              "name": "LMD",
+              "quantity": 30000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Gummy was once the teenage group runner-up in the\nUrsus\nYouth Scout competition. Before the\nChernobog\nincident\n, Gummy was a middle school student in the city. She is skilled in Ursus-style cooking.\nIn a number of tests, she has exhibited the strength and solid physique characteristic of most\nUrsus\n. Gummy has been approved for an internship in a squad of\nDefender\nOperators\n. She also provides logistical support and combat culinary services for\nRhodes Island\n.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 45,
+        "base": {
+          "hp": 1059,
+          "atk": 179,
+          "def": 234,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1432,
+          "atk": 257,
+          "def": 345,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 60,
+        "base": {
+          "hp": 1432,
+          "atk": 257,
+          "def": 345,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1836,
+          "atk": 348,
+          "def": 460,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1836,
+          "atk": 348,
+          "def": 460,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2550,
+          "atk": 435,
+          "def": 562,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      }
+    ],
+    "trust": {
+      "hp": 400,
+      "atk": 0,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked by default",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this Operator is believed to be non-infected.\n\n[Cell-Originium Fusion Rate] 0% \nOperator shows no signs of infection at this time.\n\n[Blood Crystal Density] 0.12u/L \nThis Operator's Blood Crystal Density is well within expected ranges."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Of the five inductees she joined with, Gummy is the one most energetically trying to integrate into the culture of Rhodes Island. She skillfully converts ingredients into cooking materials and has used her vigorous Ursus manner to convert the kitchen into a battleground of sorts. Gummy's cooking doesn't quite satisfy the tastes of those accustomed to the food of other races and nations, and she has neither the experience nor the interest to be our main chef, but the fresh dynamism of Ursus cooking has become an irreplacable part of Rhodes Island's culinary culture.\nOne day's breakfast menu: Yakulevich red sausage (with garlic), Ursus-style boiled beans, soft oatmeal bread, and fermented yogurt. \nThe taste is said to be exquisite."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Gummy is lively, kind, and pure. She always speaks from the heart and has a genuine desire to please everyone. \nGummy trusts her leader, Zima, implicitly. She has actively tried to create a jubilant atmosphere for the Ursus Student Self-government Group and has tried to put to rest some of the unease the Ursus students have felt since the Chernobog incident. Gummy firmly believes that integrating into Rhodes Island is the proper course of action and is amiable towards all of Rhodes Island's Operators. \nPsychological counselors sent by the medical team have confirmed a hypothesis: Gummy is working and making connections as a way of managing her anxiety. Over several consultations, Gummy has not yet disclosed what the other members of the student union experienced during the Chernobog incident."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Gummy was born in the city of Chernobog in the Empire of Ursus. Her parents are currently employed elsewhere. Gummy participated in Chernobog's local Youth Scout group and achieved outstanding results in its events and competitions. There is reason to believe that Gummy's survival and rescue skills have their roots in this experience. \nWhen Gummy first joined Rhodes Island, she carried all kinds of equipment that she had found in ruins following the Chernobog incident."
+    }
+  ]
+}

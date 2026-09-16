@@ -1,0 +1,763 @@
+{
+  "name": "Firewhistle",
+  "rarity": 5,
+  "class": "Defender",
+  "branch": "Fortress",
+  "faction": "Rim Billiton",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS",
+    "Defense"
+  ],
+  "trait": "When not blocking enemies, prioritizes dealing ranged AoE Physical damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_493_firwhl",
+  "otherLanguages": {
+    "Chinese": "火哨",
+    "Japanese": "ファイヤーホイッスル",
+    "Korean": "파이어휘슬"
+  },
+  "characterInfo": {
+    "File no.": "RB09",
+    "Operator Record": "The Lone Goer",
+    "Paradox Simulation": "\"A Warm Welcome\"",
+    "Illustrator": "IRIS_口艺",
+    "Release Date": "2023/07/28",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Eriko Matsui",
+    "Chinese": "Ruo Wu",
+    "English": "Jennifer Losi",
+    "Korean": "Kim So-hee"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "5 years",
+    "Place of Birth": "Rim Billiton",
+    "Date of Birth": "May 6th",
+    "Race": "Liberi",
+    "Height": "166 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Flexible Fighter",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "ATK +6% when not blocking an enemy, DEF +6% when blocking an enemy"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "ATK +8% (+2%) when not blocking an enemy, DEF +8% (+2%) when blocking an enemy"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "ATK +12% when not blocking an enemy, DEF +12% when blocking an enemy"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "ATK +14% (+2%) when not blocking an enemy, DEF +14% (+2%) when blocking an enemy"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +32"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Flexible Fighter"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Firewhistle's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Block +1 .",
+        "New talent: Flexible Fighter .",
+        "New skill: Scorched Earth ."
+      ],
+      "prerequisite": "Raise Firewhistle to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Flexible Fighter improved.",
+        "Range extended.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Firewhistle to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Grindstone Pentahydrate",
+          "quantity": 7
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 13
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Wildfire",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Next attack deals 100% ATK as Physical damage and burns damaged enemies. Burning enemies take 30% of Firewhistle's ATK as Arts damage per second for 3 s.",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Next attack deals 110% ATK as Physical damage and burns damaged enemies. Burning enemies take 30% of Firewhistle's ATK as Arts damage per second for 3 s.",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Next attack deals 120% ATK as Physical damage and burns damaged enemies. Burning enemies take 30% of Firewhistle's ATK as Arts damage per second for 3 s.",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Next attack deals 125% ATK as Physical damage and burns damaged enemies. Burning enemies take 40% of Firewhistle's ATK as Arts damage per second for 3 s.",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Next attack deals 135% ATK as Physical damage and burns damaged enemies. Burning enemies take 40% of Firewhistle's ATK as Arts damage per second for 3 s.",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Next attack deals 145% ATK as Physical damage and burns damaged enemies. Burning enemies take 40% of Firewhistle's ATK as Arts damage per second for 3 s.",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Next attack deals 150% ATK as Physical damage and burns damaged enemies. Burning enemies take 40% of Firewhistle's ATK as Arts damage per second for 4 s.",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Next attack deals 160% ATK as Physical damage and burns damaged enemies. Burning enemies take 40% of Firewhistle's ATK as Arts damage per second for 4 s.",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Next attack deals 175% ATK as Physical damage and burns damaged enemies. Burning enemies take 40% of Firewhistle's ATK as Arts damage per second for 4 s.",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Next attack deals 185% ATK as Physical damage and burns damaged enemies. Burning enemies take 50% of Firewhistle's ATK as Arts damage per second for 4 s.",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-12",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 4
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Damage Over Time",
+            "description": "Enemies incur a damage per second for a certain duration"
+          }
+        ]
+      },
+      {
+        "name": "Scorched Earth",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "17 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Each attack causes the 4 adjacent tiles to the target to burn for 3 s, causing ground enemies within to take 30% of Firewhistle's ATK as Arts damage per second.",
+            "initialSp": 13,
+            "spCost": 50,
+            "duration": 17
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Each attack causes the 4 adjacent tiles to the target to burn for 3 s, causing ground enemies within to take 35% of Firewhistle's ATK as Arts damage per second.",
+            "initialSp": 14,
+            "spCost": 48,
+            "duration": 17
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Each attack causes the 4 adjacent tiles to the target to burn for 3 s, causing ground enemies within to take 40% of Firewhistle's ATK as Arts damage per second.",
+            "initialSp": 15,
+            "spCost": 47,
+            "duration": 17
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Each attack causes the 4 adjacent tiles to the target to burn for 4 s, causing ground enemies within to take 45% of Firewhistle's ATK as Arts damage per second.",
+            "initialSp": 16,
+            "spCost": 46,
+            "duration": 17
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Each attack causes the 4 adjacent tiles to the target to burn for 4 s, causing ground enemies within to take 50% of Firewhistle's ATK as Arts damage per second.",
+            "initialSp": 17,
+            "spCost": 45,
+            "duration": 17
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Each attack causes the 4 adjacent tiles to the target to burn for 4 s, causing ground enemies within to take 60% of Firewhistle's ATK as Arts damage per second.",
+            "initialSp": 18,
+            "spCost": 44,
+            "duration": 17
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Each attack causes the 4 adjacent tiles to the target to burn for 5 s, causing ground enemies within to take 65% of Firewhistle's ATK as Arts damage per second.",
+            "initialSp": 19,
+            "spCost": 43,
+            "duration": 17
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Each attack causes the 4 adjacent tiles to the target to burn for 5 s, causing ground enemies within to take 75% of Firewhistle's ATK as Arts damage per second.",
+            "initialSp": 20,
+            "spCost": 42,
+            "duration": 17
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Each attack causes the 4 adjacent tiles to the target to burn for 5 s, causing ground enemies within to take 80% of Firewhistle's ATK as Arts damage per second.",
+            "initialSp": 21,
+            "spCost": 41,
+            "duration": 17
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Each attack causes the 4 adjacent tiles to the target to burn for 6 s, causing ground enemies within to take 85% of Firewhistle's ATK as Arts damage per second.",
+            "initialSp": 23,
+            "spCost": 40,
+            "duration": 17
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Damage Over Time",
+            "description": "Enemies incur a damage per second for a certain duration"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Aketon",
+          "quantity": 3
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Warm-Up",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, Morale loss of Operators in the Trading Post -0.1 per hour"
+    },
+    {
+      "name": "Advocate",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, other Operators working in the Trading Post have +15% order acquisition efficiency"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Firewhistle's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "FOR-X: \"Footprints Growing\"",
+      "mission": {
+        "requirement1": "During battle, have Firewhistle use Scorched Earth a total of 8 times (excluding Support Units)",
+        "requirement2": "Clear Main Theme S4-6 with a 3-star rating; You must deploy your own Firewhistle, and only Ranged Operators are allowed for the remaining members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +42 , DEF +42",
+          "effectLabel": "New trait",
+          "effectText": "Increases ATK to 110% when attacking blocked enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +52 , DEF +52",
+          "effectLabel": "Flexible Fighter improved",
+          "effectText": "ATK +16% when not blocking an enemy, DEF +16% when blocking an enemy",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +58 , DEF +58",
+          "effectLabel": "Flexible Fighter improved",
+          "effectText": "ATK +18% when not blocking an enemy, DEF +18% when blocking an enemy",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Firewhistle, the owner of a small\nRim Billiton\nPMC\n. As the representative of her company, she entered into a cooperative agreement with\nRhodes Island\nand signed on as an operator to provide her services to Rhodes Island.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1203,
+          "atk": 456,
+          "def": 205,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 2,
+          "interval": 2.8
+        },
+        "max": {
+          "hp": 1605,
+          "atk": 585,
+          "def": 306,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 2,
+          "interval": 2.8
+        },
+        "rangeId": "4-5"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1605,
+          "atk": 585,
+          "def": 306,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 25,
+          "block": 3,
+          "interval": 2.8
+        },
+        "max": {
+          "hp": 2140,
+          "atk": 732,
+          "def": 414,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 25,
+          "block": 3,
+          "interval": 2.8
+        },
+        "rangeId": "4-5"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2140,
+          "atk": 732,
+          "def": 414,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 27,
+          "block": 3,
+          "interval": 2.8
+        },
+        "max": {
+          "hp": 2983,
+          "atk": 882,
+          "def": 568,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 27,
+          "block": 3,
+          "interval": 2.8
+        },
+        "rangeId": "4-6"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 50,
+      "def": 50
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Firewhistle shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.13u/L\nAs security personnel active in the Rim Billiton wilderness, it is impossible for Firewhistle to completely avoid Originium and its products. Even though she and her workers have satisfactory Oripathy protection, adequate rest is necessary."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "An energetic Liberi, Firewhistle operates a PMC in Rim Billiton.\nPerhaps owing to the fact that she can often be found aboard Rhodes Island and how much she likes to solicit business for her company, other operators often mistake her for a liaison for her PMC, a representative stationed onboard Rhodes Island, or someone who is in charge of her company only in name.\nShe doesn't seem to mind this misunderstanding herself very much, and even when someone asks this 'liaison' about her PMC, instead of discussing what she does at her company, she simply gives them an earnest quote and enthusiastically welcomes their patronage whenever they find themselves in Rim Billiton.\nLater on, that operator actually had to go to Rim Billiton, and he really chose to hire Firewhistle's company. After he returned to Rhodes Island, he told us about an incident where they ran into bandits in the Rim Billiton wilderness.\n'That merry atmosphere we had was gone in an instant when we noticed the dust kicked up by their cars in the distance.\n'Immediately, the squad dispersed, and Firewhistle ducked behind cover with me in tow.\n'She kept talking to the teammates in hushed tones through the walkie-talkie up till a certain point. Then, aside from the cars that were closing in, everything was quiet.\n'A few seconds after that, she raised her hand out of the cover and gestured something. Right after that, there was a series of loud cannon fire. Almost blew my ear drums out.\n'When I poked my head out of cover, I saw nothing but burning flames and a bunch of wrecked cars. Her team's members started popping out of every nook and cranny of the wilderness and huddled up around Firewhistle.\n'Probably not giving her enough credit, but that was when I realized for the first time that she's actually the backbone of that group.'\nIn response, Firewhistle told us: 'My bad. I should've put more thought into soundproofing. Next time, I'll give our customers their own personal earmuffs!'"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "As a small PMC that was able to gain a foothold in Rim Billiton, there's no question Firewhistle and her team are a capable bunch. Nonetheless, she entered into a cooperative agreement with Rhodes Island because her business is struggling and on the verge of bankruptcy.\nThe fact is that her partnership with Rhodes Island is her last ditch attempt at keeping her business afloat. If Rhodes Island had been any less receptive to a partnership, or a smaller, less stable client, Firewhistle's PMC would likely have been unable to avoid bankruptcy. Firewhistle was very forthcoming with this point when she consulted us on the partnership.\nThe reason that her business is struggling actually can't get any simpler: over 60% of her employees are Infected. In reality, the partnership was not her main objective. Her first and foremost priority was to seek medical services for her employees and to make sure they would continue to receive health care after her company's bankruptcy.\nConsidering that she is not an Infected herself, the operator in charge of business liaisons courteously asked her for the reason behind her unique employment policy, to which she provided a satisfactory answer. Later, after the agreement was signed, she provided an ambiguous response when the Doctor asked her a similar question. Then, when the Doctor asked her the same question again after the two companies had built a close rapport, she provided yet another answer.\n'No one out there's hiring Infected, and only I am willing to treat them like any other. Doesn't that mean I get first pick on all the Infected keen to be mercs in Rim Billiton, no matter their skill?'\n'You just gotta take the right precautions and keep tabs on everyone's health, and there is nothing left to worry about. Isn't that how things work here, too?'\n'I can't well sit by and watch my brothers and sisters in arms die because of some stupid bias.'\nAll three answers could not be more different, but they are all equally genuine and true."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Firewhistle once worked at a large Rim Billiton PMC and led a security team. That was when she developed that tactful yet not unlikable disposition. As the captain, she had to both contend with higher-ups who only want to jack up their missions' profits as well as clean up any messes her subordinates make. Sometimes, she even had to take the blame for them. It was a consensus within the company that combat squad leaders cannot be changed without a good reason. Plus, she did stand out from the crowd with her remarkable abilities. As such, she was reasonably satisfied during that time.\nThere was a time when, right before a dangerous mission began, her superior asked her to use someone as pawn—a teammate skilled in escape and disguise. Firewhistle refused because the teammate had come down with pulmonary tuberculosis during the last operation, which had since worsened. Yet her superior could not be more adamant on this matter.\nRealizing how unusual the situation was, she chose to spend all the time and energy she had left before the mission on planning instead of arguing with her superior. In the end, the team's exceptional performance, combined with a little luck, helped bring the mission to a successful conclusion without any casualties or injuries. The team was overjoyed, yet Firewhistle felt a hint of uneasiness about the whole thing.\nThen, when they made it back to the headquarters for recuperation, Firewhistle found herself aggressively reprimanded by her superiors, while her teammate with pulmonary tuberculosis was forcibly reassigned and was never heard from again. His position was filled by someone reassigned from another team.\nAfter several appeals, Firewhistle finally pieced together the truth from her impatient superior's answers: when the company was hiring, they advertised that workers who had to retire because of work-related injuries or disabilities would receive a significant lifetime benefits package, and that is what it says on the contract as well. Compared to these costs, the lump sum death benefits are not worth mentioning.\nDisgusted by this, Firewhistle swore to herself that she would never allow this to happen again. Not long after that, her superior once again came to her before a mission and laid it out bluntly: as long as she took out the man who was reassigned to her team not too long ago—someone who was infected during a mission and had onset Oripathy—she would be promoted to company management.\nThis time, Firewhistle didn't spend any time working on her strategies. Instead, she formed her own company and took her entire team with her. As for the Infected with onset Oripathy, he too became one of Firewhistle's PMC's first members."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Firewhistle could have hid the fact that there are Infected within her company, but she didn't. From the day she went independent, she made it a point to operate her company against the mainstream ideas in Rim Billiton, and recruited workers without consideration to their infection status. It's true that she managed to hire a great number of capable workers, but this also directly led to a dearth of prospective customers in Rim Billiton. Anyone could have seen it coming, but Firewhistle still did it without hesitation.\nWe were left wondering where her rebellious attitude came from until one day when she got drunk at a Rhodes Island cocktail party and went into her childhood: her father's outdoors iron mine, the workers who toiled away there for hours on end, the ceaseless procession of trucks, and her childhood playmates, the workers' children.\nHer parents weren't your stereotypical black-hearted mine owners. Out of a basic sense of morality, they equipped the mine with safety equipment, did not shy away from raises, asked middle management to not be stingy with approving the workers' time off, and even invited the workers to dine with them on holidays.\nThat said, they and the mine workers were from different walks of life.\nWhen the young Firewhistle played with the mine workers' children, her mother was afraid she would pick up the workers' profanities and embarrass the family during 'more refined situations.' When she wanted to ride on her father's car into the city with her best friend, her father would tell her that the interior of the luxury car would be very hard to clean once stained by metal shavings. Before she could even argue, her friend had already taken a few steps back, knowing their place. By the time she started high school, most of her friends had already started working in the mines as her family's employees... Reality was getting harsher and harsher by the day, and there was not even a villain she could blame. In an environment like that, Firewhistle's rebellious inclinations grew by the day. In the end, not only did she refuse to go home to work in the family business after she graduated from college, she even refused any financial assistance from her parents. The two unsuccessful murders added fuel to the fire that had been burning in her heart.\nStill, her kind nature managed to keep her from going down an even more extreme path. She merely started to openly fight against the things she saw as wrong—the prejudice against Oripathy, large corporations that put profits above conscience, or crossbow bolts being fired at her teammates—no matter how enormous and unshakeable they seemed."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "'How come the Medical Department is looking so busy today?'\n'After that shipment of medicine made it to the Iron Carrot City, Firewhistle gave her whole crew paid time off, and the dozen or so of them all decided to come to Rhodes Island for a checkup.'\n'Is this meant to be time off, medical checkup, or a vacation? Or, uh... What do they call those... group medical tourism?'\n'How would I know? They're all on the top deck. If you want, why don't you go over there and join in on the fun.'\n'Fun?'\n'Her Infected underlings all have their Oripathy under control, and the most the non-Infected ones have are muscle pains, joint pains, and whatnot. Plus, Gavial's on duty today. Is everything falling into place for you yet?'\n'Haha, I'll pass. I'm not very used to rowdy situations like that.'\n'Alright, alright.'\n'Firewhistle's probably having plenty of fun herself, right?'\n'Her? She was Gavial's first opponent in the wrestling matches. Got her ass handed to her. Everyone on her team started saying they were gonna get revenge.'\n'It's Gavial we're talking about. I doubt they're gonna get anywhere with that.'\n'Yeah, I agree.'\n'What happened after Firewhistle got back up? She didn't work with her team to figure out how to wear Gavial out?'\n'She never got back up.'\n'Hey, stop trying to scare me.'\n'I'm not. After she fell down, all she did was lie there and laugh, not willing to get back up. Then one of her teammates squeezed a glass of cocktail that she'd just made into her hand. Then, before we knew it, she was asleep with that glass still in her hand.'\n'Well, she's been pretty tired lately.'\n'Yeah.'"
+    }
+  ]
+}

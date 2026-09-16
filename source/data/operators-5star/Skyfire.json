@@ -1,0 +1,753 @@
+{
+  "name": "Skyfire",
+  "rarity": 5,
+  "class": "Caster",
+  "branch": "Splash Caster",
+  "faction": "Victoria",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "AoE",
+    "Crowd-Control"
+  ],
+  "trait": "Deals AOE Arts damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Temperature Difference RT.RX01"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_166_skfire",
+  "otherLanguages": {
+    "Chinese": "天火",
+    "Japanese": "スカイフレア",
+    "Korean": "스카이파이어"
+  },
+  "characterInfo": {
+    "File no.": "SK01",
+    "Operator Record": "Old Classmate",
+    "Paradox Simulation": "Heavens Ablaze",
+    "Illustrator": "TOKI",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Kana Ueda",
+    "Chinese": "Xiaowen Xu",
+    "English": "Anne Yatco",
+    "Korean": "Yeo Yun-mi"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "1 year",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "June 1st",
+    "Race": "Feline",
+    "Height": "162 cm",
+    "Infection Status": "Non-infected as confirmed by medical report."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Outstanding"
+  },
+  "talents": [
+    {
+      "name": "Arts Sniper",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Increases the Arts Damage taken by all blocked enemies by 7% when deployed"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Increases the Arts Damage taken by all blocked enemies by 10% (+3%) when deployed"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Increases the Arts Damage taken by all blocked enemies by 15% when deployed"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Increases the Arts Damage taken by all blocked enemies by 18% (+3%) when deployed"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +33"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Arts Sniper"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Skyfire's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +3 .",
+        "New talent: Arts Sniper .",
+        "New skill: Fire of Heaven .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Skyfire to Level 45.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Arts Sniper improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Skyfire to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester Lump",
+          "quantity": 7
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 13
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "ATK Up γ",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +30%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +35%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +40%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +45%",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +50%",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +55%",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +60%",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +75%",
+            "initialSp": 10,
+            "spCost": 34,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +90%",
+            "initialSp": 10,
+            "spCost": 33,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +100%",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Fire of Heaven",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25–40 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Interval increases , attack changes into summoning meteorites from the sky; Meteorites take a while to fall down, dealing 170% ATK as Arts damage to enemies in a large area and Stunning all hit targets for 0.1 seconds",
+            "initialSp": 0,
+            "spCost": 35,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Interval increases , attack changes into summoning meteorites from the sky; Meteorites take a while to fall down, dealing 175% ATK as Arts damage to enemies in a large area and Stunning all hit targets for 0.1 seconds",
+            "initialSp": 0,
+            "spCost": 34,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Interval increases , attack changes into summoning meteorites from the sky; Meteorites take a while to fall down, dealing 180% ATK as Arts damage to enemies in a large area and Stunning all hit targets for 0.1 seconds",
+            "initialSp": 0,
+            "spCost": 33,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Interval increases , attack changes into summoning meteorites from the sky; Meteorites take a while to fall down, dealing 190% ATK as Arts damage to enemies in a large area and Stunning all hit targets for 0.15 seconds",
+            "initialSp": 0,
+            "spCost": 32,
+            "duration": 28
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Interval increases , attack changes into summoning meteorites from the sky; Meteorites take a while to fall down, dealing 195% ATK as Arts damage to enemies in a large area and Stunning all hit targets for 0.15 seconds",
+            "initialSp": 0,
+            "spCost": 31,
+            "duration": 28
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Interval increases , attack changes into summoning meteorites from the sky; Meteorites take a while to fall down, dealing 200% ATK as Arts damage to enemies in a large area and Stunning all hit targets for 0.15 seconds",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 28
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Interval increases , attack changes into summoning meteorites from the sky; Meteorites take a while to fall down, dealing 210% ATK as Arts damage to enemies in a large area and Stunning all hit targets for 0.2 seconds",
+            "initialSp": 0,
+            "spCost": 29,
+            "duration": 31
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Interval increases , attack changes into summoning meteorites from the sky; Meteorites take a while to fall down, dealing 220% ATK as Arts damage to enemies in a large area and Stunning all hit targets for 0.4 seconds",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": 33
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Interval increases , attack changes into summoning meteorites from the sky; Meteorites take a while to fall down, dealing 230% ATK as Arts damage to enemies in a large area and Stunning all hit targets for 0.6 seconds",
+            "initialSp": 0,
+            "spCost": 27,
+            "duration": 35
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Interval increases , attack changes into summoning meteorites from the sky; Meteorites take a while to fall down, dealing 240% ATK as Arts damage to enemies in a large area and Stunning all hit targets for 1 seconds",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": 40
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 2
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Caster Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Caster Operators' Specialization training speed +30%"
+    },
+    {
+      "name": "Caster Expert βReplacesCaster Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Caster Operators' Specialization training speed +50%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Skyfire's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "SPC-Y: Fire Retardant Treatment",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Skyfire, and unleash Fire of Heaven at least 1 time in each battle",
+        "requirement2": "Clear Main Theme S3-5 with a 3-star rating; You must deploy your own Skyfire, and have Skyfire defeat at least 10 enemies, including at least 2 Butchers"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +40 , Cost -8 , ASPD +4",
+          "effectLabel": "New trait",
+          "effectText": "Reduces Deployment Cost",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +58 , Cost -8 , ASPD +5",
+          "effectLabel": "Arts Sniper improved",
+          "effectText": "Increases the Arts Damage taken by all blocked enemies by 20% when deployed",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +70 , Cost -8 , ASPD +5",
+          "effectLabel": "Arts Sniper improved",
+          "effectText": "Increases the Arts Damage taken by all blocked enemies by 23% when deployed",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Skyfire is affiliated with King's Wand, the central organ of Foxtail, an\nOriginium\npower research institute. A tech specialist from\nVictoria\n, she holds degrees in geology and Originium geology, and is respected in fields of Originium study both practical and theoretical.\nCurrently the Chief\nCaster\nstationed at\nRhodes Island\non loan from the King's Wand, Skyfire's mission is to jointly research Originium while providing combat mission assistance.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 727,
+          "atk": 364,
+          "def": 48,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 30,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 1010,
+          "atk": 513,
+          "def": 74,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 30,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "2-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1010,
+          "atk": 513,
+          "def": 74,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 33,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 1263,
+          "atk": 658,
+          "def": 102,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 33,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "3-6"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1263,
+          "atk": 658,
+          "def": 102,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 33,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 1620,
+          "atk": 784,
+          "def": 122,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 33,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "3-6"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 90,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging test for this Operator showed clear outlines of internal organs without any unusual dark signs. No unusual traces of Originium particles present in her system, no signs of infection, confirming her as Non-infected. \n\n[Cell-Originium Assimilation] 0% \nOperator Skyfire showed no symptoms of Oripathy. \n\n[Blood Originium-Crystal Density] 0.11u/L \nOperator Skyfire rarely operates in areas with a high Originium presence. \n\nThat's a sure sign of a diva who hasn't seen much of the real world, if you ask me. She needs a lesson in the grim reality of war and just how hard the Infected have it. Skyfire should be given more hands-on combat missions to knock some sense into her. \n—Medic Operator Gavial \nA reminder, Gavial, that all physical examinations are public record. \n— Dr. Kal'tsit"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Operator Skyfire's Originium ability far exceeds that of peers of her age. She excels at pulling fire into a huge mass and incinerating clustered targets with it. \nIn the process, the flame also disintegrates her outfit, even setting her hair ablaze, but never damages her. \nWith intense heat a brilliant glow, her power manifests like the sun itself, hence her codename. \nWith such immense power, the talented yet inexperienced Skyfire still cannot fully control it. \nListen for the fire alarm anywhere Skyfire may be present."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "What motivated the partnership between King's Wand and Rhodes Island was rather insignificant. \nBut to scholars of the Wand, it was practically intolerable. \nIn a protest-turned-riot, the Infected accidentally killed 'Phil,'the King's Wand's pet. This enraged the Wand scholars. The demonstrators never could have anticipated the scholars would be as combat ready as they were, and brimming with youthful, rebellious rage. \nJust because of a pet-- a member of the family to the Wand, the scholars began a campaign of vengeance that devastated the protesters. \nThe King's Wand at the time was a group of just five students. So they sought the assistance of an organization specialized in dealing with the Infected, with the intention of eradicating the Infected movement and its vile protestors. \nThat's the reason King's Wand is working with Rhodes Island. More or less."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "When Skyfire uses her Originium power, everything on her person is destroyed by the intense heat her body releases. \nThat creates two problems. First, while the excessive heat is harmless to Skyfire, anything close by usually isn't so lucky. \nSecond, there is no fabric that could survive her flames, meaning she's always looking for an alternative.\nRhodes Island has tried to make viable costumes for her, but all attempts have failed. \nThese two problems are the only issues Skyfire has at the moment."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Skyfire actually is not arrogant or cynical. It's just that, to her, very few people can keep up with her leaps in logic and her visionary decisions. It's a failure in communication that is truly bothering her. \nSkyfire may not want to scold or criticize her peers, and her abrasiveness is perhaps an attempt to express her own greatness. \nFortunately, Skyfire does have some like-minded friends, with such a diversity of Operators on the island. That offsets a bit of her discomfort and loneliness. \nAssuming she felt any. \nSome nosy Operators have claimed Skyfire apologized profusely to the Doctor for accidentally destroying mission debriefs."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "To wield the power of the King's Wand, a scholar faces a test of her own mastery. \nA condensed drop of water is more resilient than a shattered gem, and a well-balanced team beats a haphazard squad of eccentric geniuses. \nOf course, given a commander with the talent to min/max their strengths and weaknesses, they can still rule the battlefield. \nAnd it should probably start with the Operator who burns off her uniform on a whim."
+    }
+  ]
+}

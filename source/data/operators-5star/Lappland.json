@@ -1,0 +1,747 @@
+{
+  "name": "Lappland",
+  "rarity": 5,
+  "class": "Guard",
+  "branch": "Lord",
+  "faction": "Siracusa",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS",
+    "Debuff"
+  ],
+  "trait": "Can launch Ranged Attacks that deal 80% of normal ATK",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": "Lappland the Decadenza",
+  "skins": [
+    "Refined Horrormare"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_140_whitew",
+  "otherLanguages": {
+    "Simplified Chinese": "拉普兰德",
+    "Traditional Chinese": "拉普蘭德",
+    "Japanese": "ラップランド",
+    "Korean": "라플란드"
+  },
+  "characterInfo": {
+    "File no.": "SR01",
+    "Illustrator": "幻象黑兔",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Asami Imai",
+    "Chinese": "Chen Yanyi (credited as \"Yee Chen\" in EN)",
+    "English": "Christina Kowalchuk",
+    "Korean": "Seo Yu-ri",
+    "Italian": "Elisa Contestabile"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "5 years",
+    "Place of Birth": "Siracusa",
+    "Date of Birth": "November 11th",
+    "Race": "Lupo",
+    "Height": "162 cm",
+    "Infection Status": "Infection confirmed by medical report."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Outstanding",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Spiritual Destruction",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Disables the target's special ability when attacking, lasting 1 second"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Disables the target's special ability when attacking, lasting 2 (+1) seconds"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Disables the target's special ability when attacking, lasting 5 seconds"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Disables the target's special ability when attacking, lasting 6 (+1) seconds"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +25"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Spiritual Destruction"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Lappland's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Spiritual Destruction .",
+        "New skill: Wolf Spirit .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Lappland to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Spiritual Destruction improved."
+      ],
+      "prerequisite": "Raise Lappland to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Guard Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Optimized Device",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Sundial",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Auto",
+        "duration": "Unlimited",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +30% ; 20% chance to dodge Physical attacks [ note 1 ] Infinite duration.",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": "∞"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +33% ; 20% chance to dodge Physical attacks [ note 1 ] Infinite duration.",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": "∞"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +37% ; 20% chance to dodge Physical attacks [ note 1 ] Infinite duration.",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": "∞"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +43% ; 25% chance to dodge Physical attacks [ note 1 ] Infinite duration.",
+            "initialSp": 0,
+            "spCost": 37,
+            "duration": "∞"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +47% ; 25% chance to dodge Physical attacks [ note 1 ] Infinite duration.",
+            "initialSp": 0,
+            "spCost": 37,
+            "duration": "∞"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +50% ; 25% chance to dodge Physical attacks [ note 1 ] Infinite duration.",
+            "initialSp": 0,
+            "spCost": 37,
+            "duration": "∞"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +55% ; 30% chance to dodge Physical attacks [ note 1 ] Infinite duration.",
+            "initialSp": 0,
+            "spCost": 33,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +60% ; 33% chance to dodge Physical attacks [ note 1 ] Infinite duration.",
+            "initialSp": 0,
+            "spCost": 32,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +65% ; 36% chance to dodge Physical attacks [ note 1 ] Infinite duration.",
+            "initialSp": 0,
+            "spCost": 31,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +70% ; 40% chance to dodge Physical attacks [ note 1 ] Infinite duration.",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": "∞"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Wolf Spirit",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Auto",
+        "duration": "15–20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +60% ; Damage dealt turns into Arts Damage; Attacks 1 extra target; The damage reduction of Ranged Attacks is removed Automatically activated",
+            "initialSp": 0,
+            "spCost": 30,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +65% ; Damage dealt turns into Arts Damage; Attacks 1 extra target; The damage reduction of Ranged Attacks is removed Automatically activated",
+            "initialSp": 0,
+            "spCost": 29,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +70% ; Damage dealt turns into Arts Damage; Attacks 1 extra target; The damage reduction of Ranged Attacks is removed Automatically activated",
+            "initialSp": 0,
+            "spCost": 28,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +75% ; Damage dealt turns into Arts Damage; Attacks 1 extra target; The damage reduction of Ranged Attacks is removed Automatically activated",
+            "initialSp": 0,
+            "spCost": 27,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +80% ; Damage dealt turns into Arts Damage; Attacks 1 extra target; The damage reduction of Ranged Attacks is removed Automatically activated",
+            "initialSp": 0,
+            "spCost": 26,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +85% ; Damage dealt turns into Arts Damage; Attacks 1 extra target; The damage reduction of Ranged Attacks is removed Automatically activated",
+            "initialSp": 0,
+            "spCost": 25,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +90% ; Damage dealt turns into Arts Damage; Attacks 1 extra target; The damage reduction of Ranged Attacks is removed Automatically activated",
+            "initialSp": 0,
+            "spCost": 24,
+            "duration": 17
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +100% ; Damage dealt turns into Arts Damage; Attacks 1 extra target; The damage reduction of Ranged Attacks is removed Automatically activated",
+            "initialSp": 0,
+            "spCost": 22,
+            "duration": 17
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +110% ; Damage dealt turns into Arts Damage; Attacks 1 extra target; The damage reduction of Ranged Attacks is removed Automatically activated",
+            "initialSp": 0,
+            "spCost": 20,
+            "duration": 17
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +120% ; Damage dealt turns into Arts Damage; Attacks 1 extra target; The damage reduction of Ranged Attacks is removed Automatically activated",
+            "initialSp": 0,
+            "spCost": 17,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-12",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 2
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Hidden Purpose α",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the same Trading Post as Texas , Morale consumed each hour -0.1 , and order limit +2"
+    },
+    {
+      "name": "Hidden Purpose βReplacesHidden Purpose α",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the same Trading Post as Texas , Morale consumed each hour -0.1 , and order limit +4"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Lappland's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "LOR-X: \"The Young Fang\"",
+      "mission": {
+        "requirement1": "Deal a total of 80,000 damage with your own Lappland",
+        "requirement2": "Clear Main Theme 4-7 with a 3-star rating; You must deploy your own Lappland, and have Lappland defeat at least 10 Infused Originium Slugs"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +110 , ATK +20 , ASPD +4",
+          "effectLabel": "New trait",
+          "effectText": "Attacks deal an additional 10% ATK as Arts damage.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +150 , ATK +32 , ASPD +5",
+          "effectLabel": "Spiritual Destruction improved",
+          "effectText": "Attacks disable the target's special abilities and inflict 4% Fragile for 6s.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +175 , ATK +40 , ASPD +6",
+          "effectLabel": "Spiritual Destruction improved",
+          "effectText": "Attacks disable the target's special abilities and inflict 8% Fragile for 6s.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Lappland's real identity is unknown, her background a mystery. She has demonstrated impressive destructive prowess in tactical assaults and search-and-destroy missions.\nShe is currently a special ops\nOperator\nfor\nRhodes Island\n.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 987,
+          "atk": 285,
+          "def": 173,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 2,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 1410,
+          "atk": 426,
+          "def": 238,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 2,
+          "interval": 1.3
+        },
+        "rangeId": "2-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1410,
+          "atk": 426,
+          "def": 238,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 2,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 1856,
+          "atk": 554,
+          "def": 302,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 2,
+          "interval": 1.3
+        },
+        "rangeId": "3-12"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1856,
+          "atk": 554,
+          "def": 302,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 2,
+          "interval": 1.3
+        },
+        "max": {
+          "hp": 2350,
+          "atk": 685,
+          "def": 365,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 2,
+          "interval": 1.3
+        },
+        "rangeId": "3-12"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 75,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging test for this Operator showed blurry outline of internal organs with visible unusual dark spots. Unusually high concentration of Originium particles were present in her circulation, indicating signs of infection and confirming her as infected at this stage. \n\n[Cell-Originium Assimilation] 13% \nOperator Lappland showed a massive amount of crystal formation. \n\n[Blood Originium-Crystal Density] 0.27u/L \nStrict monitoring of Operator Lappland's condition is required."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "We have struggled to understand Lappland's personality. Some consider her simply mad, despite how polite and personable she can be in daily life. She actively seeks out people to converse with, indulging her taste for gallows humor, eager to see how her conversation partners will respond. Still, we know Lappland to be a dangerous element, and even at her most well-behaved, she remains frightening. \nLappland has been marked for close medical observation due to severe symptoms of Oripathy. \nAccording to as yet unconfirmed reports, Lappland might have come from a certain family in Siracusa known for moving in certain dangerous circles, but scouring all active and inactive lists involving Siracusa failed to connect Lappland to any of the families. Because of the extreme risk involved in probing the Siracusan families, the investigation has been terminated."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Lappland's Oripathy symptoms go beyond the physical to cause an abnormal obsession toward a certain target of hers, even spurring her to excessive violence. \nAlthough Rhodes Island has exerted some degree of control over her behavior while deployed, she still does more or less whatever she wants in battle, which has been a problem for coordinated operations with her teammates. \nLappland's rather unique symptoms seem to enhance her fighting abilities--very rare among Infected. Her weapon, a specially designed eastern-style sword, complements her Arts. She appears to wield her Originium power untrained, through raw talent alone. Even though Lappland's powers decay rapidly when released, her deceptive fighting style and explosive offensive abilities have allowed her to master her weaknesses. \nFurthermore, Lappland's uncanny ability to discern weakness neutralizes virtually any advantage an opponent with Originium power or other special ability may have. She is able to counter her enemy's attacks completely after only a few moments of observation."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Based on scattered reports and eyewitness accounts, Operator Lappland has a close personal connection to Penguin Logistics employee Texas, a liaison from the company to Rhodes Island. Texas, for her part, makes a concerted effort to avoid contact with Lappland. Still, in situations where they were forced to work together, Lappland has not gone out of her way to antagonize Texas. In fact, she seems to be taking some degree of pleasure in Texas playing hard-to-get, as it were. \nLappland treats other PL personnel cordially, but they have not warmed to her, and their meetings are always rather awkward (though thankfully rare). \nLappland tries to get along with other Rhodes Island Operators, as long as no one gets in her way. \n[Classified Log] \nAll Lupus Operators display a guarded reaction to Operator Projekt Red's presence, with Operator Lappland exhibiting the most intense, most uncontrollable aura of dread and animosity, as well as inexplicable euphoria. Until a solution is devised to mitigate the tension, keeping the two separated is advised."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Classified Log]\nComment accessed from another classified source: \nIn the future, you may want to think carefully about how you handle Lappland. \nShe's alone wolf(note: this is Lupus slang for a Lupus ostracized from the community) who's been hurt. She's lost her family and will never truly be a part of another one. \nYou don't need to know what's been keeping her alive till now, and you can try to heal her wounds, but remember this: Madness can never be healed. \nNothing in her past should happen again. \nIf you still decide to keep her around, you'll ultimately be faced with a choice... Maybe you're not yet mentally ready to fight her. \nSo please, listen to my advice again: For your sake and the sake of those you care about, do choose wisely."
+    }
+  ]
+}

@@ -1,0 +1,668 @@
+{
+  "name": "Hadiya",
+  "rarity": 5,
+  "class": "Guard",
+  "branch": "Mercenary",
+  "faction": "Sargon",
+  "umbrellaFactions": [],
+  "connectedFactions": [
+    "Columbia"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS",
+    "Crowd-Control"
+  ],
+  "trait": "Can spend DP to strengthen combat abilities",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Purchase Vouchers",
+      "Unlock Location": "Retracing Our Steps"
+    },
+    "Shop Operator": "Yes"
+  },
+  "alternate": null,
+  "skins": [],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_394_hadiya",
+  "otherLanguages": {
+    "Chinese": "哈蒂娅",
+    "Japanese": "ハディヤ",
+    "Korean": "하디야"
+  },
+  "characterInfo": {
+    "File no.": "SG28",
+    "Illustrator": "松尾省吾",
+    "Release Date": "2026/04/14",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Maria Abo",
+    "Chinese": "Sun Yanqi",
+    "English": "Katiana Sarkissian",
+    "Korean": "Lee Ji-sun"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "3 years",
+    "Place of Birth": "Columbia",
+    "Date of Birth": "July 22nd",
+    "Race": "Caprinae",
+    "Height": "167 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Average"
+  },
+  "talents": [
+    {
+      "name": "Child of the Wilds",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Whenever DP is spent through deployment, skill activation, or Equipment Alteration , +2% ATK and Stuns all enemies within attack range for 2 seconds (ATK can increase up to 3 times)"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Whenever DP is spent through deployment, skill activation, or Equipment Alteration , +3% (+1%) ATK and Stuns all enemies within attack range for 2 seconds (ATK can increase up to 3 times)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Whenever DP is spent through deployment, skill activation, or Equipment Alteration , +4% ATK and Stuns all enemies within attack range for 2 seconds (ATK can increase up to 5 times)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Whenever DP is spent through deployment, skill activation, or Equipment Alteration , +5% (+1%) ATK and Stuns all enemies within attack range for 2 seconds (ATK can increase up to 5 times)"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +30"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Child of the Wilds"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Hadiya's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Blade of the Qarnsayf .",
+        "Child of the Wilds improved."
+      ],
+      "prerequisite": "Raise Hadiya to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Child of the Wilds improved."
+      ],
+      "prerequisite": "Raise Hadiya to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Guard Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Chiral Refractor",
+          "quantity": 8
+        },
+        {
+          "name": "Aketon",
+          "quantity": 14
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Enhanced Desert Tactics",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "+40% DEF Equipment Alteration : Consumes 10 DP to gain +40% ATK until skill ends Can use Equipment Alteration to activate skill when SP is full",
+            "initialSp": 0,
+            "spCost": 32,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "+45% DEF Equipment Alteration : Consumes 10 DP to gain +45% ATK until skill ends Can use Equipment Alteration to activate skill when SP is full",
+            "initialSp": 2,
+            "spCost": 31,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "+50% DEF Equipment Alteration : Consumes 10 DP to gain +50% ATK until skill ends Can use Equipment Alteration to activate skill when SP is full",
+            "initialSp": 3,
+            "spCost": 30,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "+55% DEF Equipment Alteration : Consumes 10 DP to gain +55% ATK until skill ends Can use Equipment Alteration to activate skill when SP is full",
+            "initialSp": 5,
+            "spCost": 28,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "+60% DEF Equipment Alteration : Consumes 10 DP to gain +60% ATK until skill ends Can use Equipment Alteration to activate skill when SP is full",
+            "initialSp": 7,
+            "spCost": 26,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "+65% DEF Equipment Alteration : Consumes 10 DP to gain +65% ATK until skill ends Can use Equipment Alteration to activate skill when SP is full",
+            "initialSp": 8,
+            "spCost": 25,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "+70% DEF Equipment Alteration : Consumes 10 DP to gain +70% ATK until skill ends Can use Equipment Alteration to activate skill when SP is full",
+            "initialSp": 9,
+            "spCost": 24,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "+80% DEF Equipment Alteration : Consumes 10 DP to gain +90% ATK until skill ends Can use Equipment Alteration to activate skill when SP is full",
+            "initialSp": 10,
+            "spCost": 22,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "+90% DEF Equipment Alteration : Consumes 10 DP to gain +90% ATK until skill ends Can use Equipment Alteration to activate skill when SP is full",
+            "initialSp": 11,
+            "spCost": 21,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "+100% DEF Equipment Alteration : Consumes 10 DP to gain +100% ATK until skill ends Can use Equipment Alteration to activate skill when SP is full",
+            "initialSp": 13,
+            "spCost": 20,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Crystalline Component",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Blade of the Qarnsayf",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Consumes 10 DP to fuse sword and staff, gaining increased Attack Range, +85% ATK, and attacking up to 2 targets simultaneously; When skill is active, can spend 15 DP to activate Equipment Alteration , extending skill duration by 15 seconds",
+            "initialSp": 5,
+            "spCost": 38,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Consumes 10 DP to fuse sword and staff, gaining increased Attack Range, +95% ATK, and attacking up to 2 targets simultaneously; When skill is active, can spend 15 DP to activate Equipment Alteration , extending skill duration by 15 seconds",
+            "initialSp": 6,
+            "spCost": 37,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Consumes 10 DP to fuse sword and staff, gaining increased Attack Range, +105% ATK, and attacking up to 2 targets simultaneously; When skill is active, can spend 15 DP to activate Equipment Alteration , extending skill duration by 15 seconds",
+            "initialSp": 7,
+            "spCost": 37,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Consumes 10 DP to fuse sword and staff, gaining increased Attack Range, +110% ATK, and attacking up to 2 targets simultaneously; When skill is active, can spend 15 DP to activate Equipment Alteration , extending skill duration by 15 seconds",
+            "initialSp": 8,
+            "spCost": 36,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Consumes 10 DP to fuse sword and staff, gaining increased Attack Range, +115% ATK, and attacking up to 2 targets simultaneously; When skill is active, can spend 15 DP to activate Equipment Alteration , extending skill duration by 15 seconds",
+            "initialSp": 9,
+            "spCost": 34,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Consumes 10 DP to fuse sword and staff, gaining increased Attack Range, +125% ATK, and attacking up to 2 targets simultaneously; When skill is active, can spend 15 DP to activate Equipment Alteration , extending skill duration by 15 seconds",
+            "initialSp": 10,
+            "spCost": 32,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Consumes 10 DP to fuse sword and staff, gaining increased Attack Range, +135% ATK, and attacking up to 3 targets simultaneously; When skill is active, can spend 15 DP to activate Equipment Alteration , extending skill duration by 15 seconds",
+            "initialSp": 11,
+            "spCost": 31,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Consumes 10 DP to fuse sword and staff, gaining increased Attack Range, +140% ATK, and attacking up to 3 targets simultaneously; When skill is active, can spend 15 DP to activate Equipment Alteration , extending skill duration by 15 seconds",
+            "initialSp": 12,
+            "spCost": 29,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Consumes 10 DP to fuse sword and staff, gaining increased Attack Range, +145% ATK, and attacking up to 3 targets simultaneously; When skill is active, can spend 15 DP to activate Equipment Alteration , extending skill duration by 15 seconds",
+            "initialSp": 14,
+            "spCost": 27,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Consumes 10 DP to fuse sword and staff, gaining increased Attack Range, +150% ATK, and attacking up to 3 targets simultaneously; When skill is active, can spend 15 DP to activate Equipment Alteration , extending skill duration by 15 seconds",
+            "initialSp": 15,
+            "spCost": 26,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Aketon",
+              "quantity": 1
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 4
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock",
+          "quantity": 10
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Transmuted Salt",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Fuscous Fiber",
+          "quantity": 3
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Guard Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room , Guard Operators' Specialization training speed +30%"
+    },
+    {
+      "name": "Legacy of CourageReplacesGuard Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room , Guard Operators' Specialization training speed +30% ; if training this skill to Specialization Level 3 , training speed will be further increased by +45%"
+    }
+  ],
+  "modules": [],
+  "review": {
+    "official": "The\nSargonian\n-\nColumbian\nHadiya is a descendant of the Qarnsayf, a legendary warrior tribe of the desert. She joined\nRhodes Island\nin Sargon as part of her ambition to improve her combat techniques. She currently receives training and participates in field missions at the Sargonian branch office of Rhodes Island.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1187,
+          "atk": 236,
+          "def": 189,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 8,
+          "block": 2,
+          "interval": 1.25
+        },
+        "max": {
+          "hp": 1649,
+          "atk": 338,
+          "def": 260,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 8,
+          "block": 2,
+          "interval": 1.25
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1649,
+          "atk": 338,
+          "def": 260,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 10,
+          "block": 2,
+          "interval": 1.25
+        },
+        "max": {
+          "hp": 2171,
+          "atk": 439,
+          "def": 334,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 10,
+          "block": 2,
+          "interval": 1.25
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2171,
+          "atk": 439,
+          "def": 334,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 10,
+          "block": 2,
+          "interval": 1.25
+        },
+        "max": {
+          "hp": 2895,
+          "atk": 530,
+          "def": 393,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 10,
+          "block": 2,
+          "interval": 1.25
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 55,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be non-infected.\n\n[Cell-Originium Assimilation] 0%\nOperator Hadiya shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.19u/L\nBefore joining Rhodes Island, Operator Hadiya spent an extended time in the Sargonian wilderness without proper protection, resulting in BOCD numbers close to the infection threshold. As she is expected to spend significant time in the field, we have arranged additional tests in order to prepare proper protection for her. While Hadiya's awareness of the risks inherent in wilderness environments is lacking, she has proven cooperative with our work, which has greatly facilitated our efforts.\n\nBased on her own account of her activities, she has been quite lucky to avoid contracting Oripathy so far. Unlike some tribal warriors, however, she is very receptive to scientific methods, and has already put in a request for other warriors from her tribe to receive similar checkups and training on Originium protection, pending approval by the Medical Department.\n—Medical Department Note"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Although Hadiya first encountered Rhodes Island in Sargon, and was assigned to the Sargonian branch after she was hired, it is obvious that she is not your average Sargonian.\nHer style is very different from tribal warriors. She wields a staff with her right hand and a sword with her left, both containing complex mechanisms and axle-connected blades. The staff has foldable hooked blades on one end and a blunt hammer on the other, allowing her to employ both lethal and non-lethal means to neutralize enemies in close combat. Meanwhile, the short hilt of the sword makes it easy to perform thrusting motions when wielded on its own. An elaborate connector mechanism allows the two weapons to be combined into one, whereby the staff's hammer is retracted, the folding blades extended, and the shape of the sword's blade also changes, allowing her to respond to different situations and ranges. Hadiya had these weapons custom-made for her during her time in Columbia, and their design and construction clearly reflect Columbian technological thinking, making them very different from Sargonian weapons. The techniques she demonstrates in training are also different from traditional Sargonian techniques. She is an expert at utilizing cover and obstacles in close-quarters combat, relying on guile rather than strength, and creating an advantage through the versatility of her weapon. On the other hand, she is less comfortable fighting in wide-open spaces. She admits that she is still unfamiliar with the Sargonian wilderness, having developed her habits on the streets of Columbia and in training rooms. She recognizes that this is an area she needs to improve on as part of her new responsibilities, and she often approaches other Sargonian operators to pick their brains.\n\n[Training Room Audio Log]\n'Don't you find Hadiya's conversations with other Sargonian warriors really interesting?'\n'What do you mean?'\n'She always wants to learn the details of their weapons, how they're built, how they work, what environments they're good in.\n'Most of the time, though, the only answer she gets is:\n'Don't think. Just chop.'"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "The experience of growing up in Columbia will always be part of her. As she has often told other operators in the Sargon area, she knew that she was destined to come to this wilderness, but she also knows that it will hard to shake her Columbian habits, even once the glory of the Qarnsayf is restored.\n\n'I grew up in a small community in a nomadic city,' said Hadiya while chatting with other operators during break time. 'It wasn't a very wealthy district, but it was always lively, with people coming from all kinds of places, and Sargon is just one of them.\n'Every group has its own unique customs, character, and views. To me, though, it always felt so cohesive.\n'Everyone's habits and pastimes had become Columbianized. Watching Wrankwood movies over soda and fried fowlbeast, making a fuss during district elections, and so on.\n'The movies were great though! I should bring the latest pop music next time.'\n\nWhile Hadiya is happy to talk about the culture and customs of Columbia, she has never shown an intention to import them to Sargon. When asked about the reason, she said she did not want to do so, because it would ruin the purity of Sargon in her mind.\nIn her veneration of the wilderness, she is, indeed, a proper Sargonian—a remark from many of her colleagues."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Hadiya went through many hardships when rebuilding her tribe.\nThe name Qarnsayf exists only in historical records. Their territory no longer exists, nor have they left behind any extant relics, or first-hand witnesses to their exploits. This is why many lords ameer privately harbor doubts about the veracity of the legendary tribe's existence, even though The Book of Sargon contains detailed records of the Qarnsayf and their battles.\nHadiya's father's generation claimed to be the descendants of the Qarnsayf, and passed down their ancestors' teachings and the responsibility of rebuilding the tribe to hers. Although their appearance matches the depictions of the Qarnsayf in the records, and it is true that many Qarnsayf tribesmen left Sargon to become mercenaries, this is hardly enough to convince the Padishah to grant them new territory, much less make their name known throughout the tribes.\nThe local Padishah's challenge presented even more obstacles to her path. In order to earn the Padishah's trust and have him officially recognize the tribe and its territory, Hadiya must earn the recommendation of fifteen lords ameer and obtain their tokens—no mean feat when each one has a different demand. Defeating a lord ameer's guards in combat is merely the first step: some would not even give her the opportunity until she passed a test of history, which is hardly her strong suit. As such, at this time, Hadiya has only earned the approval of two lords ameer who allowed her to challenge their soldiers directly, and there is a long way to go until she completes the Padishah's task.\nHadiya has never complained about this. She is often seen in the break room watching Columbian movies, or chatting with colleagues about city life, showing no sign of worry about the progress of the challenge.\nWhen others ask about it, her answer is this: If you fail, try again until you succeed.\nShe has never doubted that she will succeed."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Columbian Department of Immigration Audio Log 044]\n'Here are the reports on the ten Sargonians. Well, nine Sargonians now.'\n'What happened?'\n'One was deathly ill before crossing the border. Already dead by the time the troops found them.'\n'Where are they? Still in custody?'\n'Yes. It's a band of wandering mercenaries, not immigrants who entered through official channels. The military has concerns about their background and doesn't want to let them in.'\n'Why don't they just deport them? Why hand them over to us?'\n'Deport them where? Their employer, well, doesn't exist anymore, so that's out of the question. And the situation in Sargon is pretty chaotic right now. These ten seem to be from the same tribe, and most likely from somewhere our intel indicates a massacre occurred. The military is concerned that they might resort to desperate measures if not handled properly. I was there at the detention center, and I saw the kind of look in their eyes you only see in people who've seen hell. I'd only seen it in veterans of the Revolutionary War before.'\n'So General Sfax doesn't want to be responsible for whatever happens if they're let loose. They want us to make the decision.'\n'Do you want to review the report?'\n'No need. Tell the general to let them in. Our mission is to absorb different types of immigrants from various places, and these Sargonians fit our needs.'\n'Yes, sir, I'll let him know.'\n'One more thing. Mark their papers and file them under 'Special Immigrants.' For reference when drafting future management policies.'\n'Yes, sir.'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "She could hardly feel her legs anymore.\nThrough the swaying light of the firepot, she looked at the lord ameer sitting behind the table, who was gazing at her with narrowed eyes. She knew she had to maintain control of her body and not waver, because the slightest sign of weakness would give him an excuse to deny her hard work.\nFirst, the trial of recitement. She used the techniques that Anat taught her.\nSecond, the trial of stamina. Long years of training carried her through.\nAt last, the duel with the lord ameer's elite guard. There was no time for rest before this last trial. Thoroughly exhausted, she faced off against the hulking shieldguard. None of the faces illuminated by firelight were cheering for her. She could hear the crowd roar whenever the guard parried her attacks—\n'Finish her off!'\nWhen she hooked the edge of the shield with her staff and leapt into the air with the momentum of her opponent's charge, then flicked the sword to unfold the blades and cut the guard's necklace, none of the sounds around the stage mattered anymore.\n'As per our agreement, victory is mine, lord ameer.' She could feel the words in her throat, but was not sure if she actually vocalized them or not.\nThe reaction of the lord ameer told her that she had. It was only her third victory, with twelve more to go, but she knew she was on the right path.\nShe took the token and turned around to walk towards the exit. Her legs had been numb, but now they were strong again, and her steps were no longer heavy.\nShe left behind the light of the firepots, and gazed out at the wilderness to see the sun rising upon the horizon."
+    }
+  ]
+}

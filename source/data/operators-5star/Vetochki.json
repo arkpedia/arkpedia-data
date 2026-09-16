@@ -1,0 +1,752 @@
+{
+  "name": "Vetochki",
+  "rarity": 5,
+  "class": "Defender",
+  "branch": "Juggernaut",
+  "faction": "Ursus",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Defense",
+    "Survival"
+  ],
+  "trait": "Cannot be healed by allies",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Scent of the Wild"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4207_branch",
+  "otherLanguages": {
+    "Chinese": "折桠",
+    "Japanese": "ヴェトチキ",
+    "Korean": "베토치키"
+  },
+  "characterInfo": {
+    "File no.": "US35",
+    "Illustrator": "斑雀",
+    "Release Date": "2026/03/19",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Yuna Taniguchi",
+    "Chinese": "Zhen Li",
+    "English & Russian": "Elizaveta Sheikh",
+    "Korean": "Bae Ha-kyung"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Ursus",
+    "Date of Birth": "March 4th",
+    "Race": "Ursus",
+    "Height": "162 cm",
+    "Infection Status": "Originium crystals distributed across surface of body, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Simple Bandages",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Restores 40% of Max HP when skill ends"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Restores 50% (+10%) of Max HP when skill ends"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Restores 50% of Max HP when skill ends"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Restores 60% (+10%) of Max HP when skill ends"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "Max HP +250"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Simple Bandages"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Vetochki's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Block count +1 .",
+        "New skill: Set on Survival .",
+        "Simple Bandages improved."
+      ],
+      "prerequisite": "Raise Vetochki to Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Simple Bandages improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Vetochki to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Solidified Fiber Board",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar Pack",
+          "quantity": 15
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Desperate Resistance",
+        "recoveryType": "Defensive Recovery",
+        "activationType": "Manual",
+        "duration": "12 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "DEF +60% and gains status resistance",
+            "initialSp": 4,
+            "spCost": 20,
+            "duration": 12
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "DEF +65% and gains status resistance",
+            "initialSp": 4,
+            "spCost": 20,
+            "duration": 12
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "DEF +70% and gains status resistance",
+            "initialSp": 4,
+            "spCost": 20,
+            "duration": 12
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "DEF +75% and gains status resistance",
+            "initialSp": 4,
+            "spCost": 20,
+            "duration": 12
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "DEF +80% and gains status resistance",
+            "initialSp": 6,
+            "spCost": 20,
+            "duration": 12
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "DEF +85% and gains status resistance",
+            "initialSp": 6,
+            "spCost": 20,
+            "duration": 12
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "DEF +90% and gains status resistance",
+            "initialSp": 6,
+            "spCost": 20,
+            "duration": 12
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "DEF +100% and gains status resistance",
+            "initialSp": 8,
+            "spCost": 18,
+            "duration": 12
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "DEF +110% and gains status resistance",
+            "initialSp": 8,
+            "spCost": 18,
+            "duration": 12
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "DEF +120% and gains status resistance",
+            "initialSp": 10,
+            "spCost": 15,
+            "duration": 12
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Set on Survival",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Frightens nearby ground enemies for 5 s; ATK +80% , DEF +30% , and attacks all blocked enemies",
+            "initialSp": 0,
+            "spCost": 24,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Frightens nearby ground enemies for 5 s; ATK +85% , DEF +30% , and attacks all blocked enemies",
+            "initialSp": 0,
+            "spCost": 24,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Frightens nearby ground enemies for 5 s; ATK +90% , DEF +30% , and attacks all blocked enemies",
+            "initialSp": 0,
+            "spCost": 24,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Frightens nearby ground enemies for 5 s; ATK +100% , DEF +30% , and attacks all blocked enemies",
+            "initialSp": 0,
+            "spCost": 24,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Frightens nearby ground enemies for 5 s; ATK +105% , DEF +40% , and attacks all blocked enemies",
+            "initialSp": 3,
+            "spCost": 22,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Frightens nearby ground enemies for 5 s; ATK +110% , DEF +40% , and attacks all blocked enemies",
+            "initialSp": 3,
+            "spCost": 22,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Frightens nearby ground enemies for 5 s; ATK +120% , DEF +40% , and attacks all blocked enemies",
+            "initialSp": 3,
+            "spCost": 22,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Frightens nearby ground enemies for 5 s; ATK +130% , DEF +50% , and attacks all blocked enemies",
+            "initialSp": 5,
+            "spCost": 20,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Frightens nearby ground enemies for 5 s; ATK +140% , DEF +50% , and attacks all blocked enemies",
+            "initialSp": 5,
+            "spCost": 20,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Frightens nearby ground enemies for 5 s; ATK +150% , DEF +50% , and attacks all blocked enemies",
+            "initialSp": 5,
+            "spCost": 18,
+            "duration": 15
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 3
+            },
+            {
+              "name": "Polyester Pack",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Diketon",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 8
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Aggregate Cyclicene",
+          "quantity": 3
+        },
+        {
+          "name": "Coagulative Nodule",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Talented Smith",
+      "facility": "Workshop",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Workshop to process Oriron Cluster materials, any recipes with Morale cost of 2 have -1 Morale cost"
+    },
+    {
+      "name": "Waste Not, Want Not",
+      "facility": "Workshop",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Workshop to process Oriron Cluster materials, the production rate of byproduct increases by 90%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Vetochki's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "UNY-X: Marks of Time",
+      "mission": {
+        "requirement1": "During battle, have your own Vetochki use Set on Survival a total of 8 times",
+        "requirement2": "Clear Mansfield Break MB-5 with a 3-star rating; You must deploy your own Vetochki, and cannot include any other Defender Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +210 , DEF +35",
+          "effectLabel": "New trait",
+          "effectText": "Takes 15% less damage from enemies blocked by this unit",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +300 , DEF +53",
+          "effectLabel": "Simple Bandages improved",
+          "effectText": "DEF +15% when skill is active; restores 60% of Max HP when skill ends",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +385 , DEF +68",
+          "effectLabel": "Simple Bandages improved",
+          "effectText": "DEF +18% when skill is active; restores 70% of Max HP when skill ends",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Chiral Refractor",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Formerly a miner in the Central Far North Mining District of\nUrsus\n, Vetochki is currently receiving treatment at\nRhodes Island\n, where she is also undergoing standard combat training and participates out of her own volition in\nInfected\nrescue missions as a field operator.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1600,
+          "atk": 363,
+          "def": 205,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 31,
+          "block": 2,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 2106,
+          "atk": 505,
+          "def": 311,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 31,
+          "block": 2,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 2106,
+          "atk": 505,
+          "def": 311,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 33,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 2736,
+          "atk": 674,
+          "def": 415,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 33,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2736,
+          "atk": 674,
+          "def": 415,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 35,
+          "block": 3,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 3748,
+          "atk": 865,
+          "def": 540,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 35,
+          "block": 3,
+          "interval": 1.6
+        },
+        "rangeId": "0-1"
+      }
+    ],
+    "trust": {
+      "hp": 400,
+      "atk": 0,
+      "def": 50
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 15%\nCrystal distribution is visible on the surface of the body, and her respiratory system is significantly affected by infection.\n\n[Blood Originium-Crystal Density] 0.29u/L\nAs a result of being born with congenital Oripathy and growing up in a high-Originium environment in the mines, Operator Vetochki suffers from serious Oripathy. She also suffers from mild to moderate speech impairment, a lingering effect of an episode of encephalitis that she suffered during childhood, for which Medical has created a treatment plan. Prior to her official onboarding, Mantra applied for psychological intervention treatment and the mental health rehabilitation program for her, signed and approved by Amiya personally."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "4am—Wake up, check the water tank, boil water or melt snow. 4:30am—Assemble by the mining cart rails and shovel snow. If no snow, go out to forage firewood and edible moss. 6am—Return to quarters, fill water bottle, have breakfast. Before 3pm—Count the time in front of the mine entrance, and ring the bell precisely to signal the end of the shift, preventing anyone from suffocating in the mines. 3pm—Have lunch, which is the last meal of the day, and continue working until dark. If sunset comes early, work until the Patrol Unit leaves. Before retiring for the night, shovel snow to prevent it from blocking the door the next morning...\nThis was a day in the life of Vetochki, bell-toller at the Central Far North Mining District of Ursus.\n'Vetochki' is what everyone has called her since the day she was born, and the other miners thought she had long forgotten her real name, but she was able to recite it before Rhodes Island's HR operators, one syllable at a time—Anya Ivanovna Smirnova. In Ursine tradition, the name of a child takes after their parents.\nVetochki's parents were miners too. They managed to save her life from the great flu that swept the Far North, but could not find medicine for the complications from encephalitis. After several nights of prayer, they began contacting workers who lost their children from lack of food and medicine, and attempted to organize a strike for the sake of the children to come. They failed.\nVetochki is not afraid to talk about it, though she does not remember much about what happened. All she could do was try to remember her own name, silently reciting the syllables that once belonged to her parents, over and over.\nThe other miners protected her after her parents were executed. She became bell-toller at an age when she was too young to lift a pickaxe, and it became her job to sit at the entrance and count the time, avoiding the ordeal of descending into the mines. Ringing the bell fends off the shadow of death, and it is a job that she always performed admirably. At counseling sessions, she called it her duty.\n\nI saw the replica she made in her spare time, though it looks more like a gong than a bell.\n—HR Operator\n\nShe has never seen a real bell, and the others never corrected her... Before escaping the mines, she tied her 'bell' onto a shield, in order to protect those who once protected her.\n—Raidian"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "[Audio Log]\nHer condition is unusual: a speech impairment caused by a brain condition. It's not a mental disorder, and her intelligence is unaffected. There's no need to go out of your way to speak slowly when talking to her! Just because she talks slower doesn't mean she has any hearing problems. As a matter of fact, she scored significantly above average in mental acuity compared to others in her age group. Heck, she's probably smarter than you were at her age. The point being, there's no need for special accommodation in this regard. As I said, her condition is perfectly normal. Wait, did I say it was unusual? Same thing, same difference.\n—Warfarin\n\nVetochki's counselor writes in a report, 'Vetochki's speech disability has not negatively impacted her self-esteem; she is simply concerned that the listener might ignore what she says because of it.\nVetochki maintained her childhood habit for some time after she came to Rhodes Island, organizing the words she wanted to say in her mind before articulating them word-by-word. Controlling the muscles of her throat and maintaining a steady speech rhythm are a chore for her, but she never abbreviates simply to save effort, or gives up on talking entirely. It is not 'being brave' to communicate what she wants to communicate, it is a necessity. Fortunately, there are plenty of people on Rhodes Island who are willing to listen.\nVetochki has made friends with several operators around the same age, and the group often works on coloring books in the games room in their free time. They soon found that she was always the first to complete the coloring, something that she herself was also surprised by. After finishing coloring, they turn to drawing whatever comes to mind on blank paper, free of constraints. They will draw their rooms, their families, the places they want to go... They did not need to talk, for their drawings revealed their thoughts and emotions. One time, they realized that they had accidentally drawn on one of Frostleaf's blank vocabulary books, and they cried out in surprise before falling over in laughter.\nFrostleaf did not say anything upon hearing Vetochki's apology. She simply thought for a bit, put an unnamed tape in her music player, then put her headphones on Vetochki's head. They spent an entire afternoon gazing wordlessly at the swirling bubbles in the washing machines, listening to Frostleaf's mix-tape from beginning to end.\n\n[Audio Log]\nThere are a lot of ways to express yourself. I understood her, and she understood me. I don't see any 'impairment' in her.\n—Frostleaf"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Vetochki brought a pile of 'herbs' with her from Ursus, dried moss that she used in various ways to soothe pain. Analysis by the Medical Department revealed that the moss had no pain-killing effect; all it did was irritate the bowels. Therefore, Vetochki's 'treatment' involved little more than enduring the pain of Oripathy through sheer force of will.\nVetochki was finally convinced to stop taking her 'herbs', though this probably had something to do with the fact that there was little left. She could be spotted on the deck from time to time, sniffing at the last patch of dried moss. Perhaps the scent of the tundra brought back memories.\nWhen she learned from our gardening-inclined operators that certain types of dried moss are not truly dead and can grow again in the proper environment, she immediately got herself a fine porcelain pot, planting the moss in soil. Then she waited and waited, but the dried color of the moss never changed.\nOne day, she took the pot out of her room and placed it in a bright, well-ventilated corner of the corridors.\nA few days later, someone left a watering can next to it, perhaps one of the operators who frequent the greenhouses.\nA few more days later, someone added some peat soil to the pot, which provides better conditions for moss, as well as a vial of fertilizer.\nYet a few more days later, someone drew a small sun on the pot, and placed a small humidifier next to it.\nThe moss seemed different, more moist than before, but it did not seem that anyone was actively taking care of it.\nA few months later, Vetochki ran into the lounge with the pot of moss in her hands, and set it down in the Green Corner, where other operators have placed their own plants from every corner of Terra. There, it is always green and vibrant, regardless of the season or time of day.\nNow, there is a little pot of moss there too, with tiny flowers growing proudly on top.\nThe experienced gardeners know, of course, that moss does not bloom. It seems that seeds from elsewhere have drifted onto the dead moss, taking root and growing strong enough to bloom.\nDoes Vetochki know that? Everyone who has seen the pot knows that that is not important."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Rhodes Island Task Record]\nDate: 1101-■-■\nLocation: Ursus wilderness, ■■km from Grypherburg\nWe have left the Polar Night Zone, and Grypherburg is in sight. At dawn, we received a signal from operators located in Grypherburg.\nThe Doctor and Amiya made the decision for us to pull out of Ursus and review the information we have before deciding our next move. The surviving miners with us are mostly in stable condition. They will enter Grypherburg under Eloysius's protection as 'witnesses'. We cannot take everyone, but we will take a few who are in dire need of medical attention.\nWe say goodbye tonight and proceed to the evac point under the cover of night...\n\nVetochki has never seen Deity Grypherburg. She has heard the others talk about the streetlamps, the domes, and the aroma of freshly baked bread, but she has a hard time imagining what it looks like. But now... it is but a stone's throw away.\nShe is already making plans for her first trip to the magnificent city. She wants to see everything there is to see on the first day, but is concerned that she will expend all her excitement and curiosity in the first hour. She knows that she and the others will become 'witnesses', testifying against the Grand Duchess—but it is Grypherburg, that warm place which she has heard about so many times.\nEloysius soon poured cold water on the idea. Even today, Grypherburg would never allow a group of Infected to openly go out onto the streets to admire the lights. Vetochki knew little about the city, and with each thing she learned, the cold winds of Ursus blew away a little bit more of her warm illusion.\nAs such, she did not have many regrets about missing Grypherburg when Amiya and Raidian proposed that she receive treatment at Rhodes Island. She was more concerned that her friends were headed there as 'witnesses' and that they could not come with her.\nVetochki declined our invitation and returned to the miners. When she looked up again, she saw that great Grypherburg was, after all, no more than a little blurry speck on the horizon. She closed her eyes in front of the fire. Here, at least she could be with friends, and tell them her thoughts. When she did so, however, she was surprised to find that those familiar faces earnestly advised her to leave.\nThe miners wanted to give her a token, a promise that they would meet again, but they had nothing on them. So they each grabbed a bunch of dried grass with snow on it and put it in her hand.\nHer eyes red, Vetochki came to the Rhodes Island delegation, asking when they would leave. Raidian took her hand, dried grass and all, and said, 'After dark.'\n\n[Rhodes Island Task Record]\nDate: 1101-■-■\nLocation: Ursus wilderness, ■■km from Grypherburg\n...The blizzard grew stronger after night fell, providing ideal cover for our retreat. Half a kilometer from the camp, however, the raging wind and snow interfered with signals, making it difficult to tell which way we were going, or if we were even making progress at all, or just going around in circles.\nSuddenly, Vetochki cried out and pointed into the distance, where lights were floating above the horizon. The Doctor soon realized that it was the torches carried by the surviving miners led by Eloysius, heading towards Grypherburg.\nAccording to the plan, they did not need to travel in the middle of a blizzard. It was only when we saw tears stream down Vetochki's face that we realized it was more than a goodbye, more than a guiding light, more than a gift, more than a memory... It was something more complex, more sincere, something that keeps all of us going."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "[Classified Log]\n...Our investigation in Ursus has come to an end. We are now able to determine that the individual who crossed paths with Mantra in the Ursus Far North before disappearing, confirmed to be one of the Yurodstvo, had been in the Central Far North Mining District since at least 1096, living with Operator Vetochki under the identity of 'Nadia'. From Vetochki's statements in her counseling sessions, we have been able to piece together how the Yurodstvo arrived, after filtering out the statements that were clearly contradictory.\nWith that limited information, we were able to correlate our hypotheses on the internal situation of Ursus based on possible sightings of Yurodstvo across Ursus between 1080 and 1095 (see Appendix B-2)...\n\n[Audio Log]\n'I saw, the window, broken. The door, wouldn't open. I knew, <i>babushka</i> was, inside.\n'She put her back, against the door, like she was, afraid that, someone would, barge in, and see her.\n'I saw, red... lots of red, flow out, from the door crack.\n'Mom and Dad... lots of red, that same red. I knew it was—death.\n'I... think I, buried <i>babushka</i>.'\n(Edit marker)\n'Legends say, when it's, snowing so hard, you can't, open your eyes... your dead, family will, come to you, when you're, walking alone.\n'That was, what I was, thinking, and then, I saw, someone, walk towards me.\n'A faint, shadow, getting closer... I ran, and I fell.\n'The shadow, didn't stop, it walked, past me. I got up, and shouted—\n'She looked back, and I saw... it was, <i>Babushka</i> Nadia!\n'She just, went away, for a while, and came back.\n'I didn't want, her to, go away again.'\n(Edit marker)\n'G-Grave? Whose... grave?'\n'Babushka? But babushka... she was... with me?\n'No, no... then, who did I, bury?'\n\n\n[Classified Log]...It must be emphasized that the Yurodstvo has no emotions. It feels neither joy nor anger, love nor hate. Its appearance reflects the expectations of those who gaze upon it, while its actions are guided by certain rules that do not follow human reason or logic.\nIts actions in 1096—heading to the Far North and lingering there for several years—may seem curious to many, but it is entirely fitting with Yurodstvo logic and instinct.\nA suicide of despair, something that goes against the creeds of most religions, was sufficient to drive the Yurodstvo to attempt to 'rectify' the wrong. It transmitted the tremendous pain of the orphan left by the suicide, guiding all around it into destruction.\n'The only path to salvation is enduring pain without end.' This is the closest summary we can get to the concept in our language. Sometimes, the victim might mistake it as a path to 'love'.\n—Mantra's annotation to Appendix B-2 of the ■■■■■ Report"
+    }
+  ]
+}

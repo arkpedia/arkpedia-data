@@ -1,0 +1,755 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "reclamation",
+    "id": "act1sandbox",
+    "label": null,
+    "name": "Reclamation Algorithm - Fire Within the Sand",
+    "release_date": "2023-09-07"
+  },
+  "enemies": [
+    {
+      "slug": "lord_ameer_shaman",
+      "id": "enemy_7001_blwzad_2",
+      "name": "Lord Ameer Shaman",
+      "index": "SD2",
+      "rank": "Normal",
+      "sort": 1495,
+      "hidden": false,
+      "icon": "/enemies-icons/Lord Ameer Shaman.webp",
+      "flavour_text": "An elite caster under a Lord Ameer, able to employ a kind of ancient Arts to cast menacing attacks, nicknamed a 'curse' by the locals.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks cause the target to receive a certain amount of this unit's ATK as Arts damage per second over a few seconds (stacks)",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 150,
+            "def": 200,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.0,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "E",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "blwzad[dot]",
+              "parameters": {
+                "atk_scale": 0.5,
+                "duration": 10.0,
+                "max_stack_cnt": 5.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "vein_guardian",
+      "id": "enemy_7002_veingd",
+      "name": "Vein Guardian",
+      "index": "SD3",
+      "rank": "Normal",
+      "sort": 1496,
+      "hidden": false,
+      "icon": "/enemies-icons/Vein Guardian.webp",
+      "flavour_text": "A deformed Infected Creature often found wandering around ore veins, stubbornly thinking they have a duty to guard the mine.",
+      "race": "Arts Creation",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "More likely to be attacked by friendly units; when attacked, inflicts a certain amount of Arts damage to the attacker",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 400,
+            "def": 300,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 4,
+            "taunt": 1,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "C",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "taunt",
+              "parameters": {
+                "value": 200.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "maddened_vein_guardian",
+      "id": "enemy_7002_veingd_2",
+      "name": "Maddened Vein Guardian",
+      "index": "SD4",
+      "rank": "Normal",
+      "sort": 1497,
+      "hidden": false,
+      "icon": "/enemies-icons/Maddened Vein Guardian.webp",
+      "flavour_text": "A deformed Infected Creature often found wandering around ore veins. Guarding the mines has become an obsession of theirs, and they are willing to die for it.",
+      "race": "Arts Creation",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "More likely to be attacked by friendly units; when attacked, inflicts a certain amount of Arts damage to the attacker",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 500,
+            "def": 300,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 4,
+            "taunt": 1,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "taunt",
+              "parameters": {
+                "value": 200.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "everything_should_be_smashed",
+      "id": "enemy_7003_catapt_2",
+      "name": "'Everything Should Be Smashed'",
+      "index": "SD6",
+      "rank": "Normal",
+      "sort": 1499,
+      "hidden": false,
+      "icon": "/enemies-icons/'Everything Should Be Smashed'.webp",
+      "flavour_text": "A contraption that hurls fruit with rock-hard shells instead of boulders, destroying all constructs in its detection range by targeting their weak points. After some upgrades, it is powerful enough to destroy large buildings.",
+      "race": "Machina",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes attacking constructs; when attacking constructs, gains greatly increased ATK",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 550,
+            "def": 400,
+            "res": null,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 3.0,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "C",
+            "res": null,
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "factorySlayer",
+              "parameters": {
+                "atk_scale": 1.5
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sandfall_crystalhoof",
+      "id": "enemy_7007_xbbird",
+      "name": "Sandfall Crystalhoof",
+      "index": "SD14",
+      "rank": "Elite",
+      "sort": 1507,
+      "hidden": false,
+      "icon": "/enemies-icons/Sandfall Crystalhoof.webp",
+      "flavour_text": "An extremely rare and exquisite beast. It feeds on rhizomes, giving its coat a dense but fine light golden luster. When on the move, it's almost as if golden sand was falling from its body, so it is highly sought by collectors and artists. However, it is extremely nimble and difficult to capture, but is the secret ingredient spoken of in legends... do you really want to hunt it?",
+      "race": "Wild Beast",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "After being attacked, runs away a random distance and rests for a period of time",
+          "format": "normal"
+        },
+        {
+          "text": "Moves through different areas",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 50000,
+            "atk": null,
+            "def": 400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": null,
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Run",
+              "parameters": {
+                "duration": 10.0,
+                "move_speed": 5.0
+              }
+            },
+            {
+              "key": "TraceTile",
+              "parameters": {
+                "range_radius": 6.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "dauntless_linebreaker",
+      "id": "enemy_7012_wilder",
+      "name": "Dauntless Linebreaker",
+      "index": "SD19",
+      "rank": "Boss",
+      "sort": 1512,
+      "hidden": false,
+      "icon": "/enemies-icons/Dauntless Linebreaker.webp",
+      "flavour_text": "The advance linebreaker officer under the command of a Sargonian Lord Ameer. He cares for nothing but removing all obstacles in his way, fearing neither life nor death. He is the strongest and bravest soldier in the entire army.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "When not blocked, damage taken is significantly reduced",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "Gains greatly increased ATK, ASPD, and Movement Speed",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 700000,
+            "atk": 1100,
+            "def": 400,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": null,
+            "weight": 6,
+            "taunt": null,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "SS",
+            "atk": "A",
+            "def": "C",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 5.0,
+                "wildmn_invinsible.duration": 10.0
+              }
+            },
+            {
+              "key": "S2Passive",
+              "parameters": {
+                "atk": 1.0,
+                "attack_speed": 100.0,
+                "move_speed": 1.5
+              }
+            },
+            {
+              "key": "SDamageScale",
+              "parameters": {
+                "damage_resistance": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "the_ruinbringer",
+      "id": "enemy_7013_slwazd",
+      "name": "'The Ruinbringer'",
+      "index": "SD20",
+      "rank": "Boss",
+      "sort": 1513,
+      "hidden": false,
+      "icon": "/enemies-icons/'The Ruinbringer'.webp",
+      "flavour_text": "An elite Caster honored by the local Lord Ameer, capable of manipulating Infected creatures to fight. Destroying their enemies is merely a side effect of the ultimate destruction that they wish to see.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Less likely to be attacked",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "Summons 2 <Infused Originium Slugs> for assistance",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "Summons 2 <Infused Originium Slugs> and 2 <Infused Originium Slug αs>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 400000,
+            "atk": 600,
+            "def": 500,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.5,
+            "weight": 6,
+            "taunt": -1,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "S+",
+            "atk": "B",
+            "def": "B",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "SummonEnemyS1",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "slward_s1_1.cnt": 2.0,
+                "slward_s1_1.enemy_key": "enemy_1021_bslime"
+              }
+            },
+            {
+              "key": "SummonEnemyS2",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 10.0,
+              "priority": 1,
+              "parameters": {
+                "slward_s2_1.cnt": 2.0,
+                "slward_s2_1.enemy_key": "enemy_1021_bslime",
+                "slward_s2_2.cnt": 2.0,
+                "slward_s2_2.enemy_key": "enemy_1021_bslime_2"
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 5.0,
+                "wildmn_invinsible.duration": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "al_rafiq",
+      "id": "enemy_7014_dva",
+      "name": "'Al-Rafiq'",
+      "index": "SD21",
+      "rank": "Boss",
+      "sort": 1514,
+      "hidden": false,
+      "icon": "/enemies-icons/'Al-Rafiq'.webp",
+      "flavour_text": "Elite armored corps of a Lord Ameer operating their self-assembled armor. Its self-destruct system is the only part they are unsatisfied with, and it is obvious they care more about their beloved machine than the Lord Ameer's orders.",
+      "race": "Machina",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "Can only be blocked by units with at least 2 Block",
+          "format": "normal"
+        },
+        {
+          "text": "After 3 attacks, the next attack deals heavy Splash Physical damage",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated deals Physical damage and Stuns surrounding allied units for a few seconds",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "Pilot does not attack nor move, becomes Invisible, and reflects physical damage while repairing the mech",
+          "format": "normal"
+        },
+        {
+          "text": "After some time, they return to the mech and it returns to its first form",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 500000,
+            "atk": 1000,
+            "def": 1200,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 6,
+            "taunt": null,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "SS",
+            "atk": "A",
+            "def": "A+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B+"
+          },
+          "skills": [
+            {
+              "key": "PowerAttack",
+              "sp_cost": 3,
+              "cooldown": 1.0,
+              "initial_cooldown": 1.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 3.0,
+                "range_radius": 0.8
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "CheckSp",
+              "parameters": {
+                "sp": 3.0
+              }
+            },
+            {
+              "key": "S1Reborn",
+              "parameters": {
+                "atk_scale": 1.0,
+                "duration": 3.5,
+                "range_radius": 1.5,
+                "stun": 10.0
+              }
+            },
+            {
+              "key": "S2Reborn",
+              "parameters": {
+                "duration": 1.7
+              }
+            },
+            {
+              "key": "S2Recover",
+              "parameters": {
+                "atk": 0.0,
+                "atk_scale": 0.5,
+                "duration": 30.0,
+                "max_hp": -0.8
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 3,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "consortium_of_pincers",
+      "id": "enemy_7015_xbcrab2",
+      "name": "'Consortium of Pincers'",
+      "index": "SD13",
+      "rank": "Elite",
+      "sort": 1506,
+      "hidden": false,
+      "icon": "/enemies-icons/'Consortium of Pincers'.webp",
+      "flavour_text": "A Cragpincer with a gigantic crystallized shell, its back broad enough to carry two average-sized cragpincers. If it can withstand the weight of two cragpincers and the crystals on its back, who knows how strong it actually is, so do be careful of its pincers!",
+      "race": "Wild Beast",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Normally does not attack, but counters when attacked",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 17000,
+            "atk": 1300,
+            "def": 2500,
+            "res": 90.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "S",
+            "res": "SS",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B+"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Trace",
+              "parameters": {
+                "view_radius": 1.5
+              }
+            },
+            {
+              "key": "TraceTime",
+              "parameters": {
+                "duration": 20.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1515 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "story",
+    "id": "main_13",
+    "label": "EP 13",
+    "name": "The Whirlpool that is Passion",
+    "release_date": "2024-04-16"
+  },
+  "enemies": [
+    {
+      "slug": "bloodborn_spawn",
+      "id": "enemy_1360_dfello",
+      "name": "Bloodborn Spawn",
+      "index": "SSK1",
+      "rank": "Normal",
+      "sort": 696,
+      "hidden": false,
+      "icon": "/enemies-icons/Bloodborn Spawn.webp",
+      "flavour_text": "A creation of the Sanguine Court's Originium Arts. It is said that just a few drops of fresh blood can spawn an entire swarm of these mindless worms. Once they've latched on, they will never let go until their hunger and thirst have been sated.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Deals Arts damage and gains increased ATK depending on the number of units the target is blocking.",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks restore HP proportional to damage dealt",
+          "format": "normal"
+        },
+        {
+          "text": "Leaves behind <Blood Amber> when defeated.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4000,
+            "atk": 100,
+            "def": 200,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 1.0,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "E",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "DamageUp",
+              "parameters": {
+                "add_on": 1.0,
+                "scale_ratio": 0.2
+              }
+            },
+            {
+              "key": "Summon",
+              "parameters": {
+                "cnt": 1.0,
+                "enemy_key": "enemy_1367_dseed"
+              }
+            },
+            {
+              "key": "vampire",
+              "parameters": {
+                "heal_scale": 2.2
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_heirbearer_bombardier",
+      "id": "enemy_1361_dthrow",
+      "name": "Sarkaz Heirbearer Bombardier",
+      "index": "SCI21",
+      "rank": "Normal",
+      "sort": 697,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Heirbearer Bombardier.webp",
+      "flavour_text": "A long-range bombardier of the Sarkaz Royal Court that has received the blessing of the Sanguinarch of Vampires. Wherever they aim will be left a sea of flames, and their targets inevitably reduced to rubble.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Deals long-ranged attacks that explode after a delay, inflicting Physical damage in an area.",
+          "format": "normal"
+        },
+        {
+          "text": "Will be reborn as a <Touch of the Sanguinarch> after falling in battle for the first time",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 450,
+            "def": 150,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.0,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "D",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "delay": 1.0,
+                "enemy_key": "enemy_1220_dzoms",
+                "projectile_delay_time": 4.0,
+                "projectile_radius": 1.1
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_heirbearer_annihilator",
+      "id": "enemy_1361_dthrow_2",
+      "name": "Sarkaz Heirbearer Annihilator",
+      "index": "SCI22",
+      "rank": "Normal",
+      "sort": 698,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Heirbearer Annihilator.webp",
+      "flavour_text": "An elite long-range bombardier of the Sarkaz Royal Court that has received the blessing of the Sanguinarch of Vampires. They do not aim at any particular target or tangible enemy. The only thing reflected in their eyes is ruination itself.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Deals long-ranged attacks that explode after a delay, inflicting Physical damage in an area.",
+          "format": "normal"
+        },
+        {
+          "text": "Will be reborn as a <Touch of Benevolence> after falling in battle for the first time",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 550,
+            "def": 150,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.0,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "D",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "delay": 1.0,
+                "enemy_key": "enemy_1220_dzoms_2",
+                "projectile_delay_time": 4.0,
+                "projectile_radius": 1.1
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_heirbearer_punisher",
+      "id": "enemy_1362_dfat",
+      "name": "Sarkaz Heirbearer Punisher",
+      "index": "SCI23",
+      "rank": "Elite",
+      "sort": 699,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Heirbearer Punisher.webp",
+      "flavour_text": "A formation-breaker of the Sarkaz Royal Court that has received the blessing of the Sanguinarch of Vampires. Said to have violated the taboos of the Court, however the Sanguinarch did not punish them for their transgressions. Instead, they now inflict upon others the pain that should have befallen them.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "After several attacks, Stuns friendly units in an area.",
+          "format": "silence"
+        },
+        {
+          "text": "Will be reborn as a <Gift of the Sanguinarch> after falling in battle for the first time",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 1200,
+            "def": 100,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "D",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "StunAttack",
+              "sp_cost": 3,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "stun": 4.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "enemy_key": "enemy_1221_dzomg"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 3,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_heirbearer_scourger",
+      "id": "enemy_1362_dfat_2",
+      "name": "Sarkaz Heirbearer Scourger",
+      "index": "SCI24",
+      "rank": "Elite",
+      "sort": 700,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Heirbearer Scourger.webp",
+      "flavour_text": "An elite formation-breaker of the Sarkaz Royal Court that has received the blessing of the Sanguinarch of Vampires. Said to have disobeyed the Sanguinarch's will, however the Sanguinarch did not punish them for their transgressions. In return, these warriors convert their regret into endless slaughter and wash away their guilt with blood.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "After several attacks, Stuns friendly units in an area.",
+          "format": "silence"
+        },
+        {
+          "text": "Will be reborn as a <Gift of Magnanimity> after falling in battle for the first time",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 35000,
+            "atk": 1500,
+            "def": 100,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A+",
+            "def": "D",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "StunAttack",
+              "sp_cost": 3,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "stun": 4.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "enemy_key": "enemy_1221_dzomg_2"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 3,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_boneguard",
+      "id": "enemy_1363_spnshd",
+      "name": "Sarkaz Boneguard",
+      "index": "SSK2",
+      "rank": "Elite",
+      "sort": 701,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Boneguard.webp",
+      "flavour_text": "A guard responsible for protecting the Feranmut's skeleton. As some of the most loyal adherents of the Military Commission, they will carry out their duties at any cost, even if they must shed their own blood.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "More likely to be attacked by friendly units.",
+          "format": "normal"
+        },
+        {
+          "text": "Upon receiving damage, reduces the ASPD of the attacker.",
+          "format": "normal"
+        },
+        {
+          "text": "Prevents <Anti-Witchcraft Repositionable Bombs> from moving when nearby.",
+          "format": "normal"
+        },
+        {
+          "text": "Leaves behind 2 <Blood Amber> when defeated.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12000,
+            "atk": 900,
+            "def": 1200,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 4,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "A+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "BmbcarBuff",
+              "parameters": {
+                "range_radius": 1.0
+              }
+            },
+            {
+              "key": "Summon",
+              "parameters": {
+                "attack_speed": -40.0,
+                "cnt": 2.0,
+                "duration": 5.0,
+                "enemy_key": "enemy_1367_dseed"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_boneguard_captain",
+      "id": "enemy_1363_spnshd_2",
+      "name": "Sarkaz Boneguard Captain",
+      "index": "SSK3",
+      "rank": "Elite",
+      "sort": 702,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Boneguard Captain.webp",
+      "flavour_text": "A guard captain responsible for protecting the Feranmut's skeleton. As some of the most fervent adherents of the Military Commission, they will realize the Commission's will at any cost, even if they must shed their own blood.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "More likely to be attacked by friendly units.",
+          "format": "normal"
+        },
+        {
+          "text": "Upon receiving damage, reduces the ASPD of the attacker.",
+          "format": "normal"
+        },
+        {
+          "text": "Prevents <Anti-Witchcraft Repositionable Bombs> from moving when nearby.",
+          "format": "normal"
+        },
+        {
+          "text": "Leaves behind 2 <Blood Amber> when defeated.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 1100,
+            "def": 1500,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 4,
+            "taunt": 2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "A+",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "BmbcarBuff",
+              "parameters": {
+                "range_radius": 1.0
+              }
+            },
+            {
+              "key": "Summon",
+              "parameters": {
+                "attack_speed": -40.0,
+                "cnt": 2.0,
+                "duration": 5.0,
+                "enemy_key": "enemy_1367_dseed"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_boneguard_flayer",
+      "id": "enemy_1364_spnaxe",
+      "name": "Sarkaz Boneguard Flayer",
+      "index": "SSK4",
+      "rank": "Elite",
+      "sort": 703,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Boneguard Flayer.webp",
+      "flavour_text": "A professional armsmaster responsible for protecting the Feranmut's skeleton, carefully selected by the Military Commission. They use witchcraft to connect themselves with the Feranmut's nerves, allowing the entire skeleton to become their weapon.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Recovers a portion of HP and gains increased ATK when either enemy or friendly units are defeated within range (can stack).",
+          "format": "normal"
+        },
+        {
+          "text": "Leaves behind 2 <Blood Amber> when defeated.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 900,
+            "def": 900,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 1.3,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "B+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "atk": 0.1,
+                "hp_ratio": 0.15,
+                "max_stack_cnt": 15.0,
+                "range_radius": 1.0,
+                "ranged_atk_scale": 0.5
+              }
+            },
+            {
+              "key": "Summon",
+              "parameters": {
+                "cnt": 2.0,
+                "enemy_key": "enemy_1367_dseed"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_boneguard_torturer",
+      "id": "enemy_1364_spnaxe_2",
+      "name": "Sarkaz Boneguard Torturer",
+      "index": "SSK5",
+      "rank": "Elite",
+      "sort": 704,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Boneguard Torturer.webp",
+      "flavour_text": "An elite armsmaster responsible for protecting the Feranmut's skeleton, carefully selected by the most senior members of the Military Commission. The degree of their fusion with the Feranmut's nerves defies common understanding, with their ancient witchcraft drilled deep into their bodies.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Recovers a portion of HP and gains increased ATK when either enemy or friendly units are defeated within range (can stack).",
+          "format": "normal"
+        },
+        {
+          "text": "Leaves behind 2 <Blood Amber> when defeated.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 1200,
+            "def": 1200,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 1.3,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "A+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "atk": 0.1,
+                "hp_ratio": 0.15,
+                "max_stack_cnt": 15.0,
+                "range_radius": 1.0,
+                "ranged_atk_scale": 0.5
+              }
+            },
+            {
+              "key": "Summon",
+              "parameters": {
+                "cnt": 2.0,
+                "enemy_key": "enemy_1367_dseed"
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_boneguard_fluxcaster",
+      "id": "enemy_1365_spnwiz",
+      "name": "Sarkaz Boneguard Fluxcaster",
+      "index": "SSK6",
+      "rank": "Normal",
+      "sort": 705,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Boneguard Fluxcaster.webp",
+      "flavour_text": "A Sarkaz Caster responsible for guarding the Feranmut's skeleton, their nature warped due to perpetually drifting through spacetime along with it. In times of emergency, they will call upon the Feranmut's power to disappear from the enemy's sight before reappearing at a more opportune time.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "If defeated within range of a Bloodcalling Altar, slips into a turbulence in spacetime and cannot be attacked during this period.",
+          "format": "normal"
+        },
+        {
+          "text": "Will revive on the field when affected by an altar's pulse.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 350,
+            "def": 200,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.0,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Reborning",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "duration": 2.0
+              }
+            },
+            {
+              "key": "Revive",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_boneguard_fluxcaster_captain",
+      "id": "enemy_1365_spnwiz_2",
+      "name": "Sarkaz Boneguard Fluxcaster Captain",
+      "index": "SSK7",
+      "rank": "Normal",
+      "sort": 706,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Boneguard Fluxcaster Captain.webp",
+      "flavour_text": "A Sarkaz Caster responsible for guarding the Feranmut's skeleton, their nature warped due to perpetually drifting through spacetime along with it, to the point that their very existence has become tenuous. In times of emergency, they will call upon the Feranmut's power to hide within the turbulent folds of spacetime before reappearing at a more opportune time to deliver a fatal blow.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "If defeated within range of a Bloodcalling Altar, slips into a turbulence in spacetime and cannot be attacked during this period.",
+          "format": "normal"
+        },
+        {
+          "text": "Will revive on the field when affected by an altar's pulse.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7000,
+            "atk": 420,
+            "def": 300,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.0,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Reborning",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "duration": 2.0
+              }
+            },
+            {
+              "key": "Revive",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_bloodwalker",
+      "id": "enemy_1366_dcolle",
+      "name": "Sarkaz Bloodwalker",
+      "index": "SSK8",
+      "rank": "Elite",
+      "sort": 707,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Bloodwalker.webp",
+      "flavour_text": "A special entity within the Crimson Court, ensuring that no touch of the Crimson's dominion over blood goes to waste. They collect the essence condensed from the blood spilled on the battlefield and wait for it to be given form again through the ancient rituals of the vampires.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Collects up to 5 pieces of dropped <Blood Amber>. When defeated, drops all collected <Blood Amber>.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 100,
+            "def": 350,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "E",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Collect",
+              "parameters": {
+                "max_stack_cnt": 5.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 5,
+            "recovery": "Over time",
+            "increment": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_bloodnexus",
+      "id": "enemy_1366_dcolle_2",
+      "name": "Sarkaz Bloodnexus",
+      "index": "SSK9",
+      "rank": "Elite",
+      "sort": 708,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Bloodnexus.webp",
+      "flavour_text": "A very special entity within the Crimson Court, ensuring that each strand of blood weaves the decrees issued by the Regent of the Royal Court. They collect the essence condensed from the blood spilled on the battlefield and wait for it to be returned to the cycle of slaughter through the ancient rituals of the vampires.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Cannot be blocked.",
+          "format": "normal"
+        },
+        {
+          "text": "Collects up to 5 pieces of dropped <Blood Amber>. When defeated, drops all collected <Blood Amber>.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 100,
+            "def": 400,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "E",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Collect",
+              "parameters": {
+                "max_stack_cnt": 5.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 5,
+            "recovery": "Over time",
+            "increment": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "blood_amber",
+      "id": "enemy_1367_dseed",
+      "name": "Blood Amber",
+      "index": "SSK10",
+      "rank": "Normal",
+      "sort": 709,
+      "hidden": false,
+      "icon": "/enemies-icons/Blood Amber.webp",
+      "flavour_text": "The blood that flows from warriors under the gaze of the Sanguinarch of Vampires will be turned into beautiful crystals waiting to be used once more, waiting to savor the taste of despair once more.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "When affected by the pulse of a Bloodcalling Altar, will be reborn as a Bloodborn Spawn at the altar.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3000,
+            "atk": 100,
+            "def": 3000,
+            "res": 90.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 1.0,
+            "weight": 2,
+            "taunt": -2,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "E",
+            "def": "S+",
+            "res": "SS",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "damage_resistance": 0.0,
+                "hp_ratio": 0.1
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "commander_ul_ulah",
+      "id": "enemy_1368_spilot",
+      "name": "Commander Ulšulah",
+      "index": "SSK11",
+      "rank": "Elite",
+      "sort": 710,
+      "hidden": false,
+      "icon": "/enemies-icons/Commander Ulšulah.webp",
+      "flavour_text": "Ulšulah, Lifebone's commander and the youngest major in the Kazdel Military Commission, fights not for any specific person or organization, but rather for the possibility that Kazdel can one day become a true country.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "[Marrowchill Aura] Significantly reduces the ASPD of surrounding allied units and gives a Bloodcalling Altar the ability to produce Blood Amber.",
+          "format": "silence"
+        },
+        {
+          "text": "When defeated, returns to a Bloodcalling Altar and revives after a period of time.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 800,
+            "def": 800,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.7,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": 2.0,
+            "weight": 7,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B+",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Charge",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "attack_speed": -80.0,
+                "hit_duration": 10.0,
+                "interval": 10.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Reborn",
+              "parameters": {
+                "duration": 20.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "anti_witchcraft_repositionable_bomb",
+      "id": "enemy_1369_bmbcar1",
+      "name": "Anti-Witchcraft Repositionable Bomb",
+      "index": "LUD",
+      "rank": "Normal",
+      "sort": 711,
+      "hidden": false,
+      "icon": "/enemies-icons/Anti-Witchcraft Repositionable Bomb.webp",
+      "flavour_text": "A bomb whose explosion can suppress the effects of Sarkaz witchcraft, with a prototype delivery platform originating from Victoria. After being modified by a certain demolition expert, it has become a trump card in our desperate battles.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Neutral unit; will be prioritized by both enemy and friendly units.",
+          "format": "normal"
+        },
+        {
+          "text": "Movement Speed is slowed when attacked by an enemy unit, but increased when attacked by a friendly unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Explodes upon reaching a Bloodcalling Altar, dealing a large amount of True damage to surrounding enemies and destroying the Altar.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 500,
+            "def": 200,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 1.7,
+            "weight": 5,
+            "taunt": 1,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "C",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Explosion",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 10.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Passive",
+              "parameters": {
+                "multiplier": 0.1
+              }
+            },
+            {
+              "key": "SpCtrl",
+              "parameters": {
+                "enemy_bmbcar1_sp[reduce1].sp": -1.0,
+                "enemy_bmbcar1_sp[reduce2].sp": -2.0,
+                "enemy_bmbcar1_sp[reduce_dmg].sp": -1.0,
+                "reduce_duration1": 3.0,
+                "reduce_duration2": 6.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 10,
+            "recovery": "Over time",
+            "increment": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "duqarael_regents_crimson",
+      "id": "enemy_1547_blord",
+      "name": "Duq'arael, 'Regent's Crimson'",
+      "index": "PB",
+      "rank": "Boss",
+      "sort": 1344,
+      "hidden": false,
+      "icon": "/enemies-icons/Duq'arael, 'Regent's Crimson'.webp",
+      "flavour_text": "The Host of the Crimson Court, and master of all bloodborn. A drop of Teekaz blood once flowed through his body, and its last remaining purity has returned to the land. Now, he has his sights set on the King of Sarkaz once again. He smiles, declaring that he has already slain one such King, and plans to bid farewell to the final one.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Moon-Devouring Bloodmist] Releases a searing Blood Mist centered around a target, inflicting increasing amounts of Arts damage to allied units within while reducing their ASPD and increasing their Redeployment Time. Pieces of Blood Amber affected by this Blood Mist will turn into Bloodborn Spawn.",
+          "format": "normal"
+        },
+        {
+          "text": "[Blood Surge] When defeated, this skill will activate 4 times, selecting one target each time (prioritizing units that have not been hit). Deals Arts damage to the target and all units in the adjacent 4 tiles and stuns them.",
+          "format": "normal"
+        },
+        {
+          "text": "When defeated, returns to the Throne of Blood and revives after a period of time.",
+          "format": "normal"
+        },
+        {
+          "text": "Enters second form when the Throne of Blood is destroyed.",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "Takes greatly reduced Physical and Arts damage and increases the HP recovery rate of other surrounding enemy units (this trait will be lost for a while when this unit is hit by an <Anti-Witchcraft Repositionable Bomb>)",
+          "format": "normal"
+        },
+        {
+          "text": "[Blood Affliction] Attacks deal continuous Arts damage that ramps up over time. If the target leaves the field during this duration, their Redeployment Time will be greatly increased.",
+          "format": "normal"
+        },
+        {
+          "text": "[Crimson Edict] Continuously spawns <Blood Amber> around this unit for a period of time. Afterward, Blood Mist will be released centered around this unit.",
+          "format": "normal"
+        },
+        {
+          "text": "[Sunken Death] When struck by an <Anti-Witchcraft Repositionable Bomb>, destroys the corresponding bomb loading point, and releases [Blood Surge] twice.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 700,
+            "def": 300,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": 2.2,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "BloodFog",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "addOnDamage": 150.0,
+                "addOnDuration": 10.0,
+                "attack_speed": -40.0,
+                "baseDamage": 50.0,
+                "delay": 1.0,
+                "enemy_key": "enemy_1360_dfello",
+                "hp_ratio": 0.0,
+                "max_target": 1.0,
+                "projectile_life_time": 10.0,
+                "projectile_range": 1.7,
+                "respawn_time": 2.0
+              }
+            },
+            {
+              "key": "BloodFountain",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "duration": 20.0,
+                "interval": 5.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 40000,
+            "atk": 850,
+            "def": 450,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": 2.2,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "BloodFog",
+              "sp_cost": 0,
+              "cooldown": 25.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "addOnDamage": 150.0,
+                "addOnDuration": 10.0,
+                "attack_speed": -40.0,
+                "baseDamage": 50.0,
+                "delay": 1.0,
+                "enemy_key": "enemy_1360_dfello",
+                "hp_ratio": 0.0,
+                "max_target": 1.0,
+                "projectile_life_time": 10.0,
+                "projectile_range": 1.7,
+                "respawn_time": 2.0
+              }
+            },
+            {
+              "key": "BloodFountain",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "duration": 20.0,
+                "interval": 5.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

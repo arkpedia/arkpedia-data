@@ -1,0 +1,761 @@
+{
+  "name": "Bena",
+  "rarity": 5,
+  "class": "Specialist",
+  "branch": "Dollkeeper",
+  "faction": "Victoria",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS",
+    "Fast-Redeploy"
+  ],
+  "trait": "Does not retreat upon receiving lethal damage, instead swaps to a <Substitute> (Substitute has 0 Block). Swaps back to the original after 20 seconds",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Preluding Lights"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Prairie Pals"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_369_bena",
+  "otherLanguages": {
+    "Simplified Chinese": "贝娜",
+    "Traditional Chinese": "貝娜",
+    "Japanese": "ベナ",
+    "Korean": "베나"
+  },
+  "characterInfo": {
+    "File no.": "VC14",
+    "Operator Record": "The Simple Wish",
+    "Paradox Simulation": "Shan't Leave Well Alone",
+    "Illustrator": "下野宏铭",
+    "Release Date": "2021/12/09",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Chitose Morinaga",
+    "Chinese": "Wang Xiaotong (credited as \"Cheddar\" in EN)",
+    "English": "Lydia Kirton",
+    "Korean": "Kim Hyun-ji"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "April 3rd",
+    "Race": "Caprinae",
+    "Height": "143 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Bena's Protractor",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "Substitute deals Arts damage"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Substitute deals Arts damage and reduces Physical and Arts damage taken by 20%"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Substitute deals Arts damage and reduces Physical and Arts damage taken by 23% (+3%)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Substitute deals Arts damage and reduces Physical and Arts damage taken by 40%"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Substitute deals Arts damage and reduces Physical and Arts damage taken by 43% (+3%)"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Bena's Protractor"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Bena's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Rapid Trimming .",
+        "Bena's Protractor improved."
+      ],
+      "prerequisite": "Raise Bena to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Specialist Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        },
+        {
+          "name": "Device",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Bena's Protractor improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Bena to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Specialist Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Oriron Block",
+          "quantity": 6
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 15
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Fervent Trimming",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Max HP -50% , ATK +50% and ignore 10% of the target's DEF",
+            "initialSp": 10,
+            "spCost": 45,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Max HP -50% , ATK +55% and ignore 10% of the target's DEF",
+            "initialSp": 10,
+            "spCost": 44,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Max HP -50% , ATK +60% and ignore 10% of the target's DEF",
+            "initialSp": 10,
+            "spCost": 43,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Max HP -50% , ATK +65% and ignore 20% of the target's DEF",
+            "initialSp": 15,
+            "spCost": 42,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Max HP -50% , ATK +70% and ignore 20% of the target's DEF",
+            "initialSp": 15,
+            "spCost": 41,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Max HP -50% , ATK +75% and ignore 20% of the target's DEF",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Max HP -50% , ATK +80% and ignore 30% of the target's DEF",
+            "initialSp": 20,
+            "spCost": 39,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Max HP -50% , ATK +85% and ignore 30% of the target's DEF",
+            "initialSp": 20,
+            "spCost": 38,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Max HP -50% , ATK +90% and ignore 35% of the target's DEF",
+            "initialSp": 25,
+            "spCost": 37,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Max HP -50% , ATK +100% and ignore 35% of the target's DEF",
+            "initialSp": 25,
+            "spCost": 35,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-12",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 3
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Rapid Trimming",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20–22 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +30% , ASPD +20 and lose 4% HP every attack",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +35% , ASPD +25 and lose 4% HP every attack",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +40% , ASPD +30 and lose 4% HP every attack",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +45% , ASPD +35 and lose 4% HP every attack",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 21
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +50% , ASPD +40 and lose 4% HP every attack",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 21
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +55% , ASPD +45 and lose 4% HP every attack",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 21
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +60% , ASPD +50 and lose 4% HP every attack",
+            "initialSp": 18,
+            "spCost": 25,
+            "duration": 22
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +70% , ASPD +60 and lose 4% HP every attack",
+            "initialSp": 18,
+            "spCost": 25,
+            "duration": 22
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +80% , ASPD +70 and lose 4% HP every attack",
+            "initialSp": 18,
+            "spCost": 25,
+            "duration": 22
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +90% , ASPD +80 and lose 4% HP every attack",
+            "initialSp": 18,
+            "spCost": 25,
+            "duration": 22
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy",
+              "quantity": 1
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 4
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 2
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 4
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "\"Reliable\" Helper",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, productivity -20% , capacity limit +17 , and Morale consumed per hour -0.25"
+    },
+    {
+      "name": "Tailoring α",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, the chance of getting higher-yield Precious Metal orders is increased slightly (rate is influenced by length of work time), and Morale consumed per hour is reduced by -0.25"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Bena's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "PUM-Y: The Jeffreys Collection of Fairytales New and Old, Hardback Edition",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Bena, and unleash Rapid Trimming at least 1 time in each battle",
+        "requirement2": "Clear Main Theme 2-3 with a 3-star rating; You must deploy your own Bena, and have Bena defeat at least 1 Heavy Defender"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +200 , ATK +40",
+          "effectLabel": "Trait improved",
+          "effectText": "Instead of retreating when defeated, switch to a <Substitute> (Substitute has 0 Block, but HP is increased ) for 20 seconds before switching back to the original",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +250 , ATK +50",
+          "effectLabel": "Bena's Protractor improved",
+          "effectText": "Substitute deals Arts damage and reduces Physical and Arts damage taken by 43%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +280 , ATK +55",
+          "effectLabel": "Bena's Protractor improved",
+          "effectText": "Substitute deals Arts damage and reduces Physical and Arts damage taken by 45%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Specialist\nOperator\nBena, retained aboard\nRhodes Island\nafter her attempt to bring\nIris\nback to\nVictoria\nturned out fruitless.\nUses unique doll manipulation techniques, able to demonstrate a special strategic value on the battlefield.\nConsidering her age and her own wishes, only to be deployed under special circumstances.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1139,
+          "atk": 309,
+          "def": 130,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 15,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1519,
+          "atk": 424,
+          "def": 200,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 15,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1519,
+          "atk": 424,
+          "def": 200,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 17,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1923,
+          "atk": 559,
+          "def": 261,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 17,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1923,
+          "atk": 559,
+          "def": 261,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 17,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2435,
+          "atk": 682,
+          "def": 315,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 17,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 100,
+      "atk": 60,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Bena shows no signs of Originium infection, and neither does Annie.\n\n[Blood Originium-Crystal Density] 0.14u/L\nOperator Bena rarely comes into contact with Originium, and Annie also usually does not.\n\n'Who wrote that last part in her test results? Who's Annie?' —Anonymous Medical Department operator"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "After Iris came to Rhodes Island, a Cautus visitor would often come to carry away what children wanted safekept. But one day, this Cautus visitor brought a Caprinae from Victoria who directly sought out Iris, chattered with her for more than an hour, and then applied to stay aboard just like Iris had. From her vexed, scheming expressions, it's plain to see that she's confident Rhodes Island is using some underhanded method to curtail Iris's freedom. After conducting an 'investigation' aboard that stretched out over two months, she found no evidence to support her view; our Cautus friend and Iris helped out in resolving this misunderstanding, and ultimately, she conceded her own failure of judgment. However, she did not return directly to Victoria, instead having the Cautus leave and then staying aboard along with Iris. The 'public' account is that she feels she should be of company to Iris until she fulfills her own responsibility, but the truth?\n'There are riches of toys in the playroom here, and plenty of people to play with. What's the harm in me staying for a while?' After finishing registering herself and becoming an interim Operator Caprinae—so Bena said."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Like Iris, interim Operator Bena asks the children whether they have anything they can't keep safe for long, and hands it to her Cautus associate to take back to Victoria. However, the way she gains trust is unlike Iris. To put it this way: Iris looks after the other children like an older sibling, while Bena plays together with the children, becoming one of them. With the help of her doll Annie, Bena is easily able to slip into the children's conversational circles, and is further able to put on an 'act' in front of others of her own volition, 'imitating' all sorts of personalities. If the Doctor hadn't punctured her 'act' the first time they met, she would be giving the Doctor a completely different character and tone of voice now.\nOwing to her consummate 'acting,' Bena is often able to 'obtain' more belongings than Iris does. That said, she's not competing with Iris for anything, only treating this as a sort of work, something she must do. Bena is always willing to do more for the Castle's long-retired 'Granny'—this is one of the few things she will readily admit.\n\n'After Bena boarded, Iris's routine with that mysterious Cautus changed. Now she takes everything to Bena first, the two of them are alone for a bit, and then Iris comes out with the things again and hands them over. Why? What on Terra is Bena up to?' —Excerpt from the failed Iris investigation records"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Bena doesn't shy from telling others just what her duty in the Castle is. Just as we'd conjectured, she is the one in charge of the preservation technique for belongings, and through her handling, the lifespans of things sent to the Castle can far exceed the original limit of their existence. However, should anyone attempt to look into details of her technique, she will make use of every childlike technique to avoid talking about the particulars, including but not limited to: dour refusal, blank ignorance, instant lapse of memory, etc., etc. Thanks to her reactions being far too amusing for their own good, some go out of their way to raise this topic with her, but anyone Bena or Annie sees through will soon suffer the practical tomfoolery of a little Caprinae and her doll together. At this stage, one can put the Caprinae prankmaster out of their mind, because most of the time, the one putting plans into practice is the ordinarily quiet, unspeaking doll Annie.\n'I'm warning you, never, ever treat Annie as some ordinary doll. She—forgive me for using 'she' rather than 'it' to refer to Annie—she can speak, think, is capable of lone operation far from Bena, and aside from clear spherical joints and a notable gap in personality, fundamentally differs none from Bena at all. Moreover, though she's reserved with speech, her curiosity is exuberant. When not by Bena's side, she'll roam about Rhodes Island wherever on her own, and should she find something interesting, she'll stay there and quietly watch, saying nothing. People are frequently startled by Annie, and some inquisitive people will instruct Annie personally. At times, Annie will be so absorbed in observation that she'll forget to return to Bena's side, who as a master of sorts will scramble about Rhodes Island searching for her doll, then finally find her Annie nestled in some room focused on something all too keenly.'\n'I know the description above might not seem too frightening. That's because I've only written about how Annie ordinarily acts. If you antagonize her and Bena, Bena will tell Annie absolutely every last horrid idea off the top of her head, and Annie will then spend days, possibly even up to months, carrying these plans out on you without a break.'\n'Believe me, you don't want to try. In terms of build and potential to harm, she has Morte beat by miles.'\n—Independently compiled by a Rhodes Island archivist Operator"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Roam, lost lamb, without a way, so worn and parched her stomach brays.\nHome so far, kindred unknown, name all gone, lost years ago.\nRoam, lost lamb, without a way, not even loved by Feline may.\nCome a night with stormy rain, thunder and lightning fierce—\nThe little lamb sits 'neath the eaves, with hollow belly's fears.\nAnd plop! she hears from somewhere off, a person's tripped and fell—\nAn oldly lady, rushing home, has slipped, and is unwell.\nNo-one around this roaring rain takes note, or has a mind to pay—\n'Oh Granny, Granny, are you fine? Is everything okay?'\nThe little lamb, her heart so warm, lone helper from afar—\n'Thank you, thank you, little lamb, so darling kind you are.\nThe rain is pouring, quickly now—go home and bless your soul—'\nYet great and vast the city runs, the lamb without abode.\n'Come to my house, then, come with me. Take rest beyond the rain.'\nShe shakes off dry, she nods, and goes to Granny's place to stay.\nA basket full of ripe red fruit, she hands the lamb to bear—\nThe apples, slicked, perfume so sweet, her mind so wide aware.\nShe swallows down her hunger, by her shoulder lifts the weave—\nAnd once at Granny's door, the rain has soaked her to a freeze.\nBut Granny doesn't mind, and brings her to the dining space—\n'Sit now, darling little lamb, sit down and take your place.\nI'm off upstairs to take a bath. I'll be right back posthaste.'\nThen Granny leaves behind the lamb, to sit there all alone.\nThe food is rich, laid wide in front—her mind and stomach groan.\nShe swallows down another ache, and waits for Granny wise.\nShe waits, and waits, and waits until she faints from hunger's cries.\nShe wakes again after some time, now lying in a bed.\nShe's clean and dry, and by her side, all wondrous food is spread.\nShe's filled with such a warmth inside, and Granny's tickled pink—\n'Eat, now, eat, poor little lamb, there's no more need to think.\nYou'll never want for food or drink, if you come by my side.'\n'Oh, why? Oh, why?' the lamb now asks, and asks again, eyes wide.\n'Because, my dear, once storms clears up, the apples washed by rain—\nAre sweetest of them all.' And Granny laughs, and laughs away.\n—Extract from 'The Jeffreys Collection of Fairytales New and Old'\n\n'Granny said this was a fairytale from Victoria's past. But why do I feel like it's about me?' —Bena\n'The story's older than Granny.' —Annie"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Bena has extreme hands-on proficiency. All the clothes you see her as well as Annie wearing were personally made by herself. We've heard that in the Castle is an age-old library, and Bena's childhood was, outside of completing what tasks her Granny gave her, spent in that library reading whatever books she wanted to. She had too solitary a life in the past, to the extent that when she discovered techniques in a book that could enable her to 'make' her own true friend, she threw all her time into it without hesitation, and the ultimate crystallization of these techniques is Annie herself. Not a single person in the Castle was surprised by the appearance of Annie; to them, 'everything in fairytales is possible,' yet she'd need an explanation if she were meeting anyone outside the Castle—\n'A doll' is the pretense Bena gives. Bena often needs to use Originium Arts and manual ability to protect Annie, and in this regard, there is no difference between her and a doll. That said, those who pay attention will note that the Caprinae and the doll's conversations seem more than anything to be another sort of 'act.' Both have long since understood the other's actions, they know the other's tastes, and making displays of communication is really just a way of relief during daily life, or to alleviate surrounding people's doubts and fears. That perspective is one reasoned through the lens of medical observation by the doctor that carries out Bena's scans. From it, we can infer that when Bena says Annie is 'another me,' she's not lying whatsoever.\n'We have queried the relevant Medical Department Operator with resulting testimony that the above speculation has no empirical evidence. Deletion suggested.' —Anonymous high-ranking administrative personnel"
+    }
+  ]
+}

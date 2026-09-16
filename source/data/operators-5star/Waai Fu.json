@@ -1,0 +1,755 @@
+{
+  "name": "Waai Fu",
+  "rarity": 5,
+  "class": "Specialist",
+  "branch": "Executor",
+  "faction": "Lee's Detective Agency",
+  "umbrellaFactions": [
+    "Yan-Lungmen"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Fast-Redeploy",
+    "Debuff"
+  ],
+  "trait": "Significantly reduced Redeployment Time",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Wild Flower of Street"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_243_waaifu",
+  "otherLanguages": {
+    "Chinese": "槐琥",
+    "Japanese": "ワイフー",
+    "Korean": "와이후"
+  },
+  "characterInfo": {
+    "File no.": "LM12",
+    "Operator Record": "What Martial Arts Serve",
+    "Paradox Simulation": "Banish Evil",
+    "Illustrator": "KuroBlood",
+    "Release Date": "2020/05/27",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Yuu Kobayashi",
+    "Mandarin": "KIYO",
+    "Cantonese": "Xiantawutong (credited as \"Cotton Candy\" in EN)",
+    "English": "Molly Zhang",
+    "Korean": "Yoon Eun-seo"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "14 years",
+    "Place of Birth": "Yan",
+    "Date of Birth": "December 1st",
+    "Race": "Feline",
+    "Height": "162 cm",
+    "Infection Status": "Confirmed uninfected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Excellent",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "Red Browed Wing Chun",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When attacking, has a 20% chance to increase ATK to 125% and slightly knock the target back"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When attacking, has a 20% chance to increase ATK to 135% (+10%) and slightly knock the target back"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When attacking, has a 20% chance to increase ATK to 150% and slightly knock the target back"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When attacking, has a 20% chance to increase ATK to 160% (+10%) and slightly knock the target back"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "DEF +19"
+      },
+      {
+        "level": 4,
+        "benefit": "Redeployment time -2 seconds"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Red Browed Wing Chun"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Waai Fu's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Red Browed Wing Chun .",
+        "New skill: Seven-styles Kick ."
+      ],
+      "prerequisite": "Raise Waai Fu to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Specialist Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Red Browed Wing Chun improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Waai Fu to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Specialist Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "RMA70-24",
+          "quantity": 7
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 16
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "One-inch Punch",
+        "recoveryType": "Passive",
+        "activationType": "10 seconds",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "After deployment, ATK +25% , and the ATK of the target attacked by Waai Fu -20% for 2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "After deployment, ATK +30% , and the ATK of the target attacked by Waai Fu -20% for 2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "After deployment, ATK +35% , and the ATK of the target attacked by Waai Fu -20% for 2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "After deployment, ATK +40% , and the ATK of the target attacked by Waai Fu -25% for 2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "After deployment, ATK +45% , and the ATK of the target attacked by Waai Fu -25% for 2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "After deployment, ATK +50% , and the ATK of the target attacked by Waai Fu -25% for 2 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "After deployment, ATK +55% , and the ATK of the target attacked by Waai Fu -30% for 3 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "After deployment, ATK +60% , and the ATK of the target attacked by Waai Fu -33% for 3 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "After deployment, ATK +65% , and the ATK of the target attacked by Waai Fu -36% for 3 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "After deployment, ATK +70% , and the ATK of the target attacked by Waai Fu -40% for 3 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": 10
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "Polyester Pack",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 3
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Seven-styles Kick",
+        "recoveryType": "Passive",
+        "activationType": null,
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "After deployment, immediately deals 180% ATK as physical damage to surrounding enemies and silences their special abilities for 5 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "After deployment, immediately deals 190% ATK as physical damage to surrounding enemies and silences their special abilities for 5 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "After deployment, immediately deals 200% ATK as physical damage to surrounding enemies and silences their special abilities for 5 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "After deployment, immediately deals 210% ATK as physical damage to surrounding enemies and silences their special abilities for 6 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "After deployment, immediately deals 220% ATK as physical damage to surrounding enemies and silences their special abilities for 6 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "After deployment, immediately deals 230% ATK as physical damage to surrounding enemies and silences their special abilities for 6 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "After deployment, immediately deals 240% ATK as physical damage to surrounding enemies and silences their special abilities for 7 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "After deployment, immediately deals 255% ATK as physical damage to surrounding enemies and silences their special abilities for 7 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "After deployment, immediately deals 270% ATK as physical damage to surrounding enemies and silences their special abilities for 7 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "After deployment, immediately deals 290% ATK as physical damage to surrounding enemies and silences their special abilities for 8 seconds",
+            "initialSp": "–",
+            "spCost": "–",
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 2
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 4
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 5
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron Cluster",
+          "quantity": 2
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Team Spirit",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, ignore the effects of any Operators stationed in that Factory that would affect the Morale consumption of this Operator"
+    },
+    {
+      "name": "Cooperative Will",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, provides an additional 5% productivity for every 5% productivity provided by all other Operators assigned to that Factory (excluding the additional productivity affected by facility count), up to a maximum of 40% productivity."
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Waai Fu's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "EXE-X: The Classic of Hung Mei Wing Chun",
+      "mission": {
+        "requirement1": "Defeat a total of 50 Infected Creatures with Waai Fu's Seven-styles Kick (Waai Fu cannot be a Support Unit)",
+        "requirement2": "Clear Main Theme 4-7 with a 3-star rating; You must deploy your own Waai Fu, and only 6 other Operators are allowed for the remaining units"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +70 , ATK +45",
+          "effectLabel": "New trait",
+          "effectText": "Refunds a large portion of the current DP Cost when retreated",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +85 , ATK +55",
+          "effectLabel": "New talent: Ridding Evil",
+          "effectText": "Increases Physical damage dealt to [Infected Creatures] by 7%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +95 , ATK +65",
+          "effectLabel": "Ridding Evil improved",
+          "effectText": "Increases Physical damage dealt to [Infected Creatures] by 14%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Waai Fu is a university student from\nLungmen\n, serving\nRhodes Island\nfrom the first batch of employees hired under a secret Lungmen-Rhodes Island commercial agreement. On the recommendation of\na certain firm\n, she took a battery of tests that showed scores wildly inconsistent with her stated identity. She clearly has substantial combat experience. Several investigations are ongoing.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 680,
+          "atk": 207,
+          "def": 137,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 7,
+          "block": 1,
+          "interval": 0.93
+        },
+        "max": {
+          "hp": 907,
+          "atk": 305,
+          "def": 196,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 7,
+          "block": 1,
+          "interval": 0.93
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 907,
+          "atk": 305,
+          "def": 196,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 9,
+          "block": 1,
+          "interval": 0.93
+        },
+        "max": {
+          "hp": 1134,
+          "atk": 418,
+          "def": 255,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 9,
+          "block": 1,
+          "interval": 0.93
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1134,
+          "atk": 418,
+          "def": 255,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 9,
+          "block": 1,
+          "interval": 0.93
+        },
+        "max": {
+          "hp": 1455,
+          "atk": 536,
+          "def": 304,
+          "res": 0,
+          "redeploy": 18,
+          "dp": 9,
+          "block": 1,
+          "interval": 0.93
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 50,
+      "def": 30
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there are no other signs of infection. At this time, this operator can be confirmed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Waai Fu shows no signs of Oripathy infection.\n\n[Blood Originium-Crystal Density] 0.13u/L\nOperator Waai Fu rarely interacts with Originium or its byproducts, and has a healthier physique than the average citizen. Although there is no relationship between one's physique and susceptibility to Oripathy... \nHey, this young lady can jump between buildings and punch through a wall with her bare fists. Makes sense she's in good shape, eh? \n——Mr. Aak, who happened to pass by"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "When Waai Fu presented her recommendation to Human Resources, most of the reviewing operators had low expectations. Considering how often they see strong-looking, adventurous types show up with an air of danger, only to emerge bruised, battered, and reduced to tears by tests both physical and psychological. \nBut Waai Fu came through the psychological tests with a stable disposition. Some operators assumed this was just a fluke, until she swiftly put two operators on the floor in her combat tests, drawing attention to her potential. \nOf course, these tests are only the beginning of the onboarding process."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Fear of the Infected is an expected response. Suffice it to say that if an ordinary person finds it easy to enter a group of Infected, they had either a peculiar upbringing or some as yet unknown secrets. \nIn other words, the Infected are used to instilling fear in the uninfected. Such is the result of a world that treats them so. \nAfter learning of Rhodes Island and our work with the Infected, Waai Fu exhibited a degree of confusion. \nShe hesitated when Instructor Dobermann, who is Infected, reached out to her politely. \nHowever, not grounds for Rhodes Island to reject an applicant. On the contrary, it is a normal reaction worth recording: real, natural and cruel. \n\nWaai Fu took Instructor Dobermann's hand. \nShe said that upon learning of Rhodes Island's experiment that demonstrated how everyday exposure does not facilitate the spread of Oripathy, all that remained for her to do was adapt. \n'It is not habit that controls a person, but prejudice.' \nOperator Waai Fu answered Instructor Dobermann's question intensely. \nInstructor Dobermann rarely shows emotion, but this time she came out beaming."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Waai Fu has much going for her, from her impressive physique to her extraordinary, if quirky, combat techniques, all the way to her academic qualifications (She's still in school! Did you even read her resume?!), commendable work ethic, practical experience, and so much more. \nWhile she is quite young, Waai Fu commands the respect of many operators because she possesses that most important virtue in any good Rhodes Islander: tolerance \nThis is not to say she is always walking on eggshells. If asked to describe Waai Fu in brief, most operators would probably describe her as a punisher of wrongdoing. \nWaai Fu is known to actively investigate the causes and effects of certain incidents. In some situations, such as disciplinary violations, she steps in to stop them at once. In others, such as outbursts of psychological issues some operators struggle with, she will focus on harm reduction. \n'If right and wrong were so easy to tell apart, nothing would ever go wrong.' \nOf course it's wrong to steal property from the Doctor's office. Please don't provoke Waai Fu again! Running in the corridors is dangerous! The medic operators are already overworked as it is! \n\nWaai Fu unquestionably fills a role Rhodes Island needs. Even though she considers her work here to be only 'part-time,' her effective performance and competent communication can be described as nothing short of excellent. \nWhen asked about herself, it is difficult to get Waai Fu to speak about anything other than her martial arts and the dark and messy detective office that recommended her to Rhodes Island, as well as her 'ordinary daily life.' She will disclose her personal career goals only on rare, formal occasions—— \n'I want to be the kind of person who can help people.' \nPerhaps... a bit too broad."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Is everyone here? \nFirst off, let me congratulate all of us here in Human Resources on a job well done. This past month has been stellar, and I think we've all earned a nice meal. On me, as always! \nNow then, I have something to discuss, pertaining to the exchange agreement between Lungmen and Rhodes Island. The first round of applicant review falls on us. We do very important work here! \nEven those of you most familiar with Rhodes Island's regulations will sometimes get confused by some wording or something, right? I know there's one line, hm, it's pretty long in the original, but paraphrased—— \n'Should an operator fail to meet the needs of Rhodes Island, regardless of motivation or action, they are ineligible for onboarding. Conversely, should an operator appear with an origin or background subject to some scrutiny, as long as they meet our needs and strictly abide by our rules, they remain eligible...' \nSomething like that! The original text is very dry and very long, so I won't go over it all right now. \nDoes anyone feel the need to ask 'why?' Let me provide a simple example. \n\nSay there is some remarkable individual who comes highly recommended, with a remarkable set of personal ideals. In order to see their ideals realized, they sacrificed many people, destroyed entire cities, and ultimately succeeded. \nNo matter how great this individual or their ideals, Rhodes Island cannot accept them. We would be nothing but a platform for such a person. \nThen we have another individual, who has their share of problems. The things they do and the ways they do them may seem a bit unreasonable to us. This person submits a resume to Rhodes Island.—— \nSit down! I know you're all eager to say 'we already have a lot of operators like that!' And there are indeed some! \nThink for a minute how many things happen each and every day in the many cities of the world. Can we settle them all ourselves? \nWhen an operator subjectively plans an action that would harm Rhodes Island's ideas, that operator is immediately expelled. When an operator intentionally violates Rhodes Island's rules and regulations, that operator may be eliminated before they can cause material harm. \nEven if! Even if the regulations are as they are, Rhodes Island has never once done such a thing, we have never seen such an action. Oh, not counting private wire connections. You can blame Closure for those! \nThe adjudication of whether or not an operator is eligible is dependent on his will, not his rap sheet. \nRhodes Island has the ability to observe and study its operators while also maintaining its rules and regulations. At Rhodes Island, some operators are at last able to achieve what they'd always hoped to do. \nAs long as we maintain contact with them, we will respect their choices, within reason, and never force them to act against their own will. \nSometimes, when there remains no other choice, such a thing may come to pass. \nI hope everyone understands this, just as they understand the Infected, and Rhodes Island's mission statement. \n\nFor all candidates, the most important thing is to find them their place at Rhodes Island, and to acknowledge Rhodes Island. \nWe must adhere to this in processing the applicants under this exchange agreement. Understood? \nAh, of course, the Waai Fu girl we just approved is perfectly fine. \n'——When one is committed to constant reflection and tempering of his ideals, we are willing to serve as his forge. The bumps in this road, whether mine or yours... We will cross them together with our operators.' \nI hope you all appreciate this quote from Theresa. \n\n ——Record of ■■■'s lunch meeting."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "'Dad, where are you going?' \n'I have to find something.' \n'Dad... don't go! I don't want to lose you, Dad!' \n'Want to see me? Then catch me!' \n'But I... How can I...?' \n'If you can't, then you're not my daughter. You must be strong!' \n\nToo selfish, father. \nBut I can. \nIn fact, I'll do it better than you ever could. I train harder than you. I'll be stronger than you."
+    }
+  ]
+}

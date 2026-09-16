@@ -1,0 +1,756 @@
+{
+  "name": "Aroma",
+  "rarity": 5,
+  "class": "Caster",
+  "branch": "Blast Caster",
+  "faction": "Siracusa",
+  "umbrellaFactions": [],
+  "connectedFactions": [
+    "Columbia"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "AoE",
+    "Crowd-Control"
+  ],
+  "trait": "Deals AOE Arts damage in a long line",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Picnic Times"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_446_aroma",
+  "otherLanguages": {
+    "Simplified Chinese": "阿罗玛",
+    "Traditional Chinese": "阿羅瑪",
+    "Japanese": "アロマ",
+    "Korean": "아로마"
+  },
+  "characterInfo": {
+    "File no.": "SR39",
+    "Operator Record": "Come And Join Us",
+    "Paradox Simulation": "Surfctancy",
+    "Illustrator": "ヌードル",
+    "Release Date": "2024/10/10",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Kio Fukamachi",
+    "Chinese": "Cheng Li",
+    "English": "Laura Cherubelli",
+    "Korean": "Yang Yu-jin"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Siracusa",
+    "Date of Birth": "August 1st",
+    "Race": "Lupo",
+    "Height": "157 cm",
+    "Infection Status": "Originium crystals distributed across surface of body, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Standard",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Let's Get Saponaceous!",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "The first hit against each enemy has ATK increased to 105% and Levitates the target for 2.5s"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "The first hit against each enemy has ATK increased to 110% (+5%) and Levitates the target for 2.5s"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "The first hit against each enemy has ATK increased to 110% and Levitates the target for 2.5s"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "The first hit against each enemy has ATK increased to 115% (+5%) and Levitates the target for 2.5s"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +33"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Let's Get Saponaceous!"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Aroma's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +3 .",
+        "New talent: Let's Get Saponaceous! .",
+        "New skill: Caution! Wet Floor! .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Aroma to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Let's Get Saponaceous! improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Aroma to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "RMA70-24",
+          "quantity": 7
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 21
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Power Cleaning",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Next attack deals 120% ATK as Arts damage, plus an additional 40% ATK as Arts damage to aerial enemies Can store up to 2 charges",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Next attack deals 130% ATK as Arts damage, plus an additional 45% ATK as Arts damage to aerial enemies Can store up to 2 charges",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Next attack deals 140% ATK as Arts damage, plus an additional 50% ATK as Arts damage to aerial enemies Can store up to 2 charges",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Next attack deals 150% ATK as Arts damage, plus an additional 55% ATK as Arts damage to aerial enemies Can store up to 2 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Next attack deals 160% ATK as Arts damage, plus an additional 60% ATK as Arts damage to aerial enemies Can store up to 2 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Next attack deals 170% ATK as Arts damage, plus an additional 65% ATK as Arts damage to aerial enemies Can store up to 2 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Next attack deals 180% ATK as Arts damage, plus an additional 70% ATK as Arts damage to aerial enemies Can store up to 2 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Next attack deals 190% ATK as Arts damage, plus an additional 75% ATK as Arts damage to aerial enemies Can store up to 2 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Next attack deals 200% ATK as Arts damage, plus an additional 80% ATK as Arts damage to aerial enemies Can store up to 2 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Next attack deals 210% ATK as Arts damage, plus an additional 90% ATK as Arts damage to aerial enemies Can store up to 2 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Caution! Wet Floor!",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "23 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +50% , and deals 50% ATK as Arts damage to Levitated enemies within range when they fall back to the ground.",
+            "initialSp": 15,
+            "spCost": 60,
+            "duration": 23
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +55% , and deals 55% ATK as Arts damage to Levitated enemies within range when they fall back to the ground.",
+            "initialSp": 18,
+            "spCost": 60,
+            "duration": 23
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +60% , and deals 60% ATK as Arts damage to Levitated enemies within range when they fall back to the ground.",
+            "initialSp": 18,
+            "spCost": 55,
+            "duration": 23
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +65% , and deals 65% ATK as Arts damage to Levitated enemies within range when they fall back to the ground.",
+            "initialSp": 20,
+            "spCost": 55,
+            "duration": 23
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +70% , and deals 70% ATK as Arts damage to Levitated enemies within range when they fall back to the ground.",
+            "initialSp": 20,
+            "spCost": 52,
+            "duration": 23
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +75% , and deals 75% ATK as Arts damage to Levitated enemies within range when they fall back to the ground.",
+            "initialSp": 21,
+            "spCost": 52,
+            "duration": 23
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +80% , and deals 80% ATK as Arts damage to Levitated enemies within range when they fall back to the ground.",
+            "initialSp": 21,
+            "spCost": 48,
+            "duration": 23
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +90% , and deals 90% ATK as Arts damage to Levitated enemies within range when they fall back to the ground.",
+            "initialSp": 23,
+            "spCost": 45,
+            "duration": 23
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +95% , and deals 100% ATK as Arts damage to Levitated enemies within range when they fall back to the ground.",
+            "initialSp": 25,
+            "spCost": 45,
+            "duration": 23
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +100% , and deals 110% ATK as Arts damage to Levitated enemies within range when they fall back to the ground.",
+            "initialSp": 27,
+            "spCost": 42,
+            "duration": 23
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Sugar Pack",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 3
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock",
+          "quantity": 10
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 6
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar Pack",
+          "quantity": 3
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Clean Breeze",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, Precious Metal productivity +25% , and Morale consumed per hour +0.25"
+    },
+    {
+      "name": "Routine Cleaning",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, productivity per hour +2% , up to +20% ."
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Aroma's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "BLA-X: Lemon-flavored Childhood",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Aroma, and unleash Caution! Wet Floor! at least once in each battle",
+        "requirement2": "Clear Side Story GT-HX-3 with a 3-star rating; You must deploy your own Aroma, and have Aroma defeat at least 20 enemies"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +150 , ATK +49",
+          "effectLabel": "Trait improved",
+          "effectText": "Attacks deal extremely long-ranged AoE Arts damage ; damage dealt increases with distance, up to 110%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +175 , ATK +55",
+          "effectLabel": "Let's Get Saponaceous! improved",
+          "effectText": "The first hit against each enemy has ATK increased to 115% and Levitates the target for 2.5s",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +190 , ATK +60",
+          "effectLabel": "Let's Get Saponaceous! improved",
+          "effectText": "The first hit against each enemy has ATK increased to 120% and Levitates the target for 2.5s",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Aroma Rinaldi is from a\nColumbian\nfamily that runs a workshop making and selling pristine fragrances. She currently receives\nOripathy\ntreatment at\nRhodes Island\n, and has signed a cooperation agreement with our Logistics Department. At present, she is in charge of daily cleaning duties aboard the landship, as well as logistical support for field operations such as resupplying and disaster relief.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 693,
+          "atk": 343,
+          "def": 43,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 30,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 991,
+          "atk": 484,
+          "def": 74,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 30,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "4-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 991,
+          "atk": 484,
+          "def": 74,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 33,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 1288,
+          "atk": 638,
+          "def": 103,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 33,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "5-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1288,
+          "atk": 638,
+          "def": 103,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 33,
+          "block": 1,
+          "interval": 2.9
+        },
+        "max": {
+          "hp": 1591,
+          "atk": 760,
+          "def": 115,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 33,
+          "block": 1,
+          "interval": 2.9
+        },
+        "rangeId": "5-1"
+      }
+    ],
+    "trust": {
+      "hp": 60,
+      "atk": 80,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 4.5%\nMild Originium crystal distributions are visible on Operator Aroma's arm.\n\n'Okay, I just need to know if detergent will agitate the crystals.\n'In that case, I'm not going to bother getting any extra-long rubber gloves; they're such a pain!'\n\n[Blood Originium-Crystal Density] 0.21u/L\nOperator Aroma rarely comes into contact with Originium. According to her, she became infected with Oripathy due to an unforeseen accident.\nThe patient's condition is currently stable, but she should be kept under close observation."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "'A quiet, gentle girl who's careful and composed, and always smells nice.' This is the first impression that Aroma has left on her fellow operators.\nAlthough she may seem young, inexperienced, and not up to the task, once she agrees to take on a cleaning task, be it a messy dorm room or a weathered landship, she will get everything sparkling clean in no time. As such, once onboard, it wasn't long before she was assigned as Logistics's new cleaner.\nShe has her own set of standards in determining whether the environment is considered clean enough. Her minimum requirements are that there are no lingering stenches or any chance for insects to breed. As such, she will always take care of any rotting waste on the same day, work with Engineering to deal with any waterway odors as soon as possible, and even clean an entire room simply because a rug inside was left untreated after being stained by milk.\nFind the source of the odor, clean up the stains, let the area dry and ventilate, and finally spray it with a suitably aromatic fragrance. Even operators who've never taken cleaning seriously have Aroma's workflow completely memorized. After all, every time she helps them clean their room, they are greeted with a pleasant smell as they reenter.\n\n[Rhodes Island Logistics Supply List]\n...\nItem Name: Rinaldi Family Workshop Handmade Soap\nNet Weight: 100g\nFragrances available: Pure Rainfall/Fresh Lemon/Sunshine Orange/Rich Lavender\nProduced in: Columbia\nUse: Cleaning (Especially in removing stubborn stains such as oil and blood)\nUnverified uses: Painkiller, sleep aid, tension relief\nSupplier: Aroma\nAmount in stock: 300 boxes\n..."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "'Remember to wash your hands before a handshake!' This is recurring advice in the health handbook Aroma designed for the sickbay's juvenile patients.\nIt was her first job after she was formally appointed as cleaner. She personally volunteered to create this easy-to-understand yet detailed handbook with illustrations showing how to correctly wash hands. In her eyes, 'cleaning,' 'sanitization,' and 'health' form a direct causal chain. The smallest cleaning tasks each of us are responsible for are meant to create a sanitary environment that will ensure our health.\nOur understanding is that the reason she holds cleaning and sanitization in such high regard has to do with her childhood. According to Aroma, her grandmother—the matriarch of the family—has always stressed the importance of cleanliness. Due to how much rain Siracusa gets, mud and wastewater tend to accumulate on the roads, and her grandmother always personally enforced the rule that they must not bring such dirty things into the home. So every time she returned home, her grandmother would wipe down her shoes and place them on the veranda along with the umbrellas to dry. She would also spray the door with fragrance, leaving it all with a faint lemon scent.\n'I was really playful when I was a child. I often got home completely covered in dirt and mud... Hehe. So I always got scolded by my nonna.' Aroma sometimes speaks of her childhood, and from what little we know, it is rather hard to believe that the mischievous mud-covered girl from her stories and the quiet girl in front of us have anything to do with one another. These days, she is also particularly strict with her appearance: her collar must be clean and tidy, her sleeves must have no stains whatsoever, and the fragrance she uses must be relaxing to others. She is calm, gentle, attentive, kind, and unostentatious. She treats her tasks like a mature adult, and makes an effort to show her ideal self to those around her.\nThat said, an operator who helps in the kitchen once told us about something he witnessed. He had just gotten off his shift and returned to the rear kitchen for his clothes, only to hear singing from the kitchen, which should have been closed for cleaning. He snuck a peek through the door and found all the pots and dishes lifted up by bubbles and hovering midair. In the center of this secret stage was Aroma, who was humming and playing with the bubbles she made with her bubbling tool.\nIt pleases us to see that she gives herself these moments to unwind, despite how strict she is with herself when it comes to keeping a tidy appearance."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "If you thought the folks at Logistics were all a useless bunch who couldn't fight their way out of a paper bag, you'd be dead wrong. Fine, maybe some aren't very good at Arts, but Aroma is definitely not one of them.\nUnlike the powerful casters able to freely wield fire and lightning or shoot bright beams of energy, Aroma's Arts require the use of a special detergent and a bubbling device with a built-in Arts Unit to create and control those seemingly light, fluffy, and harmless bubbles. But while her Arts may seem gentle by comparison, they nonetheless pack a powerful punch in their own right. These bubbles have excellent plasticity, and do not easily pop when used with her Arts. Of them, the smallest suds can wash away the most stubborn stains hiding in corners, while the larger, malleable bubbles are used to cleanse any 'unwelcome guests' threatening to bring dirt and chaos.\n\nOrder Number: 1200428\nOrder Details: Cleaning of bugs for plant pollination\nOrder Unit: Convalescent Garden\nHandler: Aroma\nRemarks: Are you SURE there aren't any live bugs that can still fly in there?\n—A cleaning service order stored on the Rhodes Island Logistics Department's terminal\n\nYou gotta be more careful, Chiave. If you ever see a sign saying 'Cleaning in progress' in the hallway like this, take another route to the repair workshop.\nWhy...? You want to be trapped in Aroma's bubbles for an entire day again?\nNo, not even if you've got an idea for a retrofit that'll go poof in your brain if you don't do it right away... You say you're inspired <i>now</i>?\n...Let's go, Broca. We'll drag that asshole back if we need to. Remember to wipe your shoes first.\n—Aosta"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "On rainy days, you can sometimes find Aroma sitting next to a porthole, looking out the window at the rain.\n'Can you describe what rain tastes like?' An operator once jokingly asked her, upon seeing how engrossed she was with it.\n'The rain that falls here on Rhodes Island has no taste. In Columbia, it has the taste of the wasteland sand, and the aroma of grass when the plants are sprouting. In Siracusa, it has a faint lemon scent, the smell of tobacco, and the sour odor of sweat. And then...' Aroma stopped there. After some time, she kept gazing out the window at the intermittent rain.\nIn Siracusa, each family has their own dirty business they need dealt with, and once that's done, they are left with a mess they need a professional <i>cleaner</i> to get rid of. So thoroughly it will be as if it was all washed away by the rain. We understand Aroma's grandmother to have been one such famous cleaner. According to rumor, no matter how terrible the scene, she was able to make the place look spotless.\nAs a child, Aroma was energetic and mischievous, and she often followed her grandmother everywhere. Yet when she followed her to a cleaning job one time and broke her promise to remain outside the house—instead chasing a bubble that flew far, far away into a small alley—she witnessed a crime. Ever since, her personality shifted from lively and energetic to quiet and cautious, and she became less and less able to tolerate dirty environments. This experience also prompted her family to make the decision to move away from Siracusa and restart their business in Columbia.\nAroma tells us that, aside from that one experience, her impression during childhood was that she belonged to a normal Siracusan family who ran a laundromat as well as a workshop producing fragrances and detergents. Her strict grandmother always took charge of both family and business matters down to the last detail, and everyone else needed only follow her instructions and 'work for the family' as per Siracusan tradition.\nFor example, on holidays her grandmother would wake everyone up early to prepare. Once they were finished with the all-important house cleaning, they would follow her orders and divide up the house chores. Some would go out shopping, others would be in charge of food prep, and yet others would put up decorations in every corner of the house. Even after leaving Siracusa, this tradition remained with them year after year.\n'For as long as I can remember, it's always been pretty noisy back home, and it got even noisier during family gatherings. We could probably tear the house down just from the noise. But whenever that happened, Nonna would clap her hands, and everyone would quiet down to listen to our matriarch's orders.\n'But really, my nonna isn't as strict or scary as you'd think. She's such a kind old lady, cute even. One time when I was a kid, it rained really hard. The water in the yard almost reached up to my knees. I was so excited I rushed out to dance around and stomp on the water.\n'...Not only did she not scold me, she came out and started singing and dancing along with me. She even yelled at the others to come join us!\n'Forgiveness, trust, intimacy, and loyalty... I think that's what my family has always stood for.'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Dear Nonna:\nHow have you been?\nThe summer in Columbia must be getting hotter and hotter. I hope the heat hasn't been too hard on you. I'm sure you must have been yelling at everybody as always, ordering them around.\nI got Mamma's letter as well as the package you sent. My friends on Rhodes Island love it. Right, I have some good news. I'm now formally an employee of Rhodes Island Pharmaceuticals! I can proudly say that I'm no longer a patient needing to be watched over, but a productive member of society!\nI really miss you, Nonna. I'll be back home before my next birthday, but I was wondering if you could stop playing my childhood videos during birthday dinners? Also, I have another sudden request. Before I come home, I'd like to pay a visit to the city we lived in when I was a child, and see the lemon tree you planted in the yard to grow alongside me. Would you be okay with that?\n...\nCon affetto,\nAroma"
+    }
+  ]
+}

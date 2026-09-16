@@ -1,0 +1,1702 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act45side",
+    "label": "SS",
+    "name": "Somniloquium Serenum",
+    "release_date": "2026-02-10"
+  },
+  "enemies": [
+    {
+      "slug": "snoozing_molar",
+      "id": "enemy_10103_mjcppp",
+      "name": "Snoozing Molar",
+      "index": "SS01",
+      "rank": "Normal",
+      "sort": 1044,
+      "hidden": false,
+      "icon": "/enemies-icons/Snoozing Molar.webp",
+      "flavour_text": "Tooth-shaped object in a dream, a manifestation of the wish to eat sweets to one's heart's delight without fear of cavities. That is why they would rather stay forever in a fairy tale than wake up.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict Nervous Impairment.",
+          "format": "normal"
+        },
+        {
+          "text": "Once awakened, gains increased Movement Speed and loses damage reduction effect",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3000,
+            "atk": 300,
+            "def": 120,
+            "res": 5.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "C",
+            "def": "D",
+            "res": "D",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "WakeUp",
+              "sp_cost": 50,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Sleep2Wake",
+              "parameters": {
+                "damage_resistance": 0.6,
+                "interval": 1.0,
+                "sp": 1.0,
+                "sp_moon": 2.0,
+                "sp_warning": 45.0,
+                "unmove": 180.0
+              }
+            },
+            {
+              "key": "Wake2Sleep",
+              "parameters": {
+                "duration": 30.0,
+                "ep_damage_ratio": 0.05,
+                "move_speed": 1.3
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 75,
+            "recovery": "Over time",
+            "increment": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "slumbering_molar",
+      "id": "enemy_10103_mjcppp_2",
+      "name": "Slumbering Molar",
+      "index": "SS02",
+      "rank": "Normal",
+      "sort": 1045,
+      "hidden": false,
+      "icon": "/enemies-icons/Slumbering Molar.webp",
+      "flavour_text": "Molar-shaped object in a dream, refusing to leave the dream out of fear of having to face its own decay. Perhaps it is better not to wake them up.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict Nervous Impairment.",
+          "format": "normal"
+        },
+        {
+          "text": "Once awakened, gains increased Movement Speed and loses damage reduction effect",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4200,
+            "atk": 390,
+            "def": 120,
+            "res": 5.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "D",
+            "res": "D",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "WakeUp",
+              "sp_cost": 50,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Sleep2Wake",
+              "parameters": {
+                "damage_resistance": 0.6,
+                "interval": 1.0,
+                "sp": 1.0,
+                "sp_moon": 2.0,
+                "sp_warning": 45.0,
+                "unmove": 180.0
+              }
+            },
+            {
+              "key": "Wake2Sleep",
+              "parameters": {
+                "duration": 30.0,
+                "ep_damage_ratio": 0.2,
+                "move_speed": 1.3
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 75,
+            "recovery": "Over time",
+            "increment": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "background_clown",
+      "id": "enemy_10104_mjcbln",
+      "name": "Background Clown",
+      "index": "SS03",
+      "rank": "Normal",
+      "sort": 1046,
+      "hidden": false,
+      "icon": "/enemies-icons/Background Clown.webp",
+      "flavour_text": "Strange puppets that build the set for the neverwaking story. They hate having light shine where they rest, so they ride the balloons they made, trying to block out the moonlight shining through the window.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Continuously inflates a balloon in place of attacking; when balloon is full, gains Barrier and Low-Altitude Hovering",
+          "format": "normal"
+        },
+        {
+          "text": "Loses Low-Altitude Hovering when Barrier is lost",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4500,
+            "atk": 300,
+            "def": 120,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 1.0,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "D",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Fly",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Bigger",
+              "parameters": {
+                "value": 0.12
+              }
+            },
+            {
+              "key": "shield",
+              "parameters": {
+                "dynamic": 2500.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "background_master",
+      "id": "enemy_10104_mjcbln_2",
+      "name": "Background Master",
+      "index": "SS04",
+      "rank": "Normal",
+      "sort": 1047,
+      "hidden": false,
+      "icon": "/enemies-icons/Background Master.webp",
+      "flavour_text": "Strange puppets that build the set for the neverwaking story. They are trying to adjust the light with balloons. Someone tell them about curtains, please?",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Continuously inflates a balloon in place of attacking; when balloon is full, gains Barrier and Low-Altitude Hovering",
+          "format": "normal"
+        },
+        {
+          "text": "Loses Low-Altitude Hovering when Barrier is lost",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5800,
+            "atk": 350,
+            "def": 120,
+            "res": 35.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 1.0,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "D",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Fly",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Bigger",
+              "parameters": {
+                "value": 0.15
+              }
+            },
+            {
+              "key": "shield",
+              "parameters": {
+                "dynamic": 3000.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "clockwork_servant",
+      "id": "enemy_10105_mjcdol",
+      "name": "Clockwork Servant",
+      "index": "SS05",
+      "rank": "Normal",
+      "sort": 1048,
+      "hidden": false,
+      "icon": "/enemies-icons/Clockwork Servant.webp",
+      "flavour_text": "Clockwork puppets seen throughout the castle, watchers of the dream who are always dozing and slacking off. They can be found mixed in with the castle's decorations and accessories, so be careful not to disturb their rest.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict Nervous Impairment.",
+          "format": "normal"
+        },
+        {
+          "text": "Once awakened, gains increased Movement Speed, loses damage reduction effect, and temporarily increases ATK for all awakened <Clockwork Servants>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7000,
+            "atk": 550,
+            "def": 450,
+            "res": 5.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B",
+            "def": "C",
+            "res": "D",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "WakeUp",
+              "sp_cost": 50,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "AttackUp",
+              "parameters": {
+                "atk": 0.3
+              }
+            },
+            {
+              "key": "Sleep2Wake",
+              "parameters": {
+                "damage_resistance": 0.6,
+                "interval": 1.0,
+                "sp": 1.0,
+                "sp_moon": 2.0,
+                "sp_warning": 45.0,
+                "unmove": 180.0
+              }
+            },
+            {
+              "key": "Wake2Sleep",
+              "parameters": {
+                "duration": 15.0,
+                "ep_damage_ratio": 0.08,
+                "move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 75,
+            "recovery": "Over time",
+            "increment": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "dark_clockwork_servant",
+      "id": "enemy_10105_mjcdol_2",
+      "name": "Dark Clockwork Servant",
+      "index": "SS06",
+      "rank": "Normal",
+      "sort": 1049,
+      "hidden": false,
+      "icon": "/enemies-icons/Dark Clockwork Servant.webp",
+      "flavour_text": "Dark clockwork puppets seen throughout the castle, watchers of the dream. The dark circles around their eyes show how hard they have been working to keep the peace in the dream. Do not disturb their rest.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict Nervous Impairment.",
+          "format": "normal"
+        },
+        {
+          "text": "Once awakened, gains increased Movement Speed, loses damage reduction effect, and temporarily increases ATK for all awakened <Clockwork Servants>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7700,
+            "atk": 605,
+            "def": 450,
+            "res": 5.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 1.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "B",
+            "def": "C",
+            "res": "D",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "WakeUp",
+              "sp_cost": 50,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "AttackUp",
+              "parameters": {
+                "atk": 0.3
+              }
+            },
+            {
+              "key": "Sleep2Wake",
+              "parameters": {
+                "damage_resistance": 0.6,
+                "interval": 1.0,
+                "sp": 1.0,
+                "sp_moon": 2.0,
+                "sp_warning": 45.0,
+                "unmove": 180.0
+              }
+            },
+            {
+              "key": "Wake2Sleep",
+              "parameters": {
+                "duration": 15.0,
+                "ep_damage_ratio": 0.08,
+                "move_speed": 2.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 75,
+            "recovery": "Over time",
+            "increment": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "playful_coretton",
+      "id": "enemy_10106_mjcbat",
+      "name": "Playful Coretton",
+      "index": "SS07",
+      "rank": "Normal",
+      "sort": 1050,
+      "hidden": false,
+      "icon": "/enemies-icons/Playful Coretton.webp",
+      "flavour_text": "Strange creations that like to gather and dance in the moonlight. They show no mercy towards those who dare to block out the light.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Seeks out and attacks Operators who block the moonlight",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3000,
+            "atk": 70,
+            "def": 200,
+            "res": 35.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 0.4,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": 0.5,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "E",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "SS",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Trace",
+              "parameters": {
+                "move_speed": 1.9
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "joyful_coretton",
+      "id": "enemy_10106_mjcbat_2",
+      "name": "Joyful Coretton",
+      "index": "SS08",
+      "rank": "Normal",
+      "sort": 1051,
+      "hidden": false,
+      "icon": "/enemies-icons/Joyful Coretton.webp",
+      "flavour_text": "Strange creations that like to gather in the night. They use light to turn themselves an eerie color, but in the end they are little more than trinkets who know a few tricks.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Seeks out and attacks Operators who block the moonlight",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3300,
+            "atk": 77,
+            "def": 200,
+            "res": 35.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 0.4,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": 0.5,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "E",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "SS",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Trace",
+              "parameters": {
+                "move_speed": 1.9
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sleep_companion_beast",
+      "id": "enemy_10107_mjcdog",
+      "name": "Sleep Companion Beast",
+      "index": "SS09",
+      "rank": "Elite",
+      "sort": 1052,
+      "hidden": false,
+      "icon": "/enemies-icons/Sleep Companion Beast.webp",
+      "flavour_text": "Large and strong companion beast in the neverwaking story, carrying sleepers to wherever they may sleep soundly, though it does not know the way well.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict Nervous Impairment.",
+          "format": "normal"
+        },
+        {
+          "text": "Carries any sleeping enemies or stunned Operators when passing through them, and puts them down after a while; taking up extra Block for the duration",
+          "format": "normal"
+        },
+        {
+          "text": "Does not deduct Life Points when entering the Objective without carrying any units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 16000,
+            "atk": 150,
+            "def": 500,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.3,
+            "attack_speed": 100.0,
+            "move_speed": 2.0,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "E",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "GetChar",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "cooldown": 10.0,
+                "first_trigger_interval": 3.0,
+                "move_speed": 1.0,
+                "range_radius": 0.25,
+                "stun": 3.0,
+                "value": -1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "GetEnmey",
+              "parameters": {
+                "cooldown": 10.0,
+                "duration": 4.0,
+                "ep_damage_ratio": 1.5,
+                "max_cnt": 1.0,
+                "move_speed": 1.0,
+                "range_radius": 0.25,
+                "value": -1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "slumber_companion_beast",
+      "id": "enemy_10107_mjcdog_2",
+      "name": "Slumber Companion Beast",
+      "index": "SS10",
+      "rank": "Elite",
+      "sort": 1053,
+      "hidden": false,
+      "icon": "/enemies-icons/Slumber Companion Beast.webp",
+      "flavour_text": "Huge and strong companion beast in the neverwaking story that can float in mid-air. Sleeping on its fluffy back is considered the height of luxury in the Castle of Dreams, though its sense of direction has not gotten any better.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict Nervous Impairment.",
+          "format": "normal"
+        },
+        {
+          "text": "Carries any sleeping enemies or stunned Operators when passing through them, and puts them down after a while; taking up extra Block for the duration",
+          "format": "normal"
+        },
+        {
+          "text": "Does not deduct Life Points when entering the Objective without carrying any units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 17600,
+            "atk": 165,
+            "def": 500,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.3,
+            "attack_speed": 100.0,
+            "move_speed": 2.0,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "E",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "GetChar",
+              "sp_cost": 0,
+              "cooldown": 1.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "cooldown": 10.0,
+                "first_trigger_interval": 3.0,
+                "move_speed": 1.0,
+                "range_radius": 0.25,
+                "value": -1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "GetEnmey",
+              "parameters": {
+                "cooldown": 10.0,
+                "duration": 3.2,
+                "ep_damage_ratio": 1.5,
+                "max_cnt": 1.0,
+                "move_speed": 1.0,
+                "range_radius": 0.25,
+                "value": -1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sleepwalking_valet",
+      "id": "enemy_10108_mjclun",
+      "name": "Sleepwalking Valet",
+      "index": "SS11",
+      "rank": "Elite",
+      "sort": 1054,
+      "hidden": false,
+      "icon": "/enemies-icons/Sleepwalking Valet.webp",
+      "flavour_text": "Valet puppet that wanders the Castle of Dreams in the long night, laying out soft and comfortable bedding for all the rooms, and punishing bad people who invade the castle.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Under Moonlight, Attack Range expands and ATK increases; returns to original status after several attacks",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 850,
+            "def": 800,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 0.4,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Sword",
+              "parameters": {
+                "ability_range_forward_extend": 0.04,
+                "atk": 0.05,
+                "cnt": 3.0,
+                "fx_cnt": 8.0,
+                "interval": 3.0,
+                "max_stack_cnt": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sleepwalking_butler",
+      "id": "enemy_10108_mjclun_2",
+      "name": "Sleepwalking Butler",
+      "index": "SS12",
+      "rank": "Elite",
+      "sort": 1055,
+      "hidden": false,
+      "icon": "/enemies-icons/Sleepwalking Butler.webp",
+      "flavour_text": "Butler puppet that wanders the Castle of Dreams in the long night. The moonlight transforms its scissors, allowing it to cut even larger cloth... The scissors are for cutting cloth, right?",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Under Moonlight, Attack Range expands and ATK increases; returns to original status after several attacks",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 27500,
+            "atk": 900,
+            "def": 800,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 0.4,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Sword",
+              "parameters": {
+                "ability_range_forward_extend": 0.05,
+                "atk": 0.05,
+                "cnt": 3.0,
+                "fx_cnt": 8.0,
+                "interval": 3.0,
+                "max_stack_cnt": 30.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "wolffs_shadow",
+      "id": "enemy_10109_mjcgst",
+      "name": "Wolff's Shadow",
+      "index": "SS13",
+      "rank": "Elite",
+      "sort": 1056,
+      "hidden": false,
+      "icon": "/enemies-icons/Wolff's Shadow.webp",
+      "flavour_text": "Arts creations that prowl the dark corners of the castle, extremely hard to spot. They dart through the castle's rooms, enjoying people's surprised cries.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict Nervous Impairment.",
+          "format": "normal"
+        },
+        {
+          "text": "Invisible when not under moonlight; stops attacking and cannot be blocked when Invisible",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 520,
+            "def": 0,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.4,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 2.5,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "E",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Element",
+              "parameters": {
+                "ep_damage_ratio": 0.1
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "wolff_phantom",
+      "id": "enemy_10109_mjcgst_2",
+      "name": "Wolff Phantom",
+      "index": "SS14",
+      "rank": "Elite",
+      "sort": 1057,
+      "hidden": false,
+      "icon": "/enemies-icons/Wolff Phantom.webp",
+      "flavour_text": "Arts creations that prowl the dark corners of the castle, almost impossible to spot. They pass through people like ghosts, and seem to enjoy the process, for they keep luring people into dark corners for their own enjoyment.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict Nervous Impairment.",
+          "format": "normal"
+        },
+        {
+          "text": "Invisible when not under moonlight; stops attacking and cannot be blocked when Invisible",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 16500,
+            "atk": 550,
+            "def": 0,
+            "res": 50.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.4,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 2.5,
+            "weight": 0,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "E",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Element",
+              "parameters": {
+                "ep_damage_ratio": 0.1
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "dream_of_eclosion",
+      "id": "enemy_10110_mjcsdw",
+      "name": "'Dream of Eclosion'",
+      "index": "SS15",
+      "rank": "Elite",
+      "sort": 1058,
+      "hidden": false,
+      "icon": "/enemies-icons/'Dream of Eclosion'.webp",
+      "flavour_text": "Large insect that has broken out from its cocoon hanging from branches that grew out of the clock. The moonlight of the Castle of Dreams has fulfilled its dream of metamorphosis, and it is best not to approach it while it admires its new wings.",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks hit five times, dealing Arts damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 140,
+            "def": 800,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.2,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 2.0,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "E",
+            "def": "B+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "MulAttack",
+              "parameters": {
+                "times": 5.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "dream_of_metamorphosis",
+      "id": "enemy_10110_mjcsdw_2",
+      "name": "'Dream of Metamorphosis'",
+      "index": "SS16",
+      "rank": "Elite",
+      "sort": 1059,
+      "hidden": false,
+      "icon": "/enemies-icons/'Dream of Metamorphosis'.webp",
+      "flavour_text": "Massive insect that has broken out from its cocoon hanging from branches that grew out of the clock. Having left the hard shell behind, it now dances in the air, weaving the most beautiful sight in the fairy tale. Who would be so cruel as to break this breathtaking beauty?",
+      "race": null,
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks hit five times, dealing Arts damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 33000,
+            "atk": 150,
+            "def": 800,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.2,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 2.0,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "E",
+            "def": "B+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "MulAttack",
+              "parameters": {
+                "times": 5.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "morpheus",
+      "id": "enemy_1569_ldevil",
+      "name": "Morpheus",
+      "index": "MO",
+      "rank": "Boss",
+      "sort": 1366,
+      "hidden": false,
+      "icon": "/enemies-icons/Morpheus.webp",
+      "flavour_text": "Why would anyone want to escape the dream? Stay here, where everything is fun.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Morpheus unleashes threads that can be blocked by your units; each unblocked thread increases Morpheus' ATK",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Binding Dream] Connects a thread to the furthest allied unit within Attack Range, dealing continuous Arts damage",
+          "format": "normal"
+        },
+        {
+          "text": "[Dissociative Sensation] Connects to enemies with threads, causing most of the damage taken by Morpheus to be split among them",
+          "format": "normal"
+        },
+        {
+          "text": "[Evolution of Dream] Morpheus summons and rides a 'Sleep Companion Beast', becomes unblockable, gains increased Movement Speed and Barrier; ends after some time has passed, or if the Barrier is destroyed",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "When defeated for the first time, deals Arts damage to the whole field several times; when in 2nd form, Attack Range covers the entire field, and connects to all enemies with [Dissociative Sensation]",
+          "format": "normal"
+        },
+        {
+          "text": "[Binding Dream] Causes your defeated units to be unable to retreat for a while",
+          "format": "normal"
+        },
+        {
+          "text": "[Dissociative Sensation] Other enemies share more damage for Morpheus",
+          "format": "normal"
+        },
+        {
+          "text": "[Evolution of Dream] Morpheus summons and rides a 'Background Clown' instead, and the increase in block cost is replaced with Low-Altitude Hovering",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 60000,
+            "atk": 680,
+            "def": 580,
+            "res": 35.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.5,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Summon",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 10.0,
+              "priority": 1,
+              "parameters": {
+                "branch_id": "ldevil_enemy"
+              }
+            },
+            {
+              "key": "AllyLine",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 18.0,
+              "priority": 2,
+              "parameters": {
+                "atk": 0.1,
+                "atk_scale": 0.5,
+                "duration": 10.0,
+                "first_trigger_interval": 0.5,
+                "interval": 0.4,
+                "range_radius": 2.45
+              }
+            },
+            {
+              "key": "EnemyLine",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 5.0,
+              "priority": 4,
+              "parameters": {
+                "range_radius": 10.0
+              }
+            },
+            {
+              "key": "Ride",
+              "sp_cost": 0,
+              "cooldown": 18.0,
+              "initial_cooldown": 20.0,
+              "priority": 3,
+              "parameters": {}
+            },
+            {
+              "key": "SummonAdvance",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 55.0,
+              "priority": 1,
+              "parameters": {
+                "branch_id": "ldevil_enemy_2"
+              }
+            },
+            {
+              "key": "EnemyLineAdvance",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 0.0,
+              "priority": 4,
+              "parameters": {}
+            },
+            {
+              "key": "AllyLineAdvance",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 15.0,
+              "priority": 2,
+              "parameters": {
+                "atk": 0.1,
+                "atk_scale": 0.6,
+                "duration": 10.0,
+                "dying_time": 15.0,
+                "first_trigger_interval": 0.5,
+                "interval": 0.4,
+                "range_radius": 2.45
+              }
+            },
+            {
+              "key": "RideAdvance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 3,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "EnemyLineAdvanceAll",
+              "parameters": {
+                "atk": 0.1,
+                "damage_share": 0.7,
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "EnemyLineAdvanceT",
+              "parameters": {
+                "atk": 0.1,
+                "damage_share": 0.7,
+                "duration": 40.0
+              }
+            },
+            {
+              "key": "EnemyLineT",
+              "parameters": {
+                "atk": 0.1,
+                "damage_share": 0.65,
+                "duration": 40.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "atk": 0.1,
+                "base_attack_time": -0.2,
+                "branch_id": "ldevil_born",
+                "duration": 30.0,
+                "hit_interval": 4.0,
+                "interval": 5.0,
+                "max_hp": 0.3,
+                "times": 30.0
+              }
+            },
+            {
+              "key": "shield",
+              "parameters": {
+                "dynamic": 20000.0,
+                "interval": 8.0,
+                "move_speed": 0.7
+              }
+            },
+            {
+              "key": "shieldAdvance",
+              "parameters": {
+                "dynamic": 20000.0,
+                "interval": 8.0,
+                "move_speed": 0.7
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 70000,
+            "atk": 700,
+            "def": 580,
+            "res": 35.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 2.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.5,
+            "weight": 5,
+            "taunt": 0,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Summon",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 10.0,
+              "priority": 1,
+              "parameters": {
+                "branch_id": "ldevil_enemy"
+              }
+            },
+            {
+              "key": "AllyLine",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 18.0,
+              "priority": 2,
+              "parameters": {
+                "atk": 0.1,
+                "atk_scale": 0.5,
+                "duration": 10.0,
+                "first_trigger_interval": 0.5,
+                "interval": 0.4,
+                "range_radius": 2.45
+              }
+            },
+            {
+              "key": "EnemyLine",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 5.0,
+              "priority": 4,
+              "parameters": {
+                "range_radius": 10.0
+              }
+            },
+            {
+              "key": "Ride",
+              "sp_cost": 0,
+              "cooldown": 18.0,
+              "initial_cooldown": 20.0,
+              "priority": 3,
+              "parameters": {}
+            },
+            {
+              "key": "SummonAdvance",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 55.0,
+              "priority": 1,
+              "parameters": {
+                "branch_id": "ldevil_enemy_2"
+              }
+            },
+            {
+              "key": "EnemyLineAdvance",
+              "sp_cost": 0,
+              "cooldown": 10.0,
+              "initial_cooldown": 0.0,
+              "priority": 4,
+              "parameters": {}
+            },
+            {
+              "key": "AllyLineAdvance",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 15.0,
+              "priority": 2,
+              "parameters": {
+                "atk": 0.1,
+                "atk_scale": 0.6,
+                "duration": 10.0,
+                "dying_time": 15.0,
+                "first_trigger_interval": 0.5,
+                "interval": 0.4,
+                "range_radius": 2.45
+              }
+            },
+            {
+              "key": "RideAdvance",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 3,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "EnemyLineAdvanceAll",
+              "parameters": {
+                "atk": 0.1,
+                "damage_share": 0.7,
+                "duration": 20.0
+              }
+            },
+            {
+              "key": "EnemyLineAdvanceT",
+              "parameters": {
+                "atk": 0.1,
+                "damage_share": 0.7,
+                "duration": 40.0
+              }
+            },
+            {
+              "key": "EnemyLineT",
+              "parameters": {
+                "atk": 0.1,
+                "damage_share": 0.65,
+                "duration": 40.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "atk": 0.1,
+                "base_attack_time": -0.2,
+                "branch_id": "ldevil_born",
+                "duration": 30.0,
+                "hit_interval": 4.0,
+                "interval": 5.0,
+                "max_hp": 0.3,
+                "times": 30.0
+              }
+            },
+            {
+              "key": "shield",
+              "parameters": {
+                "dynamic": 20000.0,
+                "interval": 8.0,
+                "move_speed": 0.7
+              }
+            },
+            {
+              "key": "shieldAdvance",
+              "parameters": {
+                "dynamic": 20000.0,
+                "interval": 8.0,
+                "move_speed": 0.7
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen"
+          ],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

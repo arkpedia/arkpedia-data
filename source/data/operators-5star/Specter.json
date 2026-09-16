@@ -1,0 +1,768 @@
+{
+  "name": "Specter",
+  "rarity": 5,
+  "class": "Guard",
+  "branch": "Centurion",
+  "faction": "Abyssal Hunters",
+  "umbrellaFactions": [
+    "Aegir"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "AoE",
+    "Survival"
+  ],
+  "trait": "Attacks all blocked enemies",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": "Specter the Unchained",
+  "skins": [
+    "Undercurrent"
+  ],
+  "ep": {
+    "Main": "Hunter's Song",
+    "Co-star": null
+  },
+  "internalName": "char_143_ghost",
+  "otherLanguages": {
+    "Simplified Chinese": "幽灵鲨",
+    "Traditional Chinese": "幽靈鯊",
+    "Japanese": "スペクター",
+    "Korean": "스펙터"
+  },
+  "characterInfo": {
+    "File no.": "AA02",
+    "Operator Records": "Merry Christmas! I, Namely I",
+    "Paradox Simulation": "Still Spirit and Bone Persist",
+    "Illustrator": "Skade",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Azumi Asakura",
+    "Chinese": "Zhang Anqi (credited as \"Angel Zhang\" in EN)",
+    "English": "Harriet Carmichael",
+    "Korean": "Kim Hyeon-sim"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "7 years",
+    "Place of Birth": "Ægir",
+    "Date of Birth": "July 27th",
+    "Race": "Undisclosed",
+    "Height": "162 cm",
+    "Weight": "?? kg",
+    "Infection Status": "Showed no outward symptoms of Originium Infection, but Infection was confirmed by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Outstanding",
+    "Mobility": "Normal",
+    "Endurance": "Outstanding",
+    "Tactical Acumen": "Flawed",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Flawed"
+  },
+  "talents": [
+    {
+      "name": "Stamina Up",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Max HP +10%"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Max HP +12% (+2%)"
+        }
+      ]
+    },
+    {
+      "name": "Abyssal RegenerationReplacesStamina Up",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Max HP +10%; Restores HP by 2% of Max HP per second"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Max HP +12% (+2%) ; Restores HP by 2.5% (+0.5%) of Max HP per second"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +27"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Stamina Up/Abyssal Regeneration"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Specter's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Stamina Up .",
+        "New skill: Bone Fracture ."
+      ],
+      "prerequisite": "Raise Specter to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Block +1 .",
+        "Stamina Up becomes Abyssal Regeneration .",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Specter to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Guard Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "White Horse Kohl",
+          "quantity": 8
+        },
+        {
+          "name": "Aketon",
+          "quantity": 15
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "ATK Up γ",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +30%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +35%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +40%",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +45%",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +50%",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +55%",
+            "initialSp": 5,
+            "spCost": 37,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +60%",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +75%",
+            "initialSp": 10,
+            "spCost": 34,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +90%",
+            "initialSp": 10,
+            "spCost": 33,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +100%",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-12",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Bone Fracture",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "10–15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "During the skill duration, Specter's HP will not drop below 1 ; ATK +40% Specter is Stunned for 10 seconds after skill duration",
+            "initialSp": 20,
+            "spCost": 45,
+            "duration": 10
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "During the skill duration, Specter's HP will not drop below 1 ; ATK +50% Specter is Stunned for 10 seconds after skill duration",
+            "initialSp": 20,
+            "spCost": 45,
+            "duration": 10
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "During the skill duration, Specter's HP will not drop below 1 ; ATK +60% Specter is Stunned for 10 seconds after skill duration",
+            "initialSp": 20,
+            "spCost": 45,
+            "duration": 10
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "During the skill duration, Specter's HP will not drop below 1 ; ATK +70% Specter is Stunned for 10 seconds after skill duration",
+            "initialSp": 25,
+            "spCost": 45,
+            "duration": 11
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "During the skill duration, Specter's HP will not drop below 1 ; ATK +80% Specter is Stunned for 10 seconds after skill duration",
+            "initialSp": 25,
+            "spCost": 45,
+            "duration": 11
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "During the skill duration, Specter's HP will not drop below 1 ; ATK +90% Specter is Stunned for 10 seconds after skill duration",
+            "initialSp": 25,
+            "spCost": 45,
+            "duration": 11
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "During the skill duration, Specter's HP will not drop below 1 ; ATK +100% Specter is Stunned for 10 seconds after skill duration",
+            "initialSp": 30,
+            "spCost": 43,
+            "duration": 12
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "During the skill duration, Specter's HP will not drop below 1 ; ATK +120% Specter is Stunned for 10 seconds after skill duration",
+            "initialSp": 30,
+            "spCost": 42,
+            "duration": 13
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "During the skill duration, Specter's HP will not drop below 1 ; ATK +140% Specter is Stunned for 10 seconds after skill duration",
+            "initialSp": 30,
+            "spCost": 41,
+            "duration": 14
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "During the skill duration, Specter's HP will not drop below 1 ; ATK +160% Specter is Stunned for 10 seconds after skill duration",
+            "initialSp": 35,
+            "spCost": 40,
+            "duration": 15
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Cluster",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Immortality",
+            "description": "Allow this unit to take big damage from enemies, while also not dying for it."
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock",
+          "quantity": 10
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 4
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Solitude",
+      "facility": "Dormitory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Dormitory, self Morale recovered +0.7 per hour"
+    },
+    {
+      "name": "CrazeReplacesSolitude",
+      "facility": "Dormitory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Dormitory, self Morale recovered +0.85 per hour"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Specter's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "CEN-X: Dim Candlelight",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Specter, and unleash Bone Fracture at least 1 time in each battle",
+        "requirement2": "Clear Intermezzi SN-EX-1 with a 3-star rating; You must deploy your own Specter, and have Specter defeat at least 10 Nourished Sliders"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +34 , DEF +30",
+          "effectLabel": "Trait improved",
+          "effectText": "Attacks all blocked enemies ; ATK is increased to 110% when attacking blocked enemies",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +52 , DEF +42",
+          "effectLabel": "New talent: Experiences Dissolved in Blood",
+          "effectText": "While deployed, increases the damage dealt by all Abyssal Hunter Operators by 3%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +60 , DEF +48",
+          "effectLabel": "Experiences Dissolved in Blood improved",
+          "effectText": "While deployed, increases the damage dealt by all Abyssal Hunter Operators by 5%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Specter, true identity unknown, records missing. Demonstrated extraordinary ability in combating\nlarge creatures\nand destroying sturdy targets, speculated to correlate with extensive prior combat experience.\nNow stationed as a\nGuard\nat\nRhodes Island\n.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1199,
+          "atk": 293,
+          "def": 150,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1538,
+          "atk": 407,
+          "def": 215,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1538,
+          "atk": 407,
+          "def": 215,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1972,
+          "atk": 551,
+          "def": 291,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1972,
+          "atk": 551,
+          "def": 291,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2630,
+          "atk": 725,
+          "def": 355,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 23,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 80,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests done on Specter showed a blurry outline around her internal organs, with visible abnormal dark spots. Unusually high concentrations of Originium particles were present in her circulatory system, indicating signs of Infection and confirming her as Infected at this stage. \n\n[Cell-Originium Assimilation] 14% \nWhile Specter showed no physical signs of Originium crystals, her nervous system has suffered a case of severe Infection, the cause behind which remains unknown. \n\n[Blood Originium-Crystal Density] 0.31u/L \nStill within manageable range. Even then, without knowing the specific cause for her Infection, test data cannot accurately reflect her condition and are of little use. \n\nIn addition, Specter is plagued by severe mental health issues, including but not limited to: memory loss, emotional instability, and lack of self-awareness. Unfortunately, I am not a neurologist nor a psychiatrist and thus unqualified to speculate on the cause or solution, but I wish to make note of her mental condition in her file. \n—Medic Operator Silence"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "It was difficult probing into Specter's past. When Rhodes Island took her in, she showed temporary lucidity until she lapsed into psychosis before treatment could be administered. \nIn her day-to-day life, Specter's mental condition remains unstable, thus greatly limiting her social interactions with other Operators. \nMedical staff will continue administering regular tests and treatment, although success has been limited to date."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Based on intel gathered, Specter was once a nun residing at a convent. The matter was not investigated further due to her current mental state and Rhodes Island's present goals. \nHowever, Dr. Kal'tsit believes Specter's past is closely linked to that convent, which is also likely hiding the truth behind her mysterious past."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "The medical department's in-depth examination revealed Oripathy to be the cause of Specter's deteriorating physical health. \nFurthermore, Specter lacked both the necessary aptitude and knowledge to wield Originium powers. This is puzzling and greatly impacts her combat ability. \nDespite her difficulties, Specter was still devastatingly powerful during her missions, to the point of unsettlement. She undoubtedly has incredible room for growth and improvement. \nEven more important is her polarizing attitudes in combat and in her daily life. \nShe is demure and quiet in battle (other than a few occasional mumbles to herself), with a mindless tendency to follow orders to the end, completely unaware of potential danger and obstacles. Her inability to react has endangered her safety more than once. \nIt can be concluded that Specter is a vital part of the squad, but a commander must also adapt to her single-mindedness and plan accordingly."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Classified Log] \nIn actuality, when Specter first approached Rhodes Island, she was articulate and sincere, claiming she had just escaped confinement and wished to deliver a message. \nHowever, she fell silent before she could finish conveying it. In her last moments of sanity, she told the Operator who retrieved her that she has once again gotten entangled in a dark conspiracy. \nAfter she failed to tear off her habit, she then descended into madness."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Folksong of a Faraway Land: \nWhen she prayed \nThe stars ceased to shimmer \nAnd when she wept \nThe night let out a smile \nAnd as she lamented \nThe anguish sprawled upon her madness \n\n—From Operator Specter's personal belongings"
+    }
+  ]
+}

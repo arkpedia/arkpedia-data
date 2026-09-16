@@ -1,0 +1,1025 @@
+{
+  "name": "Eyjafjalla",
+  "rarity": 6,
+  "class": "Caster",
+  "branch": "Core Caster",
+  "faction": "Leithanien",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS",
+    "Debuff"
+  ],
+  "trait": "Deals Arts damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": "Eyjafjalla the Hvít Aska",
+  "skins": [
+    "Summer Flower FA018",
+    "Fluffy Little Witch"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_180_amgoat",
+  "otherLanguages": {
+    "Chinese": "艾雅法拉",
+    "Japanese": "エイヤフィヤトラ",
+    "Korean": "에이야퍄들라"
+  },
+  "characterInfo": {
+    "File no.": "LN02",
+    "Operator Records": "Heart of a Scholar Volcano",
+    "Paradox Simulation": "One-Person Encirclement",
+    "Illustrator": "Anmi",
+    "Release Date": "2020/01/16",
+    "Kernel Addition Date": "2023/10/24"
+  },
+  "characterVoices": {
+    "Japanese": "Risa Taneda",
+    "Chinese": "Jiang Wen (credited as \"Juniper Berry\" in EN)",
+    "English": "Hollie Taylor",
+    "Korean": "Kim Ha-ru"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Leithanien",
+    "Date of Birth": "October 18th",
+    "Race": "Caprinae",
+    "Height": "145 cm",
+    "Infection Status": "Showed physical signs of Originium , infection confirmed by medical report."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Outstanding"
+  },
+  "talents": [
+    {
+      "name": "Pyrobreath",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "All [Caster] Operators ' ATK +7% when Eyjafjalla is deployed"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 6",
+          "description": "All [Caster] Operators' ATK +9% (+2%) when Eyjafjalla is deployed"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "All [Caster] Operators' ATK +14% when Eyjafjalla is deployed"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 6",
+          "description": "All [Caster] Operators' ATK +16% (+2%) when Eyjafjalla is deployed"
+        }
+      ]
+    },
+    {
+      "name": "Wild Fire",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Immediately obtains 7 to 15 SP randomly after deployment"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 3",
+          "description": "Immediately obtains 10 (+3) to 18 (+3) SP randomly after deployment"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Improves Wild Fire"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +27"
+      },
+      {
+        "level": 5,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 6,
+        "benefit": "Improves Pyrobreath"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Eyjafjalla's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Pyrobreath .",
+        "New skill: Ignition .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Eyjafjalla to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron",
+          "quantity": 7
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Wild Fire .",
+        "New skill: Volcano .",
+        "Pyrobreath improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Eyjafjalla to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Polymerization Preparation",
+          "quantity": 4
+        },
+        {
+          "name": "Optimized Device",
+          "quantity": 5
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Duetto",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ASPD +30 Starting from the second use of the skill , ATK +30%",
+            "initialSp": 10,
+            "spCost": 45,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ASPD +32 Starting from the second use of the skill, ATK +32%",
+            "initialSp": 10,
+            "spCost": 44,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ASPD +35 Starting from the second use of the skill, ATK +35%",
+            "initialSp": 10,
+            "spCost": 43,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ASPD +38 Starting from the second use of the skill, ATK +38%",
+            "initialSp": 15,
+            "spCost": 42,
+            "duration": 25
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ASPD +40 Starting from the second use of the skill, ATK +40%",
+            "initialSp": 15,
+            "spCost": 41,
+            "duration": 25
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ASPD +42 Starting from the second use of the skill, ATK +42%",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ASPD +45 Starting from the second use of the skill, ATK +45%",
+            "initialSp": 20,
+            "spCost": 39,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ASPD +50 Starting from the second use of the skill, ATK +50%",
+            "initialSp": 20,
+            "spCost": 38,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ASPD +55 Starting from the second use of the skill, ATK +55%",
+            "initialSp": 20,
+            "spCost": 37,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ASPD +60 Starting from the second use of the skill, ATK +60%",
+            "initialSp": 25,
+            "spCost": 35,
+            "duration": 25
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 4
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Ignition",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Deals 240% of ATK Arts damage in the next attack; Deals half damage to enemies around the target and their (main target only) RES -10% for 6 seconds Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Deals 250% of ATK Arts damage in the next attack; Deals half damage to enemies around the target and their (main target only) RES -10% for 6 seconds Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Deals 260% of ATK Arts damage in the next attack; Deals half damage to enemies around the target and their (main target only) RES -10% for 6 seconds Can store 1 charge(s)",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Deals 275% of ATK Arts damage in the next attack; Deals half damage to enemies around the target and their (main target only) RES -15% for 6 seconds Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Deals 285% of ATK Arts damage in the next attack; Deals half damage to enemies around the target and their (main target only) RES -15% for 6 seconds Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Deals 295% of ATK Arts damage in the next attack; Deals half damage to enemies around the target and their (main target only) RES -15% for 6 seconds Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Deals 310% of ATK Arts damage in the next attack; Deals half damage to enemies around the target and their (main target only) RES -20% for 6 seconds Can store 2 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Deals 330% of ATK Arts damage in the next attack; Deals half damage to enemies around the target and their (main target only) RES -20% for 6 seconds Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Deals 350% of ATK Arts damage in the next attack; Deals half damage to enemies around the target and their (main target only) RES -20% for 6 seconds Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Deals 370% of ATK Arts damage in the next attack; Deals half damage to enemies around the target and their (main target only) RES -25% for 6 seconds Can store 3 charge(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m1",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "Mastery 1 provides an extra charge which simply means an easier time and bombarding enemies who may need the third charge."
+          },
+          {
+            "mastery": "m3",
+            "order": "2nd",
+            "priority": "main",
+            "explanation": "Once you've done the burst Skill 3, you can return to this skill to lower the SP cost and enhance its damage output even more."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 10
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Volcano",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +55% ; Range increases ; Attack Interval reduces significantly ; Attack becomes randomly shooting lava that can hit at most 3 enemies within range",
+            "initialSp": 30,
+            "spCost": 80,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +60% ; Range increases ; Attack Interval reduces significantly ; Attack becomes randomly shooting lava that can hit at most 3 enemies within range",
+            "initialSp": 31,
+            "spCost": 80,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +65% ; Range increases ; Attack Interval reduces significantly ; Attack becomes randomly shooting lava that can hit at most 3 enemies within range",
+            "initialSp": 32,
+            "spCost": 80,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +70% ; Range increases ; Attack Interval reduces significantly ; Attack becomes randomly shooting lava that can hit at most 4 enemies within range",
+            "initialSp": 33,
+            "spCost": 80,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +75% ; Range increases ; Attack Interval reduces significantly ; Attack becomes randomly shooting lava that can hit at most 4 enemies within range",
+            "initialSp": 34,
+            "spCost": 80,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +80% ; Range increases ; Attack Interval reduces significantly ; Attack becomes randomly shooting lava that can hit at most 4 enemies within range",
+            "initialSp": 35,
+            "spCost": 80,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +85% ; Range increases ; Attack Interval reduces significantly ; Attack becomes randomly shooting lava that can hit at most 5 enemies within range",
+            "initialSp": 40,
+            "spCost": 80,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +100% ; Range increases ; Attack Interval reduces significantly ; Attack becomes randomly shooting lava that can hit at most 5 enemies within range",
+            "initialSp": 45,
+            "spCost": 80,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +115% ; Range increases ; Attack Interval reduces significantly ; Attack becomes randomly shooting lava that can hit at most 5 enemies within range",
+            "initialSp": 50,
+            "spCost": 80,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +130% ; Range increases ; Attack Interval reduces significantly ; Attack becomes randomly shooting lava that can hit at most 6 enemies within range",
+            "initialSp": 55,
+            "spCost": 80,
+            "duration": 15
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "The main skill for Eyjafjalla in modern times due to the large range and still promisingly high damage output."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 7
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 3
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 4
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Volcanologist",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, Originium formula related productivity +35%"
+    },
+    {
+      "name": "Catastrophe Messenger β",
+      "facility": "Office",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the HR Office, HR contacting speed +45%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Eyjafjalla's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "CCR-X: \"Missed Sounds\"",
+      "mission": {
+        "requirement1": "Deal a total of 100,000 damage with Eyjafjalla (excluding Support Units)",
+        "requirement2": "Clear Side Story OF-5 with a 3-star rating; You must deploy your own Eyjafjalla, and can only include 3 other Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +130 , ATK +40",
+          "effectLabel": "New trait",
+          "effectText": "Ignore 10 of target's RES",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +160 , ATK +55",
+          "effectLabel": "Pyrobreath improved",
+          "effectText": "All [Caster] Operators ' ATK +18% when brought",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +180 , ATK +65",
+          "effectLabel": "Pyrobreath improved",
+          "effectText": "All [Caster] Operators' ATK +22% when brought",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "CCR-Y: Pet Contest First Prize",
+      "mission": {
+        "requirement1": "During battle, have your own Eyjafjalla use Volcano a total of 6 times",
+        "requirement2": "Clear So Long, Adele: Home Away From Home SL-4 with a 3-star rating; You must deploy your own Eyjafjalla, and have her defeat at least 2 \"Big Fellas\""
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +180 , ATK +25",
+          "effectLabel": "New trait",
+          "effectText": "Gain 1 SP when normal attacks hit elite or leader enemy.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +210 , ATK +40",
+          "effectLabel": "Wild Fire improved",
+          "effectText": "Immediately obtains 7 to 15 SP randomly after deployment; if there are Elite or Leader enemies within range, gains the maximum amount of SP possible",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +230 , ATK +50",
+          "effectLabel": "Wild Fire improved",
+          "effectText": "Immediately obtains 7 to 15 SP and 6 to 15 ASPD randomly after deployment; if there are Elite or Leader enemies within range, gains the maximum amount of SP and ASPD possible",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Eyjafjalla, volcanologist,\nCatastrophe\nMessenger. She is exceptionally talented in the use of advanced\nOriginium\ntechniques and high-energy\nArts\n.\nCurrently undergoing treatment at\nRhodes Island\n, Eyjafjalla provides support in Catastrophe research, environmental observation/assessment, assistance in traversing dangerous terrain, among others.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "EG6tepwJ328",
+      "creator": "leithanienWNT"
+    },
+    {
+      "videoId": "RT_6BOSX_6k",
+      "creator": "kukkikaze"
+    },
+    {
+      "videoId": "mxav0aWx48Y",
+      "creator": "FrostByte262"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 732,
+          "atk": 292,
+          "def": 46,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1046,
+          "atk": 406,
+          "def": 79,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-6"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1046,
+          "atk": 406,
+          "def": 79,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1359,
+          "atk": 535,
+          "def": 109,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1359,
+          "atk": 535,
+          "def": 109,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1743,
+          "atk": 645,
+          "def": 122,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 90,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests for this Operator showed blurry outlines of internal organs with visible dark spots. Unusually high concentrations of Originium particles were present in her circulatory system, indicating infection and confirming her as Infected at this stage. \n\n[Cell-Originium Assimilation] 8% \nEyjafjalla showed conspicuous symptoms of infection, with corresponding deafness. \n\n[Blood Originium-Crystal Density] 0.5u/L \nThe level of Eyjafjalla's internal crystals are comparatively high."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "When Eyjafjalla showed up at Rhodes Island for the first time, the personnel leading her to Human Resources noticed some odd behaviors right off the bat: She couldn't make out what people were saying and would sometimes run right into things. People assumed she was some Operator's visiting little sister, or an intern sent by the pharmaceutical department. \nA few days later, they were shocked to receive a notice from the executives, approving the Infected Eyjafjalla for missions and the research of Arts and Catastrophes as an official Rhodes Island Operator. \nIt turns out the little girl they overlooked was a legend among the most renowned academies in Leithanien, fueling speculation about her level of education. \nThe optimists believed having a young person in the Arts Department would bring some much-needed energy to their somber daily grind. They debated in low but excited voices over who would mentor her internship. \nThe pessimists lamented that as an Infected, no one could predict where Eyjafjalla might end up in the future."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "According to forms filled out by Eyjafjalla, she was born to a prominent academic family in Leithanien. Her parents worked at Wilhelm University, her father a graduate professor for the School of Originium, her mother an environmental and ecological research specialist. The couple died in a volcanic eruption during a survey. \nEyjafjalla's parents had begun a project to study natural Catastrophes on Terra, and the volcano was a key site. Among the files Eyjafjalla took with her to Rhodes Island, she treasured the report on that volcano most of all. She didn't want the study to end with the passing of her parents, so she decided to continue it in their stead. \nVolcanic research must be done on-site before eruption and required long-term close-range observation. Particles with Originium components tended to be common in volcanic areas, and cooling lava constantly turned over new Originium veins, making the region a breeding ground for Oripathy. This is believed to be the reason for Eyjafjalla's infection."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Eyjafjalla's physical symptoms are very obvious. Oripathy has impaired her hearing considerably, sometimes robbing her of the sense entirely. Fortunately, the impairment has slowed given treatment at Rhodes Island. \nEyjafjalla typically uses a hearing aid, or asks her conversant to repeat loudly themselves in order to communicate. \nIn addition, certain facial expressions and body language have also proven effective. For example: \nShaking one's head: Unsuccessful dialogue. \nShaking one's head with a surprised expression: Very likely some words have been misunderstood and should be clarified immediately. \nNodding: Successful dialogue. \nNoding with a positive expression: Idea successfully communicated, proceed with dialogue. Still, one must be mindful of the context, since the present dialogue might be built on the pretext of a previously unnoticed misunderstanding. \nRepeating a word or sentence multiple times: Eyjafjalla is confirming what's been communicated to her, respond positively and mind one's volume. \nGlassy-eyed or negative expression: Misunderstanding has possibly occurred. Review previous dialogue to avoid greater misunderstanding."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[CLASSFIED] \nI've perused Eyjafjalla's files and a draft of her thesis. \n'The Impact of Underground Originium Veins on Volcanic Cycles' and 'Investigative Report on the Correlation Between Originium and Natural Catastrophes,'plus a few other analyses are... very well done and reasoned. \nAlso, very dangerous. \nI hope everyone realizes she is asking dangerous questions in dangerous areas--and not just academic ones. \nYou do know ants, right? Then you should know ants love carrion. \nEven though the carrion is still rotting, the ants will still rip it to tiny chunks and carry them back to their nest to feed the whole community. \nAnts must grow stronger to survive in the world. \nDo you get it? If the carrion is Originium, we are feeding our community with it for everyone to grow stronger. And the purpose of that is to defend ourselves... and maybe oppose potential changes in the future. \nYes, according Eyjafjalla's thesis, Originium is a natural Catastrophe. \nBut we cannot stop, and will not stop. \n... \nLet the child continue her research, for now. \nBefore she can be certain of her own future. \n—Excerpt from a closed-door conference, spoken by■■"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Eyjafjalla's pets \nserve a similar role as Operator Mousse's 'kitties.' Eyjafjalla's dark-woolen companions appear identical to normal animals in physiology and behavior. \nEyjafjalla calls them 'little black sheep', claiming they were gift from her mother when she was still alive. \nUnlike the naughty 'kitties', the little black sheep are submissive and sluggish, their idea of fun is to nap in Eyjafjalla's room or some place spacious at Rhodes Island. \nThey helped Eyjafjalla with many things, like move books and deliver goods. They even make good fluffy pillows for her to lay her head on. \n[Classified Log] \nThis is not really confidential information, but something I believe is noteworthy. \nAlthough Eyjafjalla dubbed them 'little', they're still big pets. \nGiven their size, it is odd that they're hardly spotted at Rhodes Island. \nOn retrospect, it is suspicious that they only showed up to graze or when Eyjafjalla needed them. \nAnother usual phenomenon is when they give off high heat when angry or excited, possibly burning your hand when touched. \nThe truth behind all this is worth investigating."
+    }
+  ]
+}

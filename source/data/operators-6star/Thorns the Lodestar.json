@@ -1,0 +1,966 @@
+{
+  "name": "Thorns the Lodestar",
+  "rarity": 6,
+  "class": "Specialist",
+  "branch": "Alchemist",
+  "faction": "Iberia",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS",
+    "Support",
+    "Debuff"
+  ],
+  "trait": "Can throw Alchemical Units to assist in combat",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Boundless Sail"
+  ],
+  "ep": {
+    "Main": "Sailing For",
+    "Co-star": null
+  },
+  "internalName": "char_1039_thorn2",
+  "otherLanguages": {
+    "Chinese": "引星棘刺",
+    "Japanese": "引星 ソーンズ",
+    "Korean": "쏜즈 더 로드스타"
+  },
+  "characterInfo": {
+    "File no.": "II02",
+    "Illustrator": "嘎嘎人 (original design by 幻象黑兔 )",
+    "Release Date": "2025/06/05",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Kaito Ishikawa",
+    "Chinese": "Xu Xiang (credited as \"Ethan\" in EN)",
+    "English & Spanish": "Javier Bañas",
+    "Korean": "Hong Bum-ki"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "9 years",
+    "Place of Birth": "Iberia",
+    "Date of Birth": "March 17th",
+    "Race": "Aegir",
+    "Height": "177 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Standard",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Excellent",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "La Forma del Corazón",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "ATK +3%; when there are other Operator s within range, Alchemical Units thrown by this unit last 1s longer"
+        },
+        {
+          "stage": "Base",
+          "potential": "Potential 5",
+          "description": "ATK +7% (+4%) ; when there are other Operators within range, Alchemical Units thrown by this unit last 2s (+1s) longer"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "ATK +6%; when there are other Operators within range, Alchemical Units thrown by this unit last 2s longer"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "ATK +10% (+4%) ; when there are other Operators within range, Alchemical Units thrown by this unit last 3s (+1s) longer"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "ATK +10%; when there are other Operators within range, Alchemical Units thrown by this unit last 3s longer"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "ATK +14% (+4%) ; when there are other Operators within range, Alchemical Units thrown by this unit last 4s (+1s) longer"
+        }
+      ]
+    },
+    {
+      "name": "El Alcance de la Visión",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When deployed, all allies have ASPD +5 and all enemies have ASPD -5; effect is doubled for allies and enemies in a straight line of 6 or more consecutive tiles"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "RES +12"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves La Forma del Corazón"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Thorns the Lodestar's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Surge of Ceration .",
+        "La Forma del Corazón improved."
+      ],
+      "prerequisite": "Raise Thorns the Lodestar to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Specialist Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 7
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 7
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: El Alcance de la Visión .",
+        "New skill: \"Zona Marítima Personal\" .",
+        "La Forma del Corazón improved.",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Thorns the Lodestar to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Specialist Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Polymerization Preparation",
+          "quantity": 4
+        },
+        {
+          "name": "Refined Solvent",
+          "quantity": 7
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Wave Reckoning",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Throws an Alchemical Unit at an ally; for 5 s, this ally and other allies in the 8 surrounding tiles gain DEF +45 and recover HP equal to 8% ATK per second",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Throws an Alchemical Unit at an ally; for 5 s, this ally and other allies in the 8 surrounding tiles gain DEF +50 and recover HP equal to 9% ATK per second",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Throws an Alchemical Unit at an ally; for 5 s, this ally and other allies in the 8 surrounding tiles gain DEF +55 and recover HP equal to 10% ATK per second",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Throws an Alchemical Unit at an ally; for 6 s, this ally and other allies in the 8 surrounding tiles gain DEF +60 and recover HP equal to 11% ATK per second",
+            "initialSp": 1,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Throws an Alchemical Unit at an ally; for 6 s, this ally and other allies in the 8 surrounding tiles gain DEF +65 and recover HP equal to 12% ATK per second",
+            "initialSp": 1,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Throws an Alchemical Unit at an ally; for 6 s, this ally and other allies in the 8 surrounding tiles gain DEF +70 and recover HP equal to 13% ATK per second",
+            "initialSp": 1,
+            "spCost": 7,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Throws an Alchemical Unit at an ally; for 7 s, this ally and other allies in the 8 surrounding tiles gain DEF +75 and recover HP equal to 14% ATK per second",
+            "initialSp": 2,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Throws an Alchemical Unit at an ally; for 7 s, this ally and other allies in the 8 surrounding tiles gain DEF +80 and recover HP equal to 16% ATK per second",
+            "initialSp": 3,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Throws an Alchemical Unit at an ally; for 7 s, this ally and other allies in the 8 surrounding tiles gain DEF +90 and recover HP equal to 18% ATK per second",
+            "initialSp": 4,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Throws an Alchemical Unit at an ally; for 8 s, this ally and other allies in the 8 surrounding tiles gain DEF +100 and recover HP equal to 20% ATK per second",
+            "initialSp": 5,
+            "spCost": 5,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 6
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Surge of Ceration",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Throws an Alchemical Unit; for 10 s, ground enemies around the landing point receive 50% less healing and recovery effects, and takes 100% ATK as Arts damage per second; allies within the area recover HP equal to 9% ATK per second. The Alchemical Unit will slowly travel in the direction it was thrown and expand its area of effect over 10 s Can store 1 charge",
+            "initialSp": 11,
+            "spCost": 30,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Throws an Alchemical Unit; for 10 s, ground enemies around the landing point receive 50% less healing and recovery effects, and takes 105% ATK as Arts damage per second; allies within the area recover HP equal to 10% ATK per second. The Alchemical Unit will slowly travel in the direction it was thrown and expand its area of effect over 10 s Can store 1 charge",
+            "initialSp": 11,
+            "spCost": 29,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Throws an Alchemical Unit; for 10 s, ground enemies around the landing point receive 50% less healing and recovery effects, and takes 110% ATK as Arts damage per second; allies within the area recover HP equal to 11% ATK per second. The Alchemical Unit will slowly travel in the direction it was thrown and expand its area of effect over 10 s Can store 1 charge",
+            "initialSp": 11,
+            "spCost": 28,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Throws an Alchemical Unit; for 12 s, ground enemies around the landing point receive 50% less healing and recovery effects, and takes 120% ATK as Arts damage per second; allies within the area recover HP equal to 12% ATK per second. The Alchemical Unit will slowly travel in the direction it was thrown and expand its area of effect over 12 s Can store 1 charge",
+            "initialSp": 12,
+            "spCost": 27,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Throws an Alchemical Unit; for 12 s, ground enemies around the landing point receive 50% less healing and recovery effects, and takes 125% ATK as Arts damage per second; allies within the area recover HP equal to 13% ATK per second. The Alchemical Unit will slowly travel in the direction it was thrown and expand its area of effect over 12 s Can store 1 charge",
+            "initialSp": 12,
+            "spCost": 26,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Throws an Alchemical Unit; for 12 s, ground enemies around the landing point receive 50% less healing and recovery effects, and takes 130% ATK as Arts damage per second; allies within the area recover HP equal to 14% ATK per second. The Alchemical Unit will slowly travel in the direction it was thrown and expand its area of effect over 12 s Can store 1 charge",
+            "initialSp": 12,
+            "spCost": 25,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Throws an Alchemical Unit; for 15 s, ground enemies around the landing point receive 50% less healing and recovery effects, and takes 140% ATK as Arts damage per second; allies within the area recover HP equal to 15% ATK per second. The Alchemical Unit will slowly travel in the direction it was thrown and expand its area of effect over 15 s Can store 2 charges",
+            "initialSp": 13,
+            "spCost": 24,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Throws an Alchemical Unit; for 15 s, ground enemies around the landing point receive 50% less healing and recovery effects, and takes 150% ATK as Arts damage per second; allies within the area recover HP equal to 16% ATK per second. The Alchemical Unit will slowly travel in the direction it was thrown and expand its area of effect over 15 s Can store 2 charges",
+            "initialSp": 13,
+            "spCost": 23,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Throws an Alchemical Unit; for 15 s, ground enemies around the landing point receive 50% less healing and recovery effects, and takes 165% ATK as Arts damage per second; allies within the area recover HP equal to 17% ATK per second. The Alchemical Unit will slowly travel in the direction it was thrown and expand its area of effect over 15 s Can store 2 charges",
+            "initialSp": 13,
+            "spCost": 22,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Throws an Alchemical Unit; for 15 s, ground enemies around the landing point receive 50% less healing and recovery effects, and takes 180% ATK as Arts damage per second; allies within the area recover HP equal to 18% ATK per second. The Alchemical Unit will slowly travel in the direction it was thrown and expand its area of effect over 15 s Can store 2 charges",
+            "initialSp": 14,
+            "spCost": 20,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "The bread-and-butter of Thorns that is easy to use, having high AOE damage, also damage over time which is great against hit-count required enemies. If healing is desired, this skill also provides it at a massive range with no target limit."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Polyester Pack",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 4
+            },
+            {
+              "name": "Solidified Fiber Board",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Damage Over Time",
+            "description": "Enemies incur a damage per second for a certain duration"
+          }
+        ]
+      },
+      {
+        "name": "\"Zona Marítima Personal\"",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Passive Effect: Attack Range increases Activation Effect: Throws Alchemical Units at 3 Operators with the lowest Block; for 18 s, enemies within the defined area have ATK -11% , DEF -31% , RES -31% (does not stack), and also take 90% ATK as Arts damage per second. These effects gradually increase (reaching max values after 15 s: ATK -17% , DEF -31% , RES -31% , take 270% ATK as Arts damage per second)",
+            "initialSp": 32,
+            "spCost": 70,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Passive Effect: Attack Range increases Activation Effect: Throws Alchemical Units at 3 Operators with the lowest Block; for 18 s, enemies within the defined area have ATK -11% , DEF -31% , RES -31% (does not stack), and also take 100% ATK as Arts damage per second. These effects gradually increase (reaching max values after 15 s: ATK -17% , DEF -31% , RES -31% , take 280% ATK as Arts damage per second)",
+            "initialSp": 33,
+            "spCost": 70,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Passive Effect: Attack Range increases Activation Effect: Throws Alchemical Units at 3 Operators with the lowest Block; for 18 s, enemies within the defined area have ATK -11% , DEF -31% , RES -31% (does not stack), and also take 110% ATK as Arts damage per second. These effects gradually increase (reaching max values after 15 s: ATK -17% , DEF -31% , RES -31% , take 290% ATK as Arts damage per second)",
+            "initialSp": 34,
+            "spCost": 70,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Passive Effect: Attack Range increases Activation Effect: Throws Alchemical Units at 3 Operators with the lowest Block; for 19 s, enemies within the defined area have ATK -12% , DEF -32% , RES -32% (does not stack), and also take 120% ATK as Arts damage per second. These effects gradually increase (reaching max values after 15 s: ATK -21% , DEF -41% , RES -41% , take 300% ATK as Arts damage per second)",
+            "initialSp": 36,
+            "spCost": 67,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Passive Effect: Attack Range increases Activation Effect: Throws Alchemical Units at 3 Operators with the lowest Block; for 19 s, enemies within the defined area have ATK -12% , DEF -32% , RES -32% (does not stack), and also take 130% ATK as Arts damage per second. These effects gradually increase (reaching max values after 15 s: ATK -21% , DEF -41% , RES -41% , take 310% ATK as Arts damage per second)",
+            "initialSp": 37,
+            "spCost": 67,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Passive Effect: Attack Range increases Activation Effect: Throws Alchemical Units at 3 Operators with the lowest Block; for 19 s, enemies within the defined area have ATK -12% , DEF -32% , RES -32% (does not stack), and also take 140% ATK as Arts damage per second. These effects gradually increase (reaching max values after 15 s: ATK -21% , DEF -41% , RES -41% , take 320% ATK as Arts damage per second)",
+            "initialSp": 38,
+            "spCost": 67,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Passive Effect: Attack Range increases Activation Effect: Throws Alchemical Units at 3 Operators with the lowest Block; for 20 s, enemies within the defined area have ATK -13% , DEF -33% , RES -33% (does not stack), and also take 150% ATK as Arts damage per second. These effects gradually increase (reaching max values after 15 s: ATK -25% , DEF -45% , RES -45% , take 330% ATK as Arts damage per second)",
+            "initialSp": 40,
+            "spCost": 64,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Passive Effect: Attack Range increases Activation Effect: Throws Alchemical Units at 4 Operators with the lowest Block; for 21 s, enemies within the defined area have ATK -14% , DEF -34% , RES -34% (does not stack), and also take 170% ATK as Arts damage per second. These effects gradually increase (reaching max values after 15 s: ATK -26% , DEF -46% , RES -47% , take 350% ATK as Arts damage per second)",
+            "initialSp": 42,
+            "spCost": 64,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Passive Effect: Attack Range increases Activation Effect: Throws Alchemical Units at 4 Operators with the lowest Block; for 22 s, enemies within the defined area have ATK -15% , DEF -35% , RES -35% (does not stack), and also take 180% ATK as Arts damage per second. These effects gradually increase (reaching max values after 15 s: ATK -27% , DEF -47% , RES -47% , take 370% ATK as Arts damage per second)",
+            "initialSp": 45,
+            "spCost": 64,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Passive Effect: Attack Range increases Activation Effect: Throws Alchemical Units at 4 Operators with the lowest Block; for 23 s, enemies within the defined area have ATK -15% , DEF -35% , RES -35% (does not stack), and also take 210% ATK as Arts damage per second. These effects gradually increase (reaching max values after 15 s: ATK -30% , DEF -50% , RES -50% , take 390% ATK as Arts damage per second)",
+            "initialSp": 48,
+            "spCost": 60,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "2nd",
+            "priority": "sub",
+            "explanation": "This skill should only be mastered by Thorns 'mains'. One of the hardest skill to show off in the game as it requires good positioning of other units. When used well, it does have a high damage area and also debuff. Only consider this when you've understood the skill."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 4
+            },
+            {
+              "name": "Transmuted Salt",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 7
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Damage Over Time",
+            "description": "Enemies incur a damage per second for a certain duration"
+          },
+          {
+            "name": "Focused AOE",
+            "description": "Place units as widely apart as possible so as to get the biggest range of debuff and AOE damage"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Orirock",
+          "quantity": 6
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyester",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 5
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Compound Cutting Fluid",
+          "quantity": 5
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Metalwork α",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, Precious Metal formula related productivity +30%"
+    },
+    {
+      "name": "Essence Transmutation Byproduct",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, every Trading Post makes the Factory's Precious Metal formula related productivity +3%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Thorns the Lodestar's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "ALC-X: A Three-Sided Gold Coin",
+      "mission": {
+        "requirement1": "During battle, have your own Thorns The Lodestar use Surge of Ceration a total of 20 times",
+        "requirement2": "Clear Intermezzo [ sic ] OF-7 with a 3-star rating; You must deploy your own Thorns the Lodestar, and can only include 4 other Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +80 , ATK +30",
+          "effectLabel": "New trait",
+          "effectText": "Increases SP recovery rate by +0.1/s while an Alchemical Unit is on the field",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +100 , ATK +40",
+          "effectLabel": "La Forma del Corazón improved",
+          "effectText": "ATK +10%; when there are other Operators within range, Alchemical Units thrown by this unit last 4s longer",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +120 , ATK +50",
+          "effectLabel": "La Forma del Corazón improved",
+          "effectText": "ATK +15%; when there are other Operators within range, Alchemical Units thrown by this unit last 4s longer",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Former Rhodes Island frontline combatant\nThorns\n, now a captain aboard an independent exploration-ship/scientific-vessel/finning-boat/cargo-hauler/pirate-ship. As the captain of the\nCuna de Nene\n, he maintains a cooperative partnership with\nRhodes Island\n. We provide medical and supply services, while he in turn offers us many ocean-related conveniences, as well as the means to contact remote\nIberian\nsettlements outside the jurisdiction of the\nInquisition\n.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "j5VvIOpSOL4",
+      "creator": "DragonGJY"
+    },
+    {
+      "videoId": "ILmFBWFz9co",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "QaGbF5IOm70",
+      "creator": "SUPAH"
+    },
+    {
+      "videoId": "GBIq3aFfO9Q",
+      "creator": "Storn"
+    },
+    {
+      "videoId": "TajQU5Yvi4o",
+      "creator": "Sten"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 527,
+          "atk": 221,
+          "def": 47,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1.5
+        },
+        "max": {
+          "hp": 713,
+          "atk": 307,
+          "def": 70,
+          "res": 20,
+          "redeploy": 70,
+          "dp": 14,
+          "block": 1,
+          "interval": 1.5
+        },
+        "rangeId": "2-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 713,
+          "atk": 307,
+          "def": 70,
+          "res": 25,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 1.5
+        },
+        "max": {
+          "hp": 926,
+          "atk": 405,
+          "def": 89,
+          "res": 25,
+          "redeploy": 70,
+          "dp": 16,
+          "block": 1,
+          "interval": 1.5
+        },
+        "rangeId": "2-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 926,
+          "atk": 405,
+          "def": 89,
+          "res": 30,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 1.5
+        },
+        "max": {
+          "hp": 1173,
+          "atk": 501,
+          "def": 106,
+          "res": 30,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 1,
+          "interval": 1.5
+        },
+        "rangeId": "3-5"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 40,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Thorns shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.17u/L\nThe moment we stepped aboard the Cuna de Nene, Operator Thorns handed us a piece of wrinkled cloth. It was only later that I noticed the numbers painted on it. To my surprise, it was data on his vital signs, but more surprising was how closely the numbers matched our official examinations. It was like magic.\nI asked him about it, and he said it was something he came up with while darning the sails. He used the alchemical substance coating his arm he calls the 'Corazonix' to give himself an examination, ran the numbers himself, then jotted them down on a nearby scrap of sail canvas.\nIt's fine, I suppose. Maybe a bit haphazard, but it's never a bad thing to be thinking about your own health.\n—Medical Operator's report after the Doctor visited the Cuna de Nene"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "[Crewmate's Petition #1]\nCaptain! Next time we're repairing the ship, d'you mind not using your Corawhatsit?! Sure, it fixes things up great, but whenever you've got something on your mind that silver goop starts flying everywhere and dragging along all the stuff you fixed with it! The crapper door keeps smacking into the crapper, and it's a real pain in the ass, so to speak...\n[Captain's Response]\nAgreed.\nLogically, the simplest solution would be to train myself to keep a cool head, while the most thorough would be to cut off the Corazonix I use as an adhesive to prevent it from reacting to my thoughts.\nBut my personal decision is to start developing a new quick-drying, waterproof, and high-strength multi-purpose adhesive. I think it would be a fascinating research project.\n\n[Crewmate's Petition #2]\nCaptain! That knucklehead Fabian dropped the mooring rope and half a mast cracked off! Nearly squished little Nene in the process! So why's he still swaggering about like nothing happened?! He deserves to get flogged or something!\n[Captain's Response]\nAgreed.\nI've ordered Fabian to do strength exercises ten times a day, so the next time he's fastening the rope, he won't get tired and let it slip.\nTo ensure he follows those orders, I'll do them with him.\n\n[Crewmate's Petition #3]\nCaptain!!! This ship used to be the La Conquista, so why the hell is it the Cuna de Nene now?! Before asking if it's dapper or not (it's not), we're a ship sailing the seas by our lonesome. Without a fearsome name to shout, how're we supposed to scare off any slimy curs up to no good?\nFor the crew's safety, I beg you to reconsider the new name! We're looking at a mutiny here!\n[Captain's Response]\nDenied.\nCuna de Nene was decided by drawing lots, as usual. As a saltfin, I highly doubt Nene used any underhanded tricks to rig the results. Besides, the Seaborn seem unlikely to respond differently to different ship names.\nBut if you do wish to mutiny, be sure to inform me ahead of time.\n\n[Audio Log]\n'You've been out to sea before, Señora Juana. Tell me, was being the captain always like this? Did Captain Cruz have to handle this sort of thing? I always feel like I'm doing something wrong.'\n'Why ask? Are you unhappy with it? Would you rather be tied up and dragged behind the ship whenever there's a complaint?'"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "You the new guy the first mate recruited? She tell you about the situation aboard the ship?\nFine, I guess I'll do it. No secrets on this ship—our captain knows all.\nHah, take it from me. One time he was charting our course with the first mate. One moment, he's talking about the ocean currents, next, he's calling my name, saying my tattoo's starting to swell and to put some ointment on it... I swear to Nene, I never told anyone I got a tattoo in the first place! Since it's of, uh, Nene's beautiful fin-spinning dance... Then there was another time he was adjusting the helm when all of a sudden, he pokes his head out from behind the wheel and hands me a bottle, told me to rub it on if I wanted Nene to play nice with me... How'd he know Nene nipped me?\nOh, but don't you worry! He don't really care about dark grudges or lurid affairs, and he's not one for teasing or blackmail either. It's just crazy how much he knows, and that lets him spot a whole lotta problems... Not that any of us can say when he'll decide to do something about 'em.\n—An old sailor's warning to a new crewmember in a tavern in an unnamed town\n\nIn the early morning, if it's a clear blue sky, you can see the Cuna de Nene entwined in shimmering silver threads. This is the only time of day you'll have the chance to actually see them in all their near-imperceptible glory. They are the handiwork of Operator Thorns, woven out of the alchemical substance called 'Corazonix' he bears on his arm. According to him, he can release this Corazonix to have it enter any sort of natural fluid (ie: air, seawater, or even flowing blood), inserting itself into the circulation and sending innumerable data points back to his arm.\nWhen I say 'innumerable', I mean 'innumerable'. If I understood Thorns correctly, it feels like your ear is subjected to a foreign language, classical music, and a burdenbeast braying all at once, while your mouth is being stuffed with candy, chilies, and mud at the same time, not to mention the documentary, children's cartoon, and dance lesson being beamed into your eyes... How does he process all that information?\n—A Caster's report after the Doctor visited the Cuna de Nene\n\nMy dear colleagues, it has become clearer than ever that the Corazonix is itself a paradox.\nThe 'compass'—the most direct apparatus we can use to decipher it—is the product of many years of research, yet even with its aid we cannot know which of the Corazonix's tremblings tells the temperature of the air, which of its undulations mirrors the ocean's flow, or if its churning conveys of the average blood temperature of a school of fins or the direction of the next geyser to erupt. The way I see it, there is nobody who can interpret the irregular behavior of the compass's Corazonix... unless that interpreter already has a clear image in mind of what data they'll need.\nFor you see, a tool that can gather endless data has finally manifested itself, but it can only ever show us what the heart of man yearns for... Ah. Perhaps the rumors of a so-called 'guiding desire', as well as the name 'Corazonix' itself—thought up by the court poets to show off their skills—are rather fitting after all.\n—A letter from Golden Age alchemist Aulus to his colleagues, kept in the archives of the Inquisition"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "'Hey, Elysium, what happened to the captain after that?!'\n'Ah, right, where was I... Our Captain Valourchin defeated the scoundrels, and finally managed to take his trusty crew out to sea. With a wave of his silver arm, he could see the positions of every sea monster, letting him slip through their territory before they even noticed. He also recovered basketfuls of fins snatched away by the monsters, meaning nobody had to go hungry. And just so you know, he was only able to learn any of these skills because I was there to support him, as his constant companion and closest friend—'\n'But if the Captain Valourchin's always out at sea, doesn't that mean the two of you have split up?'\n'Err... It's true that I didn't follow him to sea...'\n'Then why do you look so happy? Didn't you say you were the best of friends?'\n'I may not be out there among the briny waves with him, but we're still partners! Before he set sail, I thought about everything he might encounter during his adventure! Everything he needed out there was prepared by yours truly! I'm willing to bet that even as we speak, he's eating one of the vitamin pills I gave him!'\n—A tale Elysium recounted about himself and the Captain at a signing for the 'Saga of the Captain Valourchin: Volume 3'\n\n'You sure you're looking for Rhodes Island?'\nThat's what the sailor, beard festooned with clattering bone ornaments, asked me. My heart was leaping out my chest, but since I had already stepped aboard, all I could do was tell the truth.\n'I-I was told there were people here who took applications for R-Rhodes Island supplies.'\nHe squinted his eyes, then led me into the depths of the ship's hold. It was like a ramshackle maze in there. Sometimes we'd have to crawl under Golden Age era steel frames, some still partially gilded. Other times, we'd have to climb up and down ladders fashioned from bone and finleather.\nI was led to a dark room, where a pair of golden eyes stared at me from the other side. The sailor pushed me in, telling me I was on my own.\n'Could you turn on the light for me? The switch is 23 degrees to your right, and 40 centimeters ahead.'\nWith the lights on, I could see who was talking to me. He had messy hair and unkempt clothes, yet gave off a vigorous, youthful aura. He examined me carefully in silence as he fiddled with some strange device in his hand. To tell the truth, this was not what I had in mind when I pictured a Rhodes Island office. All sorts of symbols were scrawled across the wall, while bottles hung down from the ceiling. As strangely-colored lights shone from them, I could faintly see fine threads running through the air. It reminded me more of a sorcerer's lair than anything else.\n'I, err, think I might have gotten the wrong place. Seeing how this isn't a Rhodes Island office and all. I don't suppose you could just let me go in peace? I've got no money on me, a-and there's no one who can pay a ransom either...'\nI clutched my autographed copies of the 'Saga of the Captain Valourchin' trilogy in my bag, trying my best to think of a way out of there. If I had really fallen into the hands of pirates, I thought, then the righteous Captain would surely come to my rescue, but until then, I'd have to rely on my own wits...\n'Oh, what am I saying, this must be Rhodes Island... O-Oh! Terribly sorry.'\nUpon hearing the name 'Rhodes Island', the young man's eyes lit up. He stood up all of a sudden, painstakingly dragging a plank covered in draft paper over from behind him. On the back of the plank was an impressively-carved rendition of the Rhodes Island logo.\n'Sorry, there's not much space aboard, so rooms have to pull double-duty. This <i>is</i> Rhodes Island. Specifically, its high seas office. Trust me, we're the real deal. Now hand me your application form, and I'll see what we have available...'\n—The recollections of a villager who, after introductions from Rhodes Island's Iberia office, came aboard the Cuna de Nene to receive supplies"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "'You met with that youth, the so-called 'Captain Valourchin' again, Lord Carmen.'\n'I did.'\n'You need not attend the meetings personally. He is of far less importance than our dealings with Ægir.'\n'It has been a very long time since tales of any 'sea captain' have made their way around Iberia.'\n'...A 'captain' who has looted towns and conspired to murder our civil servants. His tale should be brought to an end by the Penal Battalion's poleaxes.'\n'His crimes will not be forgotten, but do not be so eager to bring him to trial. His current conduct is still of use to us.'\n'A few barrels of fins to some remote villages we do not have the leisure to look after, and opening up trade routes to such regions... Hardly anything groundbreaking. The past few decades have seen the remnants of the Defensa voluntarily look after dozens of hamlets near our land border.'\n'Yet they have not seen anyone from the Defensa sung of as a folk hero. I saw the eyes of those villagers as they praised the 'Captain Valourchin'. I've seen that look before.'\n'What sort of look?'\n'Sixty-odd years ago, whether aboard the Church's seaborne basilica or Alfonso's Stultifera, every time I returned, I could see their shining lights—Cerro del Faro, Ciudad de las Olas Doradas, sometimes Puerto Orgullo. Even in the middle of the night, the people would look out to sea with expectant gazes, eager to see what curiosities we had brought back from distant waters. I see that same eagerness, the same expectation in the eyes of those praising the 'Captain Valourchin'... I am afraid the people no longer fear the sea.'\n'You mean to say he has led these innocents to cast aside the sanctuary of fear and embrace desire instead. Desire that will only invite disaster. All the more reason to punish him as soon as possible.'\n'Or maybe what we actually need is someone to light a fire amidst the ashes. We will not find the answers we seek on land. No matter how much we fear it, Iberia's lifeline lies out at sea. If he were to submit to Inquisition supervision and act in our name... he would no longer pose a threat to us. Quite the opposite, in fact.'\n'And how did he respond?'\n'Ah. He refused.'\n—A conversation between Saint Carmen and a senior Inquisitor"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "No need to rush. This question, I leave to you.\nThere will come a day you can answer in your own words... Or rather, when the time comes, your answer will be your own.\n—The final words Aulus left for Thorns as they parted\n\n[Captain's Log]\nThe sea's much calmer than I imagined. The day I set out to sea, the voices that once called my name from the depths no longer echoed in my ears. I observed every school of Seaborns along our course, yet they all seemed compelled by instinct—relentless expanding and devouring. I couldn't hear their murmurs or calls.\nNow, all I hear is my own voice. Every time I call the Corazonix back to me, I can hear the rushing of my blood spreading further and further into the distance. At last, it is not the sea calling to me, but me calling to it.\nI am trying to extend my searches further. At its distant limits, it takes an incredibly long time to recall the Corazonix, and I fear the accuracy of its information will be diminished somewhat. The further I go, the more the sea warps and mutates. Some of these oddities can be explained by large-scale Seaborn activity. Others, I believe may be due to Ægirian technology controlling things behind the scenes. But even further in the distance, there are phenomena I have no explanation for. There is some sort of abnormal 'tide' (for lack of a better word), completely unlike the one near the coast. As if the water of this distant stretch of sea is being pulled away by some unknown force.\nI want to know what it is.\nI <i>will</i> discover the truth of the matter."
+    }
+  ]
+}

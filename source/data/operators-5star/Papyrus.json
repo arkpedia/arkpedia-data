@@ -1,0 +1,764 @@
+{
+  "name": "Papyrus",
+  "rarity": 5,
+  "class": "Medic",
+  "branch": "Chain Medic",
+  "faction": "Sargon",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing"
+  ],
+  "trait": "Restores HP of allies, bouncing between 3 allies. Healing reduced by 25% per bounce.",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Adventure That Cannot Wait For The Sun"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "The Next Side Quest"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4139_papyrs",
+  "otherLanguages": {
+    "Chinese": "莎草",
+    "Japanese": "パピルス",
+    "Korean": "파피루스"
+  },
+  "characterInfo": {
+    "File no.": "SG19",
+    "Operator Record": "Outside the Window",
+    "Paradox Simulation": "Order in Busyness",
+    "Illustrator": "温泉瓜",
+    "Release Date": "2025/01/16",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Azusa Tachibana",
+    "Chinese": "Ge Zirui",
+    "English": "Molly Harris",
+    "Korean": "Yoo Hye-ji"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Sargon",
+    "Date of Birth": "July 12th",
+    "Race": "Feline",
+    "Height": "160 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Erudite of Ancient Scrolls",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "Healing grants the target Operator a Barrier equal to 5% of Papyrus's ATK, lasting 8 seconds"
+        },
+        {
+          "stage": "Base",
+          "potential": "Potential 5",
+          "description": "Healing grants the target Operator a Barrier equal to 7% (+2%) of Papyrus's ATK, lasting 8 seconds"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Healing grants the target Operator a Barrier equal to 10% of Papyrus's ATK, lasting 8 seconds"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Healing grants the target Operator a Barrier equal to 12% (+2%) of Papyrus's ATK, lasting 8 seconds"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Healing grants the target Operator a Barrier equal to 20% of Papyrus's ATK, lasting 8 seconds"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Healing grants the target Operator a Barrier equal to 22% (+2%) of Papyrus's ATK, lasting 8 seconds"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Erudite of Ancient Scrolls"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Papyrus's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Pre-Exhibit Examination .",
+        "Erudite of Ancient Scrolls improved.",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Papyrus to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Erudite of Ancient Scrolls improved."
+      ],
+      "prerequisite": "Raise Papyrus to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Medic Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Manganese Trihydrate",
+          "quantity": 7
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 13
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Flash of Ingenuity",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Increases the heal amount of the next heal to 140% ATK; Barrier provided by talent increases to 150% Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Increases the heal amount of the next heal to 150% ATK; Barrier provided by talent increases to 150% Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Increases the heal amount of the next heal to 160% ATK; Barrier provided by talent increases to 150% Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Increases the heal amount of the next heal to 160% ATK; Barrier provided by talent increases to 150% Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Increases the heal amount of the next heal to 160% ATK; Barrier provided by talent increases to 200% Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Increases the heal amount of the next heal to 170% ATK; Barrier provided by talent increases to 200% Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Increases the heal amount of the next heal to 175% ATK; Barrier provided by talent increases to 200% Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 9,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Increases the heal amount of the next heal to 180% ATK; Barrier provided by talent increases to 200% Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Increases the heal amount of the next heal to 190% ATK; Barrier provided by talent increases to 200% Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Increases the heal amount of the next heal to 200% ATK; Barrier provided by talent increases to 200% Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 8,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 3
+            },
+            {
+              "name": "Semi-Synthetic Solvent",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Pre-Exhibit Examination",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "15 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Immediately locks onto the Operator with the highest Max HP value within attack range (excluding herself). While skill is active, only this Operator can be the primary target of Papyrus's healing. Attack Interval reduces , ATK +5% , bounces per heal +1",
+            "initialSp": 15,
+            "spCost": 40,
+            "duration": 15
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Immediately locks onto the Operator with the highest Max HP value within attack range (excluding herself). While skill is active, only this Operator can be the primary target of Papyrus's healing. Attack Interval reduces , ATK +10% , bounces per heal +1",
+            "initialSp": 15,
+            "spCost": 39,
+            "duration": 15
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Immediately locks onto the Operator with the highest Max HP value within attack range (excluding herself). While skill is active, only this Operator can be the primary target of Papyrus's healing. Attack Interval reduces , ATK +15% , bounces per heal +1",
+            "initialSp": 15,
+            "spCost": 38,
+            "duration": 15
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Immediately locks onto the Operator with the highest Max HP value within attack range (excluding herself). While skill is active, only this Operator can be the primary target of Papyrus's healing. Attack Interval reduces , ATK +20% , bounces per heal +1",
+            "initialSp": 15,
+            "spCost": 37,
+            "duration": 15
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Immediately locks onto the Operator with the highest Max HP value within attack range (excluding herself). While skill is active, only this Operator can be the primary target of Papyrus's healing. Attack Interval reduces , ATK +25% , bounces per heal +1",
+            "initialSp": 15,
+            "spCost": 36,
+            "duration": 15
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Immediately locks onto the Operator with the highest Max HP value within attack range (excluding herself). While skill is active, only this Operator can be the primary target of Papyrus's healing. Attack Interval reduces , ATK +30% , bounces per heal +1",
+            "initialSp": 15,
+            "spCost": 35,
+            "duration": 15
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Immediately locks onto the Operator with the highest Max HP value within attack range (excluding herself). While skill is active, only this Operator can be the primary target of Papyrus's healing. Attack Interval reduces , ATK +35% , bounces per heal +1",
+            "initialSp": 15,
+            "spCost": 34,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Immediately locks onto the Operator with the highest Max HP value within attack range (excluding herself). While skill is active, only this Operator can be the primary target of Papyrus's healing. Attack Interval reduces , ATK +40% , bounces per heal +1",
+            "initialSp": 15,
+            "spCost": 33,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Immediately locks onto the Operator with the highest Max HP value within attack range (excluding herself). While skill is active, only this Operator can be the primary target of Papyrus's healing. Attack Interval reduces , ATK +45% , bounces per heal +1",
+            "initialSp": 15,
+            "spCost": 32,
+            "duration": 15
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Immediately locks onto the Operator with the highest Max HP value within attack range (excluding herself). While skill is active, only this Operator can be the primary target of Papyrus's healing. Attack Interval reduces , ATK +50% , bounces per heal +1",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 15
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 3
+            },
+            {
+              "name": "Aketon",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 4
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 7
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Aggregate Cyclicene",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 3
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 2
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Medic Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Medic Operators' Specialization training speed +30%"
+    },
+    {
+      "name": "Combat Techniques: Chain MedicReplacesMedic Expert α",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Medic Operators' Specialization training speed +30% ; if the trainee's Job Branch is Chain Medic , training speed will be further increased by +45%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Papyrus's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "XAH-X: Little Seeds",
+      "mission": {
+        "requirement1": "During battle, have your own Papyrus use Pre-Exhibit Examination a total of 5 times",
+        "requirement2": "Clear Adventure That Cannot Wait for the Sun AS-5 with a 3-star rating; You must deploy your own Papyrus, and allow no Operators to be defeated"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +38 , DEF +23",
+          "effectLabel": "Trait improved",
+          "effectText": "Restores HP of allies, bouncing between 3 allies. Healing reduced by 15% per bounce.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +50 , DEF +28",
+          "effectLabel": "Erudite of Ancient Scrolls improved",
+          "effectText": "Healing grants the target Operator a Barrier equal to 23% of Papyrus's ATK, lasting 8 seconds",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +60 , DEF +33",
+          "effectLabel": "Erudite of Ancient Scrolls improved",
+          "effectText": "Healing grants the target Operator a Barrier equal to 27% of Papyrus's ATK, lasting 10 seconds",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Anat, former acting curator of\nSargon\n's Varjavandabad Museum. She now works with\nRhodes Island\n's Sargon office as a field operator under the codename Papyrus, providing theoretical support and guidance for Rhodes Island's local historical research.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 940,
+          "atk": 154,
+          "def": 70,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1238,
+          "atk": 253,
+          "def": 102,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 18,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "y-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1238,
+          "atk": 253,
+          "def": 102,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1474,
+          "atk": 352,
+          "def": 128,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "y-2"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1474,
+          "atk": 352,
+          "def": 128,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1715,
+          "atk": 440,
+          "def": 160,
+          "res": 0,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "y-2"
+      }
+    ],
+    "trust": {
+      "hp": 150,
+      "atk": 60,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Papyrus shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.10u/L\nAccording to our information, Anat grew up near an open-air mine. As such, the BOCD of the locals tends to be on the high side, though Anat's test results are well below the local average.\nAnat patiently listened to our questions and told us:\n'It was mostly my father's insistence. At the time, our family didn't think protection would make much difference, but he insisted I was insulated from it all day, every day.'\nIt's admirable that her father was so conscientious about safeguarding against Originium."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Papyrus may not have worked at our Sargon office for very long, but her clocking in and out at the exact same times every day is enough to earn the endless admiration of her colleagues. She is consistently the first to arrive at the office and the first to leave her desk, leaving behind a gaggle of miserable operators making up for coming in late.\n'How can she get out of bed at seven <i>every</i> morning?!'\n'And she does it <i>every</i> day too! My best was a week before I gave up.'\nDuring a break after lunch, an operator asked her how she was able to lead such a disciplined life, which got her talking about her past:\n'This is how I lived while I was studying history at the academy. Wake up, wash up, go to class, leave class. It's not just that I'm used to it. I enjoy it, too. Even the most boring of days comes with great changes, as long as you're paying attention. Stories move forward, and history is made in front of our eyes, step by tiny step.'\n'So, what have you seen?'\n'On my first day of work at Menat-Ha'mait's museum, I met a group of teenage boys and girls who had stopped in front of an ancient fresco for quite a while. I saw a pair of them having the most interesting interactions. One moment, they'd be avoiding each others' gazes; the next, they'd be glancing at one another, hoping to meet each others' eyes. Six months later, I saw them in the exhibition hall again, hand in hand. And a year after that, one of them disappeared, while the other would silently examine the same fresco from a year and a half ago.'\n'So you research this sort of... 'history'?'\n'There is the historical aspect of it, yes, but it's mostly just a hobby of mine. If you keep an eye out for a period of time, you can see how history flows in all sorts of ways. In ancient cities like Menat-Ha'mait, countless of our ancestors have left their mark. Nowadays, we see travelers from all over, ferries plying the river, hawkers peddling their wares, relics in the museum... They are all constantly moving forwards. No matter where they may be, the roads and rivers of the past, and the descriptions of historians will continue flowing on. My life may seem dull, but it's a way for me to drop anchor in an endlessly flowing river. That's how my father taught me to see it, anyway.'\n'So why did you leave the museum?'\n'Because... I did feel a bit unsatisfied with it all.'"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "It was only through the freedom granted by books that young Papyrus could understand the great land outside her window.\nThe more she read, the more she was engrossed by the vibrant, colorful lands beyond her home, constantly thinking about the sights and sounds brought to her through words. Oftentimes, she would close her eyes and try to imagine how it felt like to be at the scene—the scents she might smell, the textures she might touch—but that was beyond the capabilities of the written word.\n'What does sunlight taste like?'\n'What's the dirt-like smell in the air after it rains?'\n'What does it feel like to have sand clog up your nose?'\nShe did not know these things, but she felt like she should.\nShe wanted to go outside for walks to see for herself, but her father always asked her to get back to reading, a more 'proper' way to learn, and one that didn't require any trial and error. She looked through what books she had that could answer those questions, but found them lacking.\n\nDuring her time at the academy, Papyrus was able to justify breaking free of her unchanging lifestyle, meeting others the same age as her.\nHer father could not be by her side forever, and was unable to stop her, but he suggested she maintain etiquette during such meetings. This allowed her to stay until they ended, and accompany her similarly late-staying friends on the walk back to the dorms. As she pulled her friends by the arm as they walked past Menat-Ha'mait's bustling night markets, she realized that while etiquette was important on paper, heartfelt friendship and joy were more important.\nAfter their graduation, her closest friends Djerwnapekhaper and Medjehtiqedti chose to leave Menat-Ha'mait to study abroad. As for her, she followed her father's suggestion and stayed in the ancient city, joining the staff of the Varjavandabad Museum. With her return to a dull, ordinary life, she had to take what few lively moments she could amidst the monotonous meetings and her cyclical daily schedule.\nThe only things that could bring a spark to her life were her old friends Djerwnapekhaper and Medjehtiqedti. After every excursion of theirs to the far corners of Terra, they would regularly return to Menat-Ha'mait, and just like during her cooped-up youth, they act as her window into Terra, bringing a gift of joy with every tale."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Ancient Sargonians understood life as a series of pre-defined 'cycles.'\nFor Papyrus, the cycles of her everyday life were defined by her father.\nThese cycles were so rounded, so standardized, that she felt she had both gone too far along her father's appointed path, yet also not gone anywhere at all.\nWhenever she did something wrong, her father would silently take her back to her cloistered room of books. Her younger self would not cry, as she knew she could spend a quiet afternoon there with knowledge she did not yet understand. As dusk fell, her taciturn father would open the door and take her out to her favorite restaurant.\n'I'm doing all I can to help you find the right path for yourself. I know you want to take it easy, but life's not that kind.'\nAnd so it went, cycle after cycle.\nOver time, she learned how best to organize the books in that room, alongside learning what the knowledge held within them actually meant. The hands that guided her got wrinkled, the towering figure thinning over time. In the end, she no longer needed those guiding hands, but she was accustomed to the cycle by that point.\n'Have I actually managed to go anywhere?' She looked ahead, and saw only the unending road. To others, she was hard-working, earnest, successful. But when she looked at herself, she saw a point slowly moving around a perfectly circular track, nary a thing that could be labeled 'reward' or 'penalty' ahead of her.\nAll she could be was a detached recorder, a spectator. She could not do things with sincerity. She could not experience things for herself.\nShe could recite poems from the Old Calendar Era, but she had not experienced the emotions, the impulses that prompted their creation. She could say 'I knew all that' with pride, but she dared not say 'that's happened to me'.\nPapyrus does not hate her father.\nOn this straight and narrow road, she faced no unexpected circumstances. It was a comfortable life. A tranquil one. She knew that realistically speaking, she might not be able to handle the unexpected. She might have been too comfortable even, so much so that it bored her. She has gotten used to it, but while in this familiar cycle, she longed to become a part of history.\nDoes this not mean jumping into the chaos of choice was the correct decision?"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Papyrus has just finished trekking through Arsalan with other field operators associated with Rhodes Island, enjoying her third night of sitting around the bonfire with them.\n'How you feeling, newbie? Managed to experience the 'real Sargon' you keep talking about?'\n'I learned that it's really tiring. River water is cold, the slopes are steep, and the loggers who gave us directions were really nice.'\n'Well, there's still eleven days full of all that to go. You applied for a two-week mission, but we're out here for the entire season. I honestly don't know why you applied in the first place, but you don't look like you're having much fun.'\n'I'm actually rather lacking in unenjoyable experiences'.\n'Experiences? That's where we differ, I'm afraid. Every day we're chopping wood and finding water. I've been dreaming about having a lazy day lately.'\nPapyrus has no response. She silently opens her copies of 'Tentative Travel Plans (Third Edition)' and 'Terra: A Journey,' sticking the photos she took into her densely-packed notes on the region, years in the making. These are the witnesses to the beginning of her grand journey.\n'I didn't expect you to do so much homework beforehand.'\n'I've wanted to come here for quite a while, but was never able to. Whenever I was free, I'd record some information in here. My father didn't let me go out much when I was younger, so I had to learn about this place from these books. He mainly supported my love for reading, but he also knew everything else I enjoyed. He believed that I should stick to reading because it was 'proper.' I disagreed, which is why I'm here with you all now.'\n'Sounds like he might be a bit <i>too</i> fatherly. Do you hate him for that?'\n'He planned my entire life out to be smooth sailing, so smooth that I've never tasted defeat or failure. But now, I want to experience things for myself. I can't experience something in its entirety while staying comfortable. It's a fact I've come to accept.'\n'Thanks to all your prep, you managed to avoid the newbie trap of falling into the river. That's a good thing, right?'\n'You're right. I'd say I'm rather happy about that. Thanks, and good night.'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "You do not know how happy I am to see a young lady like you share my interest in understanding the lives of others. You may find yourself in a minor predicament, but I urge patience.\nI admit that working at a museum may not be the most colorful of occupations, but anyone who strives to enrich the lives of others is worthy of respect. There are those who travel from afar to see the museum who now have beautiful memories thanks to your hard work. This is what your efforts are worth. In my opinion, you need not regret having missed out on a few opportunities, no matter how fine. Museum work and study expeditions are both necessary parts of your life.\nBelieve me, life finds a way forward. You need not abandon your ordinary past, just look at it from a different frame of mind!\n—After having been introduced via Rhodes Island's Doctor, I am happy to assist you however you need. E. E. Erikson"
+    }
+  ]
+}

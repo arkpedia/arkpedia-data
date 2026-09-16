@@ -1,0 +1,922 @@
+{
+  "name": "Ch'en the Dawnstreak",
+  "rarity": 6,
+  "class": "Guard",
+  "branch": "Arts Fighter",
+  "faction": "Yan",
+  "umbrellaFactions": [],
+  "connectedFactions": [
+    "Rhodes Island"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Nuker",
+    "DPS"
+  ],
+  "trait": "Deals Arts damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [],
+  "ep": {
+    "Main": "Tie Hua Fei",
+    "Co-star": null
+  },
+  "internalName": "char_1050_chen3",
+  "otherLanguages": {
+    "Chinese": "赤刃明霄陈",
+    "Japanese": "赤刃明霄 チェン"
+  },
+  "characterInfo": {
+    "File no.": "YD30",
+    "Illustrator": "三目YYB (original design by 唯@W )",
+    "Release Date": "2026/07/16",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Shizuka Ishigami",
+    "Mandarin": "Jen Zhang",
+    "Cantonese": "Bao Shaoye (credited as \"Sunny So\" in EN)",
+    "English": "Amy Lennox",
+    "Korean": "Chung Yu-joung"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "10 years",
+    "Place of Birth": "Lungmen",
+    "Date of Birth": "July 7th",
+    "Race": "Lung",
+    "Height": "168 cm",
+    "Infection Status": "Originium crystals distributed across skin surface, confirmed Infected by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Excellent",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Outstanding",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "All-Seeing Eye",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "ATK +8%, ASPD +8, and attacks deal Weakness Damage"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 4",
+          "description": "ATK +11% (+3%) , ASPD +11 (+3) , and attacks deal Weakness Damage"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "ATK +13%, ASPD +13, and attacks deal Weakness Damage"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 4",
+          "description": "ATK +16% (+3%) , ASPD +16 (+3) , and attacks deal Weakness Damage"
+        }
+      ]
+    },
+    {
+      "name": "To Know Time's Flow",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When not taking damage, every 7s restores a random amount of HP equal to 30% to 160% of ATK and Dodges the next Physical or Arts attack received"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 2",
+          "description": "When not taking damage, every 7s restores a random amount of HP equal to 35% (+5%) to 165% (+5%) of ATK and Dodges the next Physical or Arts attack received"
+        }
+      ],
+      "technique": [
+        {
+          "name": "Damage-Instance Shields",
+          "description": "Block any instance of damage, however high it is"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Improves To Know Time's Flow"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +28"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves All-Seeing Eye"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Ch'en the Dawnstreak's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: All-Seeing Eye .",
+        "New skill: Chi Xiao - Shadowless Speed ."
+      ],
+      "prerequisite": "Raise Ch'en the Dawnstreak to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Sugar",
+          "quantity": 10
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 6
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: To Know Time's Flow .",
+        "New skill: Chi Xiao - Heaven's Plaint .",
+        "All-Seeing Eye improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Ch'en the Dawnstreak to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Guard Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Nucleic Crystal Sinter",
+          "quantity": 4
+        },
+        {
+          "name": "Transmuted Salt Agglomerate",
+          "quantity": 3
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Chi Xiao - Fleeting Night",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "18 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +50% , attacks hit twice, and attacks silence the target until the skill ends",
+            "initialSp": 5,
+            "spCost": 30,
+            "duration": 18
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +55% , attacks hit twice, and attacks silence the target until the skill ends",
+            "initialSp": 5,
+            "spCost": 29,
+            "duration": 18
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +60% , attacks hit twice, and attacks silence the target until the skill ends",
+            "initialSp": 5,
+            "spCost": 28,
+            "duration": 18
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +65% , attacks hit twice, and attacks silence the target until the skill ends",
+            "initialSp": 6,
+            "spCost": 27,
+            "duration": 18
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +70% , attacks hit twice, and attacks silence the target until the skill ends",
+            "initialSp": 6,
+            "spCost": 26,
+            "duration": 18
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +75% , attacks hit twice, and attacks silence the target until the skill ends",
+            "initialSp": 6,
+            "spCost": 25,
+            "duration": 18
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +80% , attacks hit twice, and attacks silence the target until the skill ends",
+            "initialSp": 7,
+            "spCost": 24,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +90% , attacks hit twice, and attacks silence the target until the skill ends",
+            "initialSp": 8,
+            "spCost": 23,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +100% , attacks hit twice, and attacks silence the target until the skill ends",
+            "initialSp": 9,
+            "spCost": 22,
+            "duration": 18
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +120% , attacks hit twice, and attacks silence the target until the skill ends",
+            "initialSp": 10,
+            "spCost": 20,
+            "duration": 18
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 4
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Chi Xiao - Shadowless Speed",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "6 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Slashes the nearest enemy 10 times, each slash dealing 350% ATK as Arts damage; if the target is defeated, retargets to the nearest enemy and adds +1 to remaining slash count; once all slashes end, if target has not been defeated and is on a deployable tile, Move to said tile, otherwise return to starting tile; afterward, ATK +200% and gains 30% Physical and Arts Dodge",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 6
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Slashes the nearest enemy 10 times, each slash dealing 360% ATK as Arts damage; if the target is defeated, retargets to the nearest enemy and adds +1 to remaining slash count; once all slashes end, if target has not been defeated and is on a deployable tile, Move to said tile, otherwise return to starting tile; afterward, ATK +210% and gains 30% Physical and Arts Dodge",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 6
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Slashes the nearest enemy 10 times, each slash dealing 370% ATK as Arts damage; if the target is defeated, retargets to the nearest enemy and adds +1 to remaining slash count; once all slashes end, if target has not been defeated and is on a deployable tile, Move to said tile, otherwise return to starting tile; afterward, ATK +220% and gains 30% Physical and Arts Dodge",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 6
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Slashes the nearest enemy 10 times, each slash dealing 390% ATK as Arts damage; if the target is defeated, retargets to the nearest enemy and adds +1 to remaining slash count; once all slashes end, if target has not been defeated and is on a deployable tile, Move to said tile, otherwise return to starting tile; afterward, ATK +230% and gains 40% Physical and Arts Dodge",
+            "initialSp": 11,
+            "spCost": 24,
+            "duration": 6
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Slashes the nearest enemy 10 times, each slash dealing 400% ATK as Arts damage; if the target is defeated, retargets to the nearest enemy and adds +1 to remaining slash count; once all slashes end, if target has not been defeated and is on a deployable tile, Move to said tile, otherwise return to starting tile; afterward, ATK +240% and gains 40% Physical and Arts Dodge",
+            "initialSp": 11,
+            "spCost": 24,
+            "duration": 6
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Slashes the nearest enemy 10 times, each slash dealing 410% ATK as Arts damage; if the target is defeated, retargets to the nearest enemy and adds +1 to remaining slash count; once all slashes end, if target has not been defeated and is on a deployable tile, Move to said tile, otherwise return to starting tile; afterward, ATK +250% and gains 40% Physical and Arts Dodge",
+            "initialSp": 11,
+            "spCost": 24,
+            "duration": 6
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Slashes the nearest enemy 10 times, each slash dealing 430% ATK as Arts damage; if the target is defeated, retargets to the nearest enemy and adds +1 to remaining slash count; once all slashes end, if target has not been defeated and is on a deployable tile, Move to said tile, otherwise return to starting tile; afterward, ATK +260% and gains 50% Physical and Arts Dodge",
+            "initialSp": 12,
+            "spCost": 23,
+            "duration": 6
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Slashes the nearest enemy 10 times, each slash dealing 450% ATK as Arts damage; if the target is defeated, retargets to the nearest enemy and adds +1 to remaining slash count; once all slashes end, if target has not been defeated and is on a deployable tile, Move to said tile, otherwise return to starting tile; afterward, ATK +270% and gains 50% Physical and Arts Dodge",
+            "initialSp": 13,
+            "spCost": 22,
+            "duration": 6
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Slashes the nearest enemy 10 times, each slash dealing 460% ATK as Arts damage; if the target is defeated, retargets to the nearest enemy and adds +1 to remaining slash count; once all slashes end, if target has not been defeated and is on a deployable tile, Move to said tile, otherwise return to starting tile; afterward, ATK +280% and gains 50% Physical and Arts Dodge",
+            "initialSp": 14,
+            "spCost": 21,
+            "duration": 6
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Slashes the nearest enemy 10 times, each slash dealing 480% ATK as Arts damage; if the target is defeated, retargets to the nearest enemy and adds +1 to remaining slash count; once all slashes end, if target has not been defeated and is on a deployable tile, Move to said tile, otherwise return to starting tile; afterward, ATK +300% and gains 60% Physical and Arts Dodge",
+            "initialSp": 15,
+            "spCost": 20,
+            "duration": 6
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "2nd",
+            "priority": "main",
+            "explanation": "Ch'en's Skill 2 has the ability to not receive damage on its first phase. It clears waves of medium to easy mobs, or dish big damage onto elite and bosses. A disadvantage is the final landing position being in an undesirable spot. Otherwise, a great skill to also have Mastery 3 for."
+          }
+        ],
+        "cost": null,
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Pure Lock-on",
+            "description": "Locks on to an enemy, needing to kill it before moving on to another"
+          },
+          {
+            "name": "Repositioning",
+            "description": "Allows the unit to enter a different tile"
+          },
+          {
+            "name": "Invulnerable",
+            "description": "Has a time period of not receiving any attacks from enemies"
+          }
+        ]
+      },
+      {
+        "name": "Chi Xiao - Heaven's Plaint",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "On skill activation, unleashes a sword wave that travels forward and can change direction, dealing Arts damage to enemies it passes through equivalent to 6% of their current HP (minimum of 500% ATK as Arts damage); Attack Range expands, each attack deals 3 instances of 150% ATK as Arts damage to up to 3 ground enemies",
+            "initialSp": 10,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "On skill activation, unleashes a sword wave that travels forward and can change direction, dealing Arts damage to enemies it passes through equivalent to 6% of their current HP (minimum of 500% ATK as Arts damage); Attack Range expands, each attack deals 3 instances of 155% ATK as Arts damage to up to 3 ground enemies",
+            "initialSp": 10,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "On skill activation, unleashes a sword wave that travels forward and can change direction, dealing Arts damage to enemies it passes through equivalent to 6% of their current HP (minimum of 500% ATK as Arts damage); Attack Range expands, each attack deals 3 instances of 160% ATK as Arts damage to up to 3 ground enemies",
+            "initialSp": 12,
+            "spCost": 29,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "On skill activation, unleashes a sword wave that travels forward and can change direction, dealing Arts damage to enemies it passes through equivalent to 6% of their current HP (minimum of 530% ATK as Arts damage); Attack Range expands, each attack deals 3 instances of 165% ATK as Arts damage to up to 3 ground enemies",
+            "initialSp": 12,
+            "spCost": 29,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "On skill activation, unleashes a sword wave that travels forward and can change direction, dealing Arts damage to enemies it passes through equivalent to 6% of their current HP (minimum of 530% ATK as Arts damage); Attack Range expands, each attack deals 3 instances of 170% ATK as Arts damage to up to 3 ground enemies",
+            "initialSp": 12,
+            "spCost": 29,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "On skill activation, unleashes a sword wave that travels forward and can change direction, dealing Arts damage to enemies it passes through equivalent to 6% of their current HP (minimum of 530% ATK as Arts damage); Attack Range expands, each attack deals 3 instances of 175% ATK as Arts damage to up to 3 ground enemies",
+            "initialSp": 12,
+            "spCost": 29,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "On skill activation, unleashes a sword wave that travels forward and can change direction, dealing Arts damage to enemies it passes through equivalent to 6% of their current HP (minimum of 550% ATK as Arts damage); Attack Range expands, each attack deals 3 instances of 180% ATK as Arts damage to up to 3 ground enemies",
+            "initialSp": 15,
+            "spCost": 28,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "On skill activation, unleashes a sword wave that travels forward and can change direction, dealing Arts damage to enemies it passes through equivalent to 6% of their current HP (minimum of 560% ATK as Arts damage); Attack Range expands, each attack deals 3 instances of 190% ATK as Arts damage to up to 4 ground enemies",
+            "initialSp": 16,
+            "spCost": 27,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "On skill activation, unleashes a sword wave that travels forward and can change direction, dealing Arts damage to enemies it passes through equivalent to 6% of their current HP (minimum of 570% ATK as Arts damage); Attack Range expands, each attack deals 3 instances of 200% ATK as Arts damage to up to 4 ground enemies",
+            "initialSp": 17,
+            "spCost": 26,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "On skill activation, unleashes a sword wave that travels forward and can change direction, dealing Arts damage to enemies it passes through equivalent to 6% of their current HP (minimum of 580% ATK as Arts damage); Attack Range expands, each attack deals 3 instances of 210% ATK as Arts damage to up to 4 ground enemies",
+            "initialSp": 18,
+            "spCost": 25,
+            "duration": 20
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "The dragon can be used for map-wide damage or concentrated areas. However, even on maps where the dragon may not be maximised, Ch'en personal multi-target damage is equally big. Great against all types of enemies."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 4
+            },
+            {
+              "name": "Oriron Cluster",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            },
+            {
+              "name": "Chiral Refractor",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 6
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 2
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Scaler",
+            "description": "Dragon's damage increases based on enemies' HP, perfect for elites and bosses."
+          },
+          {
+            "name": "Focused AOE",
+            "description": "If the dragon is used in a smaller area, it can cause repeated damage."
+          },
+          {
+            "unit": "Nasti",
+            "description": "Use Nasti's ranged tile to redirect the dragon. The dragon always moves in a clockwise direction."
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 6
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Aketon",
+          "quantity": 5
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 4
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Drifting Wanderer",
+      "facility": "Reception Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Reception Room , increases the likelihood of obtaining clues that are not on the Clue Board."
+    },
+    {
+      "name": "Chivalrous Hero",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Reception Room , increases Clue search speed by 20% , with an additional 1% for every 10 Worldly Plight"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Ch'en the Dawnstreak's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "AFT-X: Remnant Pages of Memory",
+      "mission": {
+        "requirement1": "During battle, have your own Ch'en the Dawnstreak use Chi Xiao - Heaven's Plaint a total of 5 times",
+        "requirement2": "Clear Main Theme 5-10 with a 3-star rating; You must deploy your own Ch'en the Dawnstreak, and have her defeat at least 3 enemies"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +240 , ATK +30",
+          "effectLabel": "New trait",
+          "effectText": "ASPD +8 when not blocking an enemy",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +340 , ATK +48",
+          "effectLabel": "To Know Time's Flow improved",
+          "effectText": "When not taking damage, every 6s restores a random amount of HP equal to 40% to 180% of ATK and Dodges the next Physical or Arts attack received",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +420 , ATK +60",
+          "effectLabel": "To Know Time's Flow improved",
+          "effectText": "When not taking damage, every 6s restores a random amount of HP equal to 50% to 200% of ATK and Dodges the next Physical or Arts attack received",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Ch'en, former\nLungmen\nsuperintendent and former head of the\nL.G.D.\n's Special Inspection Unit, graduated from the\nVictorian\nRoyal Guard Academy with superb marks and outstanding achievements. During her time with the Department, she cracked down on crime, fought violent offenders, tracked down armed fugitives, and brought down international criminals.\nHaving resigned from the L.G.D., she is now officially a member of\nRhodes Island\n. In accordance with her wishes, she is mainly assigned to provide field operators adequate support and on-location guidance.\nShe continues to fight on the frontlines as a Rhodes Island Operator.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "AJhwbuqtI6E",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "JyYrU3-CdSc",
+      "creator": "Storn"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1326,
+          "atk": 287,
+          "def": 191,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 1.25
+        },
+        "max": {
+          "hp": 1746,
+          "atk": 417,
+          "def": 274,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 1,
+          "interval": 1.25
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1746,
+          "atk": 417,
+          "def": 274,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.25
+        },
+        "max": {
+          "hp": 2211,
+          "atk": 542,
+          "def": 352,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.25
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 2211,
+          "atk": 542,
+          "def": 352,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.25
+        },
+        "max": {
+          "hp": 2910,
+          "atk": 670,
+          "def": 425,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 1,
+          "interval": 1.25
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 100,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 6%\nSmall traces of crystallization are visible on Operator Ch'en's body surface.\n\n[Blood Originium-Crystal Density] 0.21u/L\n\nCh'en's condition has deteriorated since her last checkup. We know her resolve and understand her reasons, but she must take better care of herself...\n—Sussurro\n\nYou know how she is. Oripathy or not, she'll never listen.\n—Warfarin"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "'Broken shields have been melted down into plowshares. The fire in the furnace has changed.\n'The name Reunion is increasingly used to refer to a village, rather than a group of Infected.\n'Oversight? I have my duty as an operator of Rhodes Island, but this is also a personal commitment for me. What is different about Nine's 'fairness'? What judgment will Talulah receive? Will a reborn Reunion truly light a lasting fire of hope in the snowstorm? Someone must bear witness, and it should be me. It must be me.'\n\nFollowing the Londinium incident, Ch'en traveled throughout Ursus, from the disputed region at the Ursus-Kazimierz Border, to the Grypherburg region, to the distant north... We later learned that Ch'en operated like a Messenger, braving martial law, harsh weather, and magnetic storms to cross the tundra, establishing the basic framework of an intelligence network for Rhodes Island. Outside of the task force that the Doctor and Amiya personally led, Ch'en was our most reliable and stable source of information in the Ursus region. Ch'en's aptitude in intelligence gathering, already on display in Lungmen, provided invaluable help to Rhodes Island.\n\n[Classified Log]\nCh'en did not conceal the fact that she met with Talulah's group, witnessing them unite a group of Infected on the tundra and establish a village by the name of Reunion. To Reunion, she was candid about her role, exercising oversight in her personal capacity, procuring necessary supplies, and sharing some Rhodes Island-compiled intel with them... Her stance raised some concerns amongst the operators—when the one we need to trust is the controversial figure at the heart of the Chernobog Incident, any interaction should be subject to greater scrutiny.\nIn the end, we gave Ch'en our tacit approval after extensive discussion. Ch'en has undoubtedly become an important and trustworthy member of Rhodes Island, demonstrating her oversight responsibility with concrete action, and helping the new Reunion take crucial first steps toward winning trust.\n\n'The children look forward to Hui-chieh's visits. Although supplies are never plentiful, they have been learning to sew teddy bears because they think she loves them after she was seen gazing at a teddy bear, lost in thought.'\n'I know a lot of the resources and news that Ch'en brought came from Rhodes Island, and I understand your reservations about me. I can't guarantee that there will be a perfect ending, nor do I expect us to truly understand one another, but I guarantee that Reunion will not repeat its old mistakes. Your torch is not the only one that burns bright. There are those who carry it into the darkest night, so that it may illuminate others.'"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "A great snowstorm struck many places in Yan, the likes of which had not been seen for a century. The snow lasted months, covering the land in white, and making the bright red figure traveling upon it particularly conspicuous.\nRumors speak of a swordswoman who has been journeying across the land since last year, fighting for justice with her sword. She helped rebuild ruined houses in Baizao, punished bandits in Danyan, and cleared clogged water channels in Jiangqi... is she on some sort of quest? There are many differing opinions: some say she often asked those she helped where the local library was, and infer that she was seeking some secret tome that would allow her to break through a bottleneck in her training; others have seen her visit cemeteries, and believe her to be following the trail of a departed friend; and others claim that she often visited the sites where schools and colleges once stood, and hypothesize that she is a Tianshi, sent by the Ministry of Rites to investigate ancient sites... The only consensus is that there is no consensus.\nSome martial arts schools claimed her to be one of their students, only for the claim to be immediately shot down—'You're full of crap! She doesn't even know your dialect. How could she have studied there for decades?' Others have tried to challenge her to a duel. The first challenger recalls that she readily accepted his challenge, but he was stunned when she spoke a line straight out of a kung fu film. She was clearly unfamiliar with the modern-day martial arts landscape of Yan. Subsequent challengers were no longer met with the same flowery lines.\nMy investigation indicates that our heroine has moved north, and it remains to be seen whether we will see her emerge in Dahuang or Lungmen next. I would like to close this column with a word of advice... challenging her is really not for the faint of heart, or anyone who is not supremely confident in their skills!\n—Excerpt from <i>Jianghu Monthly</i>, Issue 02, 1103\n\n[Classified Log]\nCh'en's request for field assignment in Yan is hereby approved.\nThe Tomb of Sui incident carries tremendous significance for both Yan and Terra as a whole. For Yan, it meant the resolution of a thousand-year affliction; for Terra, it was a relief to know that the Jingyu Prime Vein was not being depleted at nearly the same rate as the Kolossal Prime Vein, even though neither Rhodes Island nor Yan has been able to conclusively determine the current state of the first Originium. That does not mean, however, that Yan can fully escape this Terra-wide crisis.\nWe had not previously made any association between Ch'en's matter and that of the Feranmuts. It was only when her identity and her 'family matter' became known to us that we realized her 'family matter' was, essentially, the family matter of Yan... Ch'en did not return to Yan's center of power following the resolution of the crisis at Baizao, instead opting to wander the lands in search of traces of a departed Sui proxy. Her reasons for taking up this responsibility are clearly linked to the writing knife that she obtained during her trip to Baizao.\n\n'From Baizao to Shangshu, to Yumen and Lungmen... from south to north, from the heartlands to the frontiers, I discovered many traces that the proxy left behind. If she managed to bring writing and history to such distant lands back then, perhaps the land of fairness and justice we are seeking really does exist after all.'"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "In the reports about the Tomb of Sui incident that the Yanese operators submitted, nothing caught our attention more than the account of Ch'en stopping Yumen with a single swing of her sword. According to Zuo Le, Ch'en cut power to all of Yumen in an instant using nothing more than a tiny writing knife, buying crucial time for him to neutralize the remaining artillery positions. Nian's account, on the other hand, was rather different: 'She was muttering something like <i>As sword of heaven's plaint, bid dawn as cast</i>, then there was a gust of sandstorm, and then Yumen just stopped. What do you mean my statement was as vague and incomprehensible as my films? You can ask the others if you don't believe me—did you hear that, Shu? They don't believe me!' Her shouting caught the attention of the other Yanese operators present. Mr. Nothing heard the story, waved his fan, and walked away with a profound expression on his face.\nIt took only a few days for the legend of how Ch'en stopped Yumen with a single swing to spread throughout Rhodes Island. And so, the next time Ch'en returned to Rhodes Island and walked into the training room, she saw every pair of curious eyes in the room fixated on her... After learning what had happened, Ch'en agreed to do a demonstration in the outdoor training grounds. But she did not draw Chi Xiao—instead, she made the gesture of a sword with her fingers, turned her wrists, stepped forward, lowered her shoulder, and swung upwards lightly—there was no breathtaking aura, but the wind began to blow, stirring up sand and dust. A few seconds later, the sandstorm cleared, and the clouds parted to reveal the sun. It took a little while for the spectators to process what had just happened. The move seemed utterly unremarkable, yet clearly extraordinary. What made it so powerful? No one dared ask, seeing the solemn expression on Ch'en's face.\nObserving from the side, Qiubai and Yun Qingping revealed the secret—\n'It was like a ray of light breaking through the clouds, but still connected to the soil on the ground.'\n'My master once said that mindset was the most important thing to the Chi Xiao style. The swing just now was very different from the traditional finishing move of Chi Xiao. If the philosophy of Lord Wei's sword is to strike with no regret, Miss Ch'en's sword represents the admission and acceptance of regret, to press forward regardless of regret.'\n\n'That's what makes Ch'en different from Chief Wei.'\n'What's that supposed to mean? Did you understand a word of that, stinking rat?'\n'...There was already a hint of that move in her sword when she was in Yumen.'\n'Yumen? She was in Yumen when you were there? ...Hey, why aren't you saying anything? Why are you walking away? Did you really understand that? Wait up!'\n'Take it easy, Missy—the move sends the message that Ch'en never gives up partway.'\n\nAs sword of heaven's plaint, bid dawn as cast. Never fear, never waver, long though the journey be. The light shines through when the clouds part. One must overcome the obstacles of one's own heart to fully comprehend the way of the sword. The sword begins and ends with the heart, but the spirit of the sword lingers. Those who fail to act because something seems impossible shall lose their spirit, and their sword lose its soul.\n—This segment has been rewritten many times; Ch'en says she is still working on it"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "As Ch'en sent back more and more reports during her time in Ursus, we set up a dedicated storage area for them at the Doctor's suggestion. Reviewing these reports made us realize just how long Ch'en has been with us.\nFrom <i>Summary of Conditions in Lungmen Slums</i> and <i>Tripartite Investigation Report of the Governments of Dossoles and Bolívar</i>, to <i>Development of Law and Order in Columbia and Challenges in Implementation</i> and <i>Overview of Victorian Dukes and Tara</i>, to the recent reports on Ursus and Yan, these are not just raw intelligence collected by Ch'en, but also focused and astute observations and commentaries made by someone embarking on a long journey. They are of great significance to both Rhodes Island and Ch'en herself.\nThe fact that Ch'en is part of Yan's imperial bloodline is no longer a secret on Rhodes Island, but she has not been shunned or approached because of it. Perhaps it is because she has already left a deep impression fighting alongside the others as a former Lungmen cop, or perhaps it is because the significance of her bloodline pales in comparison to her experiences across Terra. While Ch'en keeps her distance from the Yanese government, it does not mean she no longer cares about the country. She has never truly left Yan—or rather, she has never truly left Lungmen. She is still searching for a land of fairness and justice, and she hopes that she will find it in the soil that she stands upon, but she is not bound by this land, nor by any other.\nFor us, the most valuable thing about Ch'en has never been her position, but her will and direction. She does not belong entirely to Rhodes Island, but her goal of seeking a land of fairness and justice aligns closely with Rhodes Island's mission. Operators who have gone on field missions with her say that there is a sort of certainty about Ch'en that is reassuring—she understands what she is seeking, and has never wavered. While the concepts of fairness and justice may differ somewhat from language to language and context to context, they ultimately point toward the same conviction: a belief in a better tomorrow. We all believe that Terra will become better than it is today.\n\n'Officer Ch'en—no, Ch'en is our comrade and kindred spirit, one of Rhodes Island's most important partners. Of that there is no doubt. Elite operator? Ahem... she understands what she wants all too well, and our paths will not necessarily always be aligned—of course, a consistent presence at headquarters or squad operation has never been a criterion for elite operator selection... Perhaps you could ask her yourself the next time she comes back?'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "I saw a village burned to the ground in the north. The charred remains stood out in the white snow. There were signs of fighting, and bodies of both uninfected and infected people. I'm not sure what happened there.\nAre such scenes a regular sight in Ursus?\nDid you see the same thing when you were in Ursus, all those years ago?\n\nReceived communication from Rhodes Island. Something has happened to the Doctor's team. HQ has sent a special task force to Ursus, and I have a feeling you'll run into them again.\nSecurity is really tightening in the Far North. I was thoroughly questioned and searched just walking into an ordinary hotel today.\nThere are a lot of movements from many different directions. I do not yet have a clear view... but I'll get to the bottom of it.\n\nReceived a letter from Madam Fumizuki yesterday...\nThe events in the Far North were just the beginning. Ursus is facing an even greater crisis. If the events truly have implications across all of Terra, as the Doctor predicted, Yan will not stand idly by, and Wei Yenwu certainly will not. He will do something.\nShould I...\n\nBack in Victoria, you encouraged me to do what I had already made up my mind to do. I found you again, but we still do not know the truth. Mother, your father, that pathetic man, and Wei Yenwu... We should have been told the truth about what happened. We have a right to know. Perhaps you don't care anymore, but I can't cast it aside so easily.\nSomeone told me that those old folks were young and ambitious once. What happened to them? Their ambitions grew rusty, and the only thing they have left is silence, keeping them from telling the truth... I must go back, to Lungmen, to Baizao. If they will not tell the truth, I will find it myself.\nI ran away many times, but I don't plan on running away forever—you didn't run away either, did you?\nHeaven burned red over Grypherburg that night... the fire on the ground burned for a long time. Buildings were collapsing, and other things were collapsing with them. The stubborn stone split apart in the fire, and light shone out through the crack... I still see the fire when I close my eyes, and it gives me the courage to walk toward the truth.\nI think I'm ready. I'm going back.\n...Can you hear it, Tal?\nI'm going back.\n\n[The letters are neatly folded, but were never sent.]"
+    }
+  ]
+}

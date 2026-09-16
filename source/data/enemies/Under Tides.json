@@ -1,0 +1,1569 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act11sre",
+    "label": "SV",
+    "name": "Under Tides",
+    "release_date": "2021-10-21"
+  },
+  "enemies": [
+    {
+      "slug": "shell_sea_runner",
+      "id": "enemy_1147_dshond",
+      "name": "Shell Sea Runner",
+      "index": "SM1",
+      "rank": "Normal",
+      "sort": 288,
+      "hidden": false,
+      "icon": "/enemies-icons/Shell Sea Runner.webp",
+      "flavour_text": "A Sea Terror that grew four limbs, but lacks an internal skeleton. It seems to have once hunted quadrupeds on land.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3000,
+            "atk": 280,
+            "def": 0,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.3,
+            "attack_speed": 100.0,
+            "move_speed": 1.9,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "D",
+            "def": "E",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "S+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "nourished_runner",
+      "id": "enemy_1147_dshond_2",
+      "name": "Nourished Runner",
+      "index": "SM2",
+      "rank": "Normal",
+      "sort": 289,
+      "hidden": false,
+      "icon": "/enemies-icons/Nourished Runner.webp",
+      "flavour_text": "A Sea Terror that grew four limbs and has sated its hunger. It controls its body's movements using hydraulic pressure and possesses superior reflexes.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4000,
+            "atk": 340,
+            "def": 0,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.3,
+            "attack_speed": 100.0,
+            "move_speed": 1.9,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "E",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "S+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "deep_sea_slider",
+      "id": "enemy_1148_dssbr",
+      "name": "Deep Sea Slider",
+      "index": "SM3",
+      "rank": "Normal",
+      "sort": 290,
+      "hidden": false,
+      "icon": "/enemies-icons/Deep Sea Slider.webp",
+      "flavour_text": "A Sea Terror that crawled onto the shore. It brandishes its tough appendages menacingly.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict additional Nervous Impairment",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 2800,
+            "atk": 280,
+            "def": 130,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.1,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "D",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "epdamage",
+              "parameters": {
+                "ep_damage_ratio": 0.15
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "nourished_slider",
+      "id": "enemy_1148_dssbr_2",
+      "name": "Nourished Slider",
+      "index": "SM4",
+      "rank": "Normal",
+      "sort": 291,
+      "hidden": false,
+      "icon": "/enemies-icons/Nourished Slider.webp",
+      "flavour_text": "A Sea Terror that crawled onto the shore and has sated its hunger. Its appendages can cause protein denaturation.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict additional Nervous Impairment",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3600,
+            "atk": 360,
+            "def": 150,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.1,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "D",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "epdamage",
+              "parameters": {
+                "ep_damage_ratio": 0.15
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "ridge_sea_spitter",
+      "id": "enemy_1149_dsbow",
+      "name": "Ridge Sea Spitter",
+      "index": "SM5",
+      "rank": "Normal",
+      "sort": 292,
+      "hidden": false,
+      "icon": "/enemies-icons/Ridge Sea Spitter.webp",
+      "flavour_text": "A mysterious Sea Terror. In the sea, it can spit at even greater speeds, fast enough to destroy reefs.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4400,
+            "atk": 280,
+            "def": 160,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 2.5,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "D",
+            "def": "D",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "nourished_spitter",
+      "id": "enemy_1149_dsbow_2",
+      "name": "Nourished Spitter",
+      "index": "SM6",
+      "rank": "Normal",
+      "sort": 293,
+      "hidden": false,
+      "icon": "/enemies-icons/Nourished Spitter.webp",
+      "flavour_text": "A mysterious Sea Terror that has sated its hunger. Its spit is a way to deal with natural disasters, rather than as a means of hunting.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5000,
+            "atk": 320,
+            "def": 200,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 2.5,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "floating_sea_drifter",
+      "id": "enemy_1150_dsjely",
+      "name": "Floating Sea Drifter",
+      "index": "SM7",
+      "rank": "Normal",
+      "sort": 294,
+      "hidden": false,
+      "icon": "/enemies-icons/Floating Sea Drifter.webp",
+      "flavour_text": "A Sea Terror that floats in the air. It seems that the next generation will be even more proficient at swimming through the air.",
+      "race": "Sea Monster",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks inflict additional Nervous Impairment",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3000,
+            "atk": 220,
+            "def": 200,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 2.5,
+            "weight": null,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "D",
+            "atk": "D",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "epdamage",
+              "parameters": {
+                "ep_damage_ratio": 0.2
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "nourished_drifter",
+      "id": "enemy_1150_dsjely_2",
+      "name": "Nourished Drifter",
+      "index": "SM8",
+      "rank": "Normal",
+      "sort": 295,
+      "hidden": false,
+      "icon": "/enemies-icons/Nourished Drifter.webp",
+      "flavour_text": "A Sea Terror that floats in the air and has sated its hunger. Its body contains a blazing-hot organ.",
+      "race": "Sea Monster",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks inflict additional Nervous Impairment",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4000,
+            "atk": 250,
+            "def": 250,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 2.5,
+            "weight": null,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "D",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "epdamage",
+              "parameters": {
+                "ep_damage_ratio": 0.2
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "basin_sea_reaper",
+      "id": "enemy_1151_dslntc",
+      "name": "Basin Sea Reaper",
+      "index": "SM9",
+      "rank": "Elite",
+      "sort": 296,
+      "hidden": false,
+      "icon": "/enemies-icons/Basin Sea Reaper.webp",
+      "flavour_text": "A Sea Terror that emits ear-splitting screeches. Should its nourishment be interrupted, it will immediately counterattack any nearby threats, until all other signs of life have ceased.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Starts battle in Standby and will not attack",
+          "format": "normal"
+        },
+        {
+          "text": "After being injured, this unit becomes Combat-Ready, gradually losing HP over time and continually inflicting Nervous Impairment to nearby units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 400,
+            "def": 800,
+            "res": 75.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "B+",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Awake",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "epdamage",
+              "parameters": {
+                "ep_damage_ratio": 0.1
+              }
+            },
+            {
+              "key": "revive",
+              "parameters": {
+                "hp_ratio": 0.04,
+                "move_speed": 5.0
+              }
+            },
+            {
+              "key": "scream",
+              "parameters": {
+                "ep_damage_ratio": 0.2,
+                "interval": 1.0
+              }
+            },
+            {
+              "key": "sleepwalking",
+              "parameters": {
+                "hp_ratio": 0.9999,
+                "unmove_duration": 30.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "nourished_reaper",
+      "id": "enemy_1151_dslntc_2",
+      "name": "Nourished Reaper",
+      "index": "SM10",
+      "rank": "Elite",
+      "sort": 297,
+      "hidden": false,
+      "icon": "/enemies-icons/Nourished Reaper.webp",
+      "flavour_text": "A Sea Terror that emits ear-splitting screeches and has sated its hunger. It is essentially harmless if you don't disturb it.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Starts battle in Standby and will not attack",
+          "format": "normal"
+        },
+        {
+          "text": "After being injured, this unit becomes Combat-Ready, gradually losing HP over time and continually inflicting Nervous Impairment to nearby units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 500,
+            "def": 800,
+            "res": 75.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.3,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "B+",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Awake",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "epdamage",
+              "parameters": {
+                "ep_damage_ratio": 0.1
+              }
+            },
+            {
+              "key": "revive",
+              "parameters": {
+                "hp_ratio": 0.04,
+                "move_speed": 5.0
+              }
+            },
+            {
+              "key": "scream",
+              "parameters": {
+                "ep_damage_ratio": 0.2,
+                "interval": 1.0
+              }
+            },
+            {
+              "key": "sleepwalking",
+              "parameters": {
+                "hp_ratio": 0.9999,
+                "unmove_duration": 30.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "pocket_sea_crawler",
+      "id": "enemy_1152_dsurch",
+      "name": "Pocket Sea Crawler",
+      "index": "SM11",
+      "rank": "Elite",
+      "sort": 298,
+      "hidden": false,
+      "icon": "/enemies-icons/Pocket Sea Crawler.webp",
+      "flavour_text": "A Sea Terror imbued with impurities. The density of its body tissue surpasses that of some alloys. Victims stabbed by it will feel as if they have been set alight.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Whenever a certain percentage of HP is lost, immediately deal a large amount of Arts damage and Nervous Impairment to nearby units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 25000,
+            "atk": 300,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "C",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Stab",
+              "sp_cost": 0,
+              "cooldown": 99999.0,
+              "initial_cooldown": 99999.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "ep_damage_ratio": 1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "damage_trigger",
+              "parameters": {
+                "hp_ratio": 0.15
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "nourished_crawler",
+      "id": "enemy_1152_dsurch_2",
+      "name": "Nourished Crawler",
+      "index": "SM12",
+      "rank": "Elite",
+      "sort": 299,
+      "hidden": false,
+      "icon": "/enemies-icons/Nourished Crawler.webp",
+      "flavour_text": "A Sea Terror imbued with impurities that has had its hunger sated. Such Sea Terrors are rarely seen nowadays, as they are gradually evolving to become more nimble.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Whenever a certain percentage of HP is lost, immediately deal a large amount of Arts damage and Nervous Impairment to nearby units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 35000,
+            "atk": 400,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "C",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "D"
+          },
+          "skills": [
+            {
+              "key": "Stab",
+              "sp_cost": 0,
+              "cooldown": 99999.0,
+              "initial_cooldown": 99999.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.0,
+                "ep_damage_ratio": 1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "damage_trigger",
+              "parameters": {
+                "hp_ratio": 0.15
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "primal_sea_piercer",
+      "id": "enemy_1153_dsexcu",
+      "name": "Primal Sea Piercer",
+      "index": "SM13",
+      "rank": "Elite",
+      "sort": 300,
+      "hidden": false,
+      "icon": "/enemies-icons/Primal Sea Piercer.webp",
+      "flavour_text": "A Sea Terror that grew a solid organ. The other parts of its body seem to be forming impregnable outer spikes.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes attacking the target with the current lowest HP percentage within a small area",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 9000,
+            "atk": 550,
+            "def": 240,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 1.7,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "nourished_piercer",
+      "id": "enemy_1153_dsexcu_2",
+      "name": "Nourished Piercer",
+      "index": "SM14",
+      "rank": "Elite",
+      "sort": 301,
+      "hidden": false,
+      "icon": "/enemies-icons/Nourished Piercer.webp",
+      "flavour_text": "A Sea Terror that grew a solid organ and has had its hunger sated. It sways gently beneath the moonlight.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes attacking the target with the current lowest HP percentage within a small area",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12500,
+            "atk": 700,
+            "def": 240,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 1.7,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "C",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "the_first_to_talk",
+      "id": "enemy_1154_dsmant",
+      "name": "The First To Talk",
+      "index": "FTT",
+      "rank": "Elite",
+      "sort": 302,
+      "hidden": false,
+      "icon": "/enemies-icons/The First To Talk.webp",
+      "flavour_text": "The first beautiful living being to speak human language before civilized man. Seaborn.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "[Corrosive Vacuoles] Periodically unleashes Vacuoles on the target and a unit in the four adjacent tiles with the lowest Nervous Impairment accumulation, dealing Physical damage and Nervous Impairment",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 21000,
+            "atk": 600,
+            "def": 500,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.5,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Spear",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.6,
+                "duration": 5.0,
+                "ep_damage_ratio": 0.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "epdamage",
+              "parameters": {
+                "ep_damage_ratio": 0.4
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 28000,
+            "atk": 700,
+            "def": 600,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.8,
+            "range": 2.5,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "Spear",
+              "sp_cost": 0,
+              "cooldown": 20.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.6,
+                "duration": 5.0,
+                "ep_damage_ratio": 0.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "epdamage",
+              "parameters": {
+                "ep_damage_ratio": 0.4
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "automatic_maintenance_drone",
+      "id": "enemy_1155_dsrobt",
+      "name": "Automatic Maintenance Drone",
+      "index": "RR",
+      "rank": "Normal",
+      "sort": 303,
+      "hidden": false,
+      "icon": "/enemies-icons/Automatic Maintenance Drone.webp",
+      "flavour_text": "An old Iberian automatic maintenance drone. For some reason, it is still operational and will repair facilities.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Activates nearby Emergency Aid Buildings, greatly enhancing their ability to recover Nervous Impairment",
+          "format": "normal"
+        },
+        {
+          "text": "Does not deplete Life Points when spared or upon dying, but can be damaged by allied units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6000,
+            "atk": 0,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "E",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "sal_viento_bishop_quintus",
+      "id": "enemy_1521_dslily",
+      "name": "Sal Viento Bishop Quintus",
+      "index": "SVK",
+      "rank": "Boss",
+      "sort": 1317,
+      "hidden": false,
+      "icon": "/enemies-icons/Sal Viento Bishop Quintus.webp",
+      "flavour_text": "A member of the Church of the Deep who snuck into disaster-ravaged Iberia. He changed the law of the land through his sincere beliefs, in pursuit of the perfect form, yet he was unable to fathom the will of the ocean. Then again, who could?",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks two units with the highest DEF simultaneously",
+          "format": "normal"
+        },
+        {
+          "text": "[Great Tide] Deals Arts damage and Nervous Impairment to all allied units",
+          "format": "normal"
+        },
+        {
+          "text": "[Collapse] Deals Physical damage to multiple allied units",
+          "format": "normal"
+        },
+        {
+          "text": "[Fragmentation] Summons its offspring to entwine themselves around allied units and Stun them",
+          "format": "normal"
+        },
+        {
+          "text": "[Species Outbreak] Drains all Life Points after a long time has passed in the battle",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 100000,
+            "atk": 380,
+            "def": 500,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.1,
+            "range": 99.0,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "C",
+            "def": "B",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "Tidewater",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 45.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.5,
+                "ep_damage_ratio": 0.5
+              }
+            },
+            {
+              "key": "Rockfall",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 37.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.4,
+                "ep_damage_ratio": 0.0
+              }
+            },
+            {
+              "key": "SummonTentac",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 50.0,
+              "priority": 0,
+              "parameters": {
+                "branch_id": "dslily_dstnta"
+              }
+            },
+            {
+              "key": "TidewaterG1",
+              "sp_cost": 0,
+              "cooldown": 35.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.5,
+                "ep_damage_ratio": 0.667
+              }
+            },
+            {
+              "key": "RockfallG1",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 4.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.4,
+                "ep_damage_ratio": 0.0
+              }
+            },
+            {
+              "key": "SummonTentacG1",
+              "sp_cost": 0,
+              "cooldown": 35.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "branch_id": "dslily_dstnta"
+              }
+            },
+            {
+              "key": "TidewaterG2",
+              "sp_cost": 0,
+              "cooldown": 3.5,
+              "initial_cooldown": 1.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.2,
+                "ep_damage_ratio": 0.2
+              }
+            },
+            {
+              "key": "RockfallG2",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 13.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.4,
+                "ep_damage_ratio": 0.0
+              }
+            },
+            {
+              "key": "SummonTentacG2",
+              "sp_cost": 0,
+              "cooldown": 18.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "branch_id": "dslily_dstnta"
+              }
+            },
+            {
+              "key": "Doom",
+              "sp_cost": 0,
+              "cooldown": 100.0,
+              "initial_cooldown": 200.0,
+              "priority": 0,
+              "parameters": {
+                "value": -100.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "atkup1",
+              "parameters": {
+                "atk": 0.4
+              }
+            },
+            {
+              "key": "atkup2",
+              "parameters": {
+                "atk": 0.7
+              }
+            },
+            {
+              "key": "epdamage",
+              "parameters": {
+                "ep_damage_ratio": 0.2
+              }
+            },
+            {
+              "key": "growup1",
+              "parameters": {
+                "hp_ratio": 0.33,
+                "interval": 75.0
+              }
+            },
+            {
+              "key": "growup2",
+              "parameters": {
+                "hp_ratio": 0.33,
+                "interval": 200.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 140000,
+            "atk": 450,
+            "def": 600,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.1,
+            "range": 99.0,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "C",
+            "def": "B",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "E"
+          },
+          "skills": [
+            {
+              "key": "Tidewater",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 45.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.5,
+                "ep_damage_ratio": 0.5
+              }
+            },
+            {
+              "key": "Rockfall",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 37.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.4,
+                "ep_damage_ratio": 0.0
+              }
+            },
+            {
+              "key": "SummonTentac",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 50.0,
+              "priority": 0,
+              "parameters": {
+                "branch_id": "dslily_dstnta"
+              }
+            },
+            {
+              "key": "TidewaterG1",
+              "sp_cost": 0,
+              "cooldown": 35.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.5,
+                "ep_damage_ratio": 0.667
+              }
+            },
+            {
+              "key": "RockfallG1",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 4.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.4,
+                "ep_damage_ratio": 0.0
+              }
+            },
+            {
+              "key": "SummonTentacG1",
+              "sp_cost": 0,
+              "cooldown": 35.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "branch_id": "dslily_dstnta"
+              }
+            },
+            {
+              "key": "TidewaterG2",
+              "sp_cost": 0,
+              "cooldown": 3.5,
+              "initial_cooldown": 1.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.3,
+                "ep_damage_ratio": 0.3
+              }
+            },
+            {
+              "key": "RockfallG2",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 13.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.4,
+                "ep_damage_ratio": 0.0
+              }
+            },
+            {
+              "key": "SummonTentacG2",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 25.0,
+              "priority": 0,
+              "parameters": {
+                "branch_id": "dslily_dstnta"
+              }
+            },
+            {
+              "key": "Doom",
+              "sp_cost": 0,
+              "cooldown": 100.0,
+              "initial_cooldown": 250.0,
+              "priority": 0,
+              "parameters": {
+                "value": -100.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "atkup1",
+              "parameters": {
+                "atk": 0.4
+              }
+            },
+            {
+              "key": "atkup2",
+              "parameters": {
+                "atk": 0.7
+              }
+            },
+            {
+              "key": "epdamage",
+              "parameters": {
+                "ep_damage_ratio": 0.2
+              }
+            },
+            {
+              "key": "growup1",
+              "parameters": {
+                "hp_ratio": 0.33,
+                "interval": 75.0
+              }
+            },
+            {
+              "key": "growup2",
+              "parameters": {
+                "hp_ratio": 0.33,
+                "interval": 200.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,715 @@
+{
+  "name": "Absinthe",
+  "rarity": 5,
+  "class": "Caster",
+  "branch": "Core Caster",
+  "faction": "Ursus Student Self-Governing Group",
+  "umbrellaFactions": [
+    "Ursus"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS"
+  ],
+  "trait": "Deals Arts damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Children of Ursus"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Noon Twilight"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_405_absin",
+  "otherLanguages": {
+    "Chinese": "苦艾",
+    "Japanese": "アブサント",
+    "Korean": "압생트"
+  },
+  "characterInfo": {
+    "File no.": "US11",
+    "Operator Record": "Finding Life Through Death",
+    "Paradox Simulation": "Relay Operation",
+    "Illustrator": "aZLing4",
+    "Release Date": "2020/09/29",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Rie Murakawa",
+    "Chinese": "Shao Minjia (credited as \"Icy\" in EN)",
+    "English": "Monica Rial",
+    "Korean": "Song Ha-rim",
+    "Russian": "Taisiya Trishina"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "1 month",
+    "Place of Birth": "Ursus",
+    "Date of Birth": "November 10th",
+    "Race": "Ursus",
+    "Height": "159 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Normal",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Enforcer",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Increases damage dealt to enemies below 40% HP by 12%"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Increases damage dealt to enemies below 40% HP by 18% (+6%)"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Increases damage dealt to enemies below 40% HP by 24%"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Increases damage dealt to enemies below 40% HP by 30% (+6%)"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Enforcer"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Absinthe's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Enforcer .",
+        "New skill: Ultimatum .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Absinthe to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Enforcer improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Absinthe to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Concentration",
+          "quantity": 10
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 10
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Enforcement Mode",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": "Unlimited",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +30% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "initialSp": 0,
+            "spCost": 90,
+            "duration": "∞"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +35% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "initialSp": 0,
+            "spCost": 88,
+            "duration": "∞"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +40% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "initialSp": 0,
+            "spCost": 86,
+            "duration": "∞"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +45% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "initialSp": 0,
+            "spCost": 84,
+            "duration": "∞"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +50% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "initialSp": 0,
+            "spCost": 82,
+            "duration": "∞"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +55% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "initialSp": 0,
+            "spCost": 80,
+            "duration": "∞"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +60% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "initialSp": 0,
+            "spCost": 78,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +70% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "initialSp": 0,
+            "spCost": 76,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +80% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "initialSp": 0,
+            "spCost": 74,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +90% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "initialSp": 0,
+            "spCost": 70,
+            "duration": "∞"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy",
+              "quantity": 1
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Ultimatum",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25–30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Each attack turns into bursts of 4 attacks that each deal 55% damage, but no longer attack enemies above 50% HP",
+            "initialSp": 11,
+            "spCost": 60,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Each attack turns into bursts of 4 attacks that each deal 58% damage, but no longer attack enemies above 50% HP",
+            "initialSp": 12,
+            "spCost": 59,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Each attack turns into bursts of 4 attacks that each deal 61% damage, but no longer attack enemies above 50% HP",
+            "initialSp": 13,
+            "spCost": 58,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Each attack turns into bursts of 4 attacks that each deal 65% damage, but no longer attack enemies above 50% HP",
+            "initialSp": 15,
+            "spCost": 57,
+            "duration": 26
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Each attack turns into bursts of 4 attacks that each deal 68% damage, but no longer attack enemies above 50% HP",
+            "initialSp": 16,
+            "spCost": 56,
+            "duration": 26
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Each attack turns into bursts of 4 attacks that each deal 71% damage, but no longer attack enemies above 50% HP",
+            "initialSp": 17,
+            "spCost": 55,
+            "duration": 26
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Each attack turns into bursts of 4 attacks that each deal 75% damage, but no longer attack enemies above 50% HP",
+            "initialSp": 19,
+            "spCost": 54,
+            "duration": 27
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Each attack turns into bursts of 4 attacks that each deal 80% damage, but no longer attack enemies above 50% HP",
+            "initialSp": 22,
+            "spCost": 53,
+            "duration": 28
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Each attack turns into bursts of 4 attacks that each deal 85% damage, but no longer attack enemies above 50% HP",
+            "initialSp": 25,
+            "spCost": 52,
+            "duration": 29
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Each attack turns into bursts of 4 attacks that each deal 90% damage, but no longer attack enemies above 50% HP",
+            "initialSp": 28,
+            "spCost": 50,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": null,
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Orirock",
+          "quantity": 10
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyester",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Incandescent Alloy",
+          "quantity": 3
+        },
+        {
+          "name": "Manganese Ore",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Secret Inquiry",
+      "facility": "Reception Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Reception Room, the likelihood of obtaining Ursus Student Self-Governing Group clues is increased (working time improves the likelihood)."
+    },
+    {
+      "name": "Screening",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining Ursus Student Self-Governing Group clues for every newly-obtained Clue that is not from Ursus Student Self-Governing Group (working time improves this likelihood)."
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Absinthe's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "CCR-X: \"Custodia\" Individual Comm-Unit",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Absinthe, and unleash Ultimatum at least 1 time in each battle",
+        "requirement2": "Clear Main Theme 3-4 with a 3-star rating; You must deploy your own Absinthe, and cannot include any other Caster Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +100 , ATK +30",
+          "effectLabel": "New trait",
+          "effectText": "Ignore 10 of target's RES",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +130 , ATK +40",
+          "effectLabel": "Enforcer improved",
+          "effectText": "Increases damage dealt to enemies below 50% HP by 29%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +150 , ATK +50",
+          "effectLabel": "Enforcer improved",
+          "effectText": "Increases damage dealt to enemies below 50% HP by 32%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Operator\nAbsinthe, one of the\nUrsus\ncivilians rescued in the\nChernobog\nincident\n, voluntarily applied to join\nRhodes Island\n.\nAfter receiving a series of tests and undergoing training, she was approved to join an operational squad as a\nCaster\nOperator, while also providing services within the ship such as patrolling.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 619,
+          "atk": 286,
+          "def": 47,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 885,
+          "atk": 403,
+          "def": 80,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-6"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 885,
+          "atk": 403,
+          "def": 80,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1150,
+          "atk": 531,
+          "def": 111,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1150,
+          "atk": 531,
+          "def": 111,
+          "res": 20,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1420,
+          "atk": 633,
+          "def": 124,
+          "res": 20,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 70,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected. \n\n[Cell-Originium Assimilation] 0%\nOperator Absinthe has no signs of Originium infections. \nBeing able to keep herself safe in situations like those means that her abilities must be solid enough, in addition to having the devil's luck. \n\n[Blood Originium-Crystal Density] 0.14u/L\nOperator Absinthe had been exposed to an Originium-dense region for weeks prior to boarding, and extra attention must paid to potential virulence."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "A survivor of the Chernobog-Lungmen incident and daughter of a local policeman, Absinthe, following her onboarding, described in detail Chernobog's gradual descent into chaos under Reunion's occupation. According to her account, Reunion's attack came very suddenly. The local police force, as the basic unit of security in the city, could barely maintain order and evacuate the crowds even at the beginning. But as the situation worsened and the Catastrophe arrived, the line of defense was torn down, with violence and panic engulfing the entire city like a wildfire. \nThe Ursursians who remained struggled amidst the despair to cling to their lives, working together with a small team of local police officers after the Catastrophe. In a short period of time, this group went from initially trying to maintain order and protect civilians, to a state of being unable to fend for themselves, even stealing food to survive. When Rhodes Island's rescue team found Absinthe, she was laying on her back amidst a heap of rubble, alone and dying from hunger. If the rescue team showed up any later, there is no saying what would have happened to her. Perhaps not even her body would have been left in place. \n\nThrough the entire crisis, the survivors trapped in the city waited for the arrival of those tasked with protecting them, but help never arrived."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "During the time she was training and taking exams, Absinthe's performance satisfied all of Instructor Dobermann's standards. She may not have been gifted with great athleticism or combat acumen, but her tenacity coupled with the basic training she had received helped her quickly grow into a qualified operator. However, her lackadaisical attitude towards getting injured during training and exceedingly cavalier lifestyle habits are causes for concern. \nThe medical department's assessment shows that Absinthe's mental health markers are troubling; she views many issues with significant pessimism, and also displays degrees of self-loathing and self-destructive tendencies. This Ursus girl rarely seeks to establish personal agency in her daily life, instead subconsciously trying to help others around her. However, at the same time, she belittles her own actions to the point of even negating whatever results she may have achieved, a behavior that, in the eyes of the medic operators, is very concerning. \nAnother important issue to bring up is the strong concerns raised by the Ursus Student Self-government Group. Before joining Rhodes Island, Absinthe knew nothing about the members of the Self-Governing Group, and vice versa. It is unclear why Absinthe now pays so much attention to their activities, and she is unwilling to talk about the matter. These anomalous behaviors may have something to do with her past experiences in Peterheim Middle School. We can surmise that there must be some undiscovered facts regarding the time she spent there. \nUnder the premise that this status will not cause damage to Rhodes Island, related background investigations have been temporarily suspended out of respect for Operator Absinthe."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "The attack on Chernobog was a key component of Reunion's plans. They plotted in secret, completely catching the city off guard when they struck. Before Chernobog's residents realized what was going on, much of the city had already been occupied. \nWe can reconstruct an account of what happened in the incident's aftermath based upon oral narratives from survivors. Reunion's leaders partitioned the city and controlled different zones, with certain zones being controlled more strictly than others. In certain places, people could remain unharmed as long as they stayed behind closed doors. But many citizens in other areas were not so lucky... You already know what I mean by that. Certain Reunion leaders encouraged the Infected to 'claim their legitimate rights,' which is a euphemism for allowing gratuitous violence. When an excessively emotional catharsis morphs into hivemind behavior, one can imagine the kind of disaster that would ensue.\nPolice? Compared to the sheer number of Infected who had given in to fanaticism, the amount of peace officers and military police simply was too small. While they were better equipped and trained than the average Reunion rioter, that alone was not sufficient, and the following Catastrophe tore through what little defenses were left in the city. The Chernobog police continued to send backup requests to the garrison during this time, but judging from the results, such attempts were futile. \n\nHow did that girl stay alive in those conditions until the time she was rescued? What kind of things did she have to go through? \nI won't ask her to answer those questions. I can see that she's doing well enough with us, and despite her doubts and anxieties, she's making an effort to understand what happened in the past and shake off the lingering effects of those events. I even saw her trying to make friends, to try to be more inviting and to not push others away. This is no easy feat, and it is also a good sign. There's no way we could heartlessly pry open those wounds. We all need to be more cautious and circumspect when dealing with people who have suffered through disasters. If she is willing to open up, then we shall listen. As for right now, she has already done enough. \n\n—Transcript of conversation with Archives Department's logistics operator"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "The vast majority of rescued Chernobog refugees will, after a short resting period, stay with relatives or friends, or to go elsewhere to live alone. After that, Rhodes Island operators will escort them to their chosen destinations so that they may start a new life. At the same time, some of the refugees will end up staying with Rhodes Island for a variety of reasons. \nAbsinthe's parents were confirmed to have passed away during the Chernobog incident. When the logistics operator confirmed other kinship ties with Absinthe, the latter rejected the offer to be sent to another city and voluntarily applied to join Rhodes Island. Without a doubt, what she had experienced during the last month had driven her to make this decision. \nThe devastation wrought by Reunion's occupation, the destruction caused by the Catastrophe, and the ugly face of today's complex conflicts - all of these may have well played a role. As the turmoil continued, a shortage of food and drinking water turned these conflicts into something much simpler and more primal. Whether Infected or not, status mattered little when the only thing that remained was a cruel struggle for basic necessities. \n\nThe Medical Department has been closely monitoring the mental health of all survivors of the Chernobog-Lungmen incident. Unlike the members of the Ursus Student Self-government Group who also escaped from Chernobog, Absinthe's depression and pain takes on a much more direct manner. She rarely shows a real smile, and very few people are able to approach her. More often then not, Absinthe chooses to stay far away from others and maintain a subdued silence. Nevertheless, Absinthe has already helped many people; she may be taciturn, but she is undoubtedly reliable. Perhaps Absinthe views her own actions as trivial and insignificant, but we believe that kindness begets kindness and eagerly look forward to Absinthe's future development. \nJust like the hair that she cut herself, perhaps only time can heal her scars."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Even though her words were filled with confusion, as if everything she knew to be true was faltering, she never let go of the equipment she inherited from her father.\nThat pure idealism, a belief in the beauty of justice and protecting those in need, has never truly been sullied, even despite being dragged through veritable hell."
+    }
+  ]
+}

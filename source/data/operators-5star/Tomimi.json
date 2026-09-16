@@ -1,0 +1,680 @@
+{
+  "name": "Tomimi",
+  "rarity": 5,
+  "class": "Caster",
+  "branch": "Core Caster",
+  "faction": "Sargon",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "DPS",
+    "Survival"
+  ],
+  "trait": "Deals Arts damage",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "The Great Chief Returns"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Silent Night DN04"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_411_tomimi",
+  "otherLanguages": {
+    "Chinese": "特米米",
+    "Japanese": "トミミ",
+    "Korean": "토미미"
+  },
+  "characterInfo": {
+    "File no.": "SG05",
+    "Operator Record": "Brand New Life",
+    "Paradox Simulation": "Twotail Kombat",
+    "Illustrator": "Chuzenji",
+    "Release Date": "2021/02/25",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Mikako Takahashi",
+    "Chinese": "Mu Xueting",
+    "English": "Anna Moorey",
+    "Korean": "Song Ha-rim"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Sargon",
+    "Date of Birth": "February 2nd",
+    "Race": "Archosauria",
+    "Height": "142 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Normal",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Arts of the Wild",
+      "rows": [
+        {
+          "stage": "Base",
+          "potential": null,
+          "description": "Range reduces, attacks now deal Physical damage (only to ground enemies), ATK +50% when this skill is activated"
+        },
+        {
+          "stage": "Base",
+          "potential": "Potential 5",
+          "description": "Range reduces, attacks now deal Physical damage (only to ground enemies), ATK +70% (+20%) when this skill is activated"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Range reduces, attacks now deal Physical damage (only to ground enemies), ATK +75% when this skill is activated"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "Range reduces, attacks now deal Physical damage (only to ground enemies), ATK +95% (+20%) when this skill is activated"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Range reduces, attacks now deal Physical damage (only to ground enemies), ATK +100% when this skill is activated"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "Range reduces, attacks now deal Physical damage (only to ground enemies), ATK +120% (+20%) when this skill is activated"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Arts of the Wild"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Tomimi's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New skill: Protection Plan for Gavial .",
+        "Arts of the Wild improved.",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Tomimi to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Caster Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Arts of the Wild improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Tomimi to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Caster Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "RMA70-24",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 14
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Tribal Techniques",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ASPD +30",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ASPD +35",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ASPD +40",
+            "initialSp": 0,
+            "spCost": 40,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ASPD +45",
+            "initialSp": 5,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ASPD +50",
+            "initialSp": 5,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ASPD +55",
+            "initialSp": 5,
+            "spCost": 35,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ASPD +60",
+            "initialSp": 10,
+            "spCost": 32,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ASPD +70",
+            "initialSp": 10,
+            "spCost": 32,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ASPD +80",
+            "initialSp": 10,
+            "spCost": 32,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ASPD +90",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": null,
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Gavial's Protection Plan",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25–30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Each attack has a 50% chance to randomly trigger one of the following effects: Stuns the target for 0.6 seconds, that attack deals 170% , or that attack deals AoE damage",
+            "initialSp": 11,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Each attack has a 50% chance to randomly trigger one of the following effects: Stuns the target for 0.6 seconds, that attack deals 170% , or that attack deals AoE damage",
+            "initialSp": 12,
+            "spCost": 39,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Each attack has a 50% chance to randomly trigger one of the following effects: Stuns the target for 0.6 seconds, that attack deals 170% , or that attack deals AoE damage",
+            "initialSp": 13,
+            "spCost": 38,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Each attack has a 60% chance to randomly trigger one of the following effects: Stuns the target for 0.8 seconds, that attack deals 180% , or that attack deals AoE damage",
+            "initialSp": 15,
+            "spCost": 37,
+            "duration": 26
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Each attack has a 60% chance to randomly trigger one of the following effects: Stuns the target for 0.8 seconds, that attack deals 180% , or that attack deals AoE damage",
+            "initialSp": 16,
+            "spCost": 36,
+            "duration": 26
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Each attack has a 60% chance to randomly trigger one of the following effects: Stuns the target for 0.8 seconds, that attack deals 180% , or that attack deals AoE damage",
+            "initialSp": 17,
+            "spCost": 35,
+            "duration": 26
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Each attack has a 70% chance to randomly trigger one of the following effects: Stuns the target for 1.2 seconds, that attack deals 190% , or that attack deals AoE damage",
+            "initialSp": 18,
+            "spCost": 34,
+            "duration": 27
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Each attack has a 80% chance to randomly trigger one of the following effects: Stuns the target for 1.2 seconds, that attack deals 205% , or that attack deals AoE damage",
+            "initialSp": 18,
+            "spCost": 33,
+            "duration": 28
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Each attack has a 90% chance to randomly trigger one of the following effects: Stuns the target for 1.2 seconds, that attack deals 220% , or that attack deals AoE damage",
+            "initialSp": 18,
+            "spCost": 32,
+            "duration": 29
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Each attack has a 100% chance to randomly trigger one of the following effects: Stuns the target for 1.6 seconds, that attack deals 220% , or that attack deals AoE damage",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": null,
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 2
+        },
+        {
+          "name": "Coagulating Gel",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Barbecue Master",
+      "facility": "Dormitory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Dormitory, restores +0.55 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is Gavial , further increases Morale restored by +0.45"
+    },
+    {
+      "name": "Sciolism",
+      "facility": "Training Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, increases the Specialization training speed of Caster Operators by +30% , and further increases this speed by +45% if training the skill to Specialization Level 1"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Tomimi's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "CCR-Y: Broken Tail Corrector",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Tomimi, and unleash Gavial's Protection Plan at least 1 time in each battle",
+        "requirement2": "Clear Side Story RI-2 with a 3-star rating; You must deploy your own Tomimi, and cannot include any other Caster Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +30 , DEF +15",
+          "effectLabel": "New trait",
+          "effectText": "Gain 1 SP when normal attacks hit an elite or leader enemy .",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +40 , DEF +20",
+          "effectLabel": "Arts of the Wild improved",
+          "effectText": "When skill is activated, range reduces slightly, attacks now deal Physical damage (only to ground enemies), ATK +105% □ □ ■ □ □ □",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +50 , DEF +25",
+          "effectLabel": "Arts of the Wild improved",
+          "effectText": "When skill is activated, range reduces slightly, attacks now deal Physical damage (only to ground enemies), ATK +110% □ □ ■ □ □ □",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Tomimi, an\nArchosauria\nfrom the\nAcahualla\nregion of\nSargon\n, is a friend and supporter to\nGavial\n.\nShe tried all sorts of radical ways to prevent Gavial from returning\nto\nRhodes Island\n, but upon her failure, instead accompanied Gavial back to Rhodes Island.\nShe assumes the responsibilities of a\nCaster\nbut often forgets that given her excellent performance on the battlefield, there are no plans to have her switch operator roles.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 837,
+          "atk": 271,
+          "def": 45,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1197,
+          "atk": 383,
+          "def": 76,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 20,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-6"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1197,
+          "atk": 383,
+          "def": 76,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1555,
+          "atk": 504,
+          "def": 106,
+          "res": 15,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1555,
+          "atk": 504,
+          "def": 106,
+          "res": 20,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 1,
+          "interval": 1.6
+        },
+        "max": {
+          "hp": 1920,
+          "atk": 600,
+          "def": 119,
+          "res": 20,
+          "redeploy": 80,
+          "dp": 22,
+          "block": 1,
+          "interval": 1.6
+        },
+        "rangeId": "3-1"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 35,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected. \n\n[Cell-Originium Assimilation] 0%\n'This one's the exact same as before, pure and unblemished.' \n\n[Blood Originium-Crystal Density] 0.14u/L\n'Is she actually listening to me when I say she needs to exercise? Not bad.' \n\n'I pretty much already know everything about Tomimi—— Though this would be the first time I gave her a physical exam.' ——Gavial\n'The physical exam went smoothly, but her heartbeat was abnormally fast and that confounded the data.' ——Gavial"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "After Gavial saw through her 'trick' and 'punished' her, Tomimi decided to follow Gavial to Rhodes Island and become an operator. Tomimi has little knowledge of life outside her tribe. Her impressions of the outside world come entirely from her conversation with Inam and from the books that were commissioned. When she first came to Rhodes Island, she was the same as two other operators, making a variety of common sense blunders during her trial-and-error phase. However, she quickly completed her transition thanks to her adaptability, and transformed from the leader of a small tribe on the border of Sargon into a Caster Operator with a unique personal flair. \nWhen Tomimi first applied to become an operator, some of the other operators in charge of the testing process initially were opposed to letting her become a Caster. In the eyes of Casters who have been trained under the theoretical framework of modern Originium Arts, Tomimi's use of Originium Arts is brutish and backwards, particularly her preference towards melee combat which runs contrary to what is typically required of Casters. When the testers gathered around to discuss their opinions, one interesting question was front and foremost:\n'What's the difference between her and Gavial?' \n'Gavial wouldn't actually force people.' \n'I think that's only because she's too busy.' \n'But ultimately, they decided to let Tomimi become a Caster, and in terms of her training policy, they did not ask her to conform to the standards of modern Casters and instead allowed her to implement her own fighting style. The reason is, after observing Tomimi's fighting style, they determined that there was some value in studying it. 'Injecting' your own Arts into a wand in order to fill it with lethal power is, from a certain perspective, an utterly fanciful notion. Casters themselves tend to be intellectually curious people as well. After acknowledging Tomimi's combat abilities, a small group of Casters adopted the belief that 'Casters ought to be physically strong.' They even began to hope that a new school of Originium Arts would form through Tomimi's growth— Of course, even if this was to succeed, that'll be some time in the future."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "When talking to Tomimi, there is always one topic that cannot be avoided: Gavial. As soon as this name is mentioned, the normally taciturn Tomimi will instantly open her inner chatterbox, praising Gavial's goodness as if her life depended on her. This degree of enthusiasm may be a match for that of the fans stuck outside the gates of Monster Siren Records HQ waiting for a chance to meet their idols. If you put yourself in her shoes though, Tomimi becoming like this may have been inevitable. Pretend that there's a beautiful young girl. Outside, she's the queen of the playground, and not even the adults can handle her. Everyone wants to be her friend, but she's always at your doorstep, sharing meals with you and asking you to play, showering you with her geniality and grace— What kind of person wouldn't be moved?! Furthermore, this wonderful young girl was stabbed by Originium in the mines in order to protect Tomimi, and ended up contracting Oripathy because of it. Even the bestselling authors of Columbia dare not write such heart-wrenching passages lightly, but this is not a work of fiction. It is Tomimi's truth, and that is why she is so devoted to Gavial. After that, Tomimi dedicated herself to attending Gavial, though the latter mistook this as 'exclusion.' After violently beating down all challengers at the Mahuizzotia, Gavial left the tribe. As for what happened afterwards, please refer to the reports from relevant individuals following Gavial's return from her hometown in Sargon. According to the report summary, the reason why Tomimi thought of using a rocket launcher to shoot down the Doctor's aircraft may simply have been because she hadn't seen Gavial in a long time, nothing more. Tomimi has not pulled any crazy stunts like this since coming to Rhodes Island with Gavial. \n\n'My word, is there really no need to publish a book on Tomimi's antics? A movie would do fine too. They'd be smash hits for sure.' \n'Keep going on about that, if you want Gavial to smack you.' \n'Don't worry, the relevant parties are... a bit slow.' \n'......'\n'Um, in that case, I'll be counting on you for the script for the annual festival.' \n'Change things up a little bit though. We'll get beaten up if they recognize themselves!' \n'You got it. Just leave it to me. '"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "After returning to Rhodes Island, the Doctor asked Tomimi how she had come up with all those terrible ideas. After waffling around for quite some time, Tomimi brought out a number of books that had titles such as these:\n'Only One Step Until The New You', 'You're a Winner', 'Learn Business Management in 100 Days'...\nThen, she took out a list of books that often appeared on the bestseller lists of bookstores, mostly related to fashion, self-help, and management. Without a doubt, the contents of these books gave Tomimi some dubious directions when it came to her understanding of the real world. For example... she really tried to apply this corporate management system to the members of the 'Gavial's Will' tribe, demanding that everyone wear a uniform, shout slogans, and fight like a Lupo (note that she had no idea what a Lupo was prior to joining Rhodes Island). Though the tribe had no complaints due to Tomimi's abilities, after she left, everyone in the tribe quickly lapsed into their old, comfortable ways. With this in mind, the rocket launcher incident was probably inspired by one of these books. \nFortunately, Tomimi was able to pick up a number of practical life skills. She is already familiar with storing items in a limited space, an ability that has earned her the praise of dorm staff. In addition, she is proficient in the use of expedition tools, able to explore the wilds without assistance. Nor will she ever again make the mistake of getting trapped in a mine by accident and putting herself in danger. However, Rhodes Island is different from the hometown of her Acahualla tribe. Gone is the near-infinite space she had back there to store her various collectibles. Under Gavial's persuasion, she has begun to screen her treasures, keeping only the most valuable things in a backpack that she carries on her person. \nAll things considered, one cannot say that Tomimi is unintelligent, but rather, all her energy goes into the wrong areas."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Tomimi's tail grew again. \nBy itself, this is not a bad thing, as the Archosaurus people are proud of having large tails. \nBut Tomimi's tail doesn't only grow longer, it also grows thicker. \nAs for the proper ideal of what a tail should be like, the Archosaurs themselves have not reached a consensus. The dispute betwen 'thick tails' and 'fine tails' still continues to this day. \nTomimi isn't invested in this issue and is perfectly fine with whatever size or length tail she may have, and Gavial is also in agreement. \nNevertheless, her tail is a bit heavy, and sometimes causes inconveniences in day-to-day life. Upon the Doctor's recommendation, Tomimi finally decided to use a tail clamp made especially for Archosaurus use. \nPeople often hear Tomimi lamenting: 'When I was little, my tail was the same thickness as Gavial's. Why'd it end up growing so much more?' \nTomimi couldn't decide whether to keep her tail as it is or to grit her teeth and trim down on it. \nOn one hand, a thick tail is quite popular and can even bring some unexpected benefits on the battlefield. As a bonus, Gavial likes to squeeze it. \nOn the other hand, this tail sometimes poses inconveniences to others, and it may be difficult to find good-looking outfits that can accommodate such a large tail. \nAs a result, this question had been bothering Tomimi for a long time. \nShe needed someone to help her make the decision and implement her choice. \nWho do you think that person was?"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "A (partial) list of items in the backpack Tomimi made for herself:\n\nA piece of amber wrapped in leaves.\n'A neat thing I found on my first expedition. Holding it right now makes me happy.' \n\nA fired clay wad, slightly deformed \n'The first time Gavial and I tried to make pottery. She squeezed it a bit too hard and it got a bit deformed.' \n\nA fang that fell out when I was growing\n'Mama always said this was my lucky tooth, so I've always kept it in my bag.' \n\nThe woven bag I kept my collectibles in when I was younger\n'It's really sturdy and can still last a really long time!' \n\nGavial's signature, cut out from various places (erasure marks visible)\n'...I want more.' \n\nDoctor's badge\n'Doctor gave this to me. I can become smarter if I keep it with me.' \n\nA stack of dreamcatchers\n'To give to people who can't sleep well.' \n\n'Praise the Sun'\n'A really interesting book. I'll read a bit more tonight.' \n\nAdventure package\n'Has all sorts of neat stuff inside it, very useful for when adventuring.' \n\nField medic kit\n'Still learning how to use it. After that, I'll be able to help Gavial whenever she needs it.' \n\nA black (erasure marks) rock (erasure marks)\n(Heavy erasure marks) Gavial's\n(More erasure marks)\n......\n(The following is omitted)"
+    }
+  ]
+}

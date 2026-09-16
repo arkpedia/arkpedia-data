@@ -1,0 +1,1364 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act34sre",
+    "label": "BP",
+    "name": "Path of Life",
+    "release_date": "2024-12-03"
+  },
+  "enemies": [
+    {
+      "slug": "unicellular_predator",
+      "id": "enemy_1433_dsbasi",
+      "name": "Unicellular Predator",
+      "index": "SM33",
+      "rank": "Normal",
+      "sort": 826,
+      "hidden": false,
+      "icon": "/enemies-icons/Unicellular Predator.webp",
+      "flavour_text": "A simple Seaborn believed to be responsible for foraging. It requires very little energy for its activities.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4300,
+            "atk": 280,
+            "def": 0,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.1,
+            "attack_speed": 100.0,
+            "move_speed": 1.6,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "D",
+            "def": "E",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "S"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "exocellular_depositor",
+      "id": "enemy_1434_dsshel",
+      "name": "Exocellular Depositor",
+      "index": "SM35",
+      "rank": "Normal",
+      "sort": 828,
+      "hidden": false,
+      "icon": "/enemies-icons/Exocellular Depositor.webp",
+      "flavour_text": "A simple Seaborn that accumulates a large amount of chitin to form an excrescent carapace.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Spawns an Excrescent Carapace at its location when defeated.",
+          "format": "normal"
+        },
+        {
+          "text": "More likely to be attacked by allied units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4500,
+            "atk": 400,
+            "def": 500,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 1,
+            "taunt": 1,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "B",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "divicellular_hoarder",
+      "id": "enemy_1436_dsdivi",
+      "name": "Divicellular Hoarder",
+      "index": "SM38",
+      "rank": "Normal",
+      "sort": 831,
+      "hidden": false,
+      "icon": "/enemies-icons/Divicellular Hoarder.webp",
+      "flavour_text": "A Seaborn highly attuned to its environment, believed to be responsible for stockpiling resources. May split at any time when under stress.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Splits when HP drops below 50% for the first time.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 190,
+            "def": 150,
+            "res": 35.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.6,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 1.8,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "E",
+            "def": "D",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "0",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_key": "enemy_1436_dsdivi",
+                "offset_bound": 0.3
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "0",
+              "parameters": {
+                "hp_ratio": 0.5,
+                "interval": 0.3,
+                "offset_bound": 0.2
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "matrocellular_nurse",
+      "id": "enemy_1437_dsfull",
+      "name": "Matrocellular Nurse",
+      "index": "SM40",
+      "rank": "Normal",
+      "sort": 833,
+      "hidden": false,
+      "icon": "/enemies-icons/Matrocellular Nurse.webp",
+      "flavour_text": "A complex Seaborn with a variety of organs, believed to be responsible for brood care. Its core is concealed within its body.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "On death, randomly releases a <Divicellular Hoarder>, <Unicellular Predator>, or <Exocellular Depositor> with increased Movement Speed.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 14500,
+            "atk": 800,
+            "def": 1250,
+            "res": 15.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "A+",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "0",
+              "parameters": {
+                "cnt": 1.0,
+                "enemy_1": "enemy_1434_dsshel",
+                "enemy_2": "enemy_1436_dsdivi",
+                "enemy_3": "enemy_1433_dsbasi",
+                "move_speed": 2.0,
+                "prob1": 0.2,
+                "prob2": 0.5,
+                "value": 0.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "allotropic_nurse",
+      "id": "enemy_1437_dsfull_2",
+      "name": "Allotropic Nurse",
+      "index": "SM41",
+      "rank": "Normal",
+      "sort": 834,
+      "hidden": false,
+      "icon": "/enemies-icons/Allotropic Nurse.webp",
+      "flavour_text": "A complex Seaborn that has nurtured countless broods. Its specialized organs have developed into esoteric shapes. Its core is concealed even deeper, and the Seaborn it fosters are even more dangerous.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "On death, randomly releases an <Allotropic Hoarder>, <Allotropic Predator>, or <Exocellular Depositor> with increased Movement Speed.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 16000,
+            "atk": 900,
+            "def": 1400,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "A+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "0",
+              "parameters": {
+                "cnt": 1.0,
+                "enemy_1": "enemy_1434_dsshel",
+                "enemy_2": "enemy_1436_dsdivi_2",
+                "enemy_3": "enemy_1433_dsbasi_2",
+                "move_speed": 2.0,
+                "prob1": 0.2,
+                "prob2": 0.7,
+                "value": 0.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "allotropic_maleficent",
+      "id": "enemy_1439_dslntf_2",
+      "name": "Allotropic Maleficent",
+      "index": "SM45",
+      "rank": "Elite",
+      "sort": 838,
+      "hidden": false,
+      "icon": "/enemies-icons/Allotropic Maleficent.webp",
+      "flavour_text": "Nucleic Maleficents that have survived in harsh environments, developing glands that produce neurotoxin. Extremely rare, and extremely dangerous.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Becomes Combat-Ready when damaged, significantly increasing Movement Speed and continuously inflicting Nervous Impairment on nearby units.",
+          "format": "normal"
+        },
+        {
+          "text": "Destroys blocking <Excrescent Carapace> at the cost of a percentage of its HP.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 33000,
+            "atk": 600,
+            "def": 0,
+            "res": 80.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.25,
+            "range": 0.0,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "E",
+            "res": "S+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "E"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "0",
+              "parameters": {
+                "move_speed": 4.0
+              }
+            },
+            {
+              "key": "1",
+              "parameters": {
+                "ep_damage_ratio": 0.1,
+                "interval": 1.0,
+                "range_radius": 2.5
+              }
+            },
+            {
+              "key": "3",
+              "parameters": {
+                "hp_ratio": 0.2,
+                "range_radius": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "the_abandoned",
+      "id": "enemy_1440_dselec",
+      "name": "'The Abandoned'",
+      "index": "FC1",
+      "rank": "Elite",
+      "sort": 839,
+      "hidden": false,
+      "icon": "/enemies-icons/'The Abandoned'.webp",
+      "flavour_text": "Their consciousness is almost gone. Every nerve strand cries out soundlessly: 'Free... pain...'",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks deal Arts splash damage",
+          "format": "normal"
+        },
+        {
+          "text": "Loses splash damage when blocked.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 19000,
+            "atk": 720,
+            "def": 900,
+            "res": 35.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.55,
+            "range": 1.8,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "B+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Sleep"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "m_rtus_seaborn",
+      "id": "enemy_1556_dsbish",
+      "name": "Mártus, 'Seaborn'",
+      "index": "MSB",
+      "rank": "Boss",
+      "sort": 1352,
+      "hidden": false,
+      "icon": "/enemies-icons/Mártus, 'Seaborn'.webp",
+      "flavour_text": "Sage, traitor, hero, villain. The many identities of Mártus are inherently contradictory, but he considers himself only 'Seaborn.' The ocean belonged to Ægir, until Mártus made it the nutrient for new life, and from its blue depths sprang the children of the sea.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [
+        {
+          "text": "Does not attack; permanently Invulnerable.",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically summons 2 <Unicellular Predators> or <Allotropic Predators> at its location.",
+          "format": "normal"
+        },
+        {
+          "text": "First Form",
+          "format": "title"
+        },
+        {
+          "text": "[Guided Evolution] Periodically causes the Sea Monster with the highest current HP to evolve: ATK and HP are significantly increased and attacks inflict Nervous Impairment. Loses a percentage of own HP whenever an evolved Sea Monster is defeated.",
+          "format": "normal"
+        },
+        {
+          "text": "Second Form",
+          "format": "title"
+        },
+        {
+          "text": "Loses a percentage of own HP whenever a Sea Monster is defeated.",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically increases the ATK of all Sea Monsters (stacks).",
+          "format": "normal"
+        },
+        {
+          "text": "[Nurture Life] Links with all Sea Monsters for a period of time, losing a percentage of max HP every second. During this time, Sea Monsters that receive lethal damage sleep instead of dying, recovering a percentage of their max HP per second.",
+          "format": "normal"
+        },
+        {
+          "text": "[Humanity's Bane] Selects an Operator, imposing the conditions of 'losing HP over time when HP is not full' and 'all skills automatically activate' for a period of time. If the selected Operator retreats or is defeated, their tile and the four adjacent tiles become undeployable.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 80000,
+            "atk": 100,
+            "def": 0,
+            "res": 90.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 2.0,
+            "weight": 6,
+            "taunt": null,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "E",
+            "def": "E",
+            "res": "SS",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "1",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 10.0,
+              "priority": 1,
+              "parameters": {
+                "atk": 3.0,
+                "ep_damage_ratio": 0.1,
+                "hp_ratio": 0.4,
+                "max_hp": 3.5
+              }
+            },
+            {
+              "key": "P2S1",
+              "sp_cost": 0,
+              "cooldown": 55.0,
+              "initial_cooldown": 28.0,
+              "priority": 2,
+              "parameters": {
+                "dsbish_p2_s_1[effector].hp_ratio": 0.05,
+                "dsbish_p2_s_1[effector].interval": 1.0,
+                "dsbish_p2_s_1[effector].sleep_duration": 20.0,
+                "duration": 20.0,
+                "hp_ratio": 0.01,
+                "interval": 1.0
+              }
+            },
+            {
+              "key": "P2S2",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 10.0,
+              "priority": 1,
+              "parameters": {
+                "damage": 150.0,
+                "interval": 1.0,
+                "range_id": "x-5",
+                "s2_duration": 50.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "0",
+              "parameters": {
+                "cnt": 2.0,
+                "dsbish_s_2[validator].interval": 1.0,
+                "dsbish_s_2[validator].s2_max_target": 2.0,
+                "enemy_key": "enemy_1433_dsbasi",
+                "hp_ratio": 0.018,
+                "interval": 40.0
+              }
+            },
+            {
+              "key": "1",
+              "parameters": {
+                "cnt": 2.0,
+                "enemy_key": "enemy_1433_dsbasi",
+                "interval": 25.0
+              }
+            },
+            {
+              "key": "2",
+              "parameters": {
+                "atk": 0.25,
+                "interval": 60.0,
+                "max_stack_cnt": 3.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "anim_duration": 10.0,
+                "duration": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Paralysis"
+          ],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 100000,
+            "atk": 100,
+            "def": 0,
+            "res": 99.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": 2.0,
+            "weight": 6,
+            "taunt": null,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "E",
+            "def": "E",
+            "res": "SS",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "1",
+              "sp_cost": 0,
+              "cooldown": 40.0,
+              "initial_cooldown": 15.0,
+              "priority": 1,
+              "parameters": {
+                "atk": 1.5,
+                "ep_damage_ratio": 0.25,
+                "hp_ratio": 0.4,
+                "max_hp": 1.5
+              }
+            },
+            {
+              "key": "P2S1",
+              "sp_cost": 0,
+              "cooldown": 55.0,
+              "initial_cooldown": 20.0,
+              "priority": 2,
+              "parameters": {
+                "dsbish_p2_s_1[effector].hp_ratio": 0.2,
+                "dsbish_p2_s_1[effector].interval": 1.0,
+                "dsbish_p2_s_1[effector].sleep_duration": 12.0,
+                "duration": 20.0,
+                "hp_ratio": 0.0125,
+                "interval": 1.0
+              }
+            },
+            {
+              "key": "P2S2",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 12.0,
+              "priority": 1,
+              "parameters": {
+                "damage": 180.0,
+                "interval": 1.0,
+                "range_id": "x-5",
+                "s2_duration": 50.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "0",
+              "parameters": {
+                "cnt": 2.0,
+                "dsbish_s_2[validator].interval": 1.0,
+                "dsbish_s_2[validator].s2_max_target": 2.0,
+                "enemy_key": "enemy_1433_dsbasi_2",
+                "hp_ratio": 0.025,
+                "interval": 40.0
+              }
+            },
+            {
+              "key": "1",
+              "parameters": {
+                "cnt": 2.0,
+                "enemy_key": "enemy_1433_dsbasi_2",
+                "interval": 30.0
+              }
+            },
+            {
+              "key": "2",
+              "parameters": {
+                "atk": 0.35,
+                "interval": 55.0,
+                "max_stack_cnt": 3.0
+              }
+            },
+            {
+              "key": "reborn",
+              "parameters": {
+                "anim_duration": 10.0,
+                "duration": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Paralysis"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "allotropic_predator",
+      "id": "enemy_1433_dsbasi_2",
+      "name": "Allotropic Predator",
+      "index": "SM34",
+      "rank": "Normal",
+      "sort": 827,
+      "hidden": false,
+      "icon": "/enemies-icons/Allotropic Predator.webp",
+      "flavour_text": "Simple but nourished, this new generation of Seaborn collects nutrients even more efficiently.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5700,
+            "atk": 350,
+            "def": 0,
+            "res": 10.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.1,
+            "attack_speed": 100.0,
+            "move_speed": 1.6,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "E",
+            "res": "C",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "S"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "toxocellular_drifter",
+      "id": "enemy_1435_dsflys",
+      "name": "Toxocellular Drifter",
+      "index": "SM36",
+      "rank": "Normal",
+      "sort": 829,
+      "hidden": false,
+      "icon": "/enemies-icons/Toxocellular Drifter.webp",
+      "flavour_text": "A Seaborn with a highly developed cytostome, believed to be responsible for transportation. Shoots venomous cilia to protect itself.",
+      "race": "Sea Monster",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Prioritizes units on High Ground.",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks inflict Nervous Impairment.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 5100,
+            "atk": 300,
+            "def": 80,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.5,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "E",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "0",
+              "parameters": {
+                "ep_damage_ratio": 0.15
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "allotropic_drifter",
+      "id": "enemy_1435_dsflys_2",
+      "name": "Allotropic Drifter",
+      "index": "SM37",
+      "rank": "Normal",
+      "sort": 830,
+      "hidden": false,
+      "icon": "/enemies-icons/Allotropic Drifter.webp",
+      "flavour_text": "A Seaborn nourished in the migration process, possessing more energy for evolution or self-protection.",
+      "race": "Sea Monster",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        },
+        {
+          "text": "Prioritizes units on High Ground.",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks inflict Nervous Impairment.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 6200,
+            "atk": 380,
+            "def": 120,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.5,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "C",
+            "def": "D",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "0",
+              "parameters": {
+                "ep_damage_ratio": 0.15
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "allotropic_hoarder",
+      "id": "enemy_1436_dsdivi_2",
+      "name": "Allotropic Hoarder",
+      "index": "SM39",
+      "rank": "Normal",
+      "sort": 832,
+      "hidden": false,
+      "icon": "/enemies-icons/Allotropic Hoarder.webp",
+      "flavour_text": "A Divicellular Hoarder that has stockpiled excessive nutrients, capable of responding to intense stimuli.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Splits when HP drops below 50% for the first time.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 230,
+            "def": 175,
+            "res": 45.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.6,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": 1.8,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "D",
+            "def": "D",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "0",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "enemy_key": "enemy_1436_dsdivi_2",
+                "offset_bound": 0.3
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "0",
+              "parameters": {
+                "hp_ratio": 0.5,
+                "interval": 0.3,
+                "offset_bound": 0.2
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "multicellular_herald",
+      "id": "enemy_1438_dspred",
+      "name": "Multicellular Herald",
+      "index": "SM42",
+      "rank": "Elite",
+      "sort": 835,
+      "hidden": false,
+      "icon": "/enemies-icons/Multicellular Herald.webp",
+      "flavour_text": "Highly differentiated Seaborn with specialized tentacles that have proliferated across the ocean. Numbering in the billions, they are believed to shape ocean currents when they wave their tentacles.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can devour an Excrescent Carapace to significantly increase its ATK and HP.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 13200,
+            "atk": 1050,
+            "def": 660,
+            "res": 45.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "0",
+              "sp_cost": 0,
+              "cooldown": 1000000.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "range_radius": 0.35
+              }
+            },
+            {
+              "key": "1",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": -1,
+              "parameters": {
+                "atk": 0.4,
+                "maxhp": 0.7
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "allotropic_herald",
+      "id": "enemy_1438_dspred_2",
+      "name": "Allotropic Herald",
+      "index": "SM43",
+      "rank": "Elite",
+      "sort": 836,
+      "hidden": false,
+      "icon": "/enemies-icons/Allotropic Herald.webp",
+      "flavour_text": "Seaborn that have grown in nutrient-rich environments. In sufficient numbers, they can influence tidal movements and even trigger tsunamis.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can devour an Excrescent Carapace to significantly increase its ATK and HP.",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 14500,
+            "atk": 1200,
+            "def": 770,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "B",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "0",
+              "sp_cost": 0,
+              "cooldown": 1000000.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "range_radius": 0.35
+              }
+            },
+            {
+              "key": "1",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": -1,
+              "parameters": {
+                "atk": 0.4,
+                "maxhp": 0.7
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "nucleic_maleficent",
+      "id": "enemy_1439_dslntf",
+      "name": "Nucleic Maleficent",
+      "index": "SM44",
+      "rank": "Elite",
+      "sort": 837,
+      "hidden": false,
+      "icon": "/enemies-icons/Nucleic Maleficent.webp",
+      "flavour_text": "A cell originally meant to develop into a specialized organ has mutated into an individual entity capable of metabolizing body waste into neurotoxin. Its role within the Seaborn population remains unclear.",
+      "race": "Sea Monster",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Becomes Combat-Ready when damaged, significantly increasing Movement Speed and continuously inflicting Nervous Impairment on nearby units.",
+          "format": "normal"
+        },
+        {
+          "text": "Destroys blocking <Excrescent Carapace> at the cost of a percentage of its HP.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 30000,
+            "atk": 500,
+            "def": 0,
+            "res": 70.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.25,
+            "range": 0.0,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "E",
+            "res": "S",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "E"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "0",
+              "parameters": {
+                "move_speed": 4.0
+              }
+            },
+            {
+              "key": "1",
+              "parameters": {
+                "ep_damage_ratio": 0.1,
+                "interval": 1.0,
+                "range_radius": 2.5
+              }
+            },
+            {
+              "key": "3",
+              "parameters": {
+                "hp_ratio": 0.25,
+                "range_radius": 0.5
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "the_cursed",
+      "id": "enemy_1440_dselec_2",
+      "name": "'The Cursed'",
+      "index": "FC2",
+      "rank": "Elite",
+      "sort": 840,
+      "hidden": false,
+      "icon": "/enemies-icons/'The Cursed'.webp",
+      "flavour_text": "Their consciousness is fully gone. Every cell remembers the command: 'Dominate... ocean...'",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee and Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks deal Arts splash damage",
+          "format": "normal"
+        },
+        {
+          "text": "Loses splash damage when blocked.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 22000,
+            "atk": 880,
+            "def": 950,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.55,
+            "range": 1.8,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "B+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Sleep"
+          ],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,942 @@
+{
+  "name": "Shu",
+  "rarity": 6,
+  "class": "Defender",
+  "branch": "Guardian",
+  "faction": "Sui",
+  "umbrellaFactions": [
+    "Yan"
+  ],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Defense",
+    "Healing",
+    "Support"
+  ],
+  "trait": "Can heal allies by using the skill",
+  "howToObtain": {
+    "Limited": "Yes",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Spring Feast"
+  ],
+  "ep": {
+    "Main": "Here in Vernal Terrene",
+    "Co-star": null
+  },
+  "internalName": "char_2025_shu",
+  "otherLanguages": {
+    "Chinese": "黍",
+    "Japanese": "シュウ",
+    "Korean": "슈"
+  },
+  "characterInfo": {
+    "File no.": "NM05",
+    "Operator Record": "...Ask What I Seek",
+    "Paradox Simulation": "Homeward Bound",
+    "Illustrator": "IRIS_口艺",
+    "Release Date": "2024/07/31",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Yoshino Nanjo",
+    "Mandarin & Hokkien": "Xu Chen",
+    "English": "Suzie Yeung",
+    "Korean": "Yoo Young"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "None",
+    "Place of Birth": "Yan",
+    "Date of Birth": "June 6th",
+    "Race": "Undisclosed",
+    "Height": "165 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "■■",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Flawed"
+  },
+  "talents": [
+    {
+      "name": "Myriad Grains, Everlasting",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When healing an Operator , sows seeds on that tile and the adjacent 4 tiles, bestowing the following effects: Restores 40 HP/s, grants 5% Sanctuary"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "When healing an Operator, sows seeds on that tile and the adjacent 4 tiles, bestowing the following effects: Restores 45 (+5) HP/s, grants 7% (+2%) Sanctuary"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When healing an Operator, sows seeds on that tile and the adjacent 4 tiles, bestowing the following effects: Restores 70 HP/s, grants 10% Sanctuary"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When healing an Operator, sows seeds on that tile and the adjacent 4 tiles, bestowing the following effects: Restores 75 (+5) HP/s, grants 12% (+2%) Sanctuary"
+        }
+      ]
+    },
+    {
+      "name": "From Seasons Fourfold",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "If there are Operators with at least 3 different classes on the field, all Operators gain +12% Max HP; if there are at least 3 Operators with the same class on the field, all Operators gain +12 ASPD; if there are at least 4 [Sui] Operators in the squad, all Operators gain +12% ATK, and 1 SP every 4 seconds"
+        }
+      ],
+      "technique": [
+        {
+          "name": "SP Recovery Booster",
+          "description": "Able to supply additional SP to specific units"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Max HP +200"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +25"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Myriad Grains, Everlasting"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Shu's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "Block +1 .",
+        "New talent: Myriad Grains, Everlasting .",
+        "New skill: Bountiful Harvest ."
+      ],
+      "prerequisite": "Raise Shu to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Defender Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron",
+          "quantity": 8
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: From Seasons Fourfold .",
+        "New skill: Samsara .",
+        "Evergreen Crops improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Shu to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Defender Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Crystalline Electronic Unit",
+          "quantity": 3
+        },
+        {
+          "name": "Cutting Fluid Solution",
+          "quantity": 6
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Verdant Wisdom",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack restores HP equal to 110% ATK to a nearby friendly unit with less than 50% HP Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack restores HP equal to 115% ATK to a nearby friendly unit with less than 50% HP Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack restores HP equal to 120% ATK to a nearby friendly unit with less than 50% HP Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack restores HP equal to 130% ATK to a nearby friendly unit with less than 50% HP Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack restores HP equal to 135% ATK to a nearby friendly unit with less than 50% HP Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack restores HP equal to 140% ATK to a nearby friendly unit with less than 50% HP Can store 1 charge",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack restores HP equal to 150% ATK to a nearby friendly unit with less than 50% HP Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack restores HP equal to 160% ATK to a nearby friendly unit with less than 50% HP Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack restores HP equal to 170% ATK to a nearby friendly unit with less than 50% HP Can store 2 charges",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack restores HP equal to 180% ATK to a nearby friendly unit with less than 50% HP Can store 3 charges",
+            "initialSp": 0,
+            "spCost": 4,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Compound Cutting Fluid",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Bountiful Harvest",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Stops attacking to focus on healing up to 2 allied units within range; ATK +30% ; Block +1 ; Talent 1 effect increases to 1.2 x Heals will use a special attack interval",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Stops attacking to focus on healing up to 2 allied units within range; ATK +40% ; Block +1 ; Talent 1 effect increases to 1.2 x Heals will use a special attack interval",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Stops attacking to focus on healing up to 2 allied units within range; ATK +50% ; Block +1 ; Talent 1 effect increases to 1.2 x Heals will use a special attack interval",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Stops attacking to focus on healing up to 2 allied units within range; ATK +60% ; Block +1 ; Talent 1 effect increases to 1.3 x Heals will use a special attack interval",
+            "initialSp": 15,
+            "spCost": 35,
+            "duration": 25
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Stops attacking to focus on healing up to 2 allied units within range; ATK +70% ; Block +1 ; Talent 1 effect increases to 1.3 x Heals will use a special attack interval",
+            "initialSp": 15,
+            "spCost": 35,
+            "duration": 25
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Stops attacking to focus on healing up to 2 allied units within range; ATK +80% ; Block +1 ; Talent 1 effect increases to 1.3 x Heals will use a special attack interval",
+            "initialSp": 15,
+            "spCost": 35,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Stops attacking to focus on healing up to 2 allied units within range; ATK +90% ; Block +1 ; Talent 1 effect increases to 1.4 x Heals will use a special attack interval",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Stops attacking to focus on healing up to 2 allied units within range; ATK +100% ; Block +1 ; Talent 1 effect increases to 1.4 x Heals will use a special attack interval",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Stops attacking to focus on healing up to 2 allied units within range; ATK +110% ; Block +1 ; Talent 1 effect increases to 1.4 x Heals will use a special attack interval",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": 25
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Stops attacking to focus on healing up to 2 allied units within range; ATK +120% ; Block +1 ; Talent 1 effect increases to 1.5 x Heals will use a special attack interval",
+            "initialSp": 20,
+            "spCost": 25,
+            "duration": 25
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 8
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 4
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 6
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 3
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Samsara",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Healing range expands , attacks now also heal allied Operators ; ATK +10% . If there are ground enemies on sowed tiles, all allied units within skill range gains +10% ATK and +10 ASPD; When an enemy passes through a sowed tile, it gains the following effect: Teleport back to this location after moving more than 4 tiles away",
+            "initialSp": 20,
+            "spCost": 60,
+            "duration": 30
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Healing range expands , attacks now also heal allied Operators; ATK +14% . If there are ground enemies on sowed tiles, all allied units within skill range gains +10% ATK and +10 ASPD; When an enemy passes through a sowed tile, it gains the following effect: Teleport back to this location after moving more than 4 tiles away",
+            "initialSp": 20,
+            "spCost": 60,
+            "duration": 30
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Healing range expands , attacks now also heal allied Operators; ATK +18% . If there are ground enemies on sowed tiles, all allied units within skill range gains +10% ATK and +10 ASPD; When an enemy passes through a sowed tile, it gains the following effect: Teleport back to this location after moving more than 4 tiles away",
+            "initialSp": 20,
+            "spCost": 60,
+            "duration": 30
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Healing range expands , attacks now also heal allied Operators; ATK +22% . If there are ground enemies on sowed tiles, all allied units within skill range gains +15% ATK and +15 ASPD; When an enemy passes through a sowed tile, it gains the following effect: Teleport back to this location after moving more than 4 tiles away",
+            "initialSp": 25,
+            "spCost": 55,
+            "duration": 30
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Healing range expands , attacks now also heal allied Operators; ATK +26% . If there are ground enemies on sowed tiles, all allied units within skill range gains +15% ATK and +15 ASPD; When an enemy passes through a sowed tile, it gains the following effect: Teleport back to this location after moving more than 4 tiles away",
+            "initialSp": 25,
+            "spCost": 55,
+            "duration": 30
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Healing range expands , attacks now also heal allied Operators; ATK +30% . If there are ground enemies on sowed tiles, all allied units within skill range gains +15% ATK and +15 ASPD; When an enemy passes through a sowed tile, it gains the following effect: Teleport back to this location after moving more than 4 tiles away",
+            "initialSp": 25,
+            "spCost": 55,
+            "duration": 30
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Healing range expands , attacks now also heal allied Operators; ATK +34% . If there are ground enemies on sowed tiles, all allied units within skill range gains +20% ATK and +20 ASPD; When an enemy passes through a sowed tile, it gains the following effect: Teleport back to this location after moving more than 3 tiles away",
+            "initialSp": 30,
+            "spCost": 50,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Healing range expands , attacks now also heal allied Operators; ATK +38% . If there are ground enemies on sowed tiles, all allied units within skill range gains +20% ATK and +20 ASPD; When an enemy passes through a sowed tile, it gains the following effect: Teleport back to this location after moving more than 3 tiles away",
+            "initialSp": 30,
+            "spCost": 47,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Healing range expands , attacks now also heal allied Operators; ATK +44% . If there are ground enemies on sowed tiles, all allied units within skill range gains +25% ATK and +25 ASPD; When an enemy passes through a sowed tile, it gains the following effect: Teleport back to this location after moving more than 3 tiles away",
+            "initialSp": 30,
+            "spCost": 47,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Healing range expands , attacks now also heal allied Operators; ATK +50% . If there are ground enemies on sowed tiles, all allied units within skill range gains +25% ATK and +25 ASPD; When an enemy passes through a sowed tile, it gains the following effect: Teleport back to this location after moving more than 2 tiles away",
+            "initialSp": 30,
+            "spCost": 45,
+            "duration": 30
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "rating": 0
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy",
+              "quantity": 9
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 10
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Diketon",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 5
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 6
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Transmuted Salt",
+          "quantity": 5
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Spring Thunder Sounds, All Life Crowned",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, Morale consumed per hour of all Operators in the Factory -0.1"
+    },
+    {
+      "name": "Where Stalks Grow Deep, Autumn Reaps",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, for every 3 Worldly Plight , Productivity +1%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Shu's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "GUA-X: On Architecture of Time",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Shu, and unleash Samsara at least 1 time in each battle",
+        "requirement2": "Clear Main Theme 11-11 with a 3-star rating under Standard Environment; You must deploy your own Shu, and allow no Operators to be defeated"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +160 , ATK +30 , DEF +30",
+          "effectLabel": "New trait",
+          "effectText": "When healing allied units with less than 50% HP, increases heal amount by 15%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +210 , ATK +40 , DEF +40",
+          "effectLabel": "Myriad Grains, Everlasting improved",
+          "effectText": "When healing an Operator , sows seeds on that tile and the adjacent 4 tiles, bestowing the following effects: Restores 80 HP/s, grants 10% Sanctuary",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +270 , ATK +50 , DEF +50",
+          "effectLabel": "Myriad Grains, Everlasting improved",
+          "effectText": "When healing an Operator, sows seeds on that tile and the adjacent 4 tiles, bestowing the following effects: Restores 80 HP/s, grants 15% Sanctuary ; Immediately applies these effects on the tile when deployed",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Shu, an Agricultural\nTianshi\ninstructor of the\nYanese\nTianshi Bureaus. A longtime resident of the northern Yanese agriculture center of\nDahuang\n, she has produced abundant research results. Currently making a brief visit to\nRhodes Island\nto see\nrelatives\n.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "gW8JIHtOZsA",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "YXjttEbKx8I",
+      "creator": "DragonGJY"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1334,
+          "atk": 203,
+          "def": 250,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1804,
+          "atk": 290,
+          "def": 369,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 18,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1804,
+          "atk": 290,
+          "def": 369,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2313,
+          "atk": 392,
+          "def": 493,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 20,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 2313,
+          "atk": 392,
+          "def": 493,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 3213,
+          "atk": 479,
+          "def": 602,
+          "res": 10,
+          "redeploy": 70,
+          "dp": 22,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "0-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 50,
+      "def": 60
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected. \n\n[Cell-Originium Assimilation] 0% \nOperator Shu shows no signs of Originium infection. \n\n[Blood Originium-Crystal Density] 0.00u/L \n\nShu was very cooperative during the physical examination. Her condition... may be difficult to judge by regular human standards, but if you compare her results with her siblings, she does indeed show signs reminiscent of 'aging.' \nWe wished to research this further, but Nian put a stop to it. \n'Just let her get a good rest, alright?' ——Nian"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Shu has not made much contact with Chongyue or Ling after boarding Rhodes Island. This does not mean they are on bad terms, but rather, she is clearly more concerned for Nian and Dusk than she is with her older siblings. She cooks up healthy recipes for Nian—putting a stop to her wanton enjoyment of spices—and more importantly prevents her from spreading her bad eating habits to others. Meanwhile, she urges Dusk to occasionally dabble in physical exercise instead of cooping up in her paintings for long periods—even getting her to do some work on Rhodes Island however she can. She has done us a huge favor. The two of them may seem unwilling recipients of her 'concern,' but put up little if any resistance. This is not out of the typical fear one might have of an older sibling, but rather a form of consideration. \n'Your family seems so chummy all the time. You <i>sure</i> things once went all topsy-turvy for you guys?' When Kroos asked with curiosity, Nian was unusually silent, looking as if she were recalling some painful memory. \n'Incidentally, if you're number six of twelve, then we can't say you're a jiejie in the purest sense of the term, yes...?' Mr. Nothing once inquired with hesitation, but was fearfully silenced by a beaming smile from Shu. \nShu does not exclusively care for Nian and Dusk—she is equally concerned for any other operator she regularly meets, listening to their worries and dispelling any doubts they have. Many operators have expressed that she is absolutely the most personable of her family. You can find her for a chat at any time of day, and all your worries will vanish as you listen to her explain her 'life has an end, but not the world' philosophy. \n'I mean, when someone is such a model older sister, everyone's like a younger sibling before her.' \n'I heard she used to tend to crops, maybe that's why she's so good at tending to people too.'\n'So is she treating everyone like a sibling, or like her crops?'\n'......' \nIn any case, considering Shu's positively divine culinary skills, it seems that Nian and Dusk will soon be competing with many more aspiring younger siblings."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Shu may not behave as enigmatically as her sisters, but some of those who've encountered her firmly believe that she has some sort of precognitive ability. \n'When I met her last month, she handed me a spool of finning thread without saying a word. I figured she was inviting to go angling some time, but... last week, my vehicle broke down while I was out on a field mission and I got lost in a forest. I ended up using that very same line to cut wood, catch fins, and as a rope to escape the forest—you think that was just a coincidence? But it's not the only time it's happened...' \n'Foresight' is certainly a term that invites fatal attraction. We certainly know of ancient Originium Arts able to calculate the future on a large scale. But it's clear that Shu is unable to cast Arts at all, making her abilities all the more baffling. When chatting with operators, she will 'read' their palms to tell their short term 'fortunes.' When these predictions began coming true one after another, it sparked another wave of interest in divination, and some wishing to take advantage of the occasion for financial gain (such as Mr. Nothing) were warned against doing so. \n'You reap what you sow. This is the simplest truth there is—all consequences stem from their cause. Yet sages fear the cause, while fools fear the consequence. It is just as you would tend to a crop. Neglect to water and fertilize, and you ought be well aware that the harvest will be a hard one. So why wait until you see the reality occur before your eyes to regret your inaction? Causality is not something imperceivable, they merely pretend not to see it.' \nWhen Shu divulged her philosophy in her usual wise and calm demeanor, it left everyone unwilling to pursue the matter. Even if this does not explain how she seems to foretell the future, her family has always been this way, and we are accustomed to their eccentricities. However, even if she <i>can</i> see the future, can she change it? If her foretold 'future' changes, does that mean she saw only a baseless illusion? Or if the future is set in stone, will her ability bring only despair? While it may be impossible to elucidate or understand, her philosophy is indeed useful to believe in, if you look past this logical paradox. \nOn the other hand, the next person to ask her for the winning lottery numbers will likely see just how scary she can be."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Shu coming aboard Rhodes Island has been a boon to the landship's cafeteria. Besides her astonishing cooking skills, her most important contribution has been introducing several new supply channels to the Procurement Department, greatly improving the standard of onboard meals. The landship is always on the move, so bulk orders are naturally made based on the product meeting certain minimum requirements. But Shu has opened our eyes to how much the quality of ingredients can affect the taste of a dish. Who knew rice grains could be so plump and fragrant, fruits and vegetables so fresh as to make your mouth water, or even how sweet and tender an ordinary potato could be? According to Shu, the output of their basic grains is now stable, so some Nongye Tianshi have pivoted their research into improving the quality of other crops. What gets sent to Rhodes Island's kitchens are more or less the results of their research. \n'How long did it take to achieve all these?' \nShu occasionally gets asked this question, but she responds with just a smile. \nThe progress of civilization has always gone hand in hand with agricultural research—for every region and nation without exception. However, over the long span of time, the precise topic has always changed. In earlier eras, improving crop quality was a dream within a dream, for they would first have to manage growing enough to eat with as little land as they had, not to mention how to ensure their harvest could weather the elements. After the development of nomadic cities, they delved into methods of transferring plots onto nomadic plates, and cultivating crops without soil. This trial and error has continued without pause, summed up by 'conform with nature, and reform it,' a simple phrase bearing the weight of thousands of years of laborious fieldwork. \n'You feel that would have been unimaginably difficult? I wouldn't say so. Who would work the land while earnestly wondering about a future a thousand years off? You simply plant your crops in one season, and harvest them the next. Living a simple life is already gratifying in itself, not to mention being able to eat your fill. When you add good food to the equation, is that not a blessed life—oh, look how well these fruits are coming in. Would you like to try one?' Shu said this while managing the test crops in the Convalescent Garden. When curious operators probed her for more stories, they were silenced by the peaches stuffed into their mouths—truly delicious. \n'Since time immemorial, many literati have praised the virtue of farmwork in verse, but how many have traded pen for hoe to experience the fields firsthand? My sister alone has watched over that place for a millennium—though, much like one can never know a fin's innermost heart without becoming one ourselves, I cannot say if she has enjoyed the experience. Mayhap the pain of that time outweighs the mirth, I know not, but that so-called impossible ideal of hers—'Ten Thousand Qing, three crops a year'—could always have been realized with simply a wave of her hand. Alas, she refuses to do so, and naturally has her reasons.'"
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Classified Log] \nOn the very same day the incident occurred in Dahuang City, a rice stalk in the Sui Regulator's Chamber of Artifacts wilted. At the same time, some text in several files as well as a stele's inscription also vanished. \n...... \n'We've lost one sister—we almost lost two, of course. Nian and I were trapped inside that 'heart,' and might have been merely a step away from vanishing into nothingness. But Shu, she was actually, completely gone for a moment. Indeed, some of her vestiges are no longer present, and some people will have forgotten her forever. But what does she most care about? That the fields and the crops growing in the soil are all still there. All those years, she never once used her powers to influence the land, probably because she expected such a day to come. \nWhen we die, our creations disappear along with us. And if you're wondering what precisely counts as a creation... Let's just say, if I were to die, not even a single painting of mine would remain, and the same goes for Nian and her trinkets—this is something that worries her greatly. However, a painter who learned a few techniques by studying my works wouldn't suddenly lose their skills, much like how anyone who learned to read from Jie's books would not suddenly become illiterate. That is the distinction. \nBack then, Shu scattered her consciousness and, indeed, disappeared. But she did not return to 'Sui'. Perhaps she is too closely linked to this land, or perhaps she has transcended 'life' itself. In short, she returned with all her limbs and memory intact, as the same person she was before. The children most commonly by her side also seem to have regained their memories of her. \nShe managed to survive this time, but what of the next time? \n...... \nI remember that early on that basket of blunders would often go to see Shu. They would spend half the night deep in conversation, only to part in discord. What else could they have been talking about? The two of them should have been the most unlikely conversation partners, and neither could be clearly deemed right or wrong. To Shu, even after losing a harvest to Catastrophe, there was always next season. But for that stinky weiqi man, a single slip-up could cost the entire game, all his efforts rendered naught. Both are looking for an answer—in fact, we all see the same, just in different ways. Doesn't this imply that we're becoming more and more 'human'? \nNow, that weiqi loser is all ready, and has even turned a brother to his side. He's set on fighting Yan, and no one can hold him back. None of us wish to return to the time when we engaged in mutual slaughter, nor do we want our beloved mortal realm to fall. We'll stop him, naturally. But who knows just how far he'll go? \nI've said all that I can. There's nothing worth hiding. No matter where fate takes us, at this point we're no longer afraid. \nSo, do you still wish to witness how this story will continue?'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "'A beast shades verdant deep. Through endless li it gleams \nIt takes its number sixth. Humble as it supports \nDrink mounts the Dragon's Spring. Grove founts hence wake and purl \nThereon surge Autumn rains. Wherefrom horizonless \nObserve it stir. Walls rise and earth is struck, the nine spheres fair and fain \nObserve it faint. Crisis ordains to plague, in troubled times beset \nFate beats through harvest's heart. Begotten karma comes \nThis godhood kalpa-old; yet lonely grass it warms. For kin and kind it strives; for all should love as one \nSo shoulders bear its lands and earth. Turns time by astral heed, engenders self four limbs \nThrough cycle through and through. One toil's millennium \nOur stars and life have changed, our wishes fade and bloom. Our crops are evergreen.' \n\n The rubbing of this inscription is complete, but the characters on the stele have gradually become indistinct. A verdant rice seedling grows from a crack on the stele's pedestal."
+    }
+  ]
+}

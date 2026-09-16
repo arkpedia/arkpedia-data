@@ -1,0 +1,747 @@
+{
+  "name": "Breeze",
+  "rarity": 5,
+  "class": "Medic",
+  "branch": "Multi-target Medic",
+  "faction": "Victoria",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing",
+    "Support"
+  ],
+  "trait": "Restores the HP of 3 allies simultaneously",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Purchase Vouchers",
+      "Unlock Location": "Heart of Surging Flame"
+    },
+    "Shop Operator": "Yes"
+  },
+  "alternate": null,
+  "skins": [
+    "Half-sweet Strawberry"
+  ],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_275_breeze",
+  "otherLanguages": {
+    "Simplified Chinese": "微风",
+    "Traditional Chinese": "微風",
+    "Japanese": "ブリーズ",
+    "Korean": "브리즈"
+  },
+  "characterInfo": {
+    "File no.": "R132",
+    "Operator Records": "Breeze's Warmth, Chilled Forest Prisoner's Dream",
+    "Paradox Simulation": "Cannon-Crossbow Circle-Net",
+    "Illustrator": "藻 Studio Montagne ( Half-sweet Strawberry )",
+    "Release Date": "2020/05/13",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Haruna Ikezawa",
+    "Chinese": "Chen Yujin (credited as \"Jinni\" in EN)",
+    "English": "Felecia Angelle",
+    "Korean": "Yoo Hye-ji"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "1 year",
+    "Place of Birth": "Victoria",
+    "Date of Birth": "June 24th",
+    "Race": "Vulpo",
+    "Height": "162 cm",
+    "Infection Status": "Infection confirmed by medical examination."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Standard",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Flawed",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Medic Squad Protection",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "When this unit's skill is active, all Medic Operators gain status resistance"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When this unit's skill is active, all Medic and Supporter Operators gain status resistance"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +20"
+      },
+      {
+        "level": 5,
+        "benefit": "Redeployment time -6 seconds"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Breeze's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Medic Squad Protection .",
+        "New skill: Widespread Threapy .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Breeze to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Medic Squad Protection improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Breeze to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Medic Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Optimized Device",
+          "quantity": 5
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 18
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Cluster Therapy",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25–35 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +70% , targets healed -1",
+            "initialSp": 20,
+            "spCost": 40,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +75% , targets healed -1",
+            "initialSp": 20,
+            "spCost": 39,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +80% , targets healed -1",
+            "initialSp": 20,
+            "spCost": 38,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +85% , targets healed -1",
+            "initialSp": 20,
+            "spCost": 37,
+            "duration": 28
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +90% , targets healed -1",
+            "initialSp": 20,
+            "spCost": 36,
+            "duration": 28
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +95% , targets healed -1",
+            "initialSp": 20,
+            "spCost": 35,
+            "duration": 28
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +100% , targets healed -1",
+            "initialSp": 20,
+            "spCost": 34,
+            "duration": 31
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +110% , targets healed -1",
+            "initialSp": 20,
+            "spCost": 33,
+            "duration": 32
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +120% , targets healed -1",
+            "initialSp": 20,
+            "spCost": 32,
+            "duration": 33
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +140% , targets healed -1",
+            "initialSp": 20,
+            "spCost": 30,
+            "duration": 35
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 2
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Sugar Lump",
+              "quantity": 3
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Widespread Therapy",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "35–45 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +110% , switch attack mode to firing a healing round to a friendly unit in range, healing the target and friendly units on the surrounding 8 tiles (healing amount is halved to surrounding units)",
+            "initialSp": 40,
+            "spCost": 80,
+            "duration": 35
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +120% , switch attack mode to firing a healing round to a friendly unit in range, healing the target and friendly units on the surrounding 8 tiles (healing amount is halved to surrounding units)",
+            "initialSp": 40,
+            "spCost": 80,
+            "duration": 36
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +130% , switch attack mode to firing a healing round to a friendly unit in range, healing the target and friendly units on the surrounding 8 tiles (healing amount is halved to surrounding units)",
+            "initialSp": 40,
+            "spCost": 80,
+            "duration": 37
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +150% , switch attack mode to firing a healing round to a friendly unit in range, healing the target and friendly units on the surrounding 8 tiles (healing amount is halved to surrounding units)",
+            "initialSp": 44,
+            "spCost": 80,
+            "duration": 38
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +160% , switch attack mode to firing a healing round to a friendly unit in range, healing the target and friendly units on the surrounding 8 tiles (healing amount is halved to surrounding units)",
+            "initialSp": 44,
+            "spCost": 80,
+            "duration": 39
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +170% , switch attack mode to firing a healing round to a friendly unit in range, healing the target and friendly units on the surrounding 8 tiles (healing amount is halved to surrounding units)",
+            "initialSp": 44,
+            "spCost": 80,
+            "duration": 40
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +190% , switch attack mode to firing a healing round to a friendly unit in range, healing the target and friendly units on the surrounding 8 tiles (healing amount is halved to surrounding units)",
+            "initialSp": 48,
+            "spCost": 80,
+            "duration": 41
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +210% , switch attack mode to firing a healing round to a friendly unit in range, healing the target and friendly units on the surrounding 8 tiles (healing amount is halved to surrounding units)",
+            "initialSp": 52,
+            "spCost": 80,
+            "duration": 42
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +230% , switch attack mode to firing a healing round to a friendly unit in range, healing the target and friendly units on the surrounding 8 tiles (healing amount is halved to surrounding units)",
+            "initialSp": 56,
+            "spCost": 80,
+            "duration": 43
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +250% , switch attack mode to firing a healing round to a friendly unit in range, healing the target and friendly units on the surrounding 8 tiles (healing amount is halved to surrounding units)",
+            "initialSp": 60,
+            "spCost": 80,
+            "duration": 45
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 3
+            },
+            {
+              "name": "Grindstone",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "Polyester Lump",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 2
+        },
+        {
+          "name": "Polyester Pack",
+          "quantity": 3
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Clue Search α",
+      "facility": "Reception Room",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Reception Room , Clue search speed increases by 10%"
+    },
+    {
+      "name": "Fallen NobleReplacesClue Search α",
+      "facility": "Reception Room",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by 10% and it's easier to obtain the clues of Glasgow"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Breeze's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "RIN-X: Surgical Instrument Kit",
+      "mission": {
+        "requirement1": "During battle, have Breeze fire a total of 50 healing rounds (Breeze cannot be a Support Unit)",
+        "requirement2": "Clear Main Theme 4-1 with a 3-star rating; a non-Support Breeze must be deployed during the operation, and only 7 Operators are allowed for the remaining units"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +60 , ATK +30",
+          "effectLabel": "Trait improved",
+          "effectText": "Attack Range expands □ □ □ □ □ ■ □ □ □ □ □ □ □",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +80 , ATK +40",
+          "effectLabel": "Medic Squad Protection improved",
+          "effectText": "When this unit's skill is active, all Medic and Supporter Operators gain +10% Max HP and status resistance",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +100 , ATK +47",
+          "effectLabel": "Medic Squad Protection improved",
+          "effectText": "When this unit's skill is active, all Medic and Supporter Operators gain +15% Max HP and status resistance",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Grace Arizona, the only daughter of a noble branch family in\nVictoria\n. She came into contact with Rhodes Island during the course of her advanced medical techniques study, and applied for a job at Rhodes Island. She excels in pharmacology and clinical theory, and now provides emergency battlefield medic services for Rhodes Island.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 745,
+          "atk": 125,
+          "def": 72,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 15,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1008,
+          "atk": 202,
+          "def": 97,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 15,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "y-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1008,
+          "atk": 202,
+          "def": 97,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1260,
+          "atk": 274,
+          "def": 126,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "y-2"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1260,
+          "atk": 274,
+          "def": 126,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1595,
+          "atk": 343,
+          "def": 153,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 17,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "y-2"
+      }
+    ],
+    "trust": {
+      "hp": 200,
+      "atk": 30,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal blurry outlines of this operator's internal organs, clouded with abnormal dark spots. Her circulatory system shows an abnormally high rate of Originium particulate matter, with other signs of Oripathy infection, we can confirm that the operator is indeed Infected. \n\n[Somatic Cell-Originium Assimilation] 3%\nThe level of infection remains low, and has not yet had an effect on the body.\n\n[Blood Originium-Crystal Density] 0.21u/L\nAt this point, spread of the infection is steadily increasing, and we will need to proceed with a period of observation and control treatments."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Operator Breeze was born in one of Victoria's small border counties, to an ancient aristocratic family. Her clan was particularly rigid in their adherence to ancient rules of nobility, meaning they were left behind by the waves of development that swept over Victoria, giving Breeze certain ideas about leaving home. Like many young people looking for better lives, Breeze left Victoria to travel alone, against the fervent objections of her parents. Once she was free of her hometown, she began to realize the degree to which she had been shackled by aristocratic dogma. Little by little, Breeze began to experience what life truly was. And her talent for medicine taught her to focus on the present, pushing her to save more and more of the displaced innocents of the world."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Thanks to a period of foreign study in her early years, Breeze's medical prowess has not been limited in either clinical or theoretical respects. The young girl with the jet black staff strides through refugee camps and shelters all the year round. Although she is often mistaken for some kind of missionary cultist and sent away, her excellent healing Arts have saved many lives. Breeze does not rely too much on Originium Arts, nor does she rely too much on pharmacology or equipment. On the contrary, she does what she can on the fringes of the art, making especially good use of herbal medicines. She can often be seen out in the fields picking herbs with a big smile on her face, making her famous in many towns and villages. In a way, Breeze, who never considered herself part of the nobility, is fulfilling an aristocratic duty to the people. Maybe."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Wh- while it may not be right to compare her to Miss Franka, I think Miss Breeze is also something of a mischievous Vulpo girl. Since becoming friendly with me, she never misses an opportunity to tease or taunt me. Could this be some racial aptitude of the Vulpo? Addendum: While Miss Breeze will indeed tease her friends, it is only after they return fire, so to speak, that she considers it truly open season. Yes, although it can be hard to shoot back, after getting used to it, I think Miss Breeze is actually quite nice? I'm not sure if Liskarm actually needs this information...\n--Record of an anonymous operator."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "The mighty oak will be felled by the storm, while only the little grass will remain. \nIn such times, it does not matter where Breeze's staff comes from. It may be the correct choice for her and her family to stay as they are. The world has little need of more strongmen or conspirators. It is unfortunate that she became Infected, but Breeze is still doing what she can for those common people who have yet to be crushed by the Catastrophes. \nI have nothing against people like Breeze. Not at all. She has chosen the object of her faith. She believes in hope, light, Rhodes Island, and you, Doctor. You cannot let such people down."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "The truth is, when I left home, Dad slipped a 'eulogy' into my bag, thinking I didn't know. Of course I knew. As big as my bag is, and that 'eulogy' can't even be folded... But if I think about it, it's because of all those rules and traditions that I abandoned Dad and left the family to begin with, so how is it that I end up carrying around this family heirloom, our symbol of aristocratic dogma, right here on my person? That Dad, he really is a..."
+    }
+  ]
+}

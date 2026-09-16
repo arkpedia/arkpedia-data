@@ -1,0 +1,942 @@
+{
+  "name": "Młynar",
+  "rarity": 6,
+  "class": "Guard",
+  "branch": "Liberator",
+  "faction": "Kazimierz",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DPS",
+    "Nuker"
+  ],
+  "trait": "Normally does not attack and has 0 Block; When skill is inactive, ATK gradually increases up to +200% over 40 seconds. ATK is reset when the skill ends",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "Yes",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "W Dali",
+    "Roar Against The Wilds"
+  ],
+  "ep": {
+    "Main": "Ensheath",
+    "Co-star": null
+  },
+  "internalName": "char_4064_mlynar",
+  "otherLanguages": {
+    "Simplified Chinese": "玛恩纳",
+    "Traditional Chinese": "瑪恩納",
+    "Japanese": "ムリナール",
+    "Korean": "무에나"
+  },
+  "characterInfo": {
+    "File no.": "KZ08",
+    "Illustrator": "竜崎いち",
+    "Release Date": "2023/03/31",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Rikiya Koyama",
+    "Chinese": "Wang Yuhang",
+    "English": "Anthony Howell",
+    "Korean": "Choi Hyun-soo"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "17 years",
+    "Place of Birth": "Kazimierz",
+    "Date of Birth": "December 3rd",
+    "Race": "Kuranta",
+    "Height": "191 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Excellent",
+    "Mobility": "Outstanding",
+    "Endurance": "Excellent",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Outstanding",
+    "Originium Arts Assimilation": "Excellent"
+  },
+  "talents": [
+    {
+      "name": "Wanderer",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "ATK increased to 105% when attacking. If there are 3 or more enemies nearby, ATK increased to 110%, and take 10% less damage"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 3",
+          "description": "ATK increased to 108% (+3%) when attacking. If there are 3 or more enemies nearby, ATK increased to 113% (+3%) , and take 10% less damage"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "ATK increased to 110% when attacking. If there are 3 or more enemies nearby, ATK increased to 115%, and take 15% less damage"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 3",
+          "description": "ATK increased to 113% (+3%) when attacking. If there are 3 or more enemies nearby, ATK increased to 118% (+3%) , and take 15% less damage"
+        }
+      ]
+    },
+    {
+      "name": "Unmoved",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "More likely to be attacked while deployed. When any Kazimierz Operator is attacked, reflect 15% of Młynar's ATK as True Damage"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "More likely to be attacked while deployed. When any Kazimierz Operator is attacked, reflect 18% (+3%) of Młynar's ATK as True Damage"
+        }
+      ],
+      "technique": [
+        {
+          "name": "Bait",
+          "description": "Bait enemies with taunting cages"
+        },
+        {
+          "name": "True Damage",
+          "description": "Able to deal true damage"
+        },
+        {
+          "name": "Reflection Damage",
+          "description": "Able to reflect damage onto enemies (especially ranged)"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Improves Wanderer"
+      },
+      {
+        "level": 4,
+        "benefit": "ATK +25"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Unmoved"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Młynar's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Wanderer .",
+        "New skill: Unresolved Sorrow ."
+      ],
+      "prerequisite": "Raise Młynar to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Guard Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Polyester",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock",
+          "quantity": 4
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Block +1 .",
+        "New talent: Unmoved .",
+        "New skill: Unbrilliant Glory .",
+        "Wanderer improved."
+      ],
+      "prerequisite": "Raise Młynar to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Guard Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "D32 Steel",
+          "quantity": 4
+        },
+        {
+          "name": "Incandescent Alloy Block",
+          "quantity": 5
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Unvoiced Anger",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20–30 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attacks deal 130% ATK as Physical damage, DEF +20%",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attacks deal 135% ATK as Physical damage, DEF +20%",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attacks deal 140% ATK as Physical damage, DEF +20%",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attacks deal 145% ATK as Physical damage, DEF +30%",
+            "initialSp": 15,
+            "spCost": 35,
+            "duration": 25
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attacks deal 150% ATK as Physical damage, DEF +30%",
+            "initialSp": 15,
+            "spCost": 35,
+            "duration": 25
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attacks deal 160% ATK as Physical damage, DEF +30%",
+            "initialSp": 15,
+            "spCost": 35,
+            "duration": 25
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attacks deal 170% ATK as Physical damage, DEF +40%",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attacks deal 180% ATK as Physical damage, DEF +45%",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attacks deal 190% ATK as Physical damage, DEF +50%",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 30
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attacks deal 200% ATK as Physical damage, DEF +60%",
+            "initialSp": 15,
+            "spCost": 30,
+            "duration": 30
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 9
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 7
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Unresolved Sorrow",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "20 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack interval increases , attack range increased , attacks deal 100% ATK as Physical damage twice . If an enemy has been defeated while skill is active, Trait effect is not reset when skill expires. This can be manually deactivated. (Skill can be halted at any time while active)",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack interval increases , attack range increased , attacks deal 110% ATK as Physical damage twice . If an enemy has been defeated while skill is active, Trait effect is not reset when skill expires. This can be manually deactivated. (Skill can be halted at any time while active)",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack interval increases , attack range increased , attacks deal 120% ATK as Physical damage twice . If an enemy has been defeated while skill is active, Trait effect is not reset when skill expires. This can be manually deactivated. (Skill can be halted at any time while active)",
+            "initialSp": 10,
+            "spCost": 40,
+            "duration": 20
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack interval increases , attack range increased , attacks deal 130% ATK as Physical damage twice . If an enemy has been defeated while skill is active, Trait effect is not reset when skill expires. This can be manually deactivated. (Skill can be halted at any time while active)",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack interval increases , attack range increased , attacks deal 140% ATK as Physical damage twice . If an enemy has been defeated while skill is active, Trait effect is not reset when skill expires. This can be manually deactivated. (Skill can be halted at any time while active)",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack interval increases , attack range increased , attacks deal 150% ATK as Physical damage twice . If an enemy has been defeated while skill is active, Trait effect is not reset when skill expires. This can be manually deactivated. (Skill can be halted at any time while active)",
+            "initialSp": 10,
+            "spCost": 35,
+            "duration": 20
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack interval increases , attack range increased , attacks deal 160% ATK as Physical damage twice . If an enemy has been defeated while skill is active, Trait effect is not reset when skill expires. This can be manually deactivated. (Skill can be halted at any time while active)",
+            "initialSp": 10,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack interval increases , attack range increased , attacks deal 170% ATK as Physical damage twice . If an enemy has been defeated while skill is active, Trait effect is not reset when skill expires. This can be manually deactivated. (Skill can be halted at any time while active)",
+            "initialSp": 10,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack interval increases , attack range increased , attacks deal 180% ATK as Physical damage twice . If an enemy has been defeated while skill is active, Trait effect is not reset when skill expires. This can be manually deactivated. (Skill can be halted at any time while active)",
+            "initialSp": 10,
+            "spCost": 30,
+            "duration": 20
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack interval increases , attack range increased , attacks deal 190% ATK as Physical damage twice . If an enemy has been defeated while skill is active, Trait effect is not reset when skill expires. This can be manually deactivated. (Skill can be halted at any time while active)",
+            "initialSp": 10,
+            "spCost": 25,
+            "duration": 20
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 4
+            },
+            {
+              "name": "Coagulating Gel",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 4
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Unbrilliant Glory",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "25–28 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack range increased , Trait effect increases by 2 x (Trait multiplier -10% for each enemy defeated), attacks hit 5 targets for 110% ATK as Physical damage. When an enemy within range is attacked by a Kazimierz Operator , deal an extra 8% of Młynar's ATK as True damage.",
+            "initialSp": 10,
+            "spCost": 55,
+            "duration": 25
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack range increased , Trait effect increases by 2 x (Trait multiplier -10% for each enemy defeated), attacks hit 5 targets for 115% ATK as Physical damage. When an enemy within range is attacked by a Kazimierz Operator, deal an extra 8% of Młynar's ATK as True damage.",
+            "initialSp": 10,
+            "spCost": 55,
+            "duration": 25
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack range increased , Trait effect increases by 2 x (Trait multiplier -10% for each enemy defeated), attacks hit 5 targets for 120% ATK as Physical damage. When an enemy within range is attacked by a Kazimierz Operator, deal an extra 8% of Młynar's ATK as True damage.",
+            "initialSp": 10,
+            "spCost": 55,
+            "duration": 25
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack range increased , Trait effect increases by 2 x (Trait multiplier -10% for each enemy defeated), attacks hit 5 targets for 125% ATK as Physical damage. When an enemy within range is attacked by a Kazimierz Operator, deal an extra 10% of Młynar's ATK as True damage.",
+            "initialSp": 15,
+            "spCost": 50,
+            "duration": 26
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack range increased , Trait effect increases by 2 x (Trait multiplier -10% for each enemy defeated), attacks hit 5 targets for 130% ATK as Physical damage. When an enemy within range is attacked by a Kazimierz Operator, deal an extra 10% of Młynar's ATK as True damage.",
+            "initialSp": 15,
+            "spCost": 50,
+            "duration": 26
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack range increased , Trait effect increases by 2 x (Trait multiplier -10% for each enemy defeated), attacks hit 5 targets for 140% ATK as Physical damage. When an enemy within range is attacked by a Kazimierz Operator, deal an extra 10% of Młynar's ATK as True damage.",
+            "initialSp": 15,
+            "spCost": 50,
+            "duration": 26
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack range increased , Trait effect increases by 2 x (Trait multiplier -10% for each enemy defeated), attacks hit 5 targets for 150% ATK as Physical damage. When an enemy within range is attacked by a Kazimierz Operator, deal an extra 11% of Młynar's ATK as True damage.",
+            "initialSp": 20,
+            "spCost": 45,
+            "duration": 26
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack range increased , Trait effect increases by 2 x (Trait multiplier -10% for each enemy defeated), attacks hit 5 targets for 160% ATK as Physical damage. When an enemy within range is attacked by a Kazimierz Operator, deal an extra 11% of Młynar's ATK as True damage.",
+            "initialSp": 20,
+            "spCost": 45,
+            "duration": 27
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack range increased , Trait effect increases by 2 x (Trait multiplier -10% for each enemy defeated), attacks hit 5 targets for 170% ATK as Physical damage. When an enemy within range is attacked by a Kazimierz Operator, deal an extra 11% of Młynar's ATK as True damage.",
+            "initialSp": 20,
+            "spCost": 45,
+            "duration": 27
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack range increased , Trait effect increases by 2 x (Trait multiplier -10% for each enemy defeated), attacks hit 5 targets for 180% ATK as Physical damage. When an enemy within range is attacked by a Kazimierz Operator, deal an extra 12% of Młynar's ATK as True damage.",
+            "initialSp": 20,
+            "spCost": 42,
+            "duration": 28
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "Mlynar's default skill at destroying enemies on use. Won't go wrong giving masteries for this."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 4
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 6
+            },
+            {
+              "name": "Crystalline Circuit",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 5
+        },
+        {
+          "name": "Sugar Substitute",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        },
+        {
+          "name": "Polyester",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Crystalline Component",
+          "quantity": 6
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Semi-Synthetic Solvent",
+          "quantity": 3
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 4
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Self-Absorbed",
+      "facility": "Control Center",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by +0.05 per hour."
+    },
+    {
+      "name": "Business Is Business",
+      "facility": "Control Center",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to the Control Center, working Operators in certain facilities will recover +0.1 Morale per hour, and some skills in the Control Center will provide additional Morale recovery for Operators working in other facilities"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Młynar's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "LIB-X: \"Man in Scabbard\"",
+      "mission": {
+        "requirement1": "Deal a total of 120,000 damage with your own Młynar",
+        "requirement2": "Clear Main Theme 11-15 with a 3-star rating under Standard Environment; You must deploy your own Młynar and have him use Unbrilliant Glory at least 2 times"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +225 , ATK +18 , ASPD +5",
+          "effectLabel": "New trait",
+          "effectText": "Directly gains +100% charge after deployment",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +270 , ATK +27 , ASPD +6",
+          "effectLabel": "Wanderer improved",
+          "effectText": "ATK increased to 115% when attacking. If there are 3 or more enemies nearby, ATK increased to 120%, and take 20% less damage",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +360 , ATK +35 , ASPD +7",
+          "effectLabel": "Wanderer improved",
+          "effectText": "ATK increased to 120% when attacking. If there are 3 or more enemies nearby, ATK increased to 125%, and take 25% less damage",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Młynar Nearl, the former head of the\nNearl household\nand the uncle of\nOperators\nNearl\nand\nBlemishine\n, has yet to receive a knight title of any kind.\nRoughly two months after the\nKazimierz Major\ncame to a close\n, he accepted\nRhodes Island\n's invitation and is now assisting us with our affairs in\nKazimierz\n.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "qJF6j_zPRpo",
+      "creator": "Kay Sensei"
+    },
+    {
+      "videoId": "Ti37M66yars",
+      "creator": "FrostByte262"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1945,
+          "atk": 161,
+          "def": 239,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 10,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2560,
+          "atk": 231,
+          "def": 332,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 10,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-2"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 2560,
+          "atk": 231,
+          "def": 332,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 3241,
+          "atk": 301,
+          "def": 426,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-2"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 3241,
+          "atk": 301,
+          "def": 426,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 3,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 3906,
+          "atk": 355,
+          "def": 502,
+          "res": 15,
+          "redeploy": 70,
+          "dp": 12,
+          "block": 3,
+          "interval": 1.2
+        },
+        "rangeId": "1-2"
+      }
+    ],
+    "trust": {
+      "hp": 360,
+      "atk": 30,
+      "def": 0
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Młynar shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.14u/L\nAt one point, Operator Młynar spent an extended period of time in the wilderness. As such, his numbers are slightly higher than average for an office worker in the Grand Knight Territory.\nAlthough it is unlikely that he needs a reminder, the Medical Department has nonetheless provided him with recommendations on wilderness protection, per protocol."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "We rarely get the opportunity to see Operator Młynar aboard the landship, but if you are lucky enough to run into him and he happens to have some free time, he might just give you a few words of advice at the training grounds.\nMłynar may not have formally been a campaign knight, but his combat techniques clearly take after the traditional style employed by Kazimierz's knights. It can be inferred that the Nearl family's traditional training practices were sufficient to develop his mastery over the weapons commonly used by knights. As a young man, Młynar frequently followed his father, Kirill Nearl, and his team of campaign knights as an apprentice, giving him the opportunity to accumulate combat experience under the wings of a great many outstanding knights.\nHowever, whenever he puts down his training knight shield and picks up his sword, it becomes immediately clear to everyone nearby that the sword <i>is</i> his weapon. In most historied knight families, when a young man comes of age, he often chooses to once again leave home to improve his techniques and disposition, before joining a knight order to serve Kazimierz. However, having already mastered the sword during his time as a wanderer, Młynar set himself on a different path.\n...As for his Originium Arts, from what I've heard, knights never use Arts during a duel unless their beliefs are on the line. That said, during his test, he did show us his Arts just once.\nWe've seen Nearl and Blemishine's Arts. They are always as radiant as can be, possibly scorching, unadulterated. To our surprise, though, Operator Młynar's Arts initially felt gentle, even loving. However, upon realizing the anger the flow of his golden light embodied, we had to immediately stop him from drawing his sword, so as to minimize the repair work needed after his test."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Unlike the Radiant Knight, Młynar primarily operates outside the Grand Knight Territory. Not long after he came aboard Rhodes Island and signed his agreement, he made his way back to Kazimierz. However, he did not immediately report to Rhodes Island's Kawalerielki office. In addition, he tendered his letter of resignation to his former employer in the Grand Knight Territory by mail.\nClearly, there are many in the city who view Młynar as a threat, and we can also surmise from his own account that a number of recent incidents he was involved in have affected the interests of certain individuals. Still, the retrial of a misjudged case, or the downfall of a few companies and nobles, are hardly significant in this city. At this point, rather than being concerned by all the attacks, open or covert, against his family, perhaps it's more fitting to say that having stayed in this city for ten years, he no longer feels that fighting these forces will accomplish anything.\n'We were honored to have his help during an operation. He wasn't as difficult to work with as I expected. By which I mean I thought he'd be a bossy, arrogant noble, or maybe someone who strictly followed the traditional rules of chivalry... but he simply listened and promised to give you a hand before you screwed up too badly. The only thing we had to get used to is that he never calls anyone by their codename. I mean, we do have a good number of Kazimierzian operators who use their titles from the Major as their codenames, so maybe he's got a grudge against that, but it's not that weird if you ask me.\n'...That said, it's hard not to feel bad if you make a mistake while working with him. That time, I almost screwed up the entire mission, and after that we let him make all the decisions.\n'He gives smooth, efficient plans. It doesn't seem like he cares whether you can actually follow them or not, though. I remember him asking us to split up to stop a couple commercial knights from tailing us. How were we supposed to find them? How would we stop them? Can we knock them out? Is it okay if we blow the roads up? He didn't discuss any of that with us.\n'I guess he's probably more used to working alone? I mean, all of us did our own thing and finished our own objectives with no communication whatsoever, and somehow it all just worked out... I'm really curious. What kind of man does it take to get used to doing things the way he does? And what got him doing things like that in the first place?'"
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "[Classified Log]\nBased on available data, the Nearl couple was active on the battlefield for an exceedingly short period of time. The two of them rose to prominence twenty-five years ago when they fought under the same knight order's banner during the campaign knights' invasion of Ursus, with Schnitz taking over command during a crucial battle when the knight captain was gravely injured, and leaving a deep impression on the soldiers from both sides. However, that was their last notable accomplishment. Their disappearance without a trace over a decade ago seems to have marked a turning point in the fate of this generation of the Nearl family. As Rhodes Island has expressed our willingness to help locate them, Młynar agreed to have a conversation with us on the matter.\nDuring our conversation, we learned that Yolanta Nearl was also born into an established knight family and had been on good terms with the Nearls since she was young. She had originally intended to join the Silverlance Pegasus when she became a campaign knight, but Schnitz insisted that she would be more effective on the battlefield with a bow than a silverlance.\n'He arrived at that conclusion the moment she released her bowstring for the first time,' said Młynar, without elaborating further. Yolanta quickly proved Schnitz correct with her performance during the campaign, and her extraordinary talent in and understanding of Originium Arts made her particularly effective when deployed in positions overlooking the entire battlefield.\nAs for his brother Schnitz, Młynar had only this to say: 'He is my brother.'\nPerhaps it is because of how well he knew them, but despite the passage of time and the fact that everyone, including their daughters Margaret and Maria, has already accepted that they might be dead, Młynar continues to search for his brother and sister-in-law. When asked if he had any new leads, he shook his head, though it seemed his doubts on the matter were stronger than ever."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Before joining Rhodes Island, Młynar worked at a medium-sized corporation that primarily sold construction materials. Mieszko Industries is its biggest shareholder, and the company has had a stable fiscal performance. It has not faced any significant charges and has no obvious connections to the nobility. It's merely one of Kazimierz's countless unremarkable companies. While prevailing rumors at the time suggested that the Nearls' younger son would join either the Adeptus Sprawiedliwi or the Knights Association and eventually take over the family's Knight Primus title from the ailing Kirill, the decision that Młynar ultimately made was perhaps influenced by some external factor, or his disappointment with Kazimierz.\nBut we've met many disappointed men. The real question is what made him decide to do something <i>now</i>, and how much of his strength he's willing to lend to Rhodes Island.\nMłynar joined Rhodes Island after the Infected disturbances across the Dzwonek region. The Adeptus Sprawiedliwi successfully kept the word of the incident from spreading, thus ensuring no other forces could take advantage of this information. Młynar himself did not provide much in the way of his personal perspective on the matter. However, when HR brought this up again while organizing files, he gave an unexpected response: 'I've just always thought I needed to prove Kazimierz still has a way out.'\nMłynar has also never brought up anything to do with Operators Blemishine, Whislash, or Platinum since signing his cooperation agreement with us. Nor does he interact with Flametail and the others while in Kazimierz. There has been only one instance of Młynar, Whislash, and Blemishine having a conversation, after Whislash requested a meeting, and it lasted less than ten minutes. Although the details of that conversation are unknown, our Engineering operators told us that Blemishine suddenly seemed much more energetic, as if a weight had been lifted from her heart. Even then, Młynar didn't appear to pay much more attention to the other Kazimierzian operators than before, even though many of us are just as curious about him as we are about the Radiant Knight herself.\nIt is clear that Młynar is not looking for an answer from Rhodes Island, and perhaps he does not even believe that there is an answer out there. But when he assisted us with a string of Infected problems, he displayed a sense of responsibility that definitely did not seem to come from respect towards his work. Some may believe the Land of Knights has no more room for knightly fantasies, and that the endless waves will eventually consume its cities, but how can anyone know how the next story will be written, and where the next city will be built, until they are completed?"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "[An old letter]\nI don't care, Father. Must knights prove themselves through victory? The men in the arenas never seem more brilliant simply because they manage to maul more of their opponents.\nKnights should stand with those in distress, those with nothing but the clothes on their backs. This alone I will always believe in. When you stand with the weak, failure is hardly unheard of. Rather than relishing in victory, I would rather believe that the spirit of the knighthood also encompasses the endurance of failure.\nIt's just as our family motto goes, 'Fear neither hardship nor darkness.'"
+    }
+  ]
+}

@@ -1,0 +1,1006 @@
+{
+  "name": "Lumen",
+  "rarity": 6,
+  "class": "Medic",
+  "branch": "Therapist",
+  "faction": "Iberia",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Ranged",
+  "tags": [
+    "Healing",
+    "Support"
+  ],
+  "trait": "Has a large healing range, but the healing amount on farther targets is reduced to 80%",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": {
+      "Unlock Type": "Record Restore",
+      "Unlock Location": "Sultifera Navis"
+    },
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Golden Dream",
+    "Wanderer in the Rain"
+  ],
+  "ep": {
+    "Main": "Bluish Light",
+    "Co-star": null
+  },
+  "internalName": "char_4042_lumen",
+  "otherLanguages": {
+    "Chinese": "流明",
+    "Japanese": "ルーメン",
+    "Korean": "루멘"
+  },
+  "characterInfo": {
+    "File no.": "II09",
+    "Operator Record": "Till the Lights Shine Bright",
+    "Paradox Simulation": "A Shimmer in Stormy Seas",
+    "Illustrator": "一千",
+    "Release Date": "2022/11/03",
+    "Kernel Addition Date": "N/A"
+  },
+  "characterVoices": {
+    "Japanese": "Yusuke Kobayashi",
+    "Chinese": "Sun Ye (credited as \"Gary\" in EN)",
+    "English": "Jay Rincon",
+    "Korean": "Min Seung-woo",
+    "Spanish": "Raúl Lara"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Combat Experience": "None",
+    "Place of Birth": "Iberia",
+    "Date of Birth": "June 12th",
+    "Race": "Aegir",
+    "Height": "177 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Normal",
+    "Mobility": "Normal",
+    "Endurance": "Standard",
+    "Tactical Acumen": "Normal",
+    "Combat Skill": "Normal",
+    "Originium Arts Assimilation": "Normal"
+  },
+  "talents": [
+    {
+      "name": "An Everyman's Wish",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Healing targets gain status resistance for 2 seconds. If the target's HP is above 75%, they gain status resistance for 4 seconds instead."
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Healing targets gain status resistance for 4 seconds. If the target's HP is above 75%, they gain status resistance for 6 seconds instead."
+        }
+      ]
+    },
+    {
+      "name": "Quick Fix",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "When an ally within range receives a negative status , heal them for 80% of Lumen's ATK. 12 seconds cooldown."
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "When an ally within range receives a negative status, heal them for 80% of Lumen's ATK. 10 (-2) seconds cooldown."
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -10 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Quick Fix"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Lumen's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: An Everyman's Wish .",
+        "New skill: In Downpour, Grace .",
+        "Range extended."
+      ],
+      "prerequisite": "Raise Lumen to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Medic Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Oriron",
+          "quantity": 8
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Quick Fix .",
+        "New skill: This Lantern Undying .",
+        "An Everyman's Wish improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Lumen to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Medic Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "Crystalline Electronic Unit",
+          "quantity": 4
+        },
+        {
+          "name": "Optimized Device",
+          "quantity": 5
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "In Drizzle, Privation",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack causes the target and nearby allies to receive healing equal to 25% of Lumen's ATK every second for 3 seconds",
+            "initialSp": 0,
+            "spCost": 13,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack causes the target and nearby allies to receive healing equal to 27% of Lumen's ATK every second for 3 seconds",
+            "initialSp": 0,
+            "spCost": 13,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack causes the target and nearby allies to receive healing equal to 30% of Lumen's ATK every second for 3 seconds",
+            "initialSp": 0,
+            "spCost": 13,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack causes the target and nearby allies to receive healing equal to 32% of Lumen's ATK every second for 4 seconds",
+            "initialSp": 0,
+            "spCost": 12,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack causes the target and nearby allies to receive healing equal to 35% of Lumen's ATK every second for 4 seconds",
+            "initialSp": 0,
+            "spCost": 12,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack causes the target and nearby allies to receive healing equal to 37% of Lumen's ATK every second for 4 seconds",
+            "initialSp": 0,
+            "spCost": 12,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack causes the target and nearby allies to receive healing equal to 40% of Lumen's ATK every second for 5 seconds",
+            "initialSp": 0,
+            "spCost": 11,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack causes the target and nearby allies to receive healing equal to 45% of Lumen's ATK every second for 5 seconds",
+            "initialSp": 0,
+            "spCost": 11,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack causes the target and nearby allies to receive healing equal to 50% of Lumen's ATK every second for 5 seconds",
+            "initialSp": 0,
+            "spCost": 11,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack causes the target and nearby allies to receive healing equal to 55% of Lumen's ATK every second for 5 seconds",
+            "initialSp": 0,
+            "spCost": 10,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Compound Cutting Fluid",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 6
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "In Downpour, Grace",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Restore HP equal to 120% ATK to 2 allies within range; Charged effect: Remove negative statuses from targets",
+            "initialSp": 5,
+            "spCost": 20,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Restore HP equal to 130% ATK to 2 allies within range; Charged effect: Remove negative statuses from targets",
+            "initialSp": 5,
+            "spCost": 20,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Restore HP equal to 140% ATK to 2 allies within range; Charged effect: Remove negative statuses from targets",
+            "initialSp": 5,
+            "spCost": 19,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Restore HP equal to 160% ATK to 2 allies within range; Charged effect: Remove negative statuses from targets",
+            "initialSp": 5,
+            "spCost": 19,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Restore HP equal to 170% ATK to 2 allies within range; Charged effect: Remove negative statuses from targets",
+            "initialSp": 5,
+            "spCost": 18,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Restore HP equal to 180% ATK to 2 allies within range; Charged effect: Remove negative statuses from targets",
+            "initialSp": 5,
+            "spCost": 18,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Restore HP equal to 200% ATK to 2 allies within range; Charged effect: Remove negative statuses from targets",
+            "initialSp": 5,
+            "spCost": 16,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Restore HP equal to 220% ATK to 3 allies within range; Charged effect: Remove negative statuses from targets",
+            "initialSp": 5,
+            "spCost": 15,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Restore HP equal to 240% ATK to 3 allies within range; Charged effect: Remove negative statuses from targets",
+            "initialSp": 5,
+            "spCost": 14,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Restore HP equal to 260% ATK to 3 allies within range; Charged effect: Remove negative statuses from targets",
+            "initialSp": 5,
+            "spCost": 13,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            },
+            {
+              "name": "Cutting Fluid Solution",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 6
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "This Lantern Undying",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "Toggled",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "ATK +20% , ASPD +10 , prioritizes healing units with negative statuses ; ammo is consumed if the target has a negative status , increasing healing to 120% ATK, and removing negative statuses from the target Attack has 3 ammo. Skill ends when all ammo is used (can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 65,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "ATK +23% , ASPD +10 , prioritizes healing units with negative statuses ; ammo is consumed if the target has a negative status , increasing healing to 125% ATK, and removing negative statuses from the target Attack has 3 ammo. Skill ends when all ammo is used (can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 64,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "ATK +26% , ASPD +10 , prioritizes healing units with negative statuses ; ammo is consumed if the target has a negative status , increasing healing to 130% ATK, and removing negative statuses from the target Attack has 4 ammo. Skill ends when all ammo is used (can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 63,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "ATK +30% , ASPD +20 , prioritizes healing units with negative statuses ; ammo is consumed if the target has a negative status , increasing healing to 135% ATK, and removing negative statuses from the target Attack has 4 ammo. Skill ends when all ammo is used (can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 61,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "ATK +33% , ASPD +20 , prioritizes healing units with negative statuses ; ammo is consumed if the target has a negative status , increasing healing to 140% ATK, and removing negative statuses from the target Attack has 5 ammo. Skill ends when all ammo is used (can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 60,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "ATK +36% , ASPD +20 , prioritizes healing units with negative statuses ; ammo is consumed if the target has a negative status , increasing healing to 145% ATK, and removing negative statuses from the target Attack has 5 ammo. Skill ends when all ammo is used (can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 59,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "ATK +40% , ASPD +20 , prioritizes healing units with negative statuses ; ammo is consumed if the target has a negative status , increasing healing to 150% ATK, and removing negative statuses from the target Attack has 6 ammo. Skill ends when all ammo is used (can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 57,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "ATK +45% , ASPD +30 , prioritizes healing units with negative statuses ; ammo is consumed if the target has a negative status , increasing healing to 170% ATK, and removing negative statuses from the target Attack has 6 ammo. Skill ends when all ammo is used (can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 55,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "ATK +50% , ASPD +30 , prioritizes healing units with negative statuses ; ammo is consumed if the target has a negative status , increasing healing to 185% ATK, and removing negative statuses from the target Attack has 7 ammo. Skill ends when all ammo is used (can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 53,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "ATK +55% , ASPD +30 , prioritizes healing units with negative statuses ; ammo is consumed if the target has a negative status , increasing healing to 200% ATK, and removing negative statuses from the target Attack has 8 ammo. Skill ends when all ammo is used (can manually deactivate skill)",
+            "initialSp": 0,
+            "spCost": 50,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "This skill is seen as an infinite one if not used to cleanse anyone, meaning that it can be a very high single-target healing. Otherwise, the cleanse may also be beneficial in specific stages. This would be Lumen's best skill to master."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 9
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Diketon",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 5
+        },
+        {
+          "name": "Device",
+          "quantity": 3
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 4
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 5
+        },
+        {
+          "name": "Aketon",
+          "quantity": 4
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Glimmering Glow α",
+      "facility": "Dormitory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Dormitory, restores +0.1 Morale per hour to all Operators assigned to that Dormitory, and every 1 Power Plant increases restoration by another +0.05 (Only the strongest stacked effect of this type takes place)"
+    },
+    {
+      "name": "Glimmering Glow βReplacesGlimmering Glow α",
+      "facility": "Dormitory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Dormitory, restores +0.15 Morale per hour to all Operators assigned to that Dormitory, and every 1 Power Plant increases restoration by another +0.05 (Only the strongest stacked effect of this type takes place)"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Lumen's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "WAH-X: Spyglass",
+      "mission": {
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Lumen, and unleash This Lantern Undying at least 2 times in each battle",
+        "requirement2": "Clear Main Theme 6-9 with a 3-star rating; The only Medic Operator that can be deployed is your own Lumen"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +120 , ATK +30",
+          "effectLabel": "New trait",
+          "effectText": "Gain status resistance , and become less likely to be attacked",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +140 , ATK +40",
+          "effectLabel": "An Everyman's Wish improved",
+          "effectText": "Healing targets gain status resistance for 5 seconds. If the target's HP is above 75%, they gain status resistance for 7 seconds instead.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +160 , ATK +45",
+          "effectLabel": "An Everyman's Wish improved",
+          "effectText": "Healing targets gain status resistance for 5 seconds. If the target's HP is above 75%, they gain status resistance for 8 seconds instead.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "WAH-Y: \"Luck\"",
+      "mission": {
+        "requirement1": "During battle, have Lumen use In Downpour, Grace a total of 10 times (excluding Support Units)",
+        "requirement2": "Clear Side Story OF-5 with a 3-star rating; You must deploy your own Lumen, and cannot include any other Medic Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +30 , DEF +20",
+          "effectLabel": "Trait improved",
+          "effectText": "Has a large healing range and healing is no longer reduced for distant targets",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +40 , DEF +25",
+          "effectLabel": "Quick Fix improved",
+          "effectText": "When an ally within range receives a negative status , heal them for 90% of Lumen's ATK. 11 seconds cooldown.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +45 , DEF +28",
+          "effectLabel": "Quick Fix improved",
+          "effectText": "When an ally within range receives a negative status, heal them for 100% of Lumen's ATK. 10 seconds cooldown.",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Lumen, on the recommendation of\nElysium\nand\nKal'tsit\n, is now working as a\nRhodes Island\noperator in\nIberia\n, helping render medical aid to Infected persons in Iberia's territories. Additionally, Lumen will also participate in joint meetings between Rhodes Island,\nÆgir\n, and the\nInquisition\n, offering suggestions based on his own perspectives and working with all parties to find a possibility of mutual aid in the face of future contingencies.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "tjjw3gTVBH0",
+      "creator": "FrostByte262"
+    },
+    {
+      "videoId": "INHZFyBYojw",
+      "creator": "Dagyo"
+    },
+    {
+      "videoId": "FXxvkj7ihWE",
+      "creator": "Kay Sensei"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 1000,
+          "atk": 189,
+          "def": 48,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 21,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1317,
+          "atk": 311,
+          "def": 70,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 21,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-3"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1317,
+          "atk": 311,
+          "def": 70,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 23,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1569,
+          "atk": 432,
+          "def": 88,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 23,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-4"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1569,
+          "atk": 432,
+          "def": 88,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 23,
+          "block": 1,
+          "interval": 2.85
+        },
+        "max": {
+          "hp": 1825,
+          "atk": 540,
+          "def": 111,
+          "res": 10,
+          "redeploy": 80,
+          "dp": 23,
+          "block": 1,
+          "interval": 2.85
+        },
+        "rangeId": "3-4"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 45,
+      "def": 30
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, the operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nOperator Lumen shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.12u/L\nOperator Lumen rarely comes into contact with Originium. He fully understands how to take care of others, but we hope he can pay a bit more attention to his own health and not overexert himself."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Operator Lumen, real name Jordi Fontanarossa, was born in an Iberian town on the decline named Gran Faro, and has long worked there as a caretaker for the local church. Perhaps because his guardian there was the town's mayor, Lumen's status as an Ægir Islander did not bring him any trouble for a long time, a rare occurrence in areas under the direct control of the Inquisition. \nHowever, a more likely possibility is, the person most responsible for Lumen's peaceful life is himself. Putting aside his identity or profession, this operator has an innate affinity for carefully paying attention to the needs of each person around him, and reaching out at the right time. Even if his ability to help is limited, Lumen is more than willing to be a kind and compassionate listener. Even more remarkably, he seems not to understand how precious his ability to develop sincere and strong relationships with everyone really is. \nWe should be thankful that such a rare quality took root and blossomed in Iberia, a place where life can normally be described as harrowing and harsh."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Gran Faro is a special town that once carried a whole generation's dreams of revitalization. They tried to build a fort here and once again challenge the unknown dangers of the depths brought about after the Profound Silence. Lumen's biological parents as well as Mayor Thiago, who would later look after Lumen, were all part of this project. According to Lumen's onboarding documents, his parents participated in this project as lighthouse engineers tasked with rebuilding the connection with the 'Eye of Iberia,' a lighthouse stranded in the ocean, in order to pave a way back to the ocean for the people who were unwilling to relent to calamity. They continued to believe that their work would bear fruit, even giving their lives to the cause. In an operation that was later deemed to be too reckless and ambitious, the two engineers and an entire operation team disappeared into the thick fog. \nHowever, after countless investments of time, faith, and blood, this plan was eventually abandoned. On one fateful night, the Inquisition cleaned out almost the entire town, taking away most of the Ægir Islanders. In a report that followed, the Inquisition claimed that some of the Ægir workers in the town had been corrupted by the Church of the Deep, that their foul conspiracy had been sundered, and that that just punishment had been meted out. \nLumen said that he was too young to be able to provide us with more information about this part of Gran Faro's history. But according to our information, Mayor Thiago's wife, an Ægir named 'Marin,' was taken from the town during the turmoil and never returned. \nIt may well be the case that nobody will ever know the full truth of that incident, now sealed away in some file cabinet in the Inquisition; it may also be the harsh reality that the truth no longer matters. Be it any of the witnesses of this event, or Lumen himself, only one choice remains: continue to live on, and try to prove that there is still a purpose to living."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "Lumen does not have many opportunities to visit Rhodes Island, as his work with the Inquisition does not allow him to come and go as he pleases. However, when these opportunities do come by and he gets to stay on the ship for a period of time, Lumen will almost always spend a lot of time in the Intelligence Processing Room. He thoroughly enjoys watching operation records and shows great reverence and enthusiasm towards the Doctor, as well as the operators featured in those records. Those experiences that we take for granted are legendary tales for Lumen, who stayed exclusively in his hometown since he was born. \nLumen always describes himself as an ordinary person, and seems to harbor a hidden fear in his heart about becoming an operator of Rhodes Island. Despite that, just about every operator is more than willing to work alongside Lumen. Indeed, Lumen's body and spirit are no different from ordinary people. He cannot release powerful Originium Arts, and is not an expert in any academic field. Beyond that, however, he still possesses certain qualities that are less obvious, but no less important to us: for example, extending kindness to all irrespective of identity, a determination to always keep moving forward, and courage in times of desperation. \nRhodes Island is not, and should never be, a place reserved for the 'elite.' While some of our operators do have incredible abilities, and others hold prestigious positions, our cause is not just driven by these people. Every single person who aspires to make this world a better place, every little bit of power they can contribute, enables us to stand up to this hardship-choked land. \nSo, when you find Lumen toiling away in the training grounds, or hard at work delving into the complexities of Originium Arts to no avail, it won't hurt to bring him a bottle of water and pat him on the back.\nAfter all, every little bit of progress he makes is apparent to all of us."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "[Classified Log] \n'Lord Carmen...'\n'Jordi, starting today, you will become my disciple.'\n'Y-Yes, sir.'\n'This is not some sort of reward or repayment, young man. I also don't have any great expectations for you. Frankly speaking, what you bring to the table is completely mediocre, and there's nothing else worth commending other than the little bit of medical common sense you possess. You don't even have the qualifications to be drafted into the Penal Battalion.'\n'Yessir, you're absolutely right.'\n'Yet you still stand here in front of me.'\n'I...'\n'I know what you're thinking. You deem yourself a symbol, proof that the Inquisition is changing itself, proof that Iberia is extending its hand to Ægir by recruiting an Ægirian into its ranks.'\n'......'\n'Let me ask you this, Jordi. Why did you choose to go to the Stultifera? What were you searching for there?'\n'I don't know. I just...'\n'You saw Dario die on that island with your own eyes. What do you think the Inquisition's sword and lantern exist for? Answer me, Ægir. Look at my eyes, and answer me.'\n'They exist... so that the people have the energy to wipe the dirt off their faces, Lord Carmen.'\n'What are you talking about?'\n'Erm, I didn't express myself very well...'\n'You said, so the people have the energy to wipe the dirt off their faces.'\n'......'\n'There is no way for you to become a warrior. But starting from now, I will still instruct you and train you. You must become worthy of the Inquisition's burden, and you must learn to become a part of our ranks.'\n'I, I know.'\n'Follow me, disciple. Don't forget what you told me today.'\n'Yes, Lord Carmen...'\n'Starting from today, you are to call me Master.'"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Jordi occasionally shows up at the workshop to fiddle with some odd trinkets. His level of experience is far too rudimentary, not even mentioning his technique. Even the way he holds his tools is awkward. But, the things he makes are indeed rather interesting. I asked to borrow a couple samples of his work so I could study them. They were some kind of light-emitting unit, but their light was so weak that they had no practical use. However, I can barely even speculate as to how something like that works in the first place. It seems connected to the Originium technology we are used to, yet its technical route uses an entirely different paradigm. He said, those things were based on what he saw from his parents' notes, a cheap knockoff of the lighting units used in those fabled Iberian lighthouses. \nThose notes may well be worth researching. I once had the privilege of seeing some technology brought over by a great Ægirian, and Jordi's engineering method seems to be a combination of Ægir and Originium technology. However... \nWait, hold on, if what he said is true, he learned how to make these things purely by looking over some notes? \n––Engineering Department Operator"
+    }
+  ]
+}

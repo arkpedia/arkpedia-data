@@ -1,0 +1,1033 @@
+{
+  "name": "Weedy",
+  "rarity": 6,
+  "class": "Specialist",
+  "branch": "Push Stroker",
+  "faction": "Rhodes Island",
+  "umbrellaFactions": [],
+  "connectedFactions": [
+    "Iberia"
+  ],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "Shift",
+    "DPS",
+    "Crowd-Control"
+  ],
+  "trait": "Can attack all blocked enemies Can be deployed on Ranged Tiles",
+  "howToObtain": {
+    "Limited": "No",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "Yes",
+    "Recruitment": "Yes",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [
+    "Candy Cape",
+    "Sedjem"
+  ],
+  "ep": {
+    "Main": "Sparkling Hydraulics",
+    "Co-star": null
+  },
+  "internalName": "char_400_weedy",
+  "otherLanguages": {
+    "Simplified Chinese": "温蒂",
+    "Traditional Chinese": "溫蒂",
+    "Japanese": "ウィーディ",
+    "Korean": "위디"
+  },
+  "characterInfo": {
+    "File no.": "R117",
+    "Operator Records": "Together Aboard The Sea Breeze on the Salt Flat",
+    "Paradox Simulation": "Ready and Prepared",
+    "Illustrator": "下野宏铭",
+    "Release Date": "2020/12/30",
+    "Kernel Addition Date": "2024/12/17"
+  },
+  "characterVoices": {
+    "Japanese": "Maria Naganawa",
+    "Chinese": "Song Yuanyuan (credited as \"Esther\" in EN)",
+    "English": "Maya Graydon",
+    "Korean": "Oh Roah",
+    "Spanish": "Marina Romero"
+  },
+  "basicInfo": {
+    "Gender": "Female",
+    "Combat Experience": "3 years",
+    "Place of Birth": "Iberia",
+    "Date of Birth": "January 23rd",
+    "Race": "Aegir",
+    "Height": "155 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Standard",
+    "Mobility": "Standard",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Excellent",
+    "Combat Skill": "Standard",
+    "Originium Arts Assimilation": "Standard"
+  },
+  "talents": [
+    {
+      "name": "Industrial Water Cannon",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "Can deploy a Reserve Water Cannon that lasts for 15s; the Water Cannon can attack 1 target and push it away slightly"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Can deploy a Reserve Water Cannon that lasts for 20s; the Water Cannon can attack 1 target and push it away slightly"
+        }
+      ]
+    },
+    {
+      "name": "Upgraded Water Cannon",
+      "rows": [
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "Increases the shift level of the Water Cannon 's normal attacks and skills by 1, and Weedy will restore 1 SP per 3 seconds if the Water Cannon is located within 4 tiles of her"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ASPD +8"
+      },
+      {
+        "level": 5,
+        "benefit": "Max HP +140"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Weedy's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Industrial Water Cannon .",
+        "New skill: Hydraulics Mode ."
+      ],
+      "prerequisite": "Raise Weedy to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 30000
+        },
+        {
+          "name": "Specialist Chip",
+          "quantity": 5
+        },
+        {
+          "name": "Device",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 3
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "New talent: Upgraded Water Cannon .",
+        "New skill: Liquid Nitrogen Cannon .",
+        "Industrial Water Cannon improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Weedy to Elite 1 Level 80.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 180000
+        },
+        {
+          "name": "Specialist Dualchip",
+          "quantity": 4
+        },
+        {
+          "name": "D32 Steel",
+          "quantity": 4
+        },
+        {
+          "name": "Manganese Trihydrate",
+          "quantity": 6
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Barrel Burst",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "The next attack pushes the targets towards attack direction slightly , dealing 105% ATK as Physical damage and Stunning them for 0.8 second(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "The next attack pushes the targets towards attack direction slightly , dealing 110% ATK as Physical damage and Stunning them for 0.8 second(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "The next attack pushes the targets towards attack direction slightly , dealing 115% ATK as Physical damage and Stunning them for 0.8 second(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "The next attack pushes the targets towards attack direction moderately , dealing 120% ATK as Physical damage and Stunning them for 0.8 second(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "The next attack pushes the targets towards attack direction moderately , dealing 125% ATK as Physical damage and Stunning them for 0.8 second(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "The next attack pushes the targets towards attack direction moderately , dealing 130% ATK as Physical damage and Stunning them for 0.8 second(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "The next attack pushes the targets towards attack direction moderately , dealing 135% ATK as Physical damage and Stunning them for 0.9 second(s)",
+            "initialSp": 0,
+            "spCost": 6,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "The next attack pushes the targets towards attack direction moderately , dealing 140% ATK as Physical damage and Stunning them for 1 second(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "The next attack pushes the targets towards attack direction moderately , dealing 145% ATK as Physical damage and Stunning them for 1.1 second(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "The next attack pushes the targets towards attack direction greatly , dealing 150% ATK as Physical damage and Stunning them for 1.2 second(s)",
+            "initialSp": 0,
+            "spCost": 5,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m1",
+            "order": "2nd",
+            "priority": "sub",
+            "explanation": "Mastery 1 will allow for a low SP cost skill to push enemies more frequently. Provide if making Weedy your 'main' pusher."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Manganese Trihydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Integrated Device",
+              "quantity": 4
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 4
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 9
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 5
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Hydraulics Mode",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Auto",
+        "duration": "Unlimited",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Attack Interval increases , ATK +110% , Attack Range extends by +1 and becomes a long-range AoE attack, attacks now push enemies away very slightly Unlimited duration",
+            "initialSp": 0,
+            "spCost": 90,
+            "duration": "∞"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Attack Interval increases , ATK +120% , Attack Range extends by +1 and becomes a long-range AoE attack, attacks now push enemies away very slightly Unlimited duration",
+            "initialSp": 0,
+            "spCost": 88,
+            "duration": "∞"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Attack Interval increases , ATK +130% , Attack Range extends by +1 and becomes a long-range AoE attack, attacks now push enemies away very slightly Unlimited duration",
+            "initialSp": 0,
+            "spCost": 86,
+            "duration": "∞"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Attack Interval increases , ATK +140% , Attack Range extends by +1 and becomes a long-range AoE attack, attacks now push enemies away slightly Unlimited duration",
+            "initialSp": 0,
+            "spCost": 84,
+            "duration": "∞"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Attack Interval increases , ATK +150% , Attack Range extends by +1 and becomes a long-range AoE attack, attacks now push enemies away slightly Unlimited duration",
+            "initialSp": 0,
+            "spCost": 82,
+            "duration": "∞"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Attack Interval increases , ATK +160% , Attack Range extends by +1 and becomes a long-range AoE attack, attacks now push enemies away slightly Unlimited duration",
+            "initialSp": 0,
+            "spCost": 80,
+            "duration": "∞"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Attack Interval increases , ATK +170% , Attack Range extends by +1 and becomes a long-range AoE attack, attacks now push enemies away slightly Unlimited duration",
+            "initialSp": 0,
+            "spCost": 78,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Attack Interval increases , ATK +180% , Attack Range extends by +1 and becomes a long-range AoE attack, attacks now push enemies away slightly Unlimited duration",
+            "initialSp": 0,
+            "spCost": 76,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Attack Interval increases , ATK +190% , Attack Range extends by +2 and becomes a long-range AoE attack, attacks now push enemies away slightly Unlimited duration",
+            "initialSp": 0,
+            "spCost": 74,
+            "duration": "∞"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Attack Interval increases , ATK +200% , Attack Range extends by +2 and becomes a long-range AoE attack, attacks now push enemies away moderately Unlimited duration",
+            "initialSp": 0,
+            "spCost": 70,
+            "duration": "∞"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "This skill allows for a constant pushing against low-weight and up to average movement speed enemies, good for laneholding. You may find surprising situations where this is nice to use."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 4
+            },
+            {
+              "name": "Loxic Kohl",
+              "quantity": 7
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 6
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 6
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Liquid Nitrogen Cannon",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": null,
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Immediately fires a compressed liquid nitrogen cannon, dealing 260% Arts damage in an area and pushing enemies away moderately ; For 4 seconds, enemies hit by this ability take True Damage proportional to the distance traveled; If the Reserve Water Cannon is located within 4 tiles, it will also activate this ability",
+            "initialSp": 10,
+            "spCost": 43,
+            "duration": "–"
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Immediately fires a compressed liquid nitrogen cannon, dealing 270% Arts damage in an area and pushing enemies away moderately ; For 4 seconds, enemies hit by this ability take True Damage proportional to the distance traveled; If the Reserve Water Cannon is located within 4 tiles, it will also activate this ability",
+            "initialSp": 11,
+            "spCost": 42,
+            "duration": "–"
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Immediately fires a compressed liquid nitrogen cannon, dealing 280% Arts damage in an area and pushing enemies away moderately ; For 4 seconds, enemies hit by this ability take True Damage proportional to the distance traveled; If the Reserve Water Cannon is located within 4 tiles, it will also activate this ability",
+            "initialSp": 12,
+            "spCost": 41,
+            "duration": "–"
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Immediately fires a compressed liquid nitrogen cannon, dealing 290% Arts damage in an area and pushing enemies away moderately ; For 5 seconds, enemies hit by this ability take True Damage proportional to the distance traveled; If the Reserve Water Cannon is located within 4 tiles, it will also activate this ability",
+            "initialSp": 13,
+            "spCost": 40,
+            "duration": "–"
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Immediately fires a compressed liquid nitrogen cannon, dealing 300% Arts damage in an area and pushing enemies away moderately ; For 5 seconds, enemies hit by this ability take True Damage proportional to the distance traveled; If the Reserve Water Cannon is located within 4 tiles, it will also activate this ability",
+            "initialSp": 14,
+            "spCost": 39,
+            "duration": "–"
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Immediately fires a compressed liquid nitrogen cannon, dealing 310% Arts damage in an area and pushing enemies away moderately ; For 5 seconds, enemies hit by this ability take True Damage proportional to the distance traveled; If the Reserve Water Cannon is located within 4 tiles, it will also activate this ability",
+            "initialSp": 15,
+            "spCost": 38,
+            "duration": "–"
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Immediately fires a compressed liquid nitrogen cannon, dealing 320% Arts damage in an area and pushing enemies away greatly ; For 6 seconds, enemies hit by this ability take True Damage proportional to the distance traveled; If the Reserve Water Cannon is located within 4 tiles, it will also activate this ability",
+            "initialSp": 16,
+            "spCost": 37,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Immediately fires a compressed liquid nitrogen cannon, dealing 330% Arts damage in an area and pushing enemies away greatly ; For 6 seconds, enemies hit by this ability take True Damage proportional to the distance traveled; If the Reserve Water Cannon is located within 4 tiles, it will also activate this ability",
+            "initialSp": 17,
+            "spCost": 36,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Immediately fires a compressed liquid nitrogen cannon, dealing 340% Arts damage in an area and pushing enemies away greatly ; For 7 seconds, enemies hit by this ability take True Damage proportional to the distance traveled; If the Reserve Water Cannon is located within 4 tiles, it will also activate this ability",
+            "initialSp": 18,
+            "spCost": 35,
+            "duration": "–"
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Immediately fires a compressed liquid nitrogen cannon, dealing 350% Arts damage in an area and pushing enemies away significantly ; For 8 seconds, enemies hit by this ability take True Damage proportional to the distance traveled; If the Reserve Water Cannon is located within 4 tiles, it will also activate this ability",
+            "initialSp": 20,
+            "spCost": 33,
+            "duration": "–"
+          }
+        ],
+        "recommendation": [
+          {
+            "mastery": "m3",
+            "order": "1st",
+            "priority": "main",
+            "explanation": "Giant blast against low-weight enemies will allow you to deal a high amount of true damage, preferably used in wide lanes. Prioritise this skill over Skill 2 if you see yourself using this more."
+          }
+        ],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 8
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 4
+            },
+            {
+              "name": "Manganese Ore",
+              "quantity": 5
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 12
+            },
+            {
+              "name": "White Horse Kohl",
+              "quantity": 4
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 8
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 15
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 6
+            },
+            {
+              "name": "Polymerized Gel",
+              "quantity": 7
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": [
+          {
+            "name": "Damage Over Time",
+            "description": "Enemies incur a damage per second for a certain duration"
+          },
+          {
+            "name": "True Damage",
+            "description": "Able to deal true damage"
+          },
+          {
+            "name": "AOE Nuke",
+            "description": "Group enemies closely together to deal maximum big damage"
+          }
+        ]
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 5
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        },
+        {
+          "name": "Ester",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 7
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Sugar",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 4
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 8
+        },
+        {
+          "name": "Loxic Kohl",
+          "quantity": 7
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 8
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 5
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 4
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Automation β",
+      "facility": "Factory",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Factory, the productivity contributed by all other Operators in that Factory becomes 0 (excluding productivity granted based on facility count), but each Power Plant increases that Factory's productivity by +10%"
+    },
+    {
+      "name": "Bionic SeadragonReplacesAutomation β",
+      "facility": "Factory",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Factory, the productivity contributed by all other Operators in that Factory becomes 0 (excluding productivity granted based on facility count), but each Power Plant increases that Factory's productivity by +15%"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Weedy's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "PUS-X: Custom Bionic Seadragon",
+      "mission": {
+        "requirement1": "Deal a total of 100,000 damage with Weedy [ note 1 ] (excluding Support Units)",
+        "requirement2": "Clear Side Story BI-5 with a 3-star rating; You must deploy your own Weedy, and cannot include any other Specialist Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +140 , ATK +50",
+          "effectLabel": "Trait improved",
+          "effectText": "Simultaneously attacks all blocked enemies Can be deployed on ranged tiles, and refunds half the DP cost of this deployment",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +180 , ATK +64",
+          "effectLabel": "Upgraded Water Cannon improved",
+          "effectText": "Increases the shift level of the Water Cannon 's normal attacks and skills by 1; Weedy gains +15% ATK and restores 1 SP per 2.5 seconds if the Water Cannon is located within 4 tiles of her",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +210 , ATK +72",
+          "effectLabel": "Upgraded Water Cannon improved",
+          "effectText": "Increases the shift level of the Water Cannon's normal attacks and skills by 1; Weedy gains +20% ATK and restores 1 SP per 2 seconds if the Water Cannon is located within 4 tiles of her",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "D32 Steel",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Upgrade",
+      "name": "PUS-Y: New Bionic Prototype",
+      "mission": {
+        "requirement1": "Summon a total of 10 Industrial Water Cannons with Weedy (excluding Support Units)",
+        "requirement2": "Clear Side Story IC-6 with a 3-star rating; You must deploy your own Weedy, and cause at least 6 Alcohol Lovers to fall in a pit"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "ATK +46 , DEF +30",
+          "effectLabel": "Trait improved",
+          "effectText": "Simultaneously attacks all blocked enemies ; When blocking 2 or more enemies, increases shift level by 1 Can be deployed on ranged tiles",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "ATK +60 , DEF +36",
+          "effectLabel": "Industrial Water Cannon improved",
+          "effectText": "Can deploy a Reserve Water Cannon that lasts for 20s; the Water Cannon can attack 1 target and push it away slightly; Water Cannon redeployment time reduced by 5s",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "ATK +68 , DEF +40",
+          "effectLabel": "Industrial Water Cannon improved",
+          "effectText": "Can deploy a Reserve Water Cannon that lasts for 20s; the Water Cannon can attack 1 target and push it away slightly; Water Cannon redeployment time reduced by 8s",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Bipolar Nanoflake",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Weedy, a bioengineering expert who was born into a family of\nIberian\nscientists, is a researcher who has been with\nRhodes Island\nsince its establishment.\nAfter a long period of testing and adjustment, she has finally completed a customized weapon for herself. She has chosen to become an\noperator\nof her own free will, providing long-ranged support to other operators on the battlefield.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [
+    {
+      "type": "unit",
+      "values": [
+        "Angelina",
+        "Ho'olheyak"
+      ],
+      "description": "Gives assistance to Weedy by lowering enemies' weights"
+    }
+  ],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [
+    {
+      "videoId": "j7fsH6AWBDA",
+      "creator": "SharkyFerret"
+    },
+    {
+      "videoId": "fboW9nUFemA",
+      "creator": "FrostByte262"
+    }
+  ],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 984,
+          "atk": 295,
+          "def": 163,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1313,
+          "atk": 411,
+          "def": 248,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 19,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1313,
+          "atk": 411,
+          "def": 248,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 1663,
+          "atk": 548,
+          "def": 327,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 90,
+        "base": {
+          "hp": 1663,
+          "atk": 548,
+          "def": 327,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 2,
+          "interval": 1.2
+        },
+        "max": {
+          "hp": 2133,
+          "atk": 677,
+          "def": 394,
+          "res": 0,
+          "redeploy": 70,
+          "dp": 21,
+          "block": 2,
+          "interval": 1.2
+        },
+        "rangeId": "1-1"
+      }
+    ],
+    "trust": {
+      "hp": 0,
+      "atk": 45,
+      "def": 45
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected. \n\n[Cell-Originium Assimilation] 0%\nOperator Weedy has no signs of Originium infections. \n\n[Blood Originium-Crystal Density] 0.12u/L\nOperator Weedy utilizes comprehensive protection when coming in contact with Originium. \n\nIf Weedy can still get infected despite all these protective measures, then life on Terra can no longer persist. \n—Gavial"
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "Weedy is a scientist and a bit of a neat-freak. \nUnder normal circumstances, she is never seen in public. When interacting with others, if she notices anything untidy about her interlocutor's appearance, she will courteously but bluntly point it out with the expectation that it will be fixed immediately. Otherwise, the conversation will come to an abrupt end. \nFor this reason, Miss Closure, Weedy's immediate supervisor and renowned slob, has difficulty lifting her head when talking to Weedy - a rare sight to behold indeed."
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Bioengineering is a discipline that has emerged only recently. Scientists have found that by combining biological theory with the experience of engineering, they are in a better position to solve various problems encountered in the fields of biology and medicine. This new discipline quickly became closely linked to the practice of medicine. \nEspecially for a company like Rhodes Island that seeks to develop drugs to inhibit and treat Oripathy, a bioengineering laboratory can be said to be a necessity. \nHowever, even if Rhodes Island offers a favorable salary compared to the rest of the industry, it is well-known as a pharmaceutical company that specializes in Originium research and Oripathy treatment. Naturally, these are subjects that would discourage most people. \nBut even setting this point aside, the fact that Rhodes Island needs to be mobile, and the existence of tech companies such as Rhine Lab that can provide a better baseline, has caused Rhodes Island to be at a disadvantage when competing for talent. \nFurthermore, Rhodes Island is not purely a pharmaceutical company, and many prospective employees decide to leave after learning about Rhodes Island's true purpose. \nAll in all, despite the considerable successes of Closure's Engineering Department in attracting a vast amount of talent, Rhodes Island's recruiting efforts are far from enough to meet the scope of the challenges. Closure can often be heard complaining about these difficulties, but she knows that there is little that can be done to improve the situation. \nDespite these conditions, there is, according to Closure, one department that she never has to worry about, and that is the Bioengineering Department led by Weedy."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "While people have joined Rhodes Island from the various corners of Terra, a bioengineer from Iberia is a strange sight indeed. \nFirst, as everyone knows, Iberia has been blocked off from the rest of the world. \nSecond, though completely unsubstantiated, is the idea that Iberia is some backwards and xenophobic place. \nIn fact, the inverse is true. Setting aside the complicated relationship between Laterano and Ægir, Iberia is a land full of flair and friendly to scientific research, although this friendship is conditional. \nA tacit understanding exists within the scientific community that one is free to conduct whatever research they choose within certain fields; and undeniably, Iberia has made substantial achievements in these fields. However, some fields of research are completely forbidden; or perhaps more accurately, in Iberia, those fields of research do not exist. \nTo do justice to the modern history behind this situation would require an entire encyclopedia's worth of writing, so I will omit that here. However, bioengineering does exist in Iberia, or Weedy would not have been able to become an expert in the field at such a young age. Naturally, this was a result of her continuing her family's research. \nAdmittedly, the above description makes it sound as if Weedy is seeking asylum in Rhodes Island to escape persecution, but this is actually a necessary background explanation based upon existing intelligence. \nWeedy joined Rhodes Island simply because she no longer wanted to stay in Iberia, and wished to see more of the world. According to her own account, there were virtually no barriers to her leaving, but she was also told that it would be significantly more difficult to return to Iberia - to which she had no particular sentiments. She received an offer from Rhodes Island shortly before receiving an offer from Rhine Lab. \nWeedy is not shy about mentioning her belief that Rhine Lab is better suited to her work than Rhodes Island is, but whenever this topic is brought up, she will tack on the phrase, 'but I think Rhodes Island is pretty good too.'\nOf course it is. Otherwise, she wouldn't have chosen to set foot upon the battlefield either."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Scientists who devote themselves to the study of Originium, particularly those who specialize in treating Oripathy, often find themselves at odds with other researchers because they cannot understand how their colleagues can share the same scientific spirit and yet also harbor a deep rejection of infected peoples.\nIn the past, experimenting upon infected persons was not considered immoral. Even now, there are no shortage of scientists who specialize in studying the Infected, but with the intention of proving through various means that they are of inferior birth or even deserving of death. \nEven in Rhodes Island, there are a number of researchers who only recently overcame their fear of the Infected, and still have not reached a point where they can address those individuals with kindness. \nIf this is true even among scientists who are supposed to represent the bleeding edge of knowledge, what are we to think about the beliefs of ordinary people? Sometimes, reality can be crushingly disappointing. \nHowever, there are also people like Weedy. \nHer abilities would have allowed her to find a better work environment, but she chose to stay with Rhodes Island. Her only demand towards people she is communicating with is that they remain tidy, and she does not care if they are infected or not. She is not particularly talkative, but she does attempt to use her technological expertise to help people within her means, such as making small gadgets or toys for them. \nEven her reason for joining the battlefield is as simple as it is moving:\n'Is there anything I can do for them? '"
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Weedy's physical qualities are somewhat at odds with our impressions of the Ægirians. In fact, after she successfully passed the other exams, she spent an entire three months before she was able to pass the physical component. \nOther than her physical strength and endurance, her condition is completely normal, her regimented routine with extra attention to hygiene bears mention. She is arguably even healthier than most of her fellow operators. \nTherefore, instead of worrying about her, you should perhaps strive to become more like her, from this day forward."
+    }
+  ]
+}

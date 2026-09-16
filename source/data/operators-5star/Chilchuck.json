@@ -1,0 +1,746 @@
+{
+  "name": "Chilchuck",
+  "rarity": 5,
+  "class": "Vanguard",
+  "branch": "Agent",
+  "faction": "Laios's Party",
+  "umbrellaFactions": [],
+  "connectedFactions": [],
+  "region": null,
+  "subRegion": null,
+  "position": "Melee",
+  "tags": [
+    "DP-Recovery",
+    "Fast-Redeploy"
+  ],
+  "trait": "Has reduced Redeployment Time, can use ranged attacks",
+  "howToObtain": {
+    "Limited": "Yes",
+    "Standard Headhunting": "No",
+    "Kernel Headhunting": "No",
+    "Recruitment": "No",
+    "Welfare": "No",
+    "Shop Operator": "No"
+  },
+  "alternate": null,
+  "skins": [],
+  "ep": {
+    "Main": null,
+    "Co-star": null
+  },
+  "internalName": "char_4144_chilc",
+  "otherLanguages": {
+    "Simplified Chinese": "齐尔查克",
+    "Traditional Chinese": "奇爾查克",
+    "Japanese": "チルチャック",
+    "Korean": "칠책"
+  },
+  "characterInfo": {
+    "File no.": "DD03",
+    "Illustrator": "Studio Montagne",
+    "Release Date": "2025/03/10",
+    "Kernel Addition Date": null
+  },
+  "characterVoices": {
+    "Japanese": "Asuna Tomari"
+  },
+  "basicInfo": {
+    "Gender": "Male",
+    "Dungeoneering Experience": "5 years",
+    "Place of Birth": "Eastern Continent (Self-declared)",
+    "Date of Birth": "May 18th",
+    "Race": "Half-foot (Self-declared)",
+    "Height": "110 cm",
+    "Infection Status": "Medical tests have confirmed that no infection is present."
+  },
+  "physicalExam": {
+    "Physical Strength": "Flawed",
+    "Mobility": "Standard",
+    "Endurance": "Normal",
+    "Tactical Acumen": "Standard",
+    "Combat Skill": "Flawed",
+    "Originium Arts Assimilation": "■■"
+  },
+  "talents": [
+    {
+      "name": "Keen Senses",
+      "rows": [
+        {
+          "stage": "Elite 1",
+          "potential": null,
+          "description": "For 35 seconds after deployment, Chilchuck and allied units within his range will not take damage from environmental effects or Elemental damage"
+        },
+        {
+          "stage": "Elite 1",
+          "potential": "Potential 5",
+          "description": "For 40 (+5) seconds after deployment, Chilchuck and allied units within his range will not take damage from environmental effects or Elemental damage"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": null,
+          "description": "For 45 seconds after deployment, Chilchuck and allied units within his range will not take damage from environmental effects or Elemental damage"
+        },
+        {
+          "stage": "Elite 2",
+          "potential": "Potential 5",
+          "description": "For 50 (+5) seconds after deployment, Chilchuck and allied units within his range will not take damage from environmental effects or Elemental damage"
+        }
+      ]
+    }
+  ],
+  "potential": {
+    "levels": [
+      {
+        "level": 2,
+        "benefit": "DP cost -1"
+      },
+      {
+        "level": 3,
+        "benefit": "Redeployment time -4 seconds"
+      },
+      {
+        "level": 4,
+        "benefit": "ASPD +5"
+      },
+      {
+        "level": 5,
+        "benefit": "Improves Keen Senses"
+      },
+      {
+        "level": 6,
+        "benefit": "DP cost -1"
+      }
+    ],
+    "totalCost": [
+      {
+        "name": "Chilchuck's Token",
+        "quantity": 5
+      }
+    ]
+  },
+  "promotion": [
+    {
+      "tier": "Elite 1",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "DP cost +2 .",
+        "New talent: Keen Senses .",
+        "New skill: Improvisation ."
+      ],
+      "prerequisite": "Raise Chilchuck to Level 50.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 20000
+        },
+        {
+          "name": "Vanguard Chip",
+          "quantity": 4
+        },
+        {
+          "name": "Oriron",
+          "quantity": 4
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "tier": "Elite 2",
+      "upgrades": [
+        "Maximum attributes increased.",
+        "Keen Senses improved.",
+        "Operator Modules available."
+      ],
+      "prerequisite": "Raise Chilchuck to Elite 1 Level 70.",
+      "cost": [
+        {
+          "name": "LMD",
+          "quantity": 120000
+        },
+        {
+          "name": "Vanguard Dualchip",
+          "quantity": 3
+        },
+        {
+          "name": "Refined Solvent",
+          "quantity": 9
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 7
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "skillList": [
+      {
+        "name": "Lockpicks",
+        "recoveryType": "Offensive Recovery",
+        "activationType": "Auto",
+        "duration": "3 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Stops attacking; after skill ends, obtain 1 - 7 DP randomly",
+            "initialSp": 6,
+            "spCost": 15,
+            "duration": 3
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Stops attacking; after skill ends, obtain 1 - 7 DP randomly",
+            "initialSp": 7,
+            "spCost": 15,
+            "duration": 3
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Stops attacking; after skill ends, obtain 2 - 8 DP randomly",
+            "initialSp": 7,
+            "spCost": 14,
+            "duration": 3
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Stops attacking; after skill ends, obtain 2 - 8 DP randomly",
+            "initialSp": 8,
+            "spCost": 14,
+            "duration": 3
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Stops attacking; after skill ends, obtain 3 - 9 DP randomly",
+            "initialSp": 8,
+            "spCost": 13,
+            "duration": 3
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Stops attacking; after skill ends, obtain 3 - 9 DP randomly",
+            "initialSp": 9,
+            "spCost": 13,
+            "duration": 3
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Stops attacking; after skill ends, obtain 3 - 9 DP randomly",
+            "initialSp": 9,
+            "spCost": 12,
+            "duration": 3
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Stops attacking; after skill ends, obtain 4 - 10 DP randomly",
+            "initialSp": 10,
+            "spCost": 12,
+            "duration": 3
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Stops attacking; after skill ends, obtain 4 - 10 DP randomly",
+            "initialSp": 10,
+            "spCost": 11,
+            "duration": 3
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Stops attacking; after skill ends, obtain 4 - 10 DP randomly",
+            "initialSp": 10,
+            "spCost": 10,
+            "duration": 3
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "Grindstone Pentahydrate",
+              "quantity": 3
+            },
+            {
+              "name": "Semi-Synthetic Solvent",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Refined Solvent",
+              "quantity": 3
+            },
+            {
+              "name": "Orirock Concentration",
+              "quantity": 7
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 4
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 1
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      },
+      {
+        "name": "Improvisation",
+        "recoveryType": "Auto Recovery",
+        "activationType": "Manual",
+        "duration": "10 seconds",
+        "levels": [
+          {
+            "level": 1,
+            "mastery": null,
+            "description": "Gains 30% Physical Dodge , ASPD +35 , and obtains 1 DP with every attack",
+            "initialSp": 11,
+            "spCost": 31,
+            "duration": 10
+          },
+          {
+            "level": 2,
+            "mastery": null,
+            "description": "Gains 30% Physical Dodge, ASPD +37 , and obtains 1 DP with every attack",
+            "initialSp": 11,
+            "spCost": 30,
+            "duration": 10
+          },
+          {
+            "level": 3,
+            "mastery": null,
+            "description": "Gains 30% Physical Dodge, ASPD +39 , and obtains 1 DP with every attack",
+            "initialSp": 11,
+            "spCost": 29,
+            "duration": 10
+          },
+          {
+            "level": 4,
+            "mastery": null,
+            "description": "Gains 35% Physical Dodge, ASPD +42 , and obtains 1 DP with every attack",
+            "initialSp": 12,
+            "spCost": 28,
+            "duration": 10
+          },
+          {
+            "level": 5,
+            "mastery": null,
+            "description": "Gains 35% Physical Dodge, ASPD +44 , and obtains 1 DP with every attack",
+            "initialSp": 12,
+            "spCost": 27,
+            "duration": 10
+          },
+          {
+            "level": 6,
+            "mastery": null,
+            "description": "Gains 35% Physical Dodge, ASPD +46 , and obtains 1 DP with every attack",
+            "initialSp": 12,
+            "spCost": 26,
+            "duration": 10
+          },
+          {
+            "level": 7,
+            "mastery": null,
+            "description": "Gains 38% Physical Dodge, ASPD +50 , and obtains 1 DP with every attack",
+            "initialSp": 14,
+            "spCost": 25,
+            "duration": 10
+          },
+          {
+            "level": null,
+            "mastery": 1,
+            "description": "Gains 40% Physical Dodge, ASPD +54 , and obtains 1 DP with every attack",
+            "initialSp": 15,
+            "spCost": 24,
+            "duration": 10
+          },
+          {
+            "level": null,
+            "mastery": 2,
+            "description": "Gains 42% Physical Dodge, ASPD +57 , and obtains 1 DP with every attack",
+            "initialSp": 16,
+            "spCost": 23,
+            "duration": 10
+          },
+          {
+            "level": null,
+            "mastery": 3,
+            "description": "Gains 45% Physical Dodge, ASPD +60 , and obtains 1 DP with every attack",
+            "initialSp": 17,
+            "spCost": 22,
+            "duration": 10
+          }
+        ],
+        "recommendation": [],
+        "cost": {
+          "m1": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 5
+            },
+            {
+              "name": "RMA70-24",
+              "quantity": 3
+            },
+            {
+              "name": "Sugar Pack",
+              "quantity": 3
+            }
+          ],
+          "m2": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 6
+            },
+            {
+              "name": "Optimized Device",
+              "quantity": 3
+            },
+            {
+              "name": "Incandescent Alloy Block",
+              "quantity": 4
+            }
+          ],
+          "m3": [
+            {
+              "name": "Skill Summary - 3",
+              "quantity": 10
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "Keton Colloid",
+              "quantity": 4
+            }
+          ]
+        },
+        "pairings": [],
+        "techniques": []
+      }
+    ],
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 4
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 4
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 4
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Sugar",
+          "quantity": 5
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 6
+        },
+        {
+          "name": "Orirock Cluster",
+          "quantity": 5
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 6
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 3
+        },
+        {
+          "name": "Aketon",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  "baseSkills": [
+    {
+      "name": "Half-foot Guild Representative",
+      "facility": "Trading Post",
+      "eliteLevel": "Base",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +30% and the order limit +1"
+    },
+    {
+      "name": "Familiar Flavors",
+      "facility": "Trading Post",
+      "eliteLevel": "Elite 2",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +1% for every 1 Monster Meal"
+    }
+  ],
+  "modules": [
+    {
+      "type": "Original",
+      "name": "Chilchuck's Badge",
+      "stages": []
+    },
+    {
+      "type": "Upgrade",
+      "name": "AGE-X: Authentic Locksmith's Instruments",
+      "mission": {
+        "requirement1": "During battle, have your own Chilchuck use Improvisation a total of 6 times",
+        "requirement2": "Clear Main Theme 4-3 with a 3-star rating; You must deploy your own Chilchuck and cannot include any other Vanguard Operators as members"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +150 , DEF +20 , ASPD +5",
+          "effectLabel": "New trait",
+          "effectText": "Less likely to be attacked by enemies ?",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Transmuted Salt Agglomerate",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 40000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +200 , DEF +23 , ASPD +6",
+          "effectLabel": "Keen Senses improved",
+          "effectText": "For 53 seconds after deployment, Chilchuck and allied units within his range will not take damage from environmental effects or Elemental damage",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 20
+            },
+            {
+              "name": "Cyclicene Prefab",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 50000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +300 , DEF +25 , ASPD +7",
+          "effectLabel": "Keen Senses improved",
+          "effectText": "For 60 seconds after deployment, Chilchuck and allied units within his range will not take damage from environmental effects or Elemental damage",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 2
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 8
+            },
+            {
+              "name": "Oriron Block",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 60000
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "review": {
+    "official": "Chilchuck is the member of\nLaios's party\ncharged with using his keen senses to check for traps, ensuring their safety. He came to\nRhodes Island\nto look for a way to return home, and now helps scout out terrain, detect traps, and other such tasks during our combat missions.",
+    "editor": null,
+    "rating": null
+  },
+  "synergies": [],
+  "techniques": [
+    {
+      "technique": null,
+      "techniqueDescription": null,
+      "description": null
+    }
+  ],
+  "guides": [],
+  "stats": {
+    "phases": [
+      {
+        "elite": 0,
+        "minLevel": 1,
+        "maxLevel": 50,
+        "base": {
+          "hp": 840,
+          "atk": 236,
+          "def": 97,
+          "res": 0,
+          "redeploy": 35,
+          "dp": 8,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1201,
+          "atk": 348,
+          "def": 163,
+          "res": 0,
+          "redeploy": 35,
+          "dp": 8,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "2-2"
+      },
+      {
+        "elite": 1,
+        "minLevel": 1,
+        "maxLevel": 70,
+        "base": {
+          "hp": 1201,
+          "atk": 348,
+          "def": 163,
+          "res": 0,
+          "redeploy": 35,
+          "dp": 10,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1541,
+          "atk": 459,
+          "def": 233,
+          "res": 0,
+          "redeploy": 35,
+          "dp": 10,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "2-2"
+      },
+      {
+        "elite": 2,
+        "minLevel": 1,
+        "maxLevel": 80,
+        "base": {
+          "hp": 1541,
+          "atk": 459,
+          "def": 233,
+          "res": 0,
+          "redeploy": 35,
+          "dp": 10,
+          "block": 1,
+          "interval": 1
+        },
+        "max": {
+          "hp": 1880,
+          "atk": 560,
+          "def": 277,
+          "res": 0,
+          "redeploy": 35,
+          "dp": 10,
+          "block": 1,
+          "interval": 1
+        },
+        "rangeId": "2-2"
+      }
+    ],
+    "trust": {
+      "hp": 100,
+      "atk": 0,
+      "def": 40
+    }
+  },
+  "files": [
+    {
+      "section": "Clinical Analysis",
+      "unlock": "Unlocked at 25 trust",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this operator is believed to be uninfected.\n\n[Cell-Originium Assimilation] 0%\nChilchuck shows no sign of Originium infection.\n\n[Blood Originium-Crystal Density] Undisclosed\nThe Medical Department has agreed not to disclose the relevant data."
+    },
+    {
+      "section": "Archive File 1",
+      "unlock": "Unlocked at 50 trust",
+      "description": "As part of Laios's party, Chilchuck is in charge of looking for traps, lockpicking, and planning out their routes. This keeps them safe in the labyrinthine and danger-filled dungeon, and also saves them a lot of time when making their way into its depths.\nDuring Rhodes Island field missions, Chilchuck uses his sharp senses to look for hidden dangers while helping us survey the lay of the land. His picks are able to unlock all sorts of complicated mechanical locks. However, since he takes his work extremely seriously, he dislikes people interfering when he's doing specialized tasks. The love and care he shows for his lockpicks puts all of Engineering to shame.\nChilchuck spends a lot of his day-to-day life helping out operators stuck in a pickle, like helping people locked out of their dorms. Though the first time he faced down Rhodes Island's security systems, he found his lockpicks were of nearly no use. Operators on scene described his expression as 'extremely adorable'.\n\nDo <i>not</i> let Rope near Chilchuck! We can't let her learn how to pick locks better from him!—A nervous Logistics operator"
+    },
+    {
+      "section": "Archive File 2",
+      "unlock": "Unlocked at 100 trust",
+      "description": "Some additional notes on the wilderness for Rhodes Island's field missions, courtesy of Chilchuck's rather reluctant descriptions.\n[Testaceous Vinecreeps]\nMostly seen in Sami. The plants it's comprised of are similar to the 'tentacles' and 'Man-eating plants' of the dungeon, which are capable of disguising themselves as normal plants. It hides among the trees of the forest and the underbrush. It's unknown why, but the local wildlife can recognize them and keep their distance, even giving sympathetic glances to men who have found themselves bound and strung upside-down by the feet. This tends to make the victims angrier than they already are.\nIts fruit is aromatic and delicious, and makes a good stuffing for pies. (not recommended to approach one solely for culinary purposes.)\n[Thorned Treasure Chest]\nMostly seen in the sands of Sargon. Similar to the Mimics in the dungeon. They contain random amounts of unclaimed property, which can be exchanged for goods on the black market. Opening one will trigger its counterattack. If you're careless, you'll get stabbed. Don't take them lightly without a Medic on hand. You also shouldn't poke at them if you have the sort of companion who will snidely say 'And now you know that hiding things from your buddies will just lead to suffering'.\n[Chest Seaborn]\nThese things can transform! When they're in chest form, they'll use their tentacles to wrap around their prey and drag them inside. The suckers on their tentacles are really strong. If they latch onto your skin and you somehow manage to pull them off, the marks it leaves will last for nearly a week. Pretty embarrassing.\nThe part that looks like a chest is just as tasty as the rest of it, same taste and texture really. You can also use it as a serving tray.\n\nLet us once again thank Chilchuck for these notes, and express our sympathy for his unfortunate encounters."
+    },
+    {
+      "section": "Archive File 3",
+      "unlock": "Unlocked at 150 trust",
+      "description": "'Does Chilchuck hate me?' This question has lingered in the minds of every operator he has worked with.\nWhen an operator's been locked out of their room and needs help, he'll say 'good, another paycheck for me.' He will also often say 'awesome', 'sweet', etc etc, all accompanied by an inappropriate smirk...\nThese brief outbursts have caused confusion in many operators, and have led those in charge of field missions to suspect there might have been some sort of issue with the mission arrangements. If not, why would he use such 'subtly aggressive' language?\nAfter carefully poring over the mission records, we noticed that Chilchuck is actually very enthusiastic about participating in missions which involve terrain data collection or trap detection. After completing one of these missions, he will spontaneously submit a report regarding trap construction and such to Engineering. He's even posted his daily schedule up on the notice board, all to make it easier for operators who need his help to find him. It's clear how much he cares for everyone!\nLuckily, the operators have gradually learned that he's not actually complaining about them. He just has an unorthodox way of expressing himself. All that's left is to wonder when he'll finally admit that he actually cares a lot about his teammates and the other operators."
+    },
+    {
+      "section": "Archive File 4",
+      "unlock": "Unlocked at 200 trust",
+      "description": "Though there are many Durin operators aboard Rhodes Island, everyone still assumes Chilchuck is a child at first glance. The reason is simple: Chestnut, Durin, or even Minimalist have around twenty centimeters on him. Moreover, he has a babyface, which makes it harder to believe he is an adult.\nOnce they learn that he's actually twenty-nine years old, most are shocked into silence, mentally making sure to add a 'Mister' in front of his name. What's even more shocking is learning from Marcille that not only is he married, he has three daughters who are already old enough to be independent.\nLately, the operator who most commonly asks Chilchuck out for drinks is Harold. It is unknown when this development occurred. On occasion, Hellagur will be spotted joining them, and they can be heard saying things like 'It's been a while since I saw my three daughters. I should bring them a souvenir.', 'This photo of her I keep in my pocketwatch is from when she was but a child. Isn't she cute?', as well as 'You both have such loving and understanding daughters. I don't suppose you'd know a way to get mine to accept my letters?' And so on. Many operators feel hard to join their conversations, but for whatever reason, Vulcan and Enforcer have also joined their merry band.\nPerhaps you need to be worrying about some little kid to take part."
+    },
+    {
+      "section": "Promotion Record",
+      "unlock": "Unlocked at E2",
+      "description": "Chilchuck always says he shouldn't be considered a combatant, but after a few tests, the instructors have noted his incredible accuracy in archery. The issue is that his strength is simply incapable of using a standard-issue combat bow. Maybe he can display his abilities better with a more suitable bow?\nEngineering has found the challenge a rather interesting one. Out of perfectionism, R&D into a bow that must be both light and powerful while accounting for an archer who cannot use Originium Arts was put on the schedule. It seems they even added a simple Originium cannon and lockpick set to the bow's design?\nWhatever it ends up as, you can look forward to the day Chilchuck uses this all-rounder bow."
+    }
+  ]
+}

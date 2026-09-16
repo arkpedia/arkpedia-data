@@ -1,0 +1,389 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "event",
+    "id": "act1vautochess",
+    "label": null,
+    "name": "Stronghold Protocol",
+    "release_date": "2025-05-08"
+  },
+  "enemies": [
+    {
+      "slug": "surprise_sponsor_drone",
+      "id": "enemy_9001_ayokai",
+      "name": "Surprise Sponsor Drone",
+      "index": "PM01",
+      "rank": "Elite",
+      "sort": 1567,
+      "hidden": false,
+      "icon": "/enemies-icons/Surprise Sponsor Drone.webp",
+      "flavour_text": "This type of drone typically lacks company branding, yet the crowd greets it with deafening cheers whenever it appears on the field. The reason is simple: it scatters coins when shot down.",
+      "race": "Drone",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Deals Physical damage to surrounding units upon death",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 650,
+            "def": 150,
+            "res": 20.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 1,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "D",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "boom",
+              "parameters": {
+                "atk_scale": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "sarkaz_bloodthirst_caster",
+      "id": "enemy_9002_adsham",
+      "name": "Sarkaz Bloodthirst Caster",
+      "index": "PM02",
+      "rank": "Elite",
+      "sort": 1568,
+      "hidden": false,
+      "icon": "/enemies-icons/Sarkaz Bloodthirst Caster.webp",
+      "flavour_text": "These casters spread the hunger of the bloodborn all around, allowing the Sarkaz to savor the defeat of their enemies.",
+      "race": "Sarkaz",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Periodically grants temporary ASPD and Movement Speed boosts to another enemy unit with the highest Max HP and is not currently affected by this skill",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 15000,
+            "atk": 400,
+            "def": 100,
+            "res": 60.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": 2.0,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "D",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "buffEnemy",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 3.0,
+              "priority": 0,
+              "parameters": {
+                "attack_speed": 1.5,
+                "duration": 15.0,
+                "move_speed": 2.0,
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "pathfinder_armicustos",
+      "id": "enemy_9003_askate",
+      "name": "Pathfinder Armicustos",
+      "index": "PM03",
+      "rank": "Elite",
+      "sort": 1569,
+      "hidden": false,
+      "icon": "/enemies-icons/Pathfinder Armicustos.webp",
+      "flavour_text": "A Lateran pushing around boxes of ammunition. Apparently, whenever his comrades need bullets, he will drop from the sky to deliver what they need. A true 'angel'.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can only be blocked by units with at least 4 Block",
+          "format": "normal"
+        },
+        {
+          "text": "Grants 1 Ammo to enemy units it passes by",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 14000,
+            "atk": 900,
+            "def": 400,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": null,
+            "weight": 3,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "aura",
+              "parameters": {
+                "sp": 1.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "technician_prisoner",
+      "id": "enemy_9004_anlock",
+      "name": "Technician Prisoner",
+      "index": "PM04",
+      "rank": "Elite",
+      "sort": 1570,
+      "hidden": false,
+      "icon": "/enemies-icons/Technician Prisoner.webp",
+      "flavour_text": "A convict in charge of prison maintenance, for everything from the building itself to the imprisonment devices. When the jailers aren't looking, they will spontaneously start prison riots.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Every time HP percentage falls below a certain threshold, immediately frees surrounding prisoner enemies",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 550,
+            "def": 500,
+            "res": 40.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.9,
+            "range": null,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "B+"
+          },
+          "skills": [
+            {
+              "key": "libertyothers",
+              "sp_cost": 0,
+              "cooldown": 9999.0,
+              "initial_cooldown": 9999.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "free",
+              "parameters": {
+                "hp_ratio": 0.75
+              }
+            },
+            {
+              "key": "free2",
+              "parameters": {
+                "hp_ratio": 0.5
+              }
+            },
+            {
+              "key": "free3",
+              "parameters": {
+                "hp_ratio": 0.01
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "glacial_archer",
+      "id": "enemy_9005_aicemn",
+      "name": "Glacial Archer",
+      "index": "PM05",
+      "rank": "Elite",
+      "sort": 1571,
+      "hidden": false,
+      "icon": "/enemies-icons/Glacial Archer.webp",
+      "flavour_text": "A ruthless archer of the icefields. Cold as glaciers, her arrows induce hypothermia, as if dragging victims into the depths of a frigid abyss.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks deal Physical splash damage and apply Cold",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 16000,
+            "atk": 400,
+            "def": 300,
+            "res": 30.0,
+            "elemental_res": 0.0,
+            "elemental_damage_res": 0.0,
+            "attack_interval": 5.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": 2.0,
+            "weight": 2,
+            "taunt": 0,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "C",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "talent",
+              "parameters": {
+                "freeze": 5.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

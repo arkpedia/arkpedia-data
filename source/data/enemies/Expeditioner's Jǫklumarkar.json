@@ -1,0 +1,2176 @@
+{
+  "schema_version": 3,
+  "content": {
+    "kind": "integrated_strategies",
+    "id": "rogue_3",
+    "label": "IS4",
+    "name": "Expeditioner's Jǫklumarkar",
+    "release_date": "2024-03-05"
+  },
+  "enemies": [
+    {
+      "slug": "oxmane",
+      "id": "enemy_1304_mhwolf",
+      "name": "Oxmane",
+      "index": "HS03",
+      "rank": "Normal",
+      "sort": 591,
+      "hidden": false,
+      "icon": "/enemies-icons/Oxmane.webp",
+      "flavour_text": "A carnivore common to the mountains that hunts primarily in packs. Bearing developed mandibles, they crush their prey's skulls with ease. Most fond of feeding on hornbeast stragglers.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Prioritizes attacking <Hornbeasts> and <Hardy Hornbeasts>",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4500,
+            "atk": 310,
+            "def": 0,
+            "res": 5.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.8,
+            "attack_speed": 100.0,
+            "move_speed": 1.5,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "E",
+            "res": "D",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "S"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Revive",
+              "parameters": {
+                "hp_ratio": 0.999,
+                "move_speed": 2.0,
+                "unmovable_duration": 150.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "chitotex_clawbeast",
+      "id": "enemy_1306_mhtrtl",
+      "name": "Chitotex Clawbeast",
+      "index": "HS07",
+      "rank": "Normal",
+      "sort": 595,
+      "hidden": false,
+      "icon": "/enemies-icons/Chitotex Clawbeast.webp",
+      "flavour_text": "An herbivore that dwells by cliffsides, their front claws equipped for digging out rock faces. They grow rear shells hard enough to withstand falling stones, but bear unusually soft bellies. Their delicious meat is the primary cause of their falling population.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Weak spot located on its front, damage dealt to the rear is significantly decreased",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 14000,
+            "atk": 600,
+            "def": 120,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "D",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Weakness",
+              "parameters": {
+                "damage_resistance": 0.8
+              }
+            },
+            {
+              "key": "WeaknessUI",
+              "parameters": {
+                "value": 0.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "keratex_clawbeast",
+      "id": "enemy_1306_mhtrtl_2",
+      "name": "Keratex Clawbeast",
+      "index": "HS08",
+      "rank": "Normal",
+      "sort": 596,
+      "hidden": false,
+      "icon": "/enemies-icons/Keratex Clawbeast.webp",
+      "flavour_text": "A Chitotex Clawbeast subspecies particular to certain regions. Their sturdy upper limbs accelerate their excavation of rock exponentially, while their stern shells can shrug off severe batterings. These traits allow them to better expand their territory.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Weak spot located on its front, damage dealt to the rear is significantly decreased",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 18000,
+            "atk": 680,
+            "def": 130,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "D",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Weakness",
+              "parameters": {
+                "damage_resistance": 0.8
+              }
+            },
+            {
+              "key": "WeaknessUI",
+              "parameters": {
+                "value": 0.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "basorobeast",
+      "id": "enemy_1307_mhrhcr",
+      "name": "Basorobeast",
+      "index": "HS09",
+      "rank": "Normal",
+      "sort": 597,
+      "hidden": false,
+      "icon": "/enemies-icons/Basorobeast.webp",
+      "flavour_text": "An herbivore that dwells by cliffsides. The protective boulders that crown their heads are, in fact, the secretions of a symbiotic organism. Some have witnessed Basorobeasts battling Chitotex Clawbeasts in turf wars.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Weak spot located on its rear, damage dealt to the front is significantly decreased",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 12000,
+            "atk": 600,
+            "def": 140,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B",
+            "def": "D",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Weakness",
+              "parameters": {
+                "damage_resistance": 0.8
+              }
+            },
+            {
+              "key": "WeaknessUI",
+              "parameters": {
+                "value": 0.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "raging_direswine",
+      "id": "enemy_1309_mhboar_2",
+      "name": "Raging Direswine",
+      "index": "HS14",
+      "rank": "Elite",
+      "sort": 602,
+      "hidden": false,
+      "icon": "/enemies-icons/Raging Direswine.webp",
+      "flavour_text": "A variety of Direswine extremely easy to anger, they dominate areas near water sources with great swagger. If one is enraged, it will indiscriminately rampage about with a madness sufficient to lay anything in the vicinity low.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Can only be blocked by units with at least 2 Block",
+          "format": "normal"
+        },
+        {
+          "text": "Gradually accelerates when charging, dealing damage based on Movement Speed to any target it passes through or is blocked by",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 32000,
+            "atk": 700,
+            "def": 50,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Crash",
+              "parameters": {
+                "atk_scale": 800.0,
+                "stun": 0.0
+              }
+            },
+            {
+              "key": "FirstAttack",
+              "parameters": {
+                "atk_scale": 600.0
+              }
+            },
+            {
+              "key": "Rush",
+              "parameters": {
+                "mhboar_t[trigger].interval": 0.333,
+                "mhboar_t[trigger].move_speed": 0.333,
+                "mhboar_t[trigger].trig_cnt": 35.0,
+                "mhboar_t_predelay.predelay": 3.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "kouaku_cautelotaur",
+      "id": "enemy_1311_mhkryk_2",
+      "name": "Kouaku Cautelotaur",
+      "index": "HS18",
+      "rank": "Elite",
+      "sort": 606,
+      "hidden": false,
+      "icon": "/enemies-icons/Kouaku Cautelotaur.webp",
+      "flavour_text": "A cunning and ruthless variety of Cautelotaur, it conceals itself in herds to launch surprise attacks, the prey it catches subjected to its capricious whims. Most hunters that attempt to hunt this creature return with nothing to show for it.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "After feeding on a <Chitotex Clawbeast> or <Keratex Clawbeast>, keeps its shell to use as a defensive tool, significantly lowering all damage except to the rear",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 27000,
+            "atk": 1260,
+            "def": 550,
+            "res": 1.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.8,
+            "attack_speed": 100.0,
+            "move_speed": 0.75,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "D",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "B"
+          },
+          "skills": [
+            {
+              "key": "DropShield",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "ShieldUp",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {}
+            }
+          ],
+          "talents": [
+            {
+              "key": "Mode",
+              "parameters": {
+                "mode": 0.0
+              }
+            },
+            {
+              "key": "Shield",
+              "parameters": {
+                "max_hp_ratio": 1.0
+              }
+            },
+            {
+              "key": "Weakness",
+              "parameters": {
+                "damage_resistance": 0.8
+              }
+            },
+            {
+              "key": "WeaknessUI",
+              "parameters": {
+                "value": 0.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "tainted_carcass",
+      "id": "enemy_2043_smsbr",
+      "name": "Tainted Carcass",
+      "index": "EJ1",
+      "rank": "Normal",
+      "sort": 1191,
+      "hidden": false,
+      "icon": "/enemies-icons/Tainted Carcass.webp",
+      "flavour_text": "A Sami warrior irreversibly corrupted by demons. He once went to the snow fields with a clear purpose, but is now completely bereft.",
+      "race": "Collapsal",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Movement Speed significantly increases for a short time after taking damage",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4000,
+            "atk": 400,
+            "def": 200,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.5,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "C",
+            "def": "C",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "SpeedUp",
+              "parameters": {
+                "cooldown": 5.0,
+                "duration": 2.0,
+                "move_speed": 3.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "distorted_caster",
+      "id": "enemy_2044_smwiz",
+      "name": "Distorted Caster",
+      "index": "EJ2",
+      "rank": "Normal",
+      "sort": 1192,
+      "hidden": false,
+      "icon": "/enemies-icons/Distorted Caster.webp",
+      "flavour_text": "A Sami shaman possessed by demons. Everything they understood about nature has been reconstructed into pure nothingness.",
+      "race": "Collapsal",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Movement Speed significantly increases after not attacking for a period of time, resets on attack",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 8000,
+            "atk": 350,
+            "def": 300,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 1.8,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "C",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "SpeedUp",
+              "parameters": {
+                "attack@duration": 5.0,
+                "attack@move_speed": 4.0,
+                "duration": 5.0,
+                "move_speed": 4.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "collapsed_construct",
+      "id": "enemy_2045_smdrn",
+      "name": "Collapsed Construct",
+      "index": "EJ3",
+      "rank": "Normal",
+      "sort": 1193,
+      "hidden": false,
+      "icon": "/enemies-icons/Collapsed Construct.webp",
+      "flavour_text": "A drone corrupted by demonic power, now acting like a real lifeform.",
+      "race": "Collapsal",
+      "movement": "Flying",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Flying unit.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 3500,
+            "atk": 200,
+            "def": 100,
+            "res": 65.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.0,
+            "range": 1.3,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "D",
+            "def": "D",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "SS"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "shattered_champion",
+      "id": "enemy_2046_smwar",
+      "name": "Shattered Champion",
+      "index": "EJ4",
+      "rank": "Elite",
+      "sort": 1194,
+      "hidden": false,
+      "icon": "/enemies-icons/Shattered Champion.webp",
+      "flavour_text": "Once an honorable warrior of the Treescar tribe, now a part of the demons' vanguard, together with their fallen chief.",
+      "race": "Collapsal",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 700,
+            "def": 800,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.2,
+            "attack_speed": 100.0,
+            "move_speed": 2.5,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "B+",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "SS"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "silvernwhite_bulwark",
+      "id": "enemy_2047_smtree",
+      "name": "Silvernwhite Bulwark",
+      "index": null,
+      "rank": "Normal",
+      "sort": 1196,
+      "hidden": true,
+      "icon": "/enemies-icons/Silvernwhite Bulwark.webp",
+      "flavour_text": null,
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "No Damage"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 7500,
+            "atk": 0,
+            "def": 600,
+            "res": 20.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.0,
+            "range": null,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 0
+          },
+          "stat_ranks": {
+            "hp": "B",
+            "atk": "E",
+            "def": "B",
+            "res": "B",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "E"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "demons_blade",
+      "id": "enemy_2048_smgrd",
+      "name": "'Demon's Blade'",
+      "index": "DB",
+      "rank": "Boss",
+      "sort": 1408,
+      "hidden": false,
+      "icon": "/enemies-icons/'Demon's Blade'.webp",
+      "flavour_text": "An out-of-control 'Emperor's Blade' is simply not allowed to exist in this world, neither as a living person nor as a dominion. It will be hunted down by its comrades until it is completely wiped from this land.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Deals heavy Physical damage to allied units on tiles affected by [Dominion]",
+          "format": "normal"
+        },
+        {
+          "text": "Continuously generates [Dominion] on the surrounding 8 tiles, significantly reducing the ASPD of allied units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 50000,
+            "atk": 800,
+            "def": 300,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 2.4,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "BlackFog",
+              "parameters": {
+                "attack_speed": -50.0,
+                "range_id": "x-4"
+              }
+            },
+            {
+              "key": "DamageUp",
+              "parameters": {
+                "atk_scale": 2.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Frozen"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "demons_blade_the_vagabond",
+      "id": "enemy_2049_smgrd2",
+      "name": "'Demon's Blade,' the Vagabond",
+      "index": "DBV",
+      "rank": "Boss",
+      "sort": 1409,
+      "hidden": false,
+      "icon": "/enemies-icons/'Demon's Blade,' the Vagabond.webp",
+      "flavour_text": "Ursus's deepest secrets must not be seen by others, so any 'Emperor's Blade' unable to take charge of their own conduct and movements ought to be completely erased.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Deals heavy Physical damage to allied units on tiles affected by [Dominion]",
+          "format": "normal"
+        },
+        {
+          "text": "Continuously generates [Dominion] in a large radius around self, significantly reducing the ASPD of allied units",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 60000,
+            "atk": 800,
+            "def": 300,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.4,
+            "range": 2.0,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "C",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "D"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "BlackFog",
+              "parameters": {
+                "attack_speed": -50.0,
+                "range_id": "x-3"
+              }
+            },
+            {
+              "key": "DamageUp",
+              "parameters": {
+                "atk_scale": 2.5
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Frozen"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "fallen_snowpriest",
+      "id": "enemy_2050_smsha",
+      "name": "Fallen Snowpriest",
+      "index": "FSP",
+      "rank": "Boss",
+      "sort": 1410,
+      "hidden": false,
+      "icon": "/enemies-icons/Fallen Snowpriest.webp",
+      "flavour_text": "A Sami tribal chief separated from humanity, their flesh physically transformed. Will turn into a 'Frozen Monstrosity' if left alone to continue wandering the icefields.",
+      "race": "Collapsal",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict Cold and jump between 3 targets, with each jump dealing reduced damage",
+          "format": "normal"
+        },
+        {
+          "text": "[Unnatural Gift] Attacks can hit and jump between 3 other enemies, increasing their Movement Speed and ASPD",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 40000,
+            "atk": 600,
+            "def": 300,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.5,
+            "range": 3.5,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "ChainBuff",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.1,
+                "attack_speed": 100.0,
+                "chain.atk_scale": 1.0,
+                "chain.max_target": 3.0,
+                "duration": 10.0,
+                "move_speed": 1.0,
+                "projectile_range": 1.6
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "chain.atk_scale": 0.85,
+                "chain.max_target": 3.0,
+                "freeze": 4.5,
+                "projectile_range": 1.6
+              }
+            }
+          ],
+          "immunities": [
+            "Stun"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "hollow_snowpriest",
+      "id": "enemy_2051_smsha2",
+      "name": "Hollow Snowpriest",
+      "index": "HSP",
+      "rank": "Boss",
+      "sort": 1411,
+      "hidden": false,
+      "icon": "/enemies-icons/Hollow Snowpriest.webp",
+      "flavour_text": "A Sami chief long alienated from their tribe, their fervent expectations for their clan have become a signpost to nothingness. If no one stops them, they will spread the demons' influence all over Sami.",
+      "race": "Collapsal",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict Cold and jump over a long distance between 4 targets, with each jump dealing reduced damage",
+          "format": "normal"
+        },
+        {
+          "text": "[Unnatural Gift] Attacks can hit and jump long-distance between 4 other enemies, increasing their Movement Speed and ASPD",
+          "format": "silence"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 45000,
+            "atk": 750,
+            "def": 300,
+            "res": 60.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.5,
+            "range": 3.5,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "B+",
+            "def": "C",
+            "res": "A+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "SS"
+          },
+          "skills": [
+            {
+              "key": "ChainBuff",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 15.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.1,
+                "attack_speed": 100.0,
+                "chain.atk_scale": 1.0,
+                "chain.max_target": 4.0,
+                "duration": 10.0,
+                "move_speed": 1.0,
+                "projectile_range": 2.1
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "chain.atk_scale": 0.85,
+                "chain.max_target": 4.0,
+                "freeze": 4.5,
+                "projectile_range": 2.1
+              }
+            }
+          ],
+          "immunities": [
+            "Stun"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "weaving_vinecreeps",
+      "id": "enemy_2052_smgia",
+      "name": "Weaving Vinecreeps",
+      "index": "WVC",
+      "rank": "Boss",
+      "sort": 1412,
+      "hidden": false,
+      "icon": "/enemies-icons/Weaving Vinecreeps.webp",
+      "flavour_text": "A puppet made of plants brought to life by the call of nature. It reacts violently to any non-Sami entity, but the rickety vine formation makes it susceptible to fire.",
+      "race": "Arts Creation",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Gains a large Fragile effect after taking damage from environmental effects",
+          "format": "normal"
+        },
+        {
+          "text": "Stuns allied units after several attacks",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 90000,
+            "atk": 1200,
+            "def": 700,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "StunAttack",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "stun": 15.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Weak",
+              "parameters": {
+                "damage_scale": 2.0,
+                "weak[limit]": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "elder_vinecreeps",
+      "id": "enemy_2053_smgia2",
+      "name": "Elder Vinecreeps",
+      "index": "EVC",
+      "rank": "Boss",
+      "sort": 1413,
+      "hidden": false,
+      "icon": "/enemies-icons/Elder Vinecreeps.webp",
+      "flavour_text": "A plant puppet that has awakened from the depths of the woodland, bearing the blessings of nature to fend off any unexpected guests to Sami. The low concentration of Originium in the environment it was born in makes it highly susceptible to high-purity Originium.",
+      "race": "Arts Creation",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Gains a large Fragile effect after taking damage from environmental effects",
+          "format": "normal"
+        },
+        {
+          "text": "Stuns allied units after several attacks",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 100000,
+            "atk": 1200,
+            "def": 1200,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.5,
+            "attack_speed": 100.0,
+            "move_speed": 0.5,
+            "range": null,
+            "weight": 5,
+            "taunt": null,
+            "life_cost": 5
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A",
+            "def": "A+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "StunAttack",
+              "sp_cost": 2,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "stun": 15.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Weak",
+              "parameters": {
+                "damage_scale": 2.0,
+                "weak[limit]": 10.0
+              }
+            }
+          ],
+          "immunities": [
+            "Silence"
+          ],
+          "sp": {
+            "initial": 0,
+            "max": 2,
+            "recovery": "On attack",
+            "increment": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "samivilinn_the_resolution_of_the_very_north",
+      "id": "enemy_2054_smdeer",
+      "name": "'Samivilinn,' the Resolution of the Very North",
+      "index": "SAM",
+      "rank": "Boss",
+      "sort": 1414,
+      "hidden": false,
+      "icon": "/enemies-icons/'Samivilinn,' the Resolution of the Very North.webp",
+      "flavour_text": "Born from a memory of the soil, stone, ice, and snow, it stands tall, blocking the path of every living being until satisfied.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical",
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "[Icicle Fall] Attacks deal Physical damage to allied units in a column",
+          "format": "normal"
+        },
+        {
+          "text": "[Surge of Nature] Inflicts Stun on an allied unit and causes the target to take Arts damage over time",
+          "format": "normal"
+        },
+        {
+          "text": "After falling below half HP, takes reduced Physical and Arts damage and [Icicle Fall] and [Surge of Nature] both target an additional unit",
+          "format": "normal"
+        },
+        {
+          "text": "After a long time has passed in the battle, deals Arts damage to all allied units on the field and drains 30 Life Points",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 240000,
+            "atk": 800,
+            "def": 800,
+            "res": 40.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 6.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.0,
+            "range": null,
+            "weight": 10,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "B+",
+            "def": "B+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "A"
+          },
+          "skills": [
+            {
+              "key": "Lasso",
+              "sp_cost": 0,
+              "cooldown": 60.0,
+              "initial_cooldown": 40.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 0.2,
+                "max_target": 1.0,
+                "projectile_life_time": 10.0
+              }
+            },
+            {
+              "key": "Doom",
+              "sp_cost": 0,
+              "cooldown": 600.0,
+              "initial_cooldown": 600.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.5,
+                "value": -30.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Madness",
+              "parameters": {
+                "damage_resistance": 0.6,
+                "enemy_smdeer_mad[attack].max_cnt": 2.0,
+                "enemy_smdeer_mad[skill].max_target": 2.0,
+                "max_cnt": 1.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Disarm",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "eikthyrnir_the_scar_of_the_shattered",
+      "id": "enemy_2055_smlead",
+      "name": "'Eikthyrnir,' the Scar of the Shattered",
+      "index": "EIK",
+      "rank": "Boss",
+      "sort": 1415,
+      "hidden": false,
+      "icon": "/enemies-icons/'Eikthyrnir,' the Scar of the Shattered.webp",
+      "flavour_text": "Chief of the Treescar tribe, and a folk hero in the hearts of the Sami people. The most sincere of desires deep in his heart has dragged all of Sami into the abyss, himself included.",
+      "race": "Collapsal",
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "Attacks inflict Cold",
+          "format": "normal"
+        },
+        {
+          "text": "Periodically inflicts Cold to all surrounding allied Operators",
+          "format": "normal"
+        },
+        {
+          "text": "Self-Destruction",
+          "format": "title"
+        },
+        {
+          "text": "Goes into [Self-Destruction] whenever a certain percentage of HP is lost",
+          "format": "normal"
+        },
+        {
+          "text": "Stops attacking",
+          "format": "normal"
+        },
+        {
+          "text": "Movement Speed is greatly increased, becomes immune to Bind and Slow",
+          "format": "normal"
+        },
+        {
+          "text": "Cannot be blocked",
+          "format": "normal"
+        },
+        {
+          "text": "Takes greatly reduced Physical and Arts damage",
+          "format": "normal"
+        },
+        {
+          "text": "Whenever he goes into or out of [Self-Destruction], inflicts Cold to all surrounding allied Operators",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 150000,
+            "atk": 1000,
+            "def": 3000,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 2.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.1,
+            "range": null,
+            "weight": 7,
+            "taunt": null,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A",
+            "def": "S+",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B+",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "freeze": 4.5
+              }
+            },
+            {
+              "key": "DemonBuff",
+              "parameters": {
+                "damage_resistance": 0.8,
+                "freeze": 5.0,
+                "move_speed": 2.0
+              }
+            },
+            {
+              "key": "Demonize",
+              "parameters": {
+                "enemy_smlead_hp_trigger_1.duration": 3.0,
+                "enemy_smlead_hp_trigger_1.hp_ratio": 0.7,
+                "enemy_smlead_hp_trigger_2.duration": 3.0,
+                "enemy_smlead_hp_trigger_2.hp_ratio": 0.4,
+                "enemy_smlead_hp_trigger_3.duration": 3.0,
+                "enemy_smlead_hp_trigger_3.hp_ratio": 0.1,
+                "enemy_smlead_hp_trigger_4.duration": 3.0,
+                "enemy_smlead_hp_trigger_4.hp_ratio": -0.5
+              }
+            },
+            {
+              "key": "FreezeAura",
+              "parameters": {
+                "freeze": 4.5,
+                "interval": 5.0,
+                "range_radius": 2.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "crazelyseon_the_ascendant_of_cosmoi",
+      "id": "enemy_2056_smedzi",
+      "name": "Crazelyseon, the Ascendant of Cosmoi",
+      "index": "CES",
+      "rank": "Boss",
+      "sort": 1416,
+      "hidden": false,
+      "icon": "/enemies-icons/Crazelyseon, the Ascendant of Cosmoi.webp",
+      "flavour_text": "An instinct as chaotic as thought itself.",
+      "race": "Collapsal",
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "Invulnerable",
+          "format": "normal"
+        },
+        {
+          "text": "Attacks 2 targets simultaneously; deals heavy Arts damage to allied units on [Seedbeds]",
+          "format": "normal"
+        },
+        {
+          "text": "Whenever it moves itself, turns 2 deployable spots into [Seedbeds] that deal continuous Arts damage to allied units on the affected tiles and greatly reduce their ASPD",
+          "format": "normal"
+        },
+        {
+          "text": "Gains increased ATK after being defeated for the first time",
+          "format": "normal"
+        },
+        {
+          "text": "After a long time has passed in the battle, turns all deployable spots on the field into [Seedbeds] and drains 30 Life Points",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 80000,
+            "atk": 1000,
+            "def": 1500,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": null,
+            "range": 3.5,
+            "weight": 0,
+            "taunt": null,
+            "life_cost": 1
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "A+",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": null
+          },
+          "skills": [
+            {
+              "key": "Blink",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {}
+            },
+            {
+              "key": "Reborning",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 0,
+              "parameters": {
+                "duration": 5.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "Attack",
+              "parameters": {
+                "value": -30.0
+              }
+            },
+            {
+              "key": "DamageUp",
+              "parameters": {
+                "atk_scale": 2.0
+              }
+            },
+            {
+              "key": "Doom",
+              "parameters": {
+                "duration": 600.0
+              }
+            },
+            {
+              "key": "Reborn",
+              "parameters": {
+                "atk": 0.5,
+                "duration": 5.0,
+                "max_hp": 1.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate",
+            "Fear",
+            "Lure"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "kharanduu_khagan_the_scourge_of_the_land",
+      "id": "enemy_2057_smkght",
+      "name": "Kharanduu Khagan, the Scourge of the Land",
+      "index": "KSL",
+      "rank": "Boss",
+      "sort": 1417,
+      "hidden": false,
+      "icon": "/enemies-icons/Kharanduu Khagan, the Scourge of the Land.webp",
+      "flavour_text": "On the other side of time, the Khagan of the Nightzmora's Khaganquest comes to a close. Infinite wealth awaits his trampling heel on the golden coast.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When dealing damage, increases ATK and ASPD, up to a limit. This effect will reset a few seconds after this unit stops attacking",
+          "format": "normal"
+        },
+        {
+          "text": "[Conquest] After charging up, deals heavy Physical damage to all units around <Lugalszargus, the Overlord of Ages> in a large area and inflicts Stun",
+          "format": "normal"
+        },
+        {
+          "text": "When <Lugalszargus, the Overlord of Ages> is defeated or leaves, ASPD, Movement Speed, DEF, and RES are greatly increased, and your units become the target of [Conquest]",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 180000,
+            "atk": 1000,
+            "def": 5000,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 5.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 1.3,
+            "weight": 7,
+            "taunt": null,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A",
+            "def": "SS",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "D",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Gun",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 2.0,
+                "duration": 5.0,
+                "stun": 10.0
+              }
+            },
+            {
+              "key": "Victory",
+              "sp_cost": 0,
+              "cooldown": 5.0,
+              "initial_cooldown": 5.0,
+              "priority": 0,
+              "parameters": {
+                "attack_speed": 100.0,
+                "def": 2000.0,
+                "magic_resistance": 50.0,
+                "move_speed": 1.0
+              }
+            }
+          ],
+          "talents": [
+            {
+              "key": "AttackUp",
+              "parameters": {
+                "atk": 0.3,
+                "attack_speed": 30.0,
+                "max_stack_cnt": 10.0
+              }
+            },
+            {
+              "key": "Checker",
+              "parameters": {
+                "delay": 4.0
+              }
+            }
+          ],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "lugalszargus_the_overlord_of_ages",
+      "id": "enemy_2058_smlion",
+      "name": "Lugalszargus, the Overlord of Ages",
+      "index": "LOA",
+      "rank": "Boss",
+      "sort": 1418,
+      "hidden": false,
+      "icon": "/enemies-icons/Lugalszargus, the Overlord of Ages.webp",
+      "flavour_text": "On the other side of reality, 'The Shah of Past and Future' issues his edict. Life and death take up ranks alongside one another to fulfill Sargon's immense, monumental ambition.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Ranged",
+      "damage_type": [
+        "Arts"
+      ],
+      "abilities": [
+        {
+          "text": "When blocked, passes through the target, dealing Arts damage to the blocking unit",
+          "format": "normal"
+        },
+        {
+          "text": "[Edict] After charging up, deals heavy Arts damage to all units around <Kharanduu Khagan, the Scourge of the Land> in a large area and inflicts Stun",
+          "format": "normal"
+        },
+        {
+          "text": "When <Kharanduu Khagan, the Scourge of the Land> is defeated or leaves, ASPD, Movement Speed, DEF, and RES are greatly increased, and your units become the target of [Edict]",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 180000,
+            "atk": 1000,
+            "def": 1000,
+            "res": 90.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 4.0,
+            "attack_speed": 100.0,
+            "move_speed": 0.6,
+            "range": 2.5,
+            "weight": 7,
+            "taunt": null,
+            "life_cost": 30
+          },
+          "stat_ranks": {
+            "hp": "S",
+            "atk": "A",
+            "def": "A",
+            "res": "SS",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "C",
+            "move_speed": "C"
+          },
+          "skills": [
+            {
+              "key": "Blink",
+              "sp_cost": 0,
+              "cooldown": 15.0,
+              "initial_cooldown": 10.0,
+              "priority": 0,
+              "parameters": {
+                "atk_scale": 1.5,
+                "dist": 1.5
+              }
+            },
+            {
+              "key": "Gun",
+              "sp_cost": 0,
+              "cooldown": 30.0,
+              "initial_cooldown": 25.0,
+              "priority": 1,
+              "parameters": {
+                "atk_scale": 3.0,
+                "duration": 5.0,
+                "stun": 10.0
+              }
+            },
+            {
+              "key": "Victory",
+              "sp_cost": 0,
+              "cooldown": 0.0,
+              "initial_cooldown": 0.0,
+              "priority": 1,
+              "parameters": {
+                "attack_speed": 100.0,
+                "def": 2000.0,
+                "magic_resistance": 50.0,
+                "move_speed": 1.0
+              }
+            }
+          ],
+          "talents": [],
+          "immunities": [
+            "Stun",
+            "Silence",
+            "Sleep",
+            "Frozen",
+            "Levitate"
+          ],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "testaceous_vinecreeps",
+      "id": "enemy_2059_smbox",
+      "name": "Testaceous Vinecreeps",
+      "index": "EJ5",
+      "rank": "Elite",
+      "sort": 1195,
+      "hidden": false,
+      "icon": "/enemies-icons/Testaceous Vinecreeps.webp",
+      "flavour_text": "A seed falls into a box abandoned in the wild, and soon becomes a hunter preying on curiosity.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 10000,
+            "atk": 600,
+            "def": 500,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "B+",
+            "atk": "B",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        },
+        {
+          "level": 1,
+          "stats": {
+            "hp": 20000,
+            "atk": 800,
+            "def": 500,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "B+",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        },
+        {
+          "level": 2,
+          "stats": {
+            "hp": 30000,
+            "atk": 1200,
+            "def": 500,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.2,
+            "attack_speed": 100.0,
+            "move_speed": 0.7,
+            "range": null,
+            "weight": 3,
+            "taunt": null,
+            "life_cost": 2
+          },
+          "stat_ranks": {
+            "hp": "A+",
+            "atk": "A",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A",
+            "move_speed": "B"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "khaganshadow",
+      "id": "enemy_2060_smshdw",
+      "name": "Khaganshadow",
+      "index": "EJ6",
+      "rank": "Normal",
+      "sort": 1197,
+      "hidden": false,
+      "icon": "/enemies-icons/Khaganshadow.webp",
+      "flavour_text": "A soul trapped in the Khagan Nightzmora, which will raise its weapon and follow its eternal general to the ends of the land.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 4000,
+            "atk": 700,
+            "def": 500,
+            "res": 30.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.1,
+            "range": null,
+            "weight": 2,
+            "taunt": null,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "C",
+            "atk": "B+",
+            "def": "B",
+            "res": "B+",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "A"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "royal_companion",
+      "id": "enemy_2061_smhond",
+      "name": "Royal Companion",
+      "index": "EJ7",
+      "rank": "Normal",
+      "sort": 1198,
+      "hidden": false,
+      "icon": "/enemies-icons/Royal Companion.webp",
+      "flavour_text": "The proud Beast Stewards have long had close ties to Sargon royalty, some even choosing to serve by a king's side as guardian.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": "Melee",
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 20000,
+            "atk": 1200,
+            "def": 300,
+            "res": 50.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 3.0,
+            "attack_speed": 100.0,
+            "move_speed": 1.8,
+            "range": null,
+            "weight": 4,
+            "taunt": null,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "A",
+            "atk": "A",
+            "def": "C",
+            "res": "A",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "B",
+            "move_speed": "S+"
+          },
+          "skills": [],
+          "talents": [],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    },
+    {
+      "slug": "self_driving_recon_cart",
+      "id": "enemy_2062_smcar",
+      "name": "Self-Driving Recon Cart",
+      "index": "SMC0",
+      "rank": "Normal",
+      "sort": 1419,
+      "hidden": true,
+      "icon": null,
+      "flavour_text": "When colliding with an enemy, inflicts Physical damage and gradually increases Recon proficiency.",
+      "race": null,
+      "movement": "Ground",
+      "attack_position": null,
+      "damage_type": [
+        "Physical"
+      ],
+      "abilities": [
+        {
+          "text": "When colliding with an enemy, inflicts Physical damage and gradually increases Recon proficiency.",
+          "format": "normal"
+        }
+      ],
+      "levels": [
+        {
+          "level": 0,
+          "stats": {
+            "hp": 100,
+            "atk": 500,
+            "def": 0,
+            "res": 0.0,
+            "elemental_res": null,
+            "elemental_damage_res": null,
+            "attack_interval": 1.0,
+            "attack_speed": 100.0,
+            "move_speed": 2.0,
+            "range": null,
+            "weight": 1,
+            "taunt": null,
+            "life_cost": null
+          },
+          "stat_ranks": {
+            "hp": "E",
+            "atk": "B",
+            "def": "E",
+            "res": "E",
+            "elemental_res": "E",
+            "elemental_damage_res": "E",
+            "attack_speed": "A+",
+            "move_speed": "SS"
+          },
+          "skills": [],
+          "talents": [
+            {
+              "key": "HitEnemy",
+              "parameters": {
+                "atk_scale": 1.0,
+                "base_exp": 2.0
+              }
+            },
+            {
+              "key": "Suicide",
+              "parameters": {
+                "duration": 60.0
+              }
+            }
+          ],
+          "immunities": [],
+          "sp": null
+        }
+      ]
+    }
+  ]
+}
