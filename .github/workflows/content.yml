@@ -48,20 +48,22 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
       - name: Open the reviewed content update
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          cat > /tmp/body.md <<'BODY'
-          Updates the public game records and their generated page data together.
-
-          Review the changes under `source/`; `release/` is generated from those records. Validation checks source and output checksums before publication. Merging publishes this content version without rebuilding the Arkpedia website. This workflow never approves or merges the PR.
-          BODY
+          node scripts/describe-update.mjs origin/main /tmp/title.txt /tmp/body.md
+          title="$(cat /tmp/title.txt)"
           if gh pr view refresh/content --json state --jq .state | grep -qx OPEN; then
-            gh pr edit refresh/content --body-file /tmp/body.md
+            gh pr edit refresh/content --title "$title" --body-file /tmp/body.md
           else
-            gh pr create --base main --head refresh/content --title 'Update game content' --body-file /tmp/body.md
+            gh pr create --base main --head refresh/content --title "$title" --body-file /tmp/body.md
           fi
   publish:
     if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
