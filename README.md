@@ -27,7 +27,7 @@ Run `node scripts/validate-release.mjs`. It checks all source and generated JSON
 
 To roll back, run **Content release** manually on `main` and enter a previously approved main-branch commit SHA. Only the live pointer changes; the old snapshots remain addressable. The website adopts the pointer after its normal cache refresh. An already open page stays on its existing version.
 
-Schema version 1 must remain compatible with deployed pages. New mechanics or incompatible schema changes require an application update before their content is published. Public data/media traffic and GitHub hosting remain subject to GitHub's service limits; public standard Actions runners are free.
+Schema version 2 uses readable route-based page filenames. Schema 1 hash-named releases are not supported. Deploy the matching application loader before publishing a schema 2 release; later data-only updates do not rebuild the website. Public data/media traffic and GitHub hosting remain subject to GitHub's service limits; public standard Actions runners are free.
 
 ## Provenance
 
