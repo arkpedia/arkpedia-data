@@ -37,12 +37,28 @@ for (const file of [...Object.values(m.pages), ...Object.values(m.files)]) {
 }
 const actual = walk(path.join(root, 'release')).map(file => path.relative(path.join(root, 'release'), file));
 check(actual.length === expected.size && actual.every(file => expected.has(file)), 'Release contains unindexed files');
+const untimestamped = [];
 const sources = {};
 for (const file of walk(path.join(root, 'source')).sort()) {
   const name = path.relative(path.join(root, 'source'), file);
-  check(safe(name) && /^(data\/.*|public\/[^/]+)\.json$/.test(name), `Invalid source path: ${name}`);
+  // Song lyrics are authored by hand in LRC, the format a lyric editor writes and
+  // the site's own player reads. They are the one non-JSON record published here;
+  // every other source file is still parsed as JSON.
+  const lyric = /^data\/lyrics\/[^/]+\.lrc$/.test(name);
+  check(safe(name) && (lyric || /^(data\/.*|public\/[^/]+)\.json$/.test(name)), `Invalid source path: ${name}`);
   const bytes = fs.readFileSync(file);
-  JSON.parse(bytes);
+  if (lyric) {
+    const text = bytes.toString('utf8');
+    check(Buffer.compare(Buffer.from(text, 'utf8'), bytes) === 0, `Lyric file is not UTF-8: ${name}`);
+    check(bytes.length > 0 && bytes.length <= 256_000, `Lyric file is empty or oversized: ${name}`);
+    // A file with no timestamps parses to zero lines, so its song shows no lyrics.
+    // That is a content defect, not an invalid release -- named here rather than
+    // blocking every other record in the publication.
+    if (!text.split(/\r?\n/).some(line => /^\[\d{1,3}:\d{2}(?:[.:]\d{1,3})?\]/.test(line))) untimestamped.push(name);
+    check(!/-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----|ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}/.test(text), `Credential-like content: ${name}`);
+  } else {
+    JSON.parse(bytes);
+  }
   sources[name] = sha(bytes);
 }
 check(JSON.stringify(sources) === JSON.stringify(m.sourceHashes), 'Source records changed without regenerating the release');
@@ -50,5 +66,6 @@ check(sha(JSON.stringify({ schema: 2, generator: m.generator, sourceHashes: sour
 for (const route of ['/', '/operators', '/planner', '/gacha', '/schedule', '/skins', '/stages', '/enemies']) check(m.pages[route], `Missing required page: ${route}`);
 check(Object.keys(m.pages).filter(route => route.startsWith('/operators/')).length > 100, 'Operator catalogue is incomplete');
 for (const file of ['stages-index.json', 'enemies-index.json', 'operator-deploy.json']) check(m.files[file], `Missing catalogue: ${file}`);
+if (untimestamped.length) console.warn(`Warning: ${untimestamped.length} lyric file(s) have no timestamps and render no lyrics: ${untimestamped.join(', ')}`);
 console.log(`Validated ${Object.keys(m.pages).length} pages, ${Object.keys(m.files).length} data files and ${Object.keys(sources).length} source records.`);
 console.log(`Manifest SHA-256: ${sha(manifestBytes)}`);
