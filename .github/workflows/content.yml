@@ -87,6 +87,14 @@ jobs:
           set -euo pipefail
           revision="${REVISION:-$GITHUB_SHA}"
           [[ "$revision" =~ ^[a-f0-9]{40}$ ]]
+          git fetch --no-tags origin main
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then
+            latest="$(git rev-parse origin/main)"
+            if [ "$revision" != "$latest" ]; then
+              echo "Superseded publish skipped: $revision is no longer main ($latest)."
+              exit 0
+            fi
+          fi
           git merge-base --is-ancestor "$revision" origin/main
           git checkout --detach "$revision"
           node scripts/validate-release.mjs
