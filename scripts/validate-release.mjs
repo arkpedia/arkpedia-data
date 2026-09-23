@@ -15,6 +15,47 @@ function walk(dir) {
     return entry.isDirectory() ? walk(full) : [full];
   });
 }
+// Every material cost in an operator record is one flat list of { name, quantity }.
+// The planner, the catalogue importer and the daily image sync all read that shape;
+// a nested list ([[{...}]]) still parses but crashes the image sync. Empty lists are
+// valid, since unreleased records often have no costs yet.
+const plain = value => value !== null && typeof value === 'object' && !Array.isArray(value);
+function checkCosts(list, where) {
+  check(Array.isArray(list), `${where} must be a list of { name, quantity }`);
+  list.forEach((item, i) => check(plain(item) && Object.keys(item).sort().join() === 'name,quantity'
+    && typeof item.name === 'string' && item.name.trim() !== '' && Number.isInteger(item.quantity) && item.quantity > 0,
+  `${where}[${i}] must be { name, quantity } with a positive whole quantity`));
+}
+// skillCost (keyed by skill level) and each skill's mastery cost (m1-m3) are null
+// when the operator has none. Which keys exist varies by rarity and by skill.
+function checkCostTable(table, where) {
+  if (table === null) return;
+  check(plain(table), `${where} must be null or an object of cost lists`);
+  for (const [key, list] of Object.entries(table)) checkCosts(list, `${where}.${key}`);
+}
+// The site lists an operator with neither a Global release date nor "isFuture": true
+// as released today (operatorAvailability.ts), so a CN-only record must carry one.
+function hasGlobalRelease(op) {
+  if (typeof op.releaseAt === 'string' && /(?:Z|[+-]\d{2}:\d{2})$/i.test(op.releaseAt) && Number.isFinite(Date.parse(op.releaseAt))) return true;
+  const match = String(op.characterInfo?.['Release Date'] ?? '').trim().match(/^(\d{4})[/-](\d{1,2})[/-](\d{1,2})$/);
+  const day = match && new Date(Date.UTC(+match[1], +match[2] - 1, +match[3]));
+  return Boolean(day) && day.getUTCFullYear() === +match[1] && day.getUTCMonth() === +match[2] - 1 && day.getUTCDate() === +match[3];
+}
+function checkOperator(name, op) {
+  check(plain(op.potential), `${name}: potential must be { levels, totalCost }`);
+  checkCosts(op.potential.totalCost, `${name}: potential.totalCost`);
+  check(Array.isArray(op.promotion), `${name}: promotion must be a list`);
+  op.promotion.forEach((tier, i) => checkCosts(tier?.cost, `${name}: promotion[${i}].cost`));
+  check(plain(op.skills) && Array.isArray(op.skills.skillList), `${name}: skills must be { skillList, skillCost }`);
+  checkCostTable(op.skills.skillCost, `${name}: skills.skillCost`);
+  op.skills.skillList.forEach((skill, i) => checkCostTable(skill?.cost, `${name}: skills.skillList[${i}].cost`));
+  check(Array.isArray(op.modules), `${name}: modules must be a list`);
+  op.modules.forEach((module, i) => {
+    check(Array.isArray(module?.stages), `${name}: modules[${i}].stages must be a list`);
+    module.stages.forEach((stage, j) => checkCosts(stage?.cost, `${name}: modules[${i}].stages[${j}].cost`));
+  });
+  check(op.isFuture === true || hasGlobalRelease(op), `${name}: needs a Global 'Release Date' (YYYY/MM/DD) or "isFuture": true, or the site lists it as released`);
+}
 const manifestBytes = fs.readFileSync(path.join(root, 'release/manifest.json'));
 const m = JSON.parse(manifestBytes);
 check(m.schema === 2 && hex.test(m.release) && gitSha.test(m.generator), 'Unsupported release metadata');
@@ -57,7 +98,8 @@ for (const file of walk(path.join(root, 'source')).sort()) {
     if (!text.split(/\r?\n/).some(line => /^\[\d{1,3}:\d{2}(?:[.:]\d{1,3})?\]/.test(line))) untimestamped.push(name);
     check(!/-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----|ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}/.test(text), `Credential-like content: ${name}`);
   } else {
-    JSON.parse(bytes);
+    const record = JSON.parse(bytes);
+    if (/^data\/operators-\dstar\/[^/]+\.json$/.test(name)) checkOperator(name, record);
   }
   sources[name] = sha(bytes);
 }
