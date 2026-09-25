@@ -11,6 +11,8 @@ Public game content for [Arkpedia](https://github.com/arkpedia). The website's i
 - `release/manifest.json` — source/output checksums, schema version, and matching asset revisions.
 - `scripts/` — validation only; the private compiler is not published here.
 
+The `heartbeat` branch holds one small commit per successful run of the application's release job, including runs with nothing new to publish (see [Heartbeat](#heartbeat)).
+
 The `live` branch contains a small `current.json` pointer to an approved immutable commit on `main`. Readers keep that data and media version together for the duration of a page visit. Publishing a data release does **not** rebuild the website.
 
 ## Updating content
@@ -28,6 +30,15 @@ Run `node scripts/validate-release.mjs`. It checks all source and generated JSON
 To roll back, run **Content release** manually on `main` and enter a previously approved main-branch commit SHA. Only the live pointer changes; the old snapshots remain addressable. The website adopts the pointer after its normal cache refresh. An already open page stays on its existing version.
 
 Schema version 2 uses readable route-based page filenames. Schema 1 hash-named releases are not supported. Deploy the matching application loader before publishing a schema 2 release; later data-only updates do not rebuild the website. Public data/media traffic and GitHub hosting remain subject to GitHub's service limits; public standard Actions runners are free.
+
+## Heartbeat
+
+The application's release job reports its own failures in the application repository, but a run that never starts reports nothing: an offline runner, a disabled workflow, or GitHub refusing private jobs over the Actions budget (as on 2026-09-25). **Release heartbeat** (`.github/workflows/release-heartbeat.yml`) runs here every three hours on public runners, reads this repository's branches with GET requests only, and keeps one issue open per problem until it clears:
+
+- **No content release for over a day**: neither the `live` branch nor the `heartbeat` branch has moved for 26 hours (the repository variable `RELEASE_HEARTBEAT_HOURS` changes that). The release job writes a heartbeat after every successful run, so a quiet day with nothing new to publish is not an outage.
+- **Data main is not live**: `main` is not what `live/current.json` serves an hour after it was committed, so **Content release** refused it or never ran. During an intentional rollback this stays open until `main` is published again.
+
+`node --test scripts/release-heartbeat.test.mjs` runs its tests; `node scripts/release-heartbeat.mjs --dry-run` prints what it would open or close without touching any issue. `scripts/alert-issue.mjs` is a copy of the application repository's issue helper; change both together.
 
 ## Provenance
 

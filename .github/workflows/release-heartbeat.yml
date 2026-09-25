@@ -1,0 +1,58 @@
+name: Release heartbeat
+# The content pipeline's one alarm that does not depend on the private application
+# repository: its release job reports its own failures, but not a run that never starts
+# (a runner offline, a disabled workflow, GitHub refusing jobs over the Actions budget).
+# This runs here, on public runners, and opens an issue in this repository when neither a
+# release (the live branch) nor a heartbeat of the release job (the heartbeat branch) is
+# newer than 26 hours, or when data main is not what live serves. It reads with GETs only
+# and closes each issue once its condition clears. See scripts/release-heartbeat.mjs.
+on:
+  schedule:
+    # Every three hours (GitHub may start a scheduled run late): an outage is reported a
+    # few hours after it crosses 26 hours.
+    - cron: '41 */3 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/release-heartbeat.mjs', 'scripts/release-heartbeat.test.mjs', 'scripts/alert-issue.mjs', '.github/workflows/release-heartbeat.yml']
+  pull_request:
+    paths: ['scripts/release-heartbeat.mjs', 'scripts/release-heartbeat.test.mjs', 'scripts/alert-issue.mjs', '.github/workflows/release-heartbeat.yml']
+permissions:
+  contents: read
+concurrency:
+  group: release-heartbeat
+  cancel-in-progress: false
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: scripts
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - run: node --test scripts/release-heartbeat.test.mjs
+  watch:
+    needs: test
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: scripts
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - name: Check the live pointer and the release job's heartbeat
+        env:
+          GH_TOKEN: ${{ github.token }}
+          # Hours without a release or a heartbeat before the alarm. The release job starts
+          # 2-4 hours after its 19:57 UTC schedule, so two runs can land 26 hours apart.
+          RELEASE_HEARTBEAT_HOURS: ${{ vars.RELEASE_HEARTBEAT_HOURS || '26' }}
+        run: node scripts/release-heartbeat.mjs
