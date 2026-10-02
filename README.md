@@ -17,11 +17,19 @@ The `live` branch contains a small `current.json` pointer to an approved immutab
 
 ## Updating content
 
-The private application's **Prepare content release** workflow loads this repository's source records, runs the existing upstream refresh when requested, and prepares one `refresh/content` PR here. Review the readable `source/` changes; the generated `release/` changes accompany them. Merging a valid PR publishes its commit automatically.
+The application's nightly **Prepare content release** workflow (in its private repository) does the following:
+- loads this repository's `source/` records;
+- refreshes them from the game's tables and the public mirrors;
+- compiles every page into `release/`;
+- pushes the result straight to `main`, as a fast-forward with a deploy key scoped to this repository.
 
-For manual corrections, edit `source/` on a branch. A maintainer runs **Prepare content release** in the application repository with that branch as `data_ref` and upstream refresh disabled. It compiles the correction into the release PR. Merely editing generated files or merging mismatched source/output records is not a valid release.
+No pull request is opened, so its checks are the gate. Here, **Content release** (`.github/workflows/content.yml`) validates every push to `main` with `scripts/validate-release.mjs` and only then moves `live/current.json` to it. A push that fails validation is never served; readers keep the previous release.
 
-The existing upstream importers refresh stages, game-mode records, event/banner windows, and supporting tables. This does not invent missing editorial descriptions, guides, or complete new operator records: those still need a supported importer or a reviewed source addition.
+**Manual corrections** go in `source/`, on a branch that contains `main`. A maintainer runs **Prepare content release** with that branch as `data_ref` and the upstream refresh off. It compiles the correction and pushes the release to `main`. Editing generated `release/` files, or merging mismatched source and output, is not a valid release.
+
+**Review first:** a push to the `refresh/content` branch still opens a reviewed pull request here, with a summary of what changed. The nightly release does not use it.
+
+The upstream importers refresh operators' game data, stages, game-mode records, event and banner windows, outfits, voices and supporting tables. They do not invent missing editorial descriptions or guides: those still need a supported importer or a reviewed source addition.
 
 ## Validation and rollback
 
