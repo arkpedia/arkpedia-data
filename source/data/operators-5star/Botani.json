@@ -518,13 +518,19 @@
       "name": "Publicity Front",
       "facility": "Workshop",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to the Workshop to process Skill Summaries, reduces the Morale consumed by all corresponding formulas that cost 2 by -1"
+      "description": "When this Operator is assigned to the Workshop to process Skill Summaries, reduces the Morale consumed by all corresponding formulas that cost 2 by -1",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Inspired Modification",
       "facility": "Workshop",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to the Workshop to process Skill Summaries, the production rate of byproduct increases by 75%"
+      "description": "When this Operator is assigned to the Workshop to process Skill Summaries, the production rate of byproduct increases by 75%",
+      "slot": 1,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
@@ -565,8 +571,8 @@
         {
           "stage": "Stage 2",
           "attributesIncreased": "HP +125 , ATK +29",
-          "effectLabel": "Breaking the Silence improved",
-          "effectText": "Every enemy inflicted with Corrosion increases Botani's ASPD by +7 (Maximum 3 stacks)",
+          "effectLabel": "Silent No Longer improved",
+          "effectText": "When there are enemies in attack range under the burst effect of Corrosion, ASPD +7; stacks up to 3 times",
           "cost": [
             {
               "name": "Module Data Block",
@@ -589,8 +595,8 @@
         {
           "stage": "Stage 3",
           "attributesIncreased": "HP +145 , ATK +32",
-          "effectLabel": "Breaking the Silence improved",
-          "effectText": "Every enemy inflicted with Corrosion increases Botani's ASPD by +7 (Maximum 4 stacks)",
+          "effectLabel": "Silent No Longer improved",
+          "effectText": "When there are enemies in attack range under the burst effect of Corrosion, ASPD +7; stacks up to 4 times",
           "cost": [
             {
               "name": "Module Data Block",

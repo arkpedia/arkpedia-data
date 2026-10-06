@@ -97,11 +97,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -109,11 +109,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Pulse Isomorphism"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -192,82 +192,82 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "The next attack deals 130% ATK as Arts damage Can store 2 charges",
+            "description": "The next attack deals 130% ATK as Arts damage\nCan store 2 charges",
             "initialSp": 0,
             "spCost": 12,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 2,
             "mastery": null,
-            "description": "The next attack deals 135% ATK as Arts damage Can store 2 charges",
+            "description": "The next attack deals 135% ATK as Arts damage\nCan store 2 charges",
             "initialSp": 0,
             "spCost": 12,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 3,
             "mastery": null,
-            "description": "The next attack deals 140% ATK as Arts damage Can store 2 charges",
+            "description": "The next attack deals 140% ATK as Arts damage\nCan store 2 charges",
             "initialSp": 0,
             "spCost": 11,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 4,
             "mastery": null,
-            "description": "The next attack deals 145% ATK as Arts damage Can store 2 charges",
+            "description": "The next attack deals 145% ATK as Arts damage\nCan store 2 charges",
             "initialSp": 0,
             "spCost": 11,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 5,
             "mastery": null,
-            "description": "The next attack deals 150% ATK as Arts damage Can store 2 charges",
+            "description": "The next attack deals 150% ATK as Arts damage\nCan store 2 charges",
             "initialSp": 0,
             "spCost": 10,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 6,
             "mastery": null,
-            "description": "The next attack deals 160% ATK as Arts damage Can store 2 charges",
+            "description": "The next attack deals 160% ATK as Arts damage\nCan store 2 charges",
             "initialSp": 0,
             "spCost": 10,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 7,
             "mastery": null,
-            "description": "The next attack deals 170% ATK as Arts damage Can store 2 charges",
+            "description": "The next attack deals 170% ATK as Arts damage\nCan store 2 charges",
             "initialSp": 0,
             "spCost": 9,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 1,
-            "description": "The next attack deals 180% ATK as Arts damage Can store 2 charges",
+            "description": "The next attack deals 180% ATK as Arts damage\nCan store 2 charges",
             "initialSp": 0,
             "spCost": 9,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 2,
-            "description": "The next attack deals 190% ATK as Arts damage Can store 2 charges",
+            "description": "The next attack deals 190% ATK as Arts damage\nCan store 2 charges",
             "initialSp": 0,
             "spCost": 8,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 3,
-            "description": "The next attack deals 200% ATK as Arts damage Can store 2 charges",
+            "description": "The next attack deals 200% ATK as Arts damage\nCan store 2 charges",
             "initialSp": 0,
             "spCost": 8,
-            "duration": "–"
+            "duration": null
           }
         ],
         "recommendation": [],
@@ -518,26 +518,36 @@
       "name": "Surging Tunes",
       "facility": "Power Plant",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Power Plant , increases the drone recovery rate by +10%"
+      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Surging Tunes",
       "facility": "Power Plant",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to a Power Plant , increases the drone recovery rate by +15%"
+      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +15%",
+      "slot": 0,
+      "phase": 1,
+      "level": 1
     },
     {
       "name": "Fugue Amalgamation",
       "facility": "Dormitory",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to a Dormitory , increases own Morale restored per hour by +0.7 ; If there are other Operators in that Dormitory, further increases own Morale restored per hour by +0.05 for each additional Operator."
+      "description": "When this Operator is assigned to a Dormitory, increases own Morale restored per hour by +0.7; If there are other Operators in that Dormitory, further increases own Morale restored per hour by +0.05 for each additional Operator.",
+      "slot": 1,
+      "phase": 1,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Akkord's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_akkord"
     },
     {
       "type": "Upgrade",
@@ -550,8 +560,8 @@
         {
           "stage": "Stage 1",
           "attributesIncreased": "HP +145 , ATK +40",
-          "effectLabel": "New trait",
-          "effectText": "Attacks deal extremely long-ranged AoE Arts damage ; damage dealt increases with distance, up to 110%",
+          "effectLabel": "Trait improved",
+          "effectText": "Attacks deal extremely long-ranged AoE Arts damage; damage dealt increases with distance, up to 110%",
           "cost": [
             {
               "name": "Module Data Block",
@@ -615,11 +625,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_akkord"
     }
   ],
   "review": {
-    "official": "Akkord, real name Tonia Klang, is a tuner hailing from a remote\nLeithanian\ntown. She was referred to\nRhodes Island\nfor treatment after contracting\nOripathy\nin a soundfield core overload accident caused by a snowstorm. She currently helps out with Rhodes Island's music scene, while assisting in battle as a caster.",
+    "official": "Akkord, real name Tonia Klang, is a tuner hailing from a remote Leithanian town. She was referred to Rhodes Island for treatment after contracting Oripathy in a soundfield core overload accident caused by a snowstorm. She currently helps out with Rhodes Island's music scene, while assisting in battle as a caster.",
     "editor": null,
     "rating": null
   },

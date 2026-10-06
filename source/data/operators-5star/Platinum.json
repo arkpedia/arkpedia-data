@@ -97,11 +97,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -109,11 +109,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves All-Out Attack"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -322,87 +322,87 @@
         "name": "Pegasian Sight",
         "recoveryType": "Auto Recovery",
         "activationType": "Auto",
-        "duration": "Unlimited",
+        "duration": null,
         "levels": [
           {
             "level": 1,
             "mastery": null,
-            "description": "ASPD reduces slightly, but ATK +50% ; Range expands Infinite duration",
+            "description": "ASPD reduces slightly, but ATK +50%; Range expands\nInfinite duration",
             "initialSp": 0,
             "spCost": 70,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": 2,
             "mastery": null,
-            "description": "ASPD reduces slightly, but ATK +53% ; Range expands Infinite duration",
+            "description": "ASPD reduces slightly, but ATK +53%; Range expands\nInfinite duration",
             "initialSp": 0,
             "spCost": 69,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": 3,
             "mastery": null,
-            "description": "ASPD reduces slightly, but ATK +56% ; Range expands Infinite duration",
+            "description": "ASPD reduces slightly, but ATK +56%; Range expands\nInfinite duration",
             "initialSp": 0,
             "spCost": 68,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": 4,
             "mastery": null,
-            "description": "ASPD reduces slightly, but ATK +60% ; Range expands Infinite duration",
+            "description": "ASPD reduces slightly, but ATK +60%; Range expands\nInfinite duration",
             "initialSp": 0,
             "spCost": 67,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": 5,
             "mastery": null,
-            "description": "ASPD reduces slightly, but ATK +63% ; Range expands Infinite duration",
+            "description": "ASPD reduces slightly, but ATK +63%; Range expands\nInfinite duration",
             "initialSp": 0,
             "spCost": 66,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": 6,
             "mastery": null,
-            "description": "ASPD reduces slightly, but ATK +66% ; Range expands Infinite duration",
+            "description": "ASPD reduces slightly, but ATK +66%; Range expands\nInfinite duration",
             "initialSp": 0,
             "spCost": 65,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": 7,
             "mastery": null,
-            "description": "ASPD reduces slightly, but ATK +70% ; Range expands Infinite duration",
+            "description": "ASPD reduces slightly, but ATK +70%; Range expands\nInfinite duration",
             "initialSp": 0,
             "spCost": 63,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 1,
-            "description": "ASPD reduces slightly, but ATK +80% ; Range expands Infinite duration",
+            "description": "ASPD reduces slightly, but ATK +80%; Range expands\nInfinite duration",
             "initialSp": 0,
             "spCost": 59,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 2,
-            "description": "ASPD reduces slightly, but ATK +90% ; Range expands Infinite duration",
+            "description": "ASPD reduces slightly, but ATK +90%; Range expands\nInfinite duration",
             "initialSp": 0,
             "spCost": 55,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 3,
-            "description": "ASPD reduces slightly, but ATK +100% ; Range expands Infinite duration",
+            "description": "ASPD reduces slightly, but ATK +100%; Range expands\nInfinite duration",
             "initialSp": 0,
             "spCost": 50,
-            "duration": "∞"
+            "duration": null
           }
         ],
         "recommendation": [],
@@ -488,7 +488,7 @@
         },
         {
           "name": "Device",
-          "quantity": 4
+          "quantity": 3
         }
       ],
       "6": [
@@ -522,20 +522,27 @@
       "name": "Sniper Expert α",
       "facility": "Training Room",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to be the Trainer in the Training Room, Sniper Operators' Specialization training speed +30%"
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Sniper Operators' Specialization training speed +30%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Sniper Expert βReplacesSniper Expert α",
       "facility": "Training Room",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to be the Trainer in the Training Room, Sniper Operators' Specialization training speed +50%"
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Sniper Operators' Specialization training speed +50%",
+      "slot": 0,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Platinum's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_platnm"
     },
     {
       "type": "Upgrade",
@@ -613,11 +620,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_platnm"
     }
   ],
   "review": {
-    "official": "Platinum was formerly an assassin for the\nKazimierz\nArmorless Union\n.\nThe rest of her background is unknown\n. She has demonstrated considerable talent and special tactical accomplishments in mech fights, annihilation battles, and urban warfare.\nUnder the leadership of Dr.\nKal'tsit\n, she is a\nSniper\nOperator\nfor\nRhodes Island\n.",
+    "official": "Platinum was previously an assassin for the Kazimierz Armorless Union. The rest of her background is unknown. She has demonstrated considerable talent and special tactical accomplishments in high-mobility operations, clearance, and urban warfare.\nUnder the leadership of Dr. Kal'tsit, she is a Sniper Operator for Rhodes Island.",
     "editor": null,
     "rating": null
   },

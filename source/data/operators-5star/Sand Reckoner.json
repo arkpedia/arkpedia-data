@@ -13,7 +13,7 @@
     "Summon",
     "Slow"
   ],
-  "trait": "Deals Arts damage Can use Summons in battles",
+  "trait": "Deals Arts damage\nCan use Summons in battles",
   "howToObtain": {
     "Limited": "No",
     "Standard Headhunting": "Yes",
@@ -74,17 +74,17 @@
         {
           "stage": "Base",
           "potential": null,
-          "description": "Can summon 3 Clockwork Fowlbeasts . Clockwork Fowlbeasts and Sand Reckoner deals 10% more damage to Machine enemies"
+          "description": "Can summon 3 Clockwork Fowlbeasts. Clockwork Fowlbeasts and Sand Reckoner deal 10% more damage to Machine enemies"
         },
         {
           "stage": "Elite 1",
           "potential": null,
-          "description": "Can summon 4 Clockwork Fowlbeasts. Clockwork Fowlbeasts and Sand Reckoner deals 20% more damage to Machine enemies"
+          "description": "Can summon 4 Clockwork Fowlbeasts. Clockwork Fowlbeasts and Sand Reckoner deal 20% more damage to Machine enemies"
         },
         {
           "stage": "Elite 2",
           "potential": null,
-          "description": "Can summon 5 Clockwork Fowlbeasts. Clockwork Fowlbeasts and Sand Reckoner deals 20% more damage to Machine enemies"
+          "description": "Can summon 5 Clockwork Fowlbeasts. Clockwork Fowlbeasts and Sand Reckoner deal 20% more damage to Machine enemies"
         }
       ]
     }
@@ -93,11 +93,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -105,11 +105,11 @@
       },
       {
         "level": 5,
-        "benefit": "Redeployment time -6 seconds"
+        "benefit": "Redeployment Time -6 sec"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -318,12 +318,12 @@
         "name": "Weighing the Scales",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
-        "duration": "15–20 seconds",
+        "duration": "15 seconds",
         "levels": [
           {
             "level": 1,
             "mastery": null,
-            "description": "Immediately obtains 1 Clockwork Fowlbeast . Clockwork Fowlbeasts gain +27% ATK and will prioritize attacking the heaviest enemies. Clockwork Fowlbeast attacks will Slow targets for 1 second",
+            "description": "Immediately obtains 1 Clockwork Fowlbeast. Clockwork Fowlbeasts gain +27% ATK and will prioritize attacking the heaviest enemies. Clockwork Fowlbeast attacks will Slow targets for 1 second",
             "initialSp": 20,
             "spCost": 50,
             "duration": 15
@@ -518,33 +518,40 @@
       "name": "Order Distribution α",
       "facility": "Trading Post",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Trading Post , order acquisition efficiency +20%"
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +20%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Grand Bazaar ManagementReplacesOrder Distribution α",
       "facility": "Trading Post",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +30% and the order limit +1"
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +30% and the order limit +1",
+      "slot": 0,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Sand Reckoner's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_lasher"
     },
     {
       "type": "Upgrade",
       "name": "SUM-X: Traces From the Past",
       "mission": {
         "requirement1": "Summon a total of 20 summoned units with Sand Reckoner (excluding Support Units)",
-        "requirement2": "Clear Side Story DV-2 with a 3-star rating; You must deploy your own Sand Reckoner, and can only include 4 other Operators as members"
+        "requirement2": "Clear Dorothy's Vision DV-2 with a 3-star rating; You must deploy your own Sand Reckoner, and can only include 4 other Operators as members"
       },
       "stages": [
         {
           "stage": "Stage 1",
           "attributesIncreased": "HP +80 , ATK +25",
-          "effectLabel": "Trait improved",
+          "effectLabel": "New trait",
           "effectText": "The first summoned unit does not consume deployment slots (The last summoned unit on the field does not return a deployment slot when retreated or defeated)",
           "cost": [
             {
@@ -565,7 +572,7 @@
           "stage": "Stage 2",
           "attributesIncreased": "HP +100 , ATK +35",
           "effectLabel": "Teachings of the Dead Craftsman improved",
-          "effectText": "Can summon 5 Clockwork Fowlbeasts . Clockwork Fowlbeasts and Sand Reckoner deals 20% more damage to Machine enemies; Clockwork Fowlbeasts gain ASPD +5",
+          "effectText": "Can summon 5 Clockwork Fowlbeasts. Clockwork Fowlbeasts and Sand Reckoner deal 20% more damage to Machine enemies, and Clockwork Fowlbeasts gain ASPD +5",
           "cost": [
             {
               "name": "Module Data Block",
@@ -589,7 +596,7 @@
           "stage": "Stage 3",
           "attributesIncreased": "HP +120 , ATK +40",
           "effectLabel": "Teachings of the Dead Craftsman improved",
-          "effectText": "Can summon 5 Clockwork Fowlbeasts. Clockwork Fowlbeasts and Sand Reckoner deals 20% more damage to Machine enemies; Clockwork Fowlbeasts gain ASPD +8",
+          "effectText": "Can summon 5 Clockwork Fowlbeasts. Clockwork Fowlbeasts and Sand Reckoner deal 20% more damage to Machine enemies, and Clockwork Fowlbeasts gain ASPD +8",
           "cost": [
             {
               "name": "Module Data Block",
@@ -609,11 +616,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_lasher"
     }
   ],
   "review": {
-    "official": "Sand Reckoner, former overseer of\nMenat-Ha'mait\n's gem trading post. He has reached a cooperative relationship with\nRhodes Island\nafter being introduced by Operator\nPapyrus\n, using his funds and contacts to support our operations in the eastern regions of\nSargon\n.",
+    "official": "Sand Reckoner, former overseer of Menat-Ha'mait's gem trading post. He has reached a cooperative relationship with Rhodes Island after being introduced by Operator Papyrus, using his funds and contacts to support our operations in the eastern regions of Sargon.",
     "editor": null,
     "rating": null
   },

@@ -103,23 +103,23 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -10 seconds"
+        "benefit": "Redeployment Time -10 sec"
       },
       {
         "level": 4,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 5,
-        "benefit": "Improves Enforcer"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -193,87 +193,87 @@
         "name": "Enforcement Mode",
         "recoveryType": "Auto Recovery",
         "activationType": "Auto",
-        "duration": "Unlimited",
+        "duration": null,
         "levels": [
           {
             "level": 1,
             "mastery": null,
-            "description": "ATK +30% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "description": "ATK +30%, and attacks now prioritize enemies with the lowest percentage of remaining HP\nUnlimited duration",
             "initialSp": 0,
             "spCost": 90,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": 2,
             "mastery": null,
-            "description": "ATK +35% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "description": "ATK +35%, and attacks now prioritize enemies with the lowest percentage of remaining HP\nUnlimited duration",
             "initialSp": 0,
             "spCost": 88,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": 3,
             "mastery": null,
-            "description": "ATK +40% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "description": "ATK +40%, and attacks now prioritize enemies with the lowest percentage of remaining HP\nUnlimited duration",
             "initialSp": 0,
             "spCost": 86,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": 4,
             "mastery": null,
-            "description": "ATK +45% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "description": "ATK +45%, and attacks now prioritize enemies with the lowest percentage of remaining HP\nUnlimited duration",
             "initialSp": 0,
             "spCost": 84,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": 5,
             "mastery": null,
-            "description": "ATK +50% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "description": "ATK +50%, and attacks now prioritize enemies with the lowest percentage of remaining HP\nUnlimited duration",
             "initialSp": 0,
             "spCost": 82,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": 6,
             "mastery": null,
-            "description": "ATK +55% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "description": "ATK +55%, and attacks now prioritize enemies with the lowest percentage of remaining HP\nUnlimited duration",
             "initialSp": 0,
             "spCost": 80,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": 7,
             "mastery": null,
-            "description": "ATK +60% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "description": "ATK +60%, and attacks now prioritize enemies with the lowest percentage of remaining HP\nUnlimited duration",
             "initialSp": 0,
             "spCost": 78,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 1,
-            "description": "ATK +70% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "description": "ATK +70%, and attacks now prioritize enemies with the lowest percentage of remaining HP\nUnlimited duration",
             "initialSp": 0,
             "spCost": 76,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 2,
-            "description": "ATK +80% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "description": "ATK +80%, and attacks now prioritize enemies with the lowest percentage of remaining HP\nUnlimited duration",
             "initialSp": 0,
             "spCost": 74,
-            "duration": "∞"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 3,
-            "description": "ATK +90% , and attacks now prioritize enemies with the lowest percentage of remaining HP Unlimited duration",
+            "description": "ATK +90%, and attacks now prioritize enemies with the lowest percentage of remaining HP\nUnlimited duration",
             "initialSp": 0,
             "spCost": 70,
-            "duration": "∞"
+            "duration": null
           }
         ],
         "recommendation": [],
@@ -328,7 +328,7 @@
         "name": "Ultimatum",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
-        "duration": "25–30 seconds",
+        "duration": "25 seconds",
         "levels": [
           {
             "level": 1,
@@ -528,24 +528,31 @@
       "name": "Secret Inquiry",
       "facility": "Reception Room",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to the Reception Room, the likelihood of obtaining Ursus Student Self-Governing Group clues is increased (working time improves the likelihood)."
+      "description": "When this Operator is assigned to the Reception Room, the likelihood of obtaining Ursus Student Self-government Group clues is increased (working time improves the likelihood).",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Screening",
       "facility": "Reception Room",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining Ursus Student Self-Governing Group clues for every newly-obtained Clue that is not from Ursus Student Self-Governing Group (working time improves this likelihood)."
+      "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining Ursus Student Self-government Group clues for every newly-obtained Clue that is not from Ursus Student Self-government Group (working time improves this likelihood).",
+      "slot": 1,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Absinthe's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_absin"
     },
     {
       "type": "Upgrade",
-      "name": "CCR-X: \"Custodia\" Individual Comm-Unit",
+      "name": "CCR-X: 'Custodia' Individual Comm-Unit",
       "mission": {
         "requirement1": "Complete a total of 5 battles; You must deploy your own Absinthe, and unleash Ultimatum at least 1 time in each battle",
         "requirement2": "Clear Main Theme 3-4 with a 3-star rating; You must deploy your own Absinthe, and cannot include any other Caster Operators as members"
@@ -619,11 +626,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_absin"
     }
   ],
   "review": {
-    "official": "Operator\nAbsinthe, one of the\nUrsus\ncivilians rescued in the\nChernobog\nincident\n, voluntarily applied to join\nRhodes Island\n.\nAfter receiving a series of tests and undergoing training, she was approved to join an operational squad as a\nCaster\nOperator, while also providing services within the ship such as patrolling.",
+    "official": "Operator Absinthe, one of the Ursus civilians rescued in the Chernobog incident, voluntarily applied to join Rhodes Island. \nAfter receiving a series of tests and undergoing training, she was approved to join an operational squad as a Caster Operator, while also providing services within the ship such as patrolling.",
     "editor": null,
     "rating": null
   },

@@ -102,11 +102,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -114,11 +114,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Targeting - Primary"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -152,12 +152,12 @@
         "name": "Enchant Weapon α",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
-        "duration": "30–40 seconds",
+        "duration": "30 seconds",
         "levels": [
           {
             "level": 1,
             "mastery": null,
-            "description": "ATK +5% ; Damage dealt by Normal Attacks turn into Arts Damage",
+            "description": "ATK +5%; Damage dealt by Normal Attacks turn into Arts damage",
             "initialSp": 20,
             "spCost": 80,
             "duration": 30
@@ -165,7 +165,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "ATK +10% ; Damage dealt by Normal Attacks turn into Arts Damage",
+            "description": "ATK +10%; Damage dealt by Normal Attacks turn into Arts damage",
             "initialSp": 20,
             "spCost": 79,
             "duration": 31
@@ -173,7 +173,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "ATK +15% ; Damage dealt by Normal Attacks turn into Arts Damage",
+            "description": "ATK +15%; Damage dealt by Normal Attacks turn into Arts damage",
             "initialSp": 20,
             "spCost": 78,
             "duration": 32
@@ -181,7 +181,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "ATK +20% ; Damage dealt by Normal Attacks turn into Arts Damage",
+            "description": "ATK +20%; Damage dealt by Normal Attacks turn into Arts damage",
             "initialSp": 25,
             "spCost": 75,
             "duration": 35
@@ -189,7 +189,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "ATK +25% ; Damage dealt by Normal Attacks turn into Arts Damage",
+            "description": "ATK +25%; Damage dealt by Normal Attacks turn into Arts damage",
             "initialSp": 25,
             "spCost": 74,
             "duration": 36
@@ -197,7 +197,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "ATK +30% ; Damage dealt by Normal Attacks turn into Arts Damage",
+            "description": "ATK +30%; Damage dealt by Normal Attacks turn into Arts damage",
             "initialSp": 25,
             "spCost": 73,
             "duration": 37
@@ -205,37 +205,104 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "ATK +35% ; Damage dealt by Normal Attacks turn into Arts Damage",
+            "description": "ATK +35%; Damage dealt by Normal Attacks turn into Arts damage",
             "initialSp": 30,
             "spCost": 70,
             "duration": 40
           }
         ],
         "recommendation": [],
-        "cost": null,
+        "cost": {
+          "m1": [],
+          "m2": [],
+          "m3": []
+        },
         "pairings": [],
         "techniques": []
       }
     ],
-    "skillCost": null
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 1
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        },
+        {
+          "name": "Oriron Shard",
+          "quantity": 1
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 1
+        },
+        {
+          "name": "Polyketon",
+          "quantity": 1
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 1
+        },
+        {
+          "name": "Device",
+          "quantity": 1
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 1
+        },
+        {
+          "name": "Grindstone",
+          "quantity": 1
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 2
+        },
+        {
+          "name": "RMA70-12",
+          "quantity": 1
+        }
+      ]
+    }
   },
   "baseSkills": [
     {
       "name": "Communication",
       "facility": "Trading Post",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +30% and Morale consumed per hour -0.25"
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +30% and Morale consumed per hour -0.25",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Originium Work α",
       "facility": "Factory",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to a Factory, Originium formula related productivity +30%"
+      "description": "When this Operator is assigned to a Factory, Originium formula related productivity +30%",
+      "slot": 1,
+      "phase": 1,
+      "level": 1
     }
   ],
   "modules": [],
   "review": {
-    "official": "Initially a patient at\nRhodes Island\n, volunteered to become an\nOperator\n. He was assigned to\nOp Reserve Team A6\nafter completing his examination battery.",
+    "official": "Initially a patient at Rhodes Island, volunteered to become an Operator. He was assigned to Reserve Op Team A6 after completing his examination battery.",
     "editor": null,
     "rating": null
   },

@@ -13,7 +13,7 @@
     "Robot",
     "Defense"
   ],
-  "trait": "Blocks 3 enemies and ignores the Deployment Limit , but has a long Redeployment Time",
+  "trait": "Blocks 3 enemies and ignores Deployment Limit, but has a long Redeployment Time",
   "howToObtain": {
     "Limited": "No",
     "Standard Headhunting": "No",
@@ -62,62 +62,43 @@
   },
   "talents": [
     {
-      "name": "Persevere I",
+      "name": "Persevere",
       "rows": [
         {
+          "name": "Persevere I",
           "stage": "Base",
           "potential": null,
-          "description": "For 10 seconds after deployment, friendly units on surrounding tiles take 50 less damage"
-        }
-      ]
-    },
-    {
-      "name": "Persevere IIReplacesPersevere I",
-      "rows": [
+          "description": "For 10 seconds after deployment, friendly units on surrounding 8 tiles gain 50 Damage Reduction"
+        },
         {
+          "name": "Persevere II",
           "stage": "Base",
           "potential": "Potential 2",
-          "description": "For 10 seconds after deployment, friendly units on surrounding tiles take 55 less damage"
-        }
-      ]
-    },
-    {
-      "name": "Persevere IIIReplacesPersevere II",
-      "rows": [
+          "description": "For 10 seconds after deployment, friendly units on surrounding 8 tiles gain 55 Damage Reduction"
+        },
         {
+          "name": "Persevere III",
           "stage": "Base",
           "potential": "Potential 3",
-          "description": "For 10 seconds after deployment, friendly units on surrounding tiles take 60 less damage"
-        }
-      ]
-    },
-    {
-      "name": "Persevere IVReplacesPersevere III",
-      "rows": [
+          "description": "For 10 seconds after deployment, friendly units on surrounding 8 tiles gain 60 Damage Reduction"
+        },
         {
+          "name": "Persevere IV",
           "stage": "Base",
           "potential": "Potential 4",
-          "description": "For 10 seconds after deployment, friendly units on surrounding tiles take 65 less damage"
-        }
-      ]
-    },
-    {
-      "name": "Persevere VReplacesPersevere IV",
-      "rows": [
+          "description": "For 10 seconds after deployment, friendly units on surrounding 8 tiles gain 65 Damage Reduction"
+        },
         {
+          "name": "Persevere V",
           "stage": "Base",
           "potential": "Potential 5",
-          "description": "For 10 seconds after deployment, friendly units on surrounding tiles take 70 less damage"
-        }
-      ]
-    },
-    {
-      "name": "Persevere VIReplacesPersevere V",
-      "rows": [
+          "description": "For 10 seconds after deployment, friendly units on surrounding 8 tiles gain 70 Damage Reduction"
+        },
         {
+          "name": "Persevere VI",
           "stage": "Base",
           "potential": "Potential 6",
-          "description": "For 10 seconds after deployment, friendly units on surrounding tiles take 75 less damage"
+          "description": "For 10 seconds after deployment, friendly units on surrounding 8 tiles gain 75 Damage Reduction"
         }
       ]
     }
@@ -126,23 +107,23 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "Persevere I becomes Persevere II"
+        "benefit": "Improves Talent"
       },
       {
         "level": 3,
-        "benefit": "Persevere II becomes Persevere III"
+        "benefit": "Improves Talent"
       },
       {
         "level": 4,
-        "benefit": "Persevere III becomes Persevere IV"
+        "benefit": "Improves Talent"
       },
       {
         "level": 5,
-        "benefit": "Persevere IV becomes Persevere V"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "Persevere V becomes Persevere VI"
+        "benefit": "Improves Talent"
       }
     ],
     "totalCost": [
@@ -155,25 +136,31 @@
   "promotion": [],
   "skills": {
     "skillList": [],
-    "skillCost": null
+    "skillCost": {}
   },
   "baseSkills": [
     {
       "name": "Backup Energy",
       "facility": "Power Plant",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%"
+      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "\"Pleasant Conversation\"",
       "facility": "Power Plant",
       "eliteLevel": "Level 30",
-      "description": "When this Operator is assigned to a Power Plant, if Kal'tsit is assigned to the Control Center, increases the drone recovery rate by +5% ."
+      "description": "When this Operator is assigned to a Power Plant, if Kal'tsit is assigned to the Control Center, increases the drone recovery rate by +5%.",
+      "slot": 1,
+      "phase": 0,
+      "level": 30
     }
   ],
   "modules": [],
   "review": {
-    "official": "Friston 3 is an S-C Model four-wheeled Operation Platform, the first product of the\nRhodes Island\nSmart Operation platform\nR&D\nTeam's efforts.\nClosure\npersonally led the team throughout the development process, from concept design to assembly and testing. Friston-3 is also based on\nPRTS\n, achieving a new comprehensive standard for operation platforms, from the underlying source code to the external modules. He weighs less than the other retrofitted operation platforms on Rhodes Island, while being more versatile and stable, and currently participates in operations as a\nDefender\nOperator\n.\n[Classified Log]\nThe source code for Friston-3's core, compiled ideations, and other design details are temporarily unavailable to Operators, so please contact Closure directly if you have any questions.",
+    "official": "Friston 3 is an S-C Model four-wheeled Operation Platform, the first product of the Rhodes Island Smart Operation platform R&D Team's efforts. Closure personally led the team throughout the development process, from concept design to assembly and testing. Friston-3 is also based on PRTS, achieving a new comprehensive standard for operation platforms, from the underlying source code to the external modules. He weighs less than the other retrofitted operation platforms on Rhodes Island, while being more versatile and stable, and currently participates in operations as a Defender Operator.\n[Classified Log]\nThe source code for Friston-3's core, compiled ideations, and other design details are temporarily unavailable to Operators, so please contact Closure directly if you have any questions.",
     "editor": null,
     "rating": null
   },

@@ -10,10 +10,10 @@
   "subRegion": null,
   "position": "Ranged",
   "tags": [
-    "Healing",
-    "Robot"
+    "Robot",
+    "Healing"
   ],
-  "trait": "Restores the HP of allies and ignores the Deployment Limit , but has a long Redeployment Time",
+  "trait": "Restores the HP of allies and ignores the Deployment Limit, but has a long Redeployment Time",
   "howToObtain": {
     "Limited": "No",
     "Standard Headhunting": "No",
@@ -65,59 +65,40 @@
   },
   "talents": [
     {
-      "name": "Support Spray 1",
+      "name": "Support Spray",
       "rows": [
         {
+          "name": "Support Spray 1",
           "stage": "Base",
           "potential": null,
           "description": "Immediately restores the HP of all allies by 200 after deployment"
-        }
-      ]
-    },
-    {
-      "name": "Support Spray 2ReplacesSupport Spray 1",
-      "rows": [
+        },
         {
+          "name": "Support Spray 2",
           "stage": "Base",
           "potential": "Potential 2",
           "description": "Immediately restores the HP of all allies by 260 after deployment"
-        }
-      ]
-    },
-    {
-      "name": "Support Spray 3ReplacesSupport Spray 2",
-      "rows": [
+        },
         {
+          "name": "Support Spray 3",
           "stage": "Base",
           "potential": "Potential 3",
           "description": "Immediately restores the HP of all allies by 320 after deployment"
-        }
-      ]
-    },
-    {
-      "name": "Support Spray 4ReplacesSupport Spray 3",
-      "rows": [
+        },
         {
+          "name": "Support Spray 4",
           "stage": "Base",
           "potential": "Potential 4",
           "description": "Immediately restores the HP of all allies by 380 after deployment"
-        }
-      ]
-    },
-    {
-      "name": "Support Spray 5ReplacesSupport Spray 4",
-      "rows": [
+        },
         {
+          "name": "Support Spray 5",
           "stage": "Base",
           "potential": "Potential 5",
           "description": "Immediately restores the HP of all allies by 440 after deployment"
-        }
-      ]
-    },
-    {
-      "name": "Support Spray 6ReplacesSupport Spray 5",
-      "rows": [
+        },
         {
+          "name": "Support Spray 6",
           "stage": "Base",
           "potential": "Potential 6",
           "description": "Immediately restores the HP of all allies by 500 after deployment"
@@ -129,23 +110,23 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "Support Spray 1 becomes Support Spray 2"
+        "benefit": "Improves Talent"
       },
       {
         "level": 3,
-        "benefit": "Support Spray 2 becomes Support Spray 3"
+        "benefit": "Improves Talent"
       },
       {
         "level": 4,
-        "benefit": "Support Spray 3 becomes Support Spray 4"
+        "benefit": "Improves Talent"
       },
       {
         "level": 5,
-        "benefit": "Support Spray 4 becomes Support Spray 5"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "Support Spray 5 becomes Support Spray 6"
+        "benefit": "Improves Talent"
       }
     ],
     "totalCost": [
@@ -158,25 +139,31 @@
   "promotion": [],
   "skills": {
     "skillList": [],
-    "skillCost": null
+    "skillCost": {}
   },
   "baseSkills": [
     {
       "name": "Backup Energy",
       "facility": "Power Plant",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%"
+      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Medical Service",
       "facility": "Dormitory",
       "eliteLevel": "Level 30",
-      "description": "When this Operator is assigned to a Dormitory, restores +0.65 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place)"
+      "description": "When this Operator is assigned to a Dormitory, restores +0.65 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place)",
+      "slot": 1,
+      "phase": 0,
+      "level": 30
     }
   ],
   "modules": [],
   "review": {
-    "official": "Lancet-2 is a custom\nRaythean\n-S62 Model six-wheeled operations platform. Its rounded design has led Lancet-2 to be perceived as cute, making her something of a mascot. Although she has a rather pessimistic dispensation, she is still well-liked.\nAfter being modified by\nClosure\n, Lancet-2 is able to perform more medical duties around the island, and her equipment is geared towards disinfecting and cleaning\nOriginium\ncontamination.",
+    "official": "Lancet-2 is a custom Raythean-S62 Model six-wheeled operations platform. Its rounded design has led Lancet-2 to be perceived as cute, making her something of a mascot. Although she has a rather pessimistic dispensation, she is still well-liked. \nAfter being modified by Closure, Lancet-2 is able to perform more medical duties around the island, and her equipment is geared towards disinfecting and cleaning Originium contamination.",
     "editor": null,
     "rating": null
   },

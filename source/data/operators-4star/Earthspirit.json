@@ -88,11 +88,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -100,11 +100,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Geological Survey"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -316,7 +316,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "Stops attacking ; Enemies within range are Slowed every 1.8 seconds",
+            "description": "Stops attacking; Enemies within range are Slowed every 1.8 seconds",
             "initialSp": 0,
             "spCost": 60,
             "duration": 25
@@ -324,7 +324,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "Stops attacking ; Enemies within range are Slowed every 1.8 seconds",
+            "description": "Stops attacking; Enemies within range are Slowed every 1.8 seconds",
             "initialSp": 0,
             "spCost": 58,
             "duration": 25
@@ -332,7 +332,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "Stops attacking ; Enemies within range are Slowed every 1.8 seconds",
+            "description": "Stops attacking; Enemies within range are Slowed every 1.8 seconds",
             "initialSp": 0,
             "spCost": 56,
             "duration": 25
@@ -340,7 +340,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "Stops attacking ; Enemies within range are Slowed every 1.7 seconds",
+            "description": "Stops attacking; Enemies within range are Slowed every 1.7 seconds",
             "initialSp": 5,
             "spCost": 54,
             "duration": 25
@@ -348,7 +348,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "Stops attacking ; Enemies within range are Slowed every 1.7 seconds",
+            "description": "Stops attacking; Enemies within range are Slowed every 1.7 seconds",
             "initialSp": 5,
             "spCost": 52,
             "duration": 25
@@ -356,7 +356,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "Stops attacking ; Enemies within range are Slowed every 1.7 seconds",
+            "description": "Stops attacking; Enemies within range are Slowed every 1.7 seconds",
             "initialSp": 5,
             "spCost": 50,
             "duration": 25
@@ -364,7 +364,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "Stops attacking ; Enemies within range are Slowed every 1.6 seconds",
+            "description": "Stops attacking; Enemies within range are Slowed every 1.6 seconds",
             "initialSp": 10,
             "spCost": 48,
             "duration": 25
@@ -372,7 +372,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "Stops attacking ; Enemies within range are Slowed every 1.55 seconds",
+            "description": "Stops attacking; Enemies within range are Slowed every 1.6 seconds",
             "initialSp": 10,
             "spCost": 46,
             "duration": 25
@@ -380,7 +380,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "Stops attacking ; Enemies within range are Slowed every 1.5 seconds",
+            "description": "Stops attacking; Enemies within range are Slowed every 1.5 seconds",
             "initialSp": 10,
             "spCost": 44,
             "duration": 25
@@ -388,7 +388,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "Stops attacking ; Enemies within range are Slowed every 1.4 seconds",
+            "description": "Stops attacking; Enemies within range are Slowed every 1.4 seconds",
             "initialSp": 15,
             "spCost": 40,
             "duration": 25
@@ -507,40 +507,50 @@
       "name": "Catastrophe Messenger α",
       "facility": "Office",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to the HR Office, HR contacting speed +30%"
+      "description": "When this Operator is assigned to the HR Office, HR contacting speed +30%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Clocking Out On TimeReplacesCatastrophe Messenger α",
       "facility": "Office",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to the HR Office, HR contacting speed +45% and Morale consumed per hour +2"
+      "description": "When this Operator is assigned to the HR Office, HR contacting speed +45% and Morale consumed per hour +2",
+      "slot": 0,
+      "phase": 1,
+      "level": 1
     },
     {
       "name": "Geology β",
       "facility": "Factory",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to a Factory, Originium formula related productivity +35%"
+      "description": "When this Operator is assigned to a Factory, Originium formula related productivity +35%",
+      "slot": 1,
+      "phase": 1,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Earthspirit's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_skgoat"
     },
     {
       "type": "Upgrade",
       "name": "DEC-Y: Application Forms, To Be Confirmed",
       "mission": {
         "requirement1": "Have Earthspirit use Quicksand Conversion a total of 6 times (excluding Support Units)",
-        "requirement2": "Clear Intermezzo DM-2 with a 3-star rating; You must deploy your own Earthspirit, and only Vanguard and Sniper Operators are allowed for the remaining units"
+        "requirement2": "Clear Darknights Memoir DM-2 with a 3-star rating; You must deploy your own Earthspirit, and only Vanguard and Sniper Operators are allowed for the remaining units"
       },
       "stages": [
         {
           "stage": "Stage 1",
           "attributesIncreased": "HP +90 , DEF +20",
           "effectLabel": "Trait improved",
-          "effectText": "Attacks deal Arts damage , and Slow the enemy for a moderate period of time",
+          "effectText": "Attacks deal Arts damage, and Slow the enemy for a moderate period of time",
           "cost": [
             {
               "name": "Module Data Block",
@@ -560,7 +570,7 @@
           "stage": "Stage 2",
           "attributesIncreased": "HP +110 , DEF +30",
           "effectLabel": "Geological Survey improved",
-          "effectText": "Extends the duration of Slow caused by the Trait Extends the duration of Slow caused by the Trait greatly",
+          "effectText": "Extends the duration of Slow caused by the Trait",
           "cost": [
             {
               "name": "Module Data Block",
@@ -584,7 +594,7 @@
           "stage": "Stage 3",
           "attributesIncreased": "HP +130 , DEF +38",
           "effectLabel": "Geological Survey improved",
-          "effectText": "Further the duration of Slow caused by the Trait Further the duration of Slow caused by the Trait significantly",
+          "effectText": "Further the duration of Slow caused by the Trait",
           "cost": [
             {
               "name": "Module Data Block",
@@ -604,11 +614,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_skgoat"
     }
   ],
   "review": {
-    "official": "Earthspirit is a geologist. She fills the gaps we have in fields such as environmental assessment, battlefield analysis, and terrain utilization.\nShe currently serves with a support squad performing geological surveys, early\nCatastrophe\nwarnings and other related services for\nRhodes Island\n.",
+    "official": "Earthspirit is a geologist. She fills the gaps we have in fields such as environmental assessment, battlefield analysis, and terrain utilization. \nShe currently serves with a support squad performing geological surveys, early Catastrophe warnings and other related services for Rhodes Island.",
     "editor": null,
     "rating": null
   },

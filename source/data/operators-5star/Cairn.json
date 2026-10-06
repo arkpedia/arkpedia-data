@@ -10,8 +10,8 @@
   "subRegion": null,
   "position": "Melee",
   "tags": [
-    "Defense",
-    "Elemental"
+    "Elemental",
+    "Defense"
   ],
   "trait": "Blocks 3 enemies, and can inflict Elemental Injury",
   "howToObtain": {
@@ -94,11 +94,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -106,11 +106,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Explanation Saturation"
+        "benefit": "Improves First Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -326,7 +326,7 @@
             "description": "Gains a Barrier equal to 30% of Max HP (Barrier lasts 10 seconds, cannot exceed 30% of Max HP), and deals 20% ATK as Arts damage and 5% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
             "initialSp": 5,
             "spCost": 30,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 2,
@@ -334,7 +334,7 @@
             "description": "Gains a Barrier equal to 40% of Max HP (Barrier lasts 10 seconds, cannot exceed 40% of Max HP), and deals 30% ATK as Arts damage and 5% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
             "initialSp": 5,
             "spCost": 29,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 3,
@@ -342,7 +342,7 @@
             "description": "Gains a Barrier equal to 50% of Max HP (Barrier lasts 10 seconds, cannot exceed 50% of Max HP), and deals 30% ATK as Arts damage and 5% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
             "initialSp": 5,
             "spCost": 28,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 4,
@@ -350,7 +350,7 @@
             "description": "Gains a Barrier equal to 60% of Max HP (Barrier lasts 10 seconds, cannot exceed 60% of Max HP), and deals 40% ATK as Arts damage and 7% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
             "initialSp": 7,
             "spCost": 27,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 5,
@@ -358,7 +358,7 @@
             "description": "Gains a Barrier equal to 70% of Max HP (Barrier lasts 10 seconds, cannot exceed 70% of Max HP), and deals 50% ATK as Arts damage and 7% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
             "initialSp": 7,
             "spCost": 26,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 6,
@@ -366,7 +366,7 @@
             "description": "Gains a Barrier equal to 80% of Max HP (Barrier lasts 10 seconds, cannot exceed 80% of Max HP), and deals 50% ATK as Arts damage and 7% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
             "initialSp": 9,
             "spCost": 25,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 7,
@@ -374,7 +374,7 @@
             "description": "Gains a Barrier equal to 90% of Max HP (Barrier lasts 10 seconds, cannot exceed 90% of Max HP), and deals 60% ATK as Arts damage and 10% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
             "initialSp": 10,
             "spCost": 24,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
@@ -382,7 +382,7 @@
             "description": "Gains a Barrier equal to 90% of Max HP (Barrier lasts 10 seconds, cannot exceed 90% of Max HP), and deals 60% ATK as Arts damage and 10% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
             "initialSp": 12,
             "spCost": 23,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
@@ -390,7 +390,7 @@
             "description": "Gains a Barrier equal to 90% of Max HP (Barrier lasts 10 seconds, cannot exceed 90% of Max HP), and deals 70% ATK as Arts damage and 10% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
             "initialSp": 13,
             "spCost": 23,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
@@ -398,7 +398,7 @@
             "description": "Gains a Barrier equal to 90% of Max HP (Barrier lasts 10 seconds, cannot exceed 90% of Max HP), and deals 80% ATK as Arts damage and 10% ATK as Nervous Impairment every second for 10 seconds to surrounding ground enemies",
             "initialSp": 14,
             "spCost": 22,
-            "duration": "–"
+            "duration": null
           }
         ],
         "recommendation": [],
@@ -523,30 +523,40 @@
       "name": "Bedtime Stories",
       "facility": "Dormitory",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Dormitory , restores +0.15 Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
+      "description": "When this Operator is assigned to a Dormitory, restores +0.15 Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Bucket ListReplacesBedtime Stories",
       "facility": "Dormitory",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to a Dormitory , restores +0.15 Morale per hour to all Operators assigned to that Dormitory, and every level of that Dormitory increases restoration by another +0.02 (Only the strongest stacked effect of this type takes place)"
+      "description": "When this Operator is assigned to a Dormitory, restores +0.15 Morale per hour to all Operators assigned to that Dormitory, and every level of that Dormitory increases restoration by another +0.02 (Only the strongest stacked effect of this type takes place)",
+      "slot": 0,
+      "phase": 2,
+      "level": 1
     },
     {
       "name": "Special Methods Consultant",
       "facility": "Reception Room",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to the Reception Room , if in Clue Exchange, increases Clue search speed by 30%"
+      "description": "When this Operator is assigned to the Reception Room, if in Clue Exchange, increases Clue search speed by 30%",
+      "slot": 1,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Cairn's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_cairn"
     },
     {
       "type": "Upgrade",
-      "name": "PRP-X: \"Parachute\"",
+      "name": "PRP-X: 'Parachute'",
       "mission": {
         "requirement1": "Trigger a total of 3 Nervous Impairment Bursts with your own Cairn",
         "requirement2": "Clear Twilight of Wolumonde TW-7 with a 3-star rating; You must deploy your own Cairn, and use Stunning Directives at least 1 time"
@@ -555,7 +565,7 @@
         {
           "stage": "Stage 1",
           "attributesIncreased": "HP +200 , DEF +40",
-          "effectLabel": "Trait improved",
+          "effectLabel": "New trait",
           "effectText": "Deals 15% more Elemental Injury when blocking enemies",
           "cost": [
             {
@@ -620,11 +630,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_cairn"
     }
   ],
   "review": {
-    "official": "Ferne Barn, born in\nColumbia\n, owner of an independent travel agency that claims there is no place they won't go. She is also the sole employee of said agency other than the late Martin Barn, honorary director.\nAs she receives treatment at\nRhodes Island\n, she also reached an agreement with us to perform guide functions on field missions under the code name \"Cairn\".",
+    "official": "Ferne Barn, born in Columbia, owner of an independent travel agency that claims there is no place they won't go. She is also the sole employee of said agency other than the late Martin Barn, honorary director.\nAs she receives treatment at Rhodes Island, she also reached an agreement with us to perform guide functions on field missions under the code name 'Cairn'.",
     "editor": null,
     "rating": null
   },

@@ -523,20 +523,27 @@
       "name": "Pride of a Hero α",
       "facility": "Control Center",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to the Control Center, clue collection speed +4% for each Minos Operator in the Base (excluding Assistants and Activity Room users, caps at +20%, strongest effect of the same type applies); when assigned together with Sargon Operators, self Morale loss per hour +0.02"
+      "description": "When this Operator is assigned to the Control Center, clue collection speed +4% for each Minos Operator in the Base (excluding Assistants and Activity Room users, caps at +20%, strongest effect of the same type applies); when assigned together with Sargon Operators, self Morale loss per hour +0.02",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Pride of a Hero β",
       "facility": "Control Center",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to the Control Center, clue collection speed +5% for each Minos Operator in the Base (excluding Assistants and Activity Room users, caps at +25%, strongest effect of the same type applies); when assigned together with Sargon Operators, self Morale loss per hour +0.02"
+      "description": "When this Operator is assigned to the Control Center, clue collection speed +5% for each Minos Operator in the Base (excluding Assistants and Activity Room users, caps at +25%, strongest effect of the same type applies); when assigned together with Sargon Operators, self Morale loss per hour +0.02",
+      "slot": 0,
+      "phase": 1,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Varkáris's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_varkis"
     },
     {
       "type": "Upgrade",
@@ -549,7 +556,7 @@
         {
           "stage": "Stage 1",
           "attributesIncreased": "HP +120 , ATK +48",
-          "effectLabel": "Trait improved",
+          "effectLabel": "New trait",
           "effectText": "While above 50% HP, reduces the amount of Physical damage taken by 20%",
           "cost": [
             {
@@ -570,7 +577,7 @@
           "stage": "Stage 2",
           "attributesIncreased": "HP +170 , ATK +58",
           "effectLabel": "Never Forgotten improved",
-          "effectText": "When deployed, all [ Minos ] Operators have their ATK increased to 113% when attacking enemies with an HP percentage equal to or lower than their own",
+          "effectText": "When deployed, all [Minos] Operators have their ATK increased to 113% when attacking enemies with an HP percentage equal to or lower than their own",
           "cost": [
             {
               "name": "Module Data Block",
@@ -614,7 +621,8 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_varkis"
     }
   ],
   "review": {

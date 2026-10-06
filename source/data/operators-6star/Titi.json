@@ -712,26 +712,36 @@
       "name": "As Good As Old α",
       "facility": "Workshop",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to the Workshop to process elite material, the production rate of byproduct increases by 75%"
+      "description": "When this Operator is assigned to the Workshop to process elite material, the production rate of byproduct increases by 75%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "As Good As Old β",
       "facility": "Workshop",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to the Workshop to process elite material, the production rate of byproduct increases by 80%"
+      "description": "When this Operator is assigned to the Workshop to process elite material, the production rate of byproduct increases by 80%",
+      "slot": 0,
+      "phase": 2,
+      "level": 1
     },
     {
       "name": "Conversing With History",
       "facility": "Workshop",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to the Workshop to process Elite materials, reduces the Morale consumed by all corresponding formulas that cost 8 Morale by -4"
+      "description": "When this Operator is assigned to the Workshop to process Elite materials, reduces the Morale consumed by all corresponding formulas that cost 8 Morale by -4",
+      "slot": 1,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Titi's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_titi"
     },
     {
       "type": "Upgrade",
@@ -765,7 +775,7 @@
           "stage": "Stage 2",
           "attributesIncreased": "HP +125 , ATK +45",
           "effectLabel": "Frozen in Time improved",
-          "effectText": "Can attack Sleeping enemies, and when attacking stationary enemies, deals an additional 20% ATK as Arts damage; when deployed, Sleeping enemies receive 35% ATK as Arts damage per second",
+          "effectText": "Can attack Sleeping enemies, and when attacking stationary enemies, deals an additional 20% ATK as Arts damage; when deployed, Sleeping enemies receive 35% of Titi's ATK as Arts damage per second",
           "cost": [
             {
               "name": "Module Data Block",
@@ -789,7 +799,7 @@
           "stage": "Stage 3",
           "attributesIncreased": "HP +150 , ATK +53",
           "effectLabel": "Frozen in Time improved",
-          "effectText": "Can attack Sleeping enemies, and when attacking stationary enemies, deals an additional 30% ATK as Arts damage; when deployed, Sleeping enemies receive 40% ATK as Arts damage per second",
+          "effectText": "Can attack Sleeping enemies, and when attacking stationary enemies, deals an additional 30% ATK as Arts damage; when deployed, Sleeping enemies receive 40% of Titi's ATK as Arts damage per second",
           "cost": [
             {
               "name": "Module Data Block",
@@ -809,7 +819,8 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_titi"
     }
   ],
   "review": {

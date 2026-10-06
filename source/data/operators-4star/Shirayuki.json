@@ -83,11 +83,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -95,11 +95,11 @@
       },
       {
         "level": 5,
-        "benefit": "Redeployment time -6 seconds"
+        "benefit": "Redeployment Time -6 sec"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -179,7 +179,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "Range +2 grids",
+            "description": "Range +2 tiles",
             "initialSp": 0,
             "spCost": 32,
             "duration": 25
@@ -187,7 +187,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "Range +2 grids",
+            "description": "Range +2 tiles",
             "initialSp": 0,
             "spCost": 31,
             "duration": 25
@@ -195,7 +195,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "Range +2 grids",
+            "description": "Range +2 tiles",
             "initialSp": 0,
             "spCost": 30,
             "duration": 25
@@ -203,7 +203,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "Range +2 grids",
+            "description": "Range +2 tiles",
             "initialSp": 5,
             "spCost": 27,
             "duration": 25
@@ -211,7 +211,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "Range +2 grids",
+            "description": "Range +2 tiles",
             "initialSp": 5,
             "spCost": 26,
             "duration": 25
@@ -219,7 +219,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "Range +2 grids",
+            "description": "Range +2 tiles",
             "initialSp": 5,
             "spCost": 25,
             "duration": 25
@@ -227,7 +227,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "Range +2 grids",
+            "description": "Range +2 tiles",
             "initialSp": 10,
             "spCost": 22,
             "duration": 25
@@ -235,7 +235,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "Range +2 grids",
+            "description": "Range +2 tiles",
             "initialSp": 10,
             "spCost": 21,
             "duration": 25
@@ -243,7 +243,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "Range +2 grids",
+            "description": "Range +2 tiles",
             "initialSp": 10,
             "spCost": 20,
             "duration": 25
@@ -251,7 +251,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "Range +2 grids",
+            "description": "Range +2 tiles",
             "initialSp": 10,
             "spCost": 15,
             "duration": 25
@@ -510,20 +510,27 @@
       "name": "Clue Search β",
       "facility": "Reception Room",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by 20%"
+      "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by 20%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Combat Guidance Video",
       "facility": "Factory",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to a Factory, Battle Record formula related productivity +30%"
+      "description": "When this Operator is assigned to a Factory, Battle Record formula related productivity +30%",
+      "slot": 1,
+      "phase": 1,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Shirayuki's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_yuki"
     },
     {
       "type": "Upgrade",
@@ -601,11 +608,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_yuki"
     }
   ],
   "review": {
-    "official": "Formerly the personal bodyguard of Lady\nFumizuki\n, wife of\nLungmen's\nChief\nWei Yenwu\n, Shirayuki was sent to\nRhodes Island\nto serve the\nDoctor\nin the same role, after the\nLungmen Guard Department\npartnered with the company. She uses large shurikens as her weapons of choice, and is well-versed in covert ops and intelligence gathering. She protects the Doctor from behind the scenes.",
+    "official": "Formerly the personal bodyguard of Lady Fumizuki, wife of Lungmen's Chief Wei Yenwu, Shirayuki was sent to Rhodes Island to serve the Doctor in the same role, after the Lungmen Guard Department partnered with the company. She uses large shurikens as her weapons of choice, and is well-versed in covert ops and intelligence gathering. She protects the Doctor from behind the scenes.",
     "editor": null,
     "rating": null
   },

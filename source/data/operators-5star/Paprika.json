@@ -78,7 +78,7 @@
         {
           "stage": "Elite 1",
           "potential": "Potential 5",
-          "description": "When healing, heal an extra 90 (+10) HP if target HP is below 40%"
+          "description": "When healing, heal an extra 90(+10) HP if target HP is below 40%"
         },
         {
           "stage": "Elite 2",
@@ -88,7 +88,7 @@
         {
           "stage": "Elite 2",
           "potential": "Potential 5",
-          "description": "When healing, heal an extra 150 (+10) HP if target HP is below 40%"
+          "description": "When healing, heal an extra 150(+10) HP if target HP is below 40%"
         }
       ]
     }
@@ -97,11 +97,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -109,11 +109,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Focused Attention"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -326,7 +326,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "ATK +10% , bounces per heal +1 , Talent activation threshold becomes 50% HP",
+            "description": "ATK +10%, bounces per heal +1, Talent activation threshold becomes 50% HP",
             "initialSp": 15,
             "spCost": 45,
             "duration": 25
@@ -334,7 +334,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "ATK +15% , bounces per heal +1 , Talent activation threshold becomes 50% HP",
+            "description": "ATK +15%, bounces per heal +1, Talent activation threshold becomes 50% HP",
             "initialSp": 15,
             "spCost": 44,
             "duration": 25
@@ -342,7 +342,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "ATK +20% , bounces per heal +1 , Talent activation threshold becomes 50% HP",
+            "description": "ATK +20%, bounces per heal +1, Talent activation threshold becomes 50% HP",
             "initialSp": 15,
             "spCost": 43,
             "duration": 25
@@ -350,7 +350,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "ATK +30% , bounces per heal +1 , Talent activation threshold becomes 60% HP",
+            "description": "ATK +30%, bounces per heal +1, Talent activation threshold becomes 60% HP",
             "initialSp": 20,
             "spCost": 40,
             "duration": 25
@@ -358,7 +358,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "ATK +35% , bounces per heal +1 , Talent activation threshold becomes 60% HP",
+            "description": "ATK +35%, bounces per heal +1, Talent activation threshold becomes 60% HP",
             "initialSp": 20,
             "spCost": 39,
             "duration": 25
@@ -366,7 +366,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "ATK +40% , bounces per heal +1 , Talent activation threshold becomes 60% HP",
+            "description": "ATK +40%, bounces per heal +1, Talent activation threshold becomes 60% HP",
             "initialSp": 20,
             "spCost": 38,
             "duration": 25
@@ -374,7 +374,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "ATK +50% , bounces per heal +1 , Talent activation threshold becomes 70% HP",
+            "description": "ATK +50%, bounces per heal +1, Talent activation threshold becomes 70% HP",
             "initialSp": 25,
             "spCost": 35,
             "duration": 25
@@ -382,7 +382,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "ATK +60% , bounces per heal +1 , Talent activation threshold becomes 70% HP",
+            "description": "ATK +60%, bounces per heal +1, Talent activation threshold becomes 70% HP",
             "initialSp": 25,
             "spCost": 33,
             "duration": 25
@@ -390,7 +390,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "ATK +65% , bounces per heal +1 , Talent activation threshold becomes 70% HP",
+            "description": "ATK +65%, bounces per heal +1, Talent activation threshold becomes 70% HP",
             "initialSp": 25,
             "spCost": 32,
             "duration": 25
@@ -398,7 +398,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "ATK +70% , bounces per heal +1 , Talent activation threshold becomes 80% HP",
+            "description": "ATK +70%, bounces per heal +1, Talent activation threshold becomes 80% HP",
             "initialSp": 25,
             "spCost": 30,
             "duration": 25
@@ -521,39 +521,49 @@
       "name": "Full of Vigor",
       "facility": "Control Center",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to the Control Center, all Trading Posts' order efficiency +7% (only the most effective one will take effect when assigned Operators have the same skill effect)"
+      "description": "When this Operator is assigned to the Control Center, all Trading Posts' order efficiency +7% (only the most effective one will take effect when assigned Operators have the same skill effect)",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Tailoring α",
       "facility": "Trading Post",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Trading Post, the chance of getting higher-yield Precious Metal orders is increased slightly (rate is influenced by length of work time), and Morale consumed per hour is reduced by -0.25"
+      "description": "When this Operator is assigned to a Trading Post, the chance of getting higher-yield Precious Metal orders is increased slightly (rate is influenced by length of work time), and Morale consumed per hour is reduced by -0.25",
+      "slot": 1,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Tailoring βReplacesTailoring α",
       "facility": "Trading Post",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to a Trading Post, the chance of getting higher-yield Precious Metal orders is increased (rate is influenced by length of work time), and Morale consumed per hour is reduced by -0.25"
+      "description": "When this Operator is assigned to a Trading Post, the chance of getting higher-yield Precious Metal orders is increased (rate is influenced by length of work time), and Morale consumed per hour is reduced by -0.25",
+      "slot": 1,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Paprika's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_peper"
     },
     {
       "type": "Upgrade",
-      "name": "XAH-X: \"Colorful Life\"",
+      "name": "XAH-X: 'Colorful Life'",
       "mission": {
-        "requirement1": "During battle, have your own Paprika use Camarederie a total of 5 times",
+        "requirement1": "During battle, have your own Paprika use Camaraderie a total of 5 times",
         "requirement2": "Clear Main Theme 3-5 with a 3-star rating; You must deploy your own Paprika, and use Camaraderie at least 2 times"
       },
       "stages": [
         {
           "stage": "Stage 1",
           "attributesIncreased": "HP +160 , ATK +36",
-          "effectLabel": "New trait",
+          "effectLabel": "Trait improved",
           "effectText": "Restores HP of allies, bouncing between 3 allies. Healing reduced by 15% per bounce.",
           "cost": [
             {
@@ -618,11 +628,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_peper"
     }
   ],
   "review": {
-    "official": "A member of the\nColumbian\nmercenaries recruited to\nLondinium\nby\nManfred\n. She and her squad left his command owing to conflicting ideals, and when they were ambushed, we were there to rescue them.\nNow employed by\nRhodes Island\n, she provides on-field medical support to our combat squads.",
+    "official": "A member of the Columbian mercenaries recruited to Londinium by Manfred. She and her squad left his command owing to conflicting ideals, and when they were ambushed, we were there to rescue them.\nNow employed by Rhodes Island, she provides on-field medical support to our combat squads.",
     "editor": null,
     "rating": null
   },

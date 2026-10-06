@@ -100,7 +100,7 @@
         {
           "stage": "Elite 2",
           "potential": null,
-          "description": "After deployment, the next operator has -2 DP Cost"
+          "description": "After deployment, the next Operator has -2 DP Cost"
         }
       ]
     }
@@ -109,11 +109,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -121,11 +121,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Unwavering Banner"
+        "benefit": "Improves First Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -370,7 +370,7 @@
             "level": 4,
             "mastery": null,
             "description": "Stops attacking and generates a total of 20 DP over the skill duration. Throws the banner to the location of the allied unit with the lowest HP percentage within range, granting them DEF +22% and restoring their HP equal to 22% of Saileach's ATK every second. When the skill ends, retrieve the banner",
-            "initialSp": 5,
+            "initialSp": 10,
             "spCost": 35,
             "duration": 15
           },
@@ -378,7 +378,7 @@
             "level": 5,
             "mastery": null,
             "description": "Stops attacking and generates a total of 20 DP over the skill duration. Throws the banner to the location of the allied unit with the lowest HP percentage within range, granting them DEF +26% and restoring their HP equal to 26% of Saileach's ATK every second. When the skill ends, retrieve the banner",
-            "initialSp": 5,
+            "initialSp": 10,
             "spCost": 34,
             "duration": 15
           },
@@ -386,7 +386,7 @@
             "level": 6,
             "mastery": null,
             "description": "Stops attacking and generates a total of 20 DP over the skill duration. Throws the banner to the location of the allied unit with the lowest HP percentage within range, granting them DEF +30% and restoring their HP equal to 30% of Saileach's ATK every second. When the skill ends, retrieve the banner",
-            "initialSp": 5,
+            "initialSp": 10,
             "spCost": 33,
             "duration": 15
           },
@@ -410,7 +410,7 @@
             "level": null,
             "mastery": 2,
             "description": "Stops attacking and generates a total of 20 DP over the skill duration. Throws the banner to the location of the allied unit with the lowest HP percentage within range, granting them DEF +45% and restoring their HP equal to 45% of Saileach's ATK every second. When the skill ends, retrieve the banner",
-            "initialSp": 13,
+            "initialSp": 14,
             "spCost": 30,
             "duration": 15
           },
@@ -418,7 +418,7 @@
             "level": null,
             "mastery": 3,
             "description": "Stops attacking and generates a total of 20 DP over the skill duration. Throws the banner to the location of the allied unit with the lowest HP percentage within range, granting them DEF +50% and restoring their HP equal to 50% of Saileach's ATK every second. When the skill ends, retrieve the banner",
-            "initialSp": 13,
+            "initialSp": 15,
             "spCost": 29,
             "duration": 15
           }
@@ -485,7 +485,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "Stops attacking and immediately gains 10 DP . Throws the banner to the location of ground enemies, dealing 170% Physical damage and Stunning them for 2.5 seconds. Enemies within the surrounding 8 tiles of the banner are inflicted with Slow and 15% Fragile effect. When the skill ends, retrieve the banner",
+            "description": "Stops attacking and immediately gains 10 DP. Throws the banner to the location of ground enemies, dealing 170% Physical damage and Stunning them for 2.5 seconds. Enemies within the surrounding 8 tiles of the banner are inflicted with Slow and 15% Fragile effect. When the skill ends, retrieve the banner",
             "initialSp": 0,
             "spCost": 30,
             "duration": 10
@@ -693,26 +693,33 @@
       "name": "Victorian Literature",
       "facility": "Dormitory",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Dormitory, restores +0.7 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place)"
+      "description": "When this Operator is assigned to a Dormitory, restores +0.7 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place)",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Infectivity",
       "facility": "Control Center",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to the Control Center, if the HR contacting speed of the HR Office is lower than 30% (including the base 5%), increase the HR contacting speed by +20% (unique effect across the entire base, unaffected by other effects)"
+      "description": "When this Operator is assigned to the Control Center, if the HR contacting speed of the HR Office is lower than 30% (including the base 5%), increase the HR contacting speed by +20% (unique effect across the entire base, unaffected by other effects)",
+      "slot": 1,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Saileach's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_sleach"
     },
     {
       "type": "Upgrade",
       "name": "BEA-X: Pastoral",
       "mission": {
-        "requirement1": "During battles, have Saileach use Inheritance of Faith a total of 10 times (excluding Support Units)",
+        "requirement1": "During battle, have Saileach use Inheritance of Faith a total of 10 times (excluding Support Units)",
         "requirement2": "Clear Main Theme 9-2 with a 3-star rating; You must deploy your own Saileach, and cannot include any other Vanguard Operators as members"
       },
       "stages": [
@@ -784,11 +791,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_sleach"
     },
     {
       "type": "Upgrade",
-      "name": "BEA-Y: \"Auld Lang Syne\"",
+      "name": "BEA-Y: 'Auld Lang Syne'",
       "mission": {
         "requirement1": "Complete a total of 5 battles; You must deploy your own Saileach, and unleash Glorious Banner at least 1 time in each battle",
         "requirement2": "Clear Main Theme 5-3 with a 3-star rating; You must deploy your own Saileach and use Glorious Banner at least 3 times"
@@ -818,7 +826,7 @@
           "stage": "Stage 2",
           "attributesIncreased": "HP +180 , DEF +60",
           "effectLabel": "Spiritual Influence improved",
-          "effectText": "After deployment, the next Operator costs -2 DP ; if that Operator is a Ground Operator, gain 1 DP after deployment",
+          "effectText": "After deployment, the next Operator costs -2 DP; if that Operator is a Ground Operator, gain 1 DP after deployment",
           "cost": [
             {
               "name": "Module Data Block",
@@ -862,11 +870,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_003_sleach"
     }
   ],
   "review": {
-    "official": "A former ceremonial standard bearer from\nVictoria\n, she served at the Victorian Army Barracks in\nCounty Hillock\n, where the head of the local\nRhodes Island\nbranch office presented her to us as a liaison operator. She has basic Victorian Army training under her belt, superior physical ability, and demonstrated a talent for support operations.",
+    "official": "A former ceremonial standard bearer from Victoria, she served at the Victorian Army Barracks in County Hillock, where the head of the local Rhodes Island branch office presented her to us as a liaison operator. She has basic Victorian Army training under her belt, superior physical ability, and demonstrated a talent for support operations.",
     "editor": null,
     "rating": null
   },

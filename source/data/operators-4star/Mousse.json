@@ -98,11 +98,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -110,11 +110,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Combo"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -194,7 +194,7 @@
             "description": "ATK +30% for the next hit; The target's ATK -15% for 5 seconds",
             "initialSp": 0,
             "spCost": 6,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 2,
@@ -202,7 +202,7 @@
             "description": "ATK +35% for the next hit; The target's ATK -15% for 5 seconds",
             "initialSp": 0,
             "spCost": 6,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 3,
@@ -210,7 +210,7 @@
             "description": "ATK +40% for the next hit; The target's ATK -15% for 5 seconds",
             "initialSp": 0,
             "spCost": 6,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 4,
@@ -218,7 +218,7 @@
             "description": "ATK +45% for the next hit; The target's ATK -20% for 5 seconds",
             "initialSp": 0,
             "spCost": 5,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 5,
@@ -226,7 +226,7 @@
             "description": "ATK +50% for the next hit; The target's ATK -20% for 5 seconds",
             "initialSp": 0,
             "spCost": 5,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 6,
@@ -234,7 +234,7 @@
             "description": "ATK +55% for the next hit; The target's ATK -20% for 5 seconds",
             "initialSp": 0,
             "spCost": 5,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 7,
@@ -242,7 +242,7 @@
             "description": "ATK +60% for the next hit; The target's ATK -25% for 5 seconds",
             "initialSp": 0,
             "spCost": 5,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
@@ -250,7 +250,7 @@
             "description": "ATK +65% for the next hit; The target's ATK -30% for 5 seconds",
             "initialSp": 0,
             "spCost": 5,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
@@ -258,7 +258,7 @@
             "description": "ATK +70% for the next hit; The target's ATK -35% for 5 seconds",
             "initialSp": 0,
             "spCost": 5,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
@@ -266,7 +266,7 @@
             "description": "ATK +75% for the next hit; The target's ATK -40% for 5 seconds",
             "initialSp": 0,
             "spCost": 4,
-            "duration": "–"
+            "duration": null
           }
         ],
         "recommendation": [],
@@ -517,20 +517,27 @@
       "name": "Order Distribution β",
       "facility": "Trading Post",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +30%"
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +30%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Baking",
       "facility": "Dormitory",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to a Dormitory, restores +0.3 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour +0.3"
+      "description": "When this Operator is assigned to a Dormitory, restores +0.3 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour +0.3",
+      "slot": 1,
+      "phase": 1,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Mousse's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_frncat"
     },
     {
       "type": "Upgrade",
@@ -608,11 +615,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_frncat"
     }
   ],
   "review": {
-    "official": "Mousse was an apprentice baker in\nLondinium\n,\nVictoria\nwhen she became infected with\nOripathy\n. Her parents sent her to\nRhodes Island\nfor treatment.\nAt her request, Mousse was recruited as an\nOperator\nfollowing psychological counseling and a battery of tests. Now a regular logistics staff member, she provides combat support.",
+    "official": "Mousse was an apprentice baker in Londinium, Victoria when she became infected with Oripathy. Her parents sent her to Rhodes Island for treatment. \nAt her request, Mousse was recruited as an Operator following psychological counseling and a battery of tests. Now a regular logistics staff member, she provides combat support.",
     "editor": null,
     "rating": null
   },

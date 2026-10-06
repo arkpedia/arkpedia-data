@@ -91,11 +91,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -103,11 +103,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Explorer"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -179,7 +179,7 @@
         "name": "Concentration",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
-        "duration": "20–30 seconds",
+        "duration": "20 seconds",
         "levels": [
           {
             "level": 1,
@@ -314,12 +314,12 @@
         "name": "Literature Storm",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
-        "duration": "20–25 seconds",
+        "duration": "20 seconds",
         "levels": [
           {
             "level": 1,
             "mastery": null,
-            "description": "ATK +20% ; Range expands ; Attacks 1 extra target",
+            "description": "ATK +20%; Range expands; Attacks 1 extra target",
             "initialSp": 0,
             "spCost": 50,
             "duration": 20
@@ -327,7 +327,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "ATK +20% ; Range expands ; Attacks 1 extra target",
+            "description": "ATK +20%; Range expands; Attacks 1 extra target",
             "initialSp": 3,
             "spCost": 50,
             "duration": 20
@@ -335,7 +335,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "ATK +20% ; Range expands ; Attacks 1 extra target",
+            "description": "ATK +20%; Range expands; Attacks 1 extra target",
             "initialSp": 6,
             "spCost": 50,
             "duration": 20
@@ -343,7 +343,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "ATK +25% ; Range expands ; Attacks 2 extra targets",
+            "description": "ATK +25%; Range expands; Attacks 2 extra targets",
             "initialSp": 10,
             "spCost": 50,
             "duration": 22
@@ -351,7 +351,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "ATK +25% ; Range expands ; Attacks 2 extra targets",
+            "description": "ATK +25%; Range expands; Attacks 2 extra targets",
             "initialSp": 13,
             "spCost": 50,
             "duration": 22
@@ -359,7 +359,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "ATK +25% ; Range expands ; Attacks 2 extra targets",
+            "description": "ATK +25%; Range expands; Attacks 2 extra targets",
             "initialSp": 16,
             "spCost": 50,
             "duration": 22
@@ -367,7 +367,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "ATK +30% ; Range expands ; Attacks 2 extra targets",
+            "description": "ATK +30%; Range expands; Attacks 2 extra targets",
             "initialSp": 20,
             "spCost": 50,
             "duration": 25
@@ -375,7 +375,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "ATK +45% ; Range expands ; Attacks 2 extra targets",
+            "description": "ATK +45%; Range expands; Attacks 2 extra targets",
             "initialSp": 23,
             "spCost": 50,
             "duration": 25
@@ -383,7 +383,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "ATK +60% ; Range expands ; Attacks 2 extra targets",
+            "description": "ATK +60%; Range expands; Attacks 2 extra targets",
             "initialSp": 26,
             "spCost": 50,
             "duration": 25
@@ -391,7 +391,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "ATK +75% ; Range expands ; Attacks 2 extra targets",
+            "description": "ATK +75%; Range expands; Attacks 2 extra targets",
             "initialSp": 30,
             "spCost": 50,
             "duration": 25
@@ -514,20 +514,27 @@
       "name": "Supporter Expert α",
       "facility": "Training Room",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to be the Trainer in the Training Room, Supporter Operators' Specialization training speed +30%"
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Supporter Operators' Specialization training speed +30%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Military Advisor",
       "facility": "Reception Room",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by 10% and it's easier to obtain the clues of Ursus Student Self-Governing Group"
+      "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by 10% and it's easier to obtain the clues of Ursus Student Self-government Group",
+      "slot": 1,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Istina's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_glassb"
     },
     {
       "type": "Upgrade",
@@ -541,7 +548,7 @@
           "stage": "Stage 1",
           "attributesIncreased": "HP +80 , ASPD +3",
           "effectLabel": "Trait improved",
-          "effectText": "Attacks deal Arts damage , and Slow the enemy for a moderate period of time",
+          "effectText": "Attacks deal Arts damage, and Slow the enemy for a moderate period of time",
           "cost": [
             {
               "name": "Module Data Block",
@@ -605,11 +612,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_glassb"
     }
   ],
   "review": {
-    "official": "Before the\nChernobog\nincident\n, Istina was a middle school student. In school, she wrote many articles about\nOriginium Arts\n. Her areas of expertise: masters of Arts, investigative articles, and sociology.\nIn a number of tests, she has demonstrated excellent control-type Originium Arts. She has been approved to assist in battle. She also provides intel and data processing services for\nRhodes Island\n.",
+    "official": "Before the Chernobog incident, Istina was a middle school student. In school, she wrote many articles about Originium Arts. Her areas of expertise include: Arts, detective literature, and sociology.\nIn a number of tests, she has demonstrated an excellent aptitude for control-type Originium Arts. She has been approved for service in battle. She also provides intel and data processing services for Rhodes Island.",
     "editor": null,
     "rating": null
   },

@@ -101,23 +101,23 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -10 seconds"
+        "benefit": "Redeployment Time -10 sec"
       },
       {
         "level": 4,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 5,
-        "benefit": "Improves Mounted Police"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -330,7 +330,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "Range shortens ; ATK & DEF +30% ; Block +1 ; Attacks all blocked targets",
+            "description": "Range shortens; ATK & DEF +30%; Block +1; Attacks all blocked targets",
             "initialSp": 50,
             "spCost": 80,
             "duration": 30
@@ -338,7 +338,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "Range shortens ; ATK & DEF +35% ; Block +1 ; Attacks all blocked targets",
+            "description": "Range shortens; ATK & DEF +35%; Block +1; Attacks all blocked targets",
             "initialSp": 50,
             "spCost": 79,
             "duration": 30
@@ -346,7 +346,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "Range shortens ; ATK & DEF +40% ; Block +1 ; Attacks all blocked targets",
+            "description": "Range shortens; ATK & DEF +40%; Block +1; Attacks all blocked targets",
             "initialSp": 50,
             "spCost": 78,
             "duration": 30
@@ -354,7 +354,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "Range shortens ; ATK & DEF +45% ; Block +1 ; Attacks all blocked targets",
+            "description": "Range shortens; ATK & DEF +45%; Block +1; Attacks all blocked targets",
             "initialSp": 50,
             "spCost": 77,
             "duration": 30
@@ -362,7 +362,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "Range shortens ; ATK & DEF +50% ; Block +1 ; Attacks all blocked targets",
+            "description": "Range shortens; ATK & DEF +50%; Block +1; Attacks all blocked targets",
             "initialSp": 50,
             "spCost": 76,
             "duration": 30
@@ -370,7 +370,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "Range shortens ; ATK & DEF +55% ; Block +1 ; Attacks all blocked targets",
+            "description": "Range shortens; ATK & DEF +55%; Block +1; Attacks all blocked targets",
             "initialSp": 50,
             "spCost": 75,
             "duration": 30
@@ -378,7 +378,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "Range shortens ; ATK & DEF +60% ; Block +1 ; Attacks all blocked targets",
+            "description": "Range shortens; ATK & DEF +60%; Block +1; Attacks all blocked targets",
             "initialSp": 50,
             "spCost": 74,
             "duration": 30
@@ -386,7 +386,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "Range shortens ; ATK & DEF +66% ; Block +1 ; Attacks all blocked targets",
+            "description": "Range shortens; ATK & DEF +66%; Block +1; Attacks all blocked targets",
             "initialSp": 50,
             "spCost": 73,
             "duration": 30
@@ -394,7 +394,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "Range shortens ; ATK & DEF +72% ; Block +1 ; Attacks all blocked targets",
+            "description": "Range shortens; ATK & DEF +72%; Block +1; Attacks all blocked targets",
             "initialSp": 50,
             "spCost": 72,
             "duration": 30
@@ -402,7 +402,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "Range shortens ; ATK & DEF +80% ; Block +1 ; Attacks all blocked targets",
+            "description": "Range shortens; ATK & DEF +80%; Block +1; Attacks all blocked targets",
             "initialSp": 50,
             "spCost": 70,
             "duration": 30
@@ -525,27 +525,34 @@
       "name": "Vanguard Expert α",
       "facility": "Training Room",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to be the Trainer in the Training Room , Vanguard Operators' Specialization training speed +30%"
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Vanguard Operators' Specialization training speed +30%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Vanguard Expert βReplacesVanguard Expert α",
       "facility": "Training Room",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to be the Trainer in the Training Room, Vanguard Operators' Specialization training speed +50%"
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Vanguard Operators' Specialization training speed +50%",
+      "slot": 0,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
-      "name": "Grani's Badge",
-      "stages": []
+      "name": "Grani’s Badge",
+      "stages": [],
+      "moduleId": "uniequip_001_grani"
     },
     {
       "type": "Upgrade",
       "name": "CHG-X: Cavalry Policeman Suit",
       "mission": {
         "requirement1": "Complete a total of 5 battles; You must include your own Grani, and Grani must be the first Operator deployed",
-        "requirement2": "Clear Side Story GT-6 with a 3-star rating; You must deploy your own Grani, and have Grani defeat 8 enemies"
+        "requirement2": "Clear Grani and the Knights' Treasure GT-6 with a 3-star rating; You must deploy your own Grani, and have her defeat 8 enemies"
       },
       "stages": [
         {
@@ -616,11 +623,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_grani"
     }
   ],
   "review": {
-    "official": "Grani, formerly of the\nVictorian\nMounted Police, specializes in high mobility operations such as raids, mechanized warfare, and infiltration.\nNow works as a contract\nOperator\nproviding support for all\nRhodes Island\nop teams, as well as patrols of the island and its surrounding areas.",
+    "official": "Grani, formerly of the Victorian Mounted Police, specializes in high mobility operations such as raids, mechanized warfare, and infiltration. \nNow works as a contract Operator providing support for all Rhodes Island op teams, as well as patrols of the island and its surrounding areas.",
     "editor": null,
     "rating": null
   },

@@ -10,7 +10,7 @@
   "subRegion": null,
   "position": "Melee",
   "tags": [
-    "DPS"
+    "Nuker"
   ],
   "trait": "Normally does not attack and has 0 Block; When skill is inactive, ATK gradually increases up to +200% over 40 seconds. ATK is reset when the skill ends",
   "howToObtain": {
@@ -97,11 +97,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -109,11 +109,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Sheathed Blade, Studied Foe"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -192,7 +192,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "ASPD +18 , DEF +20%",
+            "description": "ASPD +18, DEF +20%",
             "initialSp": 10,
             "spCost": 28,
             "duration": 15
@@ -200,7 +200,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "ASPD +20 , DEF +23%",
+            "description": "ASPD +20, DEF +23%",
             "initialSp": 10,
             "spCost": 27,
             "duration": 15
@@ -208,7 +208,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "ASPD +23 , DEF +26%",
+            "description": "ASPD +23, DEF +26%",
             "initialSp": 10,
             "spCost": 26,
             "duration": 15
@@ -216,7 +216,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "ASPD +26 , DEF +29%",
+            "description": "ASPD +26, DEF +29%",
             "initialSp": 10,
             "spCost": 25,
             "duration": 15
@@ -224,7 +224,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "ASPD +30 , DEF +33%",
+            "description": "ASPD +30, DEF +33%",
             "initialSp": 10,
             "spCost": 24,
             "duration": 15
@@ -232,7 +232,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "ASPD +34 , DEF +37%",
+            "description": "ASPD +34, DEF +37%",
             "initialSp": 10,
             "spCost": 23,
             "duration": 15
@@ -240,7 +240,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "ASPD +38 , DEF +41%",
+            "description": "ASPD +38, DEF +41%",
             "initialSp": 10,
             "spCost": 22,
             "duration": 15
@@ -248,7 +248,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "ASPD +42 , DEF +45%",
+            "description": "ASPD +42, DEF +45%",
             "initialSp": 10,
             "spCost": 21,
             "duration": 15
@@ -256,7 +256,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "ASPD +46 , DEF +49%",
+            "description": "ASPD +46, DEF +49%",
             "initialSp": 10,
             "spCost": 20,
             "duration": 15
@@ -264,7 +264,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "ASPD +50 , DEF +55%",
+            "description": "ASPD +50, DEF +55%",
             "initialSp": 10,
             "spCost": 18,
             "duration": 15
@@ -467,7 +467,7 @@
           "quantity": 2
         },
         {
-          "name": "Polyketon",
+          "name": "Diketon",
           "quantity": 3
         }
       ],
@@ -518,27 +518,34 @@
       "name": "Making Friends",
       "facility": "Reception Room",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to the Reception Room, every Recruit slot (Default slots do not count) increases Clue search speed by 5%"
+      "description": "When this Operator is assigned to the Reception Room, every Recruit slot (Default slots do not count) increases Clue search speed by 5%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "On the Alert",
       "facility": "Reception Room",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to the Reception Room, if in Clue Exchange, increases the likelihood of obtaining clues that are not on the Clue Board"
+      "description": "When this Operator is assigned to the Reception Room, if in Clue Exchange, increases the likelihood of obtaining clues that are not on the Clue Board",
+      "slot": 1,
+      "phase": 1,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Windscoot's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_wscoot"
     },
     {
       "type": "Upgrade",
       "name": "LIB-X: Yi",
       "mission": {
-        "requirement1": "Complete a total of 5 battles; You must deploy your own Windscoot and have him use Unerring Proficiency at least 1 time in each battle",
-        "requirement2": "Clear Intermezzo SN-2 with a 3-star rating; You must deploy your own Windscoot and have him use Unerring Proficiency 2 times"
+        "requirement1": "Complete a total of 5 battles; You must deploy your own Windscoot, and use Unerring Proficiency at least 1 time in each battle",
+        "requirement2": "Clear Stultifera Navis SN-2 with a 3-star rating; You must deploy your own Windscoot and use Unerring Proficiency 2 times"
       },
       "stages": [
         {
@@ -565,7 +572,7 @@
           "stage": "Stage 2",
           "attributesIncreased": "HP +185 , ATK +18 , DEF +22",
           "effectLabel": "Sheathed Blade, Studied Foe improved",
-          "effectText": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack equal to 45% of ATK",
+          "effectText": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack of 45% ATK",
           "cost": [
             {
               "name": "Module Data Block",
@@ -581,7 +588,7 @@
             },
             {
               "name": "LMD",
-              "quantity": 20000
+              "quantity": 25000
             }
           ]
         },
@@ -589,7 +596,7 @@
           "stage": "Stage 3",
           "attributesIncreased": "HP +230 , ATK +22 , DEF +25",
           "effectLabel": "Sheathed Blade, Studied Foe improved",
-          "effectText": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack equal to 52% of ATK",
+          "effectText": "When Trait ATK increase reaches its maximum, each attack is followed by an additional attack of 52% ATK",
           "cost": [
             {
               "name": "Module Data Block",
@@ -609,11 +616,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_wscoot"
     }
   ],
   "review": {
-    "official": "Windscoot does year-round armed escort work in\nShangshu\nand its surrounding areas in\nYan\n. He came to Rhodes Island for Oripathy treatment, and signed a cooperation agreement to expand his escort business, providing medicine transportation and talent recommendation services to Rhodes Island.",
+    "official": "Windscoot does year-round armed escort work in Shangshu and its surrounding areas in Yan. He came to Rhodes Island for Oripathy treatment, and signed a cooperation agreement to expand his escort business, providing medicine transportation and talent recommendation services to Rhodes Island.",
     "editor": null,
     "rating": null
   },

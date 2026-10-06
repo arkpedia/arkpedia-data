@@ -100,11 +100,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -112,11 +112,11 @@
       },
       {
         "level": 5,
-        "benefit": "Redeployment time -6 seconds"
+        "benefit": "Redeployment Time -6 sec"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -325,7 +325,7 @@
         "name": "Enkephalin",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
-        "duration": "30–40 seconds",
+        "duration": "30 seconds",
         "levels": [
           {
             "level": 1,
@@ -490,7 +490,7 @@
           "quantity": 6
         },
         {
-          "name": "Polyester Pack",
+          "name": "Polyester",
           "quantity": 5
         }
       ],
@@ -525,20 +525,27 @@
       "name": "Rhine Tech α",
       "facility": "Factory",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Factory, productivity +15%"
+      "description": "When this Operator is assigned to a Factory, productivity +15%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Rhine Tech βReplacesRhine Tech α",
       "facility": "Factory",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to a Factory, productivity +25%"
+      "description": "When this Operator is assigned to a Factory, productivity +25%",
+      "slot": 0,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Ptilopsis's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_plosis"
     },
     {
       "type": "Upgrade",
@@ -551,8 +558,8 @@
         {
           "stage": "Stage 1",
           "attributesIncreased": "HP +60 , ATK +30",
-          "effectLabel": "Trait improved",
-          "effectText": "Attack Range expands □ □ □ □ □ ■ □ □ □ □ □ □ □",
+          "effectLabel": "New trait",
+          "effectText": "Attack Range expands",
           "cost": [
             {
               "name": "Module Data Block",
@@ -616,11 +623,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_plosis"
     }
   ],
   "review": {
-    "official": "...\nI have chosen an accurate answer for you from 20,593 search results.\nOperator\nPtilopsis. Formerly a data maintenance specialist at the\nRhine Lab\ncompany. Has made considerable accomplishments in the domain of healing\nOriginium Arts\n. Experienced in medical data maintenance, routine medical program applications, multi-project medical behavior, and other related fields.\nNow a member of the\nmedical\nstaff at\nRhodes Island\n. She is also a member Dr.\nSilence\n's clinical team and assists with the treatment programs at Rhodes Islands.\n...",
+    "official": "...\nI have chosen an accurate answer for you from 20,593 search results.\nOperator Ptilopsis. Formerly a data maintenance specialist at the Rhine Lab company. Has made considerable accomplishments in the area of Originium Healing Arts. Experienced in medical data processing, routine medical program applications, multi-project medical operations, and other related fields.\nNow a member of the medical staff at Rhodes Island. She is also a member Dr. Silence's clinical team and assists with treatment programs at Rhodes Island.\n...",
     "editor": null,
     "rating": null
   },

@@ -10,10 +10,10 @@
   "subRegion": null,
   "position": "Ranged",
   "tags": [
-    "Support",
-    "Robot"
+    "Robot",
+    "Support"
   ],
-  "trait": "Attacks aerial enemies first and ignores the Deployment Limit , but has a long Redeployment Time",
+  "trait": "Attacks aerial enemies first and ignores Deployment Limit, but has a long Redeployment Time",
   "howToObtain": {
     "Limited": "No",
     "Standard Headhunting": "No",
@@ -69,62 +69,43 @@
   },
   "talents": [
     {
-      "name": "Justice Drive I",
+      "name": "Justice Drive",
       "rows": [
         {
+          "name": "Justice Drive I",
           "stage": "Base",
           "potential": null,
-          "description": "For 10 seconds after deployment, all ranged allied units within Attack Range becomes less likely to be attacked and apply 10% Fragile effect to aerial enemies"
-        }
-      ]
-    },
-    {
-      "name": "Justice Drive IIReplacesJustice Drive I",
-      "rows": [
+          "description": "For 10 seconds after deployment, all ranged allied units within Attack Range become less likely to be attacked and apply 10% Fragile effect to aerial enemies"
+        },
         {
+          "name": "Justice Drive II",
           "stage": "Base",
           "potential": "Potential 2",
-          "description": "For 12 seconds after deployment, all ranged allied units within Attack Range becomes less likely to be attacked and apply 13% Fragile effect to aerial enemies"
-        }
-      ]
-    },
-    {
-      "name": "Justice Drive IIIReplacesJustice Drive II",
-      "rows": [
+          "description": "For 12 seconds after deployment, all ranged allied units within Attack Range become less likely to be attacked and apply 13% Fragile effect to aerial enemies"
+        },
         {
+          "name": "Justice Drive III",
           "stage": "Base",
           "potential": "Potential 3",
-          "description": "For 14 seconds after deployment, all ranged allied units within Attack Range becomes less likely to be attacked and apply 16% Fragile effect to aerial enemies"
-        }
-      ]
-    },
-    {
-      "name": "Justice Drive IVReplacesJustice Drive III",
-      "rows": [
+          "description": "For 14 seconds after deployment, all ranged allied units within Attack Range become less likely to be attacked and apply 16% Fragile effect to aerial enemies"
+        },
         {
+          "name": "Justice Drive IV",
           "stage": "Base",
           "potential": "Potential 4",
-          "description": "For 16 seconds after deployment, all ranged allied units within Attack Range becomes less likely to be attacked and apply 19% Fragile effect to aerial enemies"
-        }
-      ]
-    },
-    {
-      "name": "Justice Drive VReplacesJustice Drive IV",
-      "rows": [
+          "description": "For 16 seconds after deployment, all ranged allied units within Attack Range become less likely to be attacked and apply 19% Fragile effect to aerial enemies"
+        },
         {
+          "name": "Justice Drive V",
           "stage": "Base",
           "potential": "Potential 5",
-          "description": "For 18 seconds after deployment, all ranged allied units within Attack Range becomes less likely to be attacked and apply 22% Fragile effect to aerial enemies"
-        }
-      ]
-    },
-    {
-      "name": "Justice Drive VIReplacesJustice Drive V",
-      "rows": [
+          "description": "For 18 seconds after deployment, all ranged allied units within Attack Range become less likely to be attacked and apply 22% Fragile effect to aerial enemies"
+        },
         {
+          "name": "Justice Drive VI",
           "stage": "Base",
           "potential": "Potential 6",
-          "description": "For 20 seconds after deployment, all ranged allied units within Attack Range becomes less likely to be attacked and apply 25% Fragile effect to aerial enemies"
+          "description": "For 20 seconds after deployment, all ranged allied units within Attack Range become less likely to be attacked and apply 25% Fragile effect to aerial enemies"
         }
       ]
     }
@@ -133,23 +114,23 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "Justice Drive I becomes Justice Drive II"
+        "benefit": "Improves Talent"
       },
       {
         "level": 3,
-        "benefit": "Justice Drive II becomes Justice Drive III"
+        "benefit": "Improves Talent"
       },
       {
         "level": 4,
-        "benefit": "Justice Drive III becomes Justice Drive IV"
+        "benefit": "Improves Talent"
       },
       {
         "level": 5,
-        "benefit": "Justice Drive IV becomes Justice Drive V"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "Justice Drive V becomes Justice Drive VI"
+        "benefit": "Improves Talent"
       }
     ],
     "totalCost": [
@@ -162,25 +143,31 @@
   "promotion": [],
   "skills": {
     "skillList": [],
-    "skillCost": null
+    "skillCost": {}
   },
   "baseSkills": [
     {
       "name": "Backup Energy",
       "facility": "Power Plant",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%"
+      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "\"Beep beep, activate!\"",
       "facility": "Power Plant",
       "eliteLevel": "Level 30",
-      "description": "When this Operator is assigned to a Power Plant, increases the productivity of the Factory Wild Mane is assigned to by +5%"
+      "description": "When this Operator is assigned to a Power Plant, increases the productivity of the Factory Wild Mane is assigned to by +5%",
+      "slot": 1,
+      "phase": 0,
+      "level": 30
     }
   ],
   "modules": [],
   "review": {
-    "official": "\"Justice Knight\" is a\nRaythean\nExister-S1044 Model four-wheeled operation platform customized by a\nKazimierzian\nengineer, later remodeled and upgraded by\nMayer\nand\nClosure\n. Owing to its main searchlight function lacking use value, and its cover fire capacity being limited in its target market, its production has been halted. Before the\nRhodes Island\nEngineering Department got their hands on her, \"Justice Knight\" had already gone through a dozen modifications, big and small; her present capabilities are easily a far cry from the original model. Her old operating system and command memory data were damaged, unable to be recovered. After a swap for new core hardware and an expanded memory unit, an updated operating system plus additional artificial voice system, she is now hardly distinguishable from Raythean Industries's latest operation platforms. \"Justice Knight\" is a member of\nPinus Sylvestris Knightclub\n, and is currently authorized for use by Rhodes Island.",
+    "official": "'Justice Knight' is a Raythean Exister-S1044 Model four-wheeled operation platform customized by a Kazimierzian engineer, later remodeled and upgraded by Mayer and Closure. Owing to its main searchlight function lacking use value, and its cover fire capacity being limited in its target market, its production has been halted. Before the Rhodes Island Engineering Department got their hands on her, 'Justice Knight' had already gone through a dozen modifications, big and small; her present capabilities are easily a far cry from the original model. Her old operating system and command memory data were damaged, unable to be recovered. After a swap for new core hardware and an expanded memory unit, an updated operating system plus additional artificial voice system, she is now hardly distinguishable from Raythean Industries's latest operation platforms. 'Justice Knight' is a member of Pinus Sylvestris Knightclub, and is currently authorized for use by Rhodes Island.",
     "editor": null,
     "rating": null
   },

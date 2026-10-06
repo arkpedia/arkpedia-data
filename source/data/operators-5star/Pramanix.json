@@ -109,11 +109,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -121,11 +121,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Weakening"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -200,12 +200,12 @@
         "name": "Echolocation",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
-        "duration": "10–20 seconds",
+        "duration": "10 seconds",
         "levels": [
           {
             "level": 1,
             "mastery": null,
-            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -30",
+            "description": "Simultaneously attacks 2 targets; ASPD of all enemies in range -30",
             "initialSp": 10,
             "spCost": 40,
             "duration": 10
@@ -213,7 +213,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -30",
+            "description": "Simultaneously attacks 2 targets; ASPD of all enemies in range -30",
             "initialSp": 10,
             "spCost": 40,
             "duration": 11
@@ -221,7 +221,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -30",
+            "description": "Simultaneously attacks 2 targets; ASPD of all enemies in range -30",
             "initialSp": 10,
             "spCost": 40,
             "duration": 12
@@ -229,7 +229,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -40",
+            "description": "Simultaneously attacks 2 targets; ASPD of all enemies in range -40",
             "initialSp": 15,
             "spCost": 40,
             "duration": 13
@@ -237,7 +237,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -40",
+            "description": "Simultaneously attacks 2 targets; ASPD of all enemies in range -40",
             "initialSp": 15,
             "spCost": 40,
             "duration": 14
@@ -245,7 +245,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -40",
+            "description": "Simultaneously attacks 2 targets; ASPD of all enemies in range -40",
             "initialSp": 15,
             "spCost": 40,
             "duration": 15
@@ -253,7 +253,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -50",
+            "description": "Simultaneously attacks 2 targets; ASPD of all enemies in range -50",
             "initialSp": 20,
             "spCost": 40,
             "duration": 16
@@ -261,7 +261,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -53",
+            "description": "Simultaneously attacks 2 targets; ASPD of all enemies in range -53",
             "initialSp": 20,
             "spCost": 40,
             "duration": 17
@@ -269,7 +269,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -56",
+            "description": "Simultaneously attacks 2 targets; ASPD of all enemies in range -56",
             "initialSp": 20,
             "spCost": 40,
             "duration": 18
@@ -277,7 +277,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "Simultaneously attacks 2 targets; ASPD of enemies in range -60",
+            "description": "Simultaneously attacks 2 targets; ASPD of all enemies in range -60",
             "initialSp": 25,
             "spCost": 40,
             "duration": 20
@@ -335,7 +335,7 @@
         "name": "Natural Deterrent",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
-        "duration": "10–25 seconds",
+        "duration": "10 seconds",
         "levels": [
           {
             "level": 1,
@@ -511,7 +511,7 @@
         },
         {
           "name": "Grindstone",
-          "quantity": 4
+          "quantity": 3
         }
       ],
       "7": [
@@ -535,24 +535,31 @@
       "name": "Karlan Saint",
       "facility": "Dormitory",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Dormitory, restores +0.5 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour +0.25"
+      "description": "When this Operator is assigned to a Dormitory, restores +0.5 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour +0.25",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Supporter Expert β",
       "facility": "Training Room",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to be the Trainer in the Training Room, Supporter Operators' Specialization training speed +50%"
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Supporter Operators' Specialization training speed +50%",
+      "slot": 1,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Pramanix's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_slbell"
     },
     {
       "type": "Upgrade",
-      "name": "UMD-X: \"Knitting of a Future\"",
+      "name": "UMD-X: 'Knitting of a Future'",
       "mission": {
         "requirement1": "Deal a total of 60,000 damage with Pramanix (excluding Support Units)",
         "requirement2": "Clear Main Theme 2-3 with a 3-star rating; You must deploy your own Pramanix, and can only include 6 other Operators as members"
@@ -626,11 +633,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_slbell"
     }
   ],
   "review": {
-    "official": "Pramanix is a Karlan  Saintess born in\nKjerag\n, the leader of the entire religion of her homeland. She uses the holy bell given to her by the\ngods\nto summon the power of wind and snow. She came to\nRhodes Island\nby secret means, and the post she holds as well as how long she's held it are both confidential.",
+    "official": "Pramanix is a Karlan Saintess born in Kjerag, the leader of the entire religion of her homeland. She uses the holy bell given to her by the gods to summon the power of wind and snow. She came to Rhodes Island by secret means, and the post she holds as well as how long she's held it are both confidential.",
     "editor": null,
     "rating": null
   },

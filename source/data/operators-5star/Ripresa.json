@@ -526,13 +526,19 @@
       "name": "Professional Manager α",
       "facility": "Reception Room",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to the Reception Room, if no other Operators are working in the Reception Room, increases Clue search speed by 15%, and Morale consumed per hour +1"
+      "description": "When this Operator is assigned to the Reception Room, if no other Operators are working in the Reception Room, increases Clue search speed by 15%, and Morale consumed per hour +1",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Professional Manager β",
       "facility": "Reception Room",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to the Reception Room, if no other Operators are working in the Reception Room, increases Clue search speed by 35%, and Morale consumed per hour +1"
+      "description": "When this Operator is assigned to the Reception Room, if no other Operators are working in the Reception Room, increases Clue search speed by 35%, and Morale consumed per hour +1",
+      "slot": 0,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
@@ -552,7 +558,7 @@
       "stages": [
         {
           "stage": "Stage 1",
-          "attributesIncreased": "HP +75 , ATK +55 , Cost -8",
+          "attributesIncreased": "Cost -8 , HP +75 , ATK +55",
           "effectLabel": "New trait",
           "effectText": "Reduces Deployment Cost",
           "cost": [
@@ -572,9 +578,9 @@
         },
         {
           "stage": "Stage 2",
-          "attributesIncreased": "HP +95 , ATK +68 , Cost -8",
-          "effectLabel": "Padronanza della Bacchetta improved",
-          "effectText": "When there are 3 or more enemies in Ripresa's Attack Splash Range, her damage is increased to 125% of her ATK",
+          "attributesIncreased": "Cost -8 , HP +95 , ATK +68",
+          "effectLabel": "Baton Mastery improved",
+          "effectText": "When there are 3 or more enemies within an attack's splash area, that attack deals 125% damage",
           "cost": [
             {
               "name": "Module Data Block",
@@ -596,9 +602,9 @@
         },
         {
           "stage": "Stage 3",
-          "attributesIncreased": "HP +120 , ATK +75 , Cost -8",
-          "effectLabel": "Padronanza della Bacchetta improved",
-          "effectText": "When there are 3 or more enemies in Ripresa's Attack Splash Range, her damage is increased to 130% of her ATK",
+          "attributesIncreased": "Cost -8 , HP +120 , ATK +75",
+          "effectLabel": "Baton Mastery improved",
+          "effectText": "When there are 3 or more enemies within an attack's splash area, that attack deals 130% damage",
           "cost": [
             {
               "name": "Module Data Block",

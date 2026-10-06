@@ -78,22 +78,22 @@
         {
           "stage": "Elite 1",
           "potential": null,
-          "description": "Inflicts 10% Arts Fragility on all Aerial units within range"
+          "description": "Inflicts 10% [Arts Fragility] on all Aerial units within range"
         },
         {
           "stage": "Elite 1",
           "potential": "Potential 5",
-          "description": "Inflicts 12% (+2%) Arts Fragility on all Aerial units within range"
+          "description": "Inflicts 12% (+2%) [Arts Fragility] on all Aerial units within range"
         },
         {
           "stage": "Elite 2",
           "potential": null,
-          "description": "Inflicts 20% Arts Fragility on all Aerial units within range"
+          "description": "Inflicts 20% [Arts Fragility] on all Aerial units within range"
         },
         {
           "stage": "Elite 2",
           "potential": "Potential 5",
-          "description": "Inflicts 22% (+2%) Arts Fragility on all Aerial units within range"
+          "description": "Inflicts 22% (+2%) [Arts Fragility] on all Aerial units within range"
         }
       ]
     }
@@ -102,11 +102,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -114,11 +114,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Tundra Survival"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -197,7 +197,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "ASPD +30 , prioritizes attacking Aerial enemies",
+            "description": "ASPD +30, prioritizes attacking Aerial enemies",
             "initialSp": 0,
             "spCost": 40,
             "duration": 30
@@ -205,7 +205,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "ASPD +35 , prioritizes attacking Aerial enemies",
+            "description": "ASPD +35, prioritizes attacking Aerial enemies",
             "initialSp": 0,
             "spCost": 40,
             "duration": 30
@@ -213,7 +213,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "ASPD +40 , prioritizes attacking Aerial enemies",
+            "description": "ASPD +40, prioritizes attacking Aerial enemies",
             "initialSp": 0,
             "spCost": 40,
             "duration": 30
@@ -221,7 +221,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "ASPD +45 , prioritizes attacking Aerial enemies",
+            "description": "ASPD +45, prioritizes attacking Aerial enemies",
             "initialSp": 5,
             "spCost": 35,
             "duration": 30
@@ -229,7 +229,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "ASPD +50 , prioritizes attacking Aerial enemies",
+            "description": "ASPD +50, prioritizes attacking Aerial enemies",
             "initialSp": 5,
             "spCost": 35,
             "duration": 30
@@ -237,7 +237,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "ASPD +55 , prioritizes attacking Aerial enemies",
+            "description": "ASPD +55, prioritizes attacking Aerial enemies",
             "initialSp": 5,
             "spCost": 35,
             "duration": 30
@@ -245,7 +245,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "ASPD +60 , prioritizes attacking Aerial enemies",
+            "description": "ASPD +60, prioritizes attacking Aerial enemies",
             "initialSp": 10,
             "spCost": 32,
             "duration": 30
@@ -253,7 +253,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "ASPD +70 , prioritizes attacking Aerial enemies",
+            "description": "ASPD +70, prioritizes attacking Aerial enemies",
             "initialSp": 10,
             "spCost": 32,
             "duration": 30
@@ -261,7 +261,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "ASPD +80 , prioritizes attacking Aerial enemies",
+            "description": "ASPD +80, prioritizes attacking Aerial enemies",
             "initialSp": 10,
             "spCost": 32,
             "duration": 30
@@ -269,7 +269,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "ASPD +90 , prioritizes attacking Aerial enemies",
+            "description": "ASPD +90, prioritizes attacking Aerial enemies",
             "initialSp": 15,
             "spCost": 30,
             "duration": 30
@@ -390,7 +390,7 @@
             "mastery": 1,
             "description": "Deals 65% ATK as Arts damage to at most 2 Ground enemies within range once every 0.5 seconds and causes targets to Levitate for 7 seconds; When a target's Levitate effect ends, deals 250% ATK as Arts damage to all enemies in a small area around that target",
             "initialSp": 10,
-            "spCost": 34,
+            "spCost": 33,
             "duration": 7
           },
           {
@@ -507,7 +507,7 @@
           "quantity": 6
         },
         {
-          "name": "Crystalline Circuit",
+          "name": "Crystalline Component",
           "quantity": 4
         }
       ],
@@ -532,26 +532,33 @@
       "name": "Rescue Team - External Contact",
       "facility": "Office",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to the HR Office, HR contacting speed +30%"
+      "description": "When this Operator is assigned to the HR Office, HR contacting speed +30%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Rescue Team - Preserve StrengthReplacesRescue Team - External Contact",
       "facility": "Office",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to the HR Office, HR contacting speed +35% , and for every recruit slot (excluding initial slot), Morale consumed per hour -0.1"
+      "description": "When this Operator is assigned to the HR Office, HR contacting speed +35%, and for every recruit slot (excluding initial slot), Morale consumed per hour -0.1",
+      "slot": 0,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Qanipalaat's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_qanik"
     },
     {
       "type": "Upgrade",
       "name": "CCR-Y: Homemade Trekking Poles",
       "mission": {
-        "requirement1": "During battles, have Qanipalaat use Falling Snow a total of 10 times (excluding Support Units)",
+        "requirement1": "During battle, have Qanipalaat use Falling Snow a total of 10 times (excluding Support Units)",
         "requirement2": "Clear Main Theme 2-3 with a 3-star rating; You must deploy your own Qanipalaat, and have Qanipalaat defeat at least 2 Heavy Defenders"
       },
       "stages": [
@@ -559,7 +566,7 @@
           "stage": "Stage 1",
           "attributesIncreased": "HP +100 , ATK +30",
           "effectLabel": "New trait",
-          "effectText": "Gain 1 SP when normal attacks hit an elite or leader enemy .",
+          "effectText": "Gain 1 SP when normal attacks hit an elite or leader enemy.",
           "cost": [
             {
               "name": "Module Data Block",
@@ -579,7 +586,7 @@
           "stage": "Stage 2",
           "attributesIncreased": "HP +130 , ATK +40",
           "effectLabel": "Tundra Survival improved",
-          "effectText": "Inflicts 25% Arts Fragility on all Aerial units within range",
+          "effectText": "Inflicts 25% [Arts Fragility] on all Aerial units within range",
           "cost": [
             {
               "name": "Module Data Block",
@@ -603,7 +610,7 @@
           "stage": "Stage 3",
           "attributesIncreased": "HP +150 , ATK +50",
           "effectLabel": "Tundra Survival improved",
-          "effectText": "Inflicts 28% Arts Fragility on all Aerial units within range",
+          "effectText": "Inflicts 28% [Arts Fragility] on all Aerial units within range",
           "cost": [
             {
               "name": "Module Data Block",
@@ -623,11 +630,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_qanik"
     }
   ],
   "review": {
-    "official": "Operator Qanipalaat has extensive experience in wilderness rescue, having functioned on a search and rescue team in the\nSami\nregion. Born to a Sami tribe, he knew very little about the outside world and left Sami in search of a higher standard of medical care. He now works as a field\noperator\nfor\nRhodes Island\n, supporting operations in extreme environments.",
+    "official": "Operator Qanipalaat has extensive experience in wilderness rescue, having functioned on a search and rescue team in the Sami region. Born to a Sami tribe, he knew very little about the outside world and left Sami in search of a higher standard of medical care. He now works as a field operator for Rhodes Island, supporting operations in extreme environments.",
     "editor": null,
     "rating": null
   },

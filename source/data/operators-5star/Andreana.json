@@ -98,11 +98,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -110,11 +110,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Abyssal Intuition"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -328,7 +328,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "ATK +130% , but normal attacks no longer target enemies below 50% HP; Attacks slow enemies hit by -20% for 3 seconds",
+            "description": "ATK +130%, but normal attacks no longer attack enemies below 50% HP; Attacks slow enemies hit by -20% for 3 seconds",
             "initialSp": 10,
             "spCost": 40,
             "duration": 30
@@ -336,7 +336,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "ATK +140% , but normal attacks no longer target enemies below 50% HP; Attacks slow enemies hit by -20% for 3 seconds",
+            "description": "ATK +140%, but normal attacks no longer attack enemies below 50% HP; Attacks slow enemies hit by -20% for 3 seconds",
             "initialSp": 10,
             "spCost": 39,
             "duration": 30
@@ -344,7 +344,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "ATK +150% , but normal attacks no longer target enemies below 50% HP; Attacks slow enemies hit by -20% for 3 seconds",
+            "description": "ATK +150%, but normal attacks no longer attack enemies below 50% HP; Attacks slow enemies hit by -20% for 3 seconds",
             "initialSp": 10,
             "spCost": 38,
             "duration": 30
@@ -352,7 +352,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "ATK +160% , but normal attacks no longer target enemies below 50% HP; Attacks slow enemies hit by -20% for 3 seconds",
+            "description": "ATK +160%, but normal attacks no longer attack enemies below 50% HP; Attacks slow enemies hit by -20% for 3 seconds",
             "initialSp": 11,
             "spCost": 37,
             "duration": 30
@@ -360,7 +360,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "ATK +170% , but normal attacks no longer target enemies below 50% HP; Attacks slow enemies hit by -20% for 3 seconds",
+            "description": "ATK +170%, but normal attacks no longer attack enemies below 50% HP; Attacks slow enemies hit by -20% for 3 seconds",
             "initialSp": 11,
             "spCost": 36,
             "duration": 30
@@ -368,7 +368,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "ATK +180% , but normal attacks no longer target enemies below 50% HP; Attacks slow enemies hit by -20% for 3 seconds",
+            "description": "ATK +180%, but normal attacks no longer attack enemies below 50% HP; Attacks slow enemies hit by -20% for 3 seconds",
             "initialSp": 11,
             "spCost": 35,
             "duration": 30
@@ -376,7 +376,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "ATK +190% , but normal attacks no longer target enemies below 50% HP; Attacks slow enemies hit by -30% for 4 seconds",
+            "description": "ATK +190%, but normal attacks no longer attack enemies below 50% HP; Attacks slow enemies hit by -30% for 4 seconds",
             "initialSp": 12,
             "spCost": 34,
             "duration": 30
@@ -384,7 +384,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "ATK +205% , but normal attacks no longer target enemies below 50% HP; Attacks slow enemies hit by -35% for 4 seconds",
+            "description": "ATK +205%, but normal attacks no longer attack enemies below 50% HP; Attacks slow enemies hit by -35% for 4 seconds",
             "initialSp": 13,
             "spCost": 33,
             "duration": 30
@@ -392,7 +392,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "ATK +220% , but normal attacks no longer target enemies below 50% HP; Attacks slow enemies hit by -35% for 5 seconds",
+            "description": "ATK +220%, but normal attacks no longer attack enemies below 50% HP; Attacks slow enemies hit by -35% for 5 seconds",
             "initialSp": 14,
             "spCost": 32,
             "duration": 30
@@ -400,7 +400,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "ATK +240% , but normal attacks no longer target enemies below 50% HP; Attacks slow enemies hit by -40% for 6 seconds",
+            "description": "ATK +240%, but normal attacks no longer attack enemies below 50% HP; Attacks slow enemies hit by -40% for 6 seconds",
             "initialSp": 15,
             "spCost": 30,
             "duration": 30
@@ -523,20 +523,27 @@
       "name": "Solitude",
       "facility": "Dormitory",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Dormitory, self Morale recovered +0.7 per hour"
+      "description": "When this Operator is assigned to a Dormitory, self Morale recovered +0.7 per hour",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Hard to AvoidReplacesSolitude",
       "facility": "Dormitory",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to a Dormitory, self Morale recovered +0.85 per hour"
+      "description": "When this Operator is assigned to a Dormitory, self Morale recovered +0.85 per hour",
+      "slot": 0,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Andreana's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_cuttle"
     },
     {
       "type": "Upgrade",
@@ -550,7 +557,7 @@
           "stage": "Stage 1",
           "attributesIncreased": "HP +70 , ATK +65",
           "effectLabel": "New trait",
-          "effectText": "The further away the enemy, the higher the damage dealt (up to an increase of 15% )",
+          "effectText": "The further away the enemy, the higher the damage dealt (up to an increase of 15%)",
           "cost": [
             {
               "name": "Module Data Block",
@@ -614,11 +621,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_cuttle"
     }
   ],
   "review": {
-    "official": "Born in\nIberia\n, Andreana serves as a bodyguard to\nOperator\nIncandescence. The two joined\nRhodes Island\ntogether.\nShe came with a strong foundation as a sniper. After receiving professional training, she has served well as a\nSniper\nOperator\n.",
+    "official": "Born in Iberia, Andreana serves as a bodyguard to Operator Incandescence. The two joined Rhodes Island together. \nShe came with a strong foundation as a sniper. After receiving professional training, she has served well as a Sniper Operator.",
     "editor": null,
     "rating": null
   },

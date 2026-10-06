@@ -521,20 +521,27 @@
       "name": "Gentle Spirit",
       "facility": "Dormitory",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Dormitory, restores +0.15 Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
+      "description": "When this Operator is assigned to a Dormitory, restores +0.15 Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Pure Breath",
       "facility": "Dormitory",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to a Dormitory, restores an additional +0.1 Morale to Operators assigned to that Dormitory whose Morale is below 20 (Strongest effect of the same type applies)"
+      "description": "When this Operator is assigned to a Dormitory, restores an additional +0.1 Morale to Operators assigned to that Dormitory whose Morale is below 20 (Strongest effect of the same type applies)",
+      "slot": 1,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Perfumer the Distilled's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_flwr2"
     },
     {
       "type": "Upgrade",
@@ -612,7 +619,8 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_flwr2"
     }
   ],
   "review": {

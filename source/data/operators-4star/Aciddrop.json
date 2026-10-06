@@ -94,11 +94,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -106,11 +106,11 @@
       },
       {
         "level": 5,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -325,7 +325,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "ATK +20% , attacks 2 times consecutively",
+            "description": "ATK +20%, attacks 2 times consecutively",
             "initialSp": 10,
             "spCost": 70,
             "duration": 25
@@ -333,7 +333,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "ATK +22% , attacks 2 times consecutively",
+            "description": "ATK +22%, attacks 2 times consecutively",
             "initialSp": 10,
             "spCost": 68,
             "duration": 25
@@ -341,7 +341,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "ATK +24% , attacks 2 times consecutively",
+            "description": "ATK +24%, attacks 2 times consecutively",
             "initialSp": 10,
             "spCost": 66,
             "duration": 25
@@ -349,7 +349,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "ATK +26% , attacks 2 times consecutively",
+            "description": "ATK +26%, attacks 2 times consecutively",
             "initialSp": 15,
             "spCost": 64,
             "duration": 25
@@ -357,7 +357,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "ATK +28% , attacks 2 times consecutively",
+            "description": "ATK +28%, attacks 2 times consecutively",
             "initialSp": 15,
             "spCost": 62,
             "duration": 25
@@ -365,7 +365,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "ATK +30% , attacks 2 times consecutively",
+            "description": "ATK +30%, attacks 2 times consecutively",
             "initialSp": 15,
             "spCost": 60,
             "duration": 25
@@ -373,7 +373,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "ATK +32% , attacks 2 times consecutively",
+            "description": "ATK +32%, attacks 2 times consecutively",
             "initialSp": 20,
             "spCost": 58,
             "duration": 25
@@ -381,7 +381,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "ATK +34% , attacks 2 times consecutively",
+            "description": "ATK +34%, attacks 2 times consecutively",
             "initialSp": 25,
             "spCost": 56,
             "duration": 25
@@ -389,7 +389,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "ATK +37% , attacks 2 times consecutively",
+            "description": "ATK +37%, attacks 2 times consecutively",
             "initialSp": 30,
             "spCost": 53,
             "duration": 25
@@ -397,7 +397,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "ATK +40% , attacks 2 times consecutively",
+            "description": "ATK +40%, attacks 2 times consecutively",
             "initialSp": 35,
             "spCost": 50,
             "duration": 25
@@ -516,24 +516,31 @@
       "name": "B-girl",
       "facility": "Office",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to the HR Office, HR contacting speed +40%"
+      "description": "When this Operator is assigned to the HR Office, HR contacting speed +40%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Give me five",
       "facility": "Dormitory",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to a Dormitory, restores +0.35 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour +0.35"
+      "description": "When this Operator is assigned to a Dormitory, restores +0.35 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour +0.35",
+      "slot": 1,
+      "phase": 1,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Aciddrop's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_acdrop"
     },
     {
       "type": "Upgrade",
-      "name": "ARC-X: \"Freedom, Onion Rings, and Me\"",
+      "name": "ARC-X: 'Freedom, Onion Rings, and Me'",
       "mission": {
         "requirement1": "Defeat a total of 50 enemies with Aciddrop (excluding Support Units)",
         "requirement2": "Clear Main Theme 2-8 with a 3-star rating; You must deploy your own Aciddrop, and have Aciddrop defeat at least 1 Metal Crab"
@@ -541,7 +548,7 @@
       "stages": [
         {
           "stage": "Stage 1",
-          "attributesIncreased": "DEF +30 , Rdp. -25 sec. , ASPD +3",
+          "attributesIncreased": "DEF +30 , ASPD +3 , Redeployment time -25",
           "effectLabel": "New trait",
           "effectText": "Redeployment Time reduced",
           "cost": [
@@ -561,7 +568,7 @@
         },
         {
           "stage": "Stage 2",
-          "attributesIncreased": "DEF +40 , Rdp. -25 sec. , ASPD +4",
+          "attributesIncreased": "DEF +40 , ASPD +4 , Redeployment time -25",
           "effectLabel": "Slideshot Style improved",
           "effectText": "Each attack deals at least 30% of this unit's ATK damage (increases to 45% of ATK when the enemy is in the two frontal tiles)",
           "cost": [
@@ -585,7 +592,7 @@
         },
         {
           "stage": "Stage 3",
-          "attributesIncreased": "DEF +50 , Rdp. -25 sec. , ASPD +5",
+          "attributesIncreased": "DEF +50 , ASPD +5 , Redeployment time -25",
           "effectLabel": "Slideshot Style improved",
           "effectText": "Each attack deals at least 35% of this unit's ATK damage (increases to 50% of ATK when the enemy is in the two frontal tiles)",
           "cost": [
@@ -607,11 +614,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_acdrop"
     }
   ],
   "review": {
-    "official": "A street girl of\nColumbia\n, born to a normal working-class family. Her parents are both truck drivers and often work through the night, pushing Aciddrop out to the streets at a young age. From practicing skateboarding in her spare time after school to becoming a champion at local skateboarding tournaments, Aciddrop has become a renowned street icon throughout the city, and her success has drawn countless haters in the process. During a deliberate fight, Aciddrop was infected with\nOriginium\ndust, later coming to\nRhodes Island\nto seek treatment.",
+    "official": "A street girl of Columbia, born to a normal working-class family. Her parents are both truck drivers and often work through the night, pushing Aciddrop out to the streets at a young age. From practicing skateboarding in her spare time after school to becoming a champion at local skateboarding tournaments, Aciddrop has become a renowned street icon throughout the city, and her success has drawn countless haters in the process. During a deliberate fight, Aciddrop was infected with Originium dust, later coming to Rhodes Island to seek treatment.",
     "editor": null,
     "rating": null
   },

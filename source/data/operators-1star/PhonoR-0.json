@@ -13,7 +13,7 @@
     "Robot",
     "Elemental"
   ],
-  "trait": "Attacks deal Arts damage , and can inflict Elemental Injury . Not affected by Deployment Limit , but has a long Redeployment Time.",
+  "trait": "Attacks deal Arts damage and can inflict Elemental Injury. Not affected by Deployment Limit, but has a long Redeployment Time.",
   "howToObtain": {
     "Limited": "No",
     "Standard Headhunting": "No",
@@ -64,62 +64,43 @@
   },
   "talents": [
     {
-      "name": "Chorus of a Distant Valley I",
+      "name": "Chorus of a Distant Valley",
       "rows": [
         {
+          "name": "Chorus of a Distant Valley I",
           "stage": "Base",
           "potential": null,
-          "description": "For 40s after deployment, attacks also deal 45 Necrosis , and inflicts 3% Arts Fragility and Elemental Fragility on all enemies in attack range."
-        }
-      ]
-    },
-    {
-      "name": "Chorus of a Distant Valley IIReplacesChorus of a Distant Valley I",
-      "rows": [
+          "description": "For 40s after deployment, attacks also deal 45 Necrosis, and inflicts 3% [Arts Fragility] and [Elemental Fragility] on all enemies in attack range."
+        },
         {
+          "name": "Chorus of a Distant Valley II",
           "stage": "Base",
           "potential": "Potential 2",
-          "description": "For 40s after deployment, attacks also deal 45 Necrosis , and inflicts 5% Arts Fragility and Elemental Fragility on all enemies in attack range."
-        }
-      ]
-    },
-    {
-      "name": "Chorus of a Distant Valley IIIReplacesChorus of a Distant Valley II",
-      "rows": [
+          "description": "For 40s after deployment, attacks also deal 45 Necrosis, and inflicts 5% [Arts Fragility] and [Elemental Fragility] on all enemies in attack range."
+        },
         {
+          "name": "Chorus of a Distant Valley III",
           "stage": "Base",
           "potential": "Potential 3",
-          "description": "For 40s after deployment, attacks also deal 50 Necrosis , and inflicts 5% Arts Fragility and Elemental Fragility on all enemies in attack range."
-        }
-      ]
-    },
-    {
-      "name": "Chorus of a Distant Valley IVReplacesChorus of a Distant Valley III",
-      "rows": [
+          "description": "For 40s after deployment, attacks also deal 50 Necrosis, and inflicts 5% [Arts Fragility] and [Elemental Fragility] on all enemies in attack range."
+        },
         {
+          "name": "Chorus of a Distant Valley IV",
           "stage": "Base",
           "potential": "Potential 4",
-          "description": "For 40s after deployment, attacks also deal 55 Necrosis , and inflicts 8% Arts Fragility and Elemental Fragility on all enemies in attack range."
-        }
-      ]
-    },
-    {
-      "name": "Chorus of a Distant Valley VReplacesChorus of a Distant Valley IV",
-      "rows": [
+          "description": "For 40s after deployment, attacks also deal 55 Necrosis, and inflicts 8% [Arts Fragility] and [Elemental Fragility] on all enemies in attack range."
+        },
         {
+          "name": "Chorus of a Distant Valley V",
           "stage": "Base",
           "potential": "Potential 5",
-          "description": "For 40s after deployment, attacks also deal 60 Necrosis , and inflicts 8% Arts Fragility and Elemental Fragility on all enemies in attack range."
-        }
-      ]
-    },
-    {
-      "name": "Chorus of a Distant Valley VIReplacesChorus of a Distant Valley V",
-      "rows": [
+          "description": "For 40s after deployment, attacks also deal 60 Necrosis, and inflicts 8% [Arts Fragility] and [Elemental Fragility] on all enemies in attack range."
+        },
         {
+          "name": "Chorus of a Distant Valley VI",
           "stage": "Base",
           "potential": "Potential 6",
-          "description": "For 40s after deployment, attacks also deal 60 Necrosis , and inflicts 10% Arts Fragility and Elemental Fragility on all enemies in attack range."
+          "description": "For 40s after deployment, attacks also deal 60 Necrosis, and inflicts 10% [Arts Fragility] and [Elemental Fragility] on all enemies in attack range."
         }
       ]
     }
@@ -128,23 +109,23 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "Chorus of a Distant Valley I becomes Chorus of a Distant Valley II"
+        "benefit": "Improves Talent"
       },
       {
         "level": 3,
-        "benefit": "Chorus of a Distant Valley II becomes Chorus of a Distant Valley III"
+        "benefit": "Improves Talent"
       },
       {
         "level": 4,
-        "benefit": "Chorus of a Distant Valley III becomes Chorus of a Distant Valley IV"
+        "benefit": "Improves Talent"
       },
       {
         "level": 5,
-        "benefit": "Chorus of a Distant Valley IV becomes Chorus of a Distant Valley V"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "Chorus of a Distant Valley V becomes Chorus of a Distant Valley VI"
+        "benefit": "Improves Talent"
       }
     ],
     "totalCost": [
@@ -157,25 +138,31 @@
   "promotion": [],
   "skills": {
     "skillList": [],
-    "skillCost": null
+    "skillCost": {}
   },
   "baseSkills": [
     {
       "name": "Elegy Charge α",
       "facility": "Power Plant",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%"
+      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Incantation Resonance",
       "facility": "Power Plant",
       "eliteLevel": "Level 30",
-      "description": "When this Operator is assigned to a Power Plant, if Logos is assigned to be the Trainer in the Training Room, increases the drone recovery rate by +5% ."
+      "description": "When this Operator is assigned to a Power Plant, if Logos is assigned to be the Trainer in the Training Room, increases the drone recovery rate by +5%.",
+      "slot": 1,
+      "phase": 0,
+      "level": 30
     }
   ],
   "modules": [],
   "review": {
-    "official": "R&V Model witchcraft operation platform PhonoR-0,\nRhodes Island\n's first and only intelligent operation platform equipped with a\nBanshee\nincantation\nArts\ndevice. Unlike the customized\nRaythean Industries\nmodels, she was born from the unbreakable rapport between our most skilled operators and the Banshees. Compared to other wheeled operation platforms, the witchcraft-based components in her operating mechanisms, drive system, and core more closely resemble a mobile altar. Despite being the product of both cutting-edge technology and\nSarkaz\nwitchcraft, her basic specs are unimpressive, but she is easy to deploy and able to provide mid-mission assistance to operators. She currently participates in combat missions as a Supporter Operator.",
+    "official": "R&V Model witchcraft operation platform PhonoR-0, Rhodes Island's first and only intelligent operation platform equipped with a Banshee incantation Arts device. Unlike the customized Raythean Industries models, she was born from the unbreakable rapport between our most skilled operators and the Banshees. Compared to other wheeled operation platforms, the witchcraft-based components in her operating mechanisms, drive system, and core more closely resemble a mobile altar. Despite being the product of both cutting-edge technology and Sarkaz witchcraft, her basic specs are unimpressive, but she is easy to deploy and able to provide mid-mission assistance to operators. She currently participates in combat missions as a Supporter Operator.",
     "editor": null,
     "rating": null
   },

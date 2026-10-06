@@ -88,11 +88,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -100,11 +100,11 @@
       },
       {
         "level": 5,
-        "benefit": "Redeployment time -6 seconds"
+        "benefit": "Redeployment Time -6 sec"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -142,7 +142,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "ATK +6% ; ASPD +10",
+            "description": "ATK +6%; ASPD +10",
             "initialSp": 0,
             "spCost": 55,
             "duration": 25
@@ -150,7 +150,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "ATK +9% ; ASPD +10",
+            "description": "ATK +9%; ASPD +10",
             "initialSp": 0,
             "spCost": 54,
             "duration": 25
@@ -158,7 +158,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "ATK +12% ; ASPD +10",
+            "description": "ATK +12%; ASPD +10",
             "initialSp": 0,
             "spCost": 53,
             "duration": 25
@@ -166,7 +166,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "ATK +15% ; ASPD +15",
+            "description": "ATK +15%; ASPD +15",
             "initialSp": 0,
             "spCost": 50,
             "duration": 25
@@ -174,7 +174,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "ATK +19% ; ASPD +15",
+            "description": "ATK +19%; ASPD +15",
             "initialSp": 0,
             "spCost": 49,
             "duration": 25
@@ -182,7 +182,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "ATK +22% ; ASPD +15",
+            "description": "ATK +22%; ASPD +15",
             "initialSp": 0,
             "spCost": 48,
             "duration": 25
@@ -190,37 +190,104 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "ATK +25% ; ASPD +25",
+            "description": "ATK +25%; ASPD +25",
             "initialSp": 0,
             "spCost": 45,
             "duration": 25
           }
         ],
         "recommendation": [],
-        "cost": null,
+        "cost": {
+          "m1": [],
+          "m2": [],
+          "m3": []
+        },
         "pairings": [],
         "techniques": []
       }
     ],
-    "skillCost": null
+    "skillCost": {
+      "2": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 1
+        }
+      ],
+      "3": [
+        {
+          "name": "Skill Summary - 1",
+          "quantity": 2
+        },
+        {
+          "name": "Damaged Device",
+          "quantity": 1
+        }
+      ],
+      "4": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 1
+        },
+        {
+          "name": "Orirock Cube",
+          "quantity": 2
+        }
+      ],
+      "5": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 1
+        },
+        {
+          "name": "Sugar",
+          "quantity": 2
+        }
+      ],
+      "6": [
+        {
+          "name": "Skill Summary - 2",
+          "quantity": 1
+        },
+        {
+          "name": "Aketon",
+          "quantity": 1
+        }
+      ],
+      "7": [
+        {
+          "name": "Skill Summary - 3",
+          "quantity": 2
+        },
+        {
+          "name": "Integrated Device",
+          "quantity": 1
+        }
+      ]
+    }
   },
   "baseSkills": [
     {
       "name": "Vanguard Expert α",
       "facility": "Training Room",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to be the Trainer in the Training Room , Vanguard Operators' Specialization training speed +30%"
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Vanguard Operators' Specialization training speed +30%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Order Management α",
       "facility": "Trading Post",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +10% and the order limit +2"
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +10% and the order limit +2",
+      "slot": 1,
+      "phase": 1,
+      "level": 1
     }
   ],
   "modules": [],
   "review": {
-    "official": "Plume is a\nLiberi\nfrom\nLaterano\n, and former member of the Laterano\nGuard\nwho bumbled her way out of Laterano and into\nRhodes Island\n. She performs security, inspection, and loss prevention duties.",
+    "official": "Plume is a Liberi from Laterano, and former member of the Laterano Guard who bumbled her way out of Laterano and into Rhodes Island. She performs security, inspection, and loss prevention duties.",
     "editor": null,
     "rating": null
   },

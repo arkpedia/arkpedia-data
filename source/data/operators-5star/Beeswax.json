@@ -13,7 +13,7 @@
     "AoE",
     "Defense"
   ],
-  "trait": "Normally does not attack , but has greatly increased DEF and RES ; When skill is active, attacks deal AoE Arts damage",
+  "trait": "Normally does not attack, but has greatly increased DEF and RES; When skill is active, attacks deal AoE Arts damage",
   "howToObtain": {
     "Limited": "No",
     "Standard Headhunting": "No",
@@ -90,11 +90,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -102,11 +102,11 @@
       },
       {
         "level": 5,
-        "benefit": "Redeployment time -6 seconds"
+        "benefit": "Redeployment Time -6 sec"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -180,12 +180,12 @@
         "name": "Growing Sandstorm",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
-        "duration": "15–20 seconds",
+        "duration": "15 seconds",
         "levels": [
           {
             "level": 1,
             "mastery": null,
-            "description": "Range expands , ATK +10%",
+            "description": "Range expands, ATK +10%",
             "initialSp": 6,
             "spCost": 28,
             "duration": 15
@@ -193,7 +193,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "Range expands , ATK +15%",
+            "description": "Range expands, ATK +15%",
             "initialSp": 6,
             "spCost": 28,
             "duration": 15
@@ -201,7 +201,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "Range expands , ATK +20%",
+            "description": "Range expands, ATK +20%",
             "initialSp": 6,
             "spCost": 28,
             "duration": 15
@@ -209,7 +209,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "Range expands , ATK +25%",
+            "description": "Range expands, ATK +25%",
             "initialSp": 6,
             "spCost": 26,
             "duration": 16
@@ -217,7 +217,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "Range expands , ATK +30%",
+            "description": "Range expands, ATK +30%",
             "initialSp": 6,
             "spCost": 26,
             "duration": 16
@@ -225,7 +225,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "Range expands , ATK +35%",
+            "description": "Range expands, ATK +35%",
             "initialSp": 6,
             "spCost": 26,
             "duration": 16
@@ -233,7 +233,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "Range expands , ATK +40%",
+            "description": "Range expands, ATK +40%",
             "initialSp": 8,
             "spCost": 24,
             "duration": 17
@@ -241,7 +241,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "Range expands , ATK +45%",
+            "description": "Range expands, ATK +45%",
             "initialSp": 8,
             "spCost": 22,
             "duration": 18
@@ -249,7 +249,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "Range expands , ATK +50%",
+            "description": "Range expands, ATK +50%",
             "initialSp": 8,
             "spCost": 20,
             "duration": 19
@@ -257,7 +257,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "Range expands , ATK +60%",
+            "description": "Range expands, ATK +60%",
             "initialSp": 8,
             "spCost": 18,
             "duration": 20
@@ -515,34 +515,41 @@
       "name": "Caster Expert α",
       "facility": "Training Room",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to be the Trainer in the Training Room, Caster Operators' Specialization training speed +30%"
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Caster Operators' Specialization training speed +30%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Caster Expert βReplacesCaster Expert α",
       "facility": "Training Room",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to be the Trainer in the Training Room, Caster Operators' Specialization training speed +50%"
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Caster Operators' Specialization training speed +50%",
+      "slot": 0,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Beeswax's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_beewax"
     },
     {
       "type": "Upgrade",
-      "name": "PLX-X: \"Beeswax's Blessing\"",
+      "name": "PLX-X: 'Beeswax's Blessing'",
       "mission": {
-        "requirement1": "During battles, have Beeswax use Guardian Obelisk a total of 8 times (excluding Support Units)",
-        "requirement2": "Clear Side Story DH-6 with a 3-star rating; You must deploy your own Beeswax, and cannot include any Defender Operators as members"
+        "requirement1": "During battle, have Beeswax use Guardian Obelisk a total of 8 times (excluding Support Units)",
+        "requirement2": "Clear Dossoles Holiday DH-6 with a 3-star rating; You must deploy your own Beeswax, and cannot include any Defender Operators as members"
       },
       "stages": [
         {
           "stage": "Stage 1",
           "attributesIncreased": "HP +150 , ATK +55",
           "effectLabel": "Trait improved",
-          "effectText": "Normally does not attack , but has greatly increased DEF and RES ; when skill is active, retains some of the bonus and attacks deal AoE Arts damage",
+          "effectText": "Normally does not attack, but has greatly increased DEF and RES; when skill is active, retains some of the bonus and attacks deal AoE Arts Damage",
           "cost": [
             {
               "name": "Module Data Block",
@@ -606,11 +613,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_beewax"
     }
   ],
   "review": {
-    "official": "Operator\nBeeswax, a member of an ancient tribe from the depths of the deserts of\nSargon\n, contacted us of her own initiative and asked to board the ship in order to locate\nsomeone\n. After learning that the person of interest will not be returning to the ship for the time being, Miss Beeswax has applied to join and travel with\nRhodes Island\n, waiting for the time she can reunite with relative.\nBeeswax has passed the entrance examination and has been given the official Operator status, and now serves as a\nCaster\nfor Rhodes Island. This will be the first stop in her lengthy journey of discovery.",
+    "official": "Operator Beeswax, a member of an ancient tribe from the depths of the deserts of Sargon, contacted us of her own initiative and asked to board the ship in order to locate someone. After learning that the person of interest will not be returning to the ship for the time being, Miss Beeswax has applied to join and travel with Rhodes Island, waiting for the time she can reunite with relative. \nBeeswax has passed the entrance examination and has been given the official Operator status, and now serves as a Caster for Rhodes Island. This will be the first stop in her lengthy journey of discovery.",
     "editor": null,
     "rating": null
   },

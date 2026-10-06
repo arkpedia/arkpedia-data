@@ -88,11 +88,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -100,11 +100,11 @@
       },
       {
         "level": 5,
-        "benefit": "Redeployment time -6 seconds"
+        "benefit": "Redeployment Time -6 sec"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -274,7 +274,7 @@
             },
             {
               "name": "Loxic Kohl",
-              "quantity": 2
+              "quantity": 4
             }
           ],
           "m2": [
@@ -313,12 +313,12 @@
         "name": "Double Shot",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
-        "duration": "15–20 seconds",
+        "duration": "15 seconds",
         "levels": [
           {
             "level": 1,
             "mastery": null,
-            "description": "ATK +10% , each attack hits 1 additional target",
+            "description": "ATK +10%，each attack hits 1 additional target.",
             "initialSp": 0,
             "spCost": 30,
             "duration": 15
@@ -326,7 +326,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "ATK +10% , each attack hits 1 additional target",
+            "description": "ATK +10%，each attack hits 1 additional target.",
             "initialSp": 1,
             "spCost": 29,
             "duration": 15
@@ -334,7 +334,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "ATK +10% , each attack hits 1 additional target",
+            "description": "ATK +10%，each attack hits 1 additional target.",
             "initialSp": 2,
             "spCost": 28,
             "duration": 15
@@ -342,7 +342,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "ATK +20% , each attack hits 1 additional target",
+            "description": "ATK +20%，each attack hits 1 additional target.",
             "initialSp": 3,
             "spCost": 27,
             "duration": 16
@@ -350,7 +350,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "ATK +20% , each attack hits 1 additional target",
+            "description": "ATK +20%，each attack hits 1 additional target.",
             "initialSp": 4,
             "spCost": 26,
             "duration": 16
@@ -358,7 +358,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "ATK +20% , each attack hits 1 additional target",
+            "description": "ATK +20%，each attack hits 1 additional target.",
             "initialSp": 5,
             "spCost": 25,
             "duration": 16
@@ -366,7 +366,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "ATK +30% , each attack hits 1 additional target",
+            "description": "ATK +30%，each attack hits 1 additional target.",
             "initialSp": 6,
             "spCost": 24,
             "duration": 17
@@ -374,7 +374,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "ATK +35% , each attack hits 1 additional target",
+            "description": "ATK +35%，each attack hits 1 additional target.",
             "initialSp": 7,
             "spCost": 23,
             "duration": 18
@@ -382,7 +382,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "ATK +40% , each attack hits 1 additional target",
+            "description": "ATK +40%，each attack hits 1 additional target.",
             "initialSp": 8,
             "spCost": 22,
             "duration": 19
@@ -390,7 +390,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "ATK +45% , each attack hits 1 additional target",
+            "description": "ATK +45%，each attack hits 1 additional target.",
             "initialSp": 10,
             "spCost": 20,
             "duration": 20
@@ -509,24 +509,31 @@
       "name": "Junkman",
       "facility": "Factory",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Factory, capacity limit +8 and Morale consumed per hour -0.25"
+      "description": "When this Operator is assigned to a Factory, capacity limit +8 and Morale consumed per hour -0.25",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Recycling",
       "facility": "Factory",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to a Factory, Operators assigned to the Factory increase all capacity limits, add 2% productivity."
+      "description": "When this Operator is assigned to a Factory, Operators assigned to the Factory increase all capacity limits, add 2% productivity.",
+      "slot": 1,
+      "phase": 1,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Vermeil's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_clour"
     },
     {
       "type": "Upgrade",
-      "name": "MAR-X: \"Still Alive\"",
+      "name": "MAR-X: 'Still Alive'",
       "mission": {
         "requirement1": "Deal a total of 60,000 damage with Vermeil (excluding Support Units)",
         "requirement2": "Clear Main Theme 3-1 with a 3-star rating; You must deploy your own Vermeil, and only Vanguard Operators are allowed for the remaining members"
@@ -600,11 +607,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_clour"
     }
   ],
   "review": {
-    "official": "Vermeil's place of birth remains unknown. She was in the wilderness outside\nSiracusa\nprior to joining\nRhodes Island\n. We speculate that she was a hunter. She demonstrates extraordinary skill in the fields of hunting, sniping, and guerrilla warfare.\nShe currently serves Rhodes Island on a sniper team, providing force protection and sharpshooting assistance.",
+    "official": "Vermeil's place of birth remains unknown. She was in the wilderness outside Siracusa prior to joining Rhodes Island. We speculate that she was a hunter. She demonstrates extraordinary skill in the fields of hunting, sniping, and guerrilla warfare. \nShe currently serves Rhodes Island on a sniper team, providing force protection and sharpshooting assistance.",
     "editor": null,
     "rating": null
   },

@@ -75,22 +75,22 @@
         {
           "stage": "Elite 1",
           "potential": null,
-          "description": "Attacks [Drone] units first, and ATK increases to 125% when attacking [Drone] units"
+          "description": "Prioritizes attacking Drones; Increases ATK to 125% when attacking Drones"
         },
         {
           "stage": "Elite 1",
           "potential": "Potential 5",
-          "description": "Attacks [Drone] units first, and ATK increases to 135% (+5%) when attacking [Drone] units"
+          "description": "Prioritizes attacking Drones; Increases ATK to 130% (+5%) when attacking Drones"
         },
         {
           "stage": "Elite 2",
           "potential": null,
-          "description": "Attacks [Drone] units first, and ATK increases to 150% when attacking [Drone] units"
+          "description": "Prioritizes attacking Drones; Increases ATK to 150% when attacking Drones"
         },
         {
           "stage": "Elite 2",
           "potential": "Potential 5",
-          "description": "Attacks [Drone] units first, and ATK increases to 155% (+5%) when attacking [Drone] units"
+          "description": "Prioritizes attacking Drones; Increases ATK to 155% (+5%) when attacking Drones"
         }
       ]
     }
@@ -99,11 +99,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -111,11 +111,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Countermeasure Device"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -188,12 +188,12 @@
         "name": "Binary Reload",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
-        "duration": "16–25 seconds",
+        "duration": "16 seconds",
         "levels": [
           {
             "level": 1,
             "mastery": null,
-            "description": "ATK +20% , each attack hits extra target",
+            "description": "ATK +20%，each attack hits extra target",
             "initialSp": 0,
             "spCost": 35,
             "duration": 16
@@ -201,7 +201,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "ATK +20% , each attack hits extra target",
+            "description": "ATK +20%，each attack hits extra target",
             "initialSp": 2,
             "spCost": 35,
             "duration": 17
@@ -209,7 +209,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "ATK +20% , each attack hits extra target",
+            "description": "ATK +20%，each attack hits extra target",
             "initialSp": 4,
             "spCost": 35,
             "duration": 18
@@ -217,7 +217,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "ATK +30% , each attack hits extra target",
+            "description": "ATK +30%，each attack hits extra target",
             "initialSp": 6,
             "spCost": 35,
             "duration": 19
@@ -225,7 +225,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "ATK +30% , each attack hits extra target",
+            "description": "ATK +30%，each attack hits extra target",
             "initialSp": 8,
             "spCost": 35,
             "duration": 20
@@ -233,7 +233,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "ATK +30% , each attack hits extra target",
+            "description": "ATK +30%，each attack hits extra target",
             "initialSp": 10,
             "spCost": 35,
             "duration": 21
@@ -241,7 +241,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "ATK +40% , each attack hits extra target",
+            "description": "ATK +40%，each attack hits extra target",
             "initialSp": 12,
             "spCost": 35,
             "duration": 22
@@ -249,7 +249,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "ATK +43% , each attack hits extra target",
+            "description": "ATK +43%，each attack hits extra target",
             "initialSp": 14,
             "spCost": 35,
             "duration": 23
@@ -257,7 +257,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "ATK +46% , each attack hits extra target",
+            "description": "ATK +46%，each attack hits extra target",
             "initialSp": 16,
             "spCost": 35,
             "duration": 24
@@ -265,7 +265,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "ATK +50% , each attack hits extra target",
+            "description": "ATK +50%，each attack hits extra target",
             "initialSp": 20,
             "spCost": 35,
             "duration": 25
@@ -328,10 +328,10 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "Releases a shockwave in an area around this unit. All hit enemies receive 200% ATK as Arts damage and are Bound for 3.5 seconds. If the target is a [Drone] , it will receive double damage and be Stunned",
+            "description": "Releases a shockwave in an area around this unit. All hit enemies receive 200% ATK as Arts damage and are Bound for 3.5 seconds. If the target is a [Drone], it will receive double damage and be Stunned",
             "initialSp": 10,
             "spCost": 40,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 2,
@@ -339,7 +339,7 @@
             "description": "Releases a shockwave in an area around this unit. All hit enemies receive 220% ATK as Arts damage and are Bound for 3.5 seconds. If the target is a [Drone], it will receive double damage and be Stunned",
             "initialSp": 10,
             "spCost": 39,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 3,
@@ -347,7 +347,7 @@
             "description": "Releases a shockwave in an area around this unit. All hit enemies receive 240% ATK as Arts damage and are Bound for 3.5 seconds. If the target is a [Drone], it will receive double damage and be Stunned",
             "initialSp": 10,
             "spCost": 38,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 4,
@@ -355,7 +355,7 @@
             "description": "Releases a shockwave in an area around this unit. All hit enemies receive 260% ATK as Arts damage and are Bound for 4 seconds. If the target is a [Drone], it will receive double damage and be Stunned",
             "initialSp": 13,
             "spCost": 37,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 5,
@@ -363,7 +363,7 @@
             "description": "Releases a shockwave in an area around this unit. All hit enemies receive 280% ATK as Arts damage and are Bound for 4 seconds. If the target is a [Drone], it will receive double damage and be Stunned",
             "initialSp": 13,
             "spCost": 36,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 6,
@@ -371,7 +371,7 @@
             "description": "Releases a shockwave in an area around this unit. All hit enemies receive 300% ATK as Arts damage and are Bound for 4 seconds. If the target is a [Drone], it will receive double damage and be Stunned",
             "initialSp": 13,
             "spCost": 35,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 7,
@@ -379,7 +379,7 @@
             "description": "Releases a shockwave in an area around this unit. All hit enemies receive 320% ATK as Arts damage and are Bound for 4.5 seconds. If the target is a [Drone], it will receive double damage and be Stunned",
             "initialSp": 16,
             "spCost": 34,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
@@ -387,7 +387,7 @@
             "description": "Releases a shockwave in an area around this unit. All hit enemies receive 340% ATK as Arts damage and are Bound for 5 seconds. If the target is a [Drone], it will receive double damage and be Stunned",
             "initialSp": 17,
             "spCost": 33,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
@@ -395,7 +395,7 @@
             "description": "Releases a shockwave in an area around this unit. All hit enemies receive 360% ATK as Arts damage and are Bound for 5.5 seconds. If the target is a [Drone], it will receive double damage and be Stunned",
             "initialSp": 18,
             "spCost": 32,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
@@ -403,7 +403,7 @@
             "description": "Releases a shockwave in an area around this unit. All hit enemies receive 400% ATK as Arts damage and are Bound for 6 seconds. If the target is a [Drone], it will receive double damage and be Stunned",
             "initialSp": 20,
             "spCost": 30,
-            "duration": "–"
+            "duration": null
           }
         ],
         "recommendation": [],
@@ -523,20 +523,27 @@
       "name": "Electromagnetic Charge α",
       "facility": "Power Plant",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%"
+      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Electromagnetic Charge βReplacesElectromagnetic Charge α",
       "facility": "Power Plant",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +15%"
+      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +15%",
+      "slot": 0,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Glaucus's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_glacus"
     },
     {
       "type": "Upgrade",
@@ -550,7 +557,7 @@
           "stage": "Stage 1",
           "attributesIncreased": "HP +90 , ATK +30",
           "effectLabel": "New trait",
-          "effectText": "SP recovery +0.2/sec when there are enemies within range",
+          "effectText": "SP recovery +0.2/s when there are enemies within range",
           "cost": [
             {
               "name": "Module Data Block",
@@ -570,7 +577,7 @@
           "stage": "Stage 2",
           "attributesIncreased": "HP +110 , ATK +40",
           "effectLabel": "Countermeasure Device improved",
-          "effectText": "Prioritizes attacking Drones ; Increases ATK to 165% when attacking Drones",
+          "effectText": "Prioritizes attacking Drones; Increases ATK to 165% when attacking Drones",
           "cost": [
             {
               "name": "Module Data Block",
@@ -614,11 +621,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_glacus"
     }
   ],
   "review": {
-    "official": "Glaucus was born in the\nÆgir Region\n, but left at an early age to wander about. By chance, she happened to join\nRhodes Island\nand is now a\nRaythean\ncutting-edge weapon tester.\nIn addition to performing research on cutting-edge weapon modification, Glaucus also carries out assaults on air missions when required.",
+    "official": "Glaucus was born in the Ægir Region, but left at an early age to wander about. By chance, she happened to join Rhodes Island and is now a Raythean cutting-edge weapon tester.\nIn addition to performing research on cutting-edge weapon modification, Glaucus also carries out assaults on air missions when required.",
     "editor": null,
     "rating": null
   },

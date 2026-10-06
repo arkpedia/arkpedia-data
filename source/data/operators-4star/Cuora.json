@@ -88,11 +88,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -100,11 +100,11 @@
       },
       {
         "level": 5,
-        "benefit": "Redeployment time -6 seconds"
+        "benefit": "Redeployment Time -6 sec"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -318,7 +318,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "Stops attacking; Block +1 ; DEF +55% ; Restores HP by 1% of Max HP per second",
+            "description": "Stops attacking; Block +1; DEF +55%; Restores HP by 1% of Max HP per second",
             "initialSp": 0,
             "spCost": 40,
             "duration": 30
@@ -326,7 +326,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "Stops attacking; Block +1 ; DEF +60% ; Restores HP by 1% of Max HP per second",
+            "description": "Stops attacking; Block +1; DEF +60%; Restores HP by 1% of Max HP per second",
             "initialSp": 0,
             "spCost": 40,
             "duration": 30
@@ -334,7 +334,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "Stops attacking; Block +1 ; DEF +65% ; Restores HP by 1% of Max HP per second",
+            "description": "Stops attacking; Block +1; DEF +65%; Restores HP by 1% of Max HP per second",
             "initialSp": 0,
             "spCost": 40,
             "duration": 30
@@ -342,7 +342,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "Stops attacking; Block +1 ; DEF +75% ; Restores HP by 1% of Max HP per second",
+            "description": "Stops attacking; Block +1; DEF +75%; Restores HP by 1% of Max HP per second",
             "initialSp": 0,
             "spCost": 40,
             "duration": 30
@@ -350,7 +350,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "Stops attacking; Block +1 ; DEF +80% ; Restores HP by 1% of Max HP per second",
+            "description": "Stops attacking; Block +1; DEF +80%; Restores HP by 1% of Max HP per second",
             "initialSp": 0,
             "spCost": 40,
             "duration": 30
@@ -358,7 +358,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "Stops attacking; Block +1 ; DEF +85% ; Restores HP by 1% of Max HP per second",
+            "description": "Stops attacking; Block +1; DEF +85%; Restores HP by 1% of Max HP per second",
             "initialSp": 0,
             "spCost": 40,
             "duration": 30
@@ -366,7 +366,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "Stops attacking; Block +1 ; DEF +95% ; Restores HP by 2% of Max HP per second",
+            "description": "Stops attacking; Block +1; DEF +95%; Restores HP by 2% of Max HP per second",
             "initialSp": 0,
             "spCost": 40,
             "duration": 30
@@ -374,7 +374,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "Stops attacking; Block +1 ; DEF +105% ; Restores HP by 2% of Max HP per second",
+            "description": "Stops attacking; Block +1; DEF +105%; Restores HP by 2% of Max HP per second",
             "initialSp": 0,
             "spCost": 40,
             "duration": 30
@@ -382,7 +382,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "Stops attacking; Block +1 ; DEF +115% ; Restores HP by 2% of Max HP per second",
+            "description": "Stops attacking; Block +1; DEF +115%; Restores HP by 2% of Max HP per second",
             "initialSp": 0,
             "spCost": 40,
             "duration": 30
@@ -390,7 +390,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "Stops attacking; Block +1 ; DEF +130% ; Restores HP by 3% of Max HP per second",
+            "description": "Stops attacking; Block +1; DEF +130%; Restores HP by 3% of Max HP per second",
             "initialSp": 0,
             "spCost": 40,
             "duration": 30
@@ -509,20 +509,27 @@
       "name": "Warehouse Organization β",
       "facility": "Factory",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Factory, capacity limit +10 and productivity +10%"
+      "description": "When this Operator is assigned to a Factory, capacity limit +10 and productivity +10%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Order Distribution α",
       "facility": "Trading Post",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to a Trading Post , order acquisition efficiency +20%"
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +20%",
+      "slot": 1,
+      "phase": 1,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Cuora's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_snakek"
     },
     {
       "type": "Upgrade",
@@ -600,11 +607,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_snakek"
     }
   ],
   "review": {
-    "official": "Cuora, real identity unknown, missing history. Demonstrated remarkable defensive ability in battle. Now undertaking many missions for\nRhodes Island\nas a\nDefender\nOperator\n.",
+    "official": "Cuora, real identity unknown, missing history. Demonstrated remarkable defensive ability in battle. \nNow undertaking many missions for Rhodes Island as a Defender Operator.",
     "editor": null,
     "rating": null
   },

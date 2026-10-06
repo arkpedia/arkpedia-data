@@ -102,23 +102,23 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -10 seconds"
+        "benefit": "Redeployment Time -10 sec"
       },
       {
         "level": 4,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 5,
-        "benefit": "Improves Bullseye"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -192,12 +192,12 @@
         "name": "Traceless",
         "recoveryType": "Offensive Recovery",
         "activationType": "Manual",
-        "duration": "11–15 seconds",
+        "duration": "11 seconds",
         "levels": [
           {
             "level": 1,
             "mastery": null,
-            "description": "ATK +10% , attacks hit 2 times in a row and gain Camouflage",
+            "description": "ATK +10%, attacks hit 2 times in a row and gain Camouflage",
             "initialSp": 3,
             "spCost": 20,
             "duration": 11
@@ -205,7 +205,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "ATK +13% , attacks hit 2 times in a row and gain Camouflage",
+            "description": "ATK +13%, attacks hit 2 times in a row and gain Camouflage",
             "initialSp": 3,
             "spCost": 20,
             "duration": 11
@@ -213,7 +213,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "ATK +16% , attacks hit 2 times in a row and gain Camouflage",
+            "description": "ATK +16%, attacks hit 2 times in a row and gain Camouflage",
             "initialSp": 3,
             "spCost": 20,
             "duration": 11
@@ -221,7 +221,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "ATK +20% , attacks hit 2 times in a row and gain Camouflage",
+            "description": "ATK +20%, attacks hit 2 times in a row and gain Camouflage",
             "initialSp": 5,
             "spCost": 17,
             "duration": 12
@@ -229,7 +229,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "ATK +23% , attacks hit 2 times in a row and gain Camouflage",
+            "description": "ATK +23%, attacks hit 2 times in a row and gain Camouflage",
             "initialSp": 5,
             "spCost": 17,
             "duration": 12
@@ -237,7 +237,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "ATK +26% , attacks hit 2 times in a row and gain Camouflage",
+            "description": "ATK +26%, attacks hit 2 times in a row and gain Camouflage",
             "initialSp": 5,
             "spCost": 17,
             "duration": 12
@@ -245,7 +245,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "ATK +30% , attacks hit 2 times in a row and gain Camouflage",
+            "description": "ATK +30%, attacks hit 2 times in a row and gain Camouflage",
             "initialSp": 7,
             "spCost": 15,
             "duration": 13
@@ -253,7 +253,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "ATK +33% , attacks hit 2 times in a row and gain Camouflage",
+            "description": "ATK +33%, attacks hit 2 times in a row and gain Camouflage",
             "initialSp": 8,
             "spCost": 15,
             "duration": 14
@@ -261,7 +261,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "ATK +36% , attacks hit 2 times in a row and gain Camouflage",
+            "description": "ATK +36%, attacks hit 2 times in a row and gain Camouflage",
             "initialSp": 9,
             "spCost": 15,
             "duration": 14
@@ -269,7 +269,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "ATK +40% , attacks hit 2 times in a row and gain Camouflage",
+            "description": "ATK +40%, attacks hit 2 times in a row and gain Camouflage",
             "initialSp": 10,
             "spCost": 15,
             "duration": 15
@@ -332,7 +332,7 @@
         "name": "Silencer",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
-        "duration": "22–30 seconds",
+        "duration": "22 seconds",
         "levels": [
           {
             "level": 1,
@@ -532,20 +532,27 @@
       "name": "Alternate Operator",
       "facility": "Control Center",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to the Control Center, each Alternate Operator increases the Morale of all Operators in the Control Center by +0.05 per hour"
+      "description": "When this Operator is assigned to the Control Center, each Alternate Operator increases the Morale of all Operators in the Control Center by +0.05 per hour",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Combat Techniques: Marksman",
       "facility": "Training Room",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to be the Trainer in the Training Room, Sniper Operators' Specialization training speed +30% ; if the trainee's Job Branch is Marksman , training speed will be further increased by +45%"
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Sniper Operators' Specialization training speed +30%; if the trainee's Job Branch is Marksman, training speed will be further increased by +45%",
+      "slot": 1,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Kroos the Keen Glint's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_kroos2"
     },
     {
       "type": "Upgrade",
@@ -623,11 +630,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_kroos2"
     }
   ],
   "review": {
-    "official": "Following extensive training and practical experience,\nKroos\nhas been smoothly promoted to formal\nOperator\nstatus, principally tasked with field missions. Under the guidance of\nRhodes Island\n's Instructors and from tempering in the field, she has greatly matured, gaining her own insight into and views on firing techniques and concealing movements.",
+    "official": "Following extensive training and practical experience, Kroos has been smoothly promoted to formal Operator status, principally tasked with field missions. Under the guidance of Rhodes Island's Instructors and from tempering in the field, she has greatly matured, gaining her own insight into and views on firing techniques and concealing movements.",
     "editor": null,
     "rating": null
   },

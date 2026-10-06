@@ -81,7 +81,7 @@
         {
           "stage": "Elite 1",
           "potential": "Potential 5",
-          "description": "When attacking, has a 10% chance to increase the current damage of that attack by 60% (+10%) . The chance increases to 30% when Vigna's skill is active."
+          "description": "When attacking, has a 10% chance to increase the current damage of that attack by 60% (+10%). The chance increases to 30% when Vigna's skill is active."
         },
         {
           "stage": "Elite 2",
@@ -91,7 +91,7 @@
         {
           "stage": "Elite 2",
           "potential": "Potential 5",
-          "description": "When attacking, has a 10% chance to increase the current damage of that attack by 110% (+10%) . The chance increases to 30% when Vigna's skill is active."
+          "description": "When attacking, has a 10% chance to increase the current damage of that attack by 110% (+10%). The chance increases to 30% when Vigna's skill is active."
         }
       ]
     }
@@ -100,11 +100,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -112,11 +112,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Fierce Stabbing"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -324,12 +324,12 @@
         "name": "Hammer-On",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
-        "duration": "20–30 seconds",
+        "duration": "20 seconds",
         "levels": [
           {
             "level": 1,
             "mastery": null,
-            "description": "Attack Interval increases a bit ; ATK +90%",
+            "description": "Attack Interval increases a bit; ATK +90%",
             "initialSp": 0,
             "spCost": 35,
             "duration": 20
@@ -337,7 +337,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "Attack Interval increases a bit ; ATK +100%",
+            "description": "Attack Interval increases a bit; ATK +100%",
             "initialSp": 0,
             "spCost": 35,
             "duration": 20
@@ -345,7 +345,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "Attack Interval increases a bit ; ATK +110%",
+            "description": "Attack Interval increases a bit; ATK +110%",
             "initialSp": 0,
             "spCost": 35,
             "duration": 20
@@ -353,7 +353,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "Attack Interval increases a bit ; ATK +120%",
+            "description": "Attack Interval increases a bit; ATK +120%",
             "initialSp": 0,
             "spCost": 32,
             "duration": 22
@@ -361,7 +361,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "Attack Interval increases a bit ; ATK +130%",
+            "description": "Attack Interval increases a bit; ATK +130%",
             "initialSp": 0,
             "spCost": 32,
             "duration": 22
@@ -369,7 +369,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "Attack Interval increases a bit ; ATK +140%",
+            "description": "Attack Interval increases a bit; ATK +140%",
             "initialSp": 0,
             "spCost": 32,
             "duration": 22
@@ -377,7 +377,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "Attack Interval increases a bit ; ATK +150%",
+            "description": "Attack Interval increases a bit; ATK +150%",
             "initialSp": 5,
             "spCost": 28,
             "duration": 25
@@ -385,7 +385,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "Attack Interval increases a bit ; ATK +165%",
+            "description": "Attack Interval increases a bit; ATK +165%",
             "initialSp": 5,
             "spCost": 27,
             "duration": 26
@@ -393,7 +393,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "Attack Interval increases a bit ; ATK +180%",
+            "description": "Attack Interval increases a bit; ATK +180%",
             "initialSp": 5,
             "spCost": 26,
             "duration": 27
@@ -401,7 +401,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "Attack Interval increases a bit ; ATK +200%",
+            "description": "Attack Interval increases a bit; ATK +200%",
             "initialSp": 10,
             "spCost": 25,
             "duration": 30
@@ -520,20 +520,27 @@
       "name": "Combat Guidance Video",
       "facility": "Factory",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Factory, Battle Record formula related productivity +30%"
+      "description": "When this Operator is assigned to a Factory, Battle Record formula related productivity +30%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Vanguard Expert β",
       "facility": "Training Room",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to be the Trainer in the Training Room, Vanguard Operators' Specialization training speed +50%"
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Vanguard Operators' Specialization training speed +50%",
+      "slot": 1,
+      "phase": 1,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
-      "name": "Vigna's Badge",
-      "stages": []
+      "name": "Vigna’s Badge",
+      "stages": [],
+      "moduleId": "uniequip_001_vigna"
     },
     {
       "type": "Upgrade",
@@ -611,11 +618,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_vigna"
     }
   ],
   "review": {
-    "official": "Vigna is a\nSarkaz\nthat was admitted into\nRhodes Island\nfollowing a battery of screenings, showing good potential in skirmishes, raids, and coordinated combat.\nCurrently a\nVanguard\nwith an advance squad at Rhodes Island, with outstanding performance in both tactical raids and frontline combat.",
+    "official": "Vigna is a Sarkaz that was admitted into Rhodes Island following a battery of screenings, showing good potential in skirmishes, raids, and coordinated combat. \nCurrently a Vanguard with an advance squad at Rhodes Island, with outstanding performance in both tactical raids and frontline combat.",
     "editor": null,
     "rating": null
   },

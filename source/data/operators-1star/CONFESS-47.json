@@ -13,7 +13,7 @@
     "Robot",
     "Crowd-Control"
   ],
-  "trait": "Blocks 2 enemies and ignores Deployment Limit , but has a long Redeployment Time",
+  "trait": "Blocks 2 enemies and ignores Deployment Limit, but has a long Redeployment Time",
   "howToObtain": {
     "Limited": "No",
     "Standard Headhunting": "No",
@@ -62,59 +62,40 @@
   },
   "talents": [
     {
-      "name": "Pay-Per-Confession I",
+      "name": "Pay-Per-Confession",
       "rows": [
         {
+          "name": "Pay-Per-Confession I",
           "stage": "Base",
           "potential": null,
           "description": "The first time blocking an enemy, gains 2 DP and puts the blocked enemy to Sleep for 5s"
-        }
-      ]
-    },
-    {
-      "name": "Pay-Per-Confession IIReplacesPay-Per-Confession I",
-      "rows": [
+        },
         {
+          "name": "Pay-Per-Confession II",
           "stage": "Base",
           "potential": "Potential 2",
           "description": "The first time blocking an enemy, gains 2 DP and puts the blocked enemy to Sleep for 6s"
-        }
-      ]
-    },
-    {
-      "name": "Pay-Per-Confession IIIReplacesPay-Per-Confession II",
-      "rows": [
+        },
         {
+          "name": "Pay-Per-Confession III",
           "stage": "Base",
           "potential": "Potential 3",
           "description": "The first time blocking an enemy, gains 3 DP and puts the blocked enemy to Sleep for 6s"
-        }
-      ]
-    },
-    {
-      "name": "Pay-Per-Confession IVReplacesPay-Per-Confession III",
-      "rows": [
+        },
         {
+          "name": "Pay-Per-Confession IV",
           "stage": "Base",
           "potential": "Potential 4",
           "description": "The first time blocking an enemy, gains 3 DP and puts the blocked enemy to Sleep for 7s"
-        }
-      ]
-    },
-    {
-      "name": "Pay-Per-Confession VReplacesPay-Per-Confession IV",
-      "rows": [
+        },
         {
+          "name": "Pay-Per-Confession V",
           "stage": "Base",
           "potential": "Potential 5",
           "description": "The first time blocking an enemy, gains 4 DP and puts the blocked enemy to Sleep for 7s"
-        }
-      ]
-    },
-    {
-      "name": "Pay-Per-Confession VIReplacesPay-Per-Confession V",
-      "rows": [
+        },
         {
+          "name": "Pay-Per-Confession VI",
           "stage": "Base",
           "potential": "Potential 6",
           "description": "The first time blocking an enemy, gains 4 DP and puts the blocked enemy to Sleep for 8s"
@@ -126,23 +107,23 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "Pay-Per-Confession I becomes Pay-Per-Confession II"
+        "benefit": "Improves Talent"
       },
       {
         "level": 3,
-        "benefit": "Pay-Per-Confession II becomes Pay-Per-Confession III"
+        "benefit": "Improves Talent"
       },
       {
         "level": 4,
-        "benefit": "Pay-Per-Confession III becomes Pay-Per-Confession IV"
+        "benefit": "Improves Talent"
       },
       {
         "level": 5,
-        "benefit": "Pay-Per-Confession IV becomes Pay-Per-Confession V"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "Pay-Per-Confession V becomes Pay-Per-Confession VI"
+        "benefit": "Improves Talent"
       }
     ],
     "totalCost": [
@@ -155,25 +136,31 @@
   "promotion": [],
   "skills": {
     "skillList": [],
-    "skillCost": null
+    "skillCost": {}
   },
   "baseSkills": [
     {
       "name": "Now Charging",
       "facility": "Power Plant",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%"
+      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Now Under Maintenance",
       "facility": "Power Plant",
       "eliteLevel": "Level 30",
-      "description": "When this Operator is assigned to a Power Plant, if another Laterano Operator is assigned to a Power Plant, drone charging speed +5%"
+      "description": "When this Operator is assigned to a Power Plant, if another Laterano Operator is assigned to a Power Plant, drone charging speed +5%",
+      "slot": 1,
+      "phase": 0,
+      "level": 30
     }
   ],
   "modules": [],
   "review": {
-    "official": "1st-gen automated confessional developed by the\nLaterano\nFaith Assistive Engineering Design Bureau. It began as a stationary confessional fitted with a smart voice system, modified and fitted to a mobile chassis allowing it to move through Laterano and respond to the confession requests of citizens on the intercity net.\nThe classic form is the designer's taste, and gives the user an impression of simplicity and honesty.\nThe accuracy and response of the voice recognition system were improved, and new customization options were added, including voice types, cognition scope, and response tendencies, providing a more personalized confession experience.\nThe automated confessional CONFESS-47 (full serial in Curia records: LATERANO AUTOMATED CONFESSIONAL 047) joined\nRhodes Island\nas a gift from the Lateran Curia and currently serves as an operator providing confession and other services to members of Rhodes Island.",
+    "official": "1st-gen automated confessional developed by the Laterano Faith Assistive Engineering Design Bureau. It began as a stationary confessional fitted with a smart voice system, modified and fitted to a mobile chassis allowing it to move through Laterano and respond to the confession requests of citizens on the intercity net.\nThe classic form is the designer's taste, and gives the user an impression of simplicity and honesty.\nThe accuracy and response of the voice recognition system were improved, and new customization options were added, including voice types, cognition scope, and response tendencies, providing a more personalized confession experience.\nThe automated confessional CONFESS-47 (full serial in Curia records: LATERANO AUTOMATED CONFESSIONAL 047) joined Rhodes Island as a gift from the Lateran Curia and currently serves as an operator providing confession and other services to members of Rhodes Island.",
     "editor": null,
     "rating": null
   },

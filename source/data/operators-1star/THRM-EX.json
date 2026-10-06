@@ -10,10 +10,10 @@
   "subRegion": null,
   "position": "Melee",
   "tags": [
-    "Nuker",
-    "Robot"
+    "Robot",
+    "Nuker"
   ],
-  "trait": "Does not attack and ignores the Deployment Limit , but has a long Redeployment Time",
+  "trait": "Does not attack and ignores the Deployment Limit, but has a long Redeployment Time",
   "howToObtain": {
     "Limited": "No",
     "Standard Headhunting": "No",
@@ -65,59 +65,40 @@
   },
   "talents": [
     {
-      "name": "Delayed Detonation 1",
+      "name": "Delayed Detonation",
       "rows": [
         {
+          "name": "Delayed Detonation 1",
           "stage": "Base",
           "potential": null,
           "description": "3 seconds after deployment, inflicts 300% ATK as Physical damage to enemies in the nearby 8 tiles and applies 10% Fragile effect for 8 seconds, then automatically retreats from battle"
-        }
-      ]
-    },
-    {
-      "name": "Delayed Detonation 2ReplacesDelayed Detonation 1",
-      "rows": [
+        },
         {
+          "name": "Delayed Detonation 2",
           "stage": "Base",
           "potential": "Potential 2",
           "description": "3 seconds after deployment, inflicts 320% ATK as Physical damage to enemies in the nearby 8 tiles and applies 18% Fragile effect for 8 seconds, then automatically retreats from battle"
-        }
-      ]
-    },
-    {
-      "name": "Delayed Detonation 3ReplacesDelayed Detonation 2",
-      "rows": [
+        },
         {
+          "name": "Delayed Detonation 3",
           "stage": "Base",
           "potential": "Potential 3",
           "description": "3 seconds after deployment, inflicts 340% ATK as Physical damage to enemies in the nearby 8 tiles and applies 21% Fragile effect for 8 seconds, then automatically retreats from battle"
-        }
-      ]
-    },
-    {
-      "name": "Delayed Detonation 4ReplacesDelayed Detonation 3",
-      "rows": [
+        },
         {
+          "name": "Delayed Detonation 4",
           "stage": "Base",
           "potential": "Potential 4",
           "description": "3 seconds after deployment, inflicts 360% ATK as Physical damage to enemies in the nearby 8 tiles and applies 24% Fragile effect for 8 seconds, then automatically retreats from battle"
-        }
-      ]
-    },
-    {
-      "name": "Delayed Detonation 5ReplacesDelayed Detonation 4",
-      "rows": [
+        },
         {
+          "name": "Delayed Detonation 5",
           "stage": "Base",
           "potential": "Potential 5",
           "description": "3 seconds after deployment, inflicts 380% ATK as Physical damage to enemies in the nearby 8 tiles and applies 27% Fragile effect for 8 seconds, then automatically retreats from battle"
-        }
-      ]
-    },
-    {
-      "name": "Delayed Detonation 6ReplacesDelayed Detonation 5",
-      "rows": [
+        },
         {
+          "name": "Delayed Detonation 6",
           "stage": "Base",
           "potential": "Potential 6",
           "description": "3 seconds after deployment, inflicts 400% ATK as Physical damage to enemies in the nearby 8 tiles and applies 30% Fragile effect for 8 seconds, then automatically retreats from battle"
@@ -129,23 +110,23 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "Delayed Detonation 1 becomes Delayed Detonation 2"
+        "benefit": "Improves Talent"
       },
       {
         "level": 3,
-        "benefit": "Delayed Detonation 2 becomes Delayed Detonation 3"
+        "benefit": "Improves Talent"
       },
       {
         "level": 4,
-        "benefit": "Delayed Detonation 3 becomes Delayed Detonation 4"
+        "benefit": "Improves Talent"
       },
       {
         "level": 5,
-        "benefit": "Delayed Detonation 4 becomes Delayed Detonation 5"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "Delayed Detonation 5 becomes Delayed Detonation 6"
+        "benefit": "Improves Talent"
       }
     ],
     "totalCost": [
@@ -158,25 +139,31 @@
   "promotion": [],
   "skills": {
     "skillList": [],
-    "skillCost": null
+    "skillCost": {}
   },
   "baseSkills": [
     {
       "name": "Backup Energy",
       "facility": "Power Plant",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%"
+      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Enthusiasm",
       "facility": "Power Plant",
       "eliteLevel": "Level 30",
-      "description": "When this Operator is assigned to a Power Plant, reduces the Morale consumed each hour by -0.52"
+      "description": "When this Operator is assigned to a Power Plant, reduces the Morale consumed each hour by -0.52",
+      "slot": 1,
+      "phase": 0,
+      "level": 30
     }
   ],
   "modules": [],
   "review": {
-    "official": "Thermal-EX (also known as THRM-EX) is a high-performance version of the Raythean Challenger™ Hellcat operating platform, jointly customized by\nMayer\nand\nClosure\n. Between the two, Mayer was primarily responsible for the development and improvement of the weapon and energy supply systems. Thermal-EX is a rather peculiar presence and is extremely enthusiastic towards others, a characteristic that is beloved by some people and disliked by others. However, Thermal-EX remains undaunted, committed to using his incandescent personality to bring warmth to others in this frigid world.\nAs a new model, Thermal-EX's boasts a unique and aggressive appearance that can be somewhat intimidating. But he doesn't mind. After all, anyone can hear Thermal-EX's loud and warm greetings from a distance long before he's clearly visible. However, it seems like his vocabulary has been excessively bloated with words pertaining to \"hot\"...",
+    "official": "Thermal-EX (also known as THRM-EX) is a high-performance version of the Raythean Challenger™ Hellcat operating platform, jointly customized by Mayer and Closure. Between the two, Mayer was primarily responsible for the development and improvement of the weapon and energy supply systems. Thermal-EX is a rather peculiar presence and is extremely enthusiastic towards others, a characteristic that is beloved by some people and disliked by others. However, Thermal-EX remains undaunted, committed to using his incandescent personality to bring warmth to others in this frigid world. \n\nAs a new model, Thermal-EX's boasts a unique and aggressive appearance that can be somewhat intimidating. But he doesn't mind. After all, anyone can hear Thermal-EX's loud and warm greetings from a distance long before he's clearly visible. However, it seems like his vocabulary has been excessively bloated with words pertaining to 'hot'...",
     "editor": null,
     "rating": null
   },

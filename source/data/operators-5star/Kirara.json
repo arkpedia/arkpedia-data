@@ -13,7 +13,7 @@
     "DPS",
     "Survival"
   ],
-  "trait": "Deals Damage to all targets within range 50% chance to dodge Physical and Arts attacks and is less likely to be targeted by enemies",
+  "trait": "Deals Damage to all targets within range\n50% chance to dodge Physical and Arts attacks and is less likely to be targeted by enemies",
   "howToObtain": {
     "Limited": "No",
     "Standard Headhunting": "No",
@@ -100,11 +100,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -112,11 +112,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Lonesome Protector"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -197,7 +197,7 @@
             "description": "The next attack deals an additional hit equal to 75% of ATK as Arts damage",
             "initialSp": 0,
             "spCost": 4,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 2,
@@ -205,7 +205,7 @@
             "description": "The next attack deals an additional hit equal to 80% of ATK as Arts damage",
             "initialSp": 0,
             "spCost": 4,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 3,
@@ -213,7 +213,7 @@
             "description": "The next attack deals an additional hit equal to 85% of ATK as Arts damage",
             "initialSp": 0,
             "spCost": 4,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 4,
@@ -221,7 +221,7 @@
             "description": "The next attack deals an additional hit equal to 90% of ATK as Arts damage",
             "initialSp": 0,
             "spCost": 4,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 5,
@@ -229,7 +229,7 @@
             "description": "The next attack deals an additional hit equal to 95% of ATK as Arts damage",
             "initialSp": 0,
             "spCost": 4,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 6,
@@ -237,7 +237,7 @@
             "description": "The next attack deals an additional hit equal to 100% of ATK as Arts damage",
             "initialSp": 0,
             "spCost": 4,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 7,
@@ -245,7 +245,7 @@
             "description": "The next attack deals an additional hit equal to 110% of ATK as Arts damage",
             "initialSp": 0,
             "spCost": 3,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
@@ -253,7 +253,7 @@
             "description": "The next attack deals an additional hit equal to 120% of ATK as Arts damage",
             "initialSp": 0,
             "spCost": 3,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
@@ -261,7 +261,7 @@
             "description": "The next attack deals an additional hit equal to 130% of ATK as Arts damage",
             "initialSp": 0,
             "spCost": 3,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
@@ -269,7 +269,7 @@
             "description": "The next attack deals an additional hit equal to 150% of ATK as Arts damage",
             "initialSp": 0,
             "spCost": 2,
-            "duration": "–"
+            "duration": null
           }
         ],
         "recommendation": [],
@@ -529,20 +529,27 @@
       "name": "Order Flow Visualization α",
       "facility": "Trading Post",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +5% , and for every 4 Pure Gold Production Line , Trading Post gains another 2 Pure Gold Production Line"
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +5%, and for every 4 Pure Gold Production Line, Trading Post gains another 2 Pure Gold Production Line",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Order Flow Visualization βReplacesOrder Flow Visualization α",
       "facility": "Trading Post",
       "eliteLevel": "Elite 2",
-      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +5% , and for every 2 Pure Gold Production Line , Trading Post gains another 2 Pure Gold Production Line"
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +5%, and for every 2 Pure Gold Production Line, Trading Post gains another 2 Pure Gold Production Line",
+      "slot": 0,
+      "phase": 2,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Kirara's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_kirara"
     },
     {
       "type": "Upgrade",
@@ -556,7 +563,7 @@
           "stage": "Stage 1",
           "attributesIncreased": "HP +180 , DEF +35",
           "effectLabel": "New trait",
-          "effectText": "Slows the Movement Speed of enemies within this unit's Attack Range by 20%",
+          "effectText": "Slows the Movement Speed of enemies within this unit's attack range by 20%",
           "cost": [
             {
               "name": "Module Data Block",
@@ -576,7 +583,7 @@
           "stage": "Stage 2",
           "attributesIncreased": "HP +260 , DEF +50",
           "effectLabel": "Lonesome Protector improved",
-          "effectText": "Restores 2.5% HP per second. If there are no allied operators in the surrounding 8 tiles, restores 3.5% HP per second instead",
+          "effectText": "Restores 2.5% Max HP per second. If there are no allied operators in the surrounding 8 tiles, restores 3.5% Max HP per second instead",
           "cost": [
             {
               "name": "Module Data Block",
@@ -600,7 +607,7 @@
           "stage": "Stage 3",
           "attributesIncreased": "HP +330 , DEF +60",
           "effectLabel": "Lonesome Protector improved",
-          "effectText": "Restores 2.5% HP per second. If there are no allied operators in the surrounding 8 tiles, restores 4% HP per second instead",
+          "effectText": "Restores 2.5% Max HP per second. If there are no allied operators in the surrounding 8 tiles, restores 4% Max HP per second instead",
           "cost": [
             {
               "name": "Module Data Block",
@@ -620,11 +627,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_kirara"
     }
   ],
   "review": {
-    "official": "Higashi\nstudent Kirara, chose to leave home due to her\nOripathy\n. After sending out an SOS message to her former classmates, she got a reply from\nUtage\nand sought treatment from\nRhodes Island\nfollowing instructions. Has a considerable understanding of electronic equipment. Presently providing assistance to Rhodes Island with broadcast communications and equipment maintenance.",
+    "official": "Higashi student Kirara, chose to leave home due to her Oripathy. After sending out an SOS message to her former classmates, she got a reply from Utage and sought treatment from Rhodes Island following instructions. Has a considerable understanding of electronic equipment. Presently providing assistance to Rhodes Island with broadcast communications and equipment maintenance.",
     "editor": null,
     "rating": null
   },

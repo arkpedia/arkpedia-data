@@ -15,7 +15,7 @@
     "Defense",
     "DPS"
   ],
-  "trait": "Normal attacks deal Arts Damage while the skill is active",
+  "trait": "Normal attacks deal Arts damage while the skill is active",
   "howToObtain": {
     "Limited": "No",
     "Standard Headhunting": "No",
@@ -94,11 +94,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -110,7 +110,7 @@
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -324,7 +324,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "ATK +20% , attacks all blocked enemies",
+            "description": "ATK +20%, attacks all blocked enemies",
             "initialSp": 0,
             "spCost": 37,
             "duration": 30
@@ -332,7 +332,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "ATK +25% , attacks all blocked enemies",
+            "description": "ATK +25%, attacks all blocked enemies",
             "initialSp": 0,
             "spCost": 36,
             "duration": 30
@@ -340,7 +340,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "ATK +30% , attacks all blocked enemies",
+            "description": "ATK +30%, attacks all blocked enemies",
             "initialSp": 0,
             "spCost": 35,
             "duration": 30
@@ -348,7 +348,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "ATK +35% , attacks all blocked enemies",
+            "description": "ATK +35%, attacks all blocked enemies",
             "initialSp": 3,
             "spCost": 34,
             "duration": 30
@@ -356,7 +356,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "ATK +40% , attacks all blocked enemies",
+            "description": "ATK +40%, attacks all blocked enemies",
             "initialSp": 3,
             "spCost": 33,
             "duration": 30
@@ -364,7 +364,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "ATK +45% , attacks all blocked enemies",
+            "description": "ATK +45%, attacks all blocked enemies",
             "initialSp": 3,
             "spCost": 32,
             "duration": 30
@@ -372,7 +372,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "ATK +50% , attacks all blocked enemies",
+            "description": "ATK +50%, attacks all blocked enemies",
             "initialSp": 6,
             "spCost": 31,
             "duration": 30
@@ -380,7 +380,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "ATK +60% , attacks all blocked enemies",
+            "description": "ATK +60%, attacks all blocked enemies",
             "initialSp": 8,
             "spCost": 29,
             "duration": 30
@@ -388,7 +388,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "ATK +70% , attacks all blocked enemies",
+            "description": "ATK +70%, attacks all blocked enemies",
             "initialSp": 10,
             "spCost": 27,
             "duration": 30
@@ -396,7 +396,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "ATK +80% , attacks all blocked enemies",
+            "description": "ATK +80%, attacks all blocked enemies",
             "initialSp": 12,
             "spCost": 25,
             "duration": 30
@@ -515,20 +515,27 @@
       "name": "Defender Expert α",
       "facility": "Training Room",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to be the Trainer in the Training Room, Defender Operators' Specialization training speed +30%"
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Defender Operators' Specialization training speed +30%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Snack Network",
       "facility": "Control Center",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by +0.05 per hour."
+      "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by +0.05 per hour.",
+      "slot": 1,
+      "phase": 1,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Dur-nar's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_durnar"
     },
     {
       "type": "Upgrade",
@@ -543,27 +550,75 @@
           "attributesIncreased": "HP +150 , ATK +27",
           "effectLabel": "Trait improved",
           "effectText": "On skill activation, normal attacks deal Arts damage. When attacking and being attacked, deals extra 10% of ATK as Arts damage to target",
-          "cost": []
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "RMA70-12",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 20000
+            }
+          ]
         },
         {
           "stage": "Stage 2",
           "attributesIncreased": "HP +220 , ATK +35",
           "effectLabel": "Sword and Shield improved",
           "effectText": "ATK +10%, DEF +10%",
-          "cost": []
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 15
+            },
+            {
+              "name": "Semi-Synthetic Solvent",
+              "quantity": 5
+            },
+            {
+              "name": "LMD",
+              "quantity": 25000
+            }
+          ]
         },
         {
           "stage": "Stage 3",
           "attributesIncreased": "HP +270 , ATK +40",
           "effectLabel": "Sword and Shield improved",
           "effectText": "ATK +12%, DEF +12%",
-          "cost": []
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 1
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 5
+            },
+            {
+              "name": "Sugar Pack",
+              "quantity": 6
+            },
+            {
+              "name": "LMD",
+              "quantity": 30000
+            }
+          ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_durnar"
     }
   ],
   "review": {
-    "official": "Dur-nar was once a lieutenant in\nColumbia's\nstanding army. For unknown reasons, she was discharged from military service and through regular recruitment channels, she joined\nRhodes Island\n. She has serves as a drill instructor and defensive operator. She excels at using a specially-constructed shield for protection and at finding opportunities to strike enemies with her electric blade.",
+    "official": "Dur-nar was once a lieutenant in Columbia's standing army. For unknown reasons, she was discharged from military service and through regular recruitment channels, she joined Rhodes Island. She now serves as a drill instructor and defensive operator. She excels at using a specially-constructed shield for protection and at finding opportunities to strike enemies with her electric blade.",
     "editor": null,
     "rating": null
   },

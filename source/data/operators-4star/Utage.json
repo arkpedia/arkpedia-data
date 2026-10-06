@@ -14,8 +14,8 @@
     "Survival"
   ],
   "trait": {
-    "Base": "Can't be healed by other units. Recovers 30 self HP every time this operator attacks an enemy",
-    "Elite 1": "Can't be healed by other units. Recovers 50 self HP every time this operator attacks an enemy",
+    "Base": "Can't be healed by other units. Recovers 30 self HP every time this operator attacks an enemy (Upgraded after reaching Elite 1)",
+    "Elite 1": "Can't be healed by other units. Recovers 50 self HP every time this operator attacks an enemy (Upgraded after reaching Elite 2)",
     "Elite 2": "Can't be healed by other units. Recovers 70 self HP every time this operator attacks an enemy"
   },
   "howToObtain": {
@@ -98,11 +98,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -110,11 +110,11 @@
       },
       {
         "level": 5,
-        "benefit": "Redeployment time -6 seconds"
+        "benefit": "Redeployment Time -6 sec"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -195,7 +195,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "Stops attacking, Block becomes 0, DEF +100% , and restores HP by 6% of Max HP every second",
+            "description": "Stops attacking, Block becomes 0, DEF +100%, and restores 6% Max HP every second.",
             "initialSp": 0,
             "spCost": 15,
             "duration": 8
@@ -203,7 +203,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "Stops attacking, Block becomes 0, DEF +110% , and restores HP by 6% of Max HP every second",
+            "description": "Stops attacking, Block becomes 0, DEF +110%, and restores 6% Max HP every second.",
             "initialSp": 1,
             "spCost": 15,
             "duration": 8
@@ -211,7 +211,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "Stops attacking, Block becomes 0, DEF +120% , and restores HP by 6% of Max HP every second",
+            "description": "Stops attacking, Block becomes 0, DEF +120%, and restores 6% Max HP every second.",
             "initialSp": 2,
             "spCost": 15,
             "duration": 8
@@ -219,7 +219,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "Stops attacking, Block becomes 0, DEF +130% , and restores HP by 7% of Max HP every second",
+            "description": "Stops attacking, Block becomes 0, DEF +130%, and restores 7% Max HP every second.",
             "initialSp": 3,
             "spCost": 15,
             "duration": 8
@@ -227,7 +227,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "Stops attacking, Block becomes 0, DEF +140% , and restores HP by 7% of Max HP every second",
+            "description": "Stops attacking, Block becomes 0, DEF +140%, and restores 7% Max HP every second.",
             "initialSp": 4,
             "spCost": 15,
             "duration": 8
@@ -235,7 +235,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "Stops attacking, Block becomes 0, DEF +150% , and restores HP by 7% of Max HP every second",
+            "description": "Stops attacking, Block becomes 0, DEF +150%, and restores 7% Max HP every second.",
             "initialSp": 5,
             "spCost": 15,
             "duration": 8
@@ -243,7 +243,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "Stops attacking, Block becomes 0, DEF +160% , and restores HP by 8% of Max HP every second",
+            "description": "Stops attacking, Block becomes 0, DEF +160%, and restores 8% Max HP every second.",
             "initialSp": 6,
             "spCost": 15,
             "duration": 8
@@ -251,7 +251,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "Stops attacking, Block becomes 0, DEF +170% , and restores HP by 8% of Max HP every second",
+            "description": "Stops attacking, Block becomes 0, DEF +170%, and restores 8% Max HP every second.",
             "initialSp": 7,
             "spCost": 15,
             "duration": 8
@@ -259,7 +259,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "Stops attacking, Block becomes 0, DEF +180% , and restores HP by 8% of Max HP every second",
+            "description": "Stops attacking, Block becomes 0, DEF +180%, and restores 8% Max HP every second.",
             "initialSp": 8,
             "spCost": 15,
             "duration": 8
@@ -267,7 +267,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "Stops attacking, Block becomes 0, DEF +200% , and restores HP by 10% of Max HP every second",
+            "description": "Stops attacking, Block becomes 0, DEF +200%, and restores 10% Max HP every second.",
             "initialSp": 10,
             "spCost": 15,
             "duration": 8
@@ -323,89 +323,89 @@
       },
       {
         "name": "Descending Strike - Earth Splitter",
-        "recoveryType": "Passive",
-        "activationType": null,
+        "recoveryType": null,
+        "activationType": "Passive",
         "duration": null,
         "levels": [
           {
             "level": 1,
             "mastery": null,
             "description": "After deployment, immediately loses 50% current HP. For 13 seconds after deployment, ATK +50% and attacks deal Arts damage",
-            "initialSp": "–",
-            "spCost": "–",
-            "duration": "–"
+            "initialSp": 0,
+            "spCost": 0,
+            "duration": null
           },
           {
             "level": 2,
             "mastery": null,
             "description": "After deployment, immediately loses 50% current HP. For 13 seconds after deployment, ATK +55% and attacks deal Arts damage",
-            "initialSp": "–",
-            "spCost": "–",
-            "duration": "–"
+            "initialSp": 0,
+            "spCost": 0,
+            "duration": null
           },
           {
             "level": 3,
             "mastery": null,
             "description": "After deployment, immediately loses 50% current HP. For 13 seconds after deployment, ATK +60% and attacks deal Arts damage",
-            "initialSp": "–",
-            "spCost": "–",
-            "duration": "–"
+            "initialSp": 0,
+            "spCost": 0,
+            "duration": null
           },
           {
             "level": 4,
             "mastery": null,
             "description": "After deployment, immediately loses 50% current HP. For 14 seconds after deployment, ATK +65% and attacks deal Arts damage",
-            "initialSp": "–",
-            "spCost": "–",
-            "duration": "–"
+            "initialSp": 0,
+            "spCost": 0,
+            "duration": null
           },
           {
             "level": 5,
             "mastery": null,
             "description": "After deployment, immediately loses 50% current HP. For 14 seconds after deployment, ATK +70% and attacks deal Arts damage",
-            "initialSp": "–",
-            "spCost": "–",
-            "duration": "–"
+            "initialSp": 0,
+            "spCost": 0,
+            "duration": null
           },
           {
             "level": 6,
             "mastery": null,
             "description": "After deployment, immediately loses 50% current HP. For 14 seconds after deployment, ATK +75% and attacks deal Arts damage",
-            "initialSp": "–",
-            "spCost": "–",
-            "duration": "–"
+            "initialSp": 0,
+            "spCost": 0,
+            "duration": null
           },
           {
             "level": 7,
             "mastery": null,
             "description": "After deployment, immediately loses 50% current HP. For 15 seconds after deployment, ATK +80% and attacks deal Arts damage",
-            "initialSp": "–",
-            "spCost": "–",
-            "duration": "–"
+            "initialSp": 0,
+            "spCost": 0,
+            "duration": null
           },
           {
             "level": null,
             "mastery": 1,
             "description": "After deployment, immediately loses 50% current HP. For 15 seconds after deployment, ATK +90% and attacks deal Arts damage",
-            "initialSp": "–",
-            "spCost": "–",
-            "duration": "–"
+            "initialSp": 0,
+            "spCost": 0,
+            "duration": null
           },
           {
             "level": null,
             "mastery": 2,
             "description": "After deployment, immediately loses 50% current HP. For 15 seconds after deployment, ATK +100% and attacks deal Arts damage",
-            "initialSp": "–",
-            "spCost": "–",
-            "duration": "–"
+            "initialSp": 0,
+            "spCost": 0,
+            "duration": null
           },
           {
             "level": null,
             "mastery": 3,
             "description": "After deployment, immediately loses 50% current HP. For 16 seconds after deployment, ATK +110% and attacks deal Arts damage",
-            "initialSp": "–",
-            "spCost": "–",
-            "duration": "–"
+            "initialSp": 0,
+            "spCost": 0,
+            "duration": null
           }
         ],
         "recommendation": [],
@@ -521,26 +521,33 @@
       "name": "Psychology",
       "facility": "Office",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to the HR Office, HR contacting speed +40%"
+      "description": "When this Operator is assigned to the HR Office, HR contacting speed +40%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Clue Search β",
       "facility": "Reception Room",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by 20%"
+      "description": "When this Operator is assigned to the Reception Room, Clue search speed increases by 20%",
+      "slot": 1,
+      "phase": 1,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Utage's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_utage"
     },
     {
       "type": "Upgrade",
       "name": "SBL-X: Flip Phone",
       "mission": {
-        "requirement1": "During battles, have Utage use Descending Strike - Earth Splitter a total of 5 times (excluding Support Units)",
+        "requirement1": "During battle, have Utage use Descending Strike - Earth Splitter a total of 5 times (excluding Support Units)",
         "requirement2": "Clear Main Theme 1-12 with a 3-star rating; You must deploy your own Utage, and cannot include any other Guard Operators as members"
       },
       "stages": [
@@ -548,7 +555,7 @@
           "stage": "Stage 1",
           "attributesIncreased": "HP +160 , ATK +45",
           "effectLabel": "New trait",
-          "effectText": "Gains 25% Sanctuary when HP is below 50%",
+          "effectText": "Gain 25% Sanctuary when HP is below 50%",
           "cost": [
             {
               "name": "Module Data Block",
@@ -568,7 +575,7 @@
           "stage": "Stage 2",
           "attributesIncreased": "HP +210 , ATK +55",
           "effectLabel": "New talent: Cold-Blooded",
-          "effectText": "+3% ATK and +3% DEF when HP is below 50%",
+          "effectText": "+3% ATK and +3% DEF when HP below 50%",
           "cost": [
             {
               "name": "Module Data Block",
@@ -592,7 +599,7 @@
           "stage": "Stage 3",
           "attributesIncreased": "HP +240 , ATK +60",
           "effectLabel": "Cold-Blooded improved",
-          "effectText": "+4% ATK and +4% DEF when HP is below 50%",
+          "effectText": "+4% ATK and +4% DEF when HP below 50%",
           "cost": [
             {
               "name": "Module Data Block",
@@ -612,11 +619,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_utage"
     }
   ],
   "review": {
-    "official": "An ordinary student from\nHigashi\nwho came to study in\nLungmen\n, Utage contracted\nOripathy\nafter getting pulled into an incident with\nInfected\npersons. After coming to\nRhodes Island\nper physician's advice, Utage passed the evaluation to become an\nOperator\n.\nShe is level-headed in her view of Oripathy, living life largely the same as before she became Infected. However, when she is working, she exhibits a terrifying demeanor.",
+    "official": "An ordinary student from Higashi who came to study in Lungmen, Utage contracted Oripathy after getting pulled into an incident with Infected persons. After coming to Rhodes Island per physician's advice, Utage passed the evaluation to become an Operator.\nShe is level-headed in her view of Oripathy, living life largely the same as before she became Infected. However, when she is working, she exhibits a terrifying demeanor.",
     "editor": null,
     "rating": null
   },

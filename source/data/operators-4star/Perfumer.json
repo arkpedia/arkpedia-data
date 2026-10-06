@@ -14,7 +14,7 @@
   "tags": [
     "Healing"
   ],
-  "trait": "Restores the HP of up to 3 allies simultaneously.",
+  "trait": "Restores the HP of 3 allies simultaneously",
   "howToObtain": {
     "Limited": "No",
     "Standard Headhunting": "Yes",
@@ -72,29 +72,28 @@
   },
   "talents": [
     {
-      "name": "Lavender",
+      "name": "Lavender's Fragrance",
       "rows": [
         {
+          "name": "Lavender",
           "stage": "Elite 1",
           "potential": null,
           "description": "Restores the HP of all allies by 3% of Perfumer's ATK per second"
         },
         {
+          "name": "Lavender",
           "stage": "Elite 1",
           "potential": "Potential 5",
           "description": "Restores the HP of all allies by 3.5% (+0.5%) of Perfumer's ATK per second"
-        }
-      ]
-    },
-    {
-      "name": "Lavender's FragranceReplacesLavender",
-      "rows": [
+        },
         {
+          "name": "Lavender's Fragrance",
           "stage": "Elite 2",
           "potential": null,
           "description": "Restores the HP of all allies by 5% of Perfumer's ATK per second"
         },
         {
+          "name": "Lavender's Fragrance",
           "stage": "Elite 2",
           "potential": "Potential 5",
           "description": "Restores the HP of all allies by 5.5% (+0.5%) of Perfumer's ATK per second"
@@ -106,11 +105,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -118,11 +117,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Lavender/Lavender's Fragrance"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -336,7 +335,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "ASPD -50 ; ATK +150%",
+            "description": "ASPD -50; ATK +150%",
             "initialSp": 20,
             "spCost": 60,
             "duration": 30
@@ -344,7 +343,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "ASPD -50 ; ATK +160%",
+            "description": "ASPD -50; ATK +160%",
             "initialSp": 20,
             "spCost": 60,
             "duration": 30
@@ -352,7 +351,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "ASPD -50 ; ATK +170%",
+            "description": "ASPD -50; ATK +170%",
             "initialSp": 20,
             "spCost": 60,
             "duration": 30
@@ -360,7 +359,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "ASPD -50 ; ATK +180%",
+            "description": "ASPD -50; ATK +180%",
             "initialSp": 20,
             "spCost": 60,
             "duration": 30
@@ -368,7 +367,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "ASPD -50 ; ATK +190%",
+            "description": "ASPD -50; ATK +190%",
             "initialSp": 20,
             "spCost": 60,
             "duration": 30
@@ -376,7 +375,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "ASPD -50 ; ATK +200%",
+            "description": "ASPD -50; ATK +200%",
             "initialSp": 20,
             "spCost": 60,
             "duration": 30
@@ -384,7 +383,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "ASPD -50 ; ATK +210%",
+            "description": "ASPD -50; ATK +210%",
             "initialSp": 20,
             "spCost": 60,
             "duration": 30
@@ -392,7 +391,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "ASPD -50 ; ATK +220%",
+            "description": "ASPD -50; ATK +220%",
             "initialSp": 20,
             "spCost": 60,
             "duration": 30
@@ -400,7 +399,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "ASPD -50 ; ATK +230%",
+            "description": "ASPD -50; ATK +230%",
             "initialSp": 20,
             "spCost": 60,
             "duration": 30
@@ -408,7 +407,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "ASPD -50 ; ATK +250%",
+            "description": "ASPD -50; ATK +250%",
             "initialSp": 20,
             "spCost": 60,
             "duration": 30
@@ -527,27 +526,34 @@
       "name": "Pharmacology α",
       "facility": "Workshop",
       "eliteLevel": "Base",
-      "description": "When this Operator is assigned to the Workshop to process elite material , the production rate of byproduct increases by 75%"
+      "description": "When this Operator is assigned to the Workshop to process elite material, the production rate of byproduct increases by 75%",
+      "slot": 0,
+      "phase": 0,
+      "level": 1
     },
     {
       "name": "Standardization β",
       "facility": "Factory",
       "eliteLevel": "Elite 1",
-      "description": "When this Operator is assigned to a Factory, productivity +25%"
+      "description": "When this Operator is assigned to a Factory, productivity +25%",
+      "slot": 1,
+      "phase": 1,
+      "level": 1
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Perfumer's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_flower"
     },
     {
       "type": "Upgrade",
-      "name": "RIN-Y: \"Aegean's Kiss\"",
+      "name": "RIN-Y: 'Aegean's Kiss'",
       "mission": {
-        "requirement1": "Complete a total of 5 battles; In each battle, a non- Support Perfumer must be deployed once at least",
-        "requirement2": "Clear Main Theme 3-4 with a 3-star rating; only a non-Support Perfumer is allowed as the only Medic Operator"
+        "requirement1": "Complete a total of 5 battles; In each battle, a non-Support Perfumer must be deployed once at least",
+        "requirement2": "Clear Main Theme 3-4 with a 3-star rating; you must deploy your own Perfumer, and cannot include any Medic Operators as members"
       },
       "stages": [
         {
@@ -618,11 +624,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_flower"
     }
   ],
   "review": {
-    "official": "Lena the Perfumer is from a renowned, well-off\nMinoan\nfamily, unfamiliar with the ways of the world. Her race prides themselves on their keen sense of smell, but hers is outstanding even among the\nVulpo\n, giving Lena a special edge in the world of perfume making.\nShe joined\nRhodes Island\nthrough regular application channels, overseeing the \"Convalescence Garden\" and providing assistance to operators as needed.",
+    "official": "Lena the Perfumer is from a renowned, well-off Minosian family, unfamiliar with the ways of the world. Her race prides themselves on their keen sense of smell, but hers is outstanding even among the Vulpo, giving Lena a special edge in the world of perfume making. She joined Rhodes Island through regular application channels, overseeing the 'Convalescent Garden' and providing assistance to operators as needed.",
     "editor": null,
     "rating": null
   },
