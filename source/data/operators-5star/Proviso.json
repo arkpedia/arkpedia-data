@@ -527,7 +527,8 @@
       "description": "When this Operator is assigned to a Trading Post, if the amount of Pure Gold traded is less than 4, it will be considered a Defaulted trade",
       "slot": 0,
       "phase": 0,
-      "level": 1
+      "level": 1,
+      "buffId": "trade_ord_law[000]"
     },
     {
       "name": "Damages for Breach α",
@@ -536,7 +537,8 @@
       "description": "When this Operator is assigned to a Trading Post, if a Pure Gold trade is a Defaulted trade, Pure Gold traded +1",
       "slot": 1,
       "phase": 0,
-      "level": 1
+      "level": 1,
+      "buffId": "trade_ord_against[000]"
     },
     {
       "name": "Damages for Breach βReplacesDamages for Breach α",
@@ -545,7 +547,8 @@
       "description": "When this Operator is assigned to a Trading Post, if a Pure Gold trade is a Defaulted trade, Pure Gold traded +2",
       "slot": 1,
       "phase": 2,
-      "level": 1
+      "level": 1,
+      "buffId": "trade_ord_against[010]"
     }
   ],
   "modules": [
