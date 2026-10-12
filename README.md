@@ -25,7 +25,11 @@ The application's nightly **Prepare content release** workflow (in its private r
 
 No pull request is opened, so its checks are the gate. Here, **Content release** (`.github/workflows/content.yml`) validates every push to `main` with `scripts/validate-release.mjs` and only then moves `live/current.json` to it. A push that fails validation is never served; readers keep the previous release.
 
-**Manual corrections** go in `source/`, on a branch that contains `main`. A maintainer runs **Prepare content release** with that branch as `data_ref` and the upstream refresh off. It compiles the correction and pushes the release to `main`. Editing generated `release/` files, or merging mismatched source and output, is not a valid release.
+**Editorial corrections** go in `source/` on `editorial`. Pull that branch before editing and push your changes there. The private application checks it every ten minutes (GitHub scheduling can add delay), automatically compiles the exact pushed commit on app main with upstream refresh off, validates it, and publishes shared data main. A successful main preparation then refreshes dev from the same shared data. Both sites adopt the resulting content without an app rebuild.
+
+After successful main publication, this repository fast-forwards editorial to current main if its changes have been incorporated. Unpublished concurrent edits are preserved, never force-pushed. If editorial has diverged, merge data main into it before pushing again. `ARKPEDIA_EDITORIAL_BRANCH`, when set in both repositories, selects another source-editing branch.
+
+Other correction branches can still be compiled manually with **Prepare content release**, selecting app main, the source branch as `data_ref`, and `refresh_upstream=false`. Do not edit generated `release/`, `dev`, `dev-live`, or `live`; those are replaced by the pipeline.
 
 **Review first:** a push to the `refresh/content` branch still opens a reviewed pull request here, with a summary of what changed. The nightly release does not use it.
 
