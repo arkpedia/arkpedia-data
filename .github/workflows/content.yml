@@ -38,6 +38,7 @@ jobs:
             git checkout --detach "$REVISION"
           fi
       - run: node scripts/validate-release.mjs
+      - run: node --test scripts/sync-editorial.test.mjs
   propose:
     if: github.event_name == 'push' && github.ref == 'refs/heads/refresh/content'
     needs: validate
@@ -121,3 +122,8 @@ jobs:
           if git -C /tmp/content-live diff --cached --quiet; then exit 0; fi
           git -C /tmp/content-live commit -m "Publish content from $revision"
           git -C /tmp/content-live push origin HEAD:live
+      - name: Keep the source-editing branch current after publication
+        if: github.event_name == 'push'
+        env:
+          ARKPEDIA_EDITORIAL_BRANCH: ${{ vars.ARKPEDIA_EDITORIAL_BRANCH || 'editorial' }}
+        run: node scripts/sync-editorial.mjs
