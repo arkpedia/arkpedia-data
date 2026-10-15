@@ -1,5 +1,5 @@
 {
-  "name": "Gallus²",
+  "name": "GALLUS²",
   "rarity": 1,
   "class": "Caster",
   "branch": "Core Caster",
@@ -13,7 +13,7 @@
     "Robot",
     "Debuff"
   ],
-  "trait": "Deals Arts damage",
+  "trait": "Attacks deal Arts damage and ignores the Deployment Limit, but has a long Redeployment Time",
   "howToObtain": {
     "Limited": "No",
     "Standard Headhunting": "No",
@@ -30,7 +30,8 @@
   },
   "internalName": "char_4227_gallus",
   "otherLanguages": {
-    "Chinese": "GALLUS²"
+    "Chinese": "GALLUS²",
+    "Simplified Chinese": "GALLUS²"
   },
   "characterInfo": {
     "File no.": "RCX7",
@@ -39,8 +40,10 @@
     "Kernel Addition Date": "N/A"
   },
   "characterVoices": {
+    "Chinese": "Kalin",
     "Japanese": "Satomi Arai",
-    "Chinese": "Hualing"
+    "Korean": "Yang Eun-han",
+    "English": "Amber Hood"
   },
   "basicInfo": {
     "Gender": "Self-proclaimed Female",
@@ -62,12 +65,37 @@
   },
   "talents": [
     {
-      "name": "Come and Get Me! I",
+      "name": "'Come And Catch Me'",
       "rows": [
         {
           "stage": "Base",
           "potential": null,
-          "description": "For 20 seconds after deployment, Attack will reduce RES by -15% (lasting 10 seconds) and will prioritize attacking enemies not yet affected by this effect."
+          "description": "For 20s after deployment, attacks inflict -15% RES to enemies for 10s, and prioritizes enemies without this effect"
+        },
+        {
+          "stage": "Base",
+          "potential": "Potential 2",
+          "description": "For 20s after deployment, attacks inflict -17% RES to enemies for 10s, and prioritizes enemies without this effect"
+        },
+        {
+          "stage": "Base",
+          "potential": "Potential 3",
+          "description": "For 20s after deployment, attacks inflict -19% RES to enemies for 10s, and prioritizes enemies without this effect"
+        },
+        {
+          "stage": "Base",
+          "potential": "Potential 4",
+          "description": "For 20s after deployment, attacks inflict -21% RES to enemies for 10s, and prioritizes enemies without this effect"
+        },
+        {
+          "stage": "Base",
+          "potential": "Potential 5",
+          "description": "For 20s after deployment, attacks inflict -23% RES to enemies for 10s, and prioritizes enemies without this effect"
+        },
+        {
+          "stage": "Base",
+          "potential": "Potential 6",
+          "description": "For 20s after deployment, attacks inflict -25% RES to enemies for 10s, and prioritizes enemies without this effect"
         }
       ]
     },
@@ -126,23 +154,23 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "Come and Get Me! I becomes Come and Get Me! II"
+        "benefit": "Improves Talent"
       },
       {
         "level": 3,
-        "benefit": "Come and Get Me! II becomes Come and Get Me! III"
+        "benefit": "Improves Talent"
       },
       {
         "level": 4,
-        "benefit": "Come and Get Me! III becomes Come and Get Me! IV"
+        "benefit": "Improves Talent"
       },
       {
         "level": 5,
-        "benefit": "Come and Get Me! IV becomes Come and Get Me! V"
+        "benefit": "Improves Talent"
       },
       {
         "level": 6,
-        "benefit": "Come and Get Me! V becomes Come and Get Me! VI"
+        "benefit": "Improves Talent"
       }
     ],
     "totalCost": [
@@ -155,12 +183,12 @@
   "promotion": [],
   "skills": {
     "skillList": [],
-    "skillCost": null
+    "skillCost": {}
   },
   "baseSkills": [
     {
-      "name": "Poultry Engineering",
-      "description": "When assigned to a Power Plant, drone charging speed +10%.",
+      "name": "Clucktrical Engineering",
+      "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%",
       "icon": null,
       "facility": "Power Plant",
       "eliteLevel": "Base",
@@ -170,8 +198,8 @@
       "level": 1
     },
     {
-      "name": "Poultry Motivation",
-      "description": "When assigned to a Power Plant, drone charging speed +5% if another Operation Platform is assigned to a Power Plant.",
+      "name": "Clucktivation Mechanism",
+      "description": "When this Operator is assigned to a Power Plant, if another Operation Platform is assigned to a Power Plant, drone charging speed +5%",
       "icon": null,
       "facility": "Power Plant",
       "eliteLevel": "Level 30",
@@ -183,7 +211,7 @@
   ],
   "modules": [],
   "review": {
-    "official": "A unique entity called Gallus² is a small hut constructed from glass and metal supported by a claw like feet. The hut is adorned by a few biomass feathers on its back and feet.\nFound in the core of the Sarcophagus in Zelgrad, it's confirmed as a life form from ten thousand years ago with its memories intact, mostly related to\nKal'tsit\n.\nAfter being evacuated from Zelgrad, it followed Kal'tsit all the way to Rhodes Island, acting as historical and biological consultant alongside as a field operator.",
+    "official": "An anomalous entity that refers to itself as 'GALLUS².' Its main body is a small house made of metal and glass, supported by clawlike metal feet, with a small number of biological feathers attached to the back of the house and the rear of its feet.\nDiscovered at the core of the Sarcophagus in Zelgrad, it has been confirmed as a special life-form produced by the Sarcophagus. It carries intact memories from over ten thousand years ago, most of them related to Kal'tsit.\nAfter evacuating from Zelgrad, it followed Kal'tsit back to Rhodes Island, where it now assists as a historical consultant, biological consultant, and field operator.",
     "editor": null,
     "rating": null
   },
@@ -202,6 +230,7 @@
         "elite": 0,
         "minLevel": 1,
         "maxLevel": 30,
+        "rangeId": "3-6",
         "base": {
           "hp": 393,
           "atk": 182,
@@ -221,8 +250,7 @@
           "dp": 3,
           "block": 1,
           "interval": 1.6
-        },
-        "rangeId": "3-6"
+        }
       }
     ],
     "trust": {
@@ -233,20 +261,33 @@
   },
   "files": [
     {
+      "section": "Basic Info",
+      "unlock": "Obtain the operator",
+      "description": "[ID] GALLUS²\n[Model] Self-identified Chicken\n[Gender Assignment] Self-identified Female\n[Time in Service] 15 years\n[Manufacturer] Another Chicken\n[Place of Production] A shrubland somewhere in eastern Terra\n[Date of Release] May 4 (estimated by Kal'tsit based on bone samples)\n[Height] 120cm\n[Weight] Classified\n[Inspection Report]\nOuter casing largely intact. Structure unstable. Durability below standard.\nDue to strong resistance from the operator, inspection of the chassis could not be completed. Data currently unavailable.\nDue to the operator's aggressive behavior, inspection of the Arts core could not be completed, but it can be determined to be operating normally.\nDuring file compilation, this operator was highly uncooperative, resulting in multiple missing or questionable entries in the file, as well as in the inspection report. A detailed report has been submitted, and reinspection is pending.\n\n'Submitted'? Cluck? I haven't even gone to Kal'tsit to complain yet. Who are you to do that?\n—GALLUS²"
+    },
+    {
       "section": "Performance Review",
-      "unlock": "Unlocked by default",
-      "description": "【最高速度】55km/h\n【爬坡能力】优良\n【制动效能】优良\n【通过性】优良\n【续航】普通\n【结构稳定性】缺陷"
+      "unlock": "Obtain the operator",
+      "description": "[Top Speed] 55km/h\n[Climb] Excellent\n[Brake] Excellent\n[Mobility] Excellent\n[Endurance] Normal\n[Structural Integrity] Flawed"
+    },
+    {
+      "section": "Profile",
+      "unlock": "Obtain the operator",
+      "description": "An anomalous entity that refers to itself as 'GALLUS².' Its main body is a small house made of metal and glass, supported by clawlike metal feet, with a small number of biological feathers attached to the back of the house and the rear of its feet.\nDiscovered at the core of the Sarcophagus in Zelgrad, it has been confirmed as a special life-form produced by the Sarcophagus. It carries intact memories from over ten thousand years ago, most of them related to Kal'tsit.\nAfter evacuating from Zelgrad, it followed Kal'tsit back to Rhodes Island, where it now assists as a historical consultant, biological consultant, and field operator."
     },
     {
       "section": "Archive File 1",
-      "unlock": "Unlocked at 50 trust",
-      "description": "GALLUS²并不避讳谈及它与凯尔希同行的时光，或者说，它有些太热衷于讲述那些故事了。它声称自己曾不遗余力地为凯尔希寻来研究所需的一切样本，从土壤、岩石，到植物、昆虫。甚至，利用某些“特殊手段”（笔者注：充当诱饵），它能把那些比自己大上几十倍的大型掠食动物完好无损地带到凯尔希面前。\n但当有人问及凯尔希的“研究”具体是什么的时候，GALLUS²就会立刻失去兴致，不耐烦地开始挠地板，然后破口大骂。\n“干嘛，干嘛？我在讲我的故事，你们在听什么？凯尔希的‘研究’，我不了解，也不在乎。我帮她做那些，是为了搞清楚哪些虫子鸡吃了最容易消化，哪些树枝撅来做窝最结实，哪些动物的毛薅来做窝最保暖。我只花十五年就研究明白了一只鸡最完美的生活该是什么模样，我难道不是一个伟大的研究者？你们难道不该关注我的成果？”\n说完这些话，它又总会怅然若失地用尾羽在它刚刚挠过的地板上扫来扫去。也许它是想起来，如今已经没有第二只和它一样的鸡了，又或者它是意识到，如今就连它自己，也没了进食和筑巢的必要。\n这样的状况在GALLUS²身上持续了约半个月之久，直到我们十分不解地发现，它开始频繁光顾工程部，不仅追着可露希尔要求她对自己进行改装，还会擅自“啃食”工作间存放的每一样零件。\n在问责时，GALLUS²坚决拒绝承认错误，它骄傲地跳到空调顶上，发表了如下言论：\n“我想通了！现在我的研究项目，是试验这片大地上的每一种物质，看看它们对于一只顶着屋子的玻璃铁皮鸡有什么作用！再花十五年，我将会彻底弄清楚一只玻璃铁皮鸡最完美的生活该是什么模样！我难道不是一个伟大的研究者？你们难道不该......（后略）”\n......也好。"
+      "unlock": "FAVOR 50",
+      "description": "GALLUS² is not at all reluctant to discuss the time it spent traveling with Kal'tsit. If anything, it is a little too eager to tell those stories. It claims it once spared no effort in procuring every sample Kal'tsit needed for her research, from soil and rocks to plants and insects. It even employed certain 'special measures' (author's note: serving as bait) to bring large predators dozens of times its own size to Kal'tsit, completely unharmed.\nBut whenever anyone asks what Kal'tsit's 'research' specifically involved, GALLUS² immediately loses interest, starts scratching at the floor impatiently, and launches into a tirade.\n'What? What is it? I'm telling my story here; what are you people listening to? Kal'tsit's 'research'? I don't know anything about it, and I don't care. I helped her with all that to figure out which bugs are easiest for chickens to digest, which branches make the sturdiest nests, and which animals' fur makes the warmest nests. It took me only fifteen years to work out what the perfect life for a chicken should look like. Doesn't that make me a great researcher? Shouldn't you people be paying attention to my findings?'\nAfter saying this, it always seems overcome by a sense of loss, sweeping its tail feathers back and forth over the floor it had just scratched. Perhaps it has remembered that there is no longer another chicken like it, or perhaps it has realized that even it no longer has any need to eat or build nests.\nThis state lasted for about half a month, until we discovered, much to our confusion, that it had begun visiting the Engineering Department frequently. Not only did it chase after Closure and demand she modify it, but it would also take it upon itself to 'gnaw' on every part stored in the workshop.\nWhen held to account, GALLUS² adamantly refused to admit any wrongdoing. It proudly jumped on top of an air conditioner and made the following statement:\n'I've figured it out! My current research project is to test every kind of matter on this land and see what effects they have on a glass-and-sheet-metal chicken with a house on its head! Give me another fifteen years, and I will have completely worked out what the perfect life for a glass-and-sheet-metal chicken should look like! Doesn't that make me a great researcher? Shouldn't you people... (remainder omitted)'\n...Perhaps that's for the best."
     },
     {
       "section": "Archive File 2",
-      "unlock": "Unlocked at 100 trust",
-      "description": "以空白源石“奥卡”为基底，以源石内存留的生命信息为形式，经由石棺的创生作用，就有概率复现曾经存在过的生命形态，GALLUS²的诞生原理清晰明了。但当它和可露希尔一齐看向镜子时，双方还是露出了不解的表情——\n为什么是一座小屋？\n\n经过多次比对，我们确认，该小屋形制上最接近一种在乌萨斯广袤土地上几乎已经绝迹的建筑——自称为“自由民”的群体所使用过的驮行小屋——一种仅有电话亭一半大小，直接架设在驮兽背上的特殊建筑。\n奇怪的是，这种建筑很小，甚至连一个成年人也容不下；数量也很少，一整个自由民部族的遗址当中，往往只能发现一两座。既然不可能是民居，它在自由民的生活中，又发挥着怎样的作用？\n我们在自由民的脏话里找到了答案。“老祖母在上”，他们惊讶时这么说，生气时这么说，被驮兽踢了也这么说。“老祖母”似乎就是自由民的信仰对象——毕竟他们总不可能去信仰皇帝。\n自由民的传说当中，“老祖母”最鲜明的特点，就是她总带着一个长脚的小屋。“老祖母”向自由民索取许多——他们的驮兽、他们的刀和弓箭，甚至是他们用血换来的战利品。她让人们把这些物件放进小屋，然后牵着小屋转身离去。有些人咒骂她是强取豪夺的邪恶女巫，但更多人相信，“老祖母”是替他们拒绝了死亡，她用这些物件作为代价，挡住了死亡的脚步。这样，自由民就还能再多走几年路，多见几轮春花，又或者，多上几次战场。\n所以，自由民每每踏上战场之前，都要在驮行小屋里给“老祖母”献上点什么，以求死亡能晚一点降临。\n只不过，“老祖母”终归不是万能的。当一个人再也交不出任何东西——他的刀已经断过三次，兄弟姊妹都被埋在不同的战场，他连仇恨的力气也全部失去，“老祖母”便会沉默地挪开小屋，向他指明通向死亡的路。\n“我不能再替你挡了。”“老祖母”最后这样说道。\n\n所以，这一切与GALLUS²有什么关系？\n好吧，“老祖母”的传说总要有个出处，不是吗？最早，自由民还在为乌萨斯的建国伟业流血的时候，就传唱过一位与他们一同行走、为他们治病疗伤的女巫的事迹。女巫常给部族里的孩子们讲故事，而她讲得最多的，就是“长脚的小屋”。\n“长脚的小屋打败怪物”“长脚的小屋寻找家园”——一代又一代的孩子听着这些故事长大，一代又一代的自由民就这样记住了这座长脚的小屋。\n那位女巫是谁，她故事里的那座小屋的原型又是谁，想必不难猜到。考虑到信息敏感性，我们就这样记录吧：那是位身穿绿衣的菲林，而她口中的小屋，长着鸡的脚爪。"
+      "unlock": "FAVOR 100",
+      "description": "Using blank Originium 'Oka' as the substrate, the life information retained within the Originium as the template, and the Sarcophagus's life-generating function, it may be possible to recreate a lifeform that once existed. The principle behind GALLUS²'s birth is clear enough. And yet, when it and Closure looked into a mirror together, both of them looked baffled—\nWhy a little hut?\n\nAfter multiple comparisons, we confirmed that, in form, this little hut most closely resembles a kind of structure now all but extinct across the vast lands of Ursus: a burdenbeast-borne hut once used by a people who called themselves 'Volniki.' It was a special structure only half the size of a phone booth, built directly atop a burdenbeast's back.\nStrangely, these structures were very small, not even large enough to hold a single adult, and very few in number. Among the ruins of an entire tribe of Volniki, one would often only find one or two. If they could not possibly have been dwellings, then what role did they play in the Volniki's lives?\nWe found the answer in the Volniki's curses. 'Baba above,' they would say when surprised, when angry, or when kicked by a burdenbeast. This 'Baba' seems to have been the object of Volniki belief—after all, it was not as if they could have worshiped the Emperor.\nIn Volniki legends, the most distinctive trait of 'Baba' was that she was always accompanied by a little hut with legs. 'Baba' demanded much from the Volniki—their burdenbeasts, their knives and bows, even trophies they had won with blood. She made people place these objects inside the hut, then led the hut away. Some cursed her as a wicked witch who seized what she wanted by force, but more believed that 'Baba' was refusing death on their behalf, using those objects as a price to hold back death's steps. This way, the Volniki could walk the road for a few more years, see spring flowers bloom a few more times, or perhaps go to battle a few more times.\nAnd so, each time before the Volniki went to battle, they would offer something to 'Baba' inside the burdenbeast-borne hut, hoping that death would come a little later.\nHowever, 'Baba' was not omnipotent in the end. When a person had nothing left to offer—when his knife had broken three times, his brothers and sisters were buried on different battlefields, and he had even lost all strength to hate—'Baba' would silently move the little hut away and show him the road to death.\n'I can no longer hold it back for you.' These were the final words of 'Baba'.\n\nSo what does any of this have to do with GALLUS²?\nWell, the legend of 'Baba' must have come from somewhere, mustn't it? In the earliest days, when the Volniki still bled for the great cause of Ursus's founding, they sang of a witch who walked alongside them and healed their wounds. The witch often told stories to the children of the tribe, and the one she told most was about 'the little hut with legs.'\n'The little hut with legs defeated monsters.' 'The little hut with legs searched for a home.' Generation after generation, children grew up listening to these stories, and generation after generation, the Volniki remembered this little hut with legs.\nWho that witch was, and who the prototype for the little hut in her stories was, should not be difficult to guess. Considering the sensitivity of the information, let us record it as such: She was a Feline dressed in green, and the hut she spoke of had the claws of a chicken."
     }
   ],
-  "sourceRegion": "CN"
+  "sourceRegion": "Global",
+  "aliases": [
+    "Gallus²"
+  ]
 }

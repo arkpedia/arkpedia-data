@@ -13,7 +13,7 @@
     "DP-Recovery",
     "Crowd-Control"
   ],
-  "trait": "This unit can designate one Tactical Point within attack range to call Reinforcements ; ATK is increased to 150% when attacking enemies blocked by Reinforcements",
+  "trait": "This unit can designate one Tactical Point within attack range to call Reinforcements; ATK is increased to 150% when attacking enemies blocked by Reinforcements",
   "howToObtain": {
     "Limited": "No",
     "Standard Headhunting": "Yes",
@@ -30,17 +30,21 @@
   },
   "internalName": "char_4228_closur",
   "otherLanguages": {
-    "Chinese": "可露希尔"
+    "Chinese": "可露希尔",
+    "Simplified Chinese": "可露希尔"
   },
   "characterInfo": {
     "File no.": "R00A",
     "Illustrator": "Liyu黎",
     "Release Date": "2026/10/14",
-    "Kernel Addition Date": null
+    "Kernel Addition Date": null,
+    "CN Release Date": "2026/05/01"
   },
   "characterVoices": {
+    "Chinese": "Fifi",
     "Japanese": "Manami Numakura",
-    "Chinese": "Hou Xiaofei"
+    "Korean": "Min Ah",
+    "English": "Carla Tassara"
   },
   "basicInfo": {
     "Gender": "Female",
@@ -61,27 +65,27 @@
   },
   "talents": [
     {
-      "name": "Precise Deployment",
+      "name": "Precision Deployment",
       "rows": [
         {
           "stage": "Base",
           "potential": null,
-          "description": "Can summon Commanding Centers to assist at the Tactical Point in combat; Commanding Centers will automatically respawn 15s after being defeated. Commanding Centers' Effect Range changes based on skill, and all allied operators within its range are seen as this unit's Reinforcements."
+          "description": "Can summon a Command Center to assist in combat from a Tactical Point; the Command Center will automatically respawn 15s after being defeated; Tactical Point effect range changes based on skill, and friendly units within effect range are considered Closure's Reinforcements"
         }
       ]
     },
     {
-      "name": "Extreme Dispatch",
+      "name": "Scheduler, Max Settings!",
       "rows": [
         {
           "stage": "Elite 2",
           "potential": null,
-          "description": "Minimum DP -3 when Closure is in the squad; all Rhodes Island Operators ATK +4%."
+          "description": "When Closure is in the squad, DP lower limit reduced by 3, and [Rhodes Island] Operator ATK +4%"
         },
         {
           "stage": "Elite 2",
           "potential": "Potential 3",
-          "description": "Minimum DP -4 ( -1 ) when Closure is in the squad; all [Rhodes Island] Operators ATK +4%."
+          "description": "When Closure is in the squad, DP lower limit reduced by 4 (+1), and [Rhodes Island] Operator ATK +4%"
         }
       ]
     }
@@ -90,11 +94,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Improves Extreme Dispatch"
+        "benefit": "Improves Second Talent"
       },
       {
         "level": 4,
@@ -106,7 +110,7 @@
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -122,7 +126,7 @@
       "upgrades": [
         "Maximum attributes increased.",
         "DP cost +2 .",
-        "New skill: Algorithm Expansion .",
+        "New skill: Model Expansion .",
         "Range extended."
       ],
       "prerequisite": "Raise Closure to Level 50.",
@@ -149,7 +153,7 @@
       "tier": "Elite 2",
       "upgrades": [
         "Maximum attributes increased.",
-        "New talent: Extreme Dispatch .",
+        "New talent: Scheduler, Max Settings! .",
         "New skill: Q.E.D. .",
         "Operator Modules available."
       ],
@@ -177,7 +181,7 @@
   "skills": {
     "skillList": [
       {
-        "name": "Recursion Tactic",
+        "name": "Recursive Tactics",
         "recoveryType": "Auto Recovery",
         "activationType": "Auto",
         "duration": "8 seconds",
@@ -185,7 +189,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "Immediately grant 1 Shield to Reinforcements (unstackable). Gradually recovers 3 DP over the skill duration; after each skill cast after deployment, additionally generate 1 DP (up to 5 DP can be generated over the skill duration).",
+            "description": "Grants Reinforcements 1 Shield (does not stack); gradually generates 3 DP over skill duration; each time this skill is used, DP gained +1 (up to 5 DP)",
             "initialSp": 0,
             "spCost": 17,
             "duration": 8
@@ -193,7 +197,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "Immediately grant 1 Shield to Reinforcements (unstackable). Gradually recovers 3 DP over the skill duration; after each skill cast after deployment, additionally generate 1 DP (up to 5 DP can be generated over the skill duration).",
+            "description": "Grants Reinforcements 1 Shield (does not stack); gradually generates 3 DP over skill duration; each time this skill is used, DP gained +1 (up to 5 DP)",
             "initialSp": 0,
             "spCost": 16,
             "duration": 8
@@ -201,7 +205,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "Immediately grant 1 Shield to Reinforcements (unstackable). Gradually recovers 3 DP over the skill duration; after each skill cast after deployment, additionally generate 1 DP (up to 5 DP can be generated over the skill duration).",
+            "description": "Grants Reinforcements 1 Shield (does not stack); gradually generates 3 DP over skill duration; each time this skill is used, DP gained +1 (up to 5 DP)",
             "initialSp": 0,
             "spCost": 15,
             "duration": 8
@@ -209,7 +213,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "Immediately grant 1 Shield to Reinforcements (unstackable). Gradually recovers 3 DP over the skill duration; after each skill cast after deployment, additionally generate 1 DP (up to 6 DP can be generated over the skill duration).",
+            "description": "Grants Reinforcements 1 Shield (does not stack); gradually generates 3 DP over skill duration; each time this skill is used, DP gained +1 (up to 6 DP)",
             "initialSp": 0,
             "spCost": 14,
             "duration": 8
@@ -217,7 +221,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "Immediately grant 1 Shield to Reinforcements (unstackable). Gradually recovers 3 DP over the skill duration; after each skill cast after deployment, additionally generate 1 DP (up to 6 DP can be generated over the skill duration).",
+            "description": "Grants Reinforcements 1 Shield (does not stack); gradually generates 3 DP over skill duration; each time this skill is used, DP gained +1 (up to 6 DP)",
             "initialSp": 0,
             "spCost": 13,
             "duration": 8
@@ -225,7 +229,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "Immediately grant 1 Shield to Reinforcements (unstackable). Gradually recovers 3 DP over the skill duration; after each skill cast after deployment, additionally generate 1 DP (up to 6 DP can be generated over the skill duration).",
+            "description": "Grants Reinforcements 1 Shield (does not stack); gradually generates 3 DP over skill duration; each time this skill is used, DP gained +1 (up to 6 DP)",
             "initialSp": 0,
             "spCost": 12,
             "duration": 8
@@ -233,7 +237,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "Immediately grant 1 Shield to Reinforcements (unstackable). Gradually recovers 3 DP over the skill duration; after each skill cast after deployment, additionally generate 1 DP (up to 7 DP can be generated over the skill duration).",
+            "description": "Grants Reinforcements 1 Shield (does not stack); gradually generates 3 DP over skill duration; each time this skill is used, DP gained +1 (up to 7 DP)",
             "initialSp": 0,
             "spCost": 11,
             "duration": 8
@@ -241,7 +245,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "Immediately grant 1 Shield to Reinforcements (unstackable). Gradually recovers 3 DP over the skill duration; after each skill cast after deployment, additionally generate 1 DP (up to 7 DP can be generated over the skill duration).",
+            "description": "Grants Reinforcements 1 Shield (does not stack); gradually generates 3 DP over skill duration; each time this skill is used, DP gained +1 (up to 7 DP)",
             "initialSp": 1,
             "spCost": 10,
             "duration": 8
@@ -249,7 +253,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "Immediately grant 1 Shield to Reinforcements (unstackable). Gradually recovers 3 DP over the skill duration; after each skill cast after deployment, additionally generate 1 DP (up to 7 DP can be generated over the skill duration).",
+            "description": "Grants Reinforcements 1 Shield (does not stack); gradually generates 3 DP over skill duration; each time this skill is used, DP gained +1 (up to 7 DP)",
             "initialSp": 1,
             "spCost": 9,
             "duration": 8
@@ -257,7 +261,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "Immediately grant 1 Shield to Reinforcements (unstackable). Gradually recovers 3 DP over the skill duration; after each skill cast after deployment, additionally generate 1 DP (up to 7 DP can be generated over the skill duration).",
+            "description": "Grants Reinforcements 1 Shield (does not stack); gradually generates 3 DP over skill duration; each time this skill is used, DP gained +1 (up to 7 DP)",
             "initialSp": 1,
             "spCost": 8,
             "duration": 8
@@ -312,7 +316,7 @@
         "techniques": []
       },
       {
-        "name": "Algorithm Expansion",
+        "name": "Model Expansion",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
         "duration": "30 seconds",
@@ -320,7 +324,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "Immediately gains 5 DP, then, gradually gains 15 DP; Reinforcements' DEF +15% , Block Count +1 ; Increases own ATK by +25% , target 2 enemies simultaneously, and able to attack enemies blocked by Reinforcements; when deploying operators within the range of Reinforcements, refund 40% of the DP Cost.",
+            "description": "Immediately generates 5 DP, gradually generates 15 DP over skill duration, Reinforcements DEF +15%, Block +1, Closure's ATK +25%, attacks 2 targets simultaneously, and can attack enemies blocked by her own Reinforcements; Operators deployed within Tactical Point effect range refund 40% of their DP cost",
             "initialSp": 25,
             "spCost": 50,
             "duration": 30
@@ -328,7 +332,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "Immediately gains 5 DP, then, gradually gains 15 DP; Reinforcements' DEF +20% , Block Count +1 ; Increases own ATK by +30% , target 2 enemies simultaneously, and able to attack enemies blocked by Reinforcements; when deploying operators within the range of Reinforcements, refund 40% of the DP Cost.",
+            "description": "Immediately generates 5 DP, gradually generates 15 DP over skill duration, Reinforcements DEF +20%, Block +1, Closure's ATK +30%, attacks 2 targets simultaneously, and can attack enemies blocked by her own Reinforcements; Operators deployed within Tactical Point effect range refund 40% of their DP cost",
             "initialSp": 26,
             "spCost": 49,
             "duration": 30
@@ -336,7 +340,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "Immediately gains 5 DP, then, gradually gains 15 DP; Reinforcements' DEF +25% , Block Count +1 ; Increases own ATK by +35% , target 2 enemies simultaneously, and able to attack enemies blocked by Reinforcements; when deploying operators within the range of Reinforcements, refund 40% of the DP Cost.",
+            "description": "Immediately generates 5 DP, gradually generates 15 DP over skill duration, Reinforcements DEF +25%, Block +1, Closure's ATK +35%, attacks 2 targets simultaneously, and can attack enemies blocked by her own Reinforcements; Operators deployed within Tactical Point effect range refund 40% of their DP cost",
             "initialSp": 27,
             "spCost": 48,
             "duration": 30
@@ -344,7 +348,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "Immediately gains 6 DP, then, gradually gains 15 DP; Reinforcements' DEF +30% , Block Count +1 ; Increases own ATK by +40% , target 2 enemies simultaneously, and able to attack enemies blocked by Reinforcements; when deploying operators within the range of Reinforcements, refund 40% of the DP Cost.",
+            "description": "Immediately generates 6 DP, gradually generates 15 DP over skill duration, Reinforcements DEF +30%, Block +1, Closure's ATK +40%, attacks 2 targets simultaneously, and can attack enemies blocked by her own Reinforcements; Operators deployed within Tactical Point effect range refund 40% of their DP cost",
             "initialSp": 28,
             "spCost": 47,
             "duration": 30
@@ -352,7 +356,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "Immediately gains 6 DP, then, gradually gains 15 DP; Reinforcements' DEF +35% , Block Count +1 ; Increases own ATK by +45% , target 2 enemies simultaneously, and able to attack enemies blocked by Reinforcements; when deploying operators within the range of Reinforcements, refund 40% of the DP Cost.",
+            "description": "Immediately generates 6 DP, gradually generates 15 DP over skill duration, Reinforcements DEF +35%, Block +1, Closure's ATK +45%, attacks 2 targets simultaneously, and can attack enemies blocked by her own Reinforcements; Operators deployed within Tactical Point effect range refund 40% of their DP cost",
             "initialSp": 29,
             "spCost": 46,
             "duration": 30
@@ -360,7 +364,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "Immediately gains 6 DP, then, gradually gains 15 DP; Reinforcements' DEF +40% , Block Count +1 ; Increases own ATK by +50% , target 2 enemies simultaneously, and able to attack enemies blocked by Reinforcements; when deploying operators within the range of Reinforcements, refund 40% of the DP Cost.",
+            "description": "Immediately generates 6 DP, gradually generates 15 DP over skill duration, Reinforcements DEF +40%, Block +1, Closure's ATK +50%, attacks 2 targets simultaneously, and can attack enemies blocked by her own Reinforcements; Operators deployed within Tactical Point effect range refund 40% of their DP cost",
             "initialSp": 30,
             "spCost": 45,
             "duration": 30
@@ -368,7 +372,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "Immediately gains 7 DP, then, gradually gains 15 DP; Reinforcements' DEF +45% , Block Count +1 ; Increases own ATK by +55% , target 2 enemies simultaneously, and able to attack enemies blocked by Reinforcements; when deploying operators within the range of Reinforcements, refund 40% of the DP Cost.",
+            "description": "Immediately generates 7 DP, gradually generates 15 DP over skill duration, Reinforcements DEF +45%, Block +1, Closure's ATK +55%, attacks 2 targets simultaneously, and can attack enemies blocked by her own Reinforcements; Operators deployed within Tactical Point effect range refund 40% of their DP cost",
             "initialSp": 31,
             "spCost": 44,
             "duration": 30
@@ -376,7 +380,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "Immediately gains 8 DP, then, gradually gains 15 DP; Reinforcements' DEF +50% , Block Count +1 ; Increases own ATK by +60% , target 2 enemies simultaneously, and able to attack enemies blocked by Reinforcements; when deploying operators within the range of Reinforcements, refund 40% of the DP Cost.",
+            "description": "Immediately generates 8 DP, gradually generates 15 DP over skill duration, Reinforcements DEF +50%, Block +1, Closure's ATK +60%, attacks 2 targets simultaneously, and can attack enemies blocked by her own Reinforcements; Operators deployed within Tactical Point effect range refund 40% of their DP cost",
             "initialSp": 32,
             "spCost": 43,
             "duration": 30
@@ -384,7 +388,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "Immediately gains 9 DP, then, gradually gains 15 DP; Reinforcements' DEF +55% , Block Count +1 ; Increases own ATK by +70% , target 2 enemies simultaneously, and able to attack enemies blocked by Reinforcements; when deploying operators within the range of Reinforcements, refund 40% of the DP Cost.",
+            "description": "Immediately generates 9 DP, gradually generates 15 DP over skill duration, Reinforcements DEF +55%, Block +1, Closure's ATK +70%, attacks 2 targets simultaneously, and can attack enemies blocked by her own Reinforcements; Operators deployed within Tactical Point effect range refund 40% of their DP cost",
             "initialSp": 33,
             "spCost": 42,
             "duration": 30
@@ -392,7 +396,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "Immediately gains 10 DP, then, gradually gains 15 DP; Reinforcements' DEF +60% , Block Count +1 ; Increases own ATK by +80% , target 2 enemies simultaneously, and able to attack enemies blocked by Reinforcements; when deploying operators within the range of Reinforcements, refund 40% of the DP Cost.",
+            "description": "Immediately generates 10 DP, gradually generates 15 DP over skill duration, Reinforcements DEF +60%, Block +1, Closure's ATK +80%, attacks 2 targets simultaneously, and can attack enemies blocked by her own Reinforcements; Operators deployed within Tactical Point effect range refund 40% of their DP cost",
             "initialSp": 34,
             "spCost": 40,
             "duration": 30
@@ -413,7 +417,7 @@
               "quantity": 8
             },
             {
-              "name": "Concentrated Power Unit",
+              "name": "Energy Accumulation Motor Unit",
               "quantity": 4
             },
             {
@@ -462,7 +466,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "Generates 18 DP over the skill duration, Attack Interval is reduced , locks onto enemies within the original attack range of this unit or her Reinforcements to attack, dealing 110% of this unit's ATK as Physical DMG and inflict 3% Dull for 3 seconds (can be stacked up to 30% of Dull), and for every 9 attacks, attack target +1 (This effect can be triggered up to 6 times).",
+            "description": "Gradually generates 18 DP over skill duration, and Attack Interval decreases; locks onto and attacks enemies within Closure or her Reinforcements' normal Attack Ranges, dealing 110% of Closure's ATK as Physical damage and inflicting a 3% Sluggish effect for 3s (stacks up to 30%); target count +1 after every 9 attacks (can trigger up to 6 times)",
             "initialSp": 12,
             "spCost": 42,
             "duration": 30
@@ -470,7 +474,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "Generates 18 DP over the skill duration, Attack Interval is reduced , locks onto enemies within the original attack range of this unit or her Reinforcements to attack, dealing 120% of this unit's ATK as Physical DMG and inflict 3% Dull for 3 seconds (can be stacked up to 30% of Dull), and for every 9 attacks, attack target +1 (This effect can be triggered up to 6 times).",
+            "description": "Gradually generates 18 DP over skill duration, and Attack Interval decreases; locks onto and attacks enemies within Closure or her Reinforcements' normal Attack Ranges, dealing 120% of Closure's ATK as Physical damage and inflicting a 3% Sluggish effect for 3s (stacks up to 30%); target count +1 after every 9 attacks (can trigger up to 6 times)",
             "initialSp": 13,
             "spCost": 41,
             "duration": 30
@@ -478,7 +482,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "Generates 18 DP over the skill duration, Attack Interval is reduced , locks onto enemies within the original attack range of this unit or her Reinforcements to attack, dealing 130% of this unit's ATK as Physical DMG and inflict 3% Dull for 3 seconds (can be stacked up to 30% of Dull), and for every 9 attacks, attack target +1 (This effect can be triggered up to 6 times).",
+            "description": "Gradually generates 18 DP over skill duration, and Attack Interval decreases; locks onto and attacks enemies within Closure or her Reinforcements' normal Attack Ranges, dealing 130% of Closure's ATK as Physical damage and inflicting a 3% Sluggish effect for 3s (stacks up to 30%); target count +1 after every 9 attacks (can trigger up to 6 times)",
             "initialSp": 14,
             "spCost": 40,
             "duration": 30
@@ -486,7 +490,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "Generates 18 DP over the skill duration, Attack Interval is reduced , locks onto enemies within the original attack range of this unit or her Reinforcements to attack, dealing 150% of this unit's ATK as Physical DMG and inflict 4% Dull for 3 seconds (can be stacked up to 40% of Dull), and for every 9 attacks, attack target +1 (This effect can be triggered up to 6 times).",
+            "description": "Gradually generates 18 DP over skill duration, and Attack Interval decreases; locks onto and attacks enemies within Closure or her Reinforcements' normal Attack Ranges, dealing 150% of Closure's ATK as Physical damage and inflicting a 4% Sluggish effect for 3s (stacks up to 40%); target count +1 after every 9 attacks (can trigger up to 6 times)",
             "initialSp": 15,
             "spCost": 39,
             "duration": 30
@@ -494,7 +498,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "Generates 18 DP over the skill duration, Attack Interval is reduced , locks onto enemies within the original attack range of this unit or her Reinforcements to attack, dealing 160% of this unit's ATK as Physical DMG and inflict 4% Dull for 3 seconds (can be stacked up to 40% of Dull), and for every 9 attacks, attack target +1 (This effect can be triggered up to 6 times).",
+            "description": "Gradually generates 18 DP over skill duration, and Attack Interval decreases; locks onto and attacks enemies within Closure or her Reinforcements' normal Attack Ranges, dealing 160% of Closure's ATK as Physical damage and inflicting a 4% Sluggish effect for 3s (stacks up to 40%); target count +1 after every 9 attacks (can trigger up to 6 times)",
             "initialSp": 16,
             "spCost": 38,
             "duration": 30
@@ -502,7 +506,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "Generates 18 DP over the skill duration, Attack Interval is reduced , locks onto enemies within the original attack range of this unit or her Reinforcements to attack, dealing 170% of this unit's ATK as Physical DMG and inflict 4% Dull for 3 seconds (can be stacked up to 40% of Dull), and for every 9 attacks, attack target +1 (This effect can be triggered up to 6 times).",
+            "description": "Gradually generates 18 DP over skill duration, and Attack Interval decreases; locks onto and attacks enemies within Closure or her Reinforcements' normal Attack Ranges, dealing 170% of Closure's ATK as Physical damage and inflicting a 4% Sluggish effect for 3s (stacks up to 40%); target count +1 after every 9 attacks (can trigger up to 6 times)",
             "initialSp": 17,
             "spCost": 37,
             "duration": 30
@@ -510,7 +514,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "Generates 18 DP over the skill duration, Attack Interval is reduced , locks onto enemies within the original attack range of this unit or her Reinforcements to attack, dealing 190% of this unit's ATK as Physical DMG and inflict 5% Dull for 3 seconds (can be stacked up to 50% of Dull), and for every 9 attacks, attack target +1 (This effect can be triggered up to 6 times).",
+            "description": "Gradually generates 18 DP over skill duration, and Attack Interval decreases; locks onto and attacks enemies within Closure or her Reinforcements' normal Attack Ranges, dealing 190% of Closure's ATK as Physical damage and inflicting a 5% Sluggish effect for 3s (stacks up to 50%); target count +1 after every 9 attacks (can trigger up to 6 times)",
             "initialSp": 18,
             "spCost": 36,
             "duration": 30
@@ -518,7 +522,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "Generates 18 DP over the skill duration, Attack Interval is reduced , locks onto enemies within the original attack range of this unit or her Reinforcements to attack, dealing 210% of this unit's ATK as Physical DMG and inflict 5% Dull for 3 seconds (can be stacked up to 50% of Dull), and for every 9 attacks, attack target +1 (This effect can be triggered up to 6 times).",
+            "description": "Gradually generates 18 DP over skill duration, and Attack Interval decreases; locks onto and attacks enemies within Closure or her Reinforcements' normal Attack Ranges, dealing 210% of Closure's ATK as Physical damage and inflicting a 5% Sluggish effect for 3s (stacks up to 50%); target count +1 after every 9 attacks (can trigger up to 6 times)",
             "initialSp": 19,
             "spCost": 34,
             "duration": 30
@@ -526,7 +530,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "Generates 18 DP over the skill duration, Attack Interval is reduced , locks onto enemies within the original attack range of this unit or her Reinforcements to attack, dealing 230% of this unit's ATK as Physical DMG and inflict 5% Dull for 3 seconds (can be stacked up to 50% of Dull), and for every 9 attacks, attack target +1 (This effect can be triggered up to 6 times).",
+            "description": "Gradually generates 18 DP over skill duration, and Attack Interval decreases; locks onto and attacks enemies within Closure or her Reinforcements' normal Attack Ranges, dealing 230% of Closure's ATK as Physical damage and inflicting a 5% Sluggish effect for 3s (stacks up to 50%); target count +1 after every 9 attacks (can trigger up to 6 times)",
             "initialSp": 21,
             "spCost": 32,
             "duration": 30
@@ -534,7 +538,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "Generates 18 DP over the skill duration, Attack Interval is reduced , locks onto enemies within the original attack range of this unit or her Reinforcements to attack, dealing 250% of this unit's ATK as Physical DMG and inflict 6% Dull for 3 seconds (can be stacked up to 60% of Dull), and for every 9 attacks, attack target +1 (This effect can be triggered up to 6 times).",
+            "description": "Gradually generates 18 DP over skill duration, and Attack Interval decreases; locks onto and attacks enemies within Closure or her Reinforcements' normal Attack Ranges, dealing 250% of Closure's ATK as Physical damage and inflicting a 6% Sluggish effect for 3s (stacks up to 60%); target count +1 after every 9 attacks (can trigger up to 6 times)",
             "initialSp": 23,
             "spCost": 30,
             "duration": 30
@@ -670,7 +674,7 @@
   "baseSkills": [
     {
       "name": "Chief Engineer",
-      "description": "When assigned to the Control Center, restores Morale of all Operators in the Control Center by +0.05 per hour.",
+      "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by +0.05 per hour.",
       "icon": null,
       "facility": "Control Center",
       "eliteLevel": "Base",
@@ -680,8 +684,8 @@
       "level": 1
     },
     {
-      "name": "Special Orders",
-      "description": "When assigned to a Trading Post, order acquisition efficiency +10%, and always acquires Closure's Special Orders (not considered Defaulted trades).",
+      "name": "Special Order",
+      "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency +10%, Closure's Special Order will be obtained at a fixed rate (not considered as Defaulted trades).",
       "icon": null,
       "facility": "Trading Post",
       "eliteLevel": "Elite 2",
@@ -695,21 +699,22 @@
     {
       "type": "Original",
       "name": "Closure's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_closur"
     },
     {
       "type": "Upgrade",
-      "name": "TAC-X: Little Trophy For Herself",
+      "name": "TAC-X: Little Trophy for Herself",
       "mission": {
-        "requirement1": "Complete a total of 5 battles. You must deploy your own Closure and Closure must be the first operator to be deployed.",
-        "requirement2": "Clear Intermezzi BB-4 with a 3-star rating. You must deploy your own Closure and cannot include other Vanguard operators in squad."
+        "requirement1": "Complete a total of 5 battles; You must include your own Closure in your squad, and Closure must be the first Operator deployed",
+        "requirement2": "Clear Babel BB-4 with a 3-star rating; You must deploy your own Closure and cannot include any other Vanguard Operators as members"
       },
       "stages": [
         {
           "stage": "Stage 1",
           "attributesIncreased": "HP +150 , ATK +20 , DEF +15",
-          "effectLabel": "New trait",
-          "effectText": "This unit can designate one Tactical Point within attack range to call Reinforcements ; Reinforcements take 15% less damage from units they are blocking, and this unit's ATK is increased to 150% when attacking enemies blocked by Reinforcements",
+          "effectLabel": "Trait improved",
+          "effectText": "This unit can designate one Tactical Point within attack range to call Reinforcements; Reinforcements take 15% less damage from units they are blocking, and this unit's ATK is increased to 150% when attacking enemies blocked by Reinforcements",
           "cost": [
             {
               "name": "Module Data Block",
@@ -728,8 +733,8 @@
         {
           "stage": "Stage 2",
           "attributesIncreased": "HP +170 , ATK +25 , DEF +20",
-          "effectLabel": "Extreme Dispatch improved",
-          "effectText": "Minimum DP -4 when Closure is in the squad; all Rhodes Island Operators ATK +6%.",
+          "effectLabel": "Scheduler, Max Settings! improved",
+          "effectText": "When Closure is in the squad, DP lower limit reduced by 4, and [Rhodes Island] Operator ATK +6%",
           "cost": [
             {
               "name": "Module Data Block",
@@ -752,8 +757,8 @@
         {
           "stage": "Stage 3",
           "attributesIncreased": "HP +180 , ATK +30 , DEF +25",
-          "effectLabel": "Extreme Dispatch improved",
-          "effectText": "Minimum DP -5 when Closure is in the squad; all Rhodes Island Operators ATK +8%.",
+          "effectLabel": "Scheduler, Max Settings! improved",
+          "effectText": "When Closure is in the squad, DP lower limit reduced by 5, and [Rhodes Island] Operator ATK +8%",
           "cost": [
             {
               "name": "Module Data Block",
@@ -773,11 +778,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_closur"
     }
   ],
   "review": {
-    "official": "Closure, Chief Engineer of the Engineering Department, Head of Purchasing Department and also in charge of several other departments.\nI'm just going to wait y'all in the Procurement Department. Do you really need to see my files to know me?\n-Closure",
+    "official": "Closure, Rhodes Island's Chief Engineer, head of the Procurement Department, and concurrent overseer of several other departments' affairs.\n\nI'll be waiting for everyone at Procurement. If you want to get to know me, do you really need to read my file?\n—Closure",
     "editor": null,
     "rating": null
   },
@@ -809,6 +815,7 @@
         "elite": 0,
         "minLevel": 1,
         "maxLevel": 50,
+        "rangeId": "3-1",
         "base": {
           "hp": 788,
           "atk": 202,
@@ -828,13 +835,13 @@
           "dp": 13,
           "block": 1,
           "interval": 1
-        },
-        "rangeId": "3-1"
+        }
       },
       {
         "elite": 1,
         "minLevel": 1,
         "maxLevel": 80,
+        "rangeId": "3-3",
         "base": {
           "hp": 1126,
           "atk": 298,
@@ -854,13 +861,13 @@
           "dp": 15,
           "block": 1,
           "interval": 1
-        },
-        "rangeId": "3-3"
+        }
       },
       {
         "elite": 2,
         "minLevel": 1,
         "maxLevel": 90,
+        "rangeId": "3-3",
         "base": {
           "hp": 1444,
           "atk": 393,
@@ -880,8 +887,7 @@
           "dp": 15,
           "block": 1,
           "interval": 1
-        },
-        "rangeId": "3-3"
+        }
       }
     ],
     "trust": {
@@ -892,35 +898,50 @@
   },
   "files": [
     {
+      "section": "Basic Info",
+      "unlock": "Obtain the operator",
+      "description": "[Code Name] Closure\n[Gender] Female\n[Engineering Experience] 20 years\n[Place of Birth] Kazdel\n[Date of Birth] Dec 10\n[Race] Sarkaz\n[Height] 158cm\n[Infection Status]\nMedical tests have confirmed that no infection is present."
+    },
+    {
+      "section": "Physical Exam",
+      "unlock": "Obtain the operator",
+      "description": "[Physical Strength] Normal\n[Mobility] Excellent\n[Physical Resilience] Standard\n[Tactical Acumen] Outstanding\n[Combat Skill] Standard\n[Originium Arts Assimilation] Standard"
+    },
+    {
+      "section": "Profile",
+      "unlock": "Obtain the operator",
+      "description": "Closure, Rhodes Island's Chief Engineer, head of the Procurement Department, and concurrent overseer of several other departments' affairs.\n\nI'll be waiting for everyone at Procurement. If you want to get to know me, do you really need to read my file?\n—Closure"
+    },
+    {
       "section": "Clinical Analysis",
-      "unlock": "Unlocked at 25 trust",
-      "description": "造影检测结果显示，该干员体内脏器轮廓清晰，未见异常阴影，循环系统内源石颗粒检测未见异常，无矿石病感染迹象，现阶段可确认为非矿石病感染者。\n\n【体细胞与源石融合率】0%\n可露希尔没有被源石感染的迹象。\n\n【血液源石结晶密度】0.14u/L\n可露希尔经常接触各种源石工业制品，血液源石结晶密度偏高，但其采取的矿石病防护措施严密可靠，综合判断下来，感染可能不大。"
+      "unlock": "FAVOR 25",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this Operator is believed to be non-infected.\n\n[Cell-Originium Assimilation] 0%\nClosure shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.14u/L\nClosure frequently comes into contact with various Originium industrial products. Her Blood Originium-Crystal Density is relatively high, but her protective measures against Oripathy are thorough and reliable. Overall, infection is considered unlikely."
     },
     {
       "section": "Archive File 1",
-      "unlock": "Unlocked at 50 trust",
-      "description": "该文档为付费内容，目前已被锁定。请联系可露希尔购买阅读权限。\n\n如果你真付了费，她会把钱还给你，然后把正文给你看。如果你找到可露希尔——前提是你抓得到她——她会爽快地承认收费不符合罗德岛的规章制度，然后把正文给你看。\n如果你既不交钱又没找到她人，却还是看到了正文，她会主动出现在你背后，盘问你是怎么做到的，然后花几个晚上把漏洞堵死。\n——■■■\n\n（而后，人事部负责人爽快地将她所知的数种绕过锁定的方法告诉了你。你选择了其中一种，顺利看到了被锁定的内容。不过，在浏览过程中，你的屏幕上多了一个无人机形状的桌面宠物，关不掉，还时不时冒出小气泡，上面写着“犯规！”“补交罚款！”一类的文字......但可露希尔到最后也没有断掉你和这份档案之间的连接。）"
+      "unlock": "FAVOR 50",
+      "description": "This document contains paid content and is currently locked. Please contact Closure to purchase reading access.\n\nIf you actually pay, she will refund your money, then show you the main text. If you find Closure—assuming you can catch her—she will readily admit that charging fees violates Rhodes Island regulations, then show you the main text.\nIf you neither pay nor manage to find her, but still somehow see the main text, she will appear behind you of her own accord, interrogate you on how you did it, then spend several nights fixing the security flaws.\n—■■■\n\n(After that, the head of HR readily told you several methods she knew for bypassing the lock. You chose one of them and successfully viewed the locked content. However, while you were browsing, a desktop pet shaped like a drone appeared on your screen. You cannot close it, and every so often, it pops up little speech bubbles saying things like 'You cheat!' and 'Pay your fine!'... But Closure never cut off your connection to this file in the end.)"
     },
     {
       "section": "Archive File 2",
-      "unlock": "Unlocked at 100 trust",
-      "description": "毋庸置疑，可露希尔是罗德岛上资历最老的那一批老家伙之一。\n一般来说，老家伙经常会发展出令人印象深刻的怪癖，例如华法琳的医疗部深夜恐怖传说。与之相比，可露希尔算是比较普通的。她所做的事情一般不超过总工程师和采购部负责人的范畴。\n值得一提的是，凯尔希不在的时间里，可露希尔还需要额外对罗德岛各部门（医疗部通常除外）的重要决策做最终判断。这部分责任在凯尔希回归以后的确减轻了，但其中也仍有相当一部分，出于种种理由，继续由她来承担。可露希尔本人对此的态度相当矛盾：工程部和采购部的工作即便在局外人看来也已经足够繁重了，但油腔滑调的外壳之下，老家伙的责任心又让她很难把这些担子抛回给刚归来不久的凯尔希。\n不过，关于可露希尔为什么偏偏成了罗德岛的老家伙，又为什么对罗德岛有如此不符合她形象的责任心，始终是个有趣的问题。我们当然可以把事情追溯到特蕾西娅拉开她房门的那一天，可以认为是强烈的好奇心促使她追随巴别塔、特蕾西娅乃至博士的脚步，也可以归因于她与巴别塔或罗德岛成员长时间相处产生的深情厚谊，还有一部分原因显然是身处罗德岛能接触到大量普通人闻所未闻的先进技术......\n\n这不是已经把原因讲完了吗？\n——可露希尔\n\n......所有的这些都成立，却又很难完全解释她现在的状态。情感纽带和接触最新技术的机会的确足以把她留在罗德岛上，却似乎并不足以让本性显然并不勤快的她，把一家制药企业的工作，尤其是那些实则具有极强重复性的工作，做得那么自得其乐。\n\n烦欸。\n——可露希尔"
+      "unlock": "FAVOR 100",
+      "description": "Without a doubt, Closure is one of the most senior old-timers aboard Rhodes Island.\nGenerally speaking, old-timers often develop impressive quirks, such as Warfarin and Medical's late-night horror stories. Compared to that, Closure is fairly normal. What she does generally does not exceed the scope of her duties as Chief Engineer and head of the Procurement Department.\nIt is worth noting that while Kal'tsit was absent, Closure also had to make the final call on important decisions for Rhodes Island's various departments (usually excluding Medical). This part of her responsibilities has indeed been lightened after Kal'tsit's return, but a considerable portion of them continues to fall to her for various reasons. Closure is rather conflicted about this: even to an outsider, the work of Engineering and Procurement is already heavy enough, but beneath that glib exterior, her sense of responsibility makes it difficult for her to toss these burdens back to Kal'tsit, who has only recently returned.\nStill, why Closure, of all people, became one of Rhodes Island's old-timers, and why she holds such an uncharacteristic sense of responsibility toward Rhodes Island, remains an interesting question. We could certainly trace it back to the day Theresa opened the door to her room. We could say her intense curiosity drove her to follow in the footsteps of Babel, Theresa, and even the Doctor. We could also attribute it to the deep bonds she formed over a long period of time with members of Babel or Rhodes Island. Another part of the reason is clearly that being at Rhodes Island gives her access to a great deal of advanced technology that ordinary people have never even heard of...\n\nHaven't you already explained all the reasons?\n—Closure\n\n...All of these are true, yet they still do not fully explain her current state. Emotional bonds and opportunities to access the latest technology are indeed enough to keep her here, but they hardly seem enough to make someone who is clearly not diligent by nature take such genuine pleasure in the work of a pharmaceutical company, especially the parts that are, in truth, extremely repetitive.\n\nUgh, how annoying.\n—Closure"
     },
     {
       "section": "Archive File 3",
-      "unlock": "Unlocked at 150 trust",
-      "description": "现今卡兹戴尔的基础设施建设仍然相当不完善，新铺设的城际网络也尚未进入普及阶段。这就不免让人心生疑惑：在那个显然更加混乱和荒废的时代，卡兹戴尔真的存在一个能让可露希尔在其中胡闹的信息国度吗？\n而可露希尔对此的回答是：“没有就自己造一个呗。”\n事实当然没这么轻飘飘。彼时的卡兹戴尔全无城际网络的土壤，萨卡兹接触电子产品的渠道几乎只有一个：从萨科塔手中抢。\n普通萨卡兹最想要的当然是守护铳，其次是各国货币、源石锭和贵金属，再次是能吃、能喝、能实际用得上的东西，大多数先进电子产品对他们而言属实是些让人一头雾水的玩意儿：重，复杂，拆了也没什么可卖。有些家伙会抱着废物利用的心态回卡兹戴尔兜售这些东西，这才给了城内的萨卡兹接触电子产品的契机，可露希尔就是最早接触这些东西的人之一。\n但她出门就要面对关系紧张的亲人，满肚子的奇怪知识和新发现都无从与人交流，于是那段时间的可露希尔大概比人生中任何时候都更渴求交流......直到她成功用特定的波段联系到了附近的另一位电路爱好者，此后的一切，就不必说了。\n最近，在卡兹戴尔为城际网络架设基础设施的工程人员仍然能在各种犄角旮旯发现自制的基站和中继器——都是可露希尔和她那帮朋友当年的手笔。可露希尔负责在阁楼里设计和联络，朋友们则负责实地设置。\n\n说句题外话，“我当年在阁楼里鼓捣电路”，这句话里最重要的信息其实不是别的，而是“阁楼”——能负担得起一间有阁楼的房子，锁上门就可以杜绝几乎所有干扰，说实话，在当时的卡兹戴尔，有点幸运到奢侈了。\n题外话的题外话，我第一个拿到手的电子产品，是被抢......被杀的那个萨科塔自己改装的。我曾经很想和那个人聊天，想了很久很久。\n那个人不该那么死的，为了杀那个人而死的萨卡兹也一样。\n——可露希尔"
+      "unlock": "FAVOR 150",
+      "description": "Even today, Kazdel's infrastructure remains quite underdeveloped, and the newly built intercity network has yet to become widespread. This inevitably raises a question: in that era, one that was plainly even more chaotic and derelict, did Kazdel really have an information realm where Closure could run wild?\nClosure's answer to this is, 'If there isn't one, just build one yourself.'\nOf course, the reality was nowhere near that simple. At the time, Kazdel had no soil in which an intercity network could take root, and Sarkaz had essentially only one way to come into contact with electronics: taking them from Sanktas by force.\nWhat ordinary Sarkaz wanted most were naturally patron firearms, followed by the currencies of various nations, Originium Ingots, and precious metals, then things that could be eaten, drunk, or put to practical use. Most advanced electronics were, to them, honestly baffling things: heavy, complicated, and not worth much even if taken apart. Some people would bring these things back to Kazdel and sell them with a waste-not mindset, and that was what gave the Sarkaz in the city the opportunity to come into contact with electronics. Closure was one of the first to do so.\nBut whenever she went outside, she had to face relatives with whom she had strained relations, and she had no one to share all her strange knowledge and new discoveries with. During that period, Closure probably craved communication more than at any other time in her life... until she successfully used a specific frequency band to contact another electronics hobbyist nearby. Everything that followed needs no telling.\nRecently, engineers working to set up Kazdel's intercity network infrastructure can still find homemade base stations and repeaters tucked away in all sorts of nooks and crannies—the handiwork of Closure and her friends from back then. Closure was responsible for design and communications from the attic, while her friends handled installation in the field.\n\nAs an aside, in the sentence 'I was tinkering with circuits in the attic back then,' the most important piece of information is not anything else, but 'attic'—being able to afford a house with an attic, where locking the door could shut out almost all interference, was honestly a decent luxury in Kazdel at the time.\nAs another aside, the first electronic device I got my hands on had been modified by the Sankta who was robbed... who was killed. I wanted to talk to that person, and I thought about it for a long, long time.\nThat person should not have died like that. Neither should the Sarkaz who died to kill that person.\n—Closure"
     },
     {
       "section": "Archive File 4",
-      "unlock": "Unlocked at 200 trust",
-      "description": "在成功构建起卡兹戴尔的技术先锋小圈子之后，可露希尔和她的朋友们很快迎来了第一次分歧——他们已经做到的，能做到的，还有未来可能做到的，都足够在卡兹戴尔乃至泰拉的大部分地区，换到钱，而且是很多很多钱了。\n几位囊中羞涩的伙伴提出了变现计划。本就松散的小圈子当然没有能力阻止，这些伙伴立刻成了疤痕商场里炙手可热的人物。再后来是一些实在受不了卡兹戴尔环境的人远走他乡，再加上卡兹戴尔过高的人口更替比率，可露希尔重新变得独往独来，能和她交流的也只剩下几个知根知底的——或者她自认为知根知底的——朋友。\n也是在这个时间段，某个特定的破坏者的恶名开始在卡兹戴尔流传。这个家伙会一视同仁地黑入自己进得去的数据库（多半是她原来的朋友们帮谁搭的）、服务器（稀罕物件中的稀罕物件），甚至抢来的个人终端，有时留个痕迹就走，有时却在里面发泄式地大肆破坏。而阁楼外，可露希尔的家人甚至罕见地担心起这个离经叛道的小混蛋最近是不是受了什么精神上的打击——他们的担心其实没错就是了。\n直到很后来很后来，可露希尔才意识到，当年的自己大概是向往着某种在哥伦比亚被称为“开源精神”的，和自己的血魔身份格格不入的东西。\n可露希尔早已经成功对血魔身份和“血魔该有的样子”完成了脱敏。现在去问她，她会明确地报出自己不讨厌的血魔（华法琳）、不怎么讨厌的血魔（隐德来希）、讨厌的血魔（杜卡雷）、死都不要见面的血魔（自己的父母），但在她彻底想通之前，血魔的身份的确是一个困扰她许久的问题——自己为什么会降生在一个追求“纯粹”“完美”，用“肮脏”“沉沦”这样带着明确感情色彩的字眼来标志等级的种族？\n程序开发需要试错，工程建设必须容许误差和冗余，她和她最初的那帮好友之间更是百无禁忌，光是在聊天时回想起血魔那套东西都让她牙酸。所以她才会想要开源，想要一个所有人都能自由地取用、自由地研究、自由地做出贡献的地方，至少，想要为那样一个地方创造条件。\n也许对她来说，这就是她对“突破传统枷锁”，最直观的理解。\n种族间的隔阂、资历差别导致的歧视、由血缘构建起来的阶层......这些无不是束缚她的传统的枷锁，又无一不被她突破。\n从这个角度来说，她跟随我们一同前行的理由，从一开始就没有改变过。"
+      "unlock": "FAVOR 200",
+      "description": "After building up Kazdel's little circle of technology pioneers, Closure and her friends soon encountered their first disagreement—what they had already done, what they could do, and what they might someday be able to do were all enough to earn money in Kazdel, and even in most parts of Terra. A whole lot of money.\nSeveral cash-strapped partners proposed a plan to monetize it. Naturally, the already loose circle had no way to stop them, and these partners immediately became hot commodities in the Scar Market. Later, some who truly could no longer stand Kazdel's environment left for distant lands, and coupled with Kazdel's excessively high population turnover rate, Closure became a loner once more. The only people she could still talk to were a few friends she knew inside and out—or at least she believed she knew them through and through.\nIt was also during this period that the infamy of a certain saboteur began to spread through Kazdel. This person would hack indiscriminately into any database they could get into (mostly ones her former friends had built for someone), servers (rare treasures among rare treasures), and even stolen personal terminals. Sometimes they left after leaving a trace; sometimes they wrecked everything inside as if venting. Outside the attic, Closure's family even, in a rare show of concern, began to worry whether this deviant little brat had recently suffered some sort of mental blow—and their concern was not exactly wrong.\nIt was only much, much later that Closure realized that the person she was back then had probably been yearning for something called the 'open-source spirit' in Columbia, something utterly at odds with her identity as a Vampire.\nClosure had long since desensitized herself to both her identity as a Vampire and 'what Vampires are supposed to be.' Ask her now, and she will clearly list the Vampire she does not dislike (Warfarin), the Vampire she does not dislike all that much (Entelechia), the Vampire she dislikes (Duq'arael), and the Vampires she would rather die than meet (her parents). But before she fully thought it through, her identity as a Vampire did trouble her for a long time—why had she been born into a race that pursues 'purity' and 'perfection,' and used clearly loaded words like 'filth' and 'debasement' to mark out its hierarchy?\nProgram development requires trial and error, and engineering construction must allow for error and redundancy. Between her and her first group of friends, nothing was off-limits; just recalling all that Vampire nonsense while chatting was enough to set her teeth on edge. That was why she wanted open source, why she wanted a place that everyone could freely use, freely study, and freely contribute to. At the very least, she wanted to create the conditions for such a place.\nPerhaps, to her, this was the most direct understanding of 'breaking through the shackles of tradition.'\nThe barriers between races, discrimination born of differences in seniority, a hierarchy based on bloodline... all of these were traditional shackles that bound her, and every one of them was something she broke through.\nFrom this perspective, her reason for moving forward together with us has never changed from the very beginning."
     },
     {
       "section": "Promotion Record",
-      "unlock": "Unlocked at E2",
-      "description": "这部分是真正的付费内容！\n说了是付费内容，你真的还要看？\n......哼。\n\n（你本以为自己会看到什么了不得的秘密，但屏幕上出现的内容似乎并不怎么扣人心弦。你看到的是一份长长的书单，横跨从药品制造到精密工业到土木工程再到装潢设计的广阔领域。你知道，这都是她看过的东西。没有人从一开始就是全领域工程专家，就算是离经叛道的血魔也不行，而且可露希尔大概率真的为这些期刊、杂志、著作，至少是这些东西的电子版，花了不少钱。再往下看，还有她购置的各种实验器材。的确是笔不小的开支，你这样想着，叹了口气，直接把清单拉到最下方。）\n\n付款成功......\n\n（？）\n\n......您通过ZOOT快捷支付消费：180000龙门币。"
+      "unlock": "AWAKE 2;1",
+      "description": "This part is the real paid content!\nI said it's paid content. Do you really still want to see it?\n...Hmph.\n\n(You thought you might see some incredible secret, but the content that appears on the screen does not seem particularly riveting. What you see is a long reading list, spanning a broad range of fields from pharmaceutical manufacturing, to precision industry, to civil engineering, to interior design. You know these are all things she has read. No one starts out as a multidisciplinary engineering expert, not even an unconventional Vampire, and Closure most likely really did spend a considerable amount of money on these journals, magazines, and books, or at least their digital editions. Looking further down, you also see all manner of experimental equipment she has purchased. It really is quite a sizable expense, you think, sighing as you scroll the list straight to the bottom.)\n\nPayment Successful...\n\n(?)\n\n...You have spent 180,000 LMD via ZOOT Pay."
     }
   ],
-  "sourceRegion": "CN"
+  "sourceRegion": "Global"
 }
