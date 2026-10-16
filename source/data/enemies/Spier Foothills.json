@@ -14,7 +14,7 @@
       "name": "'Iceball'",
       "index": "DL33",
       "rank": "Boss",
-      "sort": 1493,
+      "sort": 1556,
       "hidden": false,
       "icon": "/enemies-icons/'Iceball'.webp",
       "flavour_text": "This massive beast is no longer recognizable. It is a cave-dwelling creature with poor vision and a passion for digging its nest. Covered in frigid scales, it moves by curling up and rolling wherever it needs to go.",
@@ -53,11 +53,11 @@
             "hp": 80000,
             "atk": 800,
             "def": 1000,
-            "res": 20.0,
-            "elemental_res": 0.0,
-            "elemental_damage_res": 0.0,
-            "attack_interval": 4.0,
-            "attack_speed": 100.0,
+            "res": 20,
+            "elemental_res": 0,
+            "elemental_damage_res": 0,
+            "attack_interval": 4,
+            "attack_speed": 100,
             "move_speed": 0.3,
             "range": null,
             "weight": 6,
@@ -78,37 +78,37 @@
             {
               "key": "Walk2Dash",
               "sp_cost": 0,
-              "cooldown": 0.0,
-              "initial_cooldown": 0.0,
+              "cooldown": 0,
+              "initial_cooldown": 0,
               "priority": 0,
               "parameters": {}
             },
             {
               "key": "Roll2Dash",
               "sp_cost": 0,
-              "cooldown": 0.0,
-              "initial_cooldown": 0.0,
+              "cooldown": 0,
+              "initial_cooldown": 0,
               "priority": 0,
               "parameters": {}
             },
             {
               "key": "DashEnd",
               "sp_cost": 0,
-              "cooldown": 0.0,
-              "initial_cooldown": 0.0,
+              "cooldown": 0,
+              "initial_cooldown": 0,
               "priority": 0,
               "parameters": {
-                "dash_cd": 20.0,
-                "max_stack_cnt": 10.0,
-                "max_valid_stack_cnt": 10.0,
+                "dash_cd": 20,
+                "max_stack_cnt": 10,
+                "max_valid_stack_cnt": 10,
                 "move_speed": 0.045
               }
             },
             {
               "key": "Walk2Roll",
               "sp_cost": 0,
-              "cooldown": 0.0,
-              "initial_cooldown": 0.0,
+              "cooldown": 0,
+              "initial_cooldown": 0,
               "priority": 0,
               "parameters": {}
             }
@@ -119,23 +119,23 @@
               "parameters": {
                 "prob_min": 0.1,
                 "scale": 0.125,
-                "stun_duration_add": 1.0,
-                "stun_duration_max": 10.0
+                "stun_duration_add": 1,
+                "stun_duration_max": 10
               }
             },
             {
               "key": "DashTalent_Aura",
               "parameters": {
-                "atk_scale": 1.0,
-                "speed_scale": 250.0
+                "atk_scale": 1,
+                "speed_scale": 250
               }
             },
             {
               "key": "DashTalent_Timer",
               "parameters": {
-                "dash_duration": 1.0,
-                "dash_speed_add": 4.0,
-                "move_speed_min": 1.0
+                "dash_duration": 1,
+                "dash_speed_add": 4,
+                "move_speed_min": 1
               }
             },
             {
@@ -143,13 +143,13 @@
               "parameters": {
                 "interval": 0.33,
                 "speed_add": 0.4,
-                "trig_cnt": 15.0
+                "trig_cnt": 15
               }
             },
             {
               "key": "WalkTalent",
               "parameters": {
-                "skagod_walk_timer.first_trigger_interval": 5.0
+                "skagod_walk_timer.first_trigger_interval": 5
               }
             }
           ],

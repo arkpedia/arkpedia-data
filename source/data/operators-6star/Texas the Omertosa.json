@@ -721,6 +721,85 @@
     },
     {
       "type": "Upgrade",
+      "name": "EXE-X: 'New Car and New Life'",
+      "mission": {
+        "requirement1": "Deal a total of 80,000 damage with your own Texas the Omertosa",
+        "requirement2": "Clear Main Theme 5-3 with a 3-star rating; You must deploy your own Texas the Omertosa, and have her defeat at least 10 enemies"
+      },
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +130 , ATK +46",
+          "effectLabel": "New trait",
+          "effectText": "Refunds a large portion of the current DP Cost when retreated",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Nucleic Crystal Sinter",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +150 , ATK +62",
+          "effectLabel": "Texas Swordsmanship improved",
+          "effectText": "Before defeating an enemy for the first time after each deployment, gains +12 ASPD and reduces all damage taken by 30%; after defeating an enemy, -10% to next Redeployment Time",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +160 , ATK +69",
+          "effectLabel": "Texas Swordsmanship improved",
+          "effectText": "Before defeating an enemy for the first time after each deployment, gains +15 ASPD and reduces all damage taken by 30%; after defeating an enemy, -20% to next Redeployment Time",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ],
+      "moduleId": "uniequip_003_texas2"
+    },
+    {
+      "type": "Upgrade",
       "name": "EXE-Y: Blueberry & Dark Chocolate",
       "mission": {
         "requirement1": "Defeat a total of 10 elite or leader enemies with Texas the Omertosa (excluding Support Units)",
@@ -797,85 +876,6 @@
         }
       ],
       "moduleId": "uniequip_002_texas2"
-    },
-    {
-      "type": "Upgrade",
-      "name": "EXE-X: “新车和新生活”",
-      "mission": {
-        "requirement1": "由非助战缄默德克萨斯累计造成80000点伤害",
-        "requirement2": "3星通关主题曲5-3；必须携带且部署非助战缄默德克萨斯，且使用缄默德克萨斯击败至少10个敌人"
-      },
-      "stages": [
-        {
-          "stage": "Stage 1",
-          "attributesIncreased": "HP +130 , ATK +46",
-          "effectLabel": "New trait",
-          "effectText": "撤退时返还大量该次部署费用",
-          "cost": [
-            {
-              "name": "Module Data Block",
-              "quantity": 4
-            },
-            {
-              "name": "Nucleic Crystal Sinter",
-              "quantity": 2
-            },
-            {
-              "name": "LMD",
-              "quantity": 80000
-            }
-          ]
-        },
-        {
-          "stage": "Stage 2",
-          "attributesIncreased": "HP +150 , ATK +62",
-          "effectLabel": "德克萨斯剑术 improved",
-          "effectText": "每次部署后击倒一名敌人之前，攻击速度+12，受到的所有伤害降低30%，击倒一名敌人之后使当次再部署时间-10%",
-          "cost": [
-            {
-              "name": "Module Data Block",
-              "quantity": 4
-            },
-            {
-              "name": "Data Supplement Stick",
-              "quantity": 60
-            },
-            {
-              "name": "Crystalline Electronic Unit",
-              "quantity": 3
-            },
-            {
-              "name": "LMD",
-              "quantity": 100000
-            }
-          ]
-        },
-        {
-          "stage": "Stage 3",
-          "attributesIncreased": "HP +160 , ATK +69",
-          "effectLabel": "德克萨斯剑术 improved",
-          "effectText": "每次部署后击倒一名敌人之前，攻击速度+15，受到的所有伤害降低30%，击倒一名敌人之后使当次再部署时间-20%",
-          "cost": [
-            {
-              "name": "Module Data Block",
-              "quantity": 4
-            },
-            {
-              "name": "Data Supplement Instrument",
-              "quantity": 20
-            },
-            {
-              "name": "Rephasic Enantiomer",
-              "quantity": 4
-            },
-            {
-              "name": "LMD",
-              "quantity": 120000
-            }
-          ]
-        }
-      ],
-      "moduleId": "uniequip_003_texas2"
     }
   ],
   "review": {
@@ -915,8 +915,7 @@
     {
       "videoId": "ajc1vyfLafA",
       "creator": "Dokutah Shikikan"
-    }
-,
+    },
     {
       "videoId": "d7cs0VDq0tw",
       "creator": "Fizzyon"

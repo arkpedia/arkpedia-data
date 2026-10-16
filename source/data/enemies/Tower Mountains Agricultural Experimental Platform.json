@@ -14,7 +14,7 @@
       "name": "'Hatred Without Root'",
       "index": "DL18",
       "rank": "Boss",
-      "sort": 1478,
+      "sort": 1541,
       "hidden": false,
       "icon": "/enemies-icons/'Hatred Without Root'.webp",
       "flavour_text": "An airborne command center for agricultural drones. Long has it tended the crops in the field, even treating them as its own, but it is nevertheless lonely because of its rootless wandering. Malware has turned its loneliness into hatred for all who dwell on the ground.",
@@ -49,11 +49,11 @@
             "hp": 96000,
             "atk": 300,
             "def": 605,
-            "res": 65.0,
-            "elemental_res": 0.0,
-            "elemental_damage_res": 0.0,
-            "attack_interval": 5.0,
-            "attack_speed": 100.0,
+            "res": 65,
+            "elemental_res": 0,
+            "elemental_damage_res": 0,
+            "attack_interval": 5,
+            "attack_speed": 100,
             "move_speed": 0.4,
             "range": null,
             "weight": 5,
@@ -74,11 +74,11 @@
             {
               "key": "SummonDrones",
               "sp_cost": 0,
-              "cooldown": 0.0,
-              "initial_cooldown": 0.0,
+              "cooldown": 0,
+              "initial_cooldown": 0,
               "priority": 1,
               "parameters": {
-                "cnt": 2.0,
+                "cnt": 2,
                 "enemy_key": "enemy_1005_yokai_2",
                 "enemy_key_b": "enemy_1041_lazerd",
                 "enemy_key_c": "enemy_1106_byokai"
@@ -87,16 +87,16 @@
             {
               "key": "SummonEscortAircraft",
               "sp_cost": 0,
-              "cooldown": 45.0,
-              "initial_cooldown": 22.0,
+              "cooldown": 45,
+              "initial_cooldown": 22,
               "priority": 0,
               "parameters": {
-                "cnt": 3.0,
+                "cnt": 3,
                 "damage_scale": 1.25,
                 "enemy_key": "enemy_6019_escort",
-                "inspire_duration": 20.0,
-                "range_radius": 2.0,
-                "weak_duration": 15.0
+                "inspire_duration": 20,
+                "range_radius": 2,
+                "weak_duration": 15
               }
             }
           ],
@@ -126,7 +126,7 @@
       "name": "Seeding Drone",
       "index": "DL19",
       "rank": "Normal",
-      "sort": 1479,
+      "sort": 1542,
       "hidden": false,
       "icon": "/enemies-icons/Seeding Drone.webp",
       "flavour_text": "Agriculture drone equipped with a variety of tools for seeding, watering, fertilizing, etc. It is proud of its role, and of its natural fertilizer fermentation system. 'No one can refuse some steaming hot fertilizer.'",
@@ -149,11 +149,11 @@
             "hp": 6500,
             "atk": 340,
             "def": 250,
-            "res": 50.0,
-            "elemental_res": 0.0,
-            "elemental_damage_res": 0.0,
+            "res": 50,
+            "elemental_res": 0,
+            "elemental_damage_res": 0,
             "attack_interval": 4.5,
-            "attack_speed": 100.0,
+            "attack_speed": 100,
             "move_speed": 0.5,
             "range": 2.2,
             "weight": 2,
@@ -174,11 +174,11 @@
             {
               "key": "StunAttack",
               "sp_cost": 2,
-              "cooldown": 0.0,
-              "initial_cooldown": 0.0,
+              "cooldown": 0,
+              "initial_cooldown": 0,
               "priority": 0,
               "parameters": {
-                "stun": 9.0
+                "stun": 9
               }
             }
           ],
@@ -194,7 +194,7 @@
             "initial": 0,
             "max": 2,
             "recovery": "On attack",
-            "increment": 1.0
+            "increment": 1
           }
         }
       ]

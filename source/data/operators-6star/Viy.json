@@ -10,9 +10,9 @@
   "subRegion": null,
   "position": "Ranged",
   "tags": [
-    "输出"
+    "DPS"
   ],
-  "trait": "Attacks deal Arts damage ; When unable to find a target, attacks can be stored up and fired all at once (Up to 3 charges).",
+  "trait": "Attacks deal Arts damage; When unable to find a target, attacks can be stored up and fired all at once (Up to 3 charges)",
   "howToObtain": {
     "Limited": "No",
     "Standard Headhunting": "No",
@@ -32,7 +32,8 @@
   },
   "internalName": "char_4226_veen",
   "otherLanguages": {
-    "Chinese": "维伊"
+    "Chinese": "维伊",
+    "Simplified Chinese": "维伊"
   },
   "characterInfo": {
     "File no.": "US53",
@@ -41,8 +42,10 @@
     "Kernel Addition Date": "N/A"
   },
   "characterVoices": {
+    "Chinese": "Songtao Yu",
     "Japanese": "Hiroki Takahashi",
-    "Chinese": "Yu Songtao"
+    "Korean": "Choi Hyun-sik",
+    "English": "Egor Zhirnov"
   },
   "basicInfo": {
     "Gender": "Male",
@@ -63,37 +66,37 @@
   },
   "talents": [
     {
-      "name": "\"Ere one draws their sword\"",
+      "name": "'Before the Sword's Swing'",
       "rows": [
         {
           "stage": "Base",
           "potential": null,
-          "description": "When stored attacks from this unit's trait reaches 3, they will be fused into 1 [Transposing Energy] (This unit may store at most 9 attacks). When possessing [Transposing Energy], ATK +2% . If not, ASPD +5 ."
+          "description": "When Trait reaches 3 stored charges, they combine into 1 Transposed Energy (can store up to equivalent of 9 charges); ATK +2% when in possession of Transposed Energy, and ASPD +5 when not in possession of Transposed Energy"
         },
         {
           "stage": "Base",
           "potential": "Potential 5",
-          "description": "When stored attacks from this unit's trait reaches 3, they will be fused into 1 [Transposing Energy] (This unit may store at most 9 attacks). When possessing [Transposing Energy], ATK +4% . If not, ASPD +5 ."
+          "description": "When Trait reaches 3 stored charges, they combine into 1 Transposed Energy (can store up to equivalent of 9 charges); ATK +4% (+2%) when in possession of Transposed Energy, and ASPD +5 when not in possession of Transposed Energy"
         },
         {
           "stage": "Elite 2",
           "potential": null,
-          "description": "When stored attacks from this unit's trait reaches 3, they will be fused into 1 [Transposing Energy] (This unit may store at most 9 attacks). When possessing [Transposing Energy], ATK +10% . If not, ASPD +15 ."
+          "description": "When Trait reaches 3 stored charges, they combine into 1 Transposed Energy (can store up to equivalent of 9 charges); ATK +10% when in possession of Transposed Energy, and ASPD +15 when not in possession of Transposed Energy"
         },
         {
           "stage": "Elite 2",
           "potential": "Potential 5",
-          "description": "When stored attacks from this unit's trait reaches 3, they will be fused into 1 [Transposing Energy] (This unit may store at most 9 attacks). When possessing [Transposing Energy], ATK +12% . If not, ASPD +15 ."
+          "description": "When Trait reaches 3 stored charges, they combine into 1 Transposed Energy (can store up to equivalent of 9 charges); ATK +12% (+2%) when in possession of Transposed Energy, and ASPD +15 when not in possession of Transposed Energy"
         }
       ]
     },
     {
-      "name": "The Arts of War",
+      "name": "Arts of War",
       "rows": [
         {
           "stage": "Elite 2",
           "potential": null,
-          "description": "Enemies hit by attacks or stored energy will receive 90 Arts damage every second for 5 seconds (stacking up to 3 times, enemies hit by [Transposing Energy] will immediately take 3 stacks). Will not target enemies inflicted with this status."
+          "description": "Attacking with stored charges makes the target suffer 90 Arts damage per second for 5s (stacks up to 3 times; Transposed Energy inflicts 3 stacks); Viy does not attack targets under this effect"
         }
       ]
     }
@@ -102,23 +105,23 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -10 seconds"
+        "benefit": "Redeployment Time -10 sec"
       },
       {
         "level": 4,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 5,
-        "benefit": "Improves \"Ere one draws their sword\""
+        "benefit": "Improves First Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -134,7 +137,7 @@
       "upgrades": [
         "Maximum attributes increased.",
         "DP cost +2 .",
-        "New skill: Awash With Blood .",
+        "New skill: 'By Blood Cleansed' .",
         "Range extended."
       ],
       "prerequisite": "Raise Viy to Level 50.",
@@ -161,9 +164,9 @@
       "tier": "Elite 2",
       "upgrades": [
         "Maximum attributes increased.",
-        "\"Ere one draws their sword\" improved.",
-        "New talent: The Arts of War .",
-        "New skill: \"Remember With Hematite\" .",
+        "'Before the Sword's Swing' improved.",
+        "New talent: Arts of War .",
+        "New skill: \"'With Iron Engraved'\" .",
         "Operator Modules available."
       ],
       "prerequisite": "Raise Viy to Elite 1 Level 80.",
@@ -190,7 +193,7 @@
   "skills": {
     "skillList": [
       {
-        "name": "Self-made Callsign",
+        "name": "'From Wailing Born'",
         "recoveryType": "Auto Recovery",
         "activationType": "Auto",
         "duration": "18 seconds",
@@ -298,7 +301,7 @@
               "quantity": 12
             },
             {
-              "name": "Liquified Ether Absorber",
+              "name": "Liquefied Ether Adsorbent",
               "quantity": 4
             },
             {
@@ -325,7 +328,7 @@
         "techniques": []
       },
       {
-        "name": "Awash With Blood",
+        "name": "'By Blood Cleansed'",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
         "duration": "28 seconds",
@@ -333,7 +336,7 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "Attack Interval reduces slightly ; after attacking or firing charges, ATK +6% , ASPD +5 (stacks up to 7 times, firing [Transposing Energy] will immediately add 3 stacks) for the remaining duration of this skill.",
+            "description": "Attack Interval decreases slightly; every attack or release of stored charges grants ATK +6% and ASPD +5 (max 7 stacks, releasing Transposed Energy gives 3 stacks) until skill ends",
             "initialSp": 0,
             "spCost": 39,
             "duration": 28
@@ -341,7 +344,7 @@
           {
             "level": 2,
             "mastery": null,
-            "description": "Attack Interval reduces slightly ; after attacking or firing charges, ATK +7% , ASPD +5 (stacks up to 7 times, firing [Transposing Energy] will immediately add 3 stacks) for the remaining duration of this skill.",
+            "description": "Attack Interval decreases slightly; every attack or release of stored charges grants ATK +7% and ASPD +5 (max 7 stacks, releasing Transposed Energy gives 3 stacks) until skill ends",
             "initialSp": 2,
             "spCost": 38,
             "duration": 28
@@ -349,7 +352,7 @@
           {
             "level": 3,
             "mastery": null,
-            "description": "Attack Interval reduces slightly ; after attacking or firing charges, ATK +7% , ASPD +6 (stacks up to 7 times, firing [Transposing Energy] will immediately add 3 stacks) for the remaining duration of this skill.",
+            "description": "Attack Interval decreases slightly; every attack or release of stored charges grants ATK +7% and ASPD +6 (max 7 stacks, releasing Transposed Energy gives 3 stacks) until skill ends",
             "initialSp": 2,
             "spCost": 37,
             "duration": 28
@@ -357,7 +360,7 @@
           {
             "level": 4,
             "mastery": null,
-            "description": "Attack Interval reduces slightly ; after attacking or firing charges, ATK +9% , ASPD +6 (stacks up to 8 times, firing [Transposing Energy] will immediately add 3 stacks) for the remaining duration of this skill.",
+            "description": "Attack Interval decreases slightly; every attack or release of stored charges grants ATK +9% and ASPD +6 (max 8 stacks, releasing Transposed Energy gives 3 stacks) until skill ends",
             "initialSp": 4,
             "spCost": 36,
             "duration": 28
@@ -365,7 +368,7 @@
           {
             "level": 5,
             "mastery": null,
-            "description": "Attack Interval reduces slightly ; after attacking or firing charges, ATK +9% , ASPD +6 (stacks up to 8 times, firing [Transposing Energy] will immediately add 3 stacks) for the remaining duration of this skill.",
+            "description": "Attack Interval decreases slightly; every attack or release of stored charges grants ATK +9% and ASPD +6 (max 8 stacks, releasing Transposed Energy gives 3 stacks) until skill ends",
             "initialSp": 4,
             "spCost": 35,
             "duration": 28
@@ -373,7 +376,7 @@
           {
             "level": 6,
             "mastery": null,
-            "description": "Attack Interval reduces slightly ; after attacking or firing charges, ATK +9% , ASPD +7 (stacks up to 8 times, firing [Transposing Energy] will immediately add 3 stacks) for the remaining duration of this skill.",
+            "description": "Attack Interval decreases slightly; every attack or release of stored charges grants ATK +9% and ASPD +7 (max 8 stacks, releasing Transposed Energy gives 3 stacks) until skill ends",
             "initialSp": 6,
             "spCost": 35,
             "duration": 28
@@ -381,7 +384,7 @@
           {
             "level": 7,
             "mastery": null,
-            "description": "Attack Interval reduces slightly ; after attacking or firing charges, ATK +11% , ASPD +7 (stacks up to 9 times, firing [Transposing Energy] will immediately add 3 stacks) for the remaining duration of this skill.",
+            "description": "Attack Interval decreases slightly; every attack or release of stored charges grants ATK +11% and ASPD +7 (max 9 stacks, releasing Transposed Energy gives 3 stacks) until skill ends",
             "initialSp": 6,
             "spCost": 34,
             "duration": 28
@@ -389,7 +392,7 @@
           {
             "level": null,
             "mastery": 1,
-            "description": "Attack Interval reduces slightly ; after attacking or firing charges, ATK +13% , ASPD +7 (stacks up to 9 times, firing [Transposing Energy] will immediately add 3 stacks) for the remaining duration of this skill.",
+            "description": "Attack Interval decreases slightly; every attack or release of stored charges grants ATK +13% and ASPD +7 (max 9 stacks, releasing Transposed Energy gives 3 stacks) until skill ends",
             "initialSp": 8,
             "spCost": 34,
             "duration": 28
@@ -397,7 +400,7 @@
           {
             "level": null,
             "mastery": 2,
-            "description": "Attack Interval reduces slightly ; after attacking or firing charges, ATK +13% , ASPD +8 (stacks up to 9 times, firing [Transposing Energy] will immediately add 3 stacks) for the remaining duration of this skill.",
+            "description": "Attack Interval decreases slightly; every attack or release of stored charges grants ATK +13% and ASPD +8 (max 9 stacks, releasing Transposed Energy gives 3 stacks) until skill ends",
             "initialSp": 8,
             "spCost": 33,
             "duration": 28
@@ -405,7 +408,7 @@
           {
             "level": null,
             "mastery": 3,
-            "description": "Attack Interval reduces slightly ; after attacking or firing charges, ATK +15% , ASPD +8 (stacks up to 9 times, firing [Transposing Energy] will immediately add 3 stacks) for the remaining duration of this skill.",
+            "description": "Attack Interval decreases slightly; every attack or release of stored charges grants ATK +15% and ASPD +8 (max 9 stacks, releasing Transposed Energy gives 3 stacks) until skill ends",
             "initialSp": 10,
             "spCost": 32,
             "duration": 28
@@ -467,7 +470,7 @@
         "techniques": []
       },
       {
-        "name": "Remember With Hematite",
+        "name": "'With Iron Engraved'",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
         "duration": null,
@@ -475,82 +478,82 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "ASPD +80 ; after firing stored energy, it will ricochet to nearby enemies once (prioritizing different targets) and deal 110% ATK as Arts DMG. [Transposing Energy] will ricochet 3 times instead. Skill activation grants 15 ammo, ammo will only be consumed by 1 when firing Stored Energy, firing [Transposing Energy] will instead consume 3 ammo, and the skill ends when all ammo is used. (Can manually deactivate skill)",
+            "description": "ASPD +80; stored charges will bounce between enemies once on being released (prioritizing different targets), dealing 110% ATK as Arts damage; Transposed Energy bounces 3 times\nSkill activation grants 15 ammo; 1 ammo is spent per stored charge released, and 3 ammo per Transposed Energy released; skill ends when all ammo is used (Can manually deactivate skill)",
             "initialSp": 20,
             "spCost": 63,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 2,
             "mastery": null,
-            "description": "ASPD +90 ; after firing stored energy, it will ricochet to nearby enemies once (prioritizing different targets) and deal 110% ATK as Arts DMG. [Transposing Energy] will ricochet 3 times instead. Skill activation grants 15 ammo, ammo will only be consumed by 1 when firing Stored Energy, firing [Transposing Energy] will instead consume 3 ammo, and the skill ends when all ammo is used. (Can manually deactivate skill)",
+            "description": "ASPD +90; stored charges will bounce between enemies once on being released (prioritizing different targets), dealing 110% ATK as Arts damage; Transposed Energy bounces 3 times\nSkill activation grants 15 ammo; 1 ammo is spent per stored charge released, and 3 ammo per Transposed Energy released; skill ends when all ammo is used (Can manually deactivate skill)",
             "initialSp": 20,
             "spCost": 61,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 3,
             "mastery": null,
-            "description": "ASPD +100 ; after firing stored energy, it will ricochet to nearby enemies once (prioritizing different targets) and deal 120% ATK as Arts DMG. [Transposing Energy] will ricochet 3 times instead. Skill activation grants 15 ammo, ammo will only be consumed by 1 when firing Stored Energy, firing [Transposing Energy] will instead consume 3 ammo, and the skill ends when all ammo is used. (Can manually deactivate skill)",
+            "description": "ASPD +100; stored charges will bounce between enemies once on being released (prioritizing different targets), dealing 120% ATK as Arts damage; Transposed Energy bounces 3 times\nSkill activation grants 15 ammo; 1 ammo is spent per stored charge released, and 3 ammo per Transposed Energy released; skill ends when all ammo is used (Can manually deactivate skill)",
             "initialSp": 20,
             "spCost": 59,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 4,
             "mastery": null,
-            "description": "ASPD +110 ; after firing stored energy, it will ricochet to nearby enemies once (prioritizing different targets) and deal 130% ATK as Arts DMG. [Transposing Energy] will ricochet 3 times instead. Skill activation grants 18 ammo, ammo will only be consumed by 1 when firing Stored Energy, firing [Transposing Energy] will instead consume 3 ammo, and the skill ends when all ammo is used. (Can manually deactivate skill)",
+            "description": "ASPD +110; stored charges will bounce between enemies once on being released (prioritizing different targets), dealing 130% ATK as Arts damage; Transposed Energy bounces 3 times\nSkill activation grants 18 ammo; 1 ammo is spent per stored charge released, and 3 ammo per Transposed Energy released; skill ends when all ammo is used (Can manually deactivate skill)",
             "initialSp": 22,
             "spCost": 57,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 5,
             "mastery": null,
-            "description": "ASPD +120 ; after firing stored energy, it will ricochet to nearby enemies once (prioritizing different targets) and deal 130% ATK as Arts DMG. [Transposing Energy] will ricochet 3 times instead. Skill activation grants 18 ammo, ammo will only be consumed by 1 when firing Stored Energy, firing [Transposing Energy] will instead consume 3 ammo, and the skill ends when all ammo is used. (Can manually deactivate skill)",
+            "description": "ASPD +120; stored charges will bounce between enemies once on being released (prioritizing different targets), dealing 130% ATK as Arts damage; Transposed Energy bounces 3 times\nSkill activation grants 18 ammo; 1 ammo is spent per stored charge released, and 3 ammo per Transposed Energy released; skill ends when all ammo is used (Can manually deactivate skill)",
             "initialSp": 22,
             "spCost": 55,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 6,
             "mastery": null,
-            "description": "ASPD +130 ; after firing stored energy, it will ricochet to nearby enemies once (prioritizing different targets) and deal 130% ATK as Arts DMG. [Transposing Energy] will ricochet 3 times instead. Skill activation grants 18 ammo, ammo will only be consumed by 1 when firing Stored Energy, firing [Transposing Energy] will instead consume 3 ammo, and the skill ends when all ammo is used. (Can manually deactivate skill)",
+            "description": "ASPD +130; stored charges will bounce between enemies once on being released (prioritizing different targets), dealing 130% ATK as Arts damage; Transposed Energy bounces 3 times\nSkill activation grants 18 ammo; 1 ammo is spent per stored charge released, and 3 ammo per Transposed Energy released; skill ends when all ammo is used (Can manually deactivate skill)",
             "initialSp": 22,
             "spCost": 53,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 7,
             "mastery": null,
-            "description": "ASPD +140 ; after firing stored energy, it will ricochet to nearby enemies once (prioritizing different targets) and deal 140% ATK as Arts DMG. [Transposing Energy] will ricochet 3 times instead. Skill activation grants 21 ammo, ammo will only be consumed by 1 when firing Stored Energy, firing [Transposing Energy] will instead consume 3 ammo, and the skill ends when all ammo is used. (Can manually deactivate skill)",
+            "description": "ASPD +140; stored charges will bounce between enemies once on being released (prioritizing different targets), dealing 140% ATK as Arts damage; Transposed Energy bounces 3 times\nSkill activation grants 21 ammo; 1 ammo is spent per stored charge released, and 3 ammo per Transposed Energy released; skill ends when all ammo is used (Can manually deactivate skill)",
             "initialSp": 24,
             "spCost": 51,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 1,
-            "description": "ASPD +150 ; after firing stored energy, it will ricochet to nearby enemies once (prioritizing different targets) and deal 150% ATK as Arts DMG. [Transposing Energy] will ricochet 3 times instead. Skill activation grants 24 ammo, ammo will only be consumed by 1 when firing Stored Energy, firing [Transposing Energy] will instead consume 3 ammo, and the skill ends when all ammo is used. (Can manually deactivate skill)",
+            "description": "ASPD +150; stored charges will bounce between enemies once on being released (prioritizing different targets), dealing 150% ATK as Arts damage; Transposed Energy bounces 3 times\nSkill activation grants 24 ammo; 1 ammo is spent per stored charge released, and 3 ammo per Transposed Energy released; skill ends when all ammo is used (Can manually deactivate skill)",
             "initialSp": 24,
             "spCost": 49,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 2,
-            "description": "ASPD +160 ; after firing stored energy, it will ricochet to nearby enemies once (prioritizing different targets) and deal 150% ATK as Arts DMG. [Transposing Energy] will ricochet 3 times instead. Skill activation grants 24 ammo, ammo will only be consumed by 1 when firing Stored Energy, firing [Transposing Energy] will instead consume 3 ammo, and the skill ends when all ammo is used. (Can manually deactivate skill)",
+            "description": "ASPD +160; stored charges will bounce between enemies once on being released (prioritizing different targets), dealing 150% ATK as Arts damage; Transposed Energy bounces 3 times\nSkill activation grants 24 ammo; 1 ammo is spent per stored charge released, and 3 ammo per Transposed Energy released; skill ends when all ammo is used (Can manually deactivate skill)",
             "initialSp": 26,
             "spCost": 47,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 3,
-            "description": "ASPD +180 ; after firing stored energy, it will ricochet to nearby enemies once (prioritizing different targets) and deal 165% ATK as Arts DMG. [Transposing Energy] will ricochet 3 times instead. Skill activation grants 27 ammo, ammo will only be consumed by 1 when firing Stored Energy, firing [Transposing Energy] will instead consume 3 ammo, and the skill ends when all ammo is used. (Can manually deactivate skill)",
+            "description": "ASPD +180; stored charges will bounce between enemies once on being released (prioritizing different targets), dealing 165% ATK as Arts damage; Transposed Energy bounces 3 times\nSkill activation grants 27 ammo; 1 ammo is spent per stored charge released, and 3 ammo per Transposed Energy released; skill ends when all ammo is used (Can manually deactivate skill)",
             "initialSp": 28,
             "spCost": 45,
-            "duration": "–"
+            "duration": null
           }
         ],
         "recommendation": [
@@ -586,7 +589,7 @@
               "quantity": 4
             },
             {
-              "name": "Concentrated Power Unit",
+              "name": "Energy Accumulation Motor Unit",
               "quantity": 7
             }
           ],
@@ -600,7 +603,7 @@
               "quantity": 6
             },
             {
-              "name": "Liquified Ether Absorber",
+              "name": "Liquefied Ether Adsorbent",
               "quantity": 2
             }
           ]
@@ -646,11 +649,11 @@
           "quantity": 8
         },
         {
-          "name": "Polyketon",
+          "name": "Sugar",
           "quantity": 4
         },
         {
-          "name": "Sugar",
+          "name": "Polyketon",
           "quantity": 4
         }
       ],
@@ -682,8 +685,8 @@
   },
   "baseSkills": [
     {
-      "name": "I Don't Understand",
-      "description": "When assigned as Trainer in the Training Room, Caster and Guard Operators' Specialization training speed +30%.",
+      "name": "'I Don't Get It'",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Caster and Guard Operators' Specialization training speed +30%",
       "icon": null,
       "facility": "Training Room",
       "eliteLevel": "Base",
@@ -693,8 +696,8 @@
       "level": 1
     },
     {
-      "name": "Learning by Analogy",
-      "description": "When assigned as Trainer in the Training Room, Caster and Guard Operators' Specialization training speed +45%.",
+      "name": "'Learning By Analogy'",
+      "description": "When this Operator is assigned to be the Trainer in the Training Room, Caster and Guard Operators' Specialization training speed +45%",
       "icon": null,
       "facility": "Training Room",
       "eliteLevel": "Elite 2",
@@ -705,7 +708,7 @@
     },
     {
       "name": "Artisan",
-      "description": "When assigned to a Factory, productivity +10% per Training Room level, up to +30%.",
+      "description": "When this Operator is assigned to a Factory, current Factory Productivity +10% for every level of each Training Room level, up to 30%",
       "icon": null,
       "facility": "Factory",
       "eliteLevel": "Elite 2",
@@ -719,14 +722,15 @@
     {
       "type": "Original",
       "name": "Viy's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_veen"
     },
     {
       "type": "Upgrade",
-      "name": "MSC-Y: Keep at Close Hand",
+      "name": "MSC-Y: Keep Close At Hand",
       "mission": {
-        "requirement1": "Defeat 20 enemies with a non support Viy.",
-        "requirement2": "Clear Main Theme 7-10 with 3-star ratings. You must deploy your own Viy and can only have 7 other operators present in the squad."
+        "requirement1": "Defeat a total of 20 enemies with your own Viy",
+        "requirement2": "Clear Main Theme 7-10 with a 3-star rating; You must deploy your own Viy, and can only include 7 other Operators as members"
       },
       "stages": [
         {
@@ -752,8 +756,8 @@
         {
           "stage": "Stage 2",
           "attributesIncreased": "HP +125 , ATK +112",
-          "effectLabel": "The Arts of War improved",
-          "effectText": "Enemies hit by attacks or stored energy will receive 100 Arts damage every second for 5 seconds (stacking up to 4 times, enemies hit by [Transposing Energy] will immediately take 3 stacks). Will not target enemies inflicted with this status.",
+          "effectLabel": "Arts of War improved",
+          "effectText": "Attacking with stored charges makes the target suffer 100 Arts damage per second for 5s (stacks up to 4 times; Transposed Energy inflicts 3 stacks); Viy does not attack targets under this effect",
           "cost": [
             {
               "name": "Module Data Block",
@@ -776,8 +780,8 @@
         {
           "stage": "Stage 3",
           "attributesIncreased": "HP +190 , ATK +120",
-          "effectLabel": "The Arts of War improved",
-          "effectText": "Enemies hit by attacks or stored energy will receive 120 Arts damage every second for 5 seconds (stacking up to 4 times, enemies hit by [Transposing Energy] will immediately take 3 stacks). Will not target enemies inflicted with this status.",
+          "effectLabel": "Arts of War improved",
+          "effectText": "Attacking with stored charges makes the target suffer 120 Arts damage per second for 5s (stacks up to 4 times; Transposed Energy inflicts 3 stacks); Viy does not attack targets under this effect",
           "cost": [
             {
               "name": "Module Data Block",
@@ -797,11 +801,12 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_veen"
     }
   ],
   "review": {
-    "official": "Stjopa Rasin, leader and commander-in-chief of the independent Ursus Tactical Unit \"Sechin\" and leader of the Free People. In early 1102, he led his people to separate themselves from Ursus Military and achieved independence after the incident in\nDeity Grypherburg\n. Later, introduced by an operator and began representing Sechin in their contact with Rhodes Island.",
+    "official": "Scioppa Razin, leader and commander-in-chief of the Ursine Independent Tactics Formation 'Sechin,' and leader of the Volniki. In early 1102, he led his unit out of the jurisdiction of the Ursine military. After the Deity Grypherburg Incident, 'Sechin' became fully independent. Later, through an introduction by a branch office operator, he began making contact with Rhodes Island on behalf of 'Sechin.'",
     "editor": null,
     "rating": null
   },
@@ -825,6 +830,7 @@
         "elite": 0,
         "minLevel": 1,
         "maxLevel": 50,
+        "rangeId": "3-13",
         "base": {
           "hp": 654,
           "atk": 615,
@@ -844,13 +850,13 @@
           "dp": 25,
           "block": 1,
           "interval": 3
-        },
-        "rangeId": "3-13"
+        }
       },
       {
         "elite": 1,
         "minLevel": 1,
         "maxLevel": 80,
+        "rangeId": "3-14",
         "base": {
           "hp": 935,
           "atk": 879,
@@ -870,13 +876,13 @@
           "dp": 27,
           "block": 1,
           "interval": 3
-        },
-        "rangeId": "3-14"
+        }
       },
       {
         "elite": 2,
         "minLevel": 1,
         "maxLevel": 90,
+        "rangeId": "3-14",
         "base": {
           "hp": 1215,
           "atk": 1142,
@@ -896,8 +902,7 @@
           "dp": 27,
           "block": 1,
           "interval": 3
-        },
-        "rangeId": "3-14"
+        }
       }
     ],
     "trust": {
@@ -908,35 +913,50 @@
   },
   "files": [
     {
+      "section": "Basic Info",
+      "unlock": "Obtain the operator",
+      "description": "[Code Name] Viy\n[Gender] Male\n[Combat Experience] 16 years\n[Place of Birth] Ursus\n[Date of Birth] Jun 21\n[Race] Kuranta\n[Height] 190cm\n[Infection Status]\nMedical tests have confirmed that no infection is present."
+    },
+    {
+      "section": "Physical Exam",
+      "unlock": "Obtain the operator",
+      "description": "[Physical Strength] Standard\n[Mobility] Standard\n[Physical Resilience] Excellent\n[Tactical Acumen] Standard\n[Combat Skill] Outstanding\n[Originium Arts Assimilation] Excellent"
+    },
+    {
+      "section": "Profile",
+      "unlock": "Obtain the operator",
+      "description": "Scioppa Razin, leader and commander-in-chief of the Ursine Independent Tactics Formation 'Sechin,' and leader of the Volniki. In early 1102, he led his unit out of the jurisdiction of the Ursine military. After the Deity Grypherburg Incident, 'Sechin' became fully independent. Later, through an introduction by a branch office operator, he began making contact with Rhodes Island on behalf of 'Sechin.'"
+    },
+    {
       "section": "Clinical Analysis",
-      "unlock": "Unlocked at 25 trust",
-      "description": "造影检测结果显示，该干员体内脏器轮廓清晰，未见异常阴影，循环系统内源石颗粒检测未见异常，无矿石病感染迹象，现阶段可确认为非矿石病感染者。\n\n【体细胞与源石融合率】0%\n干员维伊目前没有被源石感染的迹象。\n\n【血液源石结晶密度】0.19u/L\n鉴于读数波动较大，即使最终只取平均值也得到了一个较为危险的数据，建议持续观察。\n问题可能在于干员维伊使用的施术单元。它内载一种我们难以按照常理解析的复杂源石回路，也许来自乌萨斯军方的某种研究，又或者是“自由民”未被记载的传统。我们目前只知道这种回路能将施术单元内嵌源石的能量放大到极端水平，以获得最好的施术效果。相应地，这种施术单元会给施术者身体带来极大负担，稍不注意就会对神经造成不可逆的损伤，甚至导致施术者患上矿石病。可以的话，希望干员维伊能试着减少对此类施术单元的依赖，逐渐过渡到对性能更为温和的同类产品的使用。\n\n莱塔尼亚对源石技艺的研究也不是面面俱到的，这东西我是真看不懂。因为就算是高塔术师都不会用这种自杀一样的玩意啊！他们最惜命不过。......嗯？你说这是乌萨斯人研究出来的？那、那倒挺合理的。\n——某不具名的术师干员"
+      "unlock": "FAVOR 25",
+      "description": "Imaging tests reveal clear, normal outlines of internal organs, and no abnormal shadows have been detected. Originium granules have not been detected in the circulatory system and there is no sign of infection. At this time, this Operator is believed to be non-infected.\n\n[Cell-Originium Assimilation] 0%\nOperator Viy currently shows no signs of Originium infection.\n\n[Blood Originium-Crystal Density] 0.19u/L\nDue to the significant fluctuation in the readings, the final value is taken as an average; even so, it remains relatively concerning. Continued observation is recommended.\nThe problem may lie with the Arts Unit Operator Viy uses. It contains a complex Originium circuit that defies conventional analysis, perhaps derived from some Ursine military research, or from an undocumented tradition of the 'Volniki.' At present, we only know that this circuit can amplify the energy of the Originium embedded in the Arts Unit to extreme levels, thereby achieving the best possible Arts performance. Correspondingly, this type of Arts Unit places an immense burden on the caster's body, and the slightest lapse could cause irreversible damage to the nervous system, or even cause the caster to contract Oripathy. If possible, I hope Operator Viy can try to reduce his reliance on this type of Arts Unit, and gradually transition to similar products with more moderate performance.\n\nLeithanien's research into Originium Arts is not all-encompassing. I truly cannot make sense of this thing. Because not even spire casters would use something this suicidal! They value their lives more than anyone. ...Hm? You say Ursines developed this? W-Well, that does make sense.\n—An anonymous caster operator"
     },
     {
       "section": "Archive File 1",
-      "unlock": "Unlocked at 50 trust",
-      "description": "根据干员维伊的口述，和人事部后来对部分乌萨斯出身，或对乌萨斯局势有所了解的干员的走访，我们可以大概得到“自由民”这一长时间内都不被乌萨斯官方承认，也不被大众所了解的独特群体的源流。\n“自由民”，起初是一个由乌萨斯的建立者向当时境内的非乌萨斯种族允诺的名头。伊戈尔用自治权换取他们在反抗骏鹰的战争中的支持，然而在建国之后，这份允诺却迟迟没有得到兑现。有的只是自由民的先辈们被以“赐地”之名驱赶向荒野，并因为天灾而不断迁徙，逐渐分裂开来，形成不同的聚落，彼此之间除了对同一个名字的认同之外，再无联系。他们战时被征召当作兵源，闲时则各自在贫瘠的土地上耕作，过着最低限度的自给自足生活。由于一直被排斥在社会的进步之外，他们也逐渐习惯了将自己用“自由民”的概念，从乌萨斯国家和民族中割裂开去，然后在这貌似“命运”的隔绝之中，不断地挣扎。就像族群中常被传唱的那首歌的歌词说的一样，他们表现出向先辈、向神话，寻求道路和解答的执着。\n\n假设一切真如他所说，那“自由民”的确算得上是乌萨斯民族问题的显著缩影。\n......联想到塞梦珂，那座被内卫沉没的城市，也有一定可能正属于某支埃拉菲亚自由民，他们为何轻易遭此灭顶之灾，也就有了更通俗易懂的解释：一座独独归属于他们的移动城市，对长期流离失所的自由民来说，本应是一个显著的进步、一个难得的家园，可从乌萨斯官方长期以来从不允许提及“自由民”的政策倾向来看，他们当然只会认为这是某种分裂的企图。\n这并不是在为乌萨斯行事的合理性辩护。只是回看过去，即使这些残酷的事件与罗德岛并无直接联系，我们也应当尝试了解，并从中吸取教训。这也对我们之后和“谢钦”，甚至于和如今乌萨斯并不统一的各方势力的往来，有相当的助益。\n——凯尔希"
+      "unlock": "FAVOR 50",
+      "description": "Based on Operator Viy's own account, as well as HR's subsequent interviews with certain operators who were born in Ursus or otherwise understand the situation there, we can roughly trace the origins of the 'Volniki,' a unique group long unrecognized by the Ursine government and unknown to the general public.\n'Volniki' was initially a title promised by the founder of Ursus to the non-Ursus races within its territory at the time. Igor exchanged the right to self-government for their support in the war against the Hippogryphs, but after the nation was founded, this promise was never fulfilled. Instead, the Volniki's ancestors were driven into the wilderness under the pretext of being 'granted land,' then forced to migrate repeatedly due to Catastrophes. They gradually split apart, forming different settlements with no ties between them beyond their shared identification with the same name. In wartime, they were conscripted as a source of soldiers; in peacetime, they farmed their separate barren lands, living lives of bare self-sufficiency. Because they had always been excluded from society's progress, they gradually grew used to separating themselves from the nation and the people through the concept of the 'Volniki,' then struggling on within this isolation that resembled 'fate.' Just as the lyrics of that song often sung among their communities say, they show a persistent need to seek paths and answers from their forebears and their myths.\n\nIf everything is truly as he says, then the 'Volniki' can indeed be regarded as a significant microcosm of Ursus's racial issues.\n...Considering Simonch, that city sunk by the Royal Guard, there is also a possibility that it belonged to a certain group of Elafia Volniki. If so, why such utter disaster befell them so easily has a more readily comprehensible explanation: A nomadic city belonging solely to them should have represented meaningful progress and a rare home for the long-displaced Volniki. However, judging from the Ursine government's long-standing policy tendency of forbidding any mention of the 'Volniki,' they would naturally only interpret this as some attempt at separatism.\nThis is not a defense of the legitimacy of Ursus's actions. It is only that, when looking back on the past, even if these brutal incidents have no direct connection to Rhodes Island, we should still attempt to understand them and learn from them. This will also be of considerable help in our future dealings with 'Sechin,' and even with the various forces in today's Ursus, which are by no means united.\n—Kal'tsit"
     },
     {
       "section": "Archive File 2",
-      "unlock": "Unlocked at 100 trust",
-      "description": "与许多同罗德岛保持稳定外部合作关系的法定组织不同，“谢钦”是一支正在转型当中的准军事武装力量，既不是雇佣兵集团，也远非“安保公司”所能定义。它处于罗德岛不会轻易接触的“灰色地带”，需要谨慎地把握与其往来的尺度。并且，“谢钦”这位常在罗德岛总部走动的首领，表现出来的态度也同样模糊，建议持续观察。\n\n【录音记录】\n“啊，你是问那位说话有乌萨斯口音的大个子库兰塔吗？他确实经常出现在图书室里，有时候书架上的书太高，梯子又被借走的话，他还会主动帮忙拿书——不，不只是对女士，只要是有需要的人，他都会帮忙。......我知道他长得不错，可我不是因为这个才记住他的！他身上有很多疤，脖子上，手臂上，从来都没遮，换成任何人都会注意到的吧。”\n\n【借阅记录】\n《钓鳞宝典》\n《腹式呼吸图解版》\n《喝自己酿的葡萄酒》\n《乌萨斯民歌三千首》\n《迅驮兽的足趾护理》\n......\n以上书籍及配套录像带均在借阅期限内归还，未发现异常。\n\n【录音记录】\n“哎呀，看来是我太自作主张了，该先跟你们谁打声招呼的。我在食堂里听人说你们图书室里的东西很全，就想着去找点带图的书来看看，打发打发时间。这里不像以前在村子里的时候，有人会手把手教你怎么做那些家传的活计，不过录像带也挺方便。这一周里，我学的东西比以前夏休一个月都多。\n“待在罗德岛很舒服，所以我才一直来啊。‘谢钦’当然也很好，但解散期间那些家伙都各自有去处，要么回乌萨斯找家人孩子，要么拿着钱去到处买醉。我们这些人的娱乐活动贫瘠得很哪，下了战场，就几乎只是在原地打转。现在我在试着走出这样的怪圈，也算是给他们打个样吧。”\n\n干员维伊对“谢钦”兵团中的同僚表现出极强的保护欲和令人难以置信的宽容。对于这种作风最终倒向纪律散漫和队伍某日在战场上败亡的可能，作为首领的他似乎不以为意。“我们该自己决定自己要怎么活着了。”他这样说。经评估后，可以认定他们有对自己的行动负责的能力，而我们既然寻求合作，也理应承担必要的风险。\n\n既将麾下的战友当作自己的责任，却也对其付出毫无保留的信任。“谢钦”表现出的团结程度，即使在乌萨斯从前最战功赫赫的兵团中也很难见到。保持警惕吧，博士，但不必对这些年轻人太过苛责。\n——赫拉格"
+      "unlock": "FAVOR 100",
+      "description": "Unlike many legally recognized organizations that maintain stable external partnerships with Rhodes Island, 'Sechin' is a paramilitary armed force currently in transition. It is neither a mercenary group, nor can it be defined as a 'security company.' It exists in a 'gray area' that Rhodes Island does not readily engage with, and we must carefully gauge the extent of our dealings with it. Furthermore, the attitude displayed by the leader of 'Sechin,' who is often seen around Rhodes Island HQ, is just as ambiguous. Continued observation is recommended.\n\n[Audio Record]\n'Oh, are you asking about that big Kuranta guy with the Ursine accent? He does show up in the library a lot. Sometimes when the books on the shelves are too high up and the ladder's been borrowed, he'll even offer to help get them down—no, not just for ladies. He helps anyone who needs it. ...I know he's good-looking, but that's not why I remember him! He has a lot of scars, on his neck and on his arms, and he never covers them up. Anyone would notice that, wouldn't they?'\n\n[Borrowing Records]\n'The Guide to Fincatching'\n'Illustrated Guide to Abdominal Breathing'\n'Drinking Your Own Homemade Wine'\n'Three Thousand Ursine Folk Songs'\n'Toe Care for Steed Burdenbeasts'\n...\nThe above books and accompanying videotapes were all returned within the borrowing period. No abnormalities were found.\n\n[Audio Record]\n'Oh my, looks like I acted a bit too much on my own. I should've said hello to one of you first. I heard people in the cafeteria say your library had all kinds of things, so I figured I'd go find some books with pictures to read and pass the time. This place isn't like back in the village, where someone would teach you how to do those family trades step by step, but the videotapes are pretty convenient too. This week, I learned more than I used to in a whole month of summer break.\n'It's comfortable staying in Rhodes Island, so that's why I keep coming back. Of course 'Sechin' is good too, but during the break, those guys all go their separate ways. Some go back to Ursus to see their families, and some blow their money on booze. We don't have much in the way of entertainment. Once we're off the battlefield, we pretty much just keep spinning in place. I'm trying to break out of that cycle now, and I suppose that can set an example for them.'\n\nOperator Viy shows an extremely strong desire to protect his colleagues in 'Sechin', as well as an unbelievable degree of tolerance. As their leader, he seems unconcerned by the possibility that this approach may ultimately lead to lax discipline and even the unit's destruction on some battlefield. 'We should get to decide how we live now,' he says. After evaluation, we can determine that they are capable of taking responsibility for their own actions, and since we seek cooperation with them, we should also bear the necessary risks.\n\nHe considers protecting the comrades under his command as his own responsibility, yet also grants them his trust without reservation. The degree of unity shown by 'Sechin' would be difficult to find even among the most decorated Ursine Formations of the past. Stay vigilant, Doctor, but there is no need to be too harsh on these young people.\n—Hellagur"
     },
     {
       "section": "Archive File 3",
-      "unlock": "Unlocked at 150 trust",
-      "description": "经过一段时间的观察后，我们注意到干员维伊对书面工作较为陌生。但这并不意味着他不识字，或是无法书写，他只是简单地对这类工作感到“厌烦”，有抵触心理，因此在需要独立处理文书时显得效率低下。在注意到他的副手也无法对此提供太多帮助之后，为保障合作顺利进行，我们拨派了一名在接待处工作，擅长文书撰写的干员，在工作时间内，协助他及时进行报告留档等事务。目前干员维伊对此接受良好，双方已培养出良好的配合习惯。\n\n【罗德岛总部接待处骚动事件报告】\n据悉，前日出现在接待处，上书“对不起请原谅我”等内容的横幅，系一名长期与罗德岛有着财务纠纷的患者家属所送，是为表达对接待处服务的肯定和感谢，而非为解决情感纠纷。据该家属所说，他已经完全意识到自己之前那些骚扰行为的不妥之处，并表示会配合罗德岛尽快结清之前欠下的款项。\n而在事后的走访中，横幅被拉起来时正在接待处的那名干员表达了他对此事的看法：这不是他的功劳。虽然不知道是谁帮忙解决了这个让人头疼的问题，但至少现在不会有人一直在接待处嚷嚷着“还钱！”“骗子！”，我们的安保人员却还不能强行驱赶了。接待处的秩序得到了恢复，这对所有来访罗德岛的人而言，都是一件天大的喜事。\n\n......我一听就知道是他！老给自己找事干。以前有次我们在荒地上和其他兵团一起扎营，有个嘴上没毛的勤务兵说我们如果不是乌萨斯人那就什么也不是，晚上那家伙的靴子就被拿走挂在了八百米外的一颗老树上，全湿了，一直滴水，重得像石头！之后还有好多次类似的事，他从来不说，做的时候也没被抓住过，但大家都知道是他。说到底，我们其实不愿意惹事，集团军都拿我们当耗材，耗材需要什么尊重呢？上行下效罢了。但他偏不忍着，每次有人惹过来，他就一定会咬回去。\n——干员维伊的副手，奥列格\n\n【录音记录】\n“记性不好啊，没办法，仇就得当时报。”"
+      "unlock": "FAVOR 150",
+      "description": "After a period of observation, we have noticed that Operator Viy is relatively unfamiliar with paperwork. This does not mean he is illiterate or unable to write; he simply finds this sort of work 'annoying' and has a psychological resistance to it, which makes him seem inefficient when he needs to handle paperwork independently. After we noticed that his second-in-command was unable to offer much assistance in this regard either, to ensure smooth cooperation, we assigned an operator who works at the reception and specializes in drafting documents to assist him during working hours with filing reports and other such matters in a timely manner. At present, Operator Viy has accepted this arrangement well, and the two have developed a good working rhythm.\n\n[Report on Disturbance at Rhodes Island Headquarters Reception]\nAccording to our information, the banner that appeared at the reception the day before yesterday, bearing text such as 'I'm sorry, please forgive me,' was sent by a patient's family member who had long been involved in a financial dispute with Rhodes Island. It was meant to express recognition of and gratitude for the reception's service, not to resolve a relationship conflict. According to this family member, he has fully realized how inappropriate his previous harassment was, and stated that he will cooperate with Rhodes Island to settle his outstanding debts as soon as possible.\nIn subsequent interviews, the operator who was at the reception when the banner was hung up expressed his view of the matter: this was not his achievement. While he does not know who helped resolve this troublesome problem, at least there is no longer anyone constantly shouting 'Pay me back!' and 'Frauds!' at the reception while our security personnel are unable to forcibly drive them away. Order has been restored at the reception, which is a cause for great celebration for everyone who visits Rhodes Island.\n\n...I knew it was him the second I heard! Always looking for things to do. There was this one time when we were camped out in the wasteland with some other formations, and some snot-nosed orderly said that if we weren't Ursines, we were nothing. That night, the guy's boots got taken and hung up on an old tree 800 meters away, soaked through, dripping nonstop, heavy as rocks! Plenty of other things like that happened after. He never said anything, and he never got caught doing it, but everyone knew it was him. At the end of the day, we didn't actually want to make trouble. The Armies all treated us as expendables, and what respect do expendables need? People just follow the example set from above, that's all. But he refused to put up with it. Every time someone came looking for trouble, he had to bite back.\n—Oleg, Operator Viy's second-in-command\n\n[Audio Record]\n'Bad memory, you know. Can't be helped. If you've got a score to settle, you have to settle it then and there.'"
     },
     {
       "section": "Archive File 4",
-      "unlock": "Unlocked at 200 trust",
-      "description": "三十多年前，一个画家路过乌萨斯南方荒野上某个小村庄，给诞下有着稀薄梦魇血脉的婴儿的家庭，画下一幅合家欢画像。他拿通常用来描绘皇帝和圣愚的笔触风格，刻画了在荒野上再常见不过的一家四口。\n二十多年前，天灾信使来到。他们推开木头做的栅栏，将天灾即将到来的噩耗告知村落的首领。豢养着大群迅驮兽的村庄，村民原本都能够及时撤离，唯有一户父亲瘫痪、母亲失明的三口之家，无法完成这个目标。面对踏进屋子里的黑压压的人群，男孩举起了那把和父亲的腿一起在战场上断掉的弯刀，对准从“天灾信使”身后走出来的贵族。他的双手没有丝毫颤抖。贵族问：你服过役。少年兵？男孩说：别再过来。\n“天灾信使”带走了他的父母，贵族带走了男孩，男孩带走了姐姐的遗物，而那个村落则轰毁于第二日如期到来的天灾。作为对家人提供保护的交换，男孩开始参与严酷的训练，用身体强行去适应那些暴烈的武器——他被投入了帝国的战争工厂，在这里，“战争术师”的名号会赐予数百个孩子之中最“幸运”的那一个。\n十多年前，男孩获得了这个名号，开始活跃在不被官方记录的边境摩擦之中，作为间谍、作为杀手、作为指挥者、作为那个终于被赋予的名头。而当自己剿灭的每一场动乱最后都被发现是党同伐异的结果，本应为伟业献身的军人却用平民当作垫背——他开始质疑，而后倒戈。\n几年前，他几乎剜去一身皮肉，终于用死人的身份离开军队，回到已经被天灾摧毁的家乡，从废墟里捡起一个破损的画框。他在那里开始重建自己的生活，利用在军队中的所学所思，拉起了一支自己的队伍。\n但时至今日，他仍然戴着军队发给他的勋章，却并不是因为相信它所代表的信念和忠诚，只是因为愿意。如果他愿意，他当然也可以把勋章卖一个好价钱，拿去给战友们买酒喝。世事无常，他总这样想，在别人问他为什么离开军队的时候只是说“腻了”，在别人唱完一首悦耳但歌词粗俗的小曲时，他也只是说“再唱一遍吧”。\n男孩从少年长成了青年，青年拉扯着相信他的人，继续走在广袤的大地之上。\n\n听完了，挺好，但伏笔是不是没回收？而且，这故事跟杜林到底有什么关系？你再讲乌萨斯，我就要请你出去了。\n——杜林故事会负责人"
+      "unlock": "FAVOR 200",
+      "description": "More than thirty years ago, a painter passed through a small village in the southern wilderness of Ursus, and painted a family portrait for a household that had just welcomed a newborn with thin Nightzmora blood. With the same brushwork he usually reserved for depicting Emperors and Yurodstvo, he rendered an utterly ordinary family of four from the wilderness.\nMore than twenty years ago, Catastrophe Messengers arrived. They pushed open the wooden fence and informed the village chief of the terrible news that a Catastrophe was coming. As the village raised great herds of steed burdenbeasts, its inhabitants should have been able to evacuate in time. Only one family of three, with a paralyzed father and a blind mother, could not manage it. Faced with the dark mass of people stepping into their home, the boy raised the curved blade that had broken on the battlefield along with his father's legs, and pointed it at the noble who emerged from behind the 'Catastrophe Messengers.' His hands did not tremble in the slightest. The noble asked: You served. A child soldier? The boy said: Don't come any closer.\nThe 'Catastrophe Messengers' took his parents away, the noble took the boy away, and the boy took his sister's belongings away. The village itself was destroyed by the Catastrophe that arrived as expected the next day. In exchange for his family's protection, the boy began to undergo grueling training, forcing his body to adapt to those violent weapons. He had been cast into the Empire's war factory, where the title of 'War Caster' would be granted to the 'luckiest' child among hundreds.\nMore than ten years ago, the boy obtained that title and began to operate in border conflicts never recorded by the authorities, as a spy, as an assassin, as a commander, as the name he had finally been given. And when every uprising he put down was ultimately revealed to have been the result of factional purges, when soldiers who were supposed to sacrifice themselves for some great cause instead used civilians as shields, he began to question, and then defected.\nA few years ago, he all but carved the flesh from his own body, and finally left the army under the identity of a dead man. He returned to his homeland, already destroyed by Catastrophe, and picked a broken picture frame from the ruins. There, he began to rebuild his life, drawing on what he had learned and thought about in the army to gather a team of his own.\nYet even now, he still wears the medal the army gave him, not because he believes in the ideals or loyalty it represents, but simply because he wants to. If he wanted, he could certainly sell the medal for a good price and use the money to buy some wine for his comrades. Things are unpredictable, he often thinks. When others ask him why he left the army, he simply says, 'I got tired of it.' When others finish singing a pleasant little song with vulgar lyrics, he simply says, 'Sing it again.'\nThe boy grew from a child into a young man, and that young man brought along those who believed in him, continuing onward across this vast land.\n\nAll right, nice story, but wasn't there some setup that never paid off? And what does any of this have to do with Durin? If you keep talking about Ursus, I'll have to ask you to leave.\n—Head of the Durin Story Circle"
     },
     {
       "section": "Promotion Record",
-      "unlock": "Unlocked at E2",
-      "description": "现在想起来，各个村落的首领每一次带队“为乌萨斯而战”的时候，大概都是最早那次许诺的重演。很奇怪吧？被耍了这么多次，却还是不吸取教训，让人觉得我们这些家伙也许就只是......应该被这么对待。真该死。\n奥列格总是在说，那位弗拉基米尔本来真的会松口把自治权给我们，只不过他死得太早了。可明明之后我们的父母那辈也很快就死了一大片，活下来的人里，谁都不知道究竟有没有这回事了。而且西尔卡从来都不相信，一根毛都不信。\n但事到如今也都不重要了。毕竟我们已经不指望皇帝，甚至整个乌萨斯都不需要皇帝了，那谁还期盼一个不存在的人去完成过去的诺言呢？\n选边，站队，所有人都厌倦了，但我仍然认为，在那时我做了正确的事。也许之后的人们回看历史，会发现上面有“利沃诺夫号”或者“谢钦”的名字也说不定，只是希望当他们仔细翻看这支队伍的履历时，能发现更该记住的，其实是那些在我们之前，更早选择反抗的人。\n是他们，启迪了我们，要永远站起身来走，而不是俯下身去爬。这才是属于“自由民”的道路，是无数人用命换来的结果——\n......不一定最好，可我不会辜负。"
+      "unlock": "AWAKE 2;1",
+      "description": "Looking back on it now, every time the chiefs of our villages led us to 'fight for Ursus,' it was probably just a repeat of that very first promise. Strange, isn't it? We were deceived so many times, yet we still never learned. It makes you feel like people like us were maybe just... meant to be treated that way. Damn it all.\nOleg always says that Vladimir really would have relented and given us autonomy, if only he hadn't died so soon. But then our parents' generation soon died in great numbers too, and among those who survived, nobody knew if that had ever been true at all. And Sirka never believed it. Not for a second.\nBut none of that matters now. After all, we no longer place our hopes in the Emperor. Ursus as a whole doesn't even need an emperor anymore, so who would still expect someone who no longer exists to fulfill a promise from the past?\nChoosing sides, taking a stand... Everyone was sick of it, but I still believe I did the right thing back then. Perhaps when people look back on history in the future, they may find the names of the 'Volnov' or 'Sechin' written there. I only hope that when they look closely through this unit's record, they find that the ones more worth remembering are actually those who chose resistance even earlier, before we did.\nIt was they who taught us that we must always stand up and walk, not bend down and crawl. That is the path of the 'Volniki,' an outcome countless lives were spent to secure—\n...It may not be the best one, but I will not betray it."
     }
   ],
-  "sourceRegion": "CN"
+  "sourceRegion": "Global"
 }
