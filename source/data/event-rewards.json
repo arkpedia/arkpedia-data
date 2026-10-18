@@ -56051,19 +56051,20 @@
    ]
   },
   "[Rerun] The Masses' Travels Rerun": {
-   "activity": null,
+   "activity": "act42sre",
+   "region": "CN",
    "groups": [
     {
      "kind": "missions",
      "title": "Event missions",
-     "source": "activity_table missionData act42side",
+     "source": "CN activity_table missionData act42sre",
      "count": 32,
      "items": [
       {
-       "name": "Enlightened Pacifier",
+       "name": "蒙恩的奶嘴",
        "count": 1810,
        "kind": "event-item",
-       "id": "act42side_token_pacifier"
+       "id": "act42side_token_pacifier_rep_1"
       },
       {
        "name": "Rag Curtain",
@@ -56144,12 +56145,12 @@
        "id": "furni_terratimes_Laterano_01"
       }
      ],
-     "inherited": "[Side Story – Celebration] The Masses' Travels"
+     "region": "CN"
     },
     {
      "kind": "first-clear",
      "title": "Event stage first clears",
-     "source": "stage_table act42side",
+     "source": "CN stage_table act42sre",
      "count": 41,
      "items": [
       {
@@ -56159,7 +56160,7 @@
        "id": "4002"
       }
      ],
-     "inherited": "[Side Story – Celebration] The Masses' Travels"
+     "region": "CN"
     },
     {
      "kind": "furniture-set",
@@ -56289,32 +56290,25 @@
        "obtain": "Event Reward",
        "comfort": 240
       }
-     ],
-     "inherited": "[Side Story – Celebration] The Masses' Travels"
+     ]
     }
-   ],
-   "inheritsFrom": "[Side Story – Celebration] The Masses' Travels"
+   ]
   },
   "[Rerun] A Flurry to the Flame Rerun": {
-   "activity": null,
+   "activity": "act24sre",
+   "region": "CN",
    "groups": [
     {
      "kind": "missions",
      "title": "Event missions",
-     "source": "activity_table missionData act24side",
+     "source": "CN activity_table missionData act24sre",
      "count": 24,
      "items": [
       {
-       "name": "Bone Fragments",
+       "name": "破碎的骨片",
        "count": 270,
        "kind": "event-item",
-       "id": "act24side_melding_1"
-      },
-      {
-       "name": "Originium Slug Shell",
-       "count": 170,
-       "kind": "event-item",
-       "id": "act24side_melding_2"
+       "id": "act24side_melding_1_rep_1"
       },
       {
        "name": "Terra Research Commission",
@@ -56323,36 +56317,48 @@
        "id": "char_4077_palico"
       },
       {
+       "name": "Terra Research Commission's Token",
+       "count": 5,
+       "kind": "material",
+       "id": "p_char_4077_palico"
+      },
+      {
+       "name": "源石虫的硬壳",
+       "count": 170,
+       "kind": "event-item",
+       "id": "act24side_melding_2_rep_1"
+      },
+      {
        "name": "Module Data Block",
        "count": 2,
        "kind": "material",
        "id": "mod_unlock_token"
       },
       {
-       "name": "Sharp Oxmane Fangs",
+       "name": "鬣犄兽的尖锐齿",
        "count": 70,
        "kind": "event-item",
-       "id": "act24side_melding_3"
+       "id": "act24side_melding_3_rep_1"
       },
       {
-       "name": "Thick Direswine Hide",
+       "name": "凶豕兽的厚实皮",
        "count": 10,
        "kind": "event-item",
-       "id": "act24side_melding_4"
+       "id": "act24side_melding_4_rep_1"
       },
       {
-       "name": "'Monster Tears'",
+       "name": "“兽之泪”",
        "count": 10,
        "kind": "event-item",
-       "id": "act24side_melding_5"
+       "id": "act24side_melding_5_rep_1"
       }
      ],
-     "inherited": "[Side Story – Crossover] A Flurry to the Flame"
+     "region": "CN"
     },
     {
      "kind": "first-clear",
      "title": "Event stage first clears",
-     "source": "stage_table act24side",
+     "source": "CN stage_table act24sre",
      "count": 30,
      "items": [
       {
@@ -56362,132 +56368,25 @@
        "id": "4002"
       }
      ],
-     "inherited": "[Side Story – Crossover] A Flurry to the Flame"
-    },
-    {
-     "kind": "furniture-set",
-     "themeId": "furni_set_eastern",
-     "title": "Momiji Hotel",
-     "source": "building_data furni_set_eastern",
-     "items": [],
-     "description": "A room of richly rustic Higashinese trappings, where guests can soak in tranquil autumn days amidst the warm timber.",
-     "pieces": [
-      {
-       "name": "Old-Fashioned Cabinet",
-       "id": "furni_eastern_cabinet_01",
-       "obtain": "Event Reward",
-       "comfort": 245
-      },
-      {
-       "name": "'Ochazuke'",
-       "id": "furni_eastern_tatami_01",
-       "obtain": "Event Reward",
-       "comfort": 705
-      },
-      {
-       "name": "Pine Tree Bonsai",
-       "id": "furni_eastern_plant_01",
-       "obtain": "Event Reward",
-       "comfort": 205
-      },
-      {
-       "name": "Higashinese Solid Wood Bed",
-       "id": "furni_eastern_bed_01",
-       "obtain": "Purchased from the Limited Furniture Store",
-       "comfort": 270
-      },
-      {
-       "name": "Maple Leaves Upon Autumnal Wind Screen",
-       "id": "furni_eastern_leafScreen_01",
-       "obtain": "Purchased from the Limited Furniture Store",
-       "comfort": 395
-      },
-      {
-       "name": "'Flow of Warmth'",
-       "id": "furni_eastern_pipeline_01",
-       "obtain": "Event Reward",
-       "comfort": 180
-      },
-      {
-       "name": "'Light Breeze'",
-       "id": "furni_eastern_airCleaner_01",
-       "obtain": "Event Reward",
-       "comfort": 190
-      },
-      {
-       "name": "'Ascent'",
-       "id": "furni_eastern_steps_01",
-       "obtain": "Event Reward",
-       "comfort": 165
-      },
-      {
-       "name": "Bamboo Forest Huntscape Screen",
-       "id": "furni_eastern_JapaneseScreen_01",
-       "obtain": "Purchased from the Limited Furniture Store",
-       "comfort": 455
-      },
-      {
-       "name": "Mottled Rug",
-       "id": "furni_eastern_carpet_01",
-       "obtain": "Purchased from the Limited Furniture Store",
-       "comfort": 50
-      },
-      {
-       "name": "Bamboo Hanger",
-       "id": "furni_eastern_sling_01",
-       "obtain": "Event Reward",
-       "comfort": 175
-      },
-      {
-       "name": "Higashinese Mirrored Dressing Table",
-       "id": "furni_eastern_dresser_01",
-       "obtain": "Purchased from the Limited Furniture Store",
-       "comfort": 170
-      },
-      {
-       "name": "Ornamental Crate",
-       "id": "furni_eastern_case_01",
-       "obtain": "Event Reward",
-       "comfort": 190
-      },
-      {
-       "name": "Soft Ceiling Light",
-       "id": "furni_eastern_lamp_01",
-       "obtain": "Event Reward",
-       "comfort": 45
-      },
-      {
-       "name": "Maple Forest Panoramic Display",
-       "id": "furni_eastern_wallpaper_01",
-       "obtain": "Event Reward",
-       "comfort": 240
-      },
-      {
-       "name": "Austere Straw Mat",
-       "id": "furni_eastern_floor_01",
-       "obtain": "Event Reward",
-       "comfort": 240
-      }
-     ],
-     "inherited": "[Side Story – Crossover] A Flurry to the Flame"
+     "region": "CN"
     }
-   ],
-   "inheritsFrom": "[Side Story – Crossover] A Flurry to the Flame"
+   ]
   },
   "[Rerun] Act or Die Rerun": {
-   "activity": null,
+   "activity": "act43sre",
+   "region": "CN",
    "groups": [
     {
      "kind": "missions",
      "title": "Event missions",
-     "source": "activity_table missionData act43side",
+     "source": "CN activity_table missionData act43sre",
      "count": 24,
      "items": [
       {
-       "name": "Phantom of the Studio",
+       "name": "神秘片场黑影",
        "count": 1530,
        "kind": "event-item",
-       "id": "act43side_token_phantom"
+       "id": "act43side_token_phantom_rep_1"
       },
       {
        "name": "Prop Flowers",
@@ -56562,12 +56461,12 @@
        "id": "furni_terracommericials_FilmStudio_01"
       }
      ],
-     "inherited": "[Side Story] Act or Die"
+     "region": "CN"
     },
     {
      "kind": "first-clear",
      "title": "Event stage first clears",
-     "source": "stage_table act43side",
+     "source": "CN stage_table act43sre",
      "count": 28,
      "items": [
       {
@@ -56577,7 +56476,7 @@
        "id": "4002"
       }
      ],
-     "inherited": "[Side Story] Act or Die"
+     "region": "CN"
     },
     {
      "kind": "furniture-set",
@@ -56707,26 +56606,108 @@
        "obtain": "Event Reward",
        "comfort": 240
       }
-     ],
-     "inherited": "[Side Story] Act or Die"
+     ]
     }
-   ],
-   "inheritsFrom": "[Side Story] Act or Die"
+   ]
   },
   "[Rerun] Ato Rerun": {
-   "activity": null,
+   "activity": "act44sre",
+   "region": "CN",
    "groups": [
+    {
+     "kind": "milestones",
+     "title": "Milestones: 45 steps, up to 100,000 \"宝物袋\"",
+     "source": "CN activity_table act44sre",
+     "count": 45,
+     "points": 100000,
+     "pointName": "\"宝物袋\"",
+     "items": [
+      {
+       "name": "LMD",
+       "count": 40000,
+       "kind": "currency",
+       "id": "4001"
+      },
+      {
+       "name": "Incandescent Alloy",
+       "count": 5,
+       "kind": "material",
+       "id": "31023"
+      },
+      {
+       "name": "Tactical Battle Record",
+       "count": 80,
+       "kind": "material",
+       "id": "2003"
+      },
+      {
+       "name": "Coagulating Gel",
+       "count": 5,
+       "kind": "material",
+       "id": "31013"
+      },
+      {
+       "name": "Entrance Stepping Board",
+       "count": 1,
+       "kind": "furniture",
+       "id": "furni_odenShop_carpet_01"
+      },
+      {
+       "name": "Orirock Cluster",
+       "count": 4,
+       "kind": "material",
+       "id": "30013"
+      },
+      {
+       "name": "Skill Summary - 2",
+       "count": 12,
+       "kind": "material",
+       "id": "3302"
+      },
+      {
+       "name": "Aketon",
+       "count": 4,
+       "kind": "material",
+       "id": "30053"
+      },
+      {
+       "name": "Oden Stall",
+       "count": 1,
+       "kind": "furniture",
+       "id": "furni_odenShop_bar_01"
+      },
+      {
+       "name": "Dining Tall Stool",
+       "count": 3,
+       "kind": "furniture",
+       "id": "furni_odenShop_stool_02"
+      },
+      {
+       "name": "Drinks Shelf",
+       "count": 1,
+       "kind": "furniture",
+       "id": "furni_odenShop_shelf_02"
+      },
+      {
+       "name": "Traditional Banner Hanger",
+       "count": 1,
+       "kind": "furniture",
+       "id": "furni_odenShop_banner_01"
+      }
+     ],
+     "region": "CN"
+    },
     {
      "kind": "missions",
      "title": "Event missions",
-     "source": "activity_table missionData act44side",
+     "source": "CN activity_table missionData act44sre",
      "count": 28,
      "items": [
       {
-       "name": "Performer Meeting Chuusen-ken",
+       "name": "艺人见面抽选券",
        "count": 1640,
        "kind": "event-item",
-       "id": "act44side_token_ticket"
+       "id": "act44side_token_ticket_rep_1"
       },
       {
        "name": "Matsukiri",
@@ -56777,12 +56758,12 @@
        "id": "furni_terratimes_Higashi_01"
       }
      ],
-     "inherited": "[Side Story – Carnival] Ato"
+     "region": "CN"
     },
     {
      "kind": "first-clear",
      "title": "Event stage first clears",
-     "source": "stage_table act44side",
+     "source": "CN stage_table act44sre",
      "count": 40,
      "items": [
       {
@@ -56792,7 +56773,7 @@
        "id": "4002"
       }
      ],
-     "inherited": "[Side Story – Carnival] Ato"
+     "region": "CN"
     },
     {
      "kind": "furniture-set",
@@ -56916,154 +56897,9 @@
        "obtain": "Event Reward",
        "comfort": 240
       }
-     ],
-     "inherited": "[Side Story – Carnival] Ato"
-    },
-    {
-     "kind": "furniture-set",
-     "themeId": "furni_set_teaCanteen",
-     "title": "Xiang Yuan Diner",
-     "source": "building_data furni_set_teaCanteen",
-     "items": [],
-     "description": "A Lungmen diner style lobby. Just as a diner serves all sorts of food without discrimination to its guests, this lobby does not care where its visitors hail from. All it is concerned with is providing them all the same comfort.",
-     "pieces": [
-      {
-       "name": "Cloud Hanging Light",
-       "id": "furni_teaCanteen_ceilingLight_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 75
-      },
-      {
-       "name": "Diner Booth (Center)",
-       "id": "furni_teaCanteen_couch_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 190
-      },
-      {
-       "name": "Diner Booth (Left)",
-       "id": "furni_teaCanteen_couch_02",
-       "obtain": "Dropped from some stages",
-       "comfort": 190
-      },
-      {
-       "name": "Diner Booth (Right)",
-       "id": "furni_teaCanteen_couch_03",
-       "obtain": "Dropped from some stages",
-       "comfort": 190
-      },
-      {
-       "name": "Lit Bar Counter",
-       "id": "furni_teaCanteen_bar_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 290
-      },
-      {
-       "name": "One-Wheel Food Cart",
-       "id": "furni_teaCanteen_diners_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 165
-      },
-      {
-       "name": "Large Lamp Mosaic",
-       "id": "furni_teaCanteen_banner_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 195
-      },
-      {
-       "name": "Old Newspaper Rack",
-       "id": "furni_teaCanteen_newspaperRack_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 170
-      },
-      {
-       "name": "Wooden Partition Table",
-       "id": "furni_teaCanteen_shelf_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 200
-      },
-      {
-       "name": "Square Dining Table",
-       "id": "furni_teaCanteen_diningTable_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 265
-      },
-      {
-       "name": "Goldfin Dining Sideboard",
-       "id": "furni_teaCanteen_cabinet_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 270
-      },
-      {
-       "name": "Semicircular Rug",
-       "id": "furni_teaCanteen_carpet_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 35
-      },
-      {
-       "name": "Lit Partition Pillar",
-       "id": "furni_teaCanteen_column_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 260
-      },
-      {
-       "name": "Iced Tea Gift Box",
-       "id": "furni_teaCanteen_snackBox_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 120
-      },
-      {
-       "name": "Old Square Ceiling Light",
-       "id": "furni_teaCanteen_ceilingLight_02",
-       "obtain": "Dropped from some stages",
-       "comfort": 105
-      },
-      {
-       "name": "Fortune Tree",
-       "id": "furni_teaCanteen_plant_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 190
-      },
-      {
-       "name": "Food Stall Plastic Stool",
-       "id": "furni_teaCanteen_stool_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 120
-      },
-      {
-       "name": "Old Storage Rack",
-       "id": "furni_teaCanteen_shelf_02",
-       "obtain": "Dropped from some stages",
-       "comfort": 310
-      },
-      {
-       "name": "Diner Cashier Table",
-       "id": "furni_teaCanteen_cash_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 200
-      },
-      {
-       "name": "Lungmen Square Rug",
-       "id": "furni_teaCanteen_carpet_02",
-       "obtain": "Dropped from some stages",
-       "comfort": 45
-      },
-      {
-       "name": "Diner Wallpaper",
-       "id": "furni_teaCanteen_wallpaper_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 240
-      },
-      {
-       "name": "Diner Tiled Floor",
-       "id": "furni_teaCanteen_floor_01",
-       "obtain": "Dropped from some stages",
-       "comfort": 240
-      }
-     ],
-     "inherited": "[Side Story – Carnival] Ato"
+     ]
     }
-   ],
-   "inheritsFrom": "[Side Story – Carnival] Ato"
+   ]
   }
  }
 }
