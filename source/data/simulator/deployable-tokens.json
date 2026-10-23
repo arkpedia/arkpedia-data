@@ -1,0 +1,6478 @@
+{
+  "schema_version": 1,
+  "source": {
+    "repository": "ArknightsAssets/ArknightsGamedata",
+    "revision": "db6f9ef8046ad17dbebe3ff1d0dd88844a5bc78c",
+    "paths": [
+      "en/gamedata/excel/character_table.json",
+      "en/gamedata/excel/skill_table.json"
+    ]
+  },
+  "tokens": {
+    "trap_001_crate": {
+      "name": "Roadblock",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_001_crate",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 3,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 3,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_crate",
+          "name": "Obstruct",
+          "description": "Deploy a Roadblock, changing enemies' route\n<@ba.rem>If the Roadblock is deployed on enemies, they will destroy it</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_006_antidr": {
+      "name": "Jammer",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_006_antidr",
+          "rangeId": "x-3",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 40,
+              "block": 3,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 3000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 40,
+              "block": 3,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_antidr",
+          "name": "Drone Interference",
+          "description": "Enemy's drones within range <@ba.vup>cannot attack</>, <@ba.vup>lose their special ability</> and <@ba.vup>lose 50% Movement Speed</>\n<@ba.rem>Enemies will attack this drone first</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": [
+            {
+              "key": "move_speed",
+              "value": 0.5,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_009_battery": {
+      "name": "Portable Supply Station",
+      "description": "Every 4 seconds, restores 3 skill points to an allied unit",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_009_battery",
+          "rangeId": "1-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 10,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 10,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_012_mine": {
+      "name": "Interference Mine",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_012_mine",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 7,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 7,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_mine",
+          "name": "Detonate",
+          "description": "Explodes when an enemy passes by, dealing <@ba.vup>{damage}</> True Damage to all nearby enemies and making them take <@ba.vup>+50%</> more damage for <@ba.vup>{duration}</> seconds",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "damage",
+              "value": 2000,
+              "valueStr": null
+            },
+            {
+              "key": "damage_scale",
+              "value": 1.5,
+              "valueStr": null
+            },
+            {
+              "key": "duration",
+              "value": 15,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_016_peon": {
+      "name": "Temporary Rhodes Island Employee",
+      "description": "Clears Giant Mushrooms, creating a stump that can have Ranged units deployed upon it",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_016_peon",
+          "rangeId": "1-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 13,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 13,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_018_bomb": {
+      "name": "Mr. Boom",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_018_bomb",
+          "rangeId": "x-5",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_bomb",
+          "name": "Ill Temper",
+          "description": "<$ba.stun>Stuns</> all enemies in the four adjacent tiles for <@ba.vup>{attack@stun}</> seconds",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "attack@duration",
+              "value": 1.5,
+              "valueStr": null
+            },
+            {
+              "key": "attack@stun",
+              "value": 12,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_019_electric": {
+      "name": "Mieszko Coil",
+      "description": "Obtain Activation effect when within range of other Mieszko Coils",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_019_electric",
+          "rangeId": "x-2",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_electric",
+          "name": "Energized!",
+          "description": "Activation: Trigger an electric current every <@ba.vup>{interval}</> seconds, dealing <@ba.vup>{attack@value}</> Arts damage to passing enemies and inflicting <$ba.sluggish>Slow</> for <@ba.vup>{attack@sluggish}</> seconds",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "interval",
+              "value": 2.3,
+              "valueStr": null
+            },
+            {
+              "key": "attack@value",
+              "value": 250,
+              "valueStr": null
+            },
+            {
+              "key": "attack@sluggish",
+              "value": 1.5,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_026_inverter": {
+      "name": "Two-Step Firecracker mk2",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_026_inverter",
+          "rangeId": "x-5",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_inverter",
+          "name": "Warping Reality",
+          "description": "Explodes after deployment, dealing <@ba.vup>{attack@damage}</> Arts damage to enemies in the four adjacent tiles and <@ba.vup>changing the Hui-Ming Attribute</> of enemies and Marks of Hui and Ming within range",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "attack@damage",
+              "value": 500,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_031_sleep": {
+      "name": "Snowsant's Safe Escape Crane",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_031_sleep",
+          "rangeId": "1-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_sleep",
+          "name": "Rescue Rope",
+          "description": "Immediately retreat the targeted Operator and reduce their Redeployment Time by <@ba.vup>80%</>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": [
+            {
+              "key": "respawn_time",
+              "value": 0.2,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_033_sbomb": {
+      "name": "High-Energy Originium Bomb",
+      "description": "Can be targeted by enemy <@ba.kw>ranged attacks</>",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_033_sbomb",
+          "rangeId": "x-6",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 2000,
+              "atk": 4000,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 25,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 2000,
+              "atk": 4000,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 25,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_sbomb",
+          "name": "Detonate",
+          "description": "Deal <@ba.vup>100%</> ATK as True damage to all enemies within range. Can instantly destroy <Dirt Mound>.",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_034_machst": {
+      "name": "Reinforcement Device",
+      "description": "Can fortify <@ba.kw>Dirt Mound</> to prevent it taking damage from Sandstorm",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_034_machst",
+          "rangeId": "1-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_machst",
+          "name": "Strengthen and Reinforce",
+          "description": "After deployment, <@ba.vup>fortify</> a <Dirt Mound> in front and automatically retreat after <@ba.vup>10</> seconds. With construction materials at the ready, there will always be enthusiastic locals willing to lend a hand.",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": 10,
+          "blackboard": [
+            {
+              "key": "sp",
+              "value": 1,
+              "valueStr": null
+            },
+            {
+              "key": "interval",
+              "value": 1,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_040_canoe": {
+      "name": "Custom Floating Platform",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_040_canoe",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_canoe_1",
+          "name": "Deployment Platform",
+          "description": "Constructs a platform on the water upon which <@ba.vup>any</> unit can be deployed",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        },
+        {
+          "id": "sktok_canoe_2",
+          "name": "Deployment Platform",
+          "description": "Constructs a platform on the water upon which <@ba.vup>any</> unit can be deployed",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_045_dublst": {
+      "name": "Demolition Device",
+      "description": "Immediately explodes after deployment, dealing damage to enemies in the tile ahead and pushing them away slightly. Can instantly knock down a <Tattered Pillar>",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_045_dublst",
+          "rangeId": "1-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 2000,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 2000,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_dublst",
+          "name": "Explode",
+          "description": "Deals damage to enemies in the tile ahead and pushes them away slightly. Can instantly knock down a <Tattered Pillar>",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_046_oxygen": {
+      "name": "Erosion-Resistant Coating Application Device",
+      "description": "Unaffected by High Tide and can be deployed on both Melee and Ranged tiles",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_046_oxygen",
+          "rangeId": "1-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_oxygen",
+          "name": "Erosion-Resistant Coating Application Device",
+          "description": "Grants immunity to 'Erosion' to the allied unit in the tile ahead ('Erosion': Reduced ASPD, receives a certain amount of <$ba.dt.erosion>Corrosion</> every second and receives additional <$ba.dt.erosion>Corrosion</> proportional to the enemy's ATK when attacked)",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_049_candle": {
+      "name": "Knight Crest",
+      "description": "Can be deployed on melee and ranged tiles with no visibility",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_049_candle",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_candle",
+          "name": "Knight's Honor",
+          "description": "After deployment, gain visibility on the deployed tile",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_053_airbomb": {
+      "name": "Gas Tank P.",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_053_airbomb",
+          "rangeId": "x-4",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_airbomb",
+          "name": "Bang!",
+          "description": "Pushes nearby enemies away <@ba.vup>greatly</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "attack@duration",
+              "value": 1.5,
+              "valueStr": null
+            },
+            {
+              "key": "attack@force",
+              "value": 3,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_060_bouncy": {
+      "name": "Hand of the Saint",
+      "description": "After deployment, fires the Hand of the Saint in the direction of deployment",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_060_bouncy",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 30000,
+              "atk": 2000,
+              "def": 188,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0.3,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 30000,
+              "atk": 2000,
+              "def": 188,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0.3,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_bouncy_1",
+          "name": "Hand of the Saint",
+          "description": "Fire the 'Hand of the Saint' in the deployed direction, stunning and dealing damage to enemies it collides with.",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        },
+        {
+          "id": "sktok_bouncy_2",
+          "name": "Hand of the Saint - Purification",
+          "description": "Fire the 'Hand of the Saint' in the deployed direction, stunning and dealing damage to enemies it collides with, and cleansing Nethersea Brand in its path.",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        },
+        {
+          "id": "sktok_bouncy_3",
+          "name": "Hand of the Saint - Patrol",
+          "description": "Fire the 'Hand of the Saint' in the deployed direction, stunning and dealing damage to enemies it collides with. Rebounds upon hitting a wall, extending stun duration if it hits an enemy multiple times.",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_069_buffcard": {
+      "name": "Equipment Activation Valve",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_069_buffcard",
+          "rangeId": "1-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_buffcard",
+          "name": "Upgrade",
+          "description": "On deployment, grants the following effect to the Operator in front: Immediately gain <@ba.kw>2 sets</> of the current class' <@ba.kw>Tactical Equipment</> (cannot activate deployment effects).\n<@ba.rem>After activation, this unit disappears (will not appear again in this battle)</>",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "cnt",
+              "value": 2,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_070_supplycard": {
+      "name": "Preparation Area Transmitter",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_070_supplycard",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_supplycard",
+          "name": "Dispatch",
+          "description": "On deployment, view a random selection of <@ba.vup>{range_num}</> units from the <@ba.vup>Preparation Area</> and select <@ba.vup>0-{can_select_num}</> units to be transferred to the Deployment Waiting Zone.\n<@ba.rem>After activation, this unit disappears (will not appear again in this battle)</>",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "value",
+              "value": 1,
+              "valueStr": null
+            },
+            {
+              "key": "range_num",
+              "value": 4,
+              "valueStr": null
+            },
+            {
+              "key": "can_select_num",
+              "value": 2,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_071_recyclecard": {
+      "name": "Emergency Recall Box",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_071_recyclecard",
+          "rangeId": "1-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_recyclecard",
+          "name": "Withdraw",
+          "description": "On deployment, immediately return the Operator in front to the Deployment Waiting Zone. The returned Operator gains Redeployment Time <@ba.vup>-95%</>, DP cost <@ba.vup>{value}</> and retains all equipped Tactical Equipment upon their next deployment.\n<@ba.rem>After activation, this unit disappears (will not appear again in this battle)</>",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "respawn_time",
+              "value": 0.05,
+              "valueStr": null
+            },
+            {
+              "key": "value",
+              "value": -30,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_072_revivecard": {
+      "name": "Recuperation Area Transmitter",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_072_revivecard",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_revivecard",
+          "name": "Recall",
+          "description": "On deployment, view a random selection of <@ba.vup>{range_num}</> units from the <@ba.vup>Recuperation Area</> and select <@ba.vup>0-{can_select_num}</> units to be transferred to the Deployment Waiting Zone.\n<@ba.rem>After activation, this unit disappears (will not appear again in this battle)</>",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "value",
+              "value": 3,
+              "valueStr": null
+            },
+            {
+              "key": "range_num",
+              "value": 4,
+              "valueStr": null
+            },
+            {
+              "key": "can_select_num",
+              "value": 2,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_073_btauntcard": {
+      "name": "Contaminated Mineral",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_073_btauntcard",
+          "rangeId": "x-6",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 8000,
+              "atk": 0,
+              "def": 300,
+              "res": 20,
+              "cost": 70,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 8000,
+              "atk": 0,
+              "def": 300,
+              "res": 20,
+              "cost": 70,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_btauntcard",
+          "name": "Crystallize",
+          "description": "Can be <@ba.vup>attacked by allied units</>. After 25 seconds, deals <@ba.vup>{damage}</> <@ba.vup>True</> damage to all allied units within Attack Range and <$ba.stun>Stuns</> them for <@ba.vup>{stun}</> seconds\nAfter being destroyed, view a random selection of <@ba.vup>4</> units from the <@ba.vup>Preparation Area</> and select <@ba.vup>0-1</> units to be removed (will not appear again in this battle) and converted into <@ba.vup>15</> Transfer Permits.\n<@ba.rem>After activation, this unit disappears (will not appear again in this battle)</>",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": 25,
+          "blackboard": [
+            {
+              "key": "damage",
+              "value": 1000,
+              "valueStr": null
+            },
+            {
+              "key": "stun",
+              "value": 5,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_074_bbombcard": {
+      "name": "Heat Cluster",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_074_bbombcard",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_bbombcard",
+          "name": "Explode",
+          "description": "When transferred, explodes and deals <@ba.vup>{damage}</> <@ba.vup>True</> damage to all allied units and <$ba.stun>Stuns</> them for <@ba.vup>{stun}</> seconds",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "damage",
+              "value": 500,
+              "valueStr": null
+            },
+            {
+              "key": "stun",
+              "value": 5,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_081_turngear": {
+      "name": "Self-Driving Cart One-Way Road",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_081_turngear",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_turngear",
+          "name": "Self-Driving Cart, This Way!",
+          "description": "Makes passing <@ba.vup>Self-Driving Carts</> change direction to match the deployment direction of this unit, and briefly increases their Movement Speed",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_082_salecard": {
+      "name": "Reassignment Transmitter",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_082_salecard",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_salecard",
+          "name": "Retreat",
+          "description": "On deployment, view a random selection of <@ba.vup>{range_num}</> units from the <@ba.vup>Preparation Area</> and select <@ba.vup>0-{can_select_num}</> units to be removed (will not appear again in this battle) and converted into <@ba.vup>{sell_card_gold}</> Transfer Permits.\n<@ba.rem>After activation, this unit disappears (will not appear again in this battle)</>",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "value",
+              "value": 1,
+              "valueStr": null
+            },
+            {
+              "key": "range_num",
+              "value": 4,
+              "valueStr": null
+            },
+            {
+              "key": "can_select_num",
+              "value": 2,
+              "valueStr": null
+            },
+            {
+              "key": "sell_card_gold",
+              "value": 15,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_083_bunker": {
+      "name": "Barrier",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_083_bunker",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 3000,
+              "atk": 0,
+              "def": 100,
+              "res": 0,
+              "cost": 5,
+              "block": 4,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 3000,
+              "atk": 0,
+              "def": 100,
+              "res": 0,
+              "cost": 5,
+              "block": 4,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_bunker",
+          "name": "Roadblock",
+          "description": "Blocks 4 enemies",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_085_paras": {
+      "name": "Fluorescent Spores",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_085_paras",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 8,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 8,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_paras",
+          "name": "Propagate",
+          "description": "After deployment, spawns <@ba.vup>{cnt}</> <@ba.vup>Fluorescent Originium Slug(s)</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "cnt",
+              "value": 2,
+              "valueStr": null
+            },
+            {
+              "key": "offset_bound",
+              "value": 0.3,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_087_allady": {
+      "name": "Allerdale's Guard",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_087_allady",
+          "rangeId": "1-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 40,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 3000,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 40,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_allady",
+          "name": "Allerdale's Guard",
+          "description": "After deployment, gives the target and surrounding friendly units a <$ba.barrier>Barrier</> that can absorb 1000 damage",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "dynamic",
+              "value": 1000,
+              "valueStr": null
+            },
+            {
+              "key": "shield_duration",
+              "value": 10,
+              "valueStr": null
+            },
+            {
+              "key": "attack@dynamic",
+              "value": 1000,
+              "valueStr": null
+            },
+            {
+              "key": "attack@shield_duration",
+              "value": 10,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "id": "sktok_allady_2",
+          "name": "Allerdale's Guard",
+          "description": null,
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_093_tbattbc": {
+      "name": "Gloompincer Shell Meal",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_093_tbattbc",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_tbattbc",
+          "name": "Gloompincer Shell Meal",
+          "description": "Increases the ATK and DEF of 'Fruit of Gluttony' by <@ba.vup>+20%</> (Stacks)",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_094_tbpsnc": {
+      "name": "High-Efficiency Baking Powder",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_094_tbpsnc",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_tbpsnc",
+          "name": "High-Efficiency Baking Powder",
+          "description": "Causes all your units to take <@ba.vup>15</> True Damage per second (stacks)",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_095_tbsmmc": {
+      "name": "Fragrant Essential Oil",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_095_tbsmmc",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_tbsmmc",
+          "name": "Fragrant Essential Oil",
+          "description": "'Fruit of Gluttony' summons allies to help itself (allies become stronger each time they are summoned)",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_099_mhflsb": {
+      "name": "Flash Grenade",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_099_mhflsb",
+          "rangeId": "2-7",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 8000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 40,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 8000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 40,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_mhflsb",
+          "name": "Flash Grenade",
+          "description": "Explodes after being thrown, <$ba.stun>stunning</> enemies facing the explosion and knocking down some aerial units",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "attack@stun",
+              "value": 5,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_100_mhlbmb": {
+      "name": "High-Energy Originium Barrel Bomb",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_100_mhlbmb",
+          "rangeId": "x-4",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 8000,
+              "atk": 4000,
+              "def": 0,
+              "res": 0,
+              "cost": 2,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 8000,
+              "atk": 4000,
+              "def": 0,
+              "res": 0,
+              "cost": 2,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_mhlbmb",
+          "name": "High-Energy Originium Barrel Bomb",
+          "description": "Can be manually detonated after deployment, dealing Arts damage to the surrounding area and detonating any other nearby <High-Energy Originium Barrel Bombs>",
+          "skillType": "MANUAL",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "weak_duration",
+              "value": 1,
+              "valueStr": null
+            },
+            {
+              "key": "damage_scale",
+              "value": 2,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_101_mhshok": {
+      "name": "High-Voltage Shock Trap",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_101_mhshok",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 8000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 3,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 8000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 3,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_mhshok",
+          "name": "High-Voltage Shock Trap",
+          "description": "Requires some time to set-up after deployment, <$ba.stun>stuns</> nearby enemies when triggered",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "stun",
+              "value": 8,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_102_mhwrbg": {
+      "name": "Wiredrone",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_102_mhwrbg",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 8000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 2,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 8000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 2,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_mhwrbg",
+          "name": "Wiredrone",
+          "description": "Can be deployed on an Operator's location; afterward, another location can be chosen, and the Operator quickly moves over",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_104_dplant": {
+      "name": "Modified Phytohormone",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_104_dplant",
+          "rangeId": "x-5",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_dplant",
+          "name": "Suppress Growth",
+          "description": "Removes pollen within range",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_105_mhwrct": {
+      "name": "Wiredrone",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_105_mhwrct",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 8000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 8000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_mhwrct",
+          "name": "Wiredrone",
+          "description": null,
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_114_smkbmb": {
+      "name": "Rupturing Canister",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_114_smkbmb",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_smkbmb",
+          "name": "Rupture",
+          "description": "When dispatched, all enemies other than 'Tumor' gain <$ba.invisible>Invisibility</> for <@ba.vup>20</> seconds",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_119_rdrepair": {
+      "name": "Spare Timber",
+      "description": "Can be deployed on broken <Makeshift Walkways>",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_119_rdrepair",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_rdrepair",
+          "name": "Restore Path",
+          "description": null,
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_120_rdblock": {
+      "name": "Shabby Fence",
+      "description": "Can temporarily block Monastery Inhabitants; will not change the enemy's route",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_120_rdblock",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 5,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 5,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_rdblock",
+          "name": "Intercept",
+          "description": null,
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "sp_recovery_per_sec",
+              "value": 1,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_123_stmbot": {
+      "name": "Steam Soda Bottle",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_123_stmbot",
+          "rangeId": "x-5",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 15,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 15,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_stmbot",
+          "name": "Steam Soda Bottle",
+          "description": "When defeated, creates Pure White Steam in the surrounding area",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "range_id",
+              "value": 0,
+              "valueStr": "x-5"
+            }
+          ]
+        }
+      ]
+    },
+    "trap_135_portlent": {
+      "name": "Aspect of Annihilation",
+      "description": "More likely to be attacked by your units; can be deployed on high or low ground; disappears after some time",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_135_portlent",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 2,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 2,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_portlent",
+          "name": "Annihilation",
+          "description": "Absorbs all damage taken and transfers it to the Aspect of Creation",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": 20,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_138_winstone": {
+      "name": "Flint",
+      "description": "Immediately ignite an Emergency Heater",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_138_winstone",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 40000,
+              "atk": 334,
+              "def": 0,
+              "res": 10,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 30,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 2,
+              "maxHp": 40000,
+              "atk": 3000,
+              "def": 0,
+              "res": 10,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 60,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 40000,
+              "atk": 3000,
+              "def": 0,
+              "res": 10,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 60,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_winstone",
+          "name": "Emergency Ignition",
+          "description": "Ignite an inactive Emergency Heater",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_139_dhtl": {
+      "name": "Throttle Valve",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_139_dhtl",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_dhtl_1",
+          "name": "Throttle",
+          "description": "Blocks the water flow; takes <@ba.vup>3</>s to build",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": 3,
+          "blackboard": [
+            {
+              "key": "hp_ratio",
+              "value": 0.034,
+              "valueStr": null
+            }
+          ]
+        },
+        {
+          "id": "sktok_dhtl_2",
+          "name": "Throttle",
+          "description": "Blocks the water flow",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_140_dhsb": {
+      "name": "Pumping Station",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_140_dhsb",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_dhsb",
+          "name": "Pump",
+          "description": "Pumps shallow water from the tile behind this unit forward; if the tile behind is a clear paddy, reduces the Blight level of the target paddy; if the tile behind is a Blighted paddy, increases the Blight level of the target paddy until it is equal to or exceeds that of the original paddy\nIf an allied unit is located on the tile behind, effect range <@ba.vup>+2</>",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_141_sheltr": {
+      "name": "Barricade",
+      "description": "Cannot be targeted by enemy ranged attacks",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_141_sheltr",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 200,
+              "res": 0,
+              "cost": 5,
+              "block": 3,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 200,
+              "res": 0,
+              "cost": 5,
+              "block": 3,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_143_rnfcar": {
+      "name": "Block Reinforcement Device",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_143_rnfcar",
+          "rangeId": "1-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 2,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 2,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_rnfcar",
+          "name": "Reinforce",
+          "description": "Fortifies a forward barricade: Increases Max HP and DEF",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": [
+            {
+              "key": "hp_ratio",
+              "value": 1,
+              "valueStr": null
+            },
+            {
+              "key": "max_hp",
+              "value": 1,
+              "valueStr": null
+            },
+            {
+              "key": "def",
+              "value": 1,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_144_ads": {
+      "name": "Temporary Cover",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_144_ads",
+          "rangeId": "x-4",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_ads",
+          "name": "Cover",
+          "description": "Nullifies up to 4 Straight Shot bullets from surrounding enemies",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": [
+            {
+              "key": "trigger_time",
+              "value": 4,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_145_edd": {
+      "name": "Mine Deployer",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_145_edd",
+          "rangeId": "1-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 2000,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 2000,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_edd",
+          "name": "Lay Mines",
+          "description": "Launches a detection line forward that extends until it reaches high ground; enemies that cross the detection line will be tagged with bombs, and the bombs can further detonate Originium explosives",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": [
+            {
+              "key": "stun",
+              "value": 5,
+              "valueStr": null
+            },
+            {
+              "key": "projectile_time",
+              "value": 1,
+              "valueStr": null
+            },
+            {
+              "key": "value",
+              "value": 2000,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_157_bounc2": {
+      "name": "'Little Handy'",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_157_bounc2",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 8000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 8000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_bounc2_1",
+          "name": "Drilling Tool",
+          "description": "After deployment, fires a 'Little Handy' in the deployed direction, removing the <Excrescent Carapace> and <Nethersea Brand> in its path, stunning enemies it hits for 1 second, and knocking back the first enemy hit greatly",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_161_lrcage": {
+      "name": "Withered Altar",
+      "description": "Summons <Beacon> when destroyed.",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_161_lrcage",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 2000,
+              "atk": 200,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 30,
+              "maxDeployCount": 99,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 5000,
+              "atk": 200,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 30,
+              "maxDeployCount": 99,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_lrcage",
+          "name": "Summon Beacon",
+          "description": null,
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_165_muftbl": {
+      "name": "Football",
+      "description": "Deploy on field to kickoff again.",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_165_muftbl",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 1,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 0,
+              "maxDeployCount": 99,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 1,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 0,
+              "maxDeployCount": 99,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_muftbl",
+          "name": "Kickoff!",
+          "description": "Deploy to <@ba.vup>your half</> to kickoff!",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_166_muwork": {
+      "name": "Facility Builder",
+      "description": "Increases the level of the <Construct> in front of it; can only be used during the <break>",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_166_muwork",
+          "rangeId": "1-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 100,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 0,
+              "maxDeployCount": 99,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 100,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 0,
+              "maxDeployCount": 99,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_173_slfrut": {
+      "name": "Shiny Berries",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_173_slfrut",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_174_smfrut": {
+      "name": "Glooming Berry",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_174_smfrut",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_175_frfrut": {
+      "name": "Roast Berry",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_175_frfrut",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_176_frutwn": {
+      "name": "Shiny Brew",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_176_frutwn",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_177_tentcl": {
+      "name": "Chest Limb?",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_177_tentcl",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_181_sgray": {
+      "name": "Decrystallizing Totem",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_181_sgray",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 10000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 25,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 10000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 25,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_sgray",
+          "name": "Decrystallizing Totem",
+          "description": "After deployment, fires a piercing ray of purifying light in the deployed direction, removing all Crystal in its path",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_182_sglink": {
+      "name": "Pure Crystal",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_182_sglink",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 10000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 2,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 10000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 2,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_sglink",
+          "name": "Pure Crystal",
+          "description": "After deployment, creates a Pure Crystal on the tile, linking Crystal tiles in the adjacent 4 tiles",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_186_cnvfwks": {
+      "name": "Firework Launcher",
+      "description": "During Carnevale, can block enemies and is more likely to be attacked while deployed.\nSpecial effect: During Carnevale, grants +50% ATK to friendly units on the surrounding 8 tiles",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_186_cnvfwks",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 10000,
+              "atk": 500,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 999,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 5,
+              "respawnTime": 5,
+              "maxDeployCount": 99,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 10000,
+              "atk": 500,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 999,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 5,
+              "respawnTime": 5,
+              "maxDeployCount": 99,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_cnvfwks",
+          "name": "'Carnevale Time!'",
+          "description": "After ignition, begins Carnevale, periodically dealing Arts damage to all allied and enemy units within range.\n<@ba.vup>Scorchy Charge</>: Attacks deal an additional <@ba.vup>50%</> ATK as Burn.",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_188_arcsum1": {
+      "name": "Street Telephone Booth",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_188_arcsum1",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_arcsum1",
+          "name": "Ring Ring!",
+          "description": "Summons a wave of random normal enemies after deployment",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": 5,
+          "blackboard": [
+            {
+              "key": "branch_id",
+              "value": 0,
+              "valueStr": "extra_enemy_1"
+            }
+          ]
+        }
+      ]
+    },
+    "trap_189_arcsum2": {
+      "name": "Camp Telephone Booth",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_189_arcsum2",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_arcsum2",
+          "name": "Ring Ring!",
+          "description": "Summons a wave of random elite enemies after deployment",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": 5,
+          "blackboard": [
+            {
+              "key": "branch_id",
+              "value": 0,
+              "valueStr": "extra_enemy_2"
+            }
+          ]
+        }
+      ]
+    },
+    "trap_190_arcsum3": {
+      "name": "Timey-Wimey Telephone Booth",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_190_arcsum3",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_arcsum3",
+          "name": "Ring Ring!",
+          "description": "Summons a wave of random special enemies after deployment",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": 5,
+          "blackboard": [
+            {
+              "key": "branch_id",
+              "value": 0,
+              "valueStr": "extra_enemy_3"
+            }
+          ]
+        }
+      ]
+    },
+    "trap_191_arcexpd": {
+      "name": "Menu Telephone",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_191_arcexpd",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_arcexpd",
+          "name": "One Small Favor",
+          "description": "Gives 1 deployment slot after deployment",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": 5,
+          "blackboard": [
+            {
+              "key": "value",
+              "value": 1,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_194_arcsoda": {
+      "name": "Quenchy Cola",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_194_arcsoda",
+          "rangeId": "x-5",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_arcsoda",
+          "name": "Shake Vigorously",
+          "description": "When defeated, creates Pure White Steam in the surrounding area",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "range_id",
+              "value": 0,
+              "valueStr": "x-5"
+            }
+          ]
+        }
+      ]
+    },
+    "trap_195_arcpw": {
+      "name": "Power Gauntlet",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_195_arcpw",
+          "rangeId": "1-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_201_muulco": {
+      "name": "Cheerleader",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_201_muulco",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 60,
+              "maxDeployCount": 99,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 60,
+              "maxDeployCount": 99,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_muulco_1",
+          "name": "Go Team Go!",
+          "description": "For <@ba.vup>{buff_duration}</>s after deployment, all Operators on the field gain <@ba.vup>+{atk:0%}</> ATK",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "atk",
+              "value": 0.2,
+              "valueStr": null
+            },
+            {
+              "key": "buff_duration",
+              "value": 10,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_202_muworkg": {
+      "name": "Expert Facility Builder",
+      "description": "Increases the level of the <Construct> in front of it; can only be used during the <break>",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_202_muworkg",
+          "rangeId": "1-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 100,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 0,
+              "maxDeployCount": 99,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 100,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 0,
+              "maxDeployCount": 99,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_229_mpcata": {
+      "name": "Cold Drink Machine",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_229_mpcata",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 3000,
+              "atk": 350,
+              "def": 240,
+              "res": 35,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 4,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 3000,
+              "atk": 350,
+              "def": 240,
+              "res": 35,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 4,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_230_mpcatab": {
+      "name": "Hot Drink Machine",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_230_mpcatab",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 3800,
+              "atk": 400,
+              "def": 240,
+              "res": 35,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 4,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 3800,
+              "atk": 400,
+              "def": 240,
+              "res": 35,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 4,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_231_mpgrou": {
+      "name": "'Frozen Monstrosity's Echo'",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_231_mpgrou",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 7000,
+              "atk": 450,
+              "def": 1100,
+              "res": 60,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 3,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 7000,
+              "atk": 450,
+              "def": 1100,
+              "res": 60,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 3,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_232_mpgroub": {
+      "name": "'Shadow in the Snow'",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_232_mpgroub",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 9000,
+              "atk": 450,
+              "def": 1250,
+              "res": 60,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 3,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 9000,
+              "atk": 450,
+              "def": 1250,
+              "res": 60,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 3,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_234_mpmageb": {
+      "name": "Active Sarkaz Caster Crystal",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_234_mpmageb",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 10000,
+              "atk": 600,
+              "def": 1200,
+              "res": 60,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 4,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 10000,
+              "atk": 600,
+              "def": 1200,
+              "res": 60,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 4,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_255_pckzhn": {
+      "name": "'Zan'",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_255_pckzhn",
+          "rangeId": "x-7",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 3000,
+              "atk": 3000,
+              "def": 100,
+              "res": 0,
+              "cost": 15,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 5,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 3000,
+              "atk": 3000,
+              "def": 100,
+              "res": 0,
+              "cost": 15,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 5,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_pckzhn",
+          "name": "'Zan'",
+          "description": "After deployment, deals Physical damage to all units within range and destroys 'Certain Fates'",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_260_murbas": {
+      "name": "Basic Floater",
+      "description": "Can only be deployed next to the Drifter",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_260_murbas",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 1000,
+              "atk": 100,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 99,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 1000,
+              "atk": 100,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 99,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_murbas",
+          "name": "Multidirectional Link",
+          "description": "Can deploy Operators atop it",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_261_murmag": {
+      "name": "Gravity Floater",
+      "description": "Can only be deployed next to the Drifter",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_261_murmag",
+          "rangeId": "x-3",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 1000,
+              "atk": 100,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 99,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 1000,
+              "atk": 100,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 99,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_murmag",
+          "name": "Magnetic Beacon",
+          "description": "Can deploy Operators atop it, will drag <Ruby Flightwings>, <Sapphire Flightwings>, <Diamond Flightwings>, and <Submerged Supply Crates> <@ba.vup>greatly</> towards its position",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_267_xdmac1": {
+      "name": "Avalanche Trigger System",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_267_xdmac1",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 20,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 20,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_xdmac1",
+          "name": "Avalanche Trigger",
+          "description": "For a short time after deployment, greatly increases the Avalanche Warning Index of its Avalanche Area",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": 3,
+          "blackboard": [
+            {
+              "key": "sp",
+              "value": 5,
+              "valueStr": null
+            },
+            {
+              "key": "interval",
+              "value": 1,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_268_xdmac2": {
+      "name": "Snow Retention System",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_268_xdmac2",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 35,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 35,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_xdmac2",
+          "name": "Snow Retention",
+          "description": "While deployed, prevents Avalanches in its Avalanche Area, then retreats from the field after a period of time",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": 30,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_269_xdmac3": {
+      "name": "Avalanche Control System",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_269_xdmac3",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 10,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_xdmac3",
+          "name": "Avalanche Control",
+          "description": "While deployed, protects all units behind from Avalanches, and retreats from the field after an Avalanche occurs",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": 999999,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_285_tjggt": {
+      "name": "Ridge",
+      "description": "Deployable for High Ground Operators; cannot be targeted by enemy ranged attacks; causes this Glyph Tile to lose effect",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_285_tjggt",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 4000,
+              "atk": 0,
+              "def": 200,
+              "res": 0,
+              "cost": 5,
+              "block": 5,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 99,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 7000,
+              "atk": 0,
+              "def": 200,
+              "res": 0,
+              "cost": 5,
+              "block": 5,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 99,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_286_tjgsd": {
+      "name": "Writing Knife",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_286_tjgsd",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 20,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 20,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_tjgsd",
+          "name": "Extract Character",
+          "description": "Extracts the glyph from target Glyph Tile; if it is a Ribbon in the Waves or Ribbon in the Waves - Rust transformed into a glyph, removes it immediately",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_287_baizi": {
+      "name": "Broken",
+      "description": "Less likely to be attacked by allies; causes this Glyph Tile to lose effect",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_287_baizi",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 9000,
+              "atk": 280,
+              "def": 300,
+              "res": 15,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 2,
+              "maxHp": 11000,
+              "atk": 350,
+              "def": 360,
+              "res": 15,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 11000,
+              "atk": 350,
+              "def": 360,
+              "res": 15,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_289_zicai": {
+      "name": "'Wealth'",
+      "description": "Can be deployed in empty Glyph Tiles; once stamped, generates Matters of Money",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_289_zicai",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_290_zishi": {
+      "name": "'Food'",
+      "description": "Can be deployed in empty Glyph Tiles; once stamped, generates Matters of Cooking",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_290_zishi",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_291_zibin": {
+      "name": "'Soldier'",
+      "description": "Can be deployed in empty Glyph Tiles; once stamped, generates Wield Arms or Wield Arms - Oppress",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_291_zibin",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_292_zishan": {
+      "name": "'Mountain'",
+      "description": "Can be deployed in empty Glyph Tiles; once stamped, generates Ridge",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_292_zishan",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_293_suishan": {
+      "name": "Sui's Mountain",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_293_suishan",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_294_ziyou": {
+      "name": "'Friend'",
+      "description": "Can be deployed in empty Glyph Tiles; once stamped, redeploys the nearest allied Operator onto its tile",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_294_ziyou",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_295_ziyin": {
+      "name": "'Stamp'",
+      "description": "Can be deployed in empty Glyph Tiles; when an allied Operator or an enemy is passing through, triggers a Stamp (has cooldown)",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_295_ziyin",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 0,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_318_ubodst": {
+      "name": "Disguise Kit",
+      "description": "Temporarily makes the affected Operator undetectable, but also unable to Block enemies\nUsing skills while hiding will remove the effect",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_318_ubodst",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 99,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 99,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_403_wfactory": {
+      "name": "Crabbie Pumpie",
+      "description": "Can be deployed on <Clear Water> areas",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_403_wfactory",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 7000,
+              "atk": 0,
+              "def": 500,
+              "res": 0,
+              "cost": 5,
+              "block": 1,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 7000,
+              "atk": 0,
+              "def": 500,
+              "res": 0,
+              "cost": 5,
+              "block": 1,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 10,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_wfactory",
+          "name": "Pump Water",
+          "description": "Allows <Fresh Water> to be gathered from <Clear Water>, lasts for {live_duration}s",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "live_duration",
+              "value": 85,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_405_xbroadblock": {
+      "name": "Urban Style Barrier",
+      "description": "Can be deployed in low areas",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_405_xbroadblock",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 1500,
+              "atk": 0,
+              "def": 200,
+              "res": 0,
+              "cost": 3,
+              "block": 3,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 20,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 2,
+              "maxHp": 3000,
+              "atk": 0,
+              "def": 200,
+              "res": 0,
+              "cost": 3,
+              "block": 5,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 20,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 3,
+              "maxHp": 4000,
+              "atk": 0,
+              "def": 200,
+              "res": 0,
+              "cost": 3,
+              "block": 5,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 20,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 4000,
+              "atk": 0,
+              "def": 400,
+              "res": 0,
+              "cost": 3,
+              "block": 5,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 20,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_xbroadblock",
+          "name": "Block Road",
+          "description": "Lv. I: Blocks the enemy's path, forcing them to go around it.",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_424_pushtw": {
+      "name": "Gas Jet Thrower",
+      "description": "Can be deployed in high or low areas",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_424_pushtw",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 200,
+              "res": 0,
+              "cost": 5,
+              "block": 1,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 20,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 2,
+              "maxHp": 7000,
+              "atk": 0,
+              "def": 300,
+              "res": 0,
+              "cost": 5,
+              "block": 1,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 20,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 7000,
+              "atk": 0,
+              "def": 300,
+              "res": 0,
+              "cost": 5,
+              "block": 1,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 20,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_pushtw",
+          "name": "Air Burst",
+          "description": "Lv. I: Pushes away an enemy with <@ba.vup>moderate force</>.",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "force",
+              "value": 1,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_451_xbflare": {
+      "name": "Glow Stick",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_451_xbflare",
+          "rangeId": "x-5",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 2000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 2000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 0,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": -1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_xbflare",
+          "name": "Temporary Illumination",
+          "description": "Scouts the visible area within a certain range",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_730_truamr": {
+      "name": "'Supersweetie Superblend'",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_730_truamr",
+          "rangeId": "1-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_truamr",
+          "name": "'Supersweetie Superblend'",
+          "description": "After deployment, increases the Block of the ground Operator in front by <@ba.vup>{attack@block_cnt}</>; this effect is removed after the 'Supersweetie Smiley' collides into that Operator",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "attack@block_cnt",
+              "value": 2,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_732_ltnova": {
+      "name": "Neuronal Revival",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_732_ltnova",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 1,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 1,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_ltnova",
+          "name": "Neuronal Revival",
+          "description": "Restores <@ba.vup>{attack@ep_heal_ratio}</> points of Nervous Impairment to nearby units and dispels Stun",
+          "skillType": "PASSIVE",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "attack@ep_heal_ratio",
+              "value": 1000,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_735_platre": {
+      "name": "Absorber",
+      "description": "Can be deployed on the field and healed by friendly units; before fully healed, all friendly units continuously lose HP over time and receive Nervous Impairment",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_735_platre",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 13500,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 13500,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_745_beer": {
+      "name": "'Long Live Mead!'",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_745_beer",
+          "rangeId": "x-4",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_beer",
+          "name": "'Long Live Mead!'",
+          "description": "Explodes some time after deployment, causing 'Spirit of Liquor' to lose immunity for <@ba.vup>{break_duration}</>s if it is in the 8 surrounding tiles, and stunning enemies in the area for <@ba.vup>{stun_duration}</>s",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": [
+            {
+              "key": "stun_duration",
+              "value": 10,
+              "valueStr": null
+            },
+            {
+              "key": "break_duration",
+              "value": 15,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_755_cdsoul": {
+      "name": "Squeaking Sound",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_755_cdsoul",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 13500,
+              "atk": 0,
+              "def": 300,
+              "res": 40,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 1,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 13500,
+              "atk": 0,
+              "def": 300,
+              "res": 40,
+              "cost": 5,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 1,
+              "maxDeployCount": 1,
+              "tauntLevel": 1,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_cdsoul",
+          "name": null,
+          "description": null,
+          "skillType": null,
+          "durationType": null,
+          "duration": null,
+          "blackboard": {}
+        }
+      ]
+    },
+    "trap_756_cdnest": {
+      "name": "'Sticky Prize'",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_756_cdnest",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 3,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_cdnest",
+          "name": "'Sticky Prize'",
+          "description": "After deployment, creates <@ba.vup>{cnt}</> <@ba.vup>'Really Unruly Creature'</>.",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": -1,
+          "blackboard": [
+            {
+              "key": "cnt",
+              "value": 2,
+              "valueStr": null
+            },
+            {
+              "key": "offset_bound",
+              "value": 0.3,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_765_bmoney": {
+      "name": "Indisputable Evidence",
+      "description": null,
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_765_bmoney",
+          "rangeId": "0-1",
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 25,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 100,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 25,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": [
+        {
+          "id": "sktok_bmoney",
+          "name": "Indisputable Evidence",
+          "description": "What ghastly evidence... Wait, this doesn't lead to Ye Wuqing. It leads to... the Baiyunjian Pharmacy?!\nAfter deployment, immediately gains <@ba.vup>3</> Transfer Permits and transfer a random Operator",
+          "skillType": "AUTO",
+          "durationType": "NONE",
+          "duration": 0,
+          "blackboard": [
+            {
+              "key": "gold",
+              "value": 3,
+              "valueStr": null
+            }
+          ]
+        }
+      ]
+    },
+    "trap_790_dytswd": {
+      "name": "Olden Pride",
+      "description": "When in the Deployment Waiting Zone, Vessel of Shuo's ATK increases and generates an additional 'Restrained Pride' when using 'Tracing the Law'\nOn deployment, generates a 'Restrained Pride'; if 'Unpardonable' is owned, also generates a 'Hateful Carrion'",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_790_dytswd",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 25,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 25,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    },
+    "trap_791_dytfre": {
+      "name": "Olden Grudge",
+      "description": "When in the Deployment Waiting Zone, 'Arrogance Embodied' generates an additional 'Fume of Anger' when loosing 'Purifying Flame'\nOn deployment, generates a 'Fume of Anger'",
+      "profession": "TRAP",
+      "position": "NONE",
+      "subProfessionId": "notchar2",
+      "rarity": "TIER_1",
+      "phases": [
+        {
+          "prefabKey": "trap_791_dytfre",
+          "rangeId": null,
+          "maxLevel": 30,
+          "levels": [
+            {
+              "level": 1,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 25,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            },
+            {
+              "level": 30,
+              "maxHp": 5000,
+              "atk": 0,
+              "def": 0,
+              "res": 0,
+              "cost": 25,
+              "block": 0,
+              "moveSpeed": 1,
+              "attackSpeed": 100,
+              "attackTime": 1,
+              "respawnTime": 5,
+              "maxDeployCount": 1,
+              "tauntLevel": 0,
+              "massLevel": 0
+            }
+          ]
+        }
+      ],
+      "skills": []
+    }
+  }
+}
