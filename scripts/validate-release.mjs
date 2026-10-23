@@ -105,7 +105,12 @@ for (const file of walk(path.join(root, 'source')).sort()) {
 }
 check(JSON.stringify(sources) === JSON.stringify(m.sourceHashes), 'Source records changed without regenerating the release');
 check(sha(JSON.stringify({ schema: 2, generator: m.generator, sourceHashes: sources })) === m.release, 'Release input fingerprint mismatch');
-for (const route of ['/', '/operators', '/planner', '/gacha', '/schedule', '/skins', '/stages', '/enemies']) check(m.pages[route], `Missing required page: ${route}`);
+// Each required page under either of its names. The site renamed two of them on 2026-10-23
+// (/planner -> /operator-planner, /gacha -> /gacha-simulator; the app's
+// config/renamed-routes.json): dev's code compiles the new names while main's still compiles
+// the old ones, until the rename is released to main.
+const REQUIRED_PAGES = [['/'], ['/operators'], ['/operator-planner', '/planner'], ['/gacha-simulator', '/gacha'], ['/schedule'], ['/skins'], ['/stages'], ['/enemies']];
+for (const names of REQUIRED_PAGES) check(names.some(route => m.pages[route]), `Missing required page: ${names.join(' or ')}`);
 check(Object.keys(m.pages).filter(route => route.startsWith('/operators/')).length > 100, 'Operator catalogue is incomplete');
 for (const file of ['stages-index.json', 'enemies-index.json', 'operator-deploy.json']) check(m.files[file], `Missing catalogue: ${file}`);
 if (untimestamped.length) console.warn(`Warning: ${untimestamped.length} lyric file(s) have no timestamps and render no lyrics: ${untimestamped.join(', ')}`);
