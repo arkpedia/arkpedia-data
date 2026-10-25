@@ -1,0 +1,21 @@
+{
+ "schemaVersion": 1,
+ "scope": "Canonical simulator candidate inputs only. No simulator admission or release pointer change.",
+ "upstream": {
+  "repository": "ArknightsAssets/ArknightsGamedata",
+  "commit": "db6f9ef8046ad17dbebe3ff1d0dd88844a5bc78c",
+  "path": "en/gamedata/levels/obt/main/level_main_17-03.json",
+  "sha256": "0719c5a6a3ae5b24bc511035d9175b69ca86fd753f3784135c45b68bdca2c613"
+ },
+ "producer": {
+  "repository": "arkpedia/arkpedia",
+  "commit": "e5a96b56e312c3e73a54865da57bc33172119a0b",
+  "entrypoint": "scripts/stage-pipeline/lib/encode.mjs",
+  "rawEntrypoint": "scripts/imports/import-simulator-stage-levels.mjs"
+ },
+ "outputs": {
+  "source/data/stage-geometry/17-4.json": "c6ab6649ba8e76421b0afe7352877c4229277a5afb8e20e39cbe6e57686d5469",
+  "source/data/stage-conditional/17-4.json": "2e6703daa09e478341f1c872df39b8835903ea25868016f1bf6953519b25048f"
+ },
+ "rawLevelPath": "source/data/simulator/raw/levels/17-4.json"
+}
