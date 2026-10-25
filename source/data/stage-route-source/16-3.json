@@ -1,0 +1,19 @@
+{
+ "schemaVersion": 1,
+ "scope": "Preview-only source geometry repair. No stage simulator admission or release pointer change.",
+ "upstream": {
+  "repository": "ArknightsAssets/ArknightsGamedata",
+  "commit": "db6f9ef8046ad17dbebe3ff1d0dd88844a5bc78c",
+  "path": "en/gamedata/levels/obt/main/level_main_16-02.json",
+  "sha256": "fa693b20c843694be0911ba668a910e63074170406cd8881be9fe87a068238c9"
+ },
+ "producer": {
+  "repository": "arkpedia/arkpedia",
+  "commit": "5556df22fd0ec0ec265559d164f4acf4c4b6b963",
+  "entrypoint": "scripts/stage-pipeline/lib/encode.mjs"
+ },
+ "outputs": {
+  "source/data/stage-geometry/16-3.json": "ad2d177135b381b9df107ee38f5fbf8b29e0881c9a74c5ee5e60b2cde5be7d08",
+  "source/data/stage-conditional/16-3.json": "941ce38428a7f1de4798bccfee986bdd16e0822da1c72f1114f6985f1f4e3998"
+ }
+}
