@@ -91,16 +91,11 @@ jobs:
           node scripts/validate-release.mjs
           node -e 'const fs=require("fs");fs.writeFileSync(process.env.RUNNER_TEMP+"/asset-pins.json",JSON.stringify(require("./release/manifest.json").assets))'
           echo "DATA_REVISION=$revision" >> "$GITHUB_ENV"
-      - uses: actions/checkout@v7
-        with:
-          repository: arkpedia/arkpedia
-          ref: 99c4f163c38542e933da313852fef67d73e61446
-          path: asset-publisher
       - name: Install publisher without R2 credentials
         run: npm ci --ignore-scripts --no-audit --no-fund
-        working-directory: asset-publisher
+        working-directory: tools/asset-publisher
       - name: Mirror verified media and generated JSON before moving live
-        run: node asset-publisher/scripts/content/mirror-github-assets.mjs --pins="$RUNNER_TEMP/asset-pins.json" --data="$DATA_REVISION" --cache="$RUNNER_TOOL_CACHE/arkpedia-public-git"
+        run: node tools/asset-publisher/mirror-github-assets.mjs --pins="$RUNNER_TEMP/asset-pins.json" --data="$DATA_REVISION" --cache="$RUNNER_TOOL_CACHE/arkpedia-public-git"
         env:
           ARKPEDIA_R2_ACCOUNT_ID: '1ff51c10571eaa9934bc451e1bfdb361'
           ARKPEDIA_R2_ACCESS_KEY_ID: ${{ secrets.ARKPEDIA_R2_ACCESS_KEY_ID }}
