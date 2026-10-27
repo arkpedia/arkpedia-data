@@ -89,7 +89,21 @@ jobs:
           git merge-base --is-ancestor "$revision" origin/main
           git checkout --detach "$revision"
           node scripts/validate-release.mjs
-          node -e 'const fs=require("fs");fs.writeFileSync(process.env.RUNNER_TEMP+"/asset-pins.json",JSON.stringify(require("./release/manifest.json").assets))'
+          # Copy small compiled payloads first, including the current live snapshot
+          # during initial migration. Readers keep that pointer until all media completes.
+          node --input-type=module - "$revision" <<'JS'
+          import fs from 'node:fs';
+          import { execFileSync } from 'node:child_process';
+          const selected = process.argv[2];
+          const sources = [{ repository: 'arkpedia-data', revision: selected }];
+          const previous = JSON.parse(execFileSync('git', ['show', 'origin/live:current.json'], { encoding: 'utf8' }));
+          if (!/^[a-f0-9]{40}$/.test(previous.revision)) throw Error('Invalid previous live revision');
+          execFileSync('git', ['merge-base', '--is-ancestor', previous.revision, 'origin/main']);
+          sources.push({ repository: 'arkpedia-data', revision: previous.revision });
+          const manifest = JSON.parse(fs.readFileSync('release/manifest.json', 'utf8'));
+          sources.push(...Object.entries(manifest.assets).map(([repository, revision]) => ({ repository, revision })));
+          fs.writeFileSync(process.env.RUNNER_TEMP + '/asset-pins.json', JSON.stringify(sources));
+          JS
           echo "DATA_REVISION=$revision" >> "$GITHUB_ENV"
       - name: Install publisher without R2 credentials
         run: npm ci --ignore-scripts --no-audit --no-fund
