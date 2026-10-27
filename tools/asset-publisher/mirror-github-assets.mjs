@@ -127,7 +127,8 @@ export async function mirrorRevision({ repository, revision, files, read, store,
     shards[shard] = hash('sha256', bytes);
   });
   const receipt = { version: 1, repository, revision, files: files.length, bytes: files.reduce((total, file) => total + file.bytes, 0),
-    shards: Object.fromEntries(Object.entries(shards).sort(([a], [b]) => a < b ? -1 : 1)), ...(references.length ? { references } : {}) };
+    shards: Object.fromEntries(Object.entries(shards).sort(([a], [b]) => a < b ? -1 : 1)),
+    ...(references.length ? { references: [...references].sort((a, b) => `${a.repository}/${a.revision}` < `${b.repository}/${b.revision}` ? -1 : 1) } : {}) };
   // Published last. A partial upload cannot make a new commit available to readers.
   await store.put(readyKey(repository, revision), Buffer.from(JSON.stringify(receipt)));
   log(JSON.stringify({ repository, revision, files: files.length, uploaded, reused, bytes: receipt.bytes }));
@@ -188,4 +189,3 @@ export async function main(args = process.argv.slice(2), env = process.env) {
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   main().catch(error => { console.error(error.message); process.exitCode = 1; });
 }
-
