@@ -184,14 +184,6 @@
       "firstSeen": "2026-10-16"
     },
     {
-      "key": "endfield:feed",
-      "stage": "endfield-albums",
-      "reason": "the Metal Scar Radio YouTube feed could not be read",
-      "action": "kept-previous",
-      "sourceRef": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_wSsatRjjuF1xPlN9mtAPw",
-      "firstSeen": "2026-10-27"
-    },
-    {
       "key": "event-store:[Event] 恒远津梁",
       "stage": "event-stores",
       "reason": "[Event] 恒远津梁: its wiki store page 恒远津梁 cannot be used: the wiki has no page by that name; no earlier parse with a store is cached, so the event page shows no store from the wiki.",
@@ -208,12 +200,18 @@
       "firstSeen": "2026-10-24"
     },
     {
-      "key": "feed:UCR0J2NYGuC8epsa1O4DMmXQ",
-      "stage": "official-videos",
-      "reason": "The official channel Arknights Official - Yostar could not be read; its newest uploads wait for the next run.",
+      "key": "official-tables:jp:differs",
+      "stage": "official-tables",
+      "reason": "25 of 55 jp tables differ between our decode of the official client and ArknightsAssets/ArknightsGamedata (for example activity_table.json, audio_data.json, building_data.json, campaign_table.json); the site keeps the mirror's.",
       "action": "kept-previous",
-      "sourceRef": "https://www.youtube.com/channel/UCR0J2NYGuC8epsa1O4DMmXQ",
-      "firstSeen": "2026-10-27"
+      "firstSeen": "2026-10-28"
+    },
+    {
+      "key": "official-tables:kr:differs",
+      "stage": "official-tables",
+      "reason": "25 of 55 kr tables differ between our decode of the official client and ArknightsAssets/ArknightsGamedata (for example activity_table.json, audio_data.json, building_data.json, campaign_table.json); the site keeps the mirror's.",
+      "action": "kept-previous",
+      "firstSeen": "2026-10-28"
     },
     {
       "key": "palette:/one-star-skins/GALLUS² - Base.webp",
