@@ -1,0 +1,94 @@
+name: Import game records
+
+# The nightly import (importer/, docs/importer.md): every refresh step that reads no site code,
+# moved here from the application's Prepare content release. It writes source/ only, to the
+# `imports` branch, rebuilt from main on each run; the application compiles the release from
+# that branch and publishes source and release to main together (validate-release.mjs refuses
+# source/ changed without its release). Shadow mode for now: started by hand, no art keys, so the
+# art steps plan and publish nothing, and the application still runs its own refresh.
+on:
+  workflow_dispatch:
+    inputs:
+      allow_shrink:
+        description: 'Collections allowed to shrink by more than 2% this run (comma-separated)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    # GitHub's runners: this repository is public, so they cost nothing, and the NAS keeps its
+    # one runner for the application's Checks.
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: importer/package-lock.json
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Install the importer's dependencies
+        working-directory: importer
+        run: |
+          npm ci --no-audit --no-fund
+          python -m pip install -r scripts/content/requirements.txt -r scripts/requirements.txt
+      # flatc for the official-tables shadow (arkprts decodes the client's tables through it),
+      # pinned by version and checksum. A failed install only costs that step.
+      - name: Install flatc
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          dir="$RUNNER_TEMP/flatc"; mkdir -p "$dir"
+          curl --fail --silent --show-error --location --retry 3 -o "$dir/flatc.zip" \
+            "https://github.com/google/flatbuffers/releases/download/v25.12.19/Linux.flatc.binary.g%2B%2B-13.zip"
+          echo "9f87066dc5dfa7fe02090b55bab5f3e55df03e32c9b0cdf229004ade7d091039  $dir/flatc.zip" | sha256sum --check --status
+          unzip -o -q "$dir/flatc.zip" -d "$dir" && chmod +x "$dir/flatc"
+          "$dir/flatc" --version
+          echo "$dir" >> "$GITHUB_PATH"
+      - name: Choose the content channel
+        working-directory: importer
+        run: node scripts/content/channel.mjs --branch main | tee -a "$GITHUB_ENV"
+      - name: Import
+        id: import
+        working-directory: importer
+        env:
+          GH_TOKEN: ${{ github.token }}
+          # refresh-stage-data.sh adds its stages to this run instead of starting its own.
+          ARKPEDIA_STAGE_RUN: '1'
+          ARKPEDIA_ALLOW_SHRINK: ${{ inputs.allow_shrink }}
+        run: bash scripts/content/run-imports.sh
+      - name: Disk and time used
+        if: always()
+        run: |
+          df -h / | tail -1
+          du -sh importer/.cache 2>/dev/null || true
+      - name: Push the records to the imports branch
+        if: always() && steps.import.outcome != 'cancelled'
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -B imports
+          git add -A source
+          if git diff --cached --quiet; then echo 'No record changed.'; else git commit -q -m "Import game records ($(date -u +%Y-%m-%d))"; fi
+          # Rebuilt from main on each run, so the application's merge with main stays a fast-forward.
+          git push --force origin HEAD:imports
+      - name: Keep the stage report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: import-stage-report-${{ github.run_id }}
+          path: source/data/stage-report.json
+          if-no-files-found: ignore

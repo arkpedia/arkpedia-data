@@ -1,0 +1,21 @@
+{
+  "name": "arkpedia-data-importer",
+  "private": true,
+  "description": "The nightly import of arkpedia-data source records (see ../docs/importer.md).",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "assets:update": "node scripts/sync/update-asset-revisions.mjs",
+    "voices:refresh": "node scripts/build/build-operator-voices.mjs",
+    "albums:refresh": "node scripts/sync/sync-albums.mjs",
+    "endfield-albums:refresh": "node scripts/sync/sync-endfield-albums.mjs",
+    "lyrics:refresh": "node scripts/sync/sync-lyrics.mjs"
+  },
+  "dependencies": {
+    "opencc-js": "1.4.2",
+    "pngjs": "7.0.0",
+    "tesseract.js": "7.0.0",
+    "tsx": "4.23.15"
+  }
+}

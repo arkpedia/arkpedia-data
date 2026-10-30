@@ -1,0 +1,13 @@
+{
+  "about": "Cloudflare serves production from checked main releases. Vercel hosting and its rollback role are retired by maintainer authorization on 2026-10-27. deployments is intentionally empty, so even a manually enabled legacy Deploy workflow has no upload targets. contentReaders lists the live consumers whose clean fingerprint, channel and schema must match before content publication. Domain registration and renewal are separate from hosting.",
+  "deployments": [],
+  "contentReaders": [
+    {
+      "name": "arkpedia-cloudflare",
+      "url": "https://www.arkpedia.net",
+      "branch": "main",
+      "live": true,
+      "refresh": false
+    }
+  ]
+}

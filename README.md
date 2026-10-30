@@ -9,7 +9,8 @@ Public game content for [Arkpedia](https://github.com/arkpedia). The website's i
 - `release/pages/` — prepared page data named after its route: `recruitment.json`, `operators/Deepcolor.json`, and `index.json` for the homepage.
 - `release/public/` — records fetched on demand by the stage browser, enemy handbook, planner, and games. Stage Guesser uses `stage-guesser/catalogue.json` and `stage-guesser/layouts/1-7.json`.
 - `release/manifest.json` — source/output checksums, schema version, and matching asset revisions.
-- `scripts/` — validation only; the private compiler is not published here.
+- `scripts/` — validation and publication of the release.
+- `importer/` — the nightly import that refreshes `source/` from the game's tables and mirrors ([docs/importer.md](docs/importer.md)). The page compiler stays in the application.
 
 The `heartbeat` branch holds one small commit per successful run of the application's release job, including runs with nothing new to publish (see [Heartbeat](#heartbeat)).
 
