@@ -269,7 +269,7 @@ export function buildFreeRewards({ handbook, missions, openServer, checkin, acti
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
   const excel = process.env.ARKPEDIA_EN_EXCEL ?? '.cache/upstream/en-gamedata/en/gamedata/excel';
   const read = name => JSON.parse(fs.readFileSync(path.join(excel, `${name}_table.json`), 'utf8'));
-  const data = buildFreeRewards({ handbook: read('handbook_info'), missions: read('mission'), openServer: read('open_server'), checkin: read('checkin'), activity: read('activity'), items: read('item'), characters: read('character'), shops: read('shop_client'), retro: read('retro'), eventRewards: JSON.parse(fs.readFileSync('data/event-rewards.json', 'utf8')), announcements: JSON.parse(fs.readFileSync('config/event-announcements.json', 'utf8')) });
+  const data = buildFreeRewards({ handbook: read('handbook_info'), missions: read('mission'), openServer: read('open_server'), checkin: read('checkin'), activity: read('activity'), items: read('item'), characters: read('character'), shops: read('shop_client'), retro: read('retro'), eventRewards: JSON.parse(fs.readFileSync('data/event-rewards.json', 'utf8')), announcements: JSON.parse(fs.readFileSync('data/event-announcements.json', 'utf8')) });
   fs.writeFileSync('data/free-rewards.json', JSON.stringify(data, null, 2) + '\n');
   console.log(`${data.paradox.length} Paradox Simulations; ${data.rewards.length} free reward claims`);
 }
