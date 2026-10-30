@@ -20,6 +20,13 @@ It never pushes to `main`: `scripts/validate-release.mjs` refuses `source/` chan
 compiled `release/`. The application compiles the release from `imports` (its `data_ref`) and
 publishes source and release to `main` together, as it does for `editorial`.
 
+**The nightly order** is the asset repositories' syncs, then the import, then the application's
+compile, and waits keep it, not the clock: GitHub starts each scheduled run hours late, by different
+amounts (the syncs' 16:07-16:31 UTC crons started at 20:35-21:15 on 2026-10-27..29). A scheduled
+import waits up to 45 minutes for each sync's run of the day before it pins the asset repositories
+(`importer/scripts/content/asset-syncs.mjs`), and the compile waits for the day's import the same
+way.
+
 **After a game patch** the import does not wait for the night:
 `.github/workflows/client-version-dispatch.yml` checks every three hours whether a region's client
 is past the published tables and its mirror already carries the new version, and if so starts
@@ -112,7 +119,7 @@ They run in the application's compile job, on the records this leaves.
 
 1. **Shadow:** started by hand, with no art-repository keys; runs were compared with what the
    application's nightly published.
-2. **Scheduled:** nightly at 16:17 UTC, hours ahead of the application's 19:57. A failed step opens
+2. **Scheduled:** nightly at 16:37 UTC, ahead of the application's 19:57. A failed step opens
    one **Import failing** issue (`scripts/alert-issue.mjs`), and the next clean run closes it.
 3. **Cutover (2026-10-30):** the art keys are here and `IMPORT_PUBLISHES_ART` is `1`; the
    application compiles from `imports` and runs only the steps that stay.
