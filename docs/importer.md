@@ -39,8 +39,10 @@ in the application's compile job, on the records this leaves.
 2. **Scheduled (now):** nightly at 16:17 UTC, hours ahead of the application's 19:57, still in
    shadow mode. A failed step opens one **Import failing** issue (`scripts/alert-issue.mjs`), and
    the next clean run closes it. The two art steps count only once the keys are here.
-3. **Cutover:** the application compiles from `imports` and stops running these steps; the art keys
-   move here.
+3. **Cutover:** add the secrets `CATALOGUE_IMAGE_DEPLOY_KEY` and `CATALOGUE_SKIN_DEPLOY_KEY` here, then
+   set the variable `IMPORT_PUBLISHES_ART` to `1` here and `ARKPEDIA_IMPORTS_IN_DATA` to `1` in the
+   application, together: the application then compiles from `imports` and runs only the steps that
+   stay, and the art is published from here. Unsetting both rolls it back.
 4. **Clean-up:** the application deletes its copies.
 
 **Until step 4, `importer/` is a copy:** a change to one of its files lands in the application too
