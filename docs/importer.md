@@ -27,7 +27,8 @@ its changes put back and costs only its own records. `run-imports.sh` and
 ## What stays in the application
 
 The steps that read site code: the pull planner's sources, official videos, the game account map
-and guide videos, plus the checks of what pages send (pull-odds rules, payload budgets). They run
+and guide videos, plus the checks of what pages send (pull-odds rules, payload budgets). Also
+story-chapters and story-covers, whose source (arknights.timo.beer) refuses GitHub's runners. They run
 in the application's compile job, on the records this leaves.
 
 ## Rollout
