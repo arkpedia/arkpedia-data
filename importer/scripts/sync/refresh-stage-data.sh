@@ -56,6 +56,10 @@ stage upstream-en --invariant --timeout-minutes 20 -- bash scripts/lib/upstream.
   en-gamedata https://github.com/ArknightsAssets/ArknightsGamedata.git default \
   en/gamedata/excel en/gamedata/levels
 
+# The stage simulator's enemy tables (data/simulator/raw/ and their receipt), byte-exact from the
+# pinned EN checkout, for arkpedia-stage-simulator to read from this repository.
+stage simulator-tables --needs upstream-en -- node scripts/imports/import-simulator-tables.mjs
+
 # Verified Global recruitment pool.
 stage recruitment -- node scripts/sync/sync-recruitment.mjs
 
@@ -126,9 +130,9 @@ stage story-map -- python3 scripts/imports/import_story_map.py
 # Each of the map's chapters, section by section, as Timo's story reader numbers them, for the Story
 # page's complete library and chapter popups: read from the reader's catalogue as data,
 # independently of the map, so a failed canvas import cannot block new stories.
-stage story-chapters -- node scripts/imports/import-story-chapters.mjs
+# story-chapters stays in the application: its source (arknights.timo.beer) refuses GitHub's runners (HTTP 403).
 # Reader cover images are staged separately, so an art-source outage cannot discard stories.
-stage story-covers -- node scripts/imports/import-story-covers.mjs
+# story-covers stays in the application: its source (arknights.timo.beer) refuses GitHub's runners (HTTP 403).
 
 # Run windows, for the Current group and the default chapter.
 stage content-windows --needs stage-dataset -- node scripts/build/build-content-windows.mjs
@@ -168,8 +172,8 @@ stage module-stats -- node scripts/sync/sync-module-stats.mjs
 # mode names (data/stages-content.json, event-rewards.json, event-stores.json), no game tables; GET
 # only, and yt-dlp for channel listings, each call within the stage's own 10 minutes. Main's run
 # only: on dev's (ARKPEDIA_DATA_BRANCH dev) it logs that it skipped. Under tsx: the matcher reads
-# the site's alter map.
-# guide-videos stays in the application (it reads the site's operator aliases).
+# the site's alter map (lib/operators/operatorAliases.ts, a copy of the application's).
+stage guide-videos -- npx tsx scripts/sync/sync-guide-videos.mjs
 
 # Animated outfit art: which artwork has a Spine model in arkpedia-l2d-assets, as model.json
 # URLs pinned to that repository's commit (data/dynamic-art.json), for the focused artwork view.
@@ -245,6 +249,12 @@ stage event-stores -- node scripts/sync/sync-event-stores.mjs
 # packs, daily free rolls and announced gifts; and a rerun its original run's until its own
 # appear. Stores are event-stores' above.
 stage event-rewards -- node scripts/build/build-event-rewards.mjs
+
+# The free rewards the pull planner counts (data/free-rewards.json): Paradox Simulations, beginner
+# programmes, sign-ins, missions, retro trails and the event rewards just above, from the EN
+# tables. After the event rewards, which it reads; before the reward icons, which take their free
+# claims from it. The regional schedules, above, read the previous run's.
+stage free-rewards --needs event-rewards -- node scripts/build/build-free-rewards.mjs
 
 # Official shop artwork for the sets the rewards name, including inherited reruns.
 # Keep CN originals; automatically prefer Global when its client thumbnail arrives.

@@ -30,7 +30,9 @@ case "${1:-}" in
   *) echo "usage: publish-catalogue-assets.sh [--staged]" >&2; exit 2 ;;
 esac
 if [ "$mode" = staged ]; then
-  plan=.cache/staged-art/asset-plan.json stage=staged-art kinds=(image)
+  # STAGED_ART_STAGE: the quarantine stage its holds go under, so the application's own run (the
+  # story covers, which only it can fetch) never replaces the import's holds.
+  plan=.cache/staged-art/asset-plan.json stage=${STAGED_ART_STAGE:-staged-art} kinds=(image)
   python3 scripts/sync/publish-catalogue-assets.py plan-staged "$plan"
 else
   plan=.cache/catalogue/asset-plan.json stage=catalogue-art kinds=(image skin)

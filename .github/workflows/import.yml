@@ -4,18 +4,30 @@ name: Import game records
 # moved here from the application's Prepare content release. It writes source/ only, to the
 # `imports` branch, rebuilt from main on each run; the application compiles the release from
 # that branch and publishes source and release to main together (validate-release.mjs refuses
-# source/ changed without its release). Shadow mode for now: started by hand, no art keys, so the
-# art steps plan and publish nothing, and the application still runs its own refresh.
+# source/ changed without its release). The art keys arrive with IMPORT_PUBLISHES_ART.
 on:
+  # Nightly, after the asset repositories' syncs (16:07-16:31 UTC), which it waits for below, and
+  # ahead of the application's Prepare content release (19:57 UTC), which waits for it. GitHub
+  # starts all of them hours late, and by different amounts, so the waits keep the order.
+  schedule:
+    - cron: '37 16 * * *'
   workflow_dispatch:
     inputs:
       allow_shrink:
         description: 'Collections allowed to shrink by more than 2% this run (comma-separated)'
         required: false
         type: string
+      # Set by the client-version dispatcher (client-version-dispatch.yml) after a game patch. The
+      # imports commit then says "patch", and the application's content watcher compiles it at once
+      # instead of at its nightly run.
+      reason:
+        description: 'Why this import runs: patch (compiled by the application at once), or blank'
+        required: false
+        type: string
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: import
@@ -57,6 +69,19 @@ jobs:
           unzip -o -q "$dir/flatc.zip" -d "$dir" && chmod +x "$dir/flatc"
           "$dir/flatc" --version
           echo "$dir" >> "$GITHUB_PATH"
+      # The asset-revisions and staged-art stages pin each asset repository at the commit its sync
+      # has reached, and the palettes are built from those pins: art synced after the pin waits a
+      # day. A scheduled import waits, up to 45 minutes, until each sync has finished its run of
+      # the day (scripts/content/asset-syncs.mjs); one started by hand does not. Never fails: after
+      # the wait the import pins what the syncs have reached.
+      - name: Wait for the asset syncs' runs of the day
+        if: github.event_name == 'schedule'
+        continue-on-error: true
+        timeout-minutes: 50
+        working-directory: importer
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/content/asset-syncs.mjs wait --timeout-minutes 45
       - name: Choose the content channel
         working-directory: importer
         run: node scripts/content/channel.mjs --branch main | tee -a "$GITHUB_ENV"
@@ -67,6 +92,11 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           # refresh-stage-data.sh adds its stages to this run instead of starting its own.
           ARKPEDIA_STAGE_RUN: '1'
+          # The art repositories' write keys, only once this repository publishes art: the
+          # variable IMPORT_PUBLISHES_ART is set when the application stops (its cutover,
+          # ARKPEDIA_IMPORTS_IN_DATA), so the two never publish the same art.
+          CATALOGUE_IMAGE_DEPLOY_KEY: ${{ vars.IMPORT_PUBLISHES_ART == '1' && secrets.CATALOGUE_IMAGE_DEPLOY_KEY || '' }}
+          CATALOGUE_SKIN_DEPLOY_KEY: ${{ vars.IMPORT_PUBLISHES_ART == '1' && secrets.CATALOGUE_SKIN_DEPLOY_KEY || '' }}
           ARKPEDIA_ALLOW_SHRINK: ${{ inputs.allow_shrink }}
         run: bash scripts/content/run-imports.sh
       - name: Disk and time used
@@ -76,15 +106,21 @@ jobs:
           du -sh importer/.cache 2>/dev/null || true
       - name: Push the records to the imports branch
         if: always() && steps.import.outcome != 'cancelled'
+        env:
+          REASON: ${{ inputs.reason == 'patch' && ', patch' || '' }}
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git checkout -B imports
           git add -A source
-          if git diff --cached --quiet; then echo 'No record changed.'; else git commit -q -m "Import game records ($(date -u +%Y-%m-%d))"; fi
+          if git diff --cached --quiet; then echo 'No record changed.'; else git commit -q -m "Import game records ($(date -u +%Y-%m-%d)$REASON)"; fi
           # Rebuilt from main on each run, so the application's merge with main stays a fast-forward.
-          git push --force origin HEAD:imports
+          # Deleted and created again, not force-pushed: moving the branch from an older main would
+          # change its workflow files, which this job's token may not do (2026-10-30, the first
+          # import after import.yml changed). A branch created on main's commits changes none.
+          git push origin --delete imports 2>/dev/null || true
+          git push origin HEAD:refs/heads/imports
       - name: Keep the stage report
         if: always()
         uses: actions/upload-artifact@v7
@@ -92,3 +128,51 @@ jobs:
           name: import-stage-report-${{ github.run_id }}
           path: source/data/stage-report.json
           if-no-files-found: ignore
+      # One open issue while the guide-videos stage has suggestions waiting for a person: videos by
+      # the trusted creators that name an operator but were not added to its guides by themselves
+      # (importer/scripts/sync/sync-guide-videos.mjs). Rewritten by every run from
+      # data/guide-videos-state.json; its body holds no date, so a run with the same list edits
+      # nothing, and it is commented on at most once a day, only when the list changed. Closed when
+      # nothing is waiting.
+      - name: Report guide suggestions
+        if: always() && steps.import.outcome != 'cancelled'
+        continue-on-error: true
+        timeout-minutes: 3
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          report="$RUNNER_TEMP/guide-suggestions"
+          state=$(cd importer && npx tsx scripts/sync/sync-guide-videos.mjs --report "$report")
+          alert=(--alert guide-suggestions --title 'Guide suggestions')
+          if [ "$state" = alert ]; then
+            node scripts/alert-issue.mjs open "${alert[@]}" --rewrite --body-file "$report/body.md" --comment-file "$report/comment.md"
+          elif [ "$state" = clear ]; then
+            node scripts/alert-issue.mjs close "${alert[@]}" --comment 'No guide suggestion is waiting.'
+          fi
+      # One open issue while the import fails (scripts/alert-issue.mjs), closed by the next clean run.
+      # A step that failed is one the stage report says failed; in shadow mode the two art steps
+      # always do (no keys), so they count only once the keys are here.
+      - name: Report a failing import
+        if: always() && steps.import.outcome != 'cancelled'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          IMPORT_FAILED: ${{ steps.import.outcome == 'failure' && '1' || '' }}
+          ART_KEYS: ${{ vars.IMPORT_PUBLISHES_ART == '1' && '1' || '' }}
+        run: |
+          set -euo pipefail
+          failed=$(node -e '
+            const fs = require("fs");
+            const file = "source/data/stage-report.json";
+            const stages = fs.existsSync(file) ? (JSON.parse(fs.readFileSync(file, "utf8")).stages ?? []) : [];
+            const shadow = process.env.ART_KEYS ? [] : ["catalogue-assets", "staged-art"];
+            const failed = stages.filter(s => s.status !== "ok" && !shadow.includes(s.stage)).map(s => `- \`${s.stage}\`: ${s.status}${s.exit !== undefined ? ` (${s.exit})` : ""}`);
+            if (process.env.IMPORT_FAILED && !failed.length) failed.push("- the import stopped before its steps finished");
+            process.stdout.write(failed.join("\n"));')
+          if [ -n "$failed" ]; then
+            printf 'The nightly import (%s) did not finish every step. Their records stay as last imported.\n\n%s\n' "$RUN_URL" "$failed" > "$RUNNER_TEMP/import-alert.md"
+            node scripts/alert-issue.mjs open --alert import-failing --title 'Import failing' --body-file "$RUNNER_TEMP/import-alert.md" --rewrite
+          else
+            node scripts/alert-issue.mjs close --alert import-failing --title 'Import failing' --comment "Every step finished in $RUN_URL."
+          fi
