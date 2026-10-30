@@ -9,3 +9,14 @@ updates:
     groups:
       actions:
         patterns: ['*']
+  # The import's Python (importer/scripts/content/requirements.txt). yt-dlp above all: when YouTube
+  # changes its pages, only a newer yt-dlp lists channels again for the guide-videos stage.
+  - package-ecosystem: pip
+    directory: /importer/scripts/content
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 1
+    groups:
+      python:
+        patterns: ['*']
