@@ -1,0 +1,65 @@
+{
+  "about": "Art the release job's importers fetch but arkpedia-image-assets does not publish yet. Each kind is staged under .cache/<kind>/ by the importer named here: the files, and a staged.json listing each file's destination in the image repository and where it came from (scripts/imports/staged_art.py, scripts/lib/staged-art.mjs). The refresh's staged-art stage (scripts/sync/publish-catalogue-assets.sh --staged) publishes what a kind's stage staged in this run, if that stage ran to the end, and then runs the kind's adopt command again, so its records point at the published files and its quarantine entries clear in the same run. `stage` is the refresh stage that stages the kind (data/stage-report.json); `folders` the image repository folders it may publish into. scripts/tests/test-staged-art.ts fails on an importer that stages art into .cache/ outside this list.",
+  "kinds": {
+    "stage-renders": {
+      "stage": "stage-renders",
+      "folders": ["stages-images"],
+      "adopt": ["node", "scripts/imports/import-stage-renders.mjs"]
+    },
+    "is-nodes": {
+      "stage": "is-nodes",
+      "folders": ["stages-images"],
+      "adopt": ["python3", "scripts/imports/import_is_nodes.py"]
+    },
+    "cc-stages": {
+      "stage": "cc-stages",
+      "folders": ["stages-images"],
+      "adopt": ["python3", "scripts/imports/import_cc_stages.py"]
+    },
+    "ra-maps": {
+      "stage": "ra-maps",
+      "folders": ["stages-images"],
+      "adopt": ["python3", "scripts/imports/import_ra_maps.py"]
+    },
+    "nation-marks": {
+      "stage": "nation-marks",
+      "folders": ["nation-marks"],
+      "adopt": ["python3", "scripts/imports/import-nation-marks.py"]
+    },
+    "item-icons": {
+      "stage": "item-icons",
+      "folders": ["item-icons"],
+      "adopt": ["node", "scripts/imports/import-item-icons.mjs"]
+    },
+    "reward-icons": {
+      "stage": "reward-icons",
+      "folders": ["material-icons"],
+      "adopt": ["python3", "scripts/imports/import-reward-icons.py"]
+    },
+    "furniture-art": {
+      "stage": "furniture-art",
+      "folders": ["content-art"],
+      "adopt": ["node", "scripts/imports/import-furniture-art.mjs"]
+    },
+    "story-map": {
+      "stage": "story-map",
+      "folders": ["story-map"],
+      "adopt": ["python3", "scripts/imports/import_story_map.py"]
+    },
+    "story-covers": {
+      "stage": "story-covers",
+      "folders": ["story-map"],
+      "adopt": ["node", "scripts/imports/import-story-covers.mjs"]
+    },
+    "album-covers": {
+      "stage": "albums",
+      "folders": ["album-covers"],
+      "adopt": ["node", "scripts/sync/sync-albums.mjs", "--adopt-covers"]
+    },
+    "endfield-album-covers": {
+      "stage": "endfield-albums",
+      "folders": ["album-covers"],
+      "adopt": ["node", "scripts/sync/sync-endfield-albums.mjs", "--adopt-covers"]
+    }
+  }
+}
