@@ -6,10 +6,11 @@ name: Import game records
 # that branch and publishes source and release to main together (validate-release.mjs refuses
 # source/ changed without its release). The art keys arrive with IMPORT_PUBLISHES_ART.
 on:
-  # Nightly, hours ahead of the application's Prepare content release (19:57 UTC): GitHub starts
-  # both late, and the compile reads whatever the imports branch holds when it runs.
+  # Nightly, after the asset repositories' syncs (16:07-16:31 UTC), which it waits for below, and
+  # ahead of the application's Prepare content release (19:57 UTC), which waits for it. GitHub
+  # starts all of them hours late, and by different amounts, so the waits keep the order.
   schedule:
-    - cron: '17 16 * * *'
+    - cron: '37 16 * * *'
   workflow_dispatch:
     inputs:
       allow_shrink:
@@ -68,6 +69,19 @@ jobs:
           unzip -o -q "$dir/flatc.zip" -d "$dir" && chmod +x "$dir/flatc"
           "$dir/flatc" --version
           echo "$dir" >> "$GITHUB_PATH"
+      # The asset-revisions and staged-art stages pin each asset repository at the commit its sync
+      # has reached, and the palettes are built from those pins: art synced after the pin waits a
+      # day. A scheduled import waits, up to 45 minutes, until each sync has finished its run of
+      # the day (scripts/content/asset-syncs.mjs); one started by hand does not. Never fails: after
+      # the wait the import pins what the syncs have reached.
+      - name: Wait for the asset syncs' runs of the day
+        if: github.event_name == 'schedule'
+        continue-on-error: true
+        timeout-minutes: 50
+        working-directory: importer
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/content/asset-syncs.mjs wait --timeout-minutes 45
       - name: Choose the content channel
         working-directory: importer
         run: node scripts/content/channel.mjs --branch main | tee -a "$GITHUB_ENV"
