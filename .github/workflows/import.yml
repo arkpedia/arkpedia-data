@@ -72,6 +72,11 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           # refresh-stage-data.sh adds its stages to this run instead of starting its own.
           ARKPEDIA_STAGE_RUN: '1'
+          # The art repositories' write keys, only once this repository publishes art: the
+          # variable IMPORT_PUBLISHES_ART is set when the application stops (its cutover,
+          # ARKPEDIA_IMPORTS_IN_DATA), so the two never publish the same art.
+          CATALOGUE_IMAGE_DEPLOY_KEY: ${{ vars.IMPORT_PUBLISHES_ART == '1' && secrets.CATALOGUE_IMAGE_DEPLOY_KEY || '' }}
+          CATALOGUE_SKIN_DEPLOY_KEY: ${{ vars.IMPORT_PUBLISHES_ART == '1' && secrets.CATALOGUE_SKIN_DEPLOY_KEY || '' }}
           ARKPEDIA_ALLOW_SHRINK: ${{ inputs.allow_shrink }}
         run: bash scripts/content/run-imports.sh
       - name: Disk and time used
@@ -106,7 +111,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           IMPORT_FAILED: ${{ steps.import.outcome == 'failure' && '1' || '' }}
-          ART_KEYS: ${{ secrets.CATALOGUE_IMAGE_DEPLOY_KEY != '' && '1' || '' }}
+          ART_KEYS: ${{ vars.IMPORT_PUBLISHES_ART == '1' && '1' || '' }}
         run: |
           set -euo pipefail
           failed=$(node -e '
