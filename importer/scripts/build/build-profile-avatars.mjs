@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Writes public/profile-avatars.json: the icons a reader may choose as their profile avatar, and
+ * Writes data/profile-avatars.json: the icons a reader may choose as their profile avatar, and
  * the base facility each base-skill icon belongs to (for the picker's grouping). The site fetches
  * it from the live release when the picker opens and checks a stored avatar against it before it
  * becomes a URL (arkpedia-app lib/account/profileAvatar.ts), so a new icon is offered the night
@@ -51,6 +51,6 @@ if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.ar
   const avatars = buildProfileAvatars({ files, operators: readOperators('.') });
   // A catalogue that lost most of its icons is a broken index, not a release to publish.
   if (avatars.icons.length < 1000) throw new Error(`Only ${avatars.icons.length} catalogue icons in the asset index; keeping the last list.`);
-  writeFileSync('public/profile-avatars.json', `${JSON.stringify(avatars)}\n`);
+  writeFileSync('data/profile-avatars.json', `${JSON.stringify(avatars)}\n`);
   console.log(`Profile avatars: ${avatars.icons.length} icons, ${Object.keys(avatars.facilities).length} base-skill icons by facility.`);
 }
