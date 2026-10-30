@@ -13,6 +13,7 @@ What `source/data/` holds. Game records live only in this repository; the Arkped
 | Planner and materials | `material-catalogue.json` (derived by `scripts/build/build-material-catalogue.mjs`), `material-names.json` (English names of CN-only materials, kept by hand), `operatorLevelExpLmd.json`, `battle-records.json`, `item-sort-ids.json`, `item-icons.json`, `import-aliases.json` |
 | Games and curation | `stage-guesser.json`, `music-guesser-review.json`, `color-palette*.json`, `techniques_definitions.json` |
 | Asset manifests | `assets/`: external file inventory, public availability index, and the asset repositories' pinned commits (`revisions.json`) |
+| Stage simulator | `simulator/raw/enemy_database.json` and `simulator/raw/enemy_handbook_table.json`, byte-exact from the pinned EN game data, and `simulator/upstream.json`, their receipt (repository, commit, bytes, SHA256). Read by arkpedia-stage-simulator, not by the site. |
 | Polls and statistics | `polls/index.json` (every poll, open or closed), `polls/<id>.json` (a closed poll's frozen result, e.g. `power-scale-v1.0.json`), and later `statistics/` (dated aggregates). Totals only: votes and per-person data stay in Arkpedia's database, and raw responses are archived privately. |
 
 Keep publication explicit and preserve source provenance. Never add raw survey responses, account ids or per-person records here.
