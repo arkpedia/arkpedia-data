@@ -127,6 +127,9 @@ stage staged-art -- bash scripts/sync/publish-catalogue-assets.sh --staged
 # stage holds any released operator still without one (test-stage-runner.ts keeps
 # every --revisions reader after every stage that moves the pins).
 stage palettes -- python3 scripts/palettes/build-color-palettes.py --revisions data/assets/revisions.json
+# The icons a reader may choose as their profile avatar (public/profile-avatars.json), from the
+# published asset index as staged-art, the last stage to rewrite it (assets:update), left it.
+stage profile-avatars -- node scripts/build/build-profile-avatars.mjs
 stage content-inventory -- node scripts/sync/sync-content-inventory.mjs
 stage event-farming -- node scripts/sync/sync-event-farming.mjs
 # A scheduled limited, crossover or Orienteering banner whose announcement nobody has
