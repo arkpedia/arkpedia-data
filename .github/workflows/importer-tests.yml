@@ -1,0 +1,55 @@
+name: Importer tests
+
+# The importer's own tests (importer/scripts/tests, and the Python suites beside the importers),
+# against this checkout's records: every pull request that touches the import, and main after it.
+# No secrets: a pull request from a fork runs here with a read-only token.
+on:
+  pull_request:
+    paths:
+      - importer/**
+      - .github/workflows/import.yml
+      - .github/workflows/client-version-dispatch.yml
+      - .github/workflows/importer-tests.yml
+      - .github/dependabot.yml
+      - docs/importer.md
+  push:
+    branches: [main]
+    paths:
+      - importer/**
+      - .github/workflows/import.yml
+      - .github/workflows/client-version-dispatch.yml
+      - .github/workflows/importer-tests.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: importer-tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: importer/package-lock.json
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Install the importer's dependencies
+        working-directory: importer
+        run: |
+          npm ci --no-audit --no-fund
+          python -m pip install -r scripts/content/requirements.txt -r scripts/requirements.txt
+      - name: Node tests
+        working-directory: importer
+        run: npm test
+      - name: Python tests
+        working-directory: importer
+        run: npm run test:py

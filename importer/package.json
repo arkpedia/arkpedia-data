@@ -6,6 +6,8 @@
     "node": ">=22"
   },
   "scripts": {
+    "test": "tsx --test scripts/tests/test-*.ts scripts/tests/test-*.mjs",
+    "test:py": "node scripts/tests/run-python-tests.mjs",
     "assets:update": "node scripts/sync/update-asset-revisions.mjs",
     "voices:refresh": "node scripts/build/build-operator-voices.mjs",
     "albums:refresh": "node scripts/sync/sync-albums.mjs",
@@ -13,9 +15,13 @@
     "lyrics:refresh": "node scripts/sync/sync-lyrics.mjs"
   },
   "dependencies": {
+    "@tesseract.js-data/eng": "1.0.0",
     "opencc-js": "1.4.2",
     "pngjs": "7.0.0",
     "tesseract.js": "7.0.0",
     "tsx": "4.23.15"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
   }
 }
