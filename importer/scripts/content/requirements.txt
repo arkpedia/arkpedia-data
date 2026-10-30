@@ -1,0 +1,14 @@
+# The Python packages the content run's refresh stages use (.github/workflows/prepare-content.yml
+# installs them). Dependabot proposes a bump of a pinned one weekly (.github/dependabot.yml).
+-r ../requirements.txt
+# The client's theme bundles (scripts/imports/import-namecard-styles.py).
+UnityPy==1.25.3
+# The official-tables shadow (scripts/imports/shadow-official-tables.py) decodes the client's game
+# tables from the official servers with it, to compare with the mirrors' copies. GPL-3.0, run as a
+# tool and not shipped. Needs flatc (prepare-content.yml installs a pinned build).
+arkprts[assets]==0.3.22
+# Trusted creators' channel listings for the guide-videos stage (scripts/sync/sync-guide-videos.mjs).
+# YouTube changes what its pages send now and then, and a yt-dlp that has not caught up lists
+# nothing: the stage then reads only the feeds, and holds every channel whose feed fails too.
+# Take the bump Dependabot proposes; the stage logs the version it ran with.
+yt-dlp==2026.8.19

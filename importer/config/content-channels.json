@@ -1,0 +1,9 @@
+{
+  "about": "The content channels (scripts/content/channel.mjs): per branch of this repository that Prepare content release runs on, the arkpedia-data branch its release is published to and the pointer branch whose current.json names it. A deployment reads its branch's channel (config/production.json says which branch each Vercel project follows). Only main's writes data main and live.",
+  "channels": {
+    "main": {
+      "dataBranch": "main",
+      "pointer": "live"
+    }
+  }
+}
