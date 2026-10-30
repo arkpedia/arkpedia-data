@@ -1,0 +1,75 @@
+name: Client version dispatch
+# Starts the import (import.yml, reason=patch) when a region's game client has a new version and
+# the mirror its tables come from already carries it, instead of waiting for the nightly run
+# (importer/scripts/content/client-version-dispatch.mjs says when it does and does not). The
+# application compiles an import marked patch as soon as its content watcher sees it. A schedule only
+# fires from the default branch: elsewhere this runs when dispatched, and then only as a dry run.
+# A push that changes the dispatcher runs it once as a dry run too, on any branch: GitHub only
+# lets a workflow be dispatched once it has run, feature branches can still run a manual dry run.
+on:
+  schedule:
+    - cron: '23 */3 * * *'
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/client-version-dispatch.yml
+      - importer/scripts/content/client-version-dispatch.mjs
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Read and decide, but start nothing (always on, except on main)
+        default: true
+        type: boolean
+      data_branch:
+        description: 'The arkpedia-data branch whose published client-versions.json is compared (main normally)'
+        default: main
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: client-version-dispatch
+  cancel-in-progress: false
+jobs:
+  dispatch:
+    if: github.repository == 'arkpedia/arkpedia-data'
+    # A few GETs and API calls, on GitHub's runners like the import.
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      actions: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: |
+            importer/scripts/content
+            importer/scripts/lib
+            importer/scripts/sync
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      # The last dispatch (when, and for which versions), so one is started at most every six
+      # hours and not again for the same versions. Saved under a new key after each dispatch.
+      - name: Load the last dispatch
+        uses: actions/cache/restore@v6
+        with:
+          path: importer/.cache/client-version-dispatch
+          key: client-version-dispatch-${{ github.run_id }}
+          restore-keys: client-version-dispatch-
+      - name: Start the import for a new client version
+        id: dispatch
+        working-directory: importer
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DRY_RUN: ${{ (github.ref_name != 'main' || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.dry_run)) && '--dry-run' || '' }}
+          DATA_BRANCH: ${{ inputs.data_branch || 'main' }}
+        run: |
+          set -euo pipefail
+          [[ "$DATA_BRANCH" =~ ^[A-Za-z0-9][A-Za-z0-9_./-]*$ ]]
+          node scripts/content/client-version-dispatch.mjs $DRY_RUN --data-branch "$DATA_BRANCH"
+      - name: Remember the last dispatch
+        if: steps.dispatch.outputs.dispatched == 'true'
+        uses: actions/cache/save@v6
+        with:
+          path: importer/.cache/client-version-dispatch
+          key: client-version-dispatch-${{ github.run_id }}

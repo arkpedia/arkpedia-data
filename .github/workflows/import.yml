@@ -16,6 +16,13 @@ on:
         description: 'Collections allowed to shrink by more than 2% this run (comma-separated)'
         required: false
         type: string
+      # Set by the client-version dispatcher (client-version-dispatch.yml) after a game patch. The
+      # imports commit then says "patch", and the application's content watcher compiles it at once
+      # instead of at its nightly run.
+      reason:
+        description: 'Why this import runs: patch (compiled by the application at once), or blank'
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -85,13 +92,15 @@ jobs:
           du -sh importer/.cache 2>/dev/null || true
       - name: Push the records to the imports branch
         if: always() && steps.import.outcome != 'cancelled'
+        env:
+          REASON: ${{ inputs.reason == 'patch' && ', patch' || '' }}
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git checkout -B imports
           git add -A source
-          if git diff --cached --quiet; then echo 'No record changed.'; else git commit -q -m "Import game records ($(date -u +%Y-%m-%d))"; fi
+          if git diff --cached --quiet; then echo 'No record changed.'; else git commit -q -m "Import game records ($(date -u +%Y-%m-%d)$REASON)"; fi
           # Rebuilt from main on each run, so the application's merge with main stays a fast-forward.
           git push --force origin HEAD:imports
       - name: Keep the stage report
