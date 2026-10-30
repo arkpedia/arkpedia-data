@@ -4,8 +4,7 @@ name: Import game records
 # moved here from the application's Prepare content release. It writes source/ only, to the
 # `imports` branch, rebuilt from main on each run; the application compiles the release from
 # that branch and publishes source and release to main together (validate-release.mjs refuses
-# source/ changed without its release). Shadow mode for now: no art keys, so the art steps plan
-# and publish nothing, and the application still runs its own refresh.
+# source/ changed without its release). The art keys arrive with IMPORT_PUBLISHES_ART.
 on:
   # Nightly, hours ahead of the application's Prepare content release (19:57 UTC): GitHub starts
   # both late, and the compile reads whatever the imports branch holds when it runs.
@@ -102,6 +101,28 @@ jobs:
           name: import-stage-report-${{ github.run_id }}
           path: source/data/stage-report.json
           if-no-files-found: ignore
+      # One open issue while the guide-videos stage has suggestions waiting for a person: videos by
+      # the trusted creators that name an operator but were not added to its guides by themselves
+      # (importer/scripts/sync/sync-guide-videos.mjs). Rewritten by every run from
+      # data/guide-videos-state.json; its body holds no date, so a run with the same list edits
+      # nothing, and it is commented on at most once a day, only when the list changed. Closed when
+      # nothing is waiting.
+      - name: Report guide suggestions
+        if: always() && steps.import.outcome != 'cancelled'
+        continue-on-error: true
+        timeout-minutes: 3
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          report="$RUNNER_TEMP/guide-suggestions"
+          state=$(cd importer && npx tsx scripts/sync/sync-guide-videos.mjs --report "$report")
+          alert=(--alert guide-suggestions --title 'Guide suggestions')
+          if [ "$state" = alert ]; then
+            node scripts/alert-issue.mjs open "${alert[@]}" --rewrite --body-file "$report/body.md" --comment-file "$report/comment.md"
+          elif [ "$state" = clear ]; then
+            node scripts/alert-issue.mjs close "${alert[@]}" --comment 'No guide suggestion is waiting.'
+          fi
       # One open issue while the import fails (scripts/alert-issue.mjs), closed by the next clean run.
       # A step that failed is one the stage report says failed; in shadow mode the two art steps
       # always do (no keys), so they count only once the keys are here.

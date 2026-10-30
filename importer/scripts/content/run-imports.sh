@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 # The nightly import, run from importer/ (whose data/ and public/ are ../source/'s): every refresh
-# step of the application's Prepare content release that reads no site code. The application
-# keeps the steps that do (pull sources, official videos, the game account map, guide videos)
-# and the checks of what pages send (pull-odds rules, payload budgets), and compiles the release
-# from what this leaves on the `imports` branch (docs/importer.md).
-#
-# Copied from arkpedia/arkpedia's .github/workflows/prepare-content.yml (refresh step) on
-# 2026-10-30. Until the application drops its own copy, a change to a step lands in both.
+# step of the application's Prepare content release, which compiles the release from what this
+# leaves on the `imports` branch (docs/importer.md). The application keeps only the pull sources
+# and first clears (built with the pull planner's own code), the story chapters and covers (their
+# source refuses GitHub's runners), and the checks of what pages send (pull-odds rules, payload
+# budgets).
 set -euo pipefail
 # What every collection held before any step: completeness fails the run if one shrinks by more
 # than 2% from here, unless ARKPEDIA_ALLOW_SHRINK names it.
@@ -87,6 +85,7 @@ stage import-aliases --needs material-catalogue --output data/material-catalogue
 # CDN (no table carries them); only a changed bundle is fetched. Before the id map,
 # which carries them to the account page.
 stage namecard-styles -- python3 scripts/imports/import-namecard-styles.py
+stage game-account-map -- npx tsx scripts/build/build-game-account-map.ts
 stage medal-layouts -- python3 scripts/imports/import-medal-layouts.py
 # Shadow mode, publishing nothing: the CN client's own avatar and skill-icon sprites compared
 # with the mirror files arkpedia-image-assets publishes (scripts/imports/shadow-client-art.py),
@@ -109,7 +108,9 @@ stage albums -- npm run albums:refresh
 stage endfield-albums -- npm run endfield-albums:refresh
 # Each event's PVs and official videos (data/event-videos.json), from the official YouTube
 # channels' uploads (data/official-videos.json): after the albums, whose operator EPs it
-# reads. Feeds on main's run only (scripts/sync/sync-official-videos.mjs).
+# reads. Feeds on main's run only (scripts/sync/sync-official-videos.mjs). The application files
+# them again offline when it compiles an editorial edit, so an override shows within minutes.
+stage official-videos -- npx tsx scripts/sync/sync-official-videos.mjs
 stage lyrics -- npm run lyrics:refresh
 # The art the importers above staged under .cache/ instead of publishing -- a new
 # event's stage renders, drop and reward icons, crests, CC/IS/RA renders, album
