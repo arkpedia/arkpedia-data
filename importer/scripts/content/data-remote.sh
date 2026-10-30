@@ -21,8 +21,10 @@
 #                                race is refused.
 DATA_REMOTE=git@github.com:arkpedia/arkpedia-data.git
 
+# Signed in with the job's token where there is one: GitHub's shared runners share addresses, and
+# the anonymous rate limit answered 403 on the import's first art run (2026-10-30).
 github_known_hosts() {
-  curl --fail --silent --show-error https://api.github.com/meta \
+  curl --fail --silent --show-error --retry 3 ${GH_TOKEN:+-H "Authorization: Bearer $GH_TOKEN"} https://api.github.com/meta \
     | node -e 'let s="";process.stdin.on("data",x=>s+=x).on("end",()=>{for(const key of JSON.parse(s).ssh_keys)console.log("github.com "+key)})' > "$1"
 }
 
