@@ -33,11 +33,12 @@ in the application's compile job, on the records this leaves.
 
 ## Rollout
 
-1. **Shadow (now):** started by hand only, with no art-repository keys, so the art steps plan and
+1. **Shadow:** started by hand only, with no art-repository keys, so the art steps plan and
    publish nothing. The application still runs its own refresh. Runs are compared with what the
    application's nightly publishes.
-2. **Scheduled:** a nightly cron ahead of the application's, with failures reported as issues
-   (`scripts/alert-issue.mjs`).
+2. **Scheduled (now):** nightly at 16:17 UTC, hours ahead of the application's 19:57, still in
+   shadow mode. A failed step opens one **Import failing** issue (`scripts/alert-issue.mjs`), and
+   the next clean run closes it. The two art steps count only once the keys are here.
 3. **Cutover:** the application compiles from `imports` and stops running these steps; the art keys
    move here.
 4. **Clean-up:** the application deletes its copies.

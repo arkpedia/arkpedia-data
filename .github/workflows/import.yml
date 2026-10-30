@@ -4,9 +4,13 @@ name: Import game records
 # moved here from the application's Prepare content release. It writes source/ only, to the
 # `imports` branch, rebuilt from main on each run; the application compiles the release from
 # that branch and publishes source and release to main together (validate-release.mjs refuses
-# source/ changed without its release). Shadow mode for now: started by hand, no art keys, so the
-# art steps plan and publish nothing, and the application still runs its own refresh.
+# source/ changed without its release). Shadow mode for now: no art keys, so the art steps plan
+# and publish nothing, and the application still runs its own refresh.
 on:
+  # Nightly, hours ahead of the application's Prepare content release (19:57 UTC): GitHub starts
+  # both late, and the compile reads whatever the imports branch holds when it runs.
+  schedule:
+    - cron: '17 16 * * *'
   workflow_dispatch:
     inputs:
       allow_shrink:
@@ -16,6 +20,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: import
@@ -92,3 +97,29 @@ jobs:
           name: import-stage-report-${{ github.run_id }}
           path: source/data/stage-report.json
           if-no-files-found: ignore
+      # One open issue while the import fails (scripts/alert-issue.mjs), closed by the next clean run.
+      # A step that failed is one the stage report says failed; in shadow mode the two art steps
+      # always do (no keys), so they count only once the keys are here.
+      - name: Report a failing import
+        if: always() && steps.import.outcome != 'cancelled'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          IMPORT_FAILED: ${{ steps.import.outcome == 'failure' && '1' || '' }}
+          ART_KEYS: ${{ secrets.CATALOGUE_IMAGE_DEPLOY_KEY != '' && '1' || '' }}
+        run: |
+          set -euo pipefail
+          failed=$(node -e '
+            const fs = require("fs");
+            const file = "source/data/stage-report.json";
+            const stages = fs.existsSync(file) ? (JSON.parse(fs.readFileSync(file, "utf8")).stages ?? []) : [];
+            const shadow = process.env.ART_KEYS ? [] : ["catalogue-assets", "staged-art"];
+            const failed = stages.filter(s => s.status !== "ok" && !shadow.includes(s.stage)).map(s => `- \`${s.stage}\`: ${s.status}${s.exit !== undefined ? ` (${s.exit})` : ""}`);
+            if (process.env.IMPORT_FAILED && !failed.length) failed.push("- the import stopped before its steps finished");
+            process.stdout.write(failed.join("\n"));')
+          if [ -n "$failed" ]; then
+            printf 'The nightly import (%s) did not finish every step. Their records stay as last imported.\n\n%s\n' "$RUN_URL" "$failed" > "$RUNNER_TEMP/import-alert.md"
+            node scripts/alert-issue.mjs open --alert import-failing --title 'Import failing' --body-file "$RUNNER_TEMP/import-alert.md" --rewrite
+          else
+            node scripts/alert-issue.mjs close --alert import-failing --title 'Import failing' --comment "Every step finished in $RUN_URL."
+          fi
