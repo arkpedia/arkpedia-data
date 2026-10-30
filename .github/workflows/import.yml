@@ -102,7 +102,11 @@ jobs:
           git add -A source
           if git diff --cached --quiet; then echo 'No record changed.'; else git commit -q -m "Import game records ($(date -u +%Y-%m-%d)$REASON)"; fi
           # Rebuilt from main on each run, so the application's merge with main stays a fast-forward.
-          git push --force origin HEAD:imports
+          # Deleted and created again, not force-pushed: moving the branch from an older main would
+          # change its workflow files, which this job's token may not do (2026-10-30, the first
+          # import after import.yml changed). A branch created on main's commits changes none.
+          git push origin --delete imports 2>/dev/null || true
+          git push origin HEAD:refs/heads/imports
       - name: Keep the stage report
         if: always()
         uses: actions/upload-artifact@v7
