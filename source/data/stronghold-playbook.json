@@ -1,0 +1,996 @@
+{
+  "version": 1,
+  "about": "Reviewed stronghold playbook; maintained in arkpedia-data.",
+  "plans": [
+    {
+      "alliance": "Ægir",
+      "steps": [
+        {
+          "kind": "dispatch",
+          "to": 4,
+          "from": 3
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Gladiia"
+          ],
+          "why": "She farms Skadi, Specter and Underflow, so she comes before the units she produces"
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Skadi",
+            "Specter",
+            "Underflow"
+          ]
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Ptilopsis"
+          ],
+          "why": "Copies Gladiia to farm more stacks"
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Mizuki",
+            "Ulpianus"
+          ],
+          "why": "They cash Ægir stacks into their own ATK, so the earlier the better"
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Specter the Unchained"
+          ],
+          "why": "Stacks more"
+        }
+      ]
+    },
+    {
+      "alliance": "Kazimierz",
+      "steps": [
+        {
+          "kind": "start",
+          "take": [
+            "Gravel",
+            "Blemishine"
+          ],
+          "why": "Gravel redeploys with Resilient, Blemishine with Raid"
+        },
+        {
+          "kind": "chase",
+          "take": [
+            "Fartooth"
+          ],
+          "why": "Stacks with Gravel"
+        },
+        {
+          "kind": "chase",
+          "take": [
+            "Młynar"
+          ],
+          "why": "Beefs his ATK"
+        },
+        {
+          "kind": "chase",
+          "take": [
+            "Degenbrecher"
+          ],
+          "why": "Stacks harder"
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Nearl the Radiant Knight"
+          ],
+          "why": "Double Raid with Blemishine"
+        },
+        {
+          "kind": "pivot",
+          "with": "Resilient",
+          "take": [
+            "Gravel"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Raid",
+          "take": [
+            "Blemishine"
+          ]
+        }
+      ],
+      "pairs": [
+        "Resilient",
+        "Raid"
+      ]
+    },
+    {
+      "alliance": "Kjerag",
+      "steps": [
+        {
+          "kind": "dispatch",
+          "to": 4,
+          "from": 3
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "SilverAsh"
+          ]
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Harold",
+            "Pramanix",
+            "Gnosis"
+          ]
+        },
+        {
+          "kind": "chase",
+          "take": [
+            "SilverAsh the Reignfrost"
+          ],
+          "why": "Stacks with SilverAsh, Gnosis, Pramanix and Pramanix the Prerita"
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Swire the Elegant Wit",
+            "Tin Man"
+          ],
+          "why": "Trigger <When obtained> Kjerag units harder"
+        },
+        {
+          "kind": "chase",
+          "take": [
+            "Pramanix the Prerita"
+          ],
+          "why": "Beefs her ATK"
+        },
+        {
+          "kind": "chase",
+          "take": [
+            "Degenbrecher"
+          ],
+          "why": "Stacks harder"
+        }
+      ],
+      "pairs": [
+        "Investor"
+      ]
+    },
+    {
+      "alliance": "Laterano",
+      "steps": [
+        {
+          "kind": "dispatch",
+          "to": 4,
+          "from": 3
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Archetto",
+            "Mostima"
+          ]
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Executor",
+            "Insider",
+            "Sankta Miksaparato"
+          ],
+          "when": {
+            "not": {
+              "has": [
+                "Mostima"
+              ]
+            }
+          }
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Sankta Miksaparato",
+            "Executor",
+            "Executor the Ex Foedere",
+            "Insider",
+            "Lemuen",
+            "Exusiai the New Covenant"
+          ],
+          "when": {
+            "has": [
+              "Mostima"
+            ]
+          },
+          "why": "Surround Mostima with these"
+        },
+        {
+          "kind": "chase",
+          "take": [
+            "Lemuen"
+          ],
+          "why": "Stacks harder"
+        },
+        {
+          "kind": "chase",
+          "take": [
+            "Exusiai the New Covenant"
+          ],
+          "why": "Pure power"
+        }
+      ],
+      "milestone": {
+        "wants": "ammo spent",
+        "prefer": [
+          "Executor the Ex Foedere",
+          "Lemuen",
+          "Mostima"
+        ]
+      }
+    },
+    {
+      "alliance": "Sargon",
+      "steps": [
+        {
+          "kind": "dispatch",
+          "to": 3,
+          "from": 2
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Papyrus",
+            "Philae"
+          ]
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Estelle",
+            "Bubble",
+            "Minimalist"
+          ],
+          "when": {
+            "not": {
+              "active": "Sargon"
+            }
+          },
+          "why": "These are what switch the alliance on"
+        },
+        {
+          "kind": "chase",
+          "take": [
+            "Gavial the Invincible"
+          ],
+          "why": "Stacks harder"
+        },
+        {
+          "kind": "chase",
+          "take": [
+            "Titi"
+          ],
+          "why": "Stacks harder"
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Pepe",
+            "Passenger"
+          ],
+          "why": "Optional firepower"
+        }
+      ],
+      "pairs": [
+        "Swift"
+      ]
+    },
+    {
+      "alliance": "Siracusa",
+      "steps": [
+        {
+          "kind": "start",
+          "take": [
+            "Lappland"
+          ],
+          "why": "Cheap Tier II opener. Refresh the shop manually to gain stacks"
+        },
+        {
+          "kind": "dispatch",
+          "to": 5,
+          "from": 4
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Aroma",
+            "Angelina",
+            "Vigil",
+            "Warfarin"
+          ]
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Vulpisfoglia",
+            "Texas",
+            "Provence"
+          ]
+        },
+        {
+          "kind": "chase",
+          "take": [
+            "Lappland the Decadenza"
+          ],
+          "why": "Hard chase. Or pair with Doctor Hologram"
+        }
+      ],
+      "pairs": [
+        "Marvel"
+      ],
+      "items": [
+        "Doctor Hologram"
+      ]
+    },
+    {
+      "alliance": "Victoria",
+      "steps": [
+        {
+          "kind": "dispatch",
+          "to": 3,
+          "from": 2
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Mint"
+          ]
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Vendela",
+            "Harold",
+            "Rockrock"
+          ],
+          "why": "Help Mint stack harder"
+        },
+        {
+          "kind": "dispatch",
+          "to": 5,
+          "from": 4,
+          "when": {
+            "has": [
+              "Mint"
+            ]
+          }
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Horn"
+          ],
+          "when": {
+            "has": [
+              "Mint"
+            ]
+          }
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Bagpipe",
+            "Catherine",
+            "Blaze the Igniting Spark"
+          ],
+          "when": {
+            "has": [
+              "Mint"
+            ]
+          },
+          "why": "Help Mint and Horn stack harder"
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Kjera",
+            "Carnelian"
+          ],
+          "why": "Worth considering for their item drops"
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Reed the Flame Shadow",
+            "Vina Victoria"
+          ],
+          "why": "Optional firepower"
+        }
+      ],
+      "milestone": {
+        "wants": "equipment carried",
+        "prefer": [
+          "Catherine"
+        ]
+      }
+    },
+    {
+      "alliance": "Yan",
+      "steps": [
+        {
+          "kind": "start",
+          "take": [
+            "Grain Buds"
+          ],
+          "why": "Also the Agile pivot"
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Hoshiguma",
+            "Blaze the Igniting Spark",
+            "Record Keeper",
+            "Dusk"
+          ]
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Swire the Elegant Wit",
+            "Tin Man",
+            "SilverAsh the Reignfrost",
+            "Mountain"
+          ],
+          "why": "Trigger <When obtained> Yan units harder"
+        },
+        {
+          "kind": "chase",
+          "take": [
+            "Yu"
+          ],
+          "why": "More Hoshiguma, Blaze the Igniting Spark and Record Keeper"
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Ptilopsis",
+            "Saria"
+          ],
+          "why": "Make Yu generate more units"
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Qiubai"
+          ],
+          "why": "Optional"
+        }
+      ],
+      "pairs": [
+        "Investor"
+      ]
+    },
+    {
+      "alliance": "Aid",
+      "steps": [
+        {
+          "kind": "hunt",
+          "take": [
+            "Podenco",
+            "Vendela",
+            "Perfumer"
+          ],
+          "why": "Race the three for early stacking"
+        },
+        {
+          "kind": "pivot",
+          "with": "Victoria",
+          "take": [
+            "Vendela"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Kjerag",
+          "take": [
+            "Kjera"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Sargon",
+          "take": [
+            "Carnelian"
+          ]
+        }
+      ],
+      "crucial": [
+        [
+          "Podenco",
+          "Vendela",
+          "Perfumer"
+        ]
+      ],
+      "notes": [
+        "Race the three for early stacking, then swap them out towards whichever faction you are pivoting to."
+      ]
+    },
+    {
+      "alliance": "Agile",
+      "steps": [
+        {
+          "kind": "hunt",
+          "take": [
+            "Tippi",
+            "Ayerscarpe"
+          ],
+          "any": true,
+          "why": "Either one triggers the early stacking"
+        },
+        {
+          "kind": "pivot",
+          "with": "Yan",
+          "take": [
+            "Grain Buds"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Kjerag",
+          "take": [
+            "Gnosis"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Laterano",
+          "take": [
+            "Archetto"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Victoria",
+          "take": [
+            "Catherine"
+          ]
+        }
+      ],
+      "crucial": [
+        [
+          "Tippi",
+          "Ayerscarpe"
+        ]
+      ],
+      "notes": [
+        "The pivots are additions rather than swaps."
+      ]
+    },
+    {
+      "alliance": "Resilient",
+      "steps": [
+        {
+          "kind": "hunt",
+          "take": [
+            "Liskarm",
+            "Gravel"
+          ],
+          "why": "Both, for early stacking"
+        },
+        {
+          "kind": "pivot",
+          "with": "Victoria",
+          "take": [
+            "Bagpipe"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Ægir",
+          "take": [
+            "Specter the Unchained"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Raid",
+          "take": [
+            "Surtr"
+          ]
+        }
+      ],
+      "crucial": [
+        [
+          "Liskarm",
+          "Gravel"
+        ]
+      ],
+      "notes": [
+        "Liskarm is the one you swap out when pivoting; Gravel stays."
+      ]
+    },
+    {
+      "alliance": "Raid",
+      "steps": [
+        {
+          "kind": "hunt",
+          "take": [
+            "Humus",
+            "Blemishine"
+          ],
+          "why": "Both, for early stacking"
+        },
+        {
+          "kind": "pivot",
+          "with": "Ægir",
+          "take": [
+            "Skadi"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Siracusa",
+          "take": [
+            "Texas the Omertosa"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Resilient",
+          "take": [
+            "Surtr"
+          ]
+        }
+      ],
+      "crucial": [
+        [
+          "Humus",
+          "Blemishine"
+        ]
+      ],
+      "notes": [
+        "Either of the two can be swapped out, or the pivot unit simply added."
+      ]
+    },
+    {
+      "alliance": "Arcane",
+      "steps": [
+        {
+          "kind": "dispatch",
+          "to": 5,
+          "from": 4
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Dusk",
+            "Aroma"
+          ]
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Ptilopsis",
+            "Saria"
+          ],
+          "any": true,
+          "why": "Stack Dusk and Aroma harder"
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Lucilla"
+          ]
+        }
+      ],
+      "crucial": [
+        [
+          "Dusk"
+        ],
+        [
+          "Aroma"
+        ]
+      ]
+    },
+    {
+      "alliance": "Precision",
+      "steps": [
+        {
+          "kind": "hunt",
+          "take": [
+            "Executor"
+          ],
+          "why": "Triggers the early stacking"
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Caper",
+            "Indigo"
+          ],
+          "any": true,
+          "when": {
+            "not": {
+              "dispatch": 4
+            }
+          }
+        },
+        {
+          "kind": "dispatch",
+          "to": 4,
+          "from": 3
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Kroos the Keen Glint",
+            "Leonhardt"
+          ],
+          "when": {
+            "dispatch": 4
+          },
+          "why": "Swap Caper or Indigo out for these two and pair them together"
+        },
+        {
+          "kind": "chase",
+          "take": [
+            "Titi"
+          ],
+          "why": "Stacks even harder"
+        },
+        {
+          "kind": "pivot",
+          "with": "Sargon",
+          "take": [
+            "Titi",
+            "Passenger"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Laterano",
+          "take": [
+            "Executor",
+            "Lemuen"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Yan",
+          "take": [
+            "Kroos the Keen Glint"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Kazimierz",
+          "take": [
+            "Fartooth"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Kjerag",
+          "take": [
+            "Snow Hunter"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Victoria",
+          "take": [
+            "Reed the Flame Shadow"
+          ]
+        }
+      ]
+    },
+    {
+      "alliance": "Durable",
+      "steps": [
+        {
+          "kind": "hunt",
+          "take": [
+            "Vetochki",
+            "Cuora"
+          ],
+          "why": "Both, for early stacking"
+        },
+        {
+          "kind": "pivot",
+          "with": "Kjerag",
+          "take": [
+            "Matterhorn"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Kazimierz",
+          "take": [
+            "Ashlock"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Sargon",
+          "take": [
+            "Bubble"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Ægir",
+          "take": [
+            "Skadi"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Laterano",
+          "take": [
+            "Sankta Miksaparato"
+          ]
+        }
+      ],
+      "crucial": [
+        [
+          "Vetochki",
+          "Cuora"
+        ]
+      ],
+      "notes": [
+        "Cuora is the one you swap out when pivoting; Vetochki stays."
+      ]
+    },
+    {
+      "alliance": "Foresight",
+      "steps": [
+        {
+          "kind": "hunt",
+          "take": [
+            "Silence"
+          ],
+          "why": "Triggers the early stacking"
+        },
+        {
+          "kind": "dispatch",
+          "to": 4,
+          "from": 3
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Ines"
+          ]
+        },
+        {
+          "kind": "stray",
+          "take": [
+            "Pramanix",
+            "Swire",
+            "Bagpipe"
+          ],
+          "why": "Silence needs these to function at all"
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Ptilopsis",
+            "Saria"
+          ],
+          "any": true,
+          "why": "Stack Silence and Ines harder"
+        },
+        {
+          "kind": "chase",
+          "take": [
+            "Santalla"
+          ],
+          "why": "Stacks even harder"
+        },
+        {
+          "kind": "pivot",
+          "with": "Kjerag",
+          "take": [
+            "Pramanix"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Yan",
+          "take": [
+            "Swire"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Victoria",
+          "take": [
+            "Bagpipe"
+          ]
+        },
+        {
+          "kind": "pivot",
+          "with": "Laterano",
+          "take": [
+            "Executor the Ex Foedere"
+          ]
+        }
+      ]
+    },
+    {
+      "alliance": "Investor",
+      "steps": [
+        {
+          "kind": "hunt",
+          "take": [
+            "Swire the Elegant Wit",
+            "Tin Man"
+          ]
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Mountain",
+            "SilverAsh the Reignfrost"
+          ],
+          "any": true,
+          "why": "Either one is what truly triggers the alliance"
+        }
+      ],
+      "crucial": [
+        [
+          "Swire the Elegant Wit"
+        ],
+        [
+          "Tin Man"
+        ],
+        [
+          "Mountain",
+          "SilverAsh the Reignfrost"
+        ]
+      ],
+      "pairs": [
+        "Yan",
+        "Kjerag"
+      ]
+    },
+    {
+      "alliance": "Harmony",
+      "steps": [
+        {
+          "kind": "strategy",
+          "take": [
+            "Damazti Cluster"
+          ]
+        },
+        {
+          "kind": "hunt",
+          "take": [
+            "Saria",
+            "Rosmontis",
+            "Entelechia",
+            "Yu",
+            "Suzuran",
+            "Eyjafjalla the Hvít Aska",
+            "Lumen"
+          ],
+          "any": true,
+          "why": "The usual targets. Any desired Tier V or VI operator works"
+        }
+      ],
+      "items": [
+        "Damazti Isomorph"
+      ],
+      "crucial": [],
+      "notes": [
+        "Set up rather than hunted. The Damazti Cluster strategy hands you a Damazti Isomorph every 5 rounds; equip it beside the item that matches your core faction and the operator holding both is treated as a member of that alliance."
+      ]
+    }
+  ]
+}
