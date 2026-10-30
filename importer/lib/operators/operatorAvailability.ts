@@ -1,6 +1,7 @@
 import { serverDayBoundary } from '@/lib/time/servers.mjs';
 export type ReleaseOperator = {
   releaseAt?: string;
+  releaseEstimate?: string;
   /** Until when the debut lasts (Operator.availableUntil). */
   availableUntil?: string;
   characterInfo?: Record<string, string> | null;
@@ -12,12 +13,12 @@ const DAY = 86_400_000;
 /** Global release dates are UTC-7 calendar dates, never the viewer's midnight.
  * Without a confirmed hour, wait until that calendar day has passed before
  * calling an operator released. Do not invent a precise opening time. */
-export function operatorRelease(op: ReleaseOperator): { at: number; dayStart: number; exact: boolean } | null {
+export function operatorRelease(op: ReleaseOperator): { at: number; dayStart: number; exact: boolean; estimated?: boolean } | null {
   if (op.releaseAt && /(?:Z|[+-]\d{2}:\d{2})$/i.test(op.releaseAt)) {
     const at = Date.parse(op.releaseAt);
     if (Number.isFinite(at)) return { at, dayStart: at, exact: true };
   }
-  const raw = op.characterInfo?.['Release Date']?.trim();
+  const raw = op.releaseEstimate ?? op.characterInfo?.['Release Date']?.trim();
   if (!raw) return null;
   const match = raw.match(/^(\d{4})[/-](\d{1,2})[/-](\d{1,2})$/);
   const day = match ? Date.UTC(+match[1], +match[2] - 1, +match[3]) : Date.parse(`${raw} UTC`);
@@ -25,7 +26,7 @@ export function operatorRelease(op: ReleaseOperator): { at: number; dayStart: nu
   const date = new Date(day);
   if (match && (date.getUTCFullYear() !== +match[1] || date.getUTCMonth() !== +match[2] - 1 || date.getUTCDate() !== +match[3])) return null;
   const dayStart = serverDayBoundary(day, 'en', 'calendar');
-  return { at: dayStart + DAY, dayStart, exact: false };
+  return { at: dayStart + DAY, dayStart, exact: false, ...(op.releaseEstimate ? { estimated: true } : {}) };
 }
 
 /** Two weeks, for an operator whose debut has no known end (or a release from before the
@@ -40,7 +41,7 @@ const NEW_WINDOW_DAYS = 14;
  */
 export function isDebutAvailable(op: ReleaseOperator, now: number): boolean {
   const release = operatorRelease(op);
-  if (!release || now < release.at) return false;
+  if (!release || release.estimated || now < release.at) return false;
   const until = op.availableUntil ? Date.parse(op.availableUntil) : NaN;
   if (Number.isFinite(until)) return now < until;
   return now - release.at <= NEW_WINDOW_DAYS * DAY;
@@ -49,12 +50,13 @@ export function isDebutAvailable(op: ReleaseOperator, now: number): boolean {
 export function operatorReleaseLabel(op: ReleaseOperator, now: number): string | null {
   const release = operatorRelease(op);
   if (!release || now >= release.at) return null;
-  if (!release.exact && now >= release.dayStart) return 'Releases today';
+  if (!release.exact && now >= release.dayStart) return release.estimated ? 'Estimated today' : 'Releases today';
+  const prefix = release.estimated ? 'Est. in' : 'In';
   const remaining = (release.exact ? release.at : release.dayStart) - now;
-  if (remaining < 3_600_000) return `In ${Math.ceil(remaining / 60_000)}m`;
-  if (remaining < DAY) return `In ${Math.ceil(remaining / 3_600_000)}h`;
+  if (remaining < 3_600_000) return `${prefix} ${Math.ceil(remaining / 60_000)}m`;
+  if (remaining < DAY) return `${prefix} ${Math.ceil(remaining / 3_600_000)}h`;
   const days = Math.ceil(remaining / DAY);
-  return `In ${days} day${days === 1 ? '' : 's'}`;
+  return `${prefix} ${days} day${days === 1 ? '' : 's'}`;
 }
 
 /**
@@ -83,6 +85,7 @@ export interface ReleaseMarker { releasedAt: number | null; isFuture?: true }
 
 export function releaseMarker(op: ReleaseOperator): ReleaseMarker {
   const release = operatorRelease(op);
+  if (release?.estimated) return { releasedAt: null, isFuture: true };
   if (release) return { releasedAt: release.at };
   return op.isFuture === true ? { releasedAt: null, isFuture: true } : { releasedAt: null };
 }
