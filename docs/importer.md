@@ -20,6 +20,12 @@ It never pushes to `main`: `scripts/validate-release.mjs` refuses `source/` chan
 compiled `release/`. The application compiles the release from `imports` (its `data_ref`) and
 publishes source and release to `main` together, as it does for `editorial`.
 
+**After a game patch** the import does not wait for the night:
+`.github/workflows/client-version-dispatch.yml` checks every three hours whether a region's client
+is past the published tables and its mirror already carries the new version, and if so starts
+`import.yml` with `reason: patch`. That import's commit on `imports` says "patch", and the
+application's content watcher compiles it as soon as it sees it.
+
 Each step runs through the stage runner (`scripts/content/run-stage.mjs`): a step that fails has
 its changes put back and costs only its own records. `run-imports.sh` and
 `scripts/sync/refresh-stage-data.sh` list the steps.
