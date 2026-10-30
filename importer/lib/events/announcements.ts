@@ -1,4 +1,4 @@
-import announcements from '@/config/event-announcements.json';
+import announcements from '@/data/event-announcements.json';
 import type { TableRewardGroup } from './tableRewards';
 
 export interface TicketDetails {
@@ -10,7 +10,8 @@ export interface TicketDetails {
 interface Supplement { groups: TableRewardGroup[]; tickets: Record<string, TicketDetails> }
 const supplements = announcements.events as unknown as Record<string, Supplement>;
 
-/** Reviewed stream previews survive content hydration (config belongs to the app). The
+/** Reviewed stream previews come from data/event-announcements.json, the record
+ * arkpedia-data publishes, so a review lands without an app deploy. The
  * event's own Global table/announcement groups supersede their preview, without counting
  * the same sign-in or paid pack twice. Independent early login gifts stay with the event. */
 export function announcedRewards(name: string, groups: TableRewardGroup[]) {

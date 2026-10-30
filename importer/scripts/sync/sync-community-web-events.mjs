@@ -183,7 +183,8 @@ export async function discoverCampaigns({ fetcher = globalThis.fetch, now = defa
 }
 
 export async function syncWebEvents(root, { fetcher = globalThis.fetch, now = defaultNow().getTime(), seeds } = {}) {
-  const fallback = seeds ?? JSON.parse(fs.readFileSync(path.join(root, 'config/community-web-events.json'), 'utf8'));
+  // The record is the only source: what a previous run verified is what this run starts from.
+  const fallback = seeds ?? [];
   const at = path.join(root, OUTPUT);
   const prior = fs.existsSync(at) ? JSON.parse(fs.readFileSync(at, 'utf8')) : [];
   const events = new Map([...fallback, ...prior].map(event => [event.url, event]));

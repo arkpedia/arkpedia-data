@@ -35,7 +35,7 @@ test('the Monthly Card check-in and a video login are built from dynActs, with t
 test('the official posts of the same days are those sign-ins, not second copies', () => {
   const at = (s: number) => new Date(s * 1000).toISOString();
   const announcements = { events: { '[Celebration] Critical Phase Transition': { region: 'Global', groups: [
-    // As config/event-announcements.json has them: the post's totals for the whole sign-in.
+    // As data/event-announcements.json has them: the post's totals for the whole sign-in.
     { kind: 'login', title: 'Recommended Monthly Card', start: at(start), end: at(end + 1), days: 30, region: 'Global',
       items: [{ name: 'Orundum', count: 6000, kind: 'currency', id: '4003' }, { name: 'Emergency Sanity Booster', count: 30, kind: 'sanity', id: 'ap_supply_lt_80' }] },
     { kind: 'login', title: 'To Look Back on Terra', start: at(start), end: at(end + 1), days: 3, region: 'Global',
