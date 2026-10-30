@@ -26,24 +26,31 @@ its changes put back and costs only its own records. `run-imports.sh` and
 
 ## What stays in the application
 
-The steps that read site code: the pull planner's sources, official videos, the game account map
-and guide videos, plus the checks of what pages send (pull-odds rules, payload budgets). Also
-story-chapters and story-covers, whose source (arknights.timo.beer) refuses GitHub's runners. They run
-in the application's compile job, on the records this leaves.
+- The **pull sources** and **first clears** (`pulls`): built with the pull planner's own code,
+  which reaches the site's event calendar.
+- **story-chapters** and **story-covers**: their source (arknights.timo.beer) refuses GitHub's
+  runners.
+- The checks of what pages send: **pull-odds rules** and **payload budgets**.
+- When it compiles an editorial edit without a refresh, the application files the official videos
+  into events again (`sync-official-videos.mjs --offline`) and rebuilds any palette whose review
+  or recipe changed, so those overrides show within minutes rather than the next night.
+
+They run in the application's compile job, on the records this leaves.
 
 ## Rollout
 
-1. **Shadow:** started by hand only, with no art-repository keys, so the art steps plan and
-   publish nothing. The application still runs its own refresh. Runs are compared with what the
-   application's nightly publishes.
-2. **Scheduled (now):** nightly at 16:17 UTC, hours ahead of the application's 19:57, still in
-   shadow mode. A failed step opens one **Import failing** issue (`scripts/alert-issue.mjs`), and
-   the next clean run closes it. The two art steps count only once the keys are here.
-3. **Cutover:** add the secrets `CATALOGUE_IMAGE_DEPLOY_KEY` and `CATALOGUE_SKIN_DEPLOY_KEY` here, then
-   set the variable `IMPORT_PUBLISHES_ART` to `1` here and `ARKPEDIA_IMPORTS_IN_DATA` to `1` in the
-   application, together: the application then compiles from `imports` and runs only the steps that
-   stay, and the art is published from here. Unsetting both rolls it back.
-4. **Clean-up:** the application deletes its copies.
+1. **Shadow:** started by hand, with no art-repository keys; runs were compared with what the
+   application's nightly published.
+2. **Scheduled:** nightly at 16:17 UTC, hours ahead of the application's 19:57. A failed step opens
+   one **Import failing** issue (`scripts/alert-issue.mjs`), and the next clean run closes it.
+3. **Cutover (2026-10-30):** the art keys are here and `IMPORT_PUBLISHES_ART` is `1`; the
+   application compiles from `imports` and runs only the steps that stay.
+4. **Phase 4 (2026-10-30):** the game account map, official videos, guide videos (with the
+   **Guide suggestions** issue) and free rewards moved here too.
+5. **Clean-up:** the application deletes its copies of every script only this job runs.
 
-**Until step 4, `importer/` is a copy:** a change to one of its files lands in the application too
-(arkpedia/arkpedia), or waits.
+## Files both repositories keep
+
+Some modules are read by the site and by a step here (`lib/`, a few `config/` files, the stage
+runner). Each is a copy of the application's, and the application's Check compares every file the
+two share, so a change lands in both or fails there.

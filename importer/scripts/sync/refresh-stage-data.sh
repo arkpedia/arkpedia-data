@@ -172,8 +172,8 @@ stage module-stats -- node scripts/sync/sync-module-stats.mjs
 # mode names (data/stages-content.json, event-rewards.json, event-stores.json), no game tables; GET
 # only, and yt-dlp for channel listings, each call within the stage's own 10 minutes. Main's run
 # only: on dev's (ARKPEDIA_DATA_BRANCH dev) it logs that it skipped. Under tsx: the matcher reads
-# the site's alter map.
-# guide-videos stays in the application (it reads the site's operator aliases).
+# the site's alter map (lib/operators/operatorAliases.ts, a copy of the application's).
+stage guide-videos -- npx tsx scripts/sync/sync-guide-videos.mjs
 
 # Animated outfit art: which artwork has a Spine model in arkpedia-l2d-assets, as model.json
 # URLs pinned to that repository's commit (data/dynamic-art.json), for the focused artwork view.
@@ -249,6 +249,12 @@ stage event-stores -- node scripts/sync/sync-event-stores.mjs
 # packs, daily free rolls and announced gifts; and a rerun its original run's until its own
 # appear. Stores are event-stores' above.
 stage event-rewards -- node scripts/build/build-event-rewards.mjs
+
+# The free rewards the pull planner counts (data/free-rewards.json): Paradox Simulations, beginner
+# programmes, sign-ins, missions, retro trails and the event rewards just above, from the EN
+# tables. After the event rewards, which it reads; before the reward icons, which take their free
+# claims from it. The regional schedules, above, read the previous run's.
+stage free-rewards --needs event-rewards -- node scripts/build/build-free-rewards.mjs
 
 # Official shop artwork for the sets the rewards name, including inherited reruns.
 # Keep CN originals; automatically prefer Global when its client thumbnail arrives.
