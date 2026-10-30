@@ -56,6 +56,10 @@ stage upstream-en --invariant --timeout-minutes 20 -- bash scripts/lib/upstream.
   en-gamedata https://github.com/ArknightsAssets/ArknightsGamedata.git default \
   en/gamedata/excel en/gamedata/levels
 
+# The stage simulator's enemy tables (data/simulator/raw/ and their receipt), byte-exact from the
+# pinned EN checkout, for arkpedia-stage-simulator to read from this repository.
+stage simulator-tables --needs upstream-en -- node scripts/imports/import-simulator-tables.mjs
+
 # Verified Global recruitment pool.
 stage recruitment -- node scripts/sync/sync-recruitment.mjs
 
