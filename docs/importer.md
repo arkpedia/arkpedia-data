@@ -135,13 +135,20 @@ two share, so a change lands in both or fails there.
 
 ## Event lobby music
 
+Minigames are included: explicit main-interface or venue BGM uses can match their activity
+ids, including the `_entry` venue recording. Reviewed mode-name bridges cover minigame
+calendar entries without activity ids; named seasons share the
+mode-wide reference. Conflicting mode-wide and season-specific references are held for
+review. Exploration, battle and shop music do not qualify as a lobby.
+
 The `event-music` stage runs after the album refresh, reading PRTS's
 [game music usage reference](https://prts.wiki/w/音乐鉴赏/游戏内音乐一览) once per import.
 It adds explicit main-interface uses to `source/data/event-page-music.json`.
 These page themes stay separate from the song guesser, whose event coverage requires a review
 of every track on an OST, including battle/story uses and exclusions.
 A recording must have exactly one Monster Siren link already present in the released song
-catalogue, and the usage must identify one known event by its names/aliases or activity ID.
+catalogue, and the usage must identify a known event or reviewed mode family by names/aliases
+or activity ID. Known reviewed lobby variants do not count as conflicting choices.
 Album titles and `sys_` prefixes alone never establish a lobby use. PV, battle and story tracks
 are not automatically assigned as a page theme.
 
@@ -150,6 +157,19 @@ the source anchor. Subsequent imports retain old aliases and add official Global
 Missing recordings, ambiguous uses and conflicting references go to the existing quarantine
 report; neither an outage nor a truncated/reformatted response deletes existing associations.
 The stage runner restores a failed stage and lets unrelated imports continue.
+
+`referenceRecordings` can supply a reviewed missing MSR link for an exact reference file/title
+and existing catalogue id. An upstream link takes precedence over that repair. `referenceReviews`
+retains a reviewed choice against an exact conflicting file/title/incoming id; changes to any
+of those values reopen the alert. These records carry a reason and source, and never suppress
+unrelated or future discrepancies.
+
+`recordings` contains manually verified YouTube-only lobby fallbacks, with event names,
+title, video id, recording URL, and an exact reference file/title plus usage source.
+The content compiler publishes these into both the page table and playable catalogue;
+no MSR ids or album releases are invented and no audio is copied. An unchanged explicit
+usage covered by a reviewed video does not raise a missing-recording alert. A newly
+released MSR link is imported normally and takes priority over the video fallback.
 
 `node scripts/sync/sync-event-music.mjs --dry-run` from `importer/` prints the reconciliation
 without changing records. The importer commits source to `imports`; Prepare content release
