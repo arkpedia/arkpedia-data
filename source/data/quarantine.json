@@ -137,6 +137,15 @@
       "firstSeen": "2026-09-25"
     },
     {
+      "key": "song:953934",
+      "stage": "albums",
+      "reason": "Тысячу лет спустя (album 1005) has no upload on Monster Siren's YouTube channel yet: the song guesser plays it, the music player skips it until the daily run finds the upload and fills in its videoId",
+      "action": "published-partial",
+      "sourceRef": "https://monster-siren.hypergryph.com/music/953934",
+      "overdueAfterDays": 45,
+      "firstSeen": "2026-11-01"
+    },
+    {
       "key": "song:953935",
       "stage": "albums",
       "reason": "月明人间 (album 1014) has no upload on Monster Siren's YouTube channel yet: the song guesser plays it, the music player skips it until the daily run finds the upload and fills in its videoId",
@@ -146,11 +155,11 @@
       "firstSeen": "2026-09-25"
     },
     {
-      "key": "banner:announced:将雪投火",
+      "key": "banner:LIMITED_79_0_1",
       "stage": "catalogue",
-      "reason": "[Limited] 将雪投火 (CN 2026/11/01–2026/11/15) is published from the official announcement https://ak.hypergryph.com/news/0787 with its lineup pending: 塔露拉, 冻河 and 奥尔佳 have no operator record yet, which the CN client adds.",
-      "action": "published-partial",
-      "firstSeen": "2026-10-24"
+      "reason": "[Celebration] Cinders of Snow (LIMITED_79_0_1): its wiki lineup names Toska and Olga, which no operator record matches, so its previous lineup is kept.",
+      "action": "kept-previous",
+      "firstSeen": "2026-11-01"
     },
     {
       "key": "banner:CLASSIC_DOUBLE_EN_42_0_2",
@@ -195,12 +204,91 @@
       "firstSeen": "2026-10-16"
     },
     {
+      "key": "endfield:feed",
+      "stage": "endfield-albums",
+      "reason": "the Metal Scar Radio YouTube feed could not be read",
+      "action": "kept-previous",
+      "sourceRef": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_wSsatRjjuF1xPlN9mtAPw",
+      "firstSeen": "2026-11-01"
+    },
+    {
       "key": "event-store:[Event] 视相博物馆：演化",
       "stage": "event-stores",
       "reason": "[Event] 视相博物馆：演化: its wiki store page 视相博物馆：演化 cannot be used: the wiki has no page by that name; no earlier parse with a store is cached, so the event page shows no store from the wiki.",
       "action": "omitted-new",
       "sourceRef": "https://arknights.wiki.gg/wiki/%E8%A7%86%E7%9B%B8%E5%8D%9A%E7%89%A9%E9%A6%86%EF%BC%9A%E6%BC%94%E5%8C%96",
       "firstSeen": "2026-10-24"
+    },
+    {
+      "key": "official-tables:en:differs",
+      "stage": "official-tables",
+      "reason": "4 of 55 en tables differ between our decode of the official client and ArknightsAssets/ArknightsGamedata (for example char_patch_table.json, character_table.json, open_server_table.json, token_table.json); the site keeps the mirror's.",
+      "action": "kept-previous",
+      "firstSeen": "2026-11-01"
+    },
+    {
+      "key": "official-tables:jp:differs",
+      "stage": "official-tables",
+      "reason": "4 of 55 jp tables differ between our decode of the official client and ArknightsAssets/ArknightsGamedata (for example char_patch_table.json, character_table.json, open_server_table.json, token_table.json); the site keeps the mirror's.",
+      "action": "kept-previous",
+      "firstSeen": "2026-11-01"
+    },
+    {
+      "key": "official-tables:kr:differs",
+      "stage": "official-tables",
+      "reason": "4 of 55 kr tables differ between our decode of the official client and ArknightsAssets/ArknightsGamedata (for example char_patch_table.json, character_table.json, open_server_table.json, token_table.json); the site keeps the mirror's.",
+      "action": "kept-previous",
+      "firstSeen": "2026-11-01"
+    },
+    {
+      "key": "feed:UCR0J2NYGuC8epsa1O4DMmXQ",
+      "stage": "official-videos",
+      "reason": "The official channel Arknights Official - Yostar could not be read; its newest uploads wait for the next run.",
+      "action": "kept-previous",
+      "sourceRef": "https://www.youtube.com/channel/UCR0J2NYGuC8epsa1O4DMmXQ",
+      "firstSeen": "2026-11-01"
+    },
+    {
+      "key": "palette:/five-star-skins/Caleido - Base.webp",
+      "stage": "palettes",
+      "reason": "/five-star-skins/Caleido - Base.webp: an automatic palette, since it has no review in data/color-palette-reviews.json and no recipe in data/color-palette-features.json; review it (npm run palettes:review) or add its five feature choices",
+      "action": "published-partial",
+      "firstSeen": "2026-11-01"
+    },
+    {
+      "key": "palette:/five-star-skins/Caleido - Elite 2.webp",
+      "stage": "palettes",
+      "reason": "/five-star-skins/Caleido - Elite 2.webp: an automatic palette, since it has no review in data/color-palette-reviews.json and no recipe in data/color-palette-features.json; review it (npm run palettes:review) or add its five feature choices",
+      "action": "published-partial",
+      "firstSeen": "2026-11-01"
+    },
+    {
+      "key": "palette:/five-star-skins/Ольга - Base.webp",
+      "stage": "palettes",
+      "reason": "/five-star-skins/Ольга - Base.webp: an automatic palette, since it has no review in data/color-palette-reviews.json and no recipe in data/color-palette-features.json; review it (npm run palettes:review) or add its five feature choices",
+      "action": "published-partial",
+      "firstSeen": "2026-11-01"
+    },
+    {
+      "key": "palette:/five-star-skins/Ольга - Elite 2.webp",
+      "stage": "palettes",
+      "reason": "/five-star-skins/Ольга - Elite 2.webp: an automatic palette, since it has no review in data/color-palette-reviews.json and no recipe in data/color-palette-features.json; review it (npm run palettes:review) or add its five feature choices",
+      "action": "published-partial",
+      "firstSeen": "2026-11-01"
+    },
+    {
+      "key": "palette:/four-star-skins/Herdbells - Base.webp",
+      "stage": "palettes",
+      "reason": "/four-star-skins/Herdbells - Base.webp: an automatic palette, since it has no review in data/color-palette-reviews.json and no recipe in data/color-palette-features.json; review it (npm run palettes:review) or add its five feature choices",
+      "action": "published-partial",
+      "firstSeen": "2026-11-01"
+    },
+    {
+      "key": "palette:/four-star-skins/Herdbells - Elite 2.webp",
+      "stage": "palettes",
+      "reason": "/four-star-skins/Herdbells - Elite 2.webp: an automatic palette, since it has no review in data/color-palette-reviews.json and no recipe in data/color-palette-features.json; review it (npm run palettes:review) or add its five feature choices",
+      "action": "published-partial",
+      "firstSeen": "2026-11-01"
     },
     {
       "key": "palette:/one-star-skins/GALLUS² - Base.webp",
@@ -224,184 +312,219 @@
       "firstSeen": "2026-10-15"
     },
     {
-      "key": "banner:[Limited] 将雪投火",
-      "stage": "recurring-banners",
-      "reason": "[Limited] 将雪投火 is published without its operators, which the client, the announcement or the wiki's yearly banner page supplies.",
+      "key": "palette:/six-star-skins/Talulah - Base.webp",
+      "stage": "palettes",
+      "reason": "/six-star-skins/Talulah - Base.webp: an automatic palette, since it has no review in data/color-palette-reviews.json and no recipe in data/color-palette-features.json; review it (npm run palettes:review) or add its five feature choices",
       "action": "published-partial",
-      "firstSeen": "2026-10-24"
+      "firstSeen": "2026-11-01"
+    },
+    {
+      "key": "palette:/six-star-skins/Talulah - Elite 2.webp",
+      "stage": "palettes",
+      "reason": "/six-star-skins/Talulah - Elite 2.webp: an automatic palette, since it has no review in data/color-palette-reviews.json and no recipe in data/color-palette-features.json; review it (npm run palettes:review) or add its five feature choices",
+      "action": "published-partial",
+      "firstSeen": "2026-11-01"
+    },
+    {
+      "key": "palette:/six-star-skins/Территория - Base.webp",
+      "stage": "palettes",
+      "reason": "/six-star-skins/Территория - Base.webp: an automatic palette, since it has no review in data/color-palette-reviews.json and no recipe in data/color-palette-features.json; review it (npm run palettes:review) or add its five feature choices",
+      "action": "published-partial",
+      "firstSeen": "2026-11-01"
+    },
+    {
+      "key": "palette:/six-star-skins/Территория - Elite 2.webp",
+      "stage": "palettes",
+      "reason": "/six-star-skins/Территория - Elite 2.webp: an automatic palette, since it has no review in data/color-palette-reviews.json and no recipe in data/color-palette-features.json; review it (npm run palettes:review) or add its five feature choices",
+      "action": "published-partial",
+      "firstSeen": "2026-11-01"
+    },
+    {
+      "key": "palette:/six-star-skins/Тоска - Base.webp",
+      "stage": "palettes",
+      "reason": "/six-star-skins/Тоска - Base.webp: an automatic palette, since it has no review in data/color-palette-reviews.json and no recipe in data/color-palette-features.json; review it (npm run palettes:review) or add its five feature choices",
+      "action": "published-partial",
+      "firstSeen": "2026-11-01"
+    },
+    {
+      "key": "palette:/six-star-skins/Тоска - Elite 2.webp",
+      "stage": "palettes",
+      "reason": "/six-star-skins/Тоска - Elite 2.webp: an automatic palette, since it has no review in data/color-palette-reviews.json and no recipe in data/color-palette-features.json; review it (npm run palettes:review) or add its five feature choices",
+      "action": "published-partial",
+      "firstSeen": "2026-11-01"
     },
     {
       "key": "reward-icon:Anniversary Wheel of Fortune] Furniture",
       "stage": "reward-icons",
-      "reason": "The reward \"Anniversary Wheel of Fortune] Furniture\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"Anniversary Wheel of Fortune] Furniture\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:Exclusive Furniture - 'Festival' Lightbox",
       "stage": "reward-icons",
-      "reason": "The reward \"Exclusive Furniture - 'Festival' Lightbox\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"Exclusive Furniture - 'Festival' Lightbox\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:Exclusive Furniture - 'Lucky Sugar Painting Display'",
       "stage": "reward-icons",
-      "reason": "The reward \"Exclusive Furniture - 'Lucky Sugar Painting Display'\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"Exclusive Furniture - 'Lucky Sugar Painting Display'\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:Exclusive Furniture - 'Yanese Festive Hanging Ornament'",
       "stage": "reward-icons",
-      "reason": "The reward \"Exclusive Furniture - 'Yanese Festive Hanging Ornament'\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"Exclusive Furniture - 'Yanese Festive Hanging Ornament'\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:Liquefied Ether Absorbent",
       "stage": "reward-icons",
-      "reason": "The reward \"Liquefied Ether Absorbent\" of [Side Story – Carnival] Till the Lands Become an Orange has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"Liquefied Ether Absorbent\" of [Side Story – Carnival] Till the Lands Become an Orange not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-16"
     },
     {
       "key": "reward-icon:Reward item",
       "stage": "reward-icons",
-      "reason": "The reward \"Reward item\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"Reward item\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-22"
     },
     {
       "key": "reward-icon:The Silent Wavelengths Ten-roll Headhunting Permit",
       "stage": "reward-icons",
-      "reason": "The reward \"The Silent Wavelengths Ten-roll Headhunting Permit\" of Abnormal Spectrum has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"The Silent Wavelengths Ten-roll Headhunting Permit\" of Abnormal Spectrum not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-10"
     },
     {
       "key": "reward-icon:announcement:Chip Catalyst",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Chip Catalyst\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Chip Catalyst\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Crystalline Component",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Crystalline Component\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Crystalline Component\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Data Supplement Instrument",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Data Supplement Instrument\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Data Supplement Instrument\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Data Supplement Stick",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Data Supplement Stick\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Data Supplement Stick\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Emergency Sanity Concentrate",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Emergency Sanity Concentrate\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Emergency Sanity Concentrate\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Expedited Plan",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Expedited Plan\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Expedited Plan\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Furniture Part",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Furniture Part\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Furniture Part\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:LMD",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:LMD\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:LMD\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Module Data Block",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Module Data Block\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Module Data Block\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Orirock Cluster",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Orirock Cluster\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Orirock Cluster\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Pure Gold",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Pure Gold\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Pure Gold\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Recruitment Permit",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Recruitment Permit\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Recruitment Permit\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Skill Summary - 1",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Skill Summary - 1\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Skill Summary - 1\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Skill Summary - 2",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Skill Summary - 2\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Skill Summary - 2\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Skill Summary - 3",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Skill Summary - 3\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Skill Summary - 3\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Strategic Battle Record",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Strategic Battle Record\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Strategic Battle Record\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Sugar Pack",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Sugar Pack\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Sugar Pack\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },
     {
       "key": "reward-icon:announcement:Tactical Battle Record",
       "stage": "reward-icons",
-      "reason": "The reward \"announcement:Tactical Battle Record\" of Reward Tracker has no icon from the item tables, the furniture art or the EN wiki; it renders without one until a later run finds it.",
+      "reason": "The reward \"announcement:Tactical Battle Record\" of Reward Tracker not fetched within this run's download budget; the next refresh retries it; it renders without one until a later run finds it.",
       "action": "published-partial",
       "firstSeen": "2026-10-13"
     },

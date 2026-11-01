@@ -746,7 +746,87 @@
       "buffId": "train_spd&profession2[112]"
     }
   ],
-  "modules": [],
+  "modules": [
+    {
+      "stages": [
+        {
+          "stage": "Stage 1",
+          "attributesIncreased": "HP +190 , ATK +40",
+          "effectLabel": "New trait",
+          "effectText": "首次部署时，待部署区最左侧的干员部署费用-4",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Crystalline Electronic Unit",
+              "quantity": 2
+            },
+            {
+              "name": "LMD",
+              "quantity": 80000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2",
+          "attributesIncreased": "HP +210 , ATK +50",
+          "effectLabel": "开放性开局 improved",
+          "effectText": "在场时向待部署区中加入“风雪之眼”，且使待部署区按照部署费用排列；位于“风雪之眼”左侧的干员与自身初始技力+4，攻击力+7%，下次再部署时间-25%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Stick",
+              "quantity": 60
+            },
+            {
+              "name": "Rephasic Enantiomer",
+              "quantity": 3
+            },
+            {
+              "name": "LMD",
+              "quantity": 100000
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3",
+          "attributesIncreased": "HP +230 , ATK +65",
+          "effectLabel": "开放性开局 improved",
+          "effectText": "在场时向待部署区中加入“风雪之眼”，且使待部署区按照部署费用排列；位于“风雪之眼”左侧的干员与自身初始技力+4，攻击力+10%，下次再部署时间-25%，且撤退后部署费用的增加上限减少25%",
+          "cost": [
+            {
+              "name": "Module Data Block",
+              "quantity": 4
+            },
+            {
+              "name": "Data Supplement Instrument",
+              "quantity": 20
+            },
+            {
+              "name": "Polymerization Preparation",
+              "quantity": 4
+            },
+            {
+              "name": "LMD",
+              "quantity": 120000
+            }
+          ]
+        }
+      ],
+      "type": "Upgrade",
+      "moduleId": "uniequip_002_svash2",
+      "name": "CSR-X: 邀约",
+      "mission": {
+        "requirement1": "战斗中非助战凛御银灰累计使用8次“御敌的锋锐”",
+        "requirement2": "3星通关插曲风雪过境BI-7；必须编入非助战凛御银灰并上场，其他成员仅可编入7名干员"
+      }
+    }
+  ],
   "review": {
     "official": "Enciodes Silverash, former chairman of Karlan Trade and current Chief of the Silverash Family. He has unique views on economics, trade, international politics, diplomacy, and strategic planning.\nConsidering his exceptional status and the complex situation in Kjerag, we should be judicious in our cooperation with him, to avoid unnecessary risk.",
     "editor": null,
