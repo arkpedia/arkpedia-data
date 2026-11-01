@@ -103,6 +103,9 @@ stage voices --needs charwords -- env ARKPEDIA_EN_CHARWORDS=.cache/upstream/en-g
   ARKPEDIA_EN_SUPPLEMENTAL_CHARWORDS="$supplemental_charwords" npm run voices:refresh
 # Monster Siren's new albums and songs, before the lyrics that key on them.
 stage albums -- npm run albums:refresh
+# Explicit lobby uses from PRTS, matched to released songs and known event identities.
+# Independent of a failed album refresh: the previous catalogue is still valid.
+stage event-music -- node scripts/sync/sync-event-music.mjs
 # Arknights: Endfield's albums and songs, from its label's YouTube channel
 # (data/endfield-albums.json, scripts/sync/sync-endfield-albums.mjs).
 stage endfield-albums -- npm run endfield-albums:refresh

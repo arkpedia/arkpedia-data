@@ -132,3 +132,27 @@ They run in the application's compile job, on the records this leaves.
 Some modules are read by the site and by a step here (`lib/`, a few `config/` files, the stage
 runner). Each is a copy of the application's, and the application's Check compares every file the
 two share, so a change lands in both or fails there.
+
+## Event lobby music
+
+The `event-music` stage runs after the album refresh, reading PRTS's
+[game music usage reference](https://prts.wiki/w/音乐鉴赏/游戏内音乐一览) once per import.
+It adds explicit main-interface uses to `source/data/event-page-music.json`.
+These page themes stay separate from the song guesser, whose event coverage requires a review
+of every track on an OST, including battle/story uses and exclusions.
+A recording must have exactly one Monster Siren link already present in the released song
+catalogue, and the usage must identify one known event by its names/aliases or activity ID.
+Album titles and `sys_` prefixes alone never establish a lobby use. PV, battle and story tracks
+are not automatically assigned as a page theme.
+
+Reviewed choices always win. New rows record `importedBy: event-music`, activity identity and
+the source anchor. Subsequent imports retain old aliases and add official Global names.
+Missing recordings, ambiguous uses and conflicting references go to the existing quarantine
+report; neither an outage nor a truncated/reformatted response deletes existing associations.
+The stage runner restores a failed stage and lets unrelated imports continue.
+
+`node scripts/sync/sync-event-music.mjs --dry-run` from `importer/` prints the reconciliation
+without changing records. The importer commits source to `imports`; Prepare content release
+then compiles the event page's `page-music` table and publishes it with the shared release.
+Preview reads that versioned table, so future links require a content release, not an app deploy.
+The website still needs a playable released recording and the visitor's media/autoplay choice.
