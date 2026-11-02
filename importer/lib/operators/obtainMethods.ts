@@ -10,8 +10,7 @@ import { getWelfareInfo } from './operatorTypes';
  * to what its cards read.
  *
  *  - limited: a Limited banner operator, in any of its four sub-types.
- *  - standard, kernel: the 6★ pools. (Lower rarities are on the standard flag too, but the
- *    list has only ever meant the 6★ ones.)
+ *  - standard, kernel: pool membership at every rarity, independently of rarity filters.
  *  - recruitment: can be got by Recruitment at all, whatever else also gives them.
  *  - recruitment-only: Recruitment and neither of those pools, the "Pure Recruitment" list.
  *  - welfare: given away (record restore, a mode's reward, a shop), whatever its type.
@@ -50,13 +49,13 @@ export const WELFARE_SUBTYPES: readonly { label: string; matches: readonly strin
 type HowToObtain = string | Record<string, unknown> | null | undefined;
 
 /** Which of the methods this operator is obtained by; none for a record with no obtain data. */
-export function obtainMethodsOf(howToObtain: HowToObtain, rarity: number | null): ObtainMethod[] {
+export function obtainMethodsOf(howToObtain: HowToObtain): ObtainMethod[] {
   const raw = howToObtain;
   if (!raw || typeof raw !== 'object') return [];
   const methods: ObtainMethod[] = [];
   if (raw['Limited'] === 'Yes') methods.push('limited');
-  if (raw['Standard Headhunting'] === 'Yes' && rarity === 6) methods.push('standard');
-  if (raw['Kernel Headhunting'] === 'Yes' && rarity === 6) methods.push('kernel');
+  if (raw['Standard Headhunting'] === 'Yes') methods.push('standard');
+  if (raw['Kernel Headhunting'] === 'Yes') methods.push('kernel');
   if (raw['Recruitment'] === 'Yes') methods.push('recruitment');
   if (raw['Recruitment'] === 'Yes' && raw['Standard Headhunting'] !== 'Yes' && raw['Kernel Headhunting'] !== 'Yes') methods.push('recruitment-only');
   if (getWelfareInfo(howToObtain)) methods.push('welfare');
