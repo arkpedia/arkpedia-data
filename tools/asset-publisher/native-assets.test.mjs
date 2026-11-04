@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 import { Readable } from 'node:stream';
 import { test } from 'node:test';
 import { mirrorRevision } from './mirror-github-assets.mjs';
-import { NATIVE_BUCKET, SOURCE_BUCKET, acquireNativeLease, nativeKey, nativeStore, planNativeAssets, publishNativeAssets } from './native-assets.mjs';
+import { NATIVE_BUCKET, SOURCE_BUCKET, acquireNativeLease, nativeKey, nativeStore, nativePublisherClient, planNativeAssets, publishNativeAssets } from './native-assets.mjs';
 import { indexKey, objectKey, readyKey, shardFor } from './contract.mjs';
 
 const hash = (algorithm, body) => createHash(algorithm).update(body).digest('hex');
@@ -69,10 +69,10 @@ test('resumed publication does not rewrite identical files or reread their sourc
   assert.ok(f.reads.every(key => !key.includes('/objects/')));
 });
 test('both byte budgets are enforced before the first write, including already stored bytes', async () => {
-  for (const limits of [{}, { maxNewBytes: -1, maxTotalBytes: 1000 }, { maxNewBytes: 1, maxTotalBytes: 1_000_000 }, { maxNewBytes: 1_000_000, maxTotalBytes: 1 }]) {
+  for (const limits of [{}, { maxNewBytes: -1, maxTotalBytes: 1000 }, { maxNewBytes: 1, maxTotalBytes: 1_000_000 }, { maxNewBytes: 1_000_000, maxTotalBytes: 1 }, { ...budgets, concurrency: 0 }, { ...budgets, concurrency: 33 }]) {
     const f = await fixture();
     const plan = await planNativeAssets(f.source, f.destination);
-    await assert.rejects(publishNativeAssets(plan, f.source, f.destination, limits), /budgets|budget/);
+    await assert.rejects(publishNativeAssets(plan, f.source, f.destination, limits), /budgets|budget|concurrency/);
     assert.deepEqual(f.puts, []);
   }
 });
@@ -128,6 +128,14 @@ test('native planning excludes generated content snapshots and their recurring c
   assert.equal(plan.summary.revisions, 1);
   assert.ok(plan.summary.identities.every(pin => pin.repository !== 'arkpedia-data'));
   assert.ok(f.reads.every(key => !key.includes('/arkpedia-data/')));
+});
+test('native credentials remain separate from the existing source identity', async () => {
+  const env = { ARKPEDIA_R2_ACCOUNT_ID: 'a'.repeat(32), ARKPEDIA_R2_ACCESS_KEY_ID: 'source-id', ARKPEDIA_R2_SECRET_ACCESS_KEY: 'source-secret',
+    ARKPEDIA_NATIVE_R2_ACCESS_KEY_ID: 'native-id', ARKPEDIA_NATIVE_R2_SECRET_ACCESS_KEY: 'native-secret' };
+  const client = nativePublisherClient(env);
+  try { assert.equal((await client.config.credentials()).accessKeyId, 'native-id'); }
+  finally { client.destroy(); }
+  assert.throws(() => nativePublisherClient({ ...env, ARKPEDIA_NATIVE_R2_SECRET_ACCESS_KEY: undefined }), /Explicit bucket-scoped/);
 });
 test('native transport accepts only public target paths and refuses all source writes', async () => {
   const client = { send: async () => { throw new Error('should not call S3'); } };

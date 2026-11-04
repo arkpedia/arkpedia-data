@@ -26,6 +26,8 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '22'
+      - name: Preserve current publisher tooling across content rollbacks
+        run: cp -R tools/asset-publisher "$RUNNER_TEMP/arkpedia-asset-publisher"
       - name: Select an approved rollback when requested
         if: github.event_name == 'workflow_dispatch'
         env:
@@ -40,8 +42,8 @@ jobs:
       - run: node scripts/validate-release.mjs
       - run: node --test scripts/sync-editorial.test.mjs
       - run: npm ci --ignore-scripts --no-audit --no-fund
-        working-directory: tools/asset-publisher
-      - run: node --test tools/asset-publisher/native-assets.test.mjs
+        working-directory: ${{ runner.temp }}/arkpedia-asset-publisher
+      - run: node --test "$RUNNER_TEMP/arkpedia-asset-publisher/native-assets.test.mjs"
   propose:
     if: github.event_name == 'push' && github.ref == 'refs/heads/refresh/content'
     needs: validate
@@ -87,6 +89,8 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '24'
+      - name: Preserve current publisher tooling across content rollbacks
+        run: cp -R tools/asset-publisher "$RUNNER_TEMP/arkpedia-asset-publisher"
       - name: Select the validated immutable release
         env:
           REVISION: ${{ inputs.revision }}
@@ -115,9 +119,9 @@ jobs:
           echo "DATA_REVISION=$revision" >> "$GITHUB_ENV"
       - name: Install publisher without R2 credentials
         run: npm ci --ignore-scripts --no-audit --no-fund
-        working-directory: tools/asset-publisher
+        working-directory: ${{ runner.temp }}/arkpedia-asset-publisher
       - name: Mirror verified media and generated JSON before moving live
-        run: node tools/asset-publisher/mirror-github-assets.mjs --pins="$RUNNER_TEMP/asset-pins.json" --data="$DATA_REVISION" --cache="$RUNNER_TOOL_CACHE/arkpedia-public-git"
+        run: node "$RUNNER_TEMP/arkpedia-asset-publisher/mirror-github-assets.mjs" --pins="$RUNNER_TEMP/asset-pins.json" --data="$DATA_REVISION" --cache="$RUNNER_TOOL_CACHE/arkpedia-public-git"
         env:
           ARKPEDIA_R2_ACCOUNT_ID: '1ff51c10571eaa9934bc451e1bfdb361'
           ARKPEDIA_R2_ACCESS_KEY_ID: ${{ secrets.ARKPEDIA_R2_ACCESS_KEY_ID }}
@@ -126,11 +130,13 @@ jobs:
       # Disabled during preparation; enable before moving the public asset domain.
       - name: Mirror native public paths before moving live
         if: vars.ARKPEDIA_NATIVE_ASSETS_MIRROR == 'true'
-        run: node tools/asset-publisher/native-assets.mjs --apply --max-new-bytes="$NATIVE_NEW_BYTES" --max-total-bytes="$NATIVE_TOTAL_BYTES" --report="$RUNNER_TEMP/native-assets-receipts.json"
+        run: node "$RUNNER_TEMP/arkpedia-asset-publisher/native-assets.mjs" --apply --max-new-bytes="$NATIVE_NEW_BYTES" --max-total-bytes="$NATIVE_TOTAL_BYTES" --report="$RUNNER_TEMP/native-assets-receipts.json"
         env:
           ARKPEDIA_R2_ACCOUNT_ID: '1ff51c10571eaa9934bc451e1bfdb361'
-          ARKPEDIA_R2_ACCESS_KEY_ID: ${{ secrets.ARKPEDIA_NATIVE_R2_ACCESS_KEY_ID }}
-          ARKPEDIA_R2_SECRET_ACCESS_KEY: ${{ secrets.ARKPEDIA_NATIVE_R2_SECRET_ACCESS_KEY }}
+          ARKPEDIA_R2_ACCESS_KEY_ID: ${{ secrets.ARKPEDIA_R2_ACCESS_KEY_ID }}
+          ARKPEDIA_R2_SECRET_ACCESS_KEY: ${{ secrets.ARKPEDIA_R2_SECRET_ACCESS_KEY }}
+          ARKPEDIA_NATIVE_R2_ACCESS_KEY_ID: ${{ secrets.ARKPEDIA_NATIVE_R2_ACCESS_KEY_ID }}
+          ARKPEDIA_NATIVE_R2_SECRET_ACCESS_KEY: ${{ secrets.ARKPEDIA_NATIVE_R2_SECRET_ACCESS_KEY }}
           NATIVE_NEW_BYTES: ${{ vars.ARKPEDIA_NATIVE_ASSETS_MAX_NEW_BYTES }}
           NATIVE_TOTAL_BYTES: ${{ vars.ARKPEDIA_NATIVE_ASSETS_MAX_TOTAL_BYTES }}
       - uses: actions/upload-artifact@v7

@@ -5,7 +5,7 @@ Self-contained copy of the audited Arkpedia public-assets publisher, initially i
 The application repository is private; this job deliberately needs no access to it. Dependency installation receives no credentials. The upload step receives only object read/write credentials scoped to arkpedia-public-assets via the main-only public-assets environment. Git sources are restricted to approved public Arkpedia repositories and immutable commits. No deletion or overwrite is performed.
 
 `native-assets.mjs` and its tests are the native public-view publisher from the
-matching Arkpedia commit `d14feee88cf43536d1ea84cc943d67d9d3e7a5c9`, adapted only to local imports.
+matching Arkpedia commit `4a2bd6610954e259312fe7befc1127c4ec77ff4a`, adapted only to local imports.
 Keep its source synchronized with `scripts/content/native-assets.mjs`; keep the
 contract and original mirror synchronized too. It uses the existing dependency.
 
@@ -20,8 +20,10 @@ object holds only a random owner ID and expiry, never credentials.
 
 Configure the same variables/budgets as the application repository and the
 main-only `public-assets` environment secrets `ARKPEDIA_NATIVE_R2_ACCESS_KEY_ID` /
-`ARKPEDIA_NATIVE_R2_SECRET_ACCESS_KEY`. The native identity needs source-bucket read
-and native-bucket read/write only; keep the original source credentials unchanged.
+`ARKPEDIA_NATIVE_R2_SECRET_ACCESS_KEY`. The new native identity needs native-bucket object read/write only. The original
+source identity remains unchanged and its native-publication adapter refuses writes.
+The current workflow preserves this tooling before checking out historical content,
+including rollback releases predating the native publisher.
 Do not enable delivery until both publishers, a full historical inventory and an
 isolated native-domain canary have passed. Hostname/rule changes are separate
 reviewed operations; this repository does not change DNS or serve account data.

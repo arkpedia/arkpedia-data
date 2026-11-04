@@ -248,40 +248,53 @@ export async function planNativeAssets(source, destination) {
   return { revisions, existing, summary };
 }
 
-export async function publishNativeAssets(plan, source, destination, { maxNewBytes, maxTotalBytes }) {
+export async function publishNativeAssets(plan, source, destination, { maxNewBytes, maxTotalBytes, concurrency = 4, onProgress = () => {} }) {
+  assert(Number.isInteger(concurrency) && concurrency >= 1 && concurrency <= 32, 'Native upload concurrency must be 1–32');
   assert(size(maxNewBytes) && size(maxTotalBytes) && maxTotalBytes > 0, 'Explicit integer byte budgets are required');
   assert(plan.summary.newBytes <= maxNewBytes && plan.summary.totalBytes <= maxTotalBytes, 'Native asset storage budget exceeded; no writes performed');
-  for (const { entries, ready } of plan.revisions) {
-    await boundedMap(entries.filter(file => !plan.existing.has(file.key)), 4, async file => {
+  let uploaded = 0, uploadedBytes = 0;
+  for (const { repository, revision, entries, ready } of plan.revisions) {
+    await boundedMap(entries.filter(file => !plan.existing.has(file.key)), concurrency, async file => {
       const bytes = await source.get(objectKey(file.sha), file.bytes);
       verifyGitBlob(bytes, file);
       assert(md5(bytes) === file.md5, 'Source blob changed during migration');
       await destination.put(file.key, bytes, file.contentType);
+      uploaded++; uploadedBytes += bytes.length;
+      if (uploaded % 1000 === 0) onProgress({ uploaded, uploadedBytes, repository, revision });
     });
     // No native readiness until EVERY file in this revision is present.
     if (!plan.existing.has(ready.key)) await destination.put(ready.key, ready.body, ready.contentType);
+    onProgress({ uploaded, uploadedBytes, repository, revision, ready: true });
   }
+}
+
+// Keep the existing source identity unchanged; the new identity can access only
+// the native bucket. Never broaden either identity to cover unrelated buckets.
+export function nativePublisherClient(env = process.env) {
+  return publisherClient({ ...env, ARKPEDIA_R2_ACCESS_KEY_ID: env.ARKPEDIA_NATIVE_R2_ACCESS_KEY_ID,
+    ARKPEDIA_R2_SECRET_ACCESS_KEY: env.ARKPEDIA_NATIVE_R2_SECRET_ACCESS_KEY });
 }
 
 export async function main(args = process.argv.slice(2)) {
   const options = {};
   for (const arg of args) {
     const [key, ...value] = arg.split('=');
-    assert(['--apply', '--empty-destination', '--max-new-bytes', '--max-total-bytes', '--report'].includes(key) && !(key in options), 'Unknown or duplicate native-assets option');
+    assert(['--apply', '--empty-destination', '--max-new-bytes', '--max-total-bytes', '--concurrency', '--report'].includes(key) && !(key in options), 'Unknown or duplicate native-assets option');
     assert(['--apply', '--empty-destination'].includes(key) ? !value.length : value.length && value.join('=').length, 'Invalid native-assets option');
     options[key] = value.join('=');
   }
   assert(!('--apply' in options && '--empty-destination' in options), 'An empty-destination forecast cannot be applied');
   const client = publisherClient();
   const source = nativeStore(client, SOURCE_BUCKET);
-  let lease, heartbeat;
+  let lease, heartbeat, targetClient;
   try {
+    if (!('--empty-destination' in options)) targetClient = nativePublisherClient();
     if ('--apply' in options) {
-      lease = await acquireNativeLease(client);
+      lease = await acquireNativeLease(targetClient);
       heartbeat = setInterval(() => { lease.renew().catch(() => {}); }, 60_000);
       heartbeat.unref();
     }
-    const destination = '--empty-destination' in options ? { list: async () => new Map() } : lease?.destination || nativeStore(client, NATIVE_BUCKET);
+    const destination = '--empty-destination' in options ? { list: async () => new Map() } : lease?.destination || nativeStore(targetClient, NATIVE_BUCKET);
     const plan = await planNativeAssets(source, destination);
     console.log(JSON.stringify(plan.summary, null, 2));
     if (lease) {
@@ -289,13 +302,15 @@ export async function main(args = process.argv.slice(2)) {
       await publishNativeAssets(plan, source, destination, {
         maxNewBytes: options['--max-new-bytes'] === undefined ? undefined : Number(options['--max-new-bytes']),
         maxTotalBytes: options['--max-total-bytes'] === undefined ? undefined : Number(options['--max-total-bytes']),
+        concurrency: options['--concurrency'] === undefined ? 4 : Number(options['--concurrency']),
+        onProgress: progress => console.log(JSON.stringify({ nativeProgress: progress })),
       });
       lease.assertValid();
     }
     if (options['--report']) await writeFile(options['--report'], JSON.stringify({ observedAt: new Date().toISOString(), applied: !!lease, ...plan.summary }, null, 2));
   } finally {
     clearInterval(heartbeat);
-    try { await lease?.release(); } finally { client.destroy(); }
+    try { await lease?.release(); } finally { client.destroy(); targetClient?.destroy(); }
   }
 }
 
