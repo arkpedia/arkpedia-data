@@ -69,12 +69,30 @@ test('resumed publication does not rewrite identical files or reread their sourc
   assert.ok(f.reads.every(key => !key.includes('/objects/')));
 });
 test('both byte budgets are enforced before the first write, including already stored bytes', async () => {
-  for (const limits of [{}, { maxNewBytes: -1, maxTotalBytes: 1000 }, { maxNewBytes: 1, maxTotalBytes: 1_000_000 }, { maxNewBytes: 1_000_000, maxTotalBytes: 1 }, { ...budgets, concurrency: 0 }, { ...budgets, concurrency: 33 }]) {
+  for (const limits of [{}, { maxNewBytes: -1, maxTotalBytes: 1000 }, { maxNewBytes: 1, maxTotalBytes: 1_000_000 }, { maxNewBytes: 1_000_000, maxTotalBytes: 1 }, { ...budgets, concurrency: 0 }, { ...budgets, concurrency: 65 }, { ...budgets, maxInFlightBytes: 0 }]) {
     const f = await fixture();
     const plan = await planNativeAssets(f.source, f.destination);
     await assert.rejects(publishNativeAssets(plan, f.source, f.destination, limits), /budgets|budget|concurrency/);
     assert.deepEqual(f.puts, []);
   }
+});
+test('parallel backfill bounds buffered bytes while preserving completion ordering', async () => {
+  const f = await fixture(), plan = await planNativeAssets(f.source, f.destination);
+  const capacity = Math.max(...files.map(file => file.bytes));
+  let active = 0, peak = 0;
+  const source = { ...f.source, get: async (key, limit) => {
+    active += limit; peak = Math.max(peak, active);
+    assert.ok(active <= capacity, 'Buffered file bodies exceed the reviewed memory ceiling');
+    return f.source.get(key, limit);
+  } };
+  const destination = { ...f.destination, put: async (key, bytes, type) => {
+    await new Promise(resolve => setImmediate(resolve));
+    await f.destination.put(key, bytes, type);
+    if (key.startsWith('arkpedia/')) active -= bytes.length;
+  } };
+  await publishNativeAssets(plan, source, destination, { ...budgets, concurrency: 64, maxInFlightBytes: capacity });
+  assert.ok(peak > 0 && peak <= capacity); assert.equal(active, 0);
+  assert.equal(f.puts.at(-1), `__ready/${repository}/${revision}`);
 });
 test('corrupt or failed file writes leave the revision unready and can resume safely', async () => {
   for (const reason of ['upload', 'source']) {
@@ -140,7 +158,7 @@ test('native credentials remain separate from the existing source identity', asy
 test('native transport accepts only public target paths and refuses all source writes', async () => {
   const client = { send: async () => { throw new Error('should not call S3'); } };
   await assert.rejects(nativeStore(client, SOURCE_BUCKET).put(objectKey(files[0].sha), Buffer.from('x'), 'image/png'), /Only native/);
-  for (const key of [objectKey(files[0].sha), 'accounts/session.json', 'arkpedia/private-repo/main/a.png']) {
+  for (const key of ['github-v1/objects/not-a-git-sha', 'accounts/session.json', 'arkpedia/private-repo/main/a.png', `github-v1/ready/arkpedia-image-assets/${revision}.json`]) {
     await assert.rejects(nativeStore(client, NATIVE_BUCKET).put(key, Buffer.from('x'), 'image/png'), /Only native/);
   }
 });

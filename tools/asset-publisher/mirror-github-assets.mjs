@@ -95,6 +95,27 @@ export function s3Store(client, bucket) {
   };
 }
 
+export async function revisionMetadata({ repository, revision, files, references = [] }) {
+  if (!REPOSITORIES.has(repository) || !COMMIT.test(revision)) throw new Error('A public repository and immutable commit are required');
+  const groups = new Map();
+  for (const file of files) {
+    const shard = await shardFor(file.path);
+    if (!groups.has(shard)) groups.set(shard, Object.create(null));
+    groups.get(shard)[file.path] = { sha: file.sha, bytes: file.bytes };
+  }
+  const shards = Object.create(null), indexes = new Map();
+  for (const [shard, index] of groups) {
+    const bytes = Buffer.from(JSON.stringify(index));
+    if (bytes.length > 5_000_000) throw new Error('Asset directory index is too large');
+    indexes.set(indexKey(repository, revision, shard), bytes);
+    shards[shard] = hash('sha256', bytes);
+  }
+  const receipt = { version: 1, repository, revision, files: files.length, bytes: files.reduce((total, file) => total + file.bytes, 0),
+    shards: Object.fromEntries(Object.entries(shards).sort(([a], [b]) => a < b ? -1 : 1)),
+    ...(references.length ? { references: [...references].sort((a, b) => `${a.repository}/${a.revision}` < `${b.repository}/${b.revision}` ? -1 : 1) } : {}) };
+  return { indexes, receipt, body: Buffer.from(JSON.stringify(receipt)) };
+}
+
 export async function mirrorRevision({ repository, revision, files, read, store, known, references = [], concurrency = 8, log = console.log }) {
   if (!REPOSITORIES.has(repository) || !COMMIT.test(revision)) throw new Error('A public repository and immutable commit are required');
   const unique = new Map(files.map(file => [file.sha, file]));
@@ -113,29 +134,15 @@ export async function mirrorRevision({ repository, revision, files, read, store,
     uploaded++;
     if (uploaded % 1000 === 0) log(`${repository}: ${uploaded} uploaded, ${reused} reused`);
   });
-  const groups = new Map();
-  for (const file of files) {
-    const shard = await shardFor(file.path);
-    if (!groups.has(shard)) groups.set(shard, Object.create(null));
-    groups.get(shard)[file.path] = { sha: file.sha, bytes: file.bytes };
-  }
-  const shards = Object.create(null);
-  await boundedMap([...groups], concurrency, async ([shard, index]) => {
-    const bytes = Buffer.from(JSON.stringify(index));
-    if (bytes.length > 5_000_000) throw new Error('Asset directory index is too large');
-    await store.put(indexKey(repository, revision, shard), bytes);
-    shards[shard] = hash('sha256', bytes);
-  });
-  const receipt = { version: 1, repository, revision, files: files.length, bytes: files.reduce((total, file) => total + file.bytes, 0),
-    shards: Object.fromEntries(Object.entries(shards).sort(([a], [b]) => a < b ? -1 : 1)),
-    ...(references.length ? { references: [...references].sort((a, b) => `${a.repository}/${a.revision}` < `${b.repository}/${b.revision}` ? -1 : 1) } : {}) };
+  const { indexes, receipt, body } = await revisionMetadata({ repository, revision, files, references });
+  await boundedMap([...indexes], concurrency, async ([key, bytes]) => store.put(key, bytes));
   // Published last. A partial upload cannot make a new commit available to readers.
-  await store.put(readyKey(repository, revision), Buffer.from(JSON.stringify(receipt)));
+  await store.put(readyKey(repository, revision), body);
   log(JSON.stringify({ repository, revision, files: files.length, uploaded, reused, bytes: receipt.bytes }));
   return receipt;
 }
 
-async function source(repository, revision, cache) {
+export async function source(repository, revision, cache) {
   if (!REPOSITORIES.has(repository) || !COMMIT.test(revision)) throw new Error('Invalid pinned GitHub source');
   const directory = join(cache, repository);
   await mkdir(directory, { recursive: true });
