@@ -5,12 +5,12 @@ Self-contained copy of the audited Arkpedia public-assets publisher, initially i
 The application repository is private; this job deliberately needs no access to it. Dependency installation receives no credentials. The upload step receives only object read/write credentials scoped to arkpedia-public-assets via the main-only public-assets environment. Git sources are restricted to approved public Arkpedia repositories and immutable commits. No deletion or overwrite is performed.
 
 `native-assets.mjs` and its tests are the native public-view publisher from the
-matching Arkpedia commit `02730ec4d1b85fc1b03965badc5585dd378ae2f5`, adapted only to local imports.
+matching Arkpedia commit `d14feee88cf43536d1ea84cc943d67d9d3e7a5c9`, adapted only to local imports.
 Keep its source synchronized with `scripts/content/native-assets.mjs`; keep the
 contract and original mirror synchronized too. It uses the existing dependency.
 
-Native delivery is **not activated**. When `ARKPEDIA_NATIVE_ASSETS_MIRROR=true`, the
-mirror job also creates immutable, URL-shaped copies in
+Production native delivery is **not activated**. An isolated sample canary passed
+in the application change. When `ARKPEDIA_NATIVE_ASSETS_MIRROR=true`, the mirror job also creates immutable, URL-shaped media copies in
 `arkpedia-public-assets-direct` before the live-pointer publisher can run. Failure,
 including either storage budget being exceeded, blocks the pointer update.
 `ARKPEDIA_ASSETS_DELIVERY=native` with mirroring disabled fails explicitly.
@@ -25,3 +25,9 @@ and native-bucket read/write only; keep the original source credentials unchange
 Do not enable delivery until both publishers, a full historical inventory and an
 isolated native-domain canary have passed. Hostname/rule changes are separate
 reviewed operations; this repository does not change DNS or serve account data.
+
+Generated `arkpedia-data` snapshots deliberately stay on the deduplicated reader.
+Native publication covers all retained media revisions, avoiding repeated copies
+of thousands of unchanged JSON records per content release. The canary inventory
+measured 47.6 GB across 40 media revisions, about $0.72/month before allowances
+and operations; production activation is separate from the approved sample canary.

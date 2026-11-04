@@ -9,6 +9,9 @@ import { boundedMap, publisherClient, verifyGitBlob } from './mirror-github-asse
 
 export const SOURCE_BUCKET = 'arkpedia-public-assets';
 export const NATIVE_BUCKET = 'arkpedia-public-assets-direct';
+// Generated content snapshots change frequently. Keep those on the deduplicated
+// reader; path copies of every release would add recurring PUT/storage charges.
+export const NATIVE_REPOSITORIES = new Set([...REPOSITORIES].filter(repository => repository !== 'arkpedia-data'));
 const LEASE_KEY = '__control/native-publisher.json';
 const LEASE_BYTES = 256;
 const LEASE_MS = 30 * 60_000;
@@ -17,7 +20,7 @@ const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
 const TYPES = { webp: 'image/webp', png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg', gif: 'image/gif', avif: 'image/avif', svg: 'image/svg+xml', ico: 'image/x-icon', json: 'application/json; charset=utf-8', mp3: 'audio/mpeg', ogg: 'audio/ogg', wav: 'audio/wav', atlas: 'text/plain; charset=utf-8', skel: 'application/octet-stream' };
 const assert = (ok, message) => { if (!ok) throw new Error(message); };
 export const nativeKey = (repository, revision, path) => {
-  assert(REPOSITORIES.has(repository) && COMMIT.test(revision) && publicFile(repository, path), 'Invalid native public asset');
+  assert(NATIVE_REPOSITORIES.has(repository) && COMMIT.test(revision) && publicFile(repository, path), 'Invalid native public asset');
   // Keys contain decoded filenames: the browser retains its existing encoded URL.
   const key = `arkpedia/${repository}/${revision}/${path}`;
   assert(Buffer.byteLength(key) <= 1024, 'Native R2 key exceeds 1024 bytes');
@@ -27,9 +30,9 @@ const receiptKey = (repository, revision) => `__ready/${repository}/${revision}`
 function publicKey(key) {
   if (key === LEASE_KEY) return true; // Public coordination metadata; never credentials.
   const receipt = /^__ready\/([^/]+)\/([a-f0-9]{40})$/.exec(key);
-  if (receipt) return REPOSITORIES.has(receipt[1]);
+  if (receipt) return NATIVE_REPOSITORIES.has(receipt[1]);
   const file = /^arkpedia\/([^/]+)\/([a-f0-9]{40})\/(.+)$/.exec(key);
-  return !!file && publicFile(file[1], file[3]);
+  return !!file && NATIVE_REPOSITORIES.has(file[1]) && publicFile(file[1], file[3]);
 }
 const size = value => Number.isSafeInteger(value) && value >= 0;
 const same = (a, b) => a.bytes === b.bytes && a.md5 === b.md5;
@@ -153,17 +156,39 @@ export async function acquireNativeLease(client, { now = Date.now } = {}) {
   };
 }
 
-/** Include ALL completed revisions, including historical pins held by old tabs. */
+/** Include ALL completed media revisions, including historical pins held by old tabs. */
 export async function planNativeAssets(source, destination) {
   const [receipts, blobs, existing] = await Promise.all([
     source.list(`${PREFIX}/ready/`), source.list(`${PREFIX}/objects/`), destination.list(''),
   ]);
   assert(receipts.size > 0, 'No completed public revisions to migrate');
   const revisions = [], desired = new Map();
+  // Historical revisions share most indexes. Reuse verified bodies by digest,
+  // with a memory bound, and overlap a small number of independent R2 reads.
+  // Serially reading every historical shard can exceed the publisher deadline.
+  const indexes = new Map();
+  let indexBytes = 0;
+  function indexBody(key, digest) {
+    if (indexes.has(digest)) return indexes.get(digest).promise;
+    const entry = { bytes: 0, promise: null };
+    entry.promise = source.get(key, 5_000_000).then(bytes => {
+      assert(sha256(bytes) === digest, 'Source index integrity failure');
+      entry.bytes = bytes.length;
+      indexBytes += bytes.length;
+      for (const [hash, saved] of indexes) {
+        if (indexBytes <= 64_000_000) break;
+        if (saved.bytes) { indexes.delete(hash); indexBytes -= saved.bytes; }
+      }
+      return bytes;
+    }).catch(error => { indexes.delete(digest); throw error; });
+    indexes.set(digest, entry);
+    return entry.promise;
+  }
   for (const [key, listed] of [...receipts].sort(([a], [b]) => a.localeCompare(b))) {
     const match = new RegExp(`^${PREFIX}/ready/([^/]+)/([a-f0-9]{40})\\.json$`).exec(key);
     assert(match && REPOSITORIES.has(match[1]), 'Unexpected readiness key');
     const [, repository, revision] = match;
+    if (!NATIVE_REPOSITORIES.has(repository)) continue;
     const bytes = await source.get(key, 1_000_000);
     assert(same(listed, { bytes: bytes.length, md5: md5(bytes) }), 'Readiness changed during inventory');
     const receipt = JSON.parse(bytes);
@@ -172,11 +197,10 @@ export async function planNativeAssets(source, destination) {
     const complete = existing.get(receiptKey(repository, revision));
     if (complete) assert(same(complete, listed), 'Native readiness differs from source');
     const entries = [];
-    for (const [shard, digest] of Object.entries(receipt.shards)) {
+    await boundedMap(Object.entries(receipt.shards), 8, async ([shard, digest]) => {
       assert(/^[a-f0-9]{64}$/.test(shard) && /^[a-f0-9]{64}$/.test(digest), 'Invalid index digest');
-      const indexBytes = await source.get(indexKey(repository, revision, shard), 5_000_000);
-      assert(sha256(indexBytes) === digest, 'Source index integrity failure');
-      for (const [path, item] of Object.entries(JSON.parse(indexBytes))) {
+      const bytes = await indexBody(indexKey(repository, revision, shard), digest);
+      for (const [path, item] of Object.entries(JSON.parse(bytes))) {
         assert(descriptor(item) && publicFile(repository, path) && await shardFor(path) === shard, 'Invalid source file descriptor');
         const blob = blobs.get(objectKey(item.sha));
         assert(blob && blob.bytes === item.bytes, 'Missing or truncated source blob');
@@ -185,7 +209,8 @@ export async function planNativeAssets(source, destination) {
         desired.set(entry.key, entry);
         entries.push(entry);
       }
-    }
+    });
+    entries.sort((a, b) => a.path < b.path ? -1 : a.path > b.path ? 1 : 0);
     assert(entries.length === receipt.files && entries.reduce((sum, file) => sum + file.bytes, 0) === receipt.bytes, 'Source receipt count/size mismatch');
     for (const ref of receipt.references || []) assert(REPOSITORIES.has(ref.repository) && COMMIT.test(ref.revision)
       && receipts.has(`${PREFIX}/ready/${ref.repository}/${ref.revision}.json`), 'Incomplete referenced revision');
@@ -193,6 +218,7 @@ export async function planNativeAssets(source, destination) {
     desired.set(ready.key, ready);
     revisions.push({ repository, revision, entries, ready });
   }
+  assert(revisions.length > 0, 'No completed public media revisions to migrate');
   let existingBytes = 0, newBytes = existing.has(LEASE_KEY) ? 0 : LEASE_BYTES, newObjects = existing.has(LEASE_KEY) ? 0 : 1;
   for (const item of existing.values()) { assert(size(item.bytes), 'Invalid destination inventory'); existingBytes += item.bytes; }
   for (const [key, item] of desired) {

@@ -44,6 +44,7 @@ test('native inventory is read-only, includes historical revisions and counts du
   assert.equal(plan.summary.newBytes, [...plan.revisions].reduce((sum, r) => sum + r.ready.bytes + files.reduce((n, file) => n + file.bytes, 0), 0));
   assert.deepEqual(f.puts, []);
   assert.ok(f.reads.every(key => !key.includes('/objects/')));
+  assert.equal(f.reads.filter(key => key.includes('/indexes/')).length, 1, 'Identical historical index bodies should share one verified read');
   const empty = await planNativeAssets(f.source, { list: async () => new Map() });
   assert.equal(empty.summary.newBytes, plan.summary.newBytes + 256);
   assert.equal(empty.summary.newObjects, 9);
@@ -113,10 +114,20 @@ test('an existing native path with different bytes or HTTP metadata cannot be ac
   }
 });
 test('native keys exclude moving refs, private repositories, traversal, scripts and oversized keys', () => {
-  for (const args of [['private-repo', revision, 'file.png'], [repository, 'main', 'file.png'], [repository, revision, '../file.png'], [repository, revision, 'run.js'], [repository, revision, `${'é'.repeat(600)}.png`]]) {
+  for (const args of [['arkpedia-data', revision, 'release/public/file.json'], ['private-repo', revision, 'file.png'], [repository, 'main', 'file.png'], [repository, revision, '../file.png'], [repository, revision, 'run.js'], [repository, revision, `${'é'.repeat(600)}.png`]]) {
     assert.throws(() => nativeKey(...args));
   }
   assert.throws(() => nativeStore({}, 'arkpedia-prod-accounts'));
+});
+test('native planning excludes generated content snapshots and their recurring copies', async () => {
+  const f = await fixture();
+  const generated = makeFile('release/public/example.json', '{"example":true}');
+  await mirrorRevision({ repository: 'arkpedia-data', revision, files: [generated], read: async file => file.body, known: new Map(), log: () => {},
+    store: { put: async (key, body) => f.sourceData.set(key, Buffer.from(body)) } });
+  const plan = await planNativeAssets(f.source, f.destination);
+  assert.equal(plan.summary.revisions, 1);
+  assert.ok(plan.summary.identities.every(pin => pin.repository !== 'arkpedia-data'));
+  assert.ok(f.reads.every(key => !key.includes('/arkpedia-data/')));
 });
 test('native transport accepts only public target paths and refuses all source writes', async () => {
   const client = { send: async () => { throw new Error('should not call S3'); } };
