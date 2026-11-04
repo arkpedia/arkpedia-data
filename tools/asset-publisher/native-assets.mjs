@@ -19,6 +19,11 @@ const md5 = bytes => createHash('md5').update(bytes).digest('hex');
 const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
 const TYPES = { webp: 'image/webp', png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg', gif: 'image/gif', avif: 'image/avif', svg: 'image/svg+xml', ico: 'image/x-icon', json: 'application/json; charset=utf-8', mp3: 'audio/mpeg', ogg: 'audio/ogg', wav: 'audio/wav', atlas: 'text/plain; charset=utf-8', skel: 'application/octet-stream' };
 const assert = (ok, message) => { if (!ok) throw new Error(message); };
+export const nativeContentType = path => TYPES[path.split('.').pop()];
+// Only generated JSON uses CAS in the unified bucket; media keeps URL-shaped keys.
+export const dedupDataKey = key => /^github-v1\/objects\/[a-f0-9]{40}$/.test(key)
+  || /^github-v1\/indexes\/arkpedia-data\/[a-f0-9]{40}\/[a-f0-9]{64}\.json$/.test(key)
+  || /^github-v1\/ready\/arkpedia-data\/[a-f0-9]{40}\.json$/.test(key);
 export const nativeKey = (repository, revision, path) => {
   assert(NATIVE_REPOSITORIES.has(repository) && COMMIT.test(revision) && publicFile(repository, path), 'Invalid native public asset');
   // Keys contain decoded filenames: the browser retains its existing encoded URL.
@@ -28,6 +33,7 @@ export const nativeKey = (repository, revision, path) => {
 };
 const receiptKey = (repository, revision) => `__ready/${repository}/${revision}`;
 function publicKey(key) {
+  if (dedupDataKey(key)) return true;
   if (key === LEASE_KEY) return true; // Public coordination metadata; never credentials.
   const receipt = /^__ready\/([^/]+)\/([a-f0-9]{40})$/.exec(key);
   if (receipt) return NATIVE_REPOSITORIES.has(receipt[1]);
@@ -88,7 +94,8 @@ export function nativeStore(client, bucket) {
       try {
         const result = await client.send(new PutObjectCommand({ Bucket: bucket, Key: key, Body: body, IfNoneMatch: '*',
           ContentType: contentType, CacheControl: 'public, max-age=31536000, immutable',
-          ContentMD5: Buffer.from(expected.md5, 'hex').toString('base64'), Metadata: { sha256: sha256(body) } }));
+          ContentMD5: Buffer.from(expected.md5, 'hex').toString('base64'), Metadata: { sha256: sha256(body),
+            'git-sha1': createHash('sha1').update(`blob ${body.length}\0`).update(body).digest('hex') } }));
         assert(result.ETag?.replaceAll('"', '') === expected.md5, 'Native upload checksum mismatch');
       } catch (error) {
         if (![409, 412].includes(error.$metadata?.httpStatusCode)) throw error;
@@ -221,7 +228,7 @@ export async function planNativeAssets(source, destination) {
   assert(revisions.length > 0, 'No completed public media revisions to migrate');
   let existingBytes = 0, newBytes = existing.has(LEASE_KEY) ? 0 : LEASE_BYTES, newObjects = existing.has(LEASE_KEY) ? 0 : 1;
   for (const item of existing.values()) { assert(size(item.bytes), 'Invalid destination inventory'); existingBytes += item.bytes; }
-  for (const [key, item] of desired) {
+  await boundedMap([...desired], 16, async ([key, item]) => {
     if (existing.has(key)) {
       assert(same(existing.get(key), item), `Immutable native inventory conflict: ${key}`);
       // A create-only completion receipt attests metadata was set by this publisher.
@@ -233,7 +240,7 @@ export async function planNativeAssets(source, destination) {
       }
     }
     else { newBytes += item.bytes; newObjects++; }
-  }
+  });
   assert(size(existingBytes + newBytes), 'Native storage inventory exceeds safe integer range');
   const samples = new Map();
   for (const r of revisions) for (const file of r.entries) {
@@ -248,19 +255,31 @@ export async function planNativeAssets(source, destination) {
   return { revisions, existing, summary };
 }
 
-export async function publishNativeAssets(plan, source, destination, { maxNewBytes, maxTotalBytes, concurrency = 4, onProgress = () => {} }) {
-  assert(Number.isInteger(concurrency) && concurrency >= 1 && concurrency <= 32, 'Native upload concurrency must be 1–32');
+export async function publishNativeAssets(plan, source, destination, { maxNewBytes, maxTotalBytes, concurrency = 4, maxInFlightBytes = 256_000_000, onProgress = () => {} }) {
+  assert(Number.isInteger(concurrency) && concurrency >= 1 && concurrency <= 64, 'Native upload concurrency must be 1–64');
+  assert(size(maxInFlightBytes) && maxInFlightBytes > 0 && plan.revisions.every(r => r.entries.every(file => file.bytes <= maxInFlightBytes)), 'Native upload memory budget is too small');
   assert(size(maxNewBytes) && size(maxTotalBytes) && maxTotalBytes > 0, 'Explicit integer byte budgets are required');
   assert(plan.summary.newBytes <= maxNewBytes && plan.summary.totalBytes <= maxTotalBytes, 'Native asset storage budget exceeded; no writes performed');
-  let uploaded = 0, uploadedBytes = 0;
+  let uploaded = 0, uploadedBytes = 0, activeBytes = 0;
+  const waiting = [];
+  async function acquire(bytes) {
+    while (activeBytes + bytes > maxInFlightBytes) await new Promise(resolve => waiting.push(resolve));
+    activeBytes += bytes;
+  }
   for (const { repository, revision, entries, ready } of plan.revisions) {
     await boundedMap(entries.filter(file => !plan.existing.has(file.key)), concurrency, async file => {
-      const bytes = await source.get(objectKey(file.sha), file.bytes);
-      verifyGitBlob(bytes, file);
-      assert(md5(bytes) === file.md5, 'Source blob changed during migration');
-      await destination.put(file.key, bytes, file.contentType);
-      uploaded++; uploadedBytes += bytes.length;
-      if (uploaded % 1000 === 0) onProgress({ uploaded, uploadedBytes, repository, revision });
+      await acquire(file.bytes);
+      try {
+        const bytes = await source.get(objectKey(file.sha), file.bytes);
+        verifyGitBlob(bytes, file);
+        assert(md5(bytes) === file.md5, 'Source blob changed during migration');
+        await destination.put(file.key, bytes, file.contentType);
+        uploaded++; uploadedBytes += bytes.length;
+        if (uploaded % 1000 === 0) onProgress({ uploaded, uploadedBytes, repository, revision });
+      } finally {
+        activeBytes -= file.bytes;
+        for (const wake of waiting.splice(0)) wake();
+      }
     });
     // No native readiness until EVERY file in this revision is present.
     if (!plan.existing.has(ready.key)) await destination.put(ready.key, ready.body, ready.contentType);
