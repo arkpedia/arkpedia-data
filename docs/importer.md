@@ -49,8 +49,9 @@ agree. Imported entries retain the official URL and an announcement digest.
 
 Supported Limited rules have two featured 6★ at 70%, one featured 5★ at 50%,
 a one-time 300-pull gift, and complete 300/200/75 exchange tiers. Crossover rules
-require the client's repeating 120-pull `LINKAGE_LOOP6_NEW5` mechanic and both
-published 5★ guarantees. Single-featured Standard banners already use common rules
+require the client's repeating 120-pull `LINKAGE_LOOP6_NEW5` mechanic and the
+published 50-pull 5★ guarantee. With two featured 5★ operators, the other-operator
+guarantee must also be published. Single-featured Standard banners already use common rules
 without a per-banner entry. Joint Operation and Orienteering remain region-specific:
 CN rosters are never imported as Global forecasts by this stage.
 

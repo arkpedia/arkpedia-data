@@ -79,10 +79,10 @@ export function importPoolRules({ banner, pool, post, section, characters, opera
     return { ...base, bonus: param.limitedCharId, returning300: exchange[300].filter(id => !six.includes(id)), returning200: exchange[200] };
   }
   check(pool.gachaRuleType === 'LINKAGE' && pool.linkageRuleId === 'LINKAGE_LOOP6_NEW5', 'unsupported crossover mechanic');
-  check(six.length === 1 && five.length === 2 && pool.linkageParam?.loopTarget6Count === 120 && pool.linkageParam.guaranteeTarget6Char === six[0], 'unsupported crossover guarantee');
+  check(six.length === 1 && [1, 2].includes(five.length) && pool.linkageParam?.loopTarget6Count === 120 && pool.linkageParam.guaranteeTarget6Char === six[0], 'unsupported crossover guarantee');
   check(lines.some(line => /每120次寻访必定能获得干员/.test(line) && /重新累计次数/.test(line)), 'missing repeating 120-pull guarantee');
   check(lines.some(line => /前50次寻访没有获得本期出率上升的5星干员/.test(line) && /下一次招募到的5星干员必定/.test(line)), 'missing 5-star guarantee');
-  check(lines.some(line => /另一[位名]/.test(line) && /5星|五星/.test(line)), 'missing other featured 5-star guarantee');
+  if (five.length === 2) check(lines.some(line => /另一[位名]/.test(line) && /5星|五星/.test(line)), 'missing other featured 5-star guarantee');
   return base;
 }
 
@@ -120,7 +120,8 @@ export function reconcilePullOdds({ previous, banners, posts, gacha, globalGacha
         check(mechanic(pool) === mechanic(global), 'Global mechanics differ from the CN forecast');
       }
       const parsed = matches.map(({ post, section }) => ({ post, section, rule: importPoolRules({ banner, pool, post, section, characters, operators }) }));
-      const mechanics = ({ source: _source, ...rule }) => JSON.stringify(rule);
+      const mechanics = ({ source: _source, ...rule }) => JSON.stringify(Object.fromEntries(
+        Object.entries(rule).map(([key, value]) => [key, Array.isArray(value) ? [...value].sort() : value])));
       check(parsed.every(item => mechanics(item.rule) === mechanics(parsed[0].rule)), 'conflicting official announcements');
       const source = banner.cn_window?.timingSource ?? rules[kind][id]?.source;
       const { post, section, rule } = parsed.find(item => item.post.url.replace(/\.html$/, '') === source?.replace(/\.html$/, '')) ?? parsed[0];
