@@ -32,6 +32,8 @@ test('duplicate official notices agree, while contradictory exchange rosters wit
   const post = structuredClone(data.posts.find(p => p.cid === '0787'));
   post.cid = '9999'; post.url = 'https://ak.hypergryph.com/news/9999';
   data.posts.push(post);
+  post.lines = post.lines.map(line => line.startsWith('★★★★★★（200')
+    ? line.replace('缄默德克萨斯 \\ 归溟幽灵鲨', '归溟幽灵鲨 \\ 缄默德克萨斯') : line);
   const accepted = reconcilePullOdds(data);
   assert.equal(accepted.problems.length, 0);
   const row = post.lines.findIndex(line => line.startsWith('★★★★★★（200'));
@@ -73,6 +75,17 @@ test('a changed crossover guarantee is held instead of reusing the fixed 120-pul
   assert.equal(result.rules.crossover[crossover], undefined);
   assert.match(result.problems[0].reason, /unsupported crossover mechanic/);
   assert.ok(result.rules.limited[limited]);
+});
+
+test('the Monster Hunter rerun with one featured 5-star needs no nonexistent second-operator guarantee', () => {
+  const data = JSON.parse(fs.readFileSync(new URL('./fixtures/cn-single-five-crossover.json', import.meta.url)));
+  const result = reconcilePullOdds({ ...data, previous: empty() });
+  assert.deepEqual(result.problems, []);
+  assert.equal(result.rules.crossover.LINKAGE_74_0_3.source, 'https://ak.hypergryph.com/news/9699');
+  data.posts[0].lines = data.posts[0].lines.filter(line => !line.includes('前50次寻访没有'));
+  const missing = reconcilePullOdds({ ...data, previous: result.rules });
+  assert.equal(missing.rules.crossover.LINKAGE_74_0_3, undefined);
+  assert.match(missing.problems[0].reason, /missing 5-star guarantee/);
 });
 
 test('confirmed Global mechanics supersede a CN forecast and cannot silently reuse different guarantees', () => {
