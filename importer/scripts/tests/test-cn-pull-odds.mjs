@@ -32,6 +32,8 @@ test('duplicate official notices agree, while contradictory exchange rosters wit
   const post = structuredClone(data.posts.find(p => p.cid === '0787'));
   post.cid = '9999'; post.url = 'https://ak.hypergryph.com/news/9999';
   data.posts.push(post);
+  post.lines = post.lines.map(line => line.startsWith('★★★★★★（200')
+    ? line.replace('缄默德克萨斯 \\ 归溟幽灵鲨', '归溟幽灵鲨 \\ 缄默德克萨斯') : line);
   const accepted = reconcilePullOdds(data);
   assert.equal(accepted.problems.length, 0);
   const row = post.lines.findIndex(line => line.startsWith('★★★★★★（200'));

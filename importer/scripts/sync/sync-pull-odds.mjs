@@ -120,7 +120,8 @@ export function reconcilePullOdds({ previous, banners, posts, gacha, globalGacha
         check(mechanic(pool) === mechanic(global), 'Global mechanics differ from the CN forecast');
       }
       const parsed = matches.map(({ post, section }) => ({ post, section, rule: importPoolRules({ banner, pool, post, section, characters, operators }) }));
-      const mechanics = ({ source: _source, ...rule }) => JSON.stringify(rule);
+      const mechanics = ({ source: _source, ...rule }) => JSON.stringify(Object.fromEntries(
+        Object.entries(rule).map(([key, value]) => [key, Array.isArray(value) ? [...value].sort() : value])));
       check(parsed.every(item => mechanics(item.rule) === mechanics(parsed[0].rule)), 'conflicting official announcements');
       const source = banner.cn_window?.timingSource ?? rules[kind][id]?.source;
       const { post, section, rule } = parsed.find(item => item.post.url.replace(/\.html$/, '') === source?.replace(/\.html$/, '')) ?? parsed[0];
