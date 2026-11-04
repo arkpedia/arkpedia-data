@@ -39,6 +39,9 @@ jobs:
           fi
       - run: node scripts/validate-release.mjs
       - run: node --test scripts/sync-editorial.test.mjs
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+        working-directory: tools/asset-publisher
+      - run: node --test tools/asset-publisher/native-assets.test.mjs
   propose:
     if: github.event_name == 'push' && github.ref == 'refs/heads/refresh/content'
     needs: validate
@@ -73,6 +76,11 @@ jobs:
     timeout-minutes: 90
     environment: public-assets
     steps:
+      - name: Require native publication when native delivery is active
+        if: vars.ARKPEDIA_ASSETS_DELIVERY == 'native' && vars.ARKPEDIA_NATIVE_ASSETS_MIRROR != 'true'
+        run: |
+          echo 'Native delivery requires the native mirror before the live pointer can move.'
+          exit 1
       - uses: actions/checkout@v7
         with:
           fetch-depth: 0
@@ -114,6 +122,23 @@ jobs:
           ARKPEDIA_R2_ACCOUNT_ID: '1ff51c10571eaa9934bc451e1bfdb361'
           ARKPEDIA_R2_ACCESS_KEY_ID: ${{ secrets.ARKPEDIA_R2_ACCESS_KEY_ID }}
           ARKPEDIA_R2_SECRET_ACCESS_KEY: ${{ secrets.ARKPEDIA_R2_SECRET_ACCESS_KEY }}
+      # Keep this in the mirror job: publish already requires mirror to succeed.
+      # Disabled during preparation; enable before moving the public asset domain.
+      - name: Mirror native public paths before moving live
+        if: vars.ARKPEDIA_NATIVE_ASSETS_MIRROR == 'true'
+        run: node tools/asset-publisher/native-assets.mjs --apply --max-new-bytes="$NATIVE_NEW_BYTES" --max-total-bytes="$NATIVE_TOTAL_BYTES" --report="$RUNNER_TEMP/native-assets-receipts.json"
+        env:
+          ARKPEDIA_R2_ACCOUNT_ID: '1ff51c10571eaa9934bc451e1bfdb361'
+          ARKPEDIA_R2_ACCESS_KEY_ID: ${{ secrets.ARKPEDIA_NATIVE_R2_ACCESS_KEY_ID }}
+          ARKPEDIA_R2_SECRET_ACCESS_KEY: ${{ secrets.ARKPEDIA_NATIVE_R2_SECRET_ACCESS_KEY }}
+          NATIVE_NEW_BYTES: ${{ vars.ARKPEDIA_NATIVE_ASSETS_MAX_NEW_BYTES }}
+          NATIVE_TOTAL_BYTES: ${{ vars.ARKPEDIA_NATIVE_ASSETS_MAX_TOTAL_BYTES }}
+      - uses: actions/upload-artifact@v7
+        if: vars.ARKPEDIA_NATIVE_ASSETS_MIRROR == 'true'
+        with:
+          name: native-assets-mirror-${{ github.run_id }}
+          path: ${{ runner.temp }}/native-assets-receipts.json
+          if-no-files-found: error
 
   publish:
     if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
