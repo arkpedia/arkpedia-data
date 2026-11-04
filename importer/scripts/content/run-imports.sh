@@ -59,6 +59,9 @@ stage catalogue -- node scripts/sync/sync-catalogue.mjs
 stage catalogue-assets --needs catalogue -- bash scripts/sync/publish-catalogue-assets.sh
 stage media-pins -- node scripts/sync/refresh-media-pins.mjs
 bash scripts/sync/refresh-stage-data.sh
+# Confirm CN limited/crossover rules after both clients and regional schedules are read.
+# Global mechanics must agree once available; JO/Orienteering retain regional rosters.
+stage cn-pull-odds --needs catalogue,upstream-cn,upstream-en -- node scripts/sync/sync-pull-odds.mjs
 # Shadow mode, publishing nothing: the CN, Global, JP and KR game tables decoded from the
 # official servers ourselves (arkprts + flatc), compared by content with the mirror copies
 # this run read (scripts/imports/shadow-official-tables.py). After the stage refresh, which

@@ -37,6 +37,30 @@ Each step runs through the stage runner (`scripts/content/run-stage.mjs`): a ste
 its changes put back and costs only its own records. `run-imports.sh` and
 `scripts/sync/refresh-stage-data.sh` list the steps.
 
+## Pull Planner banner rules
+
+After the catalogue, `cn-pull-odds` (`scripts/sync/sync-pull-odds.mjs`) automatically
+updates `source/data/pull-odds-rules.json` for supported CN Limited and Crossover
+banners. It matches official cached announcement sections by banner name and CN
+window, resolves the entire rate-up/exchange roster to stable character IDs, and
+checks the guarantee against the pinned CN client. Once the Global pool exists,
+its mechanics must agree with the forecast too. Multiple official notices must
+agree. Imported entries retain the official URL and an announcement digest.
+
+Supported Limited rules have two featured 6★ at 70%, one featured 5★ at 50%,
+a one-time 300-pull gift, and complete 300/200/75 exchange tiers. Crossover rules
+require the client's repeating 120-pull `LINKAGE_LOOP6_NEW5` mechanic and both
+published 5★ guarantees. Single-featured Standard banners already use common rules
+without a per-banner entry. Joint Operation and Orienteering remain region-specific:
+CN rosters are never imported as Global forecasts by this stage.
+
+Incomplete evidence, unresolved operators, contradictory notices or changed mechanics
+hold only that banner in quarantine and withdraw its stale imported odds. Known
+formats need no manual entry; new mechanics still need an explicit model update.
+The application compiles these records into its normal content release, so subsequent
+supported banners need no application deployment. Global lineup/name/timing
+reconciliation still takes priority through the existing catalogue importer.
+
 ## Guide videos
 
 The `guide-videos` refresh stage (`scripts/sync/sync-guide-videos.mjs`, rules in `scripts/sync/guide-videos.mjs`) adds trusted creators' YouTube guides to the operator records' `guides`. It reads two files in `arkpedia-data`:
