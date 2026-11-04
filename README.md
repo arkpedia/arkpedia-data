@@ -16,6 +16,14 @@ The `heartbeat` branch holds one small commit per successful run of the applicat
 
 The `live` branch contains a small `current.json` pointer to an approved immutable commit on `main`. Readers keep that data and media version together for the duration of a page visit. Publishing a data release does **not** rebuild the website.
 
+## Public asset delivery
+
+With `ARKPEDIA_UNIFIED_ASSETS=true`, **Content release** publishes directly from immutable GitHub revisions into `arkpedia-public-assets-direct` before moving the live pointer. Media dependencies finish first. Generated JSON shares identical Git blobs across releases in that same bucket; its indexes and readiness are published after the required objects succeed. The old asset bucket is not a publishing dependency in this mode.
+
+`assets.arkpedia.net` serves media through native R2/CDN delivery. Its generated-data and data-readiness paths use the `arkpedia-data-assets` reader bound to the same bucket. `ARKPEDIA_ASSETS_DELIVERY=native` prevents the application's legacy asset-reader deployment from reclaiming the hostname.
+
+Both publishers share a renewable bucket lease and require explicit new-byte and total-byte limits. Their native credential is stored in each repository's main-only `public-assets` environment. See [the publisher tooling](tools/asset-publisher/README.md). A failed or incomplete publication must leave the live pointer on the previous ready revision; never bypass readiness or the lease to force an update.
+
 ## Updating content
 
 The application's nightly **Prepare content release** workflow (in its private repository) does the following:
