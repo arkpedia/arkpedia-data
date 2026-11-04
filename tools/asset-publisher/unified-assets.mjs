@@ -59,7 +59,7 @@ export async function planUnifiedAssets(pins, destination, resolveSource) {
     });
     queue.push(...references.values());
     const metadata = await revisionMetadata({ repository, revision, files: input.files, references: [...references.values()] });
-    const entry = { repository, revision, ...input, metadata, references: [...references.values()] };
+    const entry = { repository, revision, ...input, metadata, references: [...references.values()], verifiedPaths: new Set() };
     if (repository === 'arkpedia-data') {
       data.push(entry);
       for (const file of input.files) add(objectKey(file.sha), { bytes: file.bytes });
@@ -67,6 +67,23 @@ export async function planUnifiedAssets(pins, destination, resolveSource) {
     } else {
       media.push(entry);
       for (const file of input.files) add(nativeKey(repository, revision, file.path), { bytes: file.bytes });
+      const legacyHashes = new Map();
+      await boundedMap(input.files.filter(file => existing.has(nativeKey(repository, revision, file.path))), 16, async file => {
+        const key = nativeKey(repository, revision, file.path), listed = existing.get(key);
+        const saved = await destination.head(key);
+        assert.ok(saved.ContentLength === file.bytes && saved.ETag?.replaceAll('"', '') === listed.md5
+          && saved.ContentType === nativeContentType(file.path) && saved.CacheControl === 'public, max-age=31536000, immutable', 'Existing native HTTP metadata conflict');
+        if (saved.Metadata?.['git-sha1']) assert.equal(saved.Metadata['git-sha1'], file.sha, 'Existing native Git identity conflict');
+        else {
+          // Older verified uploads predate Git identity metadata. Check their
+          // original Git bytes once per blob without resending existing paths.
+          if (!legacyHashes.has(file.sha)) legacyHashes.set(file.sha, (async () => {
+            const body = await input.read(file); verifyGitBlob(body, file); return md5(body);
+          })());
+          assert.equal(await legacyHashes.get(file.sha), listed.md5, 'Existing native bytes conflict');
+        }
+        entry.verifiedPaths.add(key);
+      });
     }
     add(key, { bytes: metadata.body.length, md5: md5(metadata.body) });
     identities.push({ repository, revision, reused: false });
@@ -89,11 +106,16 @@ export async function publishUnifiedAssets(plan, destination, { maxNewBytes, max
       if (!bySha.has(file.sha)) bySha.set(file.sha, []);
       bySha.get(file.sha).push(file);
     }
-    await mirrorRevision({ ...entry, known: new Map(), log, store: { put: async (key, bytes) => {
+    const knownMedia = new Map([...bySha].filter(([, files]) => files.every(file => entry.verifiedPaths.has(nativeKey(entry.repository, entry.revision, file.path))))
+      .map(([sha, files]) => [objectKey(sha), files[0].bytes]));
+    await mirrorRevision({ ...entry, known: knownMedia, log, store: { put: async (key, bytes) => {
       if (key.startsWith('github-v1/objects/')) {
         const files = bySha.get(key.slice('github-v1/objects/'.length));
         assert.ok(files?.length, 'Unexpected native Git blob');
-        for (const file of files) await destination.put(nativeKey(entry.repository, entry.revision, file.path), bytes, nativeContentType(file.path));
+        for (const file of files) {
+          const path = nativeKey(entry.repository, entry.revision, file.path);
+          if (!entry.verifiedPaths.has(path)) await destination.put(path, bytes, nativeContentType(file.path));
+        }
       } else if (entry.metadata.indexes.has(key)) {
         assert.ok(bytes.equals(entry.metadata.indexes.get(key)), 'Native receipt index changed');
       } else {

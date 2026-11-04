@@ -17,16 +17,19 @@ const mediaFiles = [mediaFile, { ...mediaFile, path: 'icons/repeated.webp' }];
 const jsonFiles = [jsonFile, { ...jsonFile, path: 'release/public/repeated.json' }];
 const budgets = { maxNewBytes: 1_000_000, maxTotalBytes: 2_000_000, log: () => {} };
 function memoryStore() {
-  const objects = new Map(), puts = [];
+  const objects = new Map(), metadata = new Map(), puts = [];
   const store = {
     list: async prefix => new Map([...objects].filter(([key]) => key.startsWith(prefix)).map(([key, body]) => [key, { bytes: body.length, md5: hash('md5', body) }])),
     get: async key => { assert.ok(objects.has(key), `Missing fixture ${key}`); return objects.get(key); },
-    put: async (key, body) => {
+    head: async key => metadata.get(key),
+    put: async (key, body, contentType) => {
       if (objects.has(key)) assert.ok(objects.get(key).equals(body), 'Immutable fixture conflict');
       puts.push(key); objects.set(key, Buffer.from(body));
+      metadata.set(key, { ContentLength: body.length, ETag: `"${hash('md5', body)}"`, ContentType: contentType,
+        CacheControl: 'public, max-age=31536000, immutable', Metadata: { 'git-sha1': hash('sha1', Buffer.concat([Buffer.from(`blob ${body.length}\0`), body])) } });
     },
   };
-  return { objects, puts, store };
+  return { objects, metadata, puts, store };
 }
 function gitSources() {
   const reads = [];
@@ -68,6 +71,25 @@ test('unified storage budgets and invalid source paths fail before asset writes'
   }
   await assert.rejects(planUnifiedAssets(pins, f.store, async () => ({ files: [{ ...mediaFile, path: '../private.js' }] })), /Git tree/);
   assert.deepEqual(f.puts, []);
+});
+test('interrupted native revisions reuse verified paths, including partially copied duplicate blobs', async () => {
+  const f = memoryStore(), git = gitSources(), pins = [{ repository: mediaRepo, revision: mediaRev }];
+  const plan = await planUnifiedAssets(pins, f.store, git.source);
+  const first = nativeKey(mediaRepo, mediaRev, mediaFiles[0].path), second = nativeKey(mediaRepo, mediaRev, mediaFiles[1].path);
+  await assert.rejects(publishUnifiedAssets(plan, { ...f.store, put: async (key, ...args) => {
+    if (key === second) throw Error('interrupted duplicate copy'); return f.store.put(key, ...args);
+  } }, budgets));
+  assert.ok(f.objects.has(first)); assert.ok(!f.objects.has(second));
+  f.puts.length = 0; git.reads.length = 0;
+  const resumed = await planUnifiedAssets(pins, f.store, git.source);
+  assert.equal(git.reads.length, 0, 'Verified Git metadata avoids rereading already copied bodies');
+  await publishUnifiedAssets(resumed, f.store, budgets);
+  assert.equal(git.reads.length, 1, 'The missing duplicate path reads the Git blob only once');
+  assert.deepEqual(f.puts, [second, `__ready/${mediaRepo}/${mediaRev}`]);
+  f.objects.delete(`__ready/${mediaRepo}/${mediaRev}`); f.puts.length = 0;
+  const noReads = async (...args) => ({ ...(await git.source(...args)), read: async () => { throw Error('Existing bodies must not be read or resent'); } });
+  await publishUnifiedAssets(await planUnifiedAssets(pins, f.store, noReads), f.store, budgets);
+  assert.deepEqual(f.puts, [`__ready/${mediaRepo}/${mediaRev}`]);
 });
 test('a failed or corrupt media upload cannot publish generated-data readiness', async () => {
   for (const reason of ['upload', 'source']) {

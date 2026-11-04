@@ -5,7 +5,7 @@ Self-contained copy of the audited Arkpedia public-assets publisher, initially i
 The application repository is private; this job deliberately needs no access to it. Dependency installation receives no credentials. The upload step receives only object read/write credentials scoped to arkpedia-public-assets via the main-only public-assets environment. Git sources are restricted to approved public Arkpedia repositories and immutable commits. No deletion or overwrite is performed.
 
 `native-assets.mjs` and its tests are the native public-view publisher from the
-matching Arkpedia commit `275678c75afa15241452903858b2e99e3ffe2bed`, adapted only to local imports.
+matching Arkpedia commit `a91e58c7a4dd52ec65ab40aafa2925cc964c31c9`, adapted only to local imports.
 Keep its source synchronized with `scripts/content/native-assets.mjs`; keep the
 contract and original mirror synchronized too. It uses the existing dependency.
 

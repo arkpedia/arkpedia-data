@@ -94,7 +94,8 @@ export function nativeStore(client, bucket) {
       try {
         const result = await client.send(new PutObjectCommand({ Bucket: bucket, Key: key, Body: body, IfNoneMatch: '*',
           ContentType: contentType, CacheControl: 'public, max-age=31536000, immutable',
-          ContentMD5: Buffer.from(expected.md5, 'hex').toString('base64'), Metadata: { sha256: sha256(body) } }));
+          ContentMD5: Buffer.from(expected.md5, 'hex').toString('base64'), Metadata: { sha256: sha256(body),
+            'git-sha1': createHash('sha1').update(`blob ${body.length}\0`).update(body).digest('hex') } }));
         assert(result.ETag?.replaceAll('"', '') === expected.md5, 'Native upload checksum mismatch');
       } catch (error) {
         if (![409, 412].includes(error.$metadata?.httpStatusCode)) throw error;
