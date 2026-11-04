@@ -79,10 +79,10 @@ export function importPoolRules({ banner, pool, post, section, characters, opera
     return { ...base, bonus: param.limitedCharId, returning300: exchange[300].filter(id => !six.includes(id)), returning200: exchange[200] };
   }
   check(pool.gachaRuleType === 'LINKAGE' && pool.linkageRuleId === 'LINKAGE_LOOP6_NEW5', 'unsupported crossover mechanic');
-  check(six.length === 1 && five.length === 2 && pool.linkageParam?.loopTarget6Count === 120 && pool.linkageParam.guaranteeTarget6Char === six[0], 'unsupported crossover guarantee');
+  check(six.length === 1 && [1, 2].includes(five.length) && pool.linkageParam?.loopTarget6Count === 120 && pool.linkageParam.guaranteeTarget6Char === six[0], 'unsupported crossover guarantee');
   check(lines.some(line => /每120次寻访必定能获得干员/.test(line) && /重新累计次数/.test(line)), 'missing repeating 120-pull guarantee');
   check(lines.some(line => /前50次寻访没有获得本期出率上升的5星干员/.test(line) && /下一次招募到的5星干员必定/.test(line)), 'missing 5-star guarantee');
-  check(lines.some(line => /另一[位名]/.test(line) && /5星|五星/.test(line)), 'missing other featured 5-star guarantee');
+  if (five.length === 2) check(lines.some(line => /另一[位名]/.test(line) && /5星|五星/.test(line)), 'missing other featured 5-star guarantee');
   return base;
 }
 
