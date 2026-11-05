@@ -137,7 +137,6 @@ stage palettes -- python3 scripts/palettes/build-color-palettes.py --revisions d
 # published asset index as staged-art, the last stage to rewrite it (assets:update), left it.
 stage profile-avatars -- node scripts/build/build-profile-avatars.mjs
 stage content-inventory -- node scripts/sync/sync-content-inventory.mjs
-stage event-farming -- node scripts/sync/sync-event-farming.mjs
 # A scheduled limited, crossover or Orienteering banner whose announcement nobody has
 # read shows no odds in the pull planner. Each is listed in the daily issue until its
 # rules are in data/pull-odds-rules.json (scripts/content/check-pull-odds.ts). It reads
