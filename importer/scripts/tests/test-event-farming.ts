@@ -18,5 +18,5 @@ test('farming importer ignores shop currency, first clears, CN guesses and non-r
 });
 
 test('the nightly import runs the farming windows as a stage of its own', () => {
-  assert.match(fs.readFileSync('scripts/content/run-imports.sh', 'utf8'), /stage event-farming -- node scripts\/sync\/sync-event-farming\.mjs/);
+  assert.match(fs.readFileSync('scripts/sync/refresh-stage-data.sh', 'utf8'), /stage event-farming -- node scripts\/sync\/sync-event-farming\.mjs/);
 });
