@@ -36,7 +36,7 @@ const run = (options = {}) => {
 };
 
 test('reads a Kernel Locating section of an official post: window and every operator', () => {
-  assert.deepEqual(kernelLocatingNotices([post]), [{ start: '2026-10-20T11:00:00.000Z', end: '2026-11-03T10:59:00.000Z',
+  assert.deepEqual(kernelLocatingNotices([post]), [{ start: '2026-10-20T11:00:00.000Z', end: '2026-11-03T11:00:00.000Z',
     six: ['Six A', 'Six B', 'Six C'], five: ['Five A', 'Five B', 'Five C', 'Five D'], source: post.url }]);
   assert.deepEqual(kernelLocatingNotices([{ ...post, lines: post.lines.filter(line => !line.startsWith('15 ')) }]), []);
 });
