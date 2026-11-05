@@ -147,3 +147,13 @@ test('EN stages and farming project the same authoritative regional clocks', () 
   assert.deepEqual(result.eventFarming, { version: 1, drops: corrected.farming });
   assert.deepEqual(previous.act42sre, [1, 2], 'projection does not mutate its input');
 });
+
+
+test('the full refresh cannot overwrite regional farming clocks with a later raw-table writer', () => {
+  const refresh = fs.readFileSync('scripts/sync/refresh-stage-data.sh', 'utf8');
+  const imports = fs.readFileSync('scripts/content/run-imports.sh', 'utf8');
+  const farming = refresh.indexOf('stage event-farming --');
+  const regional = refresh.indexOf('stage regional-schedules --');
+  assert.ok(farming > 0 && regional > farming);
+  assert.doesNotMatch(imports, /^stage event-farming --/m, 'the enclosing import has no later raw writer');
+});

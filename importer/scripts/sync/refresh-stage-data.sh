@@ -230,6 +230,9 @@ stage event-windows -- node scripts/sync/sync-event-windows.mjs
 # Permanent RA themes are outside activity_table; import each launch by its stable topic ID.
 stage ra-releases -- node scripts/sync/sync-ra-releases.mjs
 # Regional IDs and first-party notice corrections, independently of English calendars.
+# Build the raw farming rows BEFORE the authoritative regional projection.
+# A later writer used to replace corrected maintenance openings with client preload times.
+stage event-farming -- node scripts/sync/sync-event-farming.mjs
 stage regional-schedules -- node scripts/sync/sync-regional-schedules.mjs
 
 # The event-reward stages, after event-windows: each one dates the events it reads, and an
