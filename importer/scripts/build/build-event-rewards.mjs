@@ -59,7 +59,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { decodeEntities, leftoverEntity, newsSections, parseDuration, parsePacks, parseLoginDays, parseSelectorTickets, postEventName, postWindow } from './official-news.mjs';
+import { decodeEntities, leftoverEntity, newsSections, parseNoticeWindow, parsePacks, parseLoginDays, parseSelectorTickets, postEventName, postWindow } from './official-news.mjs';
 import { eventTitle, eventWindow, isRerun } from '../lib/event-records.mjs';
 import { cnTables } from '../content/pin-upstream.mjs';
 import { readOfficialNews } from '../sync/sync-official-news.mjs';
@@ -303,22 +303,22 @@ export function buildEventRewards(events, tables, posts, cn) {
   // claims the login opening then for that event.
   const dated = events.map(event => ({ event, start: globalStart(event), title: fold(eventTitle(event.name)) })).filter(entry => entry.start != null);
   const announced = posts.map(post => {
-    const window = postWindow(post.lines ?? []);
+    const window = postWindow(post.lines ?? [], post.publishTime);
     if (!window) return null;
     const start = Date.parse(window.start) / 1000;
     const named = fold(postEventName(post.title));
     const entry = dated.find(candidate => Math.abs(candidate.start - start) <= 1.5 * 86400 && named && (candidate.title.includes(named) || named.includes(candidate.title)));
     return entry ? { post, event: entry.event, sections: newsSections(post.lines ?? []), art: post.art ?? [] } : null;
   }).filter(Boolean);
-  const sectionStart = section => {
+  const sectionStart = (section, publishTime) => {
     const line = section.lines.map(l => l.match(/^DURATION:\s*(.*)$/)).find(Boolean);
-    const window = line && parseDuration(line[1]);
-    return window ? { start: Date.parse(window.start) / 1000, end: window.end ? Date.parse(window.end) / 1000 : null } : null;
+    const window = line && parseNoticeWindow(line[1], publishTime);
+    return window ? { start: Date.parse(window.startAt) / 1000, end: Date.parse(window.endAt) / 1000 } : null;
   };
   // A change to the game's sign-in system ("CUMULATIVE SIGN-IN SYSTEM UPDATE") is not a login event
   // to collect: it is news (4814, 2026-10-14).
   const isLogin = title => /LOGIN|SIGN-IN|SIGN IN/.test(title) && !/SYSTEM UPDATE/.test(title);
-  const claims = announced.flatMap(({ event, sections }) => sections.filter(s => isLogin(s.title)).map(s => ({ event: event.name, start: sectionStart(s)?.start })).filter(c => c.start != null));
+  const claims = announced.flatMap(({ post, event, sections }) => sections.filter(s => isLogin(s.title)).map(s => ({ event: event.name, start: sectionStart(s, post.publishTime)?.start })).filter(c => c.start != null));
   // Global: its own activity has the event's name and opens on its Global start; a rerun's
   // "Retrospection" and a numbered run's "#3" are the same name.
   const result = tableGroups(events, tables, {
@@ -388,7 +388,7 @@ export function buildEventRewards(events, tables, posts, cn) {
         ...(pictures.length ? { art: pictures } : {}), ...(postArt ? { postArt } : {}) });
     };
     for (const section of sections) {
-      const when = sectionStart(section);
+      const when = sectionStart(section, post.publishTime);
       const lines = section.lines.filter(line => /^(DURATION|DETAILS|REWARDS?|NOTE|HOW TO OBTAIN):/.test(line)).slice(0, 8);
       if (isLogin(section.title) && !/PACK/.test(section.title)) {
         // A login the tables give no rewards for (a festival blessing, a flip-card login): as the
@@ -426,7 +426,7 @@ export function buildEventRewards(events, tables, posts, cn) {
         continue;
       }
       if (/PACK/.test(section.title)) {
-        const packs = parsePacks(section).map(pack => ({ ...pack, contents: pack.contents.map(item => ({ ...item, kind: kindOf(item.name) })) }));
+        const packs = parsePacks(section, post.publishTime).map(pack => ({ ...pack, contents: pack.contents.map(item => ({ ...item, kind: kindOf(item.name) })) }));
         // "LIMITED-TIME PACKS AVAILABLE" twice: one list.
         const same = sameGroup('packs', section.title);
         if (same) {

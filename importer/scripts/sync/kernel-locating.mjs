@@ -18,7 +18,7 @@ import { serverDay, SERVER_TIME } from '../../lib/time/servers.mjs';
  * record the announcement made. Banners from the bulk import (no lineupSource) are history and
  * are only ever linked to their pool, never rewritten.
  */
-import { newsSections, parseDuration } from '../build/official-news.mjs';
+import { newsSections, parseNoticeWindow } from '../build/official-news.mjs';
 import { savedGlobalBannerNotice } from './global-client-banners.mjs';
 
 export const kernelLocatingName = number => `Kernel Locating #${number} (Global)`;
@@ -40,15 +40,15 @@ export function kernelLocatingNotices(posts) {
   for (const post of [...posts].sort((a, b) => (a.publishTime ?? 0) - (b.publishTime ?? 0))) {
     for (const section of newsSections(post.lines ?? [])) {
       if (!/^KERNEL LOCATING OPEN\b/.test(section.title)) continue;
-      const duration = parseDuration(section.lines.find(line => /^DURATION:/.test(line)));
-      if (!duration?.end) continue;
+      const duration = parseNoticeWindow(section.lines.find(line => /^DURATION:/.test(line)), post.publishTime);
+      if (!duration) continue;
       // "★★★★★★ (2%): Goldenglow / Dorothy / ..."; five stars never match the six-star line.
       const tier = stars => {
         const line = section.lines.find(text => new RegExp(`^★{${stars}}\\s*\\(`).test(text));
         return line ? line.replace(/^[^:]*:\s*/, '').split('/').map(name => name.trim()).filter(Boolean) : [];
       };
       // A later post about the same window (a correction) replaces the earlier one.
-      notices.set(duration.start, { start: duration.start, end: duration.end, six: tier(6), five: tier(5), source: post.url });
+      notices.set(duration.startAt, { start: duration.startAt, end: duration.endAt, six: tier(6), five: tier(5), source: post.url });
     }
   }
   return [...notices.values()];

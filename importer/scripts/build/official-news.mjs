@@ -1,4 +1,4 @@
-import { serverInstant } from '../../lib/time/servers.mjs';
+import { serverCalendarTime, serverInstant } from '../../lib/time/servers.mjs';
 /**
  * Reading Arknights Global's official event announcements (www.arknights.global news, cached by
  * scripts/sync/sync-official-news.mjs into data/official-news/global/<id>.json).
@@ -99,16 +99,47 @@ export function newsSections(lines) {
 }
 
 const MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
-/** "September 16, 2026, 08:00 – October 7, 2026, 03:59 (UTC-7)" as { start, end } ISO instants. */
-export function parseDuration(line) {
-  const stamps = [...String(line ?? '').matchAll(/([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4}),?\s*(\d{1,2}):(\d{2})/g)];
-  const at = match => {
-    const month = MONTHS.indexOf(match[1].toLowerCase());
-    if (month < 0) return null;
-    return new Date(serverInstant(+match[3], month + 1, +match[2], +match[4], 'en') + Number(match[5]) * 60_000).toISOString();
-  };
-  const [start, end] = stamps.map(at);
-  return start ? { start, end: end ?? null } : null;
+/** Official EN wall-clock timestamps. Omitted years come from this post, never today's clock.
+ * The final timestamp remains the printed minute for existing editorial consumers; use
+ * parseNoticeWindow for an interval with an exclusive close. */
+export function parseDuration(line, publishTime) {
+  const text = String(line ?? '');
+  // This reader is for EN. An explicitly different zone must not silently use UTC-7.
+  if (/UTC/.test(text) && !/\(UTC[−-]7\)/.test(text)) return null;
+  const stamps = [...text.matchAll(/([A-Za-z]+)\s+(\d{1,2}),?\s*(?:(\d{4}),?\s*)?(\d{1,2}):(\d{2})/g)];
+  if (!stamps.length || stamps.length > 2) return null;
+  const published = Number.isFinite(publishTime) ? serverCalendarTime(new Date(publishTime), 'en') : null;
+  const explicit = stamps.find(match => match[3]);
+  let year = explicit ? +explicit[3] : published?.getUTCFullYear();
+  if (!year) return null;
+  if (explicit && !stamps[0][3] && MONTHS.indexOf(stamps[0][1].toLowerCase()) > MONTHS.indexOf(explicit[1].toLowerCase())) year--;
+  if (!explicit) {
+    const month = MONTHS.indexOf(stamps[0][1].toLowerCase());
+    // A December post can announce January; a January post can describe December.
+    if (month < published.getUTCMonth() - 6) year++;
+    else if (month > published.getUTCMonth() + 6) year--;
+  }
+  let previousMonth = null;
+  const values = [];
+  for (const match of stamps) {
+    const month = MONTHS.indexOf(match[1].toLowerCase()) + 1;
+    const day = +match[2], hour = +match[4], minute = +match[5];
+    if (match[3]) year = +match[3];
+    else if (previousMonth !== null && month < previousMonth) year++;
+    if (month < 1 || hour > 23 || minute > 59 || day < 1) return null;
+    const wall = new Date(Date.UTC(year, month - 1, day, hour, minute));
+    if (wall.getUTCMonth() !== month - 1 || wall.getUTCDate() !== day) return null;
+    values.push(new Date(serverInstant(year, month, day, hour, 'en') + minute * 60_000).toISOString());
+    previousMonth = month;
+  }
+  const [start, end] = values;
+  return end && end <= start ? null : { start, end: end ?? null };
+}
+
+/** A notice states the final inclusive minute (03:59); every live clock uses [start, end). */
+export function parseNoticeWindow(line, publishTime) {
+  const duration = parseDuration(line, publishTime);
+  return duration?.end ? { startAt: duration.start, endAt: new Date(Date.parse(duration.end) + 60_000).toISOString() } : null;
 }
 
 /** "Caster Chip Pack * 8, Caster Chip * 5, and LMD * 210000." as [{ name, count }]. */
@@ -125,7 +156,11 @@ const KEY = /^([A-Z][A-Z ]*?):\s*(.*)$/;
  * The packs a section offers: each a name line, then its DURATION (or the section's) and its
  * CONTENTS. Special pack rules remain as notes when the post gives no countable contents.
  */
-export function parsePacks(section) {
+export function parsePacks(section, publishTime) {
+  const duration = line => {
+    const window = parseNoticeWindow(line, publishTime);
+    return window ? { start: window.startAt, end: window.endAt } : parseDuration(line, publishTime);
+  };
   const packs = new Map();
   const lines = section.lines;
   const begins = (line, next = '') => !KEY.test(line) && !/^[◆•-]|^note|^day \d/i.test(line)
@@ -150,10 +185,10 @@ export function parsePacks(section) {
     }
     const key = line.match(KEY);
     if (!current) {
-      if (key?.[1] === 'DURATION') sectionDuration = parseDuration(key[2]);
+      if (key?.[1] === 'DURATION') sectionDuration = duration(key[2]);
       continue;
     }
-    if (['DURATION', 'SALES PERIOD'].includes(key?.[1])) Object.assign(current, parseDuration(key[2]) ?? {});
+    if (['DURATION', 'SALES PERIOD'].includes(key?.[1])) Object.assign(current, duration(key[2]) ?? {});
     else if (['CONTENTS', 'CONTENT', 'INCLUDES', 'DETAILS'].includes(key?.[1])) {
       const items = parseContents(key[2]);
       if (items.length) current.contents.push(...items);
@@ -209,11 +244,11 @@ export function parseSelectorTickets(section, source) {
 }
 
 /** The announced event's own window: the first DURATION in the post. */
-export function postWindow(lines) {
+export function postWindow(lines, publishTime) {
   for (const line of lines) {
     const key = line.match(KEY);
     if (key && key[1] === 'DURATION') {
-      const parsed = parseDuration(key[2]);
+      const parsed = parseDuration(key[2], publishTime);
       if (parsed) return parsed;
     }
   }

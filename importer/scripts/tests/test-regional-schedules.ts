@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
+import fs from 'node:fs';
 // @ts-expect-error Plain Node ingestion.
-import { boardOpening, englishNoticeSkinWindows, eventActivity, noticeOpening, noticeSkinWindows, buildRegionalSchedule } from '../sync/sync-regional-schedules.mjs';
+import { boardOpening, englishNoticeSkinWindows, globalTimingProjections, eventActivity, noticeOpening, noticeSkinWindows, buildRegionalSchedule } from '../sync/sync-regional-schedules.mjs';
 
 /*
  * What the regional ingestion reads out of each client's own notices and in-game board
@@ -88,7 +89,6 @@ test("Global's official post lists its Outfit Store sales, read as windows by ou
     'DURATION: October 14, 2026, 08:00 - November 11, 2026, 03:59 (UTC-7)',
     'DETAILS: The following Re-edition Outfits will be available at the Outfit Store, including:',
     'Test Collection - Glory of the Devout for Archetto',
-    'Test Collection - Unknown Outfit for Nobody',
     '12 LIMITED-TIME PACKS AVAILABLE',
     'Iteration Provident Series - Red Countess for Skadi the Corrupting Heart',
   ] };
@@ -105,4 +105,45 @@ test("Global's official post lists its Outfit Store sales, read as windows by ou
     ['New outfits', true, '2026-10-14T15:00:00.000Z', '2026-11-11T11:00:00.000Z', ['Haruka / Stranded In Utopia', 'Nowell / The Spirit-Farer']],
     ['Returning outfits', false, '2026-10-14T15:00:00.000Z', '2026-11-11T11:00:00.000Z', ['Archetto / Glory to the Devout']],
   ], 'a reworded name matches by operator and series; an unknown outfit and a later section\'s line are left out');
+});
+
+
+test('Masses rerun: a singular arrival and yearless dates use the shop section, not stage close', () => {
+  const post = JSON.parse(fs.readFileSync('scripts/tests/fixtures/official-news/5045.json', 'utf8'));
+  const skin = { skinId: 'char_4194_rmixer@boc#12', model: 'Sankta Miksaparato', name: 'Caelum Aeternum', series: 'Bloodline of Combat', howToObtain: 'Outfit Store ( 18 Originite Prime )' };
+  const problems: unknown[] = [];
+  const [shop] = englishNoticeSkinWindows([post], [skin], { onProblem: (problem: unknown) => problems.push(problem) });
+  assert.deepEqual(problems, []);
+  assert.deepEqual(shop.skinIds, ['Sankta Miksaparato / Caelum Aeternum']);
+  assert.equal(shop.startAt, '2026-11-05T15:00:00.000Z');
+  assert.equal(shop.endAt, '2026-11-19T11:00:00.000Z');
+  assert.equal(shop.newRelease, true);
+  assert.equal(shop.estimated, false);
+  assert.equal(shop.source, post.url);
+  const preloaded = { startAt: '2026-11-05T12:00:00.000Z', endAt: '2026-11-15T11:00:00.000Z', localName: "The Masses' Travels - Rerun" };
+  const event = noticeOpening(preloaded, [post], 'en');
+  assert.equal(event.startAt, shop.startAt);
+  assert.equal(event.endAt, preloaded.endAt, 'the stage and shop have different deadlines');
+  assert.equal(event.timingSource, shop.source, 'both resolve from the same first-party notice');
+});
+
+test('an unreadable shop or unresolved inventory is reported instead of publishing a partial batch', () => {
+  const post = JSON.parse(fs.readFileSync('scripts/tests/fixtures/official-news/5045.json', 'utf8'));
+  for (const broken of [post, { ...post, lines: post.lines.map((line: string) => line.replace('NEW ARRIVAL AT', 'SALE AT')) }]) {
+    const problems: { reason: string }[] = [];
+    assert.deepEqual(englishNoticeSkinWindows([broken], [], { onProblem: (problem: { reason: string }) => problems.push(problem) }), []);
+    assert.equal(problems.length, 1);
+    assert.match(problems[0].reason, /Unresolved outfit|Unrecognised outfit-shop heading/);
+  }
+});
+
+
+test('EN stages and farming project the same authoritative regional clocks', () => {
+  const corrected = { contents: { act42sre: [1793890800, 1794740400] }, farming: [{ stage: 'MT-8', startAt: '2026-11-05T15:00:00.000Z', endAt: '2026-11-15T11:00:00.000Z' }] };
+  const previous = { act42sre: [1, 2], cnFuture: [3, 4] };
+  const result = globalTimingProjections(previous, { version: 1, drops: [] }, corrected);
+  assert.deepEqual(result.contentWindows.act42sre, corrected.contents.act42sre);
+  assert.deepEqual(result.contentWindows.cnFuture, [3, 4]);
+  assert.deepEqual(result.eventFarming, { version: 1, drops: corrected.farming });
+  assert.deepEqual(previous.act42sre, [1, 2], 'projection does not mutate its input');
 });
