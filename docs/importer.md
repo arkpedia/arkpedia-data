@@ -37,6 +37,34 @@ Each step runs through the stage runner (`scripts/content/run-stage.mjs`): a ste
 its changes put back and costs only its own records. `run-imports.sh` and
 `scripts/sync/refresh-stage-data.sh` list the steps.
 
+## Schedule authority
+
+A refresh pins each client mirror once (`upstream.lock.json`). Regional activity, gacha,
+shop, reward, weekly supply, Annihilation and SSS windows are compiled into
+`source/data/regional-schedules.json` from those pins. Official regional notices correct
+maintenance openings and supply shop deadlines that the client does not enumerate.
+Global stage/content and event-farming compatibility tables project the same corrected
+EN snapshot instead of keeping a separate preload opening.
+
+All English notice dates use `parseDuration` / `parseNoticeWindow` in
+`importer/scripts/build/official-news.mjs`: skins, banners, Kernel lists, packs and
+reward sections. Omitted years come from the post's publication timestamp, including
+December/January rollover, never the machine's current year. EN uses fixed UTC-7,
+not viewer time or DST. Interval producers use exclusive closes (the minute after a
+printed 03:59); the raw parser retains that printed minute for editorial readers.
+
+Each section keeps its own window: notice 5045 opens Masses' Travels stages on
+November 5 through November 15, 2026, but sells Caelum Aeternum through November 19.
+Singular `NEW ARRIVAL` and plural `NEW ARRIVALS` are supported. Unreadable recent
+shop sections or unresolved inventories are quarantined by notice and section,
+instead of silently publishing a partial batch. Historical confirmed windows survive
+a temporary notice-feed outage. Original runs and reruns retain separate activity IDs.
+
+The application reads raw windows from one immutable content release and computes
+availability/countdowns at request time with its shared server clock. Data corrections
+reach home, schedule, skins, stage lists and planners through the normal pointer,
+without rebuilding the app.
+
 ## Pull Planner banner rules
 
 After the catalogue, `cn-pull-odds` (`scripts/sync/sync-pull-odds.mjs`) automatically

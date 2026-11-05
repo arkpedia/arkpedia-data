@@ -1,7 +1,7 @@
 import { serverDay, SERVER_TIME } from '../../lib/time/servers.mjs';
 /** EN client reconciliation, independent of wiki availability and forecast dates.
  * Mutates records; existing pool IDs and historical lineups remain stable. */
-import { newsSections, parseDuration } from '../build/official-news.mjs';
+import { newsSections, parseNoticeWindow } from '../build/official-news.mjs';
 const days = pool => `${serverDay(pool.openTime, SERVER_TIME.en.offset)}–${serverDay(pool.endTime, SERVER_TIME.en.offset)}`;
 const bare = name => String(name ?? '').replace(/\[[^\]]*\]/g, '').replace(/\s+rerun\s*$/i, '')
   .normalize('NFKD').replace(/[^\p{L}\p{N}]/gu, '').toLowerCase();
@@ -27,9 +27,8 @@ export function globalBannerNotices(posts) {
   return [...posts].sort((a, b) => (a.publishTime ?? 0) - (b.publishTime ?? 0)).flatMap(post => newsSections(post.lines ?? []).flatMap(section => {
     const title = /^(?:LIMITED|LIMITED-TIME|SPECIAL|STANDARD) HEADHUNTING(?: OPEN)?\s*[–—-]\s*(.+)$/i.exec(section.title);
     const locating = section.title === 'KERNEL LOCATING OPEN';
-    const duration = (title || locating) && parseDuration(section.lines.find(line => /^DURATION:/.test(line)));
-    return duration?.end ? [{ name: title?.[1], kind: locating ? 'FESCLASSIC' : null, startAt: duration.start,
-      endAt: new Date(Date.parse(duration.end) + 60000).toISOString(), source: post.url }] : [];
+    const duration = (title || locating) && parseNoticeWindow(section.lines.find(line => /^DURATION:/.test(line)), post.publishTime);
+    return duration ? [{ name: title?.[1], kind: locating ? 'FESCLASSIC' : null, ...duration, source: post.url }] : [];
   }));
 }
 

@@ -9,7 +9,7 @@ import { pathToFileURL } from 'node:url';
 import { pinnedRef } from '../content/pin-upstream.mjs';
 import { beginStage, defaultNow } from '../lib/quarantine.mjs';
 import { buildEventFarming } from './sync-event-farming.mjs';
-import { newsLines } from '../build/official-news.mjs';
+import { newsLines, newsSections, parseDuration, parseNoticeWindow } from '../build/official-news.mjs';
 import { readOfficialBulletins } from './sync-official-bulletins.mjs';
 import { boardBannerItems, regionalPoolId, withBoardArt } from './regional-board.mjs';
 import { serverDay, SERVER_TIME, serverInstant } from '../../lib/time/servers.mjs';
@@ -38,12 +38,13 @@ export function noticeOpening(record, notices, server) {
     const pattern = /(?:(\d{4})\s*[年년]\s*)?(\d{1,2})\s*[月월]\s*(\d{1,2})\s*[日일](?:\s*\([^)]*\)|\s*（[^）]*）)?\s*(\d{1,2}):([0-5]\d)/gu;
     const candidates = new Set();
     if (server === 'en') {
-      const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-      for (const m of text.matchAll(/([A-Z][a-z]+) (\d{1,2}), (\d{4}), (\d{1,2}):([0-5]\d)/g)) {
-        const month = months.indexOf(m[1]) + 1;
-        if (+m[3] !== day[0] || month !== day[1] || +m[2] !== day[2]) continue;
-        const instant = serverInstant(+m[3], month, +m[2], +m[4], server) + +m[5] * 60000;
-        if (instant >= original && instant <= original + 12 * 3600000 && instant < Date.parse(record.endAt)) candidates.add(instant);
+      for (const line of post.lines) {
+        const parsed = parseDuration(line, post.publishTime);
+        for (const stamp of parsed ? [parsed.start, parsed.end].filter(Boolean) : []) {
+          const instant = Date.parse(stamp);
+          if (serverDay(instant / 1000, SERVER_TIME.en.offset) !== day.map(n => String(n).padStart(2, '0')).join('/')) continue;
+          if (instant >= original && instant <= original + 12 * 3600000 && instant < Date.parse(record.endAt)) candidates.add(instant);
+        }
       }
     }
     for (const m of text.matchAll(pattern)) {
@@ -79,9 +80,6 @@ export function boardOpening(record, board, server) {
   return { ...record, timingSource: pages.length === 1 ? pages[0].url : `ingame-board:${server}/${item.id}`, status: 'announced' };
 }
 
-const EN_MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-const EN_STAMP = /([A-Z][a-z]+) (\d{1,2}), (\d{4}), (\d{1,2}):([0-5]\d)/g;
-
 /**
  * Global's official posts list a sale as a numbered section:
  *   "10 ... NEW ARRIVALS AT THE OUTFIT STORE" (or "RE-EDITION ... AT THE OUTFIT STORE"),
@@ -91,37 +89,35 @@ const EN_STAMP = /([A-Z][a-z]+) (\d{1,2}), (\d{4}), (\d{1,2}):([0-5]\d)/g;
  * "The Spirit Farer" is "The Spirit-Farer"), else the operator's only store outfit of that series
  * (the post calls Archetto's "Glory to the Devout" "Glory of the Devout", 2026-10-14).
  */
-export function englishNoticeSkinWindows(notices, skins) {
+export function englishNoticeSkinWindows(notices, skins, { onProblem = () => {} } = {}) {
   const store = skins.filter(skin => /Outfit Store.*Originite/i.test(skin.howToObtain ?? ''));
   const groups = new Map();
-  for (const post of notices) {
-    const lines = post.lines ?? [];
-    lines.forEach((header, at) => {
-      if (!/AT THE OUTFIT STORE|AT OUTFIT STORE/i.test(header) || !/NEW ARRIVALS|RE-EDITION/i.test(header) || !/^\d{2}\s/.test(header)) return;
-      const duration = lines.slice(at + 1, at + 3).find(line => /^DURATION:/i.test(line)) ?? '';
-      const stamps = [...duration.matchAll(EN_STAMP)].map(m => serverInstant(+m[3], EN_MONTHS.indexOf(m[1]) + 1, +m[2], +m[4], 'en') + +m[5] * 60000);
-      if (stamps.length !== 2 || stamps[1] <= stamps[0] || stamps[1] - stamps[0] > 60 * 86400000 || stamps.some(Number.isNaN)) return;
-      const fresh = /NEW ARRIVALS/i.test(header);
-      const startAt = new Date(stamps[0]).toISOString(), endAt = new Date(stamps[1] + 60000).toISOString();
-      const key = `${post.url}/${startAt}/${endAt}/${fresh}`;
-      for (const line of lines.slice(at + 1)) {
-        if (/^\d{2}\s/.test(line)) break;
-        const m = line.match(/^(.+?)\s+-\s+(.+)\s+for\s+(.+)$/);
-        if (!m) continue;
-        const [, series, outfit, operator] = m.map(fold);
-        const theirs = store.filter(skin => fold(skin.model) === operator);
-        let skin = theirs.find(row => fold(row.name) === outfit);
-        if (!skin) {
-          const bySeries = theirs.filter(row => row.series && (series.startsWith(fold(row.series)) || fold(row.series).startsWith(series)));
-          if (bySeries.length === 1) skin = bySeries[0];
-        }
-        if (!skin) continue;
-        const record = groups.get(key) ?? { event: post.title, kind: 'shop', label: fresh ? 'New outfits' : 'Returning outfits', startAt, endAt,
-          skinIds: [], source: post.url, inventorySource: post.url, estimated: false, newRelease: fresh };
-        record.skinIds.push(`${skin.model} / ${skin.name}`);
-        groups.set(key, record);
-      }
-    });
+  for (const post of notices) for (const section of newsSections(post.lines ?? [])) {
+    const header = section.title;
+    if (!/AT (?:THE )?OUTFIT STORE/i.test(header)) continue;
+    const problem = reason => onProblem({ post, section: section.number, reason });
+    if (!/NEW ARRIVALS?|RE-EDITION/i.test(header)) { problem('Unrecognised outfit-shop heading'); continue; }
+    const time = parseNoticeWindow(section.lines.find(line => /^DURATION:/i.test(line)), post.publishTime);
+    if (!time || Date.parse(time.endAt) - Date.parse(time.startAt) > 60 * 86400000) { problem('Unreadable outfit-shop duration'); continue; }
+    const fresh = /NEW ARRIVALS?/i.test(header);
+    const skinIds = [];
+    let unresolved = false;
+    for (const line of section.lines) {
+      const m = line.match(/^([^:]+?)\s+[-–—]\s+(.+)\s+for\s+(.+)$/);
+      if (!m) continue;
+      const [, series, outfit, operator] = m.map(fold);
+      const theirs = store.filter(skin => fold(skin.model) === operator);
+      let matches = theirs.filter(row => fold(row.name) === outfit);
+      if (!matches.length) matches = theirs.filter(row => row.series && (series.startsWith(fold(row.series)) || fold(row.series).startsWith(series)));
+      if (matches.length !== 1) { problem(`Unresolved outfit: ${line}`); unresolved = true; continue; }
+      skinIds.push(`${matches[0].model} / ${matches[0].name}`);
+    }
+    if (unresolved || !skinIds.length) { if (!unresolved) problem('No outfit inventory found'); continue; }
+    const key = `${post.url}/${time.startAt}/${time.endAt}/${fresh}`;
+    const record = groups.get(key) ?? { event: post.title, kind: 'shop', label: fresh ? 'New outfits' : 'Returning outfits', ...time,
+      skinIds: [], source: post.url, inventorySource: post.url, estimated: false, newRelease: fresh };
+    record.skinIds.push(...skinIds);
+    groups.set(key, record);
   }
   return [...groups.values()].map(record => ({ ...record, skinIds: [...new Set(record.skinIds)].sort() }));
 }
@@ -129,8 +125,8 @@ export function englishNoticeSkinWindows(notices, skins) {
 /** Published Japanese sale paragraphs name the exact outfit. Read the following
  * explicit sale interval, never a release association or another region's shop. Global's
  * English posts read by englishNoticeSkinWindows. */
-export function noticeSkinWindows(notices, tables, skins, server) {
-  if (server === 'en') return englishNoticeSkinWindows(notices, skins);
+export function noticeSkinWindows(notices, tables, skins, server, options = {}) {
+  if (server === 'en') return englishNoticeSkinWindows(notices, skins, options);
   const dates = /(?:(\d{4})[年년]\s*)?(\d{1,2})[月월]\s*(\d{1,2})[日일](?:[（(][^）)]*[）)])?\s*(\d{1,2}):([0-5]\d)/gu;
   const groups = new Map();
   for (const post of notices) for (const skin of skins) {
@@ -178,7 +174,7 @@ export function eventActivity(event, english) {
   return near.length === 1 ? near[0][0] : null;
 }
 
-export function buildRegionalSchedule({ server, tables, english, events, banners, skins, stages, contents, rewards = [], notices = [], board = null, shopOverrides = [], base }) {
+export function buildRegionalSchedule({ server, tables, english, events, banners, skins, stages, contents, rewards = [], notices = [], board = null, shopOverrides = [], onProblem, base }) {
   const source = table => `${base}/${table}_table.json`;
   if (Object.keys(tables.activity?.basicInfo ?? {}).length < 100 || (tables.gacha?.gachaPoolClient?.length ?? 0) < 100
     || Object.keys(tables.zone?.weeklyAdditionInfo ?? {}).length < 9 || Object.keys(tables.stage?.stages ?? {}).length < 1000) throw new Error(`Incomplete ${server} client tables`);
@@ -264,7 +260,7 @@ export function buildRegionalSchedule({ server, tables, english, events, banners
       if (sameItems(reward, items)) rewardWindows[reward.id] = { ...act, endAt: act.shopEndAt ?? act.endAt };
     }
   }
-  const skinWindows = [...noticeSkinWindows(notices, tables, skins, server), ...shopOverrides.filter(row => row.server === server).map(({ server: _server, ...row }) => row)];
+  const skinWindows = [...noticeSkinWindows(notices, tables, skins, server, { onProblem }), ...shopOverrides.filter(row => row.server === server).map(({ server: _server, ...row }) => row)];
   // JP's and KR's own key art for their events and banners, from their in-game boards and KR's
   // official site headline (regional-board.mjs): an address and a hash on the window, which the
   // page shows in place of Global's when the site is in that server's mode. Global's comes from
@@ -304,6 +300,11 @@ export async function regionalNotices(server, fetcher, now) {
     result.push({ url: `https://cafe.naver.com/f-e/cafes/29703924/articles/${item.articleId}`, title: item.subject, publishTime: item.writeDateTimestamp, lines: newsLines(post.contentHtml) });
   }
   return result;
+}
+
+/** EN compatibility records use the notice-corrected regional snapshot, retaining CN-only forecasts. */
+export function globalTimingProjections(contentWindows, eventFarming, schedule) {
+  return { contentWindows: { ...contentWindows, ...schedule.contents }, eventFarming: { ...eventFarming, drops: schedule.farming } };
 }
 
 export async function syncRegionalSchedules(root, { fetcher = globalThis.fetch, now = defaultNow().getTime() } = {}) {
@@ -350,7 +351,10 @@ export async function syncRegionalSchedules(root, { fetcher = globalThis.fetch, 
         console.warn(`${server} notices: ${error.message}`);
         stage.add({ key: `${server}:notices`, reason: 'Regional official notices could not be read; prior announcement overrides are retained.', action: 'kept-previous' });
       }
-      const next = buildRegionalSchedule({ server, tables, english, events, banners, skins, stages, contents, rewards, notices, board: server === 'en' ? null : boards[server], shopOverrides, base });
+      const next = buildRegionalSchedule({ server, tables, english, events, banners, skins, stages, contents, rewards, notices, board: server === 'en' ? null : boards[server], shopOverrides, base, onProblem: ({ post, section, reason }) => {
+        if (Number.isFinite(post.publishTime) && post.publishTime < now - 60 * 86400000) return;
+        stage.add({ key: `${server}:shop:${post.id ?? post.url}:${section}`, reason, action: 'kept-previous', sourceRef: post.url });
+      } });
       // A notice-feed outage or old notice leaving the bounded list cannot undo its confirmed opening.
       for (const kind of ['activities', 'events', 'banners']) for (const [id, old] of Object.entries(previous.servers?.[server]?.[kind] ?? {})) {
         const row = next[kind][id];
@@ -380,6 +384,11 @@ export async function syncRegionalSchedules(root, { fetcher = globalThis.fetch, 
         timingSource: time.timingSource, note: null };changed = true;
     }
     if (changed) fs.writeFileSync(path.join(root, 'data/events', file), `${JSON.stringify(records, null, 2)}\n`);
+  }
+  if (servers.en) {
+    const projected = globalTimingProjections(read('data/content-windows.json'), read('data/event-farming.json'), servers.en);
+    fs.writeFileSync(path.join(root, 'data/content-windows.json'), JSON.stringify(projected.contentWindows));
+    fs.writeFileSync(path.join(root, 'data/event-farming.json'), `${JSON.stringify(projected.eventFarming, null, 2)}\n`);
   }
   fs.writeFileSync(at, `${JSON.stringify({ version: 1, skinParserVersion: 2, servers })}\n`);stage.commit();
   return servers;

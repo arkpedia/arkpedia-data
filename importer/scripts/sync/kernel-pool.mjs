@@ -1,5 +1,4 @@
 import { SERVER_TIME } from '../../lib/time/servers.mjs';
-import { serverCalendarTime } from '../../lib/time/servers.mjs';
 /**
  * Which operators Global moved from Standard to Kernel Headhunting, and when: the three pool
  * fields of an operator record that the gacha simulator and the pull planner decide every
@@ -218,16 +217,6 @@ export function planKernelMoves({ operators, moves, source }) {
 const PERMIT = /range includes all 6★ Operators currently available in Kernel Headhunting\s*:\s*(.*)$/i;
 const utcDay = ms => serverDay(Math.floor(ms / 1000), 0);
 const globalDay = iso => serverDay(Math.floor(Date.parse(iso) / 1000), SERVER_TIME.en.offset);
-const MONTH = /\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),?\s+(\d{1,2}:\d{2})/gi;
-/** A DURATION line with the year put back where the post left it out. */
-function withYear(line, publishTime) {
-  const published = serverCalendarTime(new Date(publishTime), 'en');
-  return line.replace(MONTH, (whole, month, day, time) => {
-    const index = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'].indexOf(month.toLowerCase());
-    const year = published.getUTCFullYear() + (index < published.getUTCMonth() - 6 ? 1 : 0);
-    return `${month} ${day}, ${year}, ${time}`;
-  });
-}
 const tier = (lines, stars) => {
   const line = lines.find(text => new RegExp(`^★{${stars}}(?!★)\\s*\\(`).test(text));
   return line ? line.replace(/^[^:]*:\s*/, '').split('/').map(name => name.trim()).filter(Boolean) : null;
@@ -256,7 +245,7 @@ export function officialKernelLists(posts) {
     for (const section of newsSections(lines)) {
       if (!/\bKERNEL LOCATING\b/.test(section.title)) continue;
       const durationLine = section.lines.find(text => /^DURATION:/.test(text));
-      const duration = parseDuration(durationLine) ?? (durationLine && Number.isFinite(post.publishTime) ? parseDuration(withYear(durationLine, post.publishTime)) : null);
+      const duration = parseDuration(durationLine, post.publishTime);
       const six = tier(section.lines, 6), five = tier(section.lines, 5);
       if (!duration?.start || !six?.length || !five?.length) {
         problems.push({ post: ref, reason: `its section "${section.title}" has no DURATION or no "★★★★★★ (2%)" and "★★★★★ (8%)" lines the check can read` });
