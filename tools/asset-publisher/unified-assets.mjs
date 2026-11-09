@@ -4,7 +4,7 @@ import { createHash } from 'node:crypto';
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { COMMIT, REPOSITORIES, assetReferences, descriptor, objectKey, publicFile, readyKey } from './contract.mjs';
+import { COMMIT, REPOSITORIES, assetReferences, descriptor, maxFileBytes, objectKey, publicFile, readyKey } from './contract.mjs';
 import { boundedMap, mirrorRevision, revisionMetadata, source, verifyGitBlob } from './mirror-github-assets.mjs';
 import { NATIVE_BUCKET, acquireNativeLease, dedupDataKey, nativeContentType, nativeKey, nativePublisherClient, nativeStore } from './native-assets.mjs';
 
@@ -50,7 +50,7 @@ export async function planUnifiedAssets(pins, destination, resolveSource) {
       continue;
     }
     const input = await resolveSource(repository, revision);
-    assert.ok(input.files?.length && input.files.every(file => descriptor(file) && publicFile(repository, file.path)), 'Invalid public Git tree');
+    assert.ok(input.files?.length && input.files.every(file => descriptor(file, maxFileBytes(repository)) && publicFile(repository, file.path)), 'Invalid public Git tree');
     assert.equal(new Set(input.files.map(file => file.path)).size, input.files.length, 'Duplicate public Git path');
     const references = new Map();
     if (repository === 'arkpedia-data') await boundedMap(input.files, 8, async file => {
@@ -108,7 +108,8 @@ export async function publishUnifiedAssets(plan, destination, { maxNewBytes, max
     }
     const knownMedia = new Map([...bySha].filter(([, files]) => files.every(file => entry.verifiedPaths.has(nativeKey(entry.repository, entry.revision, file.path))))
       .map(([sha, files]) => [objectKey(sha), files[0].bytes]));
-    await mirrorRevision({ ...entry, known: knownMedia, log, store: { put: async (key, bytes) => {
+    // Two media bodies of at most 128 MB keep in-flight file bytes within 256 MB.
+    await mirrorRevision({ ...entry, known: knownMedia, concurrency: 2, log, store: { put: async (key, bytes) => {
       if (key.startsWith('github-v1/objects/')) {
         const files = bySha.get(key.slice('github-v1/objects/'.length));
         assert.ok(files?.length, 'Unexpected native Git blob');

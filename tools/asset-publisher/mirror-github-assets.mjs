@@ -5,12 +5,12 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { S3Client, ListObjectsV2Command, GetObjectCommand, HeadObjectCommand, PutObjectCommand } from '@aws-sdk/client-s3';
-import { COMMIT, MAX_BYTES, PREFIX, REPOSITORIES, assetReferences, indexKey, objectKey, publicFile, readyKey, shardFor } from './contract.mjs';
+import { COMMIT, MAX_MEDIA_BYTES, PREFIX, REPOSITORIES, assetReferences, indexKey, maxFileBytes, objectKey, publicFile, readyKey, shardFor } from './contract.mjs';
 
 const exec = promisify(execFile);
 const hash = (algorithm, bytes) => createHash(algorithm).update(bytes).digest('hex');
 const git = async (directory, args, binary = false) => (await exec('git', ['-C', directory, ...args], {
-  encoding: binary ? 'buffer' : 'utf8', maxBuffer: MAX_BYTES + 1_000_000, timeout: 300_000,
+  encoding: binary ? 'buffer' : 'utf8', maxBuffer: MAX_MEDIA_BYTES + 1_000_000, timeout: 300_000,
 })).stdout;
 
 export function treeFiles(repository, listing) {
@@ -20,7 +20,7 @@ export function treeFiles(repository, listing) {
     if (!match || !publicFile(repository, match[4])) return [];
     const [, mode, sha, size, path] = match;
     const bytes = Number(size);
-    if (!['100644', '100755'].includes(mode) || !Number.isSafeInteger(bytes) || bytes <= 0 || bytes > MAX_BYTES) throw new Error(`Unsupported public object: ${path}`);
+    if (!['100644', '100755'].includes(mode) || !Number.isSafeInteger(bytes) || bytes <= 0 || bytes > maxFileBytes(repository)) throw new Error(`Unsupported public object: ${path}`);
     return [{ path, sha, bytes }];
   }).sort((a, b) => a.path < b.path ? -1 : a.path > b.path ? 1 : 0);
 }

@@ -1,9 +1,14 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
+import { mkdir, mkdtemp, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { source, treeFiles } from './mirror-github-assets.mjs';
 import { test } from 'node:test';
 import { nativeKey } from './native-assets.mjs';
 import { planUnifiedAssets, publishUnifiedAssets } from './unified-assets.mjs';
-import { objectKey, readyKey } from './contract.mjs';
+import { MAX_BYTES, MAX_MEDIA_BYTES, objectKey, readyKey } from './contract.mjs';
 
 const hash = (type, bytes) => createHash(type).update(bytes).digest('hex');
 const mediaRepo = 'arkpedia-image-assets', mediaRev = 'a'.repeat(40), dataRev = 'b'.repeat(40), oldRev = 'c'.repeat(40);
@@ -42,6 +47,44 @@ function gitSources() {
   return { source, reads };
 }
 
+test('large media is accepted without raising JSON or total storage limits', async () => {
+  const path = 'originals/anniversary-5/terra/maps/full-map-r1.png';
+  const listing = (bytes, name = path) => `100644 blob ${mediaFile.sha} ${bytes}\t${name}\0`;
+  assert.equal(treeFiles(mediaRepo, listing(82_636_688))[0].bytes, 82_636_688);
+  assert.equal(treeFiles(mediaRepo, listing(MAX_MEDIA_BYTES))[0].bytes, MAX_MEDIA_BYTES);
+  assert.throws(() => treeFiles(mediaRepo, listing(MAX_MEDIA_BYTES + 1)), /Unsupported public object/);
+  assert.throws(() => treeFiles('arkpedia-data', listing(MAX_BYTES + 1, 'release/manifest.json')), /Unsupported public object/);
+  const f = memoryStore();
+  for (const [repository, bytes, name] of [[mediaRepo, MAX_MEDIA_BYTES + 1, path], ['arkpedia-data', MAX_BYTES + 1, 'release/manifest.json']]) {
+    await assert.rejects(planUnifiedAssets([{ repository, revision: mediaRev }], f.store,
+      async () => ({ files: [{ ...mediaFile, path: name, bytes }] })), /Git tree/);
+  }
+  const plan = await planUnifiedAssets([{ repository: mediaRepo, revision: mediaRev }], f.store,
+    async () => ({ files: treeFiles(mediaRepo, listing(82_636_688)) }));
+  await assert.rejects(publishUnifiedAssets(plan, f.store, budgets), /budget/);
+  assert.deepEqual(f.puts, []);
+});
+test('Git blobs beyond the old read buffer publish intact to native storage', async () => {
+  const cache = await mkdtemp(join(tmpdir(), 'arkpedia-large-media-'));
+  try {
+    const directory = join(cache, mediaRepo); await mkdir(directory);
+    const git = (args, input) => execFileSync('git', ['-C', directory, ...args], { input, encoding: 'utf8',
+      env: { ...process.env, GIT_AUTHOR_NAME: 'Asset test', GIT_AUTHOR_EMAIL: 'test@example.invalid',
+        GIT_COMMITTER_NAME: 'Asset test', GIT_COMMITTER_EMAIL: 'test@example.invalid' } }).trim();
+    git(['init', '--bare', '--quiet']);
+    // Exceeds both the old file cap (64 MB) and subprocess buffer (65 MB).
+    const body = Buffer.alloc(66_000_000, 97);
+    const sha = git(['hash-object', '-w', '--stdin'], body);
+    const tree = git(['mktree'], `100644 blob ${sha}\tlarge.png\n`);
+    const revision = git(['commit-tree', tree], 'Large media fixture\n');
+    const f = memoryStore();
+    const plan = await planUnifiedAssets([{ repository: mediaRepo, revision }], f.store,
+      (repository, commit) => source(repository, commit, cache));
+    await publishUnifiedAssets(plan, f.store, { maxNewBytes: 100_000_000, maxTotalBytes: 100_000_000, log: () => {} });
+    assert.ok(f.objects.get(nativeKey(mediaRepo, revision, 'large.png')).equals(body));
+    assert.ok(f.objects.has(`__ready/${mediaRepo}/${revision}`));
+  } finally { await rm(cache, { recursive: true, force: true }); }
+});
 test('unified Git publication writes URL-shaped media and deduplicated JSON into one bucket without the old mirror', async () => {
   const f = memoryStore(), git = gitSources();
   const pins = [{ repository: 'arkpedia-data', revision: oldRev }, { repository: 'arkpedia-data', revision: dataRev }];
