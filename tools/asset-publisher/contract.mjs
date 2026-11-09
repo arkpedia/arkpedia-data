@@ -22,7 +22,7 @@ export function publicFile(repository, path) {
 // Compiled metadata can pin animation repositories independently of the main manifest.
 export function assetReferences(text) {
   const references = new Map();
-  for (const match of text.matchAll(/https:\/\/raw\.githubusercontent\.com\/arkpedia\/([a-z0-9-]+)\/([a-f0-9]{40})\//g)) {
+  for (const match of text.matchAll(/https:\/\/(?:raw\.githubusercontent\.com|assets\.arkpedia\.net)\/arkpedia\/([a-z0-9-]+)\/([a-f0-9]{40})\//g)) {
     const [, repository, revision] = match;
     if (REPOSITORIES.has(repository) && repository !== 'arkpedia-data') references.set(`${repository}/${revision}`, { repository, revision });
   }

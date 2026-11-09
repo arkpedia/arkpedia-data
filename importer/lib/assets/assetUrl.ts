@@ -1,3 +1,4 @@
+import { mediaRevision, type MediaDeliveryMaps } from './mediaDelivery.mjs';
 import cdn from '@/config/asset-delivery.json';
 
 /**
@@ -8,7 +9,9 @@ import cdn from '@/config/asset-delivery.json';
  * contentUrl() hands it encodeAssetPath()'s output; a voice template keeps its
  * `{voiceId}` placeholders because nothing encodes it here.
  */
-export function assetUrl(repository: string, revision: string, path: string): string {
+const bundledMedia: MediaDeliveryMaps = JSON.parse(process.env.ARKPEDIA_BUNDLED_MEDIA_DELIVERY || '{}');
+export function assetUrl(repository: string, revision: string, path: string, media?: MediaDeliveryMaps): string {
+  revision = mediaRevision(media?.[repository]?.[revision] ? media : bundledMedia, repository, revision, path);
   return cdn.template.replace('{repository}', repository).replace('{revision}', revision).replace('{path}', path);
 }
 
