@@ -1,5 +1,8 @@
 export const PREFIX = 'github-v1';
 export const MAX_BYTES = 64_000_000;
+// Media is delivered natively by R2; keep generated JSON within the reader's cap.
+export const MAX_MEDIA_BYTES = 128_000_000;
+export const maxFileBytes = repository => repository === 'arkpedia-data' ? MAX_BYTES : MAX_MEDIA_BYTES;
 export const REPOSITORIES = new Set([
   'arkpedia-image-assets', 'arkpedia-skin-assets', 'arkpedia-color-palette',
   'arkpedia-voice-japanese', 'arkpedia-voice-english', 'arkpedia-voice-mandarin',
@@ -33,6 +36,6 @@ export async function sha256(bytes) {
   return [...new Uint8Array(await crypto.subtle.digest('SHA-256', bytes))].map(byte => byte.toString(16).padStart(2, '0')).join('');
 }
 export const shardFor = path => sha256(new TextEncoder().encode(directory(path)));
-export function descriptor(value) {
-  return value && COMMIT.test(value.sha) && Number.isSafeInteger(value.bytes) && value.bytes > 0 && value.bytes <= MAX_BYTES;
+export function descriptor(value, maximum = MAX_BYTES) {
+  return value && COMMIT.test(value.sha) && Number.isSafeInteger(value.bytes) && value.bytes > 0 && value.bytes <= maximum;
 }
