@@ -44,3 +44,19 @@ not need a Git fetch or old-bucket reads. Activate both publishers only after
 the historical media/JSON migrations and new-bucket reader checks pass.
 
 Unified publication and the shared Git metadata/source helpers match the same application commit. The public copy changes only relative imports; keep all three publisher modules and their tests synchronized.
+
+### Native reuse compatibility
+
+The optional `ARKPEDIA_NATIVE_MEDIA_REUSE=true` mode uses matching immutable
+readiness directory hashes to reuse completed native media groups. Model bundles
+remain atomic and stored bytes are unchanged. New receipts carry sparse `native`
+maps; data readiness carries bounded `media` maps for its dependencies. Git JSON
+and historical URLs remain unchanged. `media-reuse.mjs`, `mediaDelivery.mjs` and
+`media-reuse.test.mjs` are vendored from the app with local imports only.
+
+Deploy the app consumer with `nativeMediaDelivery: 1` first; publication refuses
+reuse without that clean production capability. Enable the same flag in both
+repositories after verification. Keep the existing per-run/total byte budgets,
+lease, new-bucket-only destination and readiness-before-pointer ordering. Disabling
+the flag does not undo published maps: older app rollback requires restoring and
+verifying an unmapped historical content release first. No deletion is performed.
