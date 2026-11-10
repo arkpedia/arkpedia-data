@@ -12,10 +12,10 @@ const file = (path, text = path) => {
   return { path, body, bytes: body.length, sha: hash('sha1', Buffer.concat([Buffer.from(`blob ${body.length}\0`), body])) };
 };
 function fixture() {
-  const objects = new Map(), heads = new Map(), writes = [], reads = [];
+  const objects = new Map(), heads = new Map(), writes = [], reads = [], gets = [];
   const store = {
     list: async () => new Map([...objects].map(([key, value]) => [key, { bytes: value.length, md5: hash('md5', value) }])),
-    get: async key => objects.get(key), head: async key => heads.get(key),
+    get: async key => { gets.push(key); return objects.get(key); }, head: async key => heads.get(key),
     put: async (key, body, contentType) => {
       writes.push(key); objects.set(key, body);
       heads.set(key, { ContentLength: body.length, ETag: hash('md5', body), ContentType: contentType,
@@ -27,8 +27,73 @@ function fixture() {
     await publishUnifiedAssets(plan, store, { maxNewBytes: 1_000_000, maxTotalBytes: 2_000_000, log: () => {} });
     return plan;
   };
-  return { objects, writes, reads, store, publish };
+  return { objects, writes, reads, gets, store, publish };
 }
+test('completed pins read only their dependency receipts while retaining the full storage budget', async () => {
+  const f = fixture(), files = [file('icons/a.webp')];
+  await f.publish(image, a, files, false);
+  const original = JSON.parse(f.objects.get(`__ready/${image}/${a}`));
+  for (let i = 0; i < 1000; i++) {
+    const revision = i.toString(16).padStart(40, '0');
+    f.objects.set(`__ready/${image}/${revision}`, Buffer.from(JSON.stringify({ ...original, revision })));
+  }
+  f.gets.length = 0; f.writes.length = 0;
+  const noSource = async () => { throw Error('Completed pins must not load Git sources'); };
+  const plan = await planUnifiedAssets([{ repository: image, revision: a }], f.store, noSource, { reuseMedia: true });
+  assert.deepEqual(f.gets, [`__ready/${image}/${a}`]);
+  assert.equal(plan.summary.newBytes, 0);
+  assert.equal(plan.summary.newObjects, 0);
+  assert.equal(plan.summary.existingBytes, [...f.objects.values()].reduce((sum, body) => sum + body.length, 0));
+  await assert.rejects(publishUnifiedAssets(plan, f.store, { maxNewBytes: 0, maxTotalBytes: plan.summary.existingBytes - 1 }), /budget/);
+  assert.deepEqual(f.writes, []);
+
+  const json = file('release/manifest.json', JSON.stringify({ assets: { [image]: a } }));
+  await f.publish('arkpedia-data', b, [json]);
+  f.gets.length = 0;
+  const dataPlan = await planUnifiedAssets([{ repository: 'arkpedia-data', revision: b }], f.store, noSource, { reuseMedia: true });
+  assert.deepEqual(f.gets, [`github-v1/ready/arkpedia-data/${b}.json`, `__ready/${image}/${a}`]);
+  assert.equal(dataPlan.summary.identities.length, 2, 'completed data still follows its media dependencies');
+});
+test('new data preserves referenced media mappings without reading unrelated history', async () => {
+  const f = fixture(), files = [file('icons/a.webp')];
+  await f.publish(image, a, files, false);
+  await f.publish(image, b, files);
+  const native = JSON.parse(f.objects.get(`__ready/${image}/${b}`)).native;
+  assert.equal(native.baseRevision, a);
+  f.objects.set(`__ready/${image}/${'d'.repeat(40)}`, Buffer.from('{}'));
+  f.gets.length = 0;
+  const json = file('release/manifest.json', JSON.stringify({ assets: { [image]: b } }));
+  const plan = await planUnifiedAssets([{ repository: 'arkpedia-data', revision: c }], f.store, async repository => {
+    assert.equal(repository, 'arkpedia-data', 'completed media must not load Git sources');
+    return { files: [json], read: async value => value.body };
+  }, { reuseMedia: true });
+  assert.deepEqual(f.gets, [`__ready/${image}/${b}`]);
+  assert.equal(plan.media.length, 0);
+  assert.deepEqual(JSON.parse(plan.data[0].body).media[image][b], native);
+  await publishUnifiedAssets(plan, f.store, { maxNewBytes: 1_000_000, maxTotalBytes: 2_000_000, log: () => {} });
+  const ready = JSON.parse(f.objects.get(`github-v1/ready/arkpedia-data/${c}.json`));
+  assert.deepEqual(ready.media[image][b], native);
+
+  f.writes.length = 0;
+  await assert.rejects(f.publish(image, c, files), /Invalid unified readiness receipt/);
+  assert.deepEqual(f.writes, [], 'new media still validates historical reuse authorities before writing');
+});
+test('new media loads historical receipts once and reuses already verified requested receipts', async () => {
+  const f = fixture(), files = [file('icons/a.webp')];
+  await f.publish(image, a, files, false);
+  f.gets.length = 0;
+  const pins = [{ repository: image, revision: a }, { repository: image, revision: b }];
+  const plan = await planUnifiedAssets(pins, f.store, async () => ({ files, read: async value => value.body }), { reuseMedia: true });
+  assert.deepEqual(f.gets, [`__ready/${image}/${a}`]);
+  assert.equal(plan.media[0].native.baseRevision, a);
+});
+test('completed pins still reject receipts changed since inventory', async () => {
+  const f = fixture();
+  await f.publish(image, a, [file('icons/a.webp')], false);
+  f.store.get = async () => Buffer.from('{}');
+  await assert.rejects(planUnifiedAssets([{ repository: image, revision: a }], f.store,
+    async () => { throw Error('Unexpected source read'); }, { reuseMedia: true }), /receipt changed/);
+});
 test('unchanged directories reuse original bytes across multiple generations, changed/deleted directories do not', async () => {
   const f = fixture(), old = [file('icons/a.webp'), file('icons/b.webp'), file('deleted/old.webp')];
   await f.publish(image, a, old, false);

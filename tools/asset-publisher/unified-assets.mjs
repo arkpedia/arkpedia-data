@@ -30,12 +30,26 @@ export async function planUnifiedAssets(pins, destination, resolveSource, { reus
   assert.ok(Array.isArray(pins) && pins.length && pins.length <= 10_000, 'An immutable source plan is required');
   const existing = await destination.list('');
   const receipts = new Map();
-  if (reuseMedia) await boundedMap([...existing.keys()].filter(key => key.startsWith('__ready/')), 8, async key => {
-    const [, repository, revision] = key.split('/'); pin({ repository, revision });
+  async function readReceipt(repository, revision, key) {
+    const identity = pin({ repository, revision });
+    if (receipts.has(identity)) return receipts.get(identity);
     const body = await destination.get(key, 1_000_000);
-    assert.ok(existing.get(key).bytes === body.length && existing.get(key).md5 === md5(body), 'Native reuse receipt changed during inventory');
-    receipts.set(`${repository}/${revision}`, receipt(body, repository, revision));
-  });
+    assert.ok(existing.get(key).bytes === body.length && existing.get(key).md5 === md5(body), 'Unified receipt changed during inventory');
+    const saved = receipt(body, repository, revision);
+    receipts.set(identity, saved);
+    return saved;
+  }
+  let reuseReceiptsLoaded = false;
+  async function loadReuseReceipts() {
+    if (reuseReceiptsLoaded) return;
+    // Historical receipts only help plan unpublished media. Completed pins still
+    // verify their own dependency graph, without reading unrelated history.
+    await boundedMap([...existing.keys()].filter(key => key.startsWith('__ready/')), 8, async key => {
+      const [, repository, revision] = key.split('/');
+      await readReceipt(repository, revision, key);
+    });
+    reuseReceiptsLoaded = true;
+  }
   const queue = [...pins], visited = new Set(), media = [], data = [], desired = new Map(), identities = [];
   const add = (key, item) => {
     if (desired.has(key)) assert.deepEqual(desired.get(key), item, 'Conflicting unified object descriptors');
@@ -51,11 +65,8 @@ export async function planUnifiedAssets(pins, destination, resolveSource, { reus
     const { repository, revision } = current;
     const key = readyPath(repository, revision);
     if (existing.has(key)) {
-      const bytes = await destination.get(key, 1_000_000);
-      assert.ok(existing.get(key).bytes === bytes.length && existing.get(key).md5 === md5(bytes), 'Unified receipt changed during inventory');
-      const saved = receipt(bytes, repository, revision);
+      const saved = await readReceipt(repository, revision, key);
       queue.push(...(saved.references || []));
-      receipts.set(identity, saved);
       identities.push({ repository, revision, reused: true });
       continue;
     }
@@ -72,6 +83,7 @@ export async function planUnifiedAssets(pins, destination, resolveSource, { reus
     });
     queue.push(...references.values());
     const metadata = await revisionMetadata({ repository, revision, files: input.files, references: [...references.values()] });
+    if (reuseMedia && repository !== 'arkpedia-data') await loadReuseReceipts();
     const native = reuseMedia && repository !== 'arkpedia-data' ? planMediaReuse(repository, revision, input.files, metadata.receipt.shards, receipts, existing) : undefined;
     const entry = { repository, revision, ...input, metadata, native, body: native ? Buffer.from(JSON.stringify({ ...metadata.receipt, native })) : metadata.body, references: metadata.receipt.references || [], verifiedPaths: new Set() };
     if (repository === 'arkpedia-data') {
