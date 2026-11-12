@@ -604,6 +604,19 @@ export function assertEventRewards(rewards, text = JSON.stringify(rewards)) {
   }
 }
 
+/** Keep rewards joined to the site's operator catalogue before Global's client patch. */
+export function localizeRewardOperators(rewards, operators) {
+  const names = new Map(operators.filter(op => op.internalName && op.name).map(op => [op.internalName, op.name]));
+  const visit = value => {
+    if (Array.isArray(value)) { value.forEach(visit); return; }
+    if (!value || typeof value !== 'object') return;
+    if (value.kind === 'operator' && names.has(value.id)) value.name = names.get(value.id);
+    Object.values(value).forEach(visit);
+  };
+  visit(rewards);
+  return rewards;
+}
+
 async function main() {
   const root = process.cwd();
   // Each table read once, for the build and the two store helpers alike.
@@ -665,6 +678,10 @@ async function main() {
     const entry = (rewards[name] ??= { activity: null, groups: [] });
     entry.groups = [...entry.groups, ...groups];
   }
+  const operators = fs.readdirSync(path.join(root, 'data')).filter(dir => /^operators-[1-6]star$/.test(dir))
+    .flatMap(dir => fs.readdirSync(path.join(root, 'data', dir)).filter(file => file.endsWith('.json'))
+      .map(file => JSON.parse(fs.readFileSync(path.join(root, 'data', dir, file), 'utf8'))));
+  localizeRewardOperators(rewards, operators);
   const storeNames = storeNameTranslations(events, cn, en);
   const storeFurniture = storeFurnitureNames(events, cn, en);
   const out = { storeFurniture, about: 'Rewards the game tables and official announcements list for each event beyond its store: the Global tables, the CN ones for an event Global has not had yet, and a rerun its original run\'s until its own appear (scripts/build/build-event-rewards.mjs). Generated every refresh: do not edit.', storeNames, events: rewards };
