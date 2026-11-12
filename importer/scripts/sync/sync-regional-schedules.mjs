@@ -6,6 +6,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { applyAnnouncedENWindows } from './global-event-notices.mjs';
 import { pinnedRef } from '../content/pin-upstream.mjs';
 import { beginStage, defaultNow } from '../lib/quarantine.mjs';
 import { buildEventFarming } from './sync-event-farming.mjs';
@@ -207,6 +208,7 @@ export function buildRegionalSchedule({ server, tables, english, events, banners
     const span = window(pool.openTime, pool.endTime, source('gacha'));
     return span ? [[banner.name, boardOpening(noticeOpening({ ...span, poolId: id, localName: pool.gachaPoolName, status: 'datamined' }, notices, server), board, server)]] : [];
   }));
+  if (server === 'en') applyAnnouncedENWindows(eventWindows, bannerWindows, events, banners);
   const contentWindows = {};
   for (const id of Object.keys(contents)) {
     const activity = activities[id] ?? activities[id.replace(/_[^_]+$/, '')];
