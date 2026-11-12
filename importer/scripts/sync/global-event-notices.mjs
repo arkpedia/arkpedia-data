@@ -55,7 +55,11 @@ export function reconcileGlobalEventNotices({ events, banners, posts, now = Date
     const next = { ...event.global, ...span, dateRange: days(span), note: null };
     if (JSON.stringify(next) !== JSON.stringify(event.global)) { event.global = next; changes.push(event.name); }
   }
-  for (const notice of globalBannerNotices(recent)) {
+  // Normalize the new crossover heading here, before the shared legacy banner parser.
+  // Its application copy stays identical while this import can ship independently.
+  const bannerPosts = recent.map(post => ({ ...post, lines: (post.lines ?? []).map(line =>
+    line.replace(/^(\d{2}\s+)\[[^\]]*\]\s+(?=(?:LIMITED|LIMITED-TIME|SPECIAL|STANDARD) HEADHUNTING)/i, '$1')) }));
+  for (const notice of globalBannerNotices(bannerPosts)) {
     if (!notice.name || !valid(notice)) continue;
     const matches = banners.filter(banner => !['joint', 'orienteering'].includes(banner.pull_type)
       && [banner.name, ...(banner.aliases ?? [])].some(name => bare(name) === bare(notice.name))
