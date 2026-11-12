@@ -62,7 +62,7 @@ const tablesVersion = entry => entry?.mirror?.resVersion ?? entry?.resVersion ??
  * Returns { dispatch, reason, regions: [{ region, status, detail }], versions } where versions is
  * the live set this dispatch is for.
  */
-export function dispatchPlan({ live, mirrors, published, busy, last, now = new Date() }) {
+export function dispatchPlan({ live, mirrors, published, busy, last, news = [], now = new Date() }) {
   const regions = [];
   for (const region of REGIONS) {
     const version = live[region] ?? null;
@@ -77,22 +77,39 @@ export function dispatchPlan({ live, mirrors, published, busy, last, now = new D
   }
   const ready = regions.filter(entry => entry.status === 'ready');
   const versions = Object.fromEntries(REGIONS.filter(region => live[region]).map(region => [region, live[region]]));
-  const no = reason => ({ dispatch: false, reason, regions, versions });
-  if (!published) return no('The published release carries no client-versions.json yet (its content run predates the client-versions stage): nothing to compare with.');
-  if (!ready.length) {
+  const no = reason => ({ dispatch: false, reason, regions, versions, news });
+  if (!published && !news.length) return no('The published release carries no client-versions.json yet (its content run predates the client-versions stage): nothing to compare with.');
+  if (!ready.length && !news.length) {
     const waiting = regions.filter(entry => entry.status === 'mirror-behind').map(entry => entry.region);
     return no(waiting.length ? `A new client version is live in ${waiting.join(', ')}, but the mirror does not carry it yet.` : 'No region has a client version newer than the published tables.');
   }
-  const names = ready.map(entry => entry.region).join(', ');
+  const names = [...ready.map(entry => entry.region), ...(news.length ? [`official EN news ${news.join(', ')}`] : [])].join(', ');
   if (busy) return no(`${names} ready, but an import is already queued or running: it would be replaced, or it reads the mirrors itself.`);
   const lastAt = Date.parse(last?.at ?? '');
   if (Number.isFinite(lastAt)) {
     const hours = (now.getTime() - lastAt) / HOUR;
-    if (hours < MIN_HOURS_BETWEEN) return no(`${names} ready, but this dispatcher started an import ${hours.toFixed(1)} h ago (at most one per ${MIN_HOURS_BETWEEN} h).`);
-    const same = ready.every(entry => last?.versions?.[entry.region] === live[entry.region]);
+    const minimum = news.length ? 1 : MIN_HOURS_BETWEEN;
+    if (hours < minimum) return no(`${names} ready, but this dispatcher started an import ${hours.toFixed(1)} h ago (at most one per ${minimum} h).`);
+    const same = ready.every(entry => last?.versions?.[entry.region] === live[entry.region]) && news.every(id => last?.news?.includes(id));
     if (same && hours < RETRY_HOURS) return no(`${names} ready, but an import was already started for these versions ${hours.toFixed(1)} h ago and the published release still lags: see that run rather than retrying before ${RETRY_HOURS} h.`);
   }
-  return { dispatch: true, reason: `New client version with its tables in the mirror: ${names}. Starting the import.`, regions, versions };
+  return { dispatch: true, reason: `New published source: ${names}. Starting the import.`, regions, versions, news };
+}
+
+/** New first-party notices trigger a refresh even before the next client patch.
+ * Compare IDs with the published cache; failures never pretend the cache is empty. */
+export async function unpublishedNews(fetcher, api, dataBranch, now) {
+  const response = await fetcher('https://www.arknights.global/api/resource/news/list?index=1&size=30&type=latest', {
+    signal: AbortSignal.timeout(30000), headers: { 'user-agent': OFFICIAL_USER_AGENT } });
+  if (!response.ok) throw new Error(`Official news HTTP ${response.status}`);
+  const body = await response.json();
+  if (body?.code !== 0 || !Array.isArray(body.data?.rows) || !body.data.rows.length) throw new Error('Unreadable official news list');
+  const files = api(`repos/${DATA}/contents/source/data/official-news/global?ref=${encodeURIComponent(dataBranch)}`);
+  if (!Array.isArray(files) || !files.length) throw new Error('Published news baseline unavailable');
+  const cached = new Set(files.map(file => file.name));
+  return [...new Set(body.data.rows.filter(row => row.type === 'event' && Number.isSafeInteger(row.id)
+    && Number.isFinite(row.publishTime) && row.publishTime <= now.getTime() && row.publishTime >= now.getTime() - 14 * 86400000
+    && !cached.has(`${row.id}.json`)).map(row => row.id))].sort((a, b) => a - b);
 }
 
 export function readState(file) {
@@ -162,13 +179,16 @@ export async function run({ dryRun = false, dataBranch = 'main', branch = 'main'
   const [live, mirrors] = await Promise.all([liveVersions(fetcher), mirrorVersions(fetcher, head)]);
   const published = publishedVersions(dataBranch, api);
   const runs = api(`repos/${DATA}/actions/workflows/import.yml/runs?branch=${encodeURIComponent(branch)}&per_page=30`).workflow_runs ?? [];
-  const plan = dispatchPlan({ live, mirrors, published, busy: isBusy(runs), last: readState(state), now });
+  let news = [];
+  try { news = await unpublishedNews(fetcher, api, dataBranch, now); }
+  catch (error) { console.warn(`Official news discovery: ${error.message}; client checks still apply.`); }
+  const plan = dispatchPlan({ live, mirrors, published, busy: isBusy(runs), last: readState(state), news, now });
   for (const entry of plan.regions) console.log(`${entry.region}: ${entry.status} (${entry.detail})`);
   console.log(`${plan.dispatch ? (dryRun ? 'Would dispatch' : 'Dispatching') : 'Not dispatching'}: ${plan.reason}`);
   if (plan.dispatch && !dryRun) {
     start(['workflow', 'run', 'import.yml', '--repo', DATA, '--ref', branch, '-f', 'reason=patch']);
     fs.mkdirSync(path.dirname(state), { recursive: true });
-    fs.writeFileSync(state, `${JSON.stringify({ at: now.toISOString(), versions: plan.versions }, null, 1)}\n`);
+    fs.writeFileSync(state, `${JSON.stringify({ at: now.toISOString(), versions: plan.versions, news: plan.news }, null, 1)}\n`);
     return { ...plan, started: true };
   }
   return plan;
