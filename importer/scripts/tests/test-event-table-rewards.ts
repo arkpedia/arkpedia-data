@@ -93,8 +93,9 @@ test('an event Global has not had yet is built from the CN tables, with Global n
   assert.equal(entry.region, 'CN');
   assert.ok(entry.groups.length > 0 && entry.groups.every(g => g.region === 'CN'));
   assert.ok(entry.groups.find(g => g.kind === 'login')!.items.some(i => i.name === 'Orundum'), 'an item Global has is named in English');
-  // A Global event already dated in the past is never built from CN.
-  assert.deepEqual(buildEventRewards([{ ...upcoming, global: { dateRange: '2001/01/01–2001/01/10' } }], global, [], cnTables), {});
+  // A calendar date is not proof that the Global tables are available.
+  const overdue = { ...upcoming, global: { dateRange: '2001/01/01–2001/01/10' } };
+  assert.equal(buildEventRewards([overdue], global, [], cnTables)[overdue.name].region, 'CN');
 });
 
 /* A small world of tables for the rules below: one day, two events opening on it. */
@@ -293,7 +294,7 @@ test('on a day the CN tables number their enums, the entries built from CN stay 
     };
     assert.deepEqual(stage('numeric')[upcoming.name], built, 'kept: numbered enums would misread every group');
     // Read by name, the day's (empty) CN tables are the truth.
-    assert.equal(stage('named')[upcoming.name], undefined);
+    assert.deepEqual(stage('named')[upcoming.name], built, 'an incomplete named dump retains the last known rewards too');
     // An event an official post already names (its gifts, ahead of its Global start) has an entry
     // before the CN groups are added: it takes them back in, beside the post's own.
     const window = 'DURATION: January 1, 2099, 10:00 – January 10, 2099, 03:59 (UTC-7)';
@@ -303,16 +304,16 @@ test('on a day the CN tables number their enums, the entries built from CN stay 
     write('data/event-rewards.json', { events: { [upcoming.name]: built } });
     assert.deepEqual(stage('numeric')[upcoming.name], { ...built, groups: [...built.groups, gifts] }, 'kept beside the post\'s');
     assert.deepEqual(stage('numeric')[upcoming.name], { ...built, groups: [...built.groups, gifts] }, 'and the same the day after');
-    assert.deepEqual(stage('named')[upcoming.name], { activity: null, groups: [gifts] });
+    assert.deepEqual(stage('named')[upcoming.name], { ...built, groups: [...built.groups, gifts] });
     // An event Global has started is Global's on either day, whatever the last run built for it from
     // CN: a numbered day keeps only what a named day would build (awaitsGlobal), so the two agree.
     const launched = { name: '[Side Story] Somewhere Old', global: { dateRange: '2020/01/01–2020/01/10' }, cn: { dateRange: '2019/09/01–2019/09/15' } };
     write('data/events/events_2099.json', [upcoming, launched]);
     write('data/event-rewards.json', { events: { [upcoming.name]: built, [launched.name]: { ...built, activity: 'act98side' } } });
     const numbered = stage('numeric');
-    assert.equal(numbered[launched.name], undefined, 'not kept: its Global start has passed');
+    assert.equal(numbered[launched.name].region, 'CN', 'a passed date must not discard known rewards while Global is missing');
     assert.deepEqual(numbered[upcoming.name], { ...built, groups: [...built.groups, gifts] }, 'the one still ahead is');
-    assert.equal(stage('named')[launched.name], undefined);
+    assert.equal(stage('named')[launched.name].region, 'CN');
   } finally {
     fs.rmSync(root, { recursive: true, force: true });
   }
@@ -371,4 +372,34 @@ test('operator reward names follow stable character IDs before the Global client
   assert.equal(group.items[1].name, 'Unknown');
   assert.equal(group.items[2].name, 'Keep material name');
   assert.equal(group.daily[0].rewards[0].name, 'Rhodes Island Recon');
+});
+
+test('the same login inventory is not counted twice when Global notice and client clocks differ', async () => {
+  const {sameLoginInventory} = await import('../build/build-event-rewards.mjs');
+  const daily = [[{name:'A Sealed Vow Headhunting Permit',count:1},{name:'GALLUS²',count:1}]];
+  const group={kind:'login',days:1,start:'2026-10-14T12:00:00Z',end:'2026-10-28T10:59:59Z',items:[{name:'GALLUS²',count:1},{name:'A Sealed Vow Headhunting Permit (ten-roll)',count:1}]};
+  const window={start:Date.parse('2026-10-14T15:00:00Z')/1000,end:Date.parse('2026-10-28T11:00:00Z')/1000};
+  assert.equal(sameLoginInventory(group,daily,window),true);
+  assert.equal(sameLoginInventory(group,[[{name:'GALLUS²',count:2}]],window),false);
+  assert.equal(sameLoginInventory(group,daily,{...window,start:window.start+86400*3}),false);
+});
+
+test('partial Global tables keep Global groups and fill missing first clears from CN', () => {
+  const en = structuredClone(fixture.tables);
+  en.stages.stages = {};
+  const event = { ...fixture.event, activityId: 'act15side', cn: { dateRange: fixture.event.global.dateRange } };
+  const groups = buildEventRewards([event], en, [], fixture.tables)[event.name].groups;
+  assert.equal(groups.filter((group: Group) => group.kind === 'missions').length, 1);
+  assert.equal(groups.find((group: Group) => group.kind === 'missions').region, undefined);
+  assert.equal(groups.find((group: Group) => group.kind === 'first-clear').region, 'CN');
+});
+
+test('client Hunter notes rewards are included once and do not duplicate mission rewards', () => {
+  const tables = structuredClone(fixture.tables);
+  tables.activity.activity.TYPE_ACT9D0 = { act15side: { constData: { hunterGuideRewardItemId: '4002', hunterGuideRewardItemType: 'DIAMOND', hunterGuideRewardItemCount: 1 } } };
+  let groups = buildEventRewards([fixture.event], tables, [], null)[fixture.event.name].groups;
+  assert.equal(groups.find((group: Group) => group.title === 'Hunter notes').items[0].count, 1);
+  tables.activity.missionData.push({ missionGroup: 'act15side', rewards: [{ id: '4002', type: 'DIAMOND', count: 1 }] });
+  groups = buildEventRewards([fixture.event], tables, [], null)[fixture.event.name].groups;
+  assert.equal(groups.filter((group: Group) => group.title === 'Hunter notes').length, 0);
 });

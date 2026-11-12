@@ -123,3 +123,21 @@ test('Reward Tracker stages item-ID collisions and furniture but leaves portrait
     assert.deepEqual(JSON.parse(run.stdout), ['material-icons/New Starter Voucher.webp', 'material-icons/furniM_a.webp', 'material-icons/permit_a.webp', 'material-icons/permit_b.webp']);
   } finally { fs.rmSync(root, { recursive: true, force: true }); }
 });
+
+test('native exchange furniture keeps its immutable ID without a separate furniture-set group', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'arkpedia-exchange-icons-'));
+  try {
+    const event = { name: 'Native exchange' };
+    const stores = { events: { [event.name]: { stores: [{ items: [{ id: 'furni_test_lamp', name: 'CN lamp', type: 'furniture', quantity: 1, stock: '1' }] }] } } };
+    const rewards = { events: {} };
+    for (const [file, data] of Object.entries({ 'data/event-stores.json': stores, 'data/event-rewards.json': rewards })) {
+      fs.mkdirSync(path.dirname(path.join(root, file)), { recursive: true });
+      fs.writeFileSync(path.join(root, file), JSON.stringify(data));
+    }
+    const icons = eventRewardIcons(event, { eventStores: stores, eventRewards: rewards });
+    assert.equal(icons[0].file, 'material-icons/furni_test_lamp.webp');
+    const run = spawnSync('python3', [path.resolve('scripts/imports/import-reward-icons.py'), '--wanted'], { cwd: root, encoding: 'utf8' });
+    assert.equal(run.status, 0, run.stderr);
+    assert.deepEqual(JSON.parse(run.stdout), ['material-icons/furni_test_lamp.webp']);
+  } finally { fs.rmSync(root, { recursive: true, force: true }); }
+});

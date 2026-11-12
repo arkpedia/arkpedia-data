@@ -71,6 +71,8 @@ export function eventRewardIcons(event, { eventStores, eventRewards, outfitNames
     const name = typeof item?.name === 'string' ? item.name.trim() : '';
     if (!name || PLACEHOLDER.test(name)) icons.push({ name: item?.name ?? '', placeholder: true });
     else if (item.type === 'upware') continue; // a mode's own piece: unsourced (see above)
+    else if (/^furni_/.test(item.id ?? '')) named(name, `material-icons/${safe(item.id)}.webp`);
+    else if (/^avatar_/.test(item.id ?? '')) named(name, `profile-avatars/${item.id.toLowerCase()}.webp`);
     else if (item.type === 'furniture' && furniture.has(furnitureKey(item.name))) named(name, `material-icons/${safe(furniture.get(furnitureKey(item.name)))}.webp`);
     else if (item.type === 'skin') icons.push({ name, outfit: name });
     else byName(name, item.iconName ?? name);

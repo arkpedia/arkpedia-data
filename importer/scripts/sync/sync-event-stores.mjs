@@ -2,8 +2,8 @@
 /**
  * Writes data/event-stores.json: each event's store, as arknights.wiki.gg lists it -- an original
  * run's on the event's page, a rerun's on its "/Rerun" page (a rerun sells its own store: tokens
- * for the operator, other stock). Neither the game tables nor the official announcements carry a
- * store's listings (the server sends them; the announcements say "..., etc."), so this is the
+ * for the operator, other stock). Ordinary stores are absent from game tables and official announcements omit complete
+ * listings (the server sends them; the announcements say "..., etc."), so this is the
  * wiki as a named gap filler (2026-10-03: the wiki only for what the datamining is missing). It
  * replaces the one-off wiki import in the event records (`rewards`), which never refreshed and
  * left "Furniture not found" placeholders.
@@ -31,10 +31,12 @@
  *   - the page is gone where a store was parsed from it.
  *
  * A page the wiki does not have is cached as such ({ page, missing: true, stores: [] }), so a past
- * event with no store page is not asked about every night; it is reported only while the event
- * is running, when a reader would look for its store.
+ * event with no store page is retried on subsequent refreshes; incomplete archived pages
+ * can gain data later. CN PRTS listings fill gaps, while native client exchange tables take
+ * precedence. Only unresolved source failures are reported after fallback resolution.
  */
 import fs from 'node:fs';
+import { cnStoreFallbacks } from './cn-event-stores.mjs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { beginStage, defaultNow } from '../lib/quarantine.mjs';
@@ -150,6 +152,8 @@ export async function syncEventStores(root, { fetcher = globalThis.fetch, now = 
     .flatMap(file => JSON.parse(fs.readFileSync(path.join(root, 'data/events', file), 'utf8')));
   fs.mkdirSync(path.join(root, CACHE), { recursive: true });
   const out = {};
+  const reports = [];
+  const reportRead = (name, details) => reports.push([name, details]);
   let fetched = 0;
   for (const event of events) {
     const page = storePage(event.name);
@@ -160,21 +164,21 @@ export async function syncEventStores(root, { fetcher = globalThis.fetch, now = 
     const running = Boolean(span) && span.start <= now && now <= span.end;
     const kept = Boolean(cached?.stores?.length);
     let entry = cached;
-    if (!cached || live) {
+    if (!cached || live || !kept) {
       try {
         const got = await wikitext(page, fetcher);
         fetched++;
         await pause();
         if (!got) {
-          if (kept) report(event.name, { page, problem: GONE, kept });
+          if (kept) reportRead(event.name, { page, problem: GONE, kept });
           else {
             writeCache(root, page, { page, missing: true, stores: [] }, cached);
-            if (running) report(event.name, { page, problem: GONE, kept });
+            if (running) reportRead(event.name, { page, problem: GONE, kept });
           }
         } else {
           const stores = parseStores(got.text);
           if (!stores.length && kept) {
-            report(event.name, { page, problem: `no store parses from it, where its last parse had ${cached.stores.length}; the store template has probably changed`, kept });
+            reportRead(event.name, { page, problem: `no store parses from it, where its last parse had ${cached.stores.length}; the store template has probably changed`, kept });
           } else {
             entry = { page: got.title, source: wikiPageUrl(got.title), stores };
             writeCache(root, page, entry, cached);
@@ -184,12 +188,18 @@ export async function syncEventStores(root, { fetcher = globalThis.fetch, now = 
         if (!(error instanceof Unusable)) throw error;
         const cause = error.cause?.cause?.code ?? error.cause?.message;
         console.warn(`${event.name}: reading ${page} failed: ${error.message}${cause ? ` (${cause})` : ''}`);
-        report(event.name, { page, problem: error.message, kept });
+        reportRead(event.name, { page, problem: error.message, kept });
       }
     }
     if (entry?.stores?.length) out[event.name] = entry;
   }
-  return { stores: out, fetched };
+  const stores = await cnStoreFallbacks(root, events, out, { fetcher, now, report: reportRead });
+  for (const [name, details] of reports) {
+    if (stores[name]?.source?.startsWith('Global activity_table ')) continue;
+    if (stores[name]?.region === 'CN' && stores[name].page !== details.page) continue;
+    report(name, details);
+  }
+  return { stores, fetched };
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
@@ -206,7 +216,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.ar
       });
     },
   }).then(({ stores, fetched }) => {
-    const text = `${JSON.stringify({ about: 'Each event\'s store from the Arknights wiki (scripts/sync/sync-event-stores.mjs), a rerun\'s from its /Rerun page. Generated every refresh: do not edit.', events: stores }, null, 1)}\n`;
+    const text = `${JSON.stringify({ about: 'Event stores and exchanges from client tables where available, otherwise CN PRTS and Global wiki listings. Generated every refresh: do not edit.', events: stores }, null, 1)}\n`;
     const file = path.join(root, 'data/event-stores.json');
     if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8') !== text) fs.writeFileSync(file, text);
     stage.commit();

@@ -34,6 +34,7 @@ export function loadAllEventYears(): unknown[] {
 }
 
 export interface RewardItem {
+  id?: string;
   name: string;
   type: string; // "skin" | "material" | possibly others not yet seen
   reward_quantity: number | string;
@@ -87,19 +88,20 @@ export function getEventRewards(eventName: string): EventRewardBlock[] {
 export interface EventStoresFile {
   events: Record<string, {
     page?: string;
+    region?: string;
     source?: string;
-    stores: { name: string; currency: string; items: { name: string; type: string; quantity: number; price: number | null; stock: string }[] }[];
+    stores: { name: string; currency: string; items: { id?: string; name: string; type: string; quantity: number; price: number | null; stock: string }[] }[];
   }>;
 }
 
 /** An event's wiki stores (data/event-stores.json) as the reward blocks /events/[slug] lists and
  *  totals, under EVENTS_STORE like the event record's own import. One copy for the page and
  *  scripts/tests/test-event-rewards.ts, so the test reads the listings as the page does. */
-export function wikiStoreBlocks(stores: EventStoresFile['events'][string]['stores']): EventRewardBlock[] {
+export function wikiStoreBlocks(stores: EventStoresFile['events'][string]['stores'], region?: string): EventRewardBlock[] {
   return stores.map((store) => ({
     type: EVENTS_STORE,
-    name: store.name,
+    name: store.name + (region === 'CN' ? ' [CN]' : ''),
     currency: store.currency,
-    items: store.items.map((item) => ({ name: item.name, type: item.type, reward_quantity: item.quantity, price: item.price ?? undefined, stock: item.stock })),
+    items: store.items.map((item) => ({ ...(item.id ? { id: item.id } : {}), name: item.name, type: item.type, reward_quantity: item.quantity, price: item.price ?? undefined, stock: item.stock })),
   }));
 }
