@@ -151,7 +151,7 @@ jobs:
             node scripts/alert-issue.mjs close "${alert[@]}" --comment 'No guide suggestion is waiting.'
           fi
       # One open issue while the import fails (scripts/alert-issue.mjs), closed by the next clean run.
-      # A step that failed is one the stage report says failed; in shadow mode the two art steps
+      # A step that failed is one the stage report says failed; in shadow mode the art steps
       # always do (no keys), so they count only once the keys are here.
       - name: Report a failing import
         if: always() && steps.import.outcome != 'cancelled'
@@ -166,7 +166,7 @@ jobs:
             const fs = require("fs");
             const file = "source/data/stage-report.json";
             const stages = fs.existsSync(file) ? (JSON.parse(fs.readFileSync(file, "utf8")).stages ?? []) : [];
-            const shadow = process.env.ART_KEYS ? [] : ["catalogue-assets", "staged-art"];
+            const shadow = process.env.ART_KEYS ? [] : ["catalogue-assets", "staged-art", "global-announcement-art"];
             const failed = stages.filter(s => s.status !== "ok" && !shadow.includes(s.stage)).map(s => `- \`${s.stage}\`: ${s.status}${s.exit !== undefined ? ` (${s.exit})` : ""}`);
             if (process.env.IMPORT_FAILED && !failed.length) failed.push("- the import stopped before its steps finished");
             process.stdout.write(failed.join("\n"));')
