@@ -5,7 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { test } from 'node:test';
 // @ts-expect-error Node scripts are plain JavaScript.
-import { assertEventRewards, buildEventRewards, rewardNamer, storeFurnitureNames, storeNameTranslations } from '../build/build-event-rewards.mjs';
+import { assertEventRewards, buildEventRewards, localizeRewardOperators, rewardNamer, storeFurnitureNames, storeNameTranslations } from '../build/build-event-rewards.mjs';
 // @ts-expect-error Node scripts are plain JavaScript.
 import { eventTitle, eventWindow } from '../lib/event-records.mjs';
 
@@ -356,4 +356,19 @@ test("a rerun's copy of an event token takes the original's name until Global's 
   assert.equal(name({ id: 'act42side_token_pacifier_rep_1', type: 'ACTIVITY_ITEM', count: 4000 }).name, 'Enlightened Pacifier', "The Masses' Travels Rerun, 2026-10-28");
   assert.equal(name({ id: 'act12side_token_coupon_rep_1', type: 'ACTIVITY_ITEM', count: 1 }).name, "Mama John's Voucher (rerun)", 'the copy\'s own name wins once the table has it');
   assert.equal(name({ id: 'act99side_token_unknown_rep_1', type: 'ACTIVITY_ITEM', count: 1 }).name, 'act99side_token_unknown_rep_1', 'an unknown original stays unnamed, and the build still refuses it');
+});
+
+test('operator reward names follow stable character IDs before the Global client patch', () => {
+  const rewards = { event: { groups: [{ items: [
+    { id: 'char_4215_buddy', kind: 'operator', name: '罗德岛隐秘队', count: 1 },
+    { id: 'char_unknown', kind: 'operator', name: 'Unknown', count: 2 },
+    { id: 'char_4215_buddy', kind: 'material', name: 'Keep material name', count: 3 },
+  ], daily: [{ rewards: [{ id: 'char_4215_buddy', kind: 'operator', name: '罗德岛隐秘队', count: 1 }] }] }] } };
+  localizeRewardOperators(rewards, [{ internalName: 'char_4215_buddy', name: 'Rhodes Island Recon' }]);
+  const group = rewards.event.groups[0];
+  assert.equal(group.items[0].name, 'Rhodes Island Recon');
+  assert.equal(group.items[0].count, 1);
+  assert.equal(group.items[1].name, 'Unknown');
+  assert.equal(group.items[2].name, 'Keep material name');
+  assert.equal(group.daily[0].rewards[0].name, 'Rhodes Island Recon');
 });
