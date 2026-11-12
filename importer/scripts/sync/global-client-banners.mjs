@@ -25,7 +25,7 @@ export function savedGlobalBannerNotice(banner, pool) {
 
 export function globalBannerNotices(posts) {
   return [...posts].sort((a, b) => (a.publishTime ?? 0) - (b.publishTime ?? 0)).flatMap(post => newsSections(post.lines ?? []).flatMap(section => {
-    const title = /^(?:LIMITED|LIMITED-TIME|SPECIAL|STANDARD) HEADHUNTING(?: OPEN)?\s*[–—-]\s*(.+)$/i.exec(section.title.replace(/^\[[^\]]*\]\s*/, ''));
+    const title = /^(?:LIMITED|LIMITED-TIME|SPECIAL|STANDARD) HEADHUNTING(?: OPEN)?\s*[–—-]\s*(.+)$/i.exec(section.title);
     const locating = section.title === 'KERNEL LOCATING OPEN';
     const duration = (title || locating) && parseNoticeWindow(section.lines.find(line => /^DURATION:/.test(line)), post.publishTime);
     return duration ? [{ name: title?.[1], kind: locating ? 'FESCLASSIC' : null, ...duration, source: post.url }] : [];
