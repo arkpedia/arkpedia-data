@@ -120,7 +120,7 @@ test('a past event\'s page is read once and kept; a running one\'s is read every
     assert.deepEqual(w.reports, []);
     await w.run();
     // Only the running event and its rerun are asked again.
-    assert.deepEqual(w.asked.sort(), ['Running Story', 'Running Story/Rerun']);
+    assert.deepEqual(w.asked.sort(), ['Pageless Past', 'Running Story', 'Running Story/Rerun']);
   } finally { w.done(); }
 });
 

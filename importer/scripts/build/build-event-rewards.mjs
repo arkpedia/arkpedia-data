@@ -149,6 +149,18 @@ export function rewardNamer(tables) {
   };
 }
 
+/** An announcement can spell a ten-roll differently and open a few hours after the client window. */
+export function sameLoginInventory(group, daily, window) {
+  if (group.kind !== 'login' || group.days !== daily.length || !group.start || !group.end || !window?.end) return false;
+  if (Math.abs(Date.parse(group.start) / 1000 - window.start) > 86400 || Math.abs(Date.parse(group.end) / 1000 - window.end) > 86400) return false;
+  const signature = items => {
+    const counts = new Map();
+    for (const item of items) { const name = item.name.replace(/\s*\(ten-roll\)$/, ''); counts.set(name, (counts.get(name) ?? 0) + item.count); }
+    return JSON.stringify([...counts].sort((a,b)=>a[0].localeCompare(b[0])));
+  };
+  return signature(group.items) === signature(daily.flat());
+}
+
 /** Totals a list of rewards by id, in first-seen order. */
 function total(rewards) {
   const byId = new Map();
@@ -271,6 +283,10 @@ function tableGroups(events, tables, { startOf, match, name, region, claims = []
     const missions = list(activity.missionData).filter(mission => mission.missionGroup === id);
     const missionRewards = total(missions.flatMap(mission => list(mission.rewards)).map(name));
     if (missionRewards.length) groupsOf(entry).push({ kind: 'missions', title: 'Event missions', source: src(`activity_table missionData ${id}`), count: missions.length, items: missionRewards, ...tag });
+    const guide = data?.constData;
+    if (guide?.hunterGuideRewardItemId && !missionRewards.some(item => item.id === guide.hunterGuideRewardItemId)) {
+      groupsOf(entry).push({kind:'missions',title:'Hunter notes',source:src(`activity_table ${id} hunterGuideReward`),items:[name({id:guide.hunterGuideRewardItemId,type:guide.hunterGuideRewardItemType,count:guide.hunterGuideRewardItemCount})],...tag});
+    }
     // The event's stages: by their zone's activity, or by their id for an original whose stages a
     // rerun's zones have since taken over (act15side's are in act15sre's zones).
     const zones = activity.zoneToActivity ?? {};
@@ -326,16 +342,16 @@ export function buildEventRewards(events, tables, posts, cn) {
     match: (event, opened) => {
       const title = key(eventTitle(event.name));
       // Or the end of it ("Back to Castle" for "Integrated Lookback: Back to Castle").
-      return opened.find(entry => !SIDE_TYPES.has(entry.type) && key(entry.name) === title)
+      return opened.find(entry => event.activityId && entry.id === event.activityId)
+        ?? opened.find(entry => !SIDE_TYPES.has(entry.type) && key(entry.name) === title)
         ?? opened.find(entry => !SIDE_TYPES.has(entry.type) && title.length >= 6 && key(entry.name).startsWith(title))
         ?? opened.find(entry => !SIDE_TYPES.has(entry.type) && key(entry.name).length >= 8 && title.endsWith(key(entry.name)));
     },
   });
-  // CN, for an event Global has not had yet (no Global date, or one still ahead): the CN tables'
-  // names are Chinese, so its own activity is the one event of its kind opening on its CN start.
+  // CN fills missing reward kinds until Global tables supply them. A predicted date alone
+  // cannot retire this fallback; match the event's own activity on its CN window.
   if (cn) {
-    const now = Date.now() / 1000;
-    const pending = events.filter(event => !result[event.name] && awaitsGlobal(event, now));
+    const pending = events;
     const cnResult = tableGroups(pending, cn, {
       startOf: cnStart, name: regionalNamer(tables, cn), region: 'CN',
       match: (event, opened, start) => {
@@ -345,7 +361,13 @@ export function buildEventRewards(events, tables, posts, cn) {
         return candidates.length === 1 ? candidates[0] : null;
       },
     });
-    Object.assign(result, cnResult);
+    for (const [name, entry] of Object.entries(cnResult)) {
+      const globalGroups = result[name]?.groups ?? [];
+      const covered = new Set(globalGroups.map(group => group.kind));
+      const missing = entry.groups.filter(group => !covered.has(group.kind));
+      if (!result[name]?.activity) result[name] = { ...entry, groups: [...globalGroups, ...missing] };
+      else if (missing.length) result[name] = { ...result[name], groups: [...globalGroups, ...missing] };
+    }
   }
   // Each announcement's sections, as its event's.
   const kindOf = kindByName(tables);
@@ -409,7 +431,8 @@ export function buildEventRewards(events, tables, posts, cn) {
           && Math.abs(Date.parse(g.start) / 1000 - when.start) <= 7200 && Math.abs(Date.parse(g.end) / 1000 - when.end) <= 7200
           && (stated === null || g.days === stated);
         const namesGift = g => g.kind === 'banner-gift' && g.items.some(item => text.includes(item.name.replace(/\s*\(ten-roll\)$/, '').toLowerCase()));
-        const detailed = logins.some(g => sameWindow(g) || namesGift(g)) || (words.size
+        const announcedDays = parseLoginDays(section);
+        const detailed = logins.some(g => sameLoginInventory(g, announcedDays, when)) || logins.some(g => sameWindow(g) || namesGift(g)) || (words.size
           ? logins.some(g => [...distinctive(g.title)].some(w => words.has(w)))
           : when && logins.some(g => g.kind === 'banner-gift' && Math.abs(Date.parse(g.start) / 1000 - when.start) <= 86400));
         if (!detailed) {
@@ -641,16 +664,15 @@ async function main() {
      helpers read are text in either mirror. */
   const numbered = cnTables().serialization === 'numeric';
   const rewards = buildEventRewards(events, en, posts, numbered ? null : cn);
-  if (numbered) {
+  {
     const previous = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')).events ?? {} : {};
     const byName = new Map(events.map(event => [event.name, event]));
-    const now = Date.now() / 1000;
     // An entry today's build started from a Global announcement alone (its packs, its notices: no
     // activity of its own) takes its CN groups back in; this once kept only an event nothing else
     // had named today, and a CN-pending event with a post lost its missions and first clears for
     // the day. One the Global tables now build (an activity of its own) is Global's, and so is one
     // whose Global start has passed (awaitsGlobal, the CN build's own rule).
-    const kept = Object.entries(previous).filter(([name, entry]) => entry.region === 'CN' && byName.has(name) && !rewards[name]?.activity && awaitsGlobal(byName.get(name), now));
+    const kept = Object.entries(previous).filter(([name, entry]) => entry.region === 'CN' && byName.has(name) && !rewards[name]?.activity);
     for (const [name, entry] of kept) {
       const today = rewards[name];
       if (!today) { rewards[name] = entry; continue; }
@@ -658,7 +680,7 @@ async function main() {
       rewards[name] = { ...today, activity: entry.activity, region: 'CN',
         groups: [...entry.groups.filter(group => group.region === 'CN' && !has.has(`${group.kind}: ${group.title}`)), ...today.groups] };
     }
-    console.warn(`The CN tables number the game's enums today: ${kept.length} event(s) built from CN keep the last run's rewards.`);
+    if (kept.length) console.warn(`Global data is incomplete: ${kept.length} event(s) retain their last known CN rewards.`);
   }
   // The in-game board's banner art, for the News tab (boardGroups): today's, in place of any an
   // entry kept from the last run carries.

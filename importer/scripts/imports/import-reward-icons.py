@@ -330,7 +330,7 @@ def event_furniture(groups):
     return ids
 
 
-def want_store_row(name, kind, event, furniture_ids, icon_name=None):
+def want_store_row(name, kind, event, furniture_ids, icon_name=None, item_id=None):
     """A store row as the page draws it: a piece of furniture the event's rewards name by its id,
     an outfit not from here, a mode's upware from nowhere (UNSOURCED_STORE_TYPE), anything else
     under its name (its iconName first, as rewardIconPath: `iconName ?? name`) -- items, furniture
@@ -341,10 +341,14 @@ def want_store_row(name, kind, event, furniture_ids, icon_name=None):
         placeholders.add(name.strip() if isinstance(name, str) else '')
     elif kind == UNSOURCED_STORE_TYPE:
         pass
+    elif str(item_id or '').startswith('furni_'):
+        want_furniture(item_id, name, event)
+    elif str(item_id or '').startswith('avatar_'):
+        pass  # Player icons are published by the image repository.
     elif kind == 'furniture' and furniture_key(name) in furniture_ids:
         want_furniture(furniture_ids[furniture_key(name)], name, event)
     elif kind != 'skin':
-        want_name(name if icon_name is None else icon_name, event)
+        want_name(name if icon_name is None else icon_name, event, item_id)
 
 
 for path in sorted(glob.glob(os.path.join(root, 'data', 'events', 'events_*.json'))):
@@ -394,7 +398,7 @@ for event, entry in event_stores.items():
     for store in entry.get('stores', []):
         for item in store.get('items', []):
             # The page draws a wiki row by its name alone: these rows carry no iconName.
-            want_store_row(item.get('name'), item.get('type'), event, furniture_ids)
+            want_store_row(item.get('name'), item.get('type'), event, furniture_ids, item_id=item.get('id'))
 
 # Reward Tracker uses the same published item and furniture paths as event rewards.
 # Operators/outfits/player-card cosmetics have their own asset pipelines; a choice
