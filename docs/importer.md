@@ -246,3 +246,9 @@ without changing records. The importer commits source to `imports`; Prepare cont
 then compiles the event page's `page-music` table and publishes it with the shared release.
 Preview reads that versioned table, so future links require a content release, not an app deploy.
 The website still needs a playable released recording and the visitor's media/autoplay choice.
+
+### Global announcement artwork
+
+The hourly official-news check can start an import when Global announces an event, before the client patch. After `regional-schedules` confirms the event and banner windows, `global-announcement-art` uses that same cached official post to select their section images. It runs the image repository’s tested `--official-only` updater, validates the image inventory, publishes with the existing repository-scoped key, and adopts the exact new image revision before content preparation. This replaces existing CN art at stable paths without a manual application deploy.
+
+Only unambiguous sections from the confirming Global post and Yostar’s image host are accepted. Bad images preserve the previous files. Missing announcement art can still be supplied by the image repository’s daily English-upload fallback. Source hashes make repeated runs idempotent. Publication races retry from the new repository head; failed adoption is reported as a failed import stage and retried on the next import.

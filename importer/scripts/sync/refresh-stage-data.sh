@@ -235,6 +235,9 @@ stage ra-releases -- node scripts/sync/sync-ra-releases.mjs
 # A later writer used to replace corrected maintenance openings with client preload times.
 stage event-farming -- node scripts/sync/sync-event-farming.mjs
 stage regional-schedules -- node scripts/sync/sync-regional-schedules.mjs
+# Official EN announcements supply key art before the client patch or wiki upload.
+# Publish and pin it before this import is handed to content preparation.
+stage global-announcement-art --needs regional-schedules -- bash scripts/sync/publish-global-announcement-art.sh
 
 # The event-reward stages, after event-windows: each one dates the events it reads, and an
 # estimated date the client has since corrected misplaces a login, a post or a store's 30-day
@@ -274,9 +277,8 @@ stage furniture-art --needs event-rewards -- node scripts/imports/import-furnitu
 # script's own header for the sources.
 stage reward-icons -- python3 scripts/imports/import-reward-icons.py
 
-# Banner and event key art is not a stage here: arkpedia-image-assets' sync-images.yml
-# swaps in the English art (sync_global_banner_art.py, sync_recurring_banner_art.py), and
-# a release takes it with that repository's commit (data/assets/revisions.json).
+# Official announcement key art is published above. The image repository's daily
+# Global and recurring-banner jobs remain fallbacks for other English uploads.
 
 node -e '
 const fs = require("fs");

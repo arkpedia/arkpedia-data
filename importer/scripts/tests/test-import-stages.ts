@@ -44,7 +44,7 @@ test('a stage that builds records from the pinned asset revisions runs after the
   const movers = stages.filter(stage => commandScripts(stage.command).includes('scripts/sync/update-asset-revisions.mjs')).map(stage => stage.name);
   const readers = stages.filter(stage => /--revisions data\/assets\/revisions\.json\b/.test(stage.command)).map(stage => stage.name);
   // Not vacuous: the walk finds the movers through the publisher's shell script, and the reader.
-  assert.deepEqual([...movers].sort(), ['asset-revisions', 'catalogue-assets', 'staged-art']);
+  assert.deepEqual([...movers].sort(), ['asset-revisions', 'catalogue-assets', 'global-announcement-art', 'staged-art']);
   assert.ok(readers.includes('palettes'), 'the palettes stage reads the skin art at the pinned commit');
   const last = Math.max(...movers.map(name => order.lastIndexOf(name)));
   for (const reader of readers) {
@@ -189,4 +189,20 @@ test('the daily refresh runs every command as a uniquely named stage that needs 
   const run = fs.readFileSync('scripts/content/run-imports.sh', 'utf8').replace(/\\\n\s*/g, ' ').split('\n').map(line => line.trim()).filter(line => line && !line.startsWith('#'));
   const plumbing = /^(#!\/usr\/bin\/env bash|set -euo pipefail|node scripts\/content\/check-completeness\.mjs --record-baseline|stage\(\) \{.*\}|node scripts\/content\/run-stage\.mjs begin|trap .*|supplemental_charwords=.*|supplement=.*|if \[ ! -s "\$supplement" \].*|bash scripts\/sync\/refresh-stage-data\.sh)$/;
   for (const line of run) assert.ok(line.startsWith('stage ') || plumbing.test(line), `outside a stage: ${line}`);
+});
+
+
+test('confirmed Global artwork is published and adopted after regional announcements in the same import', () => {
+  const stages = refreshStages();
+  const art = stages.find(stage => stage.name === 'global-announcement-art')!;
+  assert.ok(art);
+  assert.deepEqual(art.needs, ['regional-schedules']);
+  assert.ok(stages.indexOf(art) > stages.findIndex(stage => stage.name === 'regional-schedules'));
+  assert.ok(stages.indexOf(art) < stages.findIndex(stage => stage.name === 'staged-art'));
+  const script = fs.readFileSync('scripts/sync/publish-global-announcement-art.sh', 'utf8');
+  assert.match(script, /--official-only/);
+  assert.ok(script.indexOf('validate_images.py') < script.indexOf('push git@github.com'));
+  assert.ok(script.indexOf('push git@github.com') < script.indexOf('npm run assets:update'));
+  assert.match(script, /\$adopted.*\$expected/);
+  assert.doesNotMatch(script, /push[^\n]*--force/);
 });
