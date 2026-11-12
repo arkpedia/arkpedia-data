@@ -216,3 +216,15 @@ test('an unsupported profile-theme icon does not remove the other store inventor
   assert.equal(stores[0].items[0].type, 'upware');
   assert.equal(stores[0].items[1].stock, '3');
 });
+
+
+test('Sharpened by Flame rerun has its own 33 alchemy listings, not the original operator tokens', async () => {
+  const { clientStores } = await import('../sync/cn-event-stores.mjs');
+  const data = JSON.parse(fixture('flurry-rerun-client.json'));
+  const tables = { activity: { activity: { TYPE_ACT24SIDE: { act24sre: data } } }, items: { items: { 7003: { name: 'Headhunting Permit' } } } };
+  const stores = clientStores({type:'TYPE_ACT24SIDE',id:'act24sre'}, tables);
+  assert.deepEqual(stores.map(store => store.items.length), [13,20]);
+  assert.equal(stores[0].items.find(item => item.id === '7003').stock, '3');
+  assert.equal(stores[0].items.find(item => item.id === '7003').quantity, 1);
+  assert.ok(!stores.flatMap(store => store.items).some(item => item.id === 'p_char_4077_palico'));
+});
