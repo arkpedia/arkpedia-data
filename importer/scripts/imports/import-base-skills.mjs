@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { stripRichText } from '../lib/gametext.mjs';
+import { normaliseBaseSkillText, stripRichText } from '../lib/gametext.mjs';
 import { BASE_ROOMS as ROOMS, facilityLabel } from '../lib/base-rooms.mjs';
 const clean = name => String(name ?? '').split('Replaces')[0].trim();
 const norm = name => clean(name).replace(/[·’“”"']/g, '').replace(/\s+/g, '').toLowerCase();
@@ -81,7 +81,9 @@ export function reconcileBaseSkills(operator, building, region, translations, te
       if (!prior && region === 'CN') throw new Error(`${operator.name}: untranslated ${entry.buffId}`);
       if (prior?.index !== undefined) used.add(prior.index);
       const level = entry.cond.level;
-      const description = region === 'Global' ? stripRichText(buff.description) : prior.skill.description;
+      // normaliseBaseSkillText repairs Yostar's own missing spaces first; a CN skill's reviewed
+      // English was written by a person and needs none.
+      const description = region === 'Global' ? stripRichText(normaliseBaseSkillText(buff.description)) : prior.skill.description;
       const keywords = baseSkillKeywords(buff.description, description, terms);
       const { keywords: _stale, ...kept } = prior?.skill ?? { icon: null };
       skills.push({
