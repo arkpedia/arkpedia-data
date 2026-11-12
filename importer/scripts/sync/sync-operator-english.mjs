@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { interpolateBlackboard, stripRichText } from '../lib/gametext.mjs';
+import { interpolateBlackboard, normaliseBaseSkillText, stripRichText } from '../lib/gametext.mjs';
 import { beginStage, defaultNow } from '../lib/quarantine.mjs';
 import { materialItems, readMaterialNames } from '../lib/material-items.mjs';
 import { pinnedRef } from '../content/pin-upstream.mjs';
@@ -269,7 +269,7 @@ function officialBaseSkills(characterId, building, current) {
       facility,
       // 1★/2★ operators and Durin unlock a skill at a level, not a promotion: "Level 30".
       eliteLevel: phase === 0 && level > 1 ? `Level ${level}` : PHASE[`PHASE_${phase}`],
-      description: stripRichText(buff.description),
+      description: stripRichText(normaliseBaseSkillText(buff.description)),
       buffId: entry.buffId,
       slot: slotIndex,
       phase,
