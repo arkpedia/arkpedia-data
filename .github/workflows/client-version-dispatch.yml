@@ -1,4 +1,4 @@
-name: Client version dispatch
+name: Client version and official news dispatch
 # Starts the import (import.yml, reason=patch) when a region's game client has a new version and
 # the mirror its tables come from already carries it, instead of waiting for the nightly run
 # (importer/scripts/content/client-version-dispatch.mjs says when it does and does not). The
@@ -8,7 +8,7 @@ name: Client version dispatch
 # lets a workflow be dispatched once it has run, feature branches can still run a manual dry run.
 on:
   schedule:
-    - cron: '23 */3 * * *'
+    - cron: '23 * * * *'
   push:
     branches: [main]
     paths:
@@ -56,7 +56,7 @@ jobs:
           path: importer/.cache/client-version-dispatch
           key: client-version-dispatch-${{ github.run_id }}
           restore-keys: client-version-dispatch-
-      - name: Start the import for a new client version
+      - name: Start the import for a new client version or official announcement
         id: dispatch
         working-directory: importer
         env:

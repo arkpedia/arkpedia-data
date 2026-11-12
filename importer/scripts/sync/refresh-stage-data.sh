@@ -216,6 +216,7 @@ stage stronghold-enemies --needs enemy-index -- node scripts/build/build-strongh
 # Read today's official Global announcements before banner reconciliation. The
 # client may open before maintenance ends; named announcements supply playable times.
 stage official-news -- node scripts/sync/sync-official-news.mjs
+stage announced-windows -- node scripts/sync/sync-announced-windows.mjs
 # The events files are written from announcements and carry ESTIMATED dates for
 # the future; once the client ships an activity or gacha window, that window is
 # the truth. This keeps the home page's countdowns agreeing with the Terminal,

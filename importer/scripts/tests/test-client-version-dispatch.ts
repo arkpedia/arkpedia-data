@@ -85,7 +85,7 @@ test('a new client version the mirror already carries starts the import, and is 
   const { plan, started, saved, seen, lines } = await look({ live: { ...ALL('v1'), jp: V('jp', 'v2') }, published: publishedAt(ALL('v1')) });
   assert.equal(plan.dispatch, true);
   assert.deepEqual(started, [['workflow', 'run', 'import.yml', '--repo', 'arkpedia/arkpedia-data', '--ref', 'main', '-f', 'reason=patch']]);
-  assert.deepEqual(saved, { at: NOW.toISOString(), versions: { ...ALL('v1'), jp: V('jp', 'v2') } });
+  assert.deepEqual(saved, { at: NOW.toISOString(), versions: { ...ALL('v1'), jp: V('jp', 'v2') }, news: [] });
   assert.deepEqual(plan.regions.map((entry: any) => [entry.region, entry.status]), [['en', 'current'], ['jp', 'ready'], ['kr', 'current'], ['cn', 'current']]);
   assert.ok(seen.every(({ init }) => !init?.method || init.method === 'GET'), 'GET only');
   assert.ok(seen.every(({ init }) => init?.headers?.['user-agent']?.startsWith('ArkpediaBot/1.0')), 'every request names the site');

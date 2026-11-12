@@ -28,10 +28,27 @@ import waits up to 45 minutes for each sync's run of the day before it pins the 
 way.
 
 **After a game patch** the import does not wait for the night:
-`.github/workflows/client-version-dispatch.yml` checks every three hours whether a region's client
+`.github/workflows/client-version-dispatch.yml` checks hourly whether a region's client
 is past the published tables and its mirror already carries the new version, and if so starts
 `import.yml` with `reason: patch`. That import's commit on `imports` says "patch", and the
 application's content watcher compiles it as soon as it sees it.
+
+The same check discovers recent event announcements on the official EN news site by
+comparing their IDs with the published news cache. A new announcement can trigger an
+import before the client patch, without waiting for new mirror tables. Running imports
+are not replaced; dispatches for news are limited to one per hour, and an unchanged
+failed batch is not retried for 24 hours. An unreadable news list or missing baseline
+does not count as new content. GitHub scheduling and the import/publication runtime
+still add latency; this is not an instant social-media listener.
+
+The `announced-windows` stage reconciles uniquely named EN events and banners from
+cached official notices. Stage-phase durations, banner durations and shop closes stay
+separate. Collaboration prefixes in section headings are accepted. Ambiguous event
+identities and unreadable stage durations retain the previous record and enter
+quarantine. Confirmed records include the official source URL and populate EN's
+regional schedule even before the client's activity/pool exists; JP/KR require their
+own confirmation. The official notice fixture 5092 guards Thunder in the Azure Dream's
+November 16 opening, November 30 stage/banner close and December 7 shop close.
 
 Each step runs through the stage runner (`scripts/content/run-stage.mjs`): a step that fails has
 its changes put back and costs only its own records. `run-imports.sh` and
