@@ -1,6 +1,11 @@
 {
   "about": "Art the release job's importers fetch but arkpedia-image-assets does not publish yet. Each kind is staged under .cache/<kind>/ by the importer named here: the files, and a staged.json listing each file's destination in the image repository and where it came from (scripts/imports/staged_art.py, scripts/lib/staged-art.mjs). The refresh's staged-art stage (scripts/sync/publish-catalogue-assets.sh --staged) publishes what a kind's stage staged in this run, if that stage ran to the end, and then runs the kind's adopt command again, so its records point at the published files and its quarantine entries clear in the same run. `stage` is the refresh stage that stages the kind (data/stage-report.json); `folders` the image repository folders it may publish into. scripts/tests/test-staged-art.ts fails on an importer that stages art into .cache/ outside this list.",
   "kinds": {
+    "pack-art": {
+      "stage": "pack-art",
+      "folders": ["content-art"],
+      "adopt": ["node", "scripts/imports/import-pack-art.mjs"]
+    },
     "stage-renders": {
       "stage": "stage-renders",
       "folders": ["stages-images"],

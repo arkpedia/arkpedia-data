@@ -266,6 +266,7 @@ stage free-rewards --needs event-rewards -- node scripts/build/build-free-reward
 # Official shop artwork for the sets the rewards name, including inherited reruns.
 # Keep CN originals; automatically prefer Global when its client thumbnail arrives.
 stage furniture-art --needs event-rewards -- node scripts/imports/import-furniture-art.mjs
+stage pack-art --needs event-rewards -- node scripts/imports/import-pack-art.mjs
 
 # Reward icons for every reward an event page lists: the stores (event-stores.json), the rewards
 # the tables and announcements list (event-rewards.json, written just above, so a new event's

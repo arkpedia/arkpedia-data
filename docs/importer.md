@@ -54,6 +54,28 @@ Each step runs through the stage runner (`scripts/content/run-stage.mjs`): a ste
 its changes put back and costs only its own records. `run-imports.sh` and
 `scripts/sync/refresh-stage-data.sh` list the steps.
 
+## Official pack artwork
+
+The `pack-art` import reads pictures only from official pack sections in the cached
+Global announcements. It matches the titles printed in each horizontal promotional
+image using the vendored English OCR model. A unique, immediately adjacent bracketed
+pack heading can identify ornate lettering that OCR cannot read; uncertain matches
+retain the prior art. Multi-pack banners remain whole and are shown once with their
+offers, rather than being misleadingly cropped or repeated on each card.
+
+New originals are staged under `.cache/pack-art/` and published by the existing image
+publisher. The adoption pass writes source-specific keys to `event-pack-art.json`
+only after the files appear in the published asset index. The normal asset-readiness
+gate requires the pinned images in R2 before the matching content becomes live.
+An available Global promotional image takes priority over the existing pack-art
+fallback, without applying another announcement's dates or prices to an offer.
+
+`pack-art-state.json` caches public image hashes, dimensions and OCR text. Unchanged
+published pictures avoid repeated downloads and OCR. Each refresh processes at most
+24 new pictures, newest announcements first; failures preserve previous mappings and
+uncertain or deferred pictures are reported in quarantine. No credentials are stored
+in these records.
+
 ## Schedule authority
 
 A refresh pins each client mirror once (`upstream.lock.json`). Regional activity, gacha,
