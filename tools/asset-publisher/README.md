@@ -60,3 +60,17 @@ repositories after verification. Keep the existing per-run/total byte budgets,
 lease, new-bucket-only destination and readiness-before-pointer ordering. Disabling
 the flag does not undo published maps: older app rollback requires restoring and
 verifying an unmapped historical content release first. No deletion is performed.
+
+## Event media before a site Preview
+
+The existing Content release owner accepts an optional `animation_revision`: a
+full immutable `arkpedia-l2d-assets` commit. This uses the same unified publisher,
+bucket-scoped credential, native lease, storage budgets and verified receipts.
+An asset-only dispatch skips the live-pointer job. It does not regenerate records
+or promote the selected data snapshot. Normal push releases and rollbacks are
+unchanged when the input is blank.
+
+Use the current live data revision as `revision` and the reviewed asset commit as
+`animation_revision` when dispatching `content.yml` on `main`. The pin helper is
+preserved before selecting that older data checkout, as the publisher itself is.
+Verify the new animation files over the CDN before the site adopts their URLs.

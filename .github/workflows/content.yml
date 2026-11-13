@@ -10,6 +10,11 @@ on:
         description: 'Approved main-branch commit to publish or roll back to (blank = current main)'
         required: false
         type: string
+      animation_revision:
+        description: 'Optional full arkpedia-l2d-assets commit to mirror without changing the live data pointer'
+        required: false
+        type: string
+        default: ''
 permissions:
   contents: read
 concurrency:
@@ -27,7 +32,10 @@ jobs:
         with:
           node-version: '22'
       - name: Preserve current publisher tooling across content rollbacks
-        run: cp -R tools/asset-publisher "$RUNNER_TEMP/arkpedia-asset-publisher"
+        run: |
+          cp -R tools/asset-publisher "$RUNNER_TEMP/arkpedia-asset-publisher"
+          mkdir -p "$RUNNER_TEMP/event-media-tools"
+          cp scripts/event-media-pin.mjs scripts/event-media-pin.test.mjs "$RUNNER_TEMP/event-media-tools/"
       - name: Select an approved rollback when requested
         if: github.event_name == 'workflow_dispatch'
         env:
@@ -43,7 +51,7 @@ jobs:
       - run: node --test scripts/sync-editorial.test.mjs
       - run: npm ci --ignore-scripts --no-audit --no-fund
         working-directory: ${{ runner.temp }}/arkpedia-asset-publisher
-      - run: node --test "$RUNNER_TEMP/arkpedia-asset-publisher/native-assets.test.mjs" "$RUNNER_TEMP/arkpedia-asset-publisher/unified-assets.test.mjs" "$RUNNER_TEMP/arkpedia-asset-publisher/media-reuse.test.mjs"
+      - run: node --test "$RUNNER_TEMP/arkpedia-asset-publisher/native-assets.test.mjs" "$RUNNER_TEMP/arkpedia-asset-publisher/unified-assets.test.mjs" "$RUNNER_TEMP/arkpedia-asset-publisher/media-reuse.test.mjs" "$RUNNER_TEMP/event-media-tools/event-media-pin.test.mjs"
   propose:
     if: github.event_name == 'push' && github.ref == 'refs/heads/refresh/content'
     needs: validate
@@ -90,7 +98,10 @@ jobs:
         with:
           node-version: '24'
       - name: Preserve current publisher tooling across content rollbacks
-        run: cp -R tools/asset-publisher "$RUNNER_TEMP/arkpedia-asset-publisher"
+        run: |
+          cp -R tools/asset-publisher "$RUNNER_TEMP/arkpedia-asset-publisher"
+          mkdir -p "$RUNNER_TEMP/event-media-tools"
+          cp scripts/event-media-pin.mjs "$RUNNER_TEMP/event-media-tools/"
       - name: Select the validated immutable release
         env:
           REVISION: ${{ inputs.revision }}
@@ -117,6 +128,11 @@ jobs:
           fs.writeFileSync(process.env.RUNNER_TEMP + '/asset-pins.json', JSON.stringify(sources));
           JS
           echo "DATA_REVISION=$revision" >> "$GITHUB_ENV"
+      - name: Include the requested immutable event animation revision
+        if: inputs.animation_revision != ''
+        env:
+          ANIMATION_REVISION: ${{ inputs.animation_revision }}
+        run: node "$RUNNER_TEMP/event-media-tools/event-media-pin.mjs" "$RUNNER_TEMP/asset-pins.json"
       - name: Install publisher without R2 credentials
         run: npm ci --ignore-scripts --no-audit --no-fund
         working-directory: ${{ runner.temp }}/arkpedia-asset-publisher
@@ -158,7 +174,7 @@ jobs:
           if-no-files-found: error
 
   publish:
-    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && !inputs.animation_revision
     needs: [validate, mirror]
     runs-on: ubuntu-latest
     timeout-minutes: 5
