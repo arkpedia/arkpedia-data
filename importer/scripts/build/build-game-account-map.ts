@@ -46,6 +46,7 @@ interface RecordFile {
 
 export interface GameAccountMapFile {
   version: 1;
+  trustThresholds?: number[];
   beginnerPrograms?: { id: string; startTs: number; endTs?: number; missionIds?: string[] }[];
   /** character id -> the record's name, by equipment id the planner's module index, and
    *  whether the Global client has it (the account page's operator count). */
@@ -103,6 +104,7 @@ export function buildGameAccountMap(
     medalTable?: { medalList?: { medalId?: string; medalName?: string }[] };
     /** data/headhunting_banners.json. */
     banners?: { name?: string; globalPoolId?: string | null }[];
+    favor?: { favorFrames: { data: { favorPoint: number; percent: number } }[] };
     openServer?: { schedule?: { id: string; startTs: number; endTs?: number }[]; dataMap?: Record<string, { openServerMissionGroup?: { missionIds?: unknown } | null; openServerMissionData?: unknown[] }> };
   },
 ): GameAccountMapFile {
@@ -167,7 +169,9 @@ export function buildGameAccountMap(
   const skillIcons = Object.fromEntries(Object.entries(tables.skills)
     .filter(([id, skill]) => typeof skill.iconId === 'string' && skill.iconId && skill.iconId !== id)
     .map(([id, skill]) => [id, skill.iconId as string]).sort(([a], [b]) => a.localeCompare(b)));
-  return { version: 1, chars, nameCards, nameCardThemes, nameCardVariants, nameCardPlain, nameCardStyles, medals, nations, moduleTypes, skillIcons,
+  const trustThresholds = tables.favor?.favorFrames.slice().sort((a, b) => a.data.percent - b.data.percent).map(row => row.data.favorPoint);
+  if (trustThresholds && (trustThresholds.length !== 201 || trustThresholds.some((point, index) => !Number.isInteger(point) || point < 0 || index > 0 && point <= trustThresholds[index - 1]))) throw new Error('Invalid favor_table trust thresholds');
+  return { version: 1, ...(trustThresholds ? { trustThresholds } : {}), chars, nameCards, nameCardThemes, nameCardVariants, nameCardPlain, nameCardStyles, medals, nations, moduleTypes, skillIcons,
     ...(tables.openServer ? { beginnerPrograms: beginnerPrograms(tables.openServer) } : {}),
     pools: bannerPoolNames(tables.banners ?? []) };
 }
@@ -191,7 +195,7 @@ function readJson<T>(file: string): T {
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(__filename)) {
-  for (const file of ['uniequip_table.json', 'character_table.json', 'char_patch_table.json', 'skill_table.json', 'display_meta_table.json', 'medal_table.json', 'handbook_team_table.json']) {
+  for (const file of ['uniequip_table.json', 'character_table.json', 'char_patch_table.json', 'skill_table.json', 'display_meta_table.json', 'medal_table.json', 'handbook_team_table.json', 'favor_table.json']) {
     if (!fs.existsSync(path.join(excel, file))) {
       console.error(`Missing ${path.join(excel, file)}.\nRun scripts/sync/refresh-stage-data.sh to populate .cache/upstream, or set ARKPEDIA_EN.`);
       process.exit(1);
@@ -212,6 +216,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(__filename
     styles: fs.existsSync(path.join(root, 'data', 'namecard-styles.json')) ? readJson<{ themes: Record<string, NameCardStyle> }>(path.join(root, 'data', 'namecard-styles.json')).themes : {},
     forms: fs.existsSync(path.join(root, 'data', 'operator-forms.json')) ? readJson(path.join(root, 'data', 'operator-forms.json')) : {},
     banners: readJson(path.join(root, 'data', 'headhunting_banners.json')),
+    favor: readJson(path.join(excel, 'favor_table.json')),
     openServer: readJson(path.join(excel, 'open_server_table.json')),
   });
   // Each nation's emblem must be published, or the card shows a broken image: a nation the

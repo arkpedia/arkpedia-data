@@ -94,3 +94,12 @@ test('a record that no longer lines up with the client fails the map, naming it'
   assert.throws(() => buildGameAccountMap(reordered, tables), /Fiammetta: the client's skills \(provocate, embers\) are not the record's/);
   assert.throws(() => buildGameAccountMap([{ name: 'Nobody' }], tables), /Nobody has no internalName/);
 });
+
+
+test('the account map carries sorted, validated trust thresholds for roster imports', () => {
+  const favorFrames = Array.from({ length: 201 }, (_, percent) => ({ data: { favorPoint: percent * 10, percent } }));
+  const map = buildGameAccountMap(records, { ...tables, favor: { favorFrames: [...favorFrames].reverse() } });
+  assert.deepEqual(map.trustThresholds, favorFrames.map(row => row.data.favorPoint));
+  assert.throws(() => buildGameAccountMap(records, { ...tables, favor: { favorFrames: favorFrames.slice(1) } }), /Invalid favor_table/);
+  assert.throws(() => buildGameAccountMap(records, { ...tables, favor: { favorFrames: favorFrames.map(row => ({ data: { ...row.data, favorPoint: 0 } })) } }), /Invalid favor_table/);
+});
