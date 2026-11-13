@@ -481,3 +481,20 @@ test('a feed that does not load, or a song lookup that fails, fills nothing and 
     }
   }
 });
+
+test('reviewed Ambience Synesthesia translations and credits stay attached to their MSR track identities', () => {
+  const albums = JSON.parse(fs.readFileSync(new URL('../../../source/data/albums.json', import.meta.url), 'utf8'));
+  const songs = albums.find((album: { albumId: string }) => album.albumId === '5119').songs;
+  const expected = [['880376', 'The Song of Long Voyage', '8Y6rxO4-p8w'], ['232293', 'Lights and Dreams', 'oASHSM-Y0mE'], ['514575', 'ManiFesto:', '8ZWS4vEJi40'], ['779421', 'CanNot Wait For', 'ZdwyvB4mYRU']];
+  for (const [id, title, video] of expected) {
+    const song = songs.find((song: { songId: string }) => song.songId === id);
+    assert.equal(song.songAltName, title);
+    assert.equal(song.videoId, video, 'the original recording identity must not be moved with editorial metadata');
+  }
+  const fold = (value: string) => value.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
+  for (const album of albums) for (const song of album.songs ?? []) {
+    if (!song.songAltName || /instrument|off.?vocal|伴奏/i.test(song.songName)) continue;
+    const other = album.songs.find((candidate: { songId: string; songName: string }) => candidate.songId !== song.songId && fold(candidate.songName) === fold(song.songAltName));
+    assert(!other, `Song ${song.songId} uses the title of another track ${other?.songId}`);
+  }
+});
