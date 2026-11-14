@@ -74,3 +74,10 @@ Use the current live data revision as `revision` and the reviewed asset commit a
 `animation_revision` when dispatching `content.yml` on `main`. The pin helper is
 preserved before selecting that older data checkout, as the publisher itself is.
 Verify the new animation files over the CDN before the site adopts their URLs.
+
+Asset-only event dispatches enable the existing verified native-media reuse mode.
+The L2D repository also contains the full model archive; unchanged directory
+hashes reuse completed immutable media instead of copying that archive for every
+new event pack. The publisher still refuses reuse unless clean production reports
+`nativeMediaDelivery: 1`, and still applies its lease, byte budgets and create-only
+verification. Normal content releases continue using the repository flag.

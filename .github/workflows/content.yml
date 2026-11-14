@@ -160,7 +160,7 @@ jobs:
         if: vars.ARKPEDIA_UNIFIED_ASSETS == 'true'
         run: node "$RUNNER_TEMP/arkpedia-asset-publisher/unified-assets.mjs" --apply --pins="$RUNNER_TEMP/asset-pins.json" --cache="$RUNNER_TOOL_CACHE/arkpedia-public-git" --max-new-bytes="$NATIVE_NEW_BYTES" --max-total-bytes="$NATIVE_TOTAL_BYTES" --report="$RUNNER_TEMP/native-assets-receipts.json"
         env:
-          ARKPEDIA_NATIVE_MEDIA_REUSE: ${{ vars.ARKPEDIA_NATIVE_MEDIA_REUSE }}
+          ARKPEDIA_NATIVE_MEDIA_REUSE: ${{ inputs.animation_revision && 'true' || vars.ARKPEDIA_NATIVE_MEDIA_REUSE }}
           ARKPEDIA_R2_ACCOUNT_ID: '1ff51c10571eaa9934bc451e1bfdb361'
           ARKPEDIA_NATIVE_R2_ACCESS_KEY_ID: ${{ secrets.ARKPEDIA_NATIVE_R2_ACCESS_KEY_ID }}
           ARKPEDIA_NATIVE_R2_SECRET_ACCESS_KEY: ${{ secrets.ARKPEDIA_NATIVE_R2_SECRET_ACCESS_KEY }}
