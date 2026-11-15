@@ -10,8 +10,7 @@ to another community translator. Existing English fan text keeps its original wo
 
 The source sentences are retained verbatim beside each replacement. Changed CN text
 must receive a new entry after review; the application never applies a replacement to
-a different sentence. Official Global traits and skills bypass the overlay; exact CN-only module text can still be translated. Archive stories,
-profiles, voice actor names and editorial guides are outside this mechanics supplement.
+a different sentence. Official Global traits and skills bypass the overlay; exact CN-only module text can still be translated. The game overview is also included for all CN operators with a Chinese overview. Archive stories, voice actor names and editorial guides remain outside the supplement.
 Skill and base-skill artwork retains its original filename when its display name changes.
 
 `source/data/combat-keywords.json` contains English definitions from the game's
@@ -30,7 +29,7 @@ The supplement also covers CN-only module names, missions and every upgrade stag
 Blaze the Igniting Spark, Fiammetta, Gavial the Invincible, Kirin R Yato, Narantuya,
 Qiubai, Reed the Flame Shadow, Shu, Ulpianus and Vulpisfoglia. Their module disclaimer
 is separate from their official English skills and talents. Total initial coverage:
-230 exact-source strings across 16 operators.
+245 exact-source strings across 26 operators, including 15 game overview translations.
 
 The companion application seeds missing supplements from this immutable source commit
 with checksum verification. Its server backfills older published operator pages and
