@@ -29,7 +29,7 @@ The supplement also covers CN-only module names, missions and every upgrade stag
 Blaze the Igniting Spark, Fiammetta, Gavial the Invincible, Kirin R Yato, Narantuya,
 Qiubai, Reed the Flame Shadow, Shu, Ulpianus and Vulpisfoglia. Their module disclaimer
 is separate from their official English skills and talents. Total initial coverage:
-245 exact-source strings across 26 operators, including 15 game overview translations.
+251 exact-source strings across 32 operators, including 21 game overview translations.
 
 The companion application seeds missing supplements from this immutable source commit
 with checksum verification. Its server backfills older published operator pages and
