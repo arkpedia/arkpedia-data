@@ -48,7 +48,7 @@ Added 332 exact-source replacements for all remaining displayed Chinese mechanic
 Herdbells, Olga, Caleido, Talulah, Territoriya and Toska, plus missing CN-only modules
 on Matsukiri, Astgenne the Lightchaser, Horn, Muelsyse and SilverAsh the Reignfrost.
 Coverage includes every skill rank/mastery and talent promotion/potential row.
-The supplement now has 583 strings across 41 operators. Original game records remain
+The supplement now has 583 strings across 37 operators. Original game records remain
 unchanged; official Global mechanics are excluded from the overlay.
 
 Each new string has an optional `credits` override. Independent labels, Base skills,
