@@ -35,3 +35,9 @@ The companion application seeds missing supplements from this immutable source c
 with checksum verification. Its server backfills older published operator pages and
 preview API payloads, allowing isolated Preview review before a production content release.
 Newer compiled content carries the enriched payload and remains authoritative.
+
+## Shared Base terminology
+
+`source/data/base-skill-glossary.json` records four shared terms and the eleven game buffs that reference them. IDs come from the pinned CN building/constants tables; names and definitions prefer Global English when that term exists. CN-only group member names come from the canonical operator rosters. The record includes immutable source links. Monster Hunter Squad normalizes to the official Monster Hunter Party (`cc.tag.mh`); the Bubble Kingdom Hunting Squad (`cc.tag.mh2`) remains separate. The CN place name 泡影国 consistently uses Bubble Kingdom in the English supplement. Source descriptions and numeric effects are preserved.
+
+Voice transcript audit (2026-11-15): the current Global and supplemental English charword tables contain no rows for the 23 CN-only operators with Chinese transcripts. Community dialogue pages checked for those operators contain Chinese text (four pages were absent); isolated untranslated battle exclamations are not treated as English translations. Retain the explicit Chinese game text label; no voice transcript translation is claimed.
