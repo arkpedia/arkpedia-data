@@ -17,7 +17,7 @@ Skill and base-skill artwork retains its original filename when its display name
 `source/data/combat-keywords.json` contains English definitions from the game's
 `termDescriptionDict` (combat `ba.*` entries). The initial snapshot was retrieved on
 2026-11-15 from [ArknightsAssets/ArknightsGamedata](https://github.com/ArknightsAssets/ArknightsGamedata/blob/master/en/gamedata/excel/gamedata_const.json).
-The application's pinned Global refresh regenerates it. Elemental terms combine the
+The application's combat-keyword generator can regenerate it from a reviewed pinned Global constants file. Elemental terms combine the
 enemy-target and ally-target definitions with explicit labels; they must not describe
 Nervous Impairment against enemies using the ally-only stun/True damage behavior.
 Aliases cover existing inflections such as Stunned; text matching is by whole word.
@@ -31,3 +31,8 @@ Blaze the Igniting Spark, Fiammetta, Gavial the Invincible, Kirin R Yato, Narant
 Qiubai, Reed the Flame Shadow, Shu, Ulpianus and Vulpisfoglia. Their module disclaimer
 is separate from their official English skills and talents. Total initial coverage:
 230 exact-source strings across 16 operators.
+
+The companion application seeds missing supplements from this immutable source commit
+with checksum verification. Its server backfills older published operator pages and
+preview API payloads, allowing isolated Preview review before a production content release.
+Newer compiled content carries the enriched payload and remains authoritative.
