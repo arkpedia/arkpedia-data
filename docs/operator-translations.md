@@ -41,3 +41,44 @@ Newer compiled content carries the enriched payload and remains authoritative.
 `source/data/base-skill-glossary.json` records four shared terms and the eleven game buffs that reference them. IDs come from the pinned CN building/constants tables; names and definitions prefer Global English when that term exists. CN-only group member names come from the canonical operator rosters. The record includes immutable source links. Monster Hunter Squad normalizes to the official Monster Hunter Party (`cc.tag.mh`); the Bubble Kingdom Hunting Squad (`cc.tag.mh2`) remains separate. The CN place name 泡影国 consistently uses Bubble Kingdom in the English supplement. Source descriptions and numeric effects are preserved.
 
 Voice transcript audit (2026-11-15): the current Global and supplemental English charword tables contain no rows for the 23 CN-only operators with Chinese transcripts. Community dialogue pages checked for those operators contain Chinese text (four pages were absent); isolated untranslated battle exclamations are not treated as English translations. Retain the explicit Chinese game text label; no voice transcript translation is claimed.
+
+## Completed mechanics audit — 2026-11-16
+
+Added 332 exact-source replacements for all remaining displayed Chinese mechanics:
+Herdbells, Olga, Caleido, Talulah, Territoriya and Toska, plus missing CN-only modules
+on Matsukiri, Astgenne the Lightchaser, Horn, Muelsyse and SilverAsh the Reignfrost.
+Coverage includes every skill rank/mastery and talent promotion/potential row.
+The supplement now has 583 strings across 41 operators. Original game records remain
+unchanged; official Global mechanics are excluded from the overlay.
+
+Each new string has an optional `credits` override. Independent labels, Base skills,
+traits and potentials retain Arkpedia's AI-assisted credit. Wiki-derived mechanics
+credit Arkpedia's AI-assisted adaptations and Arknights Terra Wiki under CC BY-SA 4.0,
+with revision-pinned source links. Existing overview credits stay independent.
+These adaptations are also available under CC BY-SA 4.0; retained exact CN keys are
+the game-text revision guard, not a claim of official localization.
+
+The game text takes precedence where wiki prose or numbers differ: Caleido converts
+30% of incoming Physical/Arts damage into **half** that amount of Frenzy; Toska's
+second talent follows **applying** a Trigger effect; her third skill deals Physical
+damage and transfers to another Operator. Territoriya's retirement talent hits ground
+enemies, third-skill rank values come from each game row, and her module mission uses
+WD-8. Talulah's second talent requires her to be deployed and leaves Footsteps on
+passable ground. Her third skill consistently calls its projectiles Flame Clusters.
+Muelsyse's final module copies **all** listed attributes; SilverAsh's final module
+reduces the cap on the DP cost increase after retreat, not the first redeployment cost.
+These are deliberately corrected adaptations rather than unchecked wiki copies.
+
+Reviewed wiki revisions:
+
+- [Herdbells](https://arknights.wiki.gg/w/index.php?title=Herdbells&oldid=775072)
+- [Matsukiri](https://arknights.wiki.gg/w/index.php?title=Matsukiri&oldid=775407)
+- [Olga](https://arknights.wiki.gg/w/index.php?title=Olga&oldid=775114)
+- [Caleido](https://arknights.wiki.gg/w/index.php?title=Caleido&oldid=775115)
+- [Astgenne the Lightchaser](https://arknights.wiki.gg/w/index.php?title=Astgenne_the_Lightchaser&oldid=775122)
+- [Horn](https://arknights.wiki.gg/w/index.php?title=Horn&oldid=775305)
+- [Muelsyse](https://arknights.wiki.gg/w/index.php?title=Muelsyse&oldid=775390)
+- [SilverAsh the Reignfrost](https://arknights.wiki.gg/w/index.php?title=SilverAsh_the_Reignfrost&oldid=780748)
+- [Talulah](https://arknights.wiki.gg/w/index.php?title=Talulah&oldid=780685)
+- [Territoriya](https://arknights.wiki.gg/w/index.php?title=Territoriya&oldid=775113)
+- [Toska](https://arknights.wiki.gg/w/index.php?title=Toska&oldid=775568)
