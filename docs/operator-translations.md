@@ -51,7 +51,7 @@ Coverage includes every skill rank/mastery and talent promotion/potential row.
 The supplement now has 583 strings across 37 operators. Original game records remain
 unchanged; official Global mechanics are excluded from the overlay.
 
-Each new string has an optional `credits` override. Independent labels, Base skills,
+Each new string has an optional `credits` override containing `name` and an optional citation `sourceRef`. Independent labels, Base skills,
 traits and potentials retain Arkpedia's AI-assisted credit. Wiki-derived mechanics
 credit Arkpedia's AI-assisted adaptations and Arknights Terra Wiki under CC BY-SA 4.0,
 with revision-pinned source links. Existing overview credits stay independent.
@@ -82,3 +82,5 @@ Reviewed wiki revisions:
 - [Talulah](https://arknights.wiki.gg/w/index.php?title=Talulah&oldid=780685)
 - [Territoriya](https://arknights.wiki.gg/w/index.php?title=Territoriya&oldid=775113)
 - [Toska](https://arknights.wiki.gg/w/index.php?title=Toska&oldid=775568)
+
+Wiki adaptations are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The revision links identify the source and its contributor history; the qualifications and number corrections above describe the changes.
