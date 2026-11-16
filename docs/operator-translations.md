@@ -84,3 +84,5 @@ Reviewed wiki revisions:
 - [Toska](https://arknights.wiki.gg/w/index.php?title=Toska&oldid=775568)
 
 Wiki adaptations are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The revision links identify the source and its contributor history; the qualifications and number corrections above describe the changes.
+
+The wording follow-up consistently uses **burdenbeast** for Herdbells’ 驮兽 in her overview and mechanics, following the same pinned wiki revision above. SilverAsh the Reignfrost and Territoriya module missions explicitly allow **at most** 7 and 9 other Operators, respectively. These are the `EquipmentSquadNum` missions `uniequip_002_svash2_2` and `uniequip_002_dminon_2` in the [pinned CN module table](https://github.com/Kengxxiao/ArknightsGameData/blob/6f63c14e27b847ef74b53b00fe51fc322b3cd7ff/zh_CN/gamedata/excel/uniequip_table.json). Source keys, counts and numeric effects are retained.
