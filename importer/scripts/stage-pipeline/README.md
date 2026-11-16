@@ -54,6 +54,17 @@ Only a stage the EN tables already name reads a CN level. `levelIds()` lists the
 folder alone, because a level file there becomes a stage record even without a
 stage_table row (`synthetic.mjs`), and CN-only stages never arrive by design.
 
+There is one declared exception, `cnSeasonLevels()` in `levelfiles.mjs`: the operations
+of a Contingency Contract Battleplan season the CN season table lists and the EN one does
+not yet (CCB #5 in 2026-11). CN runs a season about half a year ahead on maps readers
+prepare for, and its contracts are already published from CN snapshots. A level is
+admitted only if it is in `obt/crisis/v2/`, its season number is a CN season row and not
+an EN one, and the EN mirror has no such file. The season is filed as `Battleplan #5`
+(its CN name is not shown) with no Global release date, its maps are written with
+`source: "cn"`, and when Global runs the season the EN files and EN season row take over
+with nothing to remove. `scripts/tests/test-cn-battleplan-levels.ts` holds the rule to
+that width.
+
 Rehearsed on the 2026-09-25 pins: 186 more maps, 321 stage records gaining a map, and
 mapless contents down from 15 to 1 (Operational Intelligence, which no mirror carries).
 Once a release carries them, losing them is a 6% drop in `stageMaps`, which the

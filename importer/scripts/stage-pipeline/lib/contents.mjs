@@ -2,7 +2,7 @@
 // season, Annihilation map, supply zone, SSS tower, Battleplan season or
 // tutorial it belongs to. This is what the site's chapter dropdown is built out
 // of, and it is where the joins are least obvious -- see the notes per kind.
-import { excel, levelKey } from './gamedata.mjs';
+import { cnExcel, excel, levelKey } from './gamedata.mjs';
 import { list } from './text.mjs';
 
 // A THIRD markup regex, and deliberately not the record one: this excludes < and
@@ -252,7 +252,7 @@ function addReclamationV1(reg, activityInfo) {
 const CRISIS_LEVEL = /level_crisis_v2_(\d+)-\d+$/;
 
 /**
- * Four Battleplan seasons, matched to level files by number. seasonInfoDataMap
+ * The Battleplan seasons, matched to level files by number. seasonInfoDataMap
  * has no stage list at all, and the obvious alternative (the level's bgmEvent)
  * names the season only on its first stage, resolving 4 of 16.
  */
@@ -268,6 +268,18 @@ function addContingencyContract(reg, levelIds) {
     const code = clean(season.crisisV2SeasonCode) || `#${Number(number[1])}`;
     byNumber.set(Number(number[1]), reg.entry('contingency_contract', seasonId, name,
       `CC${code}`, season.startTs || 0));
+  }
+  // A season CN has run and Global has not (levelfiles.mjs, cnSeasonLevels). Its CN name
+  // is not shown: the site names a thing in English or not at all, and Global has not
+  // named this season yet, so it goes by its number. It sorts by the CN start, after
+  // every season Global has; its Global date stays empty (dates.mjs reads the EN table).
+  const ahead = cnExcel('crisis_v2_table')?.seasonInfoDataMap || {};
+  for (const seasonId of sortedKeys(ahead)) {
+    const number = /season_(\d+)/.exec(seasonId);
+    if (!number || byNumber.has(Number(number[1]))) continue;
+    const code = clean(ahead[seasonId].crisisV2SeasonCode) || `#${Number(number[1])}`;
+    byNumber.set(Number(number[1]), reg.entry('contingency_contract', seasonId, `Battleplan ${code}`,
+      `CC${code}`, ahead[seasonId].startTs || 0));
   }
   for (const levelId of [...levelIds].sort()) {
     const match = CRISIS_LEVEL.exec(levelId);

@@ -18,7 +18,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { excel, levelKey, levelsDir, levelFile, forGlobal } from './lib/gamedata.mjs';
-import { levelIds } from './lib/levelfiles.mjs';
+import { cnSeasonLevels, levelIds } from './lib/levelfiles.mjs';
 import { identityFields, stageSlugs, tableOrder, variantParents, hardModeLevels, bossRushTrials, threeStarBonus } from './lib/records.mjs';
 import { readActs } from './lib/story.mjs';
 import { collect, contentBlocks, contentForStage, levelOwner } from './lib/contents.mjs';
@@ -45,6 +45,8 @@ const stages = stageTable.stages;
 const zoneTable = excel('zone_table');
 const activityTable = excel('activity_table');
 const levels = levelIds();
+// The one CN-only exception: operations of a Battleplan season Global has not run yet.
+for (const levelId of cnSeasonLevels(levels)) levels.add(levelId);
 
 const registry = collect(levels);
 const blocks = contentBlocks(registry, releaseDates(registry.all()));

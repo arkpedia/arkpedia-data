@@ -12,6 +12,8 @@
 // wherever both have the file. Only a stage the EN tables already name ever reads a
 // CN level: levelIds() (levelfiles.mjs) lists the EN folder alone, because a level
 // only CN has is a stage Global has not got, and CN stages never arrive by design.
+// The one exception is declared in levelfiles.mjs (cnSeasonLevels): the operations of a
+// Contingency Contract Battleplan season CN has run and Global has not.
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -36,8 +38,20 @@ export function excel(name) {
 
 export const levelsDir = path.join(EN, 'levels');
 
+const CN = process.env.ARKPEDIA_CN || path.join(REPO, '.cache/upstream/cn-resource');
+/**
+ * A CN table, or null when the CN tables are not on disk. Read for one thing only: which
+ * Battleplan seasons CN has that Global has not (levelfiles.mjs, cnSeasonLevels). Every
+ * other table the stage build reads is the EN one.
+ */
+export function cnExcel(name) {
+  const file = path.join(CN, 'gamedata', 'excel', `${name}.json`);
+  if (!fs.existsSync(file)) return null;
+  return JSON.parse(fs.readFileSync(file, 'utf8'));
+}
+
 /** The CN level files: the tables upstream-cn settled on (ARKPEDIA_CN points elsewhere). */
-export const cnLevelsDir = path.join(process.env.ARKPEDIA_CN || path.join(REPO, '.cache/upstream/cn-resource'), 'gamedata', 'levels');
+export const cnLevelsDir = path.join(CN, 'gamedata', 'levels');
 
 // Level ids are cited in a dozen tables with inconsistent case and separators.
 // Two normalisations exist upstream and they are NOT interchangeable: this is
