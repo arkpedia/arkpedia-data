@@ -73,3 +73,23 @@ test('outages, unrecognized titles and tall sheets retain previous art', async (
     });
   }
 });
+
+test('CN sheets use the same bounded staging and publication gate without English OCR', async () => {
+  const { cnPackGroups } = await import('../build/cn-packs.mjs');
+  const post = JSON.parse(fs.readFileSync(new URL('./fixtures/official-news/cn-9686.json', import.meta.url)));
+  const groups = cnPackGroups([{name:'CN event',cn:{timingSource:post.url,startAt:'2026-07-10T12:00:00+08:00'}}],[post],null);
+  await temporary(async root => {
+    fs.mkdirSync(path.join(root,'data/official-news/cn'),{recursive:true});
+    fs.writeFileSync(path.join(root,'data/official-news/cn/9686.json'),JSON.stringify(post));
+    fs.writeFileSync(path.join(root,'data/event-rewards.json'),JSON.stringify({events:{'CN event':{groups:groups['CN event']}}}));
+    const config={...options(root),createReader:()=>{throw Error('CN sheet headings must not use English OCR');}};
+    const first=await importPackArt(config),files=Object.keys(first.staged);
+    assert.equal(files.length,3);assert.equal(first.adopted,0);
+    fs.writeFileSync(path.join(root,'data/assets/external-asset-index.json'),JSON.stringify({files}));
+    const next=await importPackArt({...config,fetchImage:()=>{throw Error('Published art should reuse the cache');}});
+    assert.equal(next.adopted,8);
+    const art=JSON.parse(fs.readFileSync(path.join(root,'data/event-pack-art.json')));
+    assert.equal(Object.keys(art).filter(key=>key.startsWith(post.url+'::')).length,8);
+    assert.equal(Object.keys(art).filter(key=>key.startsWith(source+'::')).length,0);
+  });
+});

@@ -62,6 +62,8 @@ import { pathToFileURL } from 'node:url';
 import { decodeEntities, leftoverEntity, newsSections, parseNoticeWindow, parsePacks, parseLoginDays, parseSelectorTickets, postEventName, postWindow } from './official-news.mjs';
 import { eventTitle, eventWindow, isRerun } from '../lib/event-records.mjs';
 import { cnTables } from '../content/pin-upstream.mjs';
+import { cnPackGroups, applyCnPacks } from './cn-packs.mjs';
+import { readCnNews } from '../sync/sync-cn-news.mjs';
 import { readOfficialNews } from '../sync/sync-official-news.mjs';
 import { readOfficialBulletins } from '../sync/sync-official-bulletins.mjs';
 import { boardBannerItems, boardEventItems, pagePicture } from '../sync/regional-board.mjs';
@@ -627,6 +629,20 @@ export function assertEventRewards(rewards, text = JSON.stringify(rewards)) {
   }
 }
 
+/** Name CN pack prose through shared item IDs, including ten-rolls whose display names add a suffix. */
+export function cnPackNamer(cn, en) {
+  const cnNames = new Map();
+  const localName = rewardNamer(cn), englishName = rewardNamer(en);
+  for (const item of Object.values(cn.items?.items ?? {})) {
+    const raw = { id: item.itemId, type: item.itemType, count: 1 };
+    const local = localName(raw), english = englishName({ ...raw, type: en.items?.items?.[item.itemId]?.itemType ?? raw.type });
+    const resolved = { name: english.name === item.itemId ? local.name : english.name, kind: english.name === item.itemId ? local.kind : english.kind };
+    cnNames.set(item.name, resolved);
+    cnNames.set(local.name, resolved);
+  }
+  return name => cnNames.get(name) ?? { name, kind: 'other' };
+}
+
 /** Keep rewards joined to the site's operator catalogue before Global's client patch. */
 export function localizeRewardOperators(rewards, operators) {
   const names = new Map(operators.filter(op => op.internalName && op.name).map(op => [op.internalName, op.name]));
@@ -682,6 +698,9 @@ async function main() {
     }
     if (kept.length) console.warn(`Global data is incomplete: ${kept.length} event(s) retain their last known CN rewards.`);
   }
+  // Announcements can publish CN offers before the CN client patch. A Global sale list
+  // replaces them wholesale, independently of Global's other still-missing reward kinds.
+  applyCnPacks(rewards, cnPackGroups(events, readCnNews(root), cn, cnPackNamer(cn, en)));
   // The in-game board's banner art, for the News tab (boardGroups): today's, in place of any an
   // entry kept from the last run carries.
   const bannerFile = path.join(root, 'data/headhunting_banners.json');
