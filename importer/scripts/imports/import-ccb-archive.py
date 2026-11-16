@@ -1,7 +1,7 @@
 """Normalize pinned public CCB snapshots. No account access or network at build time.
 
 Usage: python3 scripts/imports/import-ccb-archive.py --input-dir /tmp
-Input files: ccb-raw-{1..4}.json, ccb-seasons.json (optional English map names).
+Input files: ccb-raw-{1..5}.json, ccb-seasons.json (optional English map names).
 Provenance and the upstream commit are embedded in the resulting archive.
 """
 import argparse
@@ -11,11 +11,13 @@ from pathlib import Path
 
 COMMIT = '5b879c824b1d2987a3b23def47a2a31945138057'
 GROUPS = {'恶敌': 'Hostile Forces', '衰退': 'Deterioration', '缺失': 'Deprivation', '光刃': 'Arclight', '合金': 'Alloy', '钢甲': 'Steel Armor', '重压': 'Pressure', '约束': 'Restrictions', '险地': 'Hazardous Terrain', '应变': 'Adaptation', '枯朽之影': 'Withered Shadow', '沼泽行军': 'Marsh March', '野草': 'Wild Grass', '猖獗': 'Rampage', '要塞': 'Fortress', '溟海之蚀': 'Nethersea Corrosion', '裂礁狂热': 'Reefbreaker', '源石风暴': 'Originium Storm', '魂灵': 'Souls', '招灾': 'Calamity', '尖刀': 'Blade', '金戈寒兵': 'Cold Steel', '过热激光': 'Overheated Laser', '引痕蔓生': 'Spreading Traces'}
-NAMES = ['Pyrolysis', 'Underdawn', 'Extinguished Sins', 'Arclight']
+NAMES = ['Pyrolysis', 'Underdawn', 'Extinguished Sins', 'Arclight', 'Inkwash']  # 涤墨作战: no official English name yet, editorial
+# Names already published for earlier seasons (HellaAPI English where it existed), kept so a rerun without ccb-seasons.json does not lose them.
+KNOWN = {"灰烬泽地": ["Ashen Wetland", "Victoria"], "设防关隘": ["Fortified Pass", "Yan"], "联邦监狱": ["Federal Prison", "Columbia"], "翻修中沙滩": ["Beach Repair", "Bolívar"], "13区废墟": ["Area 13 Ruins", "Chernobog"], "不朽厅堂": ["Immortal Hall", "Iberia"], "月落环巷": ["Moonfall Alley", "Leithanien"], "枯苇泥淖": ["Dryreed Morass", "Victoria"], "实验基地封锁区": ["Research Base Quarantine Zone", "Columbia"], "浸血焦土": ["Blood-Soaked Earth", "Victoria"], "蚀裂冰湖": ["Fissure Glacier", "Kjerag"], "落尘狭路": ["Path of Dust", "Leithanien"], "滞空焦点": ["Suspended Focus", "Columbia"], "熔炉检修口": ["Furnace Maintenance Access", "Kazdel"], "巫诅骸地": ["Cursed Bonefield", "Victoria"]}
 # Editorial translations where no English server snapshot is archived. The original
 # name remains alongside it; these are not represented as official localizations.
-MAPS = {'灰烬泽地': 'Ashen Wetland', '实验基地': 'Experimental Base', '联邦监狱': 'Federal Prison', '滞空焦点': 'Suspended Focus', '熔炉检修口': 'Furnace Maintenance Access', '巫诅骸地': 'Cursed Bonefield'}
-AREAS = {'哥伦比亚': 'Columbia', '维多利亚': 'Victoria', '卡兹戴尔': 'Kazdel', '炎': 'Yan', '伊比利亚': 'Iberia', '萨尔贡': 'Sargon', '雷姆必拓': 'Rim Billiton'}
+MAPS = {'墨染书阁': 'Ink-Stained Archive', '阴郁影棚': 'Gloomy Film Set', '血刺坑道': 'Bloodthorn Tunnels', '灰烬泽地': 'Ashen Wetland', '实验基地': 'Experimental Base', '联邦监狱': 'Federal Prison', '滞空焦点': 'Suspended Focus', '熔炉检修口': 'Furnace Maintenance Access', '巫诅骸地': 'Cursed Bonefield'}
+AREAS = {'大炎': 'Yan', '谢拉格': 'Kjerag', '莱塔尼亚': 'Leithanien', '乌萨斯': 'Ursus', '哥伦比亚': 'Columbia', '维多利亚': 'Victoria', '卡兹戴尔': 'Kazdel', '炎': 'Yan', '伊比利亚': 'Iberia', '萨尔贡': 'Sargon', '雷姆必拓': 'Rim Billiton'}
 
 def clean(text):
     return re.sub(r'<@[^>]+>|</>|<color=[^>]+>|</color>', '', text or '').replace('\\n', '\n')
@@ -31,7 +33,7 @@ def compile_archive(input_dir):
             for stage in season['value']['stageDict'].values():
                 row = stage['excel']; english[row['stageId']] = row
     seasons = []
-    for number in range(1, 5):
+    for number in range(1, 6):
         raw = json.loads((input_dir / f'ccb-raw-{number}.json').read_text())
         maps = []
         for map_id, stage in raw['mapStageDataMap'].items():
@@ -49,10 +51,10 @@ def compile_archive(input_dir):
                     point = detail['nodeViewData']['nodePosMap'][node_id]
                     point = point.get('position', point.get('pos', point))
                     adjacent = [other for other in node['adjacentNodeList'] if other in detail['nodeDataMap'] and detail['nodeDataMap'][other]['runeId']]
-                    contracts.append(dict(id=node_id, runeId=rune['runeId'], name=clean(rune['runeName']), description=clean(rune['packedRune']['description']), score=rune['score'], group=rune['runeGroupId'], exclusion=node.get('mutualExclusionGroup'), effects=[compact_effect(effect) for effect in rune['packedRune']['runes']], x=point['x'], y=-point['y'], adjacent=adjacent))
-                groups.append(dict(id=group_id, name=GROUPS.get(group['slotPackName'], group['slotPackName']), originalName=group['slotPackName'], x=pos['pos']['x'], y=-pos['pos']['y'], width=pos['size']['x'], contracts=contracts))
+                    contracts.append(dict(id=node_id, runeId=rune['runeId'], name=clean(rune['runeName']), description=clean(rune['packedRune']['description']), score=rune['score'], icon=rune['runeIcon'], group=rune['runeGroupId'], exclusion=node.get('mutualExclusionGroup'), effects=[compact_effect(effect) for effect in rune['packedRune']['runes']], x=point['x'], y=-point['y'], adjacent=adjacent))
+                groups.append(dict(id=group_id, name=GROUPS.get(group['slotPackName'], group['slotPackName']), originalName=group['slotPackName'], bonus=group.get('rewardScore', 0), x=pos['pos']['x'], y=-pos['pos']['y'], width=pos['size']['x'], contracts=contracts))
             en = english.get(stage['stageId'], {})
-            maps.append(dict(id=map_id, stage=stage['stageId'], name=en.get('name') or MAPS.get(stage['name'].strip(), stage['name'].strip()), originalName=stage['name'].strip(), area=en.get('code') or AREAS.get(stage['code'], stage['code']), main=stage['stageType'] == 'PERMANENT', groups=groups))
+            maps.append(dict(id=map_id, stage=stage['stageId'], name=en.get('name') or KNOWN.get(stage['name'].strip(), (None,))[0] or MAPS.get(stage['name'].strip(), stage['name'].strip()), originalName=stage['name'].strip(), area=en.get('code') or KNOWN.get(stage['name'].strip(), (None, None))[1] or AREAS.get(stage['code'], stage['code']), pic=stage['picId'], logo=stage['logoPicId'], main=stage['stageType'] == 'PERMANENT', groups=groups))
         seasons.append(dict(id=raw['seasonId'], name=f'Battleplan {NAMES[number-1]}', number=number, maps=maps))
     return dict(schema=1, source=f'https://github.com/pfyy/OpenBachelorS/tree/{COMMIT}/data/crisisV2', englishMapSource='https://awedtan.ca/api/ccb', locale='zh_CN', note='Historical CN snapshots; editorial English group/effect labels. Not a current Global schedule.', seasons=seasons)
 
