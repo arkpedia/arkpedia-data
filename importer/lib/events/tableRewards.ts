@@ -1,3 +1,4 @@
+import { preferredPackGroups } from './packRegions';
 import type { ResolvedRewardStore } from './rewardTotals';
 import { furnitureArtPath } from './furnitureArt.mjs';
 
@@ -9,7 +10,7 @@ import { furnitureArtPath } from './furnitureArt.mjs';
  */
 export interface TableRewardItem { name: string; count: number; kind: string; id: string; iconName?: string }
 export interface PackContents { name: string; count: number; kind: string }
-export interface EventPack { name: string; start?: string; end?: string | null; contents: PackContents[]; limit?: number; notes?: string[] }
+export interface EventPack { region?: string; name: string; start?: string; end?: string | null; contents: PackContents[]; limit?: number; notes?: string[] }
 export interface FurniturePiece { name: string; id: string; obtain: string | null; comfort: number | null }
 export interface TableRewardGroup {
   kind: 'login' | 'banner-gift' | 'free-rolls' | 'missions' | 'milestones' | 'first-clear' | 'pray' | 'packs' | 'notice' | 'news' | 'board' | 'furniture-set';
@@ -93,7 +94,7 @@ export const TABLE_REWARD_LABEL: Record<TableRewardGroup['kind'], string | null>
 
 /** What the page shows beside the reward blocks: packs, furniture sets and announced gifts. */
 export interface EventExtras {
-  packs: { title: string; source: string; packs: (Omit<EventPack, 'contents'> & { imagePath?: string | null; artworkLayout?: 'promo' | 'icon'; contents: (PackContents & { iconPath: string | null })[] })[] }[];
+  packs: { title: string; source: string; region?: string; packs: (Omit<EventPack, 'contents'> & { imagePath?: string | null; artworkLayout?: 'promo' | 'icon'; contents: (PackContents & { iconPath: string | null })[] })[] }[];
   furniture: { title: string; source: string; imagePath?: string | null; description: string | null; pieces: FurniturePiece[] }[];
   notices: { title: string; source: string; lines: string[] }[];
   /** The rest of the event's official announcement, section by section: the page's News tab. */
@@ -112,11 +113,11 @@ export const NO_EXTRAS: EventExtras = { packs: [], furniture: [], notices: [], n
 
 export function eventExtras(groups: TableRewardGroup[], iconFor: (name: string) => string | null, packArt: (name: string, source: string) => string | { path: string; layout: 'promo' | 'icon' } | null = () => null, isPublished: (file: string) => boolean = () => false): EventExtras {
   return {
-    packs: groups.filter(g => g.kind === 'packs' && g.packs?.length).map(g => ({
-      title: g.title, source: g.source,
+    packs: preferredPackGroups(groups).filter(g => g.kind === 'packs' && g.packs?.length).map(g => ({
+      title: g.title, source: g.source, ...(g.region ? { region: g.region } : {}),
       packs: g.packs!.map(pack => {
         const art = packArt(pack.name, g.source);
-        return { ...pack, imagePath: typeof art === 'string' ? art : art?.path ?? null, ...(art && typeof art === 'object' ? { artworkLayout: art.layout } : {}), end: pack.end ?? null, contents: pack.contents.map(item => ({ ...item, iconPath: iconFor(item.name) })) };
+        return { ...pack, ...(g.region === 'CN' ? { region: 'CN' } : {}), imagePath: typeof art === 'string' ? art : art?.path ?? null, ...(art && typeof art === 'object' ? { artworkLayout: art.layout } : {}), end: pack.end ?? null, contents: pack.contents.map(item => ({ ...item, iconPath: iconFor(item.name) })) };
       }),
     })),
     furniture: groups.filter(g => g.kind === 'furniture-set' && g.pieces?.length).map(g => ({ title: g.title, source: g.source, imagePath: furnitureArtPath(g, isPublished), description: g.description ?? null, pieces: g.pieces! })),

@@ -1,3 +1,4 @@
+import { preferredPackGroups } from './packRegions';
 import announcements from '@/data/event-announcements.json';
 import type { TableRewardGroup } from './tableRewards';
 
@@ -15,6 +16,7 @@ const supplements = announcements.events as unknown as Record<string, Supplement
  * event's own Global table/announcement groups supersede their preview, without counting
  * the same sign-in or paid pack twice. Independent early login gifts stay with the event. */
 export function announcedRewards(name: string, groups: TableRewardGroup[]) {
+  groups = preferredPackGroups(groups);
   const supplement = supplements[name];
   const officialTickets = Object.assign({}, ...groups.filter(g => g.region !== 'CN').map(g => g.tickets ?? {})) as Record<string, TicketDetails>;
   if (!supplement) return { groups, tickets: officialTickets };
