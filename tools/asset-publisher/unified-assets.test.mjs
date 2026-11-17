@@ -4,7 +4,7 @@ import { execFileSync } from 'node:child_process';
 import { mkdir, mkdtemp, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { source, treeFiles } from './mirror-github-assets.mjs';
+import { mirrorRevision, source, treeFiles } from './mirror-github-assets.mjs';
 import { test } from 'node:test';
 import { nativeKey } from './native-assets.mjs';
 import { planUnifiedAssets, publishUnifiedAssets } from './unified-assets.mjs';
@@ -148,4 +148,35 @@ test('a failed or corrupt media upload cannot publish generated-data readiness',
     assert.ok(!f.objects.has(`__ready/${mediaRepo}/${mediaRev}`));
     assert.ok(!f.objects.has(readyKey('arkpedia-data', dataRev)));
   }
+});
+
+test('parallel uploads reserve body bytes before reading and retain readiness ordering', async () => {
+  for (const maxInFlightBytes of [30, 80]) {
+    const files = Array.from({ length: 16 }, (_, i) => makeFile(`icons/${i}.webp`, String(i).padStart(10, '0')));
+    let activeBytes = 0, peakBytes = 0, writes = 0;
+    const puts = [];
+    await mirrorRevision({ repository: mediaRepo, revision: mediaRev, files, known: new Map(), concurrency: 8, maxInFlightBytes, log: () => {},
+      read: async file => { activeBytes += file.bytes; peakBytes = Math.max(peakBytes, activeBytes); return file.body; },
+      store: { put: async (key, bytes) => {
+        if (key.startsWith('github-v1/objects/')) {
+          await new Promise(resolve => setImmediate(resolve));
+          activeBytes -= bytes.length; writes++;
+        } else assert.equal(writes, files.length, 'Metadata must follow every completed body');
+        puts.push(key);
+      } },
+    });
+    assert.equal(activeBytes, 0);
+    assert.equal(peakBytes, maxInFlightBytes, 'Small files use available slots within their byte reservation');
+    assert.equal(puts.at(-1), readyKey(mediaRepo, mediaRev));
+  }
+});
+test('a failed body releases reservations and never publishes readiness', async () => {
+  const files = Array.from({ length: 8 }, (_, i) => makeFile(`icons/${i}.webp`, String(i).padStart(10, '0')));
+  const puts = [];
+  await assert.rejects(mirrorRevision({ repository: mediaRepo, revision: mediaRev, files, known: new Map(), concurrency: 8, maxInFlightBytes: 20, log: () => {},
+    read: async file => { if (file === files[0]) throw Error('Source unavailable'); return file.body; },
+    store: { put: async key => { puts.push(key); } },
+  }), /Source unavailable/);
+  assert.ok(puts.every(key => key.startsWith('github-v1/objects/')));
+  await assert.rejects(mirrorRevision({ repository: mediaRepo, revision: mediaRev, files, known: new Map(), concurrency: 8, maxInFlightBytes: 9 }), /memory budget/);
 });

@@ -164,8 +164,9 @@ export async function publishUnifiedAssets(plan, destination, { maxNewBytes, max
     }
     const knownMedia = new Map([...bySha].filter(([, files]) => files.every(file => entry.verifiedPaths.has(physicalKey(file))))
       .map(([sha, files]) => [objectKey(sha), files[0].bytes]));
-    // Two media bodies of at most 128 MB keep in-flight file bytes within 256 MB.
-    await mirrorRevision({ ...entry, known: knownMedia, concurrency: 2, log, store: { put: async (key, bytes) => {
+    // Keep small uploads moving in parallel while reserving bytes before reading
+    // each body. Large media still share the same 256 MB in-flight limit.
+    await mirrorRevision({ ...entry, known: knownMedia, concurrency: 16, maxInFlightBytes: 256_000_000, log, store: { put: async (key, bytes) => {
       if (key.startsWith('github-v1/objects/')) {
         const files = bySha.get(key.slice('github-v1/objects/'.length));
         assert.ok(files?.length, 'Unexpected native Git blob');

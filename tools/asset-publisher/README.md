@@ -39,8 +39,10 @@ mirror dependency. `ARKPEDIA_UNIFIED_ASSETS=true` selects `unified-assets.mjs`: 
 reads approved GitHub commits, writes media directly at native URL paths, and
 keeps generated JSON deduplicated in the same new bucket. Media dependencies finish
 before JSON readiness/live-pointer adoption. This step receives only the native
-credential and skips both legacy mirror stages. Existing completed revisions do
-not need a Git fetch or old-bucket reads. Activate both publishers only after
+credential and skips both legacy mirror stages. Small media uploads use up to 16 concurrent transfers, with a shared 256 MB
+in-flight body reservation; large originals retain that same memory bound.
+Interrupted runs verify and reuse existing native paths before resuming.
+Existing completed revisions do not need a Git fetch or old-bucket reads. Activate both publishers only after
 the historical media/JSON migrations and new-bucket reader checks pass.
 
 Unified publication and the shared Git metadata/source helpers match the same application commit. The public copy changes only relative imports; keep all three publisher modules and their tests synchronized.
