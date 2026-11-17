@@ -17,7 +17,7 @@
     "DPS",
     "Fast-Redeploy"
   ],
-  "trait": "High-accuracy point-blank shot",
+  "trait": "High accuracy point-blank shot",
   "howToObtain": {
     "Limited": "Yes",
     "Standard Headhunting": "No",
@@ -34,17 +34,21 @@
   },
   "internalName": "char_1048_orchd2",
   "otherLanguages": {
-    "Chinese": "焰狐龙梓兰"
+    "Chinese": "焰狐龙梓兰",
+    "Simplified Chinese": "焰狐龙梓兰"
   },
   "characterInfo": {
     "File no.": "MH05",
     "Illustrator": "Studio Montagne (original design by Skade )",
     "Release Date": "2026/11/04",
-    "Kernel Addition Date": null
+    "Kernel Addition Date": null,
+    "CN Release Date": "2026/06/01"
   },
   "characterVoices": {
-    "Japanese": "Airi Otsu",
-    "Chinese": "Zhong Ke"
+    "Japanese": "Airi Ohtsu",
+    "Chinese": "Ke Zhong",
+    "Korean": "Yeo Min-jeong",
+    "English": "Susie Riddell"
   },
   "basicInfo": {
     "Gender": "Female",
@@ -65,52 +69,52 @@
   },
   "talents": [
     {
-      "name": "Power Coating Expert",
+      "name": "Power Coating Specialist",
       "rows": [
         {
           "stage": "Base",
           "potential": null,
-          "description": "After a skill is activated for the first time after deployment, increases the ATK of the next 50 attacks to 105%."
+          "description": "On first skill activation, ATK increases to 105% for the next 50 attacks"
         },
         {
           "stage": "Base",
           "potential": "Potential 5",
-          "description": "After a skill is activated for the first time after deployment, increases the ATK of the next 50 attacks to 110% ( +5% )."
+          "description": "On first skill activation, ATK increases to 110% (+5%) for the next 50 attacks"
         },
         {
           "stage": "Elite 1",
           "potential": null,
-          "description": "After a skill is activated for the first time after deployment, increases the ATK of the next 50 attacks to 110%."
+          "description": "On first skill activation, ATK increases to 110% for the next 50 attacks"
         },
         {
           "stage": "Elite 1",
           "potential": "Potential 5",
-          "description": "After a skill is activated for the first time after deployment, increases the ATK of the next 50 attacks to 115% ( +5% )."
+          "description": "On first skill activation, ATK increases to 115% (+5%) for the next 50 attacks"
         },
         {
           "stage": "Elite 2",
           "potential": null,
-          "description": "After a skill is activated for the first time after deployment, increases the ATK of the next 50 attacks to 115%."
+          "description": "On first skill activation, ATK increases to 115% for the next 50 attacks"
         },
         {
           "stage": "Elite 2",
           "potential": "Potential 5",
-          "description": "After a skill is activated for the first time after deployment, increases the ATK of the next 50 attacks to 120% ( +5% )."
+          "description": "On first skill activation, ATK increases to 120% (+5%) for the next 50 attacks"
         }
       ]
     },
     {
-      "name": "Wirebug Maneuvers",
+      "name": "Wiredash",
       "rows": [
         {
           "stage": "Elite 1",
           "potential": null,
-          "description": "Redeployment time -15 seconds; when deployed near the previous deployment position, ATK +10% for 30 seconds, and can be deployed on melee tiles."
+          "description": "Redeployment Time -15s; when deployed on a tile adjacent to previous deployment point, +10% ATK for 30s and can be deployed on melee tiles"
         },
         {
           "stage": "Elite 2",
           "potential": null,
-          "description": "Redeployment time -15 seconds and DP cost does not increase when redeployed; when deployed near the previous deployment position, ATK +15% for 30 seconds, and can be deployed on melee tiles."
+          "description": "Redeployment Time -15s and DP cost does not increase; when deployed on a tile adjacent to previous deployment point, +15% ATK for 30s and can be deployed on melee tiles"
         }
       ]
     }
@@ -119,11 +123,11 @@
     "levels": [
       {
         "level": 2,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       },
       {
         "level": 3,
-        "benefit": "Redeployment time -4 seconds"
+        "benefit": "Redeployment Time -4 sec"
       },
       {
         "level": 4,
@@ -131,11 +135,11 @@
       },
       {
         "level": 5,
-        "benefit": "Improves Power Coating Expert"
+        "benefit": "Improves First Talent"
       },
       {
         "level": 6,
-        "benefit": "DP cost -1"
+        "benefit": "DP Cost -1"
       }
     ],
     "totalCost": [
@@ -150,8 +154,8 @@
       "tier": "Elite 1",
       "upgrades": [
         "Maximum attributes increased. DP cost +2 .",
-        "Power Coating Expert improved.",
-        "New talent: Wirebug Maneuvers .",
+        "Power Coating Specialist improved.",
+        "New talent: Wiredash .",
         "New skill: Aerial Aim .",
         "Range extended."
       ],
@@ -179,8 +183,8 @@
       "tier": "Elite 2",
       "upgrades": [
         "Maximum attributes increased. DP cost +2 .",
-        "Power Coating Expert improved.",
-        "Wirebug Maneuvers improved.",
+        "Power Coating Specialist improved.",
+        "Wiredash improved.",
         "New skill: Dragon Piercer .",
         "Operator Modules available."
       ],
@@ -216,82 +220,82 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "Immediately fires 4 arrows with 80% ATK each Can store 1 charges; releases 1 charge automatically when charges are full",
+            "description": "Looses 4 arrows for 80% ATK each\nCan store 1 charge; uses 1 charge automatically when charges are full",
             "initialSp": 4,
             "spCost": 8,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 2,
             "mastery": null,
-            "description": "Immediately fires 4 arrows with 85% ATK each Can store 1 charges; releases 1 charge automatically when charges are full",
+            "description": "Looses 4 arrows for 85% ATK each\nCan store 1 charge; uses 1 charge automatically when charges are full",
             "initialSp": 5,
             "spCost": 8,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 3,
             "mastery": null,
-            "description": "Immediately fires 4 arrows with 90% ATK each Can store 1 charges; releases 1 charge automatically when charges are full",
+            "description": "Looses 4 arrows for 90% ATK each\nCan store 1 charge; uses 1 charge automatically when charges are full",
             "initialSp": 6,
             "spCost": 7,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 4,
             "mastery": null,
-            "description": "Immediately fires 4 arrows with 100% ATK each. If additional charges remain, consumes an additional charge to use Power Volley : Immediately fires 5 arrows with 140% ATK each, with each arrow having a 20% chance to Stun the target for 2 seconds. Can store 2 charges; releases 1 charge automatically when charges are full",
+            "description": "Looses 4 arrows for 100% ATK each; if there are still charges available, consumes 1 charge to perform Power Volley: looses 5 arrows for 140% ATK each, and each arrow has a 20% chance to Stun the target for 2s\nCan store 2 charges; uses 1 charge automatically when charges are full",
             "initialSp": 7,
             "spCost": 7,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 5,
             "mastery": null,
-            "description": "Immediately fires 4 arrows with 110% ATK each. If additional charges remain, consumes an additional charge to use Power Volley : Immediately fires 5 arrows with 140% ATK each, with each arrow having a 20% chance to Stun the target for 2 seconds. Can store 2 charges; releases 1 charge automatically when charges are full",
+            "description": "Looses 4 arrows for 110% ATK each; if there are still charges available, consumes 1 charge to perform Power Volley: looses 5 arrows for 140% ATK each, and each arrow has a 20% chance to Stun the target for 2s\nCan store 2 charges; uses 1 charge automatically when charges are full",
             "initialSp": 8,
             "spCost": 6,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 6,
             "mastery": null,
-            "description": "Immediately fires 4 arrows with 115% ATK each. If additional charges remain, consumes an additional charge to use Power Volley : Immediately fires 5 arrows with 140% ATK each, with each arrow having a 20% chance to Stun the target for 2 seconds. Can store 2 charges; releases 1 charge automatically when charges are full",
+            "description": "Looses 4 arrows for 115% ATK each; if there are still charges available, consumes 1 charge to perform Power Volley: looses 5 arrows for 140% ATK each, and each arrow has a 20% chance to Stun the target for 2s\nCan store 2 charges; uses 1 charge automatically when charges are full",
             "initialSp": 9,
             "spCost": 6,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 7,
             "mastery": null,
-            "description": "Immediately fires 4 arrows with 120% ATK each. If additional charges remain, consumes an additional charge to use Power Volley : Immediately fires 5 arrows with 160% ATK each, with each arrow having a 20% chance to Stun the target for 2 seconds. Can store 3 charges; releases 1 charge automatically when charges are full",
+            "description": "Looses 4 arrows for 120% ATK each; if there are still charges available, consumes 1 charge to perform Power Volley: looses 5 arrows for 160% ATK each, and each arrow has a 20% chance to Stun the target for 2s\nCan store 3 charges; uses 1 charge automatically when charges are full",
             "initialSp": 10,
             "spCost": 5,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 1,
-            "description": "Immediately fires 4 arrows with 130% ATK each. If additional charges remain, consumes an additional charge to use Power Volley : Immediately fires 5 arrows with 180% ATK each, with each arrow having a 20% chance to Stun the target for 2 seconds. Can store 3 charges; releases 1 charge automatically when charges are full",
+            "description": "Looses 4 arrows for 130% ATK each; if there are still charges available, consumes 1 charge to perform Power Volley: looses 5 arrows for 180% ATK each, and each arrow has a 20% chance to Stun the target for 2s\nCan store 3 charges; uses 1 charge automatically when charges are full",
             "initialSp": 11,
             "spCost": 4,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 2,
-            "description": "Immediately fires 4 arrows with 145% ATK each. If additional charges remain, consumes an additional charge to use Power Volley : Immediately fires 5 arrows with 160% ATK each, with each arrow having a 20% chance to Stun the target for 2 seconds. Can store 4 charges; releases 1 charge automatically when charges are full",
+            "description": "Looses 4 arrows for 145% ATK each, if there are still charges available, consumes 1 charge to perform Power Volley: looses 5 arrows for 180% ATK each, and each arrow has a 20% chance to Stun the target for 2s\nCan store 4 charges; uses 1 charge automatically when charges are full",
             "initialSp": 12,
             "spCost": 4,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 3,
-            "description": "Immediately fires 4 arrows with 160% ATK each. If additional charges remain, consumes an additional charge to use Power Volley : Immediately fires 5 arrows with 200% ATK each, with each arrow having a 20% chance to Stun the target for 2 seconds. Can store 4 charges; releases 1 charge automatically when charges are full",
+            "description": "Looses 4 arrows for 160% ATK each, if there are still charges available, consumes 1 charge to perform Power Volley: looses 5 arrows for 200% ATK each, and each arrow has a 20% chance to Stun the target for 2s\nCan store 4 charges; uses 1 charge automatically when charges are full",
             "initialSp": 14,
             "spCost": 4,
-            "duration": "–"
+            "duration": null
           }
         ],
         "recommendation": [],
@@ -346,87 +350,87 @@
         "name": "Aerial Aim",
         "recoveryType": "Auto Recovery",
         "activationType": "Manual",
-        "duration": null,
+        "duration": "4 seconds",
         "levels": [
           {
             "level": 1,
             "mastery": null,
-            "description": "Take Off and immediately fire 3 volleys of arrows at all targets in range, with 3, 4, and 5 arrows respectively, each with their ATK increased to 120% ; then, land and deal 240% of ATK as Physical damage to enemies in a small frontal area. Can store 1 charges and is immediately used once on deployment",
+            "description": "Takes Off shooting 3 volleys at all enemies ahead, each volley loosing 3, 4, then 5 arrows for 120% ATK each; after landing, deals 240% ATK as Physical damage to all enemies in a small area ahead\nCan store 1 charge; immediately uses one charge after deployment",
             "initialSp": 8,
             "spCost": 20,
-            "duration": 4.2
+            "duration": 4
           },
           {
             "level": 2,
             "mastery": null,
-            "description": "Take Off and immediately fire 3 volleys of arrows at all targets in range, with 3, 4, and 5 arrows respectively, each with their ATK increased to 125% ; then, land and deal 245% of ATK as Physical damage to enemies in a small frontal area. Can store 1 charges and is immediately used once on deployment",
+            "description": "Takes Off shooting 3 volleys at all enemies ahead, each volley loosing 3, 4, then 5 arrows for 125% ATK each; after landing, deals 245% ATK as Physical damage to all enemies in a small area ahead\nCan store 1 charge; immediately uses one charge after deployment",
             "initialSp": 9,
             "spCost": 20,
-            "duration": 4.2
+            "duration": 4
           },
           {
             "level": 3,
             "mastery": null,
-            "description": "Take Off and immediately fire 3 volleys of arrows at all targets in range, with 3, 4, and 5 arrows respectively, each with their ATK increased to 130% ; then, land and deal 250% of ATK as Physical damage to enemies in a small frontal area. Can store 1 charges and is immediately used once on deployment",
+            "description": "Takes Off shooting 3 volleys at all enemies ahead, each volley loosing 3, 4, then 5 arrows for 130% ATK each; after landing, deals 250% ATK as Physical damage to all enemies in a small area ahead\nCan store 1 charge; immediately uses one charge after deployment",
             "initialSp": 10,
             "spCost": 20,
-            "duration": 4.2
+            "duration": 4
           },
           {
             "level": 4,
             "mastery": null,
-            "description": "Take Off and immediately fire 3 volleys of arrows at all targets in range, with 3, 4, and 5 arrows respectively, each with their ATK increased to 135% ; then, land and deal 255% of ATK as Physical damage to enemies in a small frontal area. Can store 2 charges and is immediately used once on deployment",
+            "description": "Takes Off shooting 3 volleys at all enemies ahead, each volley loosing 3, 4, then 5 arrows for 135% ATK each; after landing, deals 255% ATK as Physical damage to all enemies in a small area ahead\nCan store 2 charges; immediately uses one charge after deployment",
             "initialSp": 11,
             "spCost": 20,
-            "duration": 4.2
+            "duration": 4
           },
           {
             "level": 5,
             "mastery": null,
-            "description": "Take Off and immediately fire 3 volleys of arrows at all targets in range, with 3, 4, and 5 arrows respectively, each with their ATK increased to 140% ; then, land and deal 260% of ATK as Physical damage to enemies in a small frontal area. Can store 2 charges and is immediately used once on deployment",
+            "description": "Takes Off shooting 3 volleys at all enemies ahead, each volley loosing 3, 4, then 5 arrows for 140% ATK each; after landing, deals 260% ATK as Physical damage to all enemies in a small area ahead\nCan store 2 charges; immediately uses one charge after deployment",
             "initialSp": 12,
             "spCost": 20,
-            "duration": 4.2
+            "duration": 4
           },
           {
             "level": 6,
             "mastery": null,
-            "description": "Take Off and immediately fire 3 volleys of arrows at all targets in range, with 3, 4, and 5 arrows respectively, each with their ATK increased to 145% ; then, land and deal 265% of ATK as Physical damage to enemies in a small frontal area. Can store 2 charges and is immediately used once on deployment",
+            "description": "Takes Off shooting 3 volleys at all enemies ahead, each volley loosing 3, 4, then 5 arrows for 145% ATK each; after landing, deals 265% ATK as Physical damage to all enemies in a small area ahead\nCan store 2 charges; immediately uses one charge after deployment",
             "initialSp": 13,
             "spCost": 20,
-            "duration": 4.2
+            "duration": 4
           },
           {
             "level": 7,
             "mastery": null,
-            "description": "Take Off and immediately fire 3 volleys of arrows at all targets in range, with 3, 4, and 5 arrows respectively, each with their ATK increased to 150% ; then, land and deal 270% of ATK as Physical damage to enemies in a small frontal area. Can store 3 charges and is immediately used once on deployment",
+            "description": "Takes Off shooting 3 volleys at all enemies ahead, each volley loosing 3, 4, then 5 arrows for 150% ATK each; after landing, deals 270% ATK as Physical damage to all enemies in a small area ahead\nCan store 3 charges; immediately uses one charge after deployment",
             "initialSp": 14,
             "spCost": 20,
-            "duration": 4.2
+            "duration": 4
           },
           {
             "level": null,
             "mastery": 1,
-            "description": "Take Off and immediately fire 3 volleys of arrows at all targets in range, with 3, 4, and 5 arrows respectively, each with their ATK increased to 160% ; then, land and deal 280% of ATK as Physical damage to enemies in a small frontal area. Can store 3 charges and is immediately used once on deployment",
+            "description": "Takes Off shooting 3 volleys at all enemies ahead, each volley loosing 3, 4, then 5 arrows for 160% ATK each; after landing, deals 280% ATK as Physical damage to all enemies in a small area ahead\nCan store 3 charges; immediately uses one charge after deployment",
             "initialSp": 15,
             "spCost": 20,
-            "duration": 4.2
+            "duration": 4
           },
           {
             "level": null,
             "mastery": 2,
-            "description": "Take Off and immediately fire 3 volleys of arrows at all targets in range, with 3, 4, and 5 arrows respectively, each with their ATK increased to 170% ; then, land and deal 290% of ATK as Physical damage to enemies in a small frontal area. Can store 3 charges and is immediately used once on deployment",
+            "description": "Takes Off shooting 3 volleys at all enemies ahead, each volley loosing 3, 4, then 5 arrows for 170% ATK each; after landing, deals 290% ATK as Physical damage to all enemies in a small area ahead\nCan store 3 charges; immediately uses one charge after deployment",
             "initialSp": 16,
             "spCost": 20,
-            "duration": 4.2
+            "duration": 4
           },
           {
             "level": null,
             "mastery": 3,
-            "description": "Take Off and immediately fire 3 volleys of arrows at all targets in range, with 3, 4, and 5 arrows respectively, each with their ATK increased to 180% ; then, land and deal 300% of ATK as Physical damage to enemies in a small frontal area. Can store 3 charges and is immediately used once on deployment",
+            "description": "Takes Off shooting 3 volleys at all enemies ahead, each volley loosing 3, 4, then 5 arrows for 180% ATK each; after landing, deals 300% ATK as Physical damage to all enemies in a small area ahead\nCan store 3 charges; immediately uses one charge after deployment",
             "initialSp": 17,
             "spCost": 20,
-            "duration": 4.2
+            "duration": 4
           }
         ],
         "recommendation": [],
@@ -486,82 +490,82 @@
           {
             "level": 1,
             "mastery": null,
-            "description": "After charging for 3 seconds, fires a piercing arrow in a straight line. The arrow pushes each enemy it hits with moderate force, dealing 180% of ATK as Physical damage and 20% of ATK as Arts damage to all surrounding enemies for every set distance traveled. The arrow has infinite range. Can store 1 charges",
+            "description": "After charging for 3s, unleashes a piercing arrow that flies in a straight line forward, moderately pushing every enemy it passes through and dealing 180% ATK as Physical damage and 20% ATK as Arts damage to all surrounding enemies every time the arrow travels a set distance; arrows have unlimited range\nCan store 1 charge",
             "initialSp": 15,
             "spCost": 30,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 2,
             "mastery": null,
-            "description": "After charging for 3 seconds, fires a piercing arrow in a straight line. The arrow pushes each enemy it hits with moderate force, dealing 200% of ATK as Physical damage and 20% of ATK as Arts damage to all surrounding enemies for every set distance traveled. The arrow has infinite range. Can store 1 charges",
+            "description": "After charging for 3s, unleashes a piercing arrow that flies in a straight line forward, moderately pushing every enemy it passes through and dealing 200% ATK as Physical damage and 20% ATK as Arts damage to all surrounding enemies every time the arrow travels a set distance; arrows have unlimited range\nCan store 1 charge",
             "initialSp": 16,
             "spCost": 29,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 3,
             "mastery": null,
-            "description": "After charging for 3 seconds, fires a piercing arrow in a straight line. The arrow pushes each enemy it hits with moderate force, dealing 220% of ATK as Physical damage and 20% of ATK as Arts damage to all surrounding enemies for every set distance traveled. The arrow has infinite range. Can store 1 charges",
+            "description": "After charging for 3s, unleashes a piercing arrow that flies in a straight line forward, moderately pushing every enemy it passes through and dealing 220% ATK as Physical damage and 20% ATK as Arts damage to all surrounding enemies every time the arrow travels a set distance; arrows have unlimited range\nCan store 1 charge",
             "initialSp": 17,
             "spCost": 28,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 4,
             "mastery": null,
-            "description": "After charging for 3 seconds, fires a piercing arrow in a straight line. The arrow pushes each enemy it hits with moderate force, dealing 240% of ATK as Physical damage and 30% of ATK as Arts damage to all surrounding enemies for every set distance traveled. The arrow has infinite range. Can store 1 charges",
+            "description": "After charging for 3s, unleashes a piercing arrow that flies in a straight line forward, moderately pushing every enemy it passes through and dealing 240% ATK as Physical damage and 30% ATK as Arts damage to all surrounding enemies every time the arrow travels a set distance; arrows have unlimited range\nCan store 1 charge",
             "initialSp": 18,
             "spCost": 27,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 5,
             "mastery": null,
-            "description": "After charging for 3 seconds, fires a piercing arrow in a straight line. The arrow pushes each enemy it hits with moderate force, dealing 260% of ATK as Physical damage and 30% of ATK as Arts damage to all surrounding enemies for every set distance traveled. The arrow has infinite range. Can store 1 charges",
+            "description": "After charging for 3s, unleashes a piercing arrow that flies in a straight line forward, moderately pushing every enemy it passes through and dealing 260% ATK as Physical damage and 30% ATK as Arts damage to all surrounding enemies every time the arrow travels a set distance; arrows have unlimited range\nCan store 1 charge",
             "initialSp": 19,
             "spCost": 26,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 6,
             "mastery": null,
-            "description": "After charging for 3 seconds, fires a piercing arrow in a straight line. The arrow pushes each enemy it hits with moderate force, dealing 280% of ATK as Physical damage and 30% of ATK as Arts damage to all surrounding enemies for every set distance traveled. The arrow has infinite range. Can store 1 charges",
+            "description": "After charging for 3s, unleashes a piercing arrow that flies in a straight line forward, moderately pushing every enemy it passes through and dealing 280% ATK as Physical damage and 30% ATK as Arts damage to all surrounding enemies every time the arrow travels a set distance; arrows have unlimited range\nCan store 1 charge",
             "initialSp": 20,
             "spCost": 26,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": 7,
             "mastery": null,
-            "description": "After charging for 3 seconds, fires a piercing arrow in a straight line. The arrow pushes each enemy it hits with moderate force, dealing 300% of ATK as Physical damage and 40% of ATK as Arts damage to all surrounding enemies for every set distance traveled. The arrow has infinite range. Can store 2 charges",
+            "description": "After charging for 3s, unleashes a piercing arrow that flies in a straight line forward, moderately pushing every enemy it passes through and dealing 300% ATK as Physical damage and 40% ATK as Arts damage to all surrounding enemies every time the arrow travels a set distance; arrows have unlimited range\nCan store 2 charges",
             "initialSp": 20,
             "spCost": 25,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 1,
-            "description": "After charging for 3 seconds, fires a piercing arrow in a straight line. The arrow pushes each enemy it hits with moderate force, dealing 320% of ATK as Physical damage and 45% of ATK as Arts damage to all surrounding enemies for every set distance traveled. The arrow has infinite range. Can store 2 charges",
+            "description": "After charging for 3s, unleashes a piercing arrow that flies in a straight line forward, moderately pushing every enemy it passes through and dealing 320% ATK as Physical damage and 45% ATK as Arts damage to all surrounding enemies every time the arrow travels a set distance; arrows have unlimited range\nCan store 2 charges",
             "initialSp": 25,
             "spCost": 25,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 2,
-            "description": "After charging for 3 seconds, fires a piercing arrow in a straight line. The arrow pushes each enemy it hits with moderate force, dealing 340% of ATK as Physical damage and 50% of ATK as Arts damage to all surrounding enemies for every set distance traveled. The arrow has infinite range. Can store 2 charges",
+            "description": "After charging for 3s, unleashes a piercing arrow that flies in a straight line forward, moderately pushing every enemy it passes through and dealing 340% ATK as Physical damage and 50% ATK as Arts damage to all surrounding enemies every time the arrow travels a set distance; arrows have unlimited range\nCan store 2 charges",
             "initialSp": 28,
             "spCost": 25,
-            "duration": "–"
+            "duration": null
           },
           {
             "level": null,
             "mastery": 3,
-            "description": "After charging for 3 seconds, fires a piercing arrow in a straight line. The arrow pushes each enemy it hits with great force, dealing 360% of ATK as Physical damage and 60% of ATK as Arts damage to all surrounding enemies for every set distance traveled. The arrow has infinite range. Can store 2 charges",
+            "description": "After charging for 3s, unleashes a piercing arrow that flies in a straight line forward, greatly pushing every enemy it passes through and dealing 360% ATK as Physical damage and 60% ATK as Arts damage to all surrounding enemies every time the arrow travels a set distance; arrows have unlimited range\nCan store 2 charges",
             "initialSp": 30,
             "spCost": 25,
-            "duration": "–"
+            "duration": null
           }
         ],
         "recommendation": [],
@@ -687,7 +691,7 @@
   "baseSkills": [
     {
       "name": "Office Person of the Year",
-      "description": "When assigned to the Control Center, HR contacting speed +10% (only the strongest effect of this type applies).",
+      "description": "When this Operator is assigned to the Control Center, HR contacting speed +10% (Only the strongest effect of this type takes place)",
       "icon": null,
       "facility": "Control Center",
       "eliteLevel": "Base",
@@ -697,22 +701,31 @@
       "level": 1
     },
     {
-      "name": "A Captain's Resolve",
-      "description": "When assigned to a Trading Post, order limit +3, and order acquisition efficiency +20% for each Bubble Kingdom Hunting Squad Operator assigned to a Trading Post.",
+      "name": "Captain's Sense of Duty",
+      "description": "When this Operator is assigned to a Trading Post, order limit +3; for every Houei Hunting Squad Operator assigned to a Trading Post, order acquisition efficiency +20%",
       "icon": null,
       "facility": "Trading Post",
       "eliteLevel": "Elite 2",
       "buffId": "trade_ord_spd&limit_tag[000]",
       "slot": 1,
       "phase": 2,
-      "level": 1
+      "level": 1,
+      "keywords": [
+        {
+          "text": "Houei Hunting Squad",
+          "term": "cc.tag.mh2",
+          "name": "Houei Hunting Squad",
+          "definition": "Includes the following Operators:\nViolet Mizutsune Orchid, Zinogre S Catapult, Rhodes Island Recon"
+        }
+      ]
     }
   ],
   "modules": [
     {
       "type": "Original",
       "name": "Violet Mizutsune Orchid's Badge",
-      "stages": []
+      "stages": [],
+      "moduleId": "uniequip_001_orchd2"
     },
     {
       "type": "Upgrade",
@@ -720,7 +733,7 @@
       "stages": [
         {
           "stage": "Stage 1",
-          "attributesIncreased": "ATK +80 , DEF +10 , Rdp. -25 sec.",
+          "attributesIncreased": "ATK +80 , DEF +10 , Redeployment time -25",
           "effectLabel": "New trait",
           "effectText": "Redeployment Time reduced",
           "cost": [
@@ -740,9 +753,9 @@
         },
         {
           "stage": "Stage 2",
-          "attributesIncreased": "ATK +100 , DEF +13 , Rdp. -25 sec.",
-          "effectLabel": "Wirebug Maneuvers improved",
-          "effectText": "Redeployment time -17 seconds and DP cost does not increase when redeployed; when deployed near the previous deployment position, ATK +20% for 30 seconds, and can be deployed on melee tiles.",
+          "attributesIncreased": "ATK +100 , DEF +13 , Redeployment time -25",
+          "effectLabel": "Wiredash improved",
+          "effectText": "Redeployment Time -17s and DP cost does not increase; when deployed on a tile adjacent to previous deployment point, +20% ATK for 30s and can be deployed on melee tiles",
           "cost": [
             {
               "name": "Module Data Block",
@@ -764,9 +777,9 @@
         },
         {
           "stage": "Stage 3",
-          "attributesIncreased": "ATK +120 , DEF +16 , Rdp. -25 sec.",
-          "effectLabel": "Wirebug Maneuvers improved",
-          "effectText": "Redeployment time -18 seconds and DP cost does not increase when redeployed; when deployed in a wider range near the previous deployment position, ATK +20% for 30 seconds, and can be deployed on melee tiles. □ □ □ □ □ □ □ □ □ □ ■ □ □ □ □ □ □ □ □ □ □",
+          "attributesIncreased": "ATK +120 , DEF +16 , Redeployment time -25",
+          "effectLabel": "Wiredash improved",
+          "effectText": "Redeployment Time -18s and DP cost does not increase; when deployed on a tile within a certain distance of previous deployment point, +20% ATK for 30s and can be deployed on low ground tiles",
           "cost": [
             {
               "name": "Module Data Block",
@@ -786,11 +799,16 @@
             }
           ]
         }
-      ]
+      ],
+      "moduleId": "uniequip_002_orchd2",
+      "mission": {
+        "requirement1": "Deal a total of 100,000 damage with your own Violet Mizutsune Orchid",
+        "requirement2": "Clear Main Theme 6-1 with a 3-star rating; You must deploy your own Violet Mizutsune Orchid, and use Aerial Aim at least 2 times"
+      }
     }
   ],
   "review": {
-    "official": "行动预备组A6的队长，罗德岛人事部办公室年度人物，舰内时尚杂志《Orchid》创办人。经由本人的申请，现变更为狙击干员。在保留了战场辅助能力的同时，于进攻性方面也有了长足的进步。不仅如此，在执行各项任务期间，还会时常主动提出一些建设性意见。",
+    "official": "Captain of Reserve Op Team A6, Rhodes Island HR Office Person of the Year, and founder of the onboard fashion magazine 'Orchid'. At her own request, she has now been reclassified as a Sniper Operator. While retaining her battlefield support capabilities, she has also made significant progress in offensive ability. In addition, she frequently offers constructive suggestions of her own accord while carrying out various missions.",
     "editor": null,
     "rating": null
   },
@@ -822,6 +840,7 @@
         "elite": 0,
         "minLevel": 1,
         "maxLevel": 50,
+        "rangeId": "2-3",
         "base": {
           "hp": 762,
           "atk": 359,
@@ -841,13 +860,13 @@
           "dp": 16,
           "block": 1,
           "interval": 1.6
-        },
-        "rangeId": "2-3"
+        }
       },
       {
         "elite": 1,
         "minLevel": 1,
         "maxLevel": 80,
+        "rangeId": "3-6",
         "base": {
           "hp": 1059,
           "atk": 492,
@@ -867,13 +886,13 @@
           "dp": 18,
           "block": 1,
           "interval": 1.6
-        },
-        "rangeId": "3-6"
+        }
       },
       {
         "elite": 2,
         "minLevel": 1,
         "maxLevel": 90,
+        "rangeId": "3-6",
         "base": {
           "hp": 1358,
           "atk": 648,
@@ -893,8 +912,7 @@
           "dp": 20,
           "block": 1,
           "interval": 1.6
-        },
-        "rangeId": "3-6"
+        }
       }
     ],
     "trust": {
@@ -905,35 +923,50 @@
   },
   "files": [
     {
+      "section": "Basic Info",
+      "unlock": "Obtain the operator",
+      "description": "[Code Name] Orchid\n[Gender] Female\n[Combat Experience] 5 Years\n[Place of Birth] Columbia\n[Date of Birth] Jan 15\n[Race] Liberi\n[Height] 164cm\n[Infection Status]\nOriginium crystals distributed across surface of body, confirmed Infected by medical examination."
+    },
+    {
+      "section": "Physical Exam",
+      "unlock": "Obtain the operator",
+      "description": "[Physical Strength] Standard\n[Mobility] Normal\n[Physical Resilience] Normal\n[Tactical Acumen] Excellent\n[Combat Skill] Standard\n[Originium Arts Assimilation] Excellent"
+    },
+    {
+      "section": "Profile",
+      "unlock": "Obtain the operator",
+      "description": "Captain of Reserve Op Team A6, Rhodes Island HR Office Person of the Year, and founder of the onboard fashion magazine 'Orchid'. At her own request, she has now been reclassified as a Sniper Operator. While retaining her battlefield support capabilities, she has also made significant progress in offensive ability. In addition, she frequently offers constructive suggestions of her own accord while carrying out various missions."
+    },
+    {
       "section": "Clinical Analysis",
-      "unlock": "Unlocked at 25 trust",
-      "description": "造影检测结果显示，该干员体内脏器轮廓模糊，可见异常阴影，循环系统内源石颗粒检测异常，有矿石病感染迹象，现阶段可确认为矿石病感染者。\n\n【体细胞与源石融合率】8%\n干员梓兰的体表结晶相较几年前有明显增加。\n\n【血液源石结晶密度】0.25u/L\n干员梓兰暂无急性病变征兆，其他各项身体指标以当前阶段而言属于正常水平。"
+      "unlock": "FAVOR 25",
+      "description": "Imaging tests show the indistinct outlines of internal organs, obscured by abnormal shadows. Originium granules detected in the circulatory system. The subject is confirmed to be infected with Oripathy.\n\n[Cell-Originium Assimilation] 8%\nOperator Orchid's surface crystals have increased significantly compared with several years ago.\n\n[Blood Originium-Crystal Density] 0.25u/L\nOperator Orchid currently shows no signs of acute lesions, and her other physical indicators are within normal ranges for her current stage."
     },
     {
       "section": "Archive File 1",
-      "unlock": "Unlocked at 50 trust",
-      "description": "《Orchid》这本杂志，如今在罗德岛上可以说是无人不知。由梓兰小姐操刀，以自己的干员代号为名的这本时尚杂志，内容之详实，视角之专业，无不令人惊叹。今天，小编有幸得以采访杂志的创办人梓兰小姐。\n小编：请问梓兰小姐，创办这本杂志的契机是什么呢？\n梓兰：加入罗德岛以后，我一直在做的一件事，就是帮助感染者通过时尚与潮流的方式掩盖身体上的结晶。为了这个来找我的干员和病人......真的很多，只能说，大家也都是人，都有追求时尚的权利，我觉得挺好的。不过，来的人实在有点太多了，我就在想，与其让他们一个一个来，不如我统一教大家一些方法。\n小编：所以您就创办了这份杂志？\n梓兰：不。老实说，人事部的工作都忙得要死，虽然我脑子里曾有过这个念头，但根本没想过真的把它做出来。\n小编：欸？那——\n梓兰：是有阵子空爆和斑点嫌我太烦了，想给我找点事做，就背着我去申请了杂志的制作，还有模有样地搞了本样刊，在我生日的时候送给我。我当时还真的被感动到了，现在想想真是蠢得要死。只不过做都做了，我觉得机会难得，就接手一直做下来了。\n小编：那人员表上写着的这些——\n平面设计：斑点\n编辑校对：月见夜\n模特：斑点、月见夜、泡普卡、空爆......\n特约撰稿人：空爆\n难道是——\n梓兰：呵，他们打定主意觉得我会接手，难道以为自己跑得掉？\n小编：原、原来如此。不过，干员们基于自己的兴趣创办的杂志、成立的培训班、开设的兴趣角在舰内数量繁多，但它们的内容产出和活动频率的稳定性，大多都会受到干员本人任务的繁忙程度和驻舰时长的影响。《Orchid》作为一本月刊杂志，自创刊以来，却没有一个月停刊过。也就是说，虽然开端可能不太美好，但是过程和结果是好的，对吧？\n梓兰：对吗，斑点？\n斑点：杀了我吧，别再让我画平面了，我只想看漫画。\n梓兰：月见夜呢？\n月见夜：饶了我吧，梓兰小姐，我已经看“服装”两个字看得要完全崩坏了。\n梓兰：空爆？\n空爆：我上学的时候都没写过这么多字！\n梓兰：泡普卡呢？\n泡普卡：我喜欢给梓兰姐姐当模特！\n梓兰：斑点锻炼了自己的绘画技巧，月见夜少了骚扰别人的工夫，空爆有时间学习了，泡普卡也有新衣服穿，而我也能做一些一直感兴趣的事情。确实挺好的，不是吗？\n小编：......啊哈哈，让我们来聊聊有关取材方面的事情吧！"
+      "unlock": "FAVOR 50",
+      "description": "The magazine 'Orchid' is now practically known to everyone aboard Rhodes Island. Personally overseen by Ms. Orchid and named after her own operator codename, this fashion magazine is astonishing for both the richness of its content and the professionalism of its perspective. Today, we have the honor of interviewing the magazine's founder, Ms. Orchid.\nInterviewer: Ms. Orchid, may I ask what led you to found this magazine?\nOrchid: Ever since joining Rhodes Island, one of the things I've always done is help the Infected conceal the crystals on their bodies through fashion and trends. The operators and patients who came to me for that... There were honestly a lot of them. All I can say is, we're all people, and everyone has the right to pursue fashion. I think that's a wonderful thing. But there really were a few too many people coming to me, so I started thinking that instead of having them come one by one, I might as well teach everyone some methods all at once.\nInterviewer: So you founded this magazine?\nOrchid: No. To be honest, work in HR is already busy enough to kill me. Although the thought had crossed my mind, I never seriously considered actually making it happen.\nInterviewer: Huh? Then—\nOrchid: There was a time when Catapult and Spot thought I was too much of a nag, so they wanted to find something for me to do. They went behind my back and applied to produce the magazine, even putting together a decent-looking sample issue and giving it to me on my birthday. I was actually really moved at the time, which feels so stupid now that I think about it. But since they had already made it, I felt it was a rare opportunity, so I took over and kept it going.\nInterviewer: Then the names listed on the staff list—\nGraphic Design: Spot\nEditing and Proofreading: Midnight\nModels: Spot, Midnight, Popukar, Catapult...\nContributing Writer: Catapult\nCould it be—\nOrchid: Hah. They made up their minds that I would take over. Did they really think they could get away with it?\nInterviewer: I-I see. However, there are a great many magazines, training classes, and hobby groups founded aboard the ship by operators based on their personal interests, but most of them are affected in terms of content production and activity frequency by how busy the operators are with missions and how long they remain aboard the ship. Yet 'Orchid,' as a monthly magazine, has not skipped a single issue since its founding. In other words, while the beginning may not have been ideal, the process and the results have been good, right?\nOrchid: What do you think, Spot?\nSpot: Kill me. Please don't make me draw layouts anymore. I just want to read comics.\nOrchid: Midnight?\nMidnight: Have mercy on me, Ms. Orchid. I've seen the word 'clothing' so much I'm about to completely fall apart.\nOrchid: Catapult?\nCatapult: I never wrote this much even when I was in school!\nOrchid: What about you, Popukar?\nPopukar: I like being Orchid's model!\nOrchid: Spot has trained his drawing skills, Midnight has less free time to harass others, Catapult has time to study, Popukar has new clothes to wear, and I get to do something I've always been interested in. It really is quite nice, isn't it?\nInterviewer: ...Ahaha, let's talk about how you gather material!"
     },
     {
       "section": "Archive File 2",
-      "unlock": "Unlocked at 100 trust",
-      "description": "梓兰在完成了有关她的奇异之旅的报告之后，秘密递交了一份申请，希望了解凯尔希医生当初为什么会将泡普卡带回罗德岛。\n在了解了泡影国事件的全貌后，博士和阿米娅也认为这是有必要的。在过去，大家只知道，泡普卡的眼睛很特殊，然而，有一只特殊的眼睛在罗德岛上并不罕见。只是梓兰的经历似乎证明，泡普卡的眼睛，以及她的身世远没有那么简单。\n这并不是因为梓兰不信任罗德岛和凯尔希医生，恰恰相反，毕竟，若说凯尔希医生不了解泡普卡的身世，那是绝无可能的。那么，她为什么要对此进行隐瞒，在梓兰的心中就成了一个挥之不去的疑惑。\n在为此召开的会议上，凯尔希医生首先向梓兰表达了歉意，因为梓兰和空爆的遭遇超乎了她的想象，这导致她也无法明确向梓兰说明泡普卡和宝巫迦之间的联系，她需要时间来厘清具体的情况。\n不过，在梓兰真正担心的问题上，凯尔希医生给出了明确的答复。从一开始，凯尔希医生将泡普卡安排在A6小队，就没有除希望梓兰照顾她以外的任何意图，而如今，也不可能存在其他让泡普卡更加安心的环境。为了泡普卡精神的安定，凯尔希医生也希望A6小队能够更紧密地联系在一起。\n“泡普卡只是个在罗德岛茁壮成长的好孩子，这一点无论何时都不会发生改变。”\n梓兰接受了这个答复。\n归根结底，她并不在乎泡普卡身上埋藏的秘密究竟是什么，这也许很重要，但对她来说又没有那么重要。就像她对她自己和周围的每一个人的期望那样，她只希望泡普卡能够快乐地活下去。\n会议结束后，她心中已经有了主意——她已经对A6的其他人说过一遍在泡影国的经历了，但她打算再说一遍。这一次，她一定要重点说一说太过跳脱的铁匠、太过正经的将军和那个太过坚强的公主。"
+      "unlock": "FAVOR 100",
+      "description": "After completing the report on her strange journey, Orchid secretly submitted an application, hoping to learn why Dr. Kal'tsit brought Popukar back to Rhodes Island in the first place.\nAfter learning the full picture of the Houei incident, the Doctor and Amiya also believed this was necessary. In the past, everyone only knew that Popukar's eye was special. However, having a special eye is not all that uncommon on Rhodes Island. It is just that Orchid's experiences seem to prove that Popukar's eye, as well as her background, are far from that simple.\nThis was not because Orchid did not trust Rhodes Island or Dr. Kal'tsit. Quite the opposite, in fact. After all, it would be absolutely impossible for Dr. Kal'tsit not to know about Popukar's background. Then why had she hidden it? This became a question that lingered in Orchid's mind.\nAt the meeting held for this purpose, Dr. Kal'tsit first apologized to Orchid, as what Orchid and Catapult had experienced had exceeded her expectations. As a result, she could not yet clearly explain the connection between Popukar and Hofukaru to Orchid, and needed time to clarify the specifics.\nHowever, when it came to what Orchid was truly worried about, Dr. Kal'tsit gave a clear answer. From the very beginning, Dr. Kal'tsit had no intention in assigning Popukar to Team A6 beyond hoping Orchid would take care of her, and now, there could not possibly be any other environment where Popukar would feel more at ease. For the sake of Popukar's mental stability, Dr. Kal'tsit also hopes Team A6 can become more closely connected.\n'Popukar is simply a good child growing up strong and healthy at Rhodes Island, and that will never change.'\nOrchid accepted this answer.\nWhen all is said and done, she does not care what secret is buried within Popukar. Perhaps it is important, but to her, it is not that important. Just like what she hopes for herself and everyone around her, she only wants Popukar to live happily.\nAfter the meeting ended, she had already made up her mind—she had already told the others in A6 once about her experiences in Houei, but she intended to tell them again. This time, she would be sure to focus on the far too flighty blacksmith, the far too serious general, and the far too strong princess."
     },
     {
       "section": "Archive File 3",
-      "unlock": "Unlocked at 150 trust",
-      "description": "梓兰和家人的关系很好。\n在这一点上，她也可以说是A6中的异类。毕竟泡普卡是被凯尔希医生捡回来的，月见夜和斑点一样，几乎和家人断绝了联系，至于空爆，作为一个孤儿，她甚至不知道自己的父母叫什么。\nA6的其他成员并不避讳谈及有关梓兰家人的话题。他们都知道，梓兰的父母颇为关心女儿的身体状况，并没有因为女儿染病就疏远她，而梓兰也会定期写信和父母联络，报告近况。对此，A6的成员们都认为这是一件好事。\n梓兰承认自己在这方面足够幸运。父母从未限制过她对工作和未来的选择，在她不慎感染矿石病后，也对于她前往罗德岛的选择给予了支持，并总是告诉她——她随时可以回家，他们愿意为了她放弃许多东西。\n父母总是在关心她，总是在问，她是否有回来的打算——这是理所当然的事情，在很多人眼中，无论罗德岛是一家多么有名的制药企业，只要和感染者有关，未来总是飘摇不定的。在梓兰的家人看来，在罗德岛上生活，终究是个不那么好的选择——\n“......我和你母亲商量好了，我们可以卖掉家里的房子，搬去一个偏远一点的地方一起生活，我和你母亲可以照顾你，你不用担心任何事......我们相信罗德岛是一家不错的公司，但是，有什么比家人团聚更幸福的事呢？”\n父亲曾在一封信中这样说道，而彼时的她，发现自己没有办法给出答复。\n她该怎么回答呢？告诉父母，她其实在这里工作还算顺利，也交了一帮虽然性格古怪但人还不错的朋友？\n那又如何呢？这似乎和回家并不冲突。没有工作能做一辈子，也没有朋友会待在一起一辈子，而家人却不一样，家人由血脉一直联系在一起。何况，她的家人是如此爱她，她也爱她的父母。\n她没有多么远大的志向。她觉得罗德岛的理想很伟大，也愿意在力所能及的范围内为感染者出力，不如说，等她回过神时，她已经在这项事业中投入了数年的时光。她也了解过精英干员们的想法，可她觉得，她做不到他们那样。\n似乎像现在这样就可以了。等她的病情再恶化一些，没法工作了，或者一些别的什么原因，她就该离开这里，回到父母身边，然后平静地等待死亡的降临。\n对一个感染者来说，这已经是足够幸福的一生。\n她有过这样的想象，但是，她却始终无法提笔回复自己的父母。有些东西阻碍着她，而她说不清那是什么，所以她总是含糊其词，避而不谈。\n而这不是第一次了。"
+      "unlock": "FAVOR 150",
+      "description": "Orchid has a very good relationship with her family.\nIn that regard, she could be considered something of an outlier in A6. After all, Popukar was taken in by Dr. Kal'tsit, Midnight has almost cut off contact with his family, much like Spot, and as for Catapult, being an orphan, she does not even know her parents' names.\nThe other members of A6 do not avoid discussing matters related to Orchid's family. They all know that Orchid's parents care greatly about their daughter's health, and did not distance themselves from her after she contracted Oripathy. Orchid, in turn, writes to her parents regularly to keep them informed of how she is doing. The members of A6 all consider this a good thing.\nOrchid admits she has been fortunate in this regard. Her parents have never restricted her choices regarding her work or her future, and after she accidentally contracted Oripathy, they supported her decision to go to Rhodes Island. They have always told her that she can come home whenever she wants, and that they are willing to give up many things for her.\nHer parents are always concerned for her, always asking if she intends to come back. This is only natural. In the eyes of many, no matter how famous a pharmaceutical company Rhodes Island may be, as long as the Infected are involved, the future will always remain uncertain. To Orchid's family, living aboard Rhodes Island is ultimately not the best choice—\n'...Your mother and I have talked it over. We can sell our house and move somewhere more remote to live together. Your mother and I can take care of you, and you won't have to worry about anything... We believe Rhodes Island is a good company, but what could be happier than having family together again?'\nHer father once wrote this in a letter, and at that time, she found herself unable to give a reply.\nHow was she supposed to answer? Tell her parents that her work here was going fairly smoothly, and that she had made a group of friends who, while strange in personality, were decent people?\nSo what? That did not seem to conflict with going home. No job could last a lifetime, and no friends would stay together forever, but family was different. Family was connected by blood. Besides, her family loved her so much, and she loved her parents too.\nShe had no grand ambitions. She thought Rhodes Island's ideals were great, and she was willing to do what she could for the Infected. Or rather, by the time she realized it, she had already devoted years of her life to this cause. She had also come to understand how the Elite Operators thought, but she felt she could not be like them.\nPerhaps things could simply remain as they were. Once her condition worsened a little more and she could no longer work, or for some other reason, she would leave this place, return to her parents, and quietly wait for death to come.\nFor someone Infected, this was already a happy enough life.\nShe had imagined this before, but she still could not bring herself to put pen to paper and reply to her parents. Something was holding her back, and she could not say what it was, so she always gave vague answers and avoided the subject.\nAnd this was not the first time."
     },
     {
       "section": "Archive File 4",
-      "unlock": "Unlocked at 200 trust",
-      "description": "在尚未感染矿石病，还担任杂志编辑的日子里，父母也会问她，这是否是她理想的工作？她也没有给出答案。\n她喜欢时尚，也喜欢做裁缝，但是，是否要将这份职业作为自己一生的追求？她觉得自己无法下定论。她没法完全不去思考自己面临的选择，所以她总是会想很多。这让她在他人看来似乎总是对未来做好了准备，但只有她自己知道，她只是足够幸运，在一些事上拥有选择的权力。\n一个决定一生的选择实在是太难做出了，毕竟人的一生太长了——她过去总是这么想，但她也做不到以此来要求父母不讨论这个问题。后来，父母甚至已经不再在家书中提及这类讨论，因为他们知道这会让她纠结。归根结底，她知道，这是一个她自己也想得出答案的终极问题——\n我的一生究竟想要做什么？\n而她还没有得出答案，就感染了矿石病。来到罗德岛治病，成为干员，担任A6的队长，一眨眼，时间就过了几年。\n关于这个终极问题的答案，她依然毫无眉目。不仅如此，矿石病带来的疼痛时刻都在提醒着她，她的生命已经没有过去想象的那么长了。\n简直是完蛋了。从萨尔贡回来后，面对又一封家书，她这么想到。\n更加绝望的是，她发现，现在自己在想到“人的一生太长了”的时候，已经会用斑点的语气在后面补一句——“好吧，至少现在得了矿石病了，也没有那么长了。”\n别说长进了，感觉已经被这帮人给同化了......在泡普卡惊讶的目光中，她有些颓然地趴到了桌子上。\n仔细想想，这几年来，她好像确实没有一点长进。\n她想起潘妮和杰里，还有那件时至今日依然会出现在她梦中的婚纱。她千万次回想起那个夜晚，却依然想不出更好的做法。\n她想起在狩猎雷狼龙时，空爆最后说的话。是的，她总是告诫身边的人，生活应该有一个答案，但事实上她自己在这件事上也没有答案。\n她总是这样，口不对心，要求他人的总是自己也未必做得到的事。\n她有时候还挺讨厌这样的自己的。\n就连在泡影国辛辛苦苦走了一趟，最后称得上收获的，除了这一身装备和一些回忆，竟然只有变得对自己诚实了一点这一件事。\n但是，当她把注意力转回到如何回复父母的信件上时，她有些惊讶地发现，这一次，除了一些惯例的近况报告以及嘘寒问暖，她有了些其他想写的东西。\n“......我向你们介绍过很多次我的队友们，但是，大家一直没有什么机会见面聊聊。我最近在想，或许下次去哥伦比亚出外勤的时候，我可以带他们见见你们。”\n她几乎是理所当然地写下了这一段话。\n这当然不是一个答案。\n只是，有的时候，对自己诚实一点，就意味着放下一些执念。或许有的工作是能做一辈子的，或许有些朋友是能相处一辈子的，或许这些事情并不是冲突的。\n她决定尝试一下。"
+      "unlock": "FAVOR 200",
+      "description": "Back when she had yet to contract Oripathy and was still working as a magazine editor, her parents would ask her if that was her ideal job. She never gave them an answer.\nShe liked fashion, and she liked tailoring, but whether she should make that profession her life's pursuit? She felt she could not say for certain. She could not simply stop thinking about the choices before her, and so she always thought far too much. To others, this made her seem like she was always prepared for the future, but only she knew she had simply been fortunate enough to have the right to choose in certain matters.\nA choice that would decide one's entire life was far too difficult to make. After all, a person's life was simply too long—that was what she used to think, but she could not bring herself to tell her parents not to discuss the matter for that reason. Later, her parents even stopped bringing up such discussions in their letters, because they knew it would leave her conflicted. In the end, she knew that this was an ultimate question she herself wanted to answer—\nWhat exactly do I want to do with my life?\nAnd before she could find an answer, she contracted Oripathy. She came to Rhodes Island for treatment, became an Operator, took on the role of A6's captain, and in the blink of an eye, several years had passed.\nAs for the answer to that ultimate question, she still had no clue whatsoever. Not only that, but the pain brought by Oripathy reminded her at every moment that her life was no longer as long as she had once imagined.\nThis is just hopeless. After returning from Sargon, she thought this as she faced yet another letter from home.\nEven more despairing was the fact that she realized that now, whenever she thought, 'a person's life is too long,' she would already add on in Spot's tone—'Well, at least now that I've got Oripathy, it isn't quite so long anymore.'\nForget making any progress. She feels like she has already been assimilated by these people... Under Popukar's surprised gaze, she slumped down onto the desk in defeat.\nThinking about it carefully, it really did seem like she had not made the slightest progress over these past few years.\nShe thought of Penny and Jerry, and of the wedding dress that still appeared in her dreams to this day. She had replayed that night in her mind countless times, and still could not think of a better way she could have handled it.\nShe thought of what Catapult had said at the end of the Zinogre hunt. Yes, she was always telling the people around her that life ought to have an answer, but the truth was, she herself had no answer when it came to that.\nShe was always like this, saying one thing while thinking another, always demanding things of others that she herself might not even be able to do.\nSometimes, she really did hate that about herself.\nEven after all the effort it took to make that trip through Houei, in the end, apart from this set of equipment and a few memories, the only thing that could be called a gain was that she had become a little more honest with herself.\nBut when she turned her attention back to how she should reply to her parents' letter, she was somewhat surprised to find that, this time, in addition to the usual updates on how she had been and asking after their health, there was something else she wanted to write.\n'...I've introduced my teammates to you many times, but you have never really had the chance to meet and talk with them. Lately, I've been thinking that perhaps the next time I go to Columbia on a field assignment, I could bring them to meet you.'\nShe wrote those words almost as if it were only natural.\nOf course, that was not an answer.\nIt was just that, sometimes, being a little more honest with yourself meant letting go of certain fixations. Perhaps there were some jobs one could do for a lifetime, perhaps there were some friends one could spend a lifetime with, and perhaps these things did not conflict with one another.\nShe decided to give it a try."
     },
     {
       "section": "Promotion Record",
-      "unlock": "Unlocked at E2",
-      "description": "梓兰出现在训练场的次数比过去多了不少。\n这并没有像空爆的转变那样引人注目，毕竟梓兰一直都是兢兢业业完成训练的类型，如今，在其他人眼中，她也只是变得比以往积极了一些而已。\n不过，作为教官的杜宾还是发现了一些细微的变化。\n在以前，梓兰完成训练，只是为了达成作为一个干员的指标，她没有在此之上的对自身战斗能力的提升需求。而从萨尔贡回来，换了一身装备，甚至更换了战术定位之后，梓兰确实在这方面有了一些改变。\n但杜宾同样知道，这并不能简单地概括为，梓兰也有了变强的心思，或者说，梓兰也对战斗有了一些想法。这一点，只要站在梓兰身边，看她训练时的状态就知道了。\n她更像是在战斗中寻找一些什么。\n在某次训练前，杜宾和梓兰聊起了这个话题。\n“......站定、搭弦、瞄准、拉弓、射箭。射箭的步骤就和设计服装一样简单好懂。”面对杜宾这个打了多年交道的教官兼朋友，梓兰认真地想了想这个问题。\n“所以你觉得它和你的爱好有一些共性？”\n“不。”梓兰摇了摇头，“设计服装需要去想很多事情，它需要创造力。而射箭......对我来说，重要的可能是射箭时我可以只用瞄准目标，不用去想任何其他事情。”\n梓兰顿了顿，似乎花费了一些力气，才终于说出了下一句话：“我可以掌控它，对，应该说，它是一件我可以完全掌控的事。”\n“掌控？”杜宾有些意外，这个词会从梓兰的口中说出。\n“对。我以前听说过，通过叠衣服、打扫卫生这些小事，人能够从中一点一点积累自己对生活的掌控感，最后获得面对生活的自信。我以前是不相信这些的，但是......”梓兰一边说着，一边拿起手中的弓，站定、搭弦、瞄准、拉弓、射箭，箭矢正中靶心，“在射箭的过程中，我确实感觉好像能够掌控自己一点了。”\n“我意外的是，你也需要用这种方式来掌控自己。”\n“老实说，我自己都很意外。”梓兰有些无奈地笑了笑，“但是，该怎么说呢，我本来就不是对什么事情都很有自信的人，也不知道这种感觉是不是真的有用。只不过，我现在一感到心烦，就会想来练习弓箭。”\n说着，梓兰拿起弓箭，走向训练场。看着这样的梓兰，杜宾既为她找到了新的兴趣感到高兴，又为她在某方面的没有自觉而感到诧异。\n“她有没有意识到，只要站定、搭弦、瞄准、拉弓、射箭，就能命中目标，这其实并不是每个人都能做到的事？”"
+      "unlock": "AWAKE 2;1",
+      "description": "Orchid has been showing up at the training grounds far more often than she used to.\nThis has not drawn as much attention as Catapult's change, as Orchid has always been the type to diligently complete her training. In others' eyes, she has simply become a little more proactive than before.\nHowever, Dobermann, as her instructor, has still noticed some subtle changes.\nIn the past, Orchid only completed training to meet the requirements expected of an Operator. Beyond that, she felt no need to improve her own combat abilities. But after returning from Sargon, changing her equipment, and even altering her tactical position, Orchid has indeed undergone some changes in this regard.\nYet Dobermann also knows that this cannot be so simply summarized as Orchid wanting to get stronger, or Orchid developing her own ideas about combat. Anyone who stands beside Orchid and watches the state she is in while training would understand that much.\nIt is more like she is searching for something in combat.\nBefore one training session, Dobermann spoke with Orchid about this.\n'...Stance, nock, aim, draw, release. The steps to archery are as simple and easy to understand as designing clothes.' Faced with Dobermann, an instructor and friend she had known for years, Orchid thought the question over carefully.\n'So you think it has something in common with your hobby?'\n'No.' Orchid shook her head. 'Designing clothes requires thinking about many things. It requires creativity. But archery... For me, the important part may be that when I shoot, all I have to do is aim at the target. I do not have to think about anything else.'\nOrchid paused, seeming to spend some effort before finally saying what came next. 'I can control it. Yes, I suppose I should say that it is something I can fully control.'\n'Control?' Dobermann was somewhat surprised to hear that word from Orchid.\n'Yes. I once heard that by doing small things like folding clothes or cleaning, people can gradually build up a sense of control over their lives, and ultimately gain the confidence to face life. I never used to believe that, but...' As Orchid spoke, she lifted the bow in her hand. Stance, nock, aim, draw, release. The arrow struck the center of the target. 'When I am practicing archery, I do feel as if I can control myself a little better.'\n'What surprises me is that even you need to use this method to control yourself.'\n'To be honest, even I am surprised.' Orchid smiled with a touch of resignation. 'But how should I put it? I was never the kind of person who felt confident about everything, and I do not know if this feeling is truly useful. It is just that now, whenever I feel upset, I want to come practice archery.'\nWith that, Orchid picked up her bow and arrows and walked toward the training grounds. Watching Orchid like this, Dobermann was both happy that she had found a new interest, and surprised by her lack of self-awareness in one certain respect.\n'Does she realize that simply taking her stance, nocking, aiming, drawing, and releasing, and then hitting the target, is not something just anyone can do?'"
     }
   ],
-  "sourceRegion": "CN"
+  "sourceRegion": "Global"
 }
