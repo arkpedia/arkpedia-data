@@ -93,3 +93,20 @@ test('CN sheets use the same bounded staging and publication gate without Englis
     assert.equal(Object.keys(art).filter(key=>key.startsWith(source+'::')).length,0);
   });
 });
+
+
+test('the bounded queue compares CN seconds with Global milliseconds chronologically', async () => {
+  const { cnPackGroups } = await import('../build/cn-packs.mjs');
+  const cn = JSON.parse(fs.readFileSync(new URL('./fixtures/official-news/cn-9686.json', import.meta.url)));
+  const groups = cnPackGroups([{name:'CN event',cn:{timingSource:cn.url,startAt:'2026-07-10T12:00:00+08:00'}}],[cn],null);
+  for (const newerGlobal of [false, true]) await temporary(async root => {
+    fs.mkdirSync(path.join(root,'data/official-news/cn'),{recursive:true});
+    fs.writeFileSync(path.join(root,'data/official-news/cn/9686.json'),JSON.stringify(cn));
+    fs.writeFileSync(path.join(root,'data/official-news/global/123.json'),JSON.stringify({...post,publishTime:cn.displayTime*1000+(newerGlobal?1000:-1000)}));
+    fs.writeFileSync(path.join(root,'data/event-rewards.json'),JSON.stringify({events:{...rewards.events,'CN event':{groups:groups['CN event']}}}));
+    const fetched=[];
+    await importPackArt({...options(root),limit:1,fetchImage:async target=>{fetched.push(target);return png;}});
+    assert.equal(fetched.length,1);
+    assert.equal(new URL(fetched[0]).hostname,newerGlobal?'webusstatic.yo-star.com':'web.hycdn.cn');
+  });
+});
