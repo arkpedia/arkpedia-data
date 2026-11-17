@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "about": "Sponsor campaigns the site may show in its Sponsored slots (arkpedia-app lib/sponsors/campaigns.ts). A campaign is shown only while its status is \"active\", it has an https url, and the reader's clock is inside startAt..endAt (ISO instants with a timezone; endAt is exclusive; null leaves that side open). \"draft\" campaigns appear only in local development and preview builds. placements: \"home\" (a panel directly under Events on the home page), \"header\" (shrunk into the free space beside a page's title, on every page with one; desktop widths only), \"support\" (the Sponsor section of /support); the first usable campaign listed for a placement wins. image is a root-relative path in arkpedia-image-assets with its pixel width and height. To end a campaign early set its status to \"ended\"; no deploy is needed.",
+  "campaigns": [
+    {
+      "id": "lootbar-thunder-in-the-azure-dream",
+      "sponsor": "LootBar",
+      "status": "draft",
+      "url": null,
+      "startAt": null,
+      "endAt": null,
+      "placements": ["home", "header"],
+      "image": "/advertisements/lootbar/thunder-in-the-azure-dream.webp",
+      "width": 1920,
+      "height": 640,
+      "alt": "LootBar: Thunder in the Azure Dream, up to 11% off top-ups"
+    },
+    {
+      "id": "lootbar-top-up",
+      "sponsor": "LootBar",
+      "status": "draft",
+      "url": null,
+      "startAt": null,
+      "endAt": null,
+      "placements": ["support"],
+      "image": "/advertisements/lootbar/lootbar-banner.webp",
+      "width": 900,
+      "height": 200,
+      "alt": "LootBar.com, trusted top up platform"
+    }
+  ]
+}
