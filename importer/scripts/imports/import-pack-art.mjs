@@ -10,7 +10,7 @@ import { pathToFileURL } from 'node:url';
 import { beginStaging } from '../lib/staged-art.mjs';
 import { beginStage } from '../lib/quarantine.mjs';
 import { assetFileNames } from '../lib/public-assets.mjs';
-import { packPromoCandidates, printedPacks, titleText } from '../lib/pack-promo.mjs';
+import { packPromoCandidates, cnPackPromoCandidates, printedPacks, titleText } from '../lib/pack-promo.mjs';
 import { packArtKey } from '../../lib/events/packArt.mjs';
 
 const require = createRequire(import.meta.url);
@@ -55,7 +55,9 @@ export async function importPackArt({ root = process.cwd(), fetchImage = downloa
   if (cache.version !== 1 || !cache.images || Array.isArray(cache.images)) throw Error('Invalid pack-art state');
   const published = new Set(assetFileNames('content-art', root));
   const staging = beginStaging('pack-art', root), report = beginStage(root, 'pack-art');
-  const candidates = packPromoCandidates(rewards, id => read(path.join(data, 'official-news/global', `${id}.json`), null));
+  const candidates = [...packPromoCandidates(rewards, id => read(path.join(data, 'official-news/global', `${id}.json`), null)),
+    ...cnPackPromoCandidates(rewards, id => read(path.join(data, 'official-news/cn', `${id}.json`), null))]
+    .sort((a, b) => b.published - a.published || a.line - b.line);
   const chosen = new Set();
   let reader, fetched = 0;
   try {
@@ -80,8 +82,11 @@ export async function importPackArt({ root = process.cwd(), fetchImage = downloa
             cache.images[candidate.url] = { file, text: '', ignored: true, sha256: digest(bytes) };
             continue;
           }
-          reader ??= await createReader();
-          const text = titleText(String(await reader.read(bytes)).slice(0, 20000));
+          let text = '';
+          if (!candidate.directNames.length) {
+            reader ??= await createReader();
+            text = titleText(String(await reader.read(bytes)).slice(0, 20000));
+          }
           previous = cache.images[candidate.url] = { file, text, width, height, sha256: digest(bytes) };
           if (matchedNames(text).length) staging.stage(`content-art/${file}`, bytes, { source: candidate.url });
         }

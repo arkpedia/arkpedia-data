@@ -1,3 +1,4 @@
+import { cnPackSections } from '../build/cn-packs.mjs';
 import { newsSections } from '../build/official-news.mjs';
 
 export const titleText = value => String(value).normalize('NFKC').toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -82,4 +83,34 @@ export function packPromoCandidates(rewards, readPost) {
     }
   }
   return [...candidates.values()].sort((a, b) => b.published - a.published || a.line - b.line || a.url.localeCompare(b.url));
+}
+
+/** CN pack sheets precede the numbered sale section or an explicit [pack] heading.
+ * A sheet owns the following pack headings up to the next image; images in prose or outside
+ * that sale section cannot label an offer. Keep the source URL in every eventual art key. */
+export function cnPackPromoCandidates(rewards, readPost) {
+  const sources = new Map();
+  for (const entry of Object.values(rewards.events ?? {})) for (const group of entry.groups ?? []) {
+    if (group.kind !== 'packs' || group.region !== 'CN' || !group.packs?.length || !/^https:\/\/ak\.hypergryph\.com\/news\/\d+$/.test(group.source)) continue;
+    const names = sources.get(group.source) ?? new Set();
+    group.packs.forEach(pack => names.add(pack.name)); sources.set(group.source, names);
+  }
+  const candidates = [];
+  for (const [source, offered] of sources) {
+    const post = readPost(source.split('/').at(-1));
+    if (!post || !Array.isArray(post.lines) || !Array.isArray(post.art)) continue;
+    for (const section of cnPackSections(post)) {
+      const images = post.art.filter(art => art.line >= section.at && art.line < section.endAt).sort((a, b) => a.line - b.line);
+      for (const [index, art] of images.entries()) {
+        if (images.filter(other => other.line === art.line).length !== 1) continue;
+        if (art.line !== section.at && !section.packs.some(pack => pack.at === art.line)) continue;
+        let url;
+        try { url = new URL(art.url); } catch { continue; }
+        if (url.protocol !== 'https:' || url.hostname !== 'web.hycdn.cn' || url.username || url.password) continue;
+        const names = section.packs.filter(pack => pack.at >= art.line && pack.at < (images[index + 1]?.line ?? section.endAt) && offered.has(pack.name)).map(pack => pack.name);
+        if (names.length) candidates.push({ source, url: url.href, names, directNames: names, published: Number(post.displayTime) || 0, line: art.line });
+      }
+    }
+  }
+  return candidates;
 }

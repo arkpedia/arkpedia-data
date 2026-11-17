@@ -274,3 +274,23 @@ The website still needs a playable released recording and the visitor's media/au
 The hourly official-news check can start an import when Global announces an event, before the client patch. After `regional-schedules` confirms the event and banner windows, `global-announcement-art` uses that same cached official post to select their section images. It runs the image repository’s tested `--official-only` updater, validates the image inventory, publishes with the existing repository-scoped key, and adopts the exact new image revision before content preparation. This replaces existing CN art at stable paths without a manual application deploy.
 
 Only unambiguous sections from the confirming Global post and Yostar’s image host are accepted. Bad images preserve the previous files. Missing announcement art can still be supplied by the image repository’s daily English-upload fallback. Source hashes make repeated runs idempotent. Publication races retry from the new repository head; failed adoption is reported as a failed import stage and retried on the next import.
+
+### CN event packs
+
+`event-rewards` reads paid offer sections from cached official CN announcements as well
+as Global posts. It joins a post to its primary event by its CN source/window, or by
+the CN activity's name and window. Side modes in the same festival announcement do
+not inherit the main event's packs. Contents use shared item IDs for known English
+names; otherwise the CN wording remains. Offers retain their actual CN sale windows
+and `region: "CN"`, independently of an estimated Global schedule.
+
+`pack-art` stages source-scoped CN sheets from the official `web.hycdn.cn` host.
+A sheet must start the sale section or an explicit pack heading; it covers only the
+following offers up to the next image. The existing image bounds, download budget,
+publication gate and retry cache apply. Missing art never becomes a published path.
+
+When Global announces packs, its entire pack list replaces CN's, including offers
+whose names or contents differ. Global artwork is resolved against the Global post,
+so CN dates/prices cannot leak into the Global catalogue. Other unconfirmed reward
+kinds may continue to use CN data. Existing CN-news, event-rewards, pack-art and
+staged-art stages handle future events automatically on the normal import schedule.
