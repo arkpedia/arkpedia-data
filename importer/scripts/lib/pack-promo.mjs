@@ -108,7 +108,7 @@ export function cnPackPromoCandidates(rewards, readPost) {
         try { url = new URL(art.url); } catch { continue; }
         if (url.protocol !== 'https:' || url.hostname !== 'web.hycdn.cn' || url.username || url.password) continue;
         const names = section.packs.filter(pack => pack.at >= art.line && pack.at < (images[index + 1]?.line ?? section.endAt) && offered.has(pack.name)).map(pack => pack.name);
-        if (names.length) candidates.push({ source, url: url.href, names, directNames: names, published: Number(post.displayTime) || 0, line: art.line });
+        if (names.length) candidates.push({ source, url: url.href, names, directNames: names, published: (Number(post.displayTime) || 0) * 1000, line: art.line });
       }
     }
   }
