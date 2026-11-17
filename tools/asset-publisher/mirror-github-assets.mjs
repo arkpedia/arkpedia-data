@@ -116,10 +116,17 @@ export async function revisionMetadata({ repository, revision, files, references
   return { indexes, receipt, body: Buffer.from(JSON.stringify(receipt)) };
 }
 
-export async function mirrorRevision({ repository, revision, files, read, store, known, references = [], concurrency = 8, log = console.log }) {
+export async function mirrorRevision({ repository, revision, files, read, store, known, references = [], concurrency = 8, maxInFlightBytes = concurrency * maxFileBytes(repository), log = console.log }) {
   if (!REPOSITORIES.has(repository) || !COMMIT.test(revision)) throw new Error('A public repository and immutable commit are required');
+  if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 64
+    || !Number.isSafeInteger(maxInFlightBytes) || maxInFlightBytes <= 0 || files.some(file => file.bytes > maxInFlightBytes)) throw new Error('Invalid upload concurrency or memory budget');
   const unique = new Map(files.map(file => [file.sha, file]));
-  let uploaded = 0, reused = 0;
+  let uploaded = 0, reused = 0, activeBytes = 0;
+  const waiting = [];
+  async function acquire(bytes) {
+    while (activeBytes + bytes > maxInFlightBytes) await new Promise(resolve => waiting.push(resolve));
+    activeBytes += bytes;
+  }
   await boundedMap([...unique.values()], concurrency, async file => {
     const key = objectKey(file.sha);
     if (known.has(key)) {
@@ -127,12 +134,18 @@ export async function mirrorRevision({ repository, revision, files, read, store,
       reused++;
       return;
     }
-    const bytes = await read(file);
-    verifyGitBlob(bytes, file);
-    await store.put(key, bytes);
-    known.set(key, file.bytes);
-    uploaded++;
-    if (uploaded % 1000 === 0) log(`${repository}: ${uploaded} uploaded, ${reused} reused`);
+    await acquire(file.bytes);
+    try {
+      const bytes = await read(file);
+      verifyGitBlob(bytes, file);
+      await store.put(key, bytes);
+      known.set(key, file.bytes);
+      uploaded++;
+      if (uploaded % 1000 === 0) log(`${repository}: ${uploaded} uploaded, ${reused} reused`);
+    } finally {
+      activeBytes -= file.bytes;
+      for (const wake of waiting.splice(0)) wake();
+    }
   });
   const { indexes, receipt, body } = await revisionMetadata({ repository, revision, files, references });
   await boundedMap([...indexes], concurrency, async ([key, bytes]) => store.put(key, bytes));
