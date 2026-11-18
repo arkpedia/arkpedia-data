@@ -1,6 +1,18 @@
 import type { OperatorStats, OperatorFile } from './operatorStats';
 import type { ObtainMethod, WelfareSource } from './obtainMethods';
 
+/** Cropped range grid with one-based row and column coordinates. */
+export interface CroppedRange {
+  cols: number;
+  rows: number;
+  opCell: [number, number];
+  rangeCells: [number, number][];
+}
+
+export type ModuleAttackRange =
+  | { grid: CroppedRange; whileSkillActive?: true }
+  | { forward: number };
+
 export interface CostItem {
   name: string;
   quantity: number | string;
@@ -82,6 +94,7 @@ export interface TalentRow {
   stage: string | null;
   potential: string | null;
   description: string | null;
+  redeploymentRange?: CroppedRange;
 }
 
 export interface Talent {
@@ -122,6 +135,11 @@ export interface ModuleStage {
   attributesIncreased: string | null;
   effectLabel: string | null;
   effectText: string | null;
+  attackRange?: ModuleAttackRange;
+  tileMechanics?: (
+    | { kind: 'redeployment'; grid: CroppedRange }
+    | { kind: 'effect'; name: string; grid: CroppedRange }
+  )[];
   cost?: CostGroup; // new schema: this stage's own build requirement materials
 }
 
