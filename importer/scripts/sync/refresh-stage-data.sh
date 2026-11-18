@@ -162,6 +162,7 @@ stage skill-ranges -- node scripts/build/build-skill-ranges.mjs
 
 # Module stat bonuses from the Global client.
 stage module-stats -- node scripts/sync/sync-module-stats.mjs
+stage module-ranges --needs upstream-en,upstream-cn -- node scripts/sync/sync-module-ranges.mjs
 
 # Guide videos: the trusted creators' new YouTube guides (data/guide-creators.json, kept in
 # arkpedia-data), added to the operator records' guides when a title names exactly one operator
