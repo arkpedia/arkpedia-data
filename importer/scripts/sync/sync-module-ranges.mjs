@@ -54,25 +54,63 @@ export function moduleTileMechanics(phase, ranges) {
   for (const part of normalParts(phase)) {
     for (const talent of part.addOrOverrideTalentDataBundle?.candidates ?? []) {
       if (talent.requiredPotentialRank || talent.tokenKey || talent.isHideTalent) continue;
-      const stats = Array.isArray(talent.blackboard) ? talent.blackboard : [];
-      const redeployRange = stats.find(stat => stat.key === 'ignore_build_type_target_range')?.valueStr;
-      if (redeployRange && stats.some(stat => stat.key === 'ignore_build_type_target' && stat.value === 1)) {
-        areas.set('redeployment', { kind: 'redeployment', grid: getGrid(ranges, redeployRange) });
-      }
+      const grid = meleeRedeploymentRange(talent, ranges);
+      if (grid) areas.set('redeployment', { kind: 'redeployment', grid });
       // Some named talents carry an area in rangeId. Require the description to identify
       // a spatial effect. Other talents use this field for internal targeting or attack range.
       const description = talentDescription(talent);
       if (!talent.name || !talent.rangeId || talent.displayRangeId || skillRangeChange.test(description) || !tileArea.test(description)) continue;
-      const grid = getGrid(ranges, talent.rangeId);
-      if (grid.rangeCells.length) areas.set(talent.name, { kind: 'effect', name: talent.name, grid });
+      const effectGrid = getGrid(ranges, talent.rangeId);
+      if (effectGrid.rangeCells.length) areas.set(talent.name, { kind: 'effect', name: talent.name, grid: effectGrid });
     }
   }
   return [...areas.values()];
 }
 
+function meleeRedeploymentRange(talent, ranges) {
+  const stats = Array.isArray(talent.blackboard) ? talent.blackboard : [];
+  const rangeId = stats.find(stat => stat.key === 'ignore_build_type_target_range')?.valueStr;
+  if (rangeId && stats.some(stat => stat.key === 'ignore_build_type_target' && stat.value === 1)) {
+    return getGrid(ranges, rangeId);
+  }
+}
+
+const talentRowKey = (name, elite, potential) => JSON.stringify([name, elite, potential]);
+
+export function syncTalentRedeploymentRanges(record, character, ranges) {
+  const areas = new Map();
+  for (const talent of character.talents ?? []) {
+    for (const candidate of talent.candidates ?? []) {
+      if (!candidate.name || candidate.isHideTalent) continue;
+      const grid = meleeRedeploymentRange(candidate, ranges);
+      if (!grid) continue;
+      const elite = Number(candidate.unlockCondition?.phase?.match(/\d+/)?.[0] ?? 0);
+      const key = talentRowKey(candidate.name, elite, (candidate.requiredPotentialRank ?? 0) + 1);
+      areas.set(key, grid);
+    }
+  }
+  let changed = false;
+  for (const talent of record.talents ?? []) {
+    for (const row of talent.rows ?? []) {
+      const elite = Number(row.stage?.match(/\d+/)?.[0] ?? 0);
+      const potential = Number(row.potential?.match(/\d+/)?.[0] ?? 1);
+      const grid = areas.get(talentRowKey(row.name ?? talent.name, elite, potential));
+      if (JSON.stringify(row.redeploymentRange) === JSON.stringify(grid)) continue;
+      if (grid) row.redeploymentRange = grid;
+      else delete row.redeploymentRange;
+      changed = true;
+    }
+  }
+  return changed;
+}
+
 function clientTables(root, directory) {
   const read = file => JSON.parse(fs.readFileSync(path.resolve(root, directory, 'excel', file), 'utf8'));
-  return { battle: read('battle_equip_table.json'), ranges: read('range_table.json') };
+  return {
+    battle: read('battle_equip_table.json'),
+    characters: read('character_table.json'),
+    ranges: read('range_table.json'),
+  };
 }
 
 export function syncModuleRanges(root = process.cwd()) {
@@ -84,7 +122,9 @@ export function syncModuleRanges(root = process.cwd()) {
     for (const file of fs.readdirSync(path.join(directory, folder)).filter(name => name.endsWith('.json'))) {
       const source = path.join(directory, folder, file);
       const record = JSON.parse(fs.readFileSync(source, 'utf8'));
-      let changed = false;
+      const characterClient = en.characters[record.internalName] ? en : cn;
+      const character = characterClient.characters[record.internalName];
+      let changed = character ? syncTalentRedeploymentRanges(record, character, characterClient.ranges) : false;
       for (const module of record.modules ?? []) {
         const client = en.battle[module.moduleId] ? en : cn;
         const battle = client.battle[module.moduleId];
@@ -114,5 +154,5 @@ export function syncModuleRanges(root = process.cwd()) {
 
 if (process.argv[1] && import.meta.url === pathToFileURL(fs.realpathSync(process.argv[1])).href) {
   const updated = syncModuleRanges();
-  console.log(`Updated module ranges for ${updated.length} operators: ${updated.join(', ')}`);
+  console.log(`Updated module and talent ranges for ${updated.length} operators: ${updated.join(', ')}`);
 }

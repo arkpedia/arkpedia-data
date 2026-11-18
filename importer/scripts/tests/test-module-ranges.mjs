@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { moduleAttackRange, moduleTileMechanics } from '../sync/sync-module-ranges.mjs';
+import { moduleAttackRange, moduleTileMechanics, syncTalentRedeploymentRanges } from '../sync/sync-module-ranges.mjs';
 
 const rangeId = 'test-grid';
 const ranges = { [rangeId]: { grids: [{ row: 0, col: 0 }, { row: 0, col: -1 }, { row: 1, col: 0 }] } };
@@ -29,4 +29,19 @@ test('named tile effects use their grid and mode-specific areas stay scoped to g
   assert.deepEqual(moduleTileMechanics(phase(talent), ranges), [{ kind: 'effect', name: 'Test talent', grid }]);
   assert.deepEqual(moduleTileMechanics(phase(talent, { validInGameTag: 'roguelike' }), ranges), []);
   assert.deepEqual(moduleTileMechanics(phase({ ...talent, description: 'Gain DEF.' }), ranges), []);
+});
+
+test('base redeployment grids attach to the talent rows that unlock them', () => {
+  const record = { talents: [{ name: 'Test talent', rows: [{ stage: 'Elite 1' }, { stage: 'Elite 2' }] }] };
+  const character = { talents: [{ candidates: [{
+    name: 'Test talent',
+    unlockCondition: { phase: 'PHASE_2' },
+    blackboard: [
+      { key: 'ignore_build_type_target', value: 1 },
+      { key: 'ignore_build_type_target_range', valueStr: rangeId },
+    ],
+  }] }] };
+  assert.equal(syncTalentRedeploymentRanges(record, character, ranges), true);
+  assert.deepEqual(record.talents[0].rows, [{ stage: 'Elite 1' }, { stage: 'Elite 2', redeploymentRange: grid }]);
+  assert.equal(syncTalentRedeploymentRanges(record, character, ranges), false);
 });
