@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "about": "Sponsor campaigns the site may show in its Sponsored slots (arkpedia-app lib/sponsors/campaigns.ts). A campaign is shown only while its status is \"active\", it has an https url, and the reader's clock is inside startAt..endAt (ISO instants with a timezone; endAt is exclusive; null leaves that side open). \"draft\" campaigns appear only in local development and preview builds. placements: \"home\" (a panel directly under Events on the home page), \"header\" (shrunk into the free space beside a page's title, on every page with one; desktop widths only), \"support\" (the Sponsor section of /support); the first usable campaign listed for a placement wins. image is a root-relative path in arkpedia-image-assets with its pixel width and height. To end a campaign early set its status to \"ended\"; no deploy is needed.",
+  "about": "Sponsor campaigns the site may show in its Sponsored slots (arkpedia-app lib/sponsors/campaigns.ts). A campaign is shown only while its status is \"active\", it has an https url, and the reader's clock is inside startAt..endAt (ISO instants with a timezone; endAt is exclusive; null leaves that side open). \"draft\" campaigns appear only in local development and preview builds. placements: \"home\" (a panel directly under Events on the home page), \"header\" (shrunk into the free space beside a page's title, on every page with one; desktop widths only), \"support\" (the Sponsor section of /support); the first usable campaign listed for a placement shows, and beside a title all of them take turns every few seconds. url is an https address, or a path on this site (\"/music/discover\") for one of Arkpedia's own banners, which then carries no Ad tag. image is a root-relative path in arkpedia-image-assets with its pixel width and height. To end a campaign early set its status to \"ended\"; no deploy is needed.",
   "campaigns": [
     {
       "id": "lootbar-thunder-in-the-azure-dream",
@@ -27,6 +27,19 @@
       "width": 900,
       "height": 200,
       "alt": "LootBar.com, trusted top up platform"
+    },
+    {
+      "id": "arkpedia-sound-archive",
+      "sponsor": "Arkpedia",
+      "status": "active",
+      "url": "/music/discover",
+      "startAt": null,
+      "endAt": null,
+      "placements": ["header"],
+      "image": "/advertisements/arkpedia/music-player-banner.webp",
+      "width": 900,
+      "height": 200,
+      "alt": "Listen now: check out the Sound Archive"
     }
   ]
 }
