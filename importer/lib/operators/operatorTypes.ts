@@ -1,5 +1,6 @@
 import type { OperatorStats, OperatorFile } from './operatorStats';
 import type { ObtainMethod, WelfareSource } from './obtainMethods';
+import type { ReleaseTiming, TimingEvidence } from '@/lib/time/releaseTiming';
 
 /** Cropped range grid with one-based row and column coordinates. */
 export interface CroppedRange {
@@ -268,6 +269,8 @@ export interface Operator {
   releaseAt?: string;
   /** Calendar forecast only; never a confirmed availability instant. */
   releaseEstimate?: string;
+  releaseTiming?: ReleaseTiming;
+  releaseEvidence?: Pick<TimingEvidence, 'status' | 'timingSource'>;
   /** Until when the debut lasts, exclusive: its banner, or an event operator's event stages
    *  (getScheduledOperatorDebut). The roster's "Now Available" ends here. */
   availableUntil?: string;
@@ -309,6 +312,7 @@ export interface RosterOperator {
   releaseAt?: string;
   /** Calendar forecast only; never a confirmed availability instant. */
   releaseEstimate?: string;
+  releaseTiming?: ReleaseTiming;
   /** Until when the debut lasts (Operator.availableUntil); absent in releases from before it. */
   availableUntil?: string;
   characterInfo?: Record<string, string> | null;
@@ -419,6 +423,7 @@ export interface GuesserOperator {
   releaseAt?: string;
   /** Calendar forecast only; never a confirmed availability instant. */
   releaseEstimate?: string;
+  releaseTiming?: ReleaseTiming;
   characterInfo?: Record<string, string> | null;
   characterVoices?: Record<string, string> | null;
   ep?: string | Record<string, string> | null;

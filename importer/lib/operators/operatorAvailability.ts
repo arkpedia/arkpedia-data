@@ -1,7 +1,9 @@
 import { serverDayBoundary } from '@/lib/time/servers.mjs';
+import type { ReleaseTiming } from '@/lib/time/releaseTiming';
 export type ReleaseOperator = {
   releaseAt?: string;
   releaseEstimate?: string;
+  releaseTiming?: ReleaseTiming;
   /** Until when the debut lasts (Operator.availableUntil). */
   availableUntil?: string;
   characterInfo?: Record<string, string> | null;
@@ -50,8 +52,8 @@ export function isDebutAvailable(op: ReleaseOperator, now: number): boolean {
 export function operatorReleaseLabel(op: ReleaseOperator, now: number): string | null {
   const release = operatorRelease(op);
   if (!release || now >= release.at) return null;
-  if (!release.exact && now >= release.dayStart) return release.estimated ? 'Estimated today' : 'Releases today';
-  const prefix = release.estimated ? 'Est. in' : 'In';
+  if (!release.exact && now >= release.dayStart) return op.releaseTiming === 'cn-estimate' ? 'CN estimate · today' : release.estimated ? 'Estimated today' : 'Releases today';
+  const prefix = op.releaseTiming === 'datamined' ? 'Datamined · in' : op.releaseTiming === 'cn-estimate' ? 'CN estimate · in' : release.estimated ? 'Est. in' : 'In';
   const remaining = (release.exact ? release.at : release.dayStart) - now;
   if (remaining < 3_600_000) return `${prefix} ${Math.ceil(remaining / 60_000)}m`;
   if (remaining < DAY) return `${prefix} ${Math.ceil(remaining / 3_600_000)}h`;

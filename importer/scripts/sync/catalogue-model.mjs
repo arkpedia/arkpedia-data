@@ -167,6 +167,9 @@ export function reconcileOperators({ operators, cn, en, releases = new Map(), no
     if (global && release?.global) {
       op.characterInfo['Release Date'] = serverDay(release.global, SERVER_TIME.en.offset);
       op.releaseAt = new Date(release.global * 1000).toISOString();
+      if (release.globalEvidence) op.releaseEvidence = release.globalEvidence;
+      delete op.releaseEstimate;
+      delete op.releaseTiming;
       op.releaseIsEstimated = false;
       op.isFuture = release.global * 1000 > now;
     }
@@ -1008,19 +1011,29 @@ export function renameAlternates(operators, renames) {
 
 export function operatorReleaseDates(operators, banners, cn, en) {
   const releases = new Map(), ids = new Map(operators.flatMap(op => [op.name,...(op.aliases ?? [])].map(n => [n,op.internalName])));
-  const add = (id, region, ts) => { const row = releases.get(id) ?? {}; row[region] = Math.min(row[region] ?? Infinity, ts); releases.set(id,row); };
+  const add = (id, region, ts, evidence) => {
+    if (!Number.isFinite(ts)) return;
+    const row = releases.get(id) ?? {};
+    const previous = row[region] ?? Infinity;
+    if (region === 'global' && (ts < previous || ts === previous && evidence?.status === 'announced')) row.globalEvidence = evidence;
+    row[region] = Math.min(previous, ts);
+    releases.set(id, row);
+  };
   for (const [region,tables] of [['cn',cn],['global',en]]) {
     for (const mission of Object.values(tables.activity.missionData ?? {})) {
       const activity = tables.activity.basicInfo[mission.missionGroup];
-      if (activity) for (const reward of mission.rewards ?? []) if (reward.type === 'CHAR') add(reward.id,region,activity.startTime);
+      if (activity) for (const reward of mission.rewards ?? []) if (reward.type === 'CHAR') {
+        add(reward.id, region, activity.startTime, { timingSource: tables.source, status: 'datamined' });
+      }
     }
     for (const banner of banners) {
       const pool = region==='cn' && tables.gacha.gachaPoolClient.find(p=>p.gachaPoolId===banner.cnPoolId);
       const window = banner[`${region}_window`] || (pool ? windowFor(pool.openTime,pool.endTime,tables.source,null) : null);
-      if (!window || !window.timingSource) continue;
+      if (!window || !window.timingSource || region === 'global' && banner.global_date_estimated) continue;
       for (const name of [...(banner.six_stars ?? []),...(banner.five_stars ?? []),...(banner.four_stars ?? [])]) {
         if (banner.rate_up_six_stars?.includes(name)) continue;
-        if (ids.has(name)) add(ids.get(name),region,Date.parse(window.startAt)/1000);
+        if (ids.has(name)) add(ids.get(name), region, Date.parse(window.startAt) / 1000,
+          { timingSource: window.timingSource, status: banner.globalScheduleStatus });
       }
     }
   }
