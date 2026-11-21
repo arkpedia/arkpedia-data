@@ -1,17 +1,15 @@
 {
   "version": 1,
-  "about": "Sponsor campaigns the site may show in its Sponsored slots (arkpedia-app lib/sponsors/campaigns.ts). A campaign is shown only while its status is \"active\", it has an https url, and the reader's clock is inside startAt..endAt (ISO instants with a timezone; endAt is exclusive; null leaves that side open). \"draft\" campaigns appear only in local development and preview builds. placements: \"home\" (a panel directly under Events on the home page), \"header\" (shrunk into the free space beside a page's title, on every page with one; desktop widths only), \"support\" (the Sponsor section of /support); the first usable campaign listed for a placement shows, and beside a title all of them take turns every few seconds. url is an https address, or a path on this site (\"/music/discover\") for one of Arkpedia's own banners, which then carries no Ad tag. image is a root-relative path in arkpedia-image-assets with its pixel width and height. To end a campaign early set its status to \"ended\"; no deploy is needed.",
+  "about": "Sponsor campaigns for the site’s Sponsored slots. Set status to active to show the campaign in its window, draft for review or ended to retire it. Use startAt and endAt for fixed ISO instants with a timezone (start inclusive, end exclusive), or leave both null and set eventActivityId to use the corresponding confirmed Global event window. Unconfirmed event windows stay pending. Placements: home below Events, header beside desktop page titles and in the mobile drawer, and support on /support. A header campaign can set mobileArtwork with its own image, width, height and alt. The first available campaign shows on home and support, and header and drawer campaigns take turns. An HTTPS url marks an ad. A local path such as /music/discover opens a site promotion. Use root-relative image asset paths and actual pixel sizes.",
   "campaigns": [
     {
       "id": "lootbar-violet-orchid-main",
       "sponsor": "LootBar",
-      "status": "draft",
+      "status": "active",
       "url": "https://www.lootbar.com/shop/kukkikaze",
       "startAt": null,
       "endAt": null,
-      "placements": [
-        "home"
-      ],
+      "placements": ["home"],
       "eventActivityId": "act50side",
       "image": "/advertisements/lootbar/violet-orchid-main.webp",
       "width": 1920,
@@ -21,13 +19,11 @@
     {
       "id": "lootbar-violet-orchid",
       "sponsor": "LootBar",
-      "status": "draft",
+      "status": "active",
       "url": "https://www.lootbar.com/shop/kukkikaze",
       "startAt": null,
       "endAt": null,
-      "placements": [
-        "header"
-      ],
+      "placements": ["header"],
       "eventActivityId": "act50side",
       "image": "/advertisements/lootbar/violet-orchid-page-banner.webp",
       "width": 1800,
@@ -43,13 +39,11 @@
     {
       "id": "lootbar-kirin-yato",
       "sponsor": "LootBar",
-      "status": "draft",
+      "status": "active",
       "url": "https://www.lootbar.com/shop/kukkikaze",
       "startAt": null,
       "endAt": null,
-      "placements": [
-        "header"
-      ],
+      "placements": ["header"],
       "eventActivityId": "act24sre",
       "image": "/advertisements/lootbar/kirin-yato-page-banner.webp",
       "width": 1800,
@@ -65,13 +59,11 @@
     {
       "id": "lootbar-aphrissa",
       "sponsor": "LootBar",
-      "status": "draft",
+      "status": "active",
       "url": "https://www.lootbar.com/shop/kukkikaze",
       "startAt": null,
       "endAt": null,
-      "placements": [
-        "header"
-      ],
+      "placements": ["header"],
       "eventActivityId": "act21mini",
       "image": "/advertisements/lootbar/aphrissa-page-banner.webp",
       "width": 1800,
@@ -85,32 +77,14 @@
       }
     },
     {
-      "id": "lootbar-thunder-in-the-azure-dream",
-      "sponsor": "LootBar",
-      "status": "active",
-      "url": "https://www.lootbar.com/shop/kukkikaze",
-      "startAt": null,
-      "endAt": null,
-      "placements": [
-        "home"
-      ],
-      "image": "/advertisements/lootbar/thunder-in-the-azure-dream.webp",
-      "width": 1920,
-      "height": 640,
-      "alt": "LootBar: Thunder in the Azure Dream, up to 11% off top-ups"
-    },
-    {
       "id": "lootbar-top-up",
       "sponsor": "LootBar",
       "status": "active",
       "url": "https://www.lootbar.com/shop/kukkikaze",
       "startAt": null,
       "endAt": null,
-      "placements": [
-        "header",
-        "support"
-      ],
-      "image": "/advertisements/lootbar/lootbar-banner.webp",
+      "placements": ["support"],
+      "image": "/advertisements/lootbar/violet-orchid-mobile.webp",
       "width": 900,
       "height": 200,
       "alt": "LootBar.com, trusted top up platform"
@@ -122,9 +96,7 @@
       "url": "/music/discover",
       "startAt": null,
       "endAt": null,
-      "placements": [
-        "header"
-      ],
+      "placements": ["header"],
       "image": "/advertisements/arkpedia/music-player-banner.webp",
       "width": 900,
       "height": 200,
