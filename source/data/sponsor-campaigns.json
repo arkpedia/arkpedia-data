@@ -1,21 +1,7 @@
 {
   "version": 1,
-  "about": "Sponsor campaigns for the site’s Sponsored slots. Set status to active to show the campaign in its window, draft for review or ended to retire it. Use startAt and endAt for fixed ISO instants with a timezone (start inclusive, end exclusive), or leave both null and set eventActivityId to use the corresponding confirmed Global event window. Unconfirmed event windows stay pending. Placements: home below Events, header beside desktop page titles and in the mobile drawer, and support on /support. A header campaign can set mobileArtwork with its own image, width, height and alt. The first available campaign shows on home and support, and header and drawer campaigns take turns. An HTTPS url marks an ad. A local path such as /music/discover opens a site promotion. Use root-relative image asset paths and actual pixel sizes.",
+  "about": "Sponsor campaigns for the site’s Sponsored slots. Set status to active to show the campaign in its window, draft for review or ended to retire it. Use startAt and endAt for fixed ISO instants with a timezone (start inclusive, end exclusive), or leave both null and set eventActivityId to use the corresponding confirmed Global event window. Unconfirmed event windows stay pending. Placements: home below Events, header beside desktop page titles and in the mobile drawer, and support on /support. One event has one campaign. Its primary image is the page banner. Set mainArtwork for the homepage, or null while the artwork is pending. The mobile drawer and Support use mobileArtwork when available. Each artwork has its own image, width, height and alt. The first available campaign shows on home and support, and header and drawer campaigns take turns. An HTTPS url marks an ad. A local path such as /music/discover opens a site promotion. Use root-relative image asset paths and actual pixel sizes.",
   "campaigns": [
-    {
-      "id": "lootbar-violet-orchid-main",
-      "sponsor": "LootBar",
-      "status": "active",
-      "url": "https://www.lootbar.com/shop/kukkikaze",
-      "startAt": null,
-      "endAt": null,
-      "placements": ["home"],
-      "eventActivityId": "act50side",
-      "image": "/advertisements/lootbar/violet-orchid-main.webp",
-      "width": 1920,
-      "height": 640,
-      "alt": "LootBar: Thunder in the Azure Dream, up to 11% off top-ups"
-    },
     {
       "id": "lootbar-violet-orchid",
       "sponsor": "LootBar",
@@ -23,7 +9,7 @@
       "url": "https://www.lootbar.com/shop/kukkikaze",
       "startAt": null,
       "endAt": null,
-      "placements": ["header"],
+      "placements": ["home", "header", "support"],
       "eventActivityId": "act50side",
       "image": "/advertisements/lootbar/violet-orchid-page-banner.webp",
       "width": 1800,
@@ -34,6 +20,12 @@
         "width": 900,
         "height": 200,
         "alt": "LootBar: Violet Mizutsune Orchid top-ups"
+      },
+      "mainArtwork": {
+        "image": "/advertisements/lootbar/violet-orchid-main.webp",
+        "width": 1920,
+        "height": 640,
+        "alt": "LootBar: Thunder in the Azure Dream, up to 11% off top-ups"
       }
     },
     {
@@ -43,7 +35,7 @@
       "url": "https://www.lootbar.com/shop/kukkikaze",
       "startAt": null,
       "endAt": null,
-      "placements": ["header"],
+      "placements": ["home", "header", "support"],
       "eventActivityId": "act24sre",
       "image": "/advertisements/lootbar/kirin-yato-page-banner.webp",
       "width": 1800,
@@ -54,7 +46,8 @@
         "width": 900,
         "height": 200,
         "alt": "LootBar: Kirin R Yato top-ups"
-      }
+      },
+      "mainArtwork": null
     },
     {
       "id": "lootbar-aphrissa",
@@ -63,7 +56,7 @@
       "url": "https://www.lootbar.com/shop/kukkikaze",
       "startAt": null,
       "endAt": null,
-      "placements": ["header"],
+      "placements": ["home", "header", "support"],
       "eventActivityId": "act21mini",
       "image": "/advertisements/lootbar/aphrissa-page-banner.webp",
       "width": 1800,
@@ -74,20 +67,8 @@
         "width": 900,
         "height": 200,
         "alt": "LootBar: Aphrissa top-ups"
-      }
-    },
-    {
-      "id": "lootbar-top-up",
-      "sponsor": "LootBar",
-      "status": "active",
-      "url": "https://www.lootbar.com/shop/kukkikaze",
-      "startAt": null,
-      "endAt": null,
-      "placements": ["support"],
-      "image": "/advertisements/lootbar/violet-orchid-mobile.webp",
-      "width": 900,
-      "height": 200,
-      "alt": "LootBar.com, trusted top up platform"
+      },
+      "mainArtwork": null
     },
     {
       "id": "arkpedia-sound-archive",
