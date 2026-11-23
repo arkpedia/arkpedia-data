@@ -26,6 +26,35 @@ test('official crossover notice separates stage, banner and shop deadlines befor
   assert.equal(enBanners[banners[0].name].endAt, events[0].global.endAt);
 });
 
+test('official limited-time event confirms the stages and keeps the reward track separate', () => {
+  const football = {
+    id: 5162,
+    title: 'POSITIONAL FOOTBALL CHAMPIONSHIP LIMITED-TIME EVENT OPEN',
+    url: 'https://www.arknights.global/news/5162',
+    publishTime: Date.parse('2026-11-20T03:00:00Z'),
+    lines: [
+      '01 POSITIONAL FOOTBALL CHAMPIONSHIP LIMITED-TIME EVENT OPEN',
+      'DURATION: November 23, 2026, 08:00 – December 7, 2026, 03:59 (UTC-7)',
+      '[Championship Trophies]',
+      'DURATION: November 23, 2026, 08:00 – December 10, 2026, 03:59 (UTC-7)',
+      'REWARDS: Module Materials, Elite Materials, Battle Records, LMD, etc.',
+      '02 LIMITED SIGN-IN EVENT OPEN',
+      'DURATION: November 23, 2026, 08:00 – December 3, 2026, 03:59 (UTC-7)',
+    ],
+  };
+  const entry = { name: 'Positional Football Championship', activityId: 'act1football',
+    global: { dateRange: '2026/11/23–2026/12/07', note: 'ESTIMATED Global date, not officially confirmed' } };
+  const input = { events: [entry], banners: [], posts: [football], now: Date.parse('2026-11-21T00:00:00Z') };
+  assert.deepEqual(reconcileGlobalEventNotices(input), [entry.name]);
+  assert.deepEqual(entry.global, {
+    dateRange: '2026/11/23–2026/12/07', note: null, startAt: '2026-11-23T15:00:00.000Z',
+    endAt: '2026-12-07T11:00:00.000Z', timingSource: football.url, shopEndAt: '2026-12-10T11:00:00.000Z',
+  });
+  assert.deepEqual(reconcileGlobalEventNotices(input), []);
+  assert.equal(eventNoticeWindow({ ...football, lines: football.lines.slice(-2) }), null);
+  assert.equal(eventNoticeWindow({ ...football, title: 'ANOTHER LIMITED-TIME EVENT OPEN' }), null);
+});
+
 test('rerun stage heading is distinct from its encompassing duration and named store', () => {
   const rerun = JSON.parse(fs.readFileSync(new URL('./fixtures/official-news/5045.json', import.meta.url), 'utf8'));
   assert.equal(eventNoticeWindow(rerun).endAt, '2026-11-15T11:00:00.000Z');

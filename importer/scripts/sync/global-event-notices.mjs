@@ -12,7 +12,10 @@ const valid = span => span && Date.parse(span.endAt) > Date.parse(span.startAt) 
 
 /** Read stage phases separately from the encompassing event/store duration. */
 export function eventNoticeWindow(post) {
-  const section = newsSections(post.lines ?? []).find(section => /(?:SIDESTORY|SIDE STORY|STORY COLLECTION|INTERMEZZI|COLLAB EVENT)/i.test(section.title));
+  const eventName = bare(postEventName(post.title));
+  const section = newsSections(post.lines ?? []).find(({ title }) =>
+    /(?:SIDESTORY|SIDE STORY|STORY COLLECTION|INTERMEZZI|COLLAB EVENT)/i.test(title)
+    || (/ LIMITED-TIME EVENT OPEN$/i.test(title) && bare(postEventName(title)) === eventName));
   if (!section) return null;
   const durations = section.lines.flatMap((line, index) => /^DURATION:/i.test(line)
     ? [{ index, span: parseNoticeWindow(line, post.publishTime), before: section.lines.slice(Math.max(0, index - 2), index).join('\n') }] : []);
@@ -29,7 +32,10 @@ export function eventNoticeWindow(post) {
   if (!valid(span)) return null;
   const shops = durations.filter((row, index) => {
     const following = section.lines.slice(row.index + 1, durations[index + 1]?.index ?? section.lines.length).join('\n');
-    return valid(row.span) && /redeem items from/i.test(following) && row.span.startAt <= endAt && row.span.endAt >= endAt;
+    const rewardTrack = row.index > 0 && /^\[[^\]]+\]$/.test(section.lines[row.index - 1])
+      && /^REWARDS:/i.test(section.lines[row.index + 1] ?? '');
+    return valid(row.span) && (/redeem items from/i.test(following) || rewardTrack)
+      && row.span.startAt <= endAt && row.span.endAt >= endAt;
   });
   const closes = [...new Set(shops.map(row => row.span.endAt))];
   return { ...span, ...(closes.length === 1 ? { shopEndAt: closes[0] } : {}) };
