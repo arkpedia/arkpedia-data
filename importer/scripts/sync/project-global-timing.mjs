@@ -12,12 +12,12 @@ export function globalTimingProjections(contentWindows, eventFarming, schedule) 
 
 export function projectGlobalTiming(root) {
   const read = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
-  if (read('.cache/import-global-timing-ready.json') !== true) {
+  if (read('.cache/prepared-inputs/global-timing/ready.json') !== true) {
     throw new Error('No fresh EN reconciliation: retain published Global timing');
   }
   const projected = globalTimingProjections(
-    read('.cache/import-content-windows.json'),
-    read('.cache/import-event-farming.json'),
+    read('.cache/prepared-inputs/global-timing/content-windows.json'),
+    read('.cache/prepared-inputs/global-timing/event-farming.json'),
     read('data/regional-schedules.json').servers.en,
   );
   // The stage runner rolls both files back if either write fails.

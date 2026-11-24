@@ -385,7 +385,7 @@ export async function syncRegionalSchedules(root, { fetcher = globalThis.fetch, 
     if (changed) fs.writeFileSync(path.join(root, 'data/events', file), `${JSON.stringify(records, null, 2)}\n`);
   }
   fs.writeFileSync(at, `${JSON.stringify({ version: 1, skinParserVersion: 2, servers })}\n`);
-  const status = path.join(root, '.cache', 'import-global-timing-ready.json');
+  const status = path.join(root, '.cache', 'prepared-inputs', 'global-timing', 'ready.json');
   fs.mkdirSync(path.dirname(status), { recursive: true });
   fs.writeFileSync(status, JSON.stringify(freshGlobal));
   stage.commit();

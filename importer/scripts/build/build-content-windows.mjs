@@ -44,7 +44,7 @@ for (const dir of [EN, CN]) {
   for (const season of Object.values(crisis)) add(season.seasonId, season.startTs, season.endTs);
 }
 
-const output = path.join(root, '.cache', 'import-content-windows.json');
+const output = path.join(root, '.cache', 'prepared-inputs', 'global-timing', 'content-windows.json');
 fs.mkdirSync(path.dirname(output), { recursive: true });
 fs.writeFileSync(output, JSON.stringify(windows));
 const now = Math.floor(Date.now() / 1000);

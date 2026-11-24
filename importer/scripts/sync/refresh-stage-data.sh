@@ -135,7 +135,7 @@ stage story-map -- python3 scripts/imports/import_story_map.py
 # story-covers stays in the application: its source (arknights.timo.beer) refuses GitHub's runners (HTTP 403).
 
 # Run windows, for the Current group and the default chapter.
-stage content-windows --needs stage-dataset --output .cache/import-content-windows.json -- node scripts/build/build-content-windows.mjs
+stage content-windows --needs stage-dataset --output .cache/prepared-inputs/global-timing/content-windows.json -- node scripts/build/build-content-windows.mjs
 
 # Item icons for the drops. A new token's icon is staged in .cache/item-icons/ and
 # reported until the image repository publishes it; nothing is written under public/.
@@ -228,8 +228,8 @@ stage event-windows -- node scripts/sync/sync-event-windows.mjs
 stage ra-releases -- node scripts/sync/sync-ra-releases.mjs
 # Prepare raw timing inputs, then publish the notice-corrected Global projections once.
 # Regional schedules can still update JP/KR when a raw Global preparation fails.
-stage event-farming --output .cache/import-event-farming.json -- node scripts/sync/sync-event-farming.mjs
-stage regional-schedules --output .cache/import-global-timing-ready.json -- node scripts/sync/sync-regional-schedules.mjs
+stage event-farming --output .cache/prepared-inputs/global-timing/event-farming.json -- node scripts/sync/sync-event-farming.mjs
+stage regional-schedules --output .cache/prepared-inputs/global-timing/ready.json -- node scripts/sync/sync-regional-schedules.mjs
 stage global-timing --needs content-windows,event-farming,regional-schedules -- node scripts/sync/project-global-timing.mjs
 # The current Stronghold roster uses whichever window the import could publish.
 stage stronghold-enemies --needs enemy-index -- node scripts/build/build-stronghold-enemies.mjs

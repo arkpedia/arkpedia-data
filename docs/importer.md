@@ -178,8 +178,8 @@ Paths below are under `importer/scripts/` unless they say otherwise.
 | `import_cc_stages.py` | `data/cc-stages.json`, CCB labels in `stages-content.json`; new CCB renders staged in `.cache/cc-stages/` | `medal_table`, `map/` renders |
 | `import_stage_devices.py` | `data/stage-devices.json` | level files' `predefines`, `character_table` |
 | `build-story-groups.mjs` | `data/story-groups.json` | `stage_table.storylines` |
-| `build-content-windows.mjs` | `.cache/import-content-windows.json` | `activity_table`, `crisis_v2_table` |
-| `sync-event-farming.mjs` | `.cache/import-event-farming.json` | Global stage and item tables |
+| `build-content-windows.mjs` | `.cache/prepared-inputs/global-timing/content-windows.json` | `activity_table`, `crisis_v2_table` |
+| `sync-event-farming.mjs` | `.cache/prepared-inputs/global-timing/event-farming.json` | Global stage and item tables |
 | `project-global-timing.mjs` | `data/content-windows.json`, `data/event-farming.json` | Prepared timing inputs and a fresh reconciled Global regional schedule |
 | `import-item-icons.mjs` | `data/item-icons.json`; new token icons staged in `.cache/item-icons/` | stage drops, CN `item/` icons, the asset index |
 | `enrich-stage-index.mjs` | `public/stages-index.json` (in place) | everything above |
