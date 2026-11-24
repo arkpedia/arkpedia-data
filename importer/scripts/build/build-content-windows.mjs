@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Writes data/content-windows.json: {contentId: [startTs, endTs]} in unix
+ * Prepares raw content windows: {contentId: [startTs, endTs]} in unix
  * seconds, for the contents the game runs for a fixed window.
  *
  * The stage list needs it to open on whatever is running now instead of on a
@@ -15,7 +15,7 @@
  *
  * EN first, then CN for anything EN has not received yet.
  *
- * Re-run after regenerating the dataset:  node scripts/build/build-content-windows.mjs
+ * The nightly global-timing stage publishes these windows after regional reconciliation.
  */
 import fs from 'fs';
 import path from 'path';
@@ -44,7 +44,9 @@ for (const dir of [EN, CN]) {
   for (const season of Object.values(crisis)) add(season.seasonId, season.startTs, season.endTs);
 }
 
-fs.writeFileSync(path.join(root, 'data', 'content-windows.json'), JSON.stringify(windows));
+const output = path.join(root, '.cache', 'prepared-inputs', 'global-timing', 'content-windows.json');
+fs.mkdirSync(path.dirname(output), { recursive: true });
+fs.writeFileSync(output, JSON.stringify(windows));
 const now = Math.floor(Date.now() / 1000);
 const live = Object.entries(windows).filter(([, [s, e]]) => s <= now && now <= e);
 console.log(`${Object.keys(windows).length} of ${Object.keys(contents).length} contents have a run window`);

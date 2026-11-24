@@ -304,11 +304,6 @@ export async function regionalNotices(server, fetcher, now) {
   return result;
 }
 
-/** EN compatibility records use the notice-corrected regional snapshot, retaining CN-only forecasts. */
-export function globalTimingProjections(contentWindows, eventFarming, schedule) {
-  return { contentWindows: { ...contentWindows, ...schedule.contents }, eventFarming: { ...eventFarming, drops: schedule.farming } };
-}
-
 export async function syncRegionalSchedules(root, { fetcher = globalThis.fetch, now = defaultNow().getTime() } = {}) {
   const read = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
   const at = path.join(root, OUTPUT);
@@ -341,6 +336,7 @@ export async function syncRegionalSchedules(root, { fetcher = globalThis.fetch, 
   const english = (await load('en')).tables;
   const boards = readOfficialBulletins(root).regions;
   const servers = { ...previous.servers };
+  let freshGlobal = false;
   for (const server of ['en', 'jp', 'kr']) {
     try {
       const { base, tables } = server === 'en' ? { tables: english, base: `https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/${pin}/en/gamedata/excel` } : await load(server);
@@ -366,6 +362,7 @@ export async function syncRegionalSchedules(root, { fetcher = globalThis.fetch, 
       const keys = new Set(next.skinWindows.map(row => `${row.source}/${row.startAt}/${row.endAt}`));
       next.skinWindows.push(...(previous.skinParserVersion === 2 ? previous.servers?.[server]?.skinWindows ?? [] : []).filter(row => !keys.has(`${row.source}/${row.startAt}/${row.endAt}`)));
       servers[server] = next;
+      if (server === 'en') freshGlobal = true;
       console.log(`${server}: ${Object.keys(next.events).length} event windows, ${Object.keys(next.banners).length} banners, ${Object.keys(next.weekly).length} daily rotations`);
     } catch (error) {
       console.warn(`${server}: ${error.message}`);
@@ -387,12 +384,11 @@ export async function syncRegionalSchedules(root, { fetcher = globalThis.fetch, 
     }
     if (changed) fs.writeFileSync(path.join(root, 'data/events', file), `${JSON.stringify(records, null, 2)}\n`);
   }
-  if (servers.en) {
-    const projected = globalTimingProjections(read('data/content-windows.json'), read('data/event-farming.json'), servers.en);
-    fs.writeFileSync(path.join(root, 'data/content-windows.json'), JSON.stringify(projected.contentWindows));
-    fs.writeFileSync(path.join(root, 'data/event-farming.json'), `${JSON.stringify(projected.eventFarming, null, 2)}\n`);
-  }
-  fs.writeFileSync(at, `${JSON.stringify({ version: 1, skinParserVersion: 2, servers })}\n`);stage.commit();
+  fs.writeFileSync(at, `${JSON.stringify({ version: 1, skinParserVersion: 2, servers })}\n`);
+  const status = path.join(root, '.cache', 'prepared-inputs', 'global-timing', 'ready.json');
+  fs.mkdirSync(path.dirname(status), { recursive: true });
+  fs.writeFileSync(status, JSON.stringify(freshGlobal));
+  stage.commit();
   return servers;
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) syncRegionalSchedules(process.cwd()).catch(error => { console.error(error);process.exitCode = 1; });

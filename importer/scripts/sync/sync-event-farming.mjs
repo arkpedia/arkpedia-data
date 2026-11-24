@@ -28,7 +28,9 @@ export function syncEventFarming(directory) {
   if (!drops.length) throw new Error('No event farming drops: source is empty or changed schema');
   const hash = bytes => createHash('sha256').update(bytes).digest('hex');
   const output = { source: { region: 'Global', stageSha256: hash(stageBytes), itemSha256: hash(itemBytes) }, drops };
-  fs.writeFileSync('data/event-farming.json', `${JSON.stringify(output, null, 2)}\n`);
-  console.log(`Updated ${drops.length} timed stage/material pairs from Global game data`);
+  const prepared = '.cache/prepared-inputs/global-timing/event-farming.json';
+  fs.mkdirSync(path.dirname(prepared), { recursive: true });
+  fs.writeFileSync(prepared, `${JSON.stringify(output, null, 2)}\n`);
+  console.log(`Prepared ${drops.length} timed stage/material pairs from Global game data`);
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) syncEventFarming(process.argv[2] || '.cache/upstream/en-gamedata/en/gamedata/excel');

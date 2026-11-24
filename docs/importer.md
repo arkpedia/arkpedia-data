@@ -178,7 +178,9 @@ Paths below are under `importer/scripts/` unless they say otherwise.
 | `import_cc_stages.py` | `data/cc-stages.json`, CCB labels in `stages-content.json`; new CCB renders staged in `.cache/cc-stages/` | `medal_table`, `map/` renders |
 | `import_stage_devices.py` | `data/stage-devices.json` | level files' `predefines`, `character_table` |
 | `build-story-groups.mjs` | `data/story-groups.json` | `stage_table.storylines` |
-| `build-content-windows.mjs` | `data/content-windows.json` | `activity_table`, `crisis_v2_table` |
+| `build-content-windows.mjs` | `.cache/prepared-inputs/global-timing/content-windows.json` | `activity_table`, `crisis_v2_table` |
+| `sync-event-farming.mjs` | `.cache/prepared-inputs/global-timing/event-farming.json` | Global stage and item tables |
+| `project-global-timing.mjs` | `data/content-windows.json`, `data/event-farming.json` | Prepared timing inputs and a fresh reconciled Global regional schedule |
 | `import-item-icons.mjs` | `data/item-icons.json`; new token icons staged in `.cache/item-icons/` | stage drops, CN `item/` icons, the asset index |
 | `enrich-stage-index.mjs` | `public/stages-index.json` (in place) | everything above |
 | `build-enemy-records.mjs` | `data/enemies/`, `data/enemy_appearances.json` | `enemy_handbook_table`, `enemy_database`, stage records, the enriched index |
@@ -294,3 +296,10 @@ whose names or contents differ. Global artwork is resolved against the Global po
 so CN dates/prices cannot leak into the Global catalogue. Other unconfirmed reward
 kinds may continue to use CN data. Existing CN-news, event-rewards, pack-art and
 staged-art stages handle future events automatically on the normal import schedule.
+
+
+The app consumes `importer/config/import-stages.json` from the pinned import tree
+to identify stages the importer already owns. After adding, removing, or renaming
+a stage, regenerate the catalogue from `importer/` with
+`node scripts/content/write-import-stage-catalogue.mjs`. The importer tests check
+its equality with the stage commands.

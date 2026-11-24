@@ -1,8 +1,12 @@
+import os from 'node:os';
+import path from 'node:path';
+// @ts-expect-error Node import scripts are plain JavaScript.
+import { globalTimingProjections, projectGlobalTiming } from '../sync/project-global-timing.mjs';
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import fs from 'node:fs';
 // @ts-expect-error Plain Node ingestion.
-import { boardOpening, englishNoticeSkinWindows, globalTimingProjections, eventActivity, noticeOpening, noticeSkinWindows, buildRegionalSchedule } from '../sync/sync-regional-schedules.mjs';
+import { boardOpening, englishNoticeSkinWindows, eventActivity, noticeOpening, noticeSkinWindows, buildRegionalSchedule } from '../sync/sync-regional-schedules.mjs';
 
 /*
  * What the regional ingestion reads out of each client's own notices and in-game board
@@ -149,11 +153,31 @@ test('EN stages and farming project the same authoritative regional clocks', () 
 });
 
 
-test('the full refresh cannot overwrite regional farming clocks with a later raw-table writer', () => {
+test('the full refresh publishes Global timing after all current inputs', () => {
   const refresh = fs.readFileSync('scripts/sync/refresh-stage-data.sh', 'utf8');
   const imports = fs.readFileSync('scripts/content/run-imports.sh', 'utf8');
-  const farming = refresh.indexOf('stage event-farming --');
-  const regional = refresh.indexOf('stage regional-schedules --');
-  assert.ok(farming > 0 && regional > farming);
-  assert.doesNotMatch(imports, /^stage event-farming --/m, 'the enclosing import has no later raw writer');
+  assert.match(refresh, /^stage global-timing --needs content-windows,event-farming,regional-schedules --/m);
+  assert.doesNotMatch(imports, /^stage (?:event-farming|content-windows|global-timing) --/m);
+});
+
+test('a failed Global reconciliation retains both compatibility records', t => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'arkpedia-global-timing-'));
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  fs.mkdirSync(path.join(root, 'data'));
+  fs.mkdirSync(path.join(root, '.cache/prepared-inputs/global-timing'), { recursive: true });
+  const write = (name: string, value: unknown) => fs.writeFileSync(path.join(root, name), JSON.stringify(value));
+  const read = (name: string) => JSON.parse(fs.readFileSync(path.join(root, name), 'utf8'));
+  write('data/content-windows.json', { current: [1, 2] });
+  write('data/event-farming.json', { source: { stageSha256: 'old' }, drops: ['old'] });
+  write('.cache/prepared-inputs/global-timing/ready.json', false);
+  write('.cache/prepared-inputs/global-timing/content-windows.json', { current: [3, 4], forecast: [5, 6] });
+  write('.cache/prepared-inputs/global-timing/event-farming.json', { source: { stageSha256: 'new' }, drops: ['raw'] });
+  write('data/regional-schedules.json', { servers: { en: { contents: { current: [7, 8] }, farming: ['corrected'] } } });
+  assert.throws(() => projectGlobalTiming(root), /retain published Global timing/);
+  assert.deepEqual(read('data/content-windows.json'), { current: [1, 2] });
+  assert.deepEqual(read('data/event-farming.json'), { source: { stageSha256: 'old' }, drops: ['old'] });
+  write('.cache/prepared-inputs/global-timing/ready.json', true);
+  projectGlobalTiming(root);
+  assert.deepEqual(read('data/content-windows.json'), { current: [7, 8], forecast: [5, 6] });
+  assert.deepEqual(read('data/event-farming.json'), { source: { stageSha256: 'new' }, drops: ['corrected'] });
 });

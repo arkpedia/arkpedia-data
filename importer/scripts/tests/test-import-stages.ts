@@ -3,12 +3,20 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 // @ts-expect-error Node publication scripts are plain JavaScript.
 import { MIRRORS } from '../content/pin-upstream.mjs';
+// @ts-expect-error Node publication scripts are plain JavaScript.
+import { declaredStages } from '../content/run-stage.mjs';
 import { commandScripts, refreshScripts, refreshStages } from './fixtures/refresh-stages';
 
 /* The nightly import's stages (run-imports.sh, with refresh-stage-data.sh where it calls it):
    each script exists, reads the mirrors at the run's pins, and runs in an order its inputs allow.
    Moved from the application's test-stage-runner.ts with the import (data split phase 4); the
    stage runner itself (run-stage.mjs) is tested there. */
+
+test('the pinned stage catalogue matches the importer commands', () => {
+  const catalogue = JSON.parse(fs.readFileSync('config/import-stages.json', 'utf8'));
+  assert.deepEqual(catalogue, { version: 1, stages: [...declaredStages(process.cwd())].sort() },
+    'Regenerate with node scripts/content/write-import-stage-catalogue.mjs');
+});
 
 test('every script a refresh stage names exists, directly or through an npm script', () => {
   // refreshScripts() passes over a path that is not there, so the check above would never see

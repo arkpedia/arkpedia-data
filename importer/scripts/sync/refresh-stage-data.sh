@@ -135,7 +135,7 @@ stage story-map -- python3 scripts/imports/import_story_map.py
 # story-covers stays in the application: its source (arknights.timo.beer) refuses GitHub's runners (HTTP 403).
 
 # Run windows, for the Current group and the default chapter.
-stage content-windows --needs stage-dataset -- node scripts/build/build-content-windows.mjs
+stage content-windows --needs stage-dataset --output .cache/prepared-inputs/global-timing/content-windows.json -- node scripts/build/build-content-windows.mjs
 
 # Item icons for the drops. A new token's icon is staged in .cache/item-icons/ and
 # reported until the image repository publishes it; nothing is written under public/.
@@ -208,11 +208,6 @@ stage enemy-appearances --needs enemy-records -- node scripts/build/build-enemy-
 # Enemy index for the handbook grid.
 stage enemy-index --needs enemy-records -- node scripts/build/build-enemies-index.mjs
 
-# Enemies of the running Stronghold Protocol event.
-# After the enemy index, since it reads the stat lines out of it, and after the stage
-# records, since it reads which enemies each stage fields.
-stage stronghold-enemies --needs enemy-index -- node scripts/build/build-stronghold-enemies.mjs
-
 # Event and banner calendars: real windows over estimates.
 # Read today's official Global announcements before banner reconciliation. The
 # client may open before maintenance ends; named announcements supply playable times.
@@ -231,11 +226,13 @@ stage kernel-pool -- node scripts/sync/sync-kernel-pool.mjs
 stage event-windows -- node scripts/sync/sync-event-windows.mjs
 # Permanent RA themes are outside activity_table; import each launch by its stable topic ID.
 stage ra-releases -- node scripts/sync/sync-ra-releases.mjs
-# Regional IDs and first-party notice corrections, independently of English calendars.
-# Build the raw farming rows BEFORE the authoritative regional projection.
-# A later writer used to replace corrected maintenance openings with client preload times.
-stage event-farming -- node scripts/sync/sync-event-farming.mjs
-stage regional-schedules -- node scripts/sync/sync-regional-schedules.mjs
+# Prepare raw timing inputs, then publish the notice-corrected Global projections once.
+# Regional schedules can still update JP/KR when a raw Global preparation fails.
+stage event-farming --output .cache/prepared-inputs/global-timing/event-farming.json -- node scripts/sync/sync-event-farming.mjs
+stage regional-schedules --output .cache/prepared-inputs/global-timing/ready.json -- node scripts/sync/sync-regional-schedules.mjs
+stage global-timing --needs content-windows,event-farming,regional-schedules -- node scripts/sync/project-global-timing.mjs
+# The current Stronghold roster uses whichever window the import could publish.
+stage stronghold-enemies --needs enemy-index -- node scripts/build/build-stronghold-enemies.mjs
 # Official EN announcements supply key art before the client patch or wiki upload.
 # Publish and pin it before this import is handed to content preparation.
 stage global-announcement-art --needs regional-schedules -- bash scripts/sync/publish-global-announcement-art.sh

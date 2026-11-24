@@ -26,15 +26,14 @@ Both publishers share a renewable bucket lease and require explicit new-byte and
 
 ## Updating content
 
-The application's nightly **Prepare content release** workflow (in its private repository) does the following:
-- loads this repository's `source/` records;
-- refreshes them from the game's tables and the public mirrors;
-- compiles every page into `release/`;
-- pushes the result straight to `main`, as a fast-forward with a deploy key scoped to this repository.
+The nightly [importer](docs/importer.md) refreshes upstream records at pinned revisions
+and publishes them to `imports`. The private app's **Prepare content release** workflow
+combines the pinned import with reviewed source, compiles the page payloads in
+`release/`, and pushes a validated candidate to `main`.
 
 No pull request is opened, so its checks are the gate. Here, **Content release** (`.github/workflows/content.yml`) validates every push to `main` with `scripts/validate-release.mjs` and only then moves `live/current.json` to it. A push that fails validation is never served; readers keep the previous release.
 
-**Editorial corrections** go in `source/` on `editorial`. Pull that branch before editing and push your changes there. The private application checks it every ten minutes (GitHub scheduling can add delay), automatically compiles the exact pushed commit on app main with upstream refresh off, validates it, and publishes shared data main. A successful main preparation then refreshes dev from the same shared data. Both sites adopt the resulting content without an app rebuild.
+**Editorial corrections** go in `source/` on `editorial`. Pull that branch before editing and push your changes there. The private application checks it every ten minutes (GitHub scheduling can add delay), automatically compiles the exact pushed commit on app main with upstream refresh off, validates it, and publishes shared data main. The production app adopts the published content without a rebuild.
 
 After successful main publication, this repository fast-forwards editorial to current main if its changes have been incorporated. Unpublished concurrent edits are preserved, never force-pushed. If editorial has diverged, merge data main into it before pushing again. `ARKPEDIA_EDITORIAL_BRANCH`, when set in both repositories, selects another source-editing branch.
 
